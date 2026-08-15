@@ -17,85 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_PalFadeWidgetBase.WBP_PalFadeWidgetBase_C.FadeIn
+// Function WBP_PalFadeWidgetBase.WBP_PalFadeWidgetBase_C.Setup_ForOverride
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalFadeWidgetBase_C::FadeIn()
+void UWBP_PalFadeWidgetBase_C::Setup_ForOverride()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalFadeWidgetBase_C", "FadeIn");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalFadeWidgetBase.WBP_PalFadeWidgetBase_C.FadeOut
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalFadeWidgetBase_C::FadeOut()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalFadeWidgetBase_C", "FadeOut");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalFadeWidgetBase.WBP_PalFadeWidgetBase_C.NotifyEndFadeIn
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalFadeWidgetBase_C::NotifyEndFadeIn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalFadeWidgetBase_C", "NotifyEndFadeIn");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalFadeWidgetBase.WBP_PalFadeWidgetBase_C.NotifyEndFadeOut
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalFadeWidgetBase_C::NotifyEndFadeOut()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalFadeWidgetBase_C", "NotifyEndFadeOut");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalFadeWidgetBase.WBP_PalFadeWidgetBase_C.NotifyStartFadeIn
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalFadeWidgetBase_C::NotifyStartFadeIn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalFadeWidgetBase_C", "NotifyStartFadeIn");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalFadeWidgetBase.WBP_PalFadeWidgetBase_C.NotifyStartFadeOut
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalFadeWidgetBase_C::NotifyStartFadeOut()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalFadeWidgetBase_C", "NotifyStartFadeOut");
+		Func = Class->GetFunction("WBP_PalFadeWidgetBase_C", "Setup_ForOverride");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -121,15 +51,85 @@ void UWBP_PalFadeWidgetBase_C::Setup(class UPalHUDDispatchParameter_FadeWidget* 
 }
 
 
-// Function WBP_PalFadeWidgetBase.WBP_PalFadeWidgetBase_C.Setup_ForOverride
+// Function WBP_PalFadeWidgetBase.WBP_PalFadeWidgetBase_C.NotifyStartFadeOut
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalFadeWidgetBase_C::Setup_ForOverride()
+void UWBP_PalFadeWidgetBase_C::NotifyStartFadeOut()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalFadeWidgetBase_C", "Setup_ForOverride");
+		Func = Class->GetFunction("WBP_PalFadeWidgetBase_C", "NotifyStartFadeOut");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalFadeWidgetBase.WBP_PalFadeWidgetBase_C.NotifyStartFadeIn
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalFadeWidgetBase_C::NotifyStartFadeIn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalFadeWidgetBase_C", "NotifyStartFadeIn");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalFadeWidgetBase.WBP_PalFadeWidgetBase_C.NotifyEndFadeOut
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalFadeWidgetBase_C::NotifyEndFadeOut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalFadeWidgetBase_C", "NotifyEndFadeOut");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalFadeWidgetBase.WBP_PalFadeWidgetBase_C.NotifyEndFadeIn
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalFadeWidgetBase_C::NotifyEndFadeIn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalFadeWidgetBase_C", "NotifyEndFadeIn");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalFadeWidgetBase.WBP_PalFadeWidgetBase_C.FadeOut
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalFadeWidgetBase_C::FadeOut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalFadeWidgetBase_C", "FadeOut");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalFadeWidgetBase.WBP_PalFadeWidgetBase_C.FadeIn
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalFadeWidgetBase_C::FadeIn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalFadeWidgetBase_C", "FadeIn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

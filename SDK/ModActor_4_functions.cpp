@@ -17,8 +17,538 @@
 namespace SDK
 {
 
+// Function ModActor.ModActor_C.UpdateMapPosition
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::UpdateMapPosition()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "UpdateMapPosition");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.ToggleSuperZoom
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::ToggleSuperZoom()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ToggleSuperZoom");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.ToggleMapPressDetection
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::ToggleMapPressDetection()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ToggleMapPressDetection");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.SetupModConfigBindings
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    Unique_Mod_Config_Name                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    On_Saved_Callback_Name                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    On_Updated_Callback_Name                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void ModActor_4::AModActor_C::SetupModConfigBindings(const class FString& Unique_Mod_Config_Name, const class FString& On_Saved_Callback_Name, const class FString& On_Updated_Callback_Name)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "SetupModConfigBindings");
+
+	Params::ModActor_C_SetupModConfigBindings Parms{};
+
+	Parms.Unique_Mod_Config_Name = std::move(Unique_Mod_Config_Name);
+	Parms.On_Saved_Callback_Name = std::move(On_Saved_Callback_Name);
+	Parms.On_Updated_Callback_Name = std::move(On_Updated_Callback_Name);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.SetupBindingsForModConfig
+// (BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::SetupBindingsForModConfig()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "SetupBindingsForModConfig");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.ScanTypes
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::ScanTypes()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ScanTypes");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.ScanAndMarkWIldPal
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::ScanAndMarkWIldPal()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ScanAndMarkWIldPal");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.ScanAndMarkType
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UClass*                           actorClass                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_4::AModActor_C::ScanAndMarkType(class UClass* actorClass, class UTexture2D* Texture)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ScanAndMarkType");
+
+	Params::ModActor_C_ScanAndMarkType Parms{};
+
+	Parms.actorClass = actorClass;
+	Parms.Texture = Texture;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.ScanAndMarkRelic
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::ScanAndMarkRelic()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ScanAndMarkRelic");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.ScanAndMarkPlayer
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::ScanAndMarkPlayer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ScanAndMarkPlayer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.ScanAndMarkOtomoPal
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::ScanAndMarkOtomoPal()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ScanAndMarkOtomoPal");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.ScanAndMarkNPC
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::ScanAndMarkNPC()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ScanAndMarkNPC");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.ScanAndMarkNote
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::ScanAndMarkNote()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ScanAndMarkNote");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.ScanAndMarkDungeon
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_4::AModActor_C::ScanAndMarkDungeon(class UTexture2D* Texture)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ScanAndMarkDungeon");
+
+	Params::ModActor_C_ScanAndMarkDungeon Parms{};
+
+	Parms.Texture = Texture;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.RenderMap
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::RenderMap()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "RenderMap");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_4::AModActor_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ReceiveTick");
+
+	Params::ModActor_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.ReadyForHUD
+// (BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::ReadyForHUD()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ReadyForHUD");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.PrintToModLoader
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    Message                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void ModActor_4::AModActor_C::PrintToModLoader(const class FString& Message)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "PrintToModLoader");
+
+	Params::ModActor_C_PrintToModLoader Parms{};
+
+	Parms.Message = std::move(Message);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.PostBeginPlay
+// (BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::PostBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "PostBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.PersistConfig
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::PersistConfig()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "PersistConfig");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.OnUpdatedModConfig
+// (BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::OnUpdatedModConfig()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "OnUpdatedModConfig");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.OnSavedModConfig
+// (BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::OnSavedModConfig()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "OnSavedModConfig");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.MoveMapKeyDetection
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::MoveMapKeyDetection()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "MoveMapKeyDetection");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.MergeConfigWithDefaults
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::MergeConfigWithDefaults()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "MergeConfigWithDefaults");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.Map Move Mode Press Detection
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::Map_Move_Mode_Press_Detection()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "Map Move Mode Press Detection");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.LoadConfigFromFile
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FJsonObjectWrapper*              ConfigAsJson                                           (Parm, OutParm)
+
+void ModActor_4::AModActor_C::LoadConfigFromFile(struct FJsonObjectWrapper* ConfigAsJson)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "LoadConfigFromFile");
+
+	Params::ModActor_C_LoadConfigFromFile Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ConfigAsJson != nullptr)
+		*ConfigAsJson = std::move(Parms.ConfigAsJson);
+}
+
+
+// Function ModActor.ModActor_C.IsPlayerInGame
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   IsPlayerInGame_0                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_4::AModActor_C::IsPlayerInGame(bool* IsPlayerInGame_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "IsPlayerInGame");
+
+	Params::ModActor_C_IsPlayerInGame Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsPlayerInGame_0 != nullptr)
+		*IsPlayerInGame_0 = Parms.IsPlayerInGame_0;
+}
+
+
+// Function ModActor.ModActor_C.IsHotkeyMappingReleased
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FInputActionKeyMapping&    InputActionKeyMapping                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool ModActor_4::AModActor_C::IsHotkeyMappingReleased(const struct FInputActionKeyMapping& InputActionKeyMapping)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "IsHotkeyMappingReleased");
+
+	Params::ModActor_C_IsHotkeyMappingReleased Parms{};
+
+	Parms.InputActionKeyMapping = std::move(InputActionKeyMapping);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function ModActor.ModActor_C.IsHotkeyMappingPressed
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FInputActionKeyMapping&    InputActionKeyMapping                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool ModActor_4::AModActor_C::IsHotkeyMappingPressed(const struct FInputActionKeyMapping& InputActionKeyMapping)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "IsHotkeyMappingPressed");
+
+	Params::ModActor_C_IsHotkeyMappingPressed Parms{};
+
+	Parms.InputActionKeyMapping = std::move(InputActionKeyMapping);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function ModActor.ModActor_C.InitConfig
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::InitConfig()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "InitConfig");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.GetPlayerMapCoordinates
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector2D*                       Coordinates                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_4::AModActor_C::GetPlayerMapCoordinates(struct FVector2D* Coordinates)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "GetPlayerMapCoordinates");
+
+	Params::ModActor_C_GetPlayerMapCoordinates Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Coordinates != nullptr)
+		*Coordinates = std::move(Parms.Coordinates);
+}
+
+
+// Function ModActor.ModActor_C.GetFilepath
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FFilePath*                       File_Path                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+
+void ModActor_4::AModActor_C::GetFilepath(struct FFilePath* File_Path)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "GetFilepath");
+
+	Params::ModActor_C_GetFilepath Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (File_Path != nullptr)
+		*File_Path = std::move(Parms.File_Path);
+}
+
+
 // Function ModActor.ModActor_C.ExecuteUbergraph_ModActor
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -37,15 +567,227 @@ void ModActor_4::AModActor_C::ExecuteUbergraph_ModActor(int32 EntryPoint)
 }
 
 
-// Function ModActor.ModActor_C.PostBeginPlay
-// (BlueprintCallable, BlueprintEvent)
+// Function ModActor.ModActor_C.DebugPrint
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    Message                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void ModActor_4::AModActor_C::PostBeginPlay()
+void ModActor_4::AModActor_C::DebugPrint(const class FString& Message)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ModActor_C", "PostBeginPlay");
+		Func = Class->GetFunction("ModActor_C", "DebugPrint");
+
+	Params::ModActor_C_DebugPrint Parms{};
+
+	Parms.Message = std::move(Message);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.CreateMinimapIconWithTexture
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       IconTexture                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    ScaleSettingKey                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// float                                   HeightOffset                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSpriteComponent**           Sprite                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UBP_MinimapIconActor_C**          IconComponent                                          (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_4::AModActor_C::CreateMinimapIconWithTexture(class AActor* TargetActor, class UTexture2D* IconTexture, const class FString& ScaleSettingKey, float HeightOffset, class UPaperSpriteComponent** Sprite, class UBP_MinimapIconActor_C** IconComponent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "CreateMinimapIconWithTexture");
+
+	Params::ModActor_C_CreateMinimapIconWithTexture Parms{};
+
+	Parms.TargetActor = TargetActor;
+	Parms.IconTexture = IconTexture;
+	Parms.ScaleSettingKey = std::move(ScaleSettingKey);
+	Parms.HeightOffset = HeightOffset;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Sprite != nullptr)
+		*Sprite = Parms.Sprite;
+
+	if (IconComponent != nullptr)
+		*IconComponent = Parms.IconComponent;
+}
+
+
+// Function ModActor.ModActor_C.CreateMinimapIcon
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSoftObjectPath&           IconPath                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    ScaleSettingKey                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// float                                   HeightOffset                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSpriteComponent**           Sprite                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UBP_MinimapIconActor_C**          IconComponent                                          (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_4::AModActor_C::CreateMinimapIcon(class AActor* TargetActor, const struct FSoftObjectPath& IconPath, const class FString& ScaleSettingKey, float HeightOffset, class UPaperSpriteComponent** Sprite, class UBP_MinimapIconActor_C** IconComponent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "CreateMinimapIcon");
+
+	Params::ModActor_C_CreateMinimapIcon Parms{};
+
+	Parms.TargetActor = TargetActor;
+	Parms.IconPath = std::move(IconPath);
+	Parms.ScaleSettingKey = std::move(ScaleSettingKey);
+	Parms.HeightOffset = HeightOffset;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Sprite != nullptr)
+		*Sprite = Parms.Sprite;
+
+	if (IconComponent != nullptr)
+		*IconComponent = Parms.IconComponent;
+}
+
+
+// Function ModActor.ModActor_C.CreateHUD
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APlayerController*                self2                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_4::AModActor_C::CreateHUD(class APlayerController* self2)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "CreateHUD");
+
+	Params::ModActor_C_CreateHUD Parms{};
+
+	Parms.self2 = self2;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.Create Capture Screen Component 2D
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APlayerController*                PC                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_4::AModActor_C::Create_Capture_Screen_Component_2D(class APlayerController* PC)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "Create Capture Screen Component 2D");
+
+	Params::ModActor_C_Create_Capture_Screen_Component_2D Parms{};
+
+	Parms.PC = PC;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.ContinuousZoomTick
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::ContinuousZoomTick()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ContinuousZoomTick");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.CheckTitleScreen
+// (BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::CheckTitleScreen()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "CheckTitleScreen");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.CheckShiftDown
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::CheckShiftDown()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "CheckShiftDown");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.CheckReadyForHUD
+// (Public, BlueprintCallable, BlueprintEvent, BlueprintPure)
+
+void ModActor_4::AModActor_C::CheckReadyForHUD()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "CheckReadyForHUD");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.CheckCtrlDown
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::CheckCtrlDown()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "CheckCtrlDown");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.CheckAltDown
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::CheckAltDown()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "CheckAltDown");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.BaseEnteredDetection
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ModActor_4::AModActor_C::BaseEnteredDetection()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "BaseEnteredDetection");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

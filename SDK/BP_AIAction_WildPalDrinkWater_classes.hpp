@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "BP_AIAction_CanCombatBase_classes.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -30,11 +30,11 @@ public:
 
 public:
 	void ActionAbort(class APawn* ControlledPawn);
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionPause(class APawn* ControlledPawn);
 	void ExecuteUbergraph_BP_AIAction_WildPalDrinkWater(int32 EntryPoint);
 	void OnFail_3323B09A4DA8EB0F652C87B9DFF6FF56(EPathFollowingResult MovementResult);
 	void OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56(EPathFollowingResult MovementResult);
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
-	void ActionPause(class APawn* ControlledPawn);
 	void ActionResume(class APawn* ControlledPawn);
 	void ActionStart(class APawn* ControlledPawn);
 

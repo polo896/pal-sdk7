@@ -16,6 +16,25 @@
 namespace SDK::Params
 {
 
+// Function WBP_Title_ProgressBar.WBP_Title_ProgressBar_C.Tick
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_Title_ProgressBar_C_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Title_ProgressBar_C_Tick;
+
+// Function WBP_Title_ProgressBar.WBP_Title_ProgressBar_C.SetProgressValue
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Title_ProgressBar_C_SetProgressValue final
+{
+public:
+	double                                        NewValue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Title_ProgressBar_C_SetProgressValue;
+
 // Function WBP_Title_ProgressBar.WBP_Title_ProgressBar_C.ExecuteUbergraph_WBP_Title_ProgressBar
 // 0x0078 (0x0078 - 0x0000)
 struct WBP_Title_ProgressBar_C_ExecuteUbergraph_WBP_Title_ProgressBar final
@@ -36,25 +55,6 @@ public:
 	double                                        CallFunc_FInterpTo_Constant_DeltaTime_ImplicitCast; // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Title_ProgressBar_C_ExecuteUbergraph_WBP_Title_ProgressBar;
-
-// Function WBP_Title_ProgressBar.WBP_Title_ProgressBar_C.SetProgressValue
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Title_ProgressBar_C_SetProgressValue final
-{
-public:
-	double                                        NewValue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Title_ProgressBar_C_SetProgressValue;
-
-// Function WBP_Title_ProgressBar.WBP_Title_ProgressBar_C.Tick
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_Title_ProgressBar_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Title_ProgressBar_C_Tick;
 
 }
 

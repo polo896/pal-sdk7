@@ -27,9 +27,9 @@ public:
 	TMulticastInlineDelegate<void(EPalBuildObjectTypeA TypeA)> OnChangeTabType;                      // 0x0038(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ChangeTab(EPalBuildObjectTypeA TypeA);
-	void ChangeToBackTab();
 	void ChangeToNextTab();
+	void ChangeToBackTab();
+	void ChangeTab(EPalBuildObjectTypeA TypeA);
 
 public:
 	static class UClass* StaticClass()

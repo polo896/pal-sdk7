@@ -30,10 +30,10 @@ public:
 	bool                                          bIsDisplayFooter;                                  // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetText(const class FText& Text);
-	void PreConstruct(bool IsDesignTime);
-	void ExecuteUbergraph_WBP_MainMenu_bg(int32 EntryPoint);
 	void Anm_Open();
+	void ExecuteUbergraph_WBP_MainMenu_bg(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
+	void SetText(const class FText& Text);
 
 public:
 	static class UClass* StaticClass()

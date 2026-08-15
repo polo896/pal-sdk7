@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "BP_AIAction_CanCombatBase_classes.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Pal_structs.hpp"
 
 
@@ -38,11 +38,11 @@ public:
 
 public:
 	void ActionAbort(class APawn* ControlledPawn);
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionPause(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp(int32 EntryPoint);
 	void Tick_Move_to_Base_Camp(class AActor* ControlledPawn, float DeltaTime);
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
-	void ActionPause(class APawn* ControlledPawn);
 	void ActionResume(class APawn* ControlledPawn);
 	void ActionStart(class APawn* ControlledPawn);
 	void Sight_Check_and_Response(EPalAIResponseType Current, bool OverrideIsDamage, bool* ChangeNextAction);

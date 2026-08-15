@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "E_PaldexDistributionTimeType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "E_PaldexDistributionTimeType_structs.hpp"
 
 
 namespace SDK

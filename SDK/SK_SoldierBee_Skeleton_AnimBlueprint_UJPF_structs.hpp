@@ -31,5 +31,12 @@ public:
 };
 DUMPER7_ASSERTS_SK_SoldierBee_Skeleton_AnimBlueprint_UJPF__FAnimBlueprintGeneratedConstantData;
 
+// ScriptStruct SK_SoldierBee_Skeleton_AnimBlueprint_UJPF.SK_SoldierBee_Skeleton_AnimBlueprint_UJPF_C.AnimBlueprintGeneratedMutableData
+// 0x0000 (0x0001 - 0x0001)
+struct SK_SoldierBee_Skeleton_AnimBlueprint_UJPF::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+};
+DUMPER7_ASSERTS_SK_SoldierBee_Skeleton_AnimBlueprint_UJPF__FAnimBlueprintGeneratedMutableData;
+
 }
 

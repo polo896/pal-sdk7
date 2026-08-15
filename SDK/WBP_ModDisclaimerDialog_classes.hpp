@@ -29,10 +29,10 @@ public:
 	class UWBP_PalCommonWindow_C*                 WBP_PalCommonWindow;                               // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void OnSetup();
-	void ExecuteUbergraph_WBP_ModDisclaimerDialog(int32 EntryPoint);
-	void BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_Terms_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
 	void BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_Terms_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void ExecuteUbergraph_WBP_ModDisclaimerDialog(int32 EntryPoint);
+	void OnSetup();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

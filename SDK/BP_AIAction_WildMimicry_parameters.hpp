@@ -26,6 +26,25 @@ public:
 };
 DUMPER7_ASSERTS_BP_AIAction_WildMimicry_C_ActionAbort;
 
+// Function BP_AIAction_WildMimicry.BP_AIAction_WildMimicry_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_WildMimicry_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_WildMimicry_C_ActionFinished;
+
+// Function BP_AIAction_WildMimicry.BP_AIAction_WildMimicry_C.ActionPause
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_WildMimicry_C_ActionPause final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_WildMimicry_C_ActionPause;
+
 // Function BP_AIAction_WildMimicry.BP_AIAction_WildMimicry_C.DelaySetAction
 // 0x0050 (0x0050 - 0x0000)
 struct BP_AIAction_WildMimicry_C_DelaySetAction final
@@ -56,25 +75,6 @@ public:
 	class UPalAIActionBase*                       CallFunc_SetActionClassParameter_ReturnValue;      // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_WildMimicry_C_ExecuteUbergraph_BP_AIAction_WildMimicry;
-
-// Function BP_AIAction_WildMimicry.BP_AIAction_WildMimicry_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_WildMimicry_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_WildMimicry_C_ActionFinished;
-
-// Function BP_AIAction_WildMimicry.BP_AIAction_WildMimicry_C.ActionPause
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_WildMimicry_C_ActionPause final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_WildMimicry_C_ActionPause;
 
 // Function BP_AIAction_WildMimicry.BP_AIAction_WildMimicry_C.ActionResume
 // 0x0008 (0x0008 - 0x0000)

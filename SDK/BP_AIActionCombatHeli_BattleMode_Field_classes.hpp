@@ -17,12 +17,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AIActionCombatHeli_BattleMode_Field.BP_AIActionCombatHeli_BattleMode_Field_C
-// 0x0000 (0x0218 - 0x0218)
+// 0x0008 (0x0220 - 0x0218)
 class UBP_AIActionCombatHeli_BattleMode_Field_C final : public UBP_AIActionCombatHeli_BattleMode_C
 {
 public:
+	double                                        BGMDistance;                                       // 0x0218(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+public:
 	void FindTarget(class AActor** TargetActor);
+	void Is_Valid_BGMTarget(class AActor* TargetActor, bool* Valid);
 	void IsValid_Target(class AActor* TargetActor, bool* Validd);
+	void IsWantedPoliceTargetPlayer(class AActor* PlayerCharacter, bool* IsTarget);
 
 public:
 	static class UClass* StaticClass()

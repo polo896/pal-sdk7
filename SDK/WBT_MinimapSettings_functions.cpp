@@ -17,15 +17,153 @@
 namespace SDK
 {
 
-// Function WBT_MinimapSettings.WBT_MinimapSettings_C.ResetToDefaults
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBT_MinimapSettings.WBT_MinimapSettings_C.Create Keybind Row
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Label                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      Description                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+// const struct FInputChord&               InSelectedKey                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// class UWBP_SettingsRow_Keybind_C**      Output                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBT_MinimapSettings_C::ResetToDefaults()
+void UWBT_MinimapSettings_C::Create_Keybind_Row(const class FText& Label, const class FText& Description, const struct FInputChord& InSelectedKey, class UWBP_SettingsRow_Keybind_C** Output)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBT_MinimapSettings_C", "ResetToDefaults");
+		Func = Class->GetFunction("WBT_MinimapSettings_C", "Create Keybind Row");
+
+	Params::WBT_MinimapSettings_C_Create_Keybind_Row Parms{};
+
+	Parms.Label = std::move(Label);
+	Parms.Description = std::move(Description);
+	Parms.InSelectedKey = std::move(InSelectedKey);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Output != nullptr)
+		*Output = Parms.Output;
+}
+
+
+// Function WBT_MinimapSettings.WBT_MinimapSettings_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBT_MinimapSettings_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBT_MinimapSettings_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBT_MinimapSettings.WBT_MinimapSettings_C.BuildSettingsRows
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBT_MinimapSettings_C::BuildSettingsRows()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBT_MinimapSettings_C", "BuildSettingsRows");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBT_MinimapSettings.WBT_MinimapSettings_C.BuildKeyMapping
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_SettingsRow_Keybind_C*       Row                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FInputActionKeyMapping*          Output                                                 (Parm, OutParm)
+
+void UWBT_MinimapSettings_C::BuildKeyMapping(class UWBP_SettingsRow_Keybind_C* Row, class FName ActionName, struct FInputActionKeyMapping* Output)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBT_MinimapSettings_C", "BuildKeyMapping");
+
+	Params::WBT_MinimapSettings_C_BuildKeyMapping Parms{};
+
+	Parms.Row = Row;
+	Parms.ActionName = ActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Output != nullptr)
+		*Output = std::move(Parms.Output);
+}
+
+
+// Function WBT_MinimapSettings.WBT_MinimapSettings_C.BndEvt__WBT_MinimapSettings_btnReset_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBT_MinimapSettings_C::BndEvt__WBT_MinimapSettings_btnReset_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBT_MinimapSettings_C", "BndEvt__WBT_MinimapSettings_btnReset_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBT_MinimapSettings.WBT_MinimapSettings_C.BndEvt__WBP_MinimapSettings_btnSave_K2Node_ComponentBoundEvent_2_OnButtonPressedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBT_MinimapSettings_C::BndEvt__WBP_MinimapSettings_btnSave_K2Node_ComponentBoundEvent_2_OnButtonPressedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBT_MinimapSettings_C", "BndEvt__WBP_MinimapSettings_btnSave_K2Node_ComponentBoundEvent_2_OnButtonPressedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBT_MinimapSettings.WBT_MinimapSettings_C.BndEvt__WBP_MinimapSettings_btnCancel_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBT_MinimapSettings_C::BndEvt__WBP_MinimapSettings_btnCancel_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBT_MinimapSettings_C", "BndEvt__WBP_MinimapSettings_btnCancel_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBT_MinimapSettings.WBT_MinimapSettings_C.SaveSettingsRows
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBT_MinimapSettings_C::SaveSettingsRows()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBT_MinimapSettings_C", "SaveSettingsRows");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBT_MinimapSettings.WBT_MinimapSettings_C.ResetSettingsRows
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBT_MinimapSettings_C::ResetSettingsRows()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBT_MinimapSettings_C", "ResetSettingsRows");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -72,7 +210,7 @@ void UWBT_MinimapSettings_C::ExecuteUbergraph_WBT_MinimapSettings(int32 EntryPoi
 
 
 // Function WBT_MinimapSettings.WBT_MinimapSettings_C.CreateToggleRow
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FText&                      Label                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
 // const class FText&                      Description                                            (BlueprintVisible, BlueprintReadOnly, Parm)
@@ -154,116 +292,6 @@ void UWBT_MinimapSettings_C::CreateHeaderRow(const class FText& Label, class UWB
 
 	if (Output != nullptr)
 		*Output = Parms.Output;
-}
-
-
-// Function WBT_MinimapSettings.WBT_MinimapSettings_C.Create Keybind Row
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      Label                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
-// const class FText&                      Description                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-// const struct FInputChord&               InSelectedKey                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-// class UWBP_SettingsRow_Keybind_C**      Output                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBT_MinimapSettings_C::Create_Keybind_Row(const class FText& Label, const class FText& Description, const struct FInputChord& InSelectedKey, class UWBP_SettingsRow_Keybind_C** Output)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBT_MinimapSettings_C", "Create Keybind Row");
-
-	Params::WBT_MinimapSettings_C_Create_Keybind_Row Parms{};
-
-	Parms.Label = std::move(Label);
-	Parms.Description = std::move(Description);
-	Parms.InSelectedKey = std::move(InSelectedKey);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Output != nullptr)
-		*Output = Parms.Output;
-}
-
-
-// Function WBT_MinimapSettings.WBT_MinimapSettings_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBT_MinimapSettings_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBT_MinimapSettings_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBT_MinimapSettings.WBT_MinimapSettings_C.BuildKeyMapping
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_SettingsRow_Keybind_C*       Row                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FInputActionKeyMapping*          Output                                                 (Parm, OutParm)
-
-void UWBT_MinimapSettings_C::BuildKeyMapping(class UWBP_SettingsRow_Keybind_C* Row, class FName ActionName, struct FInputActionKeyMapping* Output)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBT_MinimapSettings_C", "BuildKeyMapping");
-
-	Params::WBT_MinimapSettings_C_BuildKeyMapping Parms{};
-
-	Parms.Row = Row;
-	Parms.ActionName = ActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Output != nullptr)
-		*Output = std::move(Parms.Output);
-}
-
-
-// Function WBT_MinimapSettings.WBT_MinimapSettings_C.BndEvt__WBT_MinimapSettings_btnReset_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UWBT_MinimapSettings_C::BndEvt__WBT_MinimapSettings_btnReset_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBT_MinimapSettings_C", "BndEvt__WBT_MinimapSettings_btnReset_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBT_MinimapSettings.WBT_MinimapSettings_C.BndEvt__WBP_MinimapSettings_btnSave_K2Node_ComponentBoundEvent_2_OnButtonPressedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UWBT_MinimapSettings_C::BndEvt__WBP_MinimapSettings_btnSave_K2Node_ComponentBoundEvent_2_OnButtonPressedEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBT_MinimapSettings_C", "BndEvt__WBP_MinimapSettings_btnSave_K2Node_ComponentBoundEvent_2_OnButtonPressedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBT_MinimapSettings.WBT_MinimapSettings_C.BndEvt__WBP_MinimapSettings_btnCancel_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UWBT_MinimapSettings_C::BndEvt__WBP_MinimapSettings_btnCancel_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBT_MinimapSettings_C", "BndEvt__WBP_MinimapSettings_btnCancel_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

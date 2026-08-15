@@ -17,15 +17,29 @@
 namespace SDK
 {
 
-// Function WBP_Option_DiscordFriendList.WBP_Option_DiscordFriendList_C.UpdateUI
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Option_DiscordFriendList.WBP_Option_DiscordFriendList_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Option_DiscordFriendList_C::UpdateUI()
+void UWBP_Option_DiscordFriendList_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_DiscordFriendList_C", "UpdateUI");
+		Func = Class->GetFunction("WBP_Option_DiscordFriendList_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Option_DiscordFriendList.WBP_Option_DiscordFriendList_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Option_DiscordFriendList_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_DiscordFriendList_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,29 +65,15 @@ void UWBP_Option_DiscordFriendList_C::ExecuteUbergraph_WBP_Option_DiscordFriendL
 }
 
 
-// Function WBP_Option_DiscordFriendList.WBP_Option_DiscordFriendList_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Option_DiscordFriendList.WBP_Option_DiscordFriendList_C.UpdateUI
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Option_DiscordFriendList_C::Destruct()
+void UWBP_Option_DiscordFriendList_C::UpdateUI()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_DiscordFriendList_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Option_DiscordFriendList.WBP_Option_DiscordFriendList_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Option_DiscordFriendList_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_DiscordFriendList_C", "Construct");
+		Func = Class->GetFunction("WBP_Option_DiscordFriendList_C", "UpdateUI");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AIAction_CombatPal.BP_AIAction_CombatPal_C
-// 0x00F0 (0x0228 - 0x0138)
+// 0x0100 (0x0238 - 0x0138)
 class UBP_AIAction_CombatPal_C : public UPalAIActionBase
 {
 public:
@@ -66,6 +66,9 @@ public:
 	int32                                         NextCoolSlot;                                      // 0x0220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Ray_Passed;                                        // 0x0224(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          RangePassed;                                       // 0x0225(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_226[0x2];                                      // 0x0226(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        Const_MaxTurnTime;                                 // 0x0228(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        TurnTimer;                                         // 0x0230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
@@ -102,6 +105,7 @@ public:
 	void PlayerCameraCheck(bool* AttackAble);
 	void PlayWazaAction();
 	void PlayWazaDarknessStatus();
+	void ProcessTurnTimer(double DeltaTime);
 	void ProcSideMove();
 	void RemoveDamageResponse();
 	void ResetTryMoveAngle();

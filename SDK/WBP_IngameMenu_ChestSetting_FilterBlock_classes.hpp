@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "Pal_classes.hpp"
-#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -47,23 +47,23 @@ public:
 	class UPalWordFilterWaiter*                   CurrentFilteringWaiter;                            // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	class UWBP_IngameMenu_Chest_FilterContent_C* AddContentItem(class FName FilterId, class FName FilterTextId);
-	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_CommonButton_1_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_CommonButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_EditableTextBox_Name_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
-	void BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_WBP_PalInvisibleButton_NameEdit_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ClearContent();
-	void Construct();
-	void Destruct();
-	class UWidget* DoCustomNavi_ToEditCustomName(EUINavigation Navigation_0);
-	class UWidget* DoCustomNavi_ToLockAllButton(EUINavigation Navigation_0);
-	void EndEditCustomName();
-	void ExecuteUbergraph_WBP_IngameMenu_ChestSetting_FilterBlock(int32 EntryPoint);
-	void IsEditingCustomName(bool* bEditing);
-	void OnTextFiltered(class UPalWordFilterWaiter* Waiter, const class FString& FilteredString);
-	void SetCustomName(const class FString& InCustomName);
-	void SetEnableCustomNameEdit(bool bEnableNameEdit);
 	void StartEditCustomName();
+	void SetEnableCustomNameEdit(bool bEnableNameEdit);
+	void SetCustomName(const class FString& InCustomName);
+	void OnTextFiltered(class UPalWordFilterWaiter* Waiter, const class FString& FilteredString);
+	void IsEditingCustomName(bool* bEditing);
+	void ExecuteUbergraph_WBP_IngameMenu_ChestSetting_FilterBlock(int32 EntryPoint);
+	void EndEditCustomName();
+	class UWidget* DoCustomNavi_ToLockAllButton(EUINavigation Navigation_0);
+	class UWidget* DoCustomNavi_ToEditCustomName(EUINavigation Navigation_0);
+	void Destruct();
+	void Construct();
+	void ClearContent();
+	void BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_WBP_PalInvisibleButton_NameEdit_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_EditableTextBox_Name_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
+	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_CommonButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_CommonButton_1_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
+	class UWBP_IngameMenu_Chest_FilterContent_C* AddContentItem(class FName FilterId, class FName FilterTextId);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

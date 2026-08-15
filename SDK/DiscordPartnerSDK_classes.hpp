@@ -1300,12 +1300,12 @@ public:
 	void SetActivityInviteUpdatedCallback(const TDelegate<void(class UDiscordActivityInvite* Invite)>& cb);
 	void SetActivityJoinCallback(const TDelegate<void(const class FString& joinSecret)>& cb);
 	void SetActivityJoinWithApplicationCallback(const TDelegate<void(const struct FDiscordUniqueID& ApplicationId, const class FString& joinSecret)>& cb);
-	void SetAecDump(bool on);
+	void SetAecDump(bool On);
 	void SetApplicationId(const struct FDiscordUniqueID& ApplicationId);
 	void SetAuthorizeDeviceScreenClosedCallback(const TDelegate<void()>& cb);
-	void SetAutomaticGainControl(bool on);
+	void SetAutomaticGainControl(bool On);
 	void SetDeviceChangeCallback(const TDelegate<void(const TArray<class UDiscordAudioDevice*>& inputDevices, const TArray<class UDiscordAudioDevice*>& outputDevices)>& Callback);
-	void SetEchoCancellation(bool on);
+	void SetEchoCancellation(bool On);
 	void SetEngineManagedAudioSession(bool isEngineManaged);
 	void SetGameWindowPid(int32 pid);
 	void SetHttpRequestTimeout(int32 httpTimeoutInMilliseconds);
@@ -1323,8 +1323,8 @@ public:
 	void SetMessageUpdatedCallback(const TDelegate<void(const struct FDiscordUniqueID& MessageId)>& cb);
 	void SetNoAudioInputCallback(const TDelegate<void(bool inputDetected)>& Callback);
 	void SetNoAudioInputThreshold(float dBFSThreshold);
-	void SetNoiseCancellation(bool on);
-	void SetNoiseSuppression(bool on);
+	void SetNoiseCancellation(bool On);
+	void SetNoiseSuppression(bool On);
 	void SetOnlineStatus(EDiscordStatusType Status, const TDelegate<void(class UDiscordClientResult* Result)>& Callback);
 	void SetOpusHardwareCoding(bool encode, bool decode);
 	void SetOutputDevice(const class FString& DeviceID, const TDelegate<void(class UDiscordClientResult* Result)>& cb);

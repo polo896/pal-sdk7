@@ -10725,9 +10725,9 @@ void UDiscordClient::SetActivityJoinWithApplicationCallback(const TDelegate<void
 // Function DiscordPartnerSDK.DiscordClient.SetAecDump
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                                    on                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    On                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UDiscordClient::SetAecDump(bool on)
+void UDiscordClient::SetAecDump(bool On)
 {
 	static class UFunction* Func = nullptr;
 
@@ -10736,7 +10736,7 @@ void UDiscordClient::SetAecDump(bool on)
 
 	Params::DiscordClient_SetAecDump Parms{};
 
-	Parms.on = on;
+	Parms.On = On;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -10800,9 +10800,9 @@ void UDiscordClient::SetAuthorizeDeviceScreenClosedCallback(const TDelegate<void
 // Function DiscordPartnerSDK.DiscordClient.SetAutomaticGainControl
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                                    on                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    On                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UDiscordClient::SetAutomaticGainControl(bool on)
+void UDiscordClient::SetAutomaticGainControl(bool On)
 {
 	static class UFunction* Func = nullptr;
 
@@ -10811,7 +10811,7 @@ void UDiscordClient::SetAutomaticGainControl(bool on)
 
 	Params::DiscordClient_SetAutomaticGainControl Parms{};
 
-	Parms.on = on;
+	Parms.On = On;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -10850,9 +10850,9 @@ void UDiscordClient::SetDeviceChangeCallback(const TDelegate<void(const TArray<c
 // Function DiscordPartnerSDK.DiscordClient.SetEchoCancellation
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                                    on                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    On                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UDiscordClient::SetEchoCancellation(bool on)
+void UDiscordClient::SetEchoCancellation(bool On)
 {
 	static class UFunction* Func = nullptr;
 
@@ -10861,7 +10861,7 @@ void UDiscordClient::SetEchoCancellation(bool on)
 
 	Params::DiscordClient_SetEchoCancellation Parms{};
 
-	Parms.on = on;
+	Parms.On = On;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -11307,9 +11307,9 @@ void UDiscordClient::SetNoAudioInputThreshold(float dBFSThreshold)
 // Function DiscordPartnerSDK.DiscordClient.SetNoiseCancellation
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                                    on                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    On                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UDiscordClient::SetNoiseCancellation(bool on)
+void UDiscordClient::SetNoiseCancellation(bool On)
 {
 	static class UFunction* Func = nullptr;
 
@@ -11318,7 +11318,7 @@ void UDiscordClient::SetNoiseCancellation(bool on)
 
 	Params::DiscordClient_SetNoiseCancellation Parms{};
 
-	Parms.on = on;
+	Parms.On = On;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -11332,9 +11332,9 @@ void UDiscordClient::SetNoiseCancellation(bool on)
 // Function DiscordPartnerSDK.DiscordClient.SetNoiseSuppression
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                                    on                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    On                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UDiscordClient::SetNoiseSuppression(bool on)
+void UDiscordClient::SetNoiseSuppression(bool On)
 {
 	static class UFunction* Func = nullptr;
 
@@ -11343,7 +11343,7 @@ void UDiscordClient::SetNoiseSuppression(bool on)
 
 	Params::DiscordClient_SetNoiseSuppression Parms{};
 
-	Parms.on = on;
+	Parms.On = On;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

@@ -17,21 +17,37 @@
 namespace SDK
 {
 
-// Function WBP_InventoryEquipment_ItemInfo_Tecnology.WBP_InventoryEquipment_ItemInfo_Tecnology_C.ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Tecnology
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_InventoryEquipment_ItemInfo_Tecnology.WBP_InventoryEquipment_ItemInfo_Tecnology_C.SetWorkSpaceInfo
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_InventoryEquipment_ItemInfo_Tecnology_C::ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Tecnology(int32 EntryPoint)
+void UWBP_InventoryEquipment_ItemInfo_Tecnology_C::SetWorkSpaceInfo()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InventoryEquipment_ItemInfo_Tecnology_C", "ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Tecnology");
+		Func = Class->GetFunction("WBP_InventoryEquipment_ItemInfo_Tecnology_C", "SetWorkSpaceInfo");
 
-	Params::WBP_InventoryEquipment_ItemInfo_Tecnology_C_ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Tecnology Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_InventoryEquipment_ItemInfo_Tecnology.WBP_InventoryEquipment_ItemInfo_Tecnology_C.SetDetails
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<struct FPalStaticItemIdAndNum>&MatDetail                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    WithStock                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InventoryEquipment_ItemInfo_Tecnology_C::SetDetails(const TArray<struct FPalStaticItemIdAndNum>& MatDetail, bool WithStock)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InventoryEquipment_ItemInfo_Tecnology_C", "SetDetails");
+
+	Params::WBP_InventoryEquipment_ItemInfo_Tecnology_C_SetDetails Parms{};
+
+	Parms.MatDetail = std::move(MatDetail);
+	Parms.WithStock = WithStock;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -63,39 +79,23 @@ void UWBP_InventoryEquipment_ItemInfo_Tecnology_C::GetStockNum(class FName Stati
 }
 
 
-// Function WBP_InventoryEquipment_ItemInfo_Tecnology.WBP_InventoryEquipment_ItemInfo_Tecnology_C.SetDetails
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_InventoryEquipment_ItemInfo_Tecnology.WBP_InventoryEquipment_ItemInfo_Tecnology_C.ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Tecnology
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const TArray<struct FPalStaticItemIdAndNum>&MatDetail                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    WithStock                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InventoryEquipment_ItemInfo_Tecnology_C::SetDetails(const TArray<struct FPalStaticItemIdAndNum>& MatDetail, bool WithStock)
+void UWBP_InventoryEquipment_ItemInfo_Tecnology_C::ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Tecnology(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InventoryEquipment_ItemInfo_Tecnology_C", "SetDetails");
+		Func = Class->GetFunction("WBP_InventoryEquipment_ItemInfo_Tecnology_C", "ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Tecnology");
 
-	Params::WBP_InventoryEquipment_ItemInfo_Tecnology_C_SetDetails Parms{};
+	Params::WBP_InventoryEquipment_ItemInfo_Tecnology_C_ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Tecnology Parms{};
 
-	Parms.MatDetail = std::move(MatDetail);
-	Parms.WithStock = WithStock;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_InventoryEquipment_ItemInfo_Tecnology.WBP_InventoryEquipment_ItemInfo_Tecnology_C.SetWorkSpaceInfo
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_InventoryEquipment_ItemInfo_Tecnology_C::SetWorkSpaceInfo()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InventoryEquipment_ItemInfo_Tecnology_C", "SetWorkSpaceInfo");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -33,11 +33,11 @@ using namespace UC;
 */
 namespace Offsets
 {
-	constexpr int32 GObjects          = 0x094ED290;
-	constexpr int32 AppendString      = 0x034C6F30;
-	constexpr int32 GNames            = 0x093F27F8;
-	constexpr int32 GWorld            = 0x0965BBE0;
-	constexpr int32 ProcessEvent      = 0x03645A20;
+	constexpr int32 GObjects          = 0x094F8910;
+	constexpr int32 AppendString      = 0x034CF030;
+	constexpr int32 GNames            = 0x093FDE78;
+	constexpr int32 GWorld            = 0x09667260;
+	constexpr int32 ProcessEvent      = 0x0364D960;
 	constexpr int32 ProcessEventIdx   = 0x0000004C;
 }
 

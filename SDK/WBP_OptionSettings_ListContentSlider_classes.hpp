@@ -34,16 +34,16 @@ public:
 	bool                                          IsIntegerMode;                                     // 0x02C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_OptionSettings_ListContentSlider_Slider_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature(float Value);
-	void AddPercent(double Percent);
 	void AddConstantValue(double Value);
-	void SetValueInt(int32 Value, int32 Min_0, int32 Max_0);
-	void SetValue(double Value, double Min_0, double Max_0);
-	void PlayChangeValueSound();
-	void ExecuteUbergraph_WBP_OptionSettings_ListContentSlider(int32 EntryPoint);
-	void Construct();
-	void BndEvt__WBP_OptionSettings_ListContentSlider_Slider_K2Node_ComponentBoundEvent_2_OnMouseCaptureEndEvent__DelegateSignature();
+	void AddPercent(double Percent);
+	void BndEvt__WBP_OptionSettings_ListContentSlider_Slider_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature(float Value);
 	void BndEvt__WBP_OptionSettings_ListContentSlider_Slider_K2Node_ComponentBoundEvent_1_OnMouseCaptureBeginEvent__DelegateSignature();
+	void BndEvt__WBP_OptionSettings_ListContentSlider_Slider_K2Node_ComponentBoundEvent_2_OnMouseCaptureEndEvent__DelegateSignature();
+	void Construct();
+	void ExecuteUbergraph_WBP_OptionSettings_ListContentSlider(int32 EntryPoint);
+	void PlayChangeValueSound();
+	void SetValue(double Value, double Min_0, double Max_0);
+	void SetValueInt(int32 Value, int32 Min_0, int32 Max_0);
 
 public:
 	static class UClass* StaticClass()

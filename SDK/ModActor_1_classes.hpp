@@ -12,25 +12,94 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass ModActor.ModActor_C
-// 0x0040 (0x02D0 - 0x0290)
+// 0x0370 (0x0600 - 0x0290)
 class ModActor_1::AModActor_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0298(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class FString                                 ModAuthor;                                         // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class FString                                 ModDescription;                                    // 0x02B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class FString                                 ModVersion;                                        // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	bool                                          Can_Press_Hotkey;                                  // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A1[0x7];                                      // 0x02A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                EggHatcherIndicatorPrevLoc;                        // 0x02A8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalInteractiveObjectBoxComponent*      EggHatcher;                                        // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          ShouldEnableInteract;                              // 0x02C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C9[0x7];                                      // 0x02C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class APalBuildObject*>                EggHatchers;                                       // 0x02D0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class UPalInteractiveObjectBoxComponent*> InteractiveBoxArray;                            // 0x02E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	class UObject*                                Last_Interacted_Object;                            // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                LastInteractedObjectIndicatorPosition;             // 0x02F8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          WidgetOnScreen;                                    // 0x0310(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_311[0x7];                                      // 0x0311(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalPlayerManager*                      Player_Manager;                                    // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TMap<struct FGuid, class APalPlayerState*>    Players;                                           // 0x0320(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          DedicatedServer;                                   // 0x0370(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_371[0x7];                                      // 0x0371(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalMapObjectManager*                   Object_Manager;                                    // 0x0378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class APalGameStateInGame*                    Game_State;                                        // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          UseAutoHatch;                                      // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_389[0x7];                                      // 0x0389(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<struct FGuid, bool>                      PlayerSettings;                                    // 0x0390(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UPalMapObjectModel*>             EggIncubators;                                     // 0x03E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UPalMapObjectModel*, struct FGuid> PlayerEggIncubators;                               // 0x03F0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UPalMapObjectModel*, struct FGuid> PlayerBreedFarms;                                  // 0x0440(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          UsedMultiHatch;                                    // 0x0490(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_491[0x7];                                      // 0x0491(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<uint8>                                 ByteArray;                                         // 0x0498(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<struct FGuid, class APalPlayerState*>    EggToPlayerMap;                                    // 0x04A8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FTimerHandle                           CheckBreedFarmTimer;                               // 0x04F8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CheckIncubatorTimer;                               // 0x0500(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          KeepSprint;                                        // 0x0508(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_509[0x7];                                      // 0x0509(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class UPalWorkProgress*, struct FGuid>   WorkProgress_To_PlayerUId__Map;                    // 0x0510(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UPalWorkBase*, struct FGuid>       WorkBase_To_PlayerUId_Map;                         // 0x0560(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UPalWorkProgress*, class UPalMapObjectConcreteModelBase*> WorkProgress_To_Incubator_Map; // 0x05B0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
+	void SaveToJson();
+	void ReceiveTick(float DeltaSeconds);
+	class FString PushedStackableUI(class APalHUDInGame** AsPal_HUDIn_Game, class UPalUserWidgetStackableUI** StackableWidget);
+	void PrintToModLoader(const class FString& Message);
+	void PreBeginPlay();
 	void PostBeginPlay();
+	void PickUpAllEggs();
+	void OnUpdatePalEggArray();
+	void OnUpdateHatchedCharacterDelegate_Event(class UPalMapObjectHatchingEggModel* Model);
+	void OnReflectWorkAmountDelegate_Event(class UPalWorkProgress* WorkProgress);
+	void OnRecievedChatMessageDelegate_Event(const struct FPalChatMessage& Message);
+	void OnPushedStackableUI_Event(const struct FGuid& pushedWidgetID);
+	void OnCreateMapObject(class UPalMapObjectModel* MapObjectModel, const struct FVector& Vector);
+	void OnChangeSprintDelegate_Event(class UPalCharacterMovementComponent* Component, bool IsInSprint);
+	void OnAncientHatcheryReflectWorkAmount(class UPalWorkProgress* WorkProgress);
+	void Lua_ModInitialized(class ModActor_1::AModActor_C** Mod_Actor);
+	void LoadPlayerSettings(const class FString& UId, bool Enabled);
+	void GivePlayerID(int32 ID, int32* PlayerId);
+	void GetPlayerStateFromLua(const class FString& PlayerUId, class APalPlayerState* PlayerState);
+	void GetPlayerManagerFromLua(class UPalPlayerManager* Player_Manager_0);
+	void GetPalFromPaldexID();
+	void GetObjectManagerFromLua(class UPalMapObjectManager* Object_Manager_0);
+	void GetLoggedInPlayerUId(const struct FGuid& ModelPlayerUId, struct FGuid* PlayerUId);
+	void GetIncubatorsOnLaunch();
+	void GetGameStateFromLua(class APalGameStateInGame* Game_State_0);
+	void GetEggOwnerUIdSingle(class UPalMapObjectHatchingEggModel* PalMapObjectHatchingEggModel, struct FGuid* OwnerUId);
+	void GetEggOwnerUIdMulti(class UPalMapObjectMultiHatchingEggModel* PalMapObjectMultiHatchingEggModel, int32 Index_0, struct FGuid* OwnerUId);
+	void GetBytes(uint8 Byte);
+	void GetBreedFarms();
+	void FinishInit(class APalCharacter* InCharacter);
+	void FindBreedFarmBelongTo(const struct FGuid& InstanceId);
 	void ExecuteUbergraph_ModActor(int32 EntryPoint);
+	void EggCleanUp(class UPalMapObjectModel* Target_Breed_Farm);
+	void ChatReceived(EPalChatCategory Category, const class FString& Sender, const class FString& Sender_Player_UId, const class FString& Message);
+	void BP_OnWidgetDeactivated_Event();
+	void AutoPickUpEgg(class UPalMapObjectModel* Target_Egg, const struct FGuid& PlayerUId_In, struct FGuid* PlayerUId, class UPalMapObjectModel** TargetBreedFarm, class UPalMapObjectModel** Egg);
+	void AutoHatch(const struct FGuid& PlayerUId);
 
 public:
 	static class UClass* StaticClass()

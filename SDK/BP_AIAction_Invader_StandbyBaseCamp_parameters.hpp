@@ -59,7 +59,7 @@ struct BP_AIAction_Invader_StandbyBaseCamp_C_Fun_Damage_AIResponse final
 {
 public:
 	struct FPalDamageResult                       DamageResult;                                      // 0x0000(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	class APalCharacter*                          tempTarget;                                        // 0x0060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          TempTarget;                                        // 0x0060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])

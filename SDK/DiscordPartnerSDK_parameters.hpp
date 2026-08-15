@@ -3565,7 +3565,7 @@ DUMPER7_ASSERTS_DiscordClient_SetActivityJoinWithApplicationCallback;
 struct DiscordClient_SetAecDump final
 {
 public:
-	bool                                          on;                                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          On;                                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_DiscordClient_SetAecDump;
 
@@ -3592,7 +3592,7 @@ DUMPER7_ASSERTS_DiscordClient_SetAuthorizeDeviceScreenClosedCallback;
 struct DiscordClient_SetAutomaticGainControl final
 {
 public:
-	bool                                          on;                                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          On;                                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_DiscordClient_SetAutomaticGainControl;
 
@@ -3610,7 +3610,7 @@ DUMPER7_ASSERTS_DiscordClient_SetDeviceChangeCallback;
 struct DiscordClient_SetEchoCancellation final
 {
 public:
-	bool                                          on;                                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          On;                                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_DiscordClient_SetEchoCancellation;
 
@@ -3776,7 +3776,7 @@ DUMPER7_ASSERTS_DiscordClient_SetNoAudioInputThreshold;
 struct DiscordClient_SetNoiseCancellation final
 {
 public:
-	bool                                          on;                                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          On;                                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_DiscordClient_SetNoiseCancellation;
 
@@ -3785,7 +3785,7 @@ DUMPER7_ASSERTS_DiscordClient_SetNoiseCancellation;
 struct DiscordClient_SetNoiseSuppression final
 {
 public:
-	bool                                          on;                                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          On;                                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_DiscordClient_SetNoiseSuppression;
 

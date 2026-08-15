@@ -286,6 +286,15 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalCommonCharacterSlot_C_OnUpdateReviveTimer_Binded;
 
+// Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.RegisterCharacterIconWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalCommonCharacterSlot_C_RegisterCharacterIconWidget final
+{
+public:
+	class UWBP_PalCharacterIconBase_C*            IconWidget;                                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalCommonCharacterSlot_C_RegisterCharacterIconWidget;
+
 // Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.SetForceExpeditionMark
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_PalCommonCharacterSlot_C_SetForceExpeditionMark final
@@ -314,15 +323,6 @@ public:
 	double                                        CallFunc_Greater_DoubleDouble_A_ImplicitCast;      // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_PalCommonCharacterSlot_C_UpdateStatusDetail;
-
-// Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.RegisterCharacterIconWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalCommonCharacterSlot_C_RegisterCharacterIconWidget final
-{
-public:
-	class UWBP_PalCharacterIconBase_C*            IconWidget;                                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalCommonCharacterSlot_C_RegisterCharacterIconWidget;
 
 }
 

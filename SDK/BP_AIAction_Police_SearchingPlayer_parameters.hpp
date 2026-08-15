@@ -46,24 +46,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_AIAction_Police_SearchingPlayer_C_ActionPause;
 
-// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.ActionResume
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_Police_SearchingPlayer_C_ActionResume final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_Police_SearchingPlayer_C_ActionResume;
-
-// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_Police_SearchingPlayer_C_ActionStart final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_Police_SearchingPlayer_C_ActionStart;
-
 // Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.ActionTick
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIAction_Police_SearchingPlayer_C_ActionTick final
@@ -166,39 +148,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_AIAction_Police_SearchingPlayer_C_MoveToLocation;
 
-// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.OnSightCheckAsyncCompleted
-// 0x0018 (0x0018 - 0x0000)
-struct BP_AIAction_Police_SearchingPlayer_C_OnSightCheckAsyncCompleted final
-{
-public:
-	bool                                          bIncludedPlayer;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIncludedAliveNPC;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIncludedEdibleDeadNPC;                            // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class APalCharacter*>                  InSightCharacters;                                 // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_BP_AIAction_Police_SearchingPlayer_C_OnSightCheckAsyncCompleted;
-
-// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.Sight Check and Response
-// 0x0003 (0x0003 - 0x0000)
-struct BP_AIAction_Police_SearchingPlayer_C_Sight_Check_and_Response final
-{
-public:
-	EPalAIResponseType                            Current;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          OverrideIsDamage;                                  // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ChangeNextAction;                                  // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_Police_SearchingPlayer_C_Sight_Check_and_Response;
-
-// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.SoundEvent
-// 0x0018 (0x0018 - 0x0000)
-struct BP_AIAction_Police_SearchingPlayer_C_SoundEvent final
-{
-public:
-	struct FVector                                EmitLocation;                                      // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_Police_SearchingPlayer_C_SoundEvent;
-
 // Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.TickMoveToTargetLocation
 // 0x0128 (0x0128 - 0x0000)
 struct BP_AIAction_Police_SearchingPlayer_C_TickMoveToTargetLocation final
@@ -235,6 +184,57 @@ public:
 	double                                        CallFunc_Add_DoubleDouble_B_ImplicitCast;          // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_Police_SearchingPlayer_C_TickMoveToTargetLocation;
+
+// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.ActionResume
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_Police_SearchingPlayer_C_ActionResume final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_Police_SearchingPlayer_C_ActionResume;
+
+// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.ActionStart
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_Police_SearchingPlayer_C_ActionStart final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_Police_SearchingPlayer_C_ActionStart;
+
+// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.OnSightCheckAsyncCompleted
+// 0x0018 (0x0018 - 0x0000)
+struct BP_AIAction_Police_SearchingPlayer_C_OnSightCheckAsyncCompleted final
+{
+public:
+	bool                                          bIncludedPlayer;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIncludedAliveNPC;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIncludedEdibleDeadNPC;                            // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class APalCharacter*>                  InSightCharacters;                                 // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_BP_AIAction_Police_SearchingPlayer_C_OnSightCheckAsyncCompleted;
+
+// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.Sight Check and Response
+// 0x0003 (0x0003 - 0x0000)
+struct BP_AIAction_Police_SearchingPlayer_C_Sight_Check_and_Response final
+{
+public:
+	EPalAIResponseType                            Current;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          OverrideIsDamage;                                  // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ChangeNextAction;                                  // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_Police_SearchingPlayer_C_Sight_Check_and_Response;
+
+// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.SoundEvent
+// 0x0018 (0x0018 - 0x0000)
+struct BP_AIAction_Police_SearchingPlayer_C_SoundEvent final
+{
+public:
+	struct FVector                                EmitLocation;                                      // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_Police_SearchingPlayer_C_SoundEvent;
 
 }
 

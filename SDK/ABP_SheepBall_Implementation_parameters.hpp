@@ -17,16 +17,34 @@
 namespace SDK::Params
 {
 
-// Function ABP_SheepBall_Implementation.ABP_SheepBall_Implementation_C.UpperOverride
-// 0x0030 (0x0030 - 0x0000)
-struct ABP_SheepBall_Implementation_C_UpperOverride final
+// Function ABP_SheepBall_Implementation.ABP_SheepBall_Implementation_C.AimingOverride
+// 0x0038 (0x0038 - 0x0000)
+struct ABP_SheepBall_Implementation_C_AimingOverride final
 {
 public:
-	struct FPoseLink                              NativePose;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              ActionPose;                                        // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              UpperOverride_0;                                   // 0x0020(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPoseLink                              DefaultPose;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FRotator                               AimRotator;                                        // 0x0010(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FPoseLink                              AimingOverride_0;                                  // 0x0028(0x0010)(Parm, OutParm, NoDestructor)
 };
-DUMPER7_ASSERTS_ABP_SheepBall_Implementation_C_UpperOverride;
+DUMPER7_ASSERTS_ABP_SheepBall_Implementation_C_AimingOverride;
+
+// Function ABP_SheepBall_Implementation.ABP_SheepBall_Implementation_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct ABP_SheepBall_Implementation_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ABP_SheepBall_Implementation_C_AnimGraph;
+
+// Function ABP_SheepBall_Implementation.ABP_SheepBall_Implementation_C.ExecuteUbergraph_ABP_SheepBall_Implementation
+// 0x0004 (0x0004 - 0x0000)
+struct ABP_SheepBall_Implementation_C_ExecuteUbergraph_ABP_SheepBall_Implementation final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_ABP_SheepBall_Implementation_C_ExecuteUbergraph_ABP_SheepBall_Implementation;
 
 // Function ABP_SheepBall_Implementation.ABP_SheepBall_Implementation_C.LookAtOverride
 // 0x0038 (0x0038 - 0x0000)
@@ -39,34 +57,16 @@ public:
 };
 DUMPER7_ASSERTS_ABP_SheepBall_Implementation_C_LookAtOverride;
 
-// Function ABP_SheepBall_Implementation.ABP_SheepBall_Implementation_C.ExecuteUbergraph_ABP_SheepBall_Implementation
-// 0x0004 (0x0004 - 0x0000)
-struct ABP_SheepBall_Implementation_C_ExecuteUbergraph_ABP_SheepBall_Implementation final
+// Function ABP_SheepBall_Implementation.ABP_SheepBall_Implementation_C.UpperOverride
+// 0x0030 (0x0030 - 0x0000)
+struct ABP_SheepBall_Implementation_C_UpperOverride final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPoseLink                              NativePose;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              ActionPose;                                        // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              UpperOverride_0;                                   // 0x0020(0x0010)(Parm, OutParm, NoDestructor)
 };
-DUMPER7_ASSERTS_ABP_SheepBall_Implementation_C_ExecuteUbergraph_ABP_SheepBall_Implementation;
-
-// Function ABP_SheepBall_Implementation.ABP_SheepBall_Implementation_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct ABP_SheepBall_Implementation_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-DUMPER7_ASSERTS_ABP_SheepBall_Implementation_C_AnimGraph;
-
-// Function ABP_SheepBall_Implementation.ABP_SheepBall_Implementation_C.AimingOverride
-// 0x0038 (0x0038 - 0x0000)
-struct ABP_SheepBall_Implementation_C_AimingOverride final
-{
-public:
-	struct FPoseLink                              DefaultPose;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FRotator                               AimRotator;                                        // 0x0010(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FPoseLink                              AimingOverride_0;                                  // 0x0028(0x0010)(Parm, OutParm, NoDestructor)
-};
-DUMPER7_ASSERTS_ABP_SheepBall_Implementation_C_AimingOverride;
+DUMPER7_ASSERTS_ABP_SheepBall_Implementation_C_UpperOverride;
 
 }
 

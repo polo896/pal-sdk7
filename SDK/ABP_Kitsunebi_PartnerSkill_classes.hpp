@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 
 
 namespace SDK
@@ -32,8 +32,8 @@ public:
 	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x03D0(0x0048)()
 
 public:
-	void ExecuteUbergraph_ABP_Kitsunebi_PartnerSkill(int32 EntryPoint);
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void ExecuteUbergraph_ABP_Kitsunebi_PartnerSkill(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

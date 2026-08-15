@@ -287,7 +287,7 @@ public:
 	class UPalIndividualCharacterParameter*       CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalInstanceID                         CallFunc_GetPalID_ReturnValue;                     // 0x0028(0x0030)(HasGetValueTypeHash)
+	struct FPalInstanceID                         CallFunc_GetPalId_ReturnValue;                     // 0x0028(0x0030)(HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0058(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UPalIndividualCharacterHandle* Handle)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0068(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalArenaInstanceModel*                 CallFunc_GetArenaInstanceModel_ReturnValue;        // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)

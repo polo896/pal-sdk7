@@ -34,15 +34,15 @@ public:
 	TMulticastInlineDelegate<void(int32 Selection)> OnSelectionChanged;                              // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void SetupSelections(const TArray<class FString>& Selections_0, const int32 Current_0);
-	void SelectByIndex(int32 Index_0);
-	void MoveRight();
-	void MoveLeft();
-	void GetCurrentIndex(int32* Index_0);
-	void ExecuteUbergraph_WBP_OptionSettings_ListContentLR(int32 EntryPoint);
-	void Destruct();
-	void BndEvt__WBP_OptionSettings_ListContentLR_WBP_OptionSettings_ListContentRArrow_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
 	void BndEvt__WBP_OptionSettings_ListContentLR_WBP_OptionSettings_ListContentLArrow_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void BndEvt__WBP_OptionSettings_ListContentLR_WBP_OptionSettings_ListContentRArrow_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void Destruct();
+	void ExecuteUbergraph_WBP_OptionSettings_ListContentLR(int32 EntryPoint);
+	void GetCurrentIndex(int32* Index_0);
+	void MoveLeft();
+	void MoveRight();
+	void SelectByIndex(int32 Index_0);
+	void SetupSelections(const TArray<class FString>& Selections_0, const int32 Current_0);
 
 public:
 	static class UClass* StaticClass()

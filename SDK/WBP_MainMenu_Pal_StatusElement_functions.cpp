@@ -17,71 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// EPalElementType                         ElementType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Pal_StatusElement_C::BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_MainMenu_Pal_StatusElement_C::Setup(EPalElementType ElementType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Pal_StatusElement_C", "BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_MainMenu_Pal_StatusElement_C", "Setup");
 
-	Params::WBP_MainMenu_Pal_StatusElement_C_BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_MainMenu_Pal_StatusElement_C_Setup Parms{};
 
-	Parms.Button = Button;
+	Parms.ElementType = ElementType;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_Pal_StatusElement_C::BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Pal_StatusElement_C", "BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_MainMenu_Pal_StatusElement_C_BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MainMenu_Pal_StatusElement_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Pal_StatusElement_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MainMenu_Pal_StatusElement_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Pal_StatusElement_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -105,21 +57,69 @@ void UWBP_MainMenu_Pal_StatusElement_C::ExecuteUbergraph_WBP_MainMenu_Pal_Status
 }
 
 
-// Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalElementType                         ElementType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_MainMenu_Pal_StatusElement_C::Setup(EPalElementType ElementType)
+void UWBP_MainMenu_Pal_StatusElement_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Pal_StatusElement_C", "Setup");
+		Func = Class->GetFunction("WBP_MainMenu_Pal_StatusElement_C", "Destruct");
 
-	Params::WBP_MainMenu_Pal_StatusElement_C_Setup Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.ElementType = ElementType;
+
+// Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MainMenu_Pal_StatusElement_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Pal_StatusElement_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Pal_StatusElement_C::BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Pal_StatusElement_C", "BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_MainMenu_Pal_StatusElement_C_BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Pal_StatusElement_C::BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Pal_StatusElement_C", "BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_MainMenu_Pal_StatusElement_C_BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

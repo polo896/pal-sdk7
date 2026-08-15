@@ -17,23 +17,19 @@
 namespace SDK::Params
 {
 
-// Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MainMenu_Pal_StatusElement_C_BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.Setup
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_MainMenu_Pal_StatusElement_C_Setup final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalElementType                               ElementType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetPalElementTypeName_outName;            // 0x0008(0x0018)()
+	TSoftObjectPtr<class UTexture2D>              CallFunc_Map_Find_Value;                           // 0x0020(0x0030)(HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_Pal_StatusElement_C_BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MainMenu_Pal_StatusElement_C_BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Pal_StatusElement_C_BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_MainMenu_Pal_StatusElement_C_Setup;
 
 // Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.ExecuteUbergraph_WBP_MainMenu_Pal_StatusElement
 // 0x0020 (0x0020 - 0x0000)
@@ -52,19 +48,23 @@ public:
 };
 DUMPER7_ASSERTS_WBP_MainMenu_Pal_StatusElement_C_ExecuteUbergraph_WBP_MainMenu_Pal_StatusElement;
 
-// Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.Setup
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_MainMenu_Pal_StatusElement_C_Setup final
+// Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MainMenu_Pal_StatusElement_C_BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	EPalElementType                               ElementType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetPalElementTypeName_outName;            // 0x0008(0x0018)()
-	TSoftObjectPtr<class UTexture2D>              CallFunc_Map_Find_Value;                           // 0x0020(0x0030)(HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_Pal_StatusElement_C_Setup;
+DUMPER7_ASSERTS_WBP_MainMenu_Pal_StatusElement_C_BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_MainMenu_Pal_StatusElement.WBP_MainMenu_Pal_StatusElement_C.BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MainMenu_Pal_StatusElement_C_BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Pal_StatusElement_C_BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

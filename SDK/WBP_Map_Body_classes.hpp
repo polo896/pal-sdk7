@@ -90,6 +90,7 @@ public:
 	void Update_Player_Icon();
 	void Update_Map_Zoom_Gamepad(double DeltaTime, bool* bIsUpdated);
 	void Update_Map_Transform(double DeltaTime);
+	void Update_Map_Icons();
 	void Update_Map_Icon(class UWidget* Icon);
 	void Update_Icon_Visibility(class UWBP_WorldMap_IconBase_NoDesign_C* Icon, bool* Visible);
 	void Try_Append_Quest_Info(class UWidget* TargetIcon);
@@ -106,7 +107,6 @@ public:
 	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
 	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void OnLoaded_D35D903A4572C11561B776A766C7733D(class UObject* Loaded);
 	struct FEventReply OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
@@ -134,7 +134,7 @@ public:
 	void Adjust_Scroll_Local_Player_Position();
 	void Add_Icon_By_Location(class UWBP_WorldMap_IconBase_NoDesign_C* Widget, const struct FVector& WorldLocation, bool IgnoreMask, bool ToPriority, bool* added);
 	void Add_Icon(class UWBP_WorldMap_IconBase_NoDesign_C* IconWidget, bool ToPriority, bool* added);
-	void Update_Map_Icons();
+	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 
 public:
 	static class UClass* StaticClass()

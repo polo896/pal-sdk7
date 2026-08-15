@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AIAction_CombatPal_RaidBossServant.BP_AIAction_CombatPal_RaidBossServant_C
-// 0x0008 (0x0230 - 0x0228)
+// 0x0008 (0x0240 - 0x0238)
 class UBP_AIAction_CombatPal_RaidBossServant_C final : public UBP_AIAction_CombatPal_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_CombatPal_RaidBossServant_C; // 0x0228(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_CombatPal_RaidBossServant_C; // 0x0238(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ActionStart(class APawn* ControlledPawn);

@@ -21,7 +21,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_PalActionStepBase.BP_PalActionStepBase_C
 // 0x0090 (0x01F0 - 0x0160)
-class UBP_PalActionStepBase_C final : public UPalActionBase
+class UBP_PalActionStepBase_C : public UPalActionBase
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0160(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

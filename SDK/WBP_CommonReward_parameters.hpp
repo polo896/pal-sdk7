@@ -11,21 +11,30 @@
 #include "Basic.hpp"
 
 #include "Pal_structs.hpp"
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function WBP_CommonReward.WBP_CommonReward_C.ChangeColor
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CommonReward_C_ChangeColor final
+// Function WBP_CommonReward.WBP_CommonReward_C.SetInfo
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_CommonReward_C_SetInfo final
 {
 public:
-	EPalUIRewardDisplayType                       DisplayType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalUICommonRewardDisplayData          Info;                                              // 0x0000(0x0058)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-DUMPER7_ASSERTS_WBP_CommonReward_C_ChangeColor;
+DUMPER7_ASSERTS_WBP_CommonReward_C_SetInfo;
+
+// Function WBP_CommonReward.WBP_CommonReward_C.QueueRewardInfo
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_CommonReward_C_QueueRewardInfo final
+{
+public:
+	struct FPalUICommonRewardDisplayData          Info;                                              // 0x0000(0x0058)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_CommonReward_C_QueueRewardInfo;
 
 // Function WBP_CommonReward.WBP_CommonReward_C.ExecuteUbergraph_WBP_CommonReward
 // 0x0220 (0x0220 - 0x0000)
@@ -78,23 +87,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_CommonReward_C_ExecuteUbergraph_WBP_CommonReward;
 
-// Function WBP_CommonReward.WBP_CommonReward_C.QueueRewardInfo
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_CommonReward_C_QueueRewardInfo final
+// Function WBP_CommonReward.WBP_CommonReward_C.ChangeColor
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CommonReward_C_ChangeColor final
 {
 public:
-	struct FPalUICommonRewardDisplayData          Info;                                              // 0x0000(0x0058)(BlueprintVisible, BlueprintReadOnly, Parm)
+	EPalUIRewardDisplayType                       DisplayType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CommonReward_C_QueueRewardInfo;
-
-// Function WBP_CommonReward.WBP_CommonReward_C.SetInfo
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_CommonReward_C_SetInfo final
-{
-public:
-	struct FPalUICommonRewardDisplayData          Info;                                              // 0x0000(0x0058)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_CommonReward_C_SetInfo;
+DUMPER7_ASSERTS_WBP_CommonReward_C_ChangeColor;
 
 }
 

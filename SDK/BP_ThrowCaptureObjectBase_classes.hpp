@@ -25,9 +25,9 @@ public:
 	int32                                         CaptureLevel;                                      // 0x0438(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void GetBodyClass(class UClass** bodyClass);
-	void GetCaptureLevel(int32* Level);
 	void SetCaptureLevel(int32 Level);
+	void GetCaptureLevel(int32* Level);
+	void GetBodyClass(class UClass** bodyClass);
 
 public:
 	static class UClass* StaticClass()

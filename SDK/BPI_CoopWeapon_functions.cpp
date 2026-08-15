@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BPI_CoopWeapon.BPI_CoopWeapon_C.SetWeaponDamage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Damageam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void IBPI_CoopWeapon_C::SetWeaponDamage(int32 Damageam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_CoopWeapon_C", "SetWeaponDamage");
-
-	Params::BPI_CoopWeapon_C_SetWeaponDamage Parms{};
-
-	Parms.Damageam = Damageam;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-}
-
-
 // Function BPI_CoopWeapon.BPI_CoopWeapon_C.SetAttacker
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -52,6 +32,26 @@ void IBPI_CoopWeapon_C::SetAttacker(class AActor* AttackerPal)
 	Params::BPI_CoopWeapon_C_SetAttacker Parms{};
 
 	Parms.AttackerPal = AttackerPal;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPI_CoopWeapon.BPI_CoopWeapon_C.SetWeaponDamage
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Damageam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void IBPI_CoopWeapon_C::SetWeaponDamage(int32 Damageam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_CoopWeapon_C", "SetWeaponDamage");
+
+	Params::BPI_CoopWeapon_C_SetWeaponDamage Parms{};
+
+	Parms.Damageam = Damageam;
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 }

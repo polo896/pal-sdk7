@@ -60,8 +60,9 @@ public:
 	void ChangeAimTarget();
 	void ChangeMoveDirection();
 	void ChangeNextWeapon();
-	void CheckPlayerDistanceForBGM();
+	void Check_Player_Distance_for_BGM();
 	void ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode(int32 EntryPoint);
+	void Is_Valid_BGMTarget(class AActor* TargetActor, bool* Valid);
 	void Is_Valid_Current_Target(bool* Valid);
 	void IsNearTarget2D(double Distance, bool* Near);
 	void OnChildActionFinished(class UPawnAction* action, EPawnActionResult WithResult);

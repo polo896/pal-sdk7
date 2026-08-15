@@ -58,14 +58,14 @@ public:
 };
 DUMPER7_ASSERTS_BP_ActionWindCutter_C_OnSpawnEffect;
 
-// Function BP_ActionWindCutter.BP_ActionWindCutter_C.test
+// Function BP_ActionWindCutter.BP_ActionWindCutter_C.TEST
 // 0x0008 (0x0008 - 0x0000)
-struct BP_ActionWindCutter_C_test final
+struct BP_ActionWindCutter_C_TEST final
 {
 public:
 	class AActor*                                 Bullet;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ActionWindCutter_C_test;
+DUMPER7_ASSERTS_BP_ActionWindCutter_C_TEST;
 
 }
 

@@ -16,24 +16,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_OptionSettings_TabButton.WBP_OptionSettings_TabButton_C.SetTabActive
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_OptionSettings_TabButton_C_SetTabActive final
+// Function WBP_OptionSettings_TabButton.WBP_OptionSettings_TabButton_C.BndEvt__WBP_OptionSettings_TabButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_OptionSettings_TabButton_C_BndEvt__WBP_OptionSettings_TabButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	bool                                          Active;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_OptionSettings_TabButton_C_SetTabActive;
-
-// Function WBP_OptionSettings_TabButton.WBP_OptionSettings_TabButton_C.SetName
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_OptionSettings_TabButton_C_SetName final
-{
-public:
-	class FText                                   Name_0;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	int32                                         Param_Index_0;                                     // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_TabButton_C_SetName;
+DUMPER7_ASSERTS_WBP_OptionSettings_TabButton_C_BndEvt__WBP_OptionSettings_TabButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
 // Function WBP_OptionSettings_TabButton.WBP_OptionSettings_TabButton_C.ExecuteUbergraph_WBP_OptionSettings_TabButton
 // 0x0038 (0x0038 - 0x0000)
@@ -56,14 +46,24 @@ public:
 };
 DUMPER7_ASSERTS_WBP_OptionSettings_TabButton_C_ExecuteUbergraph_WBP_OptionSettings_TabButton;
 
-// Function WBP_OptionSettings_TabButton.WBP_OptionSettings_TabButton_C.BndEvt__WBP_OptionSettings_TabButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_OptionSettings_TabButton_C_BndEvt__WBP_OptionSettings_TabButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_OptionSettings_TabButton.WBP_OptionSettings_TabButton_C.SetName
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_OptionSettings_TabButton_C_SetName final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Name_0;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         Param_Index_0;                                     // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_OptionSettings_TabButton_C_BndEvt__WBP_OptionSettings_TabButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_OptionSettings_TabButton_C_SetName;
+
+// Function WBP_OptionSettings_TabButton.WBP_OptionSettings_TabButton_C.SetTabActive
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_OptionSettings_TabButton_C_SetTabActive final
+{
+public:
+	bool                                          Active;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_TabButton_C_SetTabActive;
 
 }
 

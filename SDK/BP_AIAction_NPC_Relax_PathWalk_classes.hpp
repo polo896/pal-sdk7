@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "F_NPC_PathWalkArray_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "BP_AIAction_NPC_RelaxBase_classes.hpp"
+#include "F_NPC_PathWalkArray_structs.hpp"
 
 
 namespace SDK
@@ -40,17 +40,17 @@ public:
 	bool                                          IsAlreadyStuck;                                    // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionPause(class APawn* ControlledPawn);
 	void ActionPostTick(class APawn* ControlledPawn, float DeltaSeconds);
+	void ActionResume(class APawn* ControlledPawn);
+	void ActionStart(class APawn* ControlledPawn);
 	void ExecuteUbergraph_BP_AIAction_NPC_Relax_PathWalk(int32 EntryPoint);
 	void OnStuck();
 	void OnTargetPointUpdateStart();
 	void PlayWaitAction();
 	void SetupWalkPath(const struct FF_NPC_PathWalkArray& PathInfo);
 	void UpdateNextTargetPoint();
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
-	void ActionPause(class APawn* ControlledPawn);
-	void ActionResume(class APawn* ControlledPawn);
-	void ActionStart(class APawn* ControlledPawn);
 
 public:
 	static class UClass* StaticClass()

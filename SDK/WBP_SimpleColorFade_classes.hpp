@@ -28,16 +28,16 @@ public:
 	class UImage*                                 Image_14;                                          // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_FadeIn();
-	void AnmEvent_FadeOut();
-	void Construct();
-	void ExecuteUbergraph_WBP_SimpleColorFade(int32 EntryPoint);
-	void FadeIn();
-	void FadeOut();
-	void Finished_212EE08E4C1C909EB4116D9853386FC5();
-	void Finished_DE82E8EE4E2FF74CE3788F9F262A873A();
-	void Setup_ForOverride();
 	void ToggleVisibility(bool Visiable);
+	void Setup_ForOverride();
+	void Finished_DE82E8EE4E2FF74CE3788F9F262A873A();
+	void Finished_212EE08E4C1C909EB4116D9853386FC5();
+	void FadeOut();
+	void FadeIn();
+	void ExecuteUbergraph_WBP_SimpleColorFade(int32 EntryPoint);
+	void Construct();
+	void AnmEvent_FadeOut();
+	void AnmEvent_FadeIn();
 
 public:
 	static class UClass* StaticClass()

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "BP_AIAction_CanCombatBase_classes.hpp"
 #include "AIModule_structs.hpp"
+#include "BP_AIAction_CanCombatBase_classes.hpp"
 
 
 namespace SDK
@@ -41,6 +41,8 @@ public:
 
 public:
 	void ActionAbort(class APawn* ControlledPawn);
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionPause(class APawn* ControlledPawn);
 	void CancelEncountAction();
 	void CheckAlert();
 	void EncountAndMove();
@@ -51,8 +53,6 @@ public:
 	void SetMoveAIAction();
 	void StopTurnAction();
 	void TurnAndEncount();
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
-	void ActionPause(class APawn* ControlledPawn);
 	void ActionResume(class APawn* ControlledPawn);
 	void ActionStart(class APawn* ControlledPawn);
 

@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
 #include "F_PalPlayerUIAimVisibleFlagContainer_structs.hpp"
+#include "UMG_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK

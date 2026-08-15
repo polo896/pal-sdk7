@@ -17,13 +17,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SettingsRow_Keybind.WBP_SettingsRow_Keybind_C
-// 0x0018 (0x0290 - 0x0278)
+// 0x0028 (0x02A0 - 0x0278)
 class UWBP_SettingsRow_Keybind_C final : public UUserWidget
 {
 public:
 	class UInputKeySelector*                      KeyInput;                                          // 0x0278(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             Label;                                             // 0x0280(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TextBlock;                                         // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FString                                 SettingKey;                                        // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

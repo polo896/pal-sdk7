@@ -17,6 +17,99 @@
 namespace SDK::Params
 {
 
+// Function AudioMixer.SynthComponent.SetLowPassFilterEnabled
+// 0x0001 (0x0001 - 0x0000)
+struct SynthComponent_SetLowPassFilterEnabled final
+{
+public:
+	bool                                          InLowPassFilterEnabled;                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_SynthComponent_SetLowPassFilterEnabled;
+
+// Function AudioMixer.SynthComponent.SetLowPassFilterFrequency
+// 0x0004 (0x0004 - 0x0000)
+struct SynthComponent_SetLowPassFilterFrequency final
+{
+public:
+	float                                         InLowPassFilterFrequency;                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_SynthComponent_SetLowPassFilterFrequency;
+
+// Function AudioMixer.SynthComponent.SetOutputToBusOnly
+// 0x0001 (0x0001 - 0x0000)
+struct SynthComponent_SetOutputToBusOnly final
+{
+public:
+	bool                                          bInOutputToBusOnly;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_SynthComponent_SetOutputToBusOnly;
+
+// Function AudioMixer.SynthComponent.SetSubmixSend
+// 0x0010 (0x0010 - 0x0000)
+struct SynthComponent_SetSubmixSend final
+{
+public:
+	class USoundSubmixBase*                       Submix;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SendLevel;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_SynthComponent_SetSubmixSend;
+
+// Function AudioMixer.SynthComponent.SetVolumeMultiplier
+// 0x0004 (0x0004 - 0x0000)
+struct SynthComponent_SetVolumeMultiplier final
+{
+public:
+	float                                         VolumeMultiplier;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_SynthComponent_SetVolumeMultiplier;
+
+// Function AudioMixer.SynthComponent.AdjustVolume
+// 0x000C (0x000C - 0x0000)
+struct SynthComponent_AdjustVolume final
+{
+public:
+	float                                         AdjustVolumeDuration;                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AdjustVolumeLevel;                                 // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAudioFaderCurve                              FadeCurve;                                         // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_SynthComponent_AdjustVolume;
+
+// Function AudioMixer.SynthComponent.FadeIn
+// 0x0010 (0x0010 - 0x0000)
+struct SynthComponent_FadeIn final
+{
+public:
+	float                                         FadeInDuration;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FadeVolumeLevel;                                   // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StartTime;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAudioFaderCurve                              FadeCurve;                                         // 0x000C(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_SynthComponent_FadeIn;
+
+// Function AudioMixer.SynthComponent.FadeOut
+// 0x000C (0x000C - 0x0000)
+struct SynthComponent_FadeOut final
+{
+public:
+	float                                         FadeOutDuration;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FadeVolumeLevel;                                   // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAudioFaderCurve                              FadeCurve;                                         // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_SynthComponent_FadeOut;
+
+// Function AudioMixer.SynthComponent.IsPlaying
+// 0x0001 (0x0001 - 0x0000)
+struct SynthComponent_IsPlaying final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_SynthComponent_IsPlaying;
+
 // Function AudioMixer.AudioMixerBlueprintLibrary.AddMasterSubmixEffect
 // 0x0010 (0x0010 - 0x0000)
 struct AudioMixerBlueprintLibrary_AddMasterSubmixEffect final
@@ -460,108 +553,6 @@ public:
 };
 DUMPER7_ASSERTS_AudioMixerBlueprintLibrary_TrimAudioCache;
 
-// Function AudioMixer.SynthComponent.SetLowPassFilterEnabled
-// 0x0001 (0x0001 - 0x0000)
-struct SynthComponent_SetLowPassFilterEnabled final
-{
-public:
-	bool                                          InLowPassFilterEnabled;                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_SynthComponent_SetLowPassFilterEnabled;
-
-// Function AudioMixer.SynthComponent.SetLowPassFilterFrequency
-// 0x0004 (0x0004 - 0x0000)
-struct SynthComponent_SetLowPassFilterFrequency final
-{
-public:
-	float                                         InLowPassFilterFrequency;                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_SynthComponent_SetLowPassFilterFrequency;
-
-// Function AudioMixer.SynthComponent.SetOutputToBusOnly
-// 0x0001 (0x0001 - 0x0000)
-struct SynthComponent_SetOutputToBusOnly final
-{
-public:
-	bool                                          bInOutputToBusOnly;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_SynthComponent_SetOutputToBusOnly;
-
-// Function AudioMixer.SynthComponent.SetSubmixSend
-// 0x0010 (0x0010 - 0x0000)
-struct SynthComponent_SetSubmixSend final
-{
-public:
-	class USoundSubmixBase*                       Submix;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SendLevel;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_SynthComponent_SetSubmixSend;
-
-// Function AudioMixer.SynthComponent.SetVolumeMultiplier
-// 0x0004 (0x0004 - 0x0000)
-struct SynthComponent_SetVolumeMultiplier final
-{
-public:
-	float                                         VolumeMultiplier;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_SynthComponent_SetVolumeMultiplier;
-
-// Function AudioMixer.SynthComponent.AdjustVolume
-// 0x000C (0x000C - 0x0000)
-struct SynthComponent_AdjustVolume final
-{
-public:
-	float                                         AdjustVolumeDuration;                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AdjustVolumeLevel;                                 // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAudioFaderCurve                              FadeCurve;                                         // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_SynthComponent_AdjustVolume;
-
-// Function AudioMixer.SynthComponent.FadeIn
-// 0x0010 (0x0010 - 0x0000)
-struct SynthComponent_FadeIn final
-{
-public:
-	float                                         FadeInDuration;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FadeVolumeLevel;                                   // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StartTime;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAudioFaderCurve                              FadeCurve;                                         // 0x000C(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_SynthComponent_FadeIn;
-
-// Function AudioMixer.SynthComponent.FadeOut
-// 0x000C (0x000C - 0x0000)
-struct SynthComponent_FadeOut final
-{
-public:
-	float                                         FadeOutDuration;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FadeVolumeLevel;                                   // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAudioFaderCurve                              FadeCurve;                                         // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_SynthComponent_FadeOut;
-
-// Function AudioMixer.SynthComponent.IsPlaying
-// 0x0001 (0x0001 - 0x0000)
-struct SynthComponent_IsPlaying final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_SynthComponent_IsPlaying;
-
-// Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings
-// 0x0010 (0x0010 - 0x0000)
-struct SubmixEffectSubmixEQPreset_SetSettings final
-{
-public:
-	struct FSubmixEffectSubmixEQSettings          InSettings;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_SubmixEffectSubmixEQPreset_SetSettings;
-
 // Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetAudioBus
 // 0x0008 (0x0008 - 0x0000)
 struct SubmixEffectDynamicsProcessorPreset_SetAudioBus final
@@ -588,6 +579,15 @@ public:
 	struct FSubmixEffectDynamicsProcessorSettings Settings_0;                                        // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_SubmixEffectDynamicsProcessorPreset_SetSettings;
+
+// Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings
+// 0x0010 (0x0010 - 0x0000)
+struct SubmixEffectSubmixEQPreset_SetSettings final
+{
+public:
+	struct FSubmixEffectSubmixEQSettings          InSettings;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_SubmixEffectSubmixEQPreset_SetSettings;
 
 // Function AudioMixer.SubmixEffectReverbPreset.SetSettings
 // 0x0040 (0x0040 - 0x0000)

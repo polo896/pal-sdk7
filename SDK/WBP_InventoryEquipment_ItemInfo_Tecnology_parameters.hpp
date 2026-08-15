@@ -16,6 +16,36 @@
 namespace SDK::Params
 {
 
+// Function WBP_InventoryEquipment_ItemInfo_Tecnology.WBP_InventoryEquipment_ItemInfo_Tecnology_C.SetDetails
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_InventoryEquipment_ItemInfo_Tecnology_C_SetDetails final
+{
+public:
+	TArray<struct FPalStaticItemIdAndNum>         MatDetail;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	bool                                          WithStock;                                         // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ItemInfo_Tecnology_C_SetDetails;
+
+// Function WBP_InventoryEquipment_ItemInfo_Tecnology.WBP_InventoryEquipment_ItemInfo_Tecnology_C.GetStockNum
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_InventoryEquipment_ItemInfo_Tecnology_C_GetStockNum final
+{
+public:
+	class FName                                   StaticItemId;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          WithStock;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Stock;                                             // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm)
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalStaticItemIdAndNum>         CallFunc_CollectLocalPlayerControllableItemInfos_OutItemInfos; // 0x0028(0x0010)(ReferenceParm)
+	struct FPalStaticItemIdAndNum                 CallFunc_Array_Get_Item;                           // 0x0038(0x000C)(NoDestructor)
+	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue_1;                  // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ItemInfo_Tecnology_C_GetStockNum;
+
 // Function WBP_InventoryEquipment_ItemInfo_Tecnology.WBP_InventoryEquipment_ItemInfo_Tecnology_C.ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Tecnology
 // 0x0098 (0x0098 - 0x0000)
 struct WBP_InventoryEquipment_ItemInfo_Tecnology_C_ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Tecnology final
@@ -47,36 +77,6 @@ public:
 	class UPalStaticItemDataBase*                 CallFunc_GetStaticItemData_ReturnValue;            // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_InventoryEquipment_ItemInfo_Tecnology_C_ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Tecnology;
-
-// Function WBP_InventoryEquipment_ItemInfo_Tecnology.WBP_InventoryEquipment_ItemInfo_Tecnology_C.GetStockNum
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_InventoryEquipment_ItemInfo_Tecnology_C_GetStockNum final
-{
-public:
-	class FName                                   StaticItemId;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          WithStock;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Stock;                                             // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm)
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalStaticItemIdAndNum>         CallFunc_CollectLocalPlayerControllableItemInfos_OutItemInfos; // 0x0028(0x0010)(ReferenceParm)
-	struct FPalStaticItemIdAndNum                 CallFunc_Array_Get_Item;                           // 0x0038(0x000C)(NoDestructor)
-	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_SelectInt_ReturnValue_1;                  // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ItemInfo_Tecnology_C_GetStockNum;
-
-// Function WBP_InventoryEquipment_ItemInfo_Tecnology.WBP_InventoryEquipment_ItemInfo_Tecnology_C.SetDetails
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_InventoryEquipment_ItemInfo_Tecnology_C_SetDetails final
-{
-public:
-	TArray<struct FPalStaticItemIdAndNum>         MatDetail;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	bool                                          WithStock;                                         // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ItemInfo_Tecnology_C_SetDetails;
 
 }
 

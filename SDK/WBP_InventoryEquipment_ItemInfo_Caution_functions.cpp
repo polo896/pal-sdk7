@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_InventoryEquipment_ItemInfo_Caution.WBP_InventoryEquipment_ItemInfo_Caution_C.ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Caution
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_InventoryEquipment_ItemInfo_Caution_C::ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Caution(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InventoryEquipment_ItemInfo_Caution_C", "ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Caution");
-
-	Params::WBP_InventoryEquipment_ItemInfo_Caution_C_ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Caution Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_InventoryEquipment_ItemInfo_Caution.WBP_InventoryEquipment_ItemInfo_Caution_C.SetRequireName
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -52,6 +32,26 @@ void UWBP_InventoryEquipment_ItemInfo_Caution_C::SetRequireName(const class FTex
 	Params::WBP_InventoryEquipment_ItemInfo_Caution_C_SetRequireName Parms{};
 
 	Parms.Name_0 = std::move(Name_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_InventoryEquipment_ItemInfo_Caution.WBP_InventoryEquipment_ItemInfo_Caution_C.ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Caution
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InventoryEquipment_ItemInfo_Caution_C::ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Caution(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InventoryEquipment_ItemInfo_Caution_C", "ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Caution");
+
+	Params::WBP_InventoryEquipment_ItemInfo_Caution_C_ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Caution Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

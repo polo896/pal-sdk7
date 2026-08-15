@@ -32,18 +32,18 @@ public:
 	bool                                          ProgressDisplay;                                   // 0x0484(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_FadeIn();
-	void AnmEvent_FadeOut();
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_InLevelLoadingFade(int32 EntryPoint);
-	void FadeIn();
-	void FadeOut();
-	void Finished_50648C2D41952F044CFD8F9629D4027A();
-	void Finished_BCA2D9DB46EBD8925174F885E2A96DAA();
-	void Setup(class UPalHUDDispatchParameter_FadeWidget* FadeParameter_0);
-	void Setup_ForOverride();
 	void UpdateProgressStep(int32 AddStep, int32 MaxStep);
+	void Setup_ForOverride();
+	void Setup(class UPalHUDDispatchParameter_FadeWidget* FadeParameter_0);
+	void Finished_BCA2D9DB46EBD8925174F885E2A96DAA();
+	void Finished_50648C2D41952F044CFD8F9629D4027A();
+	void FadeOut();
+	void FadeIn();
+	void ExecuteUbergraph_WBP_InLevelLoadingFade(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void AnmEvent_FadeOut();
+	void AnmEvent_FadeIn();
 
 public:
 	static class UClass* StaticClass()

@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// Function WBP_InventoryEquipment_ItemInfo_Caution.WBP_InventoryEquipment_ItemInfo_Caution_C.SetRequireName
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_InventoryEquipment_ItemInfo_Caution_C_SetRequireName final
+{
+public:
+	class FText                                   Name_0;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ItemInfo_Caution_C_SetRequireName;
+
 // Function WBP_InventoryEquipment_ItemInfo_Caution.WBP_InventoryEquipment_ItemInfo_Caution_C.ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Caution
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_InventoryEquipment_ItemInfo_Caution_C_ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Caution final
@@ -24,15 +33,6 @@ public:
 	class FText                                   K2Node_CustomEvent_Name;                           // 0x0008(0x0018)()
 };
 DUMPER7_ASSERTS_WBP_InventoryEquipment_ItemInfo_Caution_C_ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Caution;
-
-// Function WBP_InventoryEquipment_ItemInfo_Caution.WBP_InventoryEquipment_ItemInfo_Caution_C.SetRequireName
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_InventoryEquipment_ItemInfo_Caution_C_SetRequireName final
-{
-public:
-	class FText                                   Name_0;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ItemInfo_Caution_C_SetRequireName;
 
 }
 

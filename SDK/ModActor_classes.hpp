@@ -10,90 +10,36 @@
 
 #include "Basic.hpp"
 
-#include "YetAnotherMinimapKeymap_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "YetAnotherMinimapSettings_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass ModActor.ModActor_C
-// 0x02E0 (0x0570 - 0x0290)
+// 0x0068 (0x02F8 - 0x0290)
 class ModActor::AModActor_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0298(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TMap<class AActor*, class UPaperSpriteComponent*> ActorMap;                                      // 0x02A0(0x0050)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, ContainsInstancedReference)
-	struct FTimerHandle                           ReadyForHUDTimer;                                  // 0x02F0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                          Position_Mode;                                     // 0x02F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Hidden;                                            // 0x02F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2FA[0x6];                                      // 0x02FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FYetAnotherMinimapSettings             Settings;                                          // 0x0300(0x0030)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FYetAnotherMinimapKeymap               KeySettings;                                       // 0x0330(0x0168)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	class FString                                 ModAuthor;                                         // 0x0498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class FString                                 ModName;                                           // 0x04A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class FString                                 ModDescription;                                    // 0x04B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class FString                                 ModVersion;                                        // 0x04C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class FString                                 ModLocation;                                       // 0x04D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	bool                                          UpKeyDown;                                         // 0x04E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          DownKeyDown;                                       // 0x04E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          LeftKeyDown;                                       // 0x04EA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          RightKeyDown;                                      // 0x04EB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ShiftKeyDown;                                      // 0x04EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CtrlKeyDown;                                       // 0x04ED(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          AltKeyDown;                                        // 0x04EE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          NumPlusDown;                                       // 0x04EF(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          NumMinusDown;                                      // 0x04F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4F1[0x7];                                      // 0x04F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneCaptureComponent2D*               SzeneCaptureComponent;                             // 0x04F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TMap<class FName, class FString>              AssetLoading;                                      // 0x0500(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   PlayerPosition;                                    // 0x0550(0x0018)(Edit, BlueprintVisible)
-	bool                                          InBase;                                            // 0x0568(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ManuallyHidden;                                    // 0x0569(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          TitleScreenButtonShown;                            // 0x056A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           GetMapTimerHandle;                                 // 0x02A0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Map_Base_C*                        WBP_Map_Base;                                      // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FString                                 Strings;                                           // 0x02B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	bool                                          FastTravelToNotDiscoveredPoints;                   // 0x02C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C1[0x7];                                      // 0x02C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGuid>                          PointsGuids;                                       // 0x02C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FString                                 strings2;                                          // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class FString                                 ModAuthor;                                         // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
-	void UpdateMapPosition();
-	void ToggleSuperZoom();
-	void ToggleMapPressDetection();
-	void SetupModConfigBindings(const class FString& Unique_Mod_Config_Name, const class FString& On_Saved_Callback_Name, const class FString& On_Updated_Callback_Name);
-	void SetupBindingsForModConfig();
-	void SetKeymapFromJson(const struct FJsonObjectWrapper& Json);
-	void SetConfigFromJson(const struct FJsonObjectWrapper& Json);
-	void ScanTypes();
-	void ScanAndMarkType(class UClass* actorClass, class UTexture2D* Texture);
-	void ScanAndMarkRelic();
-	void ScanAndMarkPal();
-	void ScanAndMarkNote();
-	void ScanAndMarkDungeon(class UTexture2D* Texture);
-	void SaveConfigUpdate();
-	void ReceiveTick(float DeltaSeconds);
-	void ReadyForHUD();
-	void PrintToModLoader(const class FString& Message);
-	void PostBeginPlay();
-	void OnUpdatedModConfig();
-	void OnSavedModConfig();
-	void MoveMapKeyDetection();
-	void Map_Move_Mode_Press_Detection();
-	void LoadConfigFromFile(struct FJsonObjectWrapper* ConfigAsJson);
-	void IsPlayerInGame(bool* IsPlayerInGame_0);
-	bool IsHotkeyMappingReleased(const struct FInputActionKeyMapping& InputActionKeyMapping);
-	bool IsHotkeyMappingPressed(const struct FInputActionKeyMapping& InputActionKeyMapping);
-	void InitConfig();
-	void GetFilepath(struct FFilePath* File_Path);
+	void ReceiveBeginPlay();
+	void MakePointsGUIDs();
+	void GetMap2();
 	void ExecuteUbergraph_ModActor(int32 EntryPoint);
-	void DebugPrint(const class FString& Message);
-	void CreateHUD(class APlayerController* self2);
-	void Create_Capture_Screen_Component_2D(class APlayerController* PC);
-	void CheckTitleScreen();
-	void CheckShiftDown();
-	void CheckReadyForHUD();
-	void CheckCtrlDown();
-	void CheckAltDown();
-	void BaseEnteredDetection();
+	void DoUnlockFlag();
 
 public:
 	static class UClass* StaticClass()

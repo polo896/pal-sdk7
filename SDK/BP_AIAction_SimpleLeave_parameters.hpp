@@ -14,16 +14,6 @@
 namespace SDK::Params
 {
 
-// Function BP_AIAction_SimpleLeave.BP_AIAction_SimpleLeave_C.ActionTick
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_SimpleLeave_C_ActionTick final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         DeltaSeconds;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_SimpleLeave_C_ActionTick;
-
 // Function BP_AIAction_SimpleLeave.BP_AIAction_SimpleLeave_C.ExecuteUbergraph_BP_AIAction_SimpleLeave
 // 0x0028 (0x0028 - 0x0000)
 struct BP_AIAction_SimpleLeave_C_ExecuteUbergraph_BP_AIAction_SimpleLeave final
@@ -38,6 +28,16 @@ public:
 	bool                                          CallFunc_IsFalling_ReturnValue;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_SimpleLeave_C_ExecuteUbergraph_BP_AIAction_SimpleLeave;
+
+// Function BP_AIAction_SimpleLeave.BP_AIAction_SimpleLeave_C.ActionTick
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_SimpleLeave_C_ActionTick final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaSeconds;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_SimpleLeave_C_ActionTick;
 
 }
 

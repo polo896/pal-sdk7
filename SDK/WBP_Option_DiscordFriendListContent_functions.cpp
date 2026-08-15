@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_Option_DiscordFriendListContent.WBP_Option_DiscordFriendListContent_C.ExecuteUbergraph_WBP_Option_DiscordFriendListContent
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Option_DiscordFriendListContent.WBP_Option_DiscordFriendListContent_C.CallOnClick
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Option_DiscordFriendListContent_C::ExecuteUbergraph_WBP_Option_DiscordFriendListContent(int32 EntryPoint)
+void UWBP_Option_DiscordFriendListContent_C::CallOnClick(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_DiscordFriendListContent_C", "ExecuteUbergraph_WBP_Option_DiscordFriendListContent");
+		Func = Class->GetFunction("WBP_Option_DiscordFriendListContent_C", "CallOnClick");
 
-	Params::WBP_Option_DiscordFriendListContent_C_ExecuteUbergraph_WBP_Option_DiscordFriendListContent Parms{};
+	Params::WBP_Option_DiscordFriendListContent_C_CallOnClick Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -51,21 +51,21 @@ void UWBP_Option_DiscordFriendListContent_C::Construct()
 }
 
 
-// Function WBP_Option_DiscordFriendListContent.WBP_Option_DiscordFriendListContent_C.CallOnClick
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Option_DiscordFriendListContent.WBP_Option_DiscordFriendListContent_C.ExecuteUbergraph_WBP_Option_DiscordFriendListContent
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Option_DiscordFriendListContent_C::CallOnClick(class UCommonButtonBase* Button)
+void UWBP_Option_DiscordFriendListContent_C::ExecuteUbergraph_WBP_Option_DiscordFriendListContent(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_DiscordFriendListContent_C", "CallOnClick");
+		Func = Class->GetFunction("WBP_Option_DiscordFriendListContent_C", "ExecuteUbergraph_WBP_Option_DiscordFriendListContent");
 
-	Params::WBP_Option_DiscordFriendListContent_C_CallOnClick Parms{};
+	Params::WBP_Option_DiscordFriendListContent_C_ExecuteUbergraph_WBP_Option_DiscordFriendListContent Parms{};
 
-	Parms.Button = Button;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

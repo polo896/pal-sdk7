@@ -129,7 +129,6 @@ public:
 	void OnStartInvade(const struct FPalIncidentBroadcastParameter& Parameter);
 	void OnSetup();
 	void OnRequestCampDismantal();
-	void OnRepliedDialog(bool bOK);
 	void OnRemoveGuildMarker(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID);
 	void OnRemovedLocation(const struct FGuid& LocationId, class UPalLocationBase* Location);
 	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
@@ -150,6 +149,7 @@ public:
 	void InitializeMapBody();
 	void HideNearestRespawnPointFastTravelPoint();
 	void GetNextMapName(class FName* MapName);
+	void OnRepliedDialog(bool bOK);
 	void GetLandscapeSize(class FName MapName, struct FVector* MinSize, struct FVector* MaxSize);
 	void GetCurrentDisplayLandscapeSize(struct FVector* MinSize, struct FVector* MaxSize);
 	void FocusToNearestBaseCamp();

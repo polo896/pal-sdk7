@@ -137,15 +137,6 @@ public:
 };
 DUMPER7_ASSERTS_Landscape_RenderHeightmap;
 
-// Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents
-// 0x0010 (0x0010 - 0x0000)
-struct LandscapeSplinesComponent_GetSplineMeshComponents final
-{
-public:
-	TArray<class USplineMeshComponent*>           ReturnValue;                                       // 0x0000(0x0010)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_LandscapeSplinesComponent_GetSplineMeshComponents;
-
 // Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightAtLocation
 // 0x0028 (0x0028 - 0x0000)
 struct LandscapeComponent_EditorGetPaintLayerWeightAtLocation final
@@ -207,6 +198,15 @@ public:
 	class ULandscapeComponent*                    ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_LandscapeHeightfieldCollisionComponent_GetRenderComponent;
+
+// Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents
+// 0x0010 (0x0010 - 0x0000)
+struct LandscapeSplinesComponent_GetSplineMeshComponents final
+{
+public:
+	TArray<class USplineMeshComponent*>           ReturnValue;                                       // 0x0000(0x0010)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LandscapeSplinesComponent_GetSplineMeshComponents;
 
 // Function Landscape.LandscapeBlueprintBrushBase.GetBlueprintRenderDependencies
 // 0x0010 (0x0010 - 0x0000)

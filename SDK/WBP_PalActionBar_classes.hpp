@@ -30,13 +30,13 @@ public:
 	int32                                         lastEntryNum;                                      // 0x0478(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Close();
-	void AnmEvent_Open();
-	void ExecuteUbergraph_WBP_PalActionBar(int32 EntryPoint);
-	void OnAddedAction();
-	void OnInitialized();
-	void OnRemovedAllAction();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void OnRemovedAllAction();
+	void OnInitialized();
+	void OnAddedAction();
+	void ExecuteUbergraph_WBP_PalActionBar(int32 EntryPoint);
+	void AnmEvent_Open();
+	void AnmEvent_Close();
 
 public:
 	static class UClass* StaticClass()

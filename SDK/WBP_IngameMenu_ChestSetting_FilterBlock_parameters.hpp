@@ -10,68 +10,59 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.AddContentItem
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_FilterBlock_C_AddContentItem final
+// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.SetEnableCustomNameEdit
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_FilterBlock_C_SetEnableCustomNameEdit final
 {
 public:
-	class FName                                   FilterId;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   FilterTextId;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Chest_FilterContent_C*  ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Chest_FilterContent_C*  CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bEnableNameEdit;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_AddContentItem;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_SetEnableCustomNameEdit;
 
-// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_EditableTextBox_Name_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_FilterBlock_C_BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_EditableTextBox_Name_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature final
+// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.SetCustomName
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_FilterBlock_C_SetCustomName final
 {
 public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 InCustomName;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_EditableTextBox_Name_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_SetCustomName;
 
-// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_WBP_PalInvisibleButton_NameEdit_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_FilterBlock_C_BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_WBP_PalInvisibleButton_NameEdit_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.OnTextFiltered
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_FilterBlock_C_OnTextFiltered final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalWordFilterWaiter*                   Waiter;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 FilteredString;                                    // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0018(0x0018)()
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_WBP_PalInvisibleButton_NameEdit_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_OnTextFiltered;
 
-// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.DoCustomNavi_ToEditCustomName
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_FilterBlock_C_DoCustomNavi_ToEditCustomName final
+// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.IsEditingCustomName
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_FilterBlock_C_IsEditingCustomName final
 {
 public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bEditing;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_DoCustomNavi_ToEditCustomName;
-
-// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.DoCustomNavi_ToLockAllButton
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_FilterBlock_C_DoCustomNavi_ToLockAllButton final
-{
-public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_DoCustomNavi_ToLockAllButton;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_IsEditingCustomName;
 
 // Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.ExecuteUbergraph_WBP_IngameMenu_ChestSetting_FilterBlock
 // 0x00C0 (0x00C0 - 0x0000)
@@ -101,52 +92,61 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_ExecuteUbergraph_WBP_IngameMenu_ChestSetting_FilterBlock;
 
-// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.IsEditingCustomName
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_FilterBlock_C_IsEditingCustomName final
+// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.DoCustomNavi_ToLockAllButton
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_FilterBlock_C_DoCustomNavi_ToLockAllButton final
 {
 public:
-	bool                                          bEditing;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_IsEditingCustomName;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_DoCustomNavi_ToLockAllButton;
 
-// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.OnTextFiltered
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_FilterBlock_C_OnTextFiltered final
+// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.DoCustomNavi_ToEditCustomName
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_FilterBlock_C_DoCustomNavi_ToEditCustomName final
 {
 public:
-	class UPalWordFilterWaiter*                   Waiter;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 FilteredString;                                    // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0018(0x0018)()
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_OnTextFiltered;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_DoCustomNavi_ToEditCustomName;
 
-// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.SetCustomName
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_FilterBlock_C_SetCustomName final
+// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_WBP_PalInvisibleButton_NameEdit_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_FilterBlock_C_BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_WBP_PalInvisibleButton_NameEdit_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class FString                                 InCustomName;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_SetCustomName;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_WBP_PalInvisibleButton_NameEdit_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.SetEnableCustomNameEdit
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_FilterBlock_C_SetEnableCustomNameEdit final
+// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_EditableTextBox_Name_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_FilterBlock_C_BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_EditableTextBox_Name_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature final
 {
 public:
-	bool                                          bEnableNameEdit;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_SetEnableCustomNameEdit;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_EditableTextBox_Name_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature;
+
+// Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.AddContentItem
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_FilterBlock_C_AddContentItem final
+{
+public:
+	class FName                                   FilterId;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   FilterTextId;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Chest_FilterContent_C*  ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Chest_FilterContent_C*  CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_FilterBlock_C_AddContentItem;
 
 // Function WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C.BP_GetDesiredFocusTarget
 // 0x0020 (0x0020 - 0x0000)

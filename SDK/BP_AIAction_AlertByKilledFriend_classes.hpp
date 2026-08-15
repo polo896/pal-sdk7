@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
+#include "BP_AIAction_CanCombatBase_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "EPal_AI_AlertByKilledFriendState_structs.hpp"
-#include "BP_AIAction_CanCombatBase_classes.hpp"
 
 
 namespace SDK
@@ -38,6 +38,7 @@ public:
 
 public:
 	void ActionAbort(class APawn* ControlledPawn);
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void AddState(EPal_AI_AlertByKilledFriendState NewParam);
 	void ChangeNextState(EPal_AI_AlertByKilledFriendState Next);
@@ -45,7 +46,6 @@ public:
 	void LineTraceGround(const struct FVector& CenterPos, bool* IsHit, struct FVector* HitPos);
 	void MoveToDeadBody();
 	void StopMovement();
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
 	void ActionStart(class APawn* ControlledPawn);
 
 public:

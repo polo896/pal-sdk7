@@ -30,8 +30,8 @@ public:
 	class UWBP_PalKeyGuideIcon_C*                 WBP_PalKeyGuideIcon;                               // 0x0290(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_OptionSettings_ListContentButton(int32 EntryPoint);
 	void EnableWarning(bool IsEnable);
+	void ExecuteUbergraph_WBP_OptionSettings_ListContentButton(int32 EntryPoint);
 	void GetCurrentIcon(struct FSlateBrush* Brush);
 	void OnInitialized();
 	void OnUISettingChanged(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings);

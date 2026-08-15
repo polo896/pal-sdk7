@@ -17,146 +17,36 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_Construction_Icon_C_BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.UpdateButtonSound
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_IngameMenu_Construction_Icon_C_UpdateButtonSound final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UAkAudioEvent*                          Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UAkAudioEvent*                          K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_UpdateButtonSound;
 
-// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_Construction_Icon_C_BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.SetVisibleFavoriteIcon
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_IngameMenu_Construction_Icon_C_SetVisibleFavoriteIcon final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              NewVisibility;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_SetVisibleFavoriteIcon;
 
-// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_Construction_Icon_C_BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.SetVisibleBlueprintMark
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_IngameMenu_Construction_Icon_C_SetVisibleBlueprintMark final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              NewVisibility;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.ExecuteUbergraph_WBP_IngameMenu_Construction_Icon
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_IngameMenu_Construction_Icon_C_ExecuteUbergraph_WBP_IngameMenu_Construction_Icon final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalDebugSetting*                       CallFunc_GetPalDebugSetting_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_2;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_ExecuteUbergraph_WBP_IngameMenu_Construction_Icon;
-
-// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.GetBuildObjectData
-// 0x0098 (0x0098 - 0x0000)
-struct WBP_IngameMenu_Construction_Icon_C_GetBuildObjectData final
-{
-public:
-	struct FPalBuildObjectData                    BuildObjectData;                                   // 0x0000(0x0098)(Parm, OutParm)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_GetBuildObjectData;
-
-// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.GetBuildObjectId
-// 0x00C8 (0x00C8 - 0x0000)
-struct WBP_IngameMenu_Construction_Icon_C_GetBuildObjectId final
-{
-public:
-	class FName                                   BuildObjectId;                                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalMasterDataTableAccess_BuildObjectData* CallFunc_GetBuildObjectDataTableAccess_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BP_FindRowByMapObjectId_OutRowName;       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BP_FindRowByMapObjectId_bResult;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalBuildObjectData                    CallFunc_BP_FindRowByMapObjectId_ReturnValue;      // 0x0028(0x0098)()
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_GetBuildObjectId;
-
-// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.GetColumnIndex
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_IngameMenu_Construction_Icon_C_GetColumnIndex final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_GetColumnIndex;
-
-// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.IsNewMarkDisplayed
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_IngameMenu_Construction_Icon_C_IsNewMarkDisplayed final
-{
-public:
-	bool                                          bDisplayed;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_IsNewMarkDisplayed;
-
-// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.SetGridColumnIndex
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_IngameMenu_Construction_Icon_C_SetGridColumnIndex final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_SetGridColumnIndex;
-
-// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.SetLockedDetail
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_IngameMenu_Construction_Icon_C_SetLockedDetail final
-{
-public:
-	bool                                          bLocked;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_SetLockedDetail;
-
-// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.SetNewMark
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_IngameMenu_Construction_Icon_C_SetNewMark final
-{
-public:
-	bool                                          bDisplayMark;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_SetNewMark;
-
-// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.SetUnavailableDetail
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_IngameMenu_Construction_Icon_C_SetUnavailableDetail final
-{
-public:
-	bool                                          bUnavailable;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_SetUnavailableDetail;
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_SetVisibleBlueprintMark;
 
 // Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.Setup
 // 0x01D0 (0x01D0 - 0x0000)
@@ -194,36 +84,146 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_Setup;
 
-// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.SetVisibleBlueprintMark
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_IngameMenu_Construction_Icon_C_SetVisibleBlueprintMark final
+// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.SetUnavailableDetail
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_IngameMenu_Construction_Icon_C_SetUnavailableDetail final
 {
 public:
-	ESlateVisibility                              NewVisibility;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bUnavailable;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_SetVisibleBlueprintMark;
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_SetUnavailableDetail;
 
-// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.SetVisibleFavoriteIcon
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_IngameMenu_Construction_Icon_C_SetVisibleFavoriteIcon final
+// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.SetNewMark
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_IngameMenu_Construction_Icon_C_SetNewMark final
 {
 public:
-	ESlateVisibility                              NewVisibility;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDisplayMark;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_SetVisibleFavoriteIcon;
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_SetNewMark;
 
-// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.UpdateButtonSound
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_IngameMenu_Construction_Icon_C_UpdateButtonSound final
+// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.SetLockedDetail
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_IngameMenu_Construction_Icon_C_SetLockedDetail final
 {
 public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UAkAudioEvent*                          Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UAkAudioEvent*                          K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bLocked;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_UpdateButtonSound;
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_SetLockedDetail;
+
+// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.SetGridColumnIndex
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_IngameMenu_Construction_Icon_C_SetGridColumnIndex final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_SetGridColumnIndex;
+
+// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.IsNewMarkDisplayed
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_IngameMenu_Construction_Icon_C_IsNewMarkDisplayed final
+{
+public:
+	bool                                          bDisplayed;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_IsNewMarkDisplayed;
+
+// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.GetColumnIndex
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_IngameMenu_Construction_Icon_C_GetColumnIndex final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_GetColumnIndex;
+
+// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.GetBuildObjectId
+// 0x00C8 (0x00C8 - 0x0000)
+struct WBP_IngameMenu_Construction_Icon_C_GetBuildObjectId final
+{
+public:
+	class FName                                   BuildObjectId;                                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalMasterDataTableAccess_BuildObjectData* CallFunc_GetBuildObjectDataTableAccess_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BP_FindRowByMapObjectId_OutRowName;       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BP_FindRowByMapObjectId_bResult;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalBuildObjectData                    CallFunc_BP_FindRowByMapObjectId_ReturnValue;      // 0x0028(0x0098)()
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_GetBuildObjectId;
+
+// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.GetBuildObjectData
+// 0x0098 (0x0098 - 0x0000)
+struct WBP_IngameMenu_Construction_Icon_C_GetBuildObjectData final
+{
+public:
+	struct FPalBuildObjectData                    BuildObjectData;                                   // 0x0000(0x0098)(Parm, OutParm)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_GetBuildObjectData;
+
+// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.ExecuteUbergraph_WBP_IngameMenu_Construction_Icon
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_IngameMenu_Construction_Icon_C_ExecuteUbergraph_WBP_IngameMenu_Construction_Icon final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalDebugSetting*                       CallFunc_GetPalDebugSetting_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_2;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_ExecuteUbergraph_WBP_IngameMenu_Construction_Icon;
+
+// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_Construction_Icon_C_BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_Construction_Icon_C_BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_IngameMenu_Construction_Icon.WBP_IngameMenu_Construction_Icon_C.BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_Construction_Icon_C_BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Icon_C_BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

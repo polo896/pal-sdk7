@@ -36,30 +36,30 @@ public:
 	struct FDataTableRowHandle                    ModSupportCautionMsgId;                            // 0x0548(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void SetupInputAction();
-	void Setup();
-	void OnStartRefresh();
-	void OnSetup();
-	struct FEventReply OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
-	void OnInputAction_OpenSteamWorkshop();
-	void OnDialogDialog_CheckSave(bool bResult);
-	void OnDialogClosed_NoticeModSupport(class UPalHUDDispatchParameterBase* Param_0);
-	void OnDialogClosed_CautionNotCompatibleMod(bool bResult);
-	void OnDialogClosed_CantChangeModSupport(class UPalHUDDispatchParameterBase* Parameter);
-	void OnDialogClosed_Cancel(bool bResult);
-	void OnConfirmAction();
-	void OnCompleteRefresh();
-	void OnClickedModInternal(class UWBP_Option_ModMenu_ModList_C* Widget);
-	void OnCancelAction();
-	void ExecuteUbergraph_WBP_ModList_ForDisplay(int32 EntryPoint);
-	void CloseOrOpenSaveDialog();
-	void CloseOrOpenCancelDialog();
-	void BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_4_OnCancel__DelegateSignature();
-	void BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_3_OnRequestOpenSteamWorkshop__DelegateSignature();
-	void BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_2_OnConfirm__DelegateSignature();
-	void BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_1_OnChangedModSupportIngame__DelegateSignature(bool bNewFlag);
 	void BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_0_OnClickedAnyMod__DelegateSignature(class UWBP_Option_ModMenu_ModList_C* Widget);
+	void BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_1_OnChangedModSupportIngame__DelegateSignature(bool bNewFlag);
+	void BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_2_OnConfirm__DelegateSignature();
+	void BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_3_OnRequestOpenSteamWorkshop__DelegateSignature();
+	void BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_4_OnCancel__DelegateSignature();
+	void CloseOrOpenCancelDialog();
+	void CloseOrOpenSaveDialog();
+	void ExecuteUbergraph_WBP_ModList_ForDisplay(int32 EntryPoint);
+	void OnCancelAction();
+	void OnClickedModInternal(class UWBP_Option_ModMenu_ModList_C* Widget);
+	void OnCompleteRefresh();
+	void OnConfirmAction();
+	void OnDialogClosed_Cancel(bool bResult);
+	void OnDialogClosed_CantChangeModSupport(class UPalHUDDispatchParameterBase* Parameter);
+	void OnDialogClosed_CautionNotCompatibleMod(bool bResult);
+	void OnDialogClosed_NoticeModSupport(class UPalHUDDispatchParameterBase* Param_0);
+	void OnDialogDialog_CheckSave(bool bResult);
+	void OnInputAction_OpenSteamWorkshop();
+	struct FEventReply OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	void OnSetup();
+	void OnStartRefresh();
+	void Setup();
+	void SetupInputAction();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

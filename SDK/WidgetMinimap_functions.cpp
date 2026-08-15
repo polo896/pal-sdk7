@@ -68,7 +68,7 @@ void UWidgetMinimap_C::OnSetup()
 
 
 // Function WidgetMinimap.WidgetMinimap_C.GetMapVisibility
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
 void UWidgetMinimap_C::GetMapVisibility()
 {
@@ -92,6 +92,27 @@ void UWidgetMinimap_C::GetMapPositionMode()
 		Func = Class->GetFunction("WidgetMinimap_C", "GetMapPositionMode");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WidgetMinimap.WidgetMinimap_C.GetCoordinateText
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText*                            Text                                                   (Parm, OutParm)
+
+void UWidgetMinimap_C::GetCoordinateText(class FText* Text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetMinimap_C", "GetCoordinateText");
+
+	Params::WidgetMinimap_C_GetCoordinateText Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Text != nullptr)
+		*Text = std::move(Parms.Text);
 }
 
 

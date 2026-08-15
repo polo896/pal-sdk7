@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_Key_Settings.WBP_Key_Settings_C.ExecuteUbergraph_WBP_Key_Settings
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Key_Settings.WBP_Key_Settings_C.ApplySettings
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Key_Settings_C::ExecuteUbergraph_WBP_Key_Settings(int32 EntryPoint)
+void UWBP_Key_Settings_C::ApplySettings()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "ExecuteUbergraph_WBP_Key_Settings");
+		Func = Class->GetFunction("WBP_Key_Settings_C", "ApplySettings");
 
-	Params::WBP_Key_Settings_C_ExecuteUbergraph_WBP_Key_Settings Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -51,17 +45,23 @@ void UWBP_Key_Settings_C::Construct()
 }
 
 
-// Function WBP_Key_Settings.WBP_Key_Settings_C.ApplySettings
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Key_Settings.WBP_Key_Settings_C.ExecuteUbergraph_WBP_Key_Settings
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Key_Settings_C::ApplySettings()
+void UWBP_Key_Settings_C::ExecuteUbergraph_WBP_Key_Settings(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "ApplySettings");
+		Func = Class->GetFunction("WBP_Key_Settings_C", "ExecuteUbergraph_WBP_Key_Settings");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Key_Settings_C_ExecuteUbergraph_WBP_Key_Settings Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

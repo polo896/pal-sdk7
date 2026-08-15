@@ -11,12 +11,12 @@
 #include "Basic.hpp"
 
 #include "CommonInput_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "InputCore_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
-#include "InputCore_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -735,30 +735,6 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Map_Base_C_OnRequestCampDismantal;
 
-// Function WBP_Map_Base.WBP_Map_Base_C.OnRepliedDialog
-// 0x00B0 (0x00B0 - 0x0000)
-struct WBP_Map_Base_C_OnRepliedDialog final
-{
-public:
-	bool                                          bOK;                                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalLocationPoint*                      CallFunc_GetLocationPoint_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0xF];                                       // 0x0011(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FQuat                                  CallFunc_GetLocationRotation_LocationRotation;     // 0x0020(0x0020)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationPosition_LocationPosition;     // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalLocationPoint*                      CallFunc_GetLocationPoint_ReturnValue_1;           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocation_ReturnValue;                  // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_VectorToString_ReturnValue;          // 0x0088(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerState*                        CallFunc_GetLocalPlayerState_ReturnValue;          // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_1;              // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Map_Base_C_OnRepliedDialog;
-
 // Function WBP_Map_Base.WBP_Map_Base_C.OnRemoveGuildMarker
 // 0x0030 (0x0030 - 0x0000)
 struct WBP_Map_Base_C_OnRemoveGuildMarker final
@@ -1093,6 +1069,30 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Map_Base_C_GetNextMapName;
+
+// Function WBP_Map_Base.WBP_Map_Base_C.OnRepliedDialog
+// 0x00B0 (0x00B0 - 0x0000)
+struct WBP_Map_Base_C_OnRepliedDialog final
+{
+public:
+	bool                                          bOK;                                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalLocationPoint*                      CallFunc_GetLocationPoint_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0xF];                                       // 0x0011(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FQuat                                  CallFunc_GetLocationRotation_LocationRotation;     // 0x0020(0x0020)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationPosition_LocationPosition;     // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalLocationPoint*                      CallFunc_GetLocationPoint_ReturnValue_1;           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocation_ReturnValue;                  // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_VectorToString_ReturnValue;          // 0x0088(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerState*                        CallFunc_GetLocalPlayerState_ReturnValue;          // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_1;              // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Map_Base_C_OnRepliedDialog;
 
 // Function WBP_Map_Base.WBP_Map_Base_C.GetLandscapeSize
 // 0x0188 (0x0188 - 0x0000)

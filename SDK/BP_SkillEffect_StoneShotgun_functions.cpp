@@ -17,17 +17,44 @@
 namespace SDK
 {
 
-// Function BP_SkillEffect_StoneShotgun.BP_SkillEffect_StoneShotgun_C.OnInitialize
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_SkillEffect_StoneShotgun.BP_SkillEffect_StoneShotgun_C.ExecuteUbergraph_BP_SkillEffect_StoneShotgun
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SkillEffect_StoneShotgun_C::OnInitialize()
+void ABP_SkillEffect_StoneShotgun_C::ExecuteUbergraph_BP_SkillEffect_StoneShotgun(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_StoneShotgun_C", "OnInitialize");
+		Func = Class->GetFunction("BP_SkillEffect_StoneShotgun_C", "ExecuteUbergraph_BP_SkillEffect_StoneShotgun");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_SkillEffect_StoneShotgun_C_ExecuteUbergraph_BP_SkillEffect_StoneShotgun Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SkillEffect_StoneShotgun.BP_SkillEffect_StoneShotgun_C.GetBulletTransform
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TArray<struct FTransform>*              Result                                                 (Parm, OutParm)
+
+void ABP_SkillEffect_StoneShotgun_C::GetBulletTransform(TArray<struct FTransform>* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SkillEffect_StoneShotgun_C", "GetBulletTransform");
+
+	Params::BP_SkillEffect_StoneShotgun_C_GetBulletTransform Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = std::move(Parms.Result);
 }
 
 
@@ -57,44 +84,17 @@ void ABP_SkillEffect_StoneShotgun_C::OnAttackDelegate_イベント_0(class AActo
 }
 
 
-// Function BP_SkillEffect_StoneShotgun.BP_SkillEffect_StoneShotgun_C.GetBulletTransform
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// TArray<struct FTransform>*              Result                                                 (Parm, OutParm)
+// Function BP_SkillEffect_StoneShotgun.BP_SkillEffect_StoneShotgun_C.OnInitialize
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_SkillEffect_StoneShotgun_C::GetBulletTransform(TArray<struct FTransform>* Result)
+void ABP_SkillEffect_StoneShotgun_C::OnInitialize()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_StoneShotgun_C", "GetBulletTransform");
+		Func = Class->GetFunction("BP_SkillEffect_StoneShotgun_C", "OnInitialize");
 
-	Params::BP_SkillEffect_StoneShotgun_C_GetBulletTransform Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = std::move(Parms.Result);
-}
-
-
-// Function BP_SkillEffect_StoneShotgun.BP_SkillEffect_StoneShotgun_C.ExecuteUbergraph_BP_SkillEffect_StoneShotgun
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SkillEffect_StoneShotgun_C::ExecuteUbergraph_BP_SkillEffect_StoneShotgun(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_StoneShotgun_C", "ExecuteUbergraph_BP_SkillEffect_StoneShotgun");
-
-	Params::BP_SkillEffect_StoneShotgun_C_ExecuteUbergraph_BP_SkillEffect_StoneShotgun Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

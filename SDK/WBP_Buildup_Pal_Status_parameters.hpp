@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
-#include "Pal_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -105,7 +105,7 @@ public:
 	uint8                                         Pad_10D[0x3];                                      // 0x010D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(int64 NowMoney)>               K2Node_CreateDelegate_OutputDelegate_3;            // 0x0110(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalMoneyData*                          CallFunc_GetLocalMoneyData_ReturnValue;            // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUserWidget*                            CallFunc_GetFocusTarget_Widget;                    // 0x0128(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            CallFunc_GetFocusTarget_widget;                    // 0x0128(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_StaticItemID_Money_ReturnValue;           // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetItemName_outName;                      // 0x0140(0x0018)()

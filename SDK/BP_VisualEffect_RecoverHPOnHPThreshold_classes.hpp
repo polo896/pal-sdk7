@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BP_VisualEffect_BuffBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_VisualEffect_BuffBase_classes.hpp"
 
 
 namespace SDK

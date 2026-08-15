@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C
 // 0x00C0 (0x0748 - 0x0688)
-class ABP_Kitsunebi_Flamethrower_C final : public APalWeaponBase
+class ABP_Kitsunebi_Flamethrower_C : public APalWeaponBase
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0688(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
@@ -47,42 +47,42 @@ public:
 	EPalAdditionalEffectType                      Effect_Type_1;                                     // 0x0745(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateEffectTransform();
-	void Trace_Hit_Flame(TArray<struct FBasicParticleData>& Data, class UNiagaraSystem* NiagaraSystem, const struct FVector& SimulationPositionOffset);
-	void TickShootingFire(double DeltaTime);
-	void Tick_Shooting(double DeltaTime);
-	void Tick_Ignore_Hit_Actors(double DeltaTime);
-	void StopEfffect();
-	void SetWeaponDamage(int32 Damageam);
-	void SetMeshDisplay();
-	void SetIgnoreActor(class AActor* HitActor);
-	void SetAttacker(class AActor* AttackerPal);
-	void ResetMeshDisplay();
-	void ReceiveTick(float DeltaSeconds);
-	void ReceiveParticleData(const TArray<struct FBasicParticleData>& Data, class UNiagaraSystem* NiagaraSystem, const struct FVector& SimulationPositionOffset);
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void ReceiveBeginPlay();
-	void PlayShootMotion();
-	void PlayIdleMotion(bool StopAllMontages);
-	void OnShootFire();
-	void OnRequestClosing();
-	void OnReleaseTrigger(bool bCanShootOnRelease);
-	void OnPullTrigger();
-	void OnNotifyEnd_266D644B475C5EADF9D744838A1159F1(class FName NotifyName);
-	void OnNotifyBegin_266D644B475C5EADF9D744838A1159F1(class FName NotifyName);
-	void OnInterrupted_266D644B475C5EADF9D744838A1159F1(class FName NotifyName);
-	void OnDetachWeapon(class AActor* detachActor);
-	void OnCompleted_266D644B475C5EADF9D744838A1159F1(class FName NotifyName);
-	void OnBlendOut_266D644B475C5EADF9D744838A1159F1(class FName NotifyName);
-	void OnAttachWeapon(class AActor* attachActor);
-	void IsActorAlreadyHit(class AActor* HitActor, bool* IsAlreadyHit);
-	class AActor* GetWeaponAttacker();
-	void GetRotatorToTarget(struct FRotator* NewRotation);
-	class FName GetEquipSocketName();
-	void GetAttackType(EPalAttackType* AttackType);
-	void ExecuteUbergraph_BP_Kitsunebi_Flamethrower(int32 EntryPoint);
-	void BeginShoot(class UNiagaraComponent** FlameEffect_0);
 	void ApplyDamage(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& HitLocation, const struct FHitResult& Hit);
+	void BeginShoot(class UNiagaraComponent** FlameEffect_0);
+	void ExecuteUbergraph_BP_Kitsunebi_Flamethrower(int32 EntryPoint);
+	void GetAttackType(EPalAttackType* AttackType);
+	class FName GetEquipSocketName();
+	void GetRotatorToTarget(struct FRotator* NewRotation);
+	class AActor* GetWeaponAttacker();
+	void IsActorAlreadyHit(class AActor* HitActor, bool* IsAlreadyHit);
+	void OnAttachWeapon(class AActor* attachActor);
+	void OnBlendOut_266D644B475C5EADF9D744838A1159F1(class FName NotifyName);
+	void OnCompleted_266D644B475C5EADF9D744838A1159F1(class FName NotifyName);
+	void OnDetachWeapon(class AActor* detachActor);
+	void OnInterrupted_266D644B475C5EADF9D744838A1159F1(class FName NotifyName);
+	void OnNotifyBegin_266D644B475C5EADF9D744838A1159F1(class FName NotifyName);
+	void OnNotifyEnd_266D644B475C5EADF9D744838A1159F1(class FName NotifyName);
+	void OnPullTrigger();
+	void OnReleaseTrigger(bool bCanShootOnRelease);
+	void OnRequestClosing();
+	void OnShootFire();
+	void PlayIdleMotion(bool StopAllMontages);
+	void PlayShootMotion();
+	void ReceiveBeginPlay();
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveParticleData(const TArray<struct FBasicParticleData>& Data, class UNiagaraSystem* NiagaraSystem, const struct FVector& SimulationPositionOffset);
+	void ReceiveTick(float DeltaSeconds);
+	void ResetMeshDisplay();
+	void SetAttacker(class AActor* AttackerPal);
+	void SetIgnoreActor(class AActor* HitActor);
+	void SetMeshDisplay();
+	void SetWeaponDamage(int32 Damageam);
+	void StopEfffect();
+	void Tick_Ignore_Hit_Actors(double DeltaTime);
+	void Tick_Shooting(double DeltaTime);
+	void TickShootingFire(double DeltaTime);
+	void Trace_Hit_Flame(TArray<struct FBasicParticleData>& Data, class UNiagaraSystem* NiagaraSystem, const struct FVector& SimulationPositionOffset);
+	void UpdateEffectTransform();
 
 	int32 GetWeaponDamage() const;
 

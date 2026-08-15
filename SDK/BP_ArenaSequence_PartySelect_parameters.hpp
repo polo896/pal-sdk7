@@ -109,7 +109,7 @@ DUMPER7_ASSERTS_BP_ArenaSequence_PartySelect_C_OnConfirmBreak;
 struct BP_ArenaSequence_PartySelect_C_PrintPartySelectLog final
 {
 public:
-	class FString                                 tmpString;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 TmpString;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 EnemyPartyString;                                  // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 MyPartyString;                                     // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

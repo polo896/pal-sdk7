@@ -331,31 +331,6 @@ void ALandscape::RenderHeightmap(const struct FTransform& InWorldTransform, cons
 }
 
 
-// Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// TArray<class USplineMeshComponent*>     ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-TArray<class USplineMeshComponent*> ULandscapeSplinesComponent::GetSplineMeshComponents()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeSplinesComponent", "GetSplineMeshComponents");
-
-	Params::LandscapeSplinesComponent_GetSplineMeshComponents Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightAtLocation
 // (Final, RequiredAPI, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -507,6 +482,31 @@ class ULandscapeComponent* ULandscapeHeightfieldCollisionComponent::GetRenderCom
 		Func = Class->GetFunction("LandscapeHeightfieldCollisionComponent", "GetRenderComponent");
 
 	Params::LandscapeHeightfieldCollisionComponent_GetRenderComponent Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// TArray<class USplineMeshComponent*>     ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+TArray<class USplineMeshComponent*> ULandscapeSplinesComponent::GetSplineMeshComponents()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LandscapeSplinesComponent", "GetSplineMeshComponents");
+
+	Params::LandscapeSplinesComponent_GetSplineMeshComponents Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

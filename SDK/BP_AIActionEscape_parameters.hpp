@@ -28,6 +28,25 @@ public:
 };
 DUMPER7_ASSERTS_BP_AIActionEscape_C_ActionAbort;
 
+// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIActionEscape_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIActionEscape_C_ActionFinished;
+
+// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionPause
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIActionEscape_C_ActionPause final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIActionEscape_C_ActionPause;
+
 // Function BP_AIActionEscape.BP_AIActionEscape_C.ActionTick
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIActionEscape_C_ActionTick final
@@ -241,25 +260,6 @@ public:
 	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIActionEscape_C_SetGoalLocation;
-
-// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIActionEscape_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIActionEscape_C_ActionFinished;
-
-// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionPause
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIActionEscape_C_ActionPause final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIActionEscape_C_ActionPause;
 
 // Function BP_AIActionEscape.BP_AIActionEscape_C.ActionResume
 // 0x0008 (0x0008 - 0x0000)

@@ -26,8 +26,8 @@ public:
 	class UImage*                                 Image_56;                                          // 0x0280(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetActive(bool IsActive);
 	void ExecuteUbergraph_WBP_OptionSettings_ListContentLRBar(int32 EntryPoint);
+	void SetActive(bool IsActive);
 
 public:
 	static class UClass* StaticClass()

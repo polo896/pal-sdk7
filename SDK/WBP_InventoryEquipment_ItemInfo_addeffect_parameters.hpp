@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_InventoryEquipment_ItemInfo_addeffect.WBP_InventoryEquipment_ItemInfo_addeffect_C.SetImportantDescription
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_InventoryEquipment_ItemInfo_addeffect_C_SetImportantDescription final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ItemInfo_addeffect_C_SetImportantDescription;
-
 // Function WBP_InventoryEquipment_ItemInfo_addeffect.WBP_InventoryEquipment_ItemInfo_addeffect_C.SetSimpleDescription
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_InventoryEquipment_ItemInfo_addeffect_C_SetSimpleDescription final
@@ -31,6 +22,15 @@ public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 DUMPER7_ASSERTS_WBP_InventoryEquipment_ItemInfo_addeffect_C_SetSimpleDescription;
+
+// Function WBP_InventoryEquipment_ItemInfo_addeffect.WBP_InventoryEquipment_ItemInfo_addeffect_C.SetImportantDescription
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_InventoryEquipment_ItemInfo_addeffect_C_SetImportantDescription final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ItemInfo_addeffect_C_SetImportantDescription;
 
 }
 

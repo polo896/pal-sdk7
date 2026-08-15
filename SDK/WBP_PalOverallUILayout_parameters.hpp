@@ -10,37 +10,119 @@
 
 #include "Basic.hpp"
 
-#include "Slate_structs.hpp"
 #include "Pal_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
+#include "Slate_structs.hpp"
 #include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.CheckPause
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_PalOverallUILayout_C_CheckPause final
+// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.Tick
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_PalOverallUILayout_C_Tick final
 {
 public:
-	bool                                          CallFunc_IsGamePaused_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              CallFunc_GetVisibility_ReturnValue;                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_CheckPause;
+DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_Tick;
 
-// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.CREATEDELEGATE_PROXYFUNCTION_0
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PalOverallUILayout_C_CREATEDELEGATE_PROXYFUNCTION_0 final
+// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.ShowFocusCursor
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalOverallUILayout_C_ShowFocusCursor final
 {
 public:
-	EPalUICommonWarningType                       WarningType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                TargetWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_CREATEDELEGATE_PROXYFUNCTION_0;
+DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_ShowFocusCursor;
+
+// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.ShowElementMatchUI
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PalOverallUILayout_C_ShowElementMatchUI final
+{
+public:
+	class UWidget*                                RelativeWidget;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              AnchorPosition;                                    // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_ShowElementMatchUI;
+
+// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.ShowCommonWarning
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_PalOverallUILayout_C_ShowCommonWarning final
+{
+public:
+	struct FPalUICommonWarningDisplayData         WarningDisplayData;                                // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_ShowCommonWarning;
+
+// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.ShowCommonReward
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_PalOverallUILayout_C_ShowCommonReward final
+{
+public:
+	struct FPalUICommonRewardDisplayData          RewardDisplayData;                                 // 0x0000(0x0058)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_ShowCommonReward;
+
+// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.ShowCommonItemInfo
+// 0x00C8 (0x00C8 - 0x0000)
+struct WBP_PalOverallUILayout_C_ShowCommonItemInfo final
+{
+public:
+	struct FPalUICommonItemInfoDisplayData        DisplayData;                                       // 0x0000(0x00C8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_ShowCommonItemInfo;
+
+// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.SetVisibilityRootLayout
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PalOverallUILayout_C_SetVisibilityRootLayout final
+{
+public:
+	ESlateVisibility                              NewVisibility;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_SetVisibilityRootLayout;
+
+// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.OnWarningClear
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PalOverallUILayout_C_OnWarningClear final
+{
+public:
+	EPalUICommonWarningType                       WarningType;                                       // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_OnWarningClear;
+
+// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.HideCommonWarning
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalOverallUILayout_C_HideCommonWarning final
+{
+public:
+	struct FGuid                                  PreserveID;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_HideCommonWarning;
+
+// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.FadeOut
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalOverallUILayout_C_FadeOut final
+{
+public:
+	EPalFadeWidgetLayerType                       LayerType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDDispatchParameter_FadeWidget*    FadeParameter;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_FadeOut;
+
+// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.FadeIn
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PalOverallUILayout_C_FadeIn final
+{
+public:
+	EPalFadeWidgetLayerType                       LayerType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_FadeIn;
 
 // Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.ExecuteUbergraph_WBP_PalOverallUILayout
 // 0x0688 (0x0688 - 0x0000)
@@ -248,108 +330,26 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_ExecuteUbergraph_WBP_PalOverallUILayout;
 
-// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.FadeIn
+// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.CREATEDELEGATE_PROXYFUNCTION_0
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_PalOverallUILayout_C_FadeIn final
+struct WBP_PalOverallUILayout_C_CREATEDELEGATE_PROXYFUNCTION_0 final
 {
 public:
-	EPalFadeWidgetLayerType                       LayerType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalUICommonWarningType                       WarningType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_FadeIn;
+DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_CREATEDELEGATE_PROXYFUNCTION_0;
 
-// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.FadeOut
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalOverallUILayout_C_FadeOut final
+// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.CheckPause
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_PalOverallUILayout_C_CheckPause final
 {
 public:
-	EPalFadeWidgetLayerType                       LayerType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDDispatchParameter_FadeWidget*    FadeParameter;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsGamePaused_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              CallFunc_GetVisibility_ReturnValue;                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_FadeOut;
-
-// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.HideCommonWarning
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalOverallUILayout_C_HideCommonWarning final
-{
-public:
-	struct FGuid                                  PreserveID;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_HideCommonWarning;
-
-// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.OnWarningClear
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PalOverallUILayout_C_OnWarningClear final
-{
-public:
-	EPalUICommonWarningType                       WarningType;                                       // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_OnWarningClear;
-
-// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.SetVisibilityRootLayout
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PalOverallUILayout_C_SetVisibilityRootLayout final
-{
-public:
-	ESlateVisibility                              NewVisibility;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_SetVisibilityRootLayout;
-
-// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.ShowCommonItemInfo
-// 0x00C8 (0x00C8 - 0x0000)
-struct WBP_PalOverallUILayout_C_ShowCommonItemInfo final
-{
-public:
-	struct FPalUICommonItemInfoDisplayData        DisplayData;                                       // 0x0000(0x00C8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-};
-DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_ShowCommonItemInfo;
-
-// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.ShowCommonReward
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_PalOverallUILayout_C_ShowCommonReward final
-{
-public:
-	struct FPalUICommonRewardDisplayData          RewardDisplayData;                                 // 0x0000(0x0058)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_ShowCommonReward;
-
-// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.ShowCommonWarning
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_PalOverallUILayout_C_ShowCommonWarning final
-{
-public:
-	struct FPalUICommonWarningDisplayData         WarningDisplayData;                                // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_ShowCommonWarning;
-
-// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.ShowElementMatchUI
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PalOverallUILayout_C_ShowElementMatchUI final
-{
-public:
-	class UWidget*                                RelativeWidget;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              AnchorPosition;                                    // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_ShowElementMatchUI;
-
-// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.ShowFocusCursor
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalOverallUILayout_C_ShowFocusCursor final
-{
-public:
-	class UWidget*                                TargetWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_ShowFocusCursor;
-
-// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.Tick
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_PalOverallUILayout_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_Tick;
+DUMPER7_ASSERTS_WBP_PalOverallUILayout_C_CheckPause;
 
 // Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.UpdateCursor
 // 0x00D8 (0x00D8 - 0x0000)

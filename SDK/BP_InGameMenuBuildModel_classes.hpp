@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -30,10 +30,10 @@ public:
 	TMulticastInlineDelegate<void()>              OnUpdateInventoryDelegate;                         // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ExecuteUbergraph_BP_InGameMenuBuildModel(int32 EntryPoint);
-	void OnUpdateInventory(class UPalItemContainer* Container);
-	void SetInitialTypeA(EPalBuildObjectTypeA TypeA);
 	void Setup();
+	void SetInitialTypeA(EPalBuildObjectTypeA TypeA);
+	void OnUpdateInventory(class UPalItemContainer* Container);
+	void ExecuteUbergraph_BP_InGameMenuBuildModel(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

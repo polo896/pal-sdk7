@@ -16,35 +16,27 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.BndEvt__WBP_IngameMenu_Chest_FilterContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_Chest_FilterContent_C_BndEvt__WBP_IngameMenu_Chest_FilterContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.SetupUI
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_IngameMenu_Chest_FilterContent_C_SetupUI final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   FilterId_0;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   TextId;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0010(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_FilterContent_C_BndEvt__WBP_IngameMenu_Chest_FilterContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_FilterContent_C_SetupUI;
 
-// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.ExecuteUbergraph_WBP_IngameMenu_Chest_FilterContent
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_Chest_FilterContent_C_ExecuteUbergraph_WBP_IngameMenu_Chest_FilterContent final
+// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.RegisterEvents
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_IngameMenu_Chest_FilterContent_C_RegisterEvents final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsChecked_ReturnValue;                    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalUIItemChestFilterModel*             Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalItemContainer* Container)> K2Node_CreateDelegate_OutputDelegate;        // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalItemContainer*                      CallFunc_GetItemContainer_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_FilterContent_C_ExecuteUbergraph_WBP_IngameMenu_Chest_FilterContent;
-
-// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.On Changed State Internal
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_IngameMenu_Chest_FilterContent_C_On_Changed_State_Internal final
-{
-public:
-	bool                                          IsChecked;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_FilterContent_C_On_Changed_State_Internal;
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_FilterContent_C_RegisterEvents;
 
 // Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.OnUpdateFilterPreference
 // 0x0028 (0x0028 - 0x0000)
@@ -63,27 +55,35 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_Chest_FilterContent_C_OnUpdateFilterPreference;
 
-// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.RegisterEvents
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_IngameMenu_Chest_FilterContent_C_RegisterEvents final
+// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.On Changed State Internal
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_IngameMenu_Chest_FilterContent_C_On_Changed_State_Internal final
 {
 public:
-	class UPalUIItemChestFilterModel*             Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalItemContainer* Container)> K2Node_CreateDelegate_OutputDelegate;        // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalItemContainer*                      CallFunc_GetItemContainer_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsChecked;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_FilterContent_C_RegisterEvents;
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_FilterContent_C_On_Changed_State_Internal;
 
-// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.SetupUI
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_IngameMenu_Chest_FilterContent_C_SetupUI final
+// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.ExecuteUbergraph_WBP_IngameMenu_Chest_FilterContent
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_Chest_FilterContent_C_ExecuteUbergraph_WBP_IngameMenu_Chest_FilterContent final
 {
 public:
-	class FName                                   FilterId_0;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   TextId;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0010(0x0018)()
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsChecked_ReturnValue;                    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_FilterContent_C_SetupUI;
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_FilterContent_C_ExecuteUbergraph_WBP_IngameMenu_Chest_FilterContent;
+
+// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.BndEvt__WBP_IngameMenu_Chest_FilterContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_Chest_FilterContent_C_BndEvt__WBP_IngameMenu_Chest_FilterContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_FilterContent_C_BndEvt__WBP_IngameMenu_Chest_FilterContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

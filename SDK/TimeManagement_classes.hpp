@@ -18,6 +18,30 @@
 namespace SDK
 {
 
+// Class TimeManagement.GenlockedTimecodeProvider
+// 0x0028 (0x0058 - 0x0030)
+class UGenlockedTimecodeProvider final : public UTimecodeProvider
+{
+public:
+	bool                                          bUseGenlockToCount;                                // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_31[0x27];                                      // 0x0031(0x0027)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("GenlockedTimecodeProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GenlockedTimecodeProvider")
+	}
+	static class UGenlockedTimecodeProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UGenlockedTimecodeProvider>();
+	}
+};
+DUMPER7_ASSERTS_UGenlockedTimecodeProvider;
+
 // Class TimeManagement.TimeSynchronizationSource
 // 0x0008 (0x0030 - 0x0028)
 class UTimeSynchronizationSource : public UObject
@@ -112,30 +136,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UGenlockedFixedRateCustomTimeStep;
-
-// Class TimeManagement.GenlockedTimecodeProvider
-// 0x0028 (0x0058 - 0x0030)
-class UGenlockedTimecodeProvider final : public UTimecodeProvider
-{
-public:
-	bool                                          bUseGenlockToCount;                                // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31[0x27];                                      // 0x0031(0x0027)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("GenlockedTimecodeProvider")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"GenlockedTimecodeProvider")
-	}
-	static class UGenlockedTimecodeProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UGenlockedTimecodeProvider>();
-	}
-};
-DUMPER7_ASSERTS_UGenlockedTimecodeProvider;
 
 // Class TimeManagement.TimeManagementBlueprintLibrary
 // 0x0000 (0x0028 - 0x0028)

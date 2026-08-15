@@ -17,79 +17,307 @@
 namespace SDK
 {
 
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_0_OnClickedAnyMod__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_Option_ModMenu_ModList_C*    Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ModList_ForDisplay_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_ModList_ForDisplay_C::BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_0_OnClickedAnyMod__DelegateSignature(class UWBP_Option_ModMenu_ModList_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "Tick");
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_0_OnClickedAnyMod__DelegateSignature");
 
-	Params::WBP_ModList_ForDisplay_C_Tick Parms{};
+	Params::WBP_ModList_ForDisplay_C_BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_0_OnClickedAnyMod__DelegateSignature Parms{};
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.SetupInputAction
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_1_OnChangedModSupportIngame__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bNewFlag                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ModList_ForDisplay_C::SetupInputAction()
+void UWBP_ModList_ForDisplay_C::BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_1_OnChangedModSupportIngame__DelegateSignature(bool bNewFlag)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "SetupInputAction");
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_1_OnChangedModSupportIngame__DelegateSignature");
+
+	Params::WBP_ModList_ForDisplay_C_BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_1_OnChangedModSupportIngame__DelegateSignature Parms{};
+
+	Parms.bNewFlag = bNewFlag;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_2_OnConfirm__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_ModList_ForDisplay_C::BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_2_OnConfirm__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_2_OnConfirm__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.Setup
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_3_OnRequestOpenSteamWorkshop__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_ModList_ForDisplay_C::BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_3_OnRequestOpenSteamWorkshop__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_3_OnRequestOpenSteamWorkshop__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_4_OnCancel__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_ModList_ForDisplay_C::BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_4_OnCancel__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_4_OnCancel__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.CloseOrOpenCancelDialog
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ModList_ForDisplay_C::CloseOrOpenCancelDialog()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "CloseOrOpenCancelDialog");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.CloseOrOpenSaveDialog
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ModList_ForDisplay_C::CloseOrOpenSaveDialog()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "CloseOrOpenSaveDialog");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.ExecuteUbergraph_WBP_ModList_ForDisplay
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModList_ForDisplay_C::ExecuteUbergraph_WBP_ModList_ForDisplay(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "ExecuteUbergraph_WBP_ModList_ForDisplay");
+
+	Params::WBP_ModList_ForDisplay_C_ExecuteUbergraph_WBP_ModList_ForDisplay Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnCancelAction
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ModList_ForDisplay_C::Setup()
+void UWBP_ModList_ForDisplay_C::OnCancelAction()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "Setup");
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnCancelAction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnStartRefresh
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnClickedModInternal
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Option_ModMenu_ModList_C*    Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModList_ForDisplay_C::OnClickedModInternal(class UWBP_Option_ModMenu_ModList_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnClickedModInternal");
+
+	Params::WBP_ModList_ForDisplay_C_OnClickedModInternal Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnCompleteRefresh
 // (Event, Protected, BlueprintEvent)
 
-void UWBP_ModList_ForDisplay_C::OnStartRefresh()
+void UWBP_ModList_ForDisplay_C::OnCompleteRefresh()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnStartRefresh");
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnCompleteRefresh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnConfirmAction
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ModList_ForDisplay_C::OnSetup()
+void UWBP_ModList_ForDisplay_C::OnConfirmAction()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnSetup");
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnConfirmAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnDialogClosed_Cancel
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModList_ForDisplay_C::OnDialogClosed_Cancel(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnDialogClosed_Cancel");
+
+	Params::WBP_ModList_ForDisplay_C_OnDialogClosed_Cancel Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnDialogClosed_CantChangeModSupport
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalHUDDispatchParameterBase*     Parameter                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModList_ForDisplay_C::OnDialogClosed_CantChangeModSupport(class UPalHUDDispatchParameterBase* Parameter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnDialogClosed_CantChangeModSupport");
+
+	Params::WBP_ModList_ForDisplay_C_OnDialogClosed_CantChangeModSupport Parms{};
+
+	Parms.Parameter = Parameter;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnDialogClosed_CautionNotCompatibleMod
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModList_ForDisplay_C::OnDialogClosed_CautionNotCompatibleMod(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnDialogClosed_CautionNotCompatibleMod");
+
+	Params::WBP_ModList_ForDisplay_C_OnDialogClosed_CautionNotCompatibleMod Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnDialogClosed_NoticeModSupport
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalHUDDispatchParameterBase*     Param_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModList_ForDisplay_C::OnDialogClosed_NoticeModSupport(class UPalHUDDispatchParameterBase* Param_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnDialogClosed_NoticeModSupport");
+
+	Params::WBP_ModList_ForDisplay_C_OnDialogClosed_NoticeModSupport Parms{};
+
+	Parms.Param_0 = Param_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnDialogDialog_CheckSave
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModList_ForDisplay_C::OnDialogDialog_CheckSave(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnDialogDialog_CheckSave");
+
+	Params::WBP_ModList_ForDisplay_C_OnDialogDialog_CheckSave Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnInputAction_OpenSteamWorkshop
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ModList_ForDisplay_C::OnInputAction_OpenSteamWorkshop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnInputAction_OpenSteamWorkshop");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -120,307 +348,79 @@ struct FEventReply UWBP_ModList_ForDisplay_C::OnKeyUp(const struct FGeometry& My
 }
 
 
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnInputAction_OpenSteamWorkshop
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ModList_ForDisplay_C::OnInputAction_OpenSteamWorkshop()
+void UWBP_ModList_ForDisplay_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnInputAction_OpenSteamWorkshop");
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnDialogDialog_CheckSave
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModList_ForDisplay_C::OnDialogDialog_CheckSave(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnDialogDialog_CheckSave");
-
-	Params::WBP_ModList_ForDisplay_C_OnDialogDialog_CheckSave Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnDialogClosed_NoticeModSupport
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalHUDDispatchParameterBase*     Param_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModList_ForDisplay_C::OnDialogClosed_NoticeModSupport(class UPalHUDDispatchParameterBase* Param_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnDialogClosed_NoticeModSupport");
-
-	Params::WBP_ModList_ForDisplay_C_OnDialogClosed_NoticeModSupport Parms{};
-
-	Parms.Param_0 = Param_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnDialogClosed_CautionNotCompatibleMod
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModList_ForDisplay_C::OnDialogClosed_CautionNotCompatibleMod(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnDialogClosed_CautionNotCompatibleMod");
-
-	Params::WBP_ModList_ForDisplay_C_OnDialogClosed_CautionNotCompatibleMod Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnDialogClosed_CantChangeModSupport
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalHUDDispatchParameterBase*     Parameter                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModList_ForDisplay_C::OnDialogClosed_CantChangeModSupport(class UPalHUDDispatchParameterBase* Parameter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnDialogClosed_CantChangeModSupport");
-
-	Params::WBP_ModList_ForDisplay_C_OnDialogClosed_CantChangeModSupport Parms{};
-
-	Parms.Parameter = Parameter;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnDialogClosed_Cancel
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModList_ForDisplay_C::OnDialogClosed_Cancel(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnDialogClosed_Cancel");
-
-	Params::WBP_ModList_ForDisplay_C_OnDialogClosed_Cancel Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnConfirmAction
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ModList_ForDisplay_C::OnConfirmAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnConfirmAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnCompleteRefresh
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnStartRefresh
 // (Event, Protected, BlueprintEvent)
 
-void UWBP_ModList_ForDisplay_C::OnCompleteRefresh()
+void UWBP_ModList_ForDisplay_C::OnStartRefresh()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnCompleteRefresh");
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnStartRefresh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnClickedModInternal
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Option_ModMenu_ModList_C*    Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModList_ForDisplay_C::OnClickedModInternal(class UWBP_Option_ModMenu_ModList_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnClickedModInternal");
-
-	Params::WBP_ModList_ForDisplay_C_OnClickedModInternal Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.OnCancelAction
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.Setup
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ModList_ForDisplay_C::OnCancelAction()
+void UWBP_ModList_ForDisplay_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "OnCancelAction");
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.ExecuteUbergraph_WBP_ModList_ForDisplay
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.SetupInputAction
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ModList_ForDisplay_C::SetupInputAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "SetupInputAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ModList_ForDisplay_C::ExecuteUbergraph_WBP_ModList_ForDisplay(int32 EntryPoint)
+void UWBP_ModList_ForDisplay_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "ExecuteUbergraph_WBP_ModList_ForDisplay");
+		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "Tick");
 
-	Params::WBP_ModList_ForDisplay_C_ExecuteUbergraph_WBP_ModList_ForDisplay Parms{};
+	Params::WBP_ModList_ForDisplay_C_Tick Parms{};
 
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.CloseOrOpenSaveDialog
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ModList_ForDisplay_C::CloseOrOpenSaveDialog()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "CloseOrOpenSaveDialog");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.CloseOrOpenCancelDialog
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ModList_ForDisplay_C::CloseOrOpenCancelDialog()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "CloseOrOpenCancelDialog");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_4_OnCancel__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_ModList_ForDisplay_C::BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_4_OnCancel__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_4_OnCancel__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_3_OnRequestOpenSteamWorkshop__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_ModList_ForDisplay_C::BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_3_OnRequestOpenSteamWorkshop__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_3_OnRequestOpenSteamWorkshop__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_2_OnConfirm__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_ModList_ForDisplay_C::BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_2_OnConfirm__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_2_OnConfirm__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_1_OnChangedModSupportIngame__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bNewFlag                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModList_ForDisplay_C::BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_1_OnChangedModSupportIngame__DelegateSignature(bool bNewFlag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_1_OnChangedModSupportIngame__DelegateSignature");
-
-	Params::WBP_ModList_ForDisplay_C_BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_1_OnChangedModSupportIngame__DelegateSignature Parms{};
-
-	Parms.bNewFlag = bNewFlag;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C.BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_0_OnClickedAnyMod__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_Option_ModMenu_ModList_C*    Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModList_ForDisplay_C::BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_0_OnClickedAnyMod__DelegateSignature(class UWBP_Option_ModMenu_ModList_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModList_ForDisplay_C", "BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_0_OnClickedAnyMod__DelegateSignature");
-
-	Params::WBP_ModList_ForDisplay_C_BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_0_OnClickedAnyMod__DelegateSignature Parms{};
-
-	Parms.Widget = Widget;
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

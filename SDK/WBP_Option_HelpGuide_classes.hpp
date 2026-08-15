@@ -33,13 +33,13 @@ public:
 	bool                                          InGameMenu;                                        // 0x04B8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Setup(class FName NoteTitle);
-	void OnSetup();
-	void Finished_80D7C1A8449D6AAAECA77A96E24A7B39();
-	void ExecuteUbergraph_WBP_Option_HelpGuide(int32 EntryPoint);
-	void Destruct();
-	void ClosePanel();
 	void Change_Note_Content(class FName NoteTitle);
+	void ClosePanel();
+	void Destruct();
+	void ExecuteUbergraph_WBP_Option_HelpGuide(int32 EntryPoint);
+	void Finished_80D7C1A8449D6AAAECA77A96E24A7B39();
+	void OnSetup();
+	void Setup(class FName NoteTitle);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

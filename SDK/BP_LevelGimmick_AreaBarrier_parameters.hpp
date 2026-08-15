@@ -16,68 +16,14 @@
 namespace SDK::Params
 {
 
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.DebugNiagaraFadeOut
-// 0x0001 (0x0001 - 0x0000)
-struct BP_LevelGimmick_AreaBarrier_C_DebugNiagaraFadeOut final
-{
-public:
-	bool                                          CallFunc_IsDevelopmentBuild_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_C_DebugNiagaraFadeOut;
-
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.DebugNiagaraReset
-// 0x0001 (0x0001 - 0x0000)
-struct BP_LevelGimmick_AreaBarrier_C_DebugNiagaraReset final
-{
-public:
-	bool                                          CallFunc_IsDevelopmentBuild_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_C_DebugNiagaraReset;
-
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.ExecuteUbergraph_BP_LevelGimmick_AreaBarrier
-// 0x0020 (0x0020 - 0x0000)
-struct BP_LevelGimmick_AreaBarrier_C_ExecuteUbergraph_BP_LevelGimmick_AreaBarrier final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalLevelGimmick_AreaBarrier_ViewModel K2Node_Event_InViewModel;                          // 0x0004(0x000C)(ConstParm, NoDestructor)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_UpdateNiagaraFadeOut_DeltaSeconds_ImplicitCast; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_C_ExecuteUbergraph_BP_LevelGimmick_AreaBarrier;
-
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.OnDataChanged
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.UpdateView
 // 0x000C (0x000C - 0x0000)
-struct BP_LevelGimmick_AreaBarrier_C_OnDataChanged final
+struct BP_LevelGimmick_AreaBarrier_C_UpdateView final
 {
 public:
-	struct FPalLevelGimmick_AreaBarrier_ViewModel InViewModel;                                       // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FPalLevelGimmick_AreaBarrier_ViewModel ViewModel;                                         // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_C_OnDataChanged;
-
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_LevelGimmick_AreaBarrier_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_C_ReceiveTick;
-
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.SetNiagaraParams
-// 0x0028 (0x0028 - 0x0000)
-struct BP_LevelGimmick_AreaBarrier_C_SetNiagaraParams final
-{
-public:
-	double                                        Alpha;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Dissolve;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Rate;                                              // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast;    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast_1;  // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast_2;  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_C_SetNiagaraParams;
+DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_C_UpdateView;
 
 // Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.UpdateNiagaraFadeOut
 // 0x0040 (0x0040 - 0x0000)
@@ -98,14 +44,68 @@ public:
 };
 DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_C_UpdateNiagaraFadeOut;
 
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.UpdateView
-// 0x000C (0x000C - 0x0000)
-struct BP_LevelGimmick_AreaBarrier_C_UpdateView final
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.SetNiagaraParams
+// 0x0028 (0x0028 - 0x0000)
+struct BP_LevelGimmick_AreaBarrier_C_SetNiagaraParams final
 {
 public:
-	struct FPalLevelGimmick_AreaBarrier_ViewModel ViewModel;                                         // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	double                                        Alpha;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Dissolve;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Rate;                                              // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast;    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast_1;  // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast_2;  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_C_UpdateView;
+DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_C_SetNiagaraParams;
+
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_LevelGimmick_AreaBarrier_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_C_ReceiveTick;
+
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.OnDataChanged
+// 0x000C (0x000C - 0x0000)
+struct BP_LevelGimmick_AreaBarrier_C_OnDataChanged final
+{
+public:
+	struct FPalLevelGimmick_AreaBarrier_ViewModel InViewModel;                                       // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_C_OnDataChanged;
+
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.ExecuteUbergraph_BP_LevelGimmick_AreaBarrier
+// 0x0020 (0x0020 - 0x0000)
+struct BP_LevelGimmick_AreaBarrier_C_ExecuteUbergraph_BP_LevelGimmick_AreaBarrier final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalLevelGimmick_AreaBarrier_ViewModel K2Node_Event_InViewModel;                          // 0x0004(0x000C)(ConstParm, NoDestructor)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_UpdateNiagaraFadeOut_DeltaSeconds_ImplicitCast; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_C_ExecuteUbergraph_BP_LevelGimmick_AreaBarrier;
+
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.DebugNiagaraReset
+// 0x0001 (0x0001 - 0x0000)
+struct BP_LevelGimmick_AreaBarrier_C_DebugNiagaraReset final
+{
+public:
+	bool                                          CallFunc_IsDevelopmentBuild_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_C_DebugNiagaraReset;
+
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.DebugNiagaraFadeOut
+// 0x0001 (0x0001 - 0x0000)
+struct BP_LevelGimmick_AreaBarrier_C_DebugNiagaraFadeOut final
+{
+public:
+	bool                                          CallFunc_IsDevelopmentBuild_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_C_DebugNiagaraFadeOut;
 
 // Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.GetTeleportPoints
 // 0x0020 (0x0020 - 0x0000)

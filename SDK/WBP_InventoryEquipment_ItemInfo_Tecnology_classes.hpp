@@ -28,10 +28,10 @@ public:
 	class UImage*                                 WorkSpaceInfo;                                     // 0x0290(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Tecnology(int32 EntryPoint);
-	void GetStockNum(class FName StaticItemId, bool WithStock, int32* Stock);
-	void SetDetails(const TArray<struct FPalStaticItemIdAndNum>& MatDetail, bool WithStock);
 	void SetWorkSpaceInfo();
+	void SetDetails(const TArray<struct FPalStaticItemIdAndNum>& MatDetail, bool WithStock);
+	void GetStockNum(class FName StaticItemId, bool WithStock, int32* Stock);
+	void ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Tecnology(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

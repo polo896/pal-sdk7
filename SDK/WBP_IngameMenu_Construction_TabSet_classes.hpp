@@ -50,21 +50,21 @@ public:
 	struct FPalUICommonItemInfoDisplayData        Cached_Display_Info;                               // 0x0570(0x00C8)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_IngameMenu_Construction_TabSet(int32 EntryPoint);
-	void GetCurrentCategory(EPalBuildObjectTypeA* TypeA);
-	void GetTabWidgetByIndex(int32 Index_0, class UWBP_IngameMenu_Construction_Tab_C** TabWidget);
-	void OnChangedEnableChild(int32 Index_0, class UWidget* ChildWidget, bool IsEnable);
-	void OnChangedIndex_Binded(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
-	void OnChangedInｐutMethod(ECommonInputType bNewInputType);
-	void OnClickedTabInternal(class UWBP_IngameMenu_Construction_Tab_C* Widget);
-	void OnHoveredTabInternal(class UWBP_IngameMenu_Construction_Tab_C* Widget);
-	void OnUnhoveredInternal();
-	void RegisterPanelWidget(class UPanelWidget** PanelWidget);
-	void SelectByTypeA(EPalBuildObjectTypeA TypeA);
-	void SetActiveTabByTypeA(EPalBuildObjectTypeA TypeA, bool bTabActive);
 	void SetNewMark(EPalBuildObjectTypeA TypeA, bool bDisplayMark);
+	void SetActiveTabByTypeA(EPalBuildObjectTypeA TypeA, bool bTabActive);
+	void SelectByTypeA(EPalBuildObjectTypeA TypeA);
+	void RegisterPanelWidget(class UPanelWidget** PanelWidget);
+	void OnUnhoveredInternal();
+	void OnHoveredTabInternal(class UWBP_IngameMenu_Construction_Tab_C* Widget);
+	void OnClickedTabInternal(class UWBP_IngameMenu_Construction_Tab_C* Widget);
+	void OnChangedInｐutMethod(ECommonInputType bNewInputType);
+	void OnChangedIndex_Binded(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
+	void OnChangedEnableChild(int32 Index_0, class UWidget* ChildWidget, bool IsEnable);
+	void GetTabWidgetByIndex(int32 Index_0, class UWBP_IngameMenu_Construction_Tab_C** TabWidget);
+	void GetCurrentCategory(EPalBuildObjectTypeA* TypeA);
+	void ExecuteUbergraph_WBP_IngameMenu_Construction_TabSet(int32 EntryPoint);
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

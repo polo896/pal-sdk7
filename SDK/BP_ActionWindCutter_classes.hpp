@@ -31,7 +31,7 @@ public:
 	void ExecuteUbergraph_BP_ActionWindCutter(int32 EntryPoint);
 	void OnSpawnBullet(class AActor* Bullet);
 	void OnSpawnEffect(class APalSkillEffectBase* Effect_0);
-	void test(class AActor* Bullet);
+	void TEST(class AActor* Bullet);
 
 public:
 	static class UClass* StaticClass()

@@ -29,7 +29,7 @@ public:
 	class UWidgetAnimation*                       Anm_Rarity_0To4;                                   // 0x0620(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anm_UnselectToSelect;                              // 0x0628(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anm_Bg_Lock;                                       // 0x0630(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anm_Focus;                                         // 0x0638(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anm_focus;                                         // 0x0638(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anm_Rarity_0To4_old;                               // 0x0640(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UImage*                                 Base;                                              // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Base_Empty;                                        // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -85,8 +85,6 @@ public:
 	void OnSetEmptySlotImpl();
 	void OnSetValidSlotEvent();
 	void OnUnhoveredEvent(class UWBP_PalItemSlotButtonBase_C* Widget);
-	void RegisterButton(class UCommonButtonBase** Button);
-	void RegisterItemSlotWidget(class UWBP_PalItemSlotBase_C** itemSlotWidget);
 	void Set_Pal_Gear_Icon(class FName ItemId);
 	void SetEnableDefaultClickSound(bool Enable);
 	void SetLanternEquipMode(EPalPlayerEquipLantern EquipType);
@@ -96,6 +94,8 @@ public:
 	void SetupByItemAndNumRange(class FName StaticItemId, int32 Min, int32 Max);
 	void Toggle_Corruption_Visibility(bool Visible);
 	void ToggleLock(bool Lock);
+	void RegisterButton(class UCommonButtonBase** Button);
+	void RegisterItemSlotWidget(class UWBP_PalItemSlotBase_C** itemSlotWidget);
 
 public:
 	static class UClass* StaticClass()

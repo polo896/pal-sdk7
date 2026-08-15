@@ -14,23 +14,23 @@
 namespace SDK::Params
 {
 
-// Function LS_LevelGimmick_AreaBarrier_Unlock.LS_LevelGimmick_AreaBarrier_Unlock (Director BP)_C.Event ResetNiagara
+// Function LS_LevelGimmick_AreaBarrier_Unlock.LS_LevelGimmick_AreaBarrier_Unlock (Director BP)_C.SequenceEvent__ENTRYPOINTLS_LevelGimmick_AreaBarrier_Unlock (Director BP)_0
 // 0x0008 (0x0008 - 0x0000)
-struct LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_Event_ResetNiagara final
+struct LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_SequenceEvent__ENTRYPOINTLS_LevelGimmick_AreaBarrier_Unlock__Director_BP__0 final
 {
 public:
 	class ABP_LevelGimmick_AreaBarrier_C*         BP_LevelGimmick_AreaBarrier;                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_Event_ResetNiagara;
+DUMPER7_ASSERTS_LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_SequenceEvent__ENTRYPOINTLS_LevelGimmick_AreaBarrier_Unlock__Director_BP__0;
 
-// Function LS_LevelGimmick_AreaBarrier_Unlock.LS_LevelGimmick_AreaBarrier_Unlock (Director BP)_C.Event StartNiagaraFadeOut
+// Function LS_LevelGimmick_AreaBarrier_Unlock.LS_LevelGimmick_AreaBarrier_Unlock (Director BP)_C.SequenceEvent__ENTRYPOINTLS_LevelGimmick_AreaBarrier_Unlock (Director BP)
 // 0x0008 (0x0008 - 0x0000)
-struct LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_Event_StartNiagaraFadeOut final
+struct LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_SequenceEvent__ENTRYPOINTLS_LevelGimmick_AreaBarrier_Unlock__Director_BP_ final
 {
 public:
 	class ABP_LevelGimmick_AreaBarrier_C*         BP_LevelGimmick_AreaBarrier;                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_Event_StartNiagaraFadeOut;
+DUMPER7_ASSERTS_LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_SequenceEvent__ENTRYPOINTLS_LevelGimmick_AreaBarrier_Unlock__Director_BP_;
 
 // Function LS_LevelGimmick_AreaBarrier_Unlock.LS_LevelGimmick_AreaBarrier_Unlock (Director BP)_C.ExecuteUbergraph_LS_LevelGimmick_AreaBarrier_Unlock (Director BP)
 // 0x0018 (0x0018 - 0x0000)
@@ -44,23 +44,23 @@ public:
 };
 DUMPER7_ASSERTS_LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_ExecuteUbergraph_LS_LevelGimmick_AreaBarrier_Unlock__Director_BP_;
 
-// Function LS_LevelGimmick_AreaBarrier_Unlock.LS_LevelGimmick_AreaBarrier_Unlock (Director BP)_C.SequenceEvent__ENTRYPOINTLS_LevelGimmick_AreaBarrier_Unlock (Director BP)
+// Function LS_LevelGimmick_AreaBarrier_Unlock.LS_LevelGimmick_AreaBarrier_Unlock (Director BP)_C.Event StartNiagaraFadeOut
 // 0x0008 (0x0008 - 0x0000)
-struct LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_SequenceEvent__ENTRYPOINTLS_LevelGimmick_AreaBarrier_Unlock__Director_BP_ final
+struct LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_Event_StartNiagaraFadeOut final
 {
 public:
 	class ABP_LevelGimmick_AreaBarrier_C*         BP_LevelGimmick_AreaBarrier;                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_SequenceEvent__ENTRYPOINTLS_LevelGimmick_AreaBarrier_Unlock__Director_BP_;
+DUMPER7_ASSERTS_LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_Event_StartNiagaraFadeOut;
 
-// Function LS_LevelGimmick_AreaBarrier_Unlock.LS_LevelGimmick_AreaBarrier_Unlock (Director BP)_C.SequenceEvent__ENTRYPOINTLS_LevelGimmick_AreaBarrier_Unlock (Director BP)_0
+// Function LS_LevelGimmick_AreaBarrier_Unlock.LS_LevelGimmick_AreaBarrier_Unlock (Director BP)_C.Event ResetNiagara
 // 0x0008 (0x0008 - 0x0000)
-struct LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_SequenceEvent__ENTRYPOINTLS_LevelGimmick_AreaBarrier_Unlock__Director_BP__0 final
+struct LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_Event_ResetNiagara final
 {
 public:
 	class ABP_LevelGimmick_AreaBarrier_C*         BP_LevelGimmick_AreaBarrier;                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_SequenceEvent__ENTRYPOINTLS_LevelGimmick_AreaBarrier_Unlock__Director_BP__0;
+DUMPER7_ASSERTS_LS_LevelGimmick_AreaBarrier_Unlock__Director_BP__C_Event_ResetNiagara;
 
 }
 

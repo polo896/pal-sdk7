@@ -103,16 +103,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_OverheatRifle_C_GetMuzzleEffectAttached;
 
-// Function BP_OverheatRifle.BP_OverheatRifle_C.GetMuzzleLocation
-// 0x0030 (0x0030 - 0x0000)
-struct BP_OverheatRifle_C_GetMuzzleLocation final
-{
-public:
-	struct FVector                                MuzzleLocation;                                    // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_OverheatRifle_C_GetMuzzleLocation;
-
 // Function BP_OverheatRifle.BP_OverheatRifle_C.IsOverHeated
 // 0x0001 (0x0001 - 0x0000)
 struct BP_OverheatRifle_C_IsOverHeated final
@@ -174,6 +164,16 @@ public:
 	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_OverheatRifle_C_TickCoolDown;
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.GetMuzzleLocation
+// 0x0030 (0x0030 - 0x0000)
+struct BP_OverheatRifle_C_GetMuzzleLocation final
+{
+public:
+	struct FVector                                MuzzleLocation;                                    // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_OverheatRifle_C_GetMuzzleLocation;
 
 // Function BP_OverheatRifle.BP_OverheatRifle_C.OnAttachWeapon
 // 0x0008 (0x0008 - 0x0000)

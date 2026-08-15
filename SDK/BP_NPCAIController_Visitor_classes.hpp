@@ -41,8 +41,10 @@ public:
 	void BindWaitFinishEvent(class UBP_AIAction_Visitor_WaitInBaseCamp_C* action);
 	void ExecuteUbergraph_BP_NPCAIController_Visitor(int32 EntryPoint);
 	void FindTargetPlayer(class AActor** TargetActor);
+	void ForceEscapeStartFortOutSide(class AActor* StartActor, class AActor* TargetActor);
 	void OnArrivedTargetPoint();
 	void OnCancelInvader();
+	void OnDead(const class AActor* LastAttacker);
 	void OnRecruited();
 	void OnStuck();
 	void OnWaitFinished();
@@ -52,8 +54,6 @@ public:
 	void StartReturnToSpawnedPointAction();
 	void StartTravelToBaseCamp();
 	void StartWaitAction();
-	void ForceEscapeStartFortOutSide(class AActor* StartActor, class AActor* TargetActor);
-	void OnDead(const class AActor* LastAttacker);
 	void ReceiveBeginPlay();
 	void ReceivePossess(class APawn* PossessedPawn);
 	void ReceiveTick(float DeltaSeconds);

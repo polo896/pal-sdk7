@@ -25,9 +25,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MapObject_PickupItem_PalEgg_Water_C; // 0x0470(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_BP_MapObject_PickupItem_PalEgg_Water(int32 EntryPoint);
-	void InitializeFromPool();
 	void ReturnToPool();
+	void InitializeFromPool();
+	void ExecuteUbergraph_BP_MapObject_PickupItem_PalEgg_Water(int32 EntryPoint);
 
 	struct FPalObjectPoolParameter GetObjectPoolParameter() const;
 

@@ -12,8 +12,8 @@
 
 #include "Pal_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "FPalUIWorkProductDualWidgetSet_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FPalUIWorkProductDualWidgetSet_structs.hpp"
 
 
 namespace SDK::Params

@@ -44,25 +44,25 @@ public:
 	bool                                          bCachedUnavailableRecipe;                          // 0x03A4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Hover();
-	void AnmEvent_Unhover();
-	void BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void ExecuteUbergraph_WBP_IngameMenu_Construction_Icon(int32 EntryPoint);
-	void GetBuildObjectData(struct FPalBuildObjectData* BuildObjectData);
-	void GetBuildObjectId(class FName* BuildObjectId);
-	void GetColumnIndex(int32* Index_0);
-	void IsNewMarkDisplayed(bool* bDisplayed);
-	void SetGridColumnIndex(int32 Index_0);
-	void SetLockedDetail(bool bLocked);
-	void SetNewMark(bool bDisplayMark);
-	void SetUnavailableDetail(bool bUnavailable);
-	void Setup(const struct FPalBuildObjectData& BuildObjectData);
-	void SetVisibleBlueprintMark(ESlateVisibility NewVisibility);
-	void SetVisibleFavoriteIcon(ESlateVisibility NewVisibility);
 	void UpdateButtonSound();
+	void SetVisibleFavoriteIcon(ESlateVisibility NewVisibility);
+	void SetVisibleBlueprintMark(ESlateVisibility NewVisibility);
+	void Setup(const struct FPalBuildObjectData& BuildObjectData);
+	void SetUnavailableDetail(bool bUnavailable);
+	void SetNewMark(bool bDisplayMark);
+	void SetLockedDetail(bool bLocked);
+	void SetGridColumnIndex(int32 Index_0);
+	void IsNewMarkDisplayed(bool* bDisplayed);
+	void GetColumnIndex(int32* Index_0);
+	void GetBuildObjectId(class FName* BuildObjectId);
+	void GetBuildObjectData(struct FPalBuildObjectData* BuildObjectData);
+	void ExecuteUbergraph_WBP_IngameMenu_Construction_Icon(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_IngameMenu_Construction_Icon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Unhover();
+	void AnmEvent_Hover();
 
 public:
 	static class UClass* StaticClass()

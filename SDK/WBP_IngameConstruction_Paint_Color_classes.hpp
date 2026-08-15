@@ -44,13 +44,13 @@ public:
 	class UWBP_PlayerInputKeyGuideIcon_C*         WBP_PlayerInputKeyGuideIcon_0;                     // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void UnSelect();
-	void SetPaletteInfo(const struct FFPalUIPaintPaletteInfo& Info);
-	void Select();
 	void PlayAnimation_Unselect();
 	void PlayAnimation_ChangeColor();
 	void PlayAnimatio_Select();
 	void ExecuteUbergraph_WBP_IngameConstruction_Paint_Color(int32 EntryPoint);
+	void UnSelect();
+	void SetPaletteInfo(const struct FFPalUIPaintPaletteInfo& Info);
+	void Select();
 
 public:
 	static class UClass* StaticClass()

@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
-#include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_classes.hpp"
 
 
 namespace SDK
@@ -40,26 +40,26 @@ public:
 	int32                                         LastHoveredChildColumnIndex;                       // 0x035C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Destruct();
-	class UWidget* DoCustomNavigation_Down(EUINavigation Navigation_0);
-	class UWidget* DoCustomNavigation_Up(EUINavigation Navigation_0);
-	void ExecuteUbergraph_WBP_IngameMenu_Construction_Group(int32 EntryPoint);
-	void GetChildAt_Clamped(int32 Index_0, class UWBP_IngameMenu_Construction_Icon_C** Widget);
-	void GetFocusTargetByBuildObjectId(class FName BuildObjectId, class UWidget** Widget);
-	void GetListNumber(int32* Number);
-	void GetTopFocusTarget(class UWidget** Widget);
-	void GetTopWidget(class UWBP_IngameMenu_Construction_Icon_C** Widget);
-	void GetVisibleChildCount(int32* Count);
-	void GetVisibleWidgets(TArray<class UWBP_IngameMenu_Construction_Icon_C*>* OutWidgets);
-	void GetWIdgettByBuildObjectId(class FName BuildObjectId, class UWBP_IngameMenu_Construction_Icon_C** Widget);
-	void IsExistNewBuildObject(bool* bExist);
-	void IsExistRow(int32 RowIndex, bool* bIsExist);
-	void OnClickedBuildObjectIcon(class UWBP_IngameMenu_Construction_Icon_C* Widget);
-	void OnHoveredAnyBuildObjectIcon_Binded(class UWBP_IngameMenu_Construction_Icon_C* Widget);
-	void OnUnhoveredAnyBuildObjectIcon_Binded();
-	void SetListNumber(int32 Number);
-	void SetNavigationCalculator(class UBP_IngameMenu_Construction_ListFocusCalculator_C* Calculator);
 	void Setup(EPalBuildObjectTypeForUIDisplay UIDisplayType, const struct FPalBuildObjectDataSetTypeUIDisplay& DataSet);
+	void SetNavigationCalculator(class UBP_IngameMenu_Construction_ListFocusCalculator_C* Calculator);
+	void SetListNumber(int32 Number);
+	void OnUnhoveredAnyBuildObjectIcon_Binded();
+	void OnHoveredAnyBuildObjectIcon_Binded(class UWBP_IngameMenu_Construction_Icon_C* Widget);
+	void OnClickedBuildObjectIcon(class UWBP_IngameMenu_Construction_Icon_C* Widget);
+	void IsExistRow(int32 RowIndex, bool* bIsExist);
+	void IsExistNewBuildObject(bool* bExist);
+	void GetWIdgettByBuildObjectId(class FName BuildObjectId, class UWBP_IngameMenu_Construction_Icon_C** Widget);
+	void GetVisibleWidgets(TArray<class UWBP_IngameMenu_Construction_Icon_C*>* OutWidgets);
+	void GetVisibleChildCount(int32* Count);
+	void GetTopWidget(class UWBP_IngameMenu_Construction_Icon_C** Widget);
+	void GetTopFocusTarget(class UWidget** Widget);
+	void GetListNumber(int32* Number);
+	void GetFocusTargetByBuildObjectId(class FName BuildObjectId, class UWidget** Widget);
+	void GetChildAt_Clamped(int32 Index_0, class UWBP_IngameMenu_Construction_Icon_C** Widget);
+	void ExecuteUbergraph_WBP_IngameMenu_Construction_Group(int32 EntryPoint);
+	class UWidget* DoCustomNavigation_Up(EUINavigation Navigation_0);
+	class UWidget* DoCustomNavigation_Down(EUINavigation Navigation_0);
+	void Destruct();
 
 public:
 	static class UClass* StaticClass()

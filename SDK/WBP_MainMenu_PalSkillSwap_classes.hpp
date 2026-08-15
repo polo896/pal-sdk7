@@ -37,6 +37,7 @@ public:
 	struct FDataTableRowHandle                    SkillSwapNothingMsgID;                             // 0x04E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
+	void Construct();
 	void Setup(TArray<EPalWazaID>& MasteredSkills, TArray<EPalWazaID>& EquipedSkills);
 	void OnUnhovered_Internal(class UWBP_MainMenu_Pal_Skill_Active_C* SkillWidget);
 	void OnSetup();
@@ -46,7 +47,6 @@ public:
 	struct FEventReply On_BaseBlack_MouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void ExecuteUbergraph_WBP_MainMenu_PalSkillSwap(int32 EntryPoint);
 	void Destruct();
-	void Construct();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

@@ -33,8 +33,8 @@ public:
 	class UBP_PalTextBlock_C*                     Text_SimpleDesc_BuildObj;                          // 0x02C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetImportantDescription(const class FText& Text);
 	void SetSimpleDescription(const class FText& Text);
+	void SetImportantDescription(const class FText& Text);
 
 public:
 	static class UClass* StaticClass()

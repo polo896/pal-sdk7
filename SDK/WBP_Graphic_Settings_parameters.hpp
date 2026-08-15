@@ -19,485 +19,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.UpdateVSync
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Graphic_Settings_C_UpdateVSync final
-{
-public:
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_UpdateVSync;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.UpdateNVIDIAReflexAndVSyncSettingsActive
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Graphic_Settings_C_UpdateNVIDIAReflexAndVSyncSettingsActive final
-{
-public:
-	int32                                         CallFunc_NVIDIAReflexTypeToSelectionIndex_Index;   // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FDataTableRowHandle>            CallFunc_GetNVIDIAReflexMsgIdArray_MsgIdArray;     // 0x0008(0x0010)(ReferenceParm)
-	bool                                          CallFunc_IsDLSSFGAvailable_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_UpdateNVIDIAReflexAndVSyncSettingsActive;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.UpdateFrameGenerationSettingsActive
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_Graphic_Settings_C_UpdateFrameGenerationSettingsActive final
-{
-public:
-	bool                                          bUserChanged;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_UpdateFrameGenerationSettingsActive;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.SetupUpscalingName
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_Graphic_Settings_C_SetupUpscalingName final
-{
-public:
-	struct FDataTableRowHandle                    MsgID_MetalFX;                                     // 0x0000(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	struct FDataTableRowHandle                    MsgID_DLSS;                                        // 0x0010(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsMac_ReturnValue;                        // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    K2Node_Select_Default;                             // 0x0028(0x0010)(NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_SetupUpscalingName;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.SetupDrawDistanceStrings
-// 0x0098 (0x0098 - 0x0000)
-struct WBP_Graphic_Settings_C_SetupDrawDistanceStrings final
-{
-public:
-	struct FDataTableRowHandle                    NewLocalVar;                                       // 0x0000(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_1;             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetEnumeratorValueFromIndex_ReturnValue;  // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0030(0x0018)()
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Map_Find_Value;                           // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_SetupDrawDistanceStrings;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnWindowChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnWindowChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnWindowChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnVSyncChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Graphic_Settings_C_OnVSyncChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnVSyncChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnViewDisChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnViewDisChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnViewDisChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnUpscalingChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnUpscalingChanged final
-{
-public:
-	int32                                         DLSSLevel;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnUpscalingChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnTextureChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnTextureChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnTextureChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnShadowChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnShadowChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnShadowChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnRideCameraChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Graphic_Settings_C_OnRideCameraChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnRideCameraChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnResolutionChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnResolutionChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnResolutionChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnPresetChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnPresetChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnPresetChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.SelectionIndexToNVIDIAReflexType
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_Graphic_Settings_C_SelectionIndexToNVIDIAReflexType final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalReflexMode                                ReflexType;                                        // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EPalReflexMode>                        CallFunc_Map_Keys_Keys;                            // 0x0018(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalReflexMode                                CallFunc_Array_Get_Item;                           // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E[0x2];                                       // 0x002E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Map_Find_Value;                           // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_SelectionIndexToNVIDIAReflexType;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnMotionBlurChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Graphic_Settings_C_OnMotionBlurChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnMotionBlurChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnMaxFPSChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnMaxFPSChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnMaxFPSChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnLODChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Graphic_Settings_C_OnLODChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnLODChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnFOVChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Graphic_Settings_C_OnFOVChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnFOVChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnFoliageChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnFoliageChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnFoliageChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCommonQualityChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnCommonQualityChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnCommonQualityChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnChangedReflexType
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnChangedReflexType final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnChangedReflexType;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnChangedMapObjectDrawDistanceType
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnChangedMapObjectDrawDistanceType final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnChangedMapObjectDrawDistanceType;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnChangedFriendPalAwakenPalAura
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Graphic_Settings_C_OnChangedFriendPalAwakenPalAura final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnChangedFriendPalAwakenPalAura;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnChangedFrameGenerationType
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnChangedFrameGenerationType final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnChangedFrameGenerationType;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnChangedArachnophobiaMode
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Graphic_Settings_C_OnChangedArachnophobiaMode final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnChangedArachnophobiaMode;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnChagedFOVType
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Graphic_Settings_C_OnChagedFOVType final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnChagedFOVType;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCameraShakeChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Graphic_Settings_C_OnCameraShakeChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnCameraShakeChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCameraRecoilChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Graphic_Settings_C_OnCameraRecoilChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnCameraRecoilChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnBrightnessChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Graphic_Settings_C_OnBrightnessChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnBrightnessChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnAutoContrastChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Graphic_Settings_C_OnAutoContrastChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnAutoContrastChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnAAChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnAAChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnAAChanged;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.NVIDIAReflexTypeToSelectionIndex
-// 0x001C (0x001C - 0x0000)
-struct WBP_Graphic_Settings_C_NVIDIAReflexTypeToSelectionIndex final
-{
-public:
-	EPalReflexMode                                ReflexMode;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Index_0;                                           // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalReflexMode                                Temp_byte_Variable;                                // 0x0008(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Map_Find_Value;                           // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Map_Find_Value_1;                         // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_NVIDIAReflexTypeToSelectionIndex;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.ModifierFrameGenerationSettingsBySelectionIndex
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Graphic_Settings_C_ModifierFrameGenerationSettingsBySelectionIndex final
-{
-public:
-	int32                                         SelectionIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_ModifierFrameGenerationSettingsBySelectionIndex;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.MakeFrameGenerationInfo
-// 0x00B8 (0x00B8 - 0x0000)
-struct WBP_Graphic_Settings_C_MakeFrameGenerationInfo final
-{
-public:
-	struct FDataTableRowHandle                    NewLocalVar_0;                                     // 0x0000(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	struct FDataTableRowHandle                    NewLocalVar;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	class FString                                 Temp_string_Variable;                              // 0x0020(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 Temp_string_Variable_1;                            // 0x0030(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 Temp_string_Variable_2;                            // 0x0040(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetDLSSFGSpec_OutGeneratedFramesMin;      // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetDLSSFGSpec_OutGeneratedFramesMax;      // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0070(0x0018)()
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         K2Node_MakeArray_Array;                            // 0x00A8(0x0010)(ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_MakeFrameGenerationInfo;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetUpscalingMsgIdArray
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Graphic_Settings_C_GetUpscalingMsgIdArray final
-{
-public:
-	TArray<struct FDataTableRowHandle>            MsgIdArray;                                        // 0x0000(0x0010)(Parm, OutParm)
-	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsMac_ReturnValue;                        // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FDataTableRowHandle>            K2Node_Select_Default;                             // 0x0018(0x0010)(ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_GetUpscalingMsgIdArray;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetNVIDIAReflexMsgIdArray
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Graphic_Settings_C_GetNVIDIAReflexMsgIdArray final
-{
-public:
-	TArray<struct FDataTableRowHandle>            MsgIdArray;                                        // 0x0000(0x0010)(Parm, OutParm)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_GetNVIDIAReflexMsgIdArray;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetMapObjectDrawDistanceTypeIndex
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Graphic_Settings_C_GetMapObjectDrawDistanceTypeIndex final
-{
-public:
-	EPalOptionMapObjectDrawDistanceType           DistanceType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         SelectionIndex;                                    // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EPalOptionMapObjectDrawDistanceType>   CallFunc_Map_Values_Values;                        // 0x0008(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_GetMapObjectDrawDistanceTypeIndex;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetFrameGenerationStrings
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Graphic_Settings_C_GetFrameGenerationStrings final
-{
-public:
-	TArray<class FString>                         NewParam;                                          // 0x0000(0x0010)(Parm, OutParm)
-	struct FDataTableRowHandle                    NewLocalVar;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_GetFrameGenerationStrings;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetFrameGenerationSelectionIndex
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Graphic_Settings_C_GetFrameGenerationSelectionIndex final
-{
-public:
-	EPalDLSSGMode                                 FrameGenerationModeType;                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         GeneratedFrame;                                    // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_GetFrameGenerationSelectionIndex;
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetDisplayGraphicLevel
-// 0x00D8 (0x00D8 - 0x0000)
-struct WBP_Graphic_Settings_C_GetDisplayGraphicLevel final
-{
-public:
-	struct FPalOptionGraphicsSettings             GraphicLevel;                                      // 0x0000(0x0068)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	EPalOptionGraphicsLevel                       Graphicsレベル;                                    // 0x0068(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Replace_ReturnValue;                      // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalOptionGraphicsPresetRow            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0098(0x0030)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x00CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x00CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_4;          // 0x00CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00CE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00CF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x00D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x00D3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Graphic_Settings_C_GetDisplayGraphicLevel;
-
 // Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.ExecuteUbergraph_WBP_Graphic_Settings
 // 0x0870 (0x0870 - 0x0000)
 struct WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings final
@@ -771,6 +292,485 @@ public:
 	double                                        CallFunc_SetSlider_Max_ImplicitCast_5;             // 0x0868(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetDisplayGraphicLevel
+// 0x00D8 (0x00D8 - 0x0000)
+struct WBP_Graphic_Settings_C_GetDisplayGraphicLevel final
+{
+public:
+	struct FPalOptionGraphicsSettings             GraphicLevel;                                      // 0x0000(0x0068)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	EPalOptionGraphicsLevel                       Graphicsレベル;                                    // 0x0068(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Replace_ReturnValue;                      // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalOptionGraphicsPresetRow            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0098(0x0030)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x00CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x00CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_4;          // 0x00CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00CE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00CF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x00D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x00D3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_GetDisplayGraphicLevel;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetFrameGenerationSelectionIndex
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Graphic_Settings_C_GetFrameGenerationSelectionIndex final
+{
+public:
+	EPalDLSSGMode                                 FrameGenerationModeType;                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         GeneratedFrame;                                    // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_GetFrameGenerationSelectionIndex;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetFrameGenerationStrings
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Graphic_Settings_C_GetFrameGenerationStrings final
+{
+public:
+	TArray<class FString>                         NewParam;                                          // 0x0000(0x0010)(Parm, OutParm)
+	struct FDataTableRowHandle                    NewLocalVar;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_GetFrameGenerationStrings;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetMapObjectDrawDistanceTypeIndex
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Graphic_Settings_C_GetMapObjectDrawDistanceTypeIndex final
+{
+public:
+	EPalOptionMapObjectDrawDistanceType           DistanceType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SelectionIndex;                                    // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EPalOptionMapObjectDrawDistanceType>   CallFunc_Map_Values_Values;                        // 0x0008(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_GetMapObjectDrawDistanceTypeIndex;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetNVIDIAReflexMsgIdArray
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Graphic_Settings_C_GetNVIDIAReflexMsgIdArray final
+{
+public:
+	TArray<struct FDataTableRowHandle>            MsgIdArray;                                        // 0x0000(0x0010)(Parm, OutParm)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_GetNVIDIAReflexMsgIdArray;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetUpscalingMsgIdArray
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Graphic_Settings_C_GetUpscalingMsgIdArray final
+{
+public:
+	TArray<struct FDataTableRowHandle>            MsgIdArray;                                        // 0x0000(0x0010)(Parm, OutParm)
+	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsMac_ReturnValue;                        // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FDataTableRowHandle>            K2Node_Select_Default;                             // 0x0018(0x0010)(ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_GetUpscalingMsgIdArray;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.MakeFrameGenerationInfo
+// 0x00B8 (0x00B8 - 0x0000)
+struct WBP_Graphic_Settings_C_MakeFrameGenerationInfo final
+{
+public:
+	struct FDataTableRowHandle                    NewLocalVar_0;                                     // 0x0000(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	struct FDataTableRowHandle                    NewLocalVar;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	class FString                                 Temp_string_Variable;                              // 0x0020(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable_1;                            // 0x0030(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable_2;                            // 0x0040(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetDLSSFGSpec_OutGeneratedFramesMin;      // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetDLSSFGSpec_OutGeneratedFramesMax;      // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0070(0x0018)()
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         K2Node_MakeArray_Array;                            // 0x00A8(0x0010)(ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_MakeFrameGenerationInfo;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.ModifierFrameGenerationSettingsBySelectionIndex
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Graphic_Settings_C_ModifierFrameGenerationSettingsBySelectionIndex final
+{
+public:
+	int32                                         SelectionIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_ModifierFrameGenerationSettingsBySelectionIndex;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.NVIDIAReflexTypeToSelectionIndex
+// 0x001C (0x001C - 0x0000)
+struct WBP_Graphic_Settings_C_NVIDIAReflexTypeToSelectionIndex final
+{
+public:
+	EPalReflexMode                                ReflexMode;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Index_0;                                           // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalReflexMode                                Temp_byte_Variable;                                // 0x0008(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Map_Find_Value;                           // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Map_Find_Value_1;                         // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_NVIDIAReflexTypeToSelectionIndex;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnAAChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnAAChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnAAChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnAutoContrastChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Graphic_Settings_C_OnAutoContrastChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnAutoContrastChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnBrightnessChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Graphic_Settings_C_OnBrightnessChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnBrightnessChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCameraRecoilChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Graphic_Settings_C_OnCameraRecoilChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnCameraRecoilChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCameraShakeChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Graphic_Settings_C_OnCameraShakeChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnCameraShakeChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnChagedFOVType
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Graphic_Settings_C_OnChagedFOVType final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnChagedFOVType;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnChangedArachnophobiaMode
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Graphic_Settings_C_OnChangedArachnophobiaMode final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnChangedArachnophobiaMode;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnChangedFrameGenerationType
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnChangedFrameGenerationType final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnChangedFrameGenerationType;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnChangedFriendPalAwakenPalAura
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Graphic_Settings_C_OnChangedFriendPalAwakenPalAura final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnChangedFriendPalAwakenPalAura;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnChangedMapObjectDrawDistanceType
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnChangedMapObjectDrawDistanceType final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnChangedMapObjectDrawDistanceType;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnChangedReflexType
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnChangedReflexType final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnChangedReflexType;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCommonQualityChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnCommonQualityChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnCommonQualityChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnFoliageChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnFoliageChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnFoliageChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnFOVChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Graphic_Settings_C_OnFOVChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnFOVChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnLODChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Graphic_Settings_C_OnLODChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnLODChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnMaxFPSChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnMaxFPSChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnMaxFPSChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnMotionBlurChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Graphic_Settings_C_OnMotionBlurChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnMotionBlurChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnPresetChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnPresetChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnPresetChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnResolutionChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnResolutionChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnResolutionChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnRideCameraChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Graphic_Settings_C_OnRideCameraChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnRideCameraChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnShadowChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnShadowChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnShadowChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnTextureChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnTextureChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnTextureChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnUpscalingChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnUpscalingChanged final
+{
+public:
+	int32                                         DLSSLevel;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnUpscalingChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnViewDisChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnViewDisChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnViewDisChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnVSyncChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Graphic_Settings_C_OnVSyncChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnVSyncChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnWindowChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnWindowChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_OnWindowChanged;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.SelectionIndexToNVIDIAReflexType
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_Graphic_Settings_C_SelectionIndexToNVIDIAReflexType final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalReflexMode                                ReflexType;                                        // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EPalReflexMode>                        CallFunc_Map_Keys_Keys;                            // 0x0018(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalReflexMode                                CallFunc_Array_Get_Item;                           // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2E[0x2];                                       // 0x002E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Map_Find_Value;                           // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_SelectionIndexToNVIDIAReflexType;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.SetupDrawDistanceStrings
+// 0x0098 (0x0098 - 0x0000)
+struct WBP_Graphic_Settings_C_SetupDrawDistanceStrings final
+{
+public:
+	struct FDataTableRowHandle                    NewLocalVar;                                       // 0x0000(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_1;             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetEnumeratorValueFromIndex_ReturnValue;  // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0030(0x0018)()
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Map_Find_Value;                           // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_SetupDrawDistanceStrings;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.SetupUpscalingName
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_Graphic_Settings_C_SetupUpscalingName final
+{
+public:
+	struct FDataTableRowHandle                    MsgID_MetalFX;                                     // 0x0000(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	struct FDataTableRowHandle                    MsgID_DLSS;                                        // 0x0010(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsMac_ReturnValue;                        // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    K2Node_Select_Default;                             // 0x0028(0x0010)(NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_SetupUpscalingName;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.UpdateFrameGenerationSettingsActive
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_Graphic_Settings_C_UpdateFrameGenerationSettingsActive final
+{
+public:
+	bool                                          bUserChanged;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_UpdateFrameGenerationSettingsActive;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.UpdateNVIDIAReflexAndVSyncSettingsActive
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Graphic_Settings_C_UpdateNVIDIAReflexAndVSyncSettingsActive final
+{
+public:
+	int32                                         CallFunc_NVIDIAReflexTypeToSelectionIndex_Index;   // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FDataTableRowHandle>            CallFunc_GetNVIDIAReflexMsgIdArray_MsgIdArray;     // 0x0008(0x0010)(ReferenceParm)
+	bool                                          CallFunc_IsDLSSFGAvailable_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_UpdateNVIDIAReflexAndVSyncSettingsActive;
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.UpdateVSync
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Graphic_Settings_C_UpdateVSync final
+{
+public:
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Graphic_Settings_C_UpdateVSync;
 
 }
 

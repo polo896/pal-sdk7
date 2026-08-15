@@ -14,6 +14,31 @@
 namespace SDK::Params
 {
 
+// Function WBP_Map_IconTreasureMapPoint.WBP_Map_IconTreasureMapPoint_C.Setup_Internal
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_Map_IconTreasureMapPoint_C_Setup_Internal final
+{
+public:
+	class UPalLocationPoint*                      LocationPoint;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalTreasureMapWorldSubsystem_C*     CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalLocationPoint_TreasureMapPoint*     K2Node_DynamicCast_AsPal_Location_Point_Treasure_Map_Point; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRarity_ReturnValue;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             CallFunc_Map_Find_Value;                           // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Map_IconTreasureMapPoint_C_Setup_Internal;
+
+// Function WBP_Map_IconTreasureMapPoint.WBP_Map_IconTreasureMapPoint_C.GetInvisibleButton
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Map_IconTreasureMapPoint_C_GetInvisibleButton final
+{
+public:
+	class UWidget*                                Button;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Map_IconTreasureMapPoint_C_GetInvisibleButton;
+
 // Function WBP_Map_IconTreasureMapPoint.WBP_Map_IconTreasureMapPoint_C.ExecuteUbergraph_WBP_Map_IconTreasureMapPoint
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_Map_IconTreasureMapPoint_C_ExecuteUbergraph_WBP_Map_IconTreasureMapPoint final
@@ -53,31 +78,6 @@ public:
 	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Map_IconTreasureMapPoint_C_BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Map_IconTreasureMapPoint.WBP_Map_IconTreasureMapPoint_C.Setup_Internal
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_Map_IconTreasureMapPoint_C_Setup_Internal final
-{
-public:
-	class UPalLocationPoint*                      LocationPoint;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_PalTreasureMapWorldSubsystem_C*     CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalLocationPoint_TreasureMapPoint*     K2Node_DynamicCast_AsPal_Location_Point_Treasure_Map_Point; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetRarity_ReturnValue;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             CallFunc_Map_Find_Value;                           // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Map_IconTreasureMapPoint_C_Setup_Internal;
-
-// Function WBP_Map_IconTreasureMapPoint.WBP_Map_IconTreasureMapPoint_C.GetInvisibleButton
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Map_IconTreasureMapPoint_C_GetInvisibleButton final
-{
-public:
-	class UWidget*                                Button;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Map_IconTreasureMapPoint_C_GetInvisibleButton;
 
 }
 

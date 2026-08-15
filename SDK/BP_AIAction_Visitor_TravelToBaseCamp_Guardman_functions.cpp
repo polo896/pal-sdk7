@@ -17,6 +17,28 @@
 namespace SDK
 {
 
+// Function BP_AIAction_Visitor_TravelToBaseCamp_Guardman.BP_AIAction_Visitor_TravelToBaseCamp_Guardman_C.ActionFinished
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EPawnActionResult                       WithResult                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_Visitor_TravelToBaseCamp_Guardman_C::ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Visitor_TravelToBaseCamp_Guardman_C", "ActionFinished");
+
+	Params::BP_AIAction_Visitor_TravelToBaseCamp_Guardman_C_ActionFinished Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+	Parms.WithResult = WithResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_AIAction_Visitor_TravelToBaseCamp_Guardman.BP_AIAction_Visitor_TravelToBaseCamp_Guardman_C.ActionTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -111,28 +133,6 @@ void UBP_AIAction_Visitor_TravelToBaseCamp_Guardman_C::Tick_Move_to_Base_Camp(cl
 
 	Parms.ControlledPawn = ControlledPawn;
 	Parms.DeltaTime = DeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_Visitor_TravelToBaseCamp_Guardman.BP_AIAction_Visitor_TravelToBaseCamp_Guardman_C.ActionFinished
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// EPawnActionResult                       WithResult                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_Visitor_TravelToBaseCamp_Guardman_C::ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_Visitor_TravelToBaseCamp_Guardman_C", "ActionFinished");
-
-	Params::BP_AIAction_Visitor_TravelToBaseCamp_Guardman_C_ActionFinished Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-	Parms.WithResult = WithResult;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

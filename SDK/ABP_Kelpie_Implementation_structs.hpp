@@ -40,5 +40,12 @@ public:
 };
 DUMPER7_ASSERTS_ABP_Kelpie_Implementation__FAnimBlueprintGeneratedConstantData;
 
+// ScriptStruct ABP_Kelpie_Implementation.ABP_Kelpie_Implementation_C.AnimBlueprintGeneratedMutableData
+// 0x0000 (0x0001 - 0x0001)
+struct ABP_Kelpie_Implementation::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+};
+DUMPER7_ASSERTS_ABP_Kelpie_Implementation__FAnimBlueprintGeneratedMutableData;
+
 }
 

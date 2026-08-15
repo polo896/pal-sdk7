@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_BackWeapon_PickAxe.BP_BackWeapon_PickAxe_C
 // 0x0000 (0x0328 - 0x0328)
-class ABP_BackWeapon_PickAxe_C : public ABP_BackWeaponBase_C
+class ABP_BackWeapon_PickAxe_C final : public ABP_BackWeaponBase_C
 {
 public:
 	static class UClass* StaticClass()

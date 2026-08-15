@@ -18,56 +18,72 @@
 namespace SDK::Params
 {
 
-// Function BP_AIActionProtecting.BP_AIActionProtecting_C.SetupAction
-// 0x0028 (0x0028 - 0x0000)
-struct BP_AIActionProtecting_C_SetupAction final
+// Function BP_AIActionProtecting.BP_AIActionProtecting_C.ActionAbort
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIActionProtecting_C_ActionAbort final
 {
 public:
 	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_CoopParam_Shield_C*                 CallFunc_GetComponentByClass_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AIActionProtecting_C_SetupAction;
+DUMPER7_ASSERTS_BP_AIActionProtecting_C_ActionAbort;
 
-// Function BP_AIActionProtecting.BP_AIActionProtecting_C.SetProtectCharacter
+// Function BP_AIActionProtecting.BP_AIActionProtecting_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIActionProtecting_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIActionProtecting_C_ActionFinished;
+
+// Function BP_AIActionProtecting.BP_AIActionProtecting_C.ActionStart
 // 0x0008 (0x0008 - 0x0000)
-struct BP_AIActionProtecting_C_SetProtectCharacter final
+struct BP_AIActionProtecting_C_ActionStart final
 {
 public:
-	class APalCharacter*                          RidingCharacter;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AIActionProtecting_C_SetProtectCharacter;
+DUMPER7_ASSERTS_BP_AIActionProtecting_C_ActionStart;
 
-// Function BP_AIActionProtecting.BP_AIActionProtecting_C.OnLanded
-// 0x00F0 (0x00F0 - 0x0000)
-struct BP_AIActionProtecting_C_OnLanded final
+// Function BP_AIActionProtecting.BP_AIActionProtecting_C.ActionTick
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIActionProtecting_C_ActionTick final
 {
 public:
-	class UPalCharacterMovementComponent*         Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0008(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaSeconds;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AIActionProtecting_C_OnLanded;
+DUMPER7_ASSERTS_BP_AIActionProtecting_C_ActionTick;
 
-// Function BP_AIActionProtecting.BP_AIActionProtecting_C.OnDead
+// Function BP_AIActionProtecting.BP_AIActionProtecting_C.CancelCheck
+// 0x0038 (0x0038 - 0x0000)
+struct BP_AIActionProtecting_C_CancelCheck final
+{
+public:
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsClimbing_ReturnValue;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalActionComponent*                    CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalActionType                                CallFunc_GetCurrentActionType_ReturnValue;         // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_23[0x5];                                       // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue_2;        // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsGliding_ReturnValue;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIActionProtecting_C_CancelCheck;
+
+// Function BP_AIActionProtecting.BP_AIActionProtecting_C.DeadProc
 // 0x0050 (0x0050 - 0x0000)
-struct BP_AIActionProtecting_C_OnDead final
+struct BP_AIActionProtecting_C_DeadProc final
 {
 public:
 	struct FPalDeadInfo                           DeadInfo;                                          // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-DUMPER7_ASSERTS_BP_AIActionProtecting_C_OnDead;
-
-// Function BP_AIActionProtecting.BP_AIActionProtecting_C.OnDamage
-// 0x0060 (0x0060 - 0x0000)
-struct BP_AIActionProtecting_C_OnDamage final
-{
-public:
-	struct FPalDamageResult                       DamageResult;                                      // 0x0000(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_AIActionProtecting_C_OnDamage;
+DUMPER7_ASSERTS_BP_AIActionProtecting_C_DeadProc;
 
 // Function BP_AIActionProtecting.BP_AIActionProtecting_C.ExecuteUbergraph_BP_AIActionProtecting
 // 0x0300 (0x0300 - 0x0000)
@@ -122,72 +138,56 @@ public:
 };
 DUMPER7_ASSERTS_BP_AIActionProtecting_C_ExecuteUbergraph_BP_AIActionProtecting;
 
-// Function BP_AIActionProtecting.BP_AIActionProtecting_C.DeadProc
+// Function BP_AIActionProtecting.BP_AIActionProtecting_C.OnDamage
+// 0x0060 (0x0060 - 0x0000)
+struct BP_AIActionProtecting_C_OnDamage final
+{
+public:
+	struct FPalDamageResult                       DamageResult;                                      // 0x0000(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_AIActionProtecting_C_OnDamage;
+
+// Function BP_AIActionProtecting.BP_AIActionProtecting_C.OnDead
 // 0x0050 (0x0050 - 0x0000)
-struct BP_AIActionProtecting_C_DeadProc final
+struct BP_AIActionProtecting_C_OnDead final
 {
 public:
 	struct FPalDeadInfo                           DeadInfo;                                          // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-DUMPER7_ASSERTS_BP_AIActionProtecting_C_DeadProc;
+DUMPER7_ASSERTS_BP_AIActionProtecting_C_OnDead;
 
-// Function BP_AIActionProtecting.BP_AIActionProtecting_C.CancelCheck
-// 0x0038 (0x0038 - 0x0000)
-struct BP_AIActionProtecting_C_CancelCheck final
+// Function BP_AIActionProtecting.BP_AIActionProtecting_C.OnLanded
+// 0x00F0 (0x00F0 - 0x0000)
+struct BP_AIActionProtecting_C_OnLanded final
 {
 public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsClimbing_ReturnValue;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterMovementComponent*         Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hit;                                               // 0x0008(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_AIActionProtecting_C_OnLanded;
+
+// Function BP_AIActionProtecting.BP_AIActionProtecting_C.SetProtectCharacter
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIActionProtecting_C_SetProtectCharacter final
+{
+public:
+	class APalCharacter*                          RidingCharacter;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIActionProtecting_C_SetProtectCharacter;
+
+// Function BP_AIActionProtecting.BP_AIActionProtecting_C.SetupAction
+// 0x0028 (0x0028 - 0x0000)
+struct BP_AIActionProtecting_C_SetupAction final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalActionComponent*                    CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalActionType                                CallFunc_GetCurrentActionType_ReturnValue;         // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23[0x5];                                       // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue_2;        // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsGliding_ReturnValue;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBP_CoopParam_Shield_C*                 CallFunc_GetComponentByClass_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AIActionProtecting_C_CancelCheck;
-
-// Function BP_AIActionProtecting.BP_AIActionProtecting_C.ActionTick
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIActionProtecting_C_ActionTick final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         DeltaSeconds;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIActionProtecting_C_ActionTick;
-
-// Function BP_AIActionProtecting.BP_AIActionProtecting_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIActionProtecting_C_ActionStart final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIActionProtecting_C_ActionStart;
-
-// Function BP_AIActionProtecting.BP_AIActionProtecting_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIActionProtecting_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIActionProtecting_C_ActionFinished;
-
-// Function BP_AIActionProtecting.BP_AIActionProtecting_C.ActionAbort
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIActionProtecting_C_ActionAbort final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIActionProtecting_C_ActionAbort;
+DUMPER7_ASSERTS_BP_AIActionProtecting_C_SetupAction;
 
 }
 

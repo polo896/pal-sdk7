@@ -61,31 +61,31 @@ public:
 	int32                                         FadeInPendingCount;                                // 0x0568(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CheckPause();
-	void CREATEDELEGATE_PROXYFUNCTION_0(EPalUICommonWarningType WarningType);
-	void DelayDisplay();
-	void ExecuteUbergraph_WBP_PalOverallUILayout(int32 EntryPoint);
-	void FadeIn(EPalFadeWidgetLayerType LayerType);
-	void FadeOut(EPalFadeWidgetLayerType LayerType, class UPalHUDDispatchParameter_FadeWidget* FadeParameter);
-	void HideCommonItemInfo();
-	void HideCommonReward();
-	void HideCommonWarning(const struct FGuid& PreserveID);
-	void HideElementMatchUI();
-	void HideFocusCursor();
-	void HideLiftIcon();
-	void HideOnEmpty();
-	void OnEndFadeIn_イベント();
-	void OnInitialized();
-	void OnWarningClear(const EPalUICommonWarningType& WarningType);
-	void SetupLiftIcon();
-	void SetVisibilityRootLayout(ESlateVisibility NewVisibility);
-	void ShowCommonItemInfo(const struct FPalUICommonItemInfoDisplayData& DisplayData);
-	void ShowCommonReward(const struct FPalUICommonRewardDisplayData& RewardDisplayData);
-	void ShowCommonWarning(const struct FPalUICommonWarningDisplayData& WarningDisplayData);
-	void ShowElementMatchUI(class UWidget* RelativeWidget, const struct FVector2D& AnchorPosition);
-	void ShowFocusCursor(class UWidget* TargetWidget);
-	void ShowLiftIcon();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void ShowLiftIcon();
+	void ShowFocusCursor(class UWidget* TargetWidget);
+	void ShowElementMatchUI(class UWidget* RelativeWidget, const struct FVector2D& AnchorPosition);
+	void ShowCommonWarning(const struct FPalUICommonWarningDisplayData& WarningDisplayData);
+	void ShowCommonReward(const struct FPalUICommonRewardDisplayData& RewardDisplayData);
+	void ShowCommonItemInfo(const struct FPalUICommonItemInfoDisplayData& DisplayData);
+	void SetVisibilityRootLayout(ESlateVisibility NewVisibility);
+	void SetupLiftIcon();
+	void OnWarningClear(const EPalUICommonWarningType& WarningType);
+	void OnInitialized();
+	void OnEndFadeIn_イベント();
+	void HideOnEmpty();
+	void HideLiftIcon();
+	void HideFocusCursor();
+	void HideElementMatchUI();
+	void HideCommonWarning(const struct FGuid& PreserveID);
+	void HideCommonReward();
+	void HideCommonItemInfo();
+	void FadeOut(EPalFadeWidgetLayerType LayerType, class UPalHUDDispatchParameter_FadeWidget* FadeParameter);
+	void FadeIn(EPalFadeWidgetLayerType LayerType);
+	void ExecuteUbergraph_WBP_PalOverallUILayout(int32 EntryPoint);
+	void DelayDisplay();
+	void CREATEDELEGATE_PROXYFUNCTION_0(EPalUICommonWarningType WarningType);
+	void CheckPause();
 	void UpdateCursor();
 
 	bool IsAnyFadeWidgetActive() const;

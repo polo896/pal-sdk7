@@ -17,19 +17,19 @@
 namespace SDK
 {
 
-// Function WBP_MainMenu.WBP_MainMenu_C.Anm_Focus
+// Function WBP_MainMenu.WBP_MainMenu_C.Anm_focus
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EPalUIInGameMainMenuTabType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_C::Anm_Focus(EPalUIInGameMainMenuTabType Type)
+void UWBP_MainMenu_C::Anm_focus(EPalUIInGameMainMenuTabType Type)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_C", "Anm_Focus");
+		Func = Class->GetFunction("WBP_MainMenu_C", "Anm_focus");
 
-	Params::WBP_MainMenu_C_Anm_Focus Parms{};
+	Params::WBP_MainMenu_C_Anm_focus Parms{};
 
 	Parms.Type = Type;
 

@@ -28,11 +28,11 @@ public:
 	class UProjectileMovementComponent*           ProjectileMovement;                                // 0x0448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetRandomValueIntoNiagaraVariable(class UNiagaraComponent* NiagaraComp);
-	void ReceiveBeginPlay();
-	void FadeOutEffect(double DeltaSecond);
-	void ExecuteUbergraph_BP_SkillEffect_StoneShotgunBullet(int32 EntryPoint);
 	void BndEvt__BP_SkillEffect_StoneShotgunBullet_MovementSphereRoot_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
+	void ExecuteUbergraph_BP_SkillEffect_StoneShotgunBullet(int32 EntryPoint);
+	void FadeOutEffect(double DeltaSecond);
+	void ReceiveBeginPlay();
+	void SetRandomValueIntoNiagaraVariable(class UNiagaraComponent* NiagaraComp);
 
 public:
 	static class UClass* StaticClass()

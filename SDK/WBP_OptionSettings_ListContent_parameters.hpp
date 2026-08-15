@@ -10,139 +10,44 @@
 
 #include "Basic.hpp"
 
+#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CommonInput_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Pal_structs.hpp"
 #include "InputCore_structs.hpp"
-#include "SlateCore_structs.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetUIConfigButton
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_SetUIConfigButton final
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class FName                                   UIActionName;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              InputType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   Key;                                               // 0x0010(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetUIConfigButton;
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSwitcher
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_SetSwitcher final
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	bool                                          CurrentOn;                                         // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetSwitcher;
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSlider
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_SetSlider final
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	double                                        CurrentValue;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Min;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Max;                                               // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        FixedChangeValue;                                  // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          UseFixedValue;                                     // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetSlider;
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSelecter_String
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_SetSelecter_String final
-{
-public:
-	TArray<class FString>                         Selections;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	int32                                         Current_0;                                         // 0x0010(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetSelecter_String;
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSelecter
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_SetSelecter final
-{
-public:
-	TArray<struct FDataTableRowHandle>            Selections;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	int32                                         Current_0;                                         // 0x0010(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetSelecter;
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetResolution
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_SetResolution final
-{
-public:
-	struct FIntPoint                              CurrentResolution;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FIntPoint>                      Resolutions;                                       // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetResolution;
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetMsgId
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_SetMsgId final
-{
-public:
-	struct FDataTableRowHandle                    rowHandle;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetMsgId;
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetKeyWarning
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_SetKeyWarning final
-{
-public:
-	bool                                          EnableWarning;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetKeyWarning;
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetKeyIcon
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_SetKeyIcon final
-{
-public:
-	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	ECommonInputType                              InputType;                                         // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetKeyIcon;
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetInteractable
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_SetInteractable final
-{
-public:
-	bool                                          CanInteract;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetInteractable;
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetConfigButton
-// 0x000C (0x000C - 0x0000)
-struct WBP_OptionSettings_ListContent_C_SetConfigButton final
-{
-public:
-	class FName                                   ActionName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              InputType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalKeyConfigAxisFilterType                   FilterType;                                        // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetConfigButton;
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.InputMethodChanged
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_InputMethodChanged final
-{
-public:
-	ECommonInputType                              InputType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_InputMethodChanged;
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature;
 
 // Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.ExecuteUbergraph_WBP_OptionSettings_ListContent
 // 0x0670 (0x0670 - 0x0000)
@@ -275,32 +180,127 @@ public:
 };
 DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_ExecuteUbergraph_WBP_OptionSettings_ListContent;
 
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.InputMethodChanged
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_InputMethodChanged final
 {
 public:
-	class UCommonButtonBase*                      Button_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              InputType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_InputMethodChanged;
 
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetConfigButton
+// 0x000C (0x000C - 0x0000)
+struct WBP_OptionSettings_ListContent_C_SetConfigButton final
 {
 public:
-	class UCommonButtonBase*                      Button_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ActionName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              InputType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalKeyConfigAxisFilterType                   FilterType;                                        // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetConfigButton;
 
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetInteractable
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_SetInteractable final
 {
 public:
-	class UCommonButtonBase*                      Button_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CanInteract;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetInteractable;
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetKeyIcon
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_SetKeyIcon final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	ECommonInputType                              InputType;                                         // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetKeyIcon;
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetKeyWarning
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_SetKeyWarning final
+{
+public:
+	bool                                          EnableWarning;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetKeyWarning;
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetMsgId
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_SetMsgId final
+{
+public:
+	struct FDataTableRowHandle                    rowHandle;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetMsgId;
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetResolution
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_SetResolution final
+{
+public:
+	struct FIntPoint                              CurrentResolution;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FIntPoint>                      Resolutions;                                       // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetResolution;
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSelecter
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_SetSelecter final
+{
+public:
+	TArray<struct FDataTableRowHandle>            Selections;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	int32                                         Current_0;                                         // 0x0010(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetSelecter;
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSelecter_String
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_SetSelecter_String final
+{
+public:
+	TArray<class FString>                         Selections;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	int32                                         Current_0;                                         // 0x0010(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetSelecter_String;
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSlider
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_SetSlider final
+{
+public:
+	double                                        CurrentValue;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Min;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Max;                                               // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        FixedChangeValue;                                  // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          UseFixedValue;                                     // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetSlider;
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSwitcher
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_SetSwitcher final
+{
+public:
+	bool                                          CurrentOn;                                         // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetSwitcher;
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetUIConfigButton
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_SetUIConfigButton final
+{
+public:
+	class FName                                   UIActionName;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              InputType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   Key;                                               // 0x0010(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_C_SetUIConfigButton;
 
 }
 

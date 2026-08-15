@@ -17,15 +17,56 @@
 namespace SDK
 {
 
-// Function WBP_CommonWarning.WBP_CommonWarning_C.ClearWarning
+// Function WBP_CommonWarning.WBP_CommonWarning_C.SetWarning
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalUICommonWarningDisplayData&WarningData                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_CommonWarning_C::ClearWarning()
+void UWBP_CommonWarning_C::SetWarning(const struct FPalUICommonWarningDisplayData& WarningData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonWarning_C", "ClearWarning");
+		Func = Class->GetFunction("WBP_CommonWarning_C", "SetWarning");
+
+	Params::WBP_CommonWarning_C_SetWarning Parms{};
+
+	Parms.WarningData = std::move(WarningData);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CommonWarning.WBP_CommonWarning_C.GetDisplayType
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// EPalUICommonWarningType*                Display_Type_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CommonWarning_C::GetDisplayType(EPalUICommonWarningType* Display_Type_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonWarning_C", "GetDisplayType");
+
+	Params::WBP_CommonWarning_C_GetDisplayType Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Display_Type_0 != nullptr)
+		*Display_Type_0 = Parms.Display_Type_0;
+}
+
+
+// Function WBP_CommonWarning.WBP_CommonWarning_C.Finished_DAD0908E4A3D9DC986076BBB9D0BAB98
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CommonWarning_C::Finished_DAD0908E4A3D9DC986076BBB9D0BAB98()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonWarning_C", "Finished_DAD0908E4A3D9DC986076BBB9D0BAB98");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,58 +92,17 @@ void UWBP_CommonWarning_C::ExecuteUbergraph_WBP_CommonWarning(int32 EntryPoint)
 }
 
 
-// Function WBP_CommonWarning.WBP_CommonWarning_C.Finished_DAD0908E4A3D9DC986076BBB9D0BAB98
+// Function WBP_CommonWarning.WBP_CommonWarning_C.ClearWarning
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_CommonWarning_C::Finished_DAD0908E4A3D9DC986076BBB9D0BAB98()
+void UWBP_CommonWarning_C::ClearWarning()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonWarning_C", "Finished_DAD0908E4A3D9DC986076BBB9D0BAB98");
+		Func = Class->GetFunction("WBP_CommonWarning_C", "ClearWarning");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CommonWarning.WBP_CommonWarning_C.GetDisplayType
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// EPalUICommonWarningType*                Display_Type_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CommonWarning_C::GetDisplayType(EPalUICommonWarningType* Display_Type_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonWarning_C", "GetDisplayType");
-
-	Params::WBP_CommonWarning_C_GetDisplayType Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Display_Type_0 != nullptr)
-		*Display_Type_0 = Parms.Display_Type_0;
-}
-
-
-// Function WBP_CommonWarning.WBP_CommonWarning_C.SetWarning
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalUICommonWarningDisplayData&WarningData                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_CommonWarning_C::SetWarning(const struct FPalUICommonWarningDisplayData& WarningData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonWarning_C", "SetWarning");
-
-	Params::WBP_CommonWarning_C_SetWarning Parms{};
-
-	Parms.WarningData = std::move(WarningData);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

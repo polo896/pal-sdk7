@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_Status_WithVisualEffect_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -27,8 +27,8 @@ public:
 
 public:
 	void ExecuteUbergraph_BP_Status_FishingSpotElectrical(int32 EntryPoint);
-	void OnBeginStatus();
 	void PlayFishingSpotElecShockAction();
+	void OnBeginStatus();
 
 public:
 	static class UClass* StaticClass()

@@ -37,26 +37,6 @@ public:
 };
 DUMPER7_ASSERTS_UAudioEndpointSettingsBase;
 
-// Class AudioExtensions.ReverbPluginSourceSettingsBase
-// 0x0000 (0x0028 - 0x0028)
-class UReverbPluginSourceSettingsBase final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ReverbPluginSourceSettingsBase")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ReverbPluginSourceSettingsBase")
-	}
-	static class UReverbPluginSourceSettingsBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UReverbPluginSourceSettingsBase>();
-	}
-};
-DUMPER7_ASSERTS_UReverbPluginSourceSettingsBase;
-
 // Class AudioExtensions.SoundfieldEndpointSettingsBase
 // 0x0000 (0x0028 - 0x0028)
 class USoundfieldEndpointSettingsBase : public UObject
@@ -77,6 +57,26 @@ public:
 };
 DUMPER7_ASSERTS_USoundfieldEndpointSettingsBase;
 
+// Class AudioExtensions.OcclusionPluginSourceSettingsBase
+// 0x0000 (0x0028 - 0x0028)
+class UOcclusionPluginSourceSettingsBase final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OcclusionPluginSourceSettingsBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OcclusionPluginSourceSettingsBase")
+	}
+	static class UOcclusionPluginSourceSettingsBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOcclusionPluginSourceSettingsBase>();
+	}
+};
+DUMPER7_ASSERTS_UOcclusionPluginSourceSettingsBase;
+
 // Class AudioExtensions.SoundfieldEncodingSettingsBase
 // 0x0000 (0x0028 - 0x0028)
 class USoundfieldEncodingSettingsBase : public UObject
@@ -96,6 +96,66 @@ public:
 	}
 };
 DUMPER7_ASSERTS_USoundfieldEncodingSettingsBase;
+
+// Class AudioExtensions.SourceDataOverridePluginSourceSettingsBase
+// 0x0000 (0x0028 - 0x0028)
+class USourceDataOverridePluginSourceSettingsBase final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("SourceDataOverridePluginSourceSettingsBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SourceDataOverridePluginSourceSettingsBase")
+	}
+	static class USourceDataOverridePluginSourceSettingsBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<USourceDataOverridePluginSourceSettingsBase>();
+	}
+};
+DUMPER7_ASSERTS_USourceDataOverridePluginSourceSettingsBase;
+
+// Class AudioExtensions.SpatializationPluginSourceSettingsBase
+// 0x0000 (0x0028 - 0x0028)
+class USpatializationPluginSourceSettingsBase : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("SpatializationPluginSourceSettingsBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpatializationPluginSourceSettingsBase")
+	}
+	static class USpatializationPluginSourceSettingsBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<USpatializationPluginSourceSettingsBase>();
+	}
+};
+DUMPER7_ASSERTS_USpatializationPluginSourceSettingsBase;
+
+// Class AudioExtensions.ReverbPluginSourceSettingsBase
+// 0x0000 (0x0028 - 0x0028)
+class UReverbPluginSourceSettingsBase final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ReverbPluginSourceSettingsBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ReverbPluginSourceSettingsBase")
+	}
+	static class UReverbPluginSourceSettingsBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UReverbPluginSourceSettingsBase>();
+	}
+};
+DUMPER7_ASSERTS_UReverbPluginSourceSettingsBase;
 
 // Class AudioExtensions.AudioParameterControllerInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -140,66 +200,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_IAudioParameterControllerInterface;
-
-// Class AudioExtensions.SpatializationPluginSourceSettingsBase
-// 0x0000 (0x0028 - 0x0028)
-class USpatializationPluginSourceSettingsBase : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("SpatializationPluginSourceSettingsBase")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"SpatializationPluginSourceSettingsBase")
-	}
-	static class USpatializationPluginSourceSettingsBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USpatializationPluginSourceSettingsBase>();
-	}
-};
-DUMPER7_ASSERTS_USpatializationPluginSourceSettingsBase;
-
-// Class AudioExtensions.SourceDataOverridePluginSourceSettingsBase
-// 0x0000 (0x0028 - 0x0028)
-class USourceDataOverridePluginSourceSettingsBase final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("SourceDataOverridePluginSourceSettingsBase")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"SourceDataOverridePluginSourceSettingsBase")
-	}
-	static class USourceDataOverridePluginSourceSettingsBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USourceDataOverridePluginSourceSettingsBase>();
-	}
-};
-DUMPER7_ASSERTS_USourceDataOverridePluginSourceSettingsBase;
-
-// Class AudioExtensions.OcclusionPluginSourceSettingsBase
-// 0x0000 (0x0028 - 0x0028)
-class UOcclusionPluginSourceSettingsBase final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("OcclusionPluginSourceSettingsBase")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"OcclusionPluginSourceSettingsBase")
-	}
-	static class UOcclusionPluginSourceSettingsBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOcclusionPluginSourceSettingsBase>();
-	}
-};
-DUMPER7_ASSERTS_UOcclusionPluginSourceSettingsBase;
 
 // Class AudioExtensions.AudioCodecEncoderSettings
 // 0x0008 (0x0030 - 0x0028)

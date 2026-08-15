@@ -121,6 +121,20 @@ void UBP_AIAction_CombatPal_RaidBoss_LegendDeer_C::BarrierBreak(bool IsRelease)
 }
 
 
+// Function BP_AIAction_CombatPal_RaidBoss_LegendDeer.BP_AIAction_CombatPal_RaidBoss_LegendDeer_C.ChangeNextAction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBP_AIAction_CombatPal_RaidBoss_LegendDeer_C::ChangeNextAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_CombatPal_RaidBoss_LegendDeer_C", "ChangeNextAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_AIAction_CombatPal_RaidBoss_LegendDeer.BP_AIAction_CombatPal_RaidBoss_LegendDeer_C.CheckWazaMaxRange
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -268,20 +282,6 @@ void UBP_AIAction_CombatPal_RaidBoss_LegendDeer_C::Phase_Check()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_AIAction_CombatPal_RaidBoss_LegendDeer_C", "Phase Check");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_AIAction_CombatPal_RaidBoss_LegendDeer.BP_AIAction_CombatPal_RaidBoss_LegendDeer_C.ChangeNextAction
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBP_AIAction_CombatPal_RaidBoss_LegendDeer_C::ChangeNextAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_CombatPal_RaidBoss_LegendDeer_C", "ChangeNextAction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

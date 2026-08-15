@@ -17,6 +17,39 @@
 namespace SDK
 {
 
+// Class RigVM.RigVMUserWorkflowOptions
+// 0x0070 (0x0098 - 0x0028)
+class URigVMUserWorkflowOptions : public UObject
+{
+public:
+	class UObject*                                Subject;                                           // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FRigVMUserWorkflow                     Workflow;                                          // 0x0030(0x0058)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_88[0x10];                                      // 0x0088(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void ReportError(const class FString& InMessage);
+	void ReportInfo(const class FString& InMessage);
+	void ReportWarning(const class FString& InMessage);
+
+	bool IsValid() const;
+	bool RequiresDialog() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("RigVMUserWorkflowOptions")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RigVMUserWorkflowOptions")
+	}
+	static class URigVMUserWorkflowOptions* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<URigVMUserWorkflowOptions>();
+	}
+};
+DUMPER7_ASSERTS_URigVMUserWorkflowOptions;
+
 // Class RigVM.RigVM
 // 0x0280 (0x02A8 - 0x0028)
 class URigVM : public UObject
@@ -82,39 +115,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_URigVM;
-
-// Class RigVM.RigVMUserWorkflowOptions
-// 0x0070 (0x0098 - 0x0028)
-class URigVMUserWorkflowOptions : public UObject
-{
-public:
-	class UObject*                                Subject;                                           // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FRigVMUserWorkflow                     Workflow;                                          // 0x0030(0x0058)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_88[0x10];                                      // 0x0088(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void ReportError(const class FString& InMessage);
-	void ReportInfo(const class FString& InMessage);
-	void ReportWarning(const class FString& InMessage);
-
-	bool IsValid() const;
-	bool RequiresDialog() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("RigVMUserWorkflowOptions")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"RigVMUserWorkflowOptions")
-	}
-	static class URigVMUserWorkflowOptions* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<URigVMUserWorkflowOptions>();
-	}
-};
-DUMPER7_ASSERTS_URigVMUserWorkflowOptions;
 
 // Class RigVM.RigVMMemoryStorageGeneratorClass
 // 0x0040 (0x0270 - 0x0230)

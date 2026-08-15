@@ -108,9 +108,9 @@ public:
 };
 DUMPER7_ASSERTS_BP_AIActionCombatHeli_BattleMode_C_ChangeNextWeapon;
 
-// Function BP_AIActionCombatHeli_BattleMode.BP_AIActionCombatHeli_BattleMode_C.CheckPlayerDistanceForBGM
+// Function BP_AIActionCombatHeli_BattleMode.BP_AIActionCombatHeli_BattleMode_C.Check Player Distance for BGM
 // 0x0050 (0x0050 - 0x0000)
-struct BP_AIActionCombatHeli_BattleMode_C_CheckPlayerDistanceForBGM final
+struct BP_AIActionCombatHeli_BattleMode_C_Check_Player_Distance_for_BGM final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -125,9 +125,9 @@ public:
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_Array_Get_Item;                           // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_Target_Validd;                    // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Is_Valid_BGMTarget_Valid;                 // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AIActionCombatHeli_BattleMode_C_CheckPlayerDistanceForBGM;
+DUMPER7_ASSERTS_BP_AIActionCombatHeli_BattleMode_C_Check_Player_Distance_for_BGM;
 
 // Function BP_AIActionCombatHeli_BattleMode.BP_AIActionCombatHeli_BattleMode_C.ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode
 // 0x00A0 (0x00A0 - 0x0000)
@@ -165,6 +165,17 @@ public:
 	float                                         CallFunc_Delay_Duration_ImplicitCast_2;            // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIActionCombatHeli_BattleMode_C_ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode;
+
+// Function BP_AIActionCombatHeli_BattleMode.BP_AIActionCombatHeli_BattleMode_C.Is Valid BGMTarget
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIActionCombatHeli_BattleMode_C_Is_Valid_BGMTarget final
+{
+public:
+	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Valid;                                             // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_Target_Validd;                    // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIActionCombatHeli_BattleMode_C_Is_Valid_BGMTarget;
 
 // Function BP_AIActionCombatHeli_BattleMode.BP_AIActionCombatHeli_BattleMode_C.Is Valid Current Target
 // 0x0002 (0x0002 - 0x0000)

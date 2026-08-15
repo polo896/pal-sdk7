@@ -35,12 +35,12 @@ public:
 	TMulticastInlineDelegate<void(class UWidget* SelfWidget)> OnUnhovered;                           // 0x0300(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_MainMenu_Pal_StatusElement(int32 EntryPoint);
 	void Setup(EPalElementType ElementType);
+	void ExecuteUbergraph_WBP_MainMenu_Pal_StatusElement(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_StatusElement_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

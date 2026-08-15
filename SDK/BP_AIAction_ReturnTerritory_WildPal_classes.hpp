@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "BP_AIAction_CanCombatBase_classes.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -29,12 +29,12 @@ public:
 	double                                        StackTimer;                                        // 0x0198(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionPause(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void ExecuteUbergraph_BP_AIAction_ReturnTerritory_WildPal(int32 EntryPoint);
 	void GetBlackboard(class UBP_PalAIBlackboard_Common_C** AsBP_Pal_AIBlackboard_Common);
 	void GetControllerRef(class APalAIController** PalAIController);
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
-	void ActionPause(class APawn* ControlledPawn);
 	void ActionResume(class APawn* ControlledPawn);
 	void ActionStart(class APawn* ControlledPawn);
 

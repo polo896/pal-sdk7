@@ -90,6 +90,7 @@ public:
 	void On_Update_Slot_Binded(class UPalIndividualCharacterSlot* TargetSlot_0);
 	void OnAddStatus_Binded(class UPalStatusComponent* StatusComponent, EPalStatusID statusID, class UPalStatusBase* StatusBase);
 	void OnChangedAssignToExpedition_Binded(bool bIsAssigned);
+	void OnInitialized();
 	void OnNotifyBattleModeChanged_Binded(bool IsBattleMode);
 	void OnNotifyWorkDetail_Binded(bool IsWorking);
 	void OnRemoveStatus_Binded(class UPalStatusComponent* StatusComponent, EPalStatusID statusID);
@@ -101,10 +102,9 @@ public:
 	void OnUpdateAwakening_Binded(bool bAwaked);
 	void OnUpdateFavorite_Binded(int32 NewIndex);
 	void OnUpdateReviveTimer_Binded(double NowTimer, double ReviveSpeedMultiplier);
+	void RegisterCharacterIconWidget(class UWBP_PalCharacterIconBase_C** IconWidget);
 	void SetForceExpeditionMark(bool bInExpedition);
 	void UpdateStatusDetail();
-	void OnInitialized();
-	void RegisterCharacterIconWidget(class UWBP_PalCharacterIconBase_C** IconWidget);
 
 public:
 	static class UClass* StaticClass()

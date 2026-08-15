@@ -17,27 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_ActionFireBlast.BP_ActionFireBlast_C.ExecuteUbergraph_BP_ActionFireBlast
-// 0x0018 (0x0018 - 0x0000)
-struct BP_ActionFireBlast_C_ExecuteUbergraph_BP_ActionFireBlast final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsPlayerControlled_ReturnValue;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ActionFireBlast_C_ExecuteUbergraph_BP_ActionFireBlast;
-
-// Function BP_ActionFireBlast.BP_ActionFireBlast_C.CanNextActionCancel
-// 0x0001 (0x0001 - 0x0000)
-struct BP_ActionFireBlast_C_CanNextActionCancel final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ActionFireBlast_C_CanNextActionCancel;
-
 // Function BP_ActionFireBlast.BP_ActionFireBlast_C.BulletHasShooted
 // 0x00E8 (0x00E8 - 0x0000)
 struct BP_ActionFireBlast_C_BulletHasShooted final
@@ -57,6 +36,27 @@ public:
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_ActionFireBlast_C_BulletHasShooted;
+
+// Function BP_ActionFireBlast.BP_ActionFireBlast_C.CanNextActionCancel
+// 0x0001 (0x0001 - 0x0000)
+struct BP_ActionFireBlast_C_CanNextActionCancel final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ActionFireBlast_C_CanNextActionCancel;
+
+// Function BP_ActionFireBlast.BP_ActionFireBlast_C.ExecuteUbergraph_BP_ActionFireBlast
+// 0x0018 (0x0018 - 0x0000)
+struct BP_ActionFireBlast_C_ExecuteUbergraph_BP_ActionFireBlast final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsPlayerControlled_ReturnValue;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ActionFireBlast_C_ExecuteUbergraph_BP_ActionFireBlast;
 
 }
 

@@ -19,7 +19,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_Ammo.BP_Ammo_C
 // 0x0018 (0x02A8 - 0x0290)
-class ABP_Ammo_C final : public AActor
+class ABP_Ammo_C : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

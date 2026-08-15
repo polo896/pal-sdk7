@@ -25,9 +25,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIActionShieldCall_C;            // 0x0188(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_BP_AIActionShieldCall(int32 EntryPoint);
-	void DoRide(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
+	void DoRide(class APawn* ControlledPawn);
+	void ExecuteUbergraph_BP_AIActionShieldCall(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

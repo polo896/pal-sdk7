@@ -10,12 +10,58 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.UpdateRotator
+// 0x0128 (0x0128 - 0x0000)
+struct BP_CaptureWireBullet_C_UpdateRotator final
+{
+public:
+	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Multiply_RotatorFloat_ReturnValue;        // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_ComposeRotators_ReturnValue;              // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x0038(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         CallFunc_Multiply_RotatorFloat_B_ImplicitCast;     // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CaptureWireBullet_C_UpdateRotator;
+
+// Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.SpawnDelegate
+// 0x0028 (0x0028 - 0x0000)
+struct BP_CaptureWireBullet_C_SpawnDelegate final
+{
+public:
+	struct FGuid                                  Guid;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_CaptureWire_C*                      K2Node_DynamicCast_AsBP_Capture_Wire;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CaptureWireBullet_C_SpawnDelegate;
+
+// Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_CaptureWireBullet_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CaptureWireBullet_C_ReceiveTick;
+
+// Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.OnHitToActor
+// 0x0100 (0x0100 - 0x0000)
+struct BP_CaptureWireBullet_C_OnHitToActor final
+{
+public:
+	class UPrimitiveComponent*                    HitComp;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hit;                                               // 0x0018(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_CaptureWireBullet_C_OnHitToActor;
 
 // Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.ExecuteUbergraph_BP_CaptureWireBullet
 // 0x01C0 (0x01C0 - 0x0000)
@@ -41,52 +87,6 @@ public:
 	double                                        CallFunc_UpdateRotator_DeltaTime_ImplicitCast;     // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_CaptureWireBullet_C_ExecuteUbergraph_BP_CaptureWireBullet;
-
-// Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.OnHitToActor
-// 0x0100 (0x0100 - 0x0000)
-struct BP_CaptureWireBullet_C_OnHitToActor final
-{
-public:
-	class UPrimitiveComponent*                    HitComp;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0018(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-DUMPER7_ASSERTS_BP_CaptureWireBullet_C_OnHitToActor;
-
-// Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_CaptureWireBullet_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_CaptureWireBullet_C_ReceiveTick;
-
-// Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.SpawnDelegate
-// 0x0028 (0x0028 - 0x0000)
-struct BP_CaptureWireBullet_C_SpawnDelegate final
-{
-public:
-	struct FGuid                                  Guid;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_CaptureWire_C*                      K2Node_DynamicCast_AsBP_Capture_Wire;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_CaptureWireBullet_C_SpawnDelegate;
-
-// Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.UpdateRotator
-// 0x0128 (0x0128 - 0x0000)
-struct BP_CaptureWireBullet_C_UpdateRotator final
-{
-public:
-	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Multiply_RotatorFloat_ReturnValue;        // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_ComposeRotators_ReturnValue;              // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x0038(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         CallFunc_Multiply_RotatorFloat_B_ImplicitCast;     // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_CaptureWireBullet_C_UpdateRotator;
 
 }
 

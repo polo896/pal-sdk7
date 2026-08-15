@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AIAction_CombatPal_YakushimaBoss002_Head.BP_AIAction_CombatPal_YakushimaBoss002_Head_C
-// 0x0018 (0x0240 - 0x0228)
+// 0x0018 (0x0250 - 0x0238)
 class UBP_AIAction_CombatPal_YakushimaBoss002_Head_C final : public UBP_AIAction_CombatPal_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_CombatPal_YakushimaBoss002_Head_C; // 0x0228(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FGuid                                  Camp_ID;                                           // 0x0230(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_CombatPal_YakushimaBoss002_Head_C; // 0x0238(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FGuid                                  Camp_ID;                                           // 0x0240(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ActionStart(class APawn* ControlledPawn);

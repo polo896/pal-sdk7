@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_AxeBase.BP_AxeBase_C
 // 0x0000 (0x0698 - 0x0698)
-class ABP_AxeBase_C : public ABP_MeleeWeaponBase_C
+class ABP_AxeBase_C final : public ABP_MeleeWeaponBase_C
 {
 public:
 	struct FTransform GetLeftHandTransform() const;

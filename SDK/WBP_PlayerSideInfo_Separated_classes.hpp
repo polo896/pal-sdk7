@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_PlayerSideInfo_Separated.WBP_PlayerSideInfo_Separated_C
-// 0x0030 (0x0688 - 0x0658)
+// 0x0038 (0x0690 - 0x0658)
 class UWBP_PlayerSideInfo_Separated_C final : public UWBP_IndividualParameterBindWidget_C
 {
 public:
@@ -32,6 +32,8 @@ public:
 	struct FTimerHandle                           TimerHandle_CheckBulletChangeTutorial;             // 0x0678(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          bDisableSummonGuide;                               // 0x0680(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsRiding;                                         // 0x0681(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_682[0x6];                                      // 0x0682(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           UpdateBuffIconTimer;                               // 0x0688(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BindOtomoPassiveSkillEvents(class APalCharacter* Character);
@@ -65,6 +67,7 @@ public:
 	void OnTimer_CheckActivationOtomo();
 	void OnTimer_CheckCaptureCount();
 	void OnTimerEvent_CheckBulletChangeTutorial();
+	void OnTimerEvent_UpdateBuffIcon();
 	void OnUpdatePlayerEquipment(class UPalItemSlot* itemSlot, EPalPlayerEquipItemSlotType slotType);
 	void OnUpdatePlayerInventory(class UPalItemContainer* Container);
 	void OnUpdateUsableHandFlag(bool CanUseLeftHandFlag, bool CanUseRightHandFlag);

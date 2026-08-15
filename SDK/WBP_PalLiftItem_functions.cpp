@@ -17,37 +17,116 @@
 namespace SDK
 {
 
-// Function WBP_PalLiftItem.WBP_PalLiftItem_C.Dispose
+// Function WBP_PalLiftItem.WBP_PalLiftItem_C.ShowSetup
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalLiftItem_C::Dispose()
+void UWBP_PalLiftItem_C::ShowSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLiftItem_C", "Dispose");
+		Func = Class->GetFunction("WBP_PalLiftItem_C", "ShowSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalLiftItem.WBP_PalLiftItem_C.On Update Icon Texture Path
+// Function WBP_PalLiftItem.WBP_PalLiftItem_C.Setup
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TSoftObjectPtr<class UTexture2D>        IconTexture                                            (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// class UPalUILiftSlotModel*              Model_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalLiftItem_C::On_Update_Icon_Texture_Path(TSoftObjectPtr<class UTexture2D> IconTexture)
+void UWBP_PalLiftItem_C::Setup(class UPalUILiftSlotModel* Model_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLiftItem_C", "On Update Icon Texture Path");
+		Func = Class->GetFunction("WBP_PalLiftItem_C", "Setup");
 
-	Params::WBP_PalLiftItem_C_On_Update_Icon_Texture_Path Parms{};
+	Params::WBP_PalLiftItem_C_Setup Parms{};
 
-	Parms.IconTexture = IconTexture;
+	Parms.Model_0 = Model_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalLiftItem.WBP_PalLiftItem_C.OnUpdateHandleSlot
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterSlot*      TargetHandleSlot                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalLiftItem_C::OnUpdateHandleSlot(class UPalIndividualCharacterSlot* TargetHandleSlot)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalLiftItem_C", "OnUpdateHandleSlot");
+
+	Params::WBP_PalLiftItem_C_OnUpdateHandleSlot Parms{};
+
+	Parms.TargetHandleSlot = TargetHandleSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalLiftItem.WBP_PalLiftItem_C.OnUpdateCount
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Count                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalLiftItem_C::OnUpdateCount(int32 Count)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalLiftItem_C", "OnUpdateCount");
+
+	Params::WBP_PalLiftItem_C_OnUpdateCount Parms{};
+
+	Parms.Count = Count;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalLiftItem.WBP_PalLiftItem_C.OnMouseMove
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply UWBP_PalLiftItem_C::OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalLiftItem_C", "OnMouseMove");
+
+	Params::WBP_PalLiftItem_C_OnMouseMove Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.MouseEvent = std::move(MouseEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_PalLiftItem.WBP_PalLiftItem_C.OnFailedItemOperation
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalLiftItem_C::OnFailedItemOperation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalLiftItem_C", "OnFailedItemOperation");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -78,114 +157,35 @@ bool UWBP_PalLiftItem_C::OnDragOver(const struct FGeometry& MyGeometry, const st
 }
 
 
-// Function WBP_PalLiftItem.WBP_PalLiftItem_C.OnFailedItemOperation
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalLiftItem_C::OnFailedItemOperation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLiftItem_C", "OnFailedItemOperation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalLiftItem.WBP_PalLiftItem_C.OnMouseMove
-// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-struct FEventReply UWBP_PalLiftItem_C::OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLiftItem_C", "OnMouseMove");
-
-	Params::WBP_PalLiftItem_C_OnMouseMove Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.MouseEvent = std::move(MouseEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_PalLiftItem.WBP_PalLiftItem_C.OnUpdateCount
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Count                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalLiftItem_C::OnUpdateCount(int32 Count)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLiftItem_C", "OnUpdateCount");
-
-	Params::WBP_PalLiftItem_C_OnUpdateCount Parms{};
-
-	Parms.Count = Count;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalLiftItem.WBP_PalLiftItem_C.OnUpdateHandleSlot
+// Function WBP_PalLiftItem.WBP_PalLiftItem_C.On Update Icon Texture Path
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalIndividualCharacterSlot*      TargetHandleSlot                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TSoftObjectPtr<class UTexture2D>        IconTexture                                            (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UWBP_PalLiftItem_C::OnUpdateHandleSlot(class UPalIndividualCharacterSlot* TargetHandleSlot)
+void UWBP_PalLiftItem_C::On_Update_Icon_Texture_Path(TSoftObjectPtr<class UTexture2D> IconTexture)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLiftItem_C", "OnUpdateHandleSlot");
+		Func = Class->GetFunction("WBP_PalLiftItem_C", "On Update Icon Texture Path");
 
-	Params::WBP_PalLiftItem_C_OnUpdateHandleSlot Parms{};
+	Params::WBP_PalLiftItem_C_On_Update_Icon_Texture_Path Parms{};
 
-	Parms.TargetHandleSlot = TargetHandleSlot;
+	Parms.IconTexture = IconTexture;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalLiftItem.WBP_PalLiftItem_C.Setup
+// Function WBP_PalLiftItem.WBP_PalLiftItem_C.Dispose
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalUILiftSlotModel*              Model_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalLiftItem_C::Setup(class UPalUILiftSlotModel* Model_0)
+void UWBP_PalLiftItem_C::Dispose()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLiftItem_C", "Setup");
-
-	Params::WBP_PalLiftItem_C_Setup Parms{};
-
-	Parms.Model_0 = Model_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalLiftItem.WBP_PalLiftItem_C.ShowSetup
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalLiftItem_C::ShowSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLiftItem_C", "ShowSetup");
+		Func = Class->GetFunction("WBP_PalLiftItem_C", "Dispose");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

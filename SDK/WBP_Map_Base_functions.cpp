@@ -484,26 +484,6 @@ void UWBP_Map_Base_C::OnRequestCampDismantal()
 }
 
 
-// Function WBP_Map_Base.WBP_Map_Base_C.OnRepliedDialog
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bOK                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_Base_C::OnRepliedDialog(bool bOK)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_Base_C", "OnRepliedDialog");
-
-	Params::WBP_Map_Base_C_OnRepliedDialog Parms{};
-
-	Parms.bOK = bOK;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Map_Base.WBP_Map_Base_C.OnRemoveGuildMarker
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -892,6 +872,26 @@ void UWBP_Map_Base_C::GetNextMapName(class FName* MapName)
 
 	if (MapName != nullptr)
 		*MapName = Parms.MapName;
+}
+
+
+// Function WBP_Map_Base.WBP_Map_Base_C.OnRepliedDialog
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bOK                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_Base_C::OnRepliedDialog(bool bOK)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_Base_C", "OnRepliedDialog");
+
+	Params::WBP_Map_Base_C_OnRepliedDialog Parms{};
+
+	Parms.bOK = bOK;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

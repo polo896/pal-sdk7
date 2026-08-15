@@ -37,46 +37,6 @@ void UBP_AIAction_WildMimicry_C::ActionAbort(class APawn* ControlledPawn)
 }
 
 
-// Function BP_AIAction_WildMimicry.BP_AIAction_WildMimicry_C.DelaySetAction
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalAIActionDynamicParameter&Parameter                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void UBP_AIAction_WildMimicry_C::DelaySetAction(const struct FPalAIActionDynamicParameter& Parameter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_WildMimicry_C", "DelaySetAction");
-
-	Params::BP_AIAction_WildMimicry_C_DelaySetAction Parms{};
-
-	Parms.Parameter = std::move(Parameter);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_WildMimicry.BP_AIAction_WildMimicry_C.ExecuteUbergraph_BP_AIAction_WildMimicry
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_WildMimicry_C::ExecuteUbergraph_BP_AIAction_WildMimicry(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_WildMimicry_C", "ExecuteUbergraph_BP_AIAction_WildMimicry");
-
-	Params::BP_AIAction_WildMimicry_C_ExecuteUbergraph_BP_AIAction_WildMimicry Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_AIAction_WildMimicry.BP_AIAction_WildMimicry_C.ActionFinished
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -114,6 +74,46 @@ void UBP_AIAction_WildMimicry_C::ActionPause(class APawn* ControlledPawn)
 	Params::BP_AIAction_WildMimicry_C_ActionPause Parms{};
 
 	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_WildMimicry.BP_AIAction_WildMimicry_C.DelaySetAction
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalAIActionDynamicParameter&Parameter                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void UBP_AIAction_WildMimicry_C::DelaySetAction(const struct FPalAIActionDynamicParameter& Parameter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_WildMimicry_C", "DelaySetAction");
+
+	Params::BP_AIAction_WildMimicry_C_DelaySetAction Parms{};
+
+	Parms.Parameter = std::move(Parameter);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_WildMimicry.BP_AIAction_WildMimicry_C.ExecuteUbergraph_BP_AIAction_WildMimicry
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_WildMimicry_C::ExecuteUbergraph_BP_AIAction_WildMimicry(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_WildMimicry_C", "ExecuteUbergraph_BP_AIAction_WildMimicry");
+
+	Params::BP_AIAction_WildMimicry_C_ExecuteUbergraph_BP_AIAction_WildMimicry Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

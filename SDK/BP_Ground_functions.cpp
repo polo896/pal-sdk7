@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function BP_Ground.BP_Ground_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Ground_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Ground_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Ground.BP_Ground_C.ChangeMode
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -48,6 +34,20 @@ void ABP_Ground_C::ChangeMode(int32 newMode)
 	Parms.newMode = newMode;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Ground.BP_Ground_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Ground_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Ground_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

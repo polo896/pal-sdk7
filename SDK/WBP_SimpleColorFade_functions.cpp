@@ -17,43 +17,91 @@
 namespace SDK
 {
 
-// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.AnmEvent_FadeIn
+// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.ToggleVisibility
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Visiable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SimpleColorFade_C::AnmEvent_FadeIn()
+void UWBP_SimpleColorFade_C::ToggleVisibility(bool Visiable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SimpleColorFade_C", "AnmEvent_FadeIn");
+		Func = Class->GetFunction("WBP_SimpleColorFade_C", "ToggleVisibility");
+
+	Params::WBP_SimpleColorFade_C_ToggleVisibility Parms{};
+
+	Parms.Visiable = Visiable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.Setup_ForOverride
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_SimpleColorFade_C::Setup_ForOverride()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SimpleColorFade_C", "Setup_ForOverride");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.AnmEvent_FadeOut
+// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.Finished_DE82E8EE4E2FF74CE3788F9F262A873A
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_SimpleColorFade_C::AnmEvent_FadeOut()
+void UWBP_SimpleColorFade_C::Finished_DE82E8EE4E2FF74CE3788F9F262A873A()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SimpleColorFade_C", "AnmEvent_FadeOut");
+		Func = Class->GetFunction("WBP_SimpleColorFade_C", "Finished_DE82E8EE4E2FF74CE3788F9F262A873A");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.Finished_212EE08E4C1C909EB4116D9853386FC5
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_SimpleColorFade_C::Construct()
+void UWBP_SimpleColorFade_C::Finished_212EE08E4C1C909EB4116D9853386FC5()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SimpleColorFade_C", "Construct");
+		Func = Class->GetFunction("WBP_SimpleColorFade_C", "Finished_212EE08E4C1C909EB4116D9853386FC5");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.FadeOut
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_SimpleColorFade_C::FadeOut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SimpleColorFade_C", "FadeOut");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.FadeIn
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_SimpleColorFade_C::FadeIn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SimpleColorFade_C", "FadeIn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,93 +127,45 @@ void UWBP_SimpleColorFade_C::ExecuteUbergraph_WBP_SimpleColorFade(int32 EntryPoi
 }
 
 
-// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.FadeIn
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_SimpleColorFade_C::FadeIn()
+void UWBP_SimpleColorFade_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SimpleColorFade_C", "FadeIn");
+		Func = Class->GetFunction("WBP_SimpleColorFade_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.FadeOut
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_SimpleColorFade_C::FadeOut()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SimpleColorFade_C", "FadeOut");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.Finished_212EE08E4C1C909EB4116D9853386FC5
+// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.AnmEvent_FadeOut
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_SimpleColorFade_C::Finished_212EE08E4C1C909EB4116D9853386FC5()
+void UWBP_SimpleColorFade_C::AnmEvent_FadeOut()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SimpleColorFade_C", "Finished_212EE08E4C1C909EB4116D9853386FC5");
+		Func = Class->GetFunction("WBP_SimpleColorFade_C", "AnmEvent_FadeOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.Finished_DE82E8EE4E2FF74CE3788F9F262A873A
+// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.AnmEvent_FadeIn
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_SimpleColorFade_C::Finished_DE82E8EE4E2FF74CE3788F9F262A873A()
+void UWBP_SimpleColorFade_C::AnmEvent_FadeIn()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SimpleColorFade_C", "Finished_DE82E8EE4E2FF74CE3788F9F262A873A");
+		Func = Class->GetFunction("WBP_SimpleColorFade_C", "AnmEvent_FadeIn");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.Setup_ForOverride
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_SimpleColorFade_C::Setup_ForOverride()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SimpleColorFade_C", "Setup_ForOverride");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.ToggleVisibility
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Visiable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_SimpleColorFade_C::ToggleVisibility(bool Visiable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SimpleColorFade_C", "ToggleVisibility");
-
-	Params::WBP_SimpleColorFade_C_ToggleVisibility Parms{};
-
-	Parms.Visiable = Visiable;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -20,22 +20,22 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AIAction_CombatPal_RaidBoss.BP_AIAction_CombatPal_RaidBoss_C
-// 0x0040 (0x0268 - 0x0228)
+// 0x0040 (0x0278 - 0x0238)
 class UBP_AIAction_CombatPal_RaidBoss_C : public UBP_AIAction_CombatPal_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_CombatPal_RaidBoss_C;   // 0x0228(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                          IsPowerUpMode;                                     // 0x0230(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_231[0x3];                                      // 0x0231(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  Camp_ID;                                           // 0x0234(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CanModeChange;                                     // 0x0244(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_245[0x3];                                      // 0x0245(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        HPOneTimer;                                        // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Const_NotActionTime;                               // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         PlayerNotTargetCounter;                            // 0x0258(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	bool                                          CanSummon;                                         // 0x025C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25D[0x3];                                      // 0x025D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         NextSummonHPRateIndex;                             // 0x0260(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_CombatPal_RaidBoss_C;   // 0x0238(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                          IsPowerUpMode;                                     // 0x0240(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_241[0x3];                                      // 0x0241(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  Camp_ID;                                           // 0x0244(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CanModeChange;                                     // 0x0254(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_255[0x3];                                      // 0x0255(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        HPOneTimer;                                        // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Const_NotActionTime;                               // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         PlayerNotTargetCounter;                            // 0x0268(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+	bool                                          CanSummon;                                         // 0x026C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_26D[0x3];                                      // 0x026D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         NextSummonHPRateIndex;                             // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ActionStart(class APawn* ControlledPawn);
@@ -56,6 +56,7 @@ public:
 	void OnDead(const struct FPalDeadInfo& Dead);
 	void OnPlayAction(class UPalActionBase* action);
 	void Play_Warp_Action(TSubclassOf<class UPalActionBase> DirectActionClass, EPalWazaID DirectWaza);
+	void ReleaseInitialHPLock();
 	void UpdateNoActionTimer();
 
 public:

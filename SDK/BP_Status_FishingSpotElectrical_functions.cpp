@@ -37,20 +37,6 @@ void UBP_Status_FishingSpotElectrical_C::ExecuteUbergraph_BP_Status_FishingSpotE
 }
 
 
-// Function BP_Status_FishingSpotElectrical.BP_Status_FishingSpotElectrical_C.OnBeginStatus
-// (Event, Public, BlueprintEvent)
-
-void UBP_Status_FishingSpotElectrical_C::OnBeginStatus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Status_FishingSpotElectrical_C", "OnBeginStatus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Status_FishingSpotElectrical.BP_Status_FishingSpotElectrical_C.PlayFishingSpotElecShockAction
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -60,6 +46,20 @@ void UBP_Status_FishingSpotElectrical_C::PlayFishingSpotElecShockAction()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_Status_FishingSpotElectrical_C", "PlayFishingSpotElecShockAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Status_FishingSpotElectrical.BP_Status_FishingSpotElectrical_C.OnBeginStatus
+// (Event, Public, BlueprintEvent)
+
+void UBP_Status_FishingSpotElectrical_C::OnBeginStatus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Status_FishingSpotElectrical_C", "OnBeginStatus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Pal_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "BP_RocketLauncher_classes.hpp"
 
 
@@ -51,6 +51,7 @@ public:
 	void GetMuzzleLocation(struct FVector* MuzzleLocation);
 	void GetMuzzleRotator(struct FRotator* Rotator);
 	void GetShootInterval(double* Time);
+	void OnPullTrigger();
 	void OnShoot(class APalBullet* BulletActor);
 	void ShootBullet();
 

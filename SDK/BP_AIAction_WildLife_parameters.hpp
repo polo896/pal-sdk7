@@ -28,6 +28,25 @@ public:
 };
 DUMPER7_ASSERTS_BP_AIAction_WildLife_C_ActionAbort;
 
+// Function BP_AIAction_WildLife.BP_AIAction_WildLife_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_WildLife_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_WildLife_C_ActionFinished;
+
+// Function BP_AIAction_WildLife.BP_AIAction_WildLife_C.ActionPause
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_WildLife_C_ActionPause final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_WildLife_C_ActionPause;
+
 // Function BP_AIAction_WildLife.BP_AIAction_WildLife_C.ActionPostTick
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIAction_WildLife_C_ActionPostTick final
@@ -220,7 +239,7 @@ public:
 	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetMyLocation_NewParam_3;                 // 0x0130(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsNearTwoPoint_ReturnValue_1;             // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalActionType                                K2Node_CustomEvent_Action;                         // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalActionType                                K2Node_CustomEvent_action;                         // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14A[0x6];                                      // 0x014A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue_2;              // 0x0150(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -576,25 +595,6 @@ public:
 	float                                         CallFunc_IsNearTwoPoint_distance_ImplicitCast_1;   // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_WildLife_C_StateUpdate;
-
-// Function BP_AIAction_WildLife.BP_AIAction_WildLife_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_WildLife_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_WildLife_C_ActionFinished;
-
-// Function BP_AIAction_WildLife.BP_AIAction_WildLife_C.ActionPause
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_WildLife_C_ActionPause final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_WildLife_C_ActionPause;
 
 // Function BP_AIAction_WildLife.BP_AIAction_WildLife_C.ActionResume
 // 0x0008 (0x0008 - 0x0000)

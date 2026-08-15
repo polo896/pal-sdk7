@@ -16,14 +16,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_MainMenu.WBP_MainMenu_C.Anm_Focus
+// Function WBP_MainMenu.WBP_MainMenu_C.Anm_focus
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_C_Anm_Focus final
+struct WBP_MainMenu_C_Anm_focus final
 {
 public:
 	EPalUIInGameMainMenuTabType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_C_Anm_Focus;
+DUMPER7_ASSERTS_WBP_MainMenu_C_Anm_focus;
 
 // Function WBP_MainMenu.WBP_MainMenu_C.Anm_FocusToNormal
 // 0x0001 (0x0001 - 0x0000)

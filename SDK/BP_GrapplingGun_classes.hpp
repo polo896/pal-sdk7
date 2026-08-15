@@ -19,7 +19,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_GrapplingGun.BP_GrapplingGun_C
 // 0x0060 (0x06E8 - 0x0688)
-class ABP_GrapplingGun_C final : public APalWeaponBase
+class ABP_GrapplingGun_C : public APalWeaponBase
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0688(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

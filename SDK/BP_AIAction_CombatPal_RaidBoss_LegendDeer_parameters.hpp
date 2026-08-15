@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
 #include "ENum_Raid_LegendDeer_CombatPhase_structs.hpp"
+#include "Pal_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "Engine_structs.hpp"
 
@@ -68,6 +68,17 @@ public:
 	class UPalAIActionBase*                       CallFunc_SetActionClassParameter_ReturnValue;      // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_CombatPal_RaidBoss_LegendDeer_C_BarrierBreak;
+
+// Function BP_AIAction_CombatPal_RaidBoss_LegendDeer.BP_AIAction_CombatPal_RaidBoss_LegendDeer_C.ChangeNextAction
+// 0x0018 (0x0018 - 0x0000)
+struct BP_AIAction_CombatPal_RaidBoss_LegendDeer_C_ChangeNextAction final
+{
+public:
+	class UClass*                                 CallFunc_GetPhaseChangeAction_ReturnAction;        // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetPhaseChangeAction_TargetActor;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_CombatPal_RaidBoss_LegendDeer_C_ChangeNextAction;
 
 // Function BP_AIAction_CombatPal_RaidBoss_LegendDeer.BP_AIAction_CombatPal_RaidBoss_LegendDeer_C.CheckWazaMaxRange
 // 0x0004 (0x0004 - 0x0000)
@@ -217,17 +228,6 @@ public:
 	double                                        CallFunc_Less_DoubleDouble_A_ImplicitCast;         // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_CombatPal_RaidBoss_LegendDeer_C_Phase_Check;
-
-// Function BP_AIAction_CombatPal_RaidBoss_LegendDeer.BP_AIAction_CombatPal_RaidBoss_LegendDeer_C.ChangeNextAction
-// 0x0018 (0x0018 - 0x0000)
-struct BP_AIAction_CombatPal_RaidBoss_LegendDeer_C_ChangeNextAction final
-{
-public:
-	class UClass*                                 CallFunc_GetPhaseChangeAction_ReturnAction;        // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetPhaseChangeAction_TargetActor;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_CombatPal_RaidBoss_LegendDeer_C_ChangeNextAction;
 
 // Function BP_AIAction_CombatPal_RaidBoss_LegendDeer.BP_AIAction_CombatPal_RaidBoss_LegendDeer_C.OnPlayAction
 // 0x0090 (0x0090 - 0x0000)

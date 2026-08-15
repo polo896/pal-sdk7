@@ -28,10 +28,10 @@ public:
 	double                                        Front;                                             // 0x0150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void GetTargetPos(struct FVector* Pos);
-	void ExecuteUbergraph_BP_AIAction_SideStep(int32 EntryPoint);
-	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void ActionStart(class APawn* ControlledPawn);
+	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
+	void ExecuteUbergraph_BP_AIAction_SideStep(int32 EntryPoint);
+	void GetTargetPos(struct FVector* Pos);
 
 public:
 	static class UClass* StaticClass()

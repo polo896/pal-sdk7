@@ -16,42 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_OptionSettings_Tab.WBP_OptionSettings_Tab_C.SwitchTabTo
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_OptionSettings_Tab_C_SwitchTabTo final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_Tab_C_SwitchTabTo;
-
-// Function WBP_OptionSettings_Tab.WBP_OptionSettings_Tab_C.SwitchTab
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_OptionSettings_Tab_C_SwitchTab final
-{
-public:
-	bool                                          Next;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_Tab_C_SwitchTab;
-
-// Function WBP_OptionSettings_Tab.WBP_OptionSettings_Tab_C.SetupTabs
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_OptionSettings_Tab_C_SetupTabs final
-{
-public:
-	TArray<struct FDataTableRowHandle>            Names;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_Tab_C_SetupTabs;
-
-// Function WBP_OptionSettings_Tab.WBP_OptionSettings_Tab_C.Setup
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_OptionSettings_Tab_C_Setup final
-{
-public:
-	class UWBP_OptionSettings_C*                  SettingPanel;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_Tab_C_Setup;
-
 // Function WBP_OptionSettings_Tab.WBP_OptionSettings_Tab_C.ExecuteUbergraph_WBP_OptionSettings_Tab
 // 0x0140 (0x0140 - 0x0000)
 struct WBP_OptionSettings_Tab_C_ExecuteUbergraph_WBP_OptionSettings_Tab final
@@ -115,6 +79,42 @@ public:
 	class UWBP_OptionSettings_TabButton_C*        CallFunc_Array_Get_Item_10;                        // 0x0138(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_OptionSettings_Tab_C_ExecuteUbergraph_WBP_OptionSettings_Tab;
+
+// Function WBP_OptionSettings_Tab.WBP_OptionSettings_Tab_C.Setup
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_OptionSettings_Tab_C_Setup final
+{
+public:
+	class UWBP_OptionSettings_C*                  SettingPanel;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_Tab_C_Setup;
+
+// Function WBP_OptionSettings_Tab.WBP_OptionSettings_Tab_C.SetupTabs
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_OptionSettings_Tab_C_SetupTabs final
+{
+public:
+	TArray<struct FDataTableRowHandle>            Names;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_Tab_C_SetupTabs;
+
+// Function WBP_OptionSettings_Tab.WBP_OptionSettings_Tab_C.SwitchTab
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_OptionSettings_Tab_C_SwitchTab final
+{
+public:
+	bool                                          Next;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_Tab_C_SwitchTab;
+
+// Function WBP_OptionSettings_Tab.WBP_OptionSettings_Tab_C.SwitchTabTo
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_OptionSettings_Tab_C_SwitchTabTo final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_Tab_C_SwitchTabTo;
 
 }
 

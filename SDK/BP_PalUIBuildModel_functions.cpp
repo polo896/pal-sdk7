@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function BP_PalUIBuildModel.BP_PalUIBuildModel_C.ChangeTab
+// Function BP_PalUIBuildModel.BP_PalUIBuildModel_C.ChangeToNextTab
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalBuildObjectTypeA                    TypeA                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_PalUIBuildModel_C::ChangeTab(EPalBuildObjectTypeA TypeA)
+void UBP_PalUIBuildModel_C::ChangeToNextTab()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalUIBuildModel_C", "ChangeTab");
+		Func = Class->GetFunction("BP_PalUIBuildModel_C", "ChangeToNextTab");
 
-	Params::BP_PalUIBuildModel_C_ChangeTab Parms{};
-
-	Parms.TypeA = TypeA;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -51,17 +45,23 @@ void UBP_PalUIBuildModel_C::ChangeToBackTab()
 }
 
 
-// Function BP_PalUIBuildModel.BP_PalUIBuildModel_C.ChangeToNextTab
+// Function BP_PalUIBuildModel.BP_PalUIBuildModel_C.ChangeTab
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalBuildObjectTypeA                    TypeA                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_PalUIBuildModel_C::ChangeToNextTab()
+void UBP_PalUIBuildModel_C::ChangeTab(EPalBuildObjectTypeA TypeA)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalUIBuildModel_C", "ChangeToNextTab");
+		Func = Class->GetFunction("BP_PalUIBuildModel_C", "ChangeTab");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_PalUIBuildModel_C_ChangeTab Parms{};
+
+	Parms.TypeA = TypeA;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

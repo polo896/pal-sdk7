@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Pal_structs.hpp"
-#include "ST_RideBossAnimation_structs.hpp"
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
+#include "ST_RideBossAnimation_structs.hpp"
 
 
 namespace SDK::Params
@@ -71,12 +71,12 @@ public:
 	uint8                                         Pad_1D1[0x7];                                      // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x01D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalActionComponent*                    CallFunc_GetComponentByClass_ReturnValue;          // 0x01E0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	const class UPalActionBase*                   K2Node_CustomEvent_Action_1;                       // 0x01E8(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class UPalActionBase*                   K2Node_CustomEvent_action_1;                       // 0x01E8(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetOwner_ReturnValue_1;                   // 0x01F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalActionComponent*                    CallFunc_GetComponentByClass_ReturnValue_1;        // 0x01F8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_17;           // 0x0200(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0210(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalActionBase*                         K2Node_CustomEvent_Action;                         // 0x0218(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalActionBase*                         K2Node_CustomEvent_action;                         // 0x0218(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPalActionType                                CallFunc_FindEActionFromAction_Eaction;            // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0221(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_222[0x6];                                      // 0x0222(0x0006)(Fixing Size After Last Property [ Dumper-7 ])

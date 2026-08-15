@@ -16,6 +16,15 @@
 namespace SDK::Params
 {
 
+// Function BP_AIAction_Visitor_WaitInBaseCamp.BP_AIAction_Visitor_WaitInBaseCamp_C.ActionStart
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_Visitor_WaitInBaseCamp_C_ActionStart final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_Visitor_WaitInBaseCamp_C_ActionStart;
+
 // Function BP_AIAction_Visitor_WaitInBaseCamp.BP_AIAction_Visitor_WaitInBaseCamp_C.ActionTick
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIAction_Visitor_WaitInBaseCamp_C_ActionTick final
@@ -58,15 +67,6 @@ public:
 	EPalAIResponseType                            ResponseType;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_Visitor_WaitInBaseCamp_C_Sight_Check;
-
-// Function BP_AIAction_Visitor_WaitInBaseCamp.BP_AIAction_Visitor_WaitInBaseCamp_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_Visitor_WaitInBaseCamp_C_ActionStart final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_Visitor_WaitInBaseCamp_C_ActionStart;
 
 }
 

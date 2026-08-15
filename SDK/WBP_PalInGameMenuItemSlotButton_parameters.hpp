@@ -257,24 +257,6 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalInGameMenuItemSlotButton_C_OnUnhoveredEvent;
 
-// Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.RegisterButton
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalInGameMenuItemSlotButton_C_RegisterButton final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalInGameMenuItemSlotButton_C_RegisterButton;
-
-// Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.RegisterItemSlotWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget final
-{
-public:
-	class UWBP_PalItemSlotBase_C*                 itemSlotWidget;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget;
-
 // Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.Set Pal Gear Icon
 // 0x0058 (0x0058 - 0x0000)
 struct WBP_PalInGameMenuItemSlotButton_C_Set_Pal_Gear_Icon final
@@ -383,6 +365,24 @@ public:
 	bool                                          Lock;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_PalInGameMenuItemSlotButton_C_ToggleLock;
+
+// Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.RegisterButton
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalInGameMenuItemSlotButton_C_RegisterButton final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalInGameMenuItemSlotButton_C_RegisterButton;
+
+// Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.RegisterItemSlotWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget final
+{
+public:
+	class UWBP_PalItemSlotBase_C*                 itemSlotWidget;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget;
 
 }
 

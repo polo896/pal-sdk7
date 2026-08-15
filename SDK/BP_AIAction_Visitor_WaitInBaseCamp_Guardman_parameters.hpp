@@ -18,6 +18,16 @@
 namespace SDK::Params
 {
 
+// Function BP_AIAction_Visitor_WaitInBaseCamp_Guardman.BP_AIAction_Visitor_WaitInBaseCamp_Guardman_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_Visitor_WaitInBaseCamp_Guardman_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_Visitor_WaitInBaseCamp_Guardman_C_ActionFinished;
+
 // Function BP_AIAction_Visitor_WaitInBaseCamp_Guardman.BP_AIAction_Visitor_WaitInBaseCamp_Guardman_C.ActionTick
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIAction_Visitor_WaitInBaseCamp_Guardman_C_ActionTick final
@@ -104,16 +114,6 @@ public:
 	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_Visitor_WaitInBaseCamp_Guardman_C_Tick_Move_to_Base_Camp;
-
-// Function BP_AIAction_Visitor_WaitInBaseCamp_Guardman.BP_AIAction_Visitor_WaitInBaseCamp_Guardman_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_Visitor_WaitInBaseCamp_Guardman_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_Visitor_WaitInBaseCamp_Guardman_C_ActionFinished;
 
 // Function BP_AIAction_Visitor_WaitInBaseCamp_Guardman.BP_AIAction_Visitor_WaitInBaseCamp_Guardman_C.ActionResume
 // 0x0008 (0x0008 - 0x0000)

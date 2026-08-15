@@ -17,21 +17,35 @@
 namespace SDK
 {
 
-// Function WBP_MainMenu_bg.WBP_MainMenu_bg_C.SetText
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_MainMenu_bg.WBP_MainMenu_bg_C.Anm_Open
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_MainMenu_bg_C::SetText(const class FText& Text)
+void UWBP_MainMenu_bg_C::Anm_Open()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_bg_C", "SetText");
+		Func = Class->GetFunction("WBP_MainMenu_bg_C", "Anm_Open");
 
-	Params::WBP_MainMenu_bg_C_SetText Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Text = std::move(Text);
+
+// Function WBP_MainMenu_bg.WBP_MainMenu_bg_C.ExecuteUbergraph_WBP_MainMenu_bg
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_bg_C::ExecuteUbergraph_WBP_MainMenu_bg(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_bg_C", "ExecuteUbergraph_WBP_MainMenu_bg");
+
+	Params::WBP_MainMenu_bg_C_ExecuteUbergraph_WBP_MainMenu_bg Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,37 +71,23 @@ void UWBP_MainMenu_bg_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_MainMenu_bg.WBP_MainMenu_bg_C.ExecuteUbergraph_WBP_MainMenu_bg
-// (Final, UbergraphFunction)
+// Function WBP_MainMenu_bg.WBP_MainMenu_bg_C.SetText
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_MainMenu_bg_C::ExecuteUbergraph_WBP_MainMenu_bg(int32 EntryPoint)
+void UWBP_MainMenu_bg_C::SetText(const class FText& Text)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_bg_C", "ExecuteUbergraph_WBP_MainMenu_bg");
+		Func = Class->GetFunction("WBP_MainMenu_bg_C", "SetText");
 
-	Params::WBP_MainMenu_bg_C_ExecuteUbergraph_WBP_MainMenu_bg Parms{};
+	Params::WBP_MainMenu_bg_C_SetText Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Text = std::move(Text);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_bg.WBP_MainMenu_bg_C.Anm_Open
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_MainMenu_bg_C::Anm_Open()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_bg_C", "Anm_Open");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

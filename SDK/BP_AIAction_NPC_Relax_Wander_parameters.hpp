@@ -10,13 +10,22 @@
 
 #include "Basic.hpp"
 
-#include "F_NPC_PathWalkPoint_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "F_NPC_PathWalkPoint_structs.hpp"
 #include "F_NPC_PathWalkArray_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function BP_AIAction_NPC_Relax_Wander.BP_AIAction_NPC_Relax_Wander_C.ActionStart
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_NPC_Relax_Wander_C_ActionStart final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_NPC_Relax_Wander_C_ActionStart;
 
 // Function BP_AIAction_NPC_Relax_Wander.BP_AIAction_NPC_Relax_Wander_C.ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander
 // 0x0058 (0x0058 - 0x0000)
@@ -171,15 +180,6 @@ public:
 	int32                                         CallFunc_SelectTargetNode_index;                   // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_NPC_Relax_Wander_C_TryGetTargetLocation;
-
-// Function BP_AIAction_NPC_Relax_Wander.BP_AIAction_NPC_Relax_Wander_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_NPC_Relax_Wander_C_ActionStart final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_NPC_Relax_Wander_C_ActionStart;
 
 }
 

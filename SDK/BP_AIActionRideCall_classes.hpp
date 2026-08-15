@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "BP_AIAction_CallBase_classes.hpp"
 #include "AIModule_structs.hpp"
+#include "BP_AIAction_CallBase_classes.hpp"
 
 
 namespace SDK
@@ -31,12 +31,12 @@ public:
 	void ActionAbort(class APawn* ControlledPawn);
 	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
 	void ActionPause(class APawn* ControlledPawn);
+	void ActionStart(class APawn* ControlledPawn);
+	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void CanRide(bool* CanRide_0);
 	void CheckWallRaycast(bool* HitWall);
 	void DoRide(class APawn* ControlledPawn);
 	void ExecuteUbergraph_BP_AIActionRideCall(int32 EntryPoint);
-	void ActionStart(class APawn* ControlledPawn);
-	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 
 public:
 	static class UClass* StaticClass()

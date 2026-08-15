@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
 #include "EPalUIPalInfoType_structs.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK

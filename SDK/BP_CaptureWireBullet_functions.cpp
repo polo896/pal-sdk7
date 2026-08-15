@@ -17,21 +17,63 @@
 namespace SDK
 {
 
-// Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.ExecuteUbergraph_BP_CaptureWireBullet
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.UpdateRotator
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CaptureWireBullet_C::ExecuteUbergraph_BP_CaptureWireBullet(int32 EntryPoint)
+void ABP_CaptureWireBullet_C::UpdateRotator(double DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CaptureWireBullet_C", "ExecuteUbergraph_BP_CaptureWireBullet");
+		Func = Class->GetFunction("BP_CaptureWireBullet_C", "UpdateRotator");
 
-	Params::BP_CaptureWireBullet_C_ExecuteUbergraph_BP_CaptureWireBullet Parms{};
+	Params::BP_CaptureWireBullet_C_UpdateRotator Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.DeltaTime = DeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.SpawnDelegate
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     Guid                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CaptureWireBullet_C::SpawnDelegate(const struct FGuid& Guid, class AActor* Actor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CaptureWireBullet_C", "SpawnDelegate");
+
+	Params::BP_CaptureWireBullet_C_SpawnDelegate Parms{};
+
+	Parms.Guid = std::move(Guid);
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CaptureWireBullet_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CaptureWireBullet_C", "ReceiveTick");
+
+	Params::BP_CaptureWireBullet_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -63,63 +105,21 @@ void ABP_CaptureWireBullet_C::OnHitToActor(class UPrimitiveComponent* HitComp, c
 }
 
 
-// Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.ExecuteUbergraph_BP_CaptureWireBullet
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CaptureWireBullet_C::ReceiveTick(float DeltaSeconds)
+void ABP_CaptureWireBullet_C::ExecuteUbergraph_BP_CaptureWireBullet(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CaptureWireBullet_C", "ReceiveTick");
+		Func = Class->GetFunction("BP_CaptureWireBullet_C", "ExecuteUbergraph_BP_CaptureWireBullet");
 
-	Params::BP_CaptureWireBullet_C_ReceiveTick Parms{};
+	Params::BP_CaptureWireBullet_C_ExecuteUbergraph_BP_CaptureWireBullet Parms{};
 
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.SpawnDelegate
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     Guid                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CaptureWireBullet_C::SpawnDelegate(const struct FGuid& Guid, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CaptureWireBullet_C", "SpawnDelegate");
-
-	Params::BP_CaptureWireBullet_C_SpawnDelegate Parms{};
-
-	Parms.Guid = std::move(Guid);
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CaptureWireBullet.BP_CaptureWireBullet_C.UpdateRotator
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CaptureWireBullet_C::UpdateRotator(double DeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CaptureWireBullet_C", "UpdateRotator");
-
-	Params::BP_CaptureWireBullet_C_UpdateRotator Parms{};
-
-	Parms.DeltaTime = DeltaTime;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

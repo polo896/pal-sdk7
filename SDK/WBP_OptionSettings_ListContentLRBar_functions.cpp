@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_OptionSettings_ListContentLRBar.WBP_OptionSettings_ListContentLRBar_C.SetActive
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsActive                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContentLRBar_C::SetActive(bool IsActive)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContentLRBar_C", "SetActive");
-
-	Params::WBP_OptionSettings_ListContentLRBar_C_SetActive Parms{};
-
-	Parms.IsActive = IsActive;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_OptionSettings_ListContentLRBar.WBP_OptionSettings_ListContentLRBar_C.ExecuteUbergraph_WBP_OptionSettings_ListContentLRBar
 // (Final, UbergraphFunction)
 // Parameters:
@@ -52,6 +32,26 @@ void UWBP_OptionSettings_ListContentLRBar_C::ExecuteUbergraph_WBP_OptionSettings
 	Params::WBP_OptionSettings_ListContentLRBar_C_ExecuteUbergraph_WBP_OptionSettings_ListContentLRBar Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContentLRBar.WBP_OptionSettings_ListContentLRBar_C.SetActive
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsActive                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContentLRBar_C::SetActive(bool IsActive)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContentLRBar_C", "SetActive");
+
+	Params::WBP_OptionSettings_ListContentLRBar_C_SetActive Parms{};
+
+	Parms.IsActive = IsActive;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

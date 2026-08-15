@@ -27,15 +27,15 @@ public:
 	class UPalUILiftSlotModel*                    Model;                                             // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Dispose();
-	void On_Update_Icon_Texture_Path(TSoftObjectPtr<class UTexture2D> IconTexture);
-	bool OnDragOver(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation);
-	void OnFailedItemOperation();
-	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void OnUpdateCount(int32 Count);
-	void OnUpdateHandleSlot(class UPalIndividualCharacterSlot* TargetHandleSlot);
-	void Setup(class UPalUILiftSlotModel* Model_0);
 	void ShowSetup();
+	void Setup(class UPalUILiftSlotModel* Model_0);
+	void OnUpdateHandleSlot(class UPalIndividualCharacterSlot* TargetHandleSlot);
+	void OnUpdateCount(int32 Count);
+	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnFailedItemOperation();
+	bool OnDragOver(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation);
+	void On_Update_Icon_Texture_Path(TSoftObjectPtr<class UTexture2D> IconTexture);
+	void Dispose();
 
 public:
 	static class UClass* StaticClass()

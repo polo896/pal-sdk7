@@ -138,6 +138,20 @@ void UWBP_Map_Body_C::Update_Map_Transform(double DeltaTime)
 }
 
 
+// Function WBP_Map_Body.WBP_Map_Body_C.Update Map Icons
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Map_Body_C::Update_Map_Icons()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_Body_C", "Update Map Icons");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Map_Body.WBP_Map_Body_C.Update Map Icon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -471,31 +485,6 @@ void UWBP_Map_Body_C::OnMouseEnter(const struct FGeometry& MyGeometry, const str
 	Parms.MouseEvent = std::move(MouseEvent);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Map_Body.WBP_Map_Body_C.OnMouseButtonUp
-// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-struct FEventReply UWBP_Map_Body_C::OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_Body_C", "OnMouseButtonUp");
-
-	Params::WBP_Map_Body_C_OnMouseButtonUp Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.MouseEvent = std::move(MouseEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
@@ -1039,17 +1028,28 @@ void UWBP_Map_Body_C::Add_Icon(class UWBP_WorldMap_IconBase_NoDesign_C* IconWidg
 }
 
 
-// Function WBP_Map_Body.WBP_Map_Body_C.Update Map Icons
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Map_Body.WBP_Map_Body_C.OnMouseButtonUp
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-void UWBP_Map_Body_C::Update_Map_Icons()
+struct FEventReply UWBP_Map_Body_C::OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_Body_C", "Update Map Icons");
+		Func = Class->GetFunction("WBP_Map_Body_C", "OnMouseButtonUp");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Map_Body_C_OnMouseButtonUp Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.MouseEvent = std::move(MouseEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

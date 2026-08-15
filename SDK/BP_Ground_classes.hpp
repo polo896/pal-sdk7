@@ -32,8 +32,8 @@ public:
 	class UMaterialInstance*                      UnlitMasked;                                       // 0x02D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
 	void ChangeMode(int32 newMode);
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function WBP_MinimapSettingsButton.WBP_MinimapSettingsButton_C.ExecuteUbergraph_WBP_MinimapSettingsButton
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -34,6 +34,20 @@ void UWBP_MinimapSettingsButton_C::ExecuteUbergraph_WBP_MinimapSettingsButton(in
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MinimapSettingsButton.WBP_MinimapSettingsButton_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MinimapSettingsButton_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MinimapSettingsButton_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

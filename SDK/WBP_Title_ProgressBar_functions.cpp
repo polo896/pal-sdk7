@@ -17,37 +17,25 @@
 namespace SDK
 {
 
-// Function WBP_Title_ProgressBar.WBP_Title_ProgressBar_C.ExecuteUbergraph_WBP_Title_ProgressBar
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Title_ProgressBar.WBP_Title_ProgressBar_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Title_ProgressBar_C::ExecuteUbergraph_WBP_Title_ProgressBar(int32 EntryPoint)
+void UWBP_Title_ProgressBar_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_ProgressBar_C", "ExecuteUbergraph_WBP_Title_ProgressBar");
+		Func = Class->GetFunction("WBP_Title_ProgressBar_C", "Tick");
 
-	Params::WBP_Title_ProgressBar_C_ExecuteUbergraph_WBP_Title_ProgressBar Parms{};
+	Params::WBP_Title_ProgressBar_C_Tick Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_ProgressBar.WBP_Title_ProgressBar_C.SetProgressBar
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_ProgressBar_C::SetProgressBar()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_ProgressBar_C", "SetProgressBar");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -71,23 +59,35 @@ void UWBP_Title_ProgressBar_C::SetProgressValue(double NewValue)
 }
 
 
-// Function WBP_Title_ProgressBar.WBP_Title_ProgressBar_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Title_ProgressBar.WBP_Title_ProgressBar_C.SetProgressBar
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Title_ProgressBar_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_Title_ProgressBar_C::SetProgressBar()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_ProgressBar_C", "Tick");
+		Func = Class->GetFunction("WBP_Title_ProgressBar_C", "SetProgressBar");
 
-	Params::WBP_Title_ProgressBar_C_Tick Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+
+// Function WBP_Title_ProgressBar.WBP_Title_ProgressBar_C.ExecuteUbergraph_WBP_Title_ProgressBar
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_ProgressBar_C::ExecuteUbergraph_WBP_Title_ProgressBar(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_ProgressBar_C", "ExecuteUbergraph_WBP_Title_ProgressBar");
+
+	Params::WBP_Title_ProgressBar_C_ExecuteUbergraph_WBP_Title_ProgressBar Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

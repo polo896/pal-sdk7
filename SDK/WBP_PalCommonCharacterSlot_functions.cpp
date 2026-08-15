@@ -319,6 +319,20 @@ void UWBP_PalCommonCharacterSlot_C::OnChangedAssignToExpedition_Binded(bool bIsA
 }
 
 
+// Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalCommonCharacterSlot_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCommonCharacterSlot_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.OnNotifyBattleModeChanged_Binded
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -513,6 +527,27 @@ void UWBP_PalCommonCharacterSlot_C::OnUpdateReviveTimer_Binded(double NowTimer, 
 }
 
 
+// Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.RegisterCharacterIconWidget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterIconBase_C**     IconWidget                                             (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalCommonCharacterSlot_C::RegisterCharacterIconWidget(class UWBP_PalCharacterIconBase_C** IconWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCommonCharacterSlot_C", "RegisterCharacterIconWidget");
+
+	Params::WBP_PalCommonCharacterSlot_C_RegisterCharacterIconWidget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IconWidget != nullptr)
+		*IconWidget = Parms.IconWidget;
+}
+
+
 // Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.SetForceExpeditionMark
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -544,41 +579,6 @@ void UWBP_PalCommonCharacterSlot_C::UpdateStatusDetail()
 		Func = Class->GetFunction("WBP_PalCommonCharacterSlot_C", "UpdateStatusDetail");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalCommonCharacterSlot_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCommonCharacterSlot_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.RegisterCharacterIconWidget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterIconBase_C**     IconWidget                                             (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalCommonCharacterSlot_C::RegisterCharacterIconWidget(class UWBP_PalCharacterIconBase_C** IconWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCommonCharacterSlot_C", "RegisterCharacterIconWidget");
-
-	Params::WBP_PalCommonCharacterSlot_C_RegisterCharacterIconWidget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (IconWidget != nullptr)
-		*IconWidget = Parms.IconWidget;
 }
 
 }

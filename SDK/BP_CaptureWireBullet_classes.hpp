@@ -31,11 +31,11 @@ public:
 	struct FRotator                               ThrowRotator;                                      // 0x0448(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void ExecuteUbergraph_BP_CaptureWireBullet(int32 EntryPoint);
-	void OnHitToActor(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FHitResult& Hit);
-	void ReceiveTick(float DeltaSeconds);
-	void SpawnDelegate(const struct FGuid& Guid, class AActor* Actor);
 	void UpdateRotator(double DeltaTime);
+	void SpawnDelegate(const struct FGuid& Guid, class AActor* Actor);
+	void ReceiveTick(float DeltaSeconds);
+	void OnHitToActor(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FHitResult& Hit);
+	void ExecuteUbergraph_BP_CaptureWireBullet(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -33,20 +33,20 @@ public:
 	TMulticastInlineDelegate<void(int32 Index, class UWidget* ChildWidget, bool IsEnable)> OnChangeEnableChild; // 0x0498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_PanelWidgetChildrenSelectorBase(int32 EntryPoint);
-	void GetChildrenNum(int32* ChildrenNum);
-	void GetIndexByWidget(class UWidget* Widget, int32* findedIndex);
-	void GetPanelChildren(bool* IsValidPanel, TArray<class UWidget*>* Children);
-	void IsEnabeChild(int32 Index_0, bool* IsEnable);
-	void IsValidIndex(int32 Index_0, bool* IsValid);
-	void OnInitialized();
-	void RegisterPanelWidget(class UPanelWidget** PanelWidget);
-	void SelectByIndex(int32 FocusIndex);
-	void SelectNext();
-	void SelectPrev();
-	void SetEnableAllChildren(bool IsEnable);
 	void SetEnableChild(bool IsEnable, int32 TargetIndex);
+	void SetEnableAllChildren(bool IsEnable);
+	void SelectPrev();
+	void SelectNext();
+	void SelectByIndex(int32 FocusIndex);
+	void RegisterPanelWidget(class UPanelWidget** PanelWidget);
+	void OnInitialized();
+	void IsValidIndex(int32 Index_0, bool* IsValid);
+	void IsEnabeChild(int32 Index_0, bool* IsEnable);
+	void GetPanelChildren(bool* IsValidPanel, TArray<class UWidget*>* Children);
+	void GetIndexByWidget(class UWidget* Widget, int32* findedIndex);
+	void GetChildrenNum(int32* ChildrenNum);
+	void ExecuteUbergraph_WBP_PanelWidgetChildrenSelectorBase(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

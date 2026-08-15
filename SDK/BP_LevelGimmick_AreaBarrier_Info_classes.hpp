@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Pal_classes.hpp"
 
 
@@ -28,14 +28,14 @@ public:
 	struct FTimerHandle                           CutsceneWorldParitionTimerHandle;                  // 0x03B0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CutsceneFinishFadeIn(bool bIsSkipped);
-	void CutsceneStartFadeOut();
-	void CutsceneStartWaitForWorldPartition();
-	void CutSceneWaitForWorldPartition();
-	void PlayCutsceneIfNecessary(const struct FGuid& LockId, bool bLockStateChanged, bool bForce);
-	void PlayCutsceneInternal();
-	bool ShouldPlayCutscene(const struct FGuid& LockId, bool bLockStateChanged, bool bForce);
 	void SpawnCutsceneActor();
+	bool ShouldPlayCutscene(const struct FGuid& LockId, bool bLockStateChanged, bool bForce);
+	void PlayCutsceneInternal();
+	void PlayCutsceneIfNecessary(const struct FGuid& LockId, bool bLockStateChanged, bool bForce);
+	void CutSceneWaitForWorldPartition();
+	void CutsceneStartWaitForWorldPartition();
+	void CutsceneStartFadeOut();
+	void CutsceneFinishFadeIn(bool bIsSkipped);
 
 public:
 	static class UClass* StaticClass()

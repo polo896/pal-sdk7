@@ -28,10 +28,10 @@ public:
 	double                                        TargetProgressValue;                               // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Title_ProgressBar(int32 EntryPoint);
-	void SetProgressBar();
-	void SetProgressValue(double NewValue);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SetProgressValue(double NewValue);
+	void SetProgressBar();
+	void ExecuteUbergraph_WBP_Title_ProgressBar(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

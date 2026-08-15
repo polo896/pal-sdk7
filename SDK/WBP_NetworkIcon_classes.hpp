@@ -28,9 +28,9 @@ public:
 	class UImage*                                 Image_IconBase;                                    // 0x0290(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_NetworkIcon(int32 EntryPoint);
 	void OnNetworkCheckTick();
+	void ExecuteUbergraph_WBP_NetworkIcon(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

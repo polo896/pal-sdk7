@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "Slate_structs.hpp"
 #include "Pal_structs.hpp"
+#include "Slate_structs.hpp"
 
 
 namespace SDK::Params

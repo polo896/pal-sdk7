@@ -18,22 +18,22 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MonsterAIController_YakushimaBoss001_Green.BP_MonsterAIController_YakushimaBoss001_Green_C
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class ABP_MonsterAIController_YakushimaBoss001_Green_C final : public ABP_MonsterAIController_RaidBoss_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MonsterAIController_YakushimaBoss001_Green_C; // 0x05C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class ABP_MonsterAIController_YakushimaBoss002_C* ParentController;                              // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLeftHand;                                       // 0x05D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ParentDestroyed;                                   // 0x05D1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MonsterAIController_YakushimaBoss001_Green_C; // 0x05C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class ABP_MonsterAIController_YakushimaBoss002_C* ParentController;                              // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLeftHand;                                       // 0x05D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ParentDestroyed;                                   // 0x05D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_MonsterAIController_YakushimaBoss001_Green(int32 EntryPoint);
-	void GetTargetCampID(struct FGuid* campID);
 	void IsLeftHand(bool* IsLeftHand_0);
 	void IsReadyBosses(bool* IsStartBattle);
 	void SetParentController(class ABP_MonsterAIController_YakushimaBoss002_C* ParentController_0);
 	void SetParentDestroyed();
+	void GetTargetCampID(struct FGuid* campID);
 
 public:
 	static class UClass* StaticClass()

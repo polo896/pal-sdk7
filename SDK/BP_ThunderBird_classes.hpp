@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_ThunderBird.BP_ThunderBird_C
 // 0x0030 (0x0D60 - 0x0D30)
-class ABP_ThunderBird_C : public ABP_MonsterBase_C
+class ABP_ThunderBird_C final : public ABP_MonsterBase_C
 {
 public:
 	class UPalFlyMeshHeightCtrlComponent*         PalFlyMeshHeightCtrl;                              // 0x0D30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)

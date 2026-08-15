@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function BP_InGamePalStatusModel.BP_InGamePalStatusModel_C.SetupForOtomo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UBP_InGamePalStatusModel_C::SetupForOtomo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_InGamePalStatusModel_C", "SetupForOtomo");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_InGamePalStatusModel.BP_InGamePalStatusModel_C.SetupSingle
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -34,20 +48,6 @@ void UBP_InGamePalStatusModel_C::SetupSingle(class UPalIndividualCharacterHandle
 	Parms.Handle = Handle;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_InGamePalStatusModel.BP_InGamePalStatusModel_C.SetupForOtomo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UBP_InGamePalStatusModel_C::SetupForOtomo()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InGamePalStatusModel_C", "SetupForOtomo");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

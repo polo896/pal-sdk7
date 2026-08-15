@@ -17,71 +17,23 @@
 namespace SDK
 {
 
-// Function BP_IngameMenu_Construction_ListFocusCalculator.BP_IngameMenu_Construction_ListFocusCalculator_C.AddList
+// Function BP_IngameMenu_Construction_ListFocusCalculator.BP_IngameMenu_Construction_ListFocusCalculator_C.SetMaxColumnIndex
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_IngameMenu_Construction_Group_C*ListWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_IngameMenu_Construction_ListFocusCalculator_C::AddList(class UWBP_IngameMenu_Construction_Group_C* ListWidget)
+void UBP_IngameMenu_Construction_ListFocusCalculator_C::SetMaxColumnIndex(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IngameMenu_Construction_ListFocusCalculator_C", "AddList");
+		Func = Class->GetFunction("BP_IngameMenu_Construction_ListFocusCalculator_C", "SetMaxColumnIndex");
 
-	Params::BP_IngameMenu_Construction_ListFocusCalculator_C_AddList Parms{};
+	Params::BP_IngameMenu_Construction_ListFocusCalculator_C_SetMaxColumnIndex Parms{};
 
-	Parms.ListWidget = ListWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_IngameMenu_Construction_ListFocusCalculator.BP_IngameMenu_Construction_ListFocusCalculator_C.GetFocusTarget_Down
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWBP_IngameMenu_Construction_Group_C*CurrentList                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UBP_IngameMenu_Construction_ListFocusCalculator_C::GetFocusTarget_Down(class UWBP_IngameMenu_Construction_Group_C* CurrentList, class UWidget** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IngameMenu_Construction_ListFocusCalculator_C", "GetFocusTarget_Down");
-
-	Params::BP_IngameMenu_Construction_ListFocusCalculator_C_GetFocusTarget_Down Parms{};
-
-	Parms.CurrentList = CurrentList;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-}
-
-
-// Function BP_IngameMenu_Construction_ListFocusCalculator.BP_IngameMenu_Construction_ListFocusCalculator_C.GetFocusTarget_Up
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWBP_IngameMenu_Construction_Group_C*CurrentList                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UBP_IngameMenu_Construction_ListFocusCalculator_C::GetFocusTarget_Up(class UWBP_IngameMenu_Construction_Group_C* CurrentList, class UWidget** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IngameMenu_Construction_ListFocusCalculator_C", "GetFocusTarget_Up");
-
-	Params::BP_IngameMenu_Construction_ListFocusCalculator_C_GetFocusTarget_Up Parms{};
-
-	Parms.CurrentList = CurrentList;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
 }
 
 
@@ -111,21 +63,69 @@ void UBP_IngameMenu_Construction_ListFocusCalculator_C::GetInitialFocusTargetInd
 }
 
 
-// Function BP_IngameMenu_Construction_ListFocusCalculator.BP_IngameMenu_Construction_ListFocusCalculator_C.SetMaxColumnIndex
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_IngameMenu_Construction_ListFocusCalculator.BP_IngameMenu_Construction_ListFocusCalculator_C.GetFocusTarget_Up
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_IngameMenu_Construction_Group_C*CurrentList                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UBP_IngameMenu_Construction_ListFocusCalculator_C::SetMaxColumnIndex(int32 Index_0)
+void UBP_IngameMenu_Construction_ListFocusCalculator_C::GetFocusTarget_Up(class UWBP_IngameMenu_Construction_Group_C* CurrentList, class UWidget** Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IngameMenu_Construction_ListFocusCalculator_C", "SetMaxColumnIndex");
+		Func = Class->GetFunction("BP_IngameMenu_Construction_ListFocusCalculator_C", "GetFocusTarget_Up");
 
-	Params::BP_IngameMenu_Construction_ListFocusCalculator_C_SetMaxColumnIndex Parms{};
+	Params::BP_IngameMenu_Construction_ListFocusCalculator_C_GetFocusTarget_Up Parms{};
 
-	Parms.Index_0 = Index_0;
+	Parms.CurrentList = CurrentList;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+}
+
+
+// Function BP_IngameMenu_Construction_ListFocusCalculator.BP_IngameMenu_Construction_ListFocusCalculator_C.GetFocusTarget_Down
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWBP_IngameMenu_Construction_Group_C*CurrentList                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UBP_IngameMenu_Construction_ListFocusCalculator_C::GetFocusTarget_Down(class UWBP_IngameMenu_Construction_Group_C* CurrentList, class UWidget** Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_IngameMenu_Construction_ListFocusCalculator_C", "GetFocusTarget_Down");
+
+	Params::BP_IngameMenu_Construction_ListFocusCalculator_C_GetFocusTarget_Down Parms{};
+
+	Parms.CurrentList = CurrentList;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+}
+
+
+// Function BP_IngameMenu_Construction_ListFocusCalculator.BP_IngameMenu_Construction_ListFocusCalculator_C.AddList
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_IngameMenu_Construction_Group_C*ListWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UBP_IngameMenu_Construction_ListFocusCalculator_C::AddList(class UWBP_IngameMenu_Construction_Group_C* ListWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_IngameMenu_Construction_ListFocusCalculator_C", "AddList");
+
+	Params::BP_IngameMenu_Construction_ListFocusCalculator_C_AddList Parms{};
+
+	Parms.ListWidget = ListWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

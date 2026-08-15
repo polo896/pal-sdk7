@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
 #include "BP_ThrowWeaponBase_classes.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK
@@ -19,20 +19,20 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_CapturePrism.BP_CapturePrism_C
 // 0x0010 (0x06B8 - 0x06A8)
-class ABP_CapturePrism_C final : public ABP_ThrowWeaponBase_C
+class ABP_CapturePrism_C : public ABP_ThrowWeaponBase_C
 {
 public:
 	class USkeletalMeshComponent*                 SK_Weapon_PalSphere_001;                           // 0x06A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	EPalCaptureSphereLevelType                    CaptureSphereType;                                 // 0x06B0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	bool DecrementBullet();
-	void GetCaptureLevel(int32* Level);
-	class FName GetEquipSocketName();
-	void GetThrowObjectClass(class UClass** ThrowObject);
-	void On_Throw();
-	void OnEndShootAnimation(class UAnimMontage* Montage);
 	void OnThrowInternal(class AActor* Bullet);
+	void OnEndShootAnimation(class UAnimMontage* Montage);
+	void On_Throw();
+	void GetThrowObjectClass(class UClass** ThrowObject);
+	class FName GetEquipSocketName();
+	void GetCaptureLevel(int32* Level);
+	bool DecrementBullet();
 
 public:
 	static class UClass* StaticClass()

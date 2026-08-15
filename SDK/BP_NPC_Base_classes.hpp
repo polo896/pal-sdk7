@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BP_NPC_NewBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_NPC_NewBase_classes.hpp"
 #include "Pal_structs.hpp"
 
 

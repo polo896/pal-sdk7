@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_classes.hpp"
 
 
 namespace SDK
@@ -31,12 +31,12 @@ public:
 	class FName                                   FilterId;                                          // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_IngameMenu_Chest_FilterContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_IngameMenu_Chest_FilterContent(int32 EntryPoint);
-	void On_Changed_State_Internal(bool IsChecked);
-	void OnUpdateFilterPreference(class UPalItemContainer* ItemContainer);
-	void RegisterEvents(class UPalUIItemChestFilterModel* Model);
 	void SetupUI(class FName FilterId_0, class FName TextId);
+	void RegisterEvents(class UPalUIItemChestFilterModel* Model);
+	void OnUpdateFilterPreference(class UPalItemContainer* ItemContainer);
+	void On_Changed_State_Internal(bool IsChecked);
+	void ExecuteUbergraph_WBP_IngameMenu_Chest_FilterContent(int32 EntryPoint);
+	void BndEvt__WBP_IngameMenu_Chest_FilterContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

@@ -37,30 +37,6 @@ public:
 };
 DUMPER7_ASSERTS_UAudioAnalyzerAssetBase;
 
-// Class AudioAnalyzer.AudioAnalyzerSubsystem
-// 0x0020 (0x0050 - 0x0030)
-class UAudioAnalyzerSubsystem final : public UEngineSubsystem
-{
-public:
-	TArray<class UAudioAnalyzer*>                 AudioAnalyzers;                                    // 0x0030(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_40[0x10];                                      // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AudioAnalyzerSubsystem")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AudioAnalyzerSubsystem")
-	}
-	static class UAudioAnalyzerSubsystem* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAudioAnalyzerSubsystem>();
-	}
-};
-DUMPER7_ASSERTS_UAudioAnalyzerSubsystem;
-
 // Class AudioAnalyzer.AudioAnalyzerNRT
 // 0x0050 (0x0078 - 0x0028)
 class UAudioAnalyzerNRT : public UAudioAnalyzerAssetBase
@@ -155,6 +131,30 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UAudioAnalyzerNRTSettings;
+
+// Class AudioAnalyzer.AudioAnalyzerSubsystem
+// 0x0020 (0x0050 - 0x0030)
+class UAudioAnalyzerSubsystem final : public UEngineSubsystem
+{
+public:
+	TArray<class UAudioAnalyzer*>                 AudioAnalyzers;                                    // 0x0030(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_40[0x10];                                      // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AudioAnalyzerSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AudioAnalyzerSubsystem")
+	}
+	static class UAudioAnalyzerSubsystem* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAudioAnalyzerSubsystem>();
+	}
+};
+DUMPER7_ASSERTS_UAudioAnalyzerSubsystem;
 
 }
 

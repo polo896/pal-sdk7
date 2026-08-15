@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Pal_structs.hpp"
 #include "BP_MonsterAIController_BaseCamp_classes.hpp"
 #include "AIModule_structs.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK

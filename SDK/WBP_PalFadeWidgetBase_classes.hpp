@@ -24,14 +24,14 @@ public:
 	class UPalHUDDispatchParameter_FadeWidget*    FadeParameter;                                     // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void FadeIn();
-	void FadeOut();
-	void NotifyEndFadeIn();
-	void NotifyEndFadeOut();
-	void NotifyStartFadeIn();
-	void NotifyStartFadeOut();
-	void Setup(class UPalHUDDispatchParameter_FadeWidget* FadeParameter_0);
 	void Setup_ForOverride();
+	void Setup(class UPalHUDDispatchParameter_FadeWidget* FadeParameter_0);
+	void NotifyStartFadeOut();
+	void NotifyStartFadeIn();
+	void NotifyEndFadeOut();
+	void NotifyEndFadeIn();
+	void FadeOut();
+	void FadeIn();
 
 public:
 	static class UClass* StaticClass()

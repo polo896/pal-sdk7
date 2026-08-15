@@ -40,13 +40,13 @@ public:
 	class FName                                   BackActionName;                                    // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetPadKeyA();
-	void ResetCommandText();
-	void OnSetup();
-	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void OnKeySetting(const struct FKey& NewKey);
-	struct FEventReply OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
 	void ExecuteUbergraph_WBP_OptionSettingsOverLayWindow(int32 EntryPoint);
+	struct FEventReply OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	void OnKeySetting(const struct FKey& NewKey);
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnSetup();
+	void ResetCommandText();
+	void SetPadKeyA();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

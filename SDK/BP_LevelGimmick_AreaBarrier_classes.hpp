@@ -36,17 +36,17 @@ public:
 	double                                        NiagaraDissolveIncreaseRate;                       // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void DebugNiagaraFadeOut();
-	void DebugNiagaraReset();
-	void ExecuteUbergraph_BP_LevelGimmick_AreaBarrier(int32 EntryPoint);
-	void OnDataChanged(const struct FPalLevelGimmick_AreaBarrier_ViewModel& InViewModel);
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void ResetNiagara();
-	void SetNiagaraParams(double Alpha, double Dissolve, double Rate);
-	void StartNiagaraFadeOut();
-	void UpdateNiagaraFadeOut(double DeltaSeconds);
 	void UpdateView(const struct FPalLevelGimmick_AreaBarrier_ViewModel& ViewModel);
+	void UpdateNiagaraFadeOut(double DeltaSeconds);
+	void StartNiagaraFadeOut();
+	void SetNiagaraParams(double Alpha, double Dissolve, double Rate);
+	void ResetNiagara();
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
+	void OnDataChanged(const struct FPalLevelGimmick_AreaBarrier_ViewModel& InViewModel);
+	void ExecuteUbergraph_BP_LevelGimmick_AreaBarrier(int32 EntryPoint);
+	void DebugNiagaraReset();
+	void DebugNiagaraFadeOut();
 
 	TArray<class USceneComponent*> GetTeleportPoints() const;
 

@@ -17,223 +17,446 @@
 namespace SDK
 {
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.UpdateEffectTransform
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_Kitsunebi_Flamethrower_C::UpdateEffectTransform()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "UpdateEffectTransform");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.Trace Hit Flame
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FBasicParticleData>&      Data                                                   (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// class UNiagaraSystem*                   NiagaraSystem                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   SimulationPositionOffset                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Kitsunebi_Flamethrower_C::Trace_Hit_Flame(TArray<struct FBasicParticleData>& Data, class UNiagaraSystem* NiagaraSystem, const struct FVector& SimulationPositionOffset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "Trace Hit Flame");
-
-	Params::BP_Kitsunebi_Flamethrower_C_Trace_Hit_Flame Parms{};
-
-	Parms.Data = std::move(Data);
-	Parms.NiagaraSystem = NiagaraSystem;
-	Parms.SimulationPositionOffset = std::move(SimulationPositionOffset);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Data = std::move(Parms.Data);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.TickShootingFire
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Kitsunebi_Flamethrower_C::TickShootingFire(double DeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "TickShootingFire");
-
-	Params::BP_Kitsunebi_Flamethrower_C_TickShootingFire Parms{};
-
-	Parms.DeltaTime = DeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.Tick Shooting
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Kitsunebi_Flamethrower_C::Tick_Shooting(double DeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "Tick Shooting");
-
-	Params::BP_Kitsunebi_Flamethrower_C_Tick_Shooting Parms{};
-
-	Parms.DeltaTime = DeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.Tick Ignore Hit Actors
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ApplyDamage
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              HitComp                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   HitLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void ABP_Kitsunebi_Flamethrower_C::Tick_Ignore_Hit_Actors(double DeltaTime)
+void ABP_Kitsunebi_Flamethrower_C::ApplyDamage(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& HitLocation, const struct FHitResult& Hit)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "Tick Ignore Hit Actors");
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "ApplyDamage");
 
-	Params::BP_Kitsunebi_Flamethrower_C_Tick_Ignore_Hit_Actors Parms{};
+	Params::BP_Kitsunebi_Flamethrower_C_ApplyDamage Parms{};
 
-	Parms.DeltaTime = DeltaTime;
+	Parms.HitComp = HitComp;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.HitLocation = std::move(HitLocation);
+	Parms.Hit = std::move(Hit);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.StopEfffect
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Kitsunebi_Flamethrower_C::StopEfffect()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "StopEfffect");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.SetWeaponDamage
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.BeginShoot
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Damageam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UNiagaraComponent**               FlameEffect_0                                          (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Kitsunebi_Flamethrower_C::SetWeaponDamage(int32 Damageam)
+void ABP_Kitsunebi_Flamethrower_C::BeginShoot(class UNiagaraComponent** FlameEffect_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "SetWeaponDamage");
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "BeginShoot");
 
-	Params::BP_Kitsunebi_Flamethrower_C_SetWeaponDamage Parms{};
+	Params::BP_Kitsunebi_Flamethrower_C_BeginShoot Parms{};
 
-	Parms.Damageam = Damageam;
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (FlameEffect_0 != nullptr)
+		*FlameEffect_0 = Parms.FlameEffect_0;
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ExecuteUbergraph_BP_Kitsunebi_Flamethrower
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Kitsunebi_Flamethrower_C::ExecuteUbergraph_BP_Kitsunebi_Flamethrower(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "ExecuteUbergraph_BP_Kitsunebi_Flamethrower");
+
+	Params::BP_Kitsunebi_Flamethrower_C_ExecuteUbergraph_BP_Kitsunebi_Flamethrower Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.SetMeshDisplay
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetAttackType
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// EPalAttackType*                         AttackType                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Kitsunebi_Flamethrower_C::SetMeshDisplay()
+void ABP_Kitsunebi_Flamethrower_C::GetAttackType(EPalAttackType* AttackType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "SetMeshDisplay");
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "GetAttackType");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_Kitsunebi_Flamethrower_C_GetAttackType Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (AttackType != nullptr)
+		*AttackType = Parms.AttackType;
 }
 
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.SetIgnoreActor
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetEquipSocketName
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class FName ABP_Kitsunebi_Flamethrower_C::GetEquipSocketName()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "GetEquipSocketName");
+
+	Params::BP_Kitsunebi_Flamethrower_C_GetEquipSocketName Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetRotatorToTarget
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FRotator*                        NewRotation                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ABP_Kitsunebi_Flamethrower_C::GetRotatorToTarget(struct FRotator* NewRotation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "GetRotatorToTarget");
+
+	Params::BP_Kitsunebi_Flamethrower_C_GetRotatorToTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (NewRotation != nullptr)
+		*NewRotation = std::move(Parms.NewRotation);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetWeaponAttacker
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class AActor*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
+
+class AActor* ABP_Kitsunebi_Flamethrower_C::GetWeaponAttacker()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "GetWeaponAttacker");
+
+	Params::BP_Kitsunebi_Flamethrower_C_GetWeaponAttacker Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.IsActorAlreadyHit
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class AActor*                           HitActor                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   IsAlreadyHit                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Kitsunebi_Flamethrower_C::SetIgnoreActor(class AActor* HitActor)
+void ABP_Kitsunebi_Flamethrower_C::IsActorAlreadyHit(class AActor* HitActor, bool* IsAlreadyHit)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "SetIgnoreActor");
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "IsActorAlreadyHit");
 
-	Params::BP_Kitsunebi_Flamethrower_C_SetIgnoreActor Parms{};
+	Params::BP_Kitsunebi_Flamethrower_C_IsActorAlreadyHit Parms{};
 
 	Parms.HitActor = HitActor;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsAlreadyHit != nullptr)
+		*IsAlreadyHit = Parms.IsAlreadyHit;
 }
 
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.SetAttacker
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnAttachWeapon
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           AttackerPal                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           attachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Kitsunebi_Flamethrower_C::SetAttacker(class AActor* AttackerPal)
+void ABP_Kitsunebi_Flamethrower_C::OnAttachWeapon(class AActor* attachActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "SetAttacker");
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnAttachWeapon");
 
-	Params::BP_Kitsunebi_Flamethrower_C_SetAttacker Parms{};
+	Params::BP_Kitsunebi_Flamethrower_C_OnAttachWeapon Parms{};
 
-	Parms.AttackerPal = AttackerPal;
+	Parms.attachActor = attachActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ResetMeshDisplay
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnBlendOut_266D644B475C5EADF9D744838A1159F1
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Kitsunebi_Flamethrower_C::ResetMeshDisplay()
+void ABP_Kitsunebi_Flamethrower_C::OnBlendOut_266D644B475C5EADF9D744838A1159F1(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "ResetMeshDisplay");
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnBlendOut_266D644B475C5EADF9D744838A1159F1");
+
+	Params::BP_Kitsunebi_Flamethrower_C_OnBlendOut_266D644B475C5EADF9D744838A1159F1 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnCompleted_266D644B475C5EADF9D744838A1159F1
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Kitsunebi_Flamethrower_C::OnCompleted_266D644B475C5EADF9D744838A1159F1(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnCompleted_266D644B475C5EADF9D744838A1159F1");
+
+	Params::BP_Kitsunebi_Flamethrower_C_OnCompleted_266D644B475C5EADF9D744838A1159F1 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnDetachWeapon
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           detachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Kitsunebi_Flamethrower_C::OnDetachWeapon(class AActor* detachActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnDetachWeapon");
+
+	Params::BP_Kitsunebi_Flamethrower_C_OnDetachWeapon Parms{};
+
+	Parms.detachActor = detachActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnInterrupted_266D644B475C5EADF9D744838A1159F1
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Kitsunebi_Flamethrower_C::OnInterrupted_266D644B475C5EADF9D744838A1159F1(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnInterrupted_266D644B475C5EADF9D744838A1159F1");
+
+	Params::BP_Kitsunebi_Flamethrower_C_OnInterrupted_266D644B475C5EADF9D744838A1159F1 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnNotifyBegin_266D644B475C5EADF9D744838A1159F1
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Kitsunebi_Flamethrower_C::OnNotifyBegin_266D644B475C5EADF9D744838A1159F1(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnNotifyBegin_266D644B475C5EADF9D744838A1159F1");
+
+	Params::BP_Kitsunebi_Flamethrower_C_OnNotifyBegin_266D644B475C5EADF9D744838A1159F1 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnNotifyEnd_266D644B475C5EADF9D744838A1159F1
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Kitsunebi_Flamethrower_C::OnNotifyEnd_266D644B475C5EADF9D744838A1159F1(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnNotifyEnd_266D644B475C5EADF9D744838A1159F1");
+
+	Params::BP_Kitsunebi_Flamethrower_C_OnNotifyEnd_266D644B475C5EADF9D744838A1159F1 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnPullTrigger
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Kitsunebi_Flamethrower_C::OnPullTrigger()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnPullTrigger");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnReleaseTrigger
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bCanShootOnRelease                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Kitsunebi_Flamethrower_C::ReceiveTick(float DeltaSeconds)
+void ABP_Kitsunebi_Flamethrower_C::OnReleaseTrigger(bool bCanShootOnRelease)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "ReceiveTick");
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnReleaseTrigger");
 
-	Params::BP_Kitsunebi_Flamethrower_C_ReceiveTick Parms{};
+	Params::BP_Kitsunebi_Flamethrower_C_OnReleaseTrigger Parms{};
 
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.bCanShootOnRelease = bCanShootOnRelease;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnRequestClosing
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Kitsunebi_Flamethrower_C::OnRequestClosing()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnRequestClosing");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnShootFire
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Kitsunebi_Flamethrower_C::OnShootFire()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnShootFire");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.PlayIdleMotion
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    StopAllMontages                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Kitsunebi_Flamethrower_C::PlayIdleMotion(bool StopAllMontages)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "PlayIdleMotion");
+
+	Params::BP_Kitsunebi_Flamethrower_C_PlayIdleMotion Parms{};
+
+	Parms.StopAllMontages = StopAllMontages;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.PlayShootMotion
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Kitsunebi_Flamethrower_C::PlayShootMotion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "PlayShootMotion");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Kitsunebi_Flamethrower_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Kitsunebi_Flamethrower_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "ReceiveEndPlay");
+
+	Params::BP_Kitsunebi_Flamethrower_C_ReceiveEndPlay Parms{};
+
+	Parms.EndPlayReason = EndPlayReason;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -263,448 +486,225 @@ void ABP_Kitsunebi_Flamethrower_C::ReceiveParticleData(const TArray<struct FBasi
 }
 
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ReceiveEndPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Kitsunebi_Flamethrower_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+void ABP_Kitsunebi_Flamethrower_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "ReceiveEndPlay");
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "ReceiveTick");
 
-	Params::BP_Kitsunebi_Flamethrower_C_ReceiveEndPlay Parms{};
+	Params::BP_Kitsunebi_Flamethrower_C_ReceiveTick Parms{};
 
-	Parms.EndPlayReason = EndPlayReason;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Kitsunebi_Flamethrower_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.PlayShootMotion
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ResetMeshDisplay
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Kitsunebi_Flamethrower_C::PlayShootMotion()
+void ABP_Kitsunebi_Flamethrower_C::ResetMeshDisplay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "PlayShootMotion");
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "ResetMeshDisplay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.PlayIdleMotion
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.SetAttacker
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    StopAllMontages                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           AttackerPal                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Kitsunebi_Flamethrower_C::PlayIdleMotion(bool StopAllMontages)
+void ABP_Kitsunebi_Flamethrower_C::SetAttacker(class AActor* AttackerPal)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "PlayIdleMotion");
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "SetAttacker");
 
-	Params::BP_Kitsunebi_Flamethrower_C_PlayIdleMotion Parms{};
+	Params::BP_Kitsunebi_Flamethrower_C_SetAttacker Parms{};
 
-	Parms.StopAllMontages = StopAllMontages;
+	Parms.AttackerPal = AttackerPal;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnShootFire
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Kitsunebi_Flamethrower_C::OnShootFire()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnShootFire");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnRequestClosing
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Kitsunebi_Flamethrower_C::OnRequestClosing()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnRequestClosing");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnReleaseTrigger
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bCanShootOnRelease                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Kitsunebi_Flamethrower_C::OnReleaseTrigger(bool bCanShootOnRelease)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnReleaseTrigger");
-
-	Params::BP_Kitsunebi_Flamethrower_C_OnReleaseTrigger Parms{};
-
-	Parms.bCanShootOnRelease = bCanShootOnRelease;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnPullTrigger
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Kitsunebi_Flamethrower_C::OnPullTrigger()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnPullTrigger");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnNotifyEnd_266D644B475C5EADF9D744838A1159F1
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Kitsunebi_Flamethrower_C::OnNotifyEnd_266D644B475C5EADF9D744838A1159F1(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnNotifyEnd_266D644B475C5EADF9D744838A1159F1");
-
-	Params::BP_Kitsunebi_Flamethrower_C_OnNotifyEnd_266D644B475C5EADF9D744838A1159F1 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnNotifyBegin_266D644B475C5EADF9D744838A1159F1
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Kitsunebi_Flamethrower_C::OnNotifyBegin_266D644B475C5EADF9D744838A1159F1(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnNotifyBegin_266D644B475C5EADF9D744838A1159F1");
-
-	Params::BP_Kitsunebi_Flamethrower_C_OnNotifyBegin_266D644B475C5EADF9D744838A1159F1 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnInterrupted_266D644B475C5EADF9D744838A1159F1
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Kitsunebi_Flamethrower_C::OnInterrupted_266D644B475C5EADF9D744838A1159F1(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnInterrupted_266D644B475C5EADF9D744838A1159F1");
-
-	Params::BP_Kitsunebi_Flamethrower_C_OnInterrupted_266D644B475C5EADF9D744838A1159F1 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnDetachWeapon
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           detachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Kitsunebi_Flamethrower_C::OnDetachWeapon(class AActor* detachActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnDetachWeapon");
-
-	Params::BP_Kitsunebi_Flamethrower_C_OnDetachWeapon Parms{};
-
-	Parms.detachActor = detachActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnCompleted_266D644B475C5EADF9D744838A1159F1
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Kitsunebi_Flamethrower_C::OnCompleted_266D644B475C5EADF9D744838A1159F1(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnCompleted_266D644B475C5EADF9D744838A1159F1");
-
-	Params::BP_Kitsunebi_Flamethrower_C_OnCompleted_266D644B475C5EADF9D744838A1159F1 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnBlendOut_266D644B475C5EADF9D744838A1159F1
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Kitsunebi_Flamethrower_C::OnBlendOut_266D644B475C5EADF9D744838A1159F1(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnBlendOut_266D644B475C5EADF9D744838A1159F1");
-
-	Params::BP_Kitsunebi_Flamethrower_C_OnBlendOut_266D644B475C5EADF9D744838A1159F1 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnAttachWeapon
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           attachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Kitsunebi_Flamethrower_C::OnAttachWeapon(class AActor* attachActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "OnAttachWeapon");
-
-	Params::BP_Kitsunebi_Flamethrower_C_OnAttachWeapon Parms{};
-
-	Parms.attachActor = attachActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.IsActorAlreadyHit
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.SetIgnoreActor
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           HitActor                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   IsAlreadyHit                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Kitsunebi_Flamethrower_C::IsActorAlreadyHit(class AActor* HitActor, bool* IsAlreadyHit)
+void ABP_Kitsunebi_Flamethrower_C::SetIgnoreActor(class AActor* HitActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "IsActorAlreadyHit");
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "SetIgnoreActor");
 
-	Params::BP_Kitsunebi_Flamethrower_C_IsActorAlreadyHit Parms{};
+	Params::BP_Kitsunebi_Flamethrower_C_SetIgnoreActor Parms{};
 
 	Parms.HitActor = HitActor;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (IsAlreadyHit != nullptr)
-		*IsAlreadyHit = Parms.IsAlreadyHit;
 }
 
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetWeaponAttacker
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class AActor*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.SetMeshDisplay
+// (Public, BlueprintCallable, BlueprintEvent)
 
-class AActor* ABP_Kitsunebi_Flamethrower_C::GetWeaponAttacker()
+void ABP_Kitsunebi_Flamethrower_C::SetMeshDisplay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "GetWeaponAttacker");
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "SetMeshDisplay");
 
-	Params::BP_Kitsunebi_Flamethrower_C_GetWeaponAttacker Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetRotatorToTarget
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.SetWeaponDamage
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FRotator*                        NewRotation                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   Damageam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Kitsunebi_Flamethrower_C::GetRotatorToTarget(struct FRotator* NewRotation)
+void ABP_Kitsunebi_Flamethrower_C::SetWeaponDamage(int32 Damageam)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "GetRotatorToTarget");
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "SetWeaponDamage");
 
-	Params::BP_Kitsunebi_Flamethrower_C_GetRotatorToTarget Parms{};
+	Params::BP_Kitsunebi_Flamethrower_C_SetWeaponDamage Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (NewRotation != nullptr)
-		*NewRotation = std::move(Parms.NewRotation);
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetEquipSocketName
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class FName ABP_Kitsunebi_Flamethrower_C::GetEquipSocketName()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "GetEquipSocketName");
-
-	Params::BP_Kitsunebi_Flamethrower_C_GetEquipSocketName Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetAttackType
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// EPalAttackType*                         AttackType                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Kitsunebi_Flamethrower_C::GetAttackType(EPalAttackType* AttackType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "GetAttackType");
-
-	Params::BP_Kitsunebi_Flamethrower_C_GetAttackType Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (AttackType != nullptr)
-		*AttackType = Parms.AttackType;
-}
-
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ExecuteUbergraph_BP_Kitsunebi_Flamethrower
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Kitsunebi_Flamethrower_C::ExecuteUbergraph_BP_Kitsunebi_Flamethrower(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "ExecuteUbergraph_BP_Kitsunebi_Flamethrower");
-
-	Params::BP_Kitsunebi_Flamethrower_C_ExecuteUbergraph_BP_Kitsunebi_Flamethrower Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Damageam = Damageam;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.BeginShoot
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UNiagaraComponent**               FlameEffect_0                                          (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.StopEfffect
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Kitsunebi_Flamethrower_C::BeginShoot(class UNiagaraComponent** FlameEffect_0)
+void ABP_Kitsunebi_Flamethrower_C::StopEfffect()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "BeginShoot");
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "StopEfffect");
 
-	Params::BP_Kitsunebi_Flamethrower_C_BeginShoot Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (FlameEffect_0 != nullptr)
-		*FlameEffect_0 = Parms.FlameEffect_0;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ApplyDamage
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.Tick Ignore Hit Actors
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPrimitiveComponent*              HitComp                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   HitLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FHitResult&                Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Kitsunebi_Flamethrower_C::ApplyDamage(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& HitLocation, const struct FHitResult& Hit)
+void ABP_Kitsunebi_Flamethrower_C::Tick_Ignore_Hit_Actors(double DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "ApplyDamage");
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "Tick Ignore Hit Actors");
 
-	Params::BP_Kitsunebi_Flamethrower_C_ApplyDamage Parms{};
+	Params::BP_Kitsunebi_Flamethrower_C_Tick_Ignore_Hit_Actors Parms{};
 
-	Parms.HitComp = HitComp;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.HitLocation = std::move(HitLocation);
-	Parms.Hit = std::move(Hit);
+	Parms.DeltaTime = DeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.Tick Shooting
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Kitsunebi_Flamethrower_C::Tick_Shooting(double DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "Tick Shooting");
+
+	Params::BP_Kitsunebi_Flamethrower_C_Tick_Shooting Parms{};
+
+	Parms.DeltaTime = DeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.TickShootingFire
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Kitsunebi_Flamethrower_C::TickShootingFire(double DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "TickShootingFire");
+
+	Params::BP_Kitsunebi_Flamethrower_C_TickShootingFire Parms{};
+
+	Parms.DeltaTime = DeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.Trace Hit Flame
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FBasicParticleData>&      Data                                                   (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class UNiagaraSystem*                   NiagaraSystem                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   SimulationPositionOffset                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Kitsunebi_Flamethrower_C::Trace_Hit_Flame(TArray<struct FBasicParticleData>& Data, class UNiagaraSystem* NiagaraSystem, const struct FVector& SimulationPositionOffset)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "Trace Hit Flame");
+
+	Params::BP_Kitsunebi_Flamethrower_C_Trace_Hit_Flame Parms{};
+
+	Parms.Data = std::move(Data);
+	Parms.NiagaraSystem = NiagaraSystem;
+	Parms.SimulationPositionOffset = std::move(SimulationPositionOffset);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Data = std::move(Parms.Data);
+}
+
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.UpdateEffectTransform
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_Kitsunebi_Flamethrower_C::UpdateEffectTransform()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Kitsunebi_Flamethrower_C", "UpdateEffectTransform");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -17,113 +17,33 @@
 namespace SDK
 {
 
-// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.UpdateUI
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UDiscordRelationshipHandle*       Relationship_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Option_DiscordFriendListMenu_C::UpdateUI(class UDiscordRelationshipHandle* Relationship_0)
+void UWBP_Option_DiscordFriendListMenu_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_DiscordFriendListMenu_C", "UpdateUI");
-
-	Params::WBP_Option_DiscordFriendListMenu_C_UpdateUI Parms{};
-
-	Parms.Relationship_0 = Relationship_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.ToggleUI
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Option_DiscordFriendListMenu_C::ToggleUI()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_DiscordFriendListMenu_C", "ToggleUI");
+		Func = Class->GetFunction("WBP_Option_DiscordFriendListMenu_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.ExecuteUbergraph_WBP_Option_DiscordFriendListMenu
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Option_DiscordFriendListMenu_C::ExecuteUbergraph_WBP_Option_DiscordFriendListMenu(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_DiscordFriendListMenu_C", "ExecuteUbergraph_WBP_Option_DiscordFriendListMenu");
-
-	Params::WBP_Option_DiscordFriendListMenu_C_ExecuteUbergraph_WBP_Option_DiscordFriendListMenu Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DIscordSendMessage
+// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DiscordBlock
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWBP_GuildMemberMenuList_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Option_DiscordFriendListMenu_C::DIscordSendMessage(class UWBP_GuildMemberMenuList_C* Button)
+void UWBP_Option_DiscordFriendListMenu_C::DiscordBlock(class UWBP_GuildMemberMenuList_C* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_DiscordFriendListMenu_C", "DIscordSendMessage");
+		Func = Class->GetFunction("WBP_Option_DiscordFriendListMenu_C", "DiscordBlock");
 
-	Params::WBP_Option_DiscordFriendListMenu_C_DIscordSendMessage Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DiscordMute
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_GuildMemberMenuList_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Option_DiscordFriendListMenu_C::DiscordMute(class UWBP_GuildMemberMenuList_C* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_DiscordFriendListMenu_C", "DiscordMute");
-
-	Params::WBP_Option_DiscordFriendListMenu_C_DiscordMute Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DiscordInvite
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_GuildMemberMenuList_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Option_DiscordFriendListMenu_C::DiscordInvite(class UWBP_GuildMemberMenuList_C* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_DiscordFriendListMenu_C", "DiscordInvite");
-
-	Params::WBP_Option_DiscordFriendListMenu_C_DiscordInvite Parms{};
+	Params::WBP_Option_DiscordFriendListMenu_C_DiscordBlock Parms{};
 
 	Parms.Button = Button;
 
@@ -151,19 +71,19 @@ void UWBP_Option_DiscordFriendListMenu_C::DiscordIgnore(class UWBP_GuildMemberMe
 }
 
 
-// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DiscordBlock
+// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DiscordInvite
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWBP_GuildMemberMenuList_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Option_DiscordFriendListMenu_C::DiscordBlock(class UWBP_GuildMemberMenuList_C* Button)
+void UWBP_Option_DiscordFriendListMenu_C::DiscordInvite(class UWBP_GuildMemberMenuList_C* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_DiscordFriendListMenu_C", "DiscordBlock");
+		Func = Class->GetFunction("WBP_Option_DiscordFriendListMenu_C", "DiscordInvite");
 
-	Params::WBP_Option_DiscordFriendListMenu_C_DiscordBlock Parms{};
+	Params::WBP_Option_DiscordFriendListMenu_C_DiscordInvite Parms{};
 
 	Parms.Button = Button;
 
@@ -171,17 +91,97 @@ void UWBP_Option_DiscordFriendListMenu_C::DiscordBlock(class UWBP_GuildMemberMen
 }
 
 
-// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DiscordMute
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_GuildMemberMenuList_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Option_DiscordFriendListMenu_C::Construct()
+void UWBP_Option_DiscordFriendListMenu_C::DiscordMute(class UWBP_GuildMemberMenuList_C* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_DiscordFriendListMenu_C", "Construct");
+		Func = Class->GetFunction("WBP_Option_DiscordFriendListMenu_C", "DiscordMute");
+
+	Params::WBP_Option_DiscordFriendListMenu_C_DiscordMute Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DIscordSendMessage
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_GuildMemberMenuList_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Option_DiscordFriendListMenu_C::DIscordSendMessage(class UWBP_GuildMemberMenuList_C* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_DiscordFriendListMenu_C", "DIscordSendMessage");
+
+	Params::WBP_Option_DiscordFriendListMenu_C_DIscordSendMessage Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.ExecuteUbergraph_WBP_Option_DiscordFriendListMenu
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Option_DiscordFriendListMenu_C::ExecuteUbergraph_WBP_Option_DiscordFriendListMenu(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_DiscordFriendListMenu_C", "ExecuteUbergraph_WBP_Option_DiscordFriendListMenu");
+
+	Params::WBP_Option_DiscordFriendListMenu_C_ExecuteUbergraph_WBP_Option_DiscordFriendListMenu Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.ToggleUI
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Option_DiscordFriendListMenu_C::ToggleUI()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_DiscordFriendListMenu_C", "ToggleUI");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.UpdateUI
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UDiscordRelationshipHandle*       Relationship_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Option_DiscordFriendListMenu_C::UpdateUI(class UDiscordRelationshipHandle* Relationship_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_DiscordFriendListMenu_C", "UpdateUI");
+
+	Params::WBP_Option_DiscordFriendListMenu_C_UpdateUI Parms{};
+
+	Parms.Relationship_0 = Relationship_0;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

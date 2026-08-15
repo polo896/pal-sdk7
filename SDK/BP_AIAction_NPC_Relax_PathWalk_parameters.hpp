@@ -20,6 +20,25 @@
 namespace SDK::Params
 {
 
+// Function BP_AIAction_NPC_Relax_PathWalk.BP_AIAction_NPC_Relax_PathWalk_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_NPC_Relax_PathWalk_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_NPC_Relax_PathWalk_C_ActionFinished;
+
+// Function BP_AIAction_NPC_Relax_PathWalk.BP_AIAction_NPC_Relax_PathWalk_C.ActionPause
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_NPC_Relax_PathWalk_C_ActionPause final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_NPC_Relax_PathWalk_C_ActionPause;
+
 // Function BP_AIAction_NPC_Relax_PathWalk.BP_AIAction_NPC_Relax_PathWalk_C.ActionPostTick
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIAction_NPC_Relax_PathWalk_C_ActionPostTick final
@@ -29,6 +48,24 @@ public:
 	float                                         DeltaSeconds;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_NPC_Relax_PathWalk_C_ActionPostTick;
+
+// Function BP_AIAction_NPC_Relax_PathWalk.BP_AIAction_NPC_Relax_PathWalk_C.ActionResume
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_NPC_Relax_PathWalk_C_ActionResume final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_NPC_Relax_PathWalk_C_ActionResume;
+
+// Function BP_AIAction_NPC_Relax_PathWalk.BP_AIAction_NPC_Relax_PathWalk_C.ActionStart
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_NPC_Relax_PathWalk_C_ActionStart final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_NPC_Relax_PathWalk_C_ActionStart;
 
 // Function BP_AIAction_NPC_Relax_PathWalk.BP_AIAction_NPC_Relax_PathWalk_C.ExecuteUbergraph_BP_AIAction_NPC_Relax_PathWalk
 // 0x01C8 (0x01C8 - 0x0000)
@@ -132,43 +169,6 @@ public:
 	struct FF_NPC_PathWalkPoint                   CallFunc_Array_Get_Item;                           // 0x0030(0x0030)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_NPC_Relax_PathWalk_C_UpdateNextTargetPoint;
-
-// Function BP_AIAction_NPC_Relax_PathWalk.BP_AIAction_NPC_Relax_PathWalk_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_NPC_Relax_PathWalk_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_NPC_Relax_PathWalk_C_ActionFinished;
-
-// Function BP_AIAction_NPC_Relax_PathWalk.BP_AIAction_NPC_Relax_PathWalk_C.ActionPause
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_NPC_Relax_PathWalk_C_ActionPause final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_NPC_Relax_PathWalk_C_ActionPause;
-
-// Function BP_AIAction_NPC_Relax_PathWalk.BP_AIAction_NPC_Relax_PathWalk_C.ActionResume
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_NPC_Relax_PathWalk_C_ActionResume final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_NPC_Relax_PathWalk_C_ActionResume;
-
-// Function BP_AIAction_NPC_Relax_PathWalk.BP_AIAction_NPC_Relax_PathWalk_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_NPC_Relax_PathWalk_C_ActionStart final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_NPC_Relax_PathWalk_C_ActionStart;
 
 }
 

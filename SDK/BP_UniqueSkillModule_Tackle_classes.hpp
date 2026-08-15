@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_UniqueSkillModule_Tackle.BP_UniqueSkillModule_Tackle_C
 // 0x00F0 (0x0240 - 0x0150)
-class UBP_UniqueSkillModule_Tackle_C final : public UPalUniqueSkillModule
+class UBP_UniqueSkillModule_Tackle_C : public UPalUniqueSkillModule
 {
 public:
 	uint8                                         Pad_148[0x8];                                      // 0x0148(0x0008)(Fixing Size After Last Property [ Dumper-7 ])

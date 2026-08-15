@@ -17,79 +17,31 @@
 namespace SDK
 {
 
-// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_0_OnClickedAllCheckButton__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.Setup
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ItemSearch_Filter_C::BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_0_OnClickedAllCheckButton__DelegateSignature()
+void UWBP_ItemSearch_Filter_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemSearch_Filter_C", "BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_0_OnClickedAllCheckButton__DelegateSignature");
+		Func = Class->GetFunction("WBP_ItemSearch_Filter_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ItemSearch_Filter_C::BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature()
+void UWBP_ItemSearch_Filter_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemSearch_Filter_C", "BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature");
+		Func = Class->GetFunction("WBP_ItemSearch_Filter_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_2_OnClickedAllUncheckButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_ItemSearch_Filter_C::BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_2_OnClickedAllUncheckButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemSearch_Filter_C", "BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_2_OnClickedAllUncheckButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.BndEvt__WBP_ItemSearch_Filter_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_3_OnClickedApplyButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_ItemSearch_Filter_C::BndEvt__WBP_ItemSearch_Filter_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_3_OnClickedApplyButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemSearch_Filter_C", "BndEvt__WBP_ItemSearch_Filter_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_3_OnClickedApplyButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.ExecuteUbergraph_WBP_ItemSearch_Filter
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ItemSearch_Filter_C::ExecuteUbergraph_WBP_ItemSearch_Filter(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemSearch_Filter_C", "ExecuteUbergraph_WBP_ItemSearch_Filter");
-
-	Params::WBP_ItemSearch_Filter_C_ExecuteUbergraph_WBP_ItemSearch_Filter Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -115,29 +67,77 @@ void UWBP_ItemSearch_Filter_C::OnClickedCheck(class FName TypeId, bool bChecked)
 }
 
 
-// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.ExecuteUbergraph_WBP_ItemSearch_Filter
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemSearch_Filter_C::OnSetup()
+void UWBP_ItemSearch_Filter_C::ExecuteUbergraph_WBP_ItemSearch_Filter(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemSearch_Filter_C", "OnSetup");
+		Func = Class->GetFunction("WBP_ItemSearch_Filter_C", "ExecuteUbergraph_WBP_ItemSearch_Filter");
+
+	Params::WBP_ItemSearch_Filter_C_ExecuteUbergraph_WBP_ItemSearch_Filter Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.BndEvt__WBP_ItemSearch_Filter_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_3_OnClickedApplyButton__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_ItemSearch_Filter_C::BndEvt__WBP_ItemSearch_Filter_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_3_OnClickedApplyButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ItemSearch_Filter_C", "BndEvt__WBP_ItemSearch_Filter_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_3_OnClickedApplyButton__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.Setup
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_2_OnClickedAllUncheckButton__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_ItemSearch_Filter_C::Setup()
+void UWBP_ItemSearch_Filter_C::BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_2_OnClickedAllUncheckButton__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemSearch_Filter_C", "Setup");
+		Func = Class->GetFunction("WBP_ItemSearch_Filter_C", "BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_2_OnClickedAllUncheckButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_ItemSearch_Filter_C::BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ItemSearch_Filter_C", "BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_0_OnClickedAllCheckButton__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_ItemSearch_Filter_C::BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_0_OnClickedAllCheckButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ItemSearch_Filter_C", "BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_0_OnClickedAllCheckButton__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

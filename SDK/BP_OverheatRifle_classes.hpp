@@ -42,7 +42,6 @@ public:
 	void GetHeatValue(double* CurrentHeatValue);
 	void GetMuzzleEffect(class UNiagaraSystem** NewParam);
 	void GetMuzzleEffectAttached(class UNiagaraSystem** Effect);
-	void GetMuzzleLocation(struct FVector* MuzzleLocation);
 	void IsOverHeated(bool* bOverHeated);
 	void OnChangedHeatValue_Event(bool bOverHeated, double HeatValue_0);
 	void OnWeaponNotify(EWeaponNotifyType Type);
@@ -50,6 +49,7 @@ public:
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
 	void ReceiveTick(float DeltaSeconds);
 	void TickCoolDown(double DeltaTime);
+	void GetMuzzleLocation(struct FVector* MuzzleLocation);
 	void OnAttachWeapon(class AActor* attachActor);
 	void OnDetachWeapon(class AActor* detachActor);
 	void OnPullTrigger();

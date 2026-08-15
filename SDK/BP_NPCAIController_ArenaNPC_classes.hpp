@@ -26,8 +26,8 @@ public:
 
 public:
 	void ExecuteUbergraph_BP_NPCAIController_ArenaNPC(int32 EntryPoint);
-	void OnStartInBattle();
 	void GoBack_Teritory();
+	void OnStartInBattle();
 	void ReceivePossess(class APawn* PossessedPawn);
 
 public:

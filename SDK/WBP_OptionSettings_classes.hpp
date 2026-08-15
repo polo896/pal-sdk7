@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_OptionSettings.WBP_OptionSettings_C
-// 0x0138 (0x05B0 - 0x0478)
+// 0x0140 (0x05B8 - 0x0478)
 class UWBP_OptionSettings_C final : public UPalUserWidgetOverlayUI
 {
 public:
@@ -63,46 +63,50 @@ public:
 	class UWidget*                                LastFocus;                                         // 0x0588(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FDataTableRowHandle                    ConflictMsgId;                                     // 0x0590(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FDataTableRowHandle                    ConflictMsgIdPS5;                                  // 0x05A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	bool                                          bIsInitiallyConflicted;                            // 0x05B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void TryRedirectToDiscordLink();
-	void SetDefault(bool Confirmed);
-	void Set_Tab_Action(bool Bind);
-	void ResetScroll();
-	void PreTab();
-	void OpenPanel();
-	void OnSetup();
-	void OnClosedModSettings(class UPalHUDDispatchParameterBase* Param_0);
-	void NextTab();
-	void IsOpenFromTitle(bool* bFromTitle);
-	void Finished_EE961C0249D44ADFCC582DBCE988D50D();
-	void Finished_E609EC2649DD5C39B8991FA76989D962();
-	void Finished_A36E9B0F4ACC421F93D76BA170A1BA11();
-	void Finished_657FDFA04D1EEBEC31C7FAA8DADA417B();
-	void Finished_47188B3742112F703AC219B6DFD31698();
-	void Finished_412D6FCC467DE29951851EB38295E8FE();
-	void Finished_3DF735A247AFD17B1935A8AD119ED44F();
-	void Finished_2536FBE94511E5E94401869A3ECF77EC();
-	void Finished_24865DB74E2CDF7AF1AD4D9DBEE2B394();
-	void Finished_2034482C493806B667AA82AE6C6A732D();
-	void Finished_05846F744E202D6A15C4A8ABCE740327();
-	void ExecuteUbergraph_WBP_OptionSettings(int32 EntryPoint);
-	void EmptyEvent(bool bResult);
-	void Destruct();
-	void Construct();
-	void ClosePanel();
-	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_Sound_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_S_Mod_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature();
-	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_S_Form_K2Node_ComponentBoundEvent_10_OnClicked__DelegateSignature();
-	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_S_EULA_K2Node_ComponentBoundEvent_9_OnClicked__DelegateSignature();
-	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_Other_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
-	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_Key_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature();
-	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_Graphic_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_Control_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
-	void BackAction();
 	void ApplySettings(bool Confirmed);
-	void SwitchTabTo(int32 Index_0);
+	void BackAction();
+	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_Control_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
+	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_Graphic_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_Key_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature();
+	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_Other_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
+	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_S_EULA_K2Node_ComponentBoundEvent_9_OnClicked__DelegateSignature();
+	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_S_Form_K2Node_ComponentBoundEvent_10_OnClicked__DelegateSignature();
+	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_S_Mod_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature();
+	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_Sound_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void ClosePanel();
+	void Construct();
+	void Destruct();
+	void ExecuteUbergraph_WBP_OptionSettings(int32 EntryPoint);
+	void Finished_05846F744E202D6A15C4A8ABCE740327();
+	void Finished_2034482C493806B667AA82AE6C6A732D();
+	void Finished_24865DB74E2CDF7AF1AD4D9DBEE2B394();
+	void Finished_2536FBE94511E5E94401869A3ECF77EC();
+	void Finished_3DF735A247AFD17B1935A8AD119ED44F();
+	void Finished_412D6FCC467DE29951851EB38295E8FE();
+	void Finished_47188B3742112F703AC219B6DFD31698();
+	void Finished_657FDFA04D1EEBEC31C7FAA8DADA417B();
+	void Finished_A36E9B0F4ACC421F93D76BA170A1BA11();
+	void Finished_E609EC2649DD5C39B8991FA76989D962();
+	void Finished_EE961C0249D44ADFCC582DBCE988D50D();
+	void IsConflictAnyKey(bool* bConflicted);
+	void IsOpenFromTitle(bool* bFromTitle);
+	void NextTab();
+	void OnClosedKeyConflictWarning(bool bResult);
+	void OnClosedModSettings(class UPalHUDDispatchParameterBase* Param_0);
+	void OnSetup();
+	void OpenKeyConflictWarning();
+	void OpenPanel();
+	void PreTab();
+	void ResetInnerSettingWidgets();
+	void ResetScroll();
+	void Set_Tab_Action(bool Bind);
+	void SetDefault(bool Confirmed);
 	void SetDefaultAction();
+	void SwitchTabTo(int32 Index_0);
+	void TryRedirectToDiscordLink();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

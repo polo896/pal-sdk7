@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Pal_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -44,20 +44,20 @@ public:
 	TMulticastInlineDelegate<void()>              OnUnhovered;                                       // 0x0348(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AnmEvent_Select();
-	void AnmEvent_Unselect();
-	void BndEvt__WBP_IngameMenu_Construction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_IngameMenu_Construction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void ExecuteUbergraph_WBP_IngameMenu_Construction_Tab(int32 EntryPoint);
-	void GetBuildObjectCategoryTypeA(EPalBuildObjectTypeA* TypeA);
-	void PreConstruct(bool IsDesignTime);
-	void ResetActiveTab();
-	void SetActiveTab(int32 Index_0);
-	void SetNewMark(bool bDisplayMark);
-	void SetTab(int32 Num, EPalBuildObjectTypeA TypeA);
 	void SwitchToTab();
+	void SetTab(int32 Num, EPalBuildObjectTypeA TypeA);
+	void SetNewMark(bool bDisplayMark);
+	void SetActiveTab(int32 Index_0);
+	void ResetActiveTab();
+	void PreConstruct(bool IsDesignTime);
+	void GetBuildObjectCategoryTypeA(EPalBuildObjectTypeA* TypeA);
+	void ExecuteUbergraph_WBP_IngameMenu_Construction_Tab(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_IngameMenu_Construction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_IngameMenu_Construction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Unselect();
+	void AnmEvent_Select();
 
 	void GetTabNum(int32* TabNum_0) const;
 

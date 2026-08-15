@@ -17,37 +17,37 @@
 namespace SDK
 {
 
-// Function WBP_PalActionBarContent.WBP_PalActionBarContent_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_PalActionBarContent.WBP_PalActionBarContent_C.UnhoveredEvent
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalActionBarContent_C::Construct()
+void UWBP_PalActionBarContent_C::UnhoveredEvent(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalActionBarContent_C", "Construct");
+		Func = Class->GetFunction("WBP_PalActionBarContent_C", "UnhoveredEvent");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_PalActionBarContent_C_UnhoveredEvent Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalActionBarContent.WBP_PalActionBarContent_C.ExecuteUbergraph_WBP_PalActionBarContent
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PalActionBarContent.WBP_PalActionBarContent_C.OnUpdateInputAction
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_PalActionBarContent_C::ExecuteUbergraph_WBP_PalActionBarContent(int32 EntryPoint)
+void UWBP_PalActionBarContent_C::OnUpdateInputAction()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalActionBarContent_C", "ExecuteUbergraph_WBP_PalActionBarContent");
+		Func = Class->GetFunction("WBP_PalActionBarContent_C", "OnUpdateInputAction");
 
-	Params::WBP_PalActionBarContent_C_ExecuteUbergraph_WBP_PalActionBarContent Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -71,37 +71,37 @@ void UWBP_PalActionBarContent_C::HoveredEvent(class UCommonButtonBase* Button)
 }
 
 
-// Function WBP_PalActionBarContent.WBP_PalActionBarContent_C.OnUpdateInputAction
-// (Event, Protected, BlueprintEvent)
+// Function WBP_PalActionBarContent.WBP_PalActionBarContent_C.ExecuteUbergraph_WBP_PalActionBarContent
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalActionBarContent_C::OnUpdateInputAction()
+void UWBP_PalActionBarContent_C::ExecuteUbergraph_WBP_PalActionBarContent(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalActionBarContent_C", "OnUpdateInputAction");
+		Func = Class->GetFunction("WBP_PalActionBarContent_C", "ExecuteUbergraph_WBP_PalActionBarContent");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_PalActionBarContent_C_ExecuteUbergraph_WBP_PalActionBarContent Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalActionBarContent.WBP_PalActionBarContent_C.UnhoveredEvent
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PalActionBarContent.WBP_PalActionBarContent_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalActionBarContent_C::UnhoveredEvent(class UCommonButtonBase* Button)
+void UWBP_PalActionBarContent_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalActionBarContent_C", "UnhoveredEvent");
+		Func = Class->GetFunction("WBP_PalActionBarContent_C", "Construct");
 
-	Params::WBP_PalActionBarContent_C_UnhoveredEvent Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

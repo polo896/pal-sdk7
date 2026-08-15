@@ -16,6 +16,25 @@
 namespace SDK::Params
 {
 
+// Function WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C.UpdateProgressStep
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_InLevelLoadingFade_C_UpdateProgressStep final
+{
+public:
+	int32                                         AddStep;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MaxStep;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InLevelLoadingFade_C_UpdateProgressStep;
+
+// Function WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C.Setup
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_InLevelLoadingFade_C_Setup final
+{
+public:
+	class UPalHUDDispatchParameter_FadeWidget*    FadeParameter_0;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InLevelLoadingFade_C_Setup;
+
 // Function WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C.ExecuteUbergraph_WBP_InLevelLoadingFade
 // 0x0188 (0x0188 - 0x0000)
 struct WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade final
@@ -87,25 +106,6 @@ public:
 	float                                         CallFunc_CreatePlayAnimationTimeRangeProxyObject_PlaybackSpeed_ImplicitCast; // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade;
-
-// Function WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C.Setup
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_InLevelLoadingFade_C_Setup final
-{
-public:
-	class UPalHUDDispatchParameter_FadeWidget*    FadeParameter_0;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InLevelLoadingFade_C_Setup;
-
-// Function WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C.UpdateProgressStep
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_InLevelLoadingFade_C_UpdateProgressStep final
-{
-public:
-	int32                                         AddStep;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         MaxStep;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InLevelLoadingFade_C_UpdateProgressStep;
 
 }
 

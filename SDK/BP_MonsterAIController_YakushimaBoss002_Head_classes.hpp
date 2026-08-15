@@ -18,18 +18,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MonsterAIController_YakushimaBoss002_Head.BP_MonsterAIController_YakushimaBoss002_Head_C
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class ABP_MonsterAIController_YakushimaBoss002_Head_C final : public ABP_MonsterAIController_RaidBoss_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MonsterAIController_YakushimaBoss002_Head_C; // 0x05C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class ABP_MonsterAIController_YakushimaBoss002_C* ParentController;                              // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MonsterAIController_YakushimaBoss002_Head_C; // 0x05C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class ABP_MonsterAIController_YakushimaBoss002_C* ParentController;                              // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_MonsterAIController_YakushimaBoss002_Head(int32 EntryPoint);
-	void GetTargetCampID(struct FGuid* campID);
 	void IsReadyBosses(bool* IsStartBattle);
 	void SetParentController(class ABP_MonsterAIController_YakushimaBoss002_C* ParentController_0);
+	void GetTargetCampID(struct FGuid* campID);
 
 public:
 	static class UClass* StaticClass()

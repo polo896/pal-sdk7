@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AIAction_CombatPal_YakushimaBoss002_2.BP_AIAction_CombatPal_YakushimaBoss002_2_C
-// 0x0000 (0x0260 - 0x0260)
+// 0x0000 (0x0270 - 0x0270)
 class UBP_AIAction_CombatPal_YakushimaBoss002_2_C final : public UBP_AIAction_CombatPal_YakushimaBoss002_C
 {
 public:

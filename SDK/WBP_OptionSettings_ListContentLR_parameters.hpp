@@ -10,46 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
 {
-
-// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.SetupSelections
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_OptionSettings_ListContentLR_C_SetupSelections final
-{
-public:
-	TArray<class FString>                         Selections_0;                                      // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	int32                                         Current_0;                                         // 0x0010(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContentLR_C_SetupSelections;
-
-// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.SelectByIndex
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_OptionSettings_ListContentLR_C_SelectByIndex final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_OptionSettings_ListContentLRBar_C* CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_OptionSettings_ListContentLRBar_C* CallFunc_Array_Get_Item_1;                         // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Array_Get_Item_2;                         // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0028(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContentLR_C_SelectByIndex;
-
-// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.GetCurrentIndex
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_OptionSettings_ListContentLR_C_GetCurrentIndex final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContentLR_C_GetCurrentIndex;
 
 // Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.ExecuteUbergraph_WBP_OptionSettings_ListContentLR
 // 0x0110 (0x0110 - 0x0000)
@@ -97,6 +63,40 @@ public:
 	int32                                         CallFunc_Min_ReturnValue;                          // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_OptionSettings_ListContentLR_C_ExecuteUbergraph_WBP_OptionSettings_ListContentLR;
+
+// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.GetCurrentIndex
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_OptionSettings_ListContentLR_C_GetCurrentIndex final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContentLR_C_GetCurrentIndex;
+
+// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.SelectByIndex
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_OptionSettings_ListContentLR_C_SelectByIndex final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_OptionSettings_ListContentLRBar_C* CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_OptionSettings_ListContentLRBar_C* CallFunc_Array_Get_Item_1;                         // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Array_Get_Item_2;                         // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0028(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContentLR_C_SelectByIndex;
+
+// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.SetupSelections
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_OptionSettings_ListContentLR_C_SetupSelections final
+{
+public:
+	TArray<class FString>                         Selections_0;                                      // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	int32                                         Current_0;                                         // 0x0010(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContentLR_C_SetupSelections;
 
 }
 

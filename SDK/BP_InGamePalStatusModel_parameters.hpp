@@ -14,17 +14,6 @@
 namespace SDK::Params
 {
 
-// Function BP_InGamePalStatusModel.BP_InGamePalStatusModel_C.SetupSingle
-// 0x0020 (0x0020 - 0x0000)
-struct BP_InGamePalStatusModel_C_SetupSingle final
-{
-public:
-	class UPalIndividualCharacterHandle*          Handle;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class UPalIndividualCharacterHandle*>  Handles;                                           // 0x0008(0x0010)(Edit, BlueprintVisible)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_InGamePalStatusModel_C_SetupSingle;
-
 // Function BP_InGamePalStatusModel.BP_InGamePalStatusModel_C.SetupForOtomo
 // 0x0078 (0x0078 - 0x0000)
 struct BP_InGamePalStatusModel_C_SetupForOtomo final
@@ -53,6 +42,17 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_InGamePalStatusModel_C_SetupForOtomo;
+
+// Function BP_InGamePalStatusModel.BP_InGamePalStatusModel_C.SetupSingle
+// 0x0020 (0x0020 - 0x0000)
+struct BP_InGamePalStatusModel_C_SetupSingle final
+{
+public:
+	class UPalIndividualCharacterHandle*          Handle;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class UPalIndividualCharacterHandle*>  Handles;                                           // 0x0008(0x0010)(Edit, BlueprintVisible)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_InGamePalStatusModel_C_SetupSingle;
 
 }
 

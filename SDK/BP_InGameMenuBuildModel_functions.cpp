@@ -17,21 +17,35 @@
 namespace SDK
 {
 
-// Function BP_InGameMenuBuildModel.BP_InGameMenuBuildModel_C.ExecuteUbergraph_BP_InGameMenuBuildModel
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_InGameMenuBuildModel.BP_InGameMenuBuildModel_C.Setup
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void UBP_InGameMenuBuildModel_C::ExecuteUbergraph_BP_InGameMenuBuildModel(int32 EntryPoint)
+void UBP_InGameMenuBuildModel_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InGameMenuBuildModel_C", "ExecuteUbergraph_BP_InGameMenuBuildModel");
+		Func = Class->GetFunction("BP_InGameMenuBuildModel_C", "Setup");
 
-	Params::BP_InGameMenuBuildModel_C_ExecuteUbergraph_BP_InGameMenuBuildModel Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function BP_InGameMenuBuildModel.BP_InGameMenuBuildModel_C.SetInitialTypeA
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalBuildObjectTypeA                    TypeA                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_InGameMenuBuildModel_C::SetInitialTypeA(EPalBuildObjectTypeA TypeA)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_InGameMenuBuildModel_C", "SetInitialTypeA");
+
+	Params::BP_InGameMenuBuildModel_C_SetInitialTypeA Parms{};
+
+	Parms.TypeA = TypeA;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,37 +71,23 @@ void UBP_InGameMenuBuildModel_C::OnUpdateInventory(class UPalItemContainer* Cont
 }
 
 
-// Function BP_InGameMenuBuildModel.BP_InGameMenuBuildModel_C.SetInitialTypeA
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_InGameMenuBuildModel.BP_InGameMenuBuildModel_C.ExecuteUbergraph_BP_InGameMenuBuildModel
+// (Final, UbergraphFunction)
 // Parameters:
-// EPalBuildObjectTypeA                    TypeA                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_InGameMenuBuildModel_C::SetInitialTypeA(EPalBuildObjectTypeA TypeA)
+void UBP_InGameMenuBuildModel_C::ExecuteUbergraph_BP_InGameMenuBuildModel(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InGameMenuBuildModel_C", "SetInitialTypeA");
+		Func = Class->GetFunction("BP_InGameMenuBuildModel_C", "ExecuteUbergraph_BP_InGameMenuBuildModel");
 
-	Params::BP_InGameMenuBuildModel_C_SetInitialTypeA Parms{};
+	Params::BP_InGameMenuBuildModel_C_ExecuteUbergraph_BP_InGameMenuBuildModel Parms{};
 
-	Parms.TypeA = TypeA;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_InGameMenuBuildModel.BP_InGameMenuBuildModel_C.Setup
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UBP_InGameMenuBuildModel_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InGameMenuBuildModel_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

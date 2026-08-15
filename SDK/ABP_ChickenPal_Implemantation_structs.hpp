@@ -40,5 +40,12 @@ public:
 };
 DUMPER7_ASSERTS_ABP_ChickenPal_Implemantation__FAnimBlueprintGeneratedConstantData;
 
+// ScriptStruct ABP_ChickenPal_Implemantation.ABP_ChickenPal_Implemantation_C.AnimBlueprintGeneratedMutableData
+// 0x0000 (0x0001 - 0x0001)
+struct ABP_ChickenPal_Implemantation::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+};
+DUMPER7_ASSERTS_ABP_ChickenPal_Implemantation__FAnimBlueprintGeneratedMutableData;
+
 }
 

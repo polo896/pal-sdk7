@@ -17,21 +17,35 @@
 namespace SDK
 {
 
-// Function BP_Fetcher.BP_Fetcher_C.ExecuteUbergraph_BP_Fetcher
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Fetcher.BP_Fetcher_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_Fetcher_C::ExecuteUbergraph_BP_Fetcher(int32 EntryPoint)
+void ABP_Fetcher_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fetcher_C", "ExecuteUbergraph_BP_Fetcher");
+		Func = Class->GetFunction("BP_Fetcher_C", "ReceiveBeginPlay");
 
-	Params::BP_Fetcher_C_ExecuteUbergraph_BP_Fetcher Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function BP_Fetcher.BP_Fetcher_C.PrintToModLoader
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    Messag                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void ABP_Fetcher_C::PrintToModLoader(const class FString& Messag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fetcher_C", "PrintToModLoader");
+
+	Params::BP_Fetcher_C_PrintToModLoader Parms{};
+
+	Parms.Messag = std::move(Messag);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,37 +71,23 @@ void ABP_Fetcher_C::OnLoaded_6D1C744F48EB40A914E8D780B534F94A(class UObject* Loa
 }
 
 
-// Function BP_Fetcher.BP_Fetcher_C.PrintToModLoader
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_Fetcher.BP_Fetcher_C.ExecuteUbergraph_BP_Fetcher
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const class FString&                    Messag                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Fetcher_C::PrintToModLoader(const class FString& Messag)
+void ABP_Fetcher_C::ExecuteUbergraph_BP_Fetcher(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fetcher_C", "PrintToModLoader");
+		Func = Class->GetFunction("BP_Fetcher_C", "ExecuteUbergraph_BP_Fetcher");
 
-	Params::BP_Fetcher_C_PrintToModLoader Parms{};
+	Params::BP_Fetcher_C_ExecuteUbergraph_BP_Fetcher Parms{};
 
-	Parms.Messag = std::move(Messag);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Fetcher.BP_Fetcher_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Fetcher_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fetcher_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

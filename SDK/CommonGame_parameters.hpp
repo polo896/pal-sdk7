@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "InputCore_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "CommonUser_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "InputCore_structs.hpp"
 #include "CommonGame_structs.hpp"
 #include "CommonInput_structs.hpp"
 

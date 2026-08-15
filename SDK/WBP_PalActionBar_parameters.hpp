@@ -16,6 +16,16 @@
 namespace SDK::Params
 {
 
+// Function WBP_PalActionBar.WBP_PalActionBar_C.Tick
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_PalActionBar_C_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalActionBar_C_Tick;
+
 // Function WBP_PalActionBar.WBP_PalActionBar_C.ExecuteUbergraph_WBP_PalActionBar
 // 0x0068 (0x0068 - 0x0000)
 struct WBP_PalActionBar_C_ExecuteUbergraph_WBP_PalActionBar final
@@ -33,16 +43,6 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_PalActionBar_C_ExecuteUbergraph_WBP_PalActionBar;
-
-// Function WBP_PalActionBar.WBP_PalActionBar_C.Tick
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_PalActionBar_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalActionBar_C_Tick;
 
 }
 

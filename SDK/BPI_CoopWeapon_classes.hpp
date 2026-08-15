@@ -21,8 +21,8 @@ namespace SDK
 class IBPI_CoopWeapon_C final
 {
 public:
-	void SetWeaponDamage(int32 Damageam);
 	void SetAttacker(class AActor* AttackerPal);
+	void SetWeaponDamage(int32 Damageam);
 
 public:
 	static class UClass* StaticClass()

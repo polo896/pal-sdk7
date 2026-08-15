@@ -39,6 +39,7 @@ public:
 	void BindWaitFinishEvent(class UBP_AIAction_Visitor_WaitInBaseCamp_C* action);
 	void ExecuteUbergraph_BP_NPCAIController_Visitor_Guardman(int32 EntryPoint);
 	void FindTargetPlayer(class AActor** TargetActor);
+	void ForceEscapeStartFortOutSide(class AActor* StartActor, class AActor* TargetActor);
 	void OnArrivedTargetPoint();
 	void OnDeadByVisitorLeader(const struct FPalDeadInfo& DeadInfo);
 	void OnReturnSpawnedPointByVisitorLeader();
@@ -51,7 +52,6 @@ public:
 	void StartReturnToSpawnedPointAction();
 	void StartTravelToBaseCamp();
 	void StartWaitAction();
-	void ForceEscapeStartFortOutSide(class AActor* StartActor, class AActor* TargetActor);
 	void ReceiveBeginPlay();
 	void ReceiveTick(float DeltaSeconds);
 

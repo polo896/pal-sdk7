@@ -42,7 +42,7 @@ public:
 public:
 	void Add_New_Damage_Text(const struct FPalDamageInfo& DamageInfo, class AActor* Defender);
 	void AddDamageTextEvent(const struct FPalDamageInfo& DamageInfo, class AActor* Defender);
-	void CalcDamageTextType(const struct FPalDamageInfo& DamageInfo, class AActor* Defender, double DamageRate, int32 weakCount, int32 DIsplayDamage, const struct FPalCalculatedDamageInfo& CalculatedDamageInfo, EPalDamageTextType* textType, bool* bMercyHit);
+	void CalcDamageTextType(const struct FPalDamageInfo& DamageInfo, class AActor* Defender, double DamageRate, int32 weakCount, int32 DisplayDamage, const struct FPalCalculatedDamageInfo& CalculatedDamageInfo, EPalDamageTextType* textType, bool* bMercyHit);
 	void CalcLengthToPlayer(const struct FVector& HitLocation, double* Length);
 	void CalcTargetLocation(const struct FPalDamageInfo& DamageInfo, class AActor* Defender, struct FVector* Location);
 	void CreateOrPopDamageWidget(class UPalUIDamageTextBase** createdWdiget);
@@ -51,7 +51,7 @@ public:
 	void Get_Additional_Effect_(const struct FPalDamageInfo& DamageInfo, TArray<EPalAdditionalEffectType>* AdditionalEffect);
 	void HasMercyHit(class AActor* CheckCharacter, bool* bHasMercyHit);
 	void IsEquipAttacker(class AActor* Attacker, bool* IsEquip);
-	void IsKillShot(class AActor* Defender, int32 DIsplayDamage, bool* bKill);
+	void IsKillShot(class AActor* Defender, int32 DisplayDamage, bool* bKill);
 	void IsMuteki(class AActor* Defender, bool* bMuteki);
 	void OnChangedUISettings(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings);
 	void OnEndDamageTextOutAnim(class UWBP_PalDamageText_C* Widget);

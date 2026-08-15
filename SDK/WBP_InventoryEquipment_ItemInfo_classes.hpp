@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
-#include "Pal_classes.hpp"
 #include "Engine_structs.hpp"
 #include "E_PalUIItemInfoWindowDIsplayType_structs.hpp"
+#include "Pal_structs.hpp"
+#include "Pal_classes.hpp"
 #include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
 
@@ -126,52 +126,52 @@ public:
 	TMap<struct FPalDataTableRowName_ItemData, struct FDataTableRowHandle> UseMsgIDMap_StaticItemID; // 0x0988(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void Change_Display_Mode(E_PalUIItemInfoWindowDIsplayType DisplayType);
-	void Construct();
-	void ConvertPassiveSkillNameToText(TArray<class FName>& PassiveSkillNameArray, TArray<class FText>* OutTextArray);
-	void Destruct();
-	void ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo(int32 EntryPoint);
-	void Get_Display_Technology_Category_Name(class FName technologyName, class FText* CategoryText);
-	void GetFoodCategoryName(class UPalStaticItemDataBase* ItemData, class FText* Name_0);
-	void GetItemCategoryName(class UPalStaticItemDataBase* ItemData, class FText* outName);
-	void GetItemRegeneInfo(class FName ItemId, bool* IsRegene, struct FPalStatusEffectFoodDataRow* FoodInfo);
-	void GetItemUseText(class FName StaticItemId, class FText* OutItemUseText);
-	void Hide_Main_Parameter();
-	void Hide_Sub_Parameter();
-	void HideAdditionalText();
-	void Is_Equipable_Item(class UPalItemSlot* Slot_0, bool* IsEquipable);
-	void OnInitialized();
-	void OnInputMethodChanged(ECommonInputType bNewInputType);
-	void OnUpdateTargetSlot(class UPalItemSlot* Slot_0);
-	void OverrideNumCountText(const class FText& Text);
-	void Set_Blueprint_Icon(class FName ItemId);
-	void Set_Main_Param_Text(const class FText& Text);
-	void Set_Main_Param_Value(int32 Value);
-	void Set_Pal_Gear_Icon(class FName ItemId);
-	void Set_Simple_Additional_Text(const class FText& Text);
-	void Set_Sub_Param_Regene(const struct FPalStatusEffectFoodDataRow& FoodData);
-	void Set_Sub_Param_Text(const class FText& Text);
-	void Set_Sub_Param_Value(int32 Value);
-	void SetImportanyAdditionalText(TArray<class FText>& TextArray);
-	void Setup_by_Technology_Name(class FName technologyName, bool IsMasked, class UTexture2D* IconTexture);
-	void Setup_Item_Icon(const class FName StaticItemId);
-	void Setup_Item_Name(class FName ItemStaticId);
-	void Setup_Item_Weight();
-	void Setup_Parameter(const class FName StaticItemId);
-	void Setup_Tech_Mat_Details(const struct FPalTechnologyRecipeUnlockDataTableRow& TechData, bool IsMasked);
-	void SetupByDisplayInfo(const struct FPalUICommonItemInfoDisplayData& DisplayInfo);
-	void SetupByItemAndNum(const struct FPalItemAndNum& ItemAndNum);
-	void SetupItemDescription(const class FName& StaticItemId);
-	void SetupItemDurability();
-	void SetupItemNum();
-	void SetupItemRarity(const class FName StaticItemId);
-	void SetupKeyGuide();
-	void SetupPrice();
-	void SetupQuickMoveKeyGuide();
-	void SetupSkillInfo(class FName ItemStaticId);
-	void SetupTechDetails();
-	void SetupUseableKeyGuide_Internal();
 	void UnbindEvent();
+	void SetupUseableKeyGuide_Internal();
+	void SetupTechDetails();
+	void SetupSkillInfo(class FName ItemStaticId);
+	void SetupQuickMoveKeyGuide();
+	void SetupPrice();
+	void SetupKeyGuide();
+	void SetupItemRarity(const class FName StaticItemId);
+	void SetupItemNum();
+	void SetupItemDurability();
+	void SetupItemDescription(const class FName& StaticItemId);
+	void SetupByItemAndNum(const struct FPalItemAndNum& ItemAndNum);
+	void SetupByDisplayInfo(const struct FPalUICommonItemInfoDisplayData& DisplayInfo);
+	void Setup_Tech_Mat_Details(const struct FPalTechnologyRecipeUnlockDataTableRow& TechData, bool IsMasked);
+	void Setup_Parameter(const class FName StaticItemId);
+	void Setup_Item_Weight();
+	void Setup_Item_Name(class FName ItemStaticId);
+	void Setup_Item_Icon(const class FName StaticItemId);
+	void Setup_by_Technology_Name(class FName technologyName, bool IsMasked, class UTexture2D* IconTexture);
+	void SetImportanyAdditionalText(TArray<class FText>& TextArray);
+	void Set_Sub_Param_Value(int32 Value);
+	void Set_Sub_Param_Text(const class FText& Text);
+	void Set_Sub_Param_Regene(const struct FPalStatusEffectFoodDataRow& FoodData);
+	void Set_Simple_Additional_Text(const class FText& Text);
+	void Set_Pal_Gear_Icon(class FName ItemId);
+	void Set_Main_Param_Value(int32 Value);
+	void Set_Main_Param_Text(const class FText& Text);
+	void Set_Blueprint_Icon(class FName ItemId);
+	void OverrideNumCountText(const class FText& Text);
+	void OnUpdateTargetSlot(class UPalItemSlot* Slot_0);
+	void OnInputMethodChanged(ECommonInputType bNewInputType);
+	void OnInitialized();
+	void Is_Equipable_Item(class UPalItemSlot* Slot_0, bool* IsEquipable);
+	void HideAdditionalText();
+	void Hide_Sub_Parameter();
+	void Hide_Main_Parameter();
+	void GetItemUseText(class FName StaticItemId, class FText* OutItemUseText);
+	void GetItemRegeneInfo(class FName ItemId, bool* IsRegene, struct FPalStatusEffectFoodDataRow* FoodInfo);
+	void GetItemCategoryName(class UPalStaticItemDataBase* ItemData, class FText* outName);
+	void GetFoodCategoryName(class UPalStaticItemDataBase* ItemData, class FText* Name_0);
+	void Get_Display_Technology_Category_Name(class FName technologyName, class FText* CategoryText);
+	void ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo(int32 EntryPoint);
+	void Destruct();
+	void ConvertPassiveSkillNameToText(TArray<class FName>& PassiveSkillNameArray, TArray<class FText>* OutTextArray);
+	void Construct();
+	void Change_Display_Mode(E_PalUIItemInfoWindowDIsplayType DisplayType);
 
 public:
 	static class UClass* StaticClass()

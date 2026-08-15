@@ -16,32 +16,74 @@
 namespace SDK::Params
 {
 
-// Function WBP_AutoSave.WBP_AutoSave_C.DisplayFailedSaveNotice
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_AutoSave_C_DisplayFailedSaveNotice final
-{
-public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetEndTime_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0028(0x0008)(NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_AutoSave_C_DisplayFailedSaveNotice;
-
-// Function WBP_AutoSave.WBP_AutoSave_C.EndSave
-// 0x000C (0x000C - 0x0000)
-struct WBP_AutoSave_C_EndSave final
+// Function WBP_AutoSave.WBP_AutoSave_C.StartSaving
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_AutoSave_C_StartSaving final
 {
 public:
 	class FName                                   SavingKey;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsAllSaveCompleted_bCompleted;            // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x000C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_InvalidateTimerHandle_ReturnValue;     // 0x0028(0x0008)(NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_AutoSave_C_EndSave;
+DUMPER7_ASSERTS_WBP_AutoSave_C_StartSaving;
+
+// Function WBP_AutoSave.WBP_AutoSave_C.OnEndedWorldSave
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_AutoSave_C_OnEndedWorldSave final
+{
+public:
+	bool                                          IsSuccess;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_AutoSave_C_OnEndedWorldSave;
+
+// Function WBP_AutoSave.WBP_AutoSave_C.OnEndedLocalSave
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_AutoSave_C_OnEndedLocalSave final
+{
+public:
+	bool                                          IsSuccess;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_AutoSave_C_OnEndedLocalSave;
+
+// Function WBP_AutoSave.WBP_AutoSave_C.OnEndedForceDisplayingTime
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_AutoSave_C_OnEndedForceDisplayingTime final
+{
+public:
+	struct FTimerHandle                           CallFunc_K2_InvalidateTimerHandle_ReturnValue;     // 0x0000(0x0008)(NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_AutoSave_C_OnEndedForceDisplayingTime;
+
+// Function WBP_AutoSave.WBP_AutoSave_C.IsAllSaveCompleted
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_AutoSave_C_IsAllSaveCompleted final
+{
+public:
+	bool                                          bCompleted;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<bool>                                  CallFunc_Map_Values_Values;                        // 0x0010(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Get_Item;                           // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_AutoSave_C_IsAllSaveCompleted;
+
+// Function WBP_AutoSave.WBP_AutoSave_C.HideFailedSaveNotice
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_AutoSave_C_HideFailedSaveNotice final
+{
+public:
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_AutoSave_C_HideFailedSaveNotice;
 
 // Function WBP_AutoSave.WBP_AutoSave_C.ExecuteUbergraph_WBP_AutoSave
 // 0x0078 (0x0078 - 0x0000)
@@ -67,74 +109,32 @@ public:
 };
 DUMPER7_ASSERTS_WBP_AutoSave_C_ExecuteUbergraph_WBP_AutoSave;
 
-// Function WBP_AutoSave.WBP_AutoSave_C.HideFailedSaveNotice
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_AutoSave_C_HideFailedSaveNotice final
-{
-public:
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_AutoSave_C_HideFailedSaveNotice;
-
-// Function WBP_AutoSave.WBP_AutoSave_C.IsAllSaveCompleted
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_AutoSave_C_IsAllSaveCompleted final
-{
-public:
-	bool                                          bCompleted;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<bool>                                  CallFunc_Map_Values_Values;                        // 0x0010(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Get_Item;                           // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_AutoSave_C_IsAllSaveCompleted;
-
-// Function WBP_AutoSave.WBP_AutoSave_C.OnEndedForceDisplayingTime
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_AutoSave_C_OnEndedForceDisplayingTime final
-{
-public:
-	struct FTimerHandle                           CallFunc_K2_InvalidateTimerHandle_ReturnValue;     // 0x0000(0x0008)(NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_AutoSave_C_OnEndedForceDisplayingTime;
-
-// Function WBP_AutoSave.WBP_AutoSave_C.OnEndedLocalSave
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_AutoSave_C_OnEndedLocalSave final
-{
-public:
-	bool                                          IsSuccess;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_AutoSave_C_OnEndedLocalSave;
-
-// Function WBP_AutoSave.WBP_AutoSave_C.OnEndedWorldSave
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_AutoSave_C_OnEndedWorldSave final
-{
-public:
-	bool                                          IsSuccess;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_AutoSave_C_OnEndedWorldSave;
-
-// Function WBP_AutoSave.WBP_AutoSave_C.StartSaving
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_AutoSave_C_StartSaving final
+// Function WBP_AutoSave.WBP_AutoSave_C.EndSave
+// 0x000C (0x000C - 0x0000)
+struct WBP_AutoSave_C_EndSave final
 {
 public:
 	class FName                                   SavingKey;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x000C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_InvalidateTimerHandle_ReturnValue;     // 0x0028(0x0008)(NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAllSaveCompleted_bCompleted;            // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_AutoSave_C_StartSaving;
+DUMPER7_ASSERTS_WBP_AutoSave_C_EndSave;
+
+// Function WBP_AutoSave.WBP_AutoSave_C.DisplayFailedSaveNotice
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_AutoSave_C_DisplayFailedSaveNotice final
+{
+public:
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetEndTime_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0028(0x0008)(NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_AutoSave_C_DisplayFailedSaveNotice;
 
 }
 

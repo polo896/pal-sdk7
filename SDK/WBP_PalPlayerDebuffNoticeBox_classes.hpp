@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "E_PalUIPlayerDebuffNoticeType_structs.hpp"
 #include "Engine_structs.hpp"
+#include "E_PalUIPlayerDebuffNoticeType_structs.hpp"
 #include "Pal_classes.hpp"
 
 

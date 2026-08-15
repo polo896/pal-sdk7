@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
-#include "Engine_structs.hpp"
-#include "WBP_IndividualParameterBindWidget_classes.hpp"
-#include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "E_PalUIStatusDIsplayParameter_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Pal_structs.hpp"
+#include "WBP_IndividualParameterBindWidget_classes.hpp"
+#include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -186,111 +186,111 @@ public:
 	TMap<EPalWorkSuitability, class UWBP_MainMenu_Pal_WorkIconText_C*> SuitabilityWidgetMap;         // 0x0C30(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void UpdateSanity_Binded(double nowSanity, double nowMaxSanity);
-	void UpdateOverlaySkillInfoWindow();
-	void UpdateNickName_Binded(const class FString& NewNickName);
-	void UpdateHunger_Binded(double nowHunger, double nowMaxHunger);
-	void UpdateHP_Binded(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
-	void UpdateFriendshipPoint_Binded(int32 NewPoint);
-	void UpdateFavorite_Binded(int32 NewIndex);
-	void UpdateExp_Binded(int64 addExp, int64 oldExp, double nowExpRate);
-	void UpdateActiveSkill_Binded(TArray<EPalWazaID>& ActiveSkills);
-	void Update_Talent_Binded();
-	void Update_Soul_Rank_Binded();
-	void Update_Level_Binded(int32 NewLevel);
-	void Update_Condition_Binded();
-	void Update_Buff_Status(class UPalIndividualCharacterParameter* Individual);
-	void Update_Buff_Binded();
-	void SetupEvent();
-	void Setup_Status(class UPalIndividualCharacterHandle* Handle);
-	void SetSoulRank(int32 Rank);
-	void SetRarity(bool IsBoss, bool IsRare);
-	void SetRank(int32 Rank);
-	void SetPassiveSkill(TArray<class FName>& PassiveSkills);
-	void SetPartnerSkillLock(class FName CharacterID);
-	void SetPartnerSkillIcon(class FName CharacterID);
-	void SetLockEdit(bool IsLock);
-	void SetImportedFlag(bool bImportedFlag);
-	void SetGender(EPalGenderType GenderType);
-	void SetFriendShip(int32 FriendshipRank, int32 FriendshipPoint);
-	void SetFoodAmount(int32 FoodAmount);
-	void SetElementType(EPalElementType type1, EPalElementType type2);
-	void SetAwakening(bool bAwaked);
-	void Set_Work_Suitability(const TMap<EPalWorkSuitability, int32>& WorkSuitabilities);
-	void Set_Pal_Handles(TArray<class UPalIndividualCharacterHandle*>& Handles);
-	void OpenOverlayStatusInfo(class UWidget* RelativeWidget, const struct FVector2D& AnchorPosition, const struct FVector2D& overrideInfoWidgetAlignment, const class FText& Title, const class FText& Desc, E_PalUIStatusDIsplayParameter Status);
-	void OpenOverlaySkillInfoWindow(class UWBP_MainMenu_Pal_Skill_Active_C* RelativeWidget, const struct FVector2D& AnchorPosition, const struct FVector2D& overrideInfoWidgetAlignment);
-	void OpenNameEditWindow(const class FText& DefaultName);
-	void OpenChangeActiveSkillList(class UWBP_MainMenu_Pal_Skill_Active_C* SkillPanelWidget);
-	void Open_Overlay_Info_Window(class UWidget* RelativeWidget, const struct FVector2D& AnchorPosition, const struct FVector2D& overrideInfoWidgetAlignment, const class FText& Title, const class FText& Info, const class FText& SubInfo);
-	void OnUnhoveredPassiveSkillButtonEvent(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
-	void OnUnhoveredPalButtonEvent();
-	void OnUnhoveredConditionButtonEvent(class UWBP_MainMenu_Pal_State_C* SelfWidget);
-	void OnUnhoveredActiveSkillButtonEvent(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
-	void OnTriggeredRemoveWazaAction();
-	void OnSelectedSkill(EPalWazaID WazaID);
-	void OnInitialized();
-	void OnHoveredPassiveSkillButtonEvent(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
-	void OnHoveredPalButtonEvent(class UPalIndividualCharacterHandle* Handle);
-	void OnHoveredConditionButtonEvent(class UWBP_MainMenu_Pal_State_C* StateWidget);
-	void OnHoveredActiveSkillButtonEvent(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
-	void OnCloseNameEditWindow(class UPalHUDDispatchParameterBase* Param_0);
-	void OnClosedCannotChangeActiveSkillDialog(bool bResult);
-	void OnClickedPalButtonEvent(class UPalIndividualCharacterHandle* Handle);
-	void ListToStatus(class UPalIndividualCharacterHandle* Handle);
-	void IsShowingStatusWithList(bool* isShowing);
-	void GetRestoreFocusSkillPanelTarget(class UWidget** TargetWidget);
-	void Get_Partner_Skill_Lock_Item_Name(class FName ItemId, class FText* ReturnText);
-	void FocusToSkillPanel();
-	void FocusToParameterPanel();
-	void FocusToPalPanel(int32 Index_0);
-	void Finished_F11D370F4605F1875DFE3B9E5A74FBB3();
-	void Finished_3B3110DC440BFBD5CFED78B55117839E();
-	void ExecuteUbergraph_WBP_MainMenu_Pal_00(int32 EntryPoint);
-	void Destruct();
-	class UWidget* CustomNavi_ToHPGuide(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToFirstPassiveButton(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToActiveSkillTop(EUINavigation Navigation_0);
-	void Construct();
-	void CloseChangeActiveSkillList(class UPalHUDDispatchParameterBase* UPalHUDDispatchParam);
-	void Close_Overlay_Info_Window();
-	void Check_Valid_Work_Suitability(EPalWorkSuitability InWorkSuitability, bool* IsValid, EPalWorkSuitability* OutWorkSuitability, TArray<EPalMapObjectMaterialSubType>* MaterialSubTypes);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_Work_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_Work_K2Node_ComponentBoundEvent_10_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_LevelSync_K2Node_ComponentBoundEvent_23_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_LevelSync_K2Node_ComponentBoundEvent_22_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_13_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_12_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_Def_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_Def_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_Atk_K2Node_ComponentBoundEvent_9_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_Atk_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalCommonButton_SAN_K2Node_ComponentBoundEvent_19_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalCommonButton_SAN_K2Node_ComponentBoundEvent_18_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalCommonButton_Hunger_K2Node_ComponentBoundEvent_17_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalCommonButton_Hunger_K2Node_ComponentBoundEvent_16_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalCommonButton_HP_K2Node_ComponentBoundEvent_15_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalCommonButton_HP_K2Node_ComponentBoundEvent_14_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalCommonButton_Friendship_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalCommonButton_Friendship_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_MainMenu_Pal_StatusElement_001_K2Node_ComponentBoundEvent_23_OnUnhovered__DelegateSignature(class UWidget* SelfWidget);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_MainMenu_Pal_StatusElement_001_K2Node_ComponentBoundEvent_21_OnHovered__DelegateSignature(class UWidget* SelfWidget);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_MainMenu_Pal_StatusElement_000_K2Node_ComponentBoundEvent_22_OnUnhovered__DelegateSignature(class UWidget* SelfWidget);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_MainMenu_Pal_StatusElement_000_K2Node_ComponentBoundEvent_20_OnHovered__DelegateSignature(class UWidget* SelfWidget);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_MainMenu_Pal_Skill_Active_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_MainMenu_Pal_Skill_Active_2_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_MainMenu_Pal_Skill_Active_1_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
-	void BndEvt__WBP_MainMenu_Pal_00_WBP_CommonButton_NameEdit_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void BindFromHandle(class UPalIndividualCharacterHandle* targetHandle);
-	void Back_to_List();
-	void AnmEvent_ToStatus_WithSetup(class UPalIndividualCharacterHandle* Handle);
-	void AnmEvent_ToStatus();
-	void AnmEvent_ToList();
-	void AnmEvent_ShowSideInfo();
-	void AnmEvent_OpenList();
-	void AnmEvent_NoPal();
 	void AnmEvent_HideSideInfo();
+	void AnmEvent_NoPal();
+	void AnmEvent_OpenList();
+	void AnmEvent_ShowSideInfo();
+	void AnmEvent_ToList();
+	void AnmEvent_ToStatus();
+	void AnmEvent_ToStatus_WithSetup(class UPalIndividualCharacterHandle* Handle);
+	void Back_to_List();
+	void BindFromHandle(class UPalIndividualCharacterHandle* targetHandle);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_CommonButton_NameEdit_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_MainMenu_Pal_Skill_Active_1_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_MainMenu_Pal_Skill_Active_2_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_MainMenu_Pal_Skill_Active_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_MainMenu_Pal_StatusElement_000_K2Node_ComponentBoundEvent_20_OnHovered__DelegateSignature(class UWidget* SelfWidget);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_MainMenu_Pal_StatusElement_000_K2Node_ComponentBoundEvent_22_OnUnhovered__DelegateSignature(class UWidget* SelfWidget);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_MainMenu_Pal_StatusElement_001_K2Node_ComponentBoundEvent_21_OnHovered__DelegateSignature(class UWidget* SelfWidget);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_MainMenu_Pal_StatusElement_001_K2Node_ComponentBoundEvent_23_OnUnhovered__DelegateSignature(class UWidget* SelfWidget);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalCommonButton_Friendship_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalCommonButton_Friendship_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalCommonButton_HP_K2Node_ComponentBoundEvent_14_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalCommonButton_HP_K2Node_ComponentBoundEvent_15_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalCommonButton_Hunger_K2Node_ComponentBoundEvent_16_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalCommonButton_Hunger_K2Node_ComponentBoundEvent_17_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalCommonButton_SAN_K2Node_ComponentBoundEvent_18_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalCommonButton_SAN_K2Node_ComponentBoundEvent_19_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_Atk_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_Atk_K2Node_ComponentBoundEvent_9_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_Def_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_Def_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_12_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_13_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_LevelSync_K2Node_ComponentBoundEvent_22_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_LevelSync_K2Node_ComponentBoundEvent_23_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_Work_K2Node_ComponentBoundEvent_10_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_00_WBP_PalInvisibleButton_Work_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void Check_Valid_Work_Suitability(EPalWorkSuitability InWorkSuitability, bool* IsValid, EPalWorkSuitability* OutWorkSuitability, TArray<EPalMapObjectMaterialSubType>* MaterialSubTypes);
+	void Close_Overlay_Info_Window();
+	void CloseChangeActiveSkillList(class UPalHUDDispatchParameterBase* UPalHUDDispatchParam);
+	void Construct();
+	class UWidget* CustomNavi_ToActiveSkillTop(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToFirstPassiveButton(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToHPGuide(EUINavigation Navigation_0);
+	void Destruct();
+	void ExecuteUbergraph_WBP_MainMenu_Pal_00(int32 EntryPoint);
+	void Finished_3B3110DC440BFBD5CFED78B55117839E();
+	void Finished_F11D370F4605F1875DFE3B9E5A74FBB3();
+	void FocusToPalPanel(int32 Index_0);
+	void FocusToParameterPanel();
+	void FocusToSkillPanel();
+	void Get_Partner_Skill_Lock_Item_Name(class FName ItemId, class FText* ReturnText);
+	void GetRestoreFocusSkillPanelTarget(class UWidget** TargetWidget);
+	void IsShowingStatusWithList(bool* isShowing);
+	void ListToStatus(class UPalIndividualCharacterHandle* Handle);
+	void OnClickedPalButtonEvent(class UPalIndividualCharacterHandle* Handle);
+	void OnClosedCannotChangeActiveSkillDialog(bool bResult);
+	void OnCloseNameEditWindow(class UPalHUDDispatchParameterBase* Param_0);
+	void OnHoveredActiveSkillButtonEvent(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
+	void OnHoveredConditionButtonEvent(class UWBP_MainMenu_Pal_State_C* StateWidget);
+	void OnHoveredPalButtonEvent(class UPalIndividualCharacterHandle* Handle);
+	void OnHoveredPassiveSkillButtonEvent(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
+	void OnInitialized();
+	void OnSelectedSkill(EPalWazaID WazaID);
+	void OnTriggeredRemoveWazaAction();
+	void OnUnhoveredActiveSkillButtonEvent(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
+	void OnUnhoveredConditionButtonEvent(class UWBP_MainMenu_Pal_State_C* SelfWidget);
+	void OnUnhoveredPalButtonEvent();
+	void OnUnhoveredPassiveSkillButtonEvent(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
+	void Open_Overlay_Info_Window(class UWidget* RelativeWidget, const struct FVector2D& AnchorPosition, const struct FVector2D& overrideInfoWidgetAlignment, const class FText& Title, const class FText& Info, const class FText& SubInfo);
+	void OpenChangeActiveSkillList(class UWBP_MainMenu_Pal_Skill_Active_C* SkillPanelWidget);
+	void OpenNameEditWindow(const class FText& DefaultName);
+	void OpenOverlaySkillInfoWindow(class UWBP_MainMenu_Pal_Skill_Active_C* RelativeWidget, const struct FVector2D& AnchorPosition, const struct FVector2D& overrideInfoWidgetAlignment);
+	void OpenOverlayStatusInfo(class UWidget* RelativeWidget, const struct FVector2D& AnchorPosition, const struct FVector2D& overrideInfoWidgetAlignment, const class FText& Title, const class FText& Desc, E_PalUIStatusDIsplayParameter Status);
+	void Set_Pal_Handles(TArray<class UPalIndividualCharacterHandle*>& Handles);
+	void Set_Work_Suitability(const TMap<EPalWorkSuitability, int32>& WorkSuitabilities);
+	void SetAwakening(bool bAwaked);
+	void SetElementType(EPalElementType type1, EPalElementType type2);
+	void SetFoodAmount(int32 FoodAmount);
+	void SetFriendShip(int32 FriendshipRank, int32 FriendshipPoint);
+	void SetGender(EPalGenderType GenderType);
+	void SetImportedFlag(bool bImportedFlag);
+	void SetLockEdit(bool IsLock);
+	void SetPartnerSkillIcon(class FName CharacterID);
+	void SetPartnerSkillLock(class FName CharacterID);
+	void SetPassiveSkill(TArray<class FName>& PassiveSkills);
+	void SetRank(int32 Rank);
+	void SetRarity(bool IsBoss, bool IsRare);
+	void SetSoulRank(int32 Rank);
+	void Setup_Status(class UPalIndividualCharacterHandle* Handle);
+	void SetupEvent();
+	void Update_Buff_Binded();
+	void Update_Buff_Status(class UPalIndividualCharacterParameter* Individual);
+	void Update_Condition_Binded();
+	void Update_Level_Binded(int32 NewLevel);
+	void Update_Soul_Rank_Binded();
+	void Update_Talent_Binded();
+	void UpdateActiveSkill_Binded(TArray<EPalWazaID>& ActiveSkills);
+	void UpdateExp_Binded(int64 addExp, int64 oldExp, double nowExpRate);
+	void UpdateFavorite_Binded(int32 NewIndex);
+	void UpdateFriendshipPoint_Binded(int32 NewPoint);
+	void UpdateHP_Binded(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
+	void UpdateHunger_Binded(double nowHunger, double nowMaxHunger);
+	void UpdateNickName_Binded(const class FString& NewNickName);
+	void UpdateOverlaySkillInfoWindow();
+	void UpdateSanity_Binded(double nowSanity, double nowMaxSanity);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

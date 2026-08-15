@@ -38,6 +38,17 @@ public:
 };
 DUMPER7_ASSERTS_FLevelSequenceBindingReferenceArray;
 
+// ScriptStruct LevelSequence.LevelSequenceBindingReferences
+// 0x00F0 (0x00F0 - 0x0000)
+struct FLevelSequenceBindingReferences final
+{
+public:
+	TMap<struct FGuid, struct FLevelSequenceBindingReferenceArray> BindingIdToReferences;            // 0x0000(0x0050)(NativeAccessSpecifierPrivate)
+	TSet<struct FGuid>                            AnimSequenceInstances;                             // 0x0050(0x0050)(NativeAccessSpecifierPrivate)
+	TSet<struct FGuid>                            PostProcessInstances;                              // 0x00A0(0x0050)(NativeAccessSpecifierPrivate)
+};
+DUMPER7_ASSERTS_FLevelSequenceBindingReferences;
+
 // ScriptStruct LevelSequence.LevelSequenceCameraSettings
 // 0x0002 (0x0002 - 0x0000)
 struct FLevelSequenceCameraSettings final
@@ -48,18 +59,6 @@ public:
 };
 DUMPER7_ASSERTS_FLevelSequenceCameraSettings;
 
-// ScriptStruct LevelSequence.LevelSequenceObject
-// 0x0038 (0x0038 - 0x0000)
-struct FLevelSequenceObject final
-{
-public:
-	TLazyObjectPtr<class UObject>                 ObjectOrOwner;                                     // 0x0000(0x001C)(IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 ComponentName;                                     // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TWeakObjectPtr<class UObject>                 CachedComponent;                                   // 0x0030(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-};
-DUMPER7_ASSERTS_FLevelSequenceObject;
-
 // ScriptStruct LevelSequence.LevelSequenceLegacyObjectReference
 // 0x0020 (0x0020 - 0x0000)
 struct alignas(0x08) FLevelSequenceLegacyObjectReference final
@@ -69,15 +68,6 @@ public:
 };
 DUMPER7_ASSERTS_FLevelSequenceLegacyObjectReference;
 
-// ScriptStruct LevelSequence.BoundActorProxy
-// 0x0001 (0x0001 - 0x0000)
-struct FBoundActorProxy final
-{
-public:
-	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FBoundActorProxy;
-
 // ScriptStruct LevelSequence.LevelSequenceObjectReferenceMap
 // 0x0050 (0x0050 - 0x0000)
 struct alignas(0x08) FLevelSequenceObjectReferenceMap final
@@ -86,6 +76,15 @@ public:
 	uint8                                         Pad_0[0x50];                                       // 0x0000(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FLevelSequenceObjectReferenceMap;
+
+// ScriptStruct LevelSequence.BoundActorProxy
+// 0x0001 (0x0001 - 0x0000)
+struct FBoundActorProxy final
+{
+public:
+	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FBoundActorProxy;
 
 // ScriptStruct LevelSequence.LevelSequenceAnimSequenceLinkItem
 // 0x0038 (0x0038 - 0x0000)
@@ -105,16 +104,17 @@ public:
 };
 DUMPER7_ASSERTS_FLevelSequenceAnimSequenceLinkItem;
 
-// ScriptStruct LevelSequence.LevelSequenceBindingReferences
-// 0x00F0 (0x00F0 - 0x0000)
-struct FLevelSequenceBindingReferences final
+// ScriptStruct LevelSequence.LevelSequenceObject
+// 0x0038 (0x0038 - 0x0000)
+struct FLevelSequenceObject final
 {
 public:
-	TMap<struct FGuid, struct FLevelSequenceBindingReferenceArray> BindingIdToReferences;            // 0x0000(0x0050)(NativeAccessSpecifierPrivate)
-	TSet<struct FGuid>                            AnimSequenceInstances;                             // 0x0050(0x0050)(NativeAccessSpecifierPrivate)
-	TSet<struct FGuid>                            PostProcessInstances;                              // 0x00A0(0x0050)(NativeAccessSpecifierPrivate)
+	TLazyObjectPtr<class UObject>                 ObjectOrOwner;                                     // 0x0000(0x001C)(IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 ComponentName;                                     // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TWeakObjectPtr<class UObject>                 CachedComponent;                                   // 0x0030(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-DUMPER7_ASSERTS_FLevelSequenceBindingReferences;
+DUMPER7_ASSERTS_FLevelSequenceObject;
 
 // ScriptStruct LevelSequence.LevelSequenceSnapshotSettings
 // 0x0001 (0x0001 - 0x0000)

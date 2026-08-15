@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "BP_AssaultRifleBase_classes.hpp"
 #include "Engine_structs.hpp"
 #include "E_PalWeaponAnimationNotify_structs.hpp"
+#include "BP_AssaultRifleBase_classes.hpp"
 
 
 namespace SDK

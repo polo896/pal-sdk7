@@ -17,85 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.BndEvt__WBP_DebugItemSearchWindow_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_PalItemSlotButtonBase_C*     Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_DebugItemSearchWindow_C::BndEvt__WBP_DebugItemSearchWindow_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType)
+void UWBP_DebugItemSearchWindow_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DebugItemSearchWindow_C", "BndEvt__WBP_DebugItemSearchWindow_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature");
-
-	Params::WBP_DebugItemSearchWindow_C_BndEvt__WBP_DebugItemSearchWindow_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature Parms{};
-
-	Parms.Slot_0 = Slot_0;
-	Parms.PressType = PressType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.BndEvt__WBP_DebugItemSearchWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_DebugItemSearchWindow_C::BndEvt__WBP_DebugItemSearchWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DebugItemSearchWindow_C", "BndEvt__WBP_DebugItemSearchWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.CreateItemMap
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_DebugItemSearchWindow_C::CreateItemMap()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DebugItemSearchWindow_C", "CreateItemMap");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.ExecuteUbergraph_WBP_DebugItemSearchWindow
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DebugItemSearchWindow_C::ExecuteUbergraph_WBP_DebugItemSearchWindow(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DebugItemSearchWindow_C", "ExecuteUbergraph_WBP_DebugItemSearchWindow");
-
-	Params::WBP_DebugItemSearchWindow_C_ExecuteUbergraph_WBP_DebugItemSearchWindow Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.OnCancelAction
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_DebugItemSearchWindow_C::OnCancelAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DebugItemSearchWindow_C", "OnCancelAction");
+		Func = Class->GetFunction("WBP_DebugItemSearchWindow_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -121,17 +51,87 @@ void UWBP_DebugItemSearchWindow_C::OnClickedSlotInternal(class UWBP_PalItemSlotB
 }
 
 
-// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.OnCancelAction
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_DebugItemSearchWindow_C::OnSetup()
+void UWBP_DebugItemSearchWindow_C::OnCancelAction()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DebugItemSearchWindow_C", "OnSetup");
+		Func = Class->GetFunction("WBP_DebugItemSearchWindow_C", "OnCancelAction");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.ExecuteUbergraph_WBP_DebugItemSearchWindow
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DebugItemSearchWindow_C::ExecuteUbergraph_WBP_DebugItemSearchWindow(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DebugItemSearchWindow_C", "ExecuteUbergraph_WBP_DebugItemSearchWindow");
+
+	Params::WBP_DebugItemSearchWindow_C_ExecuteUbergraph_WBP_DebugItemSearchWindow Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.CreateItemMap
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_DebugItemSearchWindow_C::CreateItemMap()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DebugItemSearchWindow_C", "CreateItemMap");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.BndEvt__WBP_DebugItemSearchWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_DebugItemSearchWindow_C::BndEvt__WBP_DebugItemSearchWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DebugItemSearchWindow_C", "BndEvt__WBP_DebugItemSearchWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.BndEvt__WBP_DebugItemSearchWindow_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_PalItemSlotButtonBase_C*     Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DebugItemSearchWindow_C::BndEvt__WBP_DebugItemSearchWindow_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DebugItemSearchWindow_C", "BndEvt__WBP_DebugItemSearchWindow_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature");
+
+	Params::WBP_DebugItemSearchWindow_C_BndEvt__WBP_DebugItemSearchWindow_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature Parms{};
+
+	Parms.Slot_0 = Slot_0;
+	Parms.PressType = PressType;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

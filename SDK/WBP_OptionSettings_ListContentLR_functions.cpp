@@ -17,73 +17,65 @@
 namespace SDK
 {
 
-// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.SetupSelections
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TArray<class FString>&            Selections_0                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// const int32                             Current_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.BndEvt__WBP_OptionSettings_ListContentLR_WBP_OptionSettings_ListContentLArrow_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_OptionSettings_ListContentLR_C::SetupSelections(const TArray<class FString>& Selections_0, const int32 Current_0)
+void UWBP_OptionSettings_ListContentLR_C::BndEvt__WBP_OptionSettings_ListContentLR_WBP_OptionSettings_ListContentLArrow_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContentLR_C", "SetupSelections");
-
-	Params::WBP_OptionSettings_ListContentLR_C_SetupSelections Parms{};
-
-	Parms.Selections_0 = std::move(Selections_0);
-	Parms.Current_0 = Current_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.SelectByIndex
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContentLR_C::SelectByIndex(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContentLR_C", "SelectByIndex");
-
-	Params::WBP_OptionSettings_ListContentLR_C_SelectByIndex Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.MoveRight
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettings_ListContentLR_C::MoveRight()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContentLR_C", "MoveRight");
+		Func = Class->GetFunction("WBP_OptionSettings_ListContentLR_C", "BndEvt__WBP_OptionSettings_ListContentLR_WBP_OptionSettings_ListContentLArrow_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.MoveLeft
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.BndEvt__WBP_OptionSettings_ListContentLR_WBP_OptionSettings_ListContentRArrow_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_OptionSettings_ListContentLR_C::MoveLeft()
+void UWBP_OptionSettings_ListContentLR_C::BndEvt__WBP_OptionSettings_ListContentLR_WBP_OptionSettings_ListContentRArrow_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContentLR_C", "MoveLeft");
+		Func = Class->GetFunction("WBP_OptionSettings_ListContentLR_C", "BndEvt__WBP_OptionSettings_ListContentLR_WBP_OptionSettings_ListContentRArrow_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_OptionSettings_ListContentLR_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContentLR_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.ExecuteUbergraph_WBP_OptionSettings_ListContentLR
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContentLR_C::ExecuteUbergraph_WBP_OptionSettings_ListContentLR(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContentLR_C", "ExecuteUbergraph_WBP_OptionSettings_ListContentLR");
+
+	Params::WBP_OptionSettings_ListContentLR_C_ExecuteUbergraph_WBP_OptionSettings_ListContentLR Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -108,65 +100,73 @@ void UWBP_OptionSettings_ListContentLR_C::GetCurrentIndex(int32* Index_0)
 }
 
 
-// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.ExecuteUbergraph_WBP_OptionSettings_ListContentLR
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.MoveLeft
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_OptionSettings_ListContentLR_C::ExecuteUbergraph_WBP_OptionSettings_ListContentLR(int32 EntryPoint)
+void UWBP_OptionSettings_ListContentLR_C::MoveLeft()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContentLR_C", "ExecuteUbergraph_WBP_OptionSettings_ListContentLR");
+		Func = Class->GetFunction("WBP_OptionSettings_ListContentLR_C", "MoveLeft");
 
-	Params::WBP_OptionSettings_ListContentLR_C_ExecuteUbergraph_WBP_OptionSettings_ListContentLR Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.MoveRight
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettings_ListContentLR_C::MoveRight()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContentLR_C", "MoveRight");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.SelectByIndex
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContentLR_C::SelectByIndex(int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContentLR_C", "SelectByIndex");
+
+	Params::WBP_OptionSettings_ListContentLR_C_SelectByIndex Parms{};
+
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.SetupSelections
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<class FString>&            Selections_0                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const int32                             Current_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OptionSettings_ListContentLR_C::Destruct()
+void UWBP_OptionSettings_ListContentLR_C::SetupSelections(const TArray<class FString>& Selections_0, const int32 Current_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContentLR_C", "Destruct");
+		Func = Class->GetFunction("WBP_OptionSettings_ListContentLR_C", "SetupSelections");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_OptionSettings_ListContentLR_C_SetupSelections Parms{};
 
+	Parms.Selections_0 = std::move(Selections_0);
+	Parms.Current_0 = Current_0;
 
-// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.BndEvt__WBP_OptionSettings_ListContentLR_WBP_OptionSettings_ListContentRArrow_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_OptionSettings_ListContentLR_C::BndEvt__WBP_OptionSettings_ListContentLR_WBP_OptionSettings_ListContentRArrow_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContentLR_C", "BndEvt__WBP_OptionSettings_ListContentLR_WBP_OptionSettings_ListContentRArrow_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OptionSettings_ListContentLR.WBP_OptionSettings_ListContentLR_C.BndEvt__WBP_OptionSettings_ListContentLR_WBP_OptionSettings_ListContentLArrow_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_OptionSettings_ListContentLR_C::BndEvt__WBP_OptionSettings_ListContentLR_WBP_OptionSettings_ListContentLArrow_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContentLR_C", "BndEvt__WBP_OptionSettings_ListContentLR_WBP_OptionSettings_ListContentLArrow_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

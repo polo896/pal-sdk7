@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
+#include "BP_AIAction_CanCombatBase_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Pal_structs.hpp"
-#include "BP_AIAction_CanCombatBase_classes.hpp"
 
 
 namespace SDK
@@ -49,20 +49,20 @@ public:
 
 public:
 	void ActionAbort(class APawn* ControlledPawn);
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionPause(class APawn* ControlledPawn);
 	void ActionPostTick(class APawn* ControlledPawn, float DeltaSeconds);
+	void ActionResume(class APawn* ControlledPawn);
+	void ActionStart(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void CancelDefaultAction();
 	void ExecuteUbergraph_BP_AIAction_NPC_RelaxBase(int32 EntryPoint);
+	void OnSightCheckAsyncCompleted(bool bIncludedPlayer, bool bIncludedAliveNPC, bool bIncludedEdibleDeadNPC, const TArray<class APalCharacter*>& InSightCharacters);
 	void PlayDefaultAction();
 	void SelfIsLeader(bool* IsLeader_0);
 	void SetSightSkipFlag();
-	void カスタムイベント_0();
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
-	void ActionPause(class APawn* ControlledPawn);
-	void ActionResume(class APawn* ControlledPawn);
-	void ActionStart(class APawn* ControlledPawn);
-	void OnSightCheckAsyncCompleted(bool bIncludedPlayer, bool bIncludedAliveNPC, bool bIncludedEdibleDeadNPC, const TArray<class APalCharacter*>& InSightCharacters);
 	void SoundEvent(const struct FVector& EmitLocation);
+	void カスタムイベント_0();
 
 public:
 	static class UClass* StaticClass()

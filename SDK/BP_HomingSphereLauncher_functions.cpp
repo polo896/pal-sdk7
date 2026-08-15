@@ -367,6 +367,20 @@ void ABP_HomingSphereLauncher_C::GetShootInterval(double* Time)
 }
 
 
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.OnPullTrigger
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_HomingSphereLauncher_C::OnPullTrigger()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HomingSphereLauncher_C", "OnPullTrigger");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.OnReleaseTrigger
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:

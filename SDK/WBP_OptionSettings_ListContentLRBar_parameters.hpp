@@ -16,15 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_OptionSettings_ListContentLRBar.WBP_OptionSettings_ListContentLRBar_C.SetActive
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_OptionSettings_ListContentLRBar_C_SetActive final
-{
-public:
-	bool                                          IsActive;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContentLRBar_C_SetActive;
-
 // Function WBP_OptionSettings_ListContentLRBar.WBP_OptionSettings_ListContentLRBar_C.ExecuteUbergraph_WBP_OptionSettings_ListContentLRBar
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_OptionSettings_ListContentLRBar_C_ExecuteUbergraph_WBP_OptionSettings_ListContentLRBar final
@@ -36,6 +27,15 @@ public:
 	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_OptionSettings_ListContentLRBar_C_ExecuteUbergraph_WBP_OptionSettings_ListContentLRBar;
+
+// Function WBP_OptionSettings_ListContentLRBar.WBP_OptionSettings_ListContentLRBar_C.SetActive
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_OptionSettings_ListContentLRBar_C_SetActive final
+{
+public:
+	bool                                          IsActive;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContentLRBar_C_SetActive;
 
 }
 

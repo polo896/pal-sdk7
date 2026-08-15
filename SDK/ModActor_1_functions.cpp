@@ -17,6 +17,102 @@
 namespace SDK
 {
 
+// Function ModActor.ModActor_C.SaveToJson
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ModActor_1::AModActor_C::SaveToJson()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "SaveToJson");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ReceiveTick");
+
+	Params::ModActor_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.PushedStackableUI
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalHUDInGame**                   AsPal_HUDIn_Game                                       (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalUserWidgetStackableUI**       StackableWidget                                        (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+
+class FString ModActor_1::AModActor_C::PushedStackableUI(class APalHUDInGame** AsPal_HUDIn_Game, class UPalUserWidgetStackableUI** StackableWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "PushedStackableUI");
+
+	Params::ModActor_C_PushedStackableUI Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (AsPal_HUDIn_Game != nullptr)
+		*AsPal_HUDIn_Game = Parms.AsPal_HUDIn_Game;
+
+	if (StackableWidget != nullptr)
+		*StackableWidget = Parms.StackableWidget;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function ModActor.ModActor_C.PrintToModLoader
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    Message                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::PrintToModLoader(const class FString& Message)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "PrintToModLoader");
+
+	Params::ModActor_C_PrintToModLoader Parms{};
+
+	Parms.Message = std::move(Message);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.PreBeginPlay
+// (BlueprintCallable, BlueprintEvent)
+
+void ModActor_1::AModActor_C::PreBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "PreBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function ModActor.ModActor_C.PostBeginPlay
 // (BlueprintCallable, BlueprintEvent)
 
@@ -31,8 +127,505 @@ void ModActor_1::AModActor_C::PostBeginPlay()
 }
 
 
+// Function ModActor.ModActor_C.PickUpAllEggs
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ModActor_1::AModActor_C::PickUpAllEggs()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "PickUpAllEggs");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.OnUpdatePalEggArray
+// (BlueprintCallable, BlueprintEvent)
+
+void ModActor_1::AModActor_C::OnUpdatePalEggArray()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "OnUpdatePalEggArray");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.OnUpdateHatchedCharacterDelegate_Event
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectHatchingEggModel*    Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::OnUpdateHatchedCharacterDelegate_Event(class UPalMapObjectHatchingEggModel* Model)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "OnUpdateHatchedCharacterDelegate_Event");
+
+	Params::ModActor_C_OnUpdateHatchedCharacterDelegate_Event Parms{};
+
+	Parms.Model = Model;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.OnReflectWorkAmountDelegate_Event
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkProgress*                 WorkProgress                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::OnReflectWorkAmountDelegate_Event(class UPalWorkProgress* WorkProgress)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "OnReflectWorkAmountDelegate_Event");
+
+	Params::ModActor_C_OnReflectWorkAmountDelegate_Event Parms{};
+
+	Parms.WorkProgress = WorkProgress;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.OnRecievedChatMessageDelegate_Event
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalChatMessage&           Message                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void ModActor_1::AModActor_C::OnRecievedChatMessageDelegate_Event(const struct FPalChatMessage& Message)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "OnRecievedChatMessageDelegate_Event");
+
+	Params::ModActor_C_OnRecievedChatMessageDelegate_Event Parms{};
+
+	Parms.Message = std::move(Message);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.OnPushedStackableUI_Event
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     pushedWidgetID                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::OnPushedStackableUI_Event(const struct FGuid& pushedWidgetID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "OnPushedStackableUI_Event");
+
+	Params::ModActor_C_OnPushedStackableUI_Event Parms{};
+
+	Parms.pushedWidgetID = std::move(pushedWidgetID);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.OnCreateMapObject
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectModel*               MapObjectModel                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Vector                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::OnCreateMapObject(class UPalMapObjectModel* MapObjectModel, const struct FVector& Vector)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "OnCreateMapObject");
+
+	Params::ModActor_C_OnCreateMapObject Parms{};
+
+	Parms.MapObjectModel = MapObjectModel;
+	Parms.Vector = std::move(Vector);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.OnChangeSprintDelegate_Event
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalCharacterMovementComponent*   Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsInSprint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::OnChangeSprintDelegate_Event(class UPalCharacterMovementComponent* Component, bool IsInSprint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "OnChangeSprintDelegate_Event");
+
+	Params::ModActor_C_OnChangeSprintDelegate_Event Parms{};
+
+	Parms.Component = Component;
+	Parms.IsInSprint = IsInSprint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.OnAncientHatcheryReflectWorkAmount
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkProgress*                 WorkProgress                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::OnAncientHatcheryReflectWorkAmount(class UPalWorkProgress* WorkProgress)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "OnAncientHatcheryReflectWorkAmount");
+
+	Params::ModActor_C_OnAncientHatcheryReflectWorkAmount Parms{};
+
+	Parms.WorkProgress = WorkProgress;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.Lua_ModInitialized
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ModActor_1::AModActor_C**         Mod_Actor                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::Lua_ModInitialized(class ModActor_1::AModActor_C** Mod_Actor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "Lua_ModInitialized");
+
+	Params::ModActor_C_Lua_ModInitialized Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Mod_Actor != nullptr)
+		*Mod_Actor = Parms.Mod_Actor;
+}
+
+
+// Function ModActor.ModActor_C.LoadPlayerSettings
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    UId                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// bool                                    Enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::LoadPlayerSettings(const class FString& UId, bool Enabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "LoadPlayerSettings");
+
+	Params::ModActor_C_LoadPlayerSettings Parms{};
+
+	Parms.UId = std::move(UId);
+	Parms.Enabled = Enabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.GivePlayerID
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   ID                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  PlayerId                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::GivePlayerID(int32 ID, int32* PlayerId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "GivePlayerID");
+
+	Params::ModActor_C_GivePlayerID Parms{};
+
+	Parms.ID = ID;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PlayerId != nullptr)
+		*PlayerId = Parms.PlayerId;
+}
+
+
+// Function ModActor.ModActor_C.GetPlayerStateFromLua
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    PlayerUId                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// class APalPlayerState*                  PlayerState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::GetPlayerStateFromLua(const class FString& PlayerUId, class APalPlayerState* PlayerState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "GetPlayerStateFromLua");
+
+	Params::ModActor_C_GetPlayerStateFromLua Parms{};
+
+	Parms.PlayerUId = std::move(PlayerUId);
+	Parms.PlayerState = PlayerState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.GetPlayerManagerFromLua
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalPlayerManager*                Player_Manager_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::GetPlayerManagerFromLua(class UPalPlayerManager* Player_Manager_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "GetPlayerManagerFromLua");
+
+	Params::ModActor_C_GetPlayerManagerFromLua Parms{};
+
+	Parms.Player_Manager_0 = Player_Manager_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.GetPalFromPaldexID
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ModActor_1::AModActor_C::GetPalFromPaldexID()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "GetPalFromPaldexID");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.GetObjectManagerFromLua
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectManager*             Object_Manager_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::GetObjectManagerFromLua(class UPalMapObjectManager* Object_Manager_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "GetObjectManagerFromLua");
+
+	Params::ModActor_C_GetObjectManagerFromLua Parms{};
+
+	Parms.Object_Manager_0 = Object_Manager_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.GetLoggedInPlayerUId
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     ModelPlayerUId                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGuid*                           PlayerUId                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::GetLoggedInPlayerUId(const struct FGuid& ModelPlayerUId, struct FGuid* PlayerUId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "GetLoggedInPlayerUId");
+
+	Params::ModActor_C_GetLoggedInPlayerUId Parms{};
+
+	Parms.ModelPlayerUId = std::move(ModelPlayerUId);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PlayerUId != nullptr)
+		*PlayerUId = std::move(Parms.PlayerUId);
+}
+
+
+// Function ModActor.ModActor_C.GetIncubatorsOnLaunch
+// (BlueprintCallable, BlueprintEvent)
+
+void ModActor_1::AModActor_C::GetIncubatorsOnLaunch()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "GetIncubatorsOnLaunch");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.GetGameStateFromLua
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalGameStateInGame*              Game_State_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::GetGameStateFromLua(class APalGameStateInGame* Game_State_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "GetGameStateFromLua");
+
+	Params::ModActor_C_GetGameStateFromLua Parms{};
+
+	Parms.Game_State_0 = Game_State_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.GetEggOwnerUIdSingle
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectHatchingEggModel*    PalMapObjectHatchingEggModel                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FGuid*                           OwnerUId                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::GetEggOwnerUIdSingle(class UPalMapObjectHatchingEggModel* PalMapObjectHatchingEggModel, struct FGuid* OwnerUId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "GetEggOwnerUIdSingle");
+
+	Params::ModActor_C_GetEggOwnerUIdSingle Parms{};
+
+	Parms.PalMapObjectHatchingEggModel = PalMapObjectHatchingEggModel;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OwnerUId != nullptr)
+		*OwnerUId = std::move(Parms.OwnerUId);
+}
+
+
+// Function ModActor.ModActor_C.GetEggOwnerUIdMulti
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectMultiHatchingEggModel*PalMapObjectMultiHatchingEggModel                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGuid*                           OwnerUId                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::GetEggOwnerUIdMulti(class UPalMapObjectMultiHatchingEggModel* PalMapObjectMultiHatchingEggModel, int32 Index_0, struct FGuid* OwnerUId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "GetEggOwnerUIdMulti");
+
+	Params::ModActor_C_GetEggOwnerUIdMulti Parms{};
+
+	Parms.PalMapObjectMultiHatchingEggModel = PalMapObjectMultiHatchingEggModel;
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OwnerUId != nullptr)
+		*OwnerUId = std::move(Parms.OwnerUId);
+}
+
+
+// Function ModActor.ModActor_C.GetBytes
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// uint8                                   Byte                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::GetBytes(uint8 Byte)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "GetBytes");
+
+	Params::ModActor_C_GetBytes Parms{};
+
+	Parms.Byte = Byte;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.GetBreedFarms
+// (BlueprintCallable, BlueprintEvent)
+
+void ModActor_1::AModActor_C::GetBreedFarms()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "GetBreedFarms");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.FinishInit
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalCharacter*                    InCharacter                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::FinishInit(class APalCharacter* InCharacter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "FinishInit");
+
+	Params::ModActor_C_FinishInit Parms{};
+
+	Parms.InCharacter = InCharacter;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.FindBreedFarmBelongTo
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     InstanceId                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::FindBreedFarmBelongTo(const struct FGuid& InstanceId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "FindBreedFarmBelongTo");
+
+	Params::ModActor_C_FindBreedFarmBelongTo Parms{};
+
+	Parms.InstanceId = std::move(InstanceId);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function ModActor.ModActor_C.ExecuteUbergraph_ModActor
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -46,6 +639,120 @@ void ModActor_1::AModActor_C::ExecuteUbergraph_ModActor(int32 EntryPoint)
 	Params::ModActor_C_ExecuteUbergraph_ModActor Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.EggCleanUp
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectModel*               Target_Breed_Farm                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::EggCleanUp(class UPalMapObjectModel* Target_Breed_Farm)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "EggCleanUp");
+
+	Params::ModActor_C_EggCleanUp Parms{};
+
+	Parms.Target_Breed_Farm = Target_Breed_Farm;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.ChatReceived
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalChatCategory                        Category                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    Sender                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    Sender_Player_UId                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    Message                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::ChatReceived(EPalChatCategory Category, const class FString& Sender, const class FString& Sender_Player_UId, const class FString& Message)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ChatReceived");
+
+	Params::ModActor_C_ChatReceived Parms{};
+
+	Parms.Category = Category;
+	Parms.Sender = std::move(Sender);
+	Parms.Sender_Player_UId = std::move(Sender_Player_UId);
+	Parms.Message = std::move(Message);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.BP_OnWidgetDeactivated_Event
+// (BlueprintCallable, BlueprintEvent)
+
+void ModActor_1::AModActor_C::BP_OnWidgetDeactivated_Event()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "BP_OnWidgetDeactivated_Event");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.AutoPickUpEgg
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectModel*               Target_Egg                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     PlayerUId_In                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGuid*                           PlayerUId                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectModel**              TargetBreedFarm                                        (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectModel**              Egg                                                    (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::AutoPickUpEgg(class UPalMapObjectModel* Target_Egg, const struct FGuid& PlayerUId_In, struct FGuid* PlayerUId, class UPalMapObjectModel** TargetBreedFarm, class UPalMapObjectModel** Egg)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "AutoPickUpEgg");
+
+	Params::ModActor_C_AutoPickUpEgg Parms{};
+
+	Parms.Target_Egg = Target_Egg;
+	Parms.PlayerUId_In = std::move(PlayerUId_In);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PlayerUId != nullptr)
+		*PlayerUId = std::move(Parms.PlayerUId);
+
+	if (TargetBreedFarm != nullptr)
+		*TargetBreedFarm = Parms.TargetBreedFarm;
+
+	if (Egg != nullptr)
+		*Egg = Parms.Egg;
+}
+
+
+// Function ModActor.ModActor_C.AutoHatch
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     PlayerUId                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ModActor_1::AModActor_C::AutoHatch(const struct FGuid& PlayerUId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "AutoHatch");
+
+	Params::ModActor_C_AutoHatch Parms{};
+
+	Parms.PlayerUId = std::move(PlayerUId);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

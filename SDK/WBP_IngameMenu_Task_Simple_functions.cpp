@@ -43,25 +43,27 @@ void UWBP_IngameMenu_Task_Simple_C::AddItemInfo(bool isHideWhenZero, class FName
 }
 
 
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.AddTaslDetailText
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.AddTaskDetailText
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
 // int32                                   nowNum                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   requireNum                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   TaskIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Task_Simple_C::AddTaslDetailText(const class FText& Text, int32 nowNum, int32 requireNum)
+void UWBP_IngameMenu_Task_Simple_C::AddTaskDetailText(const class FText& Text, int32 nowNum, int32 requireNum, int32 TaskIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "AddTaslDetailText");
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "AddTaskDetailText");
 
-	Params::WBP_IngameMenu_Task_Simple_C_AddTaslDetailText Parms{};
+	Params::WBP_IngameMenu_Task_Simple_C_AddTaskDetailText Parms{};
 
 	Parms.Text = std::move(Text);
 	Parms.nowNum = nowNum;
 	Parms.requireNum = requireNum;
+	Parms.TaskIndex = TaskIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -138,7 +140,7 @@ void UWBP_IngameMenu_Task_Simple_C::RemoveAllItemDetail()
 
 
 // Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.RemoveTaskDetailText
-// (Private, BlueprintCallable, BlueprintEvent)
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
 void UWBP_IngameMenu_Task_Simple_C::RemoveTaskDetailText()
 {

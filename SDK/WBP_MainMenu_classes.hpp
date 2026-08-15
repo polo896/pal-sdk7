@@ -39,7 +39,7 @@ public:
 	TMap<EPalUIInGameMainMenuTabType, class UWBP_MainMenu_Tab_C*> TabWidgetMap;                      // 0x0510(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void Anm_Focus(EPalUIInGameMainMenuTabType Type);
+	void Anm_focus(EPalUIInGameMainMenuTabType Type);
 	void Anm_FocusToNormal(EPalUIInGameMainMenuTabType Type);
 	void Anm_Open();
 	void BndEvt__WBP_MainMenu_WBP_Tab_Key_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();

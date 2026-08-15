@@ -17,21 +17,41 @@
 namespace SDK
 {
 
-// Function WBP_OptionSettings_TabButton.WBP_OptionSettings_TabButton_C.SetTabActive
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_OptionSettings_TabButton.WBP_OptionSettings_TabButton_C.BndEvt__WBP_OptionSettings_TabButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OptionSettings_TabButton_C::SetTabActive(bool Active)
+void UWBP_OptionSettings_TabButton_C::BndEvt__WBP_OptionSettings_TabButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_TabButton_C", "SetTabActive");
+		Func = Class->GetFunction("WBP_OptionSettings_TabButton_C", "BndEvt__WBP_OptionSettings_TabButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_OptionSettings_TabButton_C_SetTabActive Parms{};
+	Params::WBP_OptionSettings_TabButton_C_BndEvt__WBP_OptionSettings_TabButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.Active = Active;
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_TabButton.WBP_OptionSettings_TabButton_C.ExecuteUbergraph_WBP_OptionSettings_TabButton
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_TabButton_C::ExecuteUbergraph_WBP_OptionSettings_TabButton(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_TabButton_C", "ExecuteUbergraph_WBP_OptionSettings_TabButton");
+
+	Params::WBP_OptionSettings_TabButton_C_ExecuteUbergraph_WBP_OptionSettings_TabButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -59,41 +79,21 @@ void UWBP_OptionSettings_TabButton_C::SetName(const class FText& Name_0, int32 P
 }
 
 
-// Function WBP_OptionSettings_TabButton.WBP_OptionSettings_TabButton_C.ExecuteUbergraph_WBP_OptionSettings_TabButton
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_OptionSettings_TabButton.WBP_OptionSettings_TabButton_C.SetTabActive
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OptionSettings_TabButton_C::ExecuteUbergraph_WBP_OptionSettings_TabButton(int32 EntryPoint)
+void UWBP_OptionSettings_TabButton_C::SetTabActive(bool Active)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_TabButton_C", "ExecuteUbergraph_WBP_OptionSettings_TabButton");
+		Func = Class->GetFunction("WBP_OptionSettings_TabButton_C", "SetTabActive");
 
-	Params::WBP_OptionSettings_TabButton_C_ExecuteUbergraph_WBP_OptionSettings_TabButton Parms{};
+	Params::WBP_OptionSettings_TabButton_C_SetTabActive Parms{};
 
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_TabButton.WBP_OptionSettings_TabButton_C.BndEvt__WBP_OptionSettings_TabButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_TabButton_C::BndEvt__WBP_OptionSettings_TabButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_TabButton_C", "BndEvt__WBP_OptionSettings_TabButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_OptionSettings_TabButton_C_BndEvt__WBP_OptionSettings_TabButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
+	Parms.Active = Active;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

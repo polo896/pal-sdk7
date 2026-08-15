@@ -37,37 +37,37 @@ public:
 	bool                                          IsGrabed;                                          // 0x0148(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UnbindFromShooterDelegate();
-	void StopShieldAnimation();
-	void SetOwnerCollision(bool IsEnable);
-	void SetDisableMovement(bool Disabled);
-	void ReceiveTick(float DeltaSeconds);
-	void ReceiveBeginPlay();
-	void PlayShieldAnimation();
-	void PlayAttachStartAnimation();
-	void OnNotifyEnd_E5EB2B1E4F79E35A9836F8942DE27180(class FName NotifyName);
-	void OnNotifyEnd_8FC8CA8643E4463FC59843B864E9D2AD(class FName NotifyName);
-	void OnNotifyBegin_E5EB2B1E4F79E35A9836F8942DE27180(class FName NotifyName);
-	void OnNotifyBegin_8FC8CA8643E4463FC59843B864E9D2AD(class FName NotifyName);
-	void OnInterrupted_E5EB2B1E4F79E35A9836F8942DE27180(class FName NotifyName);
-	void OnInterrupted_8FC8CA8643E4463FC59843B864E9D2AD(class FName NotifyName);
-	void OnCompleted_E5EB2B1E4F79E35A9836F8942DE27180(class FName NotifyName);
-	void OnCompleted_8FC8CA8643E4463FC59843B864E9D2AD(class FName NotifyName);
-	void OnCompleteCharacterInitialize(class APalCharacter* InCharacter);
-	void OnChangeWeaponState(bool IsAim, bool IsShooting);
-	void OnBlendOut_E5EB2B1E4F79E35A9836F8942DE27180(class FName NotifyName);
-	void OnBlendOut_8FC8CA8643E4463FC59843B864E9D2AD(class FName NotifyName);
-	void LaunchSheep(double SpeedRate);
-	void ExecuteUbergraph_BP_CoopParam_Shield(int32 EntryPoint);
-	void DoDetach_ToAll(bool IsThrow);
-	void DoDetach(bool IsThrowShield);
-	void DoAttach_ToAll(class APalCharacter* TargetPlayer);
-	void DoAttach(class APalCharacter* AttachTarget);
-	void DetachProcess();
-	void DelayEnableCollision();
-	void ChangeFacial(bool IsCoopActionFace);
-	void ChangeAnimationByWeaponState(bool IsAim, bool IsShoot);
 	void BindToShooterDelegate();
+	void ChangeAnimationByWeaponState(bool IsAim, bool IsShoot);
+	void ChangeFacial(bool IsCoopActionFace);
+	void DelayEnableCollision();
+	void DetachProcess();
+	void DoAttach(class APalCharacter* AttachTarget);
+	void DoAttach_ToAll(class APalCharacter* TargetPlayer);
+	void DoDetach(bool IsThrowShield);
+	void DoDetach_ToAll(bool IsThrow);
+	void ExecuteUbergraph_BP_CoopParam_Shield(int32 EntryPoint);
+	void LaunchSheep(double SpeedRate);
+	void OnBlendOut_8FC8CA8643E4463FC59843B864E9D2AD(class FName NotifyName);
+	void OnBlendOut_E5EB2B1E4F79E35A9836F8942DE27180(class FName NotifyName);
+	void OnChangeWeaponState(bool IsAim, bool IsShooting);
+	void OnCompleteCharacterInitialize(class APalCharacter* InCharacter);
+	void OnCompleted_8FC8CA8643E4463FC59843B864E9D2AD(class FName NotifyName);
+	void OnCompleted_E5EB2B1E4F79E35A9836F8942DE27180(class FName NotifyName);
+	void OnInterrupted_8FC8CA8643E4463FC59843B864E9D2AD(class FName NotifyName);
+	void OnInterrupted_E5EB2B1E4F79E35A9836F8942DE27180(class FName NotifyName);
+	void OnNotifyBegin_8FC8CA8643E4463FC59843B864E9D2AD(class FName NotifyName);
+	void OnNotifyBegin_E5EB2B1E4F79E35A9836F8942DE27180(class FName NotifyName);
+	void OnNotifyEnd_8FC8CA8643E4463FC59843B864E9D2AD(class FName NotifyName);
+	void OnNotifyEnd_E5EB2B1E4F79E35A9836F8942DE27180(class FName NotifyName);
+	void PlayAttachStartAnimation();
+	void PlayShieldAnimation();
+	void ReceiveBeginPlay();
+	void ReceiveTick(float DeltaSeconds);
+	void SetDisableMovement(bool Disabled);
+	void SetOwnerCollision(bool IsEnable);
+	void StopShieldAnimation();
+	void UnbindFromShooterDelegate();
 
 public:
 	static class UClass* StaticClass()

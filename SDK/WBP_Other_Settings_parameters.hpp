@@ -16,14 +16,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_Other_Settings.WBP_Other_Settings_C.OnLanguageChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Other_Settings_C_OnLanguageChanged final
+// Function WBP_Other_Settings.WBP_Other_Settings_C.ApplySettings
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Other_Settings_C_ApplySettings final
 {
 public:
-	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ApplyOriginal;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Other_Settings_C_OnLanguageChanged;
+DUMPER7_ASSERTS_WBP_Other_Settings_C_ApplySettings;
 
 // Function WBP_Other_Settings.WBP_Other_Settings_C.ExecuteUbergraph_WBP_Other_Settings
 // 0x00A8 (0x00A8 - 0x0000)
@@ -58,14 +58,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Other_Settings_C_ExecuteUbergraph_WBP_Other_Settings;
 
-// Function WBP_Other_Settings.WBP_Other_Settings_C.ApplySettings
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Other_Settings_C_ApplySettings final
+// Function WBP_Other_Settings.WBP_Other_Settings_C.OnLanguageChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Other_Settings_C_OnLanguageChanged final
 {
 public:
-	bool                                          ApplyOriginal;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Other_Settings_C_ApplySettings;
+DUMPER7_ASSERTS_WBP_Other_Settings_C_OnLanguageChanged;
 
 }
 

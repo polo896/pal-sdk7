@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function BP_AIAction_NPC_Combat_Gun_Oilrig.BP_AIAction_NPC_Combat_Gun_Oilrig_C.AddAllState
+// (Protected, BlueprintCallable, BlueprintEvent)
+
+void UBP_AIAction_NPC_Combat_Gun_Oilrig_C::AddAllState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_NPC_Combat_Gun_Oilrig_C", "AddAllState");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_AIAction_NPC_Combat_Gun_Oilrig.BP_AIAction_NPC_Combat_Gun_Oilrig_C.IsTargetOutOfOilrigRange
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -35,20 +49,6 @@ void UBP_AIAction_NPC_Combat_Gun_Oilrig_C::IsTargetOutOfOilrigRange(bool* OutRan
 
 	if (OutRange != nullptr)
 		*OutRange = Parms.OutRange;
-}
-
-
-// Function BP_AIAction_NPC_Combat_Gun_Oilrig.BP_AIAction_NPC_Combat_Gun_Oilrig_C.AddAllState
-// (Protected, BlueprintCallable, BlueprintEvent)
-
-void UBP_AIAction_NPC_Combat_Gun_Oilrig_C::AddAllState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_NPC_Combat_Gun_Oilrig_C", "AddAllState");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

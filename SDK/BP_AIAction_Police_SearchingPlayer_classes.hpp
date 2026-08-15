@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "BP_AIAction_CanCombatBase_classes.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Pal_structs.hpp"
 
 
@@ -50,18 +50,18 @@ public:
 	void ActionAbort(class APawn* ControlledPawn);
 	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
 	void ActionPause(class APawn* ControlledPawn);
-	void ActionResume(class APawn* ControlledPawn);
-	void ActionStart(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void ExecuteUbergraph_BP_AIAction_Police_SearchingPlayer(int32 EntryPoint);
 	void GetRunSpeed(double* Speed);
 	void HandleStuck();
 	void MoveToLocation(const struct FVector& GoalLocation);
+	void StartWander();
+	void TickMoveToTargetLocation(class AActor* ControlledPawn, float DeltaTime);
+	void ActionResume(class APawn* ControlledPawn);
+	void ActionStart(class APawn* ControlledPawn);
 	void OnSightCheckAsyncCompleted(bool bIncludedPlayer, bool bIncludedAliveNPC, bool bIncludedEdibleDeadNPC, const TArray<class APalCharacter*>& InSightCharacters);
 	void Sight_Check_and_Response(EPalAIResponseType Current, bool OverrideIsDamage, bool* ChangeNextAction);
 	void SoundEvent(const struct FVector& EmitLocation);
-	void StartWander();
-	void TickMoveToTargetLocation(class AActor* ControlledPawn, float DeltaTime);
 
 public:
 	static class UClass* StaticClass()

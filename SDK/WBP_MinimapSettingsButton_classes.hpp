@@ -18,16 +18,18 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_MinimapSettingsButton.WBP_MinimapSettingsButton_C
-// 0x0018 (0x03E8 - 0x03D0)
+// 0x0020 (0x03F0 - 0x03D0)
 class UWBP_MinimapSettingsButton_C final : public UPalActivatableWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UButton*                                OpenSettingsButton;                                // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBT_MinimapSettings_C*                 ActiveSettingsWidget;                              // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UTextBlock*                             TextBlock;                                         // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBT_MinimapSettings_C*                 ActiveSettingsWidget;                              // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_MinimapSettingsButton(int32 EntryPoint);
+	void Construct();
 	void BndEvt__WBP_MinimapSettingsButton_OpenSettingsButton_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature();
 
 public:

@@ -34,25 +34,25 @@ public:
 	bool                                          IsReleased;                                        // 0x0162(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UnbindCoopReleaseEvent();
-	void StopPartnerSkill();
-	void StartPartnerSkill();
-	void SetupAction(class APawn* ControlledPawn);
-	void SetProtectCharacter(class APalCharacter* RidingCharacter);
-	void OnLanded(class UPalCharacterMovementComponent* Component, const struct FHitResult& Hit);
-	void OnDead(const struct FPalDeadInfo& DeadInfo);
-	void OnDamage(const struct FPalDamageResult& DamageResult);
-	void OnCoopRelease();
-	void onCoopEnd();
-	void ExecuteUbergraph_BP_AIActionProtecting(int32 EntryPoint);
-	void DeadProc(const struct FPalDeadInfo& DeadInfo);
-	void CoopRelease();
-	void CancelCheck();
-	void BindCoopReleaseEvent();
-	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
-	void ActionStart(class APawn* ControlledPawn);
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
 	void ActionAbort(class APawn* ControlledPawn);
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionStart(class APawn* ControlledPawn);
+	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
+	void BindCoopReleaseEvent();
+	void CancelCheck();
+	void CoopRelease();
+	void DeadProc(const struct FPalDeadInfo& DeadInfo);
+	void ExecuteUbergraph_BP_AIActionProtecting(int32 EntryPoint);
+	void onCoopEnd();
+	void OnCoopRelease();
+	void OnDamage(const struct FPalDamageResult& DamageResult);
+	void OnDead(const struct FPalDeadInfo& DeadInfo);
+	void OnLanded(class UPalCharacterMovementComponent* Component, const struct FHitResult& Hit);
+	void SetProtectCharacter(class APalCharacter* RidingCharacter);
+	void SetupAction(class APawn* ControlledPawn);
+	void StartPartnerSkill();
+	void StopPartnerSkill();
+	void UnbindCoopReleaseEvent();
 
 public:
 	static class UClass* StaticClass()

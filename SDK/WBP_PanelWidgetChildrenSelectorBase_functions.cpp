@@ -17,82 +17,176 @@
 namespace SDK
 {
 
-// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.SetEnableChild
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   TargetIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PanelWidgetChildrenSelectorBase_C::Construct()
+void UWBP_PanelWidgetChildrenSelectorBase_C::SetEnableChild(bool IsEnable, int32 TargetIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "Construct");
+		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "SetEnableChild");
+
+	Params::WBP_PanelWidgetChildrenSelectorBase_C_SetEnableChild Parms{};
+
+	Parms.IsEnable = IsEnable;
+	Parms.TargetIndex = TargetIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.SetEnableAllChildren
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PanelWidgetChildrenSelectorBase_C::SetEnableAllChildren(bool IsEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "SetEnableAllChildren");
+
+	Params::WBP_PanelWidgetChildrenSelectorBase_C_SetEnableAllChildren Parms{};
+
+	Parms.IsEnable = IsEnable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.SelectPrev
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PanelWidgetChildrenSelectorBase_C::SelectPrev()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "SelectPrev");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.ExecuteUbergraph_WBP_PanelWidgetChildrenSelectorBase
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.SelectNext
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PanelWidgetChildrenSelectorBase_C::ExecuteUbergraph_WBP_PanelWidgetChildrenSelectorBase(int32 EntryPoint)
+void UWBP_PanelWidgetChildrenSelectorBase_C::SelectNext()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "ExecuteUbergraph_WBP_PanelWidgetChildrenSelectorBase");
+		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "SelectNext");
 
-	Params::WBP_PanelWidgetChildrenSelectorBase_C_ExecuteUbergraph_WBP_PanelWidgetChildrenSelectorBase Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.SelectByIndex
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   FocusIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PanelWidgetChildrenSelectorBase_C::SelectByIndex(int32 FocusIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "SelectByIndex");
+
+	Params::WBP_PanelWidgetChildrenSelectorBase_C_SelectByIndex Parms{};
+
+	Parms.FocusIndex = FocusIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.GetChildrenNum
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.RegisterPanelWidget
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32*                                  ChildrenNum                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPanelWidget**                    PanelWidget                                            (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PanelWidgetChildrenSelectorBase_C::GetChildrenNum(int32* ChildrenNum)
+void UWBP_PanelWidgetChildrenSelectorBase_C::RegisterPanelWidget(class UPanelWidget** PanelWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "GetChildrenNum");
+		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "RegisterPanelWidget");
 
-	Params::WBP_PanelWidgetChildrenSelectorBase_C_GetChildrenNum Parms{};
+	Params::WBP_PanelWidgetChildrenSelectorBase_C_RegisterPanelWidget Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (ChildrenNum != nullptr)
-		*ChildrenNum = Parms.ChildrenNum;
+	if (PanelWidget != nullptr)
+		*PanelWidget = Parms.PanelWidget;
 }
 
 
-// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.GetIndexByWidget
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32*                                  findedIndex                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PanelWidgetChildrenSelectorBase_C::GetIndexByWidget(class UWidget* Widget, int32* findedIndex)
+void UWBP_PanelWidgetChildrenSelectorBase_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "GetIndexByWidget");
+		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "OnInitialized");
 
-	Params::WBP_PanelWidgetChildrenSelectorBase_C_GetIndexByWidget Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Widget = Widget;
+
+// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.IsValidIndex
+// (Protected, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   IsValid                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PanelWidgetChildrenSelectorBase_C::IsValidIndex(int32 Index_0, bool* IsValid)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "IsValidIndex");
+
+	Params::WBP_PanelWidgetChildrenSelectorBase_C_IsValidIndex Parms{};
+
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (findedIndex != nullptr)
-		*findedIndex = Parms.findedIndex;
+	if (IsValid != nullptr)
+		*IsValid = Parms.IsValid;
+}
+
+
+// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.IsEnabeChild
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   IsEnable                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PanelWidgetChildrenSelectorBase_C::IsEnabeChild(int32 Index_0, bool* IsEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "IsEnabeChild");
+
+	Params::WBP_PanelWidgetChildrenSelectorBase_C_IsEnabeChild Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsEnable != nullptr)
+		*IsEnable = Parms.IsEnable;
 }
 
 
@@ -121,176 +215,82 @@ void UWBP_PanelWidgetChildrenSelectorBase_C::GetPanelChildren(bool* IsValidPanel
 }
 
 
-// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.IsEnabeChild
+// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.GetIndexByWidget
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   IsEnable                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32*                                  findedIndex                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PanelWidgetChildrenSelectorBase_C::IsEnabeChild(int32 Index_0, bool* IsEnable)
+void UWBP_PanelWidgetChildrenSelectorBase_C::GetIndexByWidget(class UWidget* Widget, int32* findedIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "IsEnabeChild");
+		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "GetIndexByWidget");
 
-	Params::WBP_PanelWidgetChildrenSelectorBase_C_IsEnabeChild Parms{};
+	Params::WBP_PanelWidgetChildrenSelectorBase_C_GetIndexByWidget Parms{};
 
-	Parms.Index_0 = Index_0;
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (IsEnable != nullptr)
-		*IsEnable = Parms.IsEnable;
+	if (findedIndex != nullptr)
+		*findedIndex = Parms.findedIndex;
 }
 
 
-// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.IsValidIndex
-// (Protected, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.GetChildrenNum
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   IsValid                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  ChildrenNum                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PanelWidgetChildrenSelectorBase_C::IsValidIndex(int32 Index_0, bool* IsValid)
+void UWBP_PanelWidgetChildrenSelectorBase_C::GetChildrenNum(int32* ChildrenNum)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "IsValidIndex");
+		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "GetChildrenNum");
 
-	Params::WBP_PanelWidgetChildrenSelectorBase_C_IsValidIndex Parms{};
-
-	Parms.Index_0 = Index_0;
+	Params::WBP_PanelWidgetChildrenSelectorBase_C_GetChildrenNum Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (IsValid != nullptr)
-		*IsValid = Parms.IsValid;
+	if (ChildrenNum != nullptr)
+		*ChildrenNum = Parms.ChildrenNum;
 }
 
 
-// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.OnInitialized
+// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.ExecuteUbergraph_WBP_PanelWidgetChildrenSelectorBase
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PanelWidgetChildrenSelectorBase_C::ExecuteUbergraph_WBP_PanelWidgetChildrenSelectorBase(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "ExecuteUbergraph_WBP_PanelWidgetChildrenSelectorBase");
+
+	Params::WBP_PanelWidgetChildrenSelectorBase_C_ExecuteUbergraph_WBP_PanelWidgetChildrenSelectorBase Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PanelWidgetChildrenSelectorBase_C::OnInitialized()
+void UWBP_PanelWidgetChildrenSelectorBase_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.RegisterPanelWidget
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPanelWidget**                    PanelWidget                                            (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PanelWidgetChildrenSelectorBase_C::RegisterPanelWidget(class UPanelWidget** PanelWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "RegisterPanelWidget");
-
-	Params::WBP_PanelWidgetChildrenSelectorBase_C_RegisterPanelWidget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PanelWidget != nullptr)
-		*PanelWidget = Parms.PanelWidget;
-}
-
-
-// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.SelectByIndex
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   FocusIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PanelWidgetChildrenSelectorBase_C::SelectByIndex(int32 FocusIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "SelectByIndex");
-
-	Params::WBP_PanelWidgetChildrenSelectorBase_C_SelectByIndex Parms{};
-
-	Parms.FocusIndex = FocusIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.SelectNext
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PanelWidgetChildrenSelectorBase_C::SelectNext()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "SelectNext");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.SelectPrev
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PanelWidgetChildrenSelectorBase_C::SelectPrev()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "SelectPrev");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.SetEnableAllChildren
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PanelWidgetChildrenSelectorBase_C::SetEnableAllChildren(bool IsEnable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "SetEnableAllChildren");
-
-	Params::WBP_PanelWidgetChildrenSelectorBase_C_SetEnableAllChildren Parms{};
-
-	Parms.IsEnable = IsEnable;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PanelWidgetChildrenSelectorBase.WBP_PanelWidgetChildrenSelectorBase_C.SetEnableChild
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   TargetIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PanelWidgetChildrenSelectorBase_C::SetEnableChild(bool IsEnable, int32 TargetIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PanelWidgetChildrenSelectorBase_C", "SetEnableChild");
-
-	Params::WBP_PanelWidgetChildrenSelectorBase_C_SetEnableChild Parms{};
-
-	Parms.IsEnable = IsEnable;
-	Parms.TargetIndex = TargetIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -17,15 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_PalDebugInfo.WBP_PalDebugInfo_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_PalDebugInfo.WBP_PalDebugInfo_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalDebugInfo_C::Construct()
+void UWBP_PalDebugInfo_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalDebugInfo_C", "Construct");
+		Func = Class->GetFunction("WBP_PalDebugInfo_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,15 +51,15 @@ void UWBP_PalDebugInfo_C::ExecuteUbergraph_WBP_PalDebugInfo(int32 EntryPoint)
 }
 
 
-// Function WBP_PalDebugInfo.WBP_PalDebugInfo_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalDebugInfo.WBP_PalDebugInfo_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalDebugInfo_C::OnSetup()
+void UWBP_PalDebugInfo_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalDebugInfo_C", "OnSetup");
+		Func = Class->GetFunction("WBP_PalDebugInfo_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

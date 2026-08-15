@@ -12,9 +12,9 @@
 
 #include "Pal_structs.hpp"
 #include "E_PalUIWorkSpaceDisplayCategory_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CommonInput_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
 
 

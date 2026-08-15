@@ -46,8 +46,8 @@ public:
 	class UPalForwardPathRecoveryModule*          CallFunc_SpawnObject_ReturnValue;                  // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_AIAction_Visitor_TravelToBaseCamp_Guardman_C* K2Node_CustomEvent_Action_1;             // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_AIAction_Visitor_WaitInBaseCamp_C*  K2Node_CustomEvent_Action;                         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_AIAction_Visitor_TravelToBaseCamp_Guardman_C* K2Node_CustomEvent_action_1;             // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_AIAction_Visitor_WaitInBaseCamp_C*  K2Node_CustomEvent_action;                         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalDeadInfo                           K2Node_CustomEvent_DeadInfo;                       // 0x0040(0x0050)(NoDestructor)
@@ -85,6 +85,16 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_NPCAIController_Visitor_Guardman_C_FindTargetPlayer;
+
+// Function BP_NPCAIController_Visitor_Guardman.BP_NPCAIController_Visitor_Guardman_C.ForceEscapeStartFortOutSide
+// 0x0010 (0x0010 - 0x0000)
+struct BP_NPCAIController_Visitor_Guardman_C_ForceEscapeStartFortOutSide final
+{
+public:
+	class AActor*                                 StartActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 TargetActor;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NPCAIController_Visitor_Guardman_C_ForceEscapeStartFortOutSide;
 
 // Function BP_NPCAIController_Visitor_Guardman.BP_NPCAIController_Visitor_Guardman_C.OnDeadByVisitorLeader
 // 0x0050 (0x0050 - 0x0000)
@@ -188,16 +198,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_NPCAIController_Visitor_Guardman_C_StartWaitAction;
-
-// Function BP_NPCAIController_Visitor_Guardman.BP_NPCAIController_Visitor_Guardman_C.ForceEscapeStartFortOutSide
-// 0x0010 (0x0010 - 0x0000)
-struct BP_NPCAIController_Visitor_Guardman_C_ForceEscapeStartFortOutSide final
-{
-public:
-	class AActor*                                 StartActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 TargetActor;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NPCAIController_Visitor_Guardman_C_ForceEscapeStartFortOutSide;
 
 // Function BP_NPCAIController_Visitor_Guardman.BP_NPCAIController_Visitor_Guardman_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)

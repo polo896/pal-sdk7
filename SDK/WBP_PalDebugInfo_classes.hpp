@@ -30,9 +30,9 @@ public:
 	TMap<class FString, class FString>            NetModeDisplayTextMap;                             // 0x0500(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_PalDebugInfo(int32 EntryPoint);
 	void OnSetup();
+	void ExecuteUbergraph_WBP_PalDebugInfo(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

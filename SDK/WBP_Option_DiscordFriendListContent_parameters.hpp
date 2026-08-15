@@ -16,6 +16,15 @@
 namespace SDK::Params
 {
 
+// Function WBP_Option_DiscordFriendListContent.WBP_Option_DiscordFriendListContent_C.CallOnClick
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Option_DiscordFriendListContent_C_CallOnClick final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Option_DiscordFriendListContent_C_CallOnClick;
+
 // Function WBP_Option_DiscordFriendListContent.WBP_Option_DiscordFriendListContent_C.ExecuteUbergraph_WBP_Option_DiscordFriendListContent
 // 0x0100 (0x0100 - 0x0000)
 struct WBP_Option_DiscordFriendListContent_C_ExecuteUbergraph_WBP_Option_DiscordFriendListContent final
@@ -53,15 +62,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Option_DiscordFriendListContent_C_ExecuteUbergraph_WBP_Option_DiscordFriendListContent;
-
-// Function WBP_Option_DiscordFriendListContent.WBP_Option_DiscordFriendListContent_C.CallOnClick
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Option_DiscordFriendListContent_C_CallOnClick final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Option_DiscordFriendListContent_C_CallOnClick;
 
 // Function WBP_Option_DiscordFriendListContent.WBP_Option_DiscordFriendListContent_C.OnFail_26C481AD42BFA9C2F688768E030CB33E
 // 0x0008 (0x0008 - 0x0000)

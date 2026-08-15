@@ -36,20 +36,20 @@ public:
 	TArray<bool>                                  RoundStepHistoryCache;                             // 0x0168(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void OnChildActionFinished(class UPawnAction* action, EPawnActionResult WithResult);
-	void IsStepCountMax(bool* IsMax);
-	void IsFirstCheckRight(bool* IsRight);
-	void GetStepLocation(bool IsRight, struct FVector* StepLocation);
-	void GetSelfPalBlackBoard(class UBP_PalAIBlackboard_Common_C** PalBlackBoard);
-	void GetPlayMontage(bool IsRight, class UAnimMontage** Montage);
-	void GetPlayAction(bool IsRight, class UClass** actionClass);
-	void FindStepLocation(struct FVector* Location, bool* CanStep, bool* IsRight);
-	void ExecuteUbergraph_BP_AIAction_RoundStep(int32 EntryPoint);
-	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
-	void ActionStart(class APawn* ControlledPawn);
-	void ActionPause(class APawn* ControlledPawn);
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
 	void ActionAbort(class APawn* ControlledPawn);
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionPause(class APawn* ControlledPawn);
+	void ActionStart(class APawn* ControlledPawn);
+	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
+	void ExecuteUbergraph_BP_AIAction_RoundStep(int32 EntryPoint);
+	void FindStepLocation(struct FVector* Location, bool* CanStep, bool* IsRight);
+	void GetPlayAction(bool IsRight, class UClass** actionClass);
+	void GetPlayMontage(bool IsRight, class UAnimMontage** Montage);
+	void GetSelfPalBlackBoard(class UBP_PalAIBlackboard_Common_C** PalBlackBoard);
+	void GetStepLocation(bool IsRight, struct FVector* StepLocation);
+	void IsFirstCheckRight(bool* IsRight);
+	void IsStepCountMax(bool* IsMax);
+	void OnChildActionFinished(class UPawnAction* action, EPawnActionResult WithResult);
 
 public:
 	static class UClass* StaticClass()

@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
+#include "BP_MonsterAIControllerBase_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "BP_MonsterAIControllerBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MonsterAIController_RaidBoss.BP_MonsterAIController_RaidBoss_C
-// 0x0030 (0x05C0 - 0x0590)
+// 0x0038 (0x05C8 - 0x0590)
 class ABP_MonsterAIController_RaidBoss_C : public ABP_MonsterAIControllerBase_C
 {
 public:
@@ -30,6 +30,7 @@ public:
 	struct FGuid                                  TargetBaseCampID;                                  // 0x05A4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5B4[0x4];                                      // 0x05B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UPalAIActionBase>           CombatAIActionClass;                               // 0x05B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	bool                                          UseInitialHPLock;                                  // 0x05C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void DeleteDeadBody(const struct FPalDeadInfo& DeadInfo);

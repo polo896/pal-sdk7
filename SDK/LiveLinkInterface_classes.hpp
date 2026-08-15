@@ -18,26 +18,6 @@
 namespace SDK
 {
 
-// Class LiveLinkInterface.LiveLinkController
-// 0x0000 (0x0028 - 0x0028)
-class ULiveLinkController final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("LiveLinkController")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"LiveLinkController")
-	}
-	static class ULiveLinkController* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULiveLinkController>();
-	}
-};
-DUMPER7_ASSERTS_ULiveLinkController;
-
 // Class LiveLinkInterface.LiveLinkFramePreProcessor
 // 0x0000 (0x0028 - 0x0028)
 class ULiveLinkFramePreProcessor : public UObject
@@ -77,6 +57,26 @@ public:
 	}
 };
 DUMPER7_ASSERTS_ULiveLinkFrameInterpolationProcessor;
+
+// Class LiveLinkInterface.LiveLinkRole
+// 0x0000 (0x0028 - 0x0028)
+class ULiveLinkRole : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LiveLinkRole")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkRole")
+	}
+	static class ULiveLinkRole* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULiveLinkRole>();
+	}
+};
+DUMPER7_ASSERTS_ULiveLinkRole;
 
 // Class LiveLinkInterface.LiveLinkSourceSettings
 // 0x0080 (0x00A8 - 0x0028)
@@ -173,25 +173,25 @@ public:
 };
 DUMPER7_ASSERTS_ULiveLinkFrameTranslator;
 
-// Class LiveLinkInterface.LiveLinkRole
+// Class LiveLinkInterface.LiveLinkController
 // 0x0000 (0x0028 - 0x0028)
-class ULiveLinkRole : public UObject
+class ULiveLinkController final : public UObject
 {
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("LiveLinkRole")
+		STATIC_CLASS_IMPL("LiveLinkController")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"LiveLinkRole")
+		STATIC_NAME_IMPL(L"LiveLinkController")
 	}
-	static class ULiveLinkRole* GetDefaultObj()
+	static class ULiveLinkController* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<ULiveLinkRole>();
+		return GetDefaultObjImpl<ULiveLinkController>();
 	}
 };
-DUMPER7_ASSERTS_ULiveLinkRole;
+DUMPER7_ASSERTS_ULiveLinkController;
 
 // Class LiveLinkInterface.LiveLinkCurveRemapSettings
 // 0x0050 (0x00F8 - 0x00A8)

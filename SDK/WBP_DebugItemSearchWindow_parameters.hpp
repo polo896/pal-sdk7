@@ -17,15 +17,67 @@
 namespace SDK::Params
 {
 
-// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.BndEvt__WBP_DebugItemSearchWindow_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_DebugItemSearchWindow_C_BndEvt__WBP_DebugItemSearchWindow_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature final
+// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.OnClickedSlotInternal
+// 0x0198 (0x0198 - 0x0000)
+struct WBP_DebugItemSearchWindow_C_OnClickedSlotInternal final
 {
 public:
 	class UWBP_PalItemSlotButtonBase_C*           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         itemNum;                                           // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalItemAndNum                         CallFunc_GetItemAndNum_ItemAndNum;                 // 0x000C(0x002C)(NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x0040(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0058(0x0050)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x00A8(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00C0(0x0050)(HasGetValueTypeHash)
+	float                                         CallFunc_GetValue_ReturnValue;                     // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0118(0x0010)(ReferenceParm)
+	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0130(0x0018)()
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0150(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0160(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UPalItemIDManager*                      CallFunc_GetItemIDManager_ReturnValue;             // 0x0170(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalStaticItemDataBase*                 CallFunc_GetStaticItemData_ReturnValue;            // 0x0178(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetMaxStackCount_ReturnValue;             // 0x0180(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsChecked_ReturnValue;                    // 0x0184(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0185(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_186[0x2];                                      // 0x0186(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0188(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FTrunc_A_ImplicitCast;                    // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_DebugItemSearchWindow_C_BndEvt__WBP_DebugItemSearchWindow_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature;
+DUMPER7_ASSERTS_WBP_DebugItemSearchWindow_C_OnClickedSlotInternal;
+
+// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.OnCancelAction
+// 0x0003 (0x0003 - 0x0000)
+struct WBP_DebugItemSearchWindow_C_OnCancelAction final
+{
+public:
+	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_DebugItemSearchWindow_C_OnCancelAction;
+
+// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.ExecuteUbergraph_WBP_DebugItemSearchWindow
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_DebugItemSearchWindow_C_ExecuteUbergraph_WBP_DebugItemSearchWindow final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_PalItemSlotButtonBase_C*           K2Node_ComponentBoundEvent_Slot;                   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalItemSlotPressType                         K2Node_ComponentBoundEvent_pressType;              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Update_Item_Stack_Info_SlotUpdated;       // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0024(0x0004)(NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_DebugItemSearchWindow_C_ExecuteUbergraph_WBP_DebugItemSearchWindow;
 
 // Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.CreateItemMap
 // 0x0298 (0x0298 - 0x0000)
@@ -68,67 +120,15 @@ public:
 };
 DUMPER7_ASSERTS_WBP_DebugItemSearchWindow_C_CreateItemMap;
 
-// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.ExecuteUbergraph_WBP_DebugItemSearchWindow
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_DebugItemSearchWindow_C_ExecuteUbergraph_WBP_DebugItemSearchWindow final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_PalItemSlotButtonBase_C*           K2Node_ComponentBoundEvent_Slot;                   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalItemSlotPressType                         K2Node_ComponentBoundEvent_pressType;              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Update_Item_Stack_Info_SlotUpdated;       // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0024(0x0004)(NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_DebugItemSearchWindow_C_ExecuteUbergraph_WBP_DebugItemSearchWindow;
-
-// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.OnCancelAction
-// 0x0003 (0x0003 - 0x0000)
-struct WBP_DebugItemSearchWindow_C_OnCancelAction final
-{
-public:
-	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_DebugItemSearchWindow_C_OnCancelAction;
-
-// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.OnClickedSlotInternal
-// 0x0198 (0x0198 - 0x0000)
-struct WBP_DebugItemSearchWindow_C_OnClickedSlotInternal final
+// Function WBP_DebugItemSearchWindow.WBP_DebugItemSearchWindow_C.BndEvt__WBP_DebugItemSearchWindow_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_DebugItemSearchWindow_C_BndEvt__WBP_DebugItemSearchWindow_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature final
 {
 public:
 	class UWBP_PalItemSlotButtonBase_C*           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         itemNum;                                           // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalItemAndNum                         CallFunc_GetItemAndNum_ItemAndNum;                 // 0x000C(0x002C)(NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x0040(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0058(0x0050)(HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x00A8(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00C0(0x0050)(HasGetValueTypeHash)
-	float                                         CallFunc_GetValue_ReturnValue;                     // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0118(0x0010)(ReferenceParm)
-	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0130(0x0018)()
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0150(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0160(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UPalItemIDManager*                      CallFunc_GetItemIDManager_ReturnValue;             // 0x0170(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalStaticItemDataBase*                 CallFunc_GetStaticItemData_ReturnValue;            // 0x0178(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetMaxStackCount_ReturnValue;             // 0x0180(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsChecked_ReturnValue;                    // 0x0184(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0185(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_186[0x2];                                      // 0x0186(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0188(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_FTrunc_A_ImplicitCast;                    // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_DebugItemSearchWindow_C_OnClickedSlotInternal;
+DUMPER7_ASSERTS_WBP_DebugItemSearchWindow_C_BndEvt__WBP_DebugItemSearchWindow_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature;
 
 }
 

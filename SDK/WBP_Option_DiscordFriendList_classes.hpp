@@ -33,10 +33,10 @@ public:
 	class UWBP_PalCommonScrollList_C*             WBP_PalCommonScrollList;                           // 0x02B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void UpdateUI();
-	void ExecuteUbergraph_WBP_Option_DiscordFriendList(int32 EntryPoint);
-	void Destruct();
 	void Construct();
+	void Destruct();
+	void ExecuteUbergraph_WBP_Option_DiscordFriendList(int32 EntryPoint);
+	void UpdateUI();
 
 public:
 	static class UClass* StaticClass()

@@ -679,6 +679,26 @@ void UBP_AIAction_CombatPal_C::PlayWazaDarknessStatus()
 }
 
 
+// Function BP_AIAction_CombatPal.BP_AIAction_CombatPal_C.ProcessTurnTimer
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_CombatPal_C::ProcessTurnTimer(double DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_CombatPal_C", "ProcessTurnTimer");
+
+	Params::BP_AIAction_CombatPal_C_ProcessTurnTimer Parms{};
+
+	Parms.DeltaTime = DeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_AIAction_CombatPal.BP_AIAction_CombatPal_C.ProcSideMove
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 

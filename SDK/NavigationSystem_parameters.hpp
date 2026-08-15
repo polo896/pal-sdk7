@@ -17,15 +17,6 @@
 namespace SDK::Params
 {
 
-// Function NavigationSystem.NavRelevantComponent.SetNavigationRelevancy
-// 0x0001 (0x0001 - 0x0000)
-struct NavRelevantComponent_SetNavigationRelevancy final
-{
-public:
-	bool                                          bRelevant;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_NavRelevantComponent_SetNavigationRelevancy;
-
 // Function NavigationSystem.NavigationSystemV1.FindPathToActorSynchronously
 // 0x0048 (0x0048 - 0x0000)
 struct NavigationSystemV1_FindPathToActorSynchronously final
@@ -352,6 +343,15 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_NavigationPath_IsValid;
+
+// Function NavigationSystem.NavRelevantComponent.SetNavigationRelevancy
+// 0x0001 (0x0001 - 0x0000)
+struct NavRelevantComponent_SetNavigationRelevancy final
+{
+public:
+	bool                                          bRelevant;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_NavRelevantComponent_SetNavigationRelevancy;
 
 // Function NavigationSystem.NavModifierComponent.SetAreaClass
 // 0x0008 (0x0008 - 0x0000)

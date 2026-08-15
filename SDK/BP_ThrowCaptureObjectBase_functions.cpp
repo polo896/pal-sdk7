@@ -17,24 +17,23 @@
 namespace SDK
 {
 
-// Function BP_ThrowCaptureObjectBase.BP_ThrowCaptureObjectBase_C.GetBodyClass
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_ThrowCaptureObjectBase.BP_ThrowCaptureObjectBase_C.SetCaptureLevel
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UClass**                          bodyClass                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   Level                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ThrowCaptureObjectBase_C::GetBodyClass(class UClass** bodyClass)
+void ABP_ThrowCaptureObjectBase_C::SetCaptureLevel(int32 Level)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ThrowCaptureObjectBase_C", "GetBodyClass");
+		Func = Class->GetFunction("BP_ThrowCaptureObjectBase_C", "SetCaptureLevel");
 
-	Params::BP_ThrowCaptureObjectBase_C_GetBodyClass Parms{};
+	Params::BP_ThrowCaptureObjectBase_C_SetCaptureLevel Parms{};
+
+	Parms.Level = Level;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (bodyClass != nullptr)
-		*bodyClass = Parms.bodyClass;
 }
 
 
@@ -59,23 +58,24 @@ void ABP_ThrowCaptureObjectBase_C::GetCaptureLevel(int32* Level)
 }
 
 
-// Function BP_ThrowCaptureObjectBase.BP_ThrowCaptureObjectBase_C.SetCaptureLevel
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ThrowCaptureObjectBase.BP_ThrowCaptureObjectBase_C.GetBodyClass
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   Level                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass**                          bodyClass                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ThrowCaptureObjectBase_C::SetCaptureLevel(int32 Level)
+void ABP_ThrowCaptureObjectBase_C::GetBodyClass(class UClass** bodyClass)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ThrowCaptureObjectBase_C", "SetCaptureLevel");
+		Func = Class->GetFunction("BP_ThrowCaptureObjectBase_C", "GetBodyClass");
 
-	Params::BP_ThrowCaptureObjectBase_C_SetCaptureLevel Parms{};
-
-	Parms.Level = Level;
+	Params::BP_ThrowCaptureObjectBase_C_GetBodyClass Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (bodyClass != nullptr)
+		*bodyClass = Parms.bodyClass;
 }
 
 }

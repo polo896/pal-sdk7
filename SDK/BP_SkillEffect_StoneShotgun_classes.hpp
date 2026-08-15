@@ -29,10 +29,10 @@ public:
 	int32                                         HightShotNum;                                      // 0x044C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnInitialize();
-	void OnAttackDelegate_イベント_0(class AActor* Defencer, const struct FPalDamageInfo& DamageInfo, int32 HitCount, class UPrimitiveComponent* AttackerComponent);
-	void GetBulletTransform(TArray<struct FTransform>* Result);
 	void ExecuteUbergraph_BP_SkillEffect_StoneShotgun(int32 EntryPoint);
+	void GetBulletTransform(TArray<struct FTransform>* Result);
+	void OnAttackDelegate_イベント_0(class AActor* Defencer, const struct FPalDamageInfo& DamageInfo, int32 HitCount, class UPrimitiveComponent* AttackerComponent);
+	void OnInitialize();
 
 public:
 	static class UClass* StaticClass()

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "EPalUIPalInfoType_structs.hpp"
 #include "Pal_structs.hpp"
 #include "FPalUIPalInfoDisplayData_structs.hpp"
+#include "EPalUIPalInfoType_structs.hpp"
 #include "Engine_structs.hpp"
 
 

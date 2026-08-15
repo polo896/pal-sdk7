@@ -156,27 +156,6 @@ void ABP_OverheatRifle_C::GetMuzzleEffectAttached(class UNiagaraSystem** Effect)
 }
 
 
-// Function BP_OverheatRifle.BP_OverheatRifle_C.GetMuzzleLocation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FVector*                         MuzzleLocation                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_OverheatRifle_C::GetMuzzleLocation(struct FVector* MuzzleLocation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "GetMuzzleLocation");
-
-	Params::BP_OverheatRifle_C_GetMuzzleLocation Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (MuzzleLocation != nullptr)
-		*MuzzleLocation = std::move(Parms.MuzzleLocation);
-}
-
-
 // Function BP_OverheatRifle.BP_OverheatRifle_C.IsOverHeated
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -311,6 +290,27 @@ void ABP_OverheatRifle_C::TickCoolDown(double DeltaTime)
 	Parms.DeltaTime = DeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.GetMuzzleLocation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FVector*                         MuzzleLocation                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_OverheatRifle_C::GetMuzzleLocation(struct FVector* MuzzleLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_OverheatRifle_C", "GetMuzzleLocation");
+
+	Params::BP_OverheatRifle_C_GetMuzzleLocation Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (MuzzleLocation != nullptr)
+		*MuzzleLocation = std::move(Parms.MuzzleLocation);
 }
 
 

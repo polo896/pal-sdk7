@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
-#include "Pal_classes.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "ABP_MonsterBase_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Pal_structs.hpp"
+#include "Pal_classes.hpp"
 #include "PhysicsCore_structs.hpp"
 
 
@@ -193,11 +193,11 @@ public:
 	struct FWeaponAnimationInfo                   WeaponAnimInfo;                                    // 0x3F80(0x0300)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FVector2D                              CameraVelocityXY;                                  // 0x4280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               AimRotator;                                        // 0x4290(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          IsLookatEnable;                                    // 0x42A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsLookAtEnable;                                    // 0x42A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_42A9[0x7];                                     // 0x42A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                LookAtTarget;                                      // 0x42B0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        LookatInTime;                                      // 0x42C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        LookatOutTime;                                     // 0x42D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        LookAtInTime;                                      // 0x42C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        LookAtOutTime;                                     // 0x42D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsJumpPreliminary;                                 // 0x42D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsSkipJumpStart;                                   // 0x42D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_42DA[0x6];                                     // 0x42DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])

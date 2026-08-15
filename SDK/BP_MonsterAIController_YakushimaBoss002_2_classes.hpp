@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MonsterAIController_YakushimaBoss002_2.BP_MonsterAIController_YakushimaBoss002_2_C
-// 0x0000 (0x05E0 - 0x05E0)
+// 0x0000 (0x05E8 - 0x05E8)
 class ABP_MonsterAIController_YakushimaBoss002_2_C final : public ABP_MonsterAIController_YakushimaBoss002_C
 {
 public:

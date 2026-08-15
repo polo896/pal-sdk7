@@ -12,72 +12,39 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "InputCore_structs.hpp"
-#include "Pal_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass ModActor.ModActor_C
-// 0x03B0 (0x0640 - 0x0290)
+// 0x0068 (0x02F8 - 0x0290)
 class ModActor_3::AModActor_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0298(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class FString                                 ModAuthor;                                         // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class FString                                 ModVersion;                                        // 0x02B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class FString                                 ModDescription;                                    // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class UWBP_GameSettingUI_C*                   GameSettingUI;                                     // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<class FString>                         UISettingNames;                                    // 0x02D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class FString, class FText>              SingleMultiServerEN;                               // 0x02E8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class FString, class FText>              SingleMultiServerKR;                               // 0x0338(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class FString, class FText>              InformationEN;                                     // 0x0388(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class FString, class FText>              InformationKR;                                     // 0x03D8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class FString, bool>                     IsFloatValue;                                      // 0x0428(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class FString, bool>                     IsApplyValue;                                      // 0x0478(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class FString, double>                   FloatValue;                                        // 0x04C8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class FString, int32>                    IntegerValue;                                      // 0x0518(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UWBP_GameSettingRow_C*                  GameSettingRow;                                    // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<class APalBuildObjectFarmBlockV2*>     FarmV2Object;                                      // 0x0570(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	bool                                          IsOpen;                                            // 0x0580(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_581[0x7];                                      // 0x0581(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   NewKey;                                            // 0x0588(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	struct FKey                                   NewAltCtrlShift;                                   // 0x05A0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void()>              InstantHarvest;                                    // 0x05B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              PalBoxNumPage;                                     // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              PalBoxNumSlot;                                     // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TArray<class APalCharacter*>                  AllPlayes;                                         // 0x05E8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class APalBuildObjectPalStorage*>      AllPalStorage;                                     // 0x05F8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TMulticastInlineDelegate<void(const struct FInputActionKeyMapping& KeyMapping)> InputKey;        // 0x0608(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FInputActionKeyMapping                 KeyAction;                                         // 0x0618(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UObject*>                        LoadedAssetsTemp;                                  // 0x02A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class ABP_Fetcher_C*>                  FetcherList;                                       // 0x02B0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	int32                                         LastClickedDropdownIndex;                          // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C4[0x4];                                      // 0x02C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 LastClickedDropdownValue;                          // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class UScrollBox*                             PendingScrollBox;                                  // 0x02D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FString                                 PendingOptions;                                    // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	int32                                         CurrentPopulateIndex;                              // 0x02F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UIVisible();
-	void SvaeButtonPressedEvent();
-	void SaveJsonFile();
+	void RequestBatchAsyncLoad(const TArray<class FString>& AssetPaths, class UObject* Requester);
+	void ReEnableClicks();
 	void ReceiveBeginPlay();
 	void PrintToModLoader(const class FString& Message);
-	void PostBeginPlay();
-	void PlayerInitializeEvent();
-	void PalBoxSlot(int32 Number);
-	void PalBoxPage(int32 Number);
-	void PalBoxNumPageslotEvent();
-	void PalBoxNumPageEvent();
-	void New_Key_Mapping();
-	void MapObjectInitializeEvent();
-	void LoadUI();
-	void LoadJsonFile();
-	void KeyChangesEvent(const struct FInputChord& SelectedKey);
-	void InstantHaversEvent();
-	void InstantCrop(class APalMapObject* MapObejct);
-	void InpActEvt_AnyKey_K2Node_InputKeyEvent_0(const struct FKey& Key);
-	void HButtonPressedEvent();
-	void GetValue();
+	void OnCompleted_Event(class UObject* Requester, const TArray<class UObject*>& LoadedAssets);
+	void OnClicked_Event();
+	void GetAndRemoveLoadedAssets(const class UObject*& Requester, TArray<class UObject*>* OutAssets);
+	void GetAllLoadedAssets(TArray<class UObject*>* OutAssets);
 	void ExecuteUbergraph_ModActor(int32 EntryPoint);
-	void CreateJsonFile();
-	void ClearSetting();
+	void BP_PopulateDropdownList_F(class UScrollBox* TargetScrollBox, TArray<class FString>& OptionsList);
+	void BP_PopulateDropdownList(class UScrollBox* TargetScrollBox, TArray<class FString>& OptionsList);
 
 public:
 	static class UClass* StaticClass()

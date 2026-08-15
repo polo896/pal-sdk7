@@ -98,6 +98,28 @@ void ABP_NPCAIController_Visitor_Guardman_C::FindTargetPlayer(class AActor** Tar
 }
 
 
+// Function BP_NPCAIController_Visitor_Guardman.BP_NPCAIController_Visitor_Guardman_C.ForceEscapeStartFortOutSide
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           StartActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NPCAIController_Visitor_Guardman_C::ForceEscapeStartFortOutSide(class AActor* StartActor, class AActor* TargetActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAIController_Visitor_Guardman_C", "ForceEscapeStartFortOutSide");
+
+	Params::BP_NPCAIController_Visitor_Guardman_C_ForceEscapeStartFortOutSide Parms{};
+
+	Parms.StartActor = StartActor;
+	Parms.TargetActor = TargetActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_NPCAIController_Visitor_Guardman.BP_NPCAIController_Visitor_Guardman_C.OnArrivedTargetPoint
 // (BlueprintCallable, BlueprintEvent)
 
@@ -281,28 +303,6 @@ void ABP_NPCAIController_Visitor_Guardman_C::StartWaitAction()
 		Func = Class->GetFunction("BP_NPCAIController_Visitor_Guardman_C", "StartWaitAction");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCAIController_Visitor_Guardman.BP_NPCAIController_Visitor_Guardman_C.ForceEscapeStartFortOutSide
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           StartActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NPCAIController_Visitor_Guardman_C::ForceEscapeStartFortOutSide(class AActor* StartActor, class AActor* TargetActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAIController_Visitor_Guardman_C", "ForceEscapeStartFortOutSide");
-
-	Params::BP_NPCAIController_Visitor_Guardman_C_ForceEscapeStartFortOutSide Parms{};
-
-	Parms.StartActor = StartActor;
-	Parms.TargetActor = TargetActor;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

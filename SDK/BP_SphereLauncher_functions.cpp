@@ -332,6 +332,20 @@ void ABP_SphereLauncher_C::GetShootInterval(double* Time)
 }
 
 
+// Function BP_SphereLauncher.BP_SphereLauncher_C.OnPullTrigger
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_SphereLauncher_C::OnPullTrigger()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SphereLauncher_C", "OnPullTrigger");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_SphereLauncher.BP_SphereLauncher_C.OnShoot
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:

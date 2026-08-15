@@ -27,19 +27,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_MonsterAIController_YakushimaBoss001_Green_C_ExecuteUbergraph_BP_MonsterAIController_YakushimaBoss001_Green;
 
-// Function BP_MonsterAIController_YakushimaBoss001_Green.BP_MonsterAIController_YakushimaBoss001_Green_C.GetTargetCampID
-// 0x0034 (0x0034 - 0x0000)
-struct BP_MonsterAIController_YakushimaBoss001_Green_C_GetTargetCampID final
-{
-public:
-	struct FGuid                                  campID;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_GetTargetCampID_CampID;                   // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  CallFunc_GetTargetCampID_CampID_1;                 // 0x0024(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_MonsterAIController_YakushimaBoss001_Green_C_GetTargetCampID;
-
 // Function BP_MonsterAIController_YakushimaBoss001_Green.BP_MonsterAIController_YakushimaBoss001_Green_C.IsLeftHand
 // 0x0001 (0x0001 - 0x0000)
 struct BP_MonsterAIController_YakushimaBoss001_Green_C_IsLeftHand final
@@ -68,6 +55,19 @@ public:
 	class ABP_MonsterAIController_YakushimaBoss002_C* ParentController_0;                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_MonsterAIController_YakushimaBoss001_Green_C_SetParentController;
+
+// Function BP_MonsterAIController_YakushimaBoss001_Green.BP_MonsterAIController_YakushimaBoss001_Green_C.GetTargetCampID
+// 0x0034 (0x0034 - 0x0000)
+struct BP_MonsterAIController_YakushimaBoss001_Green_C_GetTargetCampID final
+{
+public:
+	struct FGuid                                  campID;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_GetTargetCampID_CampID;                   // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  CallFunc_GetTargetCampID_CampID_1;                 // 0x0024(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MonsterAIController_YakushimaBoss001_Green_C_GetTargetCampID;
 
 }
 

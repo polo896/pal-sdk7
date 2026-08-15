@@ -17,88 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_OptionSettingsOverLayWindow.WBP_OptionSettingsOverLayWindow_C.SetPadKeyA
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettingsOverLayWindow_C::SetPadKeyA()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettingsOverLayWindow_C", "SetPadKeyA");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OptionSettingsOverLayWindow.WBP_OptionSettingsOverLayWindow_C.ResetCommandText
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettingsOverLayWindow_C::ResetCommandText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettingsOverLayWindow_C", "ResetCommandText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OptionSettingsOverLayWindow.WBP_OptionSettingsOverLayWindow_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettingsOverLayWindow_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettingsOverLayWindow_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OptionSettingsOverLayWindow.WBP_OptionSettingsOverLayWindow_C.OnMouseButtonDown
-// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_OptionSettingsOverLayWindow.WBP_OptionSettingsOverLayWindow_C.ExecuteUbergraph_WBP_OptionSettingsOverLayWindow
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-struct FEventReply UWBP_OptionSettingsOverLayWindow_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
+void UWBP_OptionSettingsOverLayWindow_C::ExecuteUbergraph_WBP_OptionSettingsOverLayWindow(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettingsOverLayWindow_C", "OnMouseButtonDown");
+		Func = Class->GetFunction("WBP_OptionSettingsOverLayWindow_C", "ExecuteUbergraph_WBP_OptionSettingsOverLayWindow");
 
-	Params::WBP_OptionSettingsOverLayWindow_C_OnMouseButtonDown Parms{};
+	Params::WBP_OptionSettingsOverLayWindow_C_ExecuteUbergraph_WBP_OptionSettingsOverLayWindow Parms{};
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.MouseEvent = std::move(MouseEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_OptionSettingsOverLayWindow.WBP_OptionSettingsOverLayWindow_C.OnKeySetting
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FKey&                      NewKey                                                 (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void UWBP_OptionSettingsOverLayWindow_C::OnKeySetting(const struct FKey& NewKey)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettingsOverLayWindow_C", "OnKeySetting");
-
-	Params::WBP_OptionSettingsOverLayWindow_C_OnKeySetting Parms{};
-
-	Parms.NewKey = std::move(NewKey);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -129,23 +62,90 @@ struct FEventReply UWBP_OptionSettingsOverLayWindow_C::OnKeyDown(const struct FG
 }
 
 
-// Function WBP_OptionSettingsOverLayWindow.WBP_OptionSettingsOverLayWindow_C.ExecuteUbergraph_WBP_OptionSettingsOverLayWindow
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_OptionSettingsOverLayWindow.WBP_OptionSettingsOverLayWindow_C.OnKeySetting
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FKey&                      NewKey                                                 (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UWBP_OptionSettingsOverLayWindow_C::ExecuteUbergraph_WBP_OptionSettingsOverLayWindow(int32 EntryPoint)
+void UWBP_OptionSettingsOverLayWindow_C::OnKeySetting(const struct FKey& NewKey)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettingsOverLayWindow_C", "ExecuteUbergraph_WBP_OptionSettingsOverLayWindow");
+		Func = Class->GetFunction("WBP_OptionSettingsOverLayWindow_C", "OnKeySetting");
 
-	Params::WBP_OptionSettingsOverLayWindow_C_ExecuteUbergraph_WBP_OptionSettingsOverLayWindow Parms{};
+	Params::WBP_OptionSettingsOverLayWindow_C_OnKeySetting Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.NewKey = std::move(NewKey);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettingsOverLayWindow.WBP_OptionSettingsOverLayWindow_C.OnMouseButtonDown
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply UWBP_OptionSettingsOverLayWindow_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettingsOverLayWindow_C", "OnMouseButtonDown");
+
+	Params::WBP_OptionSettingsOverLayWindow_C_OnMouseButtonDown Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.MouseEvent = std::move(MouseEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_OptionSettingsOverLayWindow.WBP_OptionSettingsOverLayWindow_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettingsOverLayWindow_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettingsOverLayWindow_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettingsOverLayWindow.WBP_OptionSettingsOverLayWindow_C.ResetCommandText
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettingsOverLayWindow_C::ResetCommandText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettingsOverLayWindow_C", "ResetCommandText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettingsOverLayWindow.WBP_OptionSettingsOverLayWindow_C.SetPadKeyA
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettingsOverLayWindow_C::SetPadKeyA()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettingsOverLayWindow_C", "SetPadKeyA");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

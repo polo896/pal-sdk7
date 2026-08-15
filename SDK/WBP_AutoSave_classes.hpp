@@ -50,23 +50,23 @@ public:
 	double                                        FailedSaveNoticeDIsplayTime;                       // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Loop();
-	void AnmEvent_Stop();
-	void Construct();
-	void Destruct();
-	void Display();
-	void DisplayFailedSaveNotice();
-	void EndSave(class FName SavingKey);
-	void ExecuteUbergraph_WBP_AutoSave(int32 EntryPoint);
-	void Hide();
-	void HideFailedSaveNotice();
-	void IsAllSaveCompleted(bool* bCompleted);
-	void OnEndedForceDisplayingTime();
-	void OnEndedLocalSave(bool IsSuccess);
-	void OnEndedWorldSave(bool IsSuccess);
-	void OnStartLocalSaving();
-	void OnStartWorldSaving();
 	void StartSaving(class FName SavingKey);
+	void OnStartWorldSaving();
+	void OnStartLocalSaving();
+	void OnEndedWorldSave(bool IsSuccess);
+	void OnEndedLocalSave(bool IsSuccess);
+	void OnEndedForceDisplayingTime();
+	void IsAllSaveCompleted(bool* bCompleted);
+	void HideFailedSaveNotice();
+	void Hide();
+	void ExecuteUbergraph_WBP_AutoSave(int32 EntryPoint);
+	void EndSave(class FName SavingKey);
+	void DisplayFailedSaveNotice();
+	void Display();
+	void Destruct();
+	void Construct();
+	void AnmEvent_Stop();
+	void AnmEvent_Loop();
 
 public:
 	static class UClass* StaticClass()

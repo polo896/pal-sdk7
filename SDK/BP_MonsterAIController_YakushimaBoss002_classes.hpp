@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MonsterAIController_YakushimaBoss002.BP_MonsterAIController_YakushimaBoss002_C
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class ABP_MonsterAIController_YakushimaBoss002_C : public ABP_MonsterAIController_RaidBoss_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MonsterAIController_YakushimaBoss002_C; // 0x05C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class ABP_MonsterAIController_YakushimaBoss002_Hand_C* LeftHand_Controller;                      // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class ABP_MonsterAIController_YakushimaBoss002_Hand_C* RightHand_Controller;                     // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class ABP_MonsterAIController_YakushimaBoss002_Head_C* Head_Controller;                          // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MonsterAIController_YakushimaBoss002_C; // 0x05C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class ABP_MonsterAIController_YakushimaBoss002_Hand_C* LeftHand_Controller;                      // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class ABP_MonsterAIController_YakushimaBoss002_Hand_C* RightHand_Controller;                     // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class ABP_MonsterAIController_YakushimaBoss002_Head_C* Head_Controller;                          // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_MonsterAIController_YakushimaBoss002(int32 EntryPoint);

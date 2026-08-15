@@ -77,19 +77,19 @@ void UBP_ActionWindCutter_C::OnSpawnEffect(class APalSkillEffectBase* Effect_0)
 }
 
 
-// Function BP_ActionWindCutter.BP_ActionWindCutter_C.test
+// Function BP_ActionWindCutter.BP_ActionWindCutter_C.TEST
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           Bullet                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_ActionWindCutter_C::test(class AActor* Bullet)
+void UBP_ActionWindCutter_C::TEST(class AActor* Bullet)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionWindCutter_C", "test");
+		Func = Class->GetFunction("BP_ActionWindCutter_C", "TEST");
 
-	Params::BP_ActionWindCutter_C_test Parms{};
+	Params::BP_ActionWindCutter_C_TEST Parms{};
 
 	Parms.Bullet = Bullet;
 

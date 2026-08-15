@@ -371,6 +371,20 @@ void UBP_AIAction_CombatPal_RaidBoss_C::Play_Warp_Action(TSubclassOf<class UPalA
 }
 
 
+// Function BP_AIAction_CombatPal_RaidBoss.BP_AIAction_CombatPal_RaidBoss_C.ReleaseInitialHPLock
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBP_AIAction_CombatPal_RaidBoss_C::ReleaseInitialHPLock()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_CombatPal_RaidBoss_C", "ReleaseInitialHPLock");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_AIAction_CombatPal_RaidBoss.BP_AIAction_CombatPal_RaidBoss_C.UpdateNoActionTimer
 // (Public, BlueprintCallable, BlueprintEvent)
 

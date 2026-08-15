@@ -48,29 +48,6 @@ public:
 };
 DUMPER7_ASSERTS_UFoliageInstancedStaticMeshComponent;
 
-// Class Foliage.InstancedFoliageActor
-// 0x0050 (0x02F0 - 0x02A0)
-class AInstancedFoliageActor final : public AISMPartitionActor
-{
-public:
-	uint8                                         Pad_2A0[0x50];                                     // 0x02A0(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("InstancedFoliageActor")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"InstancedFoliageActor")
-	}
-	static class AInstancedFoliageActor* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AInstancedFoliageActor>();
-	}
-};
-DUMPER7_ASSERTS_AInstancedFoliageActor;
-
 // Class Foliage.FoliageType
 // 0x0498 (0x04C0 - 0x0028)
 class UFoliageType : public UObject
@@ -327,6 +304,29 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UFoliageEditPresetData;
+
+// Class Foliage.InstancedFoliageActor
+// 0x0050 (0x02F0 - 0x02A0)
+class AInstancedFoliageActor final : public AISMPartitionActor
+{
+public:
+	uint8                                         Pad_2A0[0x50];                                     // 0x02A0(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("InstancedFoliageActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InstancedFoliageActor")
+	}
+	static class AInstancedFoliageActor* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AInstancedFoliageActor>();
+	}
+};
+DUMPER7_ASSERTS_AInstancedFoliageActor;
 
 // Class Foliage.InteractiveFoliageComponent
 // 0x0010 (0x0600 - 0x05F0)

@@ -47,47 +47,47 @@ public:
 	struct FPalUIActionBindData                   TabActionHandle;                                   // 0x0518(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void AddCameraOffset();
-	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature();
-	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_1_OnChangeCategory__DelegateSignature(EPalBuildObjectTypeA TypeA);
-	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_2_OnSelectedBuildObject__DelegateSignature(const struct FPalBuildObjectData& SelectedBuildObjectData);
-	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_3_OnHoveredBuildObject__DelegateSignature(class UWBP_IngameMenu_Construction_Icon_C* Widget);
-	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_4_OnUnhoveredBuildObject__DelegateSignature();
-	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_5_OnClickedDIsmantleButton__DelegateSignature();
-	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_6_OnClickPaintingModeButton__DelegateSignature();
-	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_7_OnHoveredCategoryTab__DelegateSignature(class UWBP_IngameMenu_Construction_Tab_C* TabWidget);
-	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_8_OnUnhoveredCategoryTab__DelegateSignature();
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_PalBuildObjectList_ForDisplay(int32 EntryPoint);
-	void OnCancelAction_Tab();
-	void OnChangedCategory(EPalBuildObjectTypeA TypeA);
-	void OnDummyAction();
-	void OnInputAction_Close();
-	void OnInputAction_Dismantle();
-	void OnInputAction_NextTab();
-	void OnInputAction_PaintMode();
-	void OnInputAction_PrevTab();
-	void OnInputMethodChanged(ECommonInputType bNewInputType);
-	struct FEventReply OnMouseWheel(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	struct FEventReply OnPreviewMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void OnSelectedBuildObject(const struct FPalBuildObjectData& BuildObject);
-	void OnSetup();
-	void RegisterFavoriteAction();
-	void ScrollToBuildObject(class FName BuildObjectId);
-	void Setup();
-	void Setup_Tab_Active();
-	void SetupInputAction();
-	void SetupTabNewMark();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void ToggleFavorite();
-	void TryRemoveNewMark(class UWBP_IngameMenu_Construction_Icon_C* IconWidget);
-	void UnregisterBuilderModeCameraOffset();
 	void UnregisterFavoriteAction();
+	void UnregisterBuilderModeCameraOffset();
+	void TryRemoveNewMark(class UWBP_IngameMenu_Construction_Icon_C* IconWidget);
+	void ToggleFavorite();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SetupTabNewMark();
+	void SetupInputAction();
+	void Setup_Tab_Active();
+	void Setup();
+	void ScrollToBuildObject(class FName BuildObjectId);
+	void RegisterFavoriteAction();
+	void OnSetup();
+	void OnSelectedBuildObject(const struct FPalBuildObjectData& BuildObject);
+	struct FEventReply OnPreviewMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	struct FEventReply OnMouseWheel(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInputMethodChanged(ECommonInputType bNewInputType);
+	void OnInputAction_PrevTab();
+	void OnInputAction_PaintMode();
+	void OnInputAction_NextTab();
+	void OnInputAction_Dismantle();
+	void OnInputAction_Close();
+	void OnDummyAction();
+	void OnChangedCategory(EPalBuildObjectTypeA TypeA);
+	void OnCancelAction_Tab();
+	void ExecuteUbergraph_WBP_PalBuildObjectList_ForDisplay(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_8_OnUnhoveredCategoryTab__DelegateSignature();
+	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_7_OnHoveredCategoryTab__DelegateSignature(class UWBP_IngameMenu_Construction_Tab_C* TabWidget);
+	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_6_OnClickPaintingModeButton__DelegateSignature();
+	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_5_OnClickedDIsmantleButton__DelegateSignature();
+	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_4_OnUnhoveredBuildObject__DelegateSignature();
+	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_3_OnHoveredBuildObject__DelegateSignature(class UWBP_IngameMenu_Construction_Icon_C* Widget);
+	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_2_OnSelectedBuildObject__DelegateSignature(const struct FPalBuildObjectData& SelectedBuildObjectData);
+	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_1_OnChangeCategory__DelegateSignature(EPalBuildObjectTypeA TypeA);
+	void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature();
+	void AddCameraOffset();
 
-	class UWidget* BP_GetDesiredFocusTarget() const;
-	void GetNewPageFocusTarget(class UWidget** Widget) const;
 	void GetNewPageFocusTargetWidget(class UWBP_IngameMenu_Construction_Icon_C** Widget) const;
+	void GetNewPageFocusTarget(class UWidget** Widget) const;
+	class UWidget* BP_GetDesiredFocusTarget() const;
 
 public:
 	static class UClass* StaticClass()

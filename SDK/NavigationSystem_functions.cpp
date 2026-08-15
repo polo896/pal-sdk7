@@ -17,31 +17,6 @@
 namespace SDK
 {
 
-// Function NavigationSystem.NavRelevantComponent.SetNavigationRelevancy
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bRelevant                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UNavRelevantComponent::SetNavigationRelevancy(bool bRelevant)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavRelevantComponent", "SetNavigationRelevancy");
-
-	Params::NavRelevantComponent_SetNavigationRelevancy Parms{};
-
-	Parms.bRelevant = bRelevant;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function NavigationSystem.NavigationSystemV1.FindPathToActorSynchronously
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -893,6 +868,31 @@ bool UNavigationPath::IsValid() const
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function NavigationSystem.NavRelevantComponent.SetNavigationRelevancy
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bRelevant                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UNavRelevantComponent::SetNavigationRelevancy(bool bRelevant)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NavRelevantComponent", "SetNavigationRelevancy");
+
+	Params::NavRelevantComponent_SetNavigationRelevancy Parms{};
+
+	Parms.bRelevant = bRelevant;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 

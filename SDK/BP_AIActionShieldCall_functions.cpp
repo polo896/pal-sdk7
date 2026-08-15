@@ -17,21 +17,23 @@
 namespace SDK
 {
 
-// Function BP_AIActionShieldCall.BP_AIActionShieldCall_C.ExecuteUbergraph_BP_AIActionShieldCall
-// (Final, UbergraphFunction)
+// Function BP_AIActionShieldCall.BP_AIActionShieldCall_C.ActionTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_AIActionShieldCall_C::ExecuteUbergraph_BP_AIActionShieldCall(int32 EntryPoint)
+void UBP_AIActionShieldCall_C::ActionTick(class APawn* ControlledPawn, float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIActionShieldCall_C", "ExecuteUbergraph_BP_AIActionShieldCall");
+		Func = Class->GetFunction("BP_AIActionShieldCall_C", "ActionTick");
 
-	Params::BP_AIActionShieldCall_C_ExecuteUbergraph_BP_AIActionShieldCall Parms{};
+	Params::BP_AIActionShieldCall_C_ActionTick Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.ControlledPawn = ControlledPawn;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,23 +59,21 @@ void UBP_AIActionShieldCall_C::DoRide(class APawn* ControlledPawn)
 }
 
 
-// Function BP_AIActionShieldCall.BP_AIActionShieldCall_C.ActionTick
-// (Event, Public, BlueprintEvent)
+// Function BP_AIActionShieldCall.BP_AIActionShieldCall_C.ExecuteUbergraph_BP_AIActionShieldCall
+// (Final, UbergraphFunction)
 // Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_AIActionShieldCall_C::ActionTick(class APawn* ControlledPawn, float DeltaSeconds)
+void UBP_AIActionShieldCall_C::ExecuteUbergraph_BP_AIActionShieldCall(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIActionShieldCall_C", "ActionTick");
+		Func = Class->GetFunction("BP_AIActionShieldCall_C", "ExecuteUbergraph_BP_AIActionShieldCall");
 
-	Params::BP_AIActionShieldCall_C_ActionTick Parms{};
+	Params::BP_AIActionShieldCall_C_ExecuteUbergraph_BP_AIActionShieldCall Parms{};
 
-	Parms.ControlledPawn = ControlledPawn;
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

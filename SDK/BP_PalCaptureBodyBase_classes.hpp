@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Pal_classes.hpp"
 #include "EPalSphereCaptureFailedReason_structs.hpp"
-#include "Engine_structs.hpp"
 #include "E_PalCaptureSphereBouncedReason_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Pal_classes.hpp"
 
 
 namespace SDK
@@ -44,32 +44,32 @@ public:
 	bool                                          IsCriticalCapture;                                 // 0x0320(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PalCaptureBodyBase(int32 EntryPoint);
-	void Get_Is_Into_Ball(bool* IntoBall);
-	class USceneComponent* GetAkOwnerComponent();
-	void GetCaptureLevel(int32* Level);
-	void GetCriticalCaptureLevel(int32* NewParam);
-	void GetTargetActor(class APalCharacter** TargetActor);
-	void GetTargetHandle(class UPalIndividualCharacterHandle** targetHandle_0);
-	void IsSneakBonusEnabled(bool* Enabled);
-	void PlaySound(const struct FPalDataTableRowName_SoundID& ID);
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void SetCaptureLevel(int32 NewParam);
-	void SetCaptureLevelInternal(int32 Level);
-	void SetCaptureLevelToALL(int32 Level);
-	void SetCriticalCaptureFlagInternal(bool bIsCritical);
-	void SetCriticalFlag(bool bCritical);
-	void SetIsIntoBall(bool IntoBall);
-	void SetSneakBonusFlag(bool flag);
-	void SetSneakBonusFlagInternal(bool isSneak);
-	void SetSneakBonusFlagToALL(bool isSneak);
-	void SetTargetHandle(class UPalIndividualCharacterHandle* targetHandle_0);
-	void SetTargetIDToALL(const struct FPalInstanceID& TargetId);
-	void Setup(class APalCharacter* TargetCharacter);
-	void SetupInServer(class APalCharacter* TargetCharacter);
-	void SetupInternal(class APalCharacter* TargetCharacter);
 	void SetupToALL(class APalCharacter* Target);
+	void SetupInternal(class APalCharacter* TargetCharacter);
+	void SetupInServer(class APalCharacter* TargetCharacter);
+	void Setup(class APalCharacter* TargetCharacter);
+	void SetTargetIDToALL(const struct FPalInstanceID& TargetId);
+	void SetTargetHandle(class UPalIndividualCharacterHandle* targetHandle_0);
+	void SetSneakBonusFlagToALL(bool isSneak);
+	void SetSneakBonusFlagInternal(bool isSneak);
+	void SetSneakBonusFlag(bool flag);
+	void SetIsIntoBall(bool IntoBall);
+	void SetCriticalFlag(bool bCritical);
+	void SetCriticalCaptureFlagInternal(bool bIsCritical);
+	void SetCaptureLevelToALL(int32 Level);
+	void SetCaptureLevelInternal(int32 Level);
+	void SetCaptureLevel(int32 NewParam);
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
+	void PlaySound(const struct FPalDataTableRowName_SoundID& ID);
+	void IsSneakBonusEnabled(bool* Enabled);
+	void GetTargetHandle(class UPalIndividualCharacterHandle** targetHandle_0);
+	void GetTargetActor(class APalCharacter** TargetActor);
+	void GetCriticalCaptureLevel(int32* NewParam);
+	void GetCaptureLevel(int32* Level);
+	class USceneComponent* GetAkOwnerComponent();
+	void Get_Is_Into_Ball(bool* IntoBall);
+	void ExecuteUbergraph_BP_PalCaptureBodyBase(int32 EntryPoint);
 
 	void GetOwnerCharacterOrRiderCharacter(class AActor** Character) const;
 

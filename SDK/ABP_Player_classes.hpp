@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Pal_structs.hpp"
-#include "Pal_classes.hpp"
-#include "CoreUObject_structs.hpp"
+#include "AkAudio_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 #include "ABP_Player_structs.hpp"
 #include "ControlRig_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Pal_structs.hpp"
+#include "Pal_classes.hpp"
 #include "PhysicsCore_structs.hpp"
-#include "AkAudio_structs.hpp"
 
 
 namespace SDK
@@ -516,11 +516,11 @@ public:
 	struct FRotator                               AimRotatorForSpine_Ride_WS;                        // 0xD098(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsDead;                                            // 0xD0B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          FootIKEnable;                                      // 0xD0B1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsLookatEnable;                                    // 0xD0B2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsLookAtEnable;                                    // 0xD0B2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_D0B3[0x5];                                     // 0xD0B3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                LookAtTarget;                                      // 0xD0B8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        LookatInTime;                                      // 0xD0D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        LookatOutTime;                                     // 0xD0D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        LookAtInTime;                                      // 0xD0D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        LookAtOutTime;                                     // 0xD0D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsClimbing;                                        // 0xD0E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_D0E1[0x7];                                     // 0xD0E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequence*                          UniqueRideAnim;                                    // 0xD0E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

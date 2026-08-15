@@ -10,34 +10,25 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function BP_SkillEffect_StoneShotgunBullet.BP_SkillEffect_StoneShotgunBullet_C.SetRandomValueIntoNiagaraVariable
-// 0x0020 (0x0020 - 0x0000)
-struct BP_SkillEffect_StoneShotgunBullet_C_SetRandomValueIntoNiagaraVariable final
+// Function BP_SkillEffect_StoneShotgunBullet.BP_SkillEffect_StoneShotgunBullet_C.BndEvt__BP_SkillEffect_StoneShotgunBullet_MovementSphereRoot_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature
+// 0x0118 (0x0118 - 0x0000)
+struct BP_SkillEffect_StoneShotgunBullet_C_BndEvt__BP_SkillEffect_StoneShotgunBullet_MovementSphereRoot_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature final
 {
 public:
-	class UNiagaraComponent*                      NiagaraComp;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast;    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast_1;  // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    HitComponent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                NormalImpulse;                                     // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hit;                                               // 0x0030(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-DUMPER7_ASSERTS_BP_SkillEffect_StoneShotgunBullet_C_SetRandomValueIntoNiagaraVariable;
-
-// Function BP_SkillEffect_StoneShotgunBullet.BP_SkillEffect_StoneShotgunBullet_C.FadeOutEffect
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SkillEffect_StoneShotgunBullet_C_FadeOutEffect final
-{
-public:
-	double                                        DeltaSecond;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SkillEffect_StoneShotgunBullet_C_FadeOutEffect;
+DUMPER7_ASSERTS_BP_SkillEffect_StoneShotgunBullet_C_BndEvt__BP_SkillEffect_StoneShotgunBullet_MovementSphereRoot_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature;
 
 // Function BP_SkillEffect_StoneShotgunBullet.BP_SkillEffect_StoneShotgunBullet_C.ExecuteUbergraph_BP_SkillEffect_StoneShotgunBullet
 // 0x0238 (0x0238 - 0x0000)
@@ -103,18 +94,27 @@ public:
 };
 DUMPER7_ASSERTS_BP_SkillEffect_StoneShotgunBullet_C_ExecuteUbergraph_BP_SkillEffect_StoneShotgunBullet;
 
-// Function BP_SkillEffect_StoneShotgunBullet.BP_SkillEffect_StoneShotgunBullet_C.BndEvt__BP_SkillEffect_StoneShotgunBullet_MovementSphereRoot_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature
-// 0x0118 (0x0118 - 0x0000)
-struct BP_SkillEffect_StoneShotgunBullet_C_BndEvt__BP_SkillEffect_StoneShotgunBullet_MovementSphereRoot_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature final
+// Function BP_SkillEffect_StoneShotgunBullet.BP_SkillEffect_StoneShotgunBullet_C.FadeOutEffect
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SkillEffect_StoneShotgunBullet_C_FadeOutEffect final
 {
 public:
-	class UPrimitiveComponent*                    HitComponent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                NormalImpulse;                                     // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0030(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	double                                        DeltaSecond;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_SkillEffect_StoneShotgunBullet_C_BndEvt__BP_SkillEffect_StoneShotgunBullet_MovementSphereRoot_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature;
+DUMPER7_ASSERTS_BP_SkillEffect_StoneShotgunBullet_C_FadeOutEffect;
+
+// Function BP_SkillEffect_StoneShotgunBullet.BP_SkillEffect_StoneShotgunBullet_C.SetRandomValueIntoNiagaraVariable
+// 0x0020 (0x0020 - 0x0000)
+struct BP_SkillEffect_StoneShotgunBullet_C_SetRandomValueIntoNiagaraVariable final
+{
+public:
+	class UNiagaraComponent*                      NiagaraComp;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast;    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast_1;  // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SkillEffect_StoneShotgunBullet_C_SetRandomValueIntoNiagaraVariable;
 
 }
 

@@ -69,6 +69,19 @@ public:
 };
 DUMPER7_ASSERTS_FWwiseAcousticTextureCookedData;
 
+// ScriptStruct WwiseResourceLoader.WwiseShareSetCookedData
+// 0x0030 (0x0030 - 0x0000)
+struct FWwiseShareSetCookedData final
+{
+public:
+	int32                                         ShareSetId;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FWwiseSoundBankCookedData>      SoundBanks;                                        // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
+	TArray<struct FWwiseMediaCookedData>          Media;                                             // 0x0018(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
+	class FName                                   DebugName;                                         // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FWwiseShareSetCookedData;
+
 // ScriptStruct WwiseResourceLoader.WwiseAuxBusCookedData
 // 0x0030 (0x0030 - 0x0000)
 struct FWwiseAuxBusCookedData final
@@ -125,6 +138,16 @@ public:
 	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FWwiseEventCookedData;
+
+// ScriptStruct WwiseResourceLoader.WwiseTriggerCookedData
+// 0x000C (0x000C - 0x0000)
+struct FWwiseTriggerCookedData final
+{
+public:
+	int32                                         TriggerId;                                         // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   DebugName;                                         // 0x0004(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FWwiseTriggerCookedData;
 
 // ScriptStruct WwiseResourceLoader.WwiseObjectInfo
 // 0x0020 (0x0020 - 0x0000)
@@ -214,19 +237,6 @@ public:
 };
 DUMPER7_ASSERTS_FWwiseLocalizedEventCookedData;
 
-// ScriptStruct WwiseResourceLoader.WwiseShareSetCookedData
-// 0x0030 (0x0030 - 0x0000)
-struct FWwiseShareSetCookedData final
-{
-public:
-	int32                                         ShareSetId;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FWwiseSoundBankCookedData>      SoundBanks;                                        // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
-	TArray<struct FWwiseMediaCookedData>          Media;                                             // 0x0018(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
-	class FName                                   DebugName;                                         // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FWwiseShareSetCookedData;
-
 // ScriptStruct WwiseResourceLoader.WwiseLocalizedShareSetCookedData
 // 0x0060 (0x0060 - 0x0000)
 struct FWwiseLocalizedShareSetCookedData final
@@ -289,16 +299,6 @@ public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FWwiseSharedPlatformId;
-
-// ScriptStruct WwiseResourceLoader.WwiseTriggerCookedData
-// 0x000C (0x000C - 0x0000)
-struct FWwiseTriggerCookedData final
-{
-public:
-	int32                                         TriggerId;                                         // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   DebugName;                                         // 0x0004(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FWwiseTriggerCookedData;
 
 }
 

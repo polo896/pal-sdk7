@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Pal_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 #include "CoreUObject_structs.hpp"
@@ -76,51 +76,51 @@ public:
 	TArray<class FString>                         FrameGenerationStrings;                            // 0x06A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void UpdateVSync();
-	void UpdateNVIDIAReflexAndVSyncSettingsActive();
-	void UpdateFrameGenerationSettingsActive(bool bUserChanged);
-	void SetupUpscalingName();
-	void SetupDrawDistanceStrings();
-	void SetDefault();
-	void OnWindowChanged(int32 Selection);
-	void OnVSyncChanged(bool IsOn);
-	void OnViewDisChanged(int32 Selection);
-	void OnUpscalingChanged(int32 DLSSLevel);
-	void OnTextureChanged(int32 Selection);
-	void OnShadowChanged(int32 Selection);
-	void OnRideCameraChanged(double Value);
-	void OnResolutionChanged(int32 Selection);
-	void OnPresetChanged(int32 Selection);
-	void SelectionIndexToNVIDIAReflexType(int32 Index_0, EPalReflexMode* ReflexType);
-	void OnMotionBlurChanged(bool IsOn);
-	void OnMaxFPSChanged(int32 Selection);
-	void OnLODChanged(double Value);
-	void OnFOVChanged(double Value);
-	void OnFoliageChanged(int32 Selection);
-	void OnCommonQualityChanged(int32 Selection);
-	void OnChangedReflexType(int32 Selection);
-	void OnChangedMapObjectDrawDistanceType(int32 Selection);
-	void OnChangedFriendPalAwakenPalAura(bool IsOn);
-	void OnChangedFrameGenerationType(int32 Selection);
-	void OnChangedArachnophobiaMode(bool IsOn);
-	void OnChagedFOVType(bool IsOn);
-	void OnCameraShakeChanged(bool IsOn);
-	void OnCameraRecoilChanged(bool IsOn);
-	void OnBrightnessChanged(double Value);
-	void OnAutoContrastChanged(bool IsOn);
-	void OnAAChanged(int32 Selection);
-	void NVIDIAReflexTypeToSelectionIndex(EPalReflexMode ReflexMode, int32* Index_0);
-	void ModifierFrameGenerationSettingsBySelectionIndex(int32 SelectionIndex);
-	void MakeFrameGenerationInfo();
-	void GetUpscalingMsgIdArray(TArray<struct FDataTableRowHandle>* MsgIdArray);
-	void GetNVIDIAReflexMsgIdArray(TArray<struct FDataTableRowHandle>* MsgIdArray);
-	void GetMapObjectDrawDistanceTypeIndex(EPalOptionMapObjectDrawDistanceType DistanceType, int32* SelectionIndex);
-	void GetFrameGenerationStrings(TArray<class FString>* NewParam);
-	void GetFrameGenerationSelectionIndex(EPalDLSSGMode FrameGenerationModeType, int32 GeneratedFrame, int32* Index_0);
-	void GetDisplayGraphicLevel(const struct FPalOptionGraphicsSettings& GraphicLevel, EPalOptionGraphicsLevel* Graphicsレベル);
-	void ExecuteUbergraph_WBP_Graphic_Settings(int32 EntryPoint);
-	void Construct();
 	void ApplySettings();
+	void Construct();
+	void ExecuteUbergraph_WBP_Graphic_Settings(int32 EntryPoint);
+	void GetDisplayGraphicLevel(const struct FPalOptionGraphicsSettings& GraphicLevel, EPalOptionGraphicsLevel* Graphicsレベル);
+	void GetFrameGenerationSelectionIndex(EPalDLSSGMode FrameGenerationModeType, int32 GeneratedFrame, int32* Index_0);
+	void GetFrameGenerationStrings(TArray<class FString>* NewParam);
+	void GetMapObjectDrawDistanceTypeIndex(EPalOptionMapObjectDrawDistanceType DistanceType, int32* SelectionIndex);
+	void GetNVIDIAReflexMsgIdArray(TArray<struct FDataTableRowHandle>* MsgIdArray);
+	void GetUpscalingMsgIdArray(TArray<struct FDataTableRowHandle>* MsgIdArray);
+	void MakeFrameGenerationInfo();
+	void ModifierFrameGenerationSettingsBySelectionIndex(int32 SelectionIndex);
+	void NVIDIAReflexTypeToSelectionIndex(EPalReflexMode ReflexMode, int32* Index_0);
+	void OnAAChanged(int32 Selection);
+	void OnAutoContrastChanged(bool IsOn);
+	void OnBrightnessChanged(double Value);
+	void OnCameraRecoilChanged(bool IsOn);
+	void OnCameraShakeChanged(bool IsOn);
+	void OnChagedFOVType(bool IsOn);
+	void OnChangedArachnophobiaMode(bool IsOn);
+	void OnChangedFrameGenerationType(int32 Selection);
+	void OnChangedFriendPalAwakenPalAura(bool IsOn);
+	void OnChangedMapObjectDrawDistanceType(int32 Selection);
+	void OnChangedReflexType(int32 Selection);
+	void OnCommonQualityChanged(int32 Selection);
+	void OnFoliageChanged(int32 Selection);
+	void OnFOVChanged(double Value);
+	void OnLODChanged(double Value);
+	void OnMaxFPSChanged(int32 Selection);
+	void OnMotionBlurChanged(bool IsOn);
+	void OnPresetChanged(int32 Selection);
+	void OnResolutionChanged(int32 Selection);
+	void OnRideCameraChanged(double Value);
+	void OnShadowChanged(int32 Selection);
+	void OnTextureChanged(int32 Selection);
+	void OnUpscalingChanged(int32 DLSSLevel);
+	void OnViewDisChanged(int32 Selection);
+	void OnVSyncChanged(bool IsOn);
+	void OnWindowChanged(int32 Selection);
+	void SelectionIndexToNVIDIAReflexType(int32 Index_0, EPalReflexMode* ReflexType);
+	void SetDefault();
+	void SetupDrawDistanceStrings();
+	void SetupUpscalingName();
+	void UpdateFrameGenerationSettingsActive(bool bUserChanged);
+	void UpdateNVIDIAReflexAndVSyncSettingsActive();
+	void UpdateVSync();
 
 public:
 	static class UClass* StaticClass()

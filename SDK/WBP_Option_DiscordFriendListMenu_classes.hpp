@@ -49,15 +49,15 @@ public:
 	TMulticastInlineDelegate<void(class UDiscordRelationshipHandle* Relationship)> OnClickedSendMessage; // 0x0368(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void UpdateUI(class UDiscordRelationshipHandle* Relationship_0);
-	void ToggleUI();
-	void ExecuteUbergraph_WBP_Option_DiscordFriendListMenu(int32 EntryPoint);
-	void DIscordSendMessage(class UWBP_GuildMemberMenuList_C* Button);
-	void DiscordMute(class UWBP_GuildMemberMenuList_C* Button);
-	void DiscordInvite(class UWBP_GuildMemberMenuList_C* Button);
-	void DiscordIgnore(class UWBP_GuildMemberMenuList_C* Button);
-	void DiscordBlock(class UWBP_GuildMemberMenuList_C* Button);
 	void Construct();
+	void DiscordBlock(class UWBP_GuildMemberMenuList_C* Button);
+	void DiscordIgnore(class UWBP_GuildMemberMenuList_C* Button);
+	void DiscordInvite(class UWBP_GuildMemberMenuList_C* Button);
+	void DiscordMute(class UWBP_GuildMemberMenuList_C* Button);
+	void DIscordSendMessage(class UWBP_GuildMemberMenuList_C* Button);
+	void ExecuteUbergraph_WBP_Option_DiscordFriendListMenu(int32 EntryPoint);
+	void ToggleUI();
+	void UpdateUI(class UDiscordRelationshipHandle* Relationship_0);
 
 public:
 	static class UClass* StaticClass()

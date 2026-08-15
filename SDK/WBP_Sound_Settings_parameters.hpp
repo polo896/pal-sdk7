@@ -17,176 +17,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.WBP_Sound_Settings_AutoGenFunc
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Sound_Settings_C_WBP_Sound_Settings_AutoGenFunc final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_WBP_Sound_Settings_AutoGenFunc;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnUIChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Sound_Settings_C_OnUIChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnUIChanged;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnSwitchDiscordLinkAccount
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.ApplySettings
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_Sound_Settings_C_OnSwitchDiscordLinkAccount final
+struct WBP_Sound_Settings_C_ApplySettings final
 {
 public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ApplyOriginal;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnSwitchDiscordLinkAccount;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnSEChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Sound_Settings_C_OnSEChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnSEChanged;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnPlayerVoiceChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Sound_Settings_C_OnPlayerVoiceChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnPlayerVoiceChanged;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnPalVoiceChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Sound_Settings_C_OnPalVoiceChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnPalVoiceChanged;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnMasterChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Sound_Settings_C_OnMasterChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnMasterChanged;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangeVoiceChatDevice
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Sound_Settings_C_OnChangeVoiceChatDevice final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangeVoiceChatDevice;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_VoiceChat_Mute_Others
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Sound_Settings_C_OnChangedSwitch_VoiceChat_Mute_Others final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSwitch_VoiceChat_Mute_Others;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_VoiceChat_Mute_MySelf
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Sound_Settings_C_OnChangedSwitch_VoiceChat_Mute_MySelf final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSwitch_VoiceChat_Mute_MySelf;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_RarePalEffect
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Sound_Settings_C_OnChangedSwitch_RarePalEffect final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSwitch_RarePalEffect;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_PalWorking
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Sound_Settings_C_OnChangedSwitch_PalWorking final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSwitch_PalWorking;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_PalEffect
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Sound_Settings_C_OnChangedSwitch_PalEffect final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSwitch_PalEffect;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_GameMachine
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Sound_Settings_C_OnChangedSwitch_GameMachine final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSwitch_GameMachine;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSlider_VoiceChat_Output_Volume
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Sound_Settings_C_OnChangedSlider_VoiceChat_Output_Volume final
-{
-public:
-	double                                        Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSlider_VoiceChat_Output_Volume;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSlider_VoiceChat_Input_Volume
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Sound_Settings_C_OnChangedSlider_VoiceChat_Input_Volume final
-{
-public:
-	double                                        Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSlider_VoiceChat_Input_Volume;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSelection_VoiceChat_Input_Setting
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Sound_Settings_C_OnChangedSelection_VoiceChat_Input_Setting final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSelection_VoiceChat_Input_Setting;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnBGMChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Sound_Settings_C_OnBGMChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnBGMChanged;
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnAmbientChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Sound_Settings_C_OnAmbientChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnAmbientChanged;
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_ApplySettings;
 
 // Function WBP_Sound_Settings.WBP_Sound_Settings_C.ExecuteUbergraph_WBP_Sound_Settings
 // 0x0528 (0x0528 - 0x0000)
@@ -353,14 +191,176 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Sound_Settings_C_ExecuteUbergraph_WBP_Sound_Settings;
 
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.ApplySettings
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Sound_Settings_C_ApplySettings final
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnAmbientChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Sound_Settings_C_OnAmbientChanged final
 {
 public:
-	bool                                          ApplyOriginal;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Sound_Settings_C_ApplySettings;
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnAmbientChanged;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnBGMChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Sound_Settings_C_OnBGMChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnBGMChanged;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSelection_VoiceChat_Input_Setting
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Sound_Settings_C_OnChangedSelection_VoiceChat_Input_Setting final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSelection_VoiceChat_Input_Setting;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSlider_VoiceChat_Input_Volume
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Sound_Settings_C_OnChangedSlider_VoiceChat_Input_Volume final
+{
+public:
+	double                                        Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSlider_VoiceChat_Input_Volume;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSlider_VoiceChat_Output_Volume
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Sound_Settings_C_OnChangedSlider_VoiceChat_Output_Volume final
+{
+public:
+	double                                        Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSlider_VoiceChat_Output_Volume;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_GameMachine
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Sound_Settings_C_OnChangedSwitch_GameMachine final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSwitch_GameMachine;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_PalEffect
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Sound_Settings_C_OnChangedSwitch_PalEffect final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSwitch_PalEffect;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_PalWorking
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Sound_Settings_C_OnChangedSwitch_PalWorking final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSwitch_PalWorking;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_RarePalEffect
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Sound_Settings_C_OnChangedSwitch_RarePalEffect final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSwitch_RarePalEffect;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_VoiceChat_Mute_MySelf
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Sound_Settings_C_OnChangedSwitch_VoiceChat_Mute_MySelf final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSwitch_VoiceChat_Mute_MySelf;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_VoiceChat_Mute_Others
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Sound_Settings_C_OnChangedSwitch_VoiceChat_Mute_Others final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangedSwitch_VoiceChat_Mute_Others;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangeVoiceChatDevice
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Sound_Settings_C_OnChangeVoiceChatDevice final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnChangeVoiceChatDevice;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnMasterChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Sound_Settings_C_OnMasterChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnMasterChanged;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnPalVoiceChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Sound_Settings_C_OnPalVoiceChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnPalVoiceChanged;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnPlayerVoiceChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Sound_Settings_C_OnPlayerVoiceChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnPlayerVoiceChanged;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnSEChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Sound_Settings_C_OnSEChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnSEChanged;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnSwitchDiscordLinkAccount
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Sound_Settings_C_OnSwitchDiscordLinkAccount final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnSwitchDiscordLinkAccount;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnUIChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Sound_Settings_C_OnUIChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_OnUIChanged;
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.WBP_Sound_Settings_AutoGenFunc
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Sound_Settings_C_WBP_Sound_Settings_AutoGenFunc final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Sound_Settings_C_WBP_Sound_Settings_AutoGenFunc;
 
 }
 

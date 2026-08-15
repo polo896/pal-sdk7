@@ -10,13 +10,26 @@
 
 #include "Basic.hpp"
 
+#include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function WBP_InventoryEquipment_ItemInfo_TecnologyList.WBP_InventoryEquipment_ItemInfo_TecnologyList_C.SetInfo
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_InventoryEquipment_ItemInfo_TecnologyList_C_SetInfo final
+{
+public:
+	class FText                                   Name_0;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         Num;                                               // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UTexture2D>              Icon_0;                                            // 0x0020(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	int32                                         Stock;                                             // 0x0050(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ItemInfo_TecnologyList_C_SetInfo;
 
 // Function WBP_InventoryEquipment_ItemInfo_TecnologyList.WBP_InventoryEquipment_ItemInfo_TecnologyList_C.ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_TecnologyList
 // 0x00D8 (0x00D8 - 0x0000)
@@ -49,19 +62,6 @@ public:
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x00C0(0x0018)()
 };
 DUMPER7_ASSERTS_WBP_InventoryEquipment_ItemInfo_TecnologyList_C_ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_TecnologyList;
-
-// Function WBP_InventoryEquipment_ItemInfo_TecnologyList.WBP_InventoryEquipment_ItemInfo_TecnologyList_C.SetInfo
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_InventoryEquipment_ItemInfo_TecnologyList_C_SetInfo final
-{
-public:
-	class FText                                   Name_0;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	int32                                         Num;                                               // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UTexture2D>              Icon_0;                                            // 0x0020(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	int32                                         Stock;                                             // 0x0050(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ItemInfo_TecnologyList_C_SetInfo;
 
 }
 

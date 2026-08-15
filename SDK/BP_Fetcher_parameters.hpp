@@ -10,12 +10,30 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function BP_Fetcher.BP_Fetcher_C.PrintToModLoader
+// 0x0010 (0x0010 - 0x0000)
+struct BP_Fetcher_C_PrintToModLoader final
+{
+public:
+	class FString                                 Messag;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Fetcher_C_PrintToModLoader;
+
+// Function BP_Fetcher.BP_Fetcher_C.OnLoaded_6D1C744F48EB40A914E8D780B534F94A
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Fetcher_C_OnLoaded_6D1C744F48EB40A914E8D780B534F94A final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Fetcher_C_OnLoaded_6D1C744F48EB40A914E8D780B534F94A;
 
 // Function BP_Fetcher.BP_Fetcher_C.ExecuteUbergraph_BP_Fetcher
 // 0x0610 (0x0610 - 0x0000)
@@ -91,24 +109,6 @@ public:
 	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0608(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Fetcher_C_ExecuteUbergraph_BP_Fetcher;
-
-// Function BP_Fetcher.BP_Fetcher_C.OnLoaded_6D1C744F48EB40A914E8D780B534F94A
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Fetcher_C_OnLoaded_6D1C744F48EB40A914E8D780B534F94A final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Fetcher_C_OnLoaded_6D1C744F48EB40A914E8D780B534F94A;
-
-// Function BP_Fetcher.BP_Fetcher_C.PrintToModLoader
-// 0x0010 (0x0010 - 0x0000)
-struct BP_Fetcher_C_PrintToModLoader final
-{
-public:
-	class FString                                 Messag;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Fetcher_C_PrintToModLoader;
 
 }
 

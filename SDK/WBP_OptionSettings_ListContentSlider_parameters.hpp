@@ -16,14 +16,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_OptionSettings_ListContentSlider.WBP_OptionSettings_ListContentSlider_C.BndEvt__WBP_OptionSettings_ListContentSlider_Slider_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_OptionSettings_ListContentSlider_C_BndEvt__WBP_OptionSettings_ListContentSlider_Slider_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature final
+// Function WBP_OptionSettings_ListContentSlider.WBP_OptionSettings_ListContentSlider_C.AddConstantValue
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_OptionSettings_ListContentSlider_C_AddConstantValue final
 {
 public:
-	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContentSlider_C_BndEvt__WBP_OptionSettings_ListContentSlider_Slider_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature;
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContentSlider_C_AddConstantValue;
 
 // Function WBP_OptionSettings_ListContentSlider.WBP_OptionSettings_ListContentSlider_C.AddPercent
 // 0x0008 (0x0008 - 0x0000)
@@ -34,50 +34,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_OptionSettings_ListContentSlider_C_AddPercent;
 
-// Function WBP_OptionSettings_ListContentSlider.WBP_OptionSettings_ListContentSlider_C.AddConstantValue
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_OptionSettings_ListContentSlider_C_AddConstantValue final
+// Function WBP_OptionSettings_ListContentSlider.WBP_OptionSettings_ListContentSlider_C.BndEvt__WBP_OptionSettings_ListContentSlider_Slider_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_OptionSettings_ListContentSlider_C_BndEvt__WBP_OptionSettings_ListContentSlider_Slider_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature final
 {
 public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContentSlider_C_AddConstantValue;
-
-// Function WBP_OptionSettings_ListContentSlider.WBP_OptionSettings_ListContentSlider_C.SetValueInt
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_OptionSettings_ListContentSlider_C_SetValueInt final
-{
-public:
-	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Min_0;                                             // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Max_0;                                             // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_2;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContentSlider_C_SetValueInt;
-
-// Function WBP_OptionSettings_ListContentSlider.WBP_OptionSettings_ListContentSlider_C.SetValue
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_OptionSettings_ListContentSlider_C_SetValue final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Min_0;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Max_0;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContentSlider_C_SetValue;
-
-// Function WBP_OptionSettings_ListContentSlider.WBP_OptionSettings_ListContentSlider_C.PlayChangeValueSound
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_OptionSettings_ListContentSlider_C_PlayChangeValueSound final
-{
-public:
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContentSlider_C_PlayChangeValueSound;
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContentSlider_C_BndEvt__WBP_OptionSettings_ListContentSlider_Slider_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature;
 
 // Function WBP_OptionSettings_ListContentSlider.WBP_OptionSettings_ListContentSlider_C.ExecuteUbergraph_WBP_OptionSettings_ListContentSlider
 // 0x01E0 (0x01E0 - 0x0000)
@@ -160,6 +124,42 @@ public:
 	float                                         CallFunc_SetPercent_InPercent_ImplicitCast_3;      // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_OptionSettings_ListContentSlider_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSlider;
+
+// Function WBP_OptionSettings_ListContentSlider.WBP_OptionSettings_ListContentSlider_C.PlayChangeValueSound
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_OptionSettings_ListContentSlider_C_PlayChangeValueSound final
+{
+public:
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContentSlider_C_PlayChangeValueSound;
+
+// Function WBP_OptionSettings_ListContentSlider.WBP_OptionSettings_ListContentSlider_C.SetValue
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_OptionSettings_ListContentSlider_C_SetValue final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Min_0;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Max_0;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContentSlider_C_SetValue;
+
+// Function WBP_OptionSettings_ListContentSlider.WBP_OptionSettings_ListContentSlider_C.SetValueInt
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_OptionSettings_ListContentSlider_C_SetValueInt final
+{
+public:
+	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Min_0;                                             // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Max_0;                                             // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_2;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContentSlider_C_SetValueInt;
 
 }
 

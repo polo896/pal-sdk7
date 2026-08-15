@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_PickaxeBase.BP_PickaxeBase_C
 // 0x0000 (0x0698 - 0x0698)
-class ABP_PickaxeBase_C : public ABP_MeleeWeaponBase_C
+class ABP_PickaxeBase_C final : public ABP_MeleeWeaponBase_C
 {
 public:
 	static class UClass* StaticClass()

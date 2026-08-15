@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MonsterAIController_RaidBoss_LegendDeer.BP_MonsterAIController_RaidBoss_LegendDeer_C
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class ABP_MonsterAIController_RaidBoss_LegendDeer_C : public ABP_MonsterAIController_RaidBoss_C
 {
 public:

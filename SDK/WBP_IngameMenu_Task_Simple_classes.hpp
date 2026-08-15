@@ -11,17 +11,17 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
-#include "Pal_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
+#include "SlateCore_structs.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C
-// 0x0318 (0x0590 - 0x0278)
+// 0x0328 (0x05A0 - 0x0278)
 class UWBP_IngameMenu_Task_Simple_C final : public UUserWidget
 {
 public:
@@ -52,32 +52,34 @@ public:
 	class UBP_PalTextBlock_C*                     Text_PalNum;                                       // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBP_PalTextBlock_C*                     Text_RemainDIsplayPalNum;                          // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBP_PalTextBlock_C*                     Text_TaskDetail_Base;                              // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     Text_WorkHardType;                                 // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox_All;                                   // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox_SimpleInfoToggle_01;                   // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox_TaskDetail;                            // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Task_SimpleList_C*      WBP_IngameMenu_Task_SimpleList;                    // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Task_SimpleList_C*      WBP_IngameMenu_Task_SimpleList_1;                  // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Task_SimpleList_C*      WBP_IngameMenu_Task_SimpleList_2;                  // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Task_SimpleList_C*      WBP_IngameMenu_Task_SimpleList_3;                  // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Task_SimpleList_C*      WBP_IngameMenu_Task_SimpleList_4;                  // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_TaskMaterial_C*         WBP_IngameMenu_TaskMaterial;                       // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWrapBox*                               WrapBox_ItemInfo;                                  // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class UWBP_IngameMenu_Task_SimpleList_C*> palDetailWidgetArray;                           // 0x03A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	struct FSlateFontInfo                         TaskDetailBaseFont;                                // 0x03B8(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	class UMaterial*                              completedTaskFontMaterial;                         // 0x0418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UMaterial*                              incompletedTaskFontMaterial;                       // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    buildTaskMsgID;                                    // 0x0428(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    workerTaskMsgID;                                   // 0x0438(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	TMap<EPalBaseCampWorkerDirectionBattleType, struct FDataTableRowHandle> BattleTypeMsgMap;        // 0x0448(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<EPalBaseCampWorkerDirectionBattleType, TSoftObjectPtr<class UTexture2D>> BattleTypeIconMap; // 0x0498(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<EPalBaseCampPassiveEffectWorkHardType, struct FDataTableRowHandle> WorkHardTypeMsgMap;      // 0x04E8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<EPalBaseCampPassiveEffectWorkHardType, TSoftObjectPtr<class UTexture2D>> WorkHardTypeIconMap; // 0x0538(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          CollapseLastPal;                                   // 0x0588(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     Text_TaskDetail_Base_1;                            // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     Text_TaskDetail_Base_2;                            // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     Text_TaskDetail_Base_3;                            // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     Text_WorkHardType;                                 // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_All;                                   // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_SimpleInfoToggle_01;                   // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_TaskDetail;                            // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Task_SimpleList_C*      WBP_IngameMenu_Task_SimpleList;                    // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Task_SimpleList_C*      WBP_IngameMenu_Task_SimpleList_1;                  // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Task_SimpleList_C*      WBP_IngameMenu_Task_SimpleList_2;                  // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Task_SimpleList_C*      WBP_IngameMenu_Task_SimpleList_3;                  // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Task_SimpleList_C*      WBP_IngameMenu_Task_SimpleList_4;                  // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_TaskMaterial_C*         WBP_IngameMenu_TaskMaterial;                       // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWrapBox*                               WrapBox_ItemInfo;                                  // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class UWBP_IngameMenu_Task_SimpleList_C*> palDetailWidgetArray;                           // 0x03C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	struct FSlateFontInfo                         TaskDetailBaseFont;                                // 0x03D0(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	class UMaterial*                              completedTaskFontMaterial;                         // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    buildTaskMsgID;                                    // 0x0438(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    workerTaskMsgID;                                   // 0x0448(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	TMap<EPalBaseCampWorkerDirectionBattleType, struct FDataTableRowHandle> BattleTypeMsgMap;        // 0x0458(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<EPalBaseCampWorkerDirectionBattleType, TSoftObjectPtr<class UTexture2D>> BattleTypeIconMap; // 0x04A8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<EPalBaseCampPassiveEffectWorkHardType, struct FDataTableRowHandle> WorkHardTypeMsgMap;      // 0x04F8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<EPalBaseCampPassiveEffectWorkHardType, TSoftObjectPtr<class UTexture2D>> WorkHardTypeIconMap; // 0x0548(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          CollapseLastPal;                                   // 0x0598(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void AddItemInfo(bool isHideWhenZero, class FName ItemId, int64 itemNum, int64 gaugeMaxNumBorder);
-	void AddTaslDetailText(const class FText& Text, int32 nowNum, int32 requireNum);
+	void AddTaskDetailText(const class FText& Text, int32 nowNum, int32 requireNum, int32 TaskIndex);
 	void ExecuteUbergraph_WBP_IngameMenu_Task_Simple(int32 EntryPoint);
 	void OnInitialized();
 	void OnUISettingaChanged(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings);

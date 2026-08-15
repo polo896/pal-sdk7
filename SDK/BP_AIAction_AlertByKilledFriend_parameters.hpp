@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "EPal_AI_AlertByKilledFriendState_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,6 +27,16 @@ public:
 	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_AlertByKilledFriend_C_ActionAbort;
+
+// Function BP_AIAction_AlertByKilledFriend.BP_AIAction_AlertByKilledFriend_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_AlertByKilledFriend_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_AlertByKilledFriend_C_ActionFinished;
 
 // Function BP_AIAction_AlertByKilledFriend.BP_AIAction_AlertByKilledFriend_C.ActionTick
 // 0x0010 (0x0010 - 0x0000)
@@ -168,16 +178,6 @@ public:
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_AlertByKilledFriend_C_StopMovement;
-
-// Function BP_AIAction_AlertByKilledFriend.BP_AIAction_AlertByKilledFriend_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_AlertByKilledFriend_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_AlertByKilledFriend_C_ActionFinished;
 
 // Function BP_AIAction_AlertByKilledFriend.BP_AIAction_AlertByKilledFriend_C.ActionStart
 // 0x0008 (0x0008 - 0x0000)

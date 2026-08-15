@@ -18,39 +18,16 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ModActor.ModActor_C
-// 0x0078 (0x0308 - 0x0290)
+// 0x0010 (0x02A0 - 0x0290)
 class ModActor_0::AModActor_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0298(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class FString                                 ModAuthor;                                         // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class FString                                 ModDescription;                                    // 0x02B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class FString                                 ModVersion;                                        // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	TArray<class FString>                         ModButtons;                                        // 0x02D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FTimerHandle                           TempWidgetScanHandle;                              // 0x02E0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UWBP_ModConfigMenuUI_C*                 TempMenuHandle;                                    // 0x02E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USaveGame*                              ConfigSaveData;                                    // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TArray<class FString>                         LastScannedModConfigFiles;                         // 0x02F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ScanForTitleUI();
-	void ScanForConfigFiles(TArray<class FString>* Paths);
-	void ScanConfigDirectory(TArray<class FString>* ConfigFilePaths);
-	void RemoveFilesWithoutDotJSON(TArray<class FString>& In, TArray<class FString>* Out);
-	void RemoveEmptyStrings(TArray<class FString>& In, TArray<class FString>* Out);
 	void ReceiveBeginPlay();
-	void PrintToModLoader(const class FString& Message);
-	void OnRequestOpenModConfigMenu();
-	void OnMenuWidgetDeactivated();
-	void ModMenuButtonPressed(int32 ButtonIndex);
-	void LoadSaveData();
-	void GetSaveDataName(class FString* saveName, int32* UserIndex);
-	void GetAnyPressedKey(bool* HasAnyKey, struct FEnhancedActionKeyMapping* EnhancedKeyMapping, struct FKey* Key);
 	void ExecuteUbergraph_ModActor(int32 EntryPoint);
-	void DekScanModDirectories(TArray<class FString>* OutPaths);
-	void Completed_9FF99D2D49B7B1B598206BB09E765FCF(class USaveGame* SaveGame, bool bSuccess);
-	void Completed_589111464D46916FA824489997CEBB19(class USaveGame* SaveGame, bool bSuccess);
 
 public:
 	static class UClass* StaticClass()

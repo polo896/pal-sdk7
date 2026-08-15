@@ -37,20 +37,6 @@ void ABP_NPCAIController_ArenaNPC_C::ExecuteUbergraph_BP_NPCAIController_ArenaNP
 }
 
 
-// Function BP_NPCAIController_ArenaNPC.BP_NPCAIController_ArenaNPC_C.OnStartInBattle
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_NPCAIController_ArenaNPC_C::OnStartInBattle()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAIController_ArenaNPC_C", "OnStartInBattle");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_NPCAIController_ArenaNPC.BP_NPCAIController_ArenaNPC_C.GoBack_Teritory
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -60,6 +46,20 @@ void ABP_NPCAIController_ArenaNPC_C::GoBack_Teritory()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_NPCAIController_ArenaNPC_C", "GoBack_Teritory");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCAIController_ArenaNPC.BP_NPCAIController_ArenaNPC_C.OnStartInBattle
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_NPCAIController_ArenaNPC_C::OnStartInBattle()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAIController_ArenaNPC_C", "OnStartInBattle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

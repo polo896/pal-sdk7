@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Pal_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -62,32 +62,32 @@ public:
 	int32                                         DefaultVoiceChatDeviceIndex;                       // 0x0414(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void WBP_Sound_Settings_AutoGenFunc(double Value);
-	void UpdateDiscordUI();
-	void SetDefault();
-	void OnUIChanged(double Value);
-	void OnSwitchDiscordLinkAccount(bool IsOn);
-	void OnSEChanged(double Value);
-	void OnPlayerVoiceChanged(double Value);
-	void OnPalVoiceChanged(double Value);
-	void OnMasterChanged(double Value);
-	void OnClickShowDiscordFriiendList();
-	void OnClickCloseDiscordFriiendList();
-	void OnChangeVoiceChatDevice(int32 Selection);
-	void OnChangedSwitch_VoiceChat_Mute_Others(bool IsOn);
-	void OnChangedSwitch_VoiceChat_Mute_MySelf(bool IsOn);
-	void OnChangedSwitch_RarePalEffect(bool IsOn);
-	void OnChangedSwitch_PalWorking(bool IsOn);
-	void OnChangedSwitch_PalEffect(bool IsOn);
-	void OnChangedSwitch_GameMachine(bool IsOn);
-	void OnChangedSlider_VoiceChat_Output_Volume(double Volume);
-	void OnChangedSlider_VoiceChat_Input_Volume(double Volume);
-	void OnChangedSelection_VoiceChat_Input_Setting(int32 Selection);
-	void OnBGMChanged(double Value);
-	void OnAmbientChanged(double Value);
-	void ExecuteUbergraph_WBP_Sound_Settings(int32 EntryPoint);
-	void Construct();
 	void ApplySettings(bool ApplyOriginal);
+	void Construct();
+	void ExecuteUbergraph_WBP_Sound_Settings(int32 EntryPoint);
+	void OnAmbientChanged(double Value);
+	void OnBGMChanged(double Value);
+	void OnChangedSelection_VoiceChat_Input_Setting(int32 Selection);
+	void OnChangedSlider_VoiceChat_Input_Volume(double Volume);
+	void OnChangedSlider_VoiceChat_Output_Volume(double Volume);
+	void OnChangedSwitch_GameMachine(bool IsOn);
+	void OnChangedSwitch_PalEffect(bool IsOn);
+	void OnChangedSwitch_PalWorking(bool IsOn);
+	void OnChangedSwitch_RarePalEffect(bool IsOn);
+	void OnChangedSwitch_VoiceChat_Mute_MySelf(bool IsOn);
+	void OnChangedSwitch_VoiceChat_Mute_Others(bool IsOn);
+	void OnChangeVoiceChatDevice(int32 Selection);
+	void OnClickCloseDiscordFriiendList();
+	void OnClickShowDiscordFriiendList();
+	void OnMasterChanged(double Value);
+	void OnPalVoiceChanged(double Value);
+	void OnPlayerVoiceChanged(double Value);
+	void OnSEChanged(double Value);
+	void OnSwitchDiscordLinkAccount(bool IsOn);
+	void OnUIChanged(double Value);
+	void SetDefault();
+	void UpdateDiscordUI();
+	void WBP_Sound_Settings_AutoGenFunc(double Value);
 
 public:
 	static class UClass* StaticClass()

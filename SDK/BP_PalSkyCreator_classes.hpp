@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalSkyCreator.BP_PalSkyCreator_C
-// 0x0000 (0x1188 - 0x1188)
+// 0x0000 (0x1198 - 0x1198)
 class ABP_PalSkyCreator_C final : public APalSkyCreator
 {
 public:

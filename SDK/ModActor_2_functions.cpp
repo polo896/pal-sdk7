@@ -17,50 +17,22 @@
 namespace SDK
 {
 
-// Function ModActor.ModActor_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ModActor_2::AModActor_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModActor_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ModActor.ModActor_C.MakePointsGUIDs
+// Function ModActor.ModActor_C.PostBeginPlay
 // (BlueprintCallable, BlueprintEvent)
 
-void ModActor_2::AModActor_C::MakePointsGUIDs()
+void ModActor_2::AModActor_C::PostBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ModActor_C", "MakePointsGUIDs");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ModActor.ModActor_C.GetMap2
-// (BlueprintCallable, BlueprintEvent)
-
-void ModActor_2::AModActor_C::GetMap2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModActor_C", "GetMap2");
+		Func = Class->GetFunction("ModActor_C", "PostBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
 // Function ModActor.ModActor_C.ExecuteUbergraph_ModActor
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -76,20 +48,6 @@ void ModActor_2::AModActor_C::ExecuteUbergraph_ModActor(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ModActor.ModActor_C.DoUnlockFlag
-// (BlueprintCallable, BlueprintEvent)
-
-void ModActor_2::AModActor_C::DoUnlockFlag()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModActor_C", "DoUnlockFlag");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

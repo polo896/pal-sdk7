@@ -17,101 +17,15 @@
 namespace SDK
 {
 
-// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.CutsceneFinishFadeIn
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsSkipped                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LevelGimmick_AreaBarrier_Info_C::CutsceneFinishFadeIn(bool bIsSkipped)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Info_C", "CutsceneFinishFadeIn");
-
-	Params::BP_LevelGimmick_AreaBarrier_Info_C_CutsceneFinishFadeIn Parms{};
-
-	Parms.bIsSkipped = bIsSkipped;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.CutsceneStartFadeOut
+// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.SpawnCutsceneActor
 // (Private, BlueprintCallable, BlueprintEvent)
 
-void ABP_LevelGimmick_AreaBarrier_Info_C::CutsceneStartFadeOut()
+void ABP_LevelGimmick_AreaBarrier_Info_C::SpawnCutsceneActor()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Info_C", "CutsceneStartFadeOut");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.CutsceneStartWaitForWorldPartition
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_LevelGimmick_AreaBarrier_Info_C::CutsceneStartWaitForWorldPartition()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Info_C", "CutsceneStartWaitForWorldPartition");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.CutSceneWaitForWorldPartition
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void ABP_LevelGimmick_AreaBarrier_Info_C::CutSceneWaitForWorldPartition()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Info_C", "CutSceneWaitForWorldPartition");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.PlayCutsceneIfNecessary
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     LockId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bLockStateChanged                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bForce                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LevelGimmick_AreaBarrier_Info_C::PlayCutsceneIfNecessary(const struct FGuid& LockId, bool bLockStateChanged, bool bForce)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Info_C", "PlayCutsceneIfNecessary");
-
-	Params::BP_LevelGimmick_AreaBarrier_Info_C_PlayCutsceneIfNecessary Parms{};
-
-	Parms.LockId = std::move(LockId);
-	Parms.bLockStateChanged = bLockStateChanged;
-	Parms.bForce = bForce;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.PlayCutsceneInternal
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void ABP_LevelGimmick_AreaBarrier_Info_C::PlayCutsceneInternal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Info_C", "PlayCutsceneInternal");
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Info_C", "SpawnCutsceneActor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -144,17 +58,103 @@ bool ABP_LevelGimmick_AreaBarrier_Info_C::ShouldPlayCutscene(const struct FGuid&
 }
 
 
-// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.SpawnCutsceneActor
+// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.PlayCutsceneInternal
 // (Private, BlueprintCallable, BlueprintEvent)
 
-void ABP_LevelGimmick_AreaBarrier_Info_C::SpawnCutsceneActor()
+void ABP_LevelGimmick_AreaBarrier_Info_C::PlayCutsceneInternal()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Info_C", "SpawnCutsceneActor");
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Info_C", "PlayCutsceneInternal");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.PlayCutsceneIfNecessary
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     LockId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bLockStateChanged                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bForce                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LevelGimmick_AreaBarrier_Info_C::PlayCutsceneIfNecessary(const struct FGuid& LockId, bool bLockStateChanged, bool bForce)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Info_C", "PlayCutsceneIfNecessary");
+
+	Params::BP_LevelGimmick_AreaBarrier_Info_C_PlayCutsceneIfNecessary Parms{};
+
+	Parms.LockId = std::move(LockId);
+	Parms.bLockStateChanged = bLockStateChanged;
+	Parms.bForce = bForce;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.CutSceneWaitForWorldPartition
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void ABP_LevelGimmick_AreaBarrier_Info_C::CutSceneWaitForWorldPartition()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Info_C", "CutSceneWaitForWorldPartition");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.CutsceneStartWaitForWorldPartition
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_LevelGimmick_AreaBarrier_Info_C::CutsceneStartWaitForWorldPartition()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Info_C", "CutsceneStartWaitForWorldPartition");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.CutsceneStartFadeOut
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void ABP_LevelGimmick_AreaBarrier_Info_C::CutsceneStartFadeOut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Info_C", "CutsceneStartFadeOut");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.CutsceneFinishFadeIn
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsSkipped                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LevelGimmick_AreaBarrier_Info_C::CutsceneFinishFadeIn(bool bIsSkipped)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Info_C", "CutsceneFinishFadeIn");
+
+	Params::BP_LevelGimmick_AreaBarrier_Info_C_CutsceneFinishFadeIn Parms{};
+
+	Parms.bIsSkipped = bIsSkipped;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

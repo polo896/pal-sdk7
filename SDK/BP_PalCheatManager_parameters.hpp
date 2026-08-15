@@ -18,15 +18,46 @@
 namespace SDK::Params
 {
 
-// Function BP_PalCheatManager.BP_PalCheatManager_C.DebugItemWindow
+// Function BP_PalCheatManager.BP_PalCheatManager_C.TogglePalSpawner
+// 0x0020 (0x0020 - 0x0000)
+struct BP_PalCheatManager_C_TogglePalSpawner final
+{
+public:
+	class UDataLayerSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UDataLayerSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_1;          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EDataLayerRuntimeState                        CallFunc_GetDataLayerInstanceRuntimeState_ReturnValue; // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UDataLayerSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_2;          // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalCheatManager_C_TogglePalSpawner;
+
+// Function BP_PalCheatManager.BP_PalCheatManager_C.ToggleAllDebugInfo
+// 0x0040 (0x0040 - 0x0000)
+struct BP_PalCheatManager_C_ToggleAllDebugInfo final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Array_Get_Item;                           // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalCheatManager_C_ToggleAllDebugInfo;
+
+// Function BP_PalCheatManager.BP_PalCheatManager_C.LaunchNewBuildObjectUI
 // 0x0018 (0x0018 - 0x0000)
-struct BP_PalCheatManager_C_DebugItemWindow final
+struct BP_PalCheatManager_C_LaunchNewBuildObjectUI final
 {
 public:
 	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalCheatManager_C_DebugItemWindow;
+DUMPER7_ASSERTS_BP_PalCheatManager_C_LaunchNewBuildObjectUI;
 
 // Function BP_PalCheatManager.BP_PalCheatManager_C.ExecuteUbergraph_BP_PalCheatManager
 // 0x0140 (0x0140 - 0x0000)
@@ -79,46 +110,15 @@ public:
 };
 DUMPER7_ASSERTS_BP_PalCheatManager_C_ExecuteUbergraph_BP_PalCheatManager;
 
-// Function BP_PalCheatManager.BP_PalCheatManager_C.LaunchNewBuildObjectUI
+// Function BP_PalCheatManager.BP_PalCheatManager_C.DebugItemWindow
 // 0x0018 (0x0018 - 0x0000)
-struct BP_PalCheatManager_C_LaunchNewBuildObjectUI final
+struct BP_PalCheatManager_C_DebugItemWindow final
 {
 public:
 	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalCheatManager_C_LaunchNewBuildObjectUI;
-
-// Function BP_PalCheatManager.BP_PalCheatManager_C.ToggleAllDebugInfo
-// 0x0040 (0x0040 - 0x0000)
-struct BP_PalCheatManager_C_ToggleAllDebugInfo final
-{
-public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Array_Get_Item;                           // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalCheatManager_C_ToggleAllDebugInfo;
-
-// Function BP_PalCheatManager.BP_PalCheatManager_C.TogglePalSpawner
-// 0x0020 (0x0020 - 0x0000)
-struct BP_PalCheatManager_C_TogglePalSpawner final
-{
-public:
-	class UDataLayerSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UDataLayerSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_1;          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EDataLayerRuntimeState                        CallFunc_GetDataLayerInstanceRuntimeState_ReturnValue; // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UDataLayerSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_2;          // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalCheatManager_C_TogglePalSpawner;
+DUMPER7_ASSERTS_BP_PalCheatManager_C_DebugItemWindow;
 
 }
 

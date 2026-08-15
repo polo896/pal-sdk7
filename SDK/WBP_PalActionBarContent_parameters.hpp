@@ -16,6 +16,24 @@
 namespace SDK::Params
 {
 
+// Function WBP_PalActionBarContent.WBP_PalActionBarContent_C.UnhoveredEvent
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalActionBarContent_C_UnhoveredEvent final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalActionBarContent_C_UnhoveredEvent;
+
+// Function WBP_PalActionBarContent.WBP_PalActionBarContent_C.HoveredEvent
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalActionBarContent_C_HoveredEvent final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalActionBarContent_C_HoveredEvent;
+
 // Function WBP_PalActionBarContent.WBP_PalActionBarContent_C.ExecuteUbergraph_WBP_PalActionBarContent
 // 0x0048 (0x0048 - 0x0000)
 struct WBP_PalActionBarContent_C_ExecuteUbergraph_WBP_PalActionBarContent final
@@ -30,24 +48,6 @@ public:
 	class UCommonButtonBase*                      K2Node_CustomEvent_Button;                         // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_PalActionBarContent_C_ExecuteUbergraph_WBP_PalActionBarContent;
-
-// Function WBP_PalActionBarContent.WBP_PalActionBarContent_C.HoveredEvent
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalActionBarContent_C_HoveredEvent final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalActionBarContent_C_HoveredEvent;
-
-// Function WBP_PalActionBarContent.WBP_PalActionBarContent_C.UnhoveredEvent
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalActionBarContent_C_UnhoveredEvent final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalActionBarContent_C_UnhoveredEvent;
 
 }
 

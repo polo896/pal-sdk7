@@ -30,26 +30,26 @@ public:
 	struct FVector                                RangePoint;                                        // 0x0178(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateAimTargetLocation();
-	void TickAction(float DeltaTime);
-	struct FVector SuggestRangePoint();
-	void StartShoot();
-	void SetEndAction();
-	void RequestEndAction();
-	void ReadyAim();
-	void OnTargetDeath(const class UPalActionBase* action);
-	void OnNotifyEnd_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName);
-	void OnNotifyBegin_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName);
-	void OnInterrupted_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName);
-	void OnEndAction();
-	void OnCompleted_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName);
-	void OnBlendOut_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName);
-	void OnBeginAction();
-	void MoveToRange();
-	bool IsEndAction();
-	void GetWeaponType(EPalWeaponType* WeaponType);
-	void GetWeaponStats(double* Range, double* AttackTime);
 	void ExecuteUbergraph_BP_NPCAction_WeaponUse(int32 EntryPoint);
+	void GetWeaponStats(double* Range, double* AttackTime);
+	void GetWeaponType(EPalWeaponType* WeaponType);
+	bool IsEndAction();
+	void MoveToRange();
+	void OnBeginAction();
+	void OnBlendOut_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName);
+	void OnCompleted_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName);
+	void OnEndAction();
+	void OnInterrupted_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName);
+	void OnNotifyBegin_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName);
+	void OnNotifyEnd_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName);
+	void OnTargetDeath(const class UPalActionBase* action);
+	void ReadyAim();
+	void RequestEndAction();
+	void SetEndAction();
+	void StartShoot();
+	struct FVector SuggestRangePoint();
+	void TickAction(float DeltaTime);
+	void UpdateAimTargetLocation();
 
 public:
 	static class UClass* StaticClass()

@@ -17,6 +17,16 @@
 namespace SDK::Params
 {
 
+// Function BP_AIAction_Sleep.BP_AIAction_Sleep_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_Sleep_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_Sleep_C_ActionFinished;
+
 // Function BP_AIAction_Sleep.BP_AIAction_Sleep_C.ExecuteUbergraph_BP_AIAction_Sleep
 // 0x00F0 (0x00F0 - 0x0000)
 struct BP_AIAction_Sleep_C_ExecuteUbergraph_BP_AIAction_Sleep final
@@ -61,16 +71,6 @@ public:
 	struct FPalDamageResult                       DamageResult;                                      // 0x0000(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_AIAction_Sleep_C_OnDamageDelegate_イベント_0;
-
-// Function BP_AIAction_Sleep.BP_AIAction_Sleep_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_Sleep_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_Sleep_C_ActionFinished;
 
 // Function BP_AIAction_Sleep.BP_AIAction_Sleep_C.ActionStart
 // 0x0008 (0x0008 - 0x0000)

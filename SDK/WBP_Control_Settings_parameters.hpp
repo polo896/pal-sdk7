@@ -18,375 +18,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Control_Settings.WBP_Control_Settings_C.SwitchTab
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_SwitchTab final
-{
-public:
-	bool                                          Next;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_SwitchTab;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.SwitchPanel
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Control_Settings_C_SwitchPanel final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_SwitchPanel;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.SetDefault
-// 0x0190 (0x0190 - 0x0000)
-struct WBP_Control_Settings_C_SetDefault final
-{
-public:
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionCommonSettings               K2Node_MakeStruct_PalOptionCommonSettings;         // 0x0008(0x0030)()
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionKeyboardSettings             K2Node_MakeStruct_PalOptionKeyboardSettings;       // 0x003C(0x0014)(NoDestructor)
-	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionPadSettings                  K2Node_MakeStruct_PalOptionPadSettings;            // 0x0054(0x001C)(NoDestructor)
-	struct FPalOptionUISettings                   K2Node_MakeStruct_PalOptionUISettings;             // 0x0070(0x001C)(NoDestructor)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast;      // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_1;    // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_2;    // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_3;    // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_4;    // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_5;    // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_6;    // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetValue_Value_ImplicitCast;              // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast;               // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast;               // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_1;             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_1;             // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_2;             // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_2;             // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_3;             // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_3;             // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_4;             // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_4;             // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_5;             // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_5;             // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_6;             // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetValue_Min_ImplicitCast;                // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_6;             // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetValue_Max_ImplicitCast;                // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_7;    // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetOutline_OutlineOpacity_ImplicitCast;   // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_8;    // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_7;             // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_7;             // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_8;             // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_8;             // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_SetDefault;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnVibChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnVibChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnVibChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleLongPressChanged_GP
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnToggleLongPressChanged_GP final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnToggleLongPressChanged_GP;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleLongPressChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnToggleLongPressChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnToggleLongPressChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleBuildModeChanged_GP
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnToggleBuildModeChanged_GP final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnToggleBuildModeChanged_GP;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleBuildModeChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnToggleBuildModeChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnToggleBuildModeChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickYChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnRStickYChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnRStickYChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickXChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnRStickXChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnRStickXChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickThreChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Control_Settings_C_OnRStickThreChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnRStickThreChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickSensiChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Control_Settings_C_OnRStickSensiChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnRStickSensiChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnPadAimAssistChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnPadAimAssistChanged final
-{
-public:
-	bool                                          OnPadAimAssistChanged_0;                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnPadAimAssistChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseYChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnMouseYChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnMouseYChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseXChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnMouseXChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnMouseXChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseSensiChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Control_Settings_C_OnMouseSensiChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnMouseSensiChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseAIMChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Control_Settings_C_OnMouseAIMChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnMouseAIMChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMinFontSizeChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Control_Settings_C_OnMinFontSizeChanged final
-{
-public:
-	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnMinFontSizeChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnLStickThreChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Control_Settings_C_OnLStickThreChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnLStickThreChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnHideCommonKeyGuideChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnHideCommonKeyGuideChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnHideCommonKeyGuideChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnHideChatChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnHideChatChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnHideChatChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnGPDashChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnGPDashChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnGPDashChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnGPAimChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Control_Settings_C_OnGPAimChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnGPAimChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnGliderInvertYChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnGliderInvertYChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnGliderInvertYChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnGliderInvertLStickYChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnGliderInvertLStickYChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnGliderInvertLStickYChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnDashChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnDashChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnDashChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChatUICloseDelayChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Control_Settings_C_OnChatUICloseDelayChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChatUICloseDelayChanged;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChangedReticleOutline
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Control_Settings_C_OnChangedReticleOutline final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChangedReticleOutline;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChangedReticleColor
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Control_Settings_C_OnChangedReticleColor final
-{
-public:
-	int32                                         ColorIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChangedReticleColor;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChangedMaxDamageDisplayNum
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Control_Settings_C_OnChangedMaxDamageDisplayNum final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChangedMaxDamageDisplayNum;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChangedHideUINotInBattle
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnChangedHideUINotInBattle final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChangedHideUINotInBattle;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChangedHideCraftExpLog
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnChangedHideCraftExpLog final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChangedHideCraftExpLog;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChangedDisableGuildJoined
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnChangedDisableGuildJoined final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChangedDisableGuildJoined;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChangedDisableAutoItemPick
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnChangedDisableAutoItemPick final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChangedDisableAutoItemPick;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChangedDamageTextScale
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Control_Settings_C_OnChangedDamageTextScale final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChangedDamageTextScale;
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.GetDesiredFocusTarget
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Control_Settings_C_GetDesiredFocusTarget final
-{
-public:
-	class UWidget*                                Target;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PalCommonButtonBase_C*             CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Control_Settings_C_GetDesiredFocusTarget;
-
 // Function WBP_Control_Settings.WBP_Control_Settings_C.ExecuteUbergraph_WBP_Control_Settings
 // 0x07F0 (0x07F0 - 0x0000)
 struct WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings final
@@ -617,6 +248,375 @@ public:
 	float                                         K2Node_SetFieldsInStruct_ChatUICloseDelayTime_ImplicitCast; // 0x07EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.GetDesiredFocusTarget
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Control_Settings_C_GetDesiredFocusTarget final
+{
+public:
+	class UWidget*                                Target;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalCommonButtonBase_C*             CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_GetDesiredFocusTarget;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChangedDamageTextScale
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Control_Settings_C_OnChangedDamageTextScale final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChangedDamageTextScale;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChangedDisableAutoItemPick
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnChangedDisableAutoItemPick final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChangedDisableAutoItemPick;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChangedDisableGuildJoined
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnChangedDisableGuildJoined final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChangedDisableGuildJoined;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChangedHideCraftExpLog
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnChangedHideCraftExpLog final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChangedHideCraftExpLog;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChangedHideUINotInBattle
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnChangedHideUINotInBattle final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChangedHideUINotInBattle;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChangedMaxDamageDisplayNum
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Control_Settings_C_OnChangedMaxDamageDisplayNum final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChangedMaxDamageDisplayNum;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChangedReticleColor
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Control_Settings_C_OnChangedReticleColor final
+{
+public:
+	int32                                         ColorIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChangedReticleColor;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChangedReticleOutline
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Control_Settings_C_OnChangedReticleOutline final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChangedReticleOutline;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnChatUICloseDelayChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Control_Settings_C_OnChatUICloseDelayChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnChatUICloseDelayChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnDashChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnDashChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnDashChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnGliderInvertLStickYChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnGliderInvertLStickYChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnGliderInvertLStickYChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnGliderInvertYChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnGliderInvertYChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnGliderInvertYChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnGPAimChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Control_Settings_C_OnGPAimChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnGPAimChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnGPDashChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnGPDashChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnGPDashChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnHideChatChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnHideChatChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnHideChatChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnHideCommonKeyGuideChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnHideCommonKeyGuideChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnHideCommonKeyGuideChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnLStickThreChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Control_Settings_C_OnLStickThreChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnLStickThreChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMinFontSizeChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Control_Settings_C_OnMinFontSizeChanged final
+{
+public:
+	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnMinFontSizeChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseAIMChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Control_Settings_C_OnMouseAIMChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnMouseAIMChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseSensiChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Control_Settings_C_OnMouseSensiChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnMouseSensiChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseXChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnMouseXChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnMouseXChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseYChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnMouseYChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnMouseYChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnPadAimAssistChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnPadAimAssistChanged final
+{
+public:
+	bool                                          OnPadAimAssistChanged_0;                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnPadAimAssistChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickSensiChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Control_Settings_C_OnRStickSensiChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnRStickSensiChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickThreChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Control_Settings_C_OnRStickThreChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnRStickThreChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickXChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnRStickXChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnRStickXChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickYChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnRStickYChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnRStickYChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleBuildModeChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnToggleBuildModeChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnToggleBuildModeChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleBuildModeChanged_GP
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnToggleBuildModeChanged_GP final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnToggleBuildModeChanged_GP;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleLongPressChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnToggleLongPressChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnToggleLongPressChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleLongPressChanged_GP
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnToggleLongPressChanged_GP final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnToggleLongPressChanged_GP;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnVibChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnVibChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_OnVibChanged;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.SetDefault
+// 0x0190 (0x0190 - 0x0000)
+struct WBP_Control_Settings_C_SetDefault final
+{
+public:
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionCommonSettings               K2Node_MakeStruct_PalOptionCommonSettings;         // 0x0008(0x0030)()
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionKeyboardSettings             K2Node_MakeStruct_PalOptionKeyboardSettings;       // 0x003C(0x0014)(NoDestructor)
+	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionPadSettings                  K2Node_MakeStruct_PalOptionPadSettings;            // 0x0054(0x001C)(NoDestructor)
+	struct FPalOptionUISettings                   K2Node_MakeStruct_PalOptionUISettings;             // 0x0070(0x001C)(NoDestructor)
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast;      // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_1;    // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_2;    // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_3;    // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_4;    // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_5;    // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_6;    // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetValue_Value_ImplicitCast;              // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast;               // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast;               // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_1;             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_1;             // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_2;             // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_2;             // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_3;             // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_3;             // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_4;             // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_4;             // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_5;             // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_5;             // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_6;             // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetValue_Min_ImplicitCast;                // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_6;             // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetValue_Max_ImplicitCast;                // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_7;    // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetOutline_OutlineOpacity_ImplicitCast;   // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_8;    // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_7;             // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_7;             // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_8;             // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_8;             // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_SetDefault;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.SwitchPanel
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Control_Settings_C_SwitchPanel final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_SwitchPanel;
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.SwitchTab
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_SwitchTab final
+{
+public:
+	bool                                          Next;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Control_Settings_C_SwitchTab;
 
 }
 

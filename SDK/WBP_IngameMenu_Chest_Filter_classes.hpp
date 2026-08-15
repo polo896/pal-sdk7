@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_classes.hpp"
 
 
 namespace SDK
@@ -39,24 +39,24 @@ public:
 	TMulticastInlineDelegate<void()>              OnClickedCustomNameEditButton;                     // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	class UWBP_IngameMenu_Chest_FilterContent_C* AddContentItem(class FName FilterId, class FName FilterTextId);
-	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_6_OnClickedAllCheckButton__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_7_OnClickedAllUncheckButton__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_8_OnClickedEditCustomNameButton__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_9_OnEditedCustomName__DelegateSignature(const class FString& NewCustomName);
-	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void ClearContent();
-	void EndEditCustomName();
-	void ExecuteUbergraph_WBP_IngameMenu_Chest_Filter(int32 EntryPoint);
-	void FocusToConfirmButton();
-	void GetDesiredFocusTarget(class UWidget** NewParam);
-	void IsEditingCustomName(bool* bEditing);
-	void SetAllChecker(bool Checked);
-	void SetCustomName(const class FString& InCustomName);
-	void SetEnableCustomNameEdit(bool bEnableNameEdit);
-	void SetupAsItemFilter();
 	void StartEditCustomName();
+	void SetupAsItemFilter();
+	void SetEnableCustomNameEdit(bool bEnableNameEdit);
+	void SetCustomName(const class FString& InCustomName);
+	void SetAllChecker(bool Checked);
+	void IsEditingCustomName(bool* bEditing);
+	void GetDesiredFocusTarget(class UWidget** NewParam);
+	void FocusToConfirmButton();
+	void ExecuteUbergraph_WBP_IngameMenu_Chest_Filter(int32 EntryPoint);
+	void EndEditCustomName();
+	void ClearContent();
+	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_9_OnEditedCustomName__DelegateSignature(const class FString& NewCustomName);
+	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_8_OnClickedEditCustomNameButton__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_7_OnClickedAllUncheckButton__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_6_OnClickedAllCheckButton__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	class UWBP_IngameMenu_Chest_FilterContent_C* AddContentItem(class FName FilterId, class FName FilterTextId);
 
 public:
 	static class UClass* StaticClass()

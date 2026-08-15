@@ -176,7 +176,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1D9[0x7];                                      // 0x01D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalPlayerCharacter*                    CallFunc_GetJoinedLocalControlPlayer_ReturnValue_3; // 0x01E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	const class UPalActionBase*                   K2Node_CustomEvent_Action;                         // 0x01E8(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class UPalActionBase*                   K2Node_CustomEvent_action;                         // 0x01E8(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsLoadingAction_isLoadingAction;          // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsLoadingAction_isLoadingAction_1;        // 0x01F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1F2[0x6];                                      // 0x01F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])

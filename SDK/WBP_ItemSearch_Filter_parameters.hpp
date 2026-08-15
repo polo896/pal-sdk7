@@ -10,46 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "Pal_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
 {
-
-// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.ExecuteUbergraph_WBP_ItemSearch_Filter
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_ItemSearch_Filter_C_ExecuteUbergraph_WBP_ItemSearch_Filter final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_HUDDispatchParameter_ItemFilter_C*  K2Node_DynamicCast_AsBP_HUDDispatch_Parameter_Item_Filter; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue_1;                   // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_HUDDispatchParameter_ItemFilter_C*  K2Node_DynamicCast_AsBP_HUDDispatch_Parameter_Item_Filter_1; // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x0040(0x0010)(ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_ItemSearch_Filter_C_ExecuteUbergraph_WBP_ItemSearch_Filter;
-
-// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.OnClickedCheck
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_ItemSearch_Filter_C_OnClickedCheck final
-{
-public:
-	class FName                                   TypeId;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bChecked;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemSearch_Filter_C_OnClickedCheck;
 
 // Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.Setup
 // 0x00D8 (0x00D8 - 0x0000)
@@ -88,6 +54,40 @@ public:
 	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_ItemSearch_Filter_C_Setup;
+
+// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.OnClickedCheck
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_ItemSearch_Filter_C_OnClickedCheck final
+{
+public:
+	class FName                                   TypeId;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bChecked;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemSearch_Filter_C_OnClickedCheck;
+
+// Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.ExecuteUbergraph_WBP_ItemSearch_Filter
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_ItemSearch_Filter_C_ExecuteUbergraph_WBP_ItemSearch_Filter final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_HUDDispatchParameter_ItemFilter_C*  K2Node_DynamicCast_AsBP_HUDDispatch_Parameter_Item_Filter; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue_1;                   // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_HUDDispatchParameter_ItemFilter_C*  K2Node_DynamicCast_AsBP_HUDDispatch_Parameter_Item_Filter_1; // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x0040(0x0010)(ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_ItemSearch_Filter_C_ExecuteUbergraph_WBP_ItemSearch_Filter;
 
 // Function WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C.BP_GetDesiredFocusTarget
 // 0x0010 (0x0010 - 0x0000)

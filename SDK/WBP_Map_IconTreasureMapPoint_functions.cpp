@@ -17,6 +17,47 @@
 namespace SDK
 {
 
+// Function WBP_Map_IconTreasureMapPoint.WBP_Map_IconTreasureMapPoint_C.Setup_Internal
+// (Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalLocationPoint*                LocationPoint                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_IconTreasureMapPoint_C::Setup_Internal(class UPalLocationPoint* LocationPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconTreasureMapPoint_C", "Setup_Internal");
+
+	Params::WBP_Map_IconTreasureMapPoint_C_Setup_Internal Parms{};
+
+	Parms.LocationPoint = LocationPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Map_IconTreasureMapPoint.WBP_Map_IconTreasureMapPoint_C.GetInvisibleButton
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget**                         Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_IconTreasureMapPoint_C::GetInvisibleButton(class UWidget** Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconTreasureMapPoint_C", "GetInvisibleButton");
+
+	Params::WBP_Map_IconTreasureMapPoint_C_GetInvisibleButton Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Button != nullptr)
+		*Button = Parms.Button;
+}
+
+
 // Function WBP_Map_IconTreasureMapPoint.WBP_Map_IconTreasureMapPoint_C.ExecuteUbergraph_WBP_Map_IconTreasureMapPoint
 // (Final, UbergraphFunction)
 // Parameters:
@@ -94,47 +135,6 @@ void UWBP_Map_IconTreasureMapPoint_C::BndEvt__WBP_Map_IconCustom_WBP_PalCommonBu
 	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Map_IconTreasureMapPoint.WBP_Map_IconTreasureMapPoint_C.Setup_Internal
-// (Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalLocationPoint*                LocationPoint                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_IconTreasureMapPoint_C::Setup_Internal(class UPalLocationPoint* LocationPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconTreasureMapPoint_C", "Setup_Internal");
-
-	Params::WBP_Map_IconTreasureMapPoint_C_Setup_Internal Parms{};
-
-	Parms.LocationPoint = LocationPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Map_IconTreasureMapPoint.WBP_Map_IconTreasureMapPoint_C.GetInvisibleButton
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_IconTreasureMapPoint_C::GetInvisibleButton(class UWidget** Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconTreasureMapPoint_C", "GetInvisibleButton");
-
-	Params::WBP_Map_IconTreasureMapPoint_C_GetInvisibleButton Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Button != nullptr)
-		*Button = Parms.Button;
 }
 
 }

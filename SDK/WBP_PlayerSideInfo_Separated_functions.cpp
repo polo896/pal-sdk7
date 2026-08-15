@@ -585,6 +585,20 @@ void UWBP_PlayerSideInfo_Separated_C::OnTimerEvent_CheckBulletChangeTutorial()
 }
 
 
+// Function WBP_PlayerSideInfo_Separated.WBP_PlayerSideInfo_Separated_C.OnTimerEvent_UpdateBuffIcon
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerSideInfo_Separated_C::OnTimerEvent_UpdateBuffIcon()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerSideInfo_Separated_C", "OnTimerEvent_UpdateBuffIcon");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_PlayerSideInfo_Separated.WBP_PlayerSideInfo_Separated_C.OnUpdatePlayerEquipment
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:

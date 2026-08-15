@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalStatusPopup.WBP_PalStatusPopup_C.OnCancelAction
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PalStatusPopup_C_OnCancelAction final
-{
-public:
-	bool                                          CallFunc_Is_Editing_Nick_Name_isEditing;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalStatusPopup_C_OnCancelAction;
-
 // Function WBP_PalStatusPopup.WBP_PalStatusPopup_C.ExecuteUbergraph_WBP_PalStatusPopup
 // 0x0050 (0x0050 - 0x0000)
 struct WBP_PalStatusPopup_C_ExecuteUbergraph_WBP_PalStatusPopup final
@@ -41,6 +32,15 @@ public:
 	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0038(0x0018)()
 };
 DUMPER7_ASSERTS_WBP_PalStatusPopup_C_ExecuteUbergraph_WBP_PalStatusPopup;
+
+// Function WBP_PalStatusPopup.WBP_PalStatusPopup_C.OnCancelAction
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PalStatusPopup_C_OnCancelAction final
+{
+public:
+	bool                                          CallFunc_Is_Editing_Nick_Name_isEditing;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalStatusPopup_C_OnCancelAction;
 
 // Function WBP_PalStatusPopup.WBP_PalStatusPopup_C.BP_GetDesiredFocusTarget
 // 0x0008 (0x0008 - 0x0000)

@@ -79,46 +79,6 @@ void UBP_AIAction_Police_SearchingPlayer_C::ActionPause(class APawn* ControlledP
 }
 
 
-// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.ActionResume
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_Police_SearchingPlayer_C::ActionResume(class APawn* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_Police_SearchingPlayer_C", "ActionResume");
-
-	Params::BP_AIAction_Police_SearchingPlayer_C_ActionResume Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.ActionStart
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_Police_SearchingPlayer_C::ActionStart(class APawn* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_Police_SearchingPlayer_C", "ActionStart");
-
-	Params::BP_AIAction_Police_SearchingPlayer_C_ActionStart Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.ActionTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -216,6 +176,82 @@ void UBP_AIAction_Police_SearchingPlayer_C::MoveToLocation(const struct FVector&
 }
 
 
+// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.StartWander
+// (BlueprintCallable, BlueprintEvent)
+
+void UBP_AIAction_Police_SearchingPlayer_C::StartWander()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Police_SearchingPlayer_C", "StartWander");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.TickMoveToTargetLocation
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_Police_SearchingPlayer_C::TickMoveToTargetLocation(class AActor* ControlledPawn, float DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Police_SearchingPlayer_C", "TickMoveToTargetLocation");
+
+	Params::BP_AIAction_Police_SearchingPlayer_C_TickMoveToTargetLocation Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+	Parms.DeltaTime = DeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.ActionResume
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_Police_SearchingPlayer_C::ActionResume(class APawn* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Police_SearchingPlayer_C", "ActionResume");
+
+	Params::BP_AIAction_Police_SearchingPlayer_C_ActionResume Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.ActionStart
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_Police_SearchingPlayer_C::ActionStart(class APawn* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Police_SearchingPlayer_C", "ActionStart");
+
+	Params::BP_AIAction_Police_SearchingPlayer_C_ActionStart Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.OnSightCheckAsyncCompleted
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -283,42 +319,6 @@ void UBP_AIAction_Police_SearchingPlayer_C::SoundEvent(const struct FVector& Emi
 	Params::BP_AIAction_Police_SearchingPlayer_C_SoundEvent Parms{};
 
 	Parms.EmitLocation = std::move(EmitLocation);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.StartWander
-// (BlueprintCallable, BlueprintEvent)
-
-void UBP_AIAction_Police_SearchingPlayer_C::StartWander()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_Police_SearchingPlayer_C", "StartWander");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_AIAction_Police_SearchingPlayer.BP_AIAction_Police_SearchingPlayer_C.TickMoveToTargetLocation
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_Police_SearchingPlayer_C::TickMoveToTargetLocation(class AActor* ControlledPawn, float DeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_Police_SearchingPlayer_C", "TickMoveToTargetLocation");
-
-	Params::BP_AIAction_Police_SearchingPlayer_C_TickMoveToTargetLocation Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-	Parms.DeltaTime = DeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function BP_AIAction_Visitor_WaitInBaseCamp.BP_AIAction_Visitor_WaitInBaseCamp_C.ActionStart
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_Visitor_WaitInBaseCamp_C::ActionStart(class APawn* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Visitor_WaitInBaseCamp_C", "ActionStart");
+
+	Params::BP_AIAction_Visitor_WaitInBaseCamp_C_ActionStart Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_AIAction_Visitor_WaitInBaseCamp.BP_AIAction_Visitor_WaitInBaseCamp_C.ActionTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -86,26 +106,6 @@ void UBP_AIAction_Visitor_WaitInBaseCamp_C::Sight_Check(EPalAIResponseType Curre
 
 	if (ResponseType != nullptr)
 		*ResponseType = Parms.ResponseType;
-}
-
-
-// Function BP_AIAction_Visitor_WaitInBaseCamp.BP_AIAction_Visitor_WaitInBaseCamp_C.ActionStart
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_Visitor_WaitInBaseCamp_C::ActionStart(class APawn* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_Visitor_WaitInBaseCamp_C", "ActionStart");
-
-	Params::BP_AIAction_Visitor_WaitInBaseCamp_C_ActionStart Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

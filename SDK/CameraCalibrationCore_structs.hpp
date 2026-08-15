@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "CinematicCamera_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CinematicCamera_structs.hpp"
 
 
 namespace SDK
@@ -119,6 +119,15 @@ public:
 };
 DUMPER7_ASSERTS_FBaseFocusPoint;
 
+// ScriptStruct CameraCalibrationCore.FocalLengthInfo
+// 0x0010 (0x0010 - 0x0000)
+struct FFocalLengthInfo final
+{
+public:
+	struct FVector2D                              FxFy;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FFocalLengthInfo;
+
 // ScriptStruct CameraCalibrationCore.BaseLensTable
 // 0x0010 (0x0010 - 0x0000)
 struct alignas(0x08) FBaseLensTable
@@ -186,6 +195,16 @@ public:
 };
 DUMPER7_ASSERTS_FDistortionZoomPoint;
 
+// ScriptStruct CameraCalibrationCore.EncodersTable
+// 0x0100 (0x0100 - 0x0000)
+struct FEncodersTable final
+{
+public:
+	struct FRichCurve                             Focus;                                             // 0x0000(0x0080)(NativeAccessSpecifierPublic)
+	struct FRichCurve                             Iris;                                              // 0x0080(0x0080)(NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FEncodersTable;
+
 // ScriptStruct CameraCalibrationCore.DistortionFocusPoint
 // 0x0098 (0x00A0 - 0x0008)
 struct FDistortionFocusPoint final : public FBaseFocusPoint
@@ -206,36 +225,6 @@ public:
 	TArray<struct FDistortionFocusPoint>          FocusPoints;                                       // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FDistortionTable;
-
-// ScriptStruct CameraCalibrationCore.EncodersTable
-// 0x0100 (0x0100 - 0x0000)
-struct FEncodersTable final
-{
-public:
-	struct FRichCurve                             Focus;                                             // 0x0000(0x0080)(NativeAccessSpecifierPublic)
-	struct FRichCurve                             Iris;                                              // 0x0080(0x0080)(NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FEncodersTable;
-
-// ScriptStruct CameraCalibrationCore.STMapInfo
-// 0x0010 (0x0010 - 0x0000)
-struct FSTMapInfo final
-{
-public:
-	class UTexture*                               DistortionMap;                                     // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FCalibratedMapFormat                   MapFormat;                                         // 0x0008(0x0003)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FSTMapInfo;
-
-// ScriptStruct CameraCalibrationCore.FocalLengthInfo
-// 0x0010 (0x0010 - 0x0000)
-struct FFocalLengthInfo final
-{
-public:
-	struct FVector2D                              FxFy;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FFocalLengthInfo;
 
 // ScriptStruct CameraCalibrationCore.FocalLengthZoomPoint
 // 0x0020 (0x0020 - 0x0000)
@@ -305,6 +294,17 @@ public:
 	struct FIntPoint                              ImageDimensions;                                   // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FLensInfo;
+
+// ScriptStruct CameraCalibrationCore.STMapInfo
+// 0x0010 (0x0010 - 0x0000)
+struct FSTMapInfo final
+{
+public:
+	class UTexture*                               DistortionMap;                                     // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FCalibratedMapFormat                   MapFormat;                                         // 0x0008(0x0003)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSTMapInfo;
 
 // ScriptStruct CameraCalibrationCore.ImageCenterInfo
 // 0x0010 (0x0010 - 0x0000)

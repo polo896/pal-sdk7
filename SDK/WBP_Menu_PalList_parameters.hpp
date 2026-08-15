@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "Pal_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -99,6 +99,20 @@ public:
 	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Menu_PalList_C_UpdateFavorite;
+
+// Function WBP_Menu_PalList.WBP_Menu_PalList_C.BindFromHandle
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_Menu_PalList_C_BindFromHandle final
+{
+public:
+	class UPalIndividualCharacterHandle*          targetHandle;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const class FName& NewSkinName)> K2Node_CreateDelegate_OutputDelegate;            // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetSkinName_ReturnValue;                  // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_PalList_C_BindFromHandle;
 
 // Function WBP_Menu_PalList.WBP_Menu_PalList_C.Update Level
 // 0x0038 (0x0038 - 0x0000)
@@ -229,20 +243,6 @@ public:
 	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Menu_PalList_C_BndEvt__WBP_Menu_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Menu_PalList.WBP_Menu_PalList_C.BindFromHandle
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_Menu_PalList_C_BindFromHandle final
-{
-public:
-	class UPalIndividualCharacterHandle*          targetHandle;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class FName& NewSkinName)> K2Node_CreateDelegate_OutputDelegate;            // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_GetSkinName_ReturnValue;                  // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_PalList_C_BindFromHandle;
 
 }
 

@@ -36,13 +36,13 @@ public:
 	struct FPalDataTableRowName_UIInputAction     EscAction;                                         // 0x04D8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_DebugItemSearchWindow_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
-	void BndEvt__WBP_DebugItemSearchWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature();
-	void CreateItemMap();
-	void ExecuteUbergraph_WBP_DebugItemSearchWindow(int32 EntryPoint);
-	void OnCancelAction();
-	void OnClickedSlotInternal(class UWBP_PalItemSlotButtonBase_C* Slot_0);
 	void OnSetup();
+	void OnClickedSlotInternal(class UWBP_PalItemSlotButtonBase_C* Slot_0);
+	void OnCancelAction();
+	void ExecuteUbergraph_WBP_DebugItemSearchWindow(int32 EntryPoint);
+	void CreateItemMap();
+	void BndEvt__WBP_DebugItemSearchWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_DebugItemSearchWindow_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
 
 public:
 	static class UClass* StaticClass()

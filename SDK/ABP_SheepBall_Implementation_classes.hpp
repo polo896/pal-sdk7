@@ -46,11 +46,11 @@ public:
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0B70(0x0020)()
 
 public:
-	void UpperOverride(const struct FPoseLink& NativePose, const struct FPoseLink& ActionPose, struct FPoseLink* UpperOverride_0);
-	void LookAtOverride(const struct FPoseLink& InPose, const struct FVector& LookAtWorldLocation, struct FPoseLink* LookAtOverride_0);
-	void ExecuteUbergraph_ABP_SheepBall_Implementation(int32 EntryPoint);
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
 	void AimingOverride(const struct FPoseLink& DefaultPose, const struct FRotator& AimRotator, struct FPoseLink* AimingOverride_0);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void ExecuteUbergraph_ABP_SheepBall_Implementation(int32 EntryPoint);
+	void LookAtOverride(const struct FPoseLink& InPose, const struct FVector& LookAtWorldLocation, struct FPoseLink* LookAtOverride_0);
+	void UpperOverride(const struct FPoseLink& NativePose, const struct FPoseLink& ActionPose, struct FPoseLink* UpperOverride_0);
 
 public:
 	static class UClass* StaticClass()

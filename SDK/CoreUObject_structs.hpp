@@ -621,16 +621,6 @@ public:
 };
 DUMPER7_ASSERTS_FInterpCurveTwoVectors;
 
-// ScriptStruct CoreUObject.UintVector2
-// 0x0008 (0x0008 - 0x0000)
-struct FUintVector2 final
-{
-public:
-	uint32                                        X;                                                 // 0x0000(0x0004)(Edit, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint32                                        Y;                                                 // 0x0004(0x0004)(Edit, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FUintVector2;
-
 // ScriptStruct CoreUObject.InterpCurvePointVector
 // 0x0058 (0x0058 - 0x0000)
 struct FInterpCurvePointVector final
@@ -1974,6 +1964,16 @@ public:
 	uint32                                        Z;                                                 // 0x0008(0x0004)(Edit, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FUintVector;
+
+// ScriptStruct CoreUObject.UintVector2
+// 0x0008 (0x0008 - 0x0000)
+struct FUintVector2 final
+{
+public:
+	uint32                                        X;                                                 // 0x0000(0x0004)(Edit, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint32                                        Y;                                                 // 0x0004(0x0004)(Edit, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FUintVector2;
 
 // ScriptStruct CoreUObject.UintVector4
 // 0x0010 (0x0010 - 0x0000)

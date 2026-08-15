@@ -57,9 +57,9 @@ public:
 	TMap<class FName, class FName>                MultiKeyMap;                                       // 0x0658(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_Key_Settings(int32 EntryPoint);
-	void Construct();
 	void ApplySettings();
+	void Construct();
+	void ExecuteUbergraph_WBP_Key_Settings(int32 EntryPoint);
 	void Get_Actions_By_Key(const struct FKey& Key, ECommonInputType InputType, TArray<struct FPalKeyAction>* KeyActions);
 	void Get_Conflict_Actions(const struct FPalKeyAction& CheckingAction, EPalKeyConfigCategory FilterType, TArray<struct FPalKeyAction>* KeyActions);
 	void Get_UI_Conflict_Actions(const class FName& CheckingAction, EPalKeyConfigCategory FilterType, TArray<class FName>* KeyActions);

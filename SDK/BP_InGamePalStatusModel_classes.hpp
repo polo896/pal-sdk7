@@ -21,8 +21,8 @@ namespace SDK
 class UBP_InGamePalStatusModel_C final : public UPalUIStatusModel
 {
 public:
-	void SetupSingle(class UPalIndividualCharacterHandle* Handle);
 	void SetupForOtomo();
+	void SetupSingle(class UPalIndividualCharacterHandle* Handle);
 
 public:
 	static class UClass* StaticClass()

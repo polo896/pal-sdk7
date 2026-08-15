@@ -18,76 +18,15 @@
 namespace SDK::Params
 {
 
-// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.CutsceneFinishFadeIn
-// 0x0030 (0x0030 - 0x0000)
-struct BP_LevelGimmick_AreaBarrier_Info_C_CutsceneFinishFadeIn final
-{
-public:
-	bool                                          bIsSkipped;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(bool bIsSkipped)>              K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameter_FadeWidget*    CallFunc_SpawnObject_ReturnValue;                  // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Info_C_CutsceneFinishFadeIn;
-
-// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.CutsceneStartFadeOut
-// 0x0020 (0x0020 - 0x0000)
-struct BP_LevelGimmick_AreaBarrier_Info_C_CutsceneStartFadeOut final
-{
-public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameter_FadeWidget*    CallFunc_SpawnObject_ReturnValue;                  // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Info_C_CutsceneStartFadeOut;
-
-// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.CutsceneStartWaitForWorldPartition
-// 0x0018 (0x0018 - 0x0000)
-struct BP_LevelGimmick_AreaBarrier_Info_C_CutsceneStartWaitForWorldPartition final
-{
-public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Info_C_CutsceneStartWaitForWorldPartition;
-
-// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.CutSceneWaitForWorldPartition
+// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.SpawnCutsceneActor
 // 0x0010 (0x0010 - 0x0000)
-struct BP_LevelGimmick_AreaBarrier_Info_C_CutSceneWaitForWorldPartition final
+struct BP_LevelGimmick_AreaBarrier_Info_C_SpawnCutsceneActor final
 {
 public:
-	class UWorldPartitionStreamingSourceComponent* CallFunc_GetComponentByClass_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsStreamingCompleted_ReturnValue;         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCutsceneActor*                      CallFunc_SpawnCutsceneActor_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Info_C_CutSceneWaitForWorldPartition;
-
-// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.PlayCutsceneIfNecessary
-// 0x0028 (0x0028 - 0x0000)
-struct BP_LevelGimmick_AreaBarrier_Info_C_PlayCutsceneIfNecessary final
-{
-public:
-	struct FGuid                                  LockId;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bLockStateChanged;                                 // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bForce;                                            // 0x0011(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ShouldPlayCutscene_ReturnValue;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Info_C_PlayCutsceneIfNecessary;
-
-// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.PlayCutsceneInternal
-// 0x0020 (0x0020 - 0x0000)
-struct BP_LevelGimmick_AreaBarrier_Info_C_PlayCutsceneInternal final
-{
-public:
-	TDelegate<void(bool bIsSkipped)>              K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Info_C_PlayCutsceneInternal;
+DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Info_C_SpawnCutsceneActor;
 
 // Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.ShouldPlayCutscene
 // 0x00B0 (0x00B0 - 0x0000)
@@ -126,15 +65,76 @@ public:
 };
 DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Info_C_ShouldPlayCutscene;
 
-// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.SpawnCutsceneActor
-// 0x0010 (0x0010 - 0x0000)
-struct BP_LevelGimmick_AreaBarrier_Info_C_SpawnCutsceneActor final
+// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.PlayCutsceneInternal
+// 0x0020 (0x0020 - 0x0000)
+struct BP_LevelGimmick_AreaBarrier_Info_C_PlayCutsceneInternal final
 {
 public:
-	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCutsceneActor*                      CallFunc_SpawnCutsceneActor_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(bool bIsSkipped)>              K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Info_C_SpawnCutsceneActor;
+DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Info_C_PlayCutsceneInternal;
+
+// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.PlayCutsceneIfNecessary
+// 0x0028 (0x0028 - 0x0000)
+struct BP_LevelGimmick_AreaBarrier_Info_C_PlayCutsceneIfNecessary final
+{
+public:
+	struct FGuid                                  LockId;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bLockStateChanged;                                 // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bForce;                                            // 0x0011(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ShouldPlayCutscene_ReturnValue;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Info_C_PlayCutsceneIfNecessary;
+
+// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.CutSceneWaitForWorldPartition
+// 0x0010 (0x0010 - 0x0000)
+struct BP_LevelGimmick_AreaBarrier_Info_C_CutSceneWaitForWorldPartition final
+{
+public:
+	class UWorldPartitionStreamingSourceComponent* CallFunc_GetComponentByClass_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsStreamingCompleted_ReturnValue;         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Info_C_CutSceneWaitForWorldPartition;
+
+// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.CutsceneStartWaitForWorldPartition
+// 0x0018 (0x0018 - 0x0000)
+struct BP_LevelGimmick_AreaBarrier_Info_C_CutsceneStartWaitForWorldPartition final
+{
+public:
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Info_C_CutsceneStartWaitForWorldPartition;
+
+// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.CutsceneStartFadeOut
+// 0x0020 (0x0020 - 0x0000)
+struct BP_LevelGimmick_AreaBarrier_Info_C_CutsceneStartFadeOut final
+{
+public:
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameter_FadeWidget*    CallFunc_SpawnObject_ReturnValue;                  // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Info_C_CutsceneStartFadeOut;
+
+// Function BP_LevelGimmick_AreaBarrier_Info.BP_LevelGimmick_AreaBarrier_Info_C.CutsceneFinishFadeIn
+// 0x0030 (0x0030 - 0x0000)
+struct BP_LevelGimmick_AreaBarrier_Info_C_CutsceneFinishFadeIn final
+{
+public:
+	bool                                          bIsSkipped;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(bool bIsSkipped)>              K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameter_FadeWidget*    CallFunc_SpawnObject_ReturnValue;                  // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Info_C_CutsceneFinishFadeIn;
 
 }
 

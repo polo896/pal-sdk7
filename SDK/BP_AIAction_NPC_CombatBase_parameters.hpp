@@ -545,7 +545,7 @@ struct BP_AIAction_NPC_CombatBase_C_SightCheckAndResponseForCombat final
 public:
 	bool                                          ChangeNextAction;                                  // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          tempTarget;                                        // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          TempTarget;                                        // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	TArray<class APalCharacter*>                  tempTargetList;                                    // 0x0010(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FPalAIActionDynamicParameter           K2Node_MakeStruct_PalAIActionDynamicParameter;     // 0x0028(0x0050)(NoDestructor)

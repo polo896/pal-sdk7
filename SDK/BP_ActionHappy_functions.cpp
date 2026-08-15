@@ -20,9 +20,9 @@ namespace SDK
 // Function BP_ActionHappy.BP_ActionHappy_C.ChangeFace
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    smile                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Smile                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_ActionHappy_C::ChangeFace(bool smile)
+void UBP_ActionHappy_C::ChangeFace(bool Smile)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void UBP_ActionHappy_C::ChangeFace(bool smile)
 
 	Params::BP_ActionHappy_C_ChangeFace Parms{};
 
-	Parms.smile = smile;
+	Parms.Smile = Smile;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

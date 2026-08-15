@@ -41,14 +41,14 @@ public:
 	TMap<EPalUIRewardDisplayType, struct FDataTableRowHandle> TitleMap;                              // 0x04C8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 
 public:
-	void ChangeColor(EPalUIRewardDisplayType DisplayType);
-	void ClearQueueInfo();
-	void ExecuteUbergraph_WBP_CommonReward(int32 EntryPoint);
-	void Finished_8B86E03B4C9B039B2D1E43872343E0D8();
-	void Finished_99C931904947D8826978CE8B6DE53642();
-	void QueueRewardInfo(const struct FPalUICommonRewardDisplayData& Info);
-	void SetInfo(const struct FPalUICommonRewardDisplayData& Info);
 	void ShowInfo();
+	void SetInfo(const struct FPalUICommonRewardDisplayData& Info);
+	void QueueRewardInfo(const struct FPalUICommonRewardDisplayData& Info);
+	void Finished_99C931904947D8826978CE8B6DE53642();
+	void Finished_8B86E03B4C9B039B2D1E43872343E0D8();
+	void ExecuteUbergraph_WBP_CommonReward(int32 EntryPoint);
+	void ClearQueueInfo();
+	void ChangeColor(EPalUIRewardDisplayType DisplayType);
 
 public:
 	static class UClass* StaticClass()

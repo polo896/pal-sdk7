@@ -31,6 +31,20 @@ void UWBP_Ingame_PartnerSkillIcon_C::Construct()
 }
 
 
+// Function WBP_Ingame_PartnerSkillIcon.WBP_Ingame_PartnerSkillIcon_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Ingame_PartnerSkillIcon_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_PartnerSkillIcon_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Ingame_PartnerSkillIcon.WBP_Ingame_PartnerSkillIcon_C.ExecuteUbergraph_WBP_Ingame_PartnerSkillIcon
 // (Final, UbergraphFunction)
 // Parameters:

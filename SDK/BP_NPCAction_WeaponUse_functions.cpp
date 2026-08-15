@@ -17,316 +17,23 @@
 namespace SDK
 {
 
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.UpdateAimTargetLocation
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBP_NPCAction_WeaponUse_C::UpdateAimTargetLocation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "UpdateAimTargetLocation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.TickAction
-// (Event, Public, BlueprintEvent)
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.ExecuteUbergraph_BP_NPCAction_WeaponUse
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_NPCAction_WeaponUse_C::TickAction(float DeltaTime)
+void UBP_NPCAction_WeaponUse_C::ExecuteUbergraph_BP_NPCAction_WeaponUse(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "TickAction");
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "ExecuteUbergraph_BP_NPCAction_WeaponUse");
 
-	Params::BP_NPCAction_WeaponUse_C_TickAction Parms{};
+	Params::BP_NPCAction_WeaponUse_C_ExecuteUbergraph_BP_NPCAction_WeaponUse Parms{};
 
-	Parms.DeltaTime = DeltaTime;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.SuggestRangePoint
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-struct FVector UBP_NPCAction_WeaponUse_C::SuggestRangePoint()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "SuggestRangePoint");
-
-	Params::BP_NPCAction_WeaponUse_C_SuggestRangePoint Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.StartShoot
-// (BlueprintCallable, BlueprintEvent)
-
-void UBP_NPCAction_WeaponUse_C::StartShoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "StartShoot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.SetEndAction
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBP_NPCAction_WeaponUse_C::SetEndAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "SetEndAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.RequestEndAction
-// (BlueprintCallable, BlueprintEvent)
-
-void UBP_NPCAction_WeaponUse_C::RequestEndAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "RequestEndAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.ReadyAim
-// (BlueprintCallable, BlueprintEvent)
-
-void UBP_NPCAction_WeaponUse_C::ReadyAim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "ReadyAim");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.OnTargetDeath
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class UPalActionBase*             action                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_NPCAction_WeaponUse_C::OnTargetDeath(const class UPalActionBase* action)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "OnTargetDeath");
-
-	Params::BP_NPCAction_WeaponUse_C_OnTargetDeath Parms{};
-
-	Parms.action = action;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.OnNotifyEnd_D0CF4BFE40B7E1C1F72C09B09DB0F46B
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_NPCAction_WeaponUse_C::OnNotifyEnd_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "OnNotifyEnd_D0CF4BFE40B7E1C1F72C09B09DB0F46B");
-
-	Params::BP_NPCAction_WeaponUse_C_OnNotifyEnd_D0CF4BFE40B7E1C1F72C09B09DB0F46B Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.OnNotifyBegin_D0CF4BFE40B7E1C1F72C09B09DB0F46B
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_NPCAction_WeaponUse_C::OnNotifyBegin_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "OnNotifyBegin_D0CF4BFE40B7E1C1F72C09B09DB0F46B");
-
-	Params::BP_NPCAction_WeaponUse_C_OnNotifyBegin_D0CF4BFE40B7E1C1F72C09B09DB0F46B Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.OnInterrupted_D0CF4BFE40B7E1C1F72C09B09DB0F46B
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_NPCAction_WeaponUse_C::OnInterrupted_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "OnInterrupted_D0CF4BFE40B7E1C1F72C09B09DB0F46B");
-
-	Params::BP_NPCAction_WeaponUse_C_OnInterrupted_D0CF4BFE40B7E1C1F72C09B09DB0F46B Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.OnEndAction
-// (Event, Public, BlueprintEvent)
-
-void UBP_NPCAction_WeaponUse_C::OnEndAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "OnEndAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.OnCompleted_D0CF4BFE40B7E1C1F72C09B09DB0F46B
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_NPCAction_WeaponUse_C::OnCompleted_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "OnCompleted_D0CF4BFE40B7E1C1F72C09B09DB0F46B");
-
-	Params::BP_NPCAction_WeaponUse_C_OnCompleted_D0CF4BFE40B7E1C1F72C09B09DB0F46B Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.OnBlendOut_D0CF4BFE40B7E1C1F72C09B09DB0F46B
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_NPCAction_WeaponUse_C::OnBlendOut_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "OnBlendOut_D0CF4BFE40B7E1C1F72C09B09DB0F46B");
-
-	Params::BP_NPCAction_WeaponUse_C_OnBlendOut_D0CF4BFE40B7E1C1F72C09B09DB0F46B Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.OnBeginAction
-// (Event, Public, BlueprintEvent)
-
-void UBP_NPCAction_WeaponUse_C::OnBeginAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "OnBeginAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.MoveToRange
-// (BlueprintCallable, BlueprintEvent)
-
-void UBP_NPCAction_WeaponUse_C::MoveToRange()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "MoveToRange");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.IsEndAction
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool UBP_NPCAction_WeaponUse_C::IsEndAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "IsEndAction");
-
-	Params::BP_NPCAction_WeaponUse_C_IsEndAction Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.GetWeaponType
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// EPalWeaponType*                         WeaponType                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_NPCAction_WeaponUse_C::GetWeaponType(EPalWeaponType* WeaponType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "GetWeaponType");
-
-	Params::BP_NPCAction_WeaponUse_C_GetWeaponType Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (WeaponType != nullptr)
-		*WeaponType = Parms.WeaponType;
 }
 
 
@@ -355,23 +62,316 @@ void UBP_NPCAction_WeaponUse_C::GetWeaponStats(double* Range, double* AttackTime
 }
 
 
-// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.ExecuteUbergraph_BP_NPCAction_WeaponUse
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.GetWeaponType
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalWeaponType*                         WeaponType                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_NPCAction_WeaponUse_C::ExecuteUbergraph_BP_NPCAction_WeaponUse(int32 EntryPoint)
+void UBP_NPCAction_WeaponUse_C::GetWeaponType(EPalWeaponType* WeaponType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "ExecuteUbergraph_BP_NPCAction_WeaponUse");
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "GetWeaponType");
 
-	Params::BP_NPCAction_WeaponUse_C_ExecuteUbergraph_BP_NPCAction_WeaponUse Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::BP_NPCAction_WeaponUse_C_GetWeaponType Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (WeaponType != nullptr)
+		*WeaponType = Parms.WeaponType;
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.IsEndAction
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UBP_NPCAction_WeaponUse_C::IsEndAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "IsEndAction");
+
+	Params::BP_NPCAction_WeaponUse_C_IsEndAction Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.MoveToRange
+// (BlueprintCallable, BlueprintEvent)
+
+void UBP_NPCAction_WeaponUse_C::MoveToRange()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "MoveToRange");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.OnBeginAction
+// (Event, Public, BlueprintEvent)
+
+void UBP_NPCAction_WeaponUse_C::OnBeginAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "OnBeginAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.OnBlendOut_D0CF4BFE40B7E1C1F72C09B09DB0F46B
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_NPCAction_WeaponUse_C::OnBlendOut_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "OnBlendOut_D0CF4BFE40B7E1C1F72C09B09DB0F46B");
+
+	Params::BP_NPCAction_WeaponUse_C_OnBlendOut_D0CF4BFE40B7E1C1F72C09B09DB0F46B Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.OnCompleted_D0CF4BFE40B7E1C1F72C09B09DB0F46B
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_NPCAction_WeaponUse_C::OnCompleted_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "OnCompleted_D0CF4BFE40B7E1C1F72C09B09DB0F46B");
+
+	Params::BP_NPCAction_WeaponUse_C_OnCompleted_D0CF4BFE40B7E1C1F72C09B09DB0F46B Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.OnEndAction
+// (Event, Public, BlueprintEvent)
+
+void UBP_NPCAction_WeaponUse_C::OnEndAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "OnEndAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.OnInterrupted_D0CF4BFE40B7E1C1F72C09B09DB0F46B
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_NPCAction_WeaponUse_C::OnInterrupted_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "OnInterrupted_D0CF4BFE40B7E1C1F72C09B09DB0F46B");
+
+	Params::BP_NPCAction_WeaponUse_C_OnInterrupted_D0CF4BFE40B7E1C1F72C09B09DB0F46B Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.OnNotifyBegin_D0CF4BFE40B7E1C1F72C09B09DB0F46B
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_NPCAction_WeaponUse_C::OnNotifyBegin_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "OnNotifyBegin_D0CF4BFE40B7E1C1F72C09B09DB0F46B");
+
+	Params::BP_NPCAction_WeaponUse_C_OnNotifyBegin_D0CF4BFE40B7E1C1F72C09B09DB0F46B Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.OnNotifyEnd_D0CF4BFE40B7E1C1F72C09B09DB0F46B
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_NPCAction_WeaponUse_C::OnNotifyEnd_D0CF4BFE40B7E1C1F72C09B09DB0F46B(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "OnNotifyEnd_D0CF4BFE40B7E1C1F72C09B09DB0F46B");
+
+	Params::BP_NPCAction_WeaponUse_C_OnNotifyEnd_D0CF4BFE40B7E1C1F72C09B09DB0F46B Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.OnTargetDeath
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class UPalActionBase*             action                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_NPCAction_WeaponUse_C::OnTargetDeath(const class UPalActionBase* action)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "OnTargetDeath");
+
+	Params::BP_NPCAction_WeaponUse_C_OnTargetDeath Parms{};
+
+	Parms.action = action;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.ReadyAim
+// (BlueprintCallable, BlueprintEvent)
+
+void UBP_NPCAction_WeaponUse_C::ReadyAim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "ReadyAim");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.RequestEndAction
+// (BlueprintCallable, BlueprintEvent)
+
+void UBP_NPCAction_WeaponUse_C::RequestEndAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "RequestEndAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.SetEndAction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBP_NPCAction_WeaponUse_C::SetEndAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "SetEndAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.StartShoot
+// (BlueprintCallable, BlueprintEvent)
+
+void UBP_NPCAction_WeaponUse_C::StartShoot()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "StartShoot");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.SuggestRangePoint
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+struct FVector UBP_NPCAction_WeaponUse_C::SuggestRangePoint()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "SuggestRangePoint");
+
+	Params::BP_NPCAction_WeaponUse_C_SuggestRangePoint Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.TickAction
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_NPCAction_WeaponUse_C::TickAction(float DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "TickAction");
+
+	Params::BP_NPCAction_WeaponUse_C_TickAction Parms{};
+
+	Parms.DeltaTime = DeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C.UpdateAimTargetLocation
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBP_NPCAction_WeaponUse_C::UpdateAimTargetLocation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAction_WeaponUse_C", "UpdateAimTargetLocation");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

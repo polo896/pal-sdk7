@@ -25,9 +25,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0138(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
-	void ExecuteUbergraph_BP_AIAction_SimpleLeave(int32 EntryPoint);
 	void ForceEndAction();
+	void ExecuteUbergraph_BP_AIAction_SimpleLeave(int32 EntryPoint);
+	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 
 public:
 	static class UClass* StaticClass()

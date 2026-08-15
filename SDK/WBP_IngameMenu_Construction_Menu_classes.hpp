@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Pal_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -66,41 +66,41 @@ public:
 	TMap<EPalBuildObjectTypeForUIDisplay, int32>  DisplayTypePriorityMap;                            // 0x04B0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void AnmEvent_Open();
-	void BndEvt__WBP_IngameMenu_Construction_Menu_WBP_IngameMenu_Construction_TabSet_K2Node_ComponentBoundEvent_2_OnChangedFocusIndex__DelegateSignature(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
-	void BndEvt__WBP_IngameMenu_Construction_Menu_WBP_IngameMenu_Construction_TabSet_K2Node_ComponentBoundEvent_3_OnHoveredTab__DelegateSignature(class UWBP_IngameMenu_Construction_Tab_C* TabWidget);
-	void BndEvt__WBP_IngameMenu_Construction_Menu_WBP_IngameMenu_Construction_TabSet_K2Node_ComponentBoundEvent_5_OnUnhoveredTab__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_Construction_Menu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_Construction_Menu_WBP_PalInvisibleButton_Dismantle_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_IngameMenu_Construction_Menu_WBP_PalInvisibleButton_Paint_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void CacheControllableItemInfo();
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_IngameMenu_Construction_Menu(int32 EntryPoint);
-	void Finished_42D60B3E48EEA59101ED07B1E3AA6CAC();
-	void GetFocusTargetByBuildObjectId(class FName BuildObjectId, class UWidget** Widget);
-	void GetSortedUIDisplayTypeArray(TArray<EPalBuildObjectTypeForUIDisplay>& OriginalArray, TArray<EPalBuildObjectTypeForUIDisplay>* OutArray);
-	void GetTopFocusTarget(class UWidget** Widget);
-	void GetTopWidget(class UWBP_IngameMenu_Construction_Icon_C** Widget);
-	void GetWidgetByBuildObjectId(class FName BuildObjectId, class UWBP_IngameMenu_Construction_Icon_C** Widget);
-	void HaveBlueprint(const struct FPalBuildObjectData& BuildObjectData, bool* bHaveBlueprint);
-	void IsBlueprintBuildObject(const struct FPalBuildObjectData& BuildObjectData, bool* bBlueprintBuildObject);
-	void IsEnoughMaterials(const struct FPalBuildObjectData& BuildObjectData, bool* bEnoughMaterials);
-	void OnHoveredAnyBuildObject_Binded(class UWBP_IngameMenu_Construction_Icon_C* Widget);
-	void OnSelectedBuildObject_Binded(class UWBP_IngameMenu_Construction_Icon_C* Widget);
-	void OnTimerEvent_DIsplayBuildObjectOverlayInfo();
-	void OnUnhoveredAnyBuildObject_Binded();
-	void ScrollToBuildObject(class FName BuildObjectId);
-	void SelectCategoryByTypeA(EPalBuildObjectTypeA TypeA);
-	void SetBuildObjectDataMap(const TMap<EPalBuildObjectTypeForUIDisplay, struct FPalBuildObjectDataSetTypeUIDisplay>& DataMap);
-	void SetEnableMouseWheelScroll(bool bEnableScroll);
-	void SetTabActive(EPalBuildObjectTypeA TypeA, bool bTabActive);
-	void SetTabNewMark(EPalBuildObjectTypeA TypeA, bool bDisplayMark);
-	void ToNextTab();
-	void ToPrevTab();
-	void UpdateBuildObjectIconDetail();
-	void UpdateCurrentTabNewMark();
 	void UpdateOverlayInfo();
+	void UpdateCurrentTabNewMark();
+	void UpdateBuildObjectIconDetail();
+	void ToPrevTab();
+	void ToNextTab();
+	void SetTabNewMark(EPalBuildObjectTypeA TypeA, bool bDisplayMark);
+	void SetTabActive(EPalBuildObjectTypeA TypeA, bool bTabActive);
+	void SetEnableMouseWheelScroll(bool bEnableScroll);
+	void SetBuildObjectDataMap(const TMap<EPalBuildObjectTypeForUIDisplay, struct FPalBuildObjectDataSetTypeUIDisplay>& DataMap);
+	void SelectCategoryByTypeA(EPalBuildObjectTypeA TypeA);
+	void ScrollToBuildObject(class FName BuildObjectId);
+	void OnUnhoveredAnyBuildObject_Binded();
+	void OnTimerEvent_DIsplayBuildObjectOverlayInfo();
+	void OnSelectedBuildObject_Binded(class UWBP_IngameMenu_Construction_Icon_C* Widget);
+	void OnHoveredAnyBuildObject_Binded(class UWBP_IngameMenu_Construction_Icon_C* Widget);
+	void IsEnoughMaterials(const struct FPalBuildObjectData& BuildObjectData, bool* bEnoughMaterials);
+	void IsBlueprintBuildObject(const struct FPalBuildObjectData& BuildObjectData, bool* bBlueprintBuildObject);
+	void HaveBlueprint(const struct FPalBuildObjectData& BuildObjectData, bool* bHaveBlueprint);
+	void GetWidgetByBuildObjectId(class FName BuildObjectId, class UWBP_IngameMenu_Construction_Icon_C** Widget);
+	void GetTopWidget(class UWBP_IngameMenu_Construction_Icon_C** Widget);
+	void GetTopFocusTarget(class UWidget** Widget);
+	void GetSortedUIDisplayTypeArray(TArray<EPalBuildObjectTypeForUIDisplay>& OriginalArray, TArray<EPalBuildObjectTypeForUIDisplay>* OutArray);
+	void GetFocusTargetByBuildObjectId(class FName BuildObjectId, class UWidget** Widget);
+	void Finished_42D60B3E48EEA59101ED07B1E3AA6CAC();
+	void ExecuteUbergraph_WBP_IngameMenu_Construction_Menu(int32 EntryPoint);
+	void Destruct();
+	void CacheControllableItemInfo();
+	void BndEvt__WBP_IngameMenu_Construction_Menu_WBP_PalInvisibleButton_Paint_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_IngameMenu_Construction_Menu_WBP_PalInvisibleButton_Dismantle_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_IngameMenu_Construction_Menu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_Construction_Menu_WBP_IngameMenu_Construction_TabSet_K2Node_ComponentBoundEvent_5_OnUnhoveredTab__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_Construction_Menu_WBP_IngameMenu_Construction_TabSet_K2Node_ComponentBoundEvent_3_OnHoveredTab__DelegateSignature(class UWBP_IngameMenu_Construction_Tab_C* TabWidget);
+	void BndEvt__WBP_IngameMenu_Construction_Menu_WBP_IngameMenu_Construction_TabSet_K2Node_ComponentBoundEvent_2_OnChangedFocusIndex__DelegateSignature(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
+	void AnmEvent_Open();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

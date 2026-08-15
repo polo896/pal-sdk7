@@ -14,24 +14,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_OptionSettings_ListContent_ReticlePreview.WBP_OptionSettings_ListContent_ReticlePreview_C.SetReticleColor
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_OptionSettings_ListContent_ReticlePreview_C_SetReticleColor final
-{
-public:
-	int32                                         ColorIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_ReticlePreview_C_SetReticleColor;
-
-// Function WBP_OptionSettings_ListContent_ReticlePreview.WBP_OptionSettings_ListContent_ReticlePreview_C.SetOutline
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_OptionSettings_ListContent_ReticlePreview_C_SetOutline final
-{
-public:
-	double                                        OutlineOpacity;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_ReticlePreview_C_SetOutline;
-
 // Function WBP_OptionSettings_ListContent_ReticlePreview.WBP_OptionSettings_ListContent_ReticlePreview_C.ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview
 // 0x0050 (0x0050 - 0x0000)
 struct WBP_OptionSettings_ListContent_ReticlePreview_C_ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview final
@@ -51,6 +33,24 @@ public:
 	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_ReticlePreview_C_ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview;
+
+// Function WBP_OptionSettings_ListContent_ReticlePreview.WBP_OptionSettings_ListContent_ReticlePreview_C.SetOutline
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_OptionSettings_ListContent_ReticlePreview_C_SetOutline final
+{
+public:
+	double                                        OutlineOpacity;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_ReticlePreview_C_SetOutline;
+
+// Function WBP_OptionSettings_ListContent_ReticlePreview.WBP_OptionSettings_ListContent_ReticlePreview_C.SetReticleColor
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_OptionSettings_ListContent_ReticlePreview_C_SetReticleColor final
+{
+public:
+	int32                                         ColorIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContent_ReticlePreview_C_SetReticleColor;
 
 }
 

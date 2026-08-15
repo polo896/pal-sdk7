@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "FPalPartnerSkillIconData_structs.hpp"
+#include "Pal_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "FPalTechnologyIconData_structs.hpp"
 
 
@@ -29,7 +29,7 @@ public:
 	class FName                                   passiveName;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Text;                                              // 0x0010(0x0018)(Parm, OutParm)
-	class FString                                 tmpString;                                         // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 TmpString;                                         // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	TMap<EPalPassiveSkillEffectType, struct FDataTableRowHandle> textIDMap;                          // 0x0038(0x0050)(Edit, BlueprintVisible)
 	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x0088(0x0018)()
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00A0(0x0018)()
@@ -180,6 +180,48 @@ public:
 	struct FSlateFontInfo                         K2Node_SetFieldsInStruct_StructOut;                // 0x0078(0x0060)(HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_PalUIFunctionLibrary_C_ChangeTextFontMaterialInstance;
+
+// Function BP_PalUIFunctionLibrary.BP_PalUIFunctionLibrary_C.FormatBaseCampBuildingTaskMsg
+// 0x0238 (0x0238 - 0x0000)
+struct BP_PalUIFunctionLibrary_C_FormatBaseCampBuildingTaskMsg final
+{
+public:
+	TArray<struct FPalDataTableRowName_MapObjectData> BuildObjectIdArray;                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   OutText;                                           // 0x0018(0x0018)(Parm, OutParm)
+	class FString                                 NewLocalVar;                                       // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    localvar_0;                                        // 0x0040(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	struct FDataTableRowHandle                    localvar;                                          // 0x0050(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	struct FPalDataTableRowName_MapObjectData     CallFunc_Array_Get_Item;                           // 0x0060(0x0008)(NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_72[0x2];                                       // 0x0072(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_MapObjectData     CallFunc_Array_Get_Item_1;                         // 0x007C(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_85[0x3];                                       // 0x0085(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_LeftChop_ReturnValue;                     // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetMapObjectName_outName;                 // 0x00A0(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x00D8(0x0018)()
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0100(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0118(0x0050)(HasGetValueTypeHash)
+	class FText                                   CallFunc_GetMapObjectName_outName_1;               // 0x0168(0x0018)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0180(0x0010)(ReferenceParm)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0190(0x0050)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01E0(0x0018)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x01F8(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_1;        // 0x0208(0x0018)()
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0220(0x0018)()
+};
+DUMPER7_ASSERTS_BP_PalUIFunctionLibrary_C_FormatBaseCampBuildingTaskMsg;
 
 // Function BP_PalUIFunctionLibrary.BP_PalUIFunctionLibrary_C.Get Team Mission Difficulty Text
 // 0x00F8 (0x00F8 - 0x0000)
@@ -397,6 +439,24 @@ public:
 };
 DUMPER7_ASSERTS_BP_PalUIFunctionLibrary_C_GetStatusEffectIcon;
 
+// Function BP_PalUIFunctionLibrary.BP_PalUIFunctionLibrary_C.GetSuitabilityDescription
+// 0x00F8 (0x00F8 - 0x0000)
+struct BP_PalUIFunctionLibrary_C_GetSuitabilityDescription final
+{
+public:
+	EPalWorkSuitability                           Suitability;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   DescriptionText;                                   // 0x0010(0x0018)(Parm, OutParm)
+	TMap<EPalWorkSuitability, struct FDataTableRowHandle> NewLocalVar_1;                             // 0x0028(0x0050)(Edit, BlueprintVisible)
+	TMap<EPalWorkSuitability, struct FDataTableRowHandle> K2Node_MakeVariable_MakeVariableOutput;    // 0x0078(0x0050)()
+	struct FDataTableRowHandle                    CallFunc_Map_Find_Value;                           // 0x00C8(0x0010)(NoDestructor)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x00E0(0x0018)()
+};
+DUMPER7_ASSERTS_BP_PalUIFunctionLibrary_C_GetSuitabilityDescription;
+
 // Function BP_PalUIFunctionLibrary.BP_PalUIFunctionLibrary_C.GetTalentValueTextMaterial
 // 0x0020 (0x0020 - 0x0000)
 struct BP_PalUIFunctionLibrary_C_GetTalentValueTextMaterial final
@@ -474,7 +534,7 @@ public:
 	class FText                                   Text;                                              // 0x0010(0x0018)(Parm, OutParm)
 	bool                                          bDataFound;                                        // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 tmpString;                                         // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 TmpString;                                         // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	TMap<class FName, struct FDataTableRowHandle> MsgIDMap;                                          // 0x0040(0x0050)(Edit, BlueprintVisible)
 	class FText                                   ParameterText;                                     // 0x0090(0x0018)(Edit, BlueprintVisible)
 	class FText                                   FinalText;                                         // 0x00A8(0x0018)(Edit, BlueprintVisible)
@@ -698,7 +758,7 @@ public:
 	class FName                                   ItemId;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalTextBlockBase*                      nameTextBlock;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UPalTextBlockBase*                      descTextBlock;                                     // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 IconImage;                                         // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 iconImage;                                         // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -723,7 +783,7 @@ public:
 	class FName                                   MapObjectId;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalTextBlockBase*                      nameTextBlock;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UPalTextBlockBase*                      descTextBlock;                                     // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 IconImage;                                         // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 iconImage;                                         // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalMasterDataTableAccess_BuildObjectIconData* CallFunc_GetBuildObjectIconDataTableAccess_ReturnValue; // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BP_FindRow_bResult;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

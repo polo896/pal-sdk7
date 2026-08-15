@@ -25,11 +25,11 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0038(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void Event_ResetNiagara(class ABP_LevelGimmick_AreaBarrier_C* BP_LevelGimmick_AreaBarrier);
-	void Event_StartNiagaraFadeOut(class ABP_LevelGimmick_AreaBarrier_C* BP_LevelGimmick_AreaBarrier);
-	void ExecuteUbergraph_LS_LevelGimmick_AreaBarrier_Unlock__Director_BP_(int32 EntryPoint);
-	void SequenceEvent__ENTRYPOINTLS_LevelGimmick_AreaBarrier_Unlock__Director_BP_(class ABP_LevelGimmick_AreaBarrier_C* BP_LevelGimmick_AreaBarrier);
 	void SequenceEvent__ENTRYPOINTLS_LevelGimmick_AreaBarrier_Unlock__Director_BP__0(class ABP_LevelGimmick_AreaBarrier_C* BP_LevelGimmick_AreaBarrier);
+	void SequenceEvent__ENTRYPOINTLS_LevelGimmick_AreaBarrier_Unlock__Director_BP_(class ABP_LevelGimmick_AreaBarrier_C* BP_LevelGimmick_AreaBarrier);
+	void ExecuteUbergraph_LS_LevelGimmick_AreaBarrier_Unlock__Director_BP_(int32 EntryPoint);
+	void Event_StartNiagaraFadeOut(class ABP_LevelGimmick_AreaBarrier_C* BP_LevelGimmick_AreaBarrier);
+	void Event_ResetNiagara(class ABP_LevelGimmick_AreaBarrier_C* BP_LevelGimmick_AreaBarrier);
 
 public:
 	static class UClass* StaticClass()

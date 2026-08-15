@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -36,11 +36,11 @@ public:
 	TMulticastInlineDelegate<void(EPalUICommonWarningType WarningType)> OnWarningClear;              // 0x0498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ClearWarning();
-	void ExecuteUbergraph_WBP_CommonWarning(int32 EntryPoint);
-	void Finished_DAD0908E4A3D9DC986076BBB9D0BAB98();
-	void GetDisplayType(EPalUICommonWarningType* Display_Type_0);
 	void SetWarning(const struct FPalUICommonWarningDisplayData& WarningData);
+	void GetDisplayType(EPalUICommonWarningType* Display_Type_0);
+	void Finished_DAD0908E4A3D9DC986076BBB9D0BAB98();
+	void ExecuteUbergraph_WBP_CommonWarning(int32 EntryPoint);
+	void ClearWarning();
 
 public:
 	static class UClass* StaticClass()

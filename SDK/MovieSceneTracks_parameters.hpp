@@ -19,6 +19,15 @@
 namespace SDK::Params
 {
 
+// Function MovieSceneTracks.MovieSceneTransformOrigin.BP_GetTransformOrigin
+// 0x0060 (0x0060 - 0x0000)
+struct MovieSceneTransformOrigin_BP_GetTransformOrigin final
+{
+public:
+	struct FTransform                             ReturnValue;                                       // 0x0000(0x0060)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MovieSceneTransformOrigin_BP_GetTransformOrigin;
+
 // Function MovieSceneTracks.MovieSceneParameterSection.AddBoolParameterKey
 // 0x0010 (0x0010 - 0x0000)
 struct MovieSceneParameterSection_AddBoolParameterKey final
@@ -163,65 +172,6 @@ public:
 	TSet<class FName>                             ParameterNames;                                    // 0x0000(0x0050)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MovieSceneParameterSection_GetParameterNames;
-
-// Function MovieSceneTracks.MovieSceneTransformOrigin.BP_GetTransformOrigin
-// 0x0060 (0x0060 - 0x0000)
-struct MovieSceneTransformOrigin_BP_GetTransformOrigin final
-{
-public:
-	struct FTransform                             ReturnValue;                                       // 0x0000(0x0060)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MovieSceneTransformOrigin_BP_GetTransformOrigin;
-
-// Function MovieSceneTracks.MovieSceneAsyncAction_SequencePrediction.PredictLocalTransformAtFrame
-// 0x0020 (0x0020 - 0x0000)
-struct MovieSceneAsyncAction_SequencePrediction_PredictLocalTransformAtFrame final
-{
-public:
-	class UMovieSceneSequencePlayer*              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USceneComponent*                        TargetComponent;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFrameTime                             FrameTime;                                         // 0x0010(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMovieSceneAsyncAction_SequencePrediction* ReturnValue;                                    // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MovieSceneAsyncAction_SequencePrediction_PredictLocalTransformAtFrame;
-
-// Function MovieSceneTracks.MovieSceneAsyncAction_SequencePrediction.PredictLocalTransformAtTime
-// 0x0020 (0x0020 - 0x0000)
-struct MovieSceneAsyncAction_SequencePrediction_PredictLocalTransformAtTime final
-{
-public:
-	class UMovieSceneSequencePlayer*              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USceneComponent*                        TargetComponent;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeInSeconds;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMovieSceneAsyncAction_SequencePrediction* ReturnValue;                                    // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MovieSceneAsyncAction_SequencePrediction_PredictLocalTransformAtTime;
-
-// Function MovieSceneTracks.MovieSceneAsyncAction_SequencePrediction.PredictWorldTransformAtFrame
-// 0x0020 (0x0020 - 0x0000)
-struct MovieSceneAsyncAction_SequencePrediction_PredictWorldTransformAtFrame final
-{
-public:
-	class UMovieSceneSequencePlayer*              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USceneComponent*                        TargetComponent;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFrameTime                             FrameTime;                                         // 0x0010(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMovieSceneAsyncAction_SequencePrediction* ReturnValue;                                    // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MovieSceneAsyncAction_SequencePrediction_PredictWorldTransformAtFrame;
-
-// Function MovieSceneTracks.MovieSceneAsyncAction_SequencePrediction.PredictWorldTransformAtTime
-// 0x0020 (0x0020 - 0x0000)
-struct MovieSceneAsyncAction_SequencePrediction_PredictWorldTransformAtTime final
-{
-public:
-	class UMovieSceneSequencePlayer*              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USceneComponent*                        TargetComponent;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeInSeconds;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMovieSceneAsyncAction_SequencePrediction* ReturnValue;                                    // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MovieSceneAsyncAction_SequencePrediction_PredictWorldTransformAtTime;
 
 // Function MovieSceneTracks.MovieScene3DConstraintSection.SetConstraintBindingID
 // 0x0018 (0x0018 - 0x0000)
@@ -456,6 +406,56 @@ public:
 	ELevelVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MovieSceneLevelVisibilitySection_GetVisibility;
+
+// Function MovieSceneTracks.MovieSceneAsyncAction_SequencePrediction.PredictLocalTransformAtFrame
+// 0x0020 (0x0020 - 0x0000)
+struct MovieSceneAsyncAction_SequencePrediction_PredictLocalTransformAtFrame final
+{
+public:
+	class UMovieSceneSequencePlayer*              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USceneComponent*                        TargetComponent;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFrameTime                             FrameTime;                                         // 0x0010(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMovieSceneAsyncAction_SequencePrediction* ReturnValue;                                    // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MovieSceneAsyncAction_SequencePrediction_PredictLocalTransformAtFrame;
+
+// Function MovieSceneTracks.MovieSceneAsyncAction_SequencePrediction.PredictLocalTransformAtTime
+// 0x0020 (0x0020 - 0x0000)
+struct MovieSceneAsyncAction_SequencePrediction_PredictLocalTransformAtTime final
+{
+public:
+	class UMovieSceneSequencePlayer*              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USceneComponent*                        TargetComponent;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeInSeconds;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMovieSceneAsyncAction_SequencePrediction* ReturnValue;                                    // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MovieSceneAsyncAction_SequencePrediction_PredictLocalTransformAtTime;
+
+// Function MovieSceneTracks.MovieSceneAsyncAction_SequencePrediction.PredictWorldTransformAtFrame
+// 0x0020 (0x0020 - 0x0000)
+struct MovieSceneAsyncAction_SequencePrediction_PredictWorldTransformAtFrame final
+{
+public:
+	class UMovieSceneSequencePlayer*              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USceneComponent*                        TargetComponent;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFrameTime                             FrameTime;                                         // 0x0010(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMovieSceneAsyncAction_SequencePrediction* ReturnValue;                                    // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MovieSceneAsyncAction_SequencePrediction_PredictWorldTransformAtFrame;
+
+// Function MovieSceneTracks.MovieSceneAsyncAction_SequencePrediction.PredictWorldTransformAtTime
+// 0x0020 (0x0020 - 0x0000)
+struct MovieSceneAsyncAction_SequencePrediction_PredictWorldTransformAtTime final
+{
+public:
+	class UMovieSceneSequencePlayer*              Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USceneComponent*                        TargetComponent;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeInSeconds;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMovieSceneAsyncAction_SequencePrediction* ReturnValue;                                    // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MovieSceneAsyncAction_SequencePrediction_PredictWorldTransformAtTime;
 
 }
 

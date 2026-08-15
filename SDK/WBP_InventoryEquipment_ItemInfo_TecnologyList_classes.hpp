@@ -34,9 +34,9 @@ public:
 	class UBP_PalTextBlock_C*                     Text_Total;                                        // 0x02B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_TecnologyList(int32 EntryPoint);
 	void SetInfo(const class FText& Name_0, int32 Num, TSoftObjectPtr<class UTexture2D> Icon_0, int32 Stock);
+	void ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_TecnologyList(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

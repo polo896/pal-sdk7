@@ -16,6 +16,15 @@
 namespace SDK::Params
 {
 
+// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.ToggleVisibility
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_SimpleColorFade_C_ToggleVisibility final
+{
+public:
+	bool                                          Visiable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_SimpleColorFade_C_ToggleVisibility;
+
 // Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.ExecuteUbergraph_WBP_SimpleColorFade
 // 0x00A8 (0x00A8 - 0x0000)
 struct WBP_SimpleColorFade_C_ExecuteUbergraph_WBP_SimpleColorFade final
@@ -54,15 +63,6 @@ public:
 	float                                         CallFunc_CreatePlayAnimationTimeRangeProxyObject_PlaybackSpeed_ImplicitCast; // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_SimpleColorFade_C_ExecuteUbergraph_WBP_SimpleColorFade;
-
-// Function WBP_SimpleColorFade.WBP_SimpleColorFade_C.ToggleVisibility
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_SimpleColorFade_C_ToggleVisibility final
-{
-public:
-	bool                                          Visiable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_SimpleColorFade_C_ToggleVisibility;
 
 }
 

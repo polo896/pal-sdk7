@@ -26,6 +26,7 @@ public:
 	static void CanUseItemInInventory(class FName StaticItemId, class UObject* __WorldContext, bool* CanUse);
 	static void ChangeTextFontMaterial(class UPalTextBlockBase* targetTextBlock, class UMaterial* NewMaterial, class UObject* __WorldContext);
 	static void ChangeTextFontMaterialInstance(class UPalTextBlockBase* targetTextBlock, class UMaterialInstance* NewMaterial, class UObject* __WorldContext);
+	static void FormatBaseCampBuildingTaskMsg(TArray<struct FPalDataTableRowName_MapObjectData>& BuildObjectIdArray, class UObject* __WorldContext, class FText* OutText);
 	static void Get_Team_Mission_Difficulty_Text(EPalCharacterTeamMissionDifficulty Difficulty, class UObject* __WorldContext, class FText* DifficultyText);
 	static void GetBlueprintItemIcon(class FName StaticItemId, class UObject* __WorldContext, TSoftObjectPtr<class UTexture2D>* IconTexture);
 	static void GetDamageAdditionalEffectIcon(EPalAdditionalEffectType AditionalEffect, class UObject* __WorldContext, TSoftObjectPtr<class UTexture2D>* SoftIcon);
@@ -37,6 +38,7 @@ public:
 	static void GetPartnerSkillIcon(class FName PalName, class UObject* __WorldContext, TSoftObjectPtr<class UTexture2D>* SoftIconTexture, bool* IsSquare);
 	static void GetQuestTypeIcon(EPalQuestType QuestType, class UObject* __WorldContext, TSoftObjectPtr<class UTexture2D>* IconTexture);
 	static void GetStatusEffectIcon(EPalStatusID statusID, class UObject* __WorldContext, class UTexture2D** Texture);
+	static void GetSuitabilityDescription(EPalWorkSuitability Suitability, class UObject* __WorldContext, class FText* DescriptionText);
 	static void GetTalentValueTextMaterial(int32 TalentValue, class UObject* __WorldContext, class UMaterialInstance** FontMaterial);
 	static void GetTeamMissionDifficultyColor(EPalCharacterTeamMissionDifficulty Difficulty, class UObject* __WorldContext, struct FSlateColor* DifficultyColor);
 	static void GetTeamMissionDungeonTexture(EPalMapObjectCharacterTeamMissionIconTextureType TextureType, class UObject* __WorldContext, TSoftObjectPtr<class UTexture2D>* SoftTexture);
@@ -49,8 +51,8 @@ public:
 	static void OpenWorldSettingThresholdsCautionDialog(class UBP_HUDDispatchPrameter_WorldSettingCaution_C* Parameter, class UObject* __WorldContext, bool* bOpenedDialog);
 	static void Project_Icon_Position_to_World_Postion(const struct FVector2D& MinLandscapePositionXY, const struct FVector2D& MaxLandscapePositionXY, class UWidget* TargetWigdet, class UCanvasPanel* TargetCanvas, double Scale, class UObject* __WorldContext, struct FVector* WorldPosition);
 	static void ProjectIconToWorldMap(const struct FVector2D& MinLandscapePositionXY, const struct FVector2D& MaxLandscapePositionXY, class UCanvasPanel* TargetCanvas, const struct FVector& WorldLocation, class UWidget* AddWidget, class UObject* __WorldContext);
-	static void SetItemInfo(class FName ItemId, class UPalTextBlockBase* nameTextBlock, class UPalTextBlockBase* descTextBlock, class UImage* IconImage, class UObject* __WorldContext);
-	static void SetMapObjectInfo(class FName MapObjectId, class UPalTextBlockBase* nameTextBlock, class UPalTextBlockBase* descTextBlock, class UImage* IconImage, class UObject* __WorldContext);
+	static void SetItemInfo(class FName ItemId, class UPalTextBlockBase* nameTextBlock, class UPalTextBlockBase* descTextBlock, class UImage* iconImage, class UObject* __WorldContext);
+	static void SetMapObjectInfo(class FName MapObjectId, class UPalTextBlockBase* nameTextBlock, class UPalTextBlockBase* descTextBlock, class UImage* iconImage, class UObject* __WorldContext);
 	static void SetSanityToTextBox(class UPalTextBlockBase* targetText, int32 nowSanity, int32 maxSanity, class UMaterial* normalMaterial, class UMaterial* middleSanityMaterial, class UMaterial* lowSanityMaterial, class UObject* __WorldContext);
 	static void SetSecondsToTimeDisplay(int32 Second, class URichTextBlock* H1, class URichTextBlock* H2, class URichTextBlock* M1, class URichTextBlock* M2, class URichTextBlock* S1, class URichTextBlock* S2, const class FString& ValidNumStyle, class UObject* __WorldContext);
 	static void SetStatusValueToText(class UBP_PalTextBlock_C* meleeText, class UBP_PalTextBlock_C* rangeText, class UBP_PalTextBlock_C* defenseText, class UBP_PalTextBlock_C* supportText, class UBP_PalTextBlock_C* speedText, class UPalIndividualCharacterParameter* individualParam, bool isBuffedValue, class UObject* __WorldContext);

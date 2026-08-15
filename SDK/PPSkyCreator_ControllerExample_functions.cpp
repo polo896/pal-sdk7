@@ -17,6 +17,90 @@
 namespace SDK
 {
 
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Finish_WeatherInterpolation
+// (BlueprintCallable, BlueprintEvent)
+
+void APPSkyCreator_ControllerExample_C::Finish_WeatherInterpolation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Finish_WeatherInterpolation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Finish_WeatherChangeInterval
+// (BlueprintCallable, BlueprintEvent)
+
+void APPSkyCreator_ControllerExample_C::Finish_WeatherChangeInterval()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Finish_WeatherChangeInterval");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Finish_SnowDry
+// (BlueprintCallable, BlueprintEvent)
+
+void APPSkyCreator_ControllerExample_C::Finish_SnowDry()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Finish_SnowDry");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Finish_SnowAccumulate
+// (BlueprintCallable, BlueprintEvent)
+
+void APPSkyCreator_ControllerExample_C::Finish_SnowAccumulate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Finish_SnowAccumulate");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Finish_PuddlesDry
+// (BlueprintCallable, BlueprintEvent)
+
+void APPSkyCreator_ControllerExample_C::Finish_PuddlesDry()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Finish_PuddlesDry");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Finish_PuddlesAccumulation
+// (BlueprintCallable, BlueprintEvent)
+
+void APPSkyCreator_ControllerExample_C::Finish_PuddlesAccumulation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Finish_PuddlesAccumulation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.ExecuteUbergraph_PPSkyCreator_ControllerExample
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -37,147 +121,155 @@ void APPSkyCreator_ControllerExample_C::ExecuteUbergraph_PPSkyCreator_Controller
 }
 
 
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Finish_PuddlesAccumulation
-// (BlueprintCallable, BlueprintEvent)
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.WeatherMaterialFX_Interpolation
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void APPSkyCreator_ControllerExample_C::Finish_PuddlesAccumulation()
+void APPSkyCreator_ControllerExample_C::WeatherMaterialFX_Interpolation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Finish_PuddlesAccumulation");
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "WeatherMaterialFX_Interpolation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Finish_PuddlesDry
-// (BlueprintCallable, BlueprintEvent)
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void APPSkyCreator_ControllerExample_C::Finish_PuddlesDry()
+void APPSkyCreator_ControllerExample_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Finish_PuddlesDry");
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Finish_SnowAccumulate
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Start_WetnessDry
 // (BlueprintCallable, BlueprintEvent)
 
-void APPSkyCreator_ControllerExample_C::Finish_SnowAccumulate()
+void APPSkyCreator_ControllerExample_C::Start_WetnessDry()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Finish_SnowAccumulate");
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Start_WetnessDry");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Finish_SnowDry
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Start_WetnessAccumulate
 // (BlueprintCallable, BlueprintEvent)
 
-void APPSkyCreator_ControllerExample_C::Finish_SnowDry()
+void APPSkyCreator_ControllerExample_C::Start_WetnessAccumulate()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Finish_SnowDry");
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Start_WetnessAccumulate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Finish_WeatherChangeInterval
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Start_WeatherInterpolation
 // (BlueprintCallable, BlueprintEvent)
 
-void APPSkyCreator_ControllerExample_C::Finish_WeatherChangeInterval()
+void APPSkyCreator_ControllerExample_C::Start_WeatherInterpolation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Finish_WeatherChangeInterval");
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Start_WeatherInterpolation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Finish_WeatherInterpolation
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Start_WeatherChangeInterval
 // (BlueprintCallable, BlueprintEvent)
 
-void APPSkyCreator_ControllerExample_C::Finish_WeatherInterpolation()
+void APPSkyCreator_ControllerExample_C::Start_WeatherChangeInterval()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Finish_WeatherInterpolation");
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Start_WeatherChangeInterval");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Finish_WetnessAccumulation
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Start_SnowMelt
 // (BlueprintCallable, BlueprintEvent)
 
-void APPSkyCreator_ControllerExample_C::Finish_WetnessAccumulation()
+void APPSkyCreator_ControllerExample_C::Start_SnowMelt()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Finish_WetnessAccumulation");
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Start_SnowMelt");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Finish_WetnessDry
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Start_SnowAccumulate
 // (BlueprintCallable, BlueprintEvent)
 
-void APPSkyCreator_ControllerExample_C::Finish_WetnessDry()
+void APPSkyCreator_ControllerExample_C::Start_SnowAccumulate()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Finish_WetnessDry");
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Start_SnowAccumulate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.LightningStrike
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Start_PuddlesDry
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FVector&                   LightningPosition                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APPSkyCreator_ControllerExample_C::LightningStrike(const struct FVector& LightningPosition)
+void APPSkyCreator_ControllerExample_C::Start_PuddlesDry()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "LightningStrike");
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Start_PuddlesDry");
 
-	Params::PPSkyCreator_ControllerExample_C_LightningStrike Parms{};
-
-	Parms.LightningPosition = std::move(LightningPosition);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Start_PuddlesAccumulate
+// (BlueprintCallable, BlueprintEvent)
 
-void APPSkyCreator_ControllerExample_C::ReceiveBeginPlay()
+void APPSkyCreator_ControllerExample_C::Start_PuddlesAccumulate()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Start_PuddlesAccumulate");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.SetRainVolume
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void APPSkyCreator_ControllerExample_C::SetRainVolume()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "SetRainVolume");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -203,155 +295,63 @@ void APPSkyCreator_ControllerExample_C::ReceiveTick(float DeltaSeconds)
 }
 
 
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.SetRainVolume
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void APPSkyCreator_ControllerExample_C::SetRainVolume()
+void APPSkyCreator_ControllerExample_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "SetRainVolume");
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Start_PuddlesAccumulate
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.LightningStrike
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FVector&                   LightningPosition                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APPSkyCreator_ControllerExample_C::LightningStrike(const struct FVector& LightningPosition)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "LightningStrike");
+
+	Params::PPSkyCreator_ControllerExample_C_LightningStrike Parms{};
+
+	Parms.LightningPosition = std::move(LightningPosition);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Finish_WetnessDry
 // (BlueprintCallable, BlueprintEvent)
 
-void APPSkyCreator_ControllerExample_C::Start_PuddlesAccumulate()
+void APPSkyCreator_ControllerExample_C::Finish_WetnessDry()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Start_PuddlesAccumulate");
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Finish_WetnessDry");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Start_PuddlesDry
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Finish_WetnessAccumulation
 // (BlueprintCallable, BlueprintEvent)
 
-void APPSkyCreator_ControllerExample_C::Start_PuddlesDry()
+void APPSkyCreator_ControllerExample_C::Finish_WetnessAccumulation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Start_PuddlesDry");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Start_SnowAccumulate
-// (BlueprintCallable, BlueprintEvent)
-
-void APPSkyCreator_ControllerExample_C::Start_SnowAccumulate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Start_SnowAccumulate");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Start_SnowMelt
-// (BlueprintCallable, BlueprintEvent)
-
-void APPSkyCreator_ControllerExample_C::Start_SnowMelt()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Start_SnowMelt");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Start_WeatherChangeInterval
-// (BlueprintCallable, BlueprintEvent)
-
-void APPSkyCreator_ControllerExample_C::Start_WeatherChangeInterval()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Start_WeatherChangeInterval");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Start_WeatherInterpolation
-// (BlueprintCallable, BlueprintEvent)
-
-void APPSkyCreator_ControllerExample_C::Start_WeatherInterpolation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Start_WeatherInterpolation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Start_WetnessAccumulate
-// (BlueprintCallable, BlueprintEvent)
-
-void APPSkyCreator_ControllerExample_C::Start_WetnessAccumulate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Start_WetnessAccumulate");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.Start_WetnessDry
-// (BlueprintCallable, BlueprintEvent)
-
-void APPSkyCreator_ControllerExample_C::Start_WetnessDry()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Start_WetnessDry");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void APPSkyCreator_ControllerExample_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.WeatherMaterialFX_Interpolation
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void APPSkyCreator_ControllerExample_C::WeatherMaterialFX_Interpolation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "WeatherMaterialFX_Interpolation");
+		Func = Class->GetFunction("PPSkyCreator_ControllerExample_C", "Finish_WetnessAccumulation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

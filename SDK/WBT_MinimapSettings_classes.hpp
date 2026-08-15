@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBT_MinimapSettings.WBT_MinimapSettings_C
-// 0x00F0 (0x04C0 - 0x03D0)
+// 0x0060 (0x0430 - 0x03D0)
 class UWBT_MinimapSettings_C final : public UPalActivatableWidget
 {
 public:
@@ -26,46 +26,30 @@ public:
 	class UButton*                                btnCancel;                                         // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UButton*                                btnReset;                                          // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UButton*                                btnSave;                                           // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScrollBox*                             ScrollBox;                                         // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UObject*                                MyModActor;                                        // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ModActor::AModActor_C*                  ModActorRef;                                       // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Toggle_C*              Row_Enabled;                                       // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Toggle_C*              Row_RotateWithCamera;                              // 0x0410(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Slider_C*              Row_MapOpacity;                                    // 0x0418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Toggle_C*              Row_IsDebug;                                       // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Slider_C*              Row_MapSize;                                       // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Slider_C*              Row_MapX;                                          // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Slider_C*              Row_MapY;                                          // 0x0438(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Toggle_C*              Row_ShowBox;                                       // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Toggle_C*              Row_ShowPal;                                       // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Toggle_C*              Row_ShowEgg;                                       // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Toggle_C*              Row_ShowRelic;                                     // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Toggle_C*              Row_ShowNotes;                                     // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Toggle_C*              Row_ShowDungeon;                                   // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Toggle_C*              Row_ShowFastTravel;                                // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Keybind_C*             Row_HotkeyZoom;                                    // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Keybind_C*             Row_HotkeyMapMoveMode;                             // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Keybind_C*             Row_HotkeyToggleMap;                               // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Keybind_C*             Row_HotkeyMapUp;                                   // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Keybind_C*             Row_HotkeyMapDown;                                 // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Keybind_C*             Row_HotkeyMapLeft;                                 // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Keybind_C*             Row_HotkeyMapRight;                                // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Keybind_C*             Row_HotkeyMapBigger;                               // 0x04B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_SettingsRow_Keybind_C*             Row_HotkeyMapSmaller;                              // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UTextBlock*                             MinimapSettingsHeader;                             // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScrollBox*                             ScrollBox;                                         // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             TextBlock_1;                                       // 0x0400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             TextBlock_127;                                     // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             TextBlock_313;                                     // 0x0410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox;                                       // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UObject*                                MyModActor;                                        // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ModActor_4::AModActor_C*                ModActorRef;                                       // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ResetToDefaults();
+	void Create_Keybind_Row(const class FText& Label, const class FText& Description, const struct FInputChord& InSelectedKey, class UWBP_SettingsRow_Keybind_C** Output);
+	void Construct();
+	void BuildSettingsRows();
+	void BuildKeyMapping(class UWBP_SettingsRow_Keybind_C* Row, class FName ActionName, struct FInputActionKeyMapping* Output);
+	void BndEvt__WBT_MinimapSettings_btnReset_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature();
+	void BndEvt__WBP_MinimapSettings_btnSave_K2Node_ComponentBoundEvent_2_OnButtonPressedEvent__DelegateSignature();
+	void BndEvt__WBP_MinimapSettings_btnCancel_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature();
+	void SaveSettingsRows();
+	void ResetSettingsRows();
 	void PrintToModLoader(const class FString& Message);
 	void ExecuteUbergraph_WBT_MinimapSettings(int32 EntryPoint);
 	void CreateToggleRow(const class FText& Label, const class FText& Description, bool bIsOn, class UWBP_SettingsRow_Toggle_C** Output);
 	void CreateSliderRow(const class FText& Reference, const class FText& Description, float MinValue, float MaxValue, float Value, float Step_Size, class UWBP_SettingsRow_Slider_C** Output);
 	void CreateHeaderRow(const class FText& Label, class UWBP_SettingsRow_Header_C** Output);
-	void Create_Keybind_Row(const class FText& Label, const class FText& Description, const struct FInputChord& InSelectedKey, class UWBP_SettingsRow_Keybind_C** Output);
-	void Construct();
-	void BuildKeyMapping(class UWBP_SettingsRow_Keybind_C* Row, class FName ActionName, struct FInputActionKeyMapping* Output);
-	void BndEvt__WBT_MinimapSettings_btnReset_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature();
-	void BndEvt__WBP_MinimapSettings_btnSave_K2Node_ComponentBoundEvent_2_OnButtonPressedEvent__DelegateSignature();
-	void BndEvt__WBP_MinimapSettings_btnCancel_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

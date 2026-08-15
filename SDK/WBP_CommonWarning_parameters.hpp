@@ -17,6 +17,24 @@
 namespace SDK::Params
 {
 
+// Function WBP_CommonWarning.WBP_CommonWarning_C.SetWarning
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_CommonWarning_C_SetWarning final
+{
+public:
+	struct FPalUICommonWarningDisplayData         WarningData;                                       // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_CommonWarning_C_SetWarning;
+
+// Function WBP_CommonWarning.WBP_CommonWarning_C.GetDisplayType
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CommonWarning_C_GetDisplayType final
+{
+public:
+	EPalUICommonWarningType                       Display_Type_0;                                    // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CommonWarning_C_GetDisplayType;
+
 // Function WBP_CommonWarning.WBP_CommonWarning_C.ExecuteUbergraph_WBP_CommonWarning
 // 0x0178 (0x0178 - 0x0000)
 struct WBP_CommonWarning_C_ExecuteUbergraph_WBP_CommonWarning final
@@ -42,24 +60,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_CommonWarning_C_ExecuteUbergraph_WBP_CommonWarning;
-
-// Function WBP_CommonWarning.WBP_CommonWarning_C.GetDisplayType
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CommonWarning_C_GetDisplayType final
-{
-public:
-	EPalUICommonWarningType                       Display_Type_0;                                    // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CommonWarning_C_GetDisplayType;
-
-// Function WBP_CommonWarning.WBP_CommonWarning_C.SetWarning
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_CommonWarning_C_SetWarning final
-{
-public:
-	struct FPalUICommonWarningDisplayData         WarningData;                                       // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_CommonWarning_C_SetWarning;
 
 }
 

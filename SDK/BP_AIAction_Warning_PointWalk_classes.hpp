@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "EWarningPalAIMoveType_structs.hpp"
+#include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "BP_AIAction_CanCombatBase_classes.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -42,6 +42,8 @@ public:
 
 public:
 	void ActionAbort(class APawn* ControlledPawn);
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionPause(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void CancelTurnAction();
 	void ExecuteUbergraph_BP_AIAction_Warning_PointWalk(int32 EntryPoint);
@@ -52,8 +54,6 @@ public:
 	void TurnMode();
 	void TurnR45();
 	void UpdateMoveGoal();
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
-	void ActionPause(class APawn* ControlledPawn);
 	void ActionResume(class APawn* ControlledPawn);
 	void ActionStart(class APawn* ControlledPawn);
 	void SoundEvent(const struct FVector& EmitLocation);

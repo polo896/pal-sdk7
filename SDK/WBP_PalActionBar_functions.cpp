@@ -17,29 +17,65 @@
 namespace SDK
 {
 
-// Function WBP_PalActionBar.WBP_PalActionBar_C.AnmEvent_Close
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_PalActionBar.WBP_PalActionBar_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalActionBar_C::AnmEvent_Close()
+void UWBP_PalActionBar_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalActionBar_C", "AnmEvent_Close");
+		Func = Class->GetFunction("WBP_PalActionBar_C", "Tick");
+
+	Params::WBP_PalActionBar_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalActionBar.WBP_PalActionBar_C.OnRemovedAllAction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalActionBar_C::OnRemovedAllAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalActionBar_C", "OnRemovedAllAction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalActionBar.WBP_PalActionBar_C.AnmEvent_Open
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_PalActionBar.WBP_PalActionBar_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalActionBar_C::AnmEvent_Open()
+void UWBP_PalActionBar_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalActionBar_C", "AnmEvent_Open");
+		Func = Class->GetFunction("WBP_PalActionBar_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalActionBar.WBP_PalActionBar_C.OnAddedAction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalActionBar_C::OnAddedAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalActionBar_C", "OnAddedAction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -65,67 +101,31 @@ void UWBP_PalActionBar_C::ExecuteUbergraph_WBP_PalActionBar(int32 EntryPoint)
 }
 
 
-// Function WBP_PalActionBar.WBP_PalActionBar_C.OnAddedAction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalActionBar.WBP_PalActionBar_C.AnmEvent_Open
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalActionBar_C::OnAddedAction()
+void UWBP_PalActionBar_C::AnmEvent_Open()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalActionBar_C", "OnAddedAction");
+		Func = Class->GetFunction("WBP_PalActionBar_C", "AnmEvent_Open");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalActionBar.WBP_PalActionBar_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_PalActionBar.WBP_PalActionBar_C.AnmEvent_Close
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalActionBar_C::OnInitialized()
+void UWBP_PalActionBar_C::AnmEvent_Close()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalActionBar_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_PalActionBar_C", "AnmEvent_Close");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalActionBar.WBP_PalActionBar_C.OnRemovedAllAction
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalActionBar_C::OnRemovedAllAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalActionBar_C", "OnRemovedAllAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalActionBar.WBP_PalActionBar_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalActionBar_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalActionBar_C", "Tick");
-
-	Params::WBP_PalActionBar_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

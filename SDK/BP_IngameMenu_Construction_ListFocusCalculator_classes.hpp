@@ -28,11 +28,11 @@ public:
 	TArray<class UWBP_IngameMenu_Construction_Group_C*> ListArray;                                   // 0x0038(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void AddList(class UWBP_IngameMenu_Construction_Group_C* ListWidget);
-	void GetFocusTarget_Down(class UWBP_IngameMenu_Construction_Group_C* CurrentList, class UWidget** Widget);
-	void GetFocusTarget_Up(class UWBP_IngameMenu_Construction_Group_C* CurrentList, class UWidget** Widget);
-	void GetInitialFocusTargetIndex(int32 CurrentListNumber, int32 MaxRowIndex, int32* Index_0);
 	void SetMaxColumnIndex(int32 Index_0);
+	void GetInitialFocusTargetIndex(int32 CurrentListNumber, int32 MaxRowIndex, int32* Index_0);
+	void GetFocusTarget_Up(class UWBP_IngameMenu_Construction_Group_C* CurrentList, class UWidget** Widget);
+	void GetFocusTarget_Down(class UWBP_IngameMenu_Construction_Group_C* CurrentList, class UWidget** Widget);
+	void AddList(class UWBP_IngameMenu_Construction_Group_C* ListWidget);
 
 public:
 	static class UClass* StaticClass()

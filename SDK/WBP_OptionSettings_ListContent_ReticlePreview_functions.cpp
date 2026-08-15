@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_OptionSettings_ListContent_ReticlePreview.WBP_OptionSettings_ListContent_ReticlePreview_C.SetReticleColor
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_OptionSettings_ListContent_ReticlePreview.WBP_OptionSettings_ListContent_ReticlePreview_C.ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview
+// (Final, UbergraphFunction)
 // Parameters:
-// int32                                   ColorIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OptionSettings_ListContent_ReticlePreview_C::SetReticleColor(int32 ColorIndex)
+void UWBP_OptionSettings_ListContent_ReticlePreview_C::ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_ReticlePreview_C", "SetReticleColor");
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_ReticlePreview_C", "ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview");
 
-	Params::WBP_OptionSettings_ListContent_ReticlePreview_C_SetReticleColor Parms{};
+	Params::WBP_OptionSettings_ListContent_ReticlePreview_C_ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview Parms{};
 
-	Parms.ColorIndex = ColorIndex;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,21 +57,21 @@ void UWBP_OptionSettings_ListContent_ReticlePreview_C::SetOutline(double Outline
 }
 
 
-// Function WBP_OptionSettings_ListContent_ReticlePreview.WBP_OptionSettings_ListContent_ReticlePreview_C.ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview
-// (Final, UbergraphFunction)
+// Function WBP_OptionSettings_ListContent_ReticlePreview.WBP_OptionSettings_ListContent_ReticlePreview_C.SetReticleColor
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ColorIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OptionSettings_ListContent_ReticlePreview_C::ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview(int32 EntryPoint)
+void UWBP_OptionSettings_ListContent_ReticlePreview_C::SetReticleColor(int32 ColorIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_ReticlePreview_C", "ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview");
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_ReticlePreview_C", "SetReticleColor");
 
-	Params::WBP_OptionSettings_ListContent_ReticlePreview_C_ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview Parms{};
+	Params::WBP_OptionSettings_ListContent_ReticlePreview_C_SetReticleColor Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.ColorIndex = ColorIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

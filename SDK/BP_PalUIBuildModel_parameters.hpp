@@ -16,14 +16,15 @@
 namespace SDK::Params
 {
 
-// Function BP_PalUIBuildModel.BP_PalUIBuildModel_C.ChangeTab
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PalUIBuildModel_C_ChangeTab final
+// Function BP_PalUIBuildModel.BP_PalUIBuildModel_C.ChangeToNextTab
+// 0x0002 (0x0002 - 0x0000)
+struct BP_PalUIBuildModel_C_ChangeToNextTab final
 {
 public:
-	EPalBuildObjectTypeA                          TypeA;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalBuildObjectTypeA                          NextTab;                                           // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalUIBuildModel_C_ChangeTab;
+DUMPER7_ASSERTS_BP_PalUIBuildModel_C_ChangeToNextTab;
 
 // Function BP_PalUIBuildModel.BP_PalUIBuildModel_C.ChangeToBackTab
 // 0x0002 (0x0002 - 0x0000)
@@ -35,15 +36,14 @@ public:
 };
 DUMPER7_ASSERTS_BP_PalUIBuildModel_C_ChangeToBackTab;
 
-// Function BP_PalUIBuildModel.BP_PalUIBuildModel_C.ChangeToNextTab
-// 0x0002 (0x0002 - 0x0000)
-struct BP_PalUIBuildModel_C_ChangeToNextTab final
+// Function BP_PalUIBuildModel.BP_PalUIBuildModel_C.ChangeTab
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PalUIBuildModel_C_ChangeTab final
 {
 public:
-	EPalBuildObjectTypeA                          NextTab;                                           // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalBuildObjectTypeA                          TypeA;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalUIBuildModel_C_ChangeToNextTab;
+DUMPER7_ASSERTS_BP_PalUIBuildModel_C_ChangeTab;
 
 }
 

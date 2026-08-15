@@ -17,6 +17,25 @@
 namespace SDK::Params
 {
 
+// Function BP_AIAction_ReturnTerritory_WildPal.BP_AIAction_ReturnTerritory_WildPal_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_ReturnTerritory_WildPal_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_ReturnTerritory_WildPal_C_ActionFinished;
+
+// Function BP_AIAction_ReturnTerritory_WildPal.BP_AIAction_ReturnTerritory_WildPal_C.ActionPause
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_ReturnTerritory_WildPal_C_ActionPause final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_ReturnTerritory_WildPal_C_ActionPause;
+
 // Function BP_AIAction_ReturnTerritory_WildPal.BP_AIAction_ReturnTerritory_WildPal_C.ActionTick
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIAction_ReturnTerritory_WildPal_C_ActionTick final
@@ -113,25 +132,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_ReturnTerritory_WildPal_C_GetControllerRef;
-
-// Function BP_AIAction_ReturnTerritory_WildPal.BP_AIAction_ReturnTerritory_WildPal_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_ReturnTerritory_WildPal_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_ReturnTerritory_WildPal_C_ActionFinished;
-
-// Function BP_AIAction_ReturnTerritory_WildPal.BP_AIAction_ReturnTerritory_WildPal_C.ActionPause
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_ReturnTerritory_WildPal_C_ActionPause final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_ReturnTerritory_WildPal_C_ActionPause;
 
 // Function BP_AIAction_ReturnTerritory_WildPal.BP_AIAction_ReturnTerritory_WildPal_C.ActionResume
 // 0x0008 (0x0008 - 0x0000)

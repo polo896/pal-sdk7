@@ -48,8 +48,8 @@ public:
 	class UPalForwardPathRecoveryModule*          CallFunc_SpawnObject_ReturnValue;                  // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_AIAction_Visitor_TravelToBaseCamp_C* K2Node_CustomEvent_Action_1;                      // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_AIAction_Visitor_WaitInBaseCamp_C*  K2Node_CustomEvent_Action;                         // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_AIAction_Visitor_TravelToBaseCamp_C* K2Node_CustomEvent_action_1;                      // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_AIAction_Visitor_WaitInBaseCamp_C*  K2Node_CustomEvent_action;                         // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x005C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -95,6 +95,28 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_NPCAIController_Visitor_C_FindTargetPlayer;
+
+// Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.ForceEscapeStartFortOutSide
+// 0x0010 (0x0010 - 0x0000)
+struct BP_NPCAIController_Visitor_C_ForceEscapeStartFortOutSide final
+{
+public:
+	class AActor*                                 StartActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 TargetActor;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NPCAIController_Visitor_C_ForceEscapeStartFortOutSide;
+
+// Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.OnDead
+// 0x0020 (0x0020 - 0x0000)
+struct BP_NPCAIController_Visitor_C_OnDead final
+{
+public:
+	const class AActor*                           LastAttacker;                                      // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalRecruiterComponent*                 CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NPCAIController_Visitor_C_OnDead;
 
 // Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.ReturnSpawnedPointOtomo
 // 0x0048 (0x0048 - 0x0000)
@@ -173,28 +195,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_NPCAIController_Visitor_C_StartWaitAction;
-
-// Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.ForceEscapeStartFortOutSide
-// 0x0010 (0x0010 - 0x0000)
-struct BP_NPCAIController_Visitor_C_ForceEscapeStartFortOutSide final
-{
-public:
-	class AActor*                                 StartActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 TargetActor;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NPCAIController_Visitor_C_ForceEscapeStartFortOutSide;
-
-// Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.OnDead
-// 0x0020 (0x0020 - 0x0000)
-struct BP_NPCAIController_Visitor_C_OnDead final
-{
-public:
-	const class AActor*                           LastAttacker;                                      // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalRecruiterComponent*                 CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NPCAIController_Visitor_C_OnDead;
 
 // Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.ReceivePossess
 // 0x0008 (0x0008 - 0x0000)

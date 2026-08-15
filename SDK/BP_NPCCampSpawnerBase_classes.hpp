@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "F_NPCCampPreset_structs.hpp"
 #include "Engine_structs.hpp"
+#include "F_NPCCampPreset_structs.hpp"
 #include "Pal_classes.hpp"
 
 
@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C
 // 0x0078 (0x0330 - 0x02B8)
-class ABP_NPCCampSpawnerBase_C final : public APalNPCCampSpawnerBase
+class ABP_NPCCampSpawnerBase_C : public APalNPCCampSpawnerBase
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

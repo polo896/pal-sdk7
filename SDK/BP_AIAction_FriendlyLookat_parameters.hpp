@@ -16,6 +16,16 @@
 namespace SDK::Params
 {
 
+// Function BP_AIAction_FriendlyLookat.BP_AIAction_FriendlyLookat_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_FriendlyLookat_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_FriendlyLookat_C_ActionFinished;
+
 // Function BP_AIAction_FriendlyLookat.BP_AIAction_FriendlyLookat_C.ActionTick
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIAction_FriendlyLookat_C_ActionTick final
@@ -66,16 +76,6 @@ public:
 	class APawn*                                  K2Node_Event_ControlledPawn;                       // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_FriendlyLookat_C_ExecuteUbergraph_BP_AIAction_FriendlyLookat;
-
-// Function BP_AIAction_FriendlyLookat.BP_AIAction_FriendlyLookat_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_FriendlyLookat_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_FriendlyLookat_C_ActionFinished;
 
 // Function BP_AIAction_FriendlyLookat.BP_AIAction_FriendlyLookat_C.ActionStart
 // 0x0008 (0x0008 - 0x0000)

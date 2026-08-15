@@ -14,14 +14,14 @@
 namespace SDK::Params
 {
 
-// Function BP_ThrowCaptureObjectBase.BP_ThrowCaptureObjectBase_C.GetBodyClass
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ThrowCaptureObjectBase_C_GetBodyClass final
+// Function BP_ThrowCaptureObjectBase.BP_ThrowCaptureObjectBase_C.SetCaptureLevel
+// 0x0004 (0x0004 - 0x0000)
+struct BP_ThrowCaptureObjectBase_C_SetCaptureLevel final
 {
 public:
-	class UClass*                                 bodyClass;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Level;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ThrowCaptureObjectBase_C_GetBodyClass;
+DUMPER7_ASSERTS_BP_ThrowCaptureObjectBase_C_SetCaptureLevel;
 
 // Function BP_ThrowCaptureObjectBase.BP_ThrowCaptureObjectBase_C.GetCaptureLevel
 // 0x0004 (0x0004 - 0x0000)
@@ -32,14 +32,14 @@ public:
 };
 DUMPER7_ASSERTS_BP_ThrowCaptureObjectBase_C_GetCaptureLevel;
 
-// Function BP_ThrowCaptureObjectBase.BP_ThrowCaptureObjectBase_C.SetCaptureLevel
-// 0x0004 (0x0004 - 0x0000)
-struct BP_ThrowCaptureObjectBase_C_SetCaptureLevel final
+// Function BP_ThrowCaptureObjectBase.BP_ThrowCaptureObjectBase_C.GetBodyClass
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ThrowCaptureObjectBase_C_GetBodyClass final
 {
 public:
-	int32                                         Level;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 bodyClass;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ThrowCaptureObjectBase_C_SetCaptureLevel;
+DUMPER7_ASSERTS_BP_ThrowCaptureObjectBase_C_GetBodyClass;
 
 }
 

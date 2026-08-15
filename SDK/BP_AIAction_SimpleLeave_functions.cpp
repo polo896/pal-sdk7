@@ -17,25 +17,17 @@
 namespace SDK
 {
 
-// Function BP_AIAction_SimpleLeave.BP_AIAction_SimpleLeave_C.ActionTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_AIAction_SimpleLeave.BP_AIAction_SimpleLeave_C.ForceEndAction
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UBP_AIAction_SimpleLeave_C::ActionTick(class APawn* ControlledPawn, float DeltaSeconds)
+void UBP_AIAction_SimpleLeave_C::ForceEndAction()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_SimpleLeave_C", "ActionTick");
+		Func = Class->GetFunction("BP_AIAction_SimpleLeave_C", "ForceEndAction");
 
-	Params::BP_AIAction_SimpleLeave_C_ActionTick Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -59,17 +51,25 @@ void UBP_AIAction_SimpleLeave_C::ExecuteUbergraph_BP_AIAction_SimpleLeave(int32 
 }
 
 
-// Function BP_AIAction_SimpleLeave.BP_AIAction_SimpleLeave_C.ForceEndAction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_AIAction_SimpleLeave.BP_AIAction_SimpleLeave_C.ActionTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_AIAction_SimpleLeave_C::ForceEndAction()
+void UBP_AIAction_SimpleLeave_C::ActionTick(class APawn* ControlledPawn, float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_SimpleLeave_C", "ForceEndAction");
+		Func = Class->GetFunction("BP_AIAction_SimpleLeave_C", "ActionTick");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_AIAction_SimpleLeave_C_ActionTick Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

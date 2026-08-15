@@ -17,54 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_IngameConstruction_Paint_Color.WBP_IngameConstruction_Paint_Color_C.UnSelect
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameConstruction_Paint_Color_C::UnSelect()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_Color_C", "UnSelect");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameConstruction_Paint_Color.WBP_IngameConstruction_Paint_Color_C.SetPaletteInfo
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FFPalUIPaintPaletteInfo&   Info                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameConstruction_Paint_Color_C::SetPaletteInfo(const struct FFPalUIPaintPaletteInfo& Info)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_Color_C", "SetPaletteInfo");
-
-	Params::WBP_IngameConstruction_Paint_Color_C_SetPaletteInfo Parms{};
-
-	Parms.Info = std::move(Info);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameConstruction_Paint_Color.WBP_IngameConstruction_Paint_Color_C.Select
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameConstruction_Paint_Color_C::Select()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_Color_C", "Select");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_IngameConstruction_Paint_Color.WBP_IngameConstruction_Paint_Color_C.PlayAnimation_Unselect
 // (BlueprintCallable, BlueprintEvent)
 
@@ -124,6 +76,54 @@ void UWBP_IngameConstruction_Paint_Color_C::ExecuteUbergraph_WBP_IngameConstruct
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameConstruction_Paint_Color.WBP_IngameConstruction_Paint_Color_C.UnSelect
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameConstruction_Paint_Color_C::UnSelect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_Color_C", "UnSelect");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameConstruction_Paint_Color.WBP_IngameConstruction_Paint_Color_C.SetPaletteInfo
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FFPalUIPaintPaletteInfo&   Info                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameConstruction_Paint_Color_C::SetPaletteInfo(const struct FFPalUIPaintPaletteInfo& Info)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_Color_C", "SetPaletteInfo");
+
+	Params::WBP_IngameConstruction_Paint_Color_C_SetPaletteInfo Parms{};
+
+	Parms.Info = std::move(Info);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameConstruction_Paint_Color.WBP_IngameConstruction_Paint_Color_C.Select
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameConstruction_Paint_Color_C::Select()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_Color_C", "Select");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

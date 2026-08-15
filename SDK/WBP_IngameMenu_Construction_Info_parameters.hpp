@@ -30,83 +30,6 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_DelayDisplay;
 
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.ExecuteUbergraph_WBP_IngameMenu_Construction_Info
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_IngameMenu_Construction_Info_C_ExecuteUbergraph_WBP_IngameMenu_Construction_Info final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_ExecuteUbergraph_WBP_IngameMenu_Construction_Info;
-
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.IsExistsMaterial
-// 0x00B0 (0x00B0 - 0x0000)
-struct WBP_IngameMenu_Construction_Info_C_IsExistsMaterial final
-{
-public:
-	struct FPalBuildObjectData                    BuildObjectData;                                   // 0x0000(0x0098)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          ReturnValue;                                       // 0x0098(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsExistsMaterialForBuildObject_ReturnValue; // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_IsExistsMaterial;
-
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.LockedByBlueprint
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_IngameMenu_Construction_Info_C_LockedByBlueprint final
-{
-public:
-	bool                                          bLocked;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           K2Node_MakeArray_Array;                            // 0x0008(0x0010)(ReferenceParm)
-	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalStaticItemIdAndNum>         CallFunc_CollectLocalPlayerControllableItemInfos_OutItemInfos; // 0x0020(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_LockedByBlueprint;
-
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.Set Simple Additional Text
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_IngameMenu_Construction_Info_C_Set_Simple_Additional_Text final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_InventoryEquipment_ItemInfo_addeffect_C* CallFunc_Create_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_Set_Simple_Additional_Text;
-
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.SetBuildObjectData
-// 0x0098 (0x0098 - 0x0000)
-struct WBP_IngameMenu_Construction_Info_C_SetBuildObjectData final
-{
-public:
-	struct FPalBuildObjectData                    BuildObjectData;                                   // 0x0000(0x0098)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_SetBuildObjectData;
-
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.SetMaterialInfo
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_IngameMenu_Construction_Info_C_SetMaterialInfo final
-{
-public:
-	class UWBP_IngameMenuConstruction_InfoItem_C* Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ID;                                                // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NeedNum;                                           // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Get_Useable_Material_Item_Num_Num;        // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_SetMaterialInfo;
-
 // Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.UpdateDetail
 // 0x0208 (0x0208 - 0x0000)
 struct WBP_IngameMenu_Construction_Info_C_UpdateDetail final
@@ -166,6 +89,83 @@ public:
 	double                                        CallFunc_Conv_DoubleToText_Value_ImplicitCast;     // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_UpdateDetail;
+
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.SetMaterialInfo
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_IngameMenu_Construction_Info_C_SetMaterialInfo final
+{
+public:
+	class UWBP_IngameMenuConstruction_InfoItem_C* Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ID;                                                // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NeedNum;                                           // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Get_Useable_Material_Item_Num_Num;        // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_SetMaterialInfo;
+
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.SetBuildObjectData
+// 0x0098 (0x0098 - 0x0000)
+struct WBP_IngameMenu_Construction_Info_C_SetBuildObjectData final
+{
+public:
+	struct FPalBuildObjectData                    BuildObjectData;                                   // 0x0000(0x0098)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_SetBuildObjectData;
+
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.Set Simple Additional Text
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_IngameMenu_Construction_Info_C_Set_Simple_Additional_Text final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_InventoryEquipment_ItemInfo_addeffect_C* CallFunc_Create_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_Set_Simple_Additional_Text;
+
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.LockedByBlueprint
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_IngameMenu_Construction_Info_C_LockedByBlueprint final
+{
+public:
+	bool                                          bLocked;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           K2Node_MakeArray_Array;                            // 0x0008(0x0010)(ReferenceParm)
+	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalStaticItemIdAndNum>         CallFunc_CollectLocalPlayerControllableItemInfos_OutItemInfos; // 0x0020(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_LockedByBlueprint;
+
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.IsExistsMaterial
+// 0x00B0 (0x00B0 - 0x0000)
+struct WBP_IngameMenu_Construction_Info_C_IsExistsMaterial final
+{
+public:
+	struct FPalBuildObjectData                    BuildObjectData;                                   // 0x0000(0x0098)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          ReturnValue;                                       // 0x0098(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsExistsMaterialForBuildObject_ReturnValue; // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_IsExistsMaterial;
+
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.ExecuteUbergraph_WBP_IngameMenu_Construction_Info
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_IngameMenu_Construction_Info_C_ExecuteUbergraph_WBP_IngameMenu_Construction_Info final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_ExecuteUbergraph_WBP_IngameMenu_Construction_Info;
 
 // Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.Get Useable Material Item Num
 // 0x0048 (0x0048 - 0x0000)

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "EPalTreasureBoxVisualType_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
+#include "EPalTreasureBoxVisualType_structs.hpp"
 
 
 namespace SDK
@@ -21,7 +21,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_MapObject_TreasureBox.BP_MapObject_TreasureBox_C
 // 0x0078 (0x04C8 - 0x0450)
-class ABP_MapObject_TreasureBox_C final : public APalMapObjectTreasureBox
+class ABP_MapObject_TreasureBox_C : public APalMapObjectTreasureBox
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0450(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

@@ -17,40 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_InventoryEquipment_ItemInfo_TecnologyList.WBP_InventoryEquipment_ItemInfo_TecnologyList_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_InventoryEquipment_ItemInfo_TecnologyList_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InventoryEquipment_ItemInfo_TecnologyList_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InventoryEquipment_ItemInfo_TecnologyList.WBP_InventoryEquipment_ItemInfo_TecnologyList_C.ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_TecnologyList
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_InventoryEquipment_ItemInfo_TecnologyList_C::ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_TecnologyList(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InventoryEquipment_ItemInfo_TecnologyList_C", "ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_TecnologyList");
-
-	Params::WBP_InventoryEquipment_ItemInfo_TecnologyList_C_ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_TecnologyList Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_InventoryEquipment_ItemInfo_TecnologyList.WBP_InventoryEquipment_ItemInfo_TecnologyList_C.SetInfo
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -74,6 +40,40 @@ void UWBP_InventoryEquipment_ItemInfo_TecnologyList_C::SetInfo(const class FText
 	Parms.Stock = Stock;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_InventoryEquipment_ItemInfo_TecnologyList.WBP_InventoryEquipment_ItemInfo_TecnologyList_C.ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_TecnologyList
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InventoryEquipment_ItemInfo_TecnologyList_C::ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_TecnologyList(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InventoryEquipment_ItemInfo_TecnologyList_C", "ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_TecnologyList");
+
+	Params::WBP_InventoryEquipment_ItemInfo_TecnologyList_C_ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_TecnologyList Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_InventoryEquipment_ItemInfo_TecnologyList.WBP_InventoryEquipment_ItemInfo_TecnologyList_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_InventoryEquipment_ItemInfo_TecnologyList_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InventoryEquipment_ItemInfo_TecnologyList_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

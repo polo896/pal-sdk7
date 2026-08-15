@@ -38,6 +38,30 @@ void UBP_AIActionCombatHeli_BattleMode_Field_C::FindTarget(class AActor** Target
 }
 
 
+// Function BP_AIActionCombatHeli_BattleMode_Field.BP_AIActionCombatHeli_BattleMode_Field_C.Is Valid BGMTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Valid                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIActionCombatHeli_BattleMode_Field_C::Is_Valid_BGMTarget(class AActor* TargetActor, bool* Valid)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIActionCombatHeli_BattleMode_Field_C", "Is Valid BGMTarget");
+
+	Params::BP_AIActionCombatHeli_BattleMode_Field_C_Is_Valid_BGMTarget Parms{};
+
+	Parms.TargetActor = TargetActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Valid != nullptr)
+		*Valid = Parms.Valid;
+}
+
+
 // Function BP_AIActionCombatHeli_BattleMode_Field.BP_AIActionCombatHeli_BattleMode_Field_C.IsValid Target
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -59,6 +83,30 @@ void UBP_AIActionCombatHeli_BattleMode_Field_C::IsValid_Target(class AActor* Tar
 
 	if (Validd != nullptr)
 		*Validd = Parms.Validd;
+}
+
+
+// Function BP_AIActionCombatHeli_BattleMode_Field.BP_AIActionCombatHeli_BattleMode_Field_C.IsWantedPoliceTargetPlayer
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class AActor*                           PlayerCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   IsTarget                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIActionCombatHeli_BattleMode_Field_C::IsWantedPoliceTargetPlayer(class AActor* PlayerCharacter, bool* IsTarget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIActionCombatHeli_BattleMode_Field_C", "IsWantedPoliceTargetPlayer");
+
+	Params::BP_AIActionCombatHeli_BattleMode_Field_C_IsWantedPoliceTargetPlayer Parms{};
+
+	Parms.PlayerCharacter = PlayerCharacter;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsTarget != nullptr)
+		*IsTarget = Parms.IsTarget;
 }
 
 }

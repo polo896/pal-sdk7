@@ -135,16 +135,15 @@ public:
 };
 DUMPER7_ASSERTS_FFlowAssetSaveData;
 
-// ScriptStruct Flow.MovieSceneFlowTemplateBase
-// 0x0008 (0x0028 - 0x0020)
-struct FMovieSceneFlowTemplateBase : public FMovieSceneEvalTemplate
+// ScriptStruct Flow.FlowOwnerFunctionRef
+// 0x0010 (0x0010 - 0x0000)
+struct FFlowOwnerFunctionRef final
 {
 public:
-	uint8                                         bFireEventsWhenForwards : 1;                       // 0x0020(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bFireEventsWhenBackwards : 1;                      // 0x0020(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class FName                                   FunctionName;                                      // 0x0000(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UFunction*                              Function;                                          // 0x0008(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-DUMPER7_ASSERTS_FMovieSceneFlowTemplateBase;
+DUMPER7_ASSERTS_FFlowOwnerFunctionRef;
 
 // ScriptStruct Flow.FlowComponentSaveData
 // 0x0030 (0x0030 - 0x0000)
@@ -157,15 +156,16 @@ public:
 };
 DUMPER7_ASSERTS_FFlowComponentSaveData;
 
-// ScriptStruct Flow.FlowOwnerFunctionRef
-// 0x0010 (0x0010 - 0x0000)
-struct FFlowOwnerFunctionRef final
+// ScriptStruct Flow.MovieSceneFlowTemplateBase
+// 0x0008 (0x0028 - 0x0020)
+struct FMovieSceneFlowTemplateBase : public FMovieSceneEvalTemplate
 {
 public:
-	class FName                                   FunctionName;                                      // 0x0000(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UFunction*                              Function;                                          // 0x0008(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         bFireEventsWhenForwards : 1;                       // 0x0020(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bFireEventsWhenBackwards : 1;                      // 0x0020(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FFlowOwnerFunctionRef;
+DUMPER7_ASSERTS_FMovieSceneFlowTemplateBase;
 
 // ScriptStruct Flow.MovieSceneFlowTriggerTemplate
 // 0x0020 (0x0048 - 0x0028)

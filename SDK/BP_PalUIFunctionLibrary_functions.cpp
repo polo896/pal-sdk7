@@ -117,6 +117,34 @@ void UBP_PalUIFunctionLibrary_C::ChangeTextFontMaterialInstance(class UPalTextBl
 }
 
 
+// Function BP_PalUIFunctionLibrary.BP_PalUIFunctionLibrary_C.FormatBaseCampBuildingTaskMsg
+// (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TArray<struct FPalDataTableRowName_MapObjectData>&BuildObjectIdArray                                     (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FText*                            OutText                                                (Parm, OutParm)
+
+void UBP_PalUIFunctionLibrary_C::FormatBaseCampBuildingTaskMsg(TArray<struct FPalDataTableRowName_MapObjectData>& BuildObjectIdArray, class UObject* __WorldContext, class FText* OutText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BP_PalUIFunctionLibrary_C", "FormatBaseCampBuildingTaskMsg");
+
+	Params::BP_PalUIFunctionLibrary_C_FormatBaseCampBuildingTaskMsg Parms{};
+
+	Parms.BuildObjectIdArray = std::move(BuildObjectIdArray);
+	Parms.__WorldContext = __WorldContext;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	BuildObjectIdArray = std::move(Parms.BuildObjectIdArray);
+
+	if (OutText != nullptr)
+		*OutText = std::move(Parms.OutText);
+}
+
+
 // Function BP_PalUIFunctionLibrary.BP_PalUIFunctionLibrary_C.Get Team Mission Difficulty Text
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -410,6 +438,32 @@ void UBP_PalUIFunctionLibrary_C::GetStatusEffectIcon(EPalStatusID statusID, clas
 
 	if (Texture != nullptr)
 		*Texture = Parms.Texture;
+}
+
+
+// Function BP_PalUIFunctionLibrary.BP_PalUIFunctionLibrary_C.GetSuitabilityDescription
+// (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// EPalWorkSuitability                     Suitability                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FText*                            DescriptionText                                        (Parm, OutParm)
+
+void UBP_PalUIFunctionLibrary_C::GetSuitabilityDescription(EPalWorkSuitability Suitability, class UObject* __WorldContext, class FText* DescriptionText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BP_PalUIFunctionLibrary_C", "GetSuitabilityDescription");
+
+	Params::BP_PalUIFunctionLibrary_C_GetSuitabilityDescription Parms{};
+
+	Parms.Suitability = Suitability;
+	Parms.__WorldContext = __WorldContext;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	if (DescriptionText != nullptr)
+		*DescriptionText = std::move(Parms.DescriptionText);
 }
 
 
@@ -749,10 +803,10 @@ void UBP_PalUIFunctionLibrary_C::ProjectIconToWorldMap(const struct FVector2D& M
 // class FName                             ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPalTextBlockBase*                nameTextBlock                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UPalTextBlockBase*                descTextBlock                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UImage*                           IconImage                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UImage*                           iconImage                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_PalUIFunctionLibrary_C::SetItemInfo(class FName ItemId, class UPalTextBlockBase* nameTextBlock, class UPalTextBlockBase* descTextBlock, class UImage* IconImage, class UObject* __WorldContext)
+void UBP_PalUIFunctionLibrary_C::SetItemInfo(class FName ItemId, class UPalTextBlockBase* nameTextBlock, class UPalTextBlockBase* descTextBlock, class UImage* iconImage, class UObject* __WorldContext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -764,7 +818,7 @@ void UBP_PalUIFunctionLibrary_C::SetItemInfo(class FName ItemId, class UPalTextB
 	Parms.ItemId = ItemId;
 	Parms.nameTextBlock = nameTextBlock;
 	Parms.descTextBlock = descTextBlock;
-	Parms.IconImage = IconImage;
+	Parms.iconImage = iconImage;
 	Parms.__WorldContext = __WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
@@ -777,10 +831,10 @@ void UBP_PalUIFunctionLibrary_C::SetItemInfo(class FName ItemId, class UPalTextB
 // class FName                             MapObjectId                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPalTextBlockBase*                nameTextBlock                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UPalTextBlockBase*                descTextBlock                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UImage*                           IconImage                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UImage*                           iconImage                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_PalUIFunctionLibrary_C::SetMapObjectInfo(class FName MapObjectId, class UPalTextBlockBase* nameTextBlock, class UPalTextBlockBase* descTextBlock, class UImage* IconImage, class UObject* __WorldContext)
+void UBP_PalUIFunctionLibrary_C::SetMapObjectInfo(class FName MapObjectId, class UPalTextBlockBase* nameTextBlock, class UPalTextBlockBase* descTextBlock, class UImage* iconImage, class UObject* __WorldContext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -792,7 +846,7 @@ void UBP_PalUIFunctionLibrary_C::SetMapObjectInfo(class FName MapObjectId, class
 	Parms.MapObjectId = MapObjectId;
 	Parms.nameTextBlock = nameTextBlock;
 	Parms.descTextBlock = descTextBlock;
-	Parms.IconImage = IconImage;
+	Parms.iconImage = iconImage;
 	Parms.__WorldContext = __WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);

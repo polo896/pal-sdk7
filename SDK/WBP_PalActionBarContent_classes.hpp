@@ -30,11 +30,11 @@ public:
 	class UImage*                                 Image_68;                                          // 0x1530(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_PalActionBarContent(int32 EntryPoint);
-	void HoveredEvent(class UCommonButtonBase* Button);
-	void OnUpdateInputAction();
 	void UnhoveredEvent(class UCommonButtonBase* Button);
+	void OnUpdateInputAction();
+	void HoveredEvent(class UCommonButtonBase* Button);
+	void ExecuteUbergraph_WBP_PalActionBarContent(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

@@ -17,81 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.BndEvt__WBP_IngameMenu_Chest_FilterContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.SetupUI
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class FName                             FilterId_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             TextId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Chest_FilterContent_C::BndEvt__WBP_IngameMenu_Chest_FilterContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_IngameMenu_Chest_FilterContent_C::SetupUI(class FName FilterId_0, class FName TextId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Chest_FilterContent_C", "BndEvt__WBP_IngameMenu_Chest_FilterContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_Chest_FilterContent_C", "SetupUI");
 
-	Params::WBP_IngameMenu_Chest_FilterContent_C_BndEvt__WBP_IngameMenu_Chest_FilterContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_IngameMenu_Chest_FilterContent_C_SetupUI Parms{};
 
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.ExecuteUbergraph_WBP_IngameMenu_Chest_FilterContent
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Chest_FilterContent_C::ExecuteUbergraph_WBP_IngameMenu_Chest_FilterContent(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Chest_FilterContent_C", "ExecuteUbergraph_WBP_IngameMenu_Chest_FilterContent");
-
-	Params::WBP_IngameMenu_Chest_FilterContent_C_ExecuteUbergraph_WBP_IngameMenu_Chest_FilterContent Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.On Changed State Internal
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsChecked                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Chest_FilterContent_C::On_Changed_State_Internal(bool IsChecked)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Chest_FilterContent_C", "On Changed State Internal");
-
-	Params::WBP_IngameMenu_Chest_FilterContent_C_On_Changed_State_Internal Parms{};
-
-	Parms.IsChecked = IsChecked;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.OnUpdateFilterPreference
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalItemContainer*                ItemContainer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Chest_FilterContent_C::OnUpdateFilterPreference(class UPalItemContainer* ItemContainer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Chest_FilterContent_C", "OnUpdateFilterPreference");
-
-	Params::WBP_IngameMenu_Chest_FilterContent_C_OnUpdateFilterPreference Parms{};
-
-	Parms.ItemContainer = ItemContainer;
+	Parms.FilterId_0 = FilterId_0;
+	Parms.TextId = TextId;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -117,23 +59,81 @@ void UWBP_IngameMenu_Chest_FilterContent_C::RegisterEvents(class UPalUIItemChest
 }
 
 
-// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.SetupUI
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.OnUpdateFilterPreference
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             FilterId_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             TextId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalItemContainer*                ItemContainer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Chest_FilterContent_C::SetupUI(class FName FilterId_0, class FName TextId)
+void UWBP_IngameMenu_Chest_FilterContent_C::OnUpdateFilterPreference(class UPalItemContainer* ItemContainer)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Chest_FilterContent_C", "SetupUI");
+		Func = Class->GetFunction("WBP_IngameMenu_Chest_FilterContent_C", "OnUpdateFilterPreference");
 
-	Params::WBP_IngameMenu_Chest_FilterContent_C_SetupUI Parms{};
+	Params::WBP_IngameMenu_Chest_FilterContent_C_OnUpdateFilterPreference Parms{};
 
-	Parms.FilterId_0 = FilterId_0;
-	Parms.TextId = TextId;
+	Parms.ItemContainer = ItemContainer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.On Changed State Internal
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsChecked                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Chest_FilterContent_C::On_Changed_State_Internal(bool IsChecked)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Chest_FilterContent_C", "On Changed State Internal");
+
+	Params::WBP_IngameMenu_Chest_FilterContent_C_On_Changed_State_Internal Parms{};
+
+	Parms.IsChecked = IsChecked;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.ExecuteUbergraph_WBP_IngameMenu_Chest_FilterContent
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Chest_FilterContent_C::ExecuteUbergraph_WBP_IngameMenu_Chest_FilterContent(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Chest_FilterContent_C", "ExecuteUbergraph_WBP_IngameMenu_Chest_FilterContent");
+
+	Params::WBP_IngameMenu_Chest_FilterContent_C_ExecuteUbergraph_WBP_IngameMenu_Chest_FilterContent Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Chest_FilterContent.WBP_IngameMenu_Chest_FilterContent_C.BndEvt__WBP_IngameMenu_Chest_FilterContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Chest_FilterContent_C::BndEvt__WBP_IngameMenu_Chest_FilterContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Chest_FilterContent_C", "BndEvt__WBP_IngameMenu_Chest_FilterContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_IngameMenu_Chest_FilterContent_C_BndEvt__WBP_IngameMenu_Chest_FilterContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function BPI_CoopWeapon.BPI_CoopWeapon_C.SetWeaponDamage
-// 0x0004 (0x0004 - 0x0000)
-struct BPI_CoopWeapon_C_SetWeaponDamage final
-{
-public:
-	int32                                         Damageam;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPI_CoopWeapon_C_SetWeaponDamage;
-
 // Function BPI_CoopWeapon.BPI_CoopWeapon_C.SetAttacker
 // 0x0008 (0x0008 - 0x0000)
 struct BPI_CoopWeapon_C_SetAttacker final
@@ -31,6 +22,15 @@ public:
 	class AActor*                                 AttackerPal;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BPI_CoopWeapon_C_SetAttacker;
+
+// Function BPI_CoopWeapon.BPI_CoopWeapon_C.SetWeaponDamage
+// 0x0004 (0x0004 - 0x0000)
+struct BPI_CoopWeapon_C_SetWeaponDamage final
+{
+public:
+	int32                                         Damageam;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPI_CoopWeapon_C_SetWeaponDamage;
 
 }
 

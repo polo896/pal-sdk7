@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Pal_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -242,7 +242,7 @@ public:
 	class UPalIndividualCharacterHandle*          Handle;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterParameter*       Parameter;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FPalInstanceID                         IndividualId;                                      // 0x0010(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	struct FPalInstanceID                         CallFunc_GetPalID_ReturnValue;                     // 0x0040(0x0030)(HasGetValueTypeHash)
+	struct FPalInstanceID                         CallFunc_GetPalId_ReturnValue;                     // 0x0040(0x0030)(HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidInstanceID_ReturnValue;            // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_PalInstanceIDPalInstanceID_ReturnValue; // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidInstanceID_ReturnValue_1;          // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

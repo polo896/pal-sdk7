@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Pal_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "BP_AIAction_CombatPal_classes.hpp"
 
 
@@ -20,19 +20,19 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AIAction_CombatPal_YakushimaBoss002_Hand.BP_AIAction_CombatPal_YakushimaBoss002_Hand_C
-// 0x0048 (0x0270 - 0x0228)
+// 0x0048 (0x0280 - 0x0238)
 class UBP_AIAction_CombatPal_YakushimaBoss002_Hand_C final : public UBP_AIAction_CombatPal_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_CombatPal_YakushimaBoss002_Hand_C; // 0x0228(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	int32                                         WazaRoutineIndex;                                  // 0x0230(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_234[0x4];                                      // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EPalWazaID>                            WazaRoutineList_Left;                              // 0x0238(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<EPalWazaID>                            WazaRoutineList_Right;                             // 0x0248(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          UseDebugWaza;                                      // 0x0258(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_259[0x1];                                      // 0x0259(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	EPalWazaID                                    DebugWaza;                                         // 0x025A(0x0002)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  Camp_ID;                                           // 0x025C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_CombatPal_YakushimaBoss002_Hand_C; // 0x0238(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	int32                                         WazaRoutineIndex;                                  // 0x0240(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_244[0x4];                                      // 0x0244(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EPalWazaID>                            WazaRoutineList_Left;                              // 0x0248(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<EPalWazaID>                            WazaRoutineList_Right;                             // 0x0258(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          UseDebugWaza;                                      // 0x0268(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_269[0x1];                                      // 0x0269(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	EPalWazaID                                    DebugWaza;                                         // 0x026A(0x0002)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  Camp_ID;                                           // 0x026C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ActionStart(class APawn* ControlledPawn);

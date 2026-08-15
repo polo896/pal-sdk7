@@ -23,7 +23,7 @@ struct WBP_WorkerRadialMenu_Overlay_C_ExecuteUbergraph_WBP_WorkerRadialMenu_Over
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalWorkerRadialMenuResult                    K2Node_CustomEvent_result;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalWorkerRadialMenuResult                    K2Node_CustomEvent_Result;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalHUDDispatchParameter_WorkerRadialMenu* K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Worker_Radial_Menu; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)

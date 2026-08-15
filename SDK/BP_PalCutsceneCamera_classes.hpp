@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "CinematicCamera_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
+#include "CinematicCamera_classes.hpp"
 
 
 namespace SDK

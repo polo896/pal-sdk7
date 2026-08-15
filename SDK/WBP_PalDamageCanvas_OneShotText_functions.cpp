@@ -68,12 +68,12 @@ void UWBP_PalDamageCanvas_OneShotText_C::AddDamageTextEvent(const struct FPalDam
 // class AActor*                           Defender                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // double                                  DamageRate                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   weakCount                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   DIsplayDamage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   DisplayDamage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FPalCalculatedDamageInfo&  CalculatedDamageInfo                                   (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 // EPalDamageTextType*                     textType                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool*                                   bMercyHit                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalDamageCanvas_OneShotText_C::CalcDamageTextType(const struct FPalDamageInfo& DamageInfo, class AActor* Defender, double DamageRate, int32 weakCount, int32 DIsplayDamage, const struct FPalCalculatedDamageInfo& CalculatedDamageInfo, EPalDamageTextType* textType, bool* bMercyHit)
+void UWBP_PalDamageCanvas_OneShotText_C::CalcDamageTextType(const struct FPalDamageInfo& DamageInfo, class AActor* Defender, double DamageRate, int32 weakCount, int32 DisplayDamage, const struct FPalCalculatedDamageInfo& CalculatedDamageInfo, EPalDamageTextType* textType, bool* bMercyHit)
 {
 	static class UFunction* Func = nullptr;
 
@@ -86,7 +86,7 @@ void UWBP_PalDamageCanvas_OneShotText_C::CalcDamageTextType(const struct FPalDam
 	Parms.Defender = Defender;
 	Parms.DamageRate = DamageRate;
 	Parms.weakCount = weakCount;
-	Parms.DIsplayDamage = DIsplayDamage;
+	Parms.DisplayDamage = DisplayDamage;
 	Parms.CalculatedDamageInfo = std::move(CalculatedDamageInfo);
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -280,10 +280,10 @@ void UWBP_PalDamageCanvas_OneShotText_C::IsEquipAttacker(class AActor* Attacker,
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class AActor*                           Defender                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   DIsplayDamage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   DisplayDamage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool*                                   bKill                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalDamageCanvas_OneShotText_C::IsKillShot(class AActor* Defender, int32 DIsplayDamage, bool* bKill)
+void UWBP_PalDamageCanvas_OneShotText_C::IsKillShot(class AActor* Defender, int32 DisplayDamage, bool* bKill)
 {
 	static class UFunction* Func = nullptr;
 
@@ -293,7 +293,7 @@ void UWBP_PalDamageCanvas_OneShotText_C::IsKillShot(class AActor* Defender, int3
 	Params::WBP_PalDamageCanvas_OneShotText_C_IsKillShot Parms{};
 
 	Parms.Defender = Defender;
-	Parms.DIsplayDamage = DIsplayDamage;
+	Parms.DisplayDamage = DisplayDamage;
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -57,17 +57,17 @@ public:
 
 public:
 	void DelayDisplay(double DelayTime);
-	void Destruct();
-	void ExecuteUbergraph_WBP_IngameMenu_Construction_Info(int32 EntryPoint);
-	void Hide();
-	void HideAdditionalText();
-	bool IsExistsMaterial(const struct FPalBuildObjectData& BuildObjectData);
-	void LockedByBlueprint(bool* bLocked);
-	void OnTimer_Display();
-	void Set_Simple_Additional_Text(const class FText& Text);
-	void SetBuildObjectData(const struct FPalBuildObjectData& BuildObjectData);
-	void SetMaterialInfo(class UWBP_IngameMenuConstruction_InfoItem_C* Widget, class FName ID, int32 NeedNum);
 	void UpdateDetail();
+	void SetMaterialInfo(class UWBP_IngameMenuConstruction_InfoItem_C* Widget, class FName ID, int32 NeedNum);
+	void SetBuildObjectData(const struct FPalBuildObjectData& BuildObjectData);
+	void Set_Simple_Additional_Text(const class FText& Text);
+	void OnTimer_Display();
+	void LockedByBlueprint(bool* bLocked);
+	bool IsExistsMaterial(const struct FPalBuildObjectData& BuildObjectData);
+	void HideAdditionalText();
+	void Hide();
+	void ExecuteUbergraph_WBP_IngameMenu_Construction_Info(int32 EntryPoint);
+	void Destruct();
 
 	void Get_Useable_Material_Item_Num(class FName ItemId, int32* Num) const;
 

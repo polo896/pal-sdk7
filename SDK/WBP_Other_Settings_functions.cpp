@@ -17,37 +17,37 @@
 namespace SDK
 {
 
-// Function WBP_Other_Settings.WBP_Other_Settings_C.SetDefault
+// Function WBP_Other_Settings.WBP_Other_Settings_C.ApplySettings
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ApplyOriginal                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Other_Settings_C::SetDefault()
+void UWBP_Other_Settings_C::ApplySettings(bool ApplyOriginal)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Other_Settings_C", "SetDefault");
+		Func = Class->GetFunction("WBP_Other_Settings_C", "ApplySettings");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Other_Settings_C_ApplySettings Parms{};
+
+	Parms.ApplyOriginal = ApplyOriginal;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Other_Settings.WBP_Other_Settings_C.OnLanguageChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Other_Settings.WBP_Other_Settings_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Other_Settings_C::OnLanguageChanged(int32 Value)
+void UWBP_Other_Settings_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Other_Settings_C", "OnLanguageChanged");
+		Func = Class->GetFunction("WBP_Other_Settings_C", "Construct");
 
-	Params::WBP_Other_Settings_C_OnLanguageChanged Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -71,37 +71,37 @@ void UWBP_Other_Settings_C::ExecuteUbergraph_WBP_Other_Settings(int32 EntryPoint
 }
 
 
-// Function WBP_Other_Settings.WBP_Other_Settings_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Other_Settings.WBP_Other_Settings_C.OnLanguageChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Other_Settings_C::Construct()
+void UWBP_Other_Settings_C::OnLanguageChanged(int32 Value)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Other_Settings_C", "Construct");
+		Func = Class->GetFunction("WBP_Other_Settings_C", "OnLanguageChanged");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Other_Settings_C_OnLanguageChanged Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Other_Settings.WBP_Other_Settings_C.ApplySettings
+// Function WBP_Other_Settings.WBP_Other_Settings_C.SetDefault
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ApplyOriginal                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Other_Settings_C::ApplySettings(bool ApplyOriginal)
+void UWBP_Other_Settings_C::SetDefault()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Other_Settings_C", "ApplySettings");
+		Func = Class->GetFunction("WBP_Other_Settings_C", "SetDefault");
 
-	Params::WBP_Other_Settings_C_ApplySettings Parms{};
-
-	Parms.ApplyOriginal = ApplyOriginal;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

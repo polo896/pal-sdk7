@@ -40,5 +40,12 @@ public:
 };
 DUMPER7_ASSERTS_ABP_ThunderBird_Implementation__FAnimBlueprintGeneratedConstantData;
 
+// ScriptStruct ABP_ThunderBird_Implementation.ABP_ThunderBird_Implementation_C.AnimBlueprintGeneratedMutableData
+// 0x0000 (0x0001 - 0x0001)
+struct ABP_ThunderBird_Implementation::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+};
+DUMPER7_ASSERTS_ABP_ThunderBird_Implementation__FAnimBlueprintGeneratedMutableData;
+
 }
 

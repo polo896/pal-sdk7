@@ -17,49 +17,29 @@
 namespace SDK
 {
 
-// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.AnmEvent_Focus
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Title_WorldSelectButton_C::OnInitialized()
+void UWBP_Title_WorldSelectButton_C::AnmEvent_Focus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "AnmEvent_Focus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.ExecuteUbergraph_WBP_Title_WorldSelectButton
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.AnmEvent_Unfocus
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Title_WorldSelectButton_C::ExecuteUbergraph_WBP_Title_WorldSelectButton(int32 EntryPoint)
+void UWBP_Title_WorldSelectButton_C::AnmEvent_Unfocus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "ExecuteUbergraph_WBP_Title_WorldSelectButton");
-
-	Params::WBP_Title_WorldSelectButton_C_ExecuteUbergraph_WBP_Title_WorldSelectButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Title_WorldSelectButton_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "Construct");
+		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "AnmEvent_Unfocus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,29 +65,49 @@ void UWBP_Title_WorldSelectButton_C::BndEvt__WBP_Title_WorldSelectButton_WBP_Pal
 }
 
 
-// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.AnmEvent_Unfocus
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Title_WorldSelectButton_C::AnmEvent_Unfocus()
+void UWBP_Title_WorldSelectButton_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "AnmEvent_Unfocus");
+		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.AnmEvent_Focus
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.ExecuteUbergraph_WBP_Title_WorldSelectButton
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Title_WorldSelectButton_C::AnmEvent_Focus()
+void UWBP_Title_WorldSelectButton_C::ExecuteUbergraph_WBP_Title_WorldSelectButton(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "AnmEvent_Focus");
+		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "ExecuteUbergraph_WBP_Title_WorldSelectButton");
+
+	Params::WBP_Title_WorldSelectButton_C_ExecuteUbergraph_WBP_Title_WorldSelectButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Title_WorldSelectButton_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

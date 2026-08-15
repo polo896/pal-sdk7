@@ -17,6 +17,25 @@
 namespace SDK::Params
 {
 
+// Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_EatDeadBody_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_EatDeadBody_C_ActionFinished;
+
+// Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionPause
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_EatDeadBody_C_ActionPause final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_EatDeadBody_C_ActionPause;
+
 // Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionTick
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIAction_EatDeadBody_C_ActionTick final
@@ -107,25 +126,6 @@ public:
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_EatDeadBody_C_SelfPawn;
-
-// Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_EatDeadBody_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_EatDeadBody_C_ActionFinished;
-
-// Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionPause
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_EatDeadBody_C_ActionPause final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_EatDeadBody_C_ActionPause;
 
 // Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionStart
 // 0x0008 (0x0008 - 0x0000)

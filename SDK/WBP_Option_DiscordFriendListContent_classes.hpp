@@ -39,9 +39,9 @@ public:
 	class UWBP_Option_DiscordFriendListMenu_C*    WBP_Option_Discord_Friend_List_Menu;               // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Option_DiscordFriendListContent(int32 EntryPoint);
-	void Construct();
 	void CallOnClick(class UCommonButtonBase* Button);
+	void Construct();
+	void ExecuteUbergraph_WBP_Option_DiscordFriendListContent(int32 EntryPoint);
 	void OnFail_26C481AD42BFA9C2F688768E030CB33E(class UTexture2DDynamic* Texture);
 	void OnSuccess_26C481AD42BFA9C2F688768E030CB33E(class UTexture2DDynamic* Texture);
 	void UpdateUI(class UDiscordRelationshipHandle* Relationship_0);

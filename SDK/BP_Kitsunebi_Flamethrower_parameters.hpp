@@ -19,30 +19,371 @@
 namespace SDK::Params
 {
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.UpdateEffectTransform
-// 0x02B0 (0x02B0 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_UpdateEffectTransform final
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ApplyDamage
+// 0x0498 (0x0498 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_ApplyDamage final
 {
 public:
-	struct FVector                                Location;                                          // 0x0000(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               Rot;                                               // 0x0018(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_GetRotatorToTarget_NewRotation;           // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_48[0x8];                                       // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0050(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x00B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C8[0x8];                                       // 0x00C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x00D0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0130(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0148(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0160(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x0180(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x0198(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0280(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0298(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    HitComp;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                HitLocation;                                       // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hit;                                               // 0x0030(0x00E8)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         WeaponDamage;                                      // 0x0118(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalItemId                             CallFunc_GetItemId_ReturnValue;                    // 0x011C(0x0028)(ConstParm, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalSpecialAttackRateInfo>      CallFunc_GetSpecialAttackRateInfos_ReturnValue;    // 0x0148(0x0010)(ConstParm, ReferenceParm)
+	class AActor*                                 CallFunc_GetWeaponAttacker_ReturnValue;            // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetWeaponAttacker_ReturnValue_1;          // 0x0160(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    CallFunc_GetTrainerPlayer_ReturnValue;             // 0x0168(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetWeaponAttacker_ReturnValue_2;          // 0x0170(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalAttackType                                CallFunc_GetAttackType_AttackType;                 // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_179[0x3];                                      // 0x0179(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetWeaponDamage_ReturnValue;              // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_181[0x3];                                      // 0x0181(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetPvPPlayerToGuildPalDamageRate_ReturnValue; // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0188(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_FindOwnerPalCharacter_ReturnValue;        // 0x01A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetSneakAttackRate_ReturnValue;           // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1AC[0x4];                                      // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalMakeDamageInfo                     K2Node_MakeStruct_PalMakeDamageInfo;               // 0x01B0(0x01B8)(ContainsInstancedReference)
+	struct FPalDamageInfo                         CallFunc_MakeDamageInfo_ReturnValue;               // 0x0368(0x0130)()
 };
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_UpdateEffectTransform;
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_ApplyDamage;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.BeginShoot
+// 0x0020 (0x0020 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_BeginShoot final
+{
+public:
+	class UNiagaraComponent*                      FlameEffect_0;                                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_BeginShoot;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ExecuteUbergraph_BP_Kitsunebi_Flamethrower
+// 0x0118 (0x0118 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_ExecuteUbergraph_BP_Kitsunebi_Flamethrower final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPlayMontageCallbackProxy*              CallFunc_CreateProxyObjectForPlayMontage_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_CustomEvent_NotifyName_3;                   // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_NotifyName_2;                   // 0x002C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_1;            // 0x0034(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_2;            // 0x0044(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_NotifyName_1;                   // 0x0054(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_NotifyName;                     // 0x005C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_3;            // 0x0064(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable;                                // 0x0074(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bCanShootOnRelease;                   // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_85[0x3];                                       // 0x0085(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_attachActor;                          // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_Event_detachActor;                          // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FBasicParticleData>             K2Node_Event_Data;                                 // 0x00A0(0x0010)(ConstParm, ReferenceParm)
+	class UNiagaraSystem*                         K2Node_Event_NiagaraSystem;                        // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_SimulationPositionOffset;             // 0x00B8(0x0018)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_4;            // 0x00D4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E6[0x2];                                       // 0x00E6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_CustomEvent_NotifyName_4;                   // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      CallFunc_BeginShoot_FlameEffect;                   // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_Damageam;                             // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_AttackerPal;                          // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Tick_Shooting_DeltaTime_ImplicitCast;     // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Tick_Ignore_Hit_Actors_DeltaTime_ImplicitCast; // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_ExecuteUbergraph_BP_Kitsunebi_Flamethrower;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetAttackType
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_GetAttackType final
+{
+public:
+	EPalAttackType                                AttackType;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_GetAttackType;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetEquipSocketName
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_GetEquipSocketName final
+{
+public:
+	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_GetEquipSocketName;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetRotatorToTarget
+// 0x0110 (0x0110 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_GetRotatorToTarget final
+{
+public:
+	struct FRotator                               NewRotation;                                       // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class APalCharacter*                          CallFunc_GetOwnerCharacter_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x0020(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0080(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0088(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x00B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x00D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue;                 // 0x00F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_GetRotatorToTarget;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetWeaponAttacker
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_GetWeaponAttacker final
+{
+public:
+	class AActor*                                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_GetWeaponAttacker;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.IsActorAlreadyHit
+// 0x0020 (0x0020 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_IsActorAlreadyHit final
+{
+public:
+	class AActor*                                 HitActor;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsAlreadyHit;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Map_Find_Value;                           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_IsActorAlreadyHit;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnAttachWeapon
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_OnAttachWeapon final
+{
+public:
+	class AActor*                                 attachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_OnAttachWeapon;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnBlendOut_266D644B475C5EADF9D744838A1159F1
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_OnBlendOut_266D644B475C5EADF9D744838A1159F1 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_OnBlendOut_266D644B475C5EADF9D744838A1159F1;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnCompleted_266D644B475C5EADF9D744838A1159F1
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_OnCompleted_266D644B475C5EADF9D744838A1159F1 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_OnCompleted_266D644B475C5EADF9D744838A1159F1;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnDetachWeapon
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_OnDetachWeapon final
+{
+public:
+	class AActor*                                 detachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_OnDetachWeapon;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnInterrupted_266D644B475C5EADF9D744838A1159F1
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_OnInterrupted_266D644B475C5EADF9D744838A1159F1 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_OnInterrupted_266D644B475C5EADF9D744838A1159F1;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnNotifyBegin_266D644B475C5EADF9D744838A1159F1
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_OnNotifyBegin_266D644B475C5EADF9D744838A1159F1 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_OnNotifyBegin_266D644B475C5EADF9D744838A1159F1;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnNotifyEnd_266D644B475C5EADF9D744838A1159F1
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_OnNotifyEnd_266D644B475C5EADF9D744838A1159F1 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_OnNotifyEnd_266D644B475C5EADF9D744838A1159F1;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnReleaseTrigger
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_OnReleaseTrigger final
+{
+public:
+	bool                                          bCanShootOnRelease;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_OnReleaseTrigger;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.PlayIdleMotion
+// 0x0030 (0x0030 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_PlayIdleMotion final
+{
+public:
+	bool                                          StopAllMontages;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAlphaBlendArgs                        K2Node_MakeStruct_AlphaBlendArgs;                  // 0x0008(0x0010)(NoDestructor)
+	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue_1;            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Montage_PlayWithBlendIn_ReturnValue;      // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Montage_Play_ReturnValue;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_PlayIdleMotion;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.PlayShootMotion
+// 0x0010 (0x0010 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_PlayShootMotion final
+{
+public:
+	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Montage_Play_ReturnValue;                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_PlayShootMotion;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_ReceiveEndPlay;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ReceiveParticleData
+// 0x0030 (0x0030 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_ReceiveParticleData final
+{
+public:
+	TArray<struct FBasicParticleData>             Data;                                              // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class UNiagaraSystem*                         NiagaraSystem;                                     // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                SimulationPositionOffset;                          // 0x0018(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_ReceiveParticleData;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_ReceiveTick;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.SetAttacker
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_SetAttacker final
+{
+public:
+	class AActor*                                 AttackerPal;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_SetAttacker;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.SetIgnoreActor
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_SetIgnoreActor final
+{
+public:
+	class AActor*                                 HitActor;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_SetIgnoreActor;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.SetWeaponDamage
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_SetWeaponDamage final
+{
+public:
+	int32                                         Damageam;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_SetWeaponDamage;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.StopEfffect
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_StopEfffect final
+{
+public:
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_StopEfffect;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.Tick Ignore Hit Actors
+// 0x0060 (0x0060 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_Tick_Ignore_Hit_Actors final
+{
+public:
+	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        remainTimeSec;                                     // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 tmpActor;                                          // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Remove_ReturnValue;                   // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Map_Find_Value;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_Map_Keys_Keys;                            // 0x0038(0x0010)(ReferenceParm)
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_Tick_Ignore_Hit_Actors;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.Tick Shooting
+// 0x0020 (0x0020 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_Tick_Shooting final
+{
+public:
+	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_Tick_Shooting;
+
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.TickShootingFire
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_TickShootingFire final
+{
+public:
+	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_TickShootingFire;
 
 // Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.Trace Hit Flame
 // 0x04D0 (0x04D0 - 0x0000)
@@ -113,371 +454,30 @@ public:
 };
 DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_Trace_Hit_Flame;
 
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.TickShootingFire
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_TickShootingFire final
+// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.UpdateEffectTransform
+// 0x02B0 (0x02B0 - 0x0000)
+struct BP_Kitsunebi_Flamethrower_C_UpdateEffectTransform final
 {
 public:
-	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Location;                                          // 0x0000(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               Rot;                                               // 0x0018(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_GetRotatorToTarget_NewRotation;           // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_48[0x8];                                       // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0050(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x00B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C8[0x8];                                       // 0x00C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x00D0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0130(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0148(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0160(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x0180(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x0198(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0280(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0298(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_TickShootingFire;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.Tick Shooting
-// 0x0020 (0x0020 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_Tick_Shooting final
-{
-public:
-	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_Tick_Shooting;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.Tick Ignore Hit Actors
-// 0x0060 (0x0060 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_Tick_Ignore_Hit_Actors final
-{
-public:
-	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        remainTimeSec;                                     // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 tmpActor;                                          // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Remove_ReturnValue;                   // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Map_Find_Value;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_Map_Keys_Keys;                            // 0x0038(0x0010)(ReferenceParm)
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_Tick_Ignore_Hit_Actors;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.StopEfffect
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_StopEfffect final
-{
-public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_StopEfffect;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.SetWeaponDamage
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_SetWeaponDamage final
-{
-public:
-	int32                                         Damageam;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_SetWeaponDamage;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.SetIgnoreActor
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_SetIgnoreActor final
-{
-public:
-	class AActor*                                 HitActor;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_SetIgnoreActor;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.SetAttacker
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_SetAttacker final
-{
-public:
-	class AActor*                                 AttackerPal;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_SetAttacker;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_ReceiveTick;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ReceiveParticleData
-// 0x0030 (0x0030 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_ReceiveParticleData final
-{
-public:
-	TArray<struct FBasicParticleData>             Data;                                              // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	class UNiagaraSystem*                         NiagaraSystem;                                     // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                SimulationPositionOffset;                          // 0x0018(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_ReceiveParticleData;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ReceiveEndPlay
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_ReceiveEndPlay final
-{
-public:
-	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_ReceiveEndPlay;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.PlayShootMotion
-// 0x0010 (0x0010 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_PlayShootMotion final
-{
-public:
-	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Montage_Play_ReturnValue;                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_PlayShootMotion;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.PlayIdleMotion
-// 0x0030 (0x0030 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_PlayIdleMotion final
-{
-public:
-	bool                                          StopAllMontages;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAlphaBlendArgs                        K2Node_MakeStruct_AlphaBlendArgs;                  // 0x0008(0x0010)(NoDestructor)
-	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue_1;            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Montage_PlayWithBlendIn_ReturnValue;      // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Montage_Play_ReturnValue;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_PlayIdleMotion;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnReleaseTrigger
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_OnReleaseTrigger final
-{
-public:
-	bool                                          bCanShootOnRelease;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_OnReleaseTrigger;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnNotifyEnd_266D644B475C5EADF9D744838A1159F1
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_OnNotifyEnd_266D644B475C5EADF9D744838A1159F1 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_OnNotifyEnd_266D644B475C5EADF9D744838A1159F1;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnNotifyBegin_266D644B475C5EADF9D744838A1159F1
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_OnNotifyBegin_266D644B475C5EADF9D744838A1159F1 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_OnNotifyBegin_266D644B475C5EADF9D744838A1159F1;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnInterrupted_266D644B475C5EADF9D744838A1159F1
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_OnInterrupted_266D644B475C5EADF9D744838A1159F1 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_OnInterrupted_266D644B475C5EADF9D744838A1159F1;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnDetachWeapon
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_OnDetachWeapon final
-{
-public:
-	class AActor*                                 detachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_OnDetachWeapon;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnCompleted_266D644B475C5EADF9D744838A1159F1
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_OnCompleted_266D644B475C5EADF9D744838A1159F1 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_OnCompleted_266D644B475C5EADF9D744838A1159F1;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnBlendOut_266D644B475C5EADF9D744838A1159F1
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_OnBlendOut_266D644B475C5EADF9D744838A1159F1 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_OnBlendOut_266D644B475C5EADF9D744838A1159F1;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.OnAttachWeapon
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_OnAttachWeapon final
-{
-public:
-	class AActor*                                 attachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_OnAttachWeapon;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.IsActorAlreadyHit
-// 0x0020 (0x0020 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_IsActorAlreadyHit final
-{
-public:
-	class AActor*                                 HitActor;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsAlreadyHit;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Map_Find_Value;                           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_IsActorAlreadyHit;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetWeaponAttacker
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_GetWeaponAttacker final
-{
-public:
-	class AActor*                                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_GetWeaponAttacker;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetRotatorToTarget
-// 0x0110 (0x0110 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_GetRotatorToTarget final
-{
-public:
-	struct FRotator                               NewRotation;                                       // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	class APalCharacter*                          CallFunc_GetOwnerCharacter_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x0020(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0080(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0088(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x00B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x00D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue;                 // 0x00F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_GetRotatorToTarget;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetEquipSocketName
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_GetEquipSocketName final
-{
-public:
-	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_GetEquipSocketName;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetAttackType
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_GetAttackType final
-{
-public:
-	EPalAttackType                                AttackType;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_GetAttackType;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ExecuteUbergraph_BP_Kitsunebi_Flamethrower
-// 0x0118 (0x0118 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_ExecuteUbergraph_BP_Kitsunebi_Flamethrower final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPlayMontageCallbackProxy*              CallFunc_CreateProxyObjectForPlayMontage_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_CustomEvent_NotifyName_3;                   // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_NotifyName_2;                   // 0x002C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_1;            // 0x0034(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_2;            // 0x0044(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_NotifyName_1;                   // 0x0054(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_NotifyName;                     // 0x005C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_3;            // 0x0064(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable;                                // 0x0074(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bCanShootOnRelease;                   // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_85[0x3];                                       // 0x0085(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_attachActor;                          // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_Event_detachActor;                          // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FBasicParticleData>             K2Node_Event_Data;                                 // 0x00A0(0x0010)(ConstParm, ReferenceParm)
-	class UNiagaraSystem*                         K2Node_Event_NiagaraSystem;                        // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_SimulationPositionOffset;             // 0x00B8(0x0018)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_4;            // 0x00D4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E6[0x2];                                       // 0x00E6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_CustomEvent_NotifyName_4;                   // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      CallFunc_BeginShoot_FlameEffect;                   // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_Damageam;                             // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_AttackerPal;                          // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Tick_Shooting_DeltaTime_ImplicitCast;     // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Tick_Ignore_Hit_Actors_DeltaTime_ImplicitCast; // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_ExecuteUbergraph_BP_Kitsunebi_Flamethrower;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.BeginShoot
-// 0x0020 (0x0020 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_BeginShoot final
-{
-public:
-	class UNiagaraComponent*                      FlameEffect_0;                                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_BeginShoot;
-
-// Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.ApplyDamage
-// 0x0498 (0x0498 - 0x0000)
-struct BP_Kitsunebi_Flamethrower_C_ApplyDamage final
-{
-public:
-	class UPrimitiveComponent*                    HitComp;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                HitLocation;                                       // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0030(0x00E8)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         WeaponDamage;                                      // 0x0118(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalItemId                             CallFunc_GetItemId_ReturnValue;                    // 0x011C(0x0028)(ConstParm, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalSpecialAttackRateInfo>      CallFunc_GetSpecialAttackRateInfos_ReturnValue;    // 0x0148(0x0010)(ConstParm, ReferenceParm)
-	class AActor*                                 CallFunc_GetWeaponAttacker_ReturnValue;            // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetWeaponAttacker_ReturnValue_1;          // 0x0160(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerCharacter*                    CallFunc_GetTrainerPlayer_ReturnValue;             // 0x0168(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetWeaponAttacker_ReturnValue_2;          // 0x0170(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalAttackType                                CallFunc_GetAttackType_AttackType;                 // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_179[0x3];                                      // 0x0179(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetWeaponDamage_ReturnValue;              // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_181[0x3];                                      // 0x0181(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetPvPPlayerToGuildPalDamageRate_ReturnValue; // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0188(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_FindOwnerPalCharacter_ReturnValue;        // 0x01A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetSneakAttackRate_ReturnValue;           // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AC[0x4];                                      // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalMakeDamageInfo                     K2Node_MakeStruct_PalMakeDamageInfo;               // 0x01B0(0x01B8)(ContainsInstancedReference)
-	struct FPalDamageInfo                         CallFunc_MakeDamageInfo_ReturnValue;               // 0x0368(0x0130)()
-};
-DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_ApplyDamage;
+DUMPER7_ASSERTS_BP_Kitsunebi_Flamethrower_C_UpdateEffectTransform;
 
 // Function BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C.GetWeaponDamage
 // 0x0004 (0x0004 - 0x0000)

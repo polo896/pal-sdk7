@@ -12,11 +12,11 @@
 
 #include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
-#include "EWildPalAIRestType_structs.hpp"
+#include "BP_AIAction_CanCombatBase_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "EWildPalAIMoveMode_structs.hpp"
 #include "Pal_structs.hpp"
-#include "BP_AIAction_CanCombatBase_classes.hpp"
+#include "EWildPalAIRestType_structs.hpp"
 
 
 namespace SDK
@@ -66,6 +66,8 @@ public:
 
 public:
 	void ActionAbort(class APawn* ControlledPawn);
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionPause(class APawn* ControlledPawn);
 	void ActionPostTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void CancelAsyncFollowMoveIfAny();
@@ -93,8 +95,6 @@ public:
 	void SetDrinkWaterFlag();
 	void StateUpdate();
 	void カスタムイベント_Stack();
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
-	void ActionPause(class APawn* ControlledPawn);
 	void ActionResume(class APawn* ControlledPawn);
 	void ActionStart(class APawn* ControlledPawn);
 	void OnSightCheckAsyncCompleted(bool bIncludedPlayer, bool bIncludedAliveNPC, bool bIncludedEdibleDeadNPC, const TArray<class APalCharacter*>& InSightCharacters);

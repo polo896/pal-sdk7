@@ -43,29 +43,29 @@ public:
 	bool                                          bCanSearchByItemId;                                // 0x0581(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AddTargetSlot(const struct FPalItemAndNum& ItemInfo);
-	void Apply_Filter(TArray<class FName>& Types);
-	void Apply_Filter_to_Item(class UPalStaticItemDataBase* ItemData, bool* Visible);
-	void BndEvt__WBP_IngameMenu_ItemSearchList_CommonTileView_K2Node_ComponentBoundEvent_5_OnListEntryInitializedDynamic__DelegateSignature(class UObject* Item, class UUserWidget* Widget);
-	void BndEvt__WBP_IngameMenu_ItemSearchList_CommonTileView_K2Node_ComponentBoundEvent_6_OnListEntryReleasedDynamic__DelegateSignature(class UUserWidget* Widget);
-	void BndEvt__WBP_IngameMenu_ItemSearchList_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
-	void BndEvt__WBP_IngameMenu_ItemSearchList_WBP_CommonButton_Filter_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_ItemSearchList_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_IngameMenu_ItemSearchList_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_IngameMenu_ItemSearchList_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_IngameMenu_ItemSearchList(int32 EntryPoint);
-	void FocusToFilterButton();
-	void GetCurrentFilterResult(const class FName StaticItemId, bool* Enabled);
-	void GetLastFocusSlot(class UWidget** Slot_0);
-	void On_Click_Internal(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
-	void OnHoverSlot(class UWBP_PalItemSlotButtonBase_C* Slot_0);
-	void RefreshForFilter();
-	void RefreshTileViewItem();
-	void RemoveTargetSlot(class FName ItemInfo);
-	void Update_Item_Stack_Info(TArray<struct FPalItemAndNum>& StackInfo, TArray<class FName>& IdArray, bool* SlotUpdated);
 	void UpdateTargetSlot(const struct FPalItemAndNum& ItemInfo);
+	void Update_Item_Stack_Info(TArray<struct FPalItemAndNum>& StackInfo, TArray<class FName>& IdArray, bool* SlotUpdated);
+	void RemoveTargetSlot(class FName ItemInfo);
+	void RefreshTileViewItem();
+	void RefreshForFilter();
+	void OnHoverSlot(class UWBP_PalItemSlotButtonBase_C* Slot_0);
+	void On_Click_Internal(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
+	void GetLastFocusSlot(class UWidget** Slot_0);
+	void GetCurrentFilterResult(const class FName StaticItemId, bool* Enabled);
+	void FocusToFilterButton();
+	void ExecuteUbergraph_WBP_IngameMenu_ItemSearchList(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_IngameMenu_ItemSearchList_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_IngameMenu_ItemSearchList_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_IngameMenu_ItemSearchList_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_IngameMenu_ItemSearchList_WBP_CommonButton_Filter_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_ItemSearchList_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
+	void BndEvt__WBP_IngameMenu_ItemSearchList_CommonTileView_K2Node_ComponentBoundEvent_6_OnListEntryReleasedDynamic__DelegateSignature(class UUserWidget* Widget);
+	void BndEvt__WBP_IngameMenu_ItemSearchList_CommonTileView_K2Node_ComponentBoundEvent_5_OnListEntryInitializedDynamic__DelegateSignature(class UObject* Item, class UUserWidget* Widget);
+	void Apply_Filter_to_Item(class UPalStaticItemDataBase* ItemData, bool* Visible);
+	void Apply_Filter(TArray<class FName>& Types);
+	void AddTargetSlot(const struct FPalItemAndNum& ItemInfo);
 
 public:
 	static class UClass* StaticClass()

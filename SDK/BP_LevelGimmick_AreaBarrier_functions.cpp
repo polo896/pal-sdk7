@@ -17,101 +17,39 @@
 namespace SDK
 {
 
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.DebugNiagaraFadeOut
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_LevelGimmick_AreaBarrier_C::DebugNiagaraFadeOut()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "DebugNiagaraFadeOut");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.DebugNiagaraReset
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_LevelGimmick_AreaBarrier_C::DebugNiagaraReset()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "DebugNiagaraReset");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.ExecuteUbergraph_BP_LevelGimmick_AreaBarrier
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.UpdateView
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPalLevelGimmick_AreaBarrier_ViewModel&ViewModel                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void ABP_LevelGimmick_AreaBarrier_C::ExecuteUbergraph_BP_LevelGimmick_AreaBarrier(int32 EntryPoint)
+void ABP_LevelGimmick_AreaBarrier_C::UpdateView(const struct FPalLevelGimmick_AreaBarrier_ViewModel& ViewModel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "ExecuteUbergraph_BP_LevelGimmick_AreaBarrier");
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "UpdateView");
 
-	Params::BP_LevelGimmick_AreaBarrier_C_ExecuteUbergraph_BP_LevelGimmick_AreaBarrier Parms{};
+	Params::BP_LevelGimmick_AreaBarrier_C_UpdateView Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.ViewModel = std::move(ViewModel);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.OnDataChanged
-// (Event, Protected, HasOutParams, BlueprintEvent)
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.UpdateNiagaraFadeOut
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FPalLevelGimmick_AreaBarrier_ViewModel&InViewModel                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// double                                  DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LevelGimmick_AreaBarrier_C::OnDataChanged(const struct FPalLevelGimmick_AreaBarrier_ViewModel& InViewModel)
+void ABP_LevelGimmick_AreaBarrier_C::UpdateNiagaraFadeOut(double DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "OnDataChanged");
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "UpdateNiagaraFadeOut");
 
-	Params::BP_LevelGimmick_AreaBarrier_C_OnDataChanged Parms{};
-
-	Parms.InViewModel = std::move(InViewModel);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_LevelGimmick_AreaBarrier_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LevelGimmick_AreaBarrier_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "ReceiveTick");
-
-	Params::BP_LevelGimmick_AreaBarrier_C_ReceiveTick Parms{};
+	Params::BP_LevelGimmick_AreaBarrier_C_UpdateNiagaraFadeOut Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -119,15 +57,15 @@ void ABP_LevelGimmick_AreaBarrier_C::ReceiveTick(float DeltaSeconds)
 }
 
 
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.ResetNiagara
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.StartNiagaraFadeOut
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_LevelGimmick_AreaBarrier_C::ResetNiagara()
+void ABP_LevelGimmick_AreaBarrier_C::StartNiagaraFadeOut()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "ResetNiagara");
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "StartNiagaraFadeOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -157,33 +95,33 @@ void ABP_LevelGimmick_AreaBarrier_C::SetNiagaraParams(double Alpha, double Disso
 }
 
 
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.StartNiagaraFadeOut
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.ResetNiagara
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_LevelGimmick_AreaBarrier_C::StartNiagaraFadeOut()
+void ABP_LevelGimmick_AreaBarrier_C::ResetNiagara()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "StartNiagaraFadeOut");
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "ResetNiagara");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.UpdateNiagaraFadeOut
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// double                                  DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LevelGimmick_AreaBarrier_C::UpdateNiagaraFadeOut(double DeltaSeconds)
+void ABP_LevelGimmick_AreaBarrier_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "UpdateNiagaraFadeOut");
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "ReceiveTick");
 
-	Params::BP_LevelGimmick_AreaBarrier_C_UpdateNiagaraFadeOut Parms{};
+	Params::BP_LevelGimmick_AreaBarrier_C_ReceiveTick Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -191,23 +129,85 @@ void ABP_LevelGimmick_AreaBarrier_C::UpdateNiagaraFadeOut(double DeltaSeconds)
 }
 
 
-// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.UpdateView
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalLevelGimmick_AreaBarrier_ViewModel&ViewModel                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_LevelGimmick_AreaBarrier_C::UpdateView(const struct FPalLevelGimmick_AreaBarrier_ViewModel& ViewModel)
+void ABP_LevelGimmick_AreaBarrier_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "UpdateView");
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "ReceiveBeginPlay");
 
-	Params::BP_LevelGimmick_AreaBarrier_C_UpdateView Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.ViewModel = std::move(ViewModel);
+
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.OnDataChanged
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FPalLevelGimmick_AreaBarrier_ViewModel&InViewModel                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+
+void ABP_LevelGimmick_AreaBarrier_C::OnDataChanged(const struct FPalLevelGimmick_AreaBarrier_ViewModel& InViewModel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "OnDataChanged");
+
+	Params::BP_LevelGimmick_AreaBarrier_C_OnDataChanged Parms{};
+
+	Parms.InViewModel = std::move(InViewModel);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.ExecuteUbergraph_BP_LevelGimmick_AreaBarrier
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LevelGimmick_AreaBarrier_C::ExecuteUbergraph_BP_LevelGimmick_AreaBarrier(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "ExecuteUbergraph_BP_LevelGimmick_AreaBarrier");
+
+	Params::BP_LevelGimmick_AreaBarrier_C_ExecuteUbergraph_BP_LevelGimmick_AreaBarrier Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.DebugNiagaraReset
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_LevelGimmick_AreaBarrier_C::DebugNiagaraReset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "DebugNiagaraReset");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LevelGimmick_AreaBarrier.BP_LevelGimmick_AreaBarrier_C.DebugNiagaraFadeOut
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_LevelGimmick_AreaBarrier_C::DebugNiagaraFadeOut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_C", "DebugNiagaraFadeOut");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

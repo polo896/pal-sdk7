@@ -17,15 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_NetworkIcon.WBP_NetworkIcon_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_NetworkIcon.WBP_NetworkIcon_C.OnNetworkCheckTick
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_NetworkIcon_C::Construct()
+void UWBP_NetworkIcon_C::OnNetworkCheckTick()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NetworkIcon_C", "Construct");
+		Func = Class->GetFunction("WBP_NetworkIcon_C", "OnNetworkCheckTick");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,15 +51,15 @@ void UWBP_NetworkIcon_C::ExecuteUbergraph_WBP_NetworkIcon(int32 EntryPoint)
 }
 
 
-// Function WBP_NetworkIcon.WBP_NetworkIcon_C.OnNetworkCheckTick
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_NetworkIcon.WBP_NetworkIcon_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_NetworkIcon_C::OnNetworkCheckTick()
+void UWBP_NetworkIcon_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NetworkIcon_C", "OnNetworkCheckTick");
+		Func = Class->GetFunction("WBP_NetworkIcon_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

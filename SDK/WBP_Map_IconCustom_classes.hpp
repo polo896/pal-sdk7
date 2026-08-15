@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Pal_structs.hpp"
-#include "WBP_WorldMap_IconBase_NoDesign_classes.hpp"
 #include "Engine_structs.hpp"
+#include "WBP_WorldMap_IconBase_NoDesign_classes.hpp"
 
 
 namespace SDK

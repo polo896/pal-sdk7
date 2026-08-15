@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "MediaUtils_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "MediaAssets_structs.hpp"
 #include "Engine_structs.hpp"
+#include "MediaUtils_structs.hpp"
 
 
 namespace SDK::Params
@@ -77,15 +77,6 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MediaSource_Validate;
-
-// Function MediaAssets.FileMediaSource.SetFilePath
-// 0x0010 (0x0010 - 0x0000)
-struct FileMediaSource_SetFilePath final
-{
-public:
-	class FString                                 Path;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FileMediaSource_SetFilePath;
 
 // Function MediaAssets.MediaSoundComponent.BP_GetAttenuationSettingsToApply
 // 0x03D0 (0x03D0 - 0x0000)
@@ -235,6 +226,15 @@ public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MediaTexture_GetWidth;
+
+// Function MediaAssets.FileMediaSource.SetFilePath
+// 0x0010 (0x0010 - 0x0000)
+struct FileMediaSource_SetFilePath final
+{
+public:
+	class FString                                 Path;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FileMediaSource_SetFilePath;
 
 // Function MediaAssets.MediaComponent.GetMediaPlayer
 // 0x0008 (0x0008 - 0x0000)

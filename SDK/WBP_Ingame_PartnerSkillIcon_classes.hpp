@@ -33,6 +33,7 @@ public:
 
 public:
 	void Construct();
+	void Destruct();
 	void ExecuteUbergraph_WBP_Ingame_PartnerSkillIcon(int32 EntryPoint);
 	void OnChangedRemainingTime(float RemainingTime);
 	void OnChangedSkillStack(int32 NewStackCount);

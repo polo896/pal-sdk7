@@ -45,6 +45,24 @@ public:
 };
 DUMPER7_ASSERTS_FLiveLinkMetaData;
 
+// ScriptStruct LiveLinkInterface.LiveLinkFrameRate
+// 0x0000 (0x0008 - 0x0008)
+struct FLiveLinkFrameRate final : public FFrameRate
+{
+};
+DUMPER7_ASSERTS_FLiveLinkFrameRate;
+
+// ScriptStruct LiveLinkInterface.LiveLinkTimeCode_Base_DEPRECATED
+// 0x0010 (0x0010 - 0x0000)
+struct FLiveLinkTimeCode_Base_DEPRECATED
+{
+public:
+	int32                                         Seconds;                                           // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Frames;                                            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLiveLinkFrameRate                     FrameRate;                                         // 0x0008(0x0008)(NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FLiveLinkTimeCode_Base_DEPRECATED;
+
 // ScriptStruct LiveLinkInterface.LiveLinkSubjectName
 // 0x0008 (0x0008 - 0x0000)
 struct FLiveLinkSubjectName final
@@ -78,6 +96,16 @@ public:
 };
 DUMPER7_ASSERTS_FLiveLinkSubjectPreset;
 
+// ScriptStruct LiveLinkInterface.LiveLinkWorldTime
+// 0x0010 (0x0010 - 0x0000)
+struct FLiveLinkWorldTime final
+{
+public:
+	double                                        Time;                                              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	double                                        Offset;                                            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+};
+DUMPER7_ASSERTS_FLiveLinkWorldTime;
+
 // ScriptStruct LiveLinkInterface.LiveLinkBaseStaticData
 // 0x0010 (0x0010 - 0x0000)
 struct FLiveLinkBaseStaticData
@@ -97,6 +125,16 @@ public:
 };
 DUMPER7_ASSERTS_FLiveLinkSkeletonStaticData;
 
+// ScriptStruct LiveLinkInterface.LiveLinkTime
+// 0x0018 (0x0018 - 0x0000)
+struct FLiveLinkTime final
+{
+public:
+	double                                        WorldTime;                                         // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FQualifiedFrameTime                    SceneTime;                                         // 0x0008(0x0010)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FLiveLinkTime;
+
 // ScriptStruct LiveLinkInterface.LiveLinkSourceHandle
 // 0x0018 (0x0018 - 0x0000)
 struct alignas(0x08) FLiveLinkSourceHandle final
@@ -105,16 +143,6 @@ public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FLiveLinkSourceHandle;
-
-// ScriptStruct LiveLinkInterface.LiveLinkWorldTime
-// 0x0010 (0x0010 - 0x0000)
-struct FLiveLinkWorldTime final
-{
-public:
-	double                                        Time;                                              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	double                                        Offset;                                            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-};
-DUMPER7_ASSERTS_FLiveLinkWorldTime;
 
 // ScriptStruct LiveLinkInterface.LiveLinkBaseFrameData
 // 0x00A0 (0x00A0 - 0x0000)
@@ -378,34 +406,6 @@ public:
 	float                                         InterpolationOffset;                               // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FLiveLinkInterpolationSettings;
-
-// ScriptStruct LiveLinkInterface.LiveLinkTime
-// 0x0018 (0x0018 - 0x0000)
-struct FLiveLinkTime final
-{
-public:
-	double                                        WorldTime;                                         // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FQualifiedFrameTime                    SceneTime;                                         // 0x0008(0x0010)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FLiveLinkTime;
-
-// ScriptStruct LiveLinkInterface.LiveLinkFrameRate
-// 0x0000 (0x0008 - 0x0008)
-struct FLiveLinkFrameRate final : public FFrameRate
-{
-};
-DUMPER7_ASSERTS_FLiveLinkFrameRate;
-
-// ScriptStruct LiveLinkInterface.LiveLinkTimeCode_Base_DEPRECATED
-// 0x0010 (0x0010 - 0x0000)
-struct FLiveLinkTimeCode_Base_DEPRECATED
-{
-public:
-	int32                                         Seconds;                                           // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Frames;                                            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLiveLinkFrameRate                     FrameRate;                                         // 0x0008(0x0008)(NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FLiveLinkTimeCode_Base_DEPRECATED;
 
 // ScriptStruct LiveLinkInterface.LiveLinkTimeCode
 // 0x0000 (0x0010 - 0x0010)

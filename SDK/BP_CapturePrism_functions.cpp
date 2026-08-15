@@ -17,19 +17,94 @@
 namespace SDK
 {
 
-// Function BP_CapturePrism.BP_CapturePrism_C.DecrementBullet
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_CapturePrism.BP_CapturePrism_C.OnThrowInternal
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Bullet                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-bool ABP_CapturePrism_C::DecrementBullet()
+void ABP_CapturePrism_C::OnThrowInternal(class AActor* Bullet)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CapturePrism_C", "DecrementBullet");
+		Func = Class->GetFunction("BP_CapturePrism_C", "OnThrowInternal");
 
-	Params::BP_CapturePrism_C_DecrementBullet Parms{};
+	Params::BP_CapturePrism_C_OnThrowInternal Parms{};
+
+	Parms.Bullet = Bullet;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CapturePrism.BP_CapturePrism_C.OnEndShootAnimation
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UAnimMontage*                     Montage                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CapturePrism_C::OnEndShootAnimation(class UAnimMontage* Montage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CapturePrism_C", "OnEndShootAnimation");
+
+	Params::BP_CapturePrism_C_OnEndShootAnimation Parms{};
+
+	Parms.Montage = Montage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CapturePrism.BP_CapturePrism_C.On Throw
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_CapturePrism_C::On_Throw()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CapturePrism_C", "On Throw");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CapturePrism.BP_CapturePrism_C.GetThrowObjectClass
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UClass**                          ThrowObject                                            (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CapturePrism_C::GetThrowObjectClass(class UClass** ThrowObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CapturePrism_C", "GetThrowObjectClass");
+
+	Params::BP_CapturePrism_C_GetThrowObjectClass Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ThrowObject != nullptr)
+		*ThrowObject = Parms.ThrowObject;
+}
+
+
+// Function BP_CapturePrism.BP_CapturePrism_C.GetEquipSocketName
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class FName ABP_CapturePrism_C::GetEquipSocketName()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CapturePrism_C", "GetEquipSocketName");
+
+	Params::BP_CapturePrism_C_GetEquipSocketName Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -58,98 +133,23 @@ void ABP_CapturePrism_C::GetCaptureLevel(int32* Level)
 }
 
 
-// Function BP_CapturePrism.BP_CapturePrism_C.GetEquipSocketName
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_CapturePrism.BP_CapturePrism_C.DecrementBullet
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class FName ABP_CapturePrism_C::GetEquipSocketName()
+bool ABP_CapturePrism_C::DecrementBullet()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CapturePrism_C", "GetEquipSocketName");
+		Func = Class->GetFunction("BP_CapturePrism_C", "DecrementBullet");
 
-	Params::BP_CapturePrism_C_GetEquipSocketName Parms{};
+	Params::BP_CapturePrism_C_DecrementBullet Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
-}
-
-
-// Function BP_CapturePrism.BP_CapturePrism_C.GetThrowObjectClass
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UClass**                          ThrowObject                                            (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CapturePrism_C::GetThrowObjectClass(class UClass** ThrowObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CapturePrism_C", "GetThrowObjectClass");
-
-	Params::BP_CapturePrism_C_GetThrowObjectClass Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ThrowObject != nullptr)
-		*ThrowObject = Parms.ThrowObject;
-}
-
-
-// Function BP_CapturePrism.BP_CapturePrism_C.On Throw
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_CapturePrism_C::On_Throw()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CapturePrism_C", "On Throw");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CapturePrism.BP_CapturePrism_C.OnEndShootAnimation
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UAnimMontage*                     Montage                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CapturePrism_C::OnEndShootAnimation(class UAnimMontage* Montage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CapturePrism_C", "OnEndShootAnimation");
-
-	Params::BP_CapturePrism_C_OnEndShootAnimation Parms{};
-
-	Parms.Montage = Montage;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CapturePrism.BP_CapturePrism_C.OnThrowInternal
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Bullet                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CapturePrism_C::OnThrowInternal(class AActor* Bullet)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CapturePrism_C", "OnThrowInternal");
-
-	Params::BP_CapturePrism_C_OnThrowInternal Parms{};
-
-	Parms.Bullet = Bullet;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

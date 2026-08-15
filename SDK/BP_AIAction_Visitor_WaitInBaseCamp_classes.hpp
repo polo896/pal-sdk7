@@ -30,10 +30,10 @@ public:
 	TMulticastInlineDelegate<void()>              OnWaitTimeFinished;                                // 0x0308(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
+	void ActionStart(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void ExecuteUbergraph_BP_AIAction_Visitor_WaitInBaseCamp(int32 EntryPoint);
 	void Sight_Check(EPalAIResponseType CurrentState, bool OverrideIsDamage, class AActor** Target, EPalAIResponseType* ResponseType);
-	void ActionStart(class APawn* ControlledPawn);
 
 public:
 	static class UClass* StaticClass()

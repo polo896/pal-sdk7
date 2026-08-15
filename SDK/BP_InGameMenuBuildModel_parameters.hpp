@@ -16,25 +16,14 @@
 namespace SDK::Params
 {
 
-// Function BP_InGameMenuBuildModel.BP_InGameMenuBuildModel_C.ExecuteUbergraph_BP_InGameMenuBuildModel
-// 0x0010 (0x0010 - 0x0000)
-struct BP_InGameMenuBuildModel_C_ExecuteUbergraph_BP_InGameMenuBuildModel final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalItemContainer*                      K2Node_Event_Container;                            // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_InGameMenuBuildModel_C_ExecuteUbergraph_BP_InGameMenuBuildModel;
-
-// Function BP_InGameMenuBuildModel.BP_InGameMenuBuildModel_C.OnUpdateInventory
+// Function BP_InGameMenuBuildModel.BP_InGameMenuBuildModel_C.Setup
 // 0x0008 (0x0008 - 0x0000)
-struct BP_InGameMenuBuildModel_C_OnUpdateInventory final
+struct BP_InGameMenuBuildModel_C_Setup final
 {
 public:
-	class UPalItemContainer*                      Container;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalUIBuildModel_C*                  CallFunc_SpawnObject_ReturnValue;                  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_InGameMenuBuildModel_C_OnUpdateInventory;
+DUMPER7_ASSERTS_BP_InGameMenuBuildModel_C_Setup;
 
 // Function BP_InGameMenuBuildModel.BP_InGameMenuBuildModel_C.SetInitialTypeA
 // 0x0001 (0x0001 - 0x0000)
@@ -45,14 +34,25 @@ public:
 };
 DUMPER7_ASSERTS_BP_InGameMenuBuildModel_C_SetInitialTypeA;
 
-// Function BP_InGameMenuBuildModel.BP_InGameMenuBuildModel_C.Setup
+// Function BP_InGameMenuBuildModel.BP_InGameMenuBuildModel_C.OnUpdateInventory
 // 0x0008 (0x0008 - 0x0000)
-struct BP_InGameMenuBuildModel_C_Setup final
+struct BP_InGameMenuBuildModel_C_OnUpdateInventory final
 {
 public:
-	class UBP_PalUIBuildModel_C*                  CallFunc_SpawnObject_ReturnValue;                  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalItemContainer*                      Container;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_InGameMenuBuildModel_C_Setup;
+DUMPER7_ASSERTS_BP_InGameMenuBuildModel_C_OnUpdateInventory;
+
+// Function BP_InGameMenuBuildModel.BP_InGameMenuBuildModel_C.ExecuteUbergraph_BP_InGameMenuBuildModel
+// 0x0010 (0x0010 - 0x0000)
+struct BP_InGameMenuBuildModel_C_ExecuteUbergraph_BP_InGameMenuBuildModel final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalItemContainer*                      K2Node_Event_Container;                            // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_InGameMenuBuildModel_C_ExecuteUbergraph_BP_InGameMenuBuildModel;
 
 }
 

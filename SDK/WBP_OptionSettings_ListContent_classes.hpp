@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "UMG_structs.hpp"
+#include "CommonInput_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -64,33 +64,33 @@ public:
 	EPalKeyConfigAxisFilterType                   Filter_Type;                                       // 0x0559(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void カスタムイベント();
-	void SubtractValue();
-	void SetUIConfigButton(class FName UIActionName, ECommonInputType InputType, const struct FKey& Key);
-	void SetSwitcher(const bool CurrentOn);
-	void SetSlider(double CurrentValue, double Min, double Max, double FixedChangeValue, bool UseFixedValue);
-	void SetSelecter_String(const TArray<class FString>& Selections, const int32 Current_0);
-	void SetSelecter(const TArray<struct FDataTableRowHandle>& Selections, const int32 Current_0);
-	void SetResolution(const struct FIntPoint& CurrentResolution, const TArray<struct FIntPoint>& Resolutions);
-	void SetMsgId(const struct FDataTableRowHandle& rowHandle);
-	void SetKeyWarning(bool EnableWarning);
-	void SetKeyIcon(const struct FKey& Key, ECommonInputType InputType);
-	void SetInteractable(bool CanInteract);
-	void SetConfigButton(class FName ActionName, ECommonInputType InputType, EPalKeyConfigAxisFilterType FilterType);
-	void SetClickableButton();
-	void InputMethodChanged(ECommonInputType InputType);
-	void Gamepad_RightRelease();
-	void Gamepad_RightPress();
-	void Gamepad_LeftRelease();
-	void Gamepad_LeftPress();
-	void ExecuteUbergraph_WBP_OptionSettings_ListContent(int32 EntryPoint);
-	void Destruct();
-	void Construct();
-	void BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button_0);
-	void BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button_0);
-	void BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button_0);
-	void BackToList();
 	void addValue();
+	void BackToList();
+	void BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button_0);
+	void BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button_0);
+	void BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button_0);
+	void Construct();
+	void Destruct();
+	void ExecuteUbergraph_WBP_OptionSettings_ListContent(int32 EntryPoint);
+	void Gamepad_LeftPress();
+	void Gamepad_LeftRelease();
+	void Gamepad_RightPress();
+	void Gamepad_RightRelease();
+	void InputMethodChanged(ECommonInputType InputType);
+	void SetClickableButton();
+	void SetConfigButton(class FName ActionName, ECommonInputType InputType, EPalKeyConfigAxisFilterType FilterType);
+	void SetInteractable(bool CanInteract);
+	void SetKeyIcon(const struct FKey& Key, ECommonInputType InputType);
+	void SetKeyWarning(bool EnableWarning);
+	void SetMsgId(const struct FDataTableRowHandle& rowHandle);
+	void SetResolution(const struct FIntPoint& CurrentResolution, const TArray<struct FIntPoint>& Resolutions);
+	void SetSelecter(const TArray<struct FDataTableRowHandle>& Selections, const int32 Current_0);
+	void SetSelecter_String(const TArray<class FString>& Selections, const int32 Current_0);
+	void SetSlider(double CurrentValue, double Min, double Max, double FixedChangeValue, bool UseFixedValue);
+	void SetSwitcher(const bool CurrentOn);
+	void SetUIConfigButton(class FName UIActionName, ECommonInputType InputType, const struct FKey& Key);
+	void SubtractValue();
+	void カスタムイベント();
 
 public:
 	static class UClass* StaticClass()

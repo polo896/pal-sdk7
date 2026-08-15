@@ -197,15 +197,15 @@ void UBP_AIActionCombatHeli_BattleMode_C::ChangeNextWeapon()
 }
 
 
-// Function BP_AIActionCombatHeli_BattleMode.BP_AIActionCombatHeli_BattleMode_C.CheckPlayerDistanceForBGM
+// Function BP_AIActionCombatHeli_BattleMode.BP_AIActionCombatHeli_BattleMode_C.Check Player Distance for BGM
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UBP_AIActionCombatHeli_BattleMode_C::CheckPlayerDistanceForBGM()
+void UBP_AIActionCombatHeli_BattleMode_C::Check_Player_Distance_for_BGM()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIActionCombatHeli_BattleMode_C", "CheckPlayerDistanceForBGM");
+		Func = Class->GetFunction("BP_AIActionCombatHeli_BattleMode_C", "Check Player Distance for BGM");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -228,6 +228,30 @@ void UBP_AIActionCombatHeli_BattleMode_C::ExecuteUbergraph_BP_AIActionCombatHeli
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIActionCombatHeli_BattleMode.BP_AIActionCombatHeli_BattleMode_C.Is Valid BGMTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Valid                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIActionCombatHeli_BattleMode_C::Is_Valid_BGMTarget(class AActor* TargetActor, bool* Valid)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIActionCombatHeli_BattleMode_C", "Is Valid BGMTarget");
+
+	Params::BP_AIActionCombatHeli_BattleMode_C_Is_Valid_BGMTarget Parms{};
+
+	Parms.TargetActor = TargetActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Valid != nullptr)
+		*Valid = Parms.Valid;
 }
 
 

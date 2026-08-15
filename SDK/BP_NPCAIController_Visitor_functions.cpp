@@ -98,6 +98,28 @@ void ABP_NPCAIController_Visitor_C::FindTargetPlayer(class AActor** TargetActor)
 }
 
 
+// Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.ForceEscapeStartFortOutSide
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           StartActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NPCAIController_Visitor_C::ForceEscapeStartFortOutSide(class AActor* StartActor, class AActor* TargetActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAIController_Visitor_C", "ForceEscapeStartFortOutSide");
+
+	Params::BP_NPCAIController_Visitor_C_ForceEscapeStartFortOutSide Parms{};
+
+	Parms.StartActor = StartActor;
+	Parms.TargetActor = TargetActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.OnArrivedTargetPoint
 // (BlueprintCallable, BlueprintEvent)
 
@@ -123,6 +145,26 @@ void ABP_NPCAIController_Visitor_C::OnCancelInvader()
 		Func = Class->GetFunction("BP_NPCAIController_Visitor_C", "OnCancelInvader");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.OnDead
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class AActor*                     LastAttacker                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NPCAIController_Visitor_C::OnDead(const class AActor* LastAttacker)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAIController_Visitor_C", "OnDead");
+
+	Params::BP_NPCAIController_Visitor_C_OnDead Parms{};
+
+	Parms.LastAttacker = LastAttacker;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -261,48 +303,6 @@ void ABP_NPCAIController_Visitor_C::StartWaitAction()
 		Func = Class->GetFunction("BP_NPCAIController_Visitor_C", "StartWaitAction");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.ForceEscapeStartFortOutSide
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           StartActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NPCAIController_Visitor_C::ForceEscapeStartFortOutSide(class AActor* StartActor, class AActor* TargetActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAIController_Visitor_C", "ForceEscapeStartFortOutSide");
-
-	Params::BP_NPCAIController_Visitor_C_ForceEscapeStartFortOutSide Parms{};
-
-	Parms.StartActor = StartActor;
-	Parms.TargetActor = TargetActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.OnDead
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class AActor*                     LastAttacker                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NPCAIController_Visitor_C::OnDead(const class AActor* LastAttacker)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAIController_Visitor_C", "OnDead");
-
-	Params::BP_NPCAIController_Visitor_C_OnDead Parms{};
-
-	Parms.LastAttacker = LastAttacker;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

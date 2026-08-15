@@ -137,42 +137,6 @@ public:
 };
 DUMPER7_ASSERTS_PPSkyCreator_ControllerExample_C_ExecuteUbergraph_PPSkyCreator_ControllerExample;
 
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.LightningStrike
-// 0x0018 (0x0018 - 0x0000)
-struct PPSkyCreator_ControllerExample_C_LightningStrike final
-{
-public:
-	struct FVector                                LightningPosition;                                 // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_PPSkyCreator_ControllerExample_C_LightningStrike;
-
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct PPSkyCreator_ControllerExample_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_PPSkyCreator_ControllerExample_C_ReceiveTick;
-
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.SetRainVolume
-// 0x0110 (0x0110 - 0x0000)
-struct PPSkyCreator_ControllerExample_C_SetRainVolume final
-{
-public:
-	struct FPPSkyCreatorWeatherFXSettings         CallFunc_GetWeatherFXSettings_ReturnValue;         // 0x0000(0x0110)(NoDestructor)
-};
-DUMPER7_ASSERTS_PPSkyCreator_ControllerExample_C_SetRainVolume;
-
-// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.UserConstructionScript
-// 0x0008 (0x0008 - 0x0000)
-struct PPSkyCreator_ControllerExample_C_UserConstructionScript final
-{
-public:
-	class APPSkyCreator*                          CallFunc_GetActorOfClass_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_PPSkyCreator_ControllerExample_C_UserConstructionScript;
-
 // Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.WeatherMaterialFX_Interpolation
 // 0x0278 (0x0278 - 0x0000)
 struct PPSkyCreator_ControllerExample_C_WeatherMaterialFX_Interpolation final
@@ -278,6 +242,42 @@ public:
 	float                                         CallFunc_LerpWetnessAmount_Alpha_ImplicitCast_1;   // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_PPSkyCreator_ControllerExample_C_WeatherMaterialFX_Interpolation;
+
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.UserConstructionScript
+// 0x0008 (0x0008 - 0x0000)
+struct PPSkyCreator_ControllerExample_C_UserConstructionScript final
+{
+public:
+	class APPSkyCreator*                          CallFunc_GetActorOfClass_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PPSkyCreator_ControllerExample_C_UserConstructionScript;
+
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.SetRainVolume
+// 0x0110 (0x0110 - 0x0000)
+struct PPSkyCreator_ControllerExample_C_SetRainVolume final
+{
+public:
+	struct FPPSkyCreatorWeatherFXSettings         CallFunc_GetWeatherFXSettings_ReturnValue;         // 0x0000(0x0110)(NoDestructor)
+};
+DUMPER7_ASSERTS_PPSkyCreator_ControllerExample_C_SetRainVolume;
+
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct PPSkyCreator_ControllerExample_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PPSkyCreator_ControllerExample_C_ReceiveTick;
+
+// Function PPSkyCreator_ControllerExample.PPSkyCreator_ControllerExample_C.LightningStrike
+// 0x0018 (0x0018 - 0x0000)
+struct PPSkyCreator_ControllerExample_C_LightningStrike final
+{
+public:
+	struct FVector                                LightningPosition;                                 // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PPSkyCreator_ControllerExample_C_LightningStrike;
 
 }
 

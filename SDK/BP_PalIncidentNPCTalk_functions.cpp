@@ -46,7 +46,7 @@ void UBP_PalIncidentNPCTalk_C::BindTalkPlayer()
 
 
 // Function BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C.CancelTalk
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
 void UBP_PalIncidentNPCTalk_C::CancelTalk()
 {

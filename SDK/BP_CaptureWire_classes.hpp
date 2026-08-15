@@ -43,14 +43,14 @@ public:
 	class UBP_AIAction_SimpleLeave_C*             SimpleLeaveAIAction;                               // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CaptureEffect(const struct FPalDeadInfo& DeadInfo);
-	void ExecuteUbergraph_BP_CaptureWire(int32 EntryPoint);
-	void FixMonsterInSphere();
-	void RagDollStart();
-	void ReceiveTick(float DeltaSeconds);
-	void SetAnchorGoal();
-	void Setup(class APalCharacter* TargetPal);
 	void UpdateWireMesh();
+	void Setup(class APalCharacter* TargetPal);
+	void SetAnchorGoal();
+	void ReceiveTick(float DeltaSeconds);
+	void RagDollStart();
+	void FixMonsterInSphere();
+	void ExecuteUbergraph_BP_CaptureWire(int32 EntryPoint);
+	void CaptureEffect(const struct FPalDeadInfo& DeadInfo);
 
 public:
 	static class UClass* StaticClass()

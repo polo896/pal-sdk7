@@ -37,163 +37,17 @@ void UWBP_IngameMenu_Construction_Info_C::DelayDisplay(double DelayTime)
 }
 
 
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.UpdateDetail
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameMenu_Construction_Info_C::Destruct()
+void UWBP_IngameMenu_Construction_Info_C::UpdateDetail()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "Destruct");
+		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "UpdateDetail");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.ExecuteUbergraph_WBP_IngameMenu_Construction_Info
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Construction_Info_C::ExecuteUbergraph_WBP_IngameMenu_Construction_Info(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "ExecuteUbergraph_WBP_IngameMenu_Construction_Info");
-
-	Params::WBP_IngameMenu_Construction_Info_C_ExecuteUbergraph_WBP_IngameMenu_Construction_Info Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.Hide
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_Construction_Info_C::Hide()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "Hide");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.HideAdditionalText
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_Construction_Info_C::HideAdditionalText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "HideAdditionalText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.IsExistsMaterial
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// const struct FPalBuildObjectData&       BuildObjectData                                        (BlueprintVisible, BlueprintReadOnly, Parm)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool UWBP_IngameMenu_Construction_Info_C::IsExistsMaterial(const struct FPalBuildObjectData& BuildObjectData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "IsExistsMaterial");
-
-	Params::WBP_IngameMenu_Construction_Info_C_IsExistsMaterial Parms{};
-
-	Parms.BuildObjectData = std::move(BuildObjectData);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.LockedByBlueprint
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   bLocked                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Construction_Info_C::LockedByBlueprint(bool* bLocked)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "LockedByBlueprint");
-
-	Params::WBP_IngameMenu_Construction_Info_C_LockedByBlueprint Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bLocked != nullptr)
-		*bLocked = Parms.bLocked;
-}
-
-
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.OnTimer_Display
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_Construction_Info_C::OnTimer_Display()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "OnTimer_Display");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.Set Simple Additional Text
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_IngameMenu_Construction_Info_C::Set_Simple_Additional_Text(const class FText& Text)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "Set Simple Additional Text");
-
-	Params::WBP_IngameMenu_Construction_Info_C_Set_Simple_Additional_Text Parms{};
-
-	Parms.Text = std::move(Text);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.SetBuildObjectData
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalBuildObjectData&       BuildObjectData                                        (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_IngameMenu_Construction_Info_C::SetBuildObjectData(const struct FPalBuildObjectData& BuildObjectData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "SetBuildObjectData");
-
-	Params::WBP_IngameMenu_Construction_Info_C_SetBuildObjectData Parms{};
-
-	Parms.BuildObjectData = std::move(BuildObjectData);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -221,15 +75,161 @@ void UWBP_IngameMenu_Construction_Info_C::SetMaterialInfo(class UWBP_IngameMenuC
 }
 
 
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.UpdateDetail
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.SetBuildObjectData
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalBuildObjectData&       BuildObjectData                                        (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_IngameMenu_Construction_Info_C::UpdateDetail()
+void UWBP_IngameMenu_Construction_Info_C::SetBuildObjectData(const struct FPalBuildObjectData& BuildObjectData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "UpdateDetail");
+		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "SetBuildObjectData");
+
+	Params::WBP_IngameMenu_Construction_Info_C_SetBuildObjectData Parms{};
+
+	Parms.BuildObjectData = std::move(BuildObjectData);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.Set Simple Additional Text
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_IngameMenu_Construction_Info_C::Set_Simple_Additional_Text(const class FText& Text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "Set Simple Additional Text");
+
+	Params::WBP_IngameMenu_Construction_Info_C_Set_Simple_Additional_Text Parms{};
+
+	Parms.Text = std::move(Text);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.OnTimer_Display
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_Construction_Info_C::OnTimer_Display()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "OnTimer_Display");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.LockedByBlueprint
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   bLocked                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Construction_Info_C::LockedByBlueprint(bool* bLocked)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "LockedByBlueprint");
+
+	Params::WBP_IngameMenu_Construction_Info_C_LockedByBlueprint Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bLocked != nullptr)
+		*bLocked = Parms.bLocked;
+}
+
+
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.IsExistsMaterial
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// const struct FPalBuildObjectData&       BuildObjectData                                        (BlueprintVisible, BlueprintReadOnly, Parm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UWBP_IngameMenu_Construction_Info_C::IsExistsMaterial(const struct FPalBuildObjectData& BuildObjectData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "IsExistsMaterial");
+
+	Params::WBP_IngameMenu_Construction_Info_C_IsExistsMaterial Parms{};
+
+	Parms.BuildObjectData = std::move(BuildObjectData);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.HideAdditionalText
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_Construction_Info_C::HideAdditionalText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "HideAdditionalText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.Hide
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_Construction_Info_C::Hide()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "Hide");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.ExecuteUbergraph_WBP_IngameMenu_Construction_Info
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Construction_Info_C::ExecuteUbergraph_WBP_IngameMenu_Construction_Info(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "ExecuteUbergraph_WBP_IngameMenu_Construction_Info");
+
+	Params::WBP_IngameMenu_Construction_Info_C_ExecuteUbergraph_WBP_IngameMenu_Construction_Info Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_IngameMenu_Construction_Info_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "WBP_PalItemIconBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "WBP_PalItemIconBase_classes.hpp"
 
 
 namespace SDK
@@ -24,7 +24,7 @@ class UWBP_PalCommonItemIcon_C final : public UWBP_PalItemIconBase_C
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_WBP_PalCommonItemIcon_C;            // 0x04B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UCircularThrobber*                      CircularThrobber_96;                               // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 IconImage;                                         // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 iconImage;                                         // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               dynamicMaterial;                                   // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:

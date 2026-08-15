@@ -30,12 +30,12 @@ public:
 	struct FDataTableRowHandle                    BackGroundTextID;                                  // 0x04A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void OnSetup();
-	void OnInitialized();
-	void OnCancelAction();
-	void ExecuteUbergraph_WBP_PalStatusPopup(int32 EntryPoint);
-	void Construct();
 	void BndEvt__WBP_PalStatusPopup_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void Construct();
+	void ExecuteUbergraph_WBP_PalStatusPopup(int32 EntryPoint);
+	void OnCancelAction();
+	void OnInitialized();
+	void OnSetup();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

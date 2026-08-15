@@ -37,27 +37,6 @@ void ABP_MonsterAIController_YakushimaBoss001_Green_C::ExecuteUbergraph_BP_Monst
 }
 
 
-// Function BP_MonsterAIController_YakushimaBoss001_Green.BP_MonsterAIController_YakushimaBoss001_Green_C.GetTargetCampID
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FGuid*                           campID                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MonsterAIController_YakushimaBoss001_Green_C::GetTargetCampID(struct FGuid* campID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MonsterAIController_YakushimaBoss001_Green_C", "GetTargetCampID");
-
-	Params::BP_MonsterAIController_YakushimaBoss001_Green_C_GetTargetCampID Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (campID != nullptr)
-		*campID = std::move(Parms.campID);
-}
-
-
 // Function BP_MonsterAIController_YakushimaBoss001_Green.BP_MonsterAIController_YakushimaBoss001_Green_C.IsLeftHand
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -131,6 +110,27 @@ void ABP_MonsterAIController_YakushimaBoss001_Green_C::SetParentDestroyed()
 		Func = Class->GetFunction("BP_MonsterAIController_YakushimaBoss001_Green_C", "SetParentDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MonsterAIController_YakushimaBoss001_Green.BP_MonsterAIController_YakushimaBoss001_Green_C.GetTargetCampID
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FGuid*                           campID                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MonsterAIController_YakushimaBoss001_Green_C::GetTargetCampID(struct FGuid* campID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MonsterAIController_YakushimaBoss001_Green_C", "GetTargetCampID");
+
+	Params::BP_MonsterAIController_YakushimaBoss001_Green_C_GetTargetCampID Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (campID != nullptr)
+		*campID = std::move(Parms.campID);
 }
 
 }

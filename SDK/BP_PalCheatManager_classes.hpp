@@ -27,19 +27,19 @@ public:
 	class AActor*                                 tempPlayer;                                        // 0x0848(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void DebugItemWindow();
-	void ExecuteUbergraph_BP_PalCheatManager(int32 EntryPoint);
-	void HideTutorialQuest_BP();
-	void LaunchNewBuildObjectUI();
-	void OpenMultiBattleMapForBP();
-	void OpenPrivateServerForBP();
-	void PlayAreaBarrierUnlockCutscene_BP();
-	void SpectatorOnForBP();
-	void StartWildPalCombat();
-	void TimeStopForBP();
-	void ToggleAllDebugInfo();
-	void TogglePalSpawner();
 	void ToggleRevision_BP();
+	void TogglePalSpawner();
+	void ToggleAllDebugInfo();
+	void TimeStopForBP();
+	void StartWildPalCombat();
+	void SpectatorOnForBP();
+	void PlayAreaBarrierUnlockCutscene_BP();
+	void OpenPrivateServerForBP();
+	void OpenMultiBattleMapForBP();
+	void LaunchNewBuildObjectUI();
+	void HideTutorialQuest_BP();
+	void ExecuteUbergraph_BP_PalCheatManager(int32 EntryPoint);
+	void DebugItemWindow();
 
 public:
 	static class UClass* StaticClass()

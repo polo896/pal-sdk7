@@ -205,6 +205,34 @@ enum class ERigVMUserWorkflowType : uint8
 	ERigVMUserWorkflowType_MAX               = 8,
 };
 
+// ScriptStruct RigVM.RigVMStruct
+// 0x0008 (0x0008 - 0x0000)
+struct alignas(0x08) FRigVMStruct
+{
+public:
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FRigVMStruct;
+
+// ScriptStruct RigVM.RigVMRuntimeSettings
+// 0x0018 (0x0018 - 0x0000)
+struct alignas(0x08) FRigVMRuntimeSettings final
+{
+public:
+	int32                                         MaximumArraySize;                                  // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x14];                                       // 0x0004(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FRigVMRuntimeSettings;
+
+// ScriptStruct RigVM.RigVMExecuteContext
+// 0x0030 (0x0030 - 0x0000)
+struct alignas(0x08) FRigVMExecuteContext
+{
+public:
+	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FRigVMExecuteContext;
+
 // ScriptStruct RigVM.RigVMMemoryStatistics
 // 0x000C (0x000C - 0x0000)
 struct FRigVMMemoryStatistics final
@@ -224,77 +252,6 @@ public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FRigVMDispatchFactory;
-
-// ScriptStruct RigVM.RigVMBaseOp
-// 0x0001 (0x0001 - 0x0000)
-struct FRigVMBaseOp
-{
-public:
-	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FRigVMBaseOp;
-
-// ScriptStruct RigVM.RigVMUnaryOp
-// 0x0007 (0x0008 - 0x0001)
-struct alignas(0x02) FRigVMUnaryOp : public FRigVMBaseOp
-{
-public:
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FRigVMUnaryOp;
-
-// ScriptStruct RigVM.RigVMChangeTypeOp
-// 0x0000 (0x0008 - 0x0008)
-struct FRigVMChangeTypeOp final : public FRigVMUnaryOp
-{
-};
-DUMPER7_ASSERTS_FRigVMChangeTypeOp;
-
-// ScriptStruct RigVM.RigVMRuntimeSettings
-// 0x0018 (0x0018 - 0x0000)
-struct alignas(0x08) FRigVMRuntimeSettings final
-{
-public:
-	int32                                         MaximumArraySize;                                  // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x14];                                       // 0x0004(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FRigVMRuntimeSettings;
-
-// ScriptStruct RigVM.RigVMSenaryOp
-// 0x0025 (0x0026 - 0x0001)
-struct alignas(0x02) FRigVMSenaryOp final : public FRigVMBaseOp
-{
-public:
-	uint8                                         Pad_1[0x25];                                       // 0x0001(0x0025)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FRigVMSenaryOp;
-
-// ScriptStruct RigVM.RigVMStruct
-// 0x0008 (0x0008 - 0x0000)
-struct alignas(0x08) FRigVMStruct
-{
-public:
-	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FRigVMStruct;
-
-// ScriptStruct RigVM.RigVMBinaryOp
-// 0x000D (0x000E - 0x0001)
-struct alignas(0x02) FRigVMBinaryOp final : public FRigVMBaseOp
-{
-public:
-	uint8                                         Pad_1[0xD];                                        // 0x0001(0x000D)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FRigVMBinaryOp;
-
-// ScriptStruct RigVM.RigVMExecuteContext
-// 0x0030 (0x0030 - 0x0000)
-struct alignas(0x08) FRigVMExecuteContext
-{
-public:
-	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FRigVMExecuteContext;
 
 // ScriptStruct RigVM.RigVMByteCodeStatistics
 // 0x0008 (0x0008 - 0x0000)
@@ -345,6 +302,15 @@ public:
 };
 DUMPER7_ASSERTS_FRigVMParameter;
 
+// ScriptStruct RigVM.RigVMBaseOp
+// 0x0001 (0x0001 - 0x0000)
+struct FRigVMBaseOp
+{
+public:
+	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FRigVMBaseOp;
+
 // ScriptStruct RigVM.RigVMExecuteOp
 // 0x0003 (0x0004 - 0x0001)
 struct alignas(0x02) FRigVMExecuteOp final : public FRigVMBaseOp
@@ -353,6 +319,24 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FRigVMExecuteOp;
+
+// ScriptStruct RigVM.RigVMUnaryOp
+// 0x0007 (0x0008 - 0x0001)
+struct alignas(0x02) FRigVMUnaryOp : public FRigVMBaseOp
+{
+public:
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FRigVMUnaryOp;
+
+// ScriptStruct RigVM.RigVMBinaryOp
+// 0x000D (0x000E - 0x0001)
+struct alignas(0x02) FRigVMBinaryOp final : public FRigVMBaseOp
+{
+public:
+	uint8                                         Pad_1[0xD];                                        // 0x0001(0x000D)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FRigVMBinaryOp;
 
 // ScriptStruct RigVM.RigVMTernaryOp
 // 0x0013 (0x0014 - 0x0001)
@@ -380,6 +364,15 @@ public:
 	uint8                                         Pad_1[0x1F];                                       // 0x0001(0x001F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FRigVMQuinaryOp;
+
+// ScriptStruct RigVM.RigVMSenaryOp
+// 0x0025 (0x0026 - 0x0001)
+struct alignas(0x02) FRigVMSenaryOp final : public FRigVMBaseOp
+{
+public:
+	uint8                                         Pad_1[0x25];                                       // 0x0001(0x0025)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FRigVMSenaryOp;
 
 // ScriptStruct RigVM.RigVMCopyOp
 // 0x0011 (0x0012 - 0x0001)
@@ -416,6 +409,13 @@ public:
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FRigVMJumpIfOp;
+
+// ScriptStruct RigVM.RigVMChangeTypeOp
+// 0x0000 (0x0008 - 0x0008)
+struct FRigVMChangeTypeOp final : public FRigVMUnaryOp
+{
+};
+DUMPER7_ASSERTS_FRigVMChangeTypeOp;
 
 // ScriptStruct RigVM.RigVMInvokeEntryOp
 // 0x000B (0x000C - 0x0001)
