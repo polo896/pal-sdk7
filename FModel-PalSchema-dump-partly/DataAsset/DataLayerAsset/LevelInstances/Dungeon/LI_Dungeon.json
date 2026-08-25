@@ -1,0 +1,18 @@
+[
+  {
+    "Type": "DataLayerAsset",
+    "Name": "LI_Dungeon",
+    "Class": "UScriptClass'DataLayerAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DataLayerType": "EDataLayerType::Runtime",
+      "DebugColor": {
+        "B": 94,
+        "G": 231,
+        "R": 248,
+        "A": 255,
+        "Hex": "F8E75E"
+      }
+    }
+  }
+]

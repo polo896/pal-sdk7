@@ -1,0 +1,193 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_PalLoupe_GaugeHP_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe_GaugeHP.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 72.0,
+          "Bottom": 6.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_PalLoupe_GaugeHP_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe_GaugeHP.0"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar'WBP_PalLoupe_GaugeHP_C:WidgetTree.ProgressBar_39'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe_GaugeHP.3"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "SetPercent",
+    "Outer": "WBP_PalLoupe_GaugeHP_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "percent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetPercent_InPercent_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "ProgressBar_39",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ProgressBar'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "ImageSize": {
+            "X": 250.0,
+            "Y": 20.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 0.4,
+              "Hex": "66000000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_gauge_HP_base'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/InGame/T_gauge_HP_base.0"
+          }
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 250.0,
+            "Y": 20.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_gauge_HP_base'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/InGame/T_gauge_HP_base.0"
+          }
+        }
+      },
+      "Percent": 0.781078,
+      "FillColorAndOpacity": {
+        "R": 0.019382,
+        "G": 0.520996,
+        "B": 0.171441,
+        "A": 1.0,
+        "Hex": "26BF73"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_PalLoupe_GaugeHP_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe_GaugeHP.1"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalLoupe_GaugeHP_C",
+    "Name": "Default__WBP_PalLoupe_GaugeHP_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe_GaugeHP.WBP_PalLoupe_GaugeHP_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_PalLoupe_GaugeHP_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_PalLoupe_GaugeHP_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe_GaugeHP.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_PalLoupe_GaugeHP_C:SetPercent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe_GaugeHP.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ProgressBar_39",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'ProgressBar'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetPercent": {
+        "ObjectName": "Function'WBP_PalLoupe_GaugeHP_C:SetPercent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe_GaugeHP.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_PalLoupe_GaugeHP_C'Default__WBP_PalLoupe_GaugeHP_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe_GaugeHP.4"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_PalLoupe_GaugeHP_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_PalLoupe_GaugeHP_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe_GaugeHP.0"
+      }
+    }
+  }
+]

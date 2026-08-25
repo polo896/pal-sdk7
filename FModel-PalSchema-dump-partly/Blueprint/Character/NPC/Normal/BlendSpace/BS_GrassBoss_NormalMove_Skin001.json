@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_GrassBoss_NormalMove_Skin001",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 2.0,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GrassBoss_Stand_Walk_Skin001'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AS_GrassBoss_Stand_Walk_Skin001.0"
+          },
+          "SampleValue": {
+            "X": 191.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 2.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GrassBoss_Stand_Idle_Skin001'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AS_GrassBoss_Stand_Idle_Skin001.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GrassBoss_Stand_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AS_GrassBoss_Stand_Run.0"
+          },
+          "SampleValue": {
+            "X": 294.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.7
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GrassBoss_Stand_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AS_GrassBoss_Stand_Run.0"
+          },
+          "SampleValue": {
+            "X": 420.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.2
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GrassBoss_Stand_Walk_Skin001'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AS_GrassBoss_Stand_Walk_Skin001.0"
+          },
+          "SampleValue": {
+            "X": 95.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 1,
+            "SampleIndices[1]": 4,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.22619048
+          },
+          {
+            "SampleIndices": 4,
+            "SampleIndices[1]": 0,
+            "Vertices": 0.22619048,
+            "Vertices[1]": 0.4547619
+          },
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 2,
+            "Vertices": 0.4547619,
+            "Vertices[1]": 0.7
+          },
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 3,
+            "Vertices": 0.7,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 420.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_PalHuman_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/Human/SK_PalHuman_Skeleton.40"
+      }
+    },
+    "SkeletonGuid": "4B775683-4B40A232-07BF7EBC-9F5E7276"
+  }
+]

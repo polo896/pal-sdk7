@@ -1,0 +1,1039 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_0",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "18699F0A-411383C0-4170B0B0-EFC90F50"
+    }
+  },
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_1",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "5A78E493-42CDB5F1-1AE806A2-81AA75C8"
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "C863F40D-4B560810-6E10B6B8-76FED6CC",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "75108855-4B83115F-53DB3989-CF35C141",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Timer",
+    "Name": "FlowNode_Timer_0",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "UScriptClass'FlowNode_Timer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "13EA5E6E-4D06C342-C054D78A-9FCE7FFB",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "284B21CE-42FFC833-66E2B682-F038BD25",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Timer",
+    "Name": "FlowNode_Timer_1",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "UScriptClass'FlowNode_Timer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "8614420D-496E9378-54FC91A5-22216BB3",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "0F1BC3BD-443A1260-D6A29FB5-5BAAB1BE",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Timer",
+    "Name": "FlowNode_Timer_2",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "UScriptClass'FlowNode_Timer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "E9E38E1A-4EA08D3C-FC4F0794-06378781",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "B01013D7-42D357F4-D94238AA-75EF8193",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Timer",
+    "Name": "FlowNode_Timer_3",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "UScriptClass'FlowNode_Timer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CompletionTime": 2.0,
+      "GraphNode": null,
+      "NodeGuid": "2CD832B7-40349674-26E14BBE-9E452B22",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "57F9E42E-4CA895E2-947BC593-954C530D",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeIn_C",
+    "Name": "FNBP_FadeIn_C_0",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.FNBP_FadeIn_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeIn_C'Default__FNBP_FadeIn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "284B21CE-42FFC833-66E2B682-F038BD25",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "0FF71394-4902792E-1443419D-1ABBF032",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeIn_C",
+    "Name": "FNBP_FadeIn_C_1",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.FNBP_FadeIn_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeIn_C'Default__FNBP_FadeIn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "B01013D7-42D357F4-D94238AA-75EF8193",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "8125A7C7-41CE4092-4A873991-F8D4F55A",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeIn_C",
+    "Name": "FNBP_FadeIn_C_2",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.FNBP_FadeIn_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeIn_C'Default__FNBP_FadeIn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "0F1BC3BD-443A1260-D6A29FB5-5BAAB1BE",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "27AF0D1D-4599BDBB-4325B7B6-1562C7CE",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeOut_C",
+    "Name": "FNBP_FadeOut_C_0",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.FNBP_FadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeOut_C'Default__FNBP_FadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "57F9E42E-4CA895E2-947BC593-954C530D",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "13EA5E6E-4D06C342-C054D78A-9FCE7FFB",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeOut_C",
+    "Name": "FNBP_FadeOut_C_2",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.FNBP_FadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeOut_C'Default__FNBP_FadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "4C437FFA-437713A8-450D4082-4233467A",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "34A396A0-4F6E7DC2-3A5D4590-C91C32ED",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeOut_C",
+    "Name": "FNBP_FadeOut_C_3",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.FNBP_FadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeOut_C'Default__FNBP_FadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "AAE5B68D-485DD9DF-E4259294-E4CFF276",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "45F3A619-41C245A8-3F9ECD93-CC5AA349",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_FarewellHowl_Talk_010"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "4B1E1477-4A539735-7AF8C3AC-83E8C73D",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "587D92CC-49563D49-75790095-0CE5F694",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_11",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_LoneWolf_Talk_040"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "8125A7C7-41CE4092-4A873991-F8D4F55A",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "AAE5B68D-485DD9DF-E4259294-E4CFF276",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_13",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_INPROGRESS_DESC_Generic01"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "BFAB7F37-41FFB594-3418CCA6-885FC377"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_LoneWolf_Talk_020",
+        "QUEST_SUB_LoneWolf_Talk_030"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "0FF71394-4902792E-1443419D-1ABBF032",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "CF698496-4CFE2B49-C6590CBF-76EF21A4",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_FarewellHowl_Talk_010"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "F2CF42E9-4F2F22D7-710B0586-FE4C5BD0",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "587D92CC-49563D49-75790095-0CE5F694",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_6",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_LoneWolf_Talk_045"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "27AF0D1D-4599BDBB-4325B7B6-1562C7CE"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_8",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_LoneWolf_Talk_070"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "AA6BB534-4F76885C-63C4BAB0-0B99A63C"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkBranch_Yes_No_C",
+    "Name": "FNBP_NPCTalkBranch_Yes_No_C_0",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.FNBP_NPCTalkBranch_Yes_No_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'Default__FNBP_NPCTalkBranch_Yes_No_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChoiceMsgIDList": [
+        "QUEST_SUB_FarewellHowl_Choice_010_Yes",
+        "QUEST_SUB_FarewellHowl_Choice_010_No"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "587D92CC-49563D49-75790095-0CE5F694",
+      "OutputPins": [
+        {
+          "PinName": "QUEST_SUB_FarewellHowl_Choice_010_Yes",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "QUEST_SUB_FarewellHowl_Choice_010_No",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "QUEST_SUB_FarewellHowl_Choice_010_Yes",
+          "Value": {
+            "NodeGuid": "69D41094-4BEF6C41-27506FA6-729D937C",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "QUEST_SUB_FarewellHowl_Choice_010_No",
+          "Value": {
+            "NodeGuid": "18699F0A-411383C0-4170B0B0-EFC90F50",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_1",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_LoneWolf01"
+      },
+      "NetworkInvokeName": "Order01",
+      "GraphNode": null,
+      "NodeGuid": "69D41094-4BEF6C41-27506FA6-729D937C",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "2CD832B7-40349674-26E14BBE-9E452B22",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_PlayAnimMontage_C",
+    "Name": "FNBP_PlayAnimMontage_C_0",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.FNBP_PlayAnimMontage_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlayAnimMontage_C'Default__FNBP_PlayAnimMontage_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Montage to Play": {
+        "ObjectName": "AnimMontage'AM_AmaterasuWolf_Eat'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/AmaterasuWolf/AM_AmaterasuWolf_Eat.0"
+      },
+      "GraphNode": null,
+      "NodeGuid": "34A396A0-4F6E7DC2-3A5D4590-C91C32ED",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "E9E38E1A-4EA08D3C-FC4F0794-06378781",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_PlayAnimMontage_C",
+    "Name": "FNBP_PlayAnimMontage_C_1",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.FNBP_PlayAnimMontage_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlayAnimMontage_C'Default__FNBP_PlayAnimMontage_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Montage to Play": {
+        "ObjectName": "AnimMontage'AM_AmaterasuWolf_Idle'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/AmaterasuWolf/AM_AmaterasuWolf_Idle.0"
+      },
+      "GraphNode": null,
+      "NodeGuid": "45F3A619-41C245A8-3F9ECD93-CC5AA349",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "16EED337-4C68BD96-3A8C74AD-BD672B97",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_0",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_LoneWolf01"
+      },
+      "NetworkInvokeName": "Progress01",
+      "GraphNode": null,
+      "NodeGuid": "CF698496-4CFE2B49-C6590CBF-76EF21A4"
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_4",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_LoneWolf01"
+      },
+      "NetworkInvokeName": "Progress02",
+      "GraphNode": null,
+      "NodeGuid": "16EED337-4C68BD96-3A8C74AD-BD672B97",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "8614420D-496E9378-54FC91A5-22216BB3",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_0",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_LoneWolf01_Cure_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_LoneWolf01_Cure.0"
+      },
+      "QuestId": {
+        "RowName": "Sub_LoneWolf01"
+      },
+      "GraphNode": null,
+      "NodeGuid": "DA71650E-40C425C3-30818781-A477D0DE",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "F2CF42E9-4F2F22D7-710B0586-FE4C5BD0",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "AF067F6A-48592B9D-C1BCDCB2-F872CFD8",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_1",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_LoneWolf01_Feed_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_LoneWolf01_Feed.0"
+      },
+      "QuestId": {
+        "RowName": "Sub_LoneWolf01"
+      },
+      "GraphNode": null,
+      "NodeGuid": "AF067F6A-48592B9D-C1BCDCB2-F872CFD8",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "4C437FFA-437713A8-450D4082-4233467A",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "BFAB7F37-41FFB594-3418CCA6-885FC377",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_4",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_LoneWolf02_Investigate_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_LoneWolf02_Investigate.0"
+      },
+      "QuestId": {
+        "RowName": "Sub_LoneWolf02"
+      },
+      "GraphNode": null,
+      "NodeGuid": "41199069-41A12185-A806C096-D91A501C",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "AA6BB534-4F76885C-63C4BAB0-0B99A63C",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "5A78E493-42CDB5F1-1AE806A2-81AA75C8",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_LoneWolf01"
+      },
+      "GraphNode": null,
+      "NodeGuid": "75108855-4B83115F-53DB3989-CF35C141",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "4B1E1477-4A539735-7AF8C3AC-83E8C73D",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "DA71650E-40C425C3-30818781-A477D0DE",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "A6F8DD4A-4B4AC1DC-9533C2A0-5D6B9DF3",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_3",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_LoneWolf02"
+      },
+      "GraphNode": null,
+      "NodeGuid": "A6F8DD4A-4B4AC1DC-9533C2A0-5D6B9DF3",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "5A78E493-42CDB5F1-1AE806A2-81AA75C8",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "41199069-41A12185-A806C096-D91A501C",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "5A78E493-42CDB5F1-1AE806A2-81AA75C8",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_AmaterasuWolf_Dark_Quest_Friend_1",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "A5A51F2B-44770733-ED798DAD-F4B0C6DB",
+      "Nodes": [
+        {
+          "Key": "C863F40D-4B560810-6E10B6B8-76FED6CC",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.2"
+          }
+        },
+        {
+          "Key": "75108855-4B83115F-53DB3989-CF35C141",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.29"
+          }
+        },
+        {
+          "Key": "4B1E1477-4A539735-7AF8C3AC-83E8C73D",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.13"
+          }
+        },
+        {
+          "Key": "587D92CC-49563D49-75790095-0CE5F694",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_NPCTalkBranch_Yes_No_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.20"
+          }
+        },
+        {
+          "Key": "18699F0A-411383C0-4170B0B0-EFC90F50",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FlowNode_Finish_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.0"
+          }
+        },
+        {
+          "Key": "57F9E42E-4CA895E2-947BC593-954C530D",
+          "Value": {
+            "ObjectName": "FNBP_FadeOut_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_FadeOut_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.10"
+          }
+        },
+        {
+          "Key": "13EA5E6E-4D06C342-C054D78A-9FCE7FFB",
+          "Value": {
+            "ObjectName": "FlowNode_Timer'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FlowNode_Timer_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.3"
+          }
+        },
+        {
+          "Key": "284B21CE-42FFC833-66E2B682-F038BD25",
+          "Value": {
+            "ObjectName": "FNBP_FadeIn_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_FadeIn_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.7"
+          }
+        },
+        {
+          "Key": "0FF71394-4902792E-1443419D-1ABBF032",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.16"
+          }
+        },
+        {
+          "Key": "69D41094-4BEF6C41-27506FA6-729D937C",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_OrderQuest_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.21"
+          }
+        },
+        {
+          "Key": "DA71650E-40C425C3-30818781-A477D0DE",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_QuestBlockBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.26"
+          }
+        },
+        {
+          "Key": "F2CF42E9-4F2F22D7-710B0586-FE4C5BD0",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.17"
+          }
+        },
+        {
+          "Key": "CF698496-4CFE2B49-C6590CBF-76EF21A4",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_ProgressQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.24"
+          }
+        },
+        {
+          "Key": "AF067F6A-48592B9D-C1BCDCB2-F872CFD8",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_QuestBlockBranch_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.27"
+          }
+        },
+        {
+          "Key": "B01013D7-42D357F4-D94238AA-75EF8193",
+          "Value": {
+            "ObjectName": "FNBP_FadeIn_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_FadeIn_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.8"
+          }
+        },
+        {
+          "Key": "34A396A0-4F6E7DC2-3A5D4590-C91C32ED",
+          "Value": {
+            "ObjectName": "FNBP_PlayAnimMontage_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_PlayAnimMontage_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.22"
+          }
+        },
+        {
+          "Key": "8614420D-496E9378-54FC91A5-22216BB3",
+          "Value": {
+            "ObjectName": "FlowNode_Timer'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FlowNode_Timer_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.4"
+          }
+        },
+        {
+          "Key": "27AF0D1D-4599BDBB-4325B7B6-1562C7CE",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_NPCTalk_FixedMsdId_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.18"
+          }
+        },
+        {
+          "Key": "0F1BC3BD-443A1260-D6A29FB5-5BAAB1BE",
+          "Value": {
+            "ObjectName": "FNBP_FadeIn_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_FadeIn_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.9"
+          }
+        },
+        {
+          "Key": "16EED337-4C68BD96-3A8C74AD-BD672B97",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_ProgressQuest_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.25"
+          }
+        },
+        {
+          "Key": "A6F8DD4A-4B4AC1DC-9533C2A0-5D6B9DF3",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_QuestBranch_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.30"
+          }
+        },
+        {
+          "Key": "AAE5B68D-485DD9DF-E4259294-E4CFF276",
+          "Value": {
+            "ObjectName": "FNBP_FadeOut_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_FadeOut_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.12"
+          }
+        },
+        {
+          "Key": "41199069-41A12185-A806C096-D91A501C",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_QuestBlockBranch_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.28"
+          }
+        },
+        {
+          "Key": "AA6BB534-4F76885C-63C4BAB0-0B99A63C",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_NPCTalk_FixedMsdId_C_8'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.19"
+          }
+        },
+        {
+          "Key": "4C437FFA-437713A8-450D4082-4233467A",
+          "Value": {
+            "ObjectName": "FNBP_FadeOut_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_FadeOut_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.11"
+          }
+        },
+        {
+          "Key": "E9E38E1A-4EA08D3C-FC4F0794-06378781",
+          "Value": {
+            "ObjectName": "FlowNode_Timer'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FlowNode_Timer_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.5"
+          }
+        },
+        {
+          "Key": "8125A7C7-41CE4092-4A873991-F8D4F55A",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_NPCTalk_FixedMsdId_C_11'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.14"
+          }
+        },
+        {
+          "Key": "45F3A619-41C245A8-3F9ECD93-CC5AA349",
+          "Value": {
+            "ObjectName": "FNBP_PlayAnimMontage_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_PlayAnimMontage_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.23"
+          }
+        },
+        {
+          "Key": "BFAB7F37-41FFB594-3418CCA6-885FC377",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FNBP_NPCTalk_FixedMsdId_C_13'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.15"
+          }
+        },
+        {
+          "Key": "2CD832B7-40349674-26E14BBE-9E452B22",
+          "Value": {
+            "ObjectName": "FlowNode_Timer'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FlowNode_Timer_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.6"
+          }
+        },
+        {
+          "Key": "5A78E493-42CDB5F1-1AE806A2-81AA75C8",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_AmaterasuWolf_Dark_Quest_Friend_1:FlowNode_Finish_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_1.1"
+          }
+        }
+      ]
+    }
+  }
+]

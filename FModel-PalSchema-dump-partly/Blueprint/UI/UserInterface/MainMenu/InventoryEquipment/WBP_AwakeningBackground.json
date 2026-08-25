@@ -1,0 +1,187 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_AwakeningBackground_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_AwakeningBackground.1"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_AwakeningBackground_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_AwakeningBackground.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_AwakeningBackground_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_AwakeningBackground.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_AwakeningBackground_C:WidgetTree.BGBase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_AwakeningBackground.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_AwakeningBackground_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_AwakeningBackground.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_AwakeningBackground_C:WidgetTree.BGBase_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_AwakeningBackground.4"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BGBase",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.001518,
+        "G": 0.006512,
+        "B": 0.01033,
+        "A": 0.7,
+        "Hex": "B305131A"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_AwakeningBackground_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_AwakeningBackground.1"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BGBase_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "Tiling": "ESlateBrushTileType::Both",
+        "ImageSize": {
+          "X": 128.0,
+          "Y": 128.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_tex_stripe_horizontal'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_tex_stripe_horizontal.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.381326,
+        "G": 0.871367,
+        "B": 1.0,
+        "A": 0.05,
+        "Hex": "0CA6F0FF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_AwakeningBackground_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_AwakeningBackground.2"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "WBP_AwakeningBackground_C",
+    "Name": "Default__WBP_AwakeningBackground_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_AwakeningBackground.WBP_AwakeningBackground_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_AwakeningBackground_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_AwakeningBackground_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_AwakeningBackground.7"
+      },
+      "bClassRequiresNativeTick": true
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidgetOverlayUI'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_AwakeningBackground_C'Default__WBP_AwakeningBackground_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_AwakeningBackground.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_AwakeningBackground_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_AwakeningBackground_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_AwakeningBackground.0"
+      }
+    }
+  }
+]

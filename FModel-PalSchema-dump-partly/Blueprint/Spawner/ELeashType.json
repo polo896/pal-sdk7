@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "ELeashType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "74F931AC4FD0DAE1DE9CD4B137A274D2",
+            "SourceString": "None",
+            "LocalizedString": "None"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "361F03C44598C993E4AF1FBD4D04D61F",
+            "SourceString": "Per Character",
+            "LocalizedString": "Per Character"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "6CD93FA14D6B73B378192E9A80FA99D8",
+            "SourceString": "Per Squad",
+            "LocalizedString": "Per Squad"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "ELeashType::NewEnumerator0": 0,
+      "ELeashType::NewEnumerator1": 1,
+      "ELeashType::NewEnumerator2": 2,
+      "ELeashType::ELeashType_MAX": 3
+    },
+    "CppForm": "Namespaced"
+  }
+]

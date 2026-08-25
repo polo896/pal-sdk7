@@ -1,0 +1,796 @@
+[
+  {
+    "Type": "FlowNode_Reroute",
+    "Name": "FlowNode_Reroute_0",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "UScriptClass'FlowNode_Reroute'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "A7FFC031-44B71BF8-BE0C9F88-E4F7690C",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "78144447-46B28DF9-75ECA698-76CBD815",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Reroute",
+    "Name": "FlowNode_Reroute_1",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "UScriptClass'FlowNode_Reroute'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "7B489AA1-4FE3E18B-E9E4929E-9C2DE59C",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "4910F450-49183B26-3EB39483-5D5B5828",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Reroute",
+    "Name": "FlowNode_Reroute_2",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "UScriptClass'FlowNode_Reroute'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "13CF402C-40E5E1E0-FD8915A2-40B5319F"
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "71CA3582-48BC2739-C940559A-76D490D6",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "648AB452-45FFFCD0-E4B4CBA5-B4819080",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Timer",
+    "Name": "FlowNode_Timer_0",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "UScriptClass'FlowNode_Timer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CompletionTime": 5.0,
+      "GraphNode": null,
+      "NodeGuid": "10856FBA-4ADC5555-FF98A991-106D95B0",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "AAED0191-4FE7A6CB-0CBE67A7-CF222494",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Timer",
+    "Name": "FlowNode_Timer_1",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "UScriptClass'FlowNode_Timer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CompletionTime": 0.1,
+      "GraphNode": null,
+      "NodeGuid": "D4044FB8-42D14427-58390E8E-1DE6E003",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "724CE2D1-41C9629B-4E358586-11CC9960",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Timer",
+    "Name": "FlowNode_Timer_2",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "UScriptClass'FlowNode_Timer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CompletionTime": 0.1,
+      "GraphNode": null,
+      "NodeGuid": "0A4AF7BD-4245D536-64A7D082-83696A01",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "CC30B6E0-47A2E018-5E974493-6D0B74E6",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeIn_C",
+    "Name": "FNBP_FadeIn_C_0",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.FNBP_FadeIn_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeIn_C'Default__FNBP_FadeIn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "AAED0191-4FE7A6CB-0CBE67A7-CF222494",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "9EEB55C7-4A3D5974-013997B9-29C09D3E",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeOut_C",
+    "Name": "FNBP_FadeOut_C_0",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.FNBP_FadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeOut_C'Default__FNBP_FadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "92A9665C-404A5FDB-04E5ADBF-3CAFDC8C",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "0369372F-4C58715B-919D7DAE-F4934F78",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_WorldTreeAreaBoss_Talk_010"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "9EEB55C7-4A3D5974-013997B9-29C09D3E",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "6D11857F-41D055B2-CC1BC2B6-43577D74",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_WorldTreeAreaBoss_Talk_010_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "78144447-46B28DF9-75ECA698-76CBD815"
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_0",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatWorldTreeMiddleBoss"
+      },
+      "NetworkInvokeName": "Order1",
+      "GraphNode": null,
+      "NodeGuid": "15A28DDC-48C7A8C3-4EC87B92-DD041B24",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "724CE2D1-41C9629B-4E358586-11CC9960",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_0",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_WorldTreeAbyss"
+      },
+      "NetworkInvokeName": "progress1",
+      "GraphNode": null,
+      "NodeGuid": "4910F450-49183B26-3EB39483-5D5B5828",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "CC30B6E0-47A2E018-5E974493-6D0B74E6",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_1",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_WorldTreeAbyss"
+      },
+      "NetworkInvokeName": "progress2",
+      "GraphNode": null,
+      "NodeGuid": "AFEB8B16-4A0E843E-8D34B581-C486A8A3"
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_0",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_WorldTreeAbyss_Reach_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_WorldTreeAbyss_Reach.0"
+      },
+      "QuestId": {
+        "RowName": "Main_WorldTreeAbyss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "814305CA-4F86F075-7CD3F1B5-9886B2AB",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "92A9665C-404A5FDB-04E5ADBF-3CAFDC8C",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "8631D992-40D21241-A978F880-D1B02747",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_1",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Note_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Note.0"
+      },
+      "QuestId": {
+        "RowName": "Main_WorldTreeAbyss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "8631D992-40D21241-A978F880-D1B02747",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "92A9665C-404A5FDB-04E5ADBF-3CAFDC8C",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "78144447-46B28DF9-75ECA698-76CBD815",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_2",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_WorldTreeAbyss_Reach_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_WorldTreeAbyss_Reach.0"
+      },
+      "QuestId": {
+        "RowName": "Main_WorldTreeAbyss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "DFCB73DE-45787C6E-01B4DE93-6E82023C",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "7B489AA1-4FE3E18B-E9E4929E-9C2DE59C",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "286E3EBF-46CC24E8-F3C228BB-A6A2D28C",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_3",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Note_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Note.0"
+      },
+      "QuestId": {
+        "RowName": "Main_WorldTreeAbyss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "286E3EBF-46CC24E8-F3C228BB-A6A2D28C",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "AFEB8B16-4A0E843E-8D34B581-C486A8A3",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_4",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Note_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Note.0"
+      },
+      "QuestId": {
+        "RowName": "Main_WorldTreeAbyss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "CC30B6E0-47A2E018-5E974493-6D0B74E6",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "AFEB8B16-4A0E843E-8D34B581-C486A8A3",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "0A4AF7BD-4245D536-64A7D082-83696A01",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_WorldTreeAbyss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "724CE2D1-41C9629B-4E358586-11CC9960",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "D4044FB8-42D14427-58390E8E-1DE6E003",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "4910F450-49183B26-3EB39483-5D5B5828",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_1",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_WorldTreeAbyss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "648AB452-45FFFCD0-E4B4CBA5-B4819080",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "92A9665C-404A5FDB-04E5ADBF-3CAFDC8C",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "814305CA-4F86F075-7CD3F1B5-9886B2AB",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "A7FFC031-44B71BF8-BE0C9F88-E4F7690C",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_3",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_WorldTreeAbyss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "6D11857F-41D055B2-CC1BC2B6-43577D74",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "15A28DDC-48C7A8C3-4EC87B92-DD041B24",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "DFCB73DE-45787C6E-01B4DE93-6E82023C",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_TextInFadeOut_C",
+    "Name": "FNBP_TextInFadeOut_C_0",
+    "Outer": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_TextInFadeOut.FNBP_TextInFadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_TextInFadeOut_C'Default__FNBP_TextInFadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_TextInFadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId": {
+        "RowName": "QUEST_SUB_Message_WorldTreeAreaBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "0369372F-4C58715B-919D7DAE-F4934F78",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "10856FBA-4ADC5555-FF98A991-106D95B0",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_WorldTreeMiddleBoss_Note",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "53566AB1-4719F955-9A52EAA5-DCF26DB6",
+      "Nodes": [
+        {
+          "Key": "71CA3582-48BC2739-C940559A-76D490D6",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_WorldTreeMiddleBoss_Note:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.3"
+          }
+        },
+        {
+          "Key": "92A9665C-404A5FDB-04E5ADBF-3CAFDC8C",
+          "Value": {
+            "ObjectName": "FNBP_FadeOut_C'FABP_WorldTreeMiddleBoss_Note:FNBP_FadeOut_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.8"
+          }
+        },
+        {
+          "Key": "0369372F-4C58715B-919D7DAE-F4934F78",
+          "Value": {
+            "ObjectName": "FNBP_TextInFadeOut_C'FABP_WorldTreeMiddleBoss_Note:FNBP_TextInFadeOut_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.22"
+          }
+        },
+        {
+          "Key": "10856FBA-4ADC5555-FF98A991-106D95B0",
+          "Value": {
+            "ObjectName": "FlowNode_Timer'FABP_WorldTreeMiddleBoss_Note:FlowNode_Timer_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.4"
+          }
+        },
+        {
+          "Key": "AAED0191-4FE7A6CB-0CBE67A7-CF222494",
+          "Value": {
+            "ObjectName": "FNBP_FadeIn_C'FABP_WorldTreeMiddleBoss_Note:FNBP_FadeIn_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.7"
+          }
+        },
+        {
+          "Key": "9EEB55C7-4A3D5974-013997B9-29C09D3E",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_WorldTreeMiddleBoss_Note:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.9"
+          }
+        },
+        {
+          "Key": "4910F450-49183B26-3EB39483-5D5B5828",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_WorldTreeMiddleBoss_Note:FNBP_ProgressQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.12"
+          }
+        },
+        {
+          "Key": "724CE2D1-41C9629B-4E358586-11CC9960",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_WorldTreeMiddleBoss_Note:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.19"
+          }
+        },
+        {
+          "Key": "D4044FB8-42D14427-58390E8E-1DE6E003",
+          "Value": {
+            "ObjectName": "FlowNode_Timer'FABP_WorldTreeMiddleBoss_Note:FlowNode_Timer_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.5"
+          }
+        },
+        {
+          "Key": "15A28DDC-48C7A8C3-4EC87B92-DD041B24",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_WorldTreeMiddleBoss_Note:FNBP_OrderQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.11"
+          }
+        },
+        {
+          "Key": "814305CA-4F86F075-7CD3F1B5-9886B2AB",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_WorldTreeMiddleBoss_Note:FNBP_QuestBlockBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.14"
+          }
+        },
+        {
+          "Key": "648AB452-45FFFCD0-E4B4CBA5-B4819080",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_WorldTreeMiddleBoss_Note:FNBP_QuestBranch_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.20"
+          }
+        },
+        {
+          "Key": "78144447-46B28DF9-75ECA698-76CBD815",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_WorldTreeMiddleBoss_Note:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.10"
+          }
+        },
+        {
+          "Key": "A7FFC031-44B71BF8-BE0C9F88-E4F7690C",
+          "Value": {
+            "ObjectName": "FlowNode_Reroute'FABP_WorldTreeMiddleBoss_Note:FlowNode_Reroute_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.0"
+          }
+        },
+        {
+          "Key": "8631D992-40D21241-A978F880-D1B02747",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_WorldTreeMiddleBoss_Note:FNBP_QuestBlockBranch_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.15"
+          }
+        },
+        {
+          "Key": "DFCB73DE-45787C6E-01B4DE93-6E82023C",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_WorldTreeMiddleBoss_Note:FNBP_QuestBlockBranch_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.16"
+          }
+        },
+        {
+          "Key": "6D11857F-41D055B2-CC1BC2B6-43577D74",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_WorldTreeMiddleBoss_Note:FNBP_QuestBranch_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.21"
+          }
+        },
+        {
+          "Key": "286E3EBF-46CC24E8-F3C228BB-A6A2D28C",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_WorldTreeMiddleBoss_Note:FNBP_QuestBlockBranch_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.17"
+          }
+        },
+        {
+          "Key": "CC30B6E0-47A2E018-5E974493-6D0B74E6",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_WorldTreeMiddleBoss_Note:FNBP_QuestBlockBranch_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.18"
+          }
+        },
+        {
+          "Key": "0A4AF7BD-4245D536-64A7D082-83696A01",
+          "Value": {
+            "ObjectName": "FlowNode_Timer'FABP_WorldTreeMiddleBoss_Note:FlowNode_Timer_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.6"
+          }
+        },
+        {
+          "Key": "AFEB8B16-4A0E843E-8D34B581-C486A8A3",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_WorldTreeMiddleBoss_Note:FNBP_ProgressQuest_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.13"
+          }
+        },
+        {
+          "Key": "7B489AA1-4FE3E18B-E9E4929E-9C2DE59C",
+          "Value": {
+            "ObjectName": "FlowNode_Reroute'FABP_WorldTreeMiddleBoss_Note:FlowNode_Reroute_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.1"
+          }
+        },
+        {
+          "Key": "13CF402C-40E5E1E0-FD8915A2-40B5319F",
+          "Value": {
+            "ObjectName": "FlowNode_Reroute'FABP_WorldTreeMiddleBoss_Note:FlowNode_Reroute_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_WorldTreeMiddleBoss_Note.2"
+          }
+        }
+      ]
+    }
+  }
+]

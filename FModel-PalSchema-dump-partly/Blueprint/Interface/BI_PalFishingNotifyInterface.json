@@ -1,0 +1,161 @@
+[
+  {
+    "Type": "BI_PalFishingNotifyInterface_C",
+    "Name": "Default__BI_PalFishingNotifyInterface_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Interface/BI_PalFishingNotifyInterface.BI_PalFishingNotifyInterface_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BI_PalFishingNotifyInterface_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Interface'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BI_PalFishingNotifyInterface_C:OnFishingActionShowFish'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingNotifyInterface.4"
+      },
+      {
+        "ObjectName": "Function'BI_PalFishingNotifyInterface_C:OnSalvageSuccess'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingNotifyInterface.8"
+      },
+      {
+        "ObjectName": "Function'BI_PalFishingNotifyInterface_C:OnSalvageActionEnd'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingNotifyInterface.6"
+      },
+      {
+        "ObjectName": "Function'BI_PalFishingNotifyInterface_C:OnSalvageActionStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingNotifyInterface.7"
+      },
+      {
+        "ObjectName": "Function'BI_PalFishingNotifyInterface_C:OnFishingActionCancel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingNotifyInterface.2"
+      },
+      {
+        "ObjectName": "Function'BI_PalFishingNotifyInterface_C:OnFishingActionEnd'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingNotifyInterface.3"
+      },
+      {
+        "ObjectName": "Function'BI_PalFishingNotifyInterface_C:OnFishingActionStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingNotifyInterface.5"
+      }
+    ],
+    "FuncMap": {
+      "OnFishingActionStart": {
+        "ObjectName": "Function'BI_PalFishingNotifyInterface_C:OnFishingActionStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingNotifyInterface.5"
+      },
+      "OnFishingActionEnd": {
+        "ObjectName": "Function'BI_PalFishingNotifyInterface_C:OnFishingActionEnd'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingNotifyInterface.3"
+      },
+      "OnFishingActionCancel": {
+        "ObjectName": "Function'BI_PalFishingNotifyInterface_C:OnFishingActionCancel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingNotifyInterface.2"
+      },
+      "OnSalvageActionStart": {
+        "ObjectName": "Function'BI_PalFishingNotifyInterface_C:OnSalvageActionStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingNotifyInterface.7"
+      },
+      "OnSalvageActionEnd": {
+        "ObjectName": "Function'BI_PalFishingNotifyInterface_C:OnSalvageActionEnd'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingNotifyInterface.6"
+      },
+      "OnSalvageSuccess": {
+        "ObjectName": "Function'BI_PalFishingNotifyInterface_C:OnSalvageSuccess'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingNotifyInterface.8"
+      },
+      "OnFishingActionShowFish": {
+        "ObjectName": "Function'BI_PalFishingNotifyInterface_C:OnFishingActionShowFish'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingNotifyInterface.4"
+      }
+    },
+    "ClassFlags": "CLASS_Interface | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BI_PalFishingNotifyInterface_C'Default__BI_PalFishingNotifyInterface_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingNotifyInterface.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Interface"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "OnFishingActionCancel",
+    "Outer": "BI_PalFishingNotifyInterface_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnFishingActionEnd",
+    "Outer": "BI_PalFishingNotifyInterface_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnFishingActionShowFish",
+    "Outer": "BI_PalFishingNotifyInterface_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnFishingActionStart",
+    "Outer": "BI_PalFishingNotifyInterface_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSalvageActionEnd",
+    "Outer": "BI_PalFishingNotifyInterface_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSalvageActionStart",
+    "Outer": "BI_PalFishingNotifyInterface_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "ThrowLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSalvageSuccess",
+    "Outer": "BI_PalFishingNotifyInterface_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

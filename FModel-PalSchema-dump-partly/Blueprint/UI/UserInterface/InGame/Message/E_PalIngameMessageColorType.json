@@ -1,0 +1,56 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_PalIngameMessageColorType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "3B7CA4A14B7554589D8AA3944A0ED47D",
+            "SourceString": "Blue",
+            "LocalizedString": "Blue"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "561F284D418A2206230C4DB0052FA7ED",
+            "SourceString": "Green",
+            "LocalizedString": "Green"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "9744FB1C4B90F251A8C5FBB0F4D96FBD",
+            "SourceString": "Red",
+            "LocalizedString": "Red"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "DF9B1FA649EADD117BBBAE96669CD739",
+            "SourceString": "Invalid",
+            "LocalizedString": "Invalid"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_PalIngameMessageColorType::NewEnumerator3": 0,
+      "E_PalIngameMessageColorType::NewEnumerator0": 1,
+      "E_PalIngameMessageColorType::NewEnumerator1": 2,
+      "E_PalIngameMessageColorType::NewEnumerator2": 3,
+      "E_PalIngameMessageColorType::E_MAX": 4
+    },
+    "CppForm": "Namespaced"
+  }
+]

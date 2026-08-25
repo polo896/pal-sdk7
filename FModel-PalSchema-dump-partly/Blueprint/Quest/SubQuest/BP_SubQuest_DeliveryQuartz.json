@@ -1,0 +1,73 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SubQuest_DeliveryQuartz_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SubQuest_DeliveryQuartz_C'Default__BP_SubQuest_DeliveryQuartz_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/BP_SubQuest_DeliveryQuartz.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SubQuest_DeliveryQuartz_C",
+    "Name": "Default__BP_SubQuest_DeliveryQuartz_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/SubQuest/BP_SubQuest_DeliveryQuartz.BP_SubQuest_DeliveryQuartz_C'",
+    "Template": {
+      "ObjectName": "BP_PalQuestDataBase_C'Default__BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestBlockGroupList": [
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Quartz_Collect.BP_SubQuestBlock_Quartz_Collect_C",
+              "SubPathString": ""
+            }
+          ]
+        },
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Quartz_Deliver.BP_SubQuestBlock_Quartz_Deliver_C",
+              "SubPathString": ""
+            }
+          ]
+        }
+      ],
+      "QuestTitleMsgId": "QUEST_SUB_TITLE_CollectQuartz",
+      "QuestDescriptionMsgId": "QUEST_SUB_DESC_CollectQuartz",
+      "CommonRewardData": {
+        "Exp": 12170,
+        "Items": [
+          {
+            "Key": {
+              "Key": "Money"
+            },
+            "Value": 5000
+          }
+        ]
+      }
+    }
+  }
+]

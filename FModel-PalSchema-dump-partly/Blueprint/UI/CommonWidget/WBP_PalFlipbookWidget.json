@@ -1,0 +1,63 @@
+[
+  {
+    "Type": "Image",
+    "Name": "TargetImage",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "WBP_PalFlipbookWidget_C",
+    "Name": "Default__WBP_PalFlipbookWidget_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/WBP_PalFlipbookWidget.WBP_PalFlipbookWidget_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_PalFlipbookWidget_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_PalFlipbookWidget_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/WBP_PalFlipbookWidget.3"
+      },
+      "bClassRequiresNativeTick": true
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalFlipbookBindWidget'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_PalFlipbookWidget_C'Default__WBP_PalFlipbookWidget_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/WBP_PalFlipbookWidget.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_PalFlipbookWidget_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "Image'WBP_PalFlipbookWidget_C:WidgetTree.TargetImage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/WBP_PalFlipbookWidget.0"
+      }
+    }
+  }
+]

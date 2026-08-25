@@ -1,0 +1,179 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_DungeonGimmick_MoveFloor_Desert_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_DungeonGimmick_MoveFloor_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Base.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_DungeonGimmick_MoveFloor_Desert_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Desert.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_DungeonGimmick_MoveFloor_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Base.0"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_DungeonGimmick_MoveFloor_Desert_C'Default__BP_DungeonGimmick_MoveFloor_Desert_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Desert.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_DungeonGimmick_MoveFloor_Desert_C",
+    "Name": "Default__BP_DungeonGimmick_MoveFloor_Desert_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Desert.BP_DungeonGimmick_MoveFloor_Desert_C'",
+    "Template": {
+      "ObjectName": "BP_DungeonGimmick_MoveFloor_Base_C'Default__BP_DungeonGimmick_MoveFloor_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Base.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootComp": {
+        "ObjectName": "SceneComponent'Default__BP_DungeonGimmick_MoveFloor_Desert_C:RootComp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Desert.4"
+      },
+      "MovementComponent": {
+        "ObjectName": "PalPatrolMovementComponent'Default__BP_DungeonGimmick_MoveFloor_Desert_C:PatrolMovementComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Desert.2"
+      },
+      "FloorMesh": {
+        "ObjectName": "StaticMeshComponent'Default__BP_DungeonGimmick_MoveFloor_Desert_C:FloorMesh'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Desert.7"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_DungeonGimmick_MoveFloor_Desert_C:RootComp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Desert.4"
+      }
+    }
+  },
+  {
+    "Type": "PalPatrolMovementComponent",
+    "Name": "PatrolMovementComponent",
+    "Outer": "Default__BP_DungeonGimmick_MoveFloor_Desert_C",
+    "Class": "UScriptClass'PalPatrolMovementComponent'",
+    "Template": {
+      "ObjectName": "PalPatrolMovementComponent'Default__BP_DungeonGimmick_MoveFloor_Base_C:PatrolMovementComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Base.5"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_DungeonGimmick_MoveFloor_Desert_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootComp",
+    "Outer": "Default__BP_DungeonGimmick_MoveFloor_Desert_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__BP_DungeonGimmick_MoveFloor_Base_C:RootComp'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Base.7"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PhysicsVolumeChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "PalPatrolMovementComponent'Default__BP_DungeonGimmick_MoveFloor_Desert_C:PatrolMovementComponent'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Desert.2"
+            },
+            "FunctionName": "PhysicsVolumeChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_DungeonGimmick_MoveFloor_Desert_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Desert.3"
+      },
+      "VariableGuid": "D42D547E-4AB2FFA5-B627E3A6-489F0511",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_DungeonGimmick_MoveFloor_Desert_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_DungeonGimmick_MoveFloor_Desert_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Desert.5"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "FloorMesh",
+    "Outer": "Default__BP_DungeonGimmick_MoveFloor_Desert_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Template": {
+      "ObjectName": "StaticMeshComponent'Default__BP_DungeonGimmick_MoveFloor_Base_C:FloorMesh'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Base.10"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'moving_platform_01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/dungeon/Gimmick_Platforms/Mesh/moving_platform_01.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'MI_pal_b00_CustomDungeonMesh_01_Desert'",
+          "ObjectPath": "Pal/Content/Pal/Model/Stage/dungeon/Gimmick_Platforms/Material/MI_pal_b00_CustomDungeonMesh_01_Desert.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'MI_pal_b00_CustomDungeonMesh_01_Desert'",
+          "ObjectPath": "Pal/Content/Pal/Model/Stage/dungeon/Gimmick_Platforms/Material/MI_pal_b00_CustomDungeonMesh_01_Desert.0"
+        },
+        null,
+        {
+          "ObjectName": "MaterialInstanceConstant'MI_pal_b00_CustomDungeonMesh_01_Desert'",
+          "ObjectPath": "Pal/Content/Pal/Model/Stage/dungeon/Gimmick_Platforms/Material/MI_pal_b00_CustomDungeonMesh_01_Desert.0"
+        }
+      ],
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_DungeonGimmick_MoveFloor_Desert_C:RootComp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_MoveFloor_Desert.4"
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 1.5
+      }
+    }
+  }
+]

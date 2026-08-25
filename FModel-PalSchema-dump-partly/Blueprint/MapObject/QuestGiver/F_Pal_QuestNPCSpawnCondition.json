@@ -1,0 +1,76 @@
+[
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "F_Pal_QuestNPCSpawnCondition",
+    "Class": "UScriptClass'UserDefinedStruct'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Guid": "21A0E45B-4DBB5CD1-93050796-4212B090"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "QuestId_20_D9B7606F4D3DB528F17220BE3FDFFB8B",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "State_10_BA3ED0E440A013B313AF37B99E1D72A4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'E_PalQuestState'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/E_PalQuestState.0"
+        }
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "Block_15_0276D8934E105B50A62AE298D3936387",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'PalQuestBlock'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Spawn_22_70A3F05C43562CEB543238A681D7F8FC",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "StructFlags": 16384,
+    "DefaultProperties": {
+      "QuestId_20_D9B7606F4D3DB528F17220BE3FDFFB8B": {
+        "DataTable": {
+          "ObjectName": "DataTable'DT_PalQuestData'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Quest/DT_PalQuestData.0"
+        },
+        "RowName": "None"
+      },
+      "State_10_BA3ED0E440A013B313AF37B99E1D72A4": "E_PalQuestState::NewEnumerator1",
+      "Block_15_0276D8934E105B50A62AE298D3936387": null,
+      "Spawn_22_70A3F05C43562CEB543238A681D7F8FC": true
+    }
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalAction_RoundStepRight_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalAction_RoundStepBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_PalAction_RoundStepBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalAction_RoundStepBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_PalAction_RoundStepBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalAction_RoundStepRight_C'Default__BP_PalAction_RoundStepRight_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_PalAction_RoundStepRight.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalAction_RoundStepRight_C",
+    "Name": "Default__BP_PalAction_RoundStepRight_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Common/BP_PalAction_RoundStepRight.BP_PalAction_RoundStepRight_C'",
+    "Template": {
+      "ObjectName": "BP_PalAction_RoundStepBase_C'Default__BP_PalAction_RoundStepBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_PalAction_RoundStepBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SideStepType": "EPalActionType::RoundStep_Right"
+    }
+  }
+]

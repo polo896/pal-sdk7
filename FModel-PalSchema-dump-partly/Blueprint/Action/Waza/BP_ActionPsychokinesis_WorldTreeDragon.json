@@ -1,0 +1,77 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_ActionPsychokinesis_WorldTreeDragon_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ActionPsychokinesis2_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BP_ActionPsychokinesis2.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ActionPsychokinesis2_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BP_ActionPsychokinesis2.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_ActionPsychokinesis_WorldTreeDragon_C'Default__BP_ActionPsychokinesis_WorldTreeDragon_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BP_ActionPsychokinesis_WorldTreeDragon.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_ActionPsychokinesis_WorldTreeDragon_C",
+    "Name": "Default__BP_ActionPsychokinesis_WorldTreeDragon_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/BP_ActionPsychokinesis_WorldTreeDragon.BP_ActionPsychokinesis_WorldTreeDragon_C'",
+    "Template": {
+      "ObjectName": "BP_ActionPsychokinesis2_C'Default__BP_ActionPsychokinesis2_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BP_ActionPsychokinesis2.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkillEffectSpawnParameters": [
+        {
+          "TimeOffset": 1.0,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Psychokinesis_Charge_WorldTreeDragon_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Psychokinesis/BP_SkillEffect_Psychokinesis_Charge_WorldTreeDragon.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": false,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 6.0,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Psychokinesis_WorldTreeDragon_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Psychokinesis/BP_SkillEffect_Psychokinesis_WorldTreeDragon.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": false,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        }
+      ],
+      "ReadyAnimationTime": 6.0,
+      "ProcessAnimationType": "EPalGeneralMontageType::GeneralAttackProcessLoop_Far",
+      "BreakActionBlendTime": 0.2
+    }
+  }
+]

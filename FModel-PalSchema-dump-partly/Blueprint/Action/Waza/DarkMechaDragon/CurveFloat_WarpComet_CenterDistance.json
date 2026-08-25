@@ -1,0 +1,58 @@
+[
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_WarpComet_CenterDistance",
+    "Class": "UScriptClass'CurveFloat'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 3.443205E-08,
+            "ArriveTangent": 341.6,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 341.6,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 1.0,
+            "Value": 1124.9999,
+            "ArriveTangent": 1288.1792,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 1288.1792,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 2.5,
+            "Value": 1499.9999,
+            "ArriveTangent": -1607.4329,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -1607.4329,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 3.0,
+            "Value": 3.443205E-08,
+            "ArriveTangent": -1319.5096,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -1319.5096,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  }
+]

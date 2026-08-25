@@ -1,0 +1,3175 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalMapObjectFarmCrop_Wheat_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalMapObjectFarmCrop_Wheat_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmCrop/BP_PalMapObjectFarmCrop_Wheat.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalMapObjectFarmCrop'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CropISM",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'InstancedStaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GrowupISM",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'InstancedStaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GrassISM",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'InstancedStaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalMapObjectFarmCrop_Wheat_C'Default__BP_PalMapObjectFarmCrop_Wheat_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmCrop/BP_PalMapObjectFarmCrop_Wheat.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalMapObjectFarmCrop_Wheat_C",
+    "Name": "Default__BP_PalMapObjectFarmCrop_Wheat_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/FarmCrop/BP_PalMapObjectFarmCrop_Wheat.BP_PalMapObjectFarmCrop_Wheat_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GrowupProcessSets": [
+        {
+          "State": "EPalFarmCropState::Growup",
+          "TargetCompRef": {
+            "OtherActor": null,
+            "ComponentProperty": "GrassISM",
+            "PathToComponent": ""
+          },
+          "ProcessRate": 0.0
+        },
+        {
+          "State": "EPalFarmCropState::Growup",
+          "TargetCompRef": {
+            "OtherActor": null,
+            "ComponentProperty": "GrowupISM",
+            "PathToComponent": ""
+          },
+          "ProcessRate": 0.5
+        },
+        {
+          "State": "EPalFarmCropState::Harvestable",
+          "TargetCompRef": {
+            "OtherActor": null,
+            "ComponentProperty": "CropISM",
+            "PathToComponent": ""
+          },
+          "ProcessRate": 1.0
+        }
+      ],
+      "GrowupFX": {
+        "ObjectName": "NiagaraSystem'NS_Grow_Smoke'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Common/Smoke/NS_Grow_Smoke.19"
+      }
+    }
+  },
+  {
+    "Type": "InstancedStaticMeshComponent",
+    "Name": "CropISM_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectFarmCrop_Wheat_C",
+    "Class": "UScriptClass'InstancedStaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Wheat_03a'",
+        "ObjectPath": "Pal/Content/Others/FarmCrops/Meshes/Crops/SM_Wheat_03a.2"
+      },
+      "bGenerateOverlapEvents": false,
+      "bMultiBodyOverlap": false,
+      "bHasPerInstanceHitProxies": true,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel2",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel3",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel4",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel5",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel6",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel17",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel18",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 20.0
+      },
+      "bCanEverAffectNavigation": false
+    },
+    "PerInstanceSMData": [
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.736427,
+            "W": 0.67401224,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999998,
+            "Y": 0.9999998,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.5140675,
+            "W": 0.8557755,
+            "IsNormalized": true,
+            "Size": 0.99830705,
+            "SizeSquared": 0.996617
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999997,
+            "Y": 0.9999997,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.8600097,
+            "W": 0.50695217,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999996,
+            "Y": 0.9999996,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.7951436,
+            "W": 0.6036254,
+            "IsNormalized": true,
+            "Size": 0.99830705,
+            "SizeSquared": 0.99661696
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999997,
+            "Y": 0.9999997,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.6653169,
+            "W": 0.7442921,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000002,
+            "Y": 1.0000002,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.783008,
+            "W": 0.6192864,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999997,
+            "Y": 0.9999997,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.81770283,
+            "W": 0.5726946,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.9966171
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999976,
+            "Y": 0.99999976,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.09585355,
+            "W": 0.9936948,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000002,
+            "Y": 1.0000002,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.07411067,
+            "W": 0.9955525,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000001,
+            "Y": 1.0000001,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.031867728,
+            "W": 0.9977984,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.7215185,
+            "W": 0.689948,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000001,
+            "Y": 1.0000001,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.58668184,
+            "W": 0.8077262,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999994,
+            "Y": 0.9999994,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.50096226,
+            "W": 0.86351264,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999994,
+            "Y": 0.99999994,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.49007744,
+            "W": 0.8697364,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000002,
+            "Y": 1.0000002,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.4469808,
+            "W": 0.8926508,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999999,
+            "Y": 0.9999999,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.06819144,
+            "W": 0.99597543,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999997,
+            "Y": 0.9999997,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.9981991,
+            "W": -0.014691182,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000001,
+            "Y": 1.0000001,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.87367827,
+            "W": -0.4830151,
+            "IsNormalized": true,
+            "Size": 0.9983072,
+            "SizeSquared": 0.9966173
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999997,
+            "Y": 0.9999997,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.42329267,
+            "W": 0.90412414,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999995,
+            "Y": 0.9999995,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.24573176,
+            "W": 0.9675914,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000001,
+            "Y": 1.0000001,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.05070709,
+            "W": 0.9970186,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999999,
+            "Y": 0.9999999,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.13957152,
+            "W": 0.98850244,
+            "IsNormalized": true,
+            "Size": 0.9983072,
+            "SizeSquared": 0.9966173
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999996,
+            "Y": 0.9999996,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.5805472,
+            "W": 0.8121466,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000004,
+            "Y": 1.0000004,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.7134659,
+            "W": 0.6982718,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999964,
+            "Y": 0.99999964,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.996158,
+            "W": 0.065469675,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.9966171
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999996,
+            "Y": 0.9999996,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.8276246,
+            "W": 0.5582605,
+            "IsNormalized": true,
+            "Size": 0.9983072,
+            "SizeSquared": 0.9966173
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000004,
+            "Y": 1.0000004,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.766839,
+            "W": 0.63919884,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000002,
+            "Y": 1.0000002,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.08307976,
+            "W": 0.99484414,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.9966171
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000004,
+            "Y": 1.0000004,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.8636805,
+            "W": 0.5006726,
+            "IsNormalized": true,
+            "Size": 0.99830705,
+            "SizeSquared": 0.99661696
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999994,
+            "Y": 0.99999994,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.12524644,
+            "W": 0.9904194,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999976,
+            "Y": 0.99999976,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.90222806,
+            "W": -0.42731914,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.9966171
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.1987073,
+            "W": 0.97833157,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000002,
+            "Y": 1.0000002,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.9979146,
+            "W": 0.027992547,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000005,
+            "Y": 1.0000005,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.58257025,
+            "W": 0.81069666,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000002,
+            "Y": 1.0000002,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.9864003,
+            "W": -0.15372533,
+            "IsNormalized": true,
+            "Size": 0.99830705,
+            "SizeSquared": 0.996617
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000004,
+            "Y": 1.0000004,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.14430897,
+            "W": 0.9878219,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000005,
+            "Y": 1.0000005,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      }
+    ]
+  },
+  {
+    "Type": "InstancedStaticMeshComponent",
+    "Name": "GrassISM_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectFarmCrop_Wheat_C",
+    "Class": "UScriptClass'InstancedStaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Wheat_01a'",
+        "ObjectPath": "Pal/Content/Others/FarmCrops/Meshes/Crops/SM_Wheat_01a.2"
+      },
+      "bGenerateOverlapEvents": false,
+      "bMultiBodyOverlap": false,
+      "bHasPerInstanceHitProxies": true,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel2",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel3",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel4",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel5",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel6",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel17",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel18",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 20.0
+      },
+      "bCanEverAffectNavigation": false
+    },
+    "PerInstanceSMData": [
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.736427,
+            "W": 0.67401224,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999994,
+            "Y": 0.99999994,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.5140675,
+            "W": 0.8557756,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.8600097,
+            "W": 0.50695217,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.7951437,
+            "W": 0.6036254,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000001,
+            "Y": 1.0000001,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.66531664,
+            "W": 0.74429214,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.9966171
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.78300804,
+            "W": 0.6192863,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.9966171
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.81770283,
+            "W": 0.5726948,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999994,
+            "Y": 0.99999994,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.09585366,
+            "W": 0.99369466,
+            "IsNormalized": true,
+            "Size": 0.99830705,
+            "SizeSquared": 0.996617
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.07411045,
+            "W": 0.99555254,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.031867485,
+            "W": 0.9977984,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.7215186,
+            "W": 0.68994796,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.5866818,
+            "W": 0.80772626,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999994,
+            "Y": 0.99999994,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.50096244,
+            "W": 0.8635126,
+            "IsNormalized": true,
+            "Size": 0.9983072,
+            "SizeSquared": 0.9966173
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999994,
+            "Y": 0.99999994,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.4900775,
+            "W": 0.8697362,
+            "IsNormalized": true,
+            "Size": 0.99830705,
+            "SizeSquared": 0.996617
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.446981,
+            "W": 0.89265066,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.06819125,
+            "W": 0.99597543,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.9981991,
+            "W": -0.014691423,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999997,
+            "Y": 0.9999997,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.87367827,
+            "W": -0.48301512,
+            "IsNormalized": true,
+            "Size": 0.9983072,
+            "SizeSquared": 0.9966173
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999994,
+            "Y": 0.99999994,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.42329267,
+            "W": 0.90412414,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.24573158,
+            "W": 0.96759146,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.05070702,
+            "W": 0.9970186,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.13957147,
+            "W": 0.98850244,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.58054703,
+            "W": 0.81214666,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.9966171
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999994,
+            "Y": 0.99999994,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.71346587,
+            "W": 0.69827175,
+            "IsNormalized": true,
+            "Size": 0.99830705,
+            "SizeSquared": 0.99661696
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999994,
+            "Y": 0.99999994,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.996158,
+            "W": 0.065469585,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.9966171
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999994,
+            "Y": 0.99999994,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.8276247,
+            "W": 0.5582603,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.76683897,
+            "W": 0.63919884,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999999,
+            "Y": 0.9999999,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.08307979,
+            "W": 0.99484414,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.8636806,
+            "W": 0.5006726,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999976,
+            "Y": 0.99999976,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.12524638,
+            "W": 0.9904193,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.9966171
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999994,
+            "Y": 0.99999994,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.9022281,
+            "W": -0.4273191,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000001,
+            "Y": 1.0000001,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.19870724,
+            "W": 0.97833157,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.9979146,
+            "W": 0.027992764,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.58257014,
+            "W": 0.8106968,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.9864004,
+            "W": -0.15372525,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.14430882,
+            "W": 0.98782194,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      }
+    ]
+  },
+  {
+    "Type": "InstancedStaticMeshComponent",
+    "Name": "GrowupISM_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectFarmCrop_Wheat_C",
+    "Class": "UScriptClass'InstancedStaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Wheat_02a'",
+        "ObjectPath": "Pal/Content/Others/FarmCrops/Meshes/Crops/SM_Wheat_02a.2"
+      },
+      "bGenerateOverlapEvents": false,
+      "bMultiBodyOverlap": false,
+      "bHasPerInstanceHitProxies": true,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel2",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel3",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel4",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel5",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel6",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel17",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel18",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 20.0
+      },
+      "bCanEverAffectNavigation": false
+    },
+    "PerInstanceSMData": [
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.736427,
+            "W": 0.67401224,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999998,
+            "Y": 0.9999998,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.5140675,
+            "W": 0.8557755,
+            "IsNormalized": true,
+            "Size": 0.99830705,
+            "SizeSquared": 0.996617
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999997,
+            "Y": 0.9999997,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.8600097,
+            "W": 0.50695217,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999996,
+            "Y": 0.9999996,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.7951436,
+            "W": 0.6036254,
+            "IsNormalized": true,
+            "Size": 0.99830705,
+            "SizeSquared": 0.99661696
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999997,
+            "Y": 0.9999997,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.6653169,
+            "W": 0.7442921,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000002,
+            "Y": 1.0000002,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.783008,
+            "W": 0.6192864,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": -180.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999997,
+            "Y": 0.9999997,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.81770283,
+            "W": 0.5726946,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.9966171
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999976,
+            "Y": 0.99999976,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.09585355,
+            "W": 0.9936948,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000002,
+            "Y": 1.0000002,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.07411067,
+            "W": 0.9955525,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000001,
+            "Y": 1.0000001,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.031867728,
+            "W": 0.9977984,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.7215185,
+            "W": 0.689948,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000001,
+            "Y": 1.0000001,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.58668184,
+            "W": 0.8077262,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": -108.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999994,
+            "Y": 0.9999994,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.50096226,
+            "W": 0.86351264,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999994,
+            "Y": 0.99999994,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.49007744,
+            "W": 0.8697364,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000002,
+            "Y": 1.0000002,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.4469808,
+            "W": 0.8926508,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999999,
+            "Y": 0.9999999,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.06819144,
+            "W": 0.99597543,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999997,
+            "Y": 0.9999997,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.9981991,
+            "W": -0.014691182,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000001,
+            "Y": 1.0000001,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.87367827,
+            "W": -0.4830151,
+            "IsNormalized": true,
+            "Size": 0.9983072,
+            "SizeSquared": 0.9966173
+          },
+          "Translation": {
+            "X": -36.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999997,
+            "Y": 0.9999997,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.42329267,
+            "W": 0.90412414,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999995,
+            "Y": 0.9999995,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.24573176,
+            "W": 0.9675914,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000001,
+            "Y": 1.0000001,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.05070709,
+            "W": 0.9970186,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999999,
+            "Y": 0.9999999,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.13957152,
+            "W": 0.98850244,
+            "IsNormalized": true,
+            "Size": 0.9983072,
+            "SizeSquared": 0.9966173
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999996,
+            "Y": 0.9999996,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.5805472,
+            "W": 0.8121466,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000004,
+            "Y": 1.0000004,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.7134659,
+            "W": 0.6982718,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": 36.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999964,
+            "Y": 0.99999964,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.996158,
+            "W": 0.065469675,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.9966171
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.9999996,
+            "Y": 0.9999996,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.8276246,
+            "W": 0.5582605,
+            "IsNormalized": true,
+            "Size": 0.9983072,
+            "SizeSquared": 0.9966173
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000004,
+            "Y": 1.0000004,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.766839,
+            "W": 0.63919884,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000002,
+            "Y": 1.0000002,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.08307976,
+            "W": 0.99484414,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.9966171
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000004,
+            "Y": 1.0000004,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.8636805,
+            "W": 0.5006726,
+            "IsNormalized": true,
+            "Size": 0.99830705,
+            "SizeSquared": 0.99661696
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999994,
+            "Y": 0.99999994,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.12524644,
+            "W": 0.9904194,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.99661726
+          },
+          "Translation": {
+            "X": 108.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 0.99999976,
+            "Y": 0.99999976,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.90222806,
+            "W": -0.42731914,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.9966171
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": -180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.1987073,
+            "W": 0.97833157,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": -108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000002,
+            "Y": 1.0000002,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.9979146,
+            "W": 0.027992547,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": -36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000005,
+            "Y": 1.0000005,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.58257025,
+            "W": 0.81069666,
+            "IsNormalized": true,
+            "Size": 0.99830717,
+            "SizeSquared": 0.9966172
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": 36.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000002,
+            "Y": 1.0000002,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.9864003,
+            "W": -0.15372533,
+            "IsNormalized": true,
+            "Size": 0.99830705,
+            "SizeSquared": 0.996617
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": 108.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000004,
+            "Y": 1.0000004,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      },
+      {
+        "TransformData": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -0.14430897,
+            "W": 0.9878219,
+            "IsNormalized": true,
+            "Size": 0.9983071,
+            "SizeSquared": 0.99661714
+          },
+          "Translation": {
+            "X": 180.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0000005,
+            "Y": 1.0000005,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      }
+    ]
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectFarmCrop_Wheat_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalMapObjectFarmCrop_Wheat_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmCrop/BP_PalMapObjectFarmCrop_Wheat.5"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmCrop_Wheat_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmCrop/BP_PalMapObjectFarmCrop_Wheat.8"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmCrop_Wheat_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmCrop/BP_PalMapObjectFarmCrop_Wheat.9"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmCrop_Wheat_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmCrop/BP_PalMapObjectFarmCrop_Wheat.7"
+        }
+      ],
+      "VariableGuid": "C87C60C9-4B7C195E-0772F98C-BF8443FB",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'InstancedStaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "InstancedStaticMeshComponent'BP_PalMapObjectFarmCrop_Wheat_C:CropISM_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmCrop/BP_PalMapObjectFarmCrop_Wheat.2"
+      },
+      "VariableGuid": "07655889-435575DC-D45AAABE-0593AE48",
+      "InternalVariableName": "CropISM"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'InstancedStaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "InstancedStaticMeshComponent'BP_PalMapObjectFarmCrop_Wheat_C:GrassISM_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmCrop/BP_PalMapObjectFarmCrop_Wheat.3"
+      },
+      "VariableGuid": "F1734667-44047D93-C2723086-0CAFBE16",
+      "InternalVariableName": "GrassISM"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'InstancedStaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "InstancedStaticMeshComponent'BP_PalMapObjectFarmCrop_Wheat_C:GrowupISM_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmCrop/BP_PalMapObjectFarmCrop_Wheat.4"
+      },
+      "VariableGuid": "4C64E821-4457A01C-46FBF7B9-511208E9",
+      "InternalVariableName": "GrowupISM"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalMapObjectFarmCrop_Wheat_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmCrop_Wheat_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmCrop/BP_PalMapObjectFarmCrop_Wheat.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmCrop_Wheat_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmCrop/BP_PalMapObjectFarmCrop_Wheat.6"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmCrop_Wheat_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmCrop/BP_PalMapObjectFarmCrop_Wheat.8"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmCrop_Wheat_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmCrop/BP_PalMapObjectFarmCrop_Wheat.9"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmCrop_Wheat_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmCrop/BP_PalMapObjectFarmCrop_Wheat.7"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalMapObjectFarmCrop_Wheat_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmCrop/BP_PalMapObjectFarmCrop_Wheat.6"
+      }
+    }
+  }
+]

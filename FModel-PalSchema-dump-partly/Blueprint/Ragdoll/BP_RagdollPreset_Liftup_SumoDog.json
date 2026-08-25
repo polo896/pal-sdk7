@@ -1,0 +1,65 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_RagdollPreset_Liftup_SumoDog_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalRagdollPreset'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_RagdollPreset_Liftup_SumoDog_C'Default__BP_RagdollPreset_Liftup_SumoDog_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Ragdoll/BP_RagdollPreset_Liftup_SumoDog.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_RagdollPreset_Liftup_SumoDog_C",
+    "Name": "Default__BP_RagdollPreset_Liftup_SumoDog_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Ragdoll/BP_RagdollPreset_Liftup_SumoDog.BP_RagdollPreset_Liftup_SumoDog_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockBoneNames": [
+        "pelvis",
+        "hips",
+        "leg_back_01_l",
+        "leg_back_02_l",
+        "None",
+        "leg_back_01_r",
+        "leg_back_02_r",
+        "None",
+        "spine_01",
+        "spine_02",
+        "spine_03",
+        "None",
+        "tunaA",
+        "tunaB_01_l",
+        "tunaB_01_r",
+        "tunaC_l",
+        "tunaC_r",
+        "tunaD_l",
+        "tunaD_r",
+        "tunaE_l",
+        "tunaE_r",
+        "shide_01_l",
+        "None",
+        "shide_01_r",
+        "None",
+        "leg_front_01_l",
+        "leg_front_01_r"
+      ],
+      "LinearDamping": 7.0,
+      "AngularDamping": 7.0
+    }
+  }
+]

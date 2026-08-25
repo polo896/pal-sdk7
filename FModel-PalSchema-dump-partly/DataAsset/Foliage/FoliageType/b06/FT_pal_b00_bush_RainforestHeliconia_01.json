@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b00_bush_RainforestHeliconia_01",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b00_bush_RainforestHeliconia_01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b00/Rainforest/Mesh/Plants/SM_pal_b00_bush_RainforestHeliconia_01.2"
+      },
+      "UpdateGuid": "04406322-4F1876B8-AB0601A8-BBD117F1",
+      "ScaleX": {
+        "Min": 0.6
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 8.74905,
+          "Y": 4.081909,
+          "Z": 86.81923
+        },
+        "BoxExtent": {
+          "X": 117.81058,
+          "Y": 113.128204,
+          "Z": 89.90692
+        },
+        "SphereRadius": 136.02505493164062
+      },
+      "LowBoundOriginRadius": {
+        "X": -1.3216374,
+        "Y": 1.0039678,
+        "Z": 10.826189
+      },
+      "CullDistance": {
+        "Max": 4000
+      },
+      "bAffectDistanceFieldLighting": true,
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

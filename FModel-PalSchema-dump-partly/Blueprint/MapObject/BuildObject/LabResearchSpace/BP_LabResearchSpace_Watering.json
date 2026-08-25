@@ -1,0 +1,236 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_LabResearchSpace_Watering_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_LabResearchSpace_Watering_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/BuildObject/LabResearchSpace/BP_LabResearchSpace_Watering.8"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalBuildObjectLabResearchSpace'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "PalWorkEffectSound",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalWorkEffectSoundComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PalMapObjectSkeletalMesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalMapObjectSkeletalMeshComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_LabResearchSpace_Watering_C'Default__BP_LabResearchSpace_Watering_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/BuildObject/LabResearchSpace/BP_LabResearchSpace_Watering.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_LabResearchSpace_Watering_C",
+    "Name": "Default__BP_LabResearchSpace_Watering_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/BuildObject/LabResearchSpace/BP_LabResearchSpace_Watering.BP_LabResearchSpace_Watering_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalMapObjectSkeletalMeshComponent",
+    "Name": "PalMapObjectSkeletalMesh_GEN_VARIABLE",
+    "Outer": "BP_LabResearchSpace_Watering_C",
+    "Class": "UScriptClass'PalMapObjectSkeletalMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bAnimateInWorking": true,
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence'AS_Pulverizer'",
+          "ObjectPath": "Pal/Content/Pal/Model/Prop/Architecture/Pulverizer/AS_Pulverizer.0"
+        },
+        "bSavedPlaying": false
+      },
+      "AnimationMode": "EAnimationMode::AnimationSingleNode",
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_Pulverizer'",
+        "ObjectPath": "Pal/Content/Pal/Model/Prop/Architecture/Pulverizer/SK_Pulverizer.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_Pulverizer'",
+        "ObjectPath": "Pal/Content/Pal/Model/Prop/Architecture/Pulverizer/SK_Pulverizer.0"
+      },
+      "RelativeLocation": {
+        "X": 5.0,
+        "Y": 8.600002,
+        "Z": 5.0
+      },
+      "RelativeScale3D": {
+        "X": 0.8,
+        "Y": 0.8,
+        "Z": 0.8
+      }
+    }
+  },
+  {
+    "Type": "PalWorkEffectSoundComponent",
+    "Name": "PalWorkEffectSound_GEN_VARIABLE",
+    "Outer": "BP_LabResearchSpace_Watering_C",
+    "Class": "UScriptClass'PalWorkEffectSoundComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent'AKE_Crusher_Crushing_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/MapObject/Crusher/AKE_Crusher_Crushing_Loop.0"
+      },
+      "RelativeLocation": {
+        "X": 60.0,
+        "Y": 50.0,
+        "Z": 120.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_LabResearchSpace_Watering_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_LabResearchSpace_Watering_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/BuildObject/LabResearchSpace/BP_LabResearchSpace_Watering.4"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_LabResearchSpace_Watering_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/BuildObject/LabResearchSpace/BP_LabResearchSpace_Watering.7"
+        }
+      ],
+      "VariableGuid": "93B5E359-46802735-E244D295-81AAEE9C",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalWorkEffectSoundComponent'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalWorkEffectSoundComponent'BP_LabResearchSpace_Watering_C:PalWorkEffectSound_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/BuildObject/LabResearchSpace/BP_LabResearchSpace_Watering.3"
+      },
+      "VariableGuid": "50824462-4E182C39-65926B94-948D9FB6",
+      "InternalVariableName": "PalWorkEffectSound"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalMapObjectSkeletalMeshComponent'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalMapObjectSkeletalMeshComponent'BP_LabResearchSpace_Watering_C:PalMapObjectSkeletalMesh_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/BuildObject/LabResearchSpace/BP_LabResearchSpace_Watering.2"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_LabResearchSpace_Watering_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/BuildObject/LabResearchSpace/BP_LabResearchSpace_Watering.6"
+        }
+      ],
+      "VariableGuid": "AAE9C120-465C02B5-7A17EBAB-6E56E7C9",
+      "InternalVariableName": "PalMapObjectSkeletalMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_LabResearchSpace_Watering_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_LabResearchSpace_Watering_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/BuildObject/LabResearchSpace/BP_LabResearchSpace_Watering.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_LabResearchSpace_Watering_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/BuildObject/LabResearchSpace/BP_LabResearchSpace_Watering.5"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_LabResearchSpace_Watering_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/BuildObject/LabResearchSpace/BP_LabResearchSpace_Watering.7"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_LabResearchSpace_Watering_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/BuildObject/LabResearchSpace/BP_LabResearchSpace_Watering.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_LabResearchSpace_Watering_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/BuildObject/LabResearchSpace/BP_LabResearchSpace_Watering.5"
+      }
+    }
+  }
+]

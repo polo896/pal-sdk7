@@ -1,0 +1,1433 @@
+[
+  {
+    "Type": "BackgroundBlur",
+    "Name": "BackgroundBlur_63",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'BackgroundBlur'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BlurStrength": 6.0,
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.40"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Element_Dark",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_ELEMENT_NAME_Normal"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "IsAutoAdjustScale": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "B08F35AA48BDC2B10E3E18B1BB5BD9E1",
+        "SourceString": "テキストブロック",
+        "LocalizedString": "テキストブロック"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_Blue_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_Blue_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 13
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_70'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.21"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Element_Dark_Neutral",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_ELEMENT_NAME_Dark"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "IsAutoAdjustScale": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "CBECBBAF4CCA4139F059AA95067A4308",
+        "SourceString": "テキストブロック",
+        "LocalizedString": "テキストブロック"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_Blue_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_Blue_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 13
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_69'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.20"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Element_Dragon",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_ELEMENT_NAME_Dragon"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "IsAutoAdjustScale": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "716A8BF64159B3D8BA806E9C599A71FF",
+        "SourceString": "テキストブロック",
+        "LocalizedString": "テキストブロック"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_Blue_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_Blue_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 13
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_64'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.19"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Element_Electricity",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_ELEMENT_NAME_Electricity"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "IsAutoAdjustScale": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "00C31A1049429FEB144A009B55AD0E79",
+        "SourceString": "テキストブロック",
+        "LocalizedString": "テキストブロック"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_Blue_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_Blue_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 13
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_60'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.15"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Element_Fire",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_ELEMENT_NAME_Fire"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "IsAutoAdjustScale": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "E6AB9C3F4D1793140C34EF89C598B610",
+        "SourceString": "テキストブロック",
+        "LocalizedString": "テキストブロック"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_Blue_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_Blue_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 13
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_62'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.17"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Element_Grass",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_ELEMENT_NAME_Leaf"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "IsAutoAdjustScale": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "D50DECE74A195432B240B096093A9213",
+        "SourceString": "テキストブロック",
+        "LocalizedString": "テキストブロック"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_Blue_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_Blue_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 13
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_71'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.22"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Element_Ground",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_ELEMENT_NAME_Earth"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "IsAutoAdjustScale": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "9C46D1FB41A87BBE4851919220C2BF35",
+        "SourceString": "テキストブロック",
+        "LocalizedString": "テキストブロック"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_Blue_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_Blue_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 13
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_72'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.23"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Element_Ice",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_ELEMENT_NAME_Ice"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "IsAutoAdjustScale": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "510861E7451619DE5A1AA7B562A89F35",
+        "SourceString": "テキストブロック",
+        "LocalizedString": "テキストブロック"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_Blue_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_Blue_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 13
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_63'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.18"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Element_Water",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_ELEMENT_NAME_Water"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "IsAutoAdjustScale": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "83E3D1504BD2CF781E6796A22C494EEA",
+        "SourceString": "テキストブロック",
+        "LocalizedString": "テキストブロック"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_Blue_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_Blue_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 13
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_61'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_15",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_15.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.12"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_32",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_61'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_62'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_71'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_72'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_60'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_63'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_64'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_70'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_69'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.20"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_15.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_15",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 600.0,
+          "Bottom": 360.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_15'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.10"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_32",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.11"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.33"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_32",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 512.0,
+          "Bottom": 281.6
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.11"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Image_Matchup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_60",
+    "Outer": "CanvasPanel_32",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -216.0,
+          "Top": -59.0,
+          "Bottom": 26.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.11"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Text_Element_Electricity'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_61",
+    "Outer": "CanvasPanel_32",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -118.0,
+          "Top": -131.0,
+          "Bottom": 26.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.11"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Text_Element_Water'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_62",
+    "Outer": "CanvasPanel_32",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -16.0,
+          "Top": -59.0,
+          "Bottom": 26.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.11"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Text_Element_Fire'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_63",
+    "Outer": "CanvasPanel_32",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 94.0,
+          "Top": -59.0,
+          "Bottom": 26.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.11"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Text_Element_Ice'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_64",
+    "Outer": "CanvasPanel_32",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 210.0,
+          "Top": -59.0,
+          "Bottom": 26.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.11"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Text_Element_Dragon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_69",
+    "Outer": "CanvasPanel_32",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 210.0,
+          "Top": 124.0,
+          "Bottom": 26.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.11"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Text_Element_Dark_Neutral'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_70",
+    "Outer": "CanvasPanel_32",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 94.0,
+          "Top": 124.0,
+          "Bottom": 26.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.11"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Text_Element_Dark'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.1"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_71",
+    "Outer": "CanvasPanel_32",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -46.0,
+          "Top": 124.0,
+          "Bottom": 26.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.11"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Text_Element_Grass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_72",
+    "Outer": "CanvasPanel_32",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -182.0,
+          "Top": 124.0,
+          "Bottom": 26.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.11"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Text_Element_Ground'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.7"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Base",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.005697,
+        "G": 0.014136,
+        "B": 0.015625,
+        "A": 0.85,
+        "Hex": "D9111F21"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.35"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Base_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.012,
+            "Hex": "03FFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_EffFlare_InnerGrd_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Menu/MI_UI_EffFlare_InnerGrd_01.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.12,
+        "G": 0.868017,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "61F0FF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.36"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Base_Pattern",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "Tiling": "ESlateBrushTileType::Both",
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.1,
+            "Hex": "19FFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_pattern_Dot'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/Research/T_prt_pattern_Dot.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.317133,
+        "G": 0.786904,
+        "B": 0.869792,
+        "A": 1.0,
+        "Hex": "99E6F0"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.42"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BaseShadow",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.000434,
+        "B": 0.005208,
+        "A": 0.1,
+        "Hex": "19000110"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.34"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Dot_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 8.0,
+          "Y": 2.0
+        }
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.38"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Dot_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 8.0,
+          "Y": 2.0
+        }
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.39"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Frame",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_frame_1px'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_frame_1px.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.2,
+        "Hex": "33FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.37"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Matchup",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 800.0,
+          "Y": 440.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_UI_ElementMutchup'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_UI_ElementMutchup.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.14"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 8.0,
+          "Y": 2.0
+        }
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.41"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.40"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.34"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.35"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.36"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.42"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.37"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.41"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.38"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0.OverlaySlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.39"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_32.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.13"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 4.0,
+        "Top": 4.0,
+        "Right": -4.0,
+        "Bottom": -4.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.33"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.BaseShadow'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.27"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.33"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.24"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_10",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.33"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Base_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.25"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_2",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.33"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Frame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.30"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_3",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.33"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Dot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.28"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_4",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.33"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Dot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.29"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_6",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.33"
+      },
+      "Content": {
+        "ObjectName": "BackgroundBlur'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.BackgroundBlur_63'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.0"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_8",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.33"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.32"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_9",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.33"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.Base_Pattern'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.26"
+      }
+    }
+  },
+  {
+    "Type": "WBP_MainMenu_Pal_ElementMatchup_C",
+    "Name": "Default__WBP_MainMenu_Pal_ElementMatchup_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.WBP_MainMenu_Pal_ElementMatchup_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_MainMenu_Pal_ElementMatchup_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.45"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Matchup",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_MainMenu_Pal_ElementMatchup_C'Default__WBP_MainMenu_Pal_ElementMatchup_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.43"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_MainMenu_Pal_ElementMatchup_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_MainMenu_Pal_ElementMatchup_C:WidgetTree.CanvasPanel_15'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_ElementMatchup.10"
+      }
+    }
+  }
+]

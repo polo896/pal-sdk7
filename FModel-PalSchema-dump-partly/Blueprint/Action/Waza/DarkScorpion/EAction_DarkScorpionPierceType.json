@@ -1,0 +1,56 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "EAction_DarkScorpionPierceType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "F8E3C51B43FA6C0474ABE6A945250D9A",
+            "SourceString": "Start",
+            "LocalizedString": "Start"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "6A20140E499DA652E95515A351D3347B",
+            "SourceString": "LoopUp",
+            "LocalizedString": "LoopUp"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "0D425BB642865E0A8302EF88B71E0D2F",
+            "SourceString": "LoopDown",
+            "LocalizedString": "LoopDown"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "157A0F71402414B004BC3F94478E557F",
+            "SourceString": "End",
+            "LocalizedString": "End"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "EAction_DarkScorpionPierceType::NewEnumerator0": 0,
+      "EAction_DarkScorpionPierceType::NewEnumerator1": 1,
+      "EAction_DarkScorpionPierceType::NewEnumerator2": 2,
+      "EAction_DarkScorpionPierceType::NewEnumerator3": 3,
+      "EAction_DarkScorpionPierceType::EAction_MAX": 4
+    },
+    "CppForm": "Namespaced"
+  }
+]

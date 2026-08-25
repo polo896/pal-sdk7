@@ -1,0 +1,17 @@
+[
+  {
+    "Type": "DataLayerAsset",
+    "Name": "MapObject_WorldTree",
+    "Class": "UScriptClass'DataLayerAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DebugColor": {
+        "B": 27,
+        "G": 234,
+        "R": 155,
+        "A": 255,
+        "Hex": "9BEA1B"
+      }
+    }
+  }
+]

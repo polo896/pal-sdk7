@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueSkillModule_Tackle_CaptainPenguin_Black_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_CaptainPenguin_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CaptainPenguin/BP_UniqueSkillModule_Tackle_CaptainPenguin.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_CaptainPenguin_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CaptainPenguin/BP_UniqueSkillModule_Tackle_CaptainPenguin.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueSkillModule_Tackle_CaptainPenguin_Black_C'Default__BP_UniqueSkillModule_Tackle_CaptainPenguin_Black_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CaptainPenguin/BP_UniqueSkillModule_Tackle_CaptainPenguin_Black.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueSkillModule_Tackle_CaptainPenguin_Black_C",
+    "Name": "Default__BP_UniqueSkillModule_Tackle_CaptainPenguin_Black_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/CaptainPenguin/BP_UniqueSkillModule_Tackle_CaptainPenguin_Black.BP_UniqueSkillModule_Tackle_CaptainPenguin_Black_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueSkillModule_Tackle_CaptainPenguin_C'Default__BP_UniqueSkillModule_Tackle_CaptainPenguin_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CaptainPenguin/BP_UniqueSkillModule_Tackle_CaptainPenguin.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LoopAnimMontage": {
+        "ObjectName": "AnimMontage'AM_CaptainPenguin_BodySlide_Electric_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/CaptainPenguin/AM_CaptainPenguin_BodySlide_Electric_Loop.0"
+      },
+      "FlagName": "CaptainPenguin_BodySlide_Electric",
+      "LoopSkillEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_CaptainPenguin_BodySlide_Electric_Loop_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/CaptainPenguin_BodySlide/BP_SkillEffect_Unique_CaptainPenguin_BodySlide_Electric_Loop.0"
+      }
+    }
+  }
+]

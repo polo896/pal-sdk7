@@ -1,0 +1,187 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MainQuest_DefeatGrassBoss_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_MainQuest_DefeatGrassBoss_C:ExecuteUbergraph_BP_MainQuest_DefeatGrassBoss'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_DefeatGrassBoss.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_MainQuest_DefeatGrassBoss_C:TakeAdditionalReward'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_DefeatGrassBoss.3"
+      },
+      {
+        "ObjectName": "Function'BP_MainQuest_DefeatGrassBoss_C:ExecuteUbergraph_BP_MainQuest_DefeatGrassBoss'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_DefeatGrassBoss.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_MainQuest_DefeatGrassBoss": {
+        "ObjectName": "Function'BP_MainQuest_DefeatGrassBoss_C:ExecuteUbergraph_BP_MainQuest_DefeatGrassBoss'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_DefeatGrassBoss.2"
+      },
+      "TakeAdditionalReward": {
+        "ObjectName": "Function'BP_MainQuest_DefeatGrassBoss_C:TakeAdditionalReward'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_DefeatGrassBoss.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MainQuest_DefeatGrassBoss_C'Default__BP_MainQuest_DefeatGrassBoss_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_DefeatGrassBoss.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MainQuest_DefeatGrassBoss_C",
+    "Name": "Default__BP_MainQuest_DefeatGrassBoss_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_DefeatGrassBoss.BP_MainQuest_DefeatGrassBoss_C'",
+    "Template": {
+      "ObjectName": "BP_PalQuestDataBase_C'Default__BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "QuestBlockGroupList": [
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_TutorialDefeatGrassBoss.BP_PalQuestBlock_TutorialDefeatGrassBoss_C",
+              "SubPathString": ""
+            }
+          ]
+        }
+      ],
+      "QuestTitleMsgId": "QUEST_MAIN_TITLE_BOSS_ZOE",
+      "QuestDescriptionMsgId": "QUEST_MAIN_DESC_BOSS_ZOE",
+      "AutoOrderQuests": [
+        "Main_ReturnSmallVillage"
+      ],
+      "CommonRewardData": {
+        "Exp": 1200
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_MainQuest_DefeatGrassBoss",
+    "Outer": "BP_MainQuest_DefeatGrassBoss_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetOwnerPlayerUId_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Guid'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_MakeLiteralName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetInventoryDataByPlayerUID_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerInventoryData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_AddItem_ServerInternal_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalItemOperationResult'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalItemOperationResult'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsExistItem_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "TakeAdditionalReward",
+    "Outer": "BP_MainQuest_DefeatGrassBoss_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalQuestData:TakeAdditionalReward'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  }
+]

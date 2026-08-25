@@ -1,0 +1,797 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_PalLoupe_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.2"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_PalLoupe_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.4"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_PalLoupe_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_PalLoupe_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.5"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_PalLoupe_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_PalLoupe_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_PalLoupe_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.8"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_PalLoupe_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.3"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 156.0,
+          "Bottom": 156.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_PalLoupe_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_PalLoupe_C:WidgetTree.Loupe_Angle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 120.0,
+          "Right": 72.0,
+          "Bottom": 20.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_PalLoupe_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.0"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_PalLoupe_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.1"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 80.0,
+          "Bottom": 80.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_PalLoupe_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_PalLoupe_C:WidgetTree.Loupe_Circle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 64.0,
+          "Bottom": 64.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_PalLoupe_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.0"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalCommonCharacterSlot_C'WBP_PalLoupe_C:WidgetTree.WBP_PalCommonCharacterSlot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.18"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 68.0,
+          "Bottom": 68.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_PalLoupe_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_PalLoupe_C:WidgetTree.Pal_base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 72.0,
+          "Bottom": 8.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_PalLoupe_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.1"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalLoupe_GaugeHP_C'WBP_PalLoupe_C:WidgetTree.WBP_PalLoupe_GaugeHP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 8.0,
+          "Right": 72.0,
+          "Bottom": 8.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_PalLoupe_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.1"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalLoupe_GaugeHunger_C'WBP_PalLoupe_C:WidgetTree.WBP_PalLoupe_GaugeHunger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.21"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Clear",
+    "Outer": "WBP_PalLoupe_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_PalLoupe",
+    "Outer": "WBP_PalLoupe_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_IndividualParameterBindWidget_C:OnUpdateHunger__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/IndividualParamBindWidget/WBP_IndividualParameterBindWidget.28"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_IndividualParameterBindWidget_C:OnUpdateHP__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/IndividualParamBindWidget/WBP_IndividualParameterBindWidget.26"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInitialized",
+    "Outer": "WBP_PalLoupe_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:OnInitialized'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetTargetPal",
+    "Outer": "WBP_PalLoupe_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "targetSlot",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterSlot'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateHP",
+    "Outer": "WBP_PalLoupe_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "nowHP",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'FixedPoint64'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "nowMaxHP",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'FixedPoint64'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Divide_FixedPoint64FixedPoint64_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FixedPoint64'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Convert_FixedPoint64ToFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SetPercent_percent_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateHunger",
+    "Outer": "WBP_PalLoupe_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "nowHunger",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "nowMaxHunger",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "Loupe_Angle",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 156.0,
+          "Y": 156.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_pal_loupe'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/InGame/T_prt_pal_loupe.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.427083,
+        "G": 0.865973,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "AFF0FF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_PalLoupe_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.2"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Loupe_Circle",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 80.0,
+          "Y": 80.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_pal_loupe_circle'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/InGame/T_prt_pal_loupe_circle.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.171875,
+        "G": 0.779111,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "73E5FF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_PalLoupe_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.4"
+      },
+      "RenderOpacity": 0.3
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Pal_base",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 68.0,
+          "Y": 68.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_pal_icon_base_s'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/InGame/T_prt_pal_icon_base_s.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_PalLoupe_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.6"
+      },
+      "RenderOpacity": 0.5
+    }
+  },
+  {
+    "Type": "WBP_PalCommonCharacterSlot_C",
+    "Name": "WBP_PalCommonCharacterSlot",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C'",
+    "Template": {
+      "ObjectName": "WBP_PalCommonCharacterSlot_C'Default__WBP_PalCommonCharacterSlot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/WBP_PalCommonCharacterSlot.170"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "isBattleModeDisplay": true,
+      "isLowHealthBlink": true,
+      "bIsDisplayDopingEffect": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_PalLoupe_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.5"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalLoupe_C",
+    "Name": "Default__WBP_PalLoupe_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.WBP_PalLoupe_C'",
+    "Template": {
+      "ObjectName": "WBP_IndividualParameterBindWidget_C'Default__WBP_IndividualParameterBindWidget_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/IndividualParamBindWidget/WBP_IndividualParameterBindWidget.63"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "IsBindHP": true,
+      "IsBindHunger": true
+    }
+  },
+  {
+    "Type": "WBP_PalLoupe_GaugeHP_C",
+    "Name": "WBP_PalLoupe_GaugeHP",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe_GaugeHP.WBP_PalLoupe_GaugeHP_C'",
+    "Template": {
+      "ObjectName": "WBP_PalLoupe_GaugeHP_C'Default__WBP_PalLoupe_GaugeHP_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe_GaugeHP.4"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_PalLoupe_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.7"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalLoupe_GaugeHunger_C",
+    "Name": "WBP_PalLoupe_GaugeHunger",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe_GaugeHunger.WBP_PalLoupe_GaugeHunger_C'",
+    "Template": {
+      "ObjectName": "WBP_PalLoupe_GaugeHunger_C'Default__WBP_PalLoupe_GaugeHunger_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe_GaugeHunger.4"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_PalLoupe_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.8"
+      }
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_PalLoupe_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "WidgetBlueprintGeneratedClass'WBP_IndividualParameterBindWidget_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/IndividualParamBindWidget/WBP_IndividualParameterBindWidget.64"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_PalLoupe_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.23"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_PalLoupe_C:ExecuteUbergraph_WBP_PalLoupe'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "WidgetBlueprintGeneratedClass'WBP_IndividualParameterBindWidget_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/IndividualParamBindWidget/WBP_IndividualParameterBindWidget.64"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_PalLoupe_C:UpdateHunger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.14"
+      },
+      {
+        "ObjectName": "Function'WBP_PalLoupe_C:UpdateHP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.13"
+      },
+      {
+        "ObjectName": "Function'WBP_PalLoupe_C:Clear'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.9"
+      },
+      {
+        "ObjectName": "Function'WBP_PalLoupe_C:SetTargetPal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.12"
+      },
+      {
+        "ObjectName": "Function'WBP_PalLoupe_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.11"
+      },
+      {
+        "ObjectName": "Function'WBP_PalLoupe_C:ExecuteUbergraph_WBP_PalLoupe'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.10"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Loupe_Angle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Loupe_Circle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Pal_base",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalCommonCharacterSlot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCommonCharacterSlot_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/WBP_PalCommonCharacterSlot.178"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalLoupe_GaugeHP",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalLoupe_GaugeHP_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe_GaugeHP.5"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalLoupe_GaugeHunger",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalLoupe_GaugeHunger_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe_GaugeHunger.5"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "targetHandle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterHandle'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_PalLoupe": {
+        "ObjectName": "Function'WBP_PalLoupe_C:ExecuteUbergraph_WBP_PalLoupe'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.10"
+      },
+      "OnInitialized": {
+        "ObjectName": "Function'WBP_PalLoupe_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.11"
+      },
+      "SetTargetPal": {
+        "ObjectName": "Function'WBP_PalLoupe_C:SetTargetPal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.12"
+      },
+      "Clear": {
+        "ObjectName": "Function'WBP_PalLoupe_C:Clear'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.9"
+      },
+      "UpdateHP": {
+        "ObjectName": "Function'WBP_PalLoupe_C:UpdateHP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.13"
+      },
+      "UpdateHunger": {
+        "ObjectName": "Function'WBP_PalLoupe_C:UpdateHunger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.14"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_PalLoupe_C'Default__WBP_PalLoupe_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.19"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_PalLoupe_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_PalLoupe_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PalLoupe/WBP_PalLoupe.0"
+      }
+    }
+  }
+]

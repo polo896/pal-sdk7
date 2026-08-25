@@ -1,0 +1,76 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_ShooterAnime_SniperRifle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ShooterAnime_AssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Palmi/ShooterAnimeBP/BP_ShooterAnime_AssaultRifle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ShooterAnime_AssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Palmi/ShooterAnimeBP/BP_ShooterAnime_AssaultRifle.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_ShooterAnime_SniperRifle_C'Default__BP_ShooterAnime_SniperRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Palmi/ShooterAnimeBP/BP_ShooterAnime_SniperRifle.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_ShooterAnime_SniperRifle_C",
+    "Name": "Default__BP_ShooterAnime_SniperRifle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Palmi/ShooterAnimeBP/BP_ShooterAnime_SniperRifle.BP_ShooterAnime_SniperRifle_C'",
+    "Template": {
+      "ObjectName": "BP_ShooterAnime_AssaultRifle_C'Default__BP_ShooterAnime_AssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Palmi/ShooterAnimeBP/BP_ShooterAnime_AssaultRifle.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimeInfo": {
+        "AnimationMap": [
+          {
+            "Key": "EWeaponAnimationType::PullTrigger",
+            "Value": {
+              "PoseMap": [
+                {
+                  "Key": "EWeaponAnimationPoseType::Stand",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Palmi_Fire_Shotgun'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Palmi/Shotgun/AM_Palmi_Fire_Shotgun.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Crouch",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Palmi_Fire_Shotgun'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Palmi/Shotgun/AM_Palmi_Fire_Shotgun.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Riding",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Palmi_AimFireLoop_AssaultRifle'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Palmi/AssaultRifle/AM_Palmi_AimFireLoop_AssaultRifle.0"
+                  }
+                }
+              ],
+              "isAutoStop": true,
+              "EndDelegateType": "EPalWeaponAnimationEndDelegateType::MontageBlendingOut"
+            }
+          }
+        ]
+      }
+    }
+  }
+]

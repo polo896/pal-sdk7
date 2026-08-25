@@ -1,0 +1,574 @@
+[
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Main",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "PLAYER_WEAPON_INFO_NOTHING_SPHERE"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "FontSizeOverride_VeryLarge": 17,
+      "Text": {
+        "Namespace": "",
+        "Key": "BE80AB7048C89C0E4F6C00906A532EF3",
+        "SourceString": "パルスフィアが無い！",
+        "LocalizedString": "パルスフィアが無い！"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.2,
+          "B": 0.2,
+          "A": 1.0,
+          "Hex": "FF7C7C"
+        }
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 1,
+          "OutlineBlur": 2,
+          "OutlineColor": {
+            "R": 0.07,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.5,
+            "Hex": "7F4B0000"
+          }
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 12
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.7"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.5"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.7"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.1"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 102.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.2"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -80.0,
+          "Right": -80.0,
+          "Bottom": 26.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.3"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.3"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.Text_Main'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.0"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Display",
+    "Outer": "WBP_Ingame_PlayerGauge_ThworObjectNone_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DIsplayTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_Time_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Hide",
+    "Outer": "WBP_Ingame_PlayerGauge_ThworObjectNone_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTimer_Hide",
+    "Outer": "WBP_Ingame_PlayerGauge_ThworObjectNone_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetDisplayMode",
+    "Outer": "WBP_Ingame_PlayerGauge_ThworObjectNone_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "DisplayType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'E_PalUIThrowObjectNoneMessageType'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/E_PalUIThrowObjectNoneMessageType.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "Base",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "Margin": {
+          "Left": 0.1,
+          "Top": 0.1,
+          "Right": 0.1,
+          "Bottom": 0.1
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_BaseGrdBoth'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Ingame/MI_UI_BaseGrdBoth.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.5,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.65,
+        "Hex": "A6BC0000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.6"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "WBP_Ingame_PlayerGauge_ThworObjectNone_C",
+    "Name": "Default__WBP_Ingame_PlayerGauge_ThworObjectNone_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.WBP_Ingame_PlayerGauge_ThworObjectNone_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIDMap": [
+        {
+          "Key": "E_PalUIThrowObjectNoneMessageType::NewEnumerator0",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "PLAYER_WEAPON_INFO_NOTHING_SPHERE"
+          }
+        },
+        {
+          "Key": "E_PalUIThrowObjectNoneMessageType::NewEnumerator1",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "PLAYER_PAL_THROW_NOTHING_PAL"
+          }
+        },
+        {
+          "Key": "E_PalUIThrowObjectNoneMessageType::NewEnumerator3",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "PLAYER_PAL_THROW_DEAD_PAL"
+          }
+        }
+      ],
+      "HideTimerHandle": {
+        "Handle": 0
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_Ingame_PlayerGauge_ThworObjectNone_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.15"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_ThworObjectNone_C:OnTimer_Hide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.10"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_ThworObjectNone_C:Hide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.9"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_ThworObjectNone_C:Display'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.8"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_ThworObjectNone_C:SetDisplayMode'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.11"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_Main",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "MsgIDMap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "ByteProperty",
+          "Name": "MsgIDMap",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "UserDefinedEnum'E_PalUIThrowObjectNoneMessageType'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/E_PalUIThrowObjectNoneMessageType.0"
+          }
+        },
+        "ValueProp": {
+          "Type": "StructProperty",
+          "Name": "MsgIDMap_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "ScriptStruct'DataTableRowHandle'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "HideTimerHandle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetDisplayMode": {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_ThworObjectNone_C:SetDisplayMode'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.11"
+      },
+      "Display": {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_ThworObjectNone_C:Display'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.8"
+      },
+      "Hide": {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_ThworObjectNone_C:Hide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.9"
+      },
+      "OnTimer_Hide": {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_ThworObjectNone_C:OnTimer_Hide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.10"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_Ingame_PlayerGauge_ThworObjectNone_C'Default__WBP_Ingame_PlayerGauge_ThworObjectNone_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.13"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_Ingame_PlayerGauge_ThworObjectNone_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_PlayerGauge_ThworObjectNone_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_ThworObjectNone.1"
+      }
+    }
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "Type": "PalMultiProductModeDataAsset",
+    "Name": "DA_MultiProduct_LoggingMining",
+    "Class": "UScriptClass'PalMultiProductModeDataAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ProductInfos": [
+        {
+          "ProductId": {
+            "Key": "StationDeforest2"
+          },
+          "AssignDefineId": "AncientMultiProduct_Deforest_0",
+          "VisualActorClass": {
+            "AssetPathName": "/Game/Pal/Blueprint/MapObject/BuildObject/MultiProduct/BP_BuildObjectMultiProductVisualActor_Logging.BP_BuildObjectMultiProductVisualActor_Logging_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "ProductId": {
+            "Key": "StonePit"
+          },
+          "AssignDefineId": "AncientMultiProduct_Mining_0",
+          "VisualActorClass": {
+            "AssetPathName": "/Game/Pal/Blueprint/MapObject/BuildObject/MultiProduct/BP_BuildObjectMultiProductVisualActor_Mining_Rock.BP_BuildObjectMultiProductVisualActor_Mining_Rock_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "ProductId": {
+            "Key": "StationDeforest3"
+          },
+          "AssignDefineId": "AncientMultiProduct_Deforest_1",
+          "VisualActorClass": {
+            "AssetPathName": "/Game/Pal/Blueprint/MapObject/BuildObject/MultiProduct/BP_BuildObjectMultiProductVisualActor_Logging2.BP_BuildObjectMultiProductVisualActor_Logging2_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "ProductId": {
+            "Key": "PalCrstalPit"
+          },
+          "AssignDefineId": "AncientMultiProduct_Mining_1",
+          "VisualActorClass": {
+            "AssetPathName": "/Game/Pal/Blueprint/MapObject/BuildObject/MultiProduct/BP_BuildObjectMultiProductVisualActor_Mining_PalCystal.BP_BuildObjectMultiProductVisualActor_Mining_PalCystal_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "ProductId": {
+            "Key": "CopperPit"
+          },
+          "AssignDefineId": "AncientMultiProduct_Mining_2",
+          "VisualActorClass": {
+            "AssetPathName": "/Game/Pal/Blueprint/MapObject/BuildObject/MultiProduct/BP_BuildObjectMultiProductVisualActor_Mining_Steel.BP_BuildObjectMultiProductVisualActor_Mining_Steel_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "ProductId": {
+            "Key": "CoalPit"
+          },
+          "AssignDefineId": "AncientMultiProduct_Mining_3",
+          "VisualActorClass": {
+            "AssetPathName": "/Game/Pal/Blueprint/MapObject/BuildObject/MultiProduct/BP_BuildObjectMultiProductVisualActor_Mining_Coal.BP_BuildObjectMultiProductVisualActor_Mining_Coal_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "ProductId": {
+            "Key": "ChromiumPit"
+          },
+          "AssignDefineId": "AncientMultiProduct_Mining_4",
+          "VisualActorClass": {
+            "AssetPathName": "/Game/Pal/Blueprint/MapObject/BuildObject/MultiProduct/BP_BuildObjectMultiProductVisualActor_Mining_Chromium.BP_BuildObjectMultiProductVisualActor_Mining_Chromium_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "ProductId": {
+            "Key": "SulfurPit"
+          },
+          "AssignDefineId": "AncientMultiProduct_Mining_5",
+          "VisualActorClass": {
+            "AssetPathName": "/Game/Pal/Blueprint/MapObject/BuildObject/MultiProduct/BP_BuildObjectMultiProductVisualActor_Mining_Sulfur.BP_BuildObjectMultiProductVisualActor_Mining_Sulfur_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "ProductId": {
+            "Key": "QuartzPit"
+          },
+          "AssignDefineId": "AncientMultiProduct_Mining_6",
+          "VisualActorClass": {
+            "AssetPathName": "/Game/Pal/Blueprint/MapObject/BuildObject/MultiProduct/BP_BuildObjectMultiProductVisualActor_Mining_PureQuartz.BP_BuildObjectMultiProductVisualActor_Mining_PureQuartz_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "ProductId": {
+            "Key": "CrystalPit"
+          },
+          "AssignDefineId": "AncientMultiProduct_Mining_7",
+          "VisualActorClass": {
+            "AssetPathName": "/Game/Pal/Blueprint/MapObject/BuildObject/MultiProduct/BP_BuildObjectMultiProductVisualActor_Mining_Crystal.BP_BuildObjectMultiProductVisualActor_Mining_Crystal_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "ProductId": {
+            "Key": "ManganesePit"
+          },
+          "AssignDefineId": "AncientMultiProduct_Mining_8",
+          "VisualActorClass": {
+            "AssetPathName": "/Game/Pal/Blueprint/MapObject/BuildObject/MultiProduct/BP_BuildObjectMultiProductVisualActor_Mining_Manganese_1.BP_BuildObjectMultiProductVisualActor_Mining_Manganese_1_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "ProductId": {
+            "Key": "SkyIslandOrePit"
+          },
+          "AssignDefineId": "AncientMultiProduct_Mining_9",
+          "VisualActorClass": {
+            "AssetPathName": "/Game/Pal/Blueprint/MapObject/BuildObject/MultiProduct/BP_BuildObjectMultiProductVisualActor_Mining_SkyIslandOre.BP_BuildObjectMultiProductVisualActor_Mining_SkyIslandOre_C",
+            "SubPathString": ""
+          }
+        }
+      ]
+    }
+  }
+]

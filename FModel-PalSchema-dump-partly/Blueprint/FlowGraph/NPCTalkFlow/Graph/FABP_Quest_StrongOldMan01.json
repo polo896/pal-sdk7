@@ -1,0 +1,701 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_0",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "09EB5FE0-45FC6DA1-DAFEA18F-514F46EC"
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "73A4C3C2-4713FA53-6935FFA0-AE7C65E4",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "A5814392-4319651B-76FFC083-7CC94A34",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Timer",
+    "Name": "FlowNode_Timer_1",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "UScriptClass'FlowNode_Timer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CompletionTime": 3.0,
+      "GraphNode": null,
+      "NodeGuid": "CE359250-46BC6383-0B1CC1A6-66C0C264"
+    }
+  },
+  {
+    "Type": "FlowNode_Timer",
+    "Name": "FlowNode_Timer_2",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "UScriptClass'FlowNode_Timer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CompletionTime": 2.0,
+      "GraphNode": null,
+      "NodeGuid": "A92E19C6-48C8215B-38A12597-4BADCBE7",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "5E44F112-41027B51-DD71469C-FA3A5C5A",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_CompleteQuest_C",
+    "Name": "FNBP_CompleteQuest_C_4",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.FNBP_CompleteQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_CompleteQuest_C'Default__FNBP_CompleteQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_StrongOldMan01"
+      },
+      "NetworkInvokeName": "CompleteQuest_Zoe04",
+      "GraphNode": null,
+      "NodeGuid": "249DAD28-4F2890CB-51AA118E-7395FA16"
+    }
+  },
+  {
+    "Type": "FNBP_FadeIn_C",
+    "Name": "FNBP_FadeIn_C_0",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.FNBP_FadeIn_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeIn_C'Default__FNBP_FadeIn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "0CCEA2D9-46CDE968-CE9162A3-6A7BC38B",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "F75976D4-4E54EC2B-498FFDAD-5EE0E6B9",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeOut_C",
+    "Name": "FNBP_FadeOut_C_0",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.FNBP_FadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeOut_C'Default__FNBP_FadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "5E44F112-41027B51-DD71469C-FA3A5C5A",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "88FBD112-45D79A07-671A91BD-743BCE33",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_COMPLETED_DESC_StrongOldMan_01"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "0E719EE4-4C2956E1-99A9118A-26E6F728"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_START_DESC_StrongOldMan_01_CHOICE_NO"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "0F66E843-4BBBC3E2-86593385-58BA3CE5"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_16",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_START_DESC_StrongOldMan_01"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "15D442B3-401CCC97-2A0BB2BF-59214361",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "5EE4BCB1-44FF8F3C-2AD52991-D5461F5F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_18",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_COMPLETED_DESC_StrongOldMan_01"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "7DBEEBD6-46276A77-F77A9FB2-6D862BE8",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "249DAD28-4F2890CB-51AA118E-7395FA16",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_START_DESC_StrongOldMan_01_LOOP"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "31CA0084-4A2B6771-C264FFB2-14772059",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "5EE4BCB1-44FF8F3C-2AD52991-D5461F5F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_3",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_START_DESC_StrongOldMan_01_CHOICE_YES"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "F75976D4-4E54EC2B-498FFDAD-5EE0E6B9",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "A1EA294F-4C1B69A8-9B208C8F-5A7ED0EE",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_INPROGRESS_DESC_Generic01"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "069ABE57-48A2E2AC-1B364A8E-9BD5D49C"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkBranch_Yes_No_C",
+    "Name": "FNBP_NPCTalkBranch_Yes_No_C_0",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.FNBP_NPCTalkBranch_Yes_No_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'Default__FNBP_NPCTalkBranch_Yes_No_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "5EE4BCB1-44FF8F3C-2AD52991-D5461F5F",
+      "OutputPins": [
+        {
+          "PinName": "CHOICE_YES",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "CHOICE_NO",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "CHOICE_YES",
+          "Value": {
+            "NodeGuid": "FB2BD8A4-4C58522C-6F8248A1-917D470B",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "CHOICE_NO",
+          "Value": {
+            "NodeGuid": "0F66E843-4BBBC3E2-86593385-58BA3CE5",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkCountBranch_C",
+    "Name": "FNBP_NPCTalkCountBranch_C_6",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkCountBranch.FNBP_NPCTalkCountBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkCountBranch_C'Default__FNBP_NPCTalkCountBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkCountBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "ACEB4360-4658F9A8-FAB2709F-953075B9",
+      "OutputPins": [
+        {
+          "PinName": "Loop",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "1",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "Loop",
+          "Value": {
+            "NodeGuid": "31CA0084-4A2B6771-C264FFB2-14772059",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "1",
+          "Value": {
+            "NodeGuid": "15D442B3-401CCC97-2A0BB2BF-59214361",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_4",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_StrongOldMan01"
+      },
+      "NetworkInvokeName": "Order_Sub_StrongOldMan01",
+      "GraphNode": null,
+      "NodeGuid": "FB2BD8A4-4C58522C-6F8248A1-917D470B",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "A92E19C6-48C8215B-38A12597-4BADCBE7",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_0",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_StrongOldMan01"
+      },
+      "GraphNode": null,
+      "NodeGuid": "A1EA294F-4C1B69A8-9B208C8F-5A7ED0EE"
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_3",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_StrongOldMan01"
+      },
+      "NetworkInvokeName": "None_1",
+      "GraphNode": null,
+      "NodeGuid": "88FBD112-45D79A07-671A91BD-743BCE33",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "09EB5FE0-45FC6DA1-DAFEA18F-514F46EC",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_3",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_StrongOldMan01_Return_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_StrongOldMan01_Return.0"
+      },
+      "QuestId": {
+        "RowName": "Sub_StrongOldMan01"
+      },
+      "GraphNode": null,
+      "NodeGuid": "16030902-44841D95-610E3EA5-4B2DEEB3",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "7DBEEBD6-46276A77-F77A9FB2-6D862BE8",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "069ABE57-48A2E2AC-1B364A8E-9BD5D49C",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_4",
+    "Outer": "FABP_Quest_StrongOldMan01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_StrongOldMan01"
+      },
+      "GraphNode": null,
+      "NodeGuid": "A5814392-4319651B-76FFC083-7CC94A34",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "ACEB4360-4658F9A8-FAB2709F-953075B9",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "16030902-44841D95-610E3EA5-4B2DEEB3",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "0E719EE4-4C2956E1-99A9118A-26E6F728",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_Quest_StrongOldMan01",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "4FF3FC35-4733ED43-DD4134AD-D4F7CE9B",
+      "Nodes": [
+        {
+          "Key": "73A4C3C2-4713FA53-6935FFA0-AE7C65E4",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_Quest_StrongOldMan01:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.1"
+          }
+        },
+        {
+          "Key": "A5814392-4319651B-76FFC083-7CC94A34",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_Quest_StrongOldMan01:FNBP_QuestBranch_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.20"
+          }
+        },
+        {
+          "Key": "15D442B3-401CCC97-2A0BB2BF-59214361",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_StrongOldMan01:FNBP_NPCTalk_FixedMsdId_C_16'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.9"
+          }
+        },
+        {
+          "Key": "FB2BD8A4-4C58522C-6F8248A1-917D470B",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_Quest_StrongOldMan01:FNBP_OrderQuest_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.16"
+          }
+        },
+        {
+          "Key": "F75976D4-4E54EC2B-498FFDAD-5EE0E6B9",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_StrongOldMan01:FNBP_NPCTalk_FixedMsdId_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.12"
+          }
+        },
+        {
+          "Key": "7DBEEBD6-46276A77-F77A9FB2-6D862BE8",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_StrongOldMan01:FNBP_NPCTalk_FixedMsdId_C_18'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.10"
+          }
+        },
+        {
+          "Key": "249DAD28-4F2890CB-51AA118E-7395FA16",
+          "Value": {
+            "ObjectName": "FNBP_CompleteQuest_C'FABP_Quest_StrongOldMan01:FNBP_CompleteQuest_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.4"
+          }
+        },
+        {
+          "Key": "A1EA294F-4C1B69A8-9B208C8F-5A7ED0EE",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_Quest_StrongOldMan01:FNBP_ProgressQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.17"
+          }
+        },
+        {
+          "Key": "16030902-44841D95-610E3EA5-4B2DEEB3",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_Quest_StrongOldMan01:FNBP_QuestBlockBranch_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.19"
+          }
+        },
+        {
+          "Key": "0E719EE4-4C2956E1-99A9118A-26E6F728",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_StrongOldMan01:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.7"
+          }
+        },
+        {
+          "Key": "069ABE57-48A2E2AC-1B364A8E-9BD5D49C",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_StrongOldMan01:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.13"
+          }
+        },
+        {
+          "Key": "ACEB4360-4658F9A8-FAB2709F-953075B9",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkCountBranch_C'FABP_Quest_StrongOldMan01:FNBP_NPCTalkCountBranch_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.15"
+          }
+        },
+        {
+          "Key": "5EE4BCB1-44FF8F3C-2AD52991-D5461F5F",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'FABP_Quest_StrongOldMan01:FNBP_NPCTalkBranch_Yes_No_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.14"
+          }
+        },
+        {
+          "Key": "0F66E843-4BBBC3E2-86593385-58BA3CE5",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_StrongOldMan01:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.8"
+          }
+        },
+        {
+          "Key": "31CA0084-4A2B6771-C264FFB2-14772059",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_StrongOldMan01:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.11"
+          }
+        },
+        {
+          "Key": "5E44F112-41027B51-DD71469C-FA3A5C5A",
+          "Value": {
+            "ObjectName": "FNBP_FadeOut_C'FABP_Quest_StrongOldMan01:FNBP_FadeOut_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.6"
+          }
+        },
+        {
+          "Key": "CE359250-46BC6383-0B1CC1A6-66C0C264",
+          "Value": {
+            "ObjectName": "FlowNode_Timer'FABP_Quest_StrongOldMan01:FlowNode_Timer_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.2"
+          }
+        },
+        {
+          "Key": "0CCEA2D9-46CDE968-CE9162A3-6A7BC38B",
+          "Value": {
+            "ObjectName": "FNBP_FadeIn_C'FABP_Quest_StrongOldMan01:FNBP_FadeIn_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.5"
+          }
+        },
+        {
+          "Key": "A92E19C6-48C8215B-38A12597-4BADCBE7",
+          "Value": {
+            "ObjectName": "FlowNode_Timer'FABP_Quest_StrongOldMan01:FlowNode_Timer_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.3"
+          }
+        },
+        {
+          "Key": "88FBD112-45D79A07-671A91BD-743BCE33",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_Quest_StrongOldMan01:FNBP_ProgressQuest_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.18"
+          }
+        },
+        {
+          "Key": "09EB5FE0-45FC6DA1-DAFEA18F-514F46EC",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_Quest_StrongOldMan01:FlowNode_Finish_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_StrongOldMan01.0"
+          }
+        }
+      ]
+    }
+  }
+]

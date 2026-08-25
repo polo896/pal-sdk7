@@ -1,0 +1,1356 @@
+[
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_100",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "SnowBoss2",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_SnowBoss3.T_Note_SnowBoss3",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_101",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "SnowBoss3",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_SnowBoss2.T_Note_SnowBoss2",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_102",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "VolcanoBoss1",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_VolcanoBoss1.T_Note_VolcanoBoss1",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_103",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "SakurajimaBoss1",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_SakurajimaBoss1.T_Note_SakurajimaBoss1",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_104",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "SakurajimaBoss2",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_SakurajimaBoss2.T_Note_SakurajimaBoss2",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_105",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "SakurajimaBoss3",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_SakurajimaBoss3_new.T_Note_SakurajimaBoss3_new",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_106",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "SakurajimaBoss4",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_SakurajimaBoss4.T_Note_SakurajimaBoss4",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_107",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "SakurajimaBoss5",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_SakurajimaBoss5.T_Note_SakurajimaBoss5",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_108",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "VikingBoss1",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_VikingBoss1.T_Note_VikingBoss1",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_109",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "VikingBoss2",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_VikingBoss2.T_Note_VikingBoss2",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_110",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "VikingBoss3",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_VikingBoss3.T_Note_VikingBoss3",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_111",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "VikingBoss4",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_VikingBoss4.T_Note_VikingBoss4",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_112",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "VikingBoss5",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_VikingBoss5.T_Note_VikingBoss5",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_113",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "SorajimaBoss1",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_SorajimaBoss1.T_Note_SorajimaBoss1",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_114",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "SorajimaBoss2",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_SorajimaBoss2.T_Note_SorajimaBoss2",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_115",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "SorajimaBoss3",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_SorajimaBoss3.T_Note_SorajimaBoss3",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_116",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "SorajimaBoss4",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_SorajimaBoss4.T_Note_SorajimaBoss4",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_117",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "SorajimaBoss5",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_SorajimaBoss5.T_Note_SorajimaBoss5",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_118",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "SorajimaBoss6",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_SorajimaBoss6.T_Note_SorajimaBoss6",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_119",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "WorldTree1",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_WorldTree1.T_Note_WorldTree1",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_120",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "WorldTree2",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_WorldTree2.T_Note_WorldTree2",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_121",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "WorldTree3",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_WorldTree3.T_Note_WorldTree3",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_122",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "WorldTreeBoss1",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_WorldTreeBoss1.T_Note_WorldTreeBoss1",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_123",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "WorldTreeBoss2",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_WorldTreeBoss2.T_Note_WorldTreeBoss2",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_124",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "WorldTreeBoss3",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_WorldTreeBoss3.T_Note_WorldTreeBoss3",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_125",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "WorldTreeBoss4",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_WorldTreeBoss4.T_Note_WorldTreeBoss4",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_126",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "WorldTreeBoss5",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_WorldTreeBoss5.T_Note_WorldTreeBoss5",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_127",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "WorldTreeBoss6",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_WorldTreeBoss6.T_Note_WorldTreeBoss6",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_64",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day-xx",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day-xx.T_Note_Day-xx",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_65",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day0",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day0.T_Note_Day0",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_66",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day1-1",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day1-1.T_Note_Day1-1",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_67",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day1-2",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day1-2.T_Note_Day1-2",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_68",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day2",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day2.T_Note_Day2",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_69",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day3",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day3_new.T_Note_Day3_new",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_70",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day5",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day5_new.T_Note_Day5_new",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_71",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day6",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day6_new.T_Note_Day6_new",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_72",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day8",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day8.T_Note_Day8",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_73",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day10",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day10.T_Note_Day10",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_74",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day11",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day11.T_Note_Day11",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_75",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day12-1",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day12-1.T_Note_Day12-1",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_76",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day12-2",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day12-2.T_Note_Day12-2",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_77",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day12-3",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day12-3_new.T_Note_Day12-3_new",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_78",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day13",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day13_new.T_Note_Day13_new",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_79",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day15",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day15.T_Note_Day15",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_80",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day18",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day18.T_Note_Day18",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_81",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day22",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day22.T_Note_Day22",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_82",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day25",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day25.T_Note_Day25",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_83",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day29",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day29.T_Note_Day29",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_84",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day30",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day30.T_Note_Day30",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_85",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day32",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day32.T_Note_Day32",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_86",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "Day38",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_Day38_new.T_Note_Day38_new",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_87",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "GrassBoss1",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_GrassBoss1.T_Note_GrassBoss1",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_88",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "GrassBoss2",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_GrassBoss2.T_Note_GrassBoss2",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_89",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "GrassBoss3",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_GrassBoss3.T_Note_GrassBoss3",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_90",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "GrassBoss4",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_GrassBoss4.T_Note_GrassBoss4",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_91",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "GrassBoss5",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_GrassBoss5.T_Note_GrassBoss5",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_92",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "ForestBoss1",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_ForestBoss1.T_Note_ForestBoss1",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_93",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "ForestBoss2",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_ForestBoss2.T_Note_ForestBoss2",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_94",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "ForestBoss3",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_ForestBoss3.T_Note_ForestBoss3",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_95",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "ForestBoss4",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_ForestBoss4_new.T_Note_ForestBoss4_new",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_96",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "DesertBoss1",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_DesertBoss1.T_Note_DesertBoss1",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_97",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "DesertBoss2",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_DesertBoss2_new.T_Note_DesertBoss2_new",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_98",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "DesertBoss3",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_DesertBoss3.T_Note_DesertBoss3",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteData",
+    "Name": "PalNoteData_99",
+    "Outer": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId_Description": "SnowBoss1",
+      "Texture": {
+        "AssetPathName": "/Game/Pal/Texture/Note/T_Note_SnowBoss1.T_Note_SnowBoss1",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "PalNoteDataAsset",
+    "Name": "DA_NoteDataAsset",
+    "Class": "UScriptClass'PalNoteDataAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NoteDataMap": [
+        {
+          "Key": "Day-xx",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_64'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.28"
+          }
+        },
+        {
+          "Key": "Day0",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_65'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.29"
+          }
+        },
+        {
+          "Key": "Day1-1",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_66'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.30"
+          }
+        },
+        {
+          "Key": "Day1-2",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_67'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.31"
+          }
+        },
+        {
+          "Key": "Day2",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_68'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.32"
+          }
+        },
+        {
+          "Key": "Day3",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_69'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.33"
+          }
+        },
+        {
+          "Key": "Day5",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_70'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.34"
+          }
+        },
+        {
+          "Key": "Day6",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_71'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.35"
+          }
+        },
+        {
+          "Key": "Day8",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_72'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.36"
+          }
+        },
+        {
+          "Key": "Day10",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_73'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.37"
+          }
+        },
+        {
+          "Key": "Day11",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_74'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.38"
+          }
+        },
+        {
+          "Key": "Day12-1",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_75'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.39"
+          }
+        },
+        {
+          "Key": "Day12-2",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_76'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.40"
+          }
+        },
+        {
+          "Key": "Day12-3",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_77'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.41"
+          }
+        },
+        {
+          "Key": "Day13",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_78'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.42"
+          }
+        },
+        {
+          "Key": "Day15",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_79'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.43"
+          }
+        },
+        {
+          "Key": "Day18",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_80'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.44"
+          }
+        },
+        {
+          "Key": "Day22",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_81'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.45"
+          }
+        },
+        {
+          "Key": "Day25",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_82'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.46"
+          }
+        },
+        {
+          "Key": "Day29",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_83'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.47"
+          }
+        },
+        {
+          "Key": "Day30",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_84'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.48"
+          }
+        },
+        {
+          "Key": "Day32",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_85'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.49"
+          }
+        },
+        {
+          "Key": "Day38",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_86'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.50"
+          }
+        },
+        {
+          "Key": "GrassBoss1",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_87'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.51"
+          }
+        },
+        {
+          "Key": "GrassBoss2",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_88'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.52"
+          }
+        },
+        {
+          "Key": "GrassBoss3",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_89'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.53"
+          }
+        },
+        {
+          "Key": "GrassBoss4",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_90'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.54"
+          }
+        },
+        {
+          "Key": "GrassBoss5",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_91'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.55"
+          }
+        },
+        {
+          "Key": "ForestBoss1",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_92'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.56"
+          }
+        },
+        {
+          "Key": "ForestBoss2",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_93'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.57"
+          }
+        },
+        {
+          "Key": "ForestBoss3",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_94'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.58"
+          }
+        },
+        {
+          "Key": "ForestBoss4",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_95'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.59"
+          }
+        },
+        {
+          "Key": "DesertBoss1",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_96'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.60"
+          }
+        },
+        {
+          "Key": "DesertBoss2",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_97'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.61"
+          }
+        },
+        {
+          "Key": "DesertBoss3",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_98'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.62"
+          }
+        },
+        {
+          "Key": "SnowBoss1",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_99'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.63"
+          }
+        },
+        {
+          "Key": "SnowBoss2",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_100'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.0"
+          }
+        },
+        {
+          "Key": "SnowBoss3",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_101'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.1"
+          }
+        },
+        {
+          "Key": "VolcanoBoss1",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_102'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.2"
+          }
+        },
+        {
+          "Key": "SakurajimaBoss1",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_103'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.3"
+          }
+        },
+        {
+          "Key": "SakurajimaBoss2",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_104'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.4"
+          }
+        },
+        {
+          "Key": "SakurajimaBoss3",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_105'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.5"
+          }
+        },
+        {
+          "Key": "SakurajimaBoss4",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_106'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.6"
+          }
+        },
+        {
+          "Key": "SakurajimaBoss5",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_107'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.7"
+          }
+        },
+        {
+          "Key": "VikingBoss1",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_108'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.8"
+          }
+        },
+        {
+          "Key": "VikingBoss2",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_109'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.9"
+          }
+        },
+        {
+          "Key": "VikingBoss3",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_110'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.10"
+          }
+        },
+        {
+          "Key": "VikingBoss4",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_111'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.11"
+          }
+        },
+        {
+          "Key": "VikingBoss5",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_112'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.12"
+          }
+        },
+        {
+          "Key": "SorajimaBoss1",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_113'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.13"
+          }
+        },
+        {
+          "Key": "SorajimaBoss2",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_114'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.14"
+          }
+        },
+        {
+          "Key": "SorajimaBoss3",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_115'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.15"
+          }
+        },
+        {
+          "Key": "SorajimaBoss4",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_116'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.16"
+          }
+        },
+        {
+          "Key": "SorajimaBoss5",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_117'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.17"
+          }
+        },
+        {
+          "Key": "SorajimaBoss6",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_118'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.18"
+          }
+        },
+        {
+          "Key": "WorldTree1",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_119'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.19"
+          }
+        },
+        {
+          "Key": "WorldTree2",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_120'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.20"
+          }
+        },
+        {
+          "Key": "WorldTree3",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_121'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.21"
+          }
+        },
+        {
+          "Key": "WorldTreeBoss1",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_122'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.22"
+          }
+        },
+        {
+          "Key": "WorldTreeBoss2",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_123'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.23"
+          }
+        },
+        {
+          "Key": "WorldTreeBoss3",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_124'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.24"
+          }
+        },
+        {
+          "Key": "WorldTreeBoss4",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_125'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.25"
+          }
+        },
+        {
+          "Key": "WorldTreeBoss5",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_126'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.26"
+          }
+        },
+        {
+          "Key": "WorldTreeBoss6",
+          "Value": {
+            "ObjectName": "PalNoteData'DA_NoteDataAsset:PalNoteData_127'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.27"
+          }
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,3639 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_33",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_13'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.3"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.1"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.4"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.5"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_11'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.2"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_33",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Image_Color'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.30"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasPanel_33",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 36.0,
+          "Bottom": 36.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Image_Icon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_13",
+    "Outer": "CanvasPanel_33",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 34.0,
+          "Bottom": 34.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Image_GuideIconShadow'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.33"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_33",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Image_Frame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_33",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -2.0,
+          "Top": -2.0,
+          "Right": -2.0,
+          "Bottom": -2.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Image_Frame_Focus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_33",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.0"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.71"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_33",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 2.0,
+          "Right": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.0"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Horizontal_KeyGuide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_33",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -5.0,
+          "Top": -5.0,
+          "Right": -5.0,
+          "Bottom": -5.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.0"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.72"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_IngameConstruction_Paint_Color",
+    "Outer": "WBP_IngameConstruction_Paint_Color_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetEndTime_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayAnimatio_Select",
+    "Outer": "WBP_IngameConstruction_Paint_Color_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayAnimation_ChangeColor",
+    "Outer": "WBP_IngameConstruction_Paint_Color_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayAnimation_Unselect",
+    "Outer": "WBP_IngameConstruction_Paint_Color_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Select",
+    "Outer": "WBP_IngameConstruction_Paint_Color_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetPaletteInfo",
+    "Outer": "WBP_IngameConstruction_Paint_Color_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Info",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'FPalUIPaintPaletteInfo'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BuildMenu/FPalUIPaintPaletteInfo.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_ColorToLinearColor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Unselect",
+    "Outer": "WBP_IngameConstruction_Paint_Color_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "Horizontal_KeyGuide",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Horizontal_KeyGuide.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.18"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Horizontal_KeyGuide.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.17"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Horizontal_KeyGuide.HorizontalBoxSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.19"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.7"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "Horizontal_KeyGuide",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Left",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Horizontal_KeyGuide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.16"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_IngameConstruction_Paint_Color_C:WidgetTree.SizeBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.83"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "Horizontal_KeyGuide",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Horizontal_KeyGuide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.16"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Spacer_74'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.86"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "Horizontal_KeyGuide",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Horizontal_KeyGuide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.16"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Spacer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.85"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.5,
+            "Hex": "7FFFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_picking_frame_Inner_grd_0'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/PickingGame/T_prt_picking_frame_Inner_grd_0.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_0.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.73"
+      },
+      "RenderTransform": {
+        "Angle": -90.0
+      },
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 12.0,
+          "Y": 4.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.456411,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "00B4FF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.76"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 4.0,
+          "Y": 12.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.456411,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "00B4FF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149.OverlaySlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.80"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 12.0,
+          "Y": 4.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.456411,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "00B4FF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149.OverlaySlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.79"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_4",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 4.0,
+          "Y": 12.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.456411,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "00B4FF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149.OverlaySlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.81"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_5",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 12.0,
+          "Y": 4.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.456411,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "00B4FF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149.OverlaySlot_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.82"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_50",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 32.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.7,
+            "Hex": "B3FFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_ResearchProgress_grd'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/Research/T_prt_ResearchProgress_grd.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_0.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.74"
+      },
+      "RenderTransform": {
+        "Angle": -90.0
+      },
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_6",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 4.0,
+          "Y": 12.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.456411,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "00B4FF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149.OverlaySlot_12'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.78"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_7",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 12.0,
+          "Y": 4.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.456411,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "00B4FF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149.OverlaySlot_11'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.77"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_81",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 4.0,
+          "Y": 12.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.456411,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "00B4FF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.75"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Color",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.1"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Frame",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_loadout_base'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/InGame/T_prt_loadout_base.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.4"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Frame_Focus",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 16.0,
+          "Y": 16.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_LineFrame_6'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Common/MI_UI_LineFrame_6.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.456411,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "00B4FF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.5"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_GuideIconShadow",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.5,
+            "Hex": "7FFFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_BaseSphereMask_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Ingame/MI_UI_BaseSphereMask_01.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.004025,
+        "G": 0.006995,
+        "B": 0.01033,
+        "A": 1.0,
+        "Hex": "0D141A"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_13'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.3"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": -1.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Icon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 48.0,
+          "Y": 48.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_Icon_BuildingReticle_2_Outline'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/InGame/T_Icon_BuildingReticle_2_Outline.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_11'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.2"
+      }
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Anm_ColorUpdate",
+    "Outer": "Anm_ColorUpdate_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "85530597-4F00EFB4-9E5646BA-31471CB8",
+          "Name": "Image_50",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "1E76E03B-4DCA32A6-46F86AB0-1C2CD672",
+          "Name": "Image",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "85530597-4F00EFB4-9E5646BA-31471CB8",
+          "BindingName": "Image_50",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieScene2DTransformTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.38"
+            },
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieSceneFloatTrack_1'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.65"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "1E76E03B-4DCA32A6-46F86AB0-1C2CD672",
+          "BindingName": "Image",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieSceneFloatTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.64"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 30001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 60
+      },
+      "Signature": "FB4786CC-42D78C24-1E0E3480-D75D70AF"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Anm_NormalToFocus",
+    "Outer": "Anm_NormalToFocus_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "16ACFB44-431C2B86-6AF1B289-0E07A6D1",
+          "Name": "Horizontal_KeyGuide",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "5DD9CF01-483D32E1-1C2338AF-E9BDE14F",
+          "Name": "Image_Frame_Focus",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "F77FCC6A-4112E5B1-40D49691-C09EF2F3",
+          "Name": "Overlay_149",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "DC23E467-4F39EDAD-6A91F0B2-B141A979",
+          "Name": "Image_Icon",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "FC9C3565-4B223C08-EA017BBB-3CC526EF",
+          "Name": "Image_GuideIconShadow",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "16ACFB44-431C2B86-6AF1B289-0E07A6D1",
+          "BindingName": "Horizontal_KeyGuide",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.66"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "5DD9CF01-483D32E1-1C2338AF-E9BDE14F",
+          "BindingName": "Image_Focus",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_1'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.67"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "F77FCC6A-4112E5B1-40D49691-C09EF2F3",
+          "BindingName": "Overlay_149",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_3'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.68"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "DC23E467-4F39EDAD-6A91F0B2-B141A979",
+          "BindingName": "Image_Icon",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_4'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.69"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "FC9C3565-4B223C08-EA017BBB-3CC526EF",
+          "BindingName": "Image_525",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_5'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.70"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 227
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 60
+      },
+      "Signature": "9037F6EF-4FAB0C69-C1E4AC89-2F2D2C9B"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Class": "UScriptClass'MovieScene2DTransformSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TransformMask": {
+        "mask": 3
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Translation[1]": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 30000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 35.0,
+            "Tangent": {
+              "ArriveTangent": -0.009254673,
+              "LeaveTangent": -0.009254673,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 1
+          },
+          {
+            "Value": -65.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.39"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.40"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 30000
+            }
+          }
+        }
+      },
+      "Signature": "EDD97EDC-459BC174-2542DA93-C870AA28"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "Anm_ColorUpdate",
+    "Class": "UScriptClass'MovieScene2DTransformTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderTransform",
+        "PropertyPath": "RenderTransform",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.37"
+        }
+      ],
+      "EvaluationFieldGuid": "146CD1D8-42CECFB8-D795BEB3-F3D0FF00",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene2DTransformSection'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.37"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 30000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "146CD1D8-42CECFB8-D795BEB3-F3D0FF00"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Anm_ColorUpdate_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 2,
+                  "Capacity": 2
+                },
+                {
+                  "StartIndex": 2,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 2,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                },
+                {
+                  "StartIndex": 1,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 30000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": 1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                },
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 15000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": 0
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 1
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene2DTransformSection'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.37"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.58"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 1
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.57"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 2
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "85530597-4F00EFB4-9E5646BA-31471CB8"
+          },
+          {
+            "ObjectBindingID": "85530597-4F00EFB4-9E5646BA-31471CB8"
+          },
+          {
+            "ObjectBindingID": "1E76E03B-4DCA32A6-46F86AB0-1C2CD672"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 15000
+          },
+          "SubFrame": 0.0
+        },
+        {
+          "FrameNumber": {
+            "Value": 30000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "F79F2CAB-44544040-A68AB499-6DEF9999",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Anm_NormalToFocus_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 5,
+                  "Capacity": 5
+                },
+                {
+                  "StartIndex": 5,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 2,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 3,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 4,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 2,
+                  "Capacity": 2
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 225
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                },
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 0,
+                      "Value": {
+                        "Value": 225
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 226
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 1
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.59"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.60"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 1
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_3.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.61"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 2
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_4.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.62"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 3
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_5.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.63"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 4
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "16ACFB44-431C2B86-6AF1B289-0E07A6D1"
+          },
+          {
+            "ObjectBindingID": "5DD9CF01-483D32E1-1C2338AF-E9BDE14F"
+          },
+          {
+            "ObjectBindingID": "F77FCC6A-4112E5B1-40D49691-C09EF2F3"
+          },
+          {
+            "ObjectBindingID": "DC23E467-4F39EDAD-6A91F0B2-B141A979"
+          },
+          {
+            "ObjectBindingID": "FC9C3565-4B223C08-EA017BBB-3CC526EF"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 225
+          },
+          "SubFrame": 0.0
+        },
+        {
+          "FrameNumber": {
+            "Value": 226
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "974887B9-4F086B94-284CF8A1-1F955843",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 3000
+          },
+          {
+            "Value": 15000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.41"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.42"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 15000
+            }
+          }
+        }
+      },
+      "Signature": "E3ED6A2C-4D691CF8-6F2C3CB7-F5FC86CB"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_1",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 27000
+          },
+          {
+            "Value": 30000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.43"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.44"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 30000
+            }
+          }
+        }
+      },
+      "Signature": "3868BEA6-46082ABE-8AB7BAA5-88566656"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 225
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.45"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.46"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 225
+            }
+          }
+        }
+      },
+      "Signature": "3F732113-4B9AC58C-E7D00984-4ED98B07"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_1",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 226
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.47"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.48"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 226
+            }
+          }
+        }
+      },
+      "Signature": "632A51B0-4E7E550E-1DFA8899-2FEAFC01"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_3",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 225
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_3.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.49"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_3.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.50"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 225
+            }
+          }
+        }
+      },
+      "Signature": "CD6BEEDB-4DBBA731-AE92D3BF-47829BD5"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_4",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 225
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_4.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.51"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_4.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.52"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 225
+            }
+          }
+        }
+      },
+      "Signature": "97A971C9-4F0C13B2-D6FB70AC-1597B998"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_5",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 225
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_5.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.53"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_5.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.54"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 225
+            }
+          }
+        }
+      },
+      "Signature": "AB6D0D9B-4B6C136D-822793BE-56A4BC19"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Anm_ColorUpdate",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.57"
+        }
+      ],
+      "EvaluationFieldGuid": "D039D94C-4AAEBD8B-229CE897-FC466DC3",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.57"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 15000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "D039D94C-4AAEBD8B-229CE897-FC466DC3"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_1",
+    "Outer": "Anm_ColorUpdate",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.58"
+        }
+      ],
+      "EvaluationFieldGuid": "6B889AF1-43EBC19E-B9DF77B3-9A659DC1",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.58"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 30000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "6B889AF1-43EBC19E-B9DF77B3-9A659DC1"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Anm_NormalToFocus",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.59"
+        }
+      ],
+      "EvaluationFieldGuid": "7CF46D03-419EC50D-6AA06A89-E28F0E2D",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.59"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 225
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "7CF46D03-419EC50D-6AA06A89-E28F0E2D"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_1",
+    "Outer": "Anm_NormalToFocus",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.60"
+        }
+      ],
+      "EvaluationFieldGuid": "E2872BD1-421E9854-22C8D9A3-EC824B2F",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.60"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 226
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "E2872BD1-421E9854-22C8D9A3-EC824B2F"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_3",
+    "Outer": "Anm_NormalToFocus",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_3.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.61"
+        }
+      ],
+      "EvaluationFieldGuid": "42A46066-4989AA89-352B6F9F-07676199",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_3.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.61"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 225
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "42A46066-4989AA89-352B6F9F-07676199"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_4",
+    "Outer": "Anm_NormalToFocus",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_4.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.62"
+        }
+      ],
+      "EvaluationFieldGuid": "FC128CD9-4B7BCD42-59E9B9A1-0D88BF86",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_4.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.62"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 225
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "FC128CD9-4B7BCD42-59E9B9A1-0D88BF86"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_5",
+    "Outer": "Anm_NormalToFocus",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_5.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.63"
+        }
+      ],
+      "EvaluationFieldGuid": "4F164F92-4878066B-79A348A8-8892E235",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus.MovieSceneFloatTrack_5.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.63"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 225
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "4F164F92-4878066B-79A348A8-8892E235"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_0.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.73"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_0.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.74"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.6"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_149",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.75"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.76"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149.OverlaySlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.80"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149.OverlaySlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.79"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149.OverlaySlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.81"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149.OverlaySlot_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.82"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149.OverlaySlot_12'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.78"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149.OverlaySlot_11'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.77"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.8"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.71"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Image'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.20"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.71"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Image_50'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.26"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_149",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.72"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Image_81'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.29"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_149",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.72"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Image_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.21"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_11",
+    "Outer": "Overlay_149",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.72"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Image_7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.28"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_12",
+    "Outer": "Overlay_149",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.72"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Image_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.27"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_3",
+    "Outer": "Overlay_149",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.72"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Image_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.23"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_4",
+    "Outer": "Overlay_149",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.72"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Image_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.22"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_6",
+    "Outer": "Overlay_149",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.72"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Image_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.24"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_8",
+    "Outer": "Overlay_149",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Overlay_149'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.72"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Image_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.25"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidthOverride": 28.0,
+      "HeightOverride": 28.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.SizeBox_1.SizeBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.84"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Horizontal_KeyGuide.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.17"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_1",
+    "Outer": "SizeBox_1",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_IngameConstruction_Paint_Color_C:WidgetTree.SizeBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.83"
+      },
+      "Content": {
+        "ObjectName": "WBP_PlayerInputKeyGuideIcon_C'WBP_IngameConstruction_Paint_Color_C:WidgetTree.WBP_PlayerInputKeyGuideIcon_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.88"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Horizontal_KeyGuide.HorizontalBoxSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.19"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_74",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.Horizontal_KeyGuide.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.18"
+      }
+    }
+  },
+  {
+    "Type": "WBP_IngameConstruction_Paint_Color_C",
+    "Name": "Default__WBP_IngameConstruction_Paint_Color_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.WBP_IngameConstruction_Paint_Color_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_PlayerInputKeyGuideIcon_C",
+    "Name": "WBP_PlayerInputKeyGuideIcon_0",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PlayerInputKeyGuideIcon.WBP_PlayerInputKeyGuideIcon_C'",
+    "Template": {
+      "ObjectName": "WBP_PlayerInputKeyGuideIcon_C'Default__WBP_PlayerInputKeyGuideIcon_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PlayerInputKeyGuideIcon.10"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "overrideImage": [
+        {
+          "Key": "ECommonInputType::Gamepad",
+          "Value": {
+            "ObjectName": "Texture2D'T_KeyGuide_CrossLR'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/KeyGuide/T_KeyGuide_CrossLR.0"
+          }
+        },
+        {
+          "Key": "ECommonInputType::MouseAndKeyboard",
+          "Value": {
+            "ObjectName": "Texture2D'T_MenuKeyGuide_MouseWheelAxis'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/KeyGuide/mouse/T_MenuKeyGuide_MouseWheelAxis.0"
+          }
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_IngameConstruction_Paint_Color_C:WidgetTree.SizeBox_1.SizeBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.84"
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Anm_ColorUpdate_INST",
+    "Outer": "WBP_IngameConstruction_Paint_Color_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.Anm_ColorUpdate'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.35"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "Image_50",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "85530597-4F00EFB4-9E5646BA-31471CB8",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Image",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "1E76E03B-4DCA32A6-46F86AB0-1C2CD672",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Anm_ColorUpdate",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.55"
+      },
+      "Signature": "F79F2CAB-44544040-A68AB499-6DEF9999"
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Anm_NormalToFocus_INST",
+    "Outer": "WBP_IngameConstruction_Paint_Color_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.Anm_NormalToFocus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.36"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "Horizontal_KeyGuide",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "16ACFB44-431C2B86-6AF1B289-0E07A6D1",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Image_Frame_Focus",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "5DD9CF01-483D32E1-1C2338AF-E9BDE14F",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Overlay_149",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "F77FCC6A-4112E5B1-40D49691-C09EF2F3",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Image_Icon",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "DC23E467-4F39EDAD-6A91F0B2-B141A979",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Image_GuideIconShadow",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "FC9C3565-4B223C08-EA017BBB-3CC526EF",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Anm_NormalToFocus",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.56"
+      },
+      "Signature": "974887B9-4F086B94-284CF8A1-1F955843"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_IngameConstruction_Paint_Color_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_IngameConstruction_Paint_Color_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.92"
+      },
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'WBP_IngameConstruction_Paint_Color_C:Anm_NormalToFocus_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.90"
+        },
+        {
+          "ObjectName": "WidgetAnimation'WBP_IngameConstruction_Paint_Color_C:Anm_ColorUpdate_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.89"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_IngameConstruction_Paint_Color_C:ExecuteUbergraph_WBP_IngameConstruction_Paint_Color'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_IngameConstruction_Paint_Color_C:SetPaletteInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.14"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameConstruction_Paint_Color_C:Unselect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.15"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameConstruction_Paint_Color_C:Select'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.13"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameConstruction_Paint_Color_C:PlayAnimatio_Select'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.10"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameConstruction_Paint_Color_C:PlayAnimation_Unselect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.12"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameConstruction_Paint_Color_C:PlayAnimation_ChangeColor'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.11"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameConstruction_Paint_Color_C:ExecuteUbergraph_WBP_IngameConstruction_Paint_Color'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.9"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Anm_ColorUpdate",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Anm_NormalToFocus",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Horizontal_KeyGuide",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_6",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_7",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_50",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_81",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Color",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Frame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Frame_Focus",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_GuideIconShadow",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Icon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PlayerInputKeyGuideIcon_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PlayerInputKeyGuideIcon_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PlayerInputKeyGuideIcon.11"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_IngameConstruction_Paint_Color": {
+        "ObjectName": "Function'WBP_IngameConstruction_Paint_Color_C:ExecuteUbergraph_WBP_IngameConstruction_Paint_Color'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.9"
+      },
+      "PlayAnimation_ChangeColor": {
+        "ObjectName": "Function'WBP_IngameConstruction_Paint_Color_C:PlayAnimation_ChangeColor'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.11"
+      },
+      "PlayAnimation_Unselect": {
+        "ObjectName": "Function'WBP_IngameConstruction_Paint_Color_C:PlayAnimation_Unselect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.12"
+      },
+      "PlayAnimatio_Select": {
+        "ObjectName": "Function'WBP_IngameConstruction_Paint_Color_C:PlayAnimatio_Select'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.10"
+      },
+      "Select": {
+        "ObjectName": "Function'WBP_IngameConstruction_Paint_Color_C:Select'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.13"
+      },
+      "Unselect": {
+        "ObjectName": "Function'WBP_IngameConstruction_Paint_Color_C:Unselect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.15"
+      },
+      "SetPaletteInfo": {
+        "ObjectName": "Function'WBP_IngameConstruction_Paint_Color_C:SetPaletteInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.14"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_IngameConstruction_Paint_Color_C'Default__WBP_IngameConstruction_Paint_Color_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.87"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_IngameConstruction_Paint_Color_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_IngameConstruction_Paint_Color_C:WidgetTree.CanvasPanel_33'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Construction/WBP_IngameConstruction_Paint_Color.0"
+      }
+    }
+  }
+]

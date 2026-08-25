@@ -1,0 +1,409 @@
+[
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_VolcanoVillage004",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "4B612685-4F8EC6BE-B3163E80-BFE26E13",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "819FBE16-4AF47B23-D9287C87-C908C05B",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_VolcanoVillage004",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "VolcanoVillage004_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "0F156D24-4D539E8F-858EE98C-F3A84DF5"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_VolcanoVillage004",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_CollectFineWood_Talk_010"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "D14A22C1-4027B4F7-4C37C889-CC08B18D",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "0B9ECA2F-4ADE9300-ABC764A1-860150BE",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_3",
+    "Outer": "FABP_VolcanoVillage004",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_CollectFineWood_Talk_020"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "6871AFF5-409505ED-673BD88E-27E4DDCB"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_VolcanoVillage004",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_CollectFineWood_Talk_020"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "DEA9CC1E-4FAEA345-3CA011AF-785C4A44"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_5",
+    "Outer": "FABP_VolcanoVillage004",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_CollectFineWood_Talk_030"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "003D4E4F-484959CF-4C8088A7-0470018E",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "1561D063-4DD30F06-835C7481-E50AA101",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_0",
+    "Outer": "FABP_VolcanoVillage004",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_DeliveryWood_Fine"
+      },
+      "NetworkInvokeName": "Order01",
+      "GraphNode": null,
+      "NodeGuid": "0B9ECA2F-4ADE9300-ABC764A1-860150BE"
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_0",
+    "Outer": "FABP_VolcanoVillage004",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_DeliveryWood_Fine"
+      },
+      "NetworkInvokeName": "Progress01",
+      "GraphNode": null,
+      "NodeGuid": "1561D063-4DD30F06-835C7481-E50AA101"
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_0",
+    "Outer": "FABP_VolcanoVillage004",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_Wood_Fine_Collect_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Wood_Fine_Collect.0"
+      },
+      "QuestId": {
+        "RowName": "Sub_DeliveryWood_Fine"
+      },
+      "GraphNode": null,
+      "NodeGuid": "B2A68C28-4E3C300D-DBB8DBB5-35778B1F",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "6871AFF5-409505ED-673BD88E-27E4DDCB",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "B5E8DC4E-489358DC-6EE22F97-90466614",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_1",
+    "Outer": "FABP_VolcanoVillage004",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_Wood_Fine_Deliver_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Wood_Fine_Deliver.0"
+      },
+      "QuestId": {
+        "RowName": "Sub_DeliveryWood_Fine"
+      },
+      "GraphNode": null,
+      "NodeGuid": "B5E8DC4E-489358DC-6EE22F97-90466614",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "9911FEE5-463E2519-C5F92D9D-2161511C",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_VolcanoVillage004",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_DeliveryWood_Fine"
+      },
+      "GraphNode": null,
+      "NodeGuid": "819FBE16-4AF47B23-D9287C87-C908C05B",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "D14A22C1-4027B4F7-4C37C889-CC08B18D",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "B2A68C28-4E3C300D-DBB8DBB5-35778B1F",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "0F156D24-4D539E8F-858EE98C-F3A84DF5",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestDeliveryItem_C",
+    "Name": "FNBP_QuestDeliveryItem_C_0",
+    "Outer": "FABP_VolcanoVillage004",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestDeliveryItem.FNBP_QuestDeliveryItem_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestDeliveryItem_C'Default__FNBP_QuestDeliveryItem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestDeliveryItem.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_DeliveryWood_Fine"
+      },
+      "NetworkInvokeName": "Delivery01",
+      "GraphNode": null,
+      "NodeGuid": "9911FEE5-463E2519-C5F92D9D-2161511C",
+      "Connections": [
+        {
+          "Key": "Complete",
+          "Value": {
+            "NodeGuid": "003D4E4F-484959CF-4C8088A7-0470018E",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Continue",
+          "Value": {
+            "NodeGuid": "DEA9CC1E-4FAEA345-3CA011AF-785C4A44",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_VolcanoVillage004",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "F98DC0A0-4C24A861-F7A5729A-0F97B4BC",
+      "Nodes": [
+        {
+          "Key": "0F156D24-4D539E8F-858EE98C-F3A84DF5",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_VolcanoVillage004:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_VolcanoVillage004.1"
+          }
+        },
+        {
+          "Key": "4B612685-4F8EC6BE-B3163E80-BFE26E13",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_VolcanoVillage004:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_VolcanoVillage004.0"
+          }
+        },
+        {
+          "Key": "819FBE16-4AF47B23-D9287C87-C908C05B",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_VolcanoVillage004:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_VolcanoVillage004.10"
+          }
+        },
+        {
+          "Key": "D14A22C1-4027B4F7-4C37C889-CC08B18D",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_VolcanoVillage004:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_VolcanoVillage004.2"
+          }
+        },
+        {
+          "Key": "0B9ECA2F-4ADE9300-ABC764A1-860150BE",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_VolcanoVillage004:FNBP_OrderQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_VolcanoVillage004.6"
+          }
+        },
+        {
+          "Key": "B2A68C28-4E3C300D-DBB8DBB5-35778B1F",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_VolcanoVillage004:FNBP_QuestBlockBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_VolcanoVillage004.8"
+          }
+        },
+        {
+          "Key": "6871AFF5-409505ED-673BD88E-27E4DDCB",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_VolcanoVillage004:FNBP_NPCTalk_FixedMsdId_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_VolcanoVillage004.3"
+          }
+        },
+        {
+          "Key": "B5E8DC4E-489358DC-6EE22F97-90466614",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_VolcanoVillage004:FNBP_QuestBlockBranch_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_VolcanoVillage004.9"
+          }
+        },
+        {
+          "Key": "9911FEE5-463E2519-C5F92D9D-2161511C",
+          "Value": {
+            "ObjectName": "FNBP_QuestDeliveryItem_C'FABP_VolcanoVillage004:FNBP_QuestDeliveryItem_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_VolcanoVillage004.11"
+          }
+        },
+        {
+          "Key": "DEA9CC1E-4FAEA345-3CA011AF-785C4A44",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_VolcanoVillage004:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_VolcanoVillage004.4"
+          }
+        },
+        {
+          "Key": "003D4E4F-484959CF-4C8088A7-0470018E",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_VolcanoVillage004:FNBP_NPCTalk_FixedMsdId_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_VolcanoVillage004.5"
+          }
+        },
+        {
+          "Key": "1561D063-4DD30F06-835C7481-E50AA101",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_VolcanoVillage004:FNBP_ProgressQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_VolcanoVillage004.7"
+          }
+        }
+      ]
+    }
+  }
+]

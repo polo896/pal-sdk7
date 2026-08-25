@@ -1,0 +1,1119 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_1",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "AA0BE0A4-42DFD294-F5F8589F-4FBCE423"
+    }
+  },
+  {
+    "Type": "FlowNode_Reroute",
+    "Name": "FlowNode_Reroute_0",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "UScriptClass'FlowNode_Reroute'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "6F16413C-43E98C72-3FFA428B-42B03259",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "D1459679-4AE6683A-49937BB4-661003AB",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Reroute",
+    "Name": "FlowNode_Reroute_1",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "UScriptClass'FlowNode_Reroute'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "D1459679-4AE6683A-49937BB4-661003AB",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "B189D87E-420B3601-98F2F9AE-DACC933B",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "7D532598-484C8A92-75C7C88A-F0C5B274",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "F531A665-4D20DD24-2F2278BA-97429BD4",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Lily_Talk_010"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "C4A595DA-481C7D4F-1423E59C-7D4762A5",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "308F5D05-496C6BF3-ACDA908C-C1A5A977",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Lily_Talk_010_Yes"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "0582FB25-40779A70-CC47B4AB-66B3258C",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "851D848B-4906D7AA-12773098-5C385F51",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_11",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Lily_Talk_070_Completed_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "6AD49702-4084DEFE-4237419F-1F0EC351"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Lily_Talk_010_No_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "CF8286C4-42FF0B1B-79FCEC92-16ACEBC0",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "308F5D05-496C6BF3-ACDA908C-C1A5A977",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_3",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Lily_Talk_010_No"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "46CFB59B-46B96000-90B41B90-C428B2B6"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Lily_Talk_010_Ordered_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "37C9A811-4348A857-7C4FFA9A-A9B05124"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_5",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Lily_Talk_030"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "628C31B3-431DBA8C-8528EC97-A4E6897D",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "6D14B265-42CA90A9-AB28BD84-F9668CD6",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_6",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Lily_Talk_030_Ordered_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "70992C3E-4D81B9DA-4CB05C84-3E158A46"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_7",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Lily_Talk_050"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "41D1F95A-461C7358-40C1979C-B18609F0",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "2310282B-4A4DC682-90E96F8D-17744E87",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_8",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Lily_Talk_050_Ordered_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "887DF5DA-455E8B61-9FFBACB2-49A3A54C"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_9",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Lily_Talk_070"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "A5988EF7-4EEC44BC-9D5D7399-01B1764F",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "D7E65273-40ABB8F3-9907AAB0-D8A0E407",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkBranch_Yes_No_C",
+    "Name": "FNBP_NPCTalkBranch_Yes_No_C_1",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.FNBP_NPCTalkBranch_Yes_No_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'Default__FNBP_NPCTalkBranch_Yes_No_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "308F5D05-496C6BF3-ACDA908C-C1A5A977",
+      "OutputPins": [
+        {
+          "PinName": "CHOICE_YES",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "CHOICE_NO",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "CHOICE_YES",
+          "Value": {
+            "NodeGuid": "0582FB25-40779A70-CC47B4AB-66B3258C",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "CHOICE_NO",
+          "Value": {
+            "NodeGuid": "46CFB59B-46B96000-90B41B90-C428B2B6",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkCountBranch_C",
+    "Name": "FNBP_NPCTalkCountBranch_C_6",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkCountBranch.FNBP_NPCTalkCountBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkCountBranch_C'Default__FNBP_NPCTalkCountBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkCountBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "B189D87E-420B3601-98F2F9AE-DACC933B",
+      "OutputPins": [
+        {
+          "PinName": "Loop",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "1",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "Loop",
+          "Value": {
+            "NodeGuid": "CF8286C4-42FF0B1B-79FCEC92-16ACEBC0",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "1",
+          "Value": {
+            "NodeGuid": "C4A595DA-481C7D4F-1423E59C-7D4762A5",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_0",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "NetworkInvokeName": "MainQuest_DefeatForestBoss",
+      "GraphNode": null,
+      "NodeGuid": "0A1F837C-41E98858-137192BA-1920BE9B",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "D0750E1D-47F2A258-AD2AF391-9C59E64A",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_0",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "NetworkInvokeName": "BP_MainQuestBlock_ForestBoss_Investigate",
+      "GraphNode": null,
+      "NodeGuid": "D9587296-492E358F-561A8DAD-70A66E38"
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_3",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "NetworkInvokeName": "BP_MainQuestBlock_ForestBoss_Investigate_LilyHouse",
+      "GraphNode": null,
+      "NodeGuid": "6D14B265-42CA90A9-AB28BD84-F9668CD6"
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_4",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "NetworkInvokeName": "BP_PalQuestBlock_TutorialDefeatForestBoss",
+      "GraphNode": null,
+      "NodeGuid": "2310282B-4A4DC682-90E96F8D-17744E87"
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_5",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "NetworkInvokeName": "BP_MainQuestBlock_ForestBoss_Complete",
+      "GraphNode": null,
+      "NodeGuid": "D7E65273-40ABB8F3-9907AAB0-D8A0E407"
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_6",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "NetworkInvokeName": "BP_MainQuestBlock_ForestBoss_Investigate_2",
+      "GraphNode": null,
+      "NodeGuid": "D0750E1D-47F2A258-AD2AF391-9C59E64A"
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_0",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_ForestBoss_Order_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_ForestBoss_Order.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "4BC5F368-4668894D-1B046E89-6BADBCAE",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "B189D87E-420B3601-98F2F9AE-DACC933B",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "B13940A5-4F1EE786-D48EA3B9-DAB592F7",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_1",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_ForestBoss_Investigate_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_ForestBoss_Investigate.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "B13940A5-4F1EE786-D48EA3B9-DAB592F7",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "37C9A811-4348A857-7C4FFA9A-A9B05124",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "208ECD6F-4E95BB03-EEFFCFA4-095CD25A",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_2",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_ForestBoss_Report_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_ForestBoss_Report.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "208ECD6F-4E95BB03-EEFFCFA4-095CD25A",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "628C31B3-431DBA8C-8528EC97-A4E6897D",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "94523555-4F87C11A-35291D9E-777AA8EB",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_3",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_ForestBoss_Investigate_LilyHouse_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_ForestBoss_Investigate_LilyHouse.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "94523555-4F87C11A-35291D9E-777AA8EB",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "70992C3E-4D81B9DA-4CB05C84-3E158A46",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "A2FCCBA4-47F1BF94-FA40ECA4-3D5F262A",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_4",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_ForestBoss_Report_2_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_ForestBoss_Report_2.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "A2FCCBA4-47F1BF94-FA40ECA4-3D5F262A",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "41D1F95A-461C7358-40C1979C-B18609F0",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "AC592F06-4FCEE535-BDB12FB2-6BD4B828",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_5",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalQuestBlock_TutorialDefeatForestBoss_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_TutorialDefeatForestBoss.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "AC592F06-4FCEE535-BDB12FB2-6BD4B828",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "887DF5DA-455E8B61-9FFBACB2-49A3A54C",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "6BAB0C19-4D77A1EB-33DE8C84-6445538B",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_6",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_ForestBoss_Complete_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_ForestBoss_Complete.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "6BAB0C19-4D77A1EB-33DE8C84-6445538B",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "A5988EF7-4EEC44BC-9D5D7399-01B1764F",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "AA0BE0A4-42DFD294-F5F8589F-4FBCE423",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "F531A665-4D20DD24-2F2278BA-97429BD4",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "6F16413C-43E98C72-3FFA428B-42B03259",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "4BC5F368-4668894D-1B046E89-6BADBCAE",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "6AD49702-4084DEFE-4237419F-1F0EC351",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_1",
+    "Outer": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "851D848B-4906D7AA-12773098-5C385F51",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "0A1F837C-41E98858-137192BA-1920BE9B",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "D9587296-492E358F-561A8DAD-70A66E38",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_Quest_U_Male_DTairikuPeople01_v01",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "1AA7F3A7-4A59F2BB-74EC98BC-866D1834",
+      "Nodes": [
+        {
+          "Key": "7D532598-484C8A92-75C7C88A-F0C5B274",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_Quest_U_Male_DTairikuPeople01_v01:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.3"
+          }
+        },
+        {
+          "Key": "F531A665-4D20DD24-2F2278BA-97429BD4",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.30"
+          }
+        },
+        {
+          "Key": "C4A595DA-481C7D4F-1423E59C-7D4762A5",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.4"
+          }
+        },
+        {
+          "Key": "851D848B-4906D7AA-12773098-5C385F51",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_QuestBranch_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.31"
+          }
+        },
+        {
+          "Key": "308F5D05-496C6BF3-ACDA908C-C1A5A977",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_NPCTalkBranch_Yes_No_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.15"
+          }
+        },
+        {
+          "Key": "0582FB25-40779A70-CC47B4AB-66B3258C",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.5"
+          }
+        },
+        {
+          "Key": "B189D87E-420B3601-98F2F9AE-DACC933B",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkCountBranch_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_NPCTalkCountBranch_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.16"
+          }
+        },
+        {
+          "Key": "CF8286C4-42FF0B1B-79FCEC92-16ACEBC0",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.7"
+          }
+        },
+        {
+          "Key": "46CFB59B-46B96000-90B41B90-C428B2B6",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_NPCTalk_FixedMsdId_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.8"
+          }
+        },
+        {
+          "Key": "4BC5F368-4668894D-1B046E89-6BADBCAE",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_QuestBlockBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.23"
+          }
+        },
+        {
+          "Key": "D9587296-492E358F-561A8DAD-70A66E38",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_ProgressQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.18"
+          }
+        },
+        {
+          "Key": "0A1F837C-41E98858-137192BA-1920BE9B",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_OrderQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.17"
+          }
+        },
+        {
+          "Key": "B13940A5-4F1EE786-D48EA3B9-DAB592F7",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_QuestBlockBranch_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.24"
+          }
+        },
+        {
+          "Key": "6F16413C-43E98C72-3FFA428B-42B03259",
+          "Value": {
+            "ObjectName": "FlowNode_Reroute'FABP_Quest_U_Male_DTairikuPeople01_v01:FlowNode_Reroute_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.1"
+          }
+        },
+        {
+          "Key": "D1459679-4AE6683A-49937BB4-661003AB",
+          "Value": {
+            "ObjectName": "FlowNode_Reroute'FABP_Quest_U_Male_DTairikuPeople01_v01:FlowNode_Reroute_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.2"
+          }
+        },
+        {
+          "Key": "37C9A811-4348A857-7C4FFA9A-A9B05124",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.9"
+          }
+        },
+        {
+          "Key": "208ECD6F-4E95BB03-EEFFCFA4-095CD25A",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_QuestBlockBranch_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.25"
+          }
+        },
+        {
+          "Key": "628C31B3-431DBA8C-8528EC97-A4E6897D",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_NPCTalk_FixedMsdId_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.10"
+          }
+        },
+        {
+          "Key": "94523555-4F87C11A-35291D9E-777AA8EB",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_QuestBlockBranch_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.26"
+          }
+        },
+        {
+          "Key": "70992C3E-4D81B9DA-4CB05C84-3E158A46",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_NPCTalk_FixedMsdId_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.11"
+          }
+        },
+        {
+          "Key": "A2FCCBA4-47F1BF94-FA40ECA4-3D5F262A",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_QuestBlockBranch_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.27"
+          }
+        },
+        {
+          "Key": "41D1F95A-461C7358-40C1979C-B18609F0",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_NPCTalk_FixedMsdId_C_7'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.12"
+          }
+        },
+        {
+          "Key": "AC592F06-4FCEE535-BDB12FB2-6BD4B828",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_QuestBlockBranch_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.28"
+          }
+        },
+        {
+          "Key": "887DF5DA-455E8B61-9FFBACB2-49A3A54C",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_NPCTalk_FixedMsdId_C_8'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.13"
+          }
+        },
+        {
+          "Key": "6BAB0C19-4D77A1EB-33DE8C84-6445538B",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_QuestBlockBranch_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.29"
+          }
+        },
+        {
+          "Key": "A5988EF7-4EEC44BC-9D5D7399-01B1764F",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_NPCTalk_FixedMsdId_C_9'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.14"
+          }
+        },
+        {
+          "Key": "6AD49702-4084DEFE-4237419F-1F0EC351",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_NPCTalk_FixedMsdId_C_11'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.6"
+          }
+        },
+        {
+          "Key": "AA0BE0A4-42DFD294-F5F8589F-4FBCE423",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_Quest_U_Male_DTairikuPeople01_v01:FlowNode_Finish_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.0"
+          }
+        },
+        {
+          "Key": "6D14B265-42CA90A9-AB28BD84-F9668CD6",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_ProgressQuest_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.19"
+          }
+        },
+        {
+          "Key": "2310282B-4A4DC682-90E96F8D-17744E87",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_ProgressQuest_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.20"
+          }
+        },
+        {
+          "Key": "D7E65273-40ABB8F3-9907AAB0-D8A0E407",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_ProgressQuest_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.21"
+          }
+        },
+        {
+          "Key": "D0750E1D-47F2A258-AD2AF391-9C59E64A",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_Quest_U_Male_DTairikuPeople01_v01:FNBP_ProgressQuest_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_U_Male_DTairikuPeople01_v01.22"
+          }
+        }
+      ]
+    }
+  }
+]

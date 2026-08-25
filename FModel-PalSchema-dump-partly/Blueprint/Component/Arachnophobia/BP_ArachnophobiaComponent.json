@@ -1,0 +1,59 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_ArachnophobiaComponent_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalArachnophobiaComponent'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CollapseCategories | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_ArachnophobiaComponent_C'Default__BP_ArachnophobiaComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Component/Arachnophobia/BP_ArachnophobiaComponent.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_ArachnophobiaComponent_C",
+    "Name": "Default__BP_ArachnophobiaComponent_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Component/Arachnophobia/BP_ArachnophobiaComponent.BP_ArachnophobiaComponent_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RandomSprite": [
+        {
+          "ObjectName": "Texture2D'T_CuteDog01'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Component/Arachnophobia/T_CuteDog01.0"
+        },
+        {
+          "ObjectName": "Texture2D'T_CuteDog02'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Component/Arachnophobia/T_CuteDog02.0"
+        },
+        {
+          "ObjectName": "Texture2D'T_CuteDog03'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Component/Arachnophobia/T_CuteDog03.0"
+        },
+        {
+          "ObjectName": "Texture2D'T_CuteCat01'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Component/Arachnophobia/T_CuteCat01.0"
+        },
+        {
+          "ObjectName": "Texture2D'T_CuteCat02'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Component/Arachnophobia/T_CuteCat02.0"
+        }
+      ],
+      "Sprite": null,
+      "bVisibleInRealTimeSkyCaptures": false,
+      "bVisibleInRayTracing": false
+    }
+  }
+]

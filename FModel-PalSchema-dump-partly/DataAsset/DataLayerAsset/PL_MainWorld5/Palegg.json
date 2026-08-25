@@ -1,0 +1,18 @@
+[
+  {
+    "Type": "DataLayerAsset",
+    "Name": "Palegg",
+    "Class": "UScriptClass'DataLayerAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DataLayerType": "EDataLayerType::Runtime",
+      "DebugColor": {
+        "B": 58,
+        "G": 227,
+        "R": 208,
+        "A": 255,
+        "Hex": "D0E33A"
+      }
+    }
+  }
+]

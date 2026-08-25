@@ -1,0 +1,60 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MainQuest_UnlockPalSphere_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MainQuest_UnlockPalSphere_C'Default__BP_MainQuest_UnlockPalSphere_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_UnlockPalSphere.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MainQuest_UnlockPalSphere_C",
+    "Name": "Default__BP_MainQuest_UnlockPalSphere_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_UnlockPalSphere.BP_MainQuest_UnlockPalSphere_C'",
+    "Template": {
+      "ObjectName": "BP_PalQuestDataBase_C'Default__BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestBlockGroupList": [
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_TutorialUnlockPalSphere.BP_PalQuestBlock_TutorialUnlockPalSphere_C",
+              "SubPathString": ""
+            }
+          ]
+        }
+      ],
+      "QuestTitleMsgId": "QUEST_MAIN_TITLE_UNLOCK_PALSPHERE",
+      "QuestDescriptionMsgId": "QUEST_MAIN_DESC_UNLOCK_PALSPHERE",
+      "AutoOrderQuests": [
+        "Main_CollectCrystal"
+      ],
+      "CommonRewardData": {
+        "Exp": 8
+      }
+    }
+  }
+]

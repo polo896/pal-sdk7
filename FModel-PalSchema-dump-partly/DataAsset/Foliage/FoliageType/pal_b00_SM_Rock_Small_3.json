@@ -1,0 +1,45 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "pal_b00_SM_Rock_Small_3",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_Rock_Small_3_top_longgrass2'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b00/Field_Asset_CustomLargeCliff/Mesh/top_long_grass/SM_Rock_Small_3_top_longgrass2.2"
+      },
+      "UpdateGuid": "D9EB10A2-406DBC4D-D8D7A487-213881FF",
+      "ScaleX": {
+        "Min": 0.5,
+        "Max": 0.8
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -0.7204437,
+          "Y": -0.75213146,
+          "Z": 4.461296
+        },
+        "BoxExtent": {
+          "X": 25.041672,
+          "Y": 27.1543,
+          "Z": 18.673378
+        },
+        "SphereRadius": 34.013360870000376
+      },
+      "LowBoundOriginRadius": {
+        "X": -3.5401535,
+        "Y": 0.88424206,
+        "Z": 30.501528
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      }
+    }
+  }
+]

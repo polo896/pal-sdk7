@@ -1,0 +1,834 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_LevelGimmick_Icicle_CosmeticIcicle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_LevelGimmick_Icicle_CosmeticIcicle_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.16"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:ExecuteUbergraph_BP_LevelGimmick_Icicle_CosmeticIcicle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalLevelGimmick_Icicle_CosmeticIcicle'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:GetIcicleNiagaraIndex'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.5"
+      },
+      {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:GetCurrentIcicleScale'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.4"
+      },
+      {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:GetIcicleNiagaraOffset'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.6"
+      },
+      {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:UpdateIcicleNiagara'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.10"
+      },
+      {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:SpawnIcicleNiagara'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.9"
+      },
+      {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:Deploy'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.2"
+      },
+      {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:ReceiveTick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.7"
+      },
+      {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:ResetState'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.8"
+      },
+      {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:ExecuteUbergraph_BP_LevelGimmick_Icicle_CosmeticIcicle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Arrow",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ArrowComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NiagaraIcicle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CurrentIcicleScale",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | AdvancedDisplay"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "TargetIcicleScale",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | AdvancedDisplay"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "GrowSpeed",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "IcicleNiagaraAssets",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "IcicleNiagaraAssets",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'NiagaraSystem'",
+            "ObjectPath": "/Script/Niagara"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "IcicleNiagaraIndex",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_LevelGimmick_Icicle_CosmeticIcicle": {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:ExecuteUbergraph_BP_LevelGimmick_Icicle_CosmeticIcicle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.3"
+      },
+      "ResetState": {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:ResetState'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.8"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:ReceiveTick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.7"
+      },
+      "Deploy": {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:Deploy'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.2"
+      },
+      "SpawnIcicleNiagara": {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:SpawnIcicleNiagara'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.9"
+      },
+      "UpdateIcicleNiagara": {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:UpdateIcicleNiagara'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.10"
+      },
+      "GetIcicleNiagaraOffset": {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:GetIcicleNiagaraOffset'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.6"
+      },
+      "GetCurrentIcicleScale": {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:GetCurrentIcicleScale'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.4"
+      },
+      "GetIcicleNiagaraIndex": {
+        "ObjectName": "Function'BP_LevelGimmick_Icicle_CosmeticIcicle_C:GetIcicleNiagaraIndex'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_LevelGimmick_Icicle_CosmeticIcicle_C'Default__BP_LevelGimmick_Icicle_CosmeticIcicle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_LevelGimmick_Icicle_CosmeticIcicle_C",
+    "Name": "Default__BP_LevelGimmick_Icicle_CosmeticIcicle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.BP_LevelGimmick_Icicle_CosmeticIcicle_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "TargetIcicleScale": 1.0,
+      "GrowSpeed": 0.2,
+      "IcicleNiagaraAssets": [
+        {
+          "ObjectName": "NiagaraSystem'NS_WorldTree_Gimmick_Icicle'",
+          "ObjectPath": "Pal/Content/Pal/Effect/Environment/Gimmick/NS_WorldTree_Gimmick_Icicle.32"
+        },
+        {
+          "ObjectName": "NiagaraSystem'NS_WorldTree_Gimmick_Icicle01'",
+          "ObjectPath": "Pal/Content/Pal/Effect/Environment/Gimmick/NS_WorldTree_Gimmick_Icicle01.32"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Deploy",
+    "Outer": "BP_LevelGimmick_Icicle_CosmeticIcicle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalLevelGimmick_Icicle_CosmeticIcicle:Deploy'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_LevelGimmick_Icicle_CosmeticIcicle",
+    "Outer": "BP_LevelGimmick_Icicle_CosmeticIcicle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetActorLocationAndRotation_SweepHitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 240,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_SetActorLocationAndRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_UpdateIcicleNiagara_DeltaSeconds_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetCurrentIcicleScale",
+    "Outer": "BP_LevelGimmick_Icicle_CosmeticIcicle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalLevelGimmick_Icicle_CosmeticIcicle:GetCurrentIcicleScale'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_FunctionResult_ReturnValue_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetIcicleNiagaraIndex",
+    "Outer": "BP_LevelGimmick_Icicle_CosmeticIcicle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalLevelGimmick_Icicle_CosmeticIcicle:GetIcicleNiagaraIndex'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetIcicleNiagaraOffset",
+    "Outer": "BP_LevelGimmick_Icicle_CosmeticIcicle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "ResultOffset",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Offset",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MapRangeClamped_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "BP_LevelGimmick_Icicle_CosmeticIcicle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ResetState",
+    "Outer": "BP_LevelGimmick_Icicle_CosmeticIcicle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalLevelGimmick_Icicle_CosmeticIcicle:ResetState'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SpawnIcicleNiagara",
+    "Outer": "BP_LevelGimmick_Icicle_CosmeticIcicle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetIcicleNiagaraOffset_ResultOffset",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetRelativeLocation_SweepHitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 240,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraSystem'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_RandomInteger_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateIcicleNiagara",
+    "Outer": "BP_LevelGimmick_Icicle_CosmeticIcicle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetFloatParameter_Param_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "NiagaraIcicle_GEN_VARIABLE",
+    "Outer": "BP_LevelGimmick_Icicle_CosmeticIcicle_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_WorldTree_Gimmick_Icicle'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Environment/Gimmick/NS_WorldTree_Gimmick_Icicle.32"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Animation_Scale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Animation_Scale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Spawn_Scale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Spawn_Scale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "IceLifeTime",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.IceLifeTime",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.Animation_Scale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 4,
+            "Name": "User.IceLifeTime",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 8,
+            "Name": "User.Spawn_Scale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          32,
+          65,
+          0,
+          0,
+          128,
+          63
+        ]
+      },
+      "RelativeLocation": {
+        "X": -500.0,
+        "Y": 0.0,
+        "Z": -1.0299788E-06
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_LevelGimmick_Icicle_CosmeticIcicle_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_LevelGimmick_Icicle_CosmeticIcicle_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.12"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_LevelGimmick_Icicle_CosmeticIcicle_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_LevelGimmick_Icicle_CosmeticIcicle_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.15"
+        }
+      ],
+      "VariableGuid": "F3C08C2F-41EC9D65-FACB1BAC-E34CE9AC",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'NiagaraComponent'",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent'BP_LevelGimmick_Icicle_CosmeticIcicle_C:NiagaraIcicle_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.11"
+      },
+      "VariableGuid": "1FBEE0E0-44CC7D73-69480C95-1B809F97",
+      "InternalVariableName": "NiagaraIcicle"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ArrowComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "VariableGuid": "62E77106-43BC451C-AE3130AD-3456C278",
+      "InternalVariableName": "Arrow"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_LevelGimmick_Icicle_CosmeticIcicle_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_LevelGimmick_Icicle_CosmeticIcicle_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.13"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_LevelGimmick_Icicle_CosmeticIcicle_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.13"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_LevelGimmick_Icicle_CosmeticIcicle_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_LevelGimmick_Icicle_CosmeticIcicle_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.15"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_LevelGimmick_Icicle_CosmeticIcicle_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickIcicle/BP_LevelGimmick_Icicle_CosmeticIcicle.13"
+      }
+    }
+  }
+]

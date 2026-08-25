@@ -1,0 +1,258 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SubQuestBlock_Zoe02_KillFPA_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalQuestBlock_CountKillEnemy'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_SubQuestBlock_Zoe02_KillFPA_C:GetProgressText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Zoe02_KillFPA.3"
+      },
+      {
+        "ObjectName": "Function'BP_SubQuestBlock_Zoe02_KillFPA_C:GetDescriptionText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Zoe02_KillFPA.2"
+      }
+    ],
+    "FuncMap": {
+      "GetDescriptionText": {
+        "ObjectName": "Function'BP_SubQuestBlock_Zoe02_KillFPA_C:GetDescriptionText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Zoe02_KillFPA.2"
+      },
+      "GetProgressText": {
+        "ObjectName": "Function'BP_SubQuestBlock_Zoe02_KillFPA_C:GetProgressText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Zoe02_KillFPA.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SubQuestBlock_Zoe02_KillFPA_C'Default__BP_SubQuestBlock_Zoe02_KillFPA_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Zoe02_KillFPA.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SubQuestBlock_Zoe02_KillFPA_C",
+    "Name": "Default__BP_SubQuestBlock_Zoe02_KillFPA_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Zoe02_KillFPA.BP_SubQuestBlock_Zoe02_KillFPA_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RequireCount": 5,
+      "bCountCapture": true,
+      "CountOnCapture": 1,
+      "CountHumanId": [
+        {
+          "Key": "Believer_Bat"
+        },
+        {
+          "Key": "Believer_CrossBow"
+        },
+        {
+          "Key": "Believer_Bat_Invader"
+        },
+        {
+          "Key": "Believer_CrossBow_Invader"
+        },
+        {
+          "Key": "Believer_Fat_GatlingGun"
+        },
+        {
+          "Key": "Believer_CrossBow_Tower"
+        },
+        {
+          "Key": "BOSS_Believer_CrossBow"
+        },
+        {
+          "Key": "BOSS_Believer_Fat_GiantClub"
+        },
+        {
+          "Key": "Believer_Fat_Cane"
+        },
+        {
+          "Key": "Believer_Prisoner"
+        },
+        {
+          "Key": "Believer_Fat_Prisoner"
+        },
+        {
+          "Key": "Believer_Bat_Camp02"
+        },
+        {
+          "Key": "Believer_CrossBow_Camp02"
+        }
+      ],
+      "IsAutoComplete": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetDescriptionText",
+    "Outer": "BP_SubQuestBlock_Zoe02_KillFPA_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalQuestBlock:GetDescriptionText'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "OutText",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NewLocalVar",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_MakeLiteralInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "CallFunc_Conv_IntToInt64_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 80,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetProgressText",
+    "Outer": "BP_SubQuestBlock_Zoe02_KillFPA_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalQuestBlock:GetProgressText'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "OutText",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "CallFunc_Conv_IntToInt64_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "CallFunc_Conv_IntToInt64_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_1",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 80,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

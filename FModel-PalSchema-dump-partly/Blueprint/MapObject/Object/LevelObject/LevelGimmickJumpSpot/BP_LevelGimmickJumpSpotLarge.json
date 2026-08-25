@@ -1,0 +1,611 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_LevelGimmickJumpSpotLarge_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_LevelGimmickJumpSpotLarge_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.17"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_LevelGimmickJumpSpotLarge_C:ExecuteUbergraph_BP_LevelGimmickJumpSpotLarge'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalLevelGimmickJumpSpot'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_LevelGimmickJumpSpotLarge_C:EventOnGetAkOwnerComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.3"
+      },
+      {
+        "ObjectName": "Function'BP_LevelGimmickJumpSpotLarge_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.6"
+      },
+      {
+        "ObjectName": "Function'BP_LevelGimmickJumpSpotLarge_C:OnLaunchCharacter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.5"
+      },
+      {
+        "ObjectName": "Function'BP_LevelGimmickJumpSpotLarge_C:ExecuteUbergraph_BP_LevelGimmickJumpSpotLarge'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "debug_arrow",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BoxComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ParticleSystemComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Cone",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PalSoundPlayerComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalSoundPlayerComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_LevelGimmickJumpSpotLarge": {
+        "ObjectName": "Function'BP_LevelGimmickJumpSpotLarge_C:ExecuteUbergraph_BP_LevelGimmickJumpSpotLarge'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.4"
+      },
+      "OnLaunchCharacter": {
+        "ObjectName": "Function'BP_LevelGimmickJumpSpotLarge_C:OnLaunchCharacter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.5"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_LevelGimmickJumpSpotLarge_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.6"
+      },
+      "EventOnGetAkOwnerComponent": {
+        "ObjectName": "Function'BP_LevelGimmickJumpSpotLarge_C:EventOnGetAkOwnerComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_LevelGimmickJumpSpotLarge_C'Default__BP_LevelGimmickJumpSpotLarge_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent_GEN_VARIABLE",
+    "Outer": "BP_LevelGimmickJumpSpotLarge_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 250.0,
+        "Y": 250.0,
+        "Z": 500.0
+      },
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_GameTraceChannel5",
+        "CollisionProfileName": "Volume_PawnOnly",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 100.0
+      }
+    }
+  },
+  {
+    "Type": "BP_LevelGimmickJumpSpotLarge_C",
+    "Name": "Default__BP_LevelGimmickJumpSpotLarge_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.BP_LevelGimmickJumpSpotLarge_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "JumpActionClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_Action_JumpFromJumpSpot_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_JumpFromJumpSpot.0"
+      },
+      "bPlayJumpPrepareMontage": true,
+      "JumpFowardVelocity": 1000.0,
+      "JumpZVelocity": 4000.0,
+      "Root": {
+        "ObjectName": "SceneComponent'Default__BP_LevelGimmickJumpSpotLarge_C:Root'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.10"
+      },
+      "PrimaryActorTick": {
+        "bStartWithTickEnabled": false,
+        "bAllowTickOnDedicatedServer": false
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_LevelGimmickJumpSpotLarge_C:Root'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.10"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "EventOnGetAkOwnerComponent",
+    "Outer": "BP_LevelGimmickJumpSpotLarge_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_K2_GetRootComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_LevelGimmickJumpSpotLarge",
+    "Outer": "BP_LevelGimmickJumpSpotLarge_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_PlayAkEventSoundByActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalSoundPlayerComponent:OnGetAkOwnerComponent__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnLaunchCharacter",
+    "Outer": "BP_LevelGimmickJumpSpotLarge_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalLevelGimmickJumpSpot:OnLaunchCharacter'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_LevelGimmickJumpSpotLarge_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "ParticleSystemComponent_GEN_VARIABLE",
+    "Outer": "BP_LevelGimmickJumpSpotLarge_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_JumpSpot'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Common/JumpSpot/NS_JumpSpot.111"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Scale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Scale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.Scale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          102,
+          102,
+          230,
+          63
+        ]
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 10.0
+      }
+    }
+  },
+  {
+    "Type": "PalSoundPlayerComponent",
+    "Name": "PalSoundPlayerComponent_GEN_VARIABLE",
+    "Outer": "BP_LevelGimmickJumpSpotLarge_C",
+    "Class": "UScriptClass'PalSoundPlayerComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PalSoundSlotClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Sound/BP_SoundSlot_GliderBase.BP_SoundSlot_GliderBase_C",
+        "SubPathString": ""
+      },
+      "AkComponentTickPolicy": "EPalAkComponentTickPolicy::TickOnlyWhilePlaying"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_LevelGimmickJumpSpotLarge_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Root",
+    "Outer": "Default__BP_LevelGimmickJumpSpotLarge_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_LevelGimmickJumpSpotLarge_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.9"
+      },
+      "VariableGuid": "6E75D820-4D0607CF-09B4C7AB-F14B6468",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'NiagaraComponent'",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent'BP_LevelGimmickJumpSpotLarge_C:ParticleSystemComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.7"
+      },
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "A9391107-40308FB7-E85CF498-5B57E4DE",
+      "InternalVariableName": "ParticleSystemComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_LevelGimmickJumpSpotLarge_C:BoxComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.1"
+      },
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "722CBCA6-4FAE30CA-64D8CA8C-0A183EAE",
+      "InternalVariableName": "BoxComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalSoundPlayerComponent'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalSoundPlayerComponent'BP_LevelGimmickJumpSpotLarge_C:PalSoundPlayerComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.8"
+      },
+      "VariableGuid": "0B2916F5-4A4869A0-375030B1-3E2C4A4B",
+      "InternalVariableName": "PalSoundPlayerComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_LevelGimmickJumpSpotLarge_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.16"
+        }
+      ],
+      "VariableGuid": "65D6FA2B-48C525B3-C6B85390-FA44A885",
+      "InternalVariableName": "debug_arrow"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "VariableGuid": "76C6F2AA-434A63A9-AEAD0A82-F5D2AEF6",
+      "InternalVariableName": "Cone"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_LevelGimmickJumpSpotLarge_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_LevelGimmickJumpSpotLarge_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_LevelGimmickJumpSpotLarge_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_LevelGimmickJumpSpotLarge_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.13"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_LevelGimmickJumpSpotLarge_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.15"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_LevelGimmickJumpSpotLarge_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_LevelGimmickJumpSpotLarge_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.16"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_LevelGimmickJumpSpotLarge_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_LevelGimmickJumpSpotLarge_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.13"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_LevelGimmickJumpSpotLarge_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.15"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_LevelGimmickJumpSpotLarge_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_LevelGimmickJumpSpotLarge.11"
+      }
+    }
+  }
+]

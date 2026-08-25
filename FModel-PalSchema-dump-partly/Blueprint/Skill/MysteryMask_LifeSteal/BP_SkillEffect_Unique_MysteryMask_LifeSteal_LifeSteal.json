@@ -1,0 +1,405 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.11"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.5"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:ExecuteUbergraph_BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.4"
+      },
+      {
+        "ObjectName": "Function'BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:ExecuteUbergraph_BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.2"
+      },
+      {
+        "ObjectName": "Function'BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:OnAttack__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Sphere",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SphereComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Duration",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnAttack",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:OnAttack__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.3"
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "PreHPMap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "ObjectProperty",
+          "Name": "PreHPMap",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'Actor'",
+            "ObjectPath": "/Script/Engine"
+          }
+        },
+        "ValueProp": {
+          "Type": "IntProperty",
+          "Name": "PreHPMap_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Defenders",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "Defenders",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'Actor'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnAttack__DelegateSignature": {
+        "ObjectName": "Function'BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:OnAttack__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.3"
+      },
+      "ExecuteUbergraph_BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal": {
+        "ObjectName": "Function'BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:ExecuteUbergraph_BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.2"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C'Default__BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C",
+    "Name": "Default__BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C'",
+    "Template": {
+      "ObjectName": "BP_SkillEffectBase_C'Default__BP_SkillEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Duration": 0.1,
+      "AttackFilter": {
+        "ObjectName": "PalAttackFilter'Default__BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:PalAttackFilter_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.6"
+      },
+      "HitFilterGround": {
+        "ObjectName": "PalHitFilter'Default__BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:PalHitFilter_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.7"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal",
+    "Outer": "BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAttack__DelegateSignature",
+    "Outer": "BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Damage",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_SkillEffectBase_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.27"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_SkillEffectBase_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.27"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalAttackFilter",
+    "Name": "PalAttackFilter_0",
+    "Outer": "Default__BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C",
+    "Class": "UScriptClass'PalAttackFilter'",
+    "Template": {
+      "ObjectName": "PalAttackFilter'Default__BP_SkillEffectBase_C:PalAttackFilter_0'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.34"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Waza": "EPalWazaID::Unique_MysteryMask_LifeSteal",
+      "WazaPowerRate": 0.166667
+    }
+  },
+  {
+    "Type": "PalHitFilter",
+    "Name": "PalHitFilter_1",
+    "Outer": "Default__BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C",
+    "Class": "UScriptClass'PalHitFilter'",
+    "Template": {
+      "ObjectName": "PalHitFilter'Default__BP_SkillEffectBase_C:PalHitFilter_1'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.35"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.8"
+      },
+      "VariableGuid": "54E1A5E6-405A7E73-F11C74A6-A954E9D9",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SphereComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SphereComponent'BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:Sphere_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.12"
+      },
+      "ParentComponentOrVariableName": "MovementSphereRoot",
+      "ParentComponentOwnerClassName": "BP_SkillEffectBase_C",
+      "VariableGuid": "89B3ED6B-4E3EE478-632DEC94-851CD303",
+      "InternalVariableName": "Sphere"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.10"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.10"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/MysteryMask_LifeSteal/BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal.9"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "Sphere_GEN_VARIABLE",
+    "Outer": "BP_SkillEffect_Unique_MysteryMask_LifeSteal_LifeSteal_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SphereRadius": 100.0,
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_GameTraceChannel2",
+        "CollisionProfileName": "Attack",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "AttackHitOnly",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

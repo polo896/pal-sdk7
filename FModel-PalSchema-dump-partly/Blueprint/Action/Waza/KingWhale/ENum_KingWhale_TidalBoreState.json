@@ -1,0 +1,56 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "ENum_KingWhale_TidalBoreState",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "27A1C4F54382FE61EB1F36A1CCA685F2",
+            "SourceString": "Start",
+            "LocalizedString": "Start"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "DC4DA3BD46287A94153BFE9F7D26DF10",
+            "SourceString": "Attack",
+            "LocalizedString": "Attack"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "3CE689DE4EB648D2F4B7EAA622E0F02D",
+            "SourceString": "Down",
+            "LocalizedString": "Down"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "643438234DB3468B730BA4B24503E15A",
+            "SourceString": "End",
+            "LocalizedString": "End"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "ENum_KingWhale_TidalBoreState::NewEnumerator0": 0,
+      "ENum_KingWhale_TidalBoreState::NewEnumerator1": 1,
+      "ENum_KingWhale_TidalBoreState::NewEnumerator2": 2,
+      "ENum_KingWhale_TidalBoreState::NewEnumerator3": 3,
+      "ENum_KingWhale_TidalBoreState::ENum_KingWhale_MAX": 4
+    },
+    "CppForm": "Namespaced"
+  }
+]

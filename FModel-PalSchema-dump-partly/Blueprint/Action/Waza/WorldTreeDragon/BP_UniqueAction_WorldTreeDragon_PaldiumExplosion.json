@@ -1,0 +1,3589 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ActionUniqueAttackBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionUniqueAttackBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:ExecuteUbergraph_BP_UniqueAction_WorldTreeDragon_PaldiumExplosion'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ActionUniqueAttackBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionUniqueAttackBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:GetCenterEffectClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.6"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:SetWarning'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.31"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:GetWingClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.8"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:ResetWingCollision'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.30"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:IsWingListMatch'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.9"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:GetRotation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.7"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:TickAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.33"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:SpawnWingCharge'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.32"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:DamageWing'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.4"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnNotifyEnd_B2567C5942FF7778FF49EFB9D72E59F8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.28"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnNotifyBegin_B2567C5942FF7778FF49EFB9D72E59F8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.25"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnInterrupted_B2567C5942FF7778FF49EFB9D72E59F8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.20"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnBlendOut_B2567C5942FF7778FF49EFB9D72E59F8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.13"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnCompleted_B2567C5942FF7778FF49EFB9D72E59F8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.16"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnNotifyEnd_724483D9409A2A1F8648F78B28A9E2CC'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.27"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnNotifyBegin_724483D9409A2A1F8648F78B28A9E2CC'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.24"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnInterrupted_724483D9409A2A1F8648F78B28A9E2CC'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.19"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnBlendOut_724483D9409A2A1F8648F78B28A9E2CC'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.12"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnCompleted_724483D9409A2A1F8648F78B28A9E2CC'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.15"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnNotifyEnd_31018891402F2DF053710BA5285FE5CF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.26"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnNotifyBegin_31018891402F2DF053710BA5285FE5CF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.23"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnInterrupted_31018891402F2DF053710BA5285FE5CF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.18"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnBlendOut_31018891402F2DF053710BA5285FE5CF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.11"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnCompleted_31018891402F2DF053710BA5285FE5CF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.14"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnBeginAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.10"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnEndAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.17"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnMontageEnd'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.21"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnMontageNotifyBegin'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.22"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:ActEnd'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.3"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:ActCancel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.2"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:WingsReturnNormalState'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.34"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:ProcessExplode'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.29"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:ExecuteUbergraph_BP_UniqueAction_WorldTreeDragon_PaldiumExplosion'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Montage List",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Montage List",
+          "Flags": "RF_Public",
+          "ElementSize": 16,
+          "Struct": {
+            "ObjectName": "ScriptStruct'ReserveMontage'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "MaxChargeTime",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CurrentTimer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ABP World Tree Dragon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "AnimBlueprintGeneratedClass'ABP_WorldTreeDragon_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/WorldTreeDragon/ABP_WorldTreeDragon.1"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "WingDamageInfo",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "WingDamageInfo",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "WingMontageInfo",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | BlueprintReadOnly | DisableEditOnInstance | ContainsInstancedReference",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "WingMontageInfo",
+          "Flags": "RF_Public",
+          "ElementSize": 48,
+          "PropertyFlags": "ContainsInstancedReference",
+          "Struct": {
+            "ObjectName": "UserDefinedStruct'Struct_WingDamageMontageInfo'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/Struct_WingDamageMontageInfo.0"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "WingEffects",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "WingEffects",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Wing_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/WorldTreeDragon_PaldiumExplosion/BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Wing.0"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "AdjustPosition",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnPosition",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "OriginalLocation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AdjustOffset",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TargetLocation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "AdjustAlpha",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MoveCurve",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CurveFloat'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "WingAngleMap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | BlueprintReadOnly | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "DoubleProperty",
+          "Name": "WingAngleMap",
+          "Flags": "RF_Public",
+          "ElementSize": 8
+        },
+        "ValueProp": {
+          "Type": "StructProperty",
+          "Name": "WingAngleMap_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "ScriptStruct'Vector'",
+            "ObjectPath": "/Script/CoreUObject"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "FaceDirect",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "OriginalTickOption",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Enum": {
+          "ObjectName": "Enum'EVisibilityBasedAnimTickOption'",
+          "ObjectPath": "/Script/Engine"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EVisibilityBasedAnimTickOption'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CenterLocation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CenterEffect",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Center_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/WorldTreeDragon_PaldiumExplosion/BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Center.0"
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "SocketMap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | BlueprintReadOnly | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "NameProperty",
+          "Name": "SocketMap",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        },
+        "ValueProp": {
+          "Type": "NameProperty",
+          "Name": "SocketMap_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_UniqueAction_WorldTreeDragon_PaldiumExplosion": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:ExecuteUbergraph_BP_UniqueAction_WorldTreeDragon_PaldiumExplosion'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.5"
+      },
+      "ProcessExplode": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:ProcessExplode'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.29"
+      },
+      "WingsReturnNormalState": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:WingsReturnNormalState'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.34"
+      },
+      "ActCancel": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:ActCancel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.2"
+      },
+      "ActEnd": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:ActEnd'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.3"
+      },
+      "OnMontageNotifyBegin": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnMontageNotifyBegin'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.22"
+      },
+      "OnMontageEnd": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnMontageEnd'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.21"
+      },
+      "OnEndAction": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnEndAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.17"
+      },
+      "OnBeginAction": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnBeginAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.10"
+      },
+      "OnCompleted_31018891402F2DF053710BA5285FE5CF": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnCompleted_31018891402F2DF053710BA5285FE5CF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.14"
+      },
+      "OnBlendOut_31018891402F2DF053710BA5285FE5CF": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnBlendOut_31018891402F2DF053710BA5285FE5CF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.11"
+      },
+      "OnInterrupted_31018891402F2DF053710BA5285FE5CF": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnInterrupted_31018891402F2DF053710BA5285FE5CF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.18"
+      },
+      "OnNotifyBegin_31018891402F2DF053710BA5285FE5CF": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnNotifyBegin_31018891402F2DF053710BA5285FE5CF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.23"
+      },
+      "OnNotifyEnd_31018891402F2DF053710BA5285FE5CF": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnNotifyEnd_31018891402F2DF053710BA5285FE5CF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.26"
+      },
+      "OnCompleted_724483D9409A2A1F8648F78B28A9E2CC": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnCompleted_724483D9409A2A1F8648F78B28A9E2CC'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.15"
+      },
+      "OnBlendOut_724483D9409A2A1F8648F78B28A9E2CC": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnBlendOut_724483D9409A2A1F8648F78B28A9E2CC'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.12"
+      },
+      "OnInterrupted_724483D9409A2A1F8648F78B28A9E2CC": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnInterrupted_724483D9409A2A1F8648F78B28A9E2CC'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.19"
+      },
+      "OnNotifyBegin_724483D9409A2A1F8648F78B28A9E2CC": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnNotifyBegin_724483D9409A2A1F8648F78B28A9E2CC'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.24"
+      },
+      "OnNotifyEnd_724483D9409A2A1F8648F78B28A9E2CC": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnNotifyEnd_724483D9409A2A1F8648F78B28A9E2CC'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.27"
+      },
+      "OnCompleted_B2567C5942FF7778FF49EFB9D72E59F8": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnCompleted_B2567C5942FF7778FF49EFB9D72E59F8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.16"
+      },
+      "OnBlendOut_B2567C5942FF7778FF49EFB9D72E59F8": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnBlendOut_B2567C5942FF7778FF49EFB9D72E59F8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.13"
+      },
+      "OnInterrupted_B2567C5942FF7778FF49EFB9D72E59F8": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnInterrupted_B2567C5942FF7778FF49EFB9D72E59F8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.20"
+      },
+      "OnNotifyBegin_B2567C5942FF7778FF49EFB9D72E59F8": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnNotifyBegin_B2567C5942FF7778FF49EFB9D72E59F8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.25"
+      },
+      "OnNotifyEnd_B2567C5942FF7778FF49EFB9D72E59F8": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:OnNotifyEnd_B2567C5942FF7778FF49EFB9D72E59F8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.28"
+      },
+      "DamageWing": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:DamageWing'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.4"
+      },
+      "SpawnWingCharge": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:SpawnWingCharge'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.32"
+      },
+      "TickAction": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:TickAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.33"
+      },
+      "GetRotation": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:GetRotation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.7"
+      },
+      "IsWingListMatch": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:IsWingListMatch'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.9"
+      },
+      "ResetWingCollision": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:ResetWingCollision'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.30"
+      },
+      "GetWingClass": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:GetWingClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.8"
+      },
+      "SetWarning": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:SetWarning'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.31"
+      },
+      "GetCenterEffectClass": {
+        "ObjectName": "Function'BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C:GetCenterEffectClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.6"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C'Default__BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Name": "Default__BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/BP_UniqueAction_WorldTreeDragon_PaldiumExplosion.BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C'",
+    "Template": {
+      "ObjectName": "BP_ActionUniqueAttackBase_C'Default__BP_ActionUniqueAttackBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionUniqueAttackBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Montage List": [
+        {
+          "Montage": {
+            "ObjectName": "AnimMontage'AM_WorldTreeDragon_PaldiumExplosion_Start'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/AM_WorldTreeDragon_PaldiumExplosion_Start.0"
+          },
+          "PlayRate": 1.0,
+          "StartTime": 0.0
+        },
+        {
+          "Montage": {
+            "ObjectName": "AnimMontage'AM_WorldTreeDragon_PaldiumExplosion_Loop'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/AM_WorldTreeDragon_PaldiumExplosion_Loop.0"
+          },
+          "PlayRate": 1.0,
+          "StartTime": 0.0
+        },
+        {
+          "Montage": {
+            "ObjectName": "AnimMontage'AM_WorldTreeDragon_PaldiumExplosion_End'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/AM_WorldTreeDragon_PaldiumExplosion_End.0"
+          },
+          "PlayRate": 1.0,
+          "StartTime": 0.0
+        },
+        {
+          "Montage": {
+            "ObjectName": "AnimMontage'AM_WorldTreeDragon_PaldiumExplosion_Cancel'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/AM_WorldTreeDragon_PaldiumExplosion_Cancel.0"
+          },
+          "PlayRate": 1.0,
+          "StartTime": 0.0
+        }
+      ],
+      "MaxChargeTime": 12.0,
+      "CurrentTimer": {
+        "Handle": 0
+      },
+      "WingMontageInfo": [
+        {
+          "StartMontage_6_7D5D9FEC4E4538E0A10D68A996BD68E2": {
+            "Montage": {
+              "ObjectName": "AnimMontage'AM_WorldTreeDragon_Wing_Damage_S1'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/WingSeperateMontages/AM_WorldTreeDragon_Wing_Damage_S1.0"
+            },
+            "PlayRate": 1.0,
+            "StartTime": 0.0
+          },
+          "EndMontage_8_FD7ECF8449334FA5FAACD49BBBA30094": {
+            "Montage": {
+              "ObjectName": "AnimMontage'AM_WorldTreeDragon_Wing_Damage_End_S1'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/WingSeperateMontages/AM_WorldTreeDragon_Wing_Damage_End_S1.0"
+            },
+            "PlayRate": 1.0,
+            "StartTime": 0.0
+          },
+          "PartsList_12_445B3401468E0E6BB1B3188033D5AB80": []
+        },
+        {
+          "StartMontage_6_7D5D9FEC4E4538E0A10D68A996BD68E2": {
+            "Montage": {
+              "ObjectName": "AnimMontage'AM_WorldTreeDragon_Wing_Damage_S2'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/WingSeperateMontages/AM_WorldTreeDragon_Wing_Damage_S2.0"
+            },
+            "PlayRate": 1.0,
+            "StartTime": 0.0
+          },
+          "EndMontage_8_FD7ECF8449334FA5FAACD49BBBA30094": {
+            "Montage": {
+              "ObjectName": "AnimMontage'AM_WorldTreeDragon_Wing_Damage_End_S2'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/WingSeperateMontages/AM_WorldTreeDragon_Wing_Damage_End_S2.0"
+            },
+            "PlayRate": 1.0,
+            "StartTime": 0.0
+          },
+          "PartsList_12_445B3401468E0E6BB1B3188033D5AB80": []
+        },
+        {
+          "StartMontage_6_7D5D9FEC4E4538E0A10D68A996BD68E2": {
+            "Montage": {
+              "ObjectName": "AnimMontage'AM_WorldTreeDragon_Wing_Damage_S3'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/WingSeperateMontages/AM_WorldTreeDragon_Wing_Damage_S3.0"
+            },
+            "PlayRate": 1.0,
+            "StartTime": 0.0
+          },
+          "EndMontage_8_FD7ECF8449334FA5FAACD49BBBA30094": {
+            "Montage": {
+              "ObjectName": "AnimMontage'AM_WorldTreeDragon_Wing_Damage_End_S3'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/WingSeperateMontages/AM_WorldTreeDragon_Wing_Damage_End_S3.0"
+            },
+            "PlayRate": 1.0,
+            "StartTime": 0.0
+          },
+          "PartsList_12_445B3401468E0E6BB1B3188033D5AB80": []
+        },
+        {
+          "StartMontage_6_7D5D9FEC4E4538E0A10D68A996BD68E2": {
+            "Montage": {
+              "ObjectName": "AnimMontage'AM_WorldTreeDragon_Wing_Damage_S4'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/WingSeperateMontages/AM_WorldTreeDragon_Wing_Damage_S4.0"
+            },
+            "PlayRate": 1.0,
+            "StartTime": 0.0
+          },
+          "EndMontage_8_FD7ECF8449334FA5FAACD49BBBA30094": {
+            "Montage": {
+              "ObjectName": "AnimMontage'AM_WorldTreeDragon_Wing_Damage_End_S4'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/WingSeperateMontages/AM_WorldTreeDragon_Wing_Damage_End_S4.0"
+            },
+            "PlayRate": 1.0,
+            "StartTime": 0.0
+          },
+          "PartsList_12_445B3401468E0E6BB1B3188033D5AB80": []
+        },
+        {
+          "StartMontage_6_7D5D9FEC4E4538E0A10D68A996BD68E2": {
+            "Montage": {
+              "ObjectName": "AnimMontage'AM_WorldTreeDragon_Wing_Damage_S5'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/WingSeperateMontages/AM_WorldTreeDragon_Wing_Damage_S5.0"
+            },
+            "PlayRate": 1.0,
+            "StartTime": 0.0
+          },
+          "EndMontage_8_FD7ECF8449334FA5FAACD49BBBA30094": {
+            "Montage": {
+              "ObjectName": "AnimMontage'AM_WorldTreeDragon_Wing_Damage_End_S5'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/WingSeperateMontages/AM_WorldTreeDragon_Wing_Damage_End_S5.0"
+            },
+            "PlayRate": 1.0,
+            "StartTime": 0.0
+          },
+          "PartsList_12_445B3401468E0E6BB1B3188033D5AB80": []
+        },
+        {
+          "StartMontage_6_7D5D9FEC4E4538E0A10D68A996BD68E2": {
+            "Montage": {
+              "ObjectName": "AnimMontage'AM_WorldTreeDragon_Wing_Damage_S6'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/WingSeperateMontages/AM_WorldTreeDragon_Wing_Damage_S6.0"
+            },
+            "PlayRate": 1.0,
+            "StartTime": 0.0
+          },
+          "EndMontage_8_FD7ECF8449334FA5FAACD49BBBA30094": {
+            "Montage": {
+              "ObjectName": "AnimMontage'AM_WorldTreeDragon_Wing_Damage_End_S6'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/WingSeperateMontages/AM_WorldTreeDragon_Wing_Damage_End_S6.0"
+            },
+            "PlayRate": 1.0,
+            "StartTime": 0.0
+          },
+          "PartsList_12_445B3401468E0E6BB1B3188033D5AB80": []
+        }
+      ],
+      "OriginalLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "AdjustOffset": {
+        "X": 3500.0,
+        "Y": 0.0,
+        "Z": 200.0
+      },
+      "TargetLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "MoveCurve": {
+        "ObjectName": "CurveFloat'CurveFloat_PaldiumExplosion_Move'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/CurveFloat_PaldiumExplosion_Move.0"
+      },
+      "WingAngleMap": [
+        {
+          "Key": "-30",
+          "Value": {
+            "X": -500.0,
+            "Y": 440.0,
+            "Z": 0.0
+          }
+        },
+        {
+          "Key": "-90",
+          "Value": {
+            "X": 275.0,
+            "Y": 1180.0,
+            "Z": 0.0
+          }
+        },
+        {
+          "Key": "-150",
+          "Value": {
+            "X": 1150.0,
+            "Y": 500.0,
+            "Z": 0.0
+          }
+        },
+        {
+          "Key": "30",
+          "Value": {
+            "X": -500.0,
+            "Y": -400.0,
+            "Z": 0.0
+          }
+        },
+        {
+          "Key": "90",
+          "Value": {
+            "X": 275.0,
+            "Y": -1180.0,
+            "Z": 0.0
+          }
+        },
+        {
+          "Key": "150",
+          "Value": {
+            "X": 1150.0,
+            "Y": -500.0,
+            "Z": 0.0
+          }
+        }
+      ],
+      "FaceDirect": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "CenterLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SocketMap": [
+        {
+          "Key": "tentacleTop_10_l",
+          "Value": "Socket_Muzzle1"
+        },
+        {
+          "Key": "tentacleMid_10_l",
+          "Value": "Socket_Muzzle2"
+        },
+        {
+          "Key": "tentacleBtm_10_l",
+          "Value": "Socket_Muzzle3"
+        },
+        {
+          "Key": "tentacleTop_10_r",
+          "Value": "Socket_Muzzle4"
+        },
+        {
+          "Key": "tentacleMid_10_r",
+          "Value": "Socket_Muzzle5"
+        },
+        {
+          "Key": "tentacleBtm_10_r",
+          "Value": "Socket_Muzzle6"
+        }
+      ],
+      "FlagName": "WorldTreeDragon_PaldiumExplosion",
+      "WazaID": "EPalWazaID::Unique_WorldTreeDragon_PaldiumExplosion"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ActCancel",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ActEnd",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "DamageWing",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "Temp_delegate_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "PropertyFlags": "ConstParm",
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnAkPostEventCallback__DelegateSignature'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostEvent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Wing_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/WorldTreeDragon_PaldiumExplosion/BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Wing.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'Struct_WingDamageMontageInfo'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/Struct_WingDamageMontageInfo.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Montage_Play_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_UniqueAction_WorldTreeDragon_PaldiumExplosion",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_12",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_11",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Temp_name_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_10",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_9",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_8",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_4",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_7",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_5",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_6",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_6",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Temp_name_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_7",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_5",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_4",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_8",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_3",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_9",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_2",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_10",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_11",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Temp_name_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_FloatToVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "Temp_delegate_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "PropertyFlags": "ConstParm",
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnAkPostEventCallback__DelegateSignature'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostEvent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalAnimInstance_AnimInstance",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalAnimInstance'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsABP_World_Tree_Dragon",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "AnimBlueprintGeneratedClass'ABP_WorldTreeDragon_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/WorldTreeDragon/ABP_WorldTreeDragon.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'ReserveMontage'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'ReserveMontage'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 16,
+          "Struct": {
+            "ObjectName": "ScriptStruct'ReserveMontage'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_12",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_Montage_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_bInterrupted",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_13",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontageEndedMCDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_montage",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_14",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalAnimInstance:OnMontageNotifyBegin__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalAnimInstance_AnimInstance_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalAnimInstance'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_15",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontageEndedMCDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_16",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalAnimInstance:OnMontageNotifyBegin__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_14",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'ReserveMontage'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ObjectObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_17",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMainMeshByActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'ReserveMontage'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateProxyObjectForPlayMontage_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayMontageCallbackProxy'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMainMeshByActor_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_4",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'ReserveMontage'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_18",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateProxyObjectForPlayMontage_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayMontageCallbackProxy'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMainMeshByActor_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_5",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'Struct_WingDamageMontageInfo'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WorldTreeDragon/Struct_WingDamageMontageInfo.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateProxyObjectForPlayMontage_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayMontageCallbackProxy'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Wing_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/WorldTreeDragon_PaldiumExplosion/BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Wing.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_DoubleToVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_13",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetDynamicParameter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 256,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'ActionDynamicParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_15",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Vector_IsZero_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_SelectVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_19",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_Time_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetCenterEffectClass",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "Class",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Center_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/WorldTreeDragon_PaldiumExplosion/BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Center.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetRotation",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ActionUniqueAttackBase_C:GetRotation'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionUniqueAttackBase.16"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ActionUniqueAttackBase_C:GetRotation'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionUniqueAttackBase.16"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "NoInterp",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotFromX_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Roll",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Pitch",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Yaw",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RInterpTo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_RInterpTo_DeltaTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_RInterpTo_InterpSpeed_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetWingClass",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "Class",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Wing_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/WorldTreeDragon_PaldiumExplosion/BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Wing.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsWingListMatch",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "Target",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Search",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Match",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_NameToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_NameToString_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Len_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Len_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetSubstring_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetSubstring_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_FindSubstring_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_StriStri_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetSubstring_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_FindSubstring_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBeginAction",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ActionUniqueAttackBase_C:OnBeginAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionUniqueAttackBase.20"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ActionUniqueAttackBase_C:OnBeginAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionUniqueAttackBase.20"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBlendOut_31018891402F2DF053710BA5285FE5CF",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBlendOut_724483D9409A2A1F8648F78B28A9E2CC",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBlendOut_B2567C5942FF7778FF49EFB9D72E59F8",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnCompleted_31018891402F2DF053710BA5285FE5CF",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnCompleted_724483D9409A2A1F8648F78B28A9E2CC",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnCompleted_B2567C5942FF7778FF49EFB9D72E59F8",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEndAction",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ActionUniqueAttackBase_C:OnEndAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionUniqueAttackBase.21"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ActionUniqueAttackBase_C:OnEndAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionUniqueAttackBase.21"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInterrupted_31018891402F2DF053710BA5285FE5CF",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInterrupted_724483D9409A2A1F8648F78B28A9E2CC",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInterrupted_B2567C5942FF7778FF49EFB9D72E59F8",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnMontageEnd",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Montage",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bInterrupted",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnMontageNotifyBegin",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "montage",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNotifyBegin_31018891402F2DF053710BA5285FE5CF",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNotifyBegin_724483D9409A2A1F8648F78B28A9E2CC",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNotifyBegin_B2567C5942FF7778FF49EFB9D72E59F8",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNotifyEnd_31018891402F2DF053710BA5285FE5CF",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNotifyEnd_724483D9409A2A1F8648F78B28A9E2CC",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNotifyEnd_B2567C5942FF7778FF49EFB9D72E59F8",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ProcessExplode",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ResetWingCollision",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "PawnParts",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "PawnParts",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_Map_Keys_Keys",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "NameProperty",
+          "Name": "CallFunc_Map_Keys_Keys",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Body_Parts_Capsule_Component",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalBodyPartsCapsuleComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetAttachSocketName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsWingListMatch_Match",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetChildrenComponents_Children",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetChildrenComponents_Children",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetWarning",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalmi_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Vector_Distance_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalUICommonWarningDisplayData",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUICommonWarningDisplayData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetHUDService_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDService'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SpawnWingCharge",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "SubParts",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "SubParts",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "Class'PalBodyPartsCapsuleComponent'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "PawnParts",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "PawnParts",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Direct",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "SpawnLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "CallFunc_GetCenterEffectClass_Class",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Center_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/WorldTreeDragon_PaldiumExplosion/BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Center.0"
+        }
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "CallFunc_GetWingClass_Class",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Wing_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/WorldTreeDragon_PaldiumExplosion/BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Wing.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_Map_Keys_Keys",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "NameProperty",
+          "Name": "CallFunc_Map_Keys_Keys",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetAttachSocketName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsWingListMatch_Match",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Body_Parts_Capsule_Component",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalBodyPartsCapsuleComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMainMeshByActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FinishSpawningActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Center_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/WorldTreeDragon_PaldiumExplosion/BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Center.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetChildrenComponents_Children",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetChildrenComponents_Children",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsServer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotFromX_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_Map_Keys_Keys_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "DoubleProperty",
+          "Name": "CallFunc_Map_Keys_Keys_1",
+          "Flags": "RF_Public",
+          "ElementSize": 8
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Array_Get_Item_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RotateAngleAxis_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FinishSpawningActor_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Wing_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/WorldTreeDragon_PaldiumExplosion/BP_UniqueSkillEffect_WorldTreeDragon_PaldiumExplosion_Wing.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_RotateAngleAxis_AngleDeg_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TickAction",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ActionUniqueAttackBase_C:TickAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionUniqueAttackBase.37"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ActionUniqueAttackBase_C:TickAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionUniqueAttackBase.37"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetRotation_Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFloatValue_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_VLerp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetActorLocationAndRotation_SweepHitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 240,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_SetActorLocationAndRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_GetRotation_DeltaTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFloatValue_InTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "WingsReturnNormalState",
+    "Outer": "BP_UniqueAction_WorldTreeDragon_PaldiumExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

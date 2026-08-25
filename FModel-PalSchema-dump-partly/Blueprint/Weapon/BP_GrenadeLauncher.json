@@ -1,0 +1,1123 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AssaultRifleBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_GrenadeLauncher_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.29"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_GrenadeLauncher_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.25"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:ExecuteUbergraph_BP_GrenadeLauncher'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AssaultRifleBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:OnShoot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.20"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:PlayFireSound'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.21"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:ShootBullet'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.24"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:GetLeftHandTransform'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.7"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:OnEndShootAnimation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.16"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:GetAimingBlurAngle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.4"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:GetBlurAngle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.5"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:isUseRightHandAttach'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.13"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:Get Right Hand Location'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.3"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:IsUseLeftHandAttach'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.12"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:GetMuzzleRotator'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.10"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:GetInitializeInterval'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.6"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:GetShootInterval'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.11"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:GetMuzzleEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.8"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:GetMuzzleLocation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.9"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.22"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:OnReload'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.18"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:OnReloadStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.19"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:OnDetachWeapon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.15"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:OnAttachWeapon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.14"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:OnPullTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.17"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:ResetCoolTime'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.23"
+      },
+      {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:ExecuteUbergraph_BP_GrenadeLauncher'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SkeletalMesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RocketMask",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsCoolTime",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Firerate",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_GrenadeLauncher": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:ExecuteUbergraph_BP_GrenadeLauncher'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.2"
+      },
+      "ResetCoolTime": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:ResetCoolTime'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.23"
+      },
+      "OnPullTrigger": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:OnPullTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.17"
+      },
+      "OnAttachWeapon": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:OnAttachWeapon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.14"
+      },
+      "OnDetachWeapon": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:OnDetachWeapon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.15"
+      },
+      "OnReloadStart": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:OnReloadStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.19"
+      },
+      "OnReload": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:OnReload'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.18"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.22"
+      },
+      "GetMuzzleLocation": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:GetMuzzleLocation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.9"
+      },
+      "GetMuzzleEffect": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:GetMuzzleEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.8"
+      },
+      "GetShootInterval": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:GetShootInterval'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.11"
+      },
+      "GetInitializeInterval": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:GetInitializeInterval'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.6"
+      },
+      "GetMuzzleRotator": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:GetMuzzleRotator'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.10"
+      },
+      "IsUseLeftHandAttach": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:IsUseLeftHandAttach'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.12"
+      },
+      "Get Right Hand Location": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:Get Right Hand Location'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.3"
+      },
+      "isUseRightHandAttach": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:isUseRightHandAttach'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.13"
+      },
+      "GetBlurAngle": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:GetBlurAngle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.5"
+      },
+      "GetAimingBlurAngle": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:GetAimingBlurAngle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.4"
+      },
+      "OnEndShootAnimation": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:OnEndShootAnimation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.16"
+      },
+      "GetLeftHandTransform": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:GetLeftHandTransform'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.7"
+      },
+      "ShootBullet": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:ShootBullet'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.24"
+      },
+      "PlayFireSound": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:PlayFireSound'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.21"
+      },
+      "OnShoot": {
+        "ObjectName": "Function'BP_GrenadeLauncher_C:OnShoot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.20"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_GrenadeLauncher_C'Default__BP_GrenadeLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_GrenadeLauncher_C",
+    "Name": "Default__BP_GrenadeLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.BP_GrenadeLauncher_C'",
+    "Template": {
+      "ObjectName": "BP_AssaultRifleBase_C'Default__BP_AssaultRifleBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Firerate": 0.5,
+      "BulletDeleteTime": 5.0,
+      "BulletDeleteTimePVP": 2.0,
+      "BulletDecayStartRate": 10.0,
+      "RecoilCurve": {
+        "ObjectName": "CurveFloat'C_ShotgunRecoilCurve'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/RecoilCurve/C_ShotgunRecoilCurve.0"
+      },
+      "ShotCameraShake": {
+        "ObjectName": "BlueprintGeneratedClass'BP_WeaponCameraShake_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/CameraShake/BP_WeaponCameraShake.0"
+      },
+      "WeaponCoopType": "EWeaponCoopType::RapidFireWeapon",
+      "WeaponType": "EPalWeaponType::RocketLauncher",
+      "SupportedBulletMap": [
+        {
+          "Key": {
+            "Key": "GrenadeBullet"
+          },
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_GrenadeLauncherBullet_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/BP_GrenadeLauncherBullet.0"
+          }
+        }
+      ],
+      "FallbackBulletItemId": {
+        "Key": "GrenadeBullet"
+      },
+      "weaponIconTexture": {
+        "AssetPathName": "/Game/Pal/Texture/Item/Weapon/T_icon_GrenadeLauncher_UI.T_icon_GrenadeLauncher_UI",
+        "SubPathString": ""
+      },
+      "PalSoundSlotClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_GrenadeLauncher.BP_SoundSlot_Weapon_GrenadeLauncher_C",
+        "SubPathString": ""
+      },
+      "PvPDamageRate": 0.025,
+      "PvPPlayerToGuildPalDamageRate": 0.5,
+      "BackWeaponClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_BackWeapon_GrenadeLauncher_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BackWeapon/BP_BackWeapon_GrenadeLauncher.0"
+      },
+      "bAlwaysRelevant": false,
+      "bNetUseOwnerRelevancy": false,
+      "RemoteRole": "ENetRole::ROLE_SimulatedProxy"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_GrenadeLauncher",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalWeaponBase:ReloadBulletsDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_CustomEvent_bulletsNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_InReloadSpeedPlayRate",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_detachActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_attachActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "Get Right Hand Location",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:Get Right Hand Location'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.7"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:Get Right Hand Location'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.7"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "RightHandLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSocketLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetAimingBlurAngle",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetAimingBlurAngle'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.8"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetAimingBlurAngle'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.8"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Angle",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetBlurAngle",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetBlurAngle'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.10"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetBlurAngle'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.10"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Angle",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetInitializeInterval",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetInitializeInterval'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.13"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetInitializeInterval'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.13"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Time",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_GetShootInterval_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetLeftHandTransform",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalWeaponBase:GetLeftHandTransform'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSocketTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetMuzzleEffect",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetMuzzleEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.14"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetMuzzleEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.14"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "NewParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraSystem'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetMuzzleLocation",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetMuzzleLocation'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.16"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetMuzzleLocation'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.16"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "MuzzleLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSocketLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetMuzzleRotator",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetMuzzleRotator'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.17"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetMuzzleRotator'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.17"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Rotator",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSocketRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetShootInterval",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetShootInterval'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.18"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetShootInterval'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.18"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Time",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsUseLeftHandAttach",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:IsUseLeftHandAttach'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.24"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:IsUseLeftHandAttach'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.24"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "isUseRightHandAttach",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "isUse",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAttachWeapon",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:OnAttachWeapon'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.25"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:OnAttachWeapon'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.25"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "attachActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnDetachWeapon",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:OnDetachWeapon'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.26"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:OnDetachWeapon'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.26"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "detachActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEndShootAnimation",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Montage",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsEmptyMagazine_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPullTrigger",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:OnPullTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.29"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:OnPullTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.29"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnReload",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "bulletsNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnReloadStart",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:OnReloadStart'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.31"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:OnReloadStart'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.31"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "InReloadSpeedPlayRate",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnShoot",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:OnShoot'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.32"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:OnShoot'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.32"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BulletActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalBullet'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayFireSound",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalSoundOptions",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalSoundOptions'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalDataTableRowName_SoundID",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDataTableRowName_SoundID'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ResetCoolTime",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:ResetCoolTime'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.35"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:ResetCoolTime'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.35"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ShootBullet",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:ShootBullet'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.36"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:ShootBullet'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.36"
+    },
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_GrenadeLauncher_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.26"
+      },
+      "VariableGuid": "E8913C48-4E006A33-DEC2D9B6-A5E1CE7D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent'BP_GrenadeLauncher_C:SkeletalMesh_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.30"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_AssaultRifleBase_C",
+      "VariableGuid": "E69703BF-4060F0DA-356D4F9F-A7F9A472",
+      "InternalVariableName": "SkeletalMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_GrenadeLauncher_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.28"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_GrenadeLauncher_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.28"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_GrenadeLauncher_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GrenadeLauncher.27"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh_GEN_VARIABLE",
+    "Outer": "BP_GrenadeLauncher_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class'ClothingSimulationFactoryNv'",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_Weapon_GrenadeLauncher_001'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/GrenadeLauncher/SK_Weapon_GrenadeLauncher_001/SK_Weapon_GrenadeLauncher_001.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_Weapon_GrenadeLauncher_001'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/GrenadeLauncher/SK_Weapon_GrenadeLauncher_001/SK_Weapon_GrenadeLauncher_001.0"
+      }
+    }
+  }
+]

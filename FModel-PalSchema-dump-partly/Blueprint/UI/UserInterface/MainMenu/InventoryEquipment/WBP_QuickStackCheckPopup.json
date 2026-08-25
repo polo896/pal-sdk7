@@ -1,0 +1,2496 @@
+[
+  {
+    "Type": "BackgroundBlur",
+    "Name": "BackgroundBlur_255",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'BackgroundBlur'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bApplyAlphaToBlur": false,
+      "BlurStrength": 3.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_12'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.7"
+      },
+      "Visibility": "ESlateVisibility::Visible"
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_C_109",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "QUICKSTACK_CheckPopup"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "FA19537B43478663BA769D8F393B27FB",
+        "SourceString": "以下のアイテムが拠点のチェストに収納されます\r\nよろしいですか？",
+        "LocalizedString": "以下のアイテムが拠点のチェストに収納されます\r\nよろしいですか？"
+      },
+      "Font": {
+        "TypefaceFontName": "Medium",
+        "Size": 16
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_QuickStackCheckPopup_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.59"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_12'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_120",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_120.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_120.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_120.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.11"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_25",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Line",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.Line.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.Line.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.Line.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.18"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.2"
+      },
+      "Content": {
+        "ObjectName": "BackgroundBlur'WBP_QuickStackCheckPopup_C:WidgetTree.BackgroundBlur_255'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.0"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 920.0,
+          "Bottom": 700.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.2"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalCommonWindow_C'WBP_QuickStackCheckPopup_C:WidgetTree.WBP_PalCommonWindow'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.63"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 920.0,
+          "Bottom": 700.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.3"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_25'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_120",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -4.0,
+          "Top": -4.0,
+          "Right": -4.0,
+          "Bottom": -4.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_120'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_QuickStackCheckPopup_C:WidgetTree.Image_90'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_120",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_120'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.4"
+      },
+      "Content": {
+        "ObjectName": "ScrollBox'WBP_QuickStackCheckPopup_C:WidgetTree.ScrollBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.51"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_120",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -14.0,
+          "Right": 840.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_120'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.4"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'WBP_QuickStackCheckPopup_C:WidgetTree.VerticalBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.58"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_25",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 32.0,
+          "Top": -88.0,
+          "Right": 32.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_25'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_25",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -68.0,
+          "Right": 583.0,
+          "Bottom": 48.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_25'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.5"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_QuickStackCheckPopup_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_25",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 136.0,
+          "Right": 540.0,
+          "Bottom": 450.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_25'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_120'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Line",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 1.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.6"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_QuickStackCheckPopup_C:WidgetTree.Image_251'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Line",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 3.0,
+          "Bottom": 3.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.6"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_QuickStackCheckPopup_C:WidgetTree.Image'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Line",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 3.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.6"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_QuickStackCheckPopup_C:WidgetTree.Image_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.36"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WBP_CommonButton_No",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_CommonButton_Yes",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature",
+    "Outer": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature",
+    "Outer": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BP_GetDesiredFocusTarget",
+    "Outer": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'CommonActivatableWidget:BP_GetDesiredFocusTarget'",
+      "ObjectPath": "/Script/CommonUI"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Destruct",
+    "Outer": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Destruct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_QuickStackCheckPopup",
+    "Outer": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalPlayerSubsystem_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalRightStickScrollSubsystem'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetParam_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameterBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_HUDDispatch_Parameter_Quick_Stack_Confirm",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_HUDDispatchParameter_QuickStackConfirm_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/BP_HUDDispatchParameter_QuickStackConfirm.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetLeftButton",
+    "Outer": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "rightButton",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetRightButton",
+    "Outer": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnClickedLeftButton__DelegateSignature",
+    "Outer": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnClickedRightButton__DelegateSignature",
+    "Outer": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetup",
+    "Outer": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUserWidget:OnSetup'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup",
+    "Outer": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerController'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalItemSlot'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Create_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalInGameMenuItemSlotButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Item/WBP_PalInGameMenuItemSlotButton.219"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_WrapSizeBox_CreatedSizeBox",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SizeBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddChildToWrapBox_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'WrapBoxSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_QuickStackCheckPopup_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.33"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_QuickStackCheckPopup_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.34"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.14"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_QuickStackCheckPopup_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.32"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_QuickStackCheckPopup_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.53"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 44.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_QuickStackCheckPopup_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.32"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_QuickStackCheckPopup_C:WidgetTree.SizeBox_RButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.54"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.5,
+        "Hex": "7FFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.Line.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.17"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.5,
+        "Hex": "7FFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.Line.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.18"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_251",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.2,
+        "Hex": "33FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.Line.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.16"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_90",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 36.0,
+          "Y": 36.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.381326,
+            "G": 0.871367,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "A6F0FF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_condense_frame'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_condense_frame.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_120.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.10"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Anm_Close",
+    "Outer": "Anm_Close_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "C9ADA857-438F9908-4484DF86-73BDBAB4",
+          "Name": "HorizontalBox_0",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "C9ADA857-438F9908-4484DF86-73BDBAB4",
+          "BindingName": "HorizontalBox_0",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_QuickStackCheckPopup_C:Anm_Close_INST.Anm_Close.MovieSceneFloatTrack_4'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.49"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 3001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 60
+      },
+      "Signature": "8A815648-40903AF4-27AF7D8F-F325B8C1"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Anm_Open",
+    "Outer": "Anm_Open_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "7C064628-47773EC7-956E4DB1-AAB4E292",
+          "Name": "HorizontalBox_0",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "7C064628-47773EC7-956E4DB1-AAB4E292",
+          "BindingName": "HorizontalBox_0",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_QuickStackCheckPopup_C:Anm_Open_INST.Anm_Open.MovieSceneFloatTrack_2'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.50"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 12001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 60
+      },
+      "Signature": "C07C6198-4EADE350-BE5B5491-96167D6E"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Anm_Close_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 3000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_QuickStackCheckPopup_C:Anm_Close_INST.Anm_Close.MovieSceneFloatTrack_4.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.47"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "C9ADA857-438F9908-4484DF86-73BDBAB4"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 3000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "7B82A8EE-461EF709-493007AE-FA2C6C12",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Anm_Open_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 12000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_QuickStackCheckPopup_C:Anm_Open_INST.Anm_Open.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.48"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "7C064628-47773EC7-956E4DB1-AAB4E292"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 12000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "17CE75EA-49B74B2B-EE6D0BB5-ABC3FB62",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_4",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 3000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_QuickStackCheckPopup_C:Anm_Close_INST.Anm_Close.MovieSceneFloatTrack_4.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.41"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_QuickStackCheckPopup_C:Anm_Close_INST.Anm_Close.MovieSceneFloatTrack_4.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.42"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 3000
+            }
+          }
+        }
+      },
+      "Signature": "D0223AD1-4FE291C4-9EECF592-B12A4A1B"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_2",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 3000
+          },
+          {
+            "Value": 5000
+          },
+          {
+            "Value": 7000
+          },
+          {
+            "Value": 9000
+          },
+          {
+            "Value": 12000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.8,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.2,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_QuickStackCheckPopup_C:Anm_Open_INST.Anm_Open.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.43"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_QuickStackCheckPopup_C:Anm_Open_INST.Anm_Open.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.44"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 12000
+            }
+          }
+        }
+      },
+      "Signature": "A5CCFD0C-4CD377D3-D371BA83-026831E9"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_4",
+    "Outer": "Anm_Close",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_QuickStackCheckPopup_C:Anm_Close_INST.Anm_Close.MovieSceneFloatTrack_4.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.47"
+        }
+      ],
+      "EvaluationFieldGuid": "EA70B65B-40DC47EE-B3E039A0-EBD8D782",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_QuickStackCheckPopup_C:Anm_Close_INST.Anm_Close.MovieSceneFloatTrack_4.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.47"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 3000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "EA70B65B-40DC47EE-B3E039A0-EBD8D782"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_2",
+    "Outer": "Anm_Open",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_QuickStackCheckPopup_C:Anm_Open_INST.Anm_Open.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.48"
+        }
+      ],
+      "EvaluationFieldGuid": "C779825F-46591BE0-02463EA5-A26F7759",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_QuickStackCheckPopup_C:Anm_Open_INST.Anm_Open.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.48"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 12000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "C779825F-46591BE0-02463EA5-A26F7759"
+    }
+  },
+  {
+    "Type": "ScrollBox",
+    "Name": "ScrollBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScrollBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetStyle": {
+        "TopShadowBrush": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "BottomShadowBrush": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        }
+      },
+      "WidgetBarStyle": {
+        "VerticalTopSlotImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "VerticalBottomSlotImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "NormalThumbImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.597202,
+              "G": 0.913099,
+              "B": 1.0,
+              "A": 0.65098,
+              "Hex": "A6CBF5FF"
+            }
+          }
+        },
+        "HoveredThumbImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.48515,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "00B9FF"
+            }
+          }
+        },
+        "DraggedThumbImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.48515,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "00B9FF"
+            }
+          }
+        }
+      },
+      "ScrollbarThickness": {
+        "X": 2.0,
+        "Y": 4.0
+      },
+      "ScrollWhenFocusChanges": "EScrollWhenFocusChanges::InstantScroll",
+      "Slots": [
+        {
+          "ObjectName": "ScrollBoxSlot'WBP_QuickStackCheckPopup_C:WidgetTree.ScrollBox.ScrollBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.52"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_120.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.11"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "ScrollBoxSlot",
+    "Name": "ScrollBoxSlot_0",
+    "Outer": "ScrollBox",
+    "Class": "UScriptClass'ScrollBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScrollBox'WBP_QuickStackCheckPopup_C:WidgetTree.ScrollBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.51"
+      },
+      "Content": {
+        "ObjectName": "WrapBox'WBP_QuickStackCheckPopup_C:WidgetTree.WrapBox_ItemSlot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.69"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidthOverride": 216.0,
+      "HeightOverride": 44.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_QuickStackCheckPopup_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.55"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_QuickStackCheckPopup_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.33"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_RButton",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidthOverride": 216.0,
+      "HeightOverride": 44.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_QuickStackCheckPopup_C:WidgetTree.SizeBox_RButton.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.56"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_QuickStackCheckPopup_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.34"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_QuickStackCheckPopup_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.53"
+      },
+      "Content": {
+        "ObjectName": "WBP_CommonButton_C'WBP_QuickStackCheckPopup_C:WidgetTree.WBP_CommonButton_Yes'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.62"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_RButton",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_QuickStackCheckPopup_C:WidgetTree.SizeBox_RButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.54"
+      },
+      "Content": {
+        "ObjectName": "WBP_CommonButton_C'WBP_QuickStackCheckPopup_C:WidgetTree.WBP_CommonButton_No'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.61"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_82",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_QuickStackCheckPopup_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.60"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_QuickStackCheckPopup_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.60"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_QuickStackCheckPopup_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.59"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_120.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.12"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_1",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_QuickStackCheckPopup_C:WidgetTree.VerticalBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.58"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_QuickStackCheckPopup_C:WidgetTree.BP_PalTextBlock_C_109'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.1"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_1",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_QuickStackCheckPopup_C:WidgetTree.VerticalBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.58"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_QuickStackCheckPopup_C:WidgetTree.Spacer_82'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.57"
+      }
+    }
+  },
+  {
+    "Type": "WBP_CommonButton_C",
+    "Name": "WBP_CommonButton_No",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton.WBP_CommonButton_C'",
+    "Template": {
+      "ObjectName": "WBP_CommonButton_C'Default__WBP_CommonButton_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton.279"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitializeMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_NO"
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_QuickStackCheckPopup_C:WidgetTree.SizeBox_RButton.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.56"
+      }
+    }
+  },
+  {
+    "Type": "WBP_CommonButton_C",
+    "Name": "WBP_CommonButton_Yes",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton.WBP_CommonButton_C'",
+    "Template": {
+      "ObjectName": "WBP_CommonButton_C'Default__WBP_CommonButton_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton.279"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitializeMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_YES"
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_QuickStackCheckPopup_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.55"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalCommonWindow_C",
+    "Name": "WBP_PalCommonWindow",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_PalCommonWindow.WBP_PalCommonWindow_C'",
+    "Template": {
+      "ObjectName": "WBP_PalCommonWindow_C'Default__WBP_PalCommonWindow_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_PalCommonWindow.13"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NamedSlotBindings": [
+        {
+          "Name": "NamedSlot_91",
+          "Content": {
+            "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.3"
+          }
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.8"
+      }
+    }
+  },
+  {
+    "Type": "WBP_QuickStackCheckPopup_C",
+    "Name": "Default__WBP_QuickStackCheckPopup_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Anm_Close_INST",
+    "Outer": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_QuickStackCheckPopup_C:Anm_Close_INST.Anm_Close'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.39"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "HorizontalBox_0",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "C9ADA857-438F9908-4484DF86-73BDBAB4",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Anm_Close",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_QuickStackCheckPopup_C:Anm_Close_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.45"
+      },
+      "Signature": "7B82A8EE-461EF709-493007AE-FA2C6C12"
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Anm_Open_INST",
+    "Outer": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_QuickStackCheckPopup_C:Anm_Open_INST.Anm_Open'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.40"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "HorizontalBox_0",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "7C064628-47773EC7-956E4DB1-AAB4E292",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Anm_Open",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_QuickStackCheckPopup_C:Anm_Open_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.46"
+      },
+      "Signature": "17CE75EA-49B74B2B-EE6D0BB5-ABC3FB62"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_QuickStackCheckPopup_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.68"
+      },
+      "bClassRequiresNativeTick": true,
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'WBP_QuickStackCheckPopup_C:Anm_Open_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.66"
+        },
+        {
+          "ObjectName": "WidgetAnimation'WBP_QuickStackCheckPopup_C:Anm_Close_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.65"
+        }
+      ],
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_QuickStackCheckPopup_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.19"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:ExecuteUbergraph_WBP_QuickStackCheckPopup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.25"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidgetOverlayUI'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.22"
+      },
+      {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.31"
+      },
+      {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:GetRightButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.27"
+      },
+      {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:GetLeftButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.26"
+      },
+      {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.20"
+      },
+      {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.21"
+      },
+      {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.30"
+      },
+      {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.23"
+      },
+      {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:Destruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.24"
+      },
+      {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:ExecuteUbergraph_WBP_QuickStackCheckPopup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.25"
+      },
+      {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:OnClickedRightButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.29"
+      },
+      {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:OnClickedLeftButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.28"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Anm_Close",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Anm_Open",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ScrollBox",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'ScrollBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_CommonButton_No",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton.285"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_CommonButton_Yes",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton.285"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalCommonWindow",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCommonWindow_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_PalCommonWindow.14"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WrapBox_ItemSlot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WrapBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnClickedLeftButton",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_QuickStackCheckPopup_C:OnClickedLeftButton__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.28"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnClickedRightButton",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_QuickStackCheckPopup_C:OnClickedRightButton__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.29"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HUDDispatchParam",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_HUDDispatchParameter_QuickStackConfirm_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/BP_HUDDispatchParameter_QuickStackConfirm.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnClickedLeftButton__DelegateSignature": {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:OnClickedLeftButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.28"
+      },
+      "OnClickedRightButton__DelegateSignature": {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:OnClickedRightButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.29"
+      },
+      "ExecuteUbergraph_WBP_QuickStackCheckPopup": {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:ExecuteUbergraph_WBP_QuickStackCheckPopup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.25"
+      },
+      "Destruct": {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:Destruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.24"
+      },
+      "Construct": {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.23"
+      },
+      "OnSetup": {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.30"
+      },
+      "BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.21"
+      },
+      "BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.20"
+      },
+      "GetLeftButton": {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:GetLeftButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.26"
+      },
+      "GetRightButton": {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:GetRightButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.27"
+      },
+      "Setup": {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.31"
+      },
+      "BP_GetDesiredFocusTarget": {
+        "ObjectName": "Function'WBP_QuickStackCheckPopup_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.22"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_QuickStackCheckPopup_C'Default__WBP_QuickStackCheckPopup_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.64"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_QuickStackCheckPopup_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_QuickStackCheckPopup_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.2"
+      }
+    }
+  },
+  {
+    "Type": "WrapBox",
+    "Name": "WrapBox_ItemSlot",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WrapBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InnerSlotPadding": {
+        "X": 8.0,
+        "Y": 8.0
+      },
+      "Slot": {
+        "ObjectName": "ScrollBoxSlot'WBP_QuickStackCheckPopup_C:WidgetTree.ScrollBox.ScrollBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/WBP_QuickStackCheckPopup.52"
+      },
+      "bIsVariable": true
+    }
+  }
+]

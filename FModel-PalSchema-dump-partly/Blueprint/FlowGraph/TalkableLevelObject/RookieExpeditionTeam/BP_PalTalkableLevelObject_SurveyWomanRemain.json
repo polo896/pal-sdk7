@@ -1,0 +1,279 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalTalkableLevelObject_SurveyWomanRemain_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_TalkableLevelObjectBase_Modify_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase_Modify.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalTalkableLevelObject_SurveyWomanRemain_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/RookieExpeditionTeam/BP_PalTalkableLevelObject_SurveyWomanRemain.7"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_PalTalkableLevelObject_SurveyWomanRemain_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/RookieExpeditionTeam/BP_PalTalkableLevelObject_SurveyWomanRemain.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_TalkableLevelObjectBase_Modify_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase_Modify.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_SurveyWomanRemain_C:GetIndicatorText_BP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/RookieExpeditionTeam/BP_PalTalkableLevelObject_SurveyWomanRemain.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SK_Weapon_AssaultRifle_001",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "GetIndicatorText_BP": {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_SurveyWomanRemain_C:GetIndicatorText_BP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/RookieExpeditionTeam/BP_PalTalkableLevelObject_SurveyWomanRemain.2"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalTalkableLevelObject_SurveyWomanRemain_C'Default__BP_PalTalkableLevelObject_SurveyWomanRemain_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/RookieExpeditionTeam/BP_PalTalkableLevelObject_SurveyWomanRemain.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalTalkableLevelObject_SurveyWomanRemain_C",
+    "Name": "Default__BP_PalTalkableLevelObject_SurveyWomanRemain_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/RookieExpeditionTeam/BP_PalTalkableLevelObject_SurveyWomanRemain.BP_PalTalkableLevelObject_SurveyWomanRemain_C'",
+    "Template": {
+      "ObjectName": "BP_TalkableLevelObjectBase_Modify_C'Default__BP_TalkableLevelObjectBase_Modify_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase_Modify.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IsTurnWhenTalkStart": false,
+      "VisibilityCondition": [
+        {
+          "QuestId_2_D9B7606F4D3DB528F17220BE3FDFFB8B": "Sub_RookieExpeditionTeam02",
+          "State_10_BA3ED0E440A013B313AF37B99E1D72A4": "E_PalQuestState::NewEnumerator1",
+          "Block_15_0276D8934E105B50A62AE298D3936387": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_RookieExpeditionTeam02_Talk_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_RookieExpeditionTeam02_Talk.0"
+          },
+          "Visibility_7_3D41B029498511674D48729FD0847C29": false,
+          "Immediately_21_E0A3216843DFF0809FD000BD2264D0CD": true,
+          "OnlyBeginPlay_12_5EF77F294465B6E0DDB8839E52D7851F": false
+        },
+        {
+          "QuestId_2_D9B7606F4D3DB528F17220BE3FDFFB8B": "Sub_RookieExpeditionTeam02",
+          "State_10_BA3ED0E440A013B313AF37B99E1D72A4": "E_PalQuestState::NewEnumerator1",
+          "Block_15_0276D8934E105B50A62AE298D3936387": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_RookieExpeditionTeam02_Search_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_RookieExpeditionTeam02_Search.0"
+          },
+          "Visibility_7_3D41B029498511674D48729FD0847C29": true,
+          "Immediately_21_E0A3216843DFF0809FD000BD2264D0CD": true,
+          "OnlyBeginPlay_12_5EF77F294465B6E0DDB8839E52D7851F": false
+        }
+      ],
+      "TalkFlowId": "Object_SurveyWomanRemain"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetIndicatorText_BP",
+    "Outer": "BP_PalTalkableLevelObject_SurveyWomanRemain_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalLevelObject_Talkable:GetIndicatorText_BP'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "WorldObjectContext",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "IndicatorType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalInteractiveObjectIndicatorType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalInteractiveObjectIndicatorType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "DescriptionText",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_PalTalkableLevelObject_SurveyWomanRemain_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalTalkableLevelObject_SurveyWomanRemain_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalTalkableLevelObject_SurveyWomanRemain_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/RookieExpeditionTeam/BP_PalTalkableLevelObject_SurveyWomanRemain.4"
+      },
+      "VariableGuid": "162CFB33-4C1CFB27-5D9A848B-98DE7083",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent'BP_PalTalkableLevelObject_SurveyWomanRemain_C:SK_Weapon_AssaultRifle_001_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/RookieExpeditionTeam/BP_PalTalkableLevelObject_SurveyWomanRemain.8"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_TalkableLevelObjectBase_Modify_C",
+      "VariableGuid": "35FEB3AD-44326D88-D0486988-98B78EC5",
+      "InternalVariableName": "SK_Weapon_AssaultRifle_001"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalTalkableLevelObject_SurveyWomanRemain_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalTalkableLevelObject_SurveyWomanRemain_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/RookieExpeditionTeam/BP_PalTalkableLevelObject_SurveyWomanRemain.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalTalkableLevelObject_SurveyWomanRemain_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/RookieExpeditionTeam/BP_PalTalkableLevelObject_SurveyWomanRemain.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalTalkableLevelObject_SurveyWomanRemain_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/RookieExpeditionTeam/BP_PalTalkableLevelObject_SurveyWomanRemain.5"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SK_Weapon_AssaultRifle_001_GEN_VARIABLE",
+    "Outer": "BP_PalTalkableLevelObject_SurveyWomanRemain_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_Weapon_AssaultRifle_001'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/AssaultRifle/SK_Weapon_AssaultRifle_001/SK_Weapon_AssaultRifle_001.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_Weapon_AssaultRifle_001'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/AssaultRifle/SK_Weapon_AssaultRifle_001/SK_Weapon_AssaultRifle_001.0"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 6.422961E-16,
+        "Z": 2.8926444
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 90.0
+      }
+    }
+  }
+]

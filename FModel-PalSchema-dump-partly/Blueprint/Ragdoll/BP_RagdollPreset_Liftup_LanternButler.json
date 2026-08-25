@@ -1,0 +1,79 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_RagdollPreset_Liftup_LanternButler_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalRagdollPreset'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_RagdollPreset_Liftup_LanternButler_C'Default__BP_RagdollPreset_Liftup_LanternButler_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Ragdoll/BP_RagdollPreset_Liftup_LanternButler.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_RagdollPreset_Liftup_LanternButler_C",
+    "Name": "Default__BP_RagdollPreset_Liftup_LanternButler_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Ragdoll/BP_RagdollPreset_Liftup_LanternButler.BP_RagdollPreset_Liftup_LanternButler_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockBoneNames": [
+        "pelvis",
+        "hips",
+        "thigh",
+        "calf",
+        "foot",
+        "spine_01",
+        "spine_02",
+        "spine_03",
+        "clavicle_l",
+        "upperarm_l",
+        "lowerarm_l",
+        "hand_l",
+        "clavicle_r",
+        "upperarm_r",
+        "lowerarm_r",
+        "hand_r",
+        "neck",
+        "jaw",
+        "tongue_01",
+        "tongue_02",
+        "head",
+        "hairA_01",
+        "cloakE_01",
+        "cloakD_01_l",
+        "cloakD_01_r",
+        "cloakC_01_l",
+        "cloakC_01_r",
+        "cloakA_01_l",
+        "cloakB_01_l",
+        "cloakA_01_r",
+        "cloakB_01_r",
+        "hairB_01_r",
+        "hairC_01_r",
+        "hairC_01_l",
+        "hairB_01_l",
+        "lantern_01",
+        "lantern_02",
+        "flame_01",
+        "flame_02",
+        "flame_03",
+        "None"
+      ],
+      "LinearDamping": 7.0,
+      "AngularDamping": 7.0
+    }
+  }
+]

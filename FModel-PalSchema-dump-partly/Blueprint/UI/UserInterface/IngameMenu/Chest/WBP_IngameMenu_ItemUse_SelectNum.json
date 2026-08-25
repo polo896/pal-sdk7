@@ -1,0 +1,1765 @@
+[
+  {
+    "Type": "BackgroundBlur",
+    "Name": "BackgroundBlur_75",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'BackgroundBlur'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BlurStrength": 4.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.15"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_ItemName",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C408F5C247F2AE913592AE940B3AA639",
+        "SourceString": "取り出し : パルスフィア",
+        "LocalizedString": "取り出し : パルスフィア"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 11
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanelHead.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.21"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_144",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.5"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_11'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_12'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_14'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_20'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_25",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.19"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanelHead",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanelHead.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanelHead.CanvasPanelSlot_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanelHead.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.21"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.14"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_144",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 580.0,
+          "Bottom": 300.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.Image_Shadow'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_144",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.Frame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_144",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Right": -4.0,
+          "Bottom": 4.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.Shadow_B'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.41"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasPanel_144",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 8.0,
+          "Right": 4.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.Shadow_R'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_144",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 22.33329,
+          "Right": 0.0,
+          "Bottom": 20.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.HeadShadow'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_14",
+    "Outer": "CanvasPanel_144",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -50.0,
+          "Right": 160.0,
+          "Bottom": 36.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.2"
+      },
+      "Content": {
+        "ObjectName": "WBP_CommonButton_2_C'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.WBP_CommonButton_Confirm'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.43"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_144",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 8.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.Dot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.33"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_20",
+    "Outer": "CanvasPanel_144",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 252.0,
+          "Top": -105.0,
+          "Right": 30.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.2"
+      },
+      "Content": {
+        "ObjectName": "WBP_Menu_btn_C'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.WBP_Menu_btn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_144",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 8.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.Dot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_144",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.2"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanelHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_144",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.2"
+      },
+      "Content": {
+        "ObjectName": "BackgroundBlur'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.BackgroundBlur_75'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.0"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_144",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 22.0,
+          "Top": -63.0,
+          "Right": 22.0,
+          "Bottom": 110.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.2"
+      },
+      "Content": {
+        "ObjectName": "WBP_IngameCommonSelectNum_C'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.WBP_IngameCommonSelectNum'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_144",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_25",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_25'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.3"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.Image_154'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_25",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -15.0,
+          "Right": 480.0,
+          "Bottom": 210.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_25'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.3"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanelHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanelHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.ItemInfoHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.39"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanelHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanelHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.4"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.BP_PalTextBlock_ItemName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.1"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanelHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -31.644558,
+          "Top": -3.439273,
+          "Right": -36.402996,
+          "Bottom": 65.33345
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanelHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.ItemInfoHead_Tri_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.40"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_IngameMenu_ItemUse_SelectNum_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WBP_IngameCommonSelectNum",
+          "DelegatePropertyName": "OnUpdateNum",
+          "FunctionNameToBind": "BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_0_OnUpdateNum__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_CommonButton_Confirm",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_Menu_btn",
+          "DelegatePropertyName": "OnButtonClicked",
+          "FunctionNameToBind": "BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_Menu_btn_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature",
+    "Outer": "WBP_IngameMenu_ItemUse_SelectNum_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_0_OnUpdateNum__DelegateSignature",
+    "Outer": "WBP_IngameMenu_ItemUse_SelectNum_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "Int64Property",
+        "Name": "Num",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_Menu_btn_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature",
+    "Outer": "WBP_IngameMenu_ItemUse_SelectNum_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_IngameMenu_ItemUse_SelectNum",
+    "Outer": "WBP_IngameMenu_ItemUse_SelectNum_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "K2Node_ComponentBoundEvent_Num",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Conv_Int64ToInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSelectNumClosed__DelegateSignature",
+    "Outer": "WBP_IngameMenu_ItemUse_SelectNum_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSelectNumConfirmed__DelegateSignature",
+    "Outer": "WBP_IngameMenu_ItemUse_SelectNum_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "TakeOutCount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup",
+    "Outer": "WBP_IngameMenu_ItemUse_SelectNum_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "TargetSlot",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalItemSlot'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TargetCharacter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetItemId_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 44,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalItemId'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "CallFunc_Conv_IntToInt64_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetItemName_outName",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetItemIDManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalItemIDManager'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetStaticItemData_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalStaticItemDataBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetMaxUseableNumToCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Min_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_1",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 80,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "CallFunc_Conv_IntToInt64_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup_OnlySlot",
+    "Outer": "WBP_IngameMenu_ItemUse_SelectNum_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "TargetSlot",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalItemSlot'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetItemId_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 44,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalItemId'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "CallFunc_Conv_IntToInt64_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetItemName_outName",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_1",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "CallFunc_Conv_IntToInt64_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 80,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "Base",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.003504,
+        "G": 0.00903,
+        "B": 0.01,
+        "A": 0.6,
+        "Hex": "990B1719"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.17"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Dot_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.11"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Dot_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.13"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Frame",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_frame_1px'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_frame_1px.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.2,
+        "Hex": "33FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.6"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HeadShadow",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 4.0,
+          "Y": 1024.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_menu_bggrd_v'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_menu_bggrd_v.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.2,
+        "Hex": "33000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_12'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.9"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_154",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.1,
+        "Hex": "19000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.18"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Shadow",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 360.0,
+          "Y": 360.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Menu_BGGrd_1'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Menu/MI_UI_Menu_BGGrd_1.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.5"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.7
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ItemInfoHead",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "Tiling": "ESlateBrushTileType::Both",
+        "ImageSize": {
+          "X": 408.0,
+          "Y": 60.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.038204,
+        "G": 0.059511,
+        "B": 0.068478,
+        "A": 1.0,
+        "Hex": "37454A"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanelHead.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.20"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ItemInfoHead_Tri_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "Tiling": "ESlateBrushTileType::Both",
+        "ImageSize": {
+          "X": 512.0,
+          "Y": 512.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_UI_mask_anime'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Texture/T_UI_mask_anime.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.715694,
+        "G": 0.879623,
+        "B": 1.0,
+        "A": 0.1,
+        "Hex": "19DCF1FF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanelHead.CanvasPanelSlot_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.22"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.9,
+          "Y": 0.9
+        }
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Shadow_B",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.2,
+        "Hex": "33000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.7"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Shadow_R",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.2,
+        "Hex": "33000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_11'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.8"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "WBP_CommonButton_2_C",
+    "Name": "WBP_CommonButton_Confirm",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_2.WBP_CommonButton_2_C'",
+    "Template": {
+      "ObjectName": "WBP_CommonButton_2_C'Default__WBP_CommonButton_2_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_2.181"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitializeMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_CONFIRM"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_14'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.10"
+      },
+      "Navigation": {
+        "ObjectName": "WidgetNavigation'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.WBP_CommonButton_Confirm.WidgetNavigation_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.48"
+      }
+    }
+  },
+  {
+    "Type": "WBP_IngameCommonSelectNum_C",
+    "Name": "WBP_IngameCommonSelectNum",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_IngameCommonSelectNum.WBP_IngameCommonSelectNum_C'",
+    "Template": {
+      "ObjectName": "WBP_IngameCommonSelectNum_C'Default__WBP_IngameCommonSelectNum_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_IngameCommonSelectNum.116"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MinDisplayDigit": 6,
+      "bAutoActivate": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.16"
+      }
+    }
+  },
+  {
+    "Type": "WBP_IngameMenu_ItemUse_SelectNum_C",
+    "Name": "Default__WBP_IngameMenu_ItemUse_SelectNum_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.WBP_IngameMenu_ItemUse_SelectNum_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bAutoActivate": true,
+      "bSupportsActivationFocus": false,
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_Menu_btn_C",
+    "Name": "WBP_Menu_btn",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/WBP_Menu_btn.WBP_Menu_btn_C'",
+    "Template": {
+      "ObjectName": "WBP_Menu_btn_C'Default__WBP_Menu_btn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/WBP_Menu_btn.72"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsFocusable": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_144.CanvasPanelSlot_20'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.12"
+      },
+      "Navigation": {
+        "ObjectName": "WidgetNavigation'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.WBP_Menu_btn.WidgetNavigation_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.49"
+      }
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_IngameMenu_ItemUse_SelectNum_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.50"
+      },
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_IngameMenu_ItemUse_SelectNum_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.23"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:ExecuteUbergraph_WBP_IngameMenu_ItemUse_SelectNum'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.27"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidget'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:Setup_OnlySlot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.31"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.30"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_Menu_btn_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.26"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.24"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_0_OnUpdateNum__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.25"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:ExecuteUbergraph_WBP_IngameMenu_ItemUse_SelectNum'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.27"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:OnSelectNumConfirmed__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.29"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:OnSelectNumClosed__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.28"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalTextBlock_ItemName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_CommonButton_Confirm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonButton_2_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_2.186"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_IngameCommonSelectNum",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_IngameCommonSelectNum_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_IngameCommonSelectNum.124"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Menu_btn",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Menu_btn_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/WBP_Menu_btn.77"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CurrentProductAmount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnSelectNumClosed",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:OnSelectNumClosed__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.28"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnSelectNumConfirmed",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:OnSelectNumConfirmed__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.29"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "MaxCount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "OnSelectNumClosed__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:OnSelectNumClosed__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.28"
+      },
+      "OnSelectNumConfirmed__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:OnSelectNumConfirmed__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.29"
+      },
+      "ExecuteUbergraph_WBP_IngameMenu_ItemUse_SelectNum": {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:ExecuteUbergraph_WBP_IngameMenu_ItemUse_SelectNum'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.27"
+      },
+      "BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_0_OnUpdateNum__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_0_OnUpdateNum__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.25"
+      },
+      "BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.24"
+      },
+      "BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_Menu_btn_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_Menu_btn_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.26"
+      },
+      "Setup": {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.30"
+      },
+      "Setup_OnlySlot": {
+        "ObjectName": "Function'WBP_IngameMenu_ItemUse_SelectNum_C:Setup_OnlySlot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.31"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_IngameMenu_ItemUse_SelectNum_C'Default__WBP_IngameMenu_ItemUse_SelectNum_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.45"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetNavigation",
+    "Name": "WidgetNavigation_0",
+    "Outer": "WBP_CommonButton_Confirm",
+    "Class": "UScriptClass'WidgetNavigation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Up": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Down": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Left": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Right": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Next": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Previous": {
+        "Rule": "EUINavigationRule::Stop"
+      }
+    }
+  },
+  {
+    "Type": "WidgetNavigation",
+    "Name": "WidgetNavigation_0",
+    "Outer": "WBP_Menu_btn",
+    "Class": "UScriptClass'WidgetNavigation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Down": {
+        "Rule": "EUINavigationRule::Custom",
+        "WidgetToFocus": "CustomNavi_ToTargetContainerSortButton"
+      },
+      "Left": {
+        "Rule": "EUINavigationRule::Custom",
+        "WidgetToFocus": "CustomNavi_ToTargetContainerSortButton"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_IngameMenu_ItemUse_SelectNum_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ItemUse_SelectNum_C:WidgetTree.CanvasPanel_25'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ItemUse_SelectNum.3"
+      }
+    }
+  }
+]

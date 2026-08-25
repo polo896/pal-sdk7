@@ -1,0 +1,272 @@
+[
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_Reward_BossDefeat",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "5BE352F5-4ADB968F-58C3338D-902181E4",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "09AA3BA3-44F0FCCF-A0F38999-F3F81D64",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_CheckBossDefeatReward_C",
+    "Name": "FNBP_CheckBossDefeat_C_0",
+    "Outer": "FABP_Reward_BossDefeat",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_CheckBossDefeatReward.FNBP_CheckBossDefeatReward_C'",
+    "Template": {
+      "ObjectName": "FNBP_CheckBossDefeatReward_C'Default__FNBP_CheckBossDefeatReward_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_CheckBossDefeatReward.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "D4E53B83-48930F79-32A0A4B9-95333123",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "5F549D1F-49B5B087-E33886BF-648776CA",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Continue_Success",
+          "Value": {
+            "NodeGuid": "FC0873B9-484E5B9D-066A8AA1-375781A6",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Continue_Failed",
+          "Value": {
+            "NodeGuid": "7DF8B06C-4522CCCB-B3122787-0E9F2227",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_Reward_BossDefeat",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Reach_BossDefeat_AllReached_1",
+        "Reach_BossDefeat_AllReached_2"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "5F549D1F-49B5B087-E33886BF-648776CA"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_Reward_BossDefeat",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Reach_BossDefeat_Reward"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "FC0873B9-484E5B9D-066A8AA1-375781A6"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_3",
+    "Outer": "FABP_Reward_BossDefeat",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Reach_BossDefeat_Unreach"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "7DF8B06C-4522CCCB-B3122787-0E9F2227"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_Reward_BossDefeat",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Reach_BossDefeat_FirstEncout_1",
+        "Reach_BossDefeat_FirstEncout_2",
+        "Reach_BossDefeat_FirstEncout_3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "006BBD64-4FE2ECFE-A9D1278E-3AAB812B",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "E6BFF91F-441F4E38-DEA181BB-A7D8C96D",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_0",
+    "Outer": "FABP_Reward_BossDefeat",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_BossDefeatReward"
+      },
+      "NetworkInvokeName": "OrderQuest",
+      "GraphNode": null,
+      "NodeGuid": "E6BFF91F-441F4E38-DEA181BB-A7D8C96D"
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_Reward_BossDefeat",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_BossDefeatReward"
+      },
+      "GraphNode": null,
+      "NodeGuid": "09AA3BA3-44F0FCCF-A0F38999-F3F81D64",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "006BBD64-4FE2ECFE-A9D1278E-3AAB812B",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "D4E53B83-48930F79-32A0A4B9-95333123",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "5F549D1F-49B5B087-E33886BF-648776CA",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_Reward_BossDefeat",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "84916815-45E0AE39-14884EBA-3A842C10",
+      "Nodes": [
+        {
+          "Key": "5BE352F5-4ADB968F-58C3338D-902181E4",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_Reward_BossDefeat:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_BossDefeat.0"
+          }
+        },
+        {
+          "Key": "006BBD64-4FE2ECFE-A9D1278E-3AAB812B",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Reward_BossDefeat:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_BossDefeat.5"
+          }
+        },
+        {
+          "Key": "E6BFF91F-441F4E38-DEA181BB-A7D8C96D",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_Reward_BossDefeat:FNBP_OrderQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_BossDefeat.6"
+          }
+        },
+        {
+          "Key": "D4E53B83-48930F79-32A0A4B9-95333123",
+          "Value": {
+            "ObjectName": "FNBP_CheckBossDefeatReward_C'FABP_Reward_BossDefeat:FNBP_CheckBossDefeat_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_BossDefeat.1"
+          }
+        },
+        {
+          "Key": "5F549D1F-49B5B087-E33886BF-648776CA",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Reward_BossDefeat:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_BossDefeat.2"
+          }
+        },
+        {
+          "Key": "FC0873B9-484E5B9D-066A8AA1-375781A6",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Reward_BossDefeat:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_BossDefeat.3"
+          }
+        },
+        {
+          "Key": "7DF8B06C-4522CCCB-B3122787-0E9F2227",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Reward_BossDefeat:FNBP_NPCTalk_FixedMsdId_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_BossDefeat.4"
+          }
+        },
+        {
+          "Key": "09AA3BA3-44F0FCCF-A0F38999-F3F81D64",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_Reward_BossDefeat:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_BossDefeat.7"
+          }
+        }
+      ]
+    }
+  }
+]

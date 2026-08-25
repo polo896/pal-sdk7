@@ -1,0 +1,3822 @@
+[
+  {
+    "Type": "BackgroundBlur",
+    "Name": "BackgroundBlur",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'BackgroundBlur'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Left",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "BlurStrength": 6.0,
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.79"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_InventoryHead",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "ARENA_RANKING_TITLE"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "FontSizeOverride_VeryLarge": 17,
+      "Text": {
+        "Namespace": "",
+        "Key": "F04BF51447FCE968A3238A8A501D3B33",
+        "SourceString": "（仮）闘技場ランキング",
+        "LocalizedString": "（仮）闘技場ランキング"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_33",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_35",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_35.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_35.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_35.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_35.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.7"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_84.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_84",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_84.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_84.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_84.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_84.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_33.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_Head",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head.CanvasPanelSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head.CanvasPanelSlot_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.15"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_84.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_33",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1200.0,
+          "Bottom": 900.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_33'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.2"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_84'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_35",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Top": 747.0,
+          "Right": 24.0,
+          "Bottom": 2.556053
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_35'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.3"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Player'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.72"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_35",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Top": 8.0,
+          "Right": 10.0,
+          "Bottom": 110.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_35'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.3"
+      },
+      "Content": {
+        "ObjectName": "ScrollBox'WBP_Arena_RankingBoard_C:WidgetTree.ScrollBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.89"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_35",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_35'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.3"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.74"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_35",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -96.77018,
+          "Right": 0.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_35'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.3"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.71"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_84",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 20.0,
+          "Top": 60.0,
+          "Right": 20.0,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_84'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_35'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_84",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 25.0,
+          "Right": 32.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_84'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.4"
+      },
+      "Content": {
+        "ObjectName": "WBP_Menu_btn_C'WBP_Arena_RankingBoard_C:WidgetTree.WBP_Menu_btn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.92"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_84",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_84'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.4"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.73"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_84",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 15.0,
+          "Top": 20.0,
+          "Right": 15.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_84'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_Head",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 16.0,
+          "Top": -0.5
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.5"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Arena_RankingBoard_C:WidgetTree.Text_InventoryHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.1"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_Head",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.5"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.CharaHeadBase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.39"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_Head",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.5"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.CharaHeadFrame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_Head",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 2.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.5"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.CharaHead_Dot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_Head",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.5"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.CharaHead_Dot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_Head",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.5"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.CharaHead_Dot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_Head",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.5"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.CharaHead_Dot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.38"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_Arena_RankingBoard_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WBP_Menu_btn",
+          "DelegatePropertyName": "OnButtonClicked",
+          "FunctionNameToBind": "BndEvt__WBP_Arena_RankingBoard_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_Arena_RankingBoard_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature",
+    "Outer": "WBP_Arena_RankingBoard_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BP_GetDesiredFocusTarget",
+    "Outer": "WBP_Arena_RankingBoard_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'CommonActivatableWidget:BP_GetDesiredFocusTarget'",
+      "ObjectPath": "/Script/CommonUI"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetChildAt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsWBP_Arena_Ranking_Board_List",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Arena_RankingBoard_List_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard_List.63"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "CloseAnm",
+    "Outer": "WBP_Arena_RankingBoard_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "WBP_Arena_RankingBoard_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Do Custom Navigation_Left",
+    "Outer": "WBP_Arena_RankingBoard_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "Navigation",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EUINavigation'",
+          "ObjectPath": "/Script/SlateCore"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EUINavigation'",
+            "ObjectPath": "/Script/SlateCore"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Max_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetChildAt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsWBP_Arena_Ranking_Board_List",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Arena_RankingBoard_List_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard_List.63"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "DoCustomNavigation_Right",
+    "Outer": "WBP_Arena_RankingBoard_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "Navigation",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EUINavigation'",
+          "ObjectPath": "/Script/SlateCore"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EUINavigation'",
+            "ObjectPath": "/Script/SlateCore"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetChildrenCount_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Min_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetChildAt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsWBP_Arena_Ranking_Board_List",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Arena_RankingBoard_List_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard_List.63"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_Arena_RankingBoard",
+    "Outer": "WBP_Arena_RankingBoard_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'WidgetAnimationResult__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsAnimationPlaying_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreatePlayAnimationProxyObject_Result",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreatePlayAnimationProxyObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimationPlayCallbackProxy'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "Finished_0CE00FEB491F3446724290B53E54505B",
+    "Outer": "WBP_Arena_RankingBoard_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnListHovered",
+    "Outer": "WBP_Arena_RankingBoard_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetChildIndex_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnLocalPlayerInfoReplicated",
+    "Outer": "WBP_Arena_RankingBoard_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "RankingInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 152,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalArenaWorldRankingRecord'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalArenaWorldSubsystem:PalOnLocalPlayerRankingInfoNotified__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetArenaWorldSubsystem_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalArenaWorldSubsystem'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetup",
+    "Outer": "WBP_Arena_RankingBoard_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUserWidget:OnSetup'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup",
+    "Outer": "WBP_Arena_RankingBoard_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Arena_RankingBoard_List_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard_List.63"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalArenaWorldSubsystem:PalOnLocalPlayerRankingInfoNotified__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetArenaWorldSubsystem_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalArenaWorldSubsystem'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetLocalPlayerUID_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Guid'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnInputAction__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_Arena_RankingBoard_List_C:OnListHovered__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard_List.24"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddChild_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetArenaWorldSubsystem_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalArenaWorldSubsystem'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetArenaWorldRankingInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalArenaWorldRankingInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetTopWorldArenaRanking_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "CallFunc_GetTopWorldArenaRanking_ReturnValue",
+          "Flags": "RF_Public",
+          "ElementSize": 152,
+          "Struct": {
+            "ObjectName": "ScriptStruct'PalArenaWorldRankingRecord'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 152,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalArenaWorldRankingRecord'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_GuidGuid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "CharaHead_Dot_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.18"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CharaHead_Dot_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.19"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CharaHead_Dot_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head.CanvasPanelSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.20"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CharaHead_Dot_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head.CanvasPanelSlot_7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.21"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CharaHeadBase",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.040915,
+        "G": 0.057805,
+        "B": 0.059511,
+        "A": 1.0,
+        "Hex": "394445"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.16"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CharaHeadFrame",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_frame_1px'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_frame_1px.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.5,
+        "Hex": "7FFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_Head.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.17"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Dot",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 8.0,
+          "Y": 3.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.3,
+            "Hex": "4CFFFFFF"
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.942708,
+        "G": 0.912594,
+        "B": 0.864149,
+        "A": 1.0,
+        "Hex": "F9F5F0"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window_1.OverlaySlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.87"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Dot_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 12.0,
+          "Y": 4.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.942708,
+        "G": 0.912594,
+        "B": 0.864149,
+        "A": 1.0,
+        "Hex": "F9F5F0"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window.OverlaySlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.80"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Dot_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 12.0,
+          "Y": 4.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.942708,
+        "G": 0.912594,
+        "B": 0.864149,
+        "A": 1.0,
+        "Hex": "F9F5F0"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window.OverlaySlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.81"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Dot_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 12.0,
+          "Y": 4.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.942708,
+        "G": 0.912594,
+        "B": 0.864149,
+        "A": 1.0,
+        "Hex": "F9F5F0"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window.OverlaySlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.82"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Dot_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 12.0,
+          "Y": 4.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.942708,
+        "G": 0.912594,
+        "B": 0.864149,
+        "A": 1.0,
+        "Hex": "F9F5F0"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window.OverlaySlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.83"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Dot_4",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 8.0,
+          "Y": 3.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.3,
+            "Hex": "4CFFFFFF"
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.942708,
+        "G": 0.912594,
+        "B": 0.864149,
+        "A": 1.0,
+        "Hex": "F9F5F0"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window_1.OverlaySlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.85"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Dot_5",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 8.0,
+          "Y": 3.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.3,
+            "Hex": "4CFFFFFF"
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.942708,
+        "G": 0.912594,
+        "B": 0.864149,
+        "A": 1.0,
+        "Hex": "F9F5F0"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window_1.OverlaySlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.86"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Dot_6",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 8.0,
+          "Y": 3.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.3,
+            "Hex": "4CFFFFFF"
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.942708,
+        "G": 0.912594,
+        "B": 0.864149,
+        "A": 1.0,
+        "Hex": "F9F5F0"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window_1.OverlaySlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.88"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 150.0,
+          "Y": 150.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Menu_BGGrd_1'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Menu/MI_UI_Menu_BGGrd_1.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window.OverlaySlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.84"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible",
+      "RenderOpacity": 0.85
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 3.0,
+          "Y": 3.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.5,
+        "Hex": "7FFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Line.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.76"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_251",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 1.5
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.2,
+        "Hex": "33FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Line.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.75"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 3.0,
+          "Y": 3.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.5,
+        "Hex": "7FFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Line.OverlaySlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.77"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Anm_In",
+    "Outer": "Anm_In_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "255EBAEE-4615FBDA-DB6114B5-B42FF09E",
+          "Name": "CanvasPanel_84",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "49C9E969-428BAA67-F9780F96-D67374EA",
+          "Name": "CanvasPanelSlot_0",
+          "ParentGuid": "255EBAEE-4615FBDA-DB6114B5-B42FF09E",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "B546E308-41A9F912-C9E3FB86-1E73935B",
+          "Name": "WBP_Menu_btn",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "255EBAEE-4615FBDA-DB6114B5-B42FF09E",
+          "BindingName": "CanvasPanel_84",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.67"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "49C9E969-428BAA67-F9780F96-D67374EA",
+          "BindingName": "CanvasPanelSlot_0",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneMarginTrack'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneMarginTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.70"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "B546E308-41A9F912-C9E3FB86-1E73935B",
+          "BindingName": "WBP_Menu_btn",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_1'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.68"
+            },
+            {
+              "ObjectName": "MovieScene2DTransformTrack'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieScene2DTransformTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.55"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 15001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 60
+      },
+      "Signature": "AE67AE1B-4EB04053-780AFA8B-0458560A"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Class": "UScriptClass'MovieScene2DTransformSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 10001
+          },
+          {
+            "Value": 13001
+          },
+          {
+            "Value": 15001
+          }
+        ],
+        "Values": [
+          {
+            "Value": -30.0,
+            "Tangent": {
+              "ArriveTangent": 0.021726232,
+              "LeaveTangent": 0.021726232,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 1
+          },
+          {
+            "Value": -4.136884,
+            "Tangent": {
+              "ArriveTangent": 0.0055158464,
+              "LeaveTangent": 0.0055158464,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Translation[1]": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 10001
+          },
+          {
+            "Value": 15001
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.56"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.57"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 10001
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 15001
+            }
+          }
+        }
+      },
+      "Signature": "BEA4B2F5-41B45F3F-FBE7FBBC-6B157112"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "Anm_In",
+    "Class": "UScriptClass'MovieScene2DTransformTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderTransform",
+        "PropertyPath": "RenderTransform",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.54"
+        }
+      ],
+      "EvaluationFieldGuid": "83A712DF-48491C75-36AED5AE-7CB23732",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene2DTransformSection'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.54"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 10001
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": {
+                  "Value": 15001
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "83A712DF-48491C75-36AED5AE-7CB23732"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneMarginSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneMarginSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Anm_In_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 3,
+                  "Capacity": 3
+                },
+                {
+                  "StartIndex": 3,
+                  "Size": 1,
+                  "Capacity": 1
+                },
+                {
+                  "StartIndex": 4,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 2,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 3,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 3,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 2,
+                  "Capacity": 2
+                },
+                {
+                  "StartIndex": 2,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 0,
+                      "Value": {
+                        "Value": 15000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": 1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                },
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 15000
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 0,
+                      "Value": {
+                        "Value": 15001
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 2
+                  }
+                },
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 10001
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 0,
+                      "Value": {
+                        "Value": 15000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": 0
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 1
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.65"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneMarginSection'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneMarginTrack_0.MovieSceneMarginSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.69"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 1
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.66"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 2
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene2DTransformSection'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.54"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 3
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "255EBAEE-4615FBDA-DB6114B5-B42FF09E"
+          },
+          {
+            "ObjectBindingID": "49C9E969-428BAA67-F9780F96-D67374EA"
+          },
+          {
+            "ObjectBindingID": "B546E308-41A9F912-C9E3FB86-1E73935B"
+          },
+          {
+            "ObjectBindingID": "B546E308-41A9F912-C9E3FB86-1E73935B"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 15000
+          },
+          "SubFrame": 0.0
+        },
+        {
+          "FrameNumber": {
+            "Value": 15001
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "A5F5D9E2-4F30BF52-077F2E95-1F7C957A",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 5000
+          },
+          {
+            "Value": 12000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.58"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.59"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 15000
+            }
+          }
+        }
+      },
+      "Signature": "6DDC928B-49641CD6-91F3E884-90DA33B1"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_1",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 10001
+          },
+          {
+            "Value": 15001
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.60"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.61"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 15000
+            }
+          }
+        }
+      },
+      "Signature": "E756A8F3-4607B702-BD7D10A3-AAEB9585"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Anm_In",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.65"
+        }
+      ],
+      "EvaluationFieldGuid": "99245714-4B224C95-6645BFAD-258029DF",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.65"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": {
+                  "Value": 15000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "99245714-4B224C95-6645BFAD-258029DF"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_1",
+    "Outer": "Anm_In",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.66"
+        }
+      ],
+      "EvaluationFieldGuid": "6E64DB00-4420DB16-4F420DBB-FB1530D4",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.66"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": {
+                  "Value": 15000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "6E64DB00-4420DB16-4F420DBB-FB1530D4"
+    }
+  },
+  {
+    "Type": "MovieSceneMarginSection",
+    "Name": "MovieSceneMarginSection_0",
+    "Outer": "MovieSceneMarginTrack_0",
+    "Class": "UScriptClass'MovieSceneMarginSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RightCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 15000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1100.0,
+            "Tangent": {
+              "ArriveTangent": 0.018122999,
+              "LeaveTangent": 0.018122999,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 1
+          },
+          {
+            "Value": 1200.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "BottomCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 15000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 765.0,
+            "Tangent": {
+              "ArriveTangent": 0.018710665,
+              "LeaveTangent": 0.018710665,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 1
+          },
+          {
+            "Value": 900.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneMarginTrack_0.MovieSceneMarginSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.62"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneMarginTrack_0.MovieSceneMarginSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.63"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 15000
+            }
+          }
+        }
+      },
+      "Signature": "6AD3F8A8-412838CE-9AE596BB-D6F3377C"
+    }
+  },
+  {
+    "Type": "MovieSceneMarginTrack",
+    "Name": "MovieSceneMarginTrack_0",
+    "Outer": "Anm_In",
+    "Class": "UScriptClass'MovieSceneMarginTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "Offsets",
+        "PropertyPath": "LayoutData.Offsets"
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneMarginSection'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneMarginTrack_0.MovieSceneMarginSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.69"
+        }
+      ],
+      "EvaluationFieldGuid": "8C737229-43FEF3F2-0E871B83-E1CB18DC",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneMarginSection'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In.MovieSceneMarginTrack_0.MovieSceneMarginSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.69"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": {
+                  "Value": 15000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "8C737229-43FEF3F2-0E871B83-E1CB18DC"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_Line",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Line.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.75"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Line.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.76"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Line.OverlaySlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.77"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_35.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.10"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_Player",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Player.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.78"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_35.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.7"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_Window",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.79"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window.OverlaySlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.84"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window.OverlaySlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.82"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window.OverlaySlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.80"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window.OverlaySlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.81"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window.OverlaySlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.83"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_84.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.13"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_Window_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window_1.OverlaySlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.87"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window_1.OverlaySlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.85"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window_1.OverlaySlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.86"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window_1.OverlaySlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.88"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_35.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.9"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_Line",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 3.0,
+        "Right": 3.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.71"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.Image_251'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.51"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_Line",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.71"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.Image_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.50"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_2",
+    "Outer": "Overlay_Line",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.71"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.Image_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.52"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_Player",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Player'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.72"
+      },
+      "Content": {
+        "ObjectName": "WBP_Arena_RankingBoard_List_C'WBP_Arena_RankingBoard_C:WidgetTree.WBP_Arena_RankingBoard_List_Player'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.91"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_Window",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.73"
+      },
+      "Content": {
+        "ObjectName": "BackgroundBlur'WBP_Arena_RankingBoard_C:WidgetTree.BackgroundBlur'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.0"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_2",
+    "Outer": "Overlay_Window",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.73"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.Dot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.42"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_3",
+    "Outer": "Overlay_Window",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.73"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.Dot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.43"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_4",
+    "Outer": "Overlay_Window",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.73"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.Dot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.44"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_5",
+    "Outer": "Overlay_Window",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.73"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.Dot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.45"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_6",
+    "Outer": "Overlay_Window",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": -32.0,
+        "Top": -32.0,
+        "Right": -32.0,
+        "Bottom": -32.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.73"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.Image'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.49"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_2",
+    "Outer": "Overlay_Window_1",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.74"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.Dot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.46"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_3",
+    "Outer": "Overlay_Window_1",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.74"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.Dot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.47"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_4",
+    "Outer": "Overlay_Window_1",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.74"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.Dot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.41"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_5",
+    "Outer": "Overlay_Window_1",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Window_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.74"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RankingBoard_C:WidgetTree.Dot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.48"
+      }
+    }
+  },
+  {
+    "Type": "ScrollBox",
+    "Name": "ScrollBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScrollBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetStyle": {
+        "BarThickness": 4.0,
+        "TopShadowBrush": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "BottomShadowBrush": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "LeftShadowBrush": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "RightShadowBrush": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        }
+      },
+      "WidgetBarStyle": {
+        "HorizontalBackgroundImage": {
+          "DrawAs": "ESlateBrushDrawType::Image",
+          "ImageSize": {
+            "X": 2.0,
+            "Y": 2.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.1,
+              "Hex": "19FFFFFF"
+            }
+          }
+        },
+        "VerticalBackgroundImage": {
+          "DrawAs": "ESlateBrushDrawType::Image",
+          "ImageSize": {
+            "X": 2.0,
+            "Y": 2.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.1,
+              "Hex": "19FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_tex_white'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_tex_white.0"
+          }
+        },
+        "VerticalTopSlotImage": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType",
+          "ImageSize": {
+            "X": 6.0,
+            "Y": 6.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.597202,
+              "G": 0.913099,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "CBF5FF"
+            }
+          }
+        },
+        "VerticalBottomSlotImage": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType",
+          "ImageSize": {
+            "X": 6.0,
+            "Y": 6.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.597202,
+              "G": 0.913099,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "CBF5FF"
+            }
+          }
+        },
+        "NormalThumbImage": {
+          "ImageSize": {
+            "X": 6.0,
+            "Y": 6.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.597202,
+              "G": 0.913099,
+              "B": 1.0,
+              "A": 0.65,
+              "Hex": "A6CBF5FF"
+            }
+          }
+        },
+        "HoveredThumbImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.48515,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "00B9FF"
+            }
+          }
+        },
+        "DraggedThumbImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.483333,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "00B9FF"
+            }
+          }
+        }
+      },
+      "ScrollbarThickness": {
+        "X": 2.0,
+        "Y": 4.0
+      },
+      "ScrollbarPadding": {
+        "Left": 8.0,
+        "Top": 8.0,
+        "Right": 0.0,
+        "Bottom": 8.0
+      },
+      "AllowOverscroll": false,
+      "NavigationScrollPadding": 96.0,
+      "ScrollWhenFocusChanges": "EScrollWhenFocusChanges::InstantScroll",
+      "WheelScrollMultiplier": 2.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_35.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.8"
+      },
+      "bIsVariable": true,
+      "Navigation": {
+        "ObjectName": "WidgetNavigation'WBP_Arena_RankingBoard_C:WidgetTree.ScrollBox_0.WidgetNavigation_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.95"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Arena_RankingBoard_C",
+    "Name": "Default__WBP_Arena_RankingBoard_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_Arena_RankingBoard_List_C",
+    "Name": "WBP_Arena_RankingBoard_List_Player",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard_List.WBP_Arena_RankingBoard_List_C'",
+    "Template": {
+      "ObjectName": "WBP_Arena_RankingBoard_List_C'Default__WBP_Arena_RankingBoard_List_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard_List.61"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RankingBoard_C:WidgetTree.Overlay_Player.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.78"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Menu_btn_C",
+    "Name": "WBP_Menu_btn",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/WBP_Menu_btn.WBP_Menu_btn_C'",
+    "Template": {
+      "ObjectName": "WBP_Menu_btn_C'Default__WBP_Menu_btn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/WBP_Menu_btn.72"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_84.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.12"
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Anm_In_INST",
+    "Outer": "WBP_Arena_RankingBoard_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_Arena_RankingBoard_C:Anm_In_INST.Anm_In'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.53"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "CanvasPanel_84",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "255EBAEE-4615FBDA-DB6114B5-B42FF09E",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "CanvasPanel_84",
+          "SlotWidgetName": "CanvasPanelSlot_0",
+          "AnimationGuid": "49C9E969-428BAA67-F9780F96-D67374EA",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "WBP_Menu_btn",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "B546E308-41A9F912-C9E3FB86-1E73935B",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Anm_In",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_Arena_RankingBoard_C:Anm_In_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.64"
+      },
+      "Signature": "A5F5D9E2-4F30BF52-077F2E95-1F7C957A"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_Arena_RankingBoard_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_Arena_RankingBoard_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.96"
+      },
+      "bClassRequiresNativeTick": true,
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'WBP_Arena_RankingBoard_C:Anm_In_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.93"
+        }
+      ],
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_Arena_RankingBoard_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.22"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:ExecuteUbergraph_WBP_Arena_RankingBoard'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.29"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidgetOverlayUI'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:OnLocalPlayerInfoReplicated'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.32"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:OnListHovered'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.31"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:Do Custom Navigation_Left'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.27"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:DoCustomNavigation_Right'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.28"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.24"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.34"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:Finished_0CE00FEB491F3446724290B53E54505B'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.30"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:BndEvt__WBP_Arena_RankingBoard_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.23"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.33"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.26"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:CloseAnm'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.25"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:ExecuteUbergraph_WBP_Arena_RankingBoard'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.29"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Anm_In",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ScrollBox_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'ScrollBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Arena_RankingBoard_List_Player",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Arena_RankingBoard_List_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard_List.63"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Menu_btn",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Menu_btn_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/WBP_Menu_btn.77"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LastHoveredIndex",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_Arena_RankingBoard": {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:ExecuteUbergraph_WBP_Arena_RankingBoard'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.29"
+      },
+      "CloseAnm": {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:CloseAnm'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.25"
+      },
+      "Construct": {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.26"
+      },
+      "OnSetup": {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.33"
+      },
+      "BndEvt__WBP_Arena_RankingBoard_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:BndEvt__WBP_Arena_RankingBoard_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.23"
+      },
+      "Finished_0CE00FEB491F3446724290B53E54505B": {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:Finished_0CE00FEB491F3446724290B53E54505B'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.30"
+      },
+      "Setup": {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.34"
+      },
+      "BP_GetDesiredFocusTarget": {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.24"
+      },
+      "DoCustomNavigation_Right": {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:DoCustomNavigation_Right'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.28"
+      },
+      "Do Custom Navigation_Left": {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:Do Custom Navigation_Left'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.27"
+      },
+      "OnListHovered": {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:OnListHovered'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.31"
+      },
+      "OnLocalPlayerInfoReplicated": {
+        "ObjectName": "Function'WBP_Arena_RankingBoard_C:OnLocalPlayerInfoReplicated'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.32"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_Arena_RankingBoard_C'Default__WBP_Arena_RankingBoard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.90"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetNavigation",
+    "Name": "WidgetNavigation_0",
+    "Outer": "ScrollBox_0",
+    "Class": "UScriptClass'WidgetNavigation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Left": {
+        "Rule": "EUINavigationRule::CustomBoundary",
+        "WidgetToFocus": "Do Custom Navigation_Left"
+      },
+      "Right": {
+        "Rule": "EUINavigationRule::Custom",
+        "WidgetToFocus": "DoCustomNavigation_Right"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_Arena_RankingBoard_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RankingBoard_C:WidgetTree.CanvasPanel_33'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RankingBoard.2"
+      }
+    }
+  }
+]

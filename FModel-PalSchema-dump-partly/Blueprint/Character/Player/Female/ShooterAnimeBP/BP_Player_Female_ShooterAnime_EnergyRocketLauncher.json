@@ -1,0 +1,57 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Player_Female_ShooterAnime_EnergyRocketLauncher_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_ShooterAnime_MultiGuidedMissileLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_MultiGuidedMissileLauncher.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_ShooterAnime_MultiGuidedMissileLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_MultiGuidedMissileLauncher.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Player_Female_ShooterAnime_EnergyRocketLauncher_C'Default__BP_Player_Female_ShooterAnime_EnergyRocketLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_EnergyRocketLauncher.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Player_Female_ShooterAnime_EnergyRocketLauncher_C",
+    "Name": "Default__BP_Player_Female_ShooterAnime_EnergyRocketLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_EnergyRocketLauncher.BP_Player_Female_ShooterAnime_EnergyRocketLauncher_C'",
+    "Template": {
+      "ObjectName": "BP_Player_Female_ShooterAnime_MultiGuidedMissileLauncher_C'Default__BP_Player_Female_ShooterAnime_MultiGuidedMissileLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_MultiGuidedMissileLauncher.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimeInfo": {
+        "ReloadMontage": {
+          "ObjectName": "AnimMontage'AM_Player_Female_Reload_EnergyRocketLauncher'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/RocketLauncher/AM_Player_Female_Reload_EnergyRocketLauncher.0"
+        },
+        "AimBaseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::Stand",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Female_Aim_EnergyRocketLauncher'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/RocketLauncher/AS_Player_Female_Aim_EnergyRocketLauncher.0"
+            }
+          }
+        ]
+      }
+    }
+  }
+]

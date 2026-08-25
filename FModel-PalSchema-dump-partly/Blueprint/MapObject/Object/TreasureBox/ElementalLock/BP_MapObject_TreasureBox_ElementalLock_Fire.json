@@ -1,0 +1,444 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MapObject_TreasureBox_ElementalLock_Fire_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_MapObject_TreasureBox_ElementalLockBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLockBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_MapObject_TreasureBox_ElementalLock_Fire_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.14"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_MapObject_TreasureBox_ElementalLock_Fire_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_MapObject_TreasureBox_ElementalLockBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLockBase.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "PalWorkFacing",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalWorkFacingComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NS_NoteGlow",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MapObject_TreasureBox_ElementalLock_Fire_C'Default__BP_MapObject_TreasureBox_ElementalLock_Fire_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MapObject_TreasureBox_ElementalLock_Fire_C",
+    "Name": "Default__BP_MapObject_TreasureBox_ElementalLock_Fire_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.BP_MapObject_TreasureBox_ElementalLock_Fire_C'",
+    "Template": {
+      "ObjectName": "BP_MapObject_TreasureBox_ElementalLockBase_C'Default__BP_MapObject_TreasureBox_ElementalLockBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLockBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DamageReaction": {
+        "ObjectName": "PalMapObjectDamageReactionComponent'Default__BP_MapObject_TreasureBox_ElementalLock_Fire_C:DamageReaction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.6"
+      }
+    }
+  },
+  {
+    "Type": "BP_TreasureBoxVisual_ElementalLock_Fire_C",
+    "Name": "VisualActor_GEN_VARIABLE_BP_TreasureBoxVisual_ElementalLock_Fire_C_CAT",
+    "Outer": "VisualActor_GEN_VARIABLE",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_ElementalLock_Fire.BP_TreasureBoxVisual_ElementalLock_Fire_C'",
+    "Template": {
+      "ObjectName": "BP_TreasureBoxVisual_ElementalLock_Fire_C'Default__BP_TreasureBoxVisual_ElementalLock_Fire_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_ElementalLock_Fire.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkeletalMeshComponent": {
+        "ObjectName": "PalSkeletalMeshComponent'BP_MapObject_TreasureBox_ElementalLock_Fire_C:VisualActor_GEN_VARIABLE.VisualActor_GEN_VARIABLE_BP_TreasureBoxVisual_ElementalLock_Fire_C_CAT.SkeletalMesh'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.8"
+      },
+      "RootComponent": {
+        "ObjectName": "PalSkeletalMeshComponent'BP_MapObject_TreasureBox_ElementalLock_Fire_C:VisualActor_GEN_VARIABLE.VisualActor_GEN_VARIABLE_BP_TreasureBoxVisual_ElementalLock_Fire_C_CAT.SkeletalMesh'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.8"
+      }
+    },
+    "ActorLabel": "BP_TreasureBoxVisual_ElementalLock_Fire"
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "VisualActor_GEN_VARIABLE",
+    "Outer": "BP_MapObject_TreasureBox_ElementalLock_Fire_C",
+    "Class": "UScriptClass'ChildActorComponent'",
+    "Template": {
+      "ObjectName": "ChildActorComponent'BP_MapObject_TreasureBox_ElementalLockBase_C:VisualActor_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLockBase.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_TreasureBoxVisual_ElementalLock_Fire_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_ElementalLock_Fire.0"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "BP_TreasureBoxVisual_ElementalLock_Fire_C'BP_MapObject_TreasureBox_ElementalLock_Fire_C:VisualActor_GEN_VARIABLE.VisualActor_GEN_VARIABLE_BP_TreasureBoxVisual_ElementalLock_Fire_C_CAT'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.2"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_MapObject_TreasureBox_ElementalLock_Fire_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ChildActorComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ChildActorComponent'BP_MapObject_TreasureBox_ElementalLock_Fire_C:VisualActor_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.3"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_MapObject_TreasureBox_ElementalLockBase_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLockBase.0"
+            },
+            "SCSVariableName": "VisualActor",
+            "AssociatedGuid": "CA113B23-46B11A72-FB330BBC-063999D0"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'PalMapObjectTreasureBoxLockComponent'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "PalMapObjectTreasureBoxLockComponent'BP_MapObject_TreasureBox_ElementalLock_Fire_C:TreasureBoxLock_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.7"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_MapObject_TreasureBox_ElementalLockBase_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLockBase.0"
+            },
+            "SCSVariableName": "TreasureBoxLock",
+            "AssociatedGuid": "90657B66-4B07F439-6F0AD4A1-68485436"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "NS_NoteGlow_GEN_VARIABLE",
+    "Outer": "BP_MapObject_TreasureBox_ElementalLock_Fire_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_NoteGlow'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Common/Glow/NS_NoteGlow.52"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Scale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Scale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Trail_Alpha",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Trail_Alpha",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.Scale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 4,
+            "Name": "User.Trail_Alpha",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 60.0
+      }
+    }
+  },
+  {
+    "Type": "PalMapObjectDamageReactionComponent",
+    "Name": "DamageReaction",
+    "Outer": "Default__BP_MapObject_TreasureBox_ElementalLock_Fire_C",
+    "Class": "UScriptClass'PalMapObjectDamageReactionComponent'",
+    "Template": {
+      "ObjectName": "PalMapObjectDamageReactionComponent'Default__BP_MapObject_TreasureBox_ElementalLockBase_C:DamageReaction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLockBase.16"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalMapObjectTreasureBoxLockComponent",
+    "Name": "TreasureBoxLock_GEN_VARIABLE",
+    "Outer": "BP_MapObject_TreasureBox_ElementalLock_Fire_C",
+    "Class": "UScriptClass'PalMapObjectTreasureBoxLockComponent'",
+    "Template": {
+      "ObjectName": "PalMapObjectTreasureBoxLockComponent'BP_MapObject_TreasureBox_ElementalLockBase_C:TreasureBoxLock_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLockBase.17"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "UnlockWorkAssignDefineId": "UnlockTreasureBoxFire"
+    }
+  },
+  {
+    "Type": "PalSkeletalMeshComponent",
+    "Name": "SkeletalMesh",
+    "Outer": "VisualActor_GEN_VARIABLE_BP_TreasureBoxVisual_ElementalLock_Fire_C_CAT",
+    "Class": "UScriptClass'PalSkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "PalSkeletalMeshComponent'Default__BP_TreasureBoxVisual_ElementalLock_Fire_C:SkeletalMesh'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_ElementalLock_Fire.7"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalWorkFacingComponent",
+    "Name": "PalWorkFacing_GEN_VARIABLE",
+    "Outer": "BP_MapObject_TreasureBox_ElementalLock_Fire_C",
+    "Class": "UScriptClass'PalWorkFacingComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 50.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": -0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_MapObject_TreasureBox_ElementalLock_Fire_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_MapObject_TreasureBox_ElementalLock_Fire_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.10"
+      },
+      "VariableGuid": "807FB649-44DFB6F0-262099A3-03BB3219",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'NiagaraComponent'",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent'BP_MapObject_TreasureBox_ElementalLock_Fire_C:NS_NoteGlow_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.5"
+      },
+      "ParentComponentOrVariableName": "IndicatorOrigin",
+      "ParentComponentOwnerClassName": "BP_MapObject_TreasureBox_ElementalLockBase_C",
+      "VariableGuid": "47C9C825-4CE3EA8F-EA84738D-E41E42C7",
+      "InternalVariableName": "NS_NoteGlow"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalWorkFacingComponent'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalWorkFacingComponent'BP_MapObject_TreasureBox_ElementalLock_Fire_C:PalWorkFacing_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.9"
+      },
+      "ParentComponentOrVariableName": "IndicatorOrigin",
+      "ParentComponentOwnerClassName": "BP_MapObject_TreasureBox_ElementalLockBase_C",
+      "VariableGuid": "4F12368E-4FFBB70B-06E9B1BC-07A6A435",
+      "InternalVariableName": "PalWorkFacing"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_MapObject_TreasureBox_ElementalLock_Fire_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_TreasureBox_ElementalLock_Fire_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_TreasureBox_ElementalLock_Fire_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.13"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_TreasureBox_ElementalLock_Fire_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_TreasureBox_ElementalLock_Fire_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.13"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_MapObject_TreasureBox_ElementalLock_Fire_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/ElementalLock/BP_MapObject_TreasureBox_ElementalLock_Fire.11"
+      }
+    }
+  }
+]

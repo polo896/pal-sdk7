@@ -1,0 +1,1190 @@
+[
+  {
+    "Type": "BackgroundBlur",
+    "Name": "BackgroundBlur_255",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'BackgroundBlur'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bApplyAlphaToBlur": false,
+      "BlurStrength": 3.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.7"
+      },
+      "Visibility": "ESlateVisibility::Visible"
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_C_47",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "MOD_SETTINGS_DIALOG_NOTICE_DISCLAIMER"
+      },
+      "FontSizeOverride_VeryLarge": 18,
+      "Text": {
+        "Namespace": "",
+        "Key": "A7E70E4145D15D3092DBDB83AE162D72",
+        "SourceString": "本ゲームをプレイするには\r\n利用規約に同意していただく必要があります。\r\n\r\n以下の「利用規約」をご確認のうえ「同意する」ボタンを押してください。",
+        "LocalizedString": "本ゲームをプレイするには\r\n利用規約に同意していただく必要があります。\r\n\r\n以下の「利用規約」をご確認のうえ「同意する」ボタンを押してください。"
+      },
+      "Font": {
+        "TypefaceFontName": "Medium",
+        "Size": 14
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_ModDisclaimerDialog_C:WidgetTree.VerticalBox_95.VerticalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.35"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_25",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.10"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_94",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Line",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.Line.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.Line.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.Line.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.16"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -4.0,
+          "Top": -4.0,
+          "Right": 4.0,
+          "Bottom": 4.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.2"
+      },
+      "Content": {
+        "ObjectName": "BackgroundBlur'WBP_ModDisclaimerDialog_C:WidgetTree.BackgroundBlur_255'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.0"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 920.0,
+          "Bottom": 500.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.2"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalCommonWindow_C'WBP_ModDisclaimerDialog_C:WidgetTree.WBP_PalCommonWindow'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 920.0,
+          "Bottom": 500.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.3"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_25'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_25",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -68.0,
+          "Right": 583.0,
+          "Bottom": 48.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_25'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.4"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_ModDisclaimerDialog_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_25",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 32.0,
+          "Top": -88.0,
+          "Right": 32.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_25'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_ModDisclaimerDialog_C:WidgetTree.Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_25",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 30.0,
+          "Top": 50.0,
+          "Right": 30.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_25'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_94'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_25",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 30.0,
+          "Top": 60.0,
+          "Right": 30.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_25'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.4"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'WBP_ModDisclaimerDialog_C:WidgetTree.VerticalBox_95'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Line",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 1.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ModDisclaimerDialog_C:WidgetTree.Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.6"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_ModDisclaimerDialog_C:WidgetTree.Image_251'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Line",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 3.0,
+          "Bottom": 3.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ModDisclaimerDialog_C:WidgetTree.Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.6"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_ModDisclaimerDialog_C:WidgetTree.Image'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Line",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 3.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ModDisclaimerDialog_C:WidgetTree.Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.6"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_ModDisclaimerDialog_C:WidgetTree.Image_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.26"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_ModDisclaimerDialog_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WBP_CommonButton",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_CommonButton_Guideline",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_Terms_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature",
+    "Outer": "WBP_ModDisclaimerDialog_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_Terms_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature",
+    "Outer": "WBP_ModDisclaimerDialog_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BP_GetDesiredFocusTarget",
+    "Outer": "WBP_ModDisclaimerDialog_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'CommonActivatableWidget:BP_GetDesiredFocusTarget'",
+      "ObjectPath": "/Script/CommonUI"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_ModDisclaimerDialog",
+    "Outer": "WBP_ModDisclaimerDialog_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ShowWebURL_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetParam_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameterBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_HUDDispatch_Parameter_Mod_DIsclaimer",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_HUDDispatchParameter_ModDIsclaimer_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/BP_HUDDispatchParameter_ModDIsclaimer.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetup",
+    "Outer": "WBP_ModDisclaimerDialog_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUserWidget:OnSetup'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_ModDisclaimerDialog_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.24"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.10"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_ModDisclaimerDialog_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.23"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_ModDisclaimerDialog_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.29"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.5,
+        "Hex": "7FFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.Line.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.15"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.5,
+        "Hex": "7FFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.Line.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.16"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_251",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.2,
+        "Hex": "33FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.Line.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.14"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidthOverride": 420.0,
+      "HeightOverride": 36.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_ModDisclaimerDialog_C:WidgetTree.SizeBox.SizeBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.30"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_ModDisclaimerDialog_C:WidgetTree.VerticalBox_95.VerticalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.36"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidthOverride": 300.0,
+      "HeightOverride": 44.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_ModDisclaimerDialog_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.31"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_ModDisclaimerDialog_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.24"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_1",
+    "Outer": "SizeBox",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_ModDisclaimerDialog_C:WidgetTree.SizeBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.28"
+      },
+      "Content": {
+        "ObjectName": "WBP_CommonButton_1_C'WBP_ModDisclaimerDialog_C:WidgetTree.WBP_CommonButton_Guideline'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.39"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_ModDisclaimerDialog_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.29"
+      },
+      "Content": {
+        "ObjectName": "WBP_CommonButton_C'WBP_ModDisclaimerDialog_C:WidgetTree.WBP_CommonButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.40"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_ModDisclaimerDialog_C:WidgetTree.VerticalBox_95.VerticalBoxSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.38"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_93",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_ModDisclaimerDialog_C:WidgetTree.VerticalBox_95.VerticalBoxSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.37"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_95",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_ModDisclaimerDialog_C:WidgetTree.VerticalBox_95.VerticalBoxSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.37"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_ModDisclaimerDialog_C:WidgetTree.VerticalBox_95.VerticalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.35"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_ModDisclaimerDialog_C:WidgetTree.VerticalBox_95.VerticalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.36"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_ModDisclaimerDialog_C:WidgetTree.VerticalBox_95.VerticalBoxSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.38"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_25.CanvasPanelSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.13"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_95",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_ModDisclaimerDialog_C:WidgetTree.VerticalBox_95'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.34"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_ModDisclaimerDialog_C:WidgetTree.BP_PalTextBlock_C_47'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.1"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_95",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Top": 25.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_ModDisclaimerDialog_C:WidgetTree.VerticalBox_95'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.34"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_ModDisclaimerDialog_C:WidgetTree.SizeBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.28"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_3",
+    "Outer": "VerticalBox_95",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_ModDisclaimerDialog_C:WidgetTree.VerticalBox_95'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.34"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_ModDisclaimerDialog_C:WidgetTree.Spacer_93'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.33"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_5",
+    "Outer": "VerticalBox_95",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_ModDisclaimerDialog_C:WidgetTree.VerticalBox_95'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.34"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_ModDisclaimerDialog_C:WidgetTree.Spacer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.32"
+      }
+    }
+  },
+  {
+    "Type": "WBP_CommonButton_1_C",
+    "Name": "WBP_CommonButton_Guideline",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_1.WBP_CommonButton_1_C'",
+    "Template": {
+      "ObjectName": "WBP_CommonButton_1_C'Default__WBP_CommonButton_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_1.105"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitializeMsgID": {
+        "DataTable": {
+          "ObjectName": "DataTable'DT_UI_Common_Text_Common'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text_Common.0"
+        },
+        "RowName": "MOD_SETTINGS_DIALOG_NOTICE_DISCLAIMER_BUTTON_GUIDELINE"
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_ModDisclaimerDialog_C:WidgetTree.SizeBox.SizeBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.30"
+      }
+    }
+  },
+  {
+    "Type": "WBP_CommonButton_C",
+    "Name": "WBP_CommonButton",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton.WBP_CommonButton_C'",
+    "Template": {
+      "ObjectName": "WBP_CommonButton_C'Default__WBP_CommonButton_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton.279"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitializeMsgID": {
+        "DataTable": {
+          "ObjectName": "DataTable'DT_UI_Common_Text_Common'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text_Common.0"
+        },
+        "RowName": "COMMON_OK"
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_ModDisclaimerDialog_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.31"
+      }
+    }
+  },
+  {
+    "Type": "WBP_ModDisclaimerDialog_C",
+    "Name": "Default__WBP_ModDisclaimerDialog_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.WBP_ModDisclaimerDialog_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_PalCommonWindow_C",
+    "Name": "WBP_PalCommonWindow",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_PalCommonWindow.WBP_PalCommonWindow_C'",
+    "Template": {
+      "ObjectName": "WBP_PalCommonWindow_C'Default__WBP_PalCommonWindow_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_PalCommonWindow.13"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GameMouseCaptureMode": "EMouseCaptureMode::CapturePermanently",
+      "NamedSlotBindings": [
+        {
+          "Name": "NamedSlot_91",
+          "Content": {
+            "ObjectName": "CanvasPanel'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.3"
+          }
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.8"
+      }
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_ModDisclaimerDialog_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_ModDisclaimerDialog_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.44"
+      },
+      "bClassRequiresNativeTick": true,
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_ModDisclaimerDialog_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.17"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_ModDisclaimerDialog_C:ExecuteUbergraph_WBP_ModDisclaimerDialog'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.21"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidgetOverlayUI'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_ModDisclaimerDialog_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.20"
+      },
+      {
+        "ObjectName": "Function'WBP_ModDisclaimerDialog_C:BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_Terms_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.19"
+      },
+      {
+        "ObjectName": "Function'WBP_ModDisclaimerDialog_C:BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.18"
+      },
+      {
+        "ObjectName": "Function'WBP_ModDisclaimerDialog_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.22"
+      },
+      {
+        "ObjectName": "Function'WBP_ModDisclaimerDialog_C:ExecuteUbergraph_WBP_ModDisclaimerDialog'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.21"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalTextBlock_C_47",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_CommonButton",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton.285"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_CommonButton_Guideline",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonButton_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_1.110"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalCommonWindow",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCommonWindow_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_PalCommonWindow.14"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_ModDisclaimerDialog": {
+        "ObjectName": "Function'WBP_ModDisclaimerDialog_C:ExecuteUbergraph_WBP_ModDisclaimerDialog'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.21"
+      },
+      "OnSetup": {
+        "ObjectName": "Function'WBP_ModDisclaimerDialog_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.22"
+      },
+      "BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_ModDisclaimerDialog_C:BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.18"
+      },
+      "BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_Terms_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_ModDisclaimerDialog_C:BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_Terms_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.19"
+      },
+      "BP_GetDesiredFocusTarget": {
+        "ObjectName": "Function'WBP_ModDisclaimerDialog_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.20"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_ModDisclaimerDialog_C'Default__WBP_ModDisclaimerDialog_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.41"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_ModDisclaimerDialog_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_ModDisclaimerDialog_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Mods/WBP_ModDisclaimerDialog.2"
+      }
+    }
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_CameraModifier_JetpackGlider_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalCameraModifier'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_CameraModifier_JetpackGlider_C'Default__BP_CameraModifier_JetpackGlider_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/CameraModifier/BP_CameraModifier_JetpackGlider.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_CameraModifier_JetpackGlider_C",
+    "Name": "Default__BP_CameraModifier_JetpackGlider_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Player/CameraModifier/BP_CameraModifier_JetpackGlider.BP_CameraModifier_JetpackGlider_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mode": "EPalCameraModifierMode::Infinite",
+      "Duration": 0.1,
+      "CancelAllowTime": 0.4,
+      "BlendInEaseFunc": "EEasingFunc::EaseInOut",
+      "BlendOutEaseFunc": "EEasingFunc::EaseInOut",
+      "BlendOutEaseExponent": 4.0,
+      "FovModifyType": "EPalCameraModifierParameterType::Additional",
+      "TargetFoV": 46.0,
+      "CameraOffsetModifyType": "EPalCameraModifierParameterType::Replace",
+      "TargetCameraOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 20.0
+      },
+      "CameraLengthModifyType": "EPalCameraModifierParameterType::Additional",
+      "TargetCameraLength": 50.0
+    }
+  }
+]

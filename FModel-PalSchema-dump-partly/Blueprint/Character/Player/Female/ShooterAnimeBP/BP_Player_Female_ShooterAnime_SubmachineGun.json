@@ -1,0 +1,110 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Player_Female_ShooterAnime_SubmachineGun_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_ShooterAnime_AssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_AssaultRifle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_ShooterAnime_AssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_AssaultRifle.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Player_Female_ShooterAnime_SubmachineGun_C'Default__BP_Player_Female_ShooterAnime_SubmachineGun_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_SubmachineGun.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Player_Female_ShooterAnime_SubmachineGun_C",
+    "Name": "Default__BP_Player_Female_ShooterAnime_SubmachineGun_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_SubmachineGun.BP_Player_Female_ShooterAnime_SubmachineGun_C'",
+    "Template": {
+      "ObjectName": "BP_Player_Female_ShooterAnime_AssaultRifle_C'Default__BP_Player_Female_ShooterAnime_AssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_AssaultRifle.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimeInfo": {
+        "NormalMoveBlendSpace": {
+          "ObjectName": "BlendSpace1D'BS_Player_Female_SubmachineGunMove'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/BlendSpace/BS_Player_Female_SubmachineGunMove.0"
+        },
+        "Sprint": {
+          "ObjectName": "AnimSequence'AS_Player_Female_Sprint_Handgun'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/Handgun/AS_Player_Female_Sprint_Handgun.0"
+        },
+        "ReloadMontage": {
+          "ObjectName": "AnimMontage'AM_Player_Female_Reload_SubmachineGun'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AssaultRifle/AM_Player_Female_Reload_SubmachineGun.0"
+        },
+        "AimBaseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::Stand",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Female_Aim_SubmachineGun'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AssaultRifle/AS_Player_Female_Aim_SubmachineGun.0"
+            }
+          }
+        ],
+        "AnimationMap": [
+          {
+            "Key": "EWeaponAnimationType::PullTrigger",
+            "Value": {
+              "PoseMap": [
+                {
+                  "Key": "EWeaponAnimationPoseType::Stand",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Female_AimFireLoop_Submachinegun'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AssaultRifle/AM_Player_Female_AimFireLoop_Submachinegun.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Crouch",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Female_AimFireLoop_Submachinegun'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AssaultRifle/AM_Player_Female_AimFireLoop_Submachinegun.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Riding",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Female_AimFireLoop_Submachinegun'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AssaultRifle/AM_Player_Female_AimFireLoop_Submachinegun.0"
+                  }
+                }
+              ],
+              "isAutoStop": true,
+              "EndDelegateType": "EPalWeaponAnimationEndDelegateType::MontageBlendingOut"
+            }
+          }
+        ],
+        "RidingAnimationMap": [
+          {
+            "Key": "EPalRidePositionType::None",
+            "Value": {
+              "RidingAnimation": null,
+              "RidingSprintStartAnimation": null,
+              "RidingSprintAnimation": null,
+              "RidingShakingMontage": null,
+              "RideShootingAnimation": null,
+              "RideShootingAO": null
+            }
+          }
+        ]
+      }
+    }
+  }
+]

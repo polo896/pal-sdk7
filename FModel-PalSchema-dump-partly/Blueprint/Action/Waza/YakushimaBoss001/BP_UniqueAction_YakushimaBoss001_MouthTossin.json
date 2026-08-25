@@ -1,0 +1,257 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueAction_YakushimaBoss001_MouthTossin_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueAction_YakushimaBoss001_EyeTossin_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss001/BP_UniqueAction_YakushimaBoss001_EyeTossin.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_UniqueAction_YakushimaBoss001_MouthTossin_C:ExecuteUbergraph_BP_UniqueAction_YakushimaBoss001_MouthTossin'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss001/BP_UniqueAction_YakushimaBoss001_MouthTossin.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueAction_YakushimaBoss001_EyeTossin_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss001/BP_UniqueAction_YakushimaBoss001_EyeTossin.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_UniqueAction_YakushimaBoss001_MouthTossin_C:OnBeginAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss001/BP_UniqueAction_YakushimaBoss001_MouthTossin.3"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_YakushimaBoss001_MouthTossin_C:OnEndAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss001/BP_UniqueAction_YakushimaBoss001_MouthTossin.4"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_YakushimaBoss001_MouthTossin_C:ExecuteUbergraph_BP_UniqueAction_YakushimaBoss001_MouthTossin'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss001/BP_UniqueAction_YakushimaBoss001_MouthTossin.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "MinMouthTossinCount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "MaxMouthTossinCount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_UniqueAction_YakushimaBoss001_MouthTossin": {
+        "ObjectName": "Function'BP_UniqueAction_YakushimaBoss001_MouthTossin_C:ExecuteUbergraph_BP_UniqueAction_YakushimaBoss001_MouthTossin'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss001/BP_UniqueAction_YakushimaBoss001_MouthTossin.2"
+      },
+      "OnEndAction": {
+        "ObjectName": "Function'BP_UniqueAction_YakushimaBoss001_MouthTossin_C:OnEndAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss001/BP_UniqueAction_YakushimaBoss001_MouthTossin.4"
+      },
+      "OnBeginAction": {
+        "ObjectName": "Function'BP_UniqueAction_YakushimaBoss001_MouthTossin_C:OnBeginAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss001/BP_UniqueAction_YakushimaBoss001_MouthTossin.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueAction_YakushimaBoss001_MouthTossin_C'Default__BP_UniqueAction_YakushimaBoss001_MouthTossin_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss001/BP_UniqueAction_YakushimaBoss001_MouthTossin.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueAction_YakushimaBoss001_MouthTossin_C",
+    "Name": "Default__BP_UniqueAction_YakushimaBoss001_MouthTossin_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss001/BP_UniqueAction_YakushimaBoss001_MouthTossin.BP_UniqueAction_YakushimaBoss001_MouthTossin_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueAction_YakushimaBoss001_EyeTossin_C'Default__BP_UniqueAction_YakushimaBoss001_EyeTossin_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss001/BP_UniqueAction_YakushimaBoss001_EyeTossin.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "MinMouthTossinCount": 3,
+      "MaxMouthTossinCount": 3
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_UniqueAction_YakushimaBoss001_MouthTossin",
+    "Outer": "BP_UniqueAction_YakushimaBoss001_MouthTossin_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSystemAttached_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSystemAttached_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetFloatParameter_Param_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetFloatParameter_Param_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBeginAction",
+    "Outer": "BP_UniqueAction_YakushimaBoss001_MouthTossin_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_UniqueAction_YakushimaBoss001_EyeTossin_C:OnBeginAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss001/BP_UniqueAction_YakushimaBoss001_EyeTossin.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_UniqueAction_YakushimaBoss001_EyeTossin_C:OnBeginAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss001/BP_UniqueAction_YakushimaBoss001_EyeTossin.5"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEndAction",
+    "Outer": "BP_UniqueAction_YakushimaBoss001_MouthTossin_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_UniqueAction_YakushimaBoss001_EyeTossin_C:OnEndAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss001/BP_UniqueAction_YakushimaBoss001_EyeTossin.8"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_UniqueAction_YakushimaBoss001_EyeTossin_C:OnEndAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss001/BP_UniqueAction_YakushimaBoss001_EyeTossin.8"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  }
+]

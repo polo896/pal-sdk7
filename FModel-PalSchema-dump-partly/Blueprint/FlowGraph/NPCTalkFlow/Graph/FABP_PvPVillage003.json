@@ -1,0 +1,198 @@
+[
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_PvPVillage003",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "4C466D90-42448B8B-19A54687-6E234D51",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "6C426034-4FD975AB-2DD124B7-AADEF81E",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_GetItem_C",
+    "Name": "FNBP_GetItem_C_0",
+    "Outer": "FABP_PvPVillage003",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetItem.FNBP_GetItem_C'",
+    "Template": {
+      "ObjectName": "FNBP_GetItem_C'Default__FNBP_GetItem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetItem.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LotteryDataTable": {
+        "ObjectName": "DataTable'DT_GiftPalCrystal'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/NPCTalk/FunctionArgument/DT_GiftPalCrystal.0"
+      },
+      "NetworkInvokeName": "Gift",
+      "bSaveNetworkInvoke": true,
+      "GraphNode": null,
+      "NodeGuid": "4E01FDBD-44C9B0E8-23732A9C-A993318F"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_PvPVillage003",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "PvPVillage003_1",
+        "PvPVillage003_2",
+        "PvPVillage003_3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "4266615F-4F64250F-2E2979AB-EB86A712",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "4E01FDBD-44C9B0E8-23732A9C-A993318F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_PvPVillage003",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "PvPVillage003_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "9F6B4CFA-4F71A5D3-05AD1EA1-A5559092"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkCountBranch_C",
+    "Name": "FNBP_NPCTalkCountBranch_C_0",
+    "Outer": "FABP_PvPVillage003",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkCountBranch.FNBP_NPCTalkCountBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkCountBranch_C'Default__FNBP_NPCTalkCountBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkCountBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "6C426034-4FD975AB-2DD124B7-AADEF81E",
+      "OutputPins": [
+        {
+          "PinName": "Loop",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "1",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "2",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "Loop",
+          "Value": {
+            "NodeGuid": "9F6B4CFA-4F71A5D3-05AD1EA1-A5559092",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "1",
+          "Value": {
+            "NodeGuid": "4266615F-4F64250F-2E2979AB-EB86A712",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "2",
+          "Value": {
+            "NodeGuid": "9F6B4CFA-4F71A5D3-05AD1EA1-A5559092",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_PvPVillage003",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 2,
+      "AssetGuid": "FE453049-45C41893-7F0909BA-A0F2059A",
+      "Nodes": [
+        {
+          "Key": "4C466D90-42448B8B-19A54687-6E234D51",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_PvPVillage003:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_PvPVillage003.0"
+          }
+        },
+        {
+          "Key": "6C426034-4FD975AB-2DD124B7-AADEF81E",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkCountBranch_C'FABP_PvPVillage003:FNBP_NPCTalkCountBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_PvPVillage003.4"
+          }
+        },
+        {
+          "Key": "4266615F-4F64250F-2E2979AB-EB86A712",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_PvPVillage003:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_PvPVillage003.2"
+          }
+        },
+        {
+          "Key": "9F6B4CFA-4F71A5D3-05AD1EA1-A5559092",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_PvPVillage003:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_PvPVillage003.3"
+          }
+        },
+        {
+          "Key": "4E01FDBD-44C9B0E8-23732A9C-A993318F",
+          "Value": {
+            "ObjectName": "FNBP_GetItem_C'FABP_PvPVillage003:FNBP_GetItem_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_PvPVillage003.1"
+          }
+        }
+      ]
+    }
+  }
+]

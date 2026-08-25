@@ -1,0 +1,288 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalSpawner_Sheets_yamijima_beach_purple_A_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalSpawner_Standard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalSpawner_Sheets_yamijima_beach_purple_A_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_yamijima_beach_purple_A.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalSpawner_Standard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard.0"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalSpawner_Sheets_yamijima_beach_purple_A_C'Default__BP_PalSpawner_Sheets_yamijima_beach_purple_A_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_yamijima_beach_purple_A.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalSpawner_Sheets_yamijima_beach_purple_A_C",
+    "Name": "Default__BP_PalSpawner_Sheets_yamijima_beach_purple_A_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_yamijima_beach_purple_A.BP_PalSpawner_Sheets_yamijima_beach_purple_A_C'",
+    "Template": {
+      "ObjectName": "BP_PalSpawner_Standard_C'Default__BP_PalSpawner_Standard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnGroupList": [
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 30,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "GhostAnglerfish"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 50,
+              "Level_Max": 54,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 30,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "JellyfishFairy"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 50,
+              "Level_Max": 54,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 20,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Serpent_Ground"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 52,
+              "Level_Max": 55,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 100,
+          "OnlyTime": "EPalOneDayTimeType::Night",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "JellyfishGhost"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 50,
+              "Level_Max": 55,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 30,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BlackPuppy"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 50,
+              "Level_Max": 53,
+              "Num": 2,
+              "Num_Max": 3
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 15,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "MysteryMask"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 51,
+              "Level_Max": 55,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 5,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "WhiteDeer"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 54,
+              "Level_Max": 55,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 2,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "MimicDog"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 50,
+              "Level_Max": 55,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 5,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Ronin_Dark"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 50,
+              "Level_Max": 55,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        }
+      ],
+      "SpawnerName": "yamijima_beach_purple_A"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalSpawner_Sheets_yamijima_beach_purple_A_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalSpawner_Sheets_yamijima_beach_purple_A_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_yamijima_beach_purple_A.2"
+      },
+      "VariableGuid": "1E5674E4-4B21247E-F25AF4AD-BCE042EC",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalSpawner_Sheets_yamijima_beach_purple_A_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalSpawner_Sheets_yamijima_beach_purple_A_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_yamijima_beach_purple_A.3"
+      }
+    }
+  }
+]

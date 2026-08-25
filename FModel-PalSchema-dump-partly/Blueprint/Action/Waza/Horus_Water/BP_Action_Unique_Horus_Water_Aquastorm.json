@@ -1,0 +1,59 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_Horus_Water_Aquastorm_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_Horus_Flarestorm_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Horus/BP_Action_Unique_Horus_Flarestorm.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_Horus_Flarestorm_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Horus/BP_Action_Unique_Horus_Flarestorm.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_Horus_Water_Aquastorm_C'Default__BP_Action_Unique_Horus_Water_Aquastorm_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Horus_Water/BP_Action_Unique_Horus_Water_Aquastorm.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_Horus_Water_Aquastorm_C",
+    "Name": "Default__BP_Action_Unique_Horus_Water_Aquastorm_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/Horus_Water/BP_Action_Unique_Horus_Water_Aquastorm.BP_Action_Unique_Horus_Water_Aquastorm_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_Horus_Flarestorm_C'Default__BP_Action_Unique_Horus_Flarestorm_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Horus/BP_Action_Unique_Horus_Flarestorm.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkillEffectSpawnParam": {
+        "SkillEffectClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_Horus_Water_AquaTornado_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Horus_Water_AquaTornado/BP_SkillEffect_Unique_Horus_Water_AquaTornado.0"
+        }
+      },
+      "StartEffect": {
+        "ObjectName": "NiagaraSystem'NS_UniqueSkill_Horus_Water_AquaTornado_Start'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Skill/Horus_Water/AquaTornado/NS_UniqueSkill_Horus_Water_AquaTornado_Start.189"
+      },
+      "LoopEffect": null,
+      "FlagName": "Horus_Water_AquaStorm",
+      "SkillModuleClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_Horus_Water_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Horus_Water/BP_UniqueSkillModule_Tackle_Horus_Water.0"
+      },
+      "WazaID": "EPalWazaID::Unique_Horus_Water_AquaStorm"
+    }
+  }
+]

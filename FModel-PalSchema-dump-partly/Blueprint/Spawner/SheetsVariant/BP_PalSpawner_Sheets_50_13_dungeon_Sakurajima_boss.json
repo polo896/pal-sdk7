@@ -1,0 +1,653 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalSpawner_Sheets_50_13_dungeon_Sakurajima_boss_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalSpawner_Standard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalSpawner_Sheets_50_13_dungeon_Sakurajima_boss_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_50_13_dungeon_Sakurajima_boss.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalSpawner_Standard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard.0"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalSpawner_Sheets_50_13_dungeon_Sakurajima_boss_C'Default__BP_PalSpawner_Sheets_50_13_dungeon_Sakurajima_boss_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_50_13_dungeon_Sakurajima_boss.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalSpawner_Sheets_50_13_dungeon_Sakurajima_boss_C",
+    "Name": "Default__BP_PalSpawner_Sheets_50_13_dungeon_Sakurajima_boss_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_50_13_dungeon_Sakurajima_boss.BP_PalSpawner_Sheets_50_13_dungeon_Sakurajima_boss_C'",
+    "Template": {
+      "ObjectName": "BP_PalSpawner_Standard_C'Default__BP_PalSpawner_Standard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnGroupList": [
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_LeafPrincess"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 47,
+              "Level_Max": 49,
+              "Num": 1,
+              "Num_Max": 1
+            },
+            {
+              "PalId": {
+                "Key": "LeafPrincess"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 40,
+              "Level_Max": 45,
+              "Num": 2,
+              "Num_Max": 2
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_SmallArmadillo"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 47,
+              "Level_Max": 49,
+              "Num": 1,
+              "Num_Max": 1
+            },
+            {
+              "PalId": {
+                "Key": "SmallArmadillo"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 40,
+              "Level_Max": 45,
+              "Num": 2,
+              "Num_Max": 3
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_FeatherOstrich"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 47,
+              "Level_Max": 49,
+              "Num": 1,
+              "Num_Max": 1
+            },
+            {
+              "PalId": {
+                "Key": "FeatherOstrich"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 40,
+              "Level_Max": 45,
+              "Num": 2,
+              "Num_Max": 2
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_CandleGhost"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 51,
+              "Level_Max": 52,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_Gorilla_Ground"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 51,
+              "Level_Max": 52,
+              "Num": 1,
+              "Num_Max": 1
+            },
+            {
+              "PalId": {
+                "Key": "Gorilla_Ground"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 40,
+              "Level_Max": 45,
+              "Num": 2,
+              "Num_Max": 2
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_SkyDragon_Grass"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 51,
+              "Level_Max": 52,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_WeaselDragon_Fire"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 51,
+              "Level_Max": 52,
+              "Num": 1,
+              "Num_Max": 1
+            },
+            {
+              "PalId": {
+                "Key": "WeaselDragon_Fire"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 40,
+              "Level_Max": 45,
+              "Num": 2,
+              "Num_Max": 2
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_SifuDog"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 51,
+              "Level_Max": 52,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_MushroomDragon"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 47,
+              "Level_Max": 49,
+              "Num": 1,
+              "Num_Max": 1
+            },
+            {
+              "PalId": {
+                "Key": "MushroomDragon"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 40,
+              "Level_Max": 45,
+              "Num": 2,
+              "Num_Max": 3
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_MushroomDragon_Dark"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 51,
+              "Level_Max": 52,
+              "Num": 1,
+              "Num_Max": 1
+            },
+            {
+              "PalId": {
+                "Key": "MushroomDragon_Dark"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 40,
+              "Level_Max": 45,
+              "Num": 2,
+              "Num_Max": 3
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_KendoFrog"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 47,
+              "Level_Max": 49,
+              "Num": 1,
+              "Num_Max": 1
+            },
+            {
+              "PalId": {
+                "Key": "KendoFrog"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 40,
+              "Level_Max": 45,
+              "Num": 2,
+              "Num_Max": 3
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_FoxMage_Dark"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 51,
+              "Level_Max": 52,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_CatMage_Fire"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 51,
+              "Level_Max": 52,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_Ronin_Dark"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 51,
+              "Level_Max": 52,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_HadesBird_Electric"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 51,
+              "Level_Max": 52,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_GuardianDog"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 47,
+              "Level_Max": 49,
+              "Num": 1,
+              "Num_Max": 1
+            },
+            {
+              "PalId": {
+                "Key": "GuardianDog"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 40,
+              "Level_Max": 45,
+              "Num": 2,
+              "Num_Max": 2
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_GhostAnglerfish"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 47,
+              "Level_Max": 49,
+              "Num": 1,
+              "Num_Max": 1
+            },
+            {
+              "PalId": {
+                "Key": "GhostAnglerfish"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 40,
+              "Level_Max": 45,
+              "Num": 2,
+              "Num_Max": 2
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_TropicalOstrich"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 47,
+              "Level_Max": 49,
+              "Num": 1,
+              "Num_Max": 1
+            },
+            {
+              "PalId": {
+                "Key": "TropicalOstrich"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 40,
+              "Level_Max": 45,
+              "Num": 2,
+              "Num_Max": 2
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BOSS_Plesiosaur"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 47,
+              "Level_Max": 49,
+              "Num": 1,
+              "Num_Max": 1
+            },
+            {
+              "PalId": {
+                "Key": "Plesiosaur"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 40,
+              "Level_Max": 45,
+              "Num": 2,
+              "Num_Max": 2
+            }
+          ],
+          "bHasWorldTreeAura": false
+        }
+      ],
+      "SpawnerName": "50_13_dungeon_Sakurajima_boss",
+      "SpawnerType": "EPalSpawnedCharacterType::RandomDungeonBoss"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalSpawner_Sheets_50_13_dungeon_Sakurajima_boss_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalSpawner_Sheets_50_13_dungeon_Sakurajima_boss_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_50_13_dungeon_Sakurajima_boss.2"
+      },
+      "VariableGuid": "E68CAE64-48956DE2-C262E494-29B0CB15",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalSpawner_Sheets_50_13_dungeon_Sakurajima_boss_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalSpawner_Sheets_50_13_dungeon_Sakurajima_boss_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_50_13_dungeon_Sakurajima_boss.3"
+      }
+    }
+  }
+]

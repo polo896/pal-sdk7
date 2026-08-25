@@ -1,0 +1,293 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_BossBattleEvent_Grass_Hard_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BossBattleEventBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEventBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_BossBattleEvent_Grass_Hard_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Grass_Hard.8"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_BossBattleEvent_Grass_Hard_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Grass_Hard.5"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_BossBattleEvent_Grass_Hard_C:ExecuteUbergraph_BP_BossBattleEvent_Grass_Hard'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Grass_Hard.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BossBattleEventBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEventBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_BossBattleEvent_Grass_Hard_C:OnCombatStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Grass_Hard.3"
+      },
+      {
+        "ObjectName": "Function'BP_BossBattleEvent_Grass_Hard_C:OnInitialize'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Grass_Hard.4"
+      },
+      {
+        "ObjectName": "Function'BP_BossBattleEvent_Grass_Hard_C:ExecuteUbergraph_BP_BossBattleEvent_Grass_Hard'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Grass_Hard.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "SpawnNPCList",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "SpawnNPCList",
+          "Flags": "RF_Public",
+          "ElementSize": 12,
+          "Struct": {
+            "ObjectName": "ScriptStruct'PalDataTableRowName_PalHumanData'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "SpawnOffsets",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "SpawnOffsets",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "ScriptStruct'Vector'",
+            "ObjectPath": "/Script/CoreUObject"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Level",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_BossBattleEvent_Grass_Hard": {
+        "ObjectName": "Function'BP_BossBattleEvent_Grass_Hard_C:ExecuteUbergraph_BP_BossBattleEvent_Grass_Hard'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Grass_Hard.2"
+      },
+      "OnInitialize": {
+        "ObjectName": "Function'BP_BossBattleEvent_Grass_Hard_C:OnInitialize'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Grass_Hard.4"
+      },
+      "OnCombatStart": {
+        "ObjectName": "Function'BP_BossBattleEvent_Grass_Hard_C:OnCombatStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Grass_Hard.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_BossBattleEvent_Grass_Hard_C'Default__BP_BossBattleEvent_Grass_Hard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Grass_Hard.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_BossBattleEvent_Grass_Hard_C",
+    "Name": "Default__BP_BossBattleEvent_Grass_Hard_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Grass_Hard.BP_BossBattleEvent_Grass_Hard_C'",
+    "Template": {
+      "ObjectName": "BP_BossBattleEventBase_C'Default__BP_BossBattleEventBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEventBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "SpawnNPCList": [
+        {
+          "Key": "Hunter_Fat_GatlingGun_Tower"
+        },
+        {
+          "Key": "Hunter_Rifle_Tower"
+        }
+      ],
+      "SpawnOffsets": [
+        {
+          "X": 0.0,
+          "Y": -750.0,
+          "Z": 0.0
+        },
+        {
+          "X": 0.0,
+          "Y": 750.0,
+          "Z": 0.0
+        }
+      ],
+      "Level": 69
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_BossBattleEvent_Grass_Hard",
+    "Outer": "BP_BossBattleEvent_Grass_Hard_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDataTableRowName_PalHumanData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnCombatStart",
+    "Outer": "BP_BossBattleEvent_Grass_Hard_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalBossBattleEventBase:OnCombatStart'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInitialize",
+    "Outer": "BP_BossBattleEvent_Grass_Hard_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalBossBattleEventBase:OnInitialize'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_BossBattleEvent_Grass_Hard_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot1_GEN_VARIABLE",
+    "Outer": "BP_BossBattleEvent_Grass_Hard_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_BossBattleEvent_Grass_Hard_C:DefaultSceneRoot1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Grass_Hard.6"
+      },
+      "VariableGuid": "07C184ED-4BFCBA23-BB039580-4ADC6598",
+      "InternalVariableName": "DefaultSceneRoot1"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_BossBattleEvent_Grass_Hard_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_BossBattleEvent_Grass_Hard_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Grass_Hard.7"
+      }
+    }
+  }
+]

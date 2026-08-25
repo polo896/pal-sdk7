@@ -1,0 +1,136 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_PalEscMenuType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "5C8135234D955335BC0DC9B9294D95F4",
+            "SourceString": "Continue",
+            "LocalizedString": "Continue"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "8261A2B845DDC3EACCDA73B0BDEFD105",
+            "SourceString": "Option",
+            "LocalizedString": "Option"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "9D1CBF9C4F894B21B3D12684482CEAB2",
+            "SourceString": "Tips",
+            "LocalizedString": "Tips"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "6A3CF1CD405C4080881D96BAD23E887F",
+            "SourceString": "ReturnToTitle",
+            "LocalizedString": "ReturnToTitle"
+          }
+        },
+        {
+          "Key": "NewEnumerator4",
+          "Value": {
+            "Namespace": "",
+            "Key": "204C82A449568A202DF52FA84AAE56A1",
+            "SourceString": "Invalid",
+            "LocalizedString": "Invalid"
+          }
+        },
+        {
+          "Key": "NewEnumerator5",
+          "Value": {
+            "Namespace": "",
+            "Key": "A20155F84C894D430AFA3CA45FCC6278",
+            "SourceString": "Note",
+            "LocalizedString": "Note"
+          }
+        },
+        {
+          "Key": "NewEnumerator6",
+          "Value": {
+            "Namespace": "",
+            "Key": "045CC41A42E19025CF2AD8B3C2D3A5F2",
+            "SourceString": "Suicide",
+            "LocalizedString": "Suicide"
+          }
+        },
+        {
+          "Key": "NewEnumerator7",
+          "Value": {
+            "Namespace": "",
+            "Key": "9E6891E04F2D096A35195EA18CC9B332",
+            "SourceString": "Form",
+            "LocalizedString": "Form"
+          }
+        },
+        {
+          "Key": "NewEnumerator8",
+          "Value": {
+            "Namespace": "",
+            "Key": "3A4E556E4EB338E40BF760A231019A97",
+            "SourceString": "Eula",
+            "LocalizedString": "Eula"
+          }
+        },
+        {
+          "Key": "NewEnumerator10",
+          "Value": {
+            "Namespace": "",
+            "Key": "A73860D748022359487539A1DCF6D94B",
+            "SourceString": "Discord",
+            "LocalizedString": "Discord"
+          }
+        },
+        {
+          "Key": "NewEnumerator11",
+          "Value": {
+            "Namespace": "",
+            "Key": "503DFB7C49AAC3F9956077858978A19C",
+            "SourceString": "Pause",
+            "LocalizedString": "Pause"
+          }
+        },
+        {
+          "Key": "NewEnumerator12",
+          "Value": {
+            "Namespace": "",
+            "Key": "3EEC7B334BE8A40FE7AD94B9B2F7792F",
+            "SourceString": "XBInvite",
+            "LocalizedString": "XBInvite"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_PalEscMenuType::NewEnumerator4": 0,
+      "E_PalEscMenuType::NewEnumerator0": 1,
+      "E_PalEscMenuType::NewEnumerator1": 2,
+      "E_PalEscMenuType::NewEnumerator2": 3,
+      "E_PalEscMenuType::NewEnumerator3": 4,
+      "E_PalEscMenuType::NewEnumerator5": 5,
+      "E_PalEscMenuType::NewEnumerator6": 6,
+      "E_PalEscMenuType::NewEnumerator7": 7,
+      "E_PalEscMenuType::NewEnumerator8": 8,
+      "E_PalEscMenuType::NewEnumerator10": 9,
+      "E_PalEscMenuType::NewEnumerator11": 10,
+      "E_PalEscMenuType::NewEnumerator12": 11,
+      "E_PalEscMenuType::E_MAX": 12
+    },
+    "CppForm": "Namespaced"
+  }
+]

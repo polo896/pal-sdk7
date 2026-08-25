@@ -1,0 +1,53 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b00_Amarilys_02",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'S_Amaryllis_sgzkv_Var5_lod2'",
+        "ObjectPath": "Pal/Content/Megascans/3D_Plants/Amaryllis_sgzkv/S_Amaryllis_sgzkv_Var5_lod2.2"
+      },
+      "UpdateGuid": "4344368B-453D9FA6-475557BD-E0BFE3BF",
+      "Density": 300.0,
+      "Radius": 2.0,
+      "ScaleX": {
+        "Max": 1.4
+      },
+      "AlignToNormal": false,
+      "MeshBounds": {
+        "Origin": {
+          "X": 1.6993713,
+          "Y": 7.344124,
+          "Z": 33.628254
+        },
+        "BoxExtent": {
+          "X": 42.691708,
+          "Y": 40.61857,
+          "Z": 35.937313
+        },
+        "SphereRadius": 51.41670803013277
+      },
+      "LowBoundOriginRadius": {
+        "X": 5.575348,
+        "Y": 3.377727,
+        "Z": 12.102934
+      },
+      "CullDistance": {
+        "Max": 8000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "ReapplyScaling": true,
+      "ReapplyScaleX": true,
+      "bEnableDensityScaling": true
+    }
+  }
+]

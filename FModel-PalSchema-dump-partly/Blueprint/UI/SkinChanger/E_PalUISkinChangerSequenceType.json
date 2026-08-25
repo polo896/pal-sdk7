@@ -1,0 +1,66 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_PalUISkinChangerSequenceType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "4C90CA9846B428C125E8B79D3992C1B1",
+            "SourceString": "SelectCharacter",
+            "LocalizedString": "SelectCharacter"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "49D213664D84BB3A26D864BFD2A0F002",
+            "SourceString": "WaitInitialize",
+            "LocalizedString": "WaitInitialize"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "07C58C7F4AC751E102581C9276794C02",
+            "SourceString": "SelectSkin",
+            "LocalizedString": "SelectSkin"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "9ECBD00440BA24BA4E188FA40A5E9669",
+            "SourceString": "SelectApplySkinCharacter",
+            "LocalizedString": "SelectApplySkinCharacter"
+          }
+        },
+        {
+          "Key": "NewEnumerator4",
+          "Value": {
+            "Namespace": "",
+            "Key": "EB8CB0BD42A20A9807D816B85C8FF81E",
+            "SourceString": "RemoveSkin",
+            "LocalizedString": "RemoveSkin"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_PalUISkinChangerSequenceType::NewEnumerator1": 0,
+      "E_PalUISkinChangerSequenceType::NewEnumerator0": 1,
+      "E_PalUISkinChangerSequenceType::NewEnumerator2": 2,
+      "E_PalUISkinChangerSequenceType::NewEnumerator3": 3,
+      "E_PalUISkinChangerSequenceType::NewEnumerator4": 4,
+      "E_PalUISkinChangerSequenceType::E_MAX": 5
+    },
+    "CppForm": "Namespaced"
+  }
+]

@@ -1,0 +1,131 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueSkillModule_Tackle_Yeti_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_UniqueSkillModule_Tackle_Yeti_C:ExecuteUbergraph_BP_UniqueSkillModule_Tackle_Yeti'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_UniqueSkillModule_Tackle_Yeti.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_UniqueSkillModule_Tackle_Yeti_C:OnEndModule'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_UniqueSkillModule_Tackle_Yeti.3"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueSkillModule_Tackle_Yeti_C:ExecuteUbergraph_BP_UniqueSkillModule_Tackle_Yeti'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_UniqueSkillModule_Tackle_Yeti.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_UniqueSkillModule_Tackle_Yeti": {
+        "ObjectName": "Function'BP_UniqueSkillModule_Tackle_Yeti_C:ExecuteUbergraph_BP_UniqueSkillModule_Tackle_Yeti'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_UniqueSkillModule_Tackle_Yeti.2"
+      },
+      "OnEndModule": {
+        "ObjectName": "Function'BP_UniqueSkillModule_Tackle_Yeti_C:OnEndModule'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_UniqueSkillModule_Tackle_Yeti.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueSkillModule_Tackle_Yeti_C'Default__BP_UniqueSkillModule_Tackle_Yeti_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_UniqueSkillModule_Tackle_Yeti.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueSkillModule_Tackle_Yeti_C",
+    "Name": "Default__BP_UniqueSkillModule_Tackle_Yeti_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_UniqueSkillModule_Tackle_Yeti.BP_UniqueSkillModule_Tackle_Yeti_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueSkillModule_Tackle_C'Default__BP_UniqueSkillModule_Tackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "StartAnimMontage": {
+        "ObjectName": "AnimMontage'AM_Yeti_SnowBall_Start'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/Yeti/AM_Yeti_SnowBall_Start.0"
+      },
+      "LoopAnimMontage": {
+        "ObjectName": "AnimMontage'AM_Yeti_SnowBall_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/Yeti/AM_Yeti_SnowBall_Loop.0"
+      },
+      "EndAnimMontage": {
+        "ObjectName": "AnimMontage'AM_Yeti_SnowBall_End'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/Yeti/AM_Yeti_SnowBall_End.0"
+      },
+      "AttackTime": 3.0,
+      "MaxSpeedMultiply": 3.5,
+      "TackleHomingRate": 1.0,
+      "FlagName": "Yeti_Tackle"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_UniqueSkillModule_Tackle_Yeti",
+    "Outer": "BP_UniqueSkillModule_Tackle_Yeti_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEndModule",
+    "Outer": "BP_UniqueSkillModule_Tackle_Yeti_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_UniqueSkillModule_Tackle_C:OnEndModule'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.14"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_UniqueSkillModule_Tackle_C:OnEndModule'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.14"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "Type": "Function",
+    "Name": "PlayAllWaveSuccess",
+    "Outer": "WBP_InvadeWaveFinishProccess_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayWaveEndSequence",
+    "Outer": "WBP_InvadeWaveFinishProccess_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EndWaveCount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "MaxWaveCount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayWaveFailed",
+    "Outer": "WBP_InvadeWaveFinishProccess_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_InvadeWaveFinishProccess_C:WidgetTree.Overlay_0.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.4"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_InvadeWaveFinishProccess_C:WidgetTree.Overlay_0.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_InvadeWaveFinishProccess_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.3"
+      },
+      "Content": {
+        "ObjectName": "WBP_WarningEvent_WaveClear_C'WBP_InvadeWaveFinishProccess_C:WidgetTree.WBP_WarningEvent_WaveClear'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.7"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_InvadeWaveFinishProccess_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.3"
+      },
+      "Content": {
+        "ObjectName": "WBP_WarningEvent_WaveFinish_C'WBP_InvadeWaveFinishProccess_C:WidgetTree.WBP_WarningEvent_WaveFinish'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.8"
+      }
+    }
+  },
+  {
+    "Type": "WBP_InvadeWaveFinishProccess_C",
+    "Name": "Default__WBP_InvadeWaveFinishProccess_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.WBP_InvadeWaveFinishProccess_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_WarningEvent_WaveClear_C",
+    "Name": "WBP_WarningEvent_WaveClear",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C'",
+    "Template": {
+      "ObjectName": "WBP_WarningEvent_WaveClear_C'Default__WBP_WarningEvent_WaveClear_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_WaveClear.207"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_InvadeWaveFinishProccess_C:WidgetTree.Overlay_0.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.4"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "WBP_WarningEvent_WaveFinish_C",
+    "Name": "WBP_WarningEvent_WaveFinish",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C'",
+    "Template": {
+      "ObjectName": "WBP_WarningEvent_WaveFinish_C'Default__WBP_WarningEvent_WaveFinish_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_WaveFinish.347"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_InvadeWaveFinishProccess_C:WidgetTree.Overlay_0.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.5"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_InvadeWaveFinishProccess_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_InvadeWaveFinishProccess_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidget'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_InvadeWaveFinishProccess_C:PlayAllWaveSuccess'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.0"
+      },
+      {
+        "ObjectName": "Function'WBP_InvadeWaveFinishProccess_C:PlayWaveFailed'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.2"
+      },
+      {
+        "ObjectName": "Function'WBP_InvadeWaveFinishProccess_C:PlayWaveEndSequence'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_WarningEvent_WaveClear",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_WarningEvent_WaveClear_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_WaveClear.217"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_WarningEvent_WaveFinish",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_WarningEvent_WaveFinish_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_WaveFinish.351"
+        }
+      }
+    ],
+    "FuncMap": {
+      "PlayWaveEndSequence": {
+        "ObjectName": "Function'WBP_InvadeWaveFinishProccess_C:PlayWaveEndSequence'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.1"
+      },
+      "PlayWaveFailed": {
+        "ObjectName": "Function'WBP_InvadeWaveFinishProccess_C:PlayWaveFailed'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.2"
+      },
+      "PlayAllWaveSuccess": {
+        "ObjectName": "Function'WBP_InvadeWaveFinishProccess_C:PlayAllWaveSuccess'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.0"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_InvadeWaveFinishProccess_C'Default__WBP_InvadeWaveFinishProccess_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.6"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_InvadeWaveFinishProccess_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "Overlay'WBP_InvadeWaveFinishProccess_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Invader/WBP_InvadeWaveFinishProccess.3"
+      }
+    }
+  }
+]

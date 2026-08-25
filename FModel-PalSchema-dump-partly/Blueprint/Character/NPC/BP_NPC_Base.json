@@ -1,0 +1,4143 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_NPC_Base_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NPC_NewBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'BP_NPC_Base_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.5"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_NPC_Base_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.51"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_NPC_Base_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.23"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_NPC_Base_C:ExecuteUbergraph_BP_NPC_Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NPC_NewBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:SetMaterial'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.18"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:SetupInteraction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.19"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:DestoryWeapon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.8"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:CreateWeapon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.7"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.13"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:カスタムイベント_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.21"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:カスタムイベント_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.22"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:ReceiveEndPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.14"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:BndEvt__BP_NPC_Base_CharacterMovement_K2Node_ComponentBoundEvent_0_OnJumpDelegate__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.6"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:SetActive_Interact_ToAll'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.17"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:ReceiveTick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.15"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:UnregisterSwimEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.20"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:OnExitWater'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.12"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:OnEnterWater'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.11"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:RegisterSwimEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.16"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:ExecuteUbergraph_BP_NPC_Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.9"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_Base_C:OnDestoryEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.10"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalNPCTalkFlowComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalNPCTalkFlowComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Component/TalkFlow/BP_PalNPCTalkFlowComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCInteractionComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCInteractionComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Component/NPCInteraction/BP_NPCInteractionComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PalFacial",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalFacialComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PalNavigationInvoker",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalNavigationInvokerComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_InteractableSphere",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalInteractableSphereComponentNative'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PalShooter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalShooterComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnDestoryEvent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | AdvancedDisplay | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'BP_NPC_Base_C:OnDestoryEvent__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.10"
+        }
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "AnimLayerClass",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'AnimInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "TickInterval",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "DisableEXP",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "AIResponse",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "WeaponGeneratorClass",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'PalNPCWeaponGenerator'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnDestoryEvent__DelegateSignature": {
+        "ObjectName": "Function'BP_NPC_Base_C:OnDestoryEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.10"
+      },
+      "ExecuteUbergraph_BP_NPC_Base": {
+        "ObjectName": "Function'BP_NPC_Base_C:ExecuteUbergraph_BP_NPC_Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.9"
+      },
+      "RegisterSwimEvent": {
+        "ObjectName": "Function'BP_NPC_Base_C:RegisterSwimEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.16"
+      },
+      "OnEnterWater": {
+        "ObjectName": "Function'BP_NPC_Base_C:OnEnterWater'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.11"
+      },
+      "OnExitWater": {
+        "ObjectName": "Function'BP_NPC_Base_C:OnExitWater'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.12"
+      },
+      "UnregisterSwimEvent": {
+        "ObjectName": "Function'BP_NPC_Base_C:UnregisterSwimEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.20"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_NPC_Base_C:ReceiveTick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.15"
+      },
+      "SetActive_Interact_ToAll": {
+        "ObjectName": "Function'BP_NPC_Base_C:SetActive_Interact_ToAll'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.17"
+      },
+      "BndEvt__BP_NPC_Base_CharacterMovement_K2Node_ComponentBoundEvent_0_OnJumpDelegate__DelegateSignature": {
+        "ObjectName": "Function'BP_NPC_Base_C:BndEvt__BP_NPC_Base_CharacterMovement_K2Node_ComponentBoundEvent_0_OnJumpDelegate__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.6"
+      },
+      "ReceiveEndPlay": {
+        "ObjectName": "Function'BP_NPC_Base_C:ReceiveEndPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.14"
+      },
+      "カスタムイベント_2": {
+        "ObjectName": "Function'BP_NPC_Base_C:カスタムイベント_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.22"
+      },
+      "カスタムイベント_0": {
+        "ObjectName": "Function'BP_NPC_Base_C:カスタムイベント_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.21"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_NPC_Base_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.13"
+      },
+      "CreateWeapon": {
+        "ObjectName": "Function'BP_NPC_Base_C:CreateWeapon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.7"
+      },
+      "DestoryWeapon": {
+        "ObjectName": "Function'BP_NPC_Base_C:DestoryWeapon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.8"
+      },
+      "SetupInteraction": {
+        "ObjectName": "Function'BP_NPC_Base_C:SetupInteraction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.19"
+      },
+      "SetMaterial": {
+        "ObjectName": "Function'BP_NPC_Base_C:SetMaterial'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.18"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_NPC_Base_C'Default__BP_NPC_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_NPC_Base_C",
+    "Name": "Default__BP_NPC_Base_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.BP_NPC_Base_C'",
+    "Template": {
+      "ObjectName": "BP_NPC_NewBase_C'Default__BP_NPC_NewBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "WeaponGeneratorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCWeaponGenerator_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPCWeaponGenerator.0"
+      },
+      "ActionComponent": {
+        "ObjectName": "PalActionComponent'Default__BP_NPC_Base_C:ActionComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.24"
+      },
+      "CharacterParameterComponent": {
+        "ObjectName": "PalCharacterParameterComponent'Default__BP_NPC_Base_C:CharacterParameterComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.29"
+      },
+      "StaticCharacterParameterComponent": {
+        "ObjectName": "PalStaticCharacterParameterComponent'Default__BP_NPC_Base_C:StaticCharacterParameterComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.40"
+      },
+      "DamageReactionComponent": {
+        "ObjectName": "PalDamageReactionComponent'Default__BP_NPC_Base_C:DamageReactionComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.30"
+      },
+      "StatusComponent": {
+        "ObjectName": "PalStatusComponent'Default__BP_NPC_Base_C:StatusComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.41"
+      },
+      "CameraBoom": {
+        "ObjectName": "PalShooterSpringArmComponent'Default__BP_NPC_Base_C:CameraBoom'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.38"
+      },
+      "FollowCamera": {
+        "ObjectName": "PalCharacterCameraComponent'Default__BP_NPC_Base_C:FollowCamera'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.27"
+      },
+      "LookAtComponent": {
+        "ObjectName": "PalLookAtComponent'Default__BP_NPC_Base_C:LookAtComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.34"
+      },
+      "FootIKComponent": {
+        "ObjectName": "PalFootIKComponent'Default__BP_NPC_Base_C:FootIKComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.32"
+      },
+      "VisualEffectComponent": {
+        "ObjectName": "PalVisualEffectComponent'Default__BP_NPC_Base_C:VisualEffectComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.42"
+      },
+      "PassiveSkillComponent": {
+        "ObjectName": "PalPassiveSkillComponent'Default__BP_NPC_Base_C:PassiveSkillComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.36"
+      },
+      "AnimNotifyComponent": {
+        "ObjectName": "PalAnimNotifyParameterComponent'Default__BP_NPC_Base_C:AnimNotifyComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.25"
+      },
+      "AroundInfoCollectorComponent": {
+        "ObjectName": "PalCharacterAroundInfoCollectorComponent'Default__BP_NPC_Base_C:AroundInfoCollectorComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.26"
+      },
+      "RagdollInteractiveSphere": {
+        "ObjectName": "SphereComponent'Default__BP_NPC_Base_C:RagdollInteractiveSphere'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.52"
+      },
+      "Mesh": {
+        "ObjectName": "PalSkeletalMeshComponent'Default__BP_NPC_Base_C:CharacterMesh0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.39"
+      },
+      "CharacterMovement": {
+        "ObjectName": "PalCharacterMovementComponent'Default__BP_NPC_Base_C:CharMoveComp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.28"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_Base_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.4"
+      },
+      "bUseControllerRotationYaw": false,
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_Base_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.4"
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCInteractionComponent_C",
+    "Name": "BP_NPCInteractionComponent_GEN_VARIABLE",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Component/NPCInteraction/BP_NPCInteractionComponent.BP_NPCInteractionComponent_C'",
+    "Template": {
+      "ObjectName": "BP_NPCInteractionComponent_C'Default__BP_NPCInteractionComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Component/NPCInteraction/BP_NPCInteractionComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BP_PalNPCTalkFlowComponent_C",
+    "Name": "BP_PalNPCTalkFlowComponent_GEN_VARIABLE",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Component/TalkFlow/BP_PalNPCTalkFlowComponent.BP_PalNPCTalkFlowComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalNPCTalkFlowComponent_C'Default__BP_PalNPCTalkFlowComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Component/TalkFlow/BP_PalNPCTalkFlowComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__BP_NPC_NewBase_C:CollisionCylinder'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CapsuleHalfHeight": 30.0,
+      "CapsuleRadius": 30.0,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "CharacterMovement",
+          "DelegatePropertyName": "OnJumpDelegate",
+          "FunctionNameToBind": "BndEvt__BP_NPC_Base_CharacterMovement_K2Node_ComponentBoundEvent_0_OnJumpDelegate__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BP_NPC_Base_CharacterMovement_K2Node_ComponentBoundEvent_0_OnJumpDelegate__DelegateSignature",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "component",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacterMovementComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "CreateWeapon",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "DefaultEquip",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "weaponType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "Enum'EPalWeaponType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalWeaponType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "tempWeaponClass",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'PalWeaponBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsBaseCampPal_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsOtomo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalNPCWeaponGenerator'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetDatabaseCharacterParameter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalDatabaseCharacterParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetCharacterID_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_GetWeaponType_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalWeaponType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalWeaponType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetWeaponEquip_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "DestoryWeapon",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetHasWeapon_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalWeaponBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_NPC_Base",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalDamageReactionComponent:OnDeadDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalCharacterMovementComponent:OnEnterWater__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddVisualEffectForActor_Local_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalVisualEffectBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_InCharacter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Controller'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_DeadInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDeadInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetExpDatabase_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalExpDatabase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Character_Movement_Component",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacterMovementComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Event_EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalCharacterMovementComponent:OnExitWater__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_component",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacterMovementComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalSoundOptions",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalSoundOptions'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_Active",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalVisualEffectDynamicParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalVisualEffectDynamicParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddVisualEffect_Local_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalVisualEffectBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalmi_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalmi_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetDistanceTo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalLookAtComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsEnableLookAt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDead_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetCurrentMontage_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetBattleMode_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanNOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsAssignedToAnyWork_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalOnCharacterCompleteInitializeParameter__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSaveParameter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 928,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalIndividualCharacterSaveParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetSaveParameterValue_CharacterID_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Character_Movement_Component_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacterMovementComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_OutRow",
+        "Flags": "RF_Public",
+        "ElementSize": 456,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalCharacterParameterDatabaseRow'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalShooterComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetHasWeapon_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalWeaponBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsWildNPC_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalDataTableRowName_SoundID",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDataTableRowName_SoundID'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Less_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnDestoryEvent__DelegateSignature",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEnterWater",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnExitWater",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveEndPlay",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveEndPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RegisterSwimEvent",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetActive_Interact_ToAll",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "Active",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Net | FUNC_NetReliable | FUNC_NetMulticast | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetMaterial",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Material",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetupInteraction",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'InteractTriggerEvent__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_BindOnTriggerInteract_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'PalInteractiveInterface'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetIndicatorInterface_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'PalInteractiveObjectComponentInterface'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetIndicatorInterface_InIndicatorInterface_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "UObjectWrapper",
+        "InterfaceClass": {
+          "ObjectName": "Class'PalInteractiveObjectIndicatorInterface'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UnregisterSwimEvent",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "カスタムイベント_0",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "InCharacter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "カスタムイベント_2",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "DeadInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDeadInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalActionComponent",
+    "Name": "ActionComponent",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'PalActionComponent'",
+    "Template": {
+      "ObjectName": "PalActionComponent'Default__BP_NPC_NewBase_C:ActionComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ActionMap": [
+        {
+          "Key": "EPalActionType::Liftup",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_ActionPalLiftup_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionPalLiftup.0"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalAnimNotifyParameterComponent",
+    "Name": "AnimNotifyComponent",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'PalAnimNotifyParameterComponent'",
+    "Template": {
+      "ObjectName": "PalAnimNotifyParameterComponent'Default__BP_NPC_NewBase_C:AnimNotifyComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.4"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalCharacterAroundInfoCollectorComponent",
+    "Name": "AroundInfoCollectorComponent",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'PalCharacterAroundInfoCollectorComponent'",
+    "Template": {
+      "ObjectName": "PalCharacterAroundInfoCollectorComponent'Default__BP_NPC_NewBase_C:AroundInfoCollectorComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.5"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_Base_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.4"
+      }
+    }
+  },
+  {
+    "Type": "PalCharacterCameraComponent",
+    "Name": "FollowCamera",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'PalCharacterCameraComponent'",
+    "Template": {
+      "ObjectName": "PalCharacterCameraComponent'Default__BP_NPC_NewBase_C:FollowCamera'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.6"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "PalShooterSpringArmComponent'Default__BP_NPC_Base_C:CameraBoom'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.38"
+      }
+    }
+  },
+  {
+    "Type": "PalCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'PalCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "PalCharacterMovementComponent'Default__BP_NPC_NewBase_C:CharMoveComp'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.7"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SprintMaxSpeed": 500.0,
+      "SprintMaxAcceleration": 40.0,
+      "SprintYawRate": 1.0,
+      "MaxWalkSpeed": 420.0,
+      "MaxWalkSpeedCrouched": 200.0,
+      "MaxAcceleration": 4096.0,
+      "RotationRate": {
+        "Pitch": 0.0,
+        "Yaw": 540.0,
+        "Roll": 0.0
+      },
+      "bOrientRotationToMovement": true,
+      "bAlwaysCheckFloor": false,
+      "bUseRVOAvoidance": true,
+      "AvoidanceConsiderationRadius": 100.0,
+      "AvoidanceWeight": 1.0,
+      "NavAgentProps": {
+        "bCanCrouch": true
+      }
+    }
+  },
+  {
+    "Type": "PalCharacterParameterComponent",
+    "Name": "CharacterParameterComponent",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'PalCharacterParameterComponent'",
+    "Template": {
+      "ObjectName": "PalCharacterParameterComponent'Default__BP_NPC_NewBase_C:CharacterParameterComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.8"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalDamageReactionComponent",
+    "Name": "DamageReactionComponent",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'PalDamageReactionComponent'",
+    "Template": {
+      "ObjectName": "PalDamageReactionComponent'Default__BP_NPC_NewBase_C:DamageReactionComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.9"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DamageEffectSlotClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_HitEffectSlot_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/BP_HitEffectSlot.0"
+      }
+    }
+  },
+  {
+    "Type": "PalFacialComponent",
+    "Name": "PalFacial_GEN_VARIABLE",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'PalFacialComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NPCTalkMouthChangeSpeed": 0.165,
+      "NPCTalkMouthWeightCurve": {
+        "ObjectName": "CurveFloat'C_NPCTalkMouthWeight'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/C_NPCTalkMouthWeight.0"
+      }
+    }
+  },
+  {
+    "Type": "PalFootIKComponent",
+    "Name": "FootIKComponent",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'PalFootIKComponent'",
+    "Template": {
+      "ObjectName": "PalFootIKComponent'Default__BP_NPC_NewBase_C:FootIKComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.10"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalInteractableSphereComponentNative",
+    "Name": "BP_InteractableSphere_GEN_VARIABLE",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'PalInteractableSphereComponentNative'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IndicatorOriginRef": {
+        "ComponentProperty": "Mesh"
+      },
+      "SphereRadius": 120.0,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "RelativeLocation": {
+        "X": 35.73992,
+        "Y": 2.142906E-08,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "PalLookAtComponent",
+    "Name": "LookAtComponent",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'PalLookAtComponent'",
+    "Template": {
+      "ObjectName": "PalLookAtComponent'Default__BP_NPC_NewBase_C:LookAtComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.11"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalNavigationInvokerComponent",
+    "Name": "PalNavigationInvoker_GEN_VARIABLE",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'PalNavigationInvokerComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsAutoActivateInvoker": true,
+      "TileGenerationRadius": 6000.0,
+      "TileRemovalRadius": 8000.0
+    }
+  },
+  {
+    "Type": "PalPassiveSkillComponent",
+    "Name": "PassiveSkillComponent",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'PalPassiveSkillComponent'",
+    "Template": {
+      "ObjectName": "PalPassiveSkillComponent'Default__BP_NPC_NewBase_C:PassiveSkillComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.12"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalShooterComponent",
+    "Name": "PalShooter_GEN_VARIABLE",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'PalShooterComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultWeaponAnimeAssetBPSoftClassMap": [
+        {
+          "Key": "EPalWeaponType::AssaultRifle",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWeaponType::Handgun",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWeaponType::RocketLauncher",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWeaponType::MeleeWeapon",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWeaponType::ThrowObject",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWeaponType::Shotgun",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWeaponType::FlameThrower",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWeaponType::LaserRifle",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWeaponType::None",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWeaponType::MissileLauncher",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        }
+      ],
+      "OtherWeaponAnimeAssetBPSoftClassMap": [
+        {
+          "Key": "/Game/Pal/Blueprint/Weapon/BP_ShotgunBase.BP_ShotgunBase_C",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalShooterSpringArmComponent",
+    "Name": "CameraBoom",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'PalShooterSpringArmComponent'",
+    "Template": {
+      "ObjectName": "PalShooterSpringArmComponent'Default__BP_NPC_NewBase_C:CameraBoom'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.14"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_Base_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.4"
+      }
+    }
+  },
+  {
+    "Type": "PalSkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'PalSkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "PalSkeletalMeshComponent'Default__BP_NPC_NewBase_C:CharacterMesh0'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.15"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+      },
+      "bEnablePhysicsOnDedicatedServer": false,
+      "VisibilityBasedAnimTickOption": "EVisibilityBasedAnimTickOption::OnlyTickMontagesWhenNotRendered",
+      "bComponentUseFixedSkelBounds": true,
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel2",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel3",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel4",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel5",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel6",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel17",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel18",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_Base_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.4"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -30.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 270.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "PalStaticCharacterParameterComponent",
+    "Name": "StaticCharacterParameterComponent",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'PalStaticCharacterParameterComponent'",
+    "Template": {
+      "ObjectName": "PalStaticCharacterParameterComponent'Default__BP_NPC_NewBase_C:StaticCharacterParameterComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.16"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MeshCapsuleHalfHeight": 95.0,
+      "MeshCapsuleRadius": 30.0,
+      "MeshRelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -95.0
+      },
+      "AIActionMap": [
+        {
+          "Key": "EPalAIActionType::Leave",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AIAction_Leave_BackStep_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Combat/BP_AIAction_Leave_BackStep.0"
+          }
+        }
+      ],
+      "GeneralAnimSequenceMap": [
+        {
+          "Key": "EPalGeneralAnimSequenceType::JumpLoop",
+          "Value": null
+        },
+        {
+          "Key": "EPalGeneralAnimSequenceType::JumpEnd",
+          "Value": null
+        }
+      ],
+      "GeneralMontageMap": [
+        {
+          "Key": "EPalGeneralMontageType::DamageAdditive",
+          "Value": null
+        },
+        {
+          "Key": "EPalGeneralMontageType::SleepStart",
+          "Value": null
+        },
+        {
+          "Key": "EPalGeneralMontageType::SleepLoop",
+          "Value": null
+        },
+        {
+          "Key": "EPalGeneralMontageType::SleepEnd",
+          "Value": null
+        },
+        {
+          "Key": "EPalGeneralMontageType::Step_Right",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_NPC_RollRight'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/AM_NPC_RollRight.0"
+          }
+        },
+        {
+          "Key": "EPalGeneralMontageType::Step_Left",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_NPC_RollLeft'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/AM_NPC_RollLeft.0"
+          }
+        },
+        {
+          "Key": "EPalGeneralMontageType::GeneralAttackReady_Far",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_NPC_Female_FarSkill_Start'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/AM_NPC_Female_FarSkill_Start.0"
+          }
+        },
+        {
+          "Key": "EPalGeneralMontageType::GeneralAttackReadyLoop_Far",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_NPC_Female_FarSkill_StartLoop'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/AM_NPC_Female_FarSkill_StartLoop.0"
+          }
+        },
+        {
+          "Key": "EPalGeneralMontageType::GeneralAttackProcess_Far",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_NPC_Female_FarSkill_Action'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/AM_NPC_Female_FarSkill_Action.0"
+          }
+        },
+        {
+          "Key": "EPalGeneralMontageType::GeneralAttackProcessLoop_Far",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_NPC_Female_FarSkill_ActionLoop'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/AM_NPC_Female_FarSkill_ActionLoop.0"
+          }
+        },
+        {
+          "Key": "EPalGeneralMontageType::GeneralAttackAfter_Far",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_NPC_Female_FarSkill_End'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/AM_NPC_Female_FarSkill_End.0"
+          }
+        }
+      ],
+      "GeneralBlendSpaceMap": [
+        {
+          "Key": "EPalGeneralBlendSpaceType::GeneralMove",
+          "Value": null
+        }
+      ],
+      "ActionMontageMap": [
+        {
+          "Key": "EPalActionType::Menace",
+          "Value": null
+        },
+        {
+          "Key": "EPalActionType::Talk",
+          "Value": null
+        },
+        {
+          "Key": "EPalActionType::ForwardWalk",
+          "Value": null
+        },
+        {
+          "Key": "EPalActionType::KnockBack",
+          "Value": null
+        },
+        {
+          "Key": "EPalActionType::Turn90R",
+          "Value": null
+        },
+        {
+          "Key": "EPalActionType::Turn90L",
+          "Value": null
+        },
+        {
+          "Key": "EPalActionType::Turn180R",
+          "Value": null
+        },
+        {
+          "Key": "EPalActionType::Turn180L",
+          "Value": null
+        },
+        {
+          "Key": "EPalActionType::GetupUtubuse_orRight",
+          "Value": null
+        },
+        {
+          "Key": "EPalActionType::ChairSitMeal",
+          "Value": null
+        },
+        {
+          "Key": "EPalActionType::ChairSitDrink",
+          "Value": null
+        },
+        {
+          "Key": "EPalActionType::ChairSitMeat",
+          "Value": null
+        },
+        {
+          "Key": "EPalActionType::Listen_A",
+          "Value": null
+        },
+        {
+          "Key": "EPalActionType::Listen_B",
+          "Value": null
+        },
+        {
+          "Key": "EPalActionType::Architecture",
+          "Value": null
+        },
+        {
+          "Key": "EPalActionType::CommonWork",
+          "Value": null
+        },
+        {
+          "Key": "EPalActionType::GroundSit",
+          "Value": null
+        }
+      ],
+      "WazaActionDeclarationMap": [
+        {
+          "Key": "EPalWazaID::Throw",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionThrow.BP_ActionThrow_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Scratch",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionScratch.BP_ActionScratch_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::WaterGun",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionWaterGun.BP_ActionWaterGun_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::ThunderRain",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionThunderRain.BP_ActionThunderRain_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::ThunderBall",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionThunderBall.BP_ActionThunderBall_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::LineThunder",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionLineThunder.BP_ActionLineThunder_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::CrossThunder",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionCrossThunder.BP_ActionCrossThunder_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::FireBlast",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionFireBlast.BP_ActionFireBlast_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::SandTornado",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionSandTornado.BP_ActionSandTornado_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::WaterWave",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionWaterWave.BP_ActionWaterWave_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::IceMissile",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionIceMissile.BP_ActionIceMissile_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::ThrowRock",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionThrowRock.BP_ActionThrowRock_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::HydroPump",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionHydroPump.BP_ActionHydroPump_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Deer_PushupHorn",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::WindCutter",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionWindCutter.BP_ActionWindCutter_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::ThreeThunder",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionThreeThunder.BP_ActionThreeThunder_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Anubis_LowRoundKick",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Anubis_GroundPunch",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Anubis_Tackle",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::DarkLaser",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionDarkLaser.BP_ActionDarkLaser_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::DarkWave",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionDarkWave.BP_ActionDarkWave_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Garm_Bite",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::BlizzardLance",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionBlizzardLance.BP_ActionBlizzardLance_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::HyperBeam",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionHyperBeam.BP_ActionHyperBeam_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::ShadowBall",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionShadowBall.BP_ActionShadowBall_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::WaterBall",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/ParabolaBallBase/BP_ActionWaterBall.BP_ActionWaterBall_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::RockLance",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionRockLance.BP_ActionRockLance_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::DragonMeteor",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionDragonMeteor.BP_ActionDragonMeteor_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::DragonBreath",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionDragonBreath.BP_ActionDragonBreath_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Flamethrower",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionFlamethrower.BP_ActionFlamethrower_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::ElecWave",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionElecWave.BP_ActionElecWave_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::DragonWave",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionDragonWave.BP_ActionDragonWave_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::PowerShot",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionPowerShot.BP_ActionPowerShot_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::PowerBall",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/ParabolaBallBase/BP_ActionPowerBall.BP_ActionPowerBall_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::GrassTornado",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionGrassTornado.BP_ActionGrassTornado_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Psychokinesis",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionPsychokinesis2.BP_ActionPsychokinesis2_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Thunderbolt",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionThunderbolt.BP_ActionThunderbolt_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::FireBall",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionFireBall.BP_ActionFireBall_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::MudShot",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionMudShot.BP_ActionMudShot_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::FlareArrow",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionFlareArrow.BP_ActionFlareArrow_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::AquaJet",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionAquaJet.BP_ActionAquaJet_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::PoisonShot",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionPoisonShot.BP_ActionPoisonShot_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::SolarBeam",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionSolarBeam.BP_ActionSolarBeam_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::SeedMachinegun",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionSeedMachinegun.BP_ActionSeedMachinegun_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Horus_FlareBird",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::DragonCanon",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_DragonCanon.BP_Action_DragonCanon_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::SpreadPulse",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_SpreadPulse.BP_Action_SpreadPulse_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::FireSeed",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_FireSeed.BP_Action_FireSeed_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::LockonLaser",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_LockonLaser.BP_Action_LockonLaser_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::AcidRain",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_AcidRain.BP_Action_AcidRain_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_ElecPanda_ElecScratch",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_FairyDragon_FairyTornado",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Boar_Tackle",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_PinkCat_CatPunch",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_FlowerDinosaur_Whip",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_SheepBall_Roll",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_ChickenPal_ChickenPeck",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Gorilla_GroundPunch",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::GhostFlame",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_GhostFlame.BP_Action_GhostFlame_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Inferno",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_Inferno.BP_Action_Inferno_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Grassmammoth_Earthquake",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::SeaGush",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_SeaGush.BP_Action_SeaGush_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::SelfDestruct",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/ColorfulBird/BP_Action_SelfDestruct.BP_Action_SelfDestruct_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::AirCanon",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionAirCanon.BP_ActionAirCanon_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_GrassPanda_MusclePunch",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_RobinHood_BowSnipe",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Alpaca_Tackle",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_KingAlpaca_BodyPress",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Werewolf_Scratch",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_FengyunDeeper_CloudTempest",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Baphomet_SwallowKite",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_HerculesBeetle_BeetleTackle",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_HawkBird_Storm",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_FireKirin_Tackle",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_AmaterasuWolf_FireCharge",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_VolcanicMonster_MagmaAttack",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_FlameBuffalo_FlameHorn",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Kirin_LightningTackle",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_IceHorse_IceBladeAttack",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::RootAttack",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_RootAttack.BP_Action_RootAttack_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::SeedMine",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_SeedMine.BP_Action_SeedMine_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Eagle_GlidingNail",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_DrillGame_ShellAttack",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::BubbleShot",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_BubbleShot.BP_Action_BubbleShot_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::StoneShotgun",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionStoneShotgun.BP_ActionStoneShotgun_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::IcicleThrow",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_IcicleThrow.BP_Action_IcicleThrow_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::FlareTornado",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionFlareTornado.BP_ActionFlareTornado_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::ThunderFunnel",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_ThunderFunnel.BP_Action_ThunderFunnel_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_DarkCrow_TelePoke",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::SelfDestruct_Bee",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_QueenBee_SpinLance",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::IceBlade",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionIceBlade.BP_ActionIceBlade_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::LightningStrike",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionLightningStrike.BP_ActionLightningStrike_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::FrostBreath",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionFrostBreath.BP_ActionFrostBreath_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_IceDeer_IceHorn",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::DarkBall",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionDarkBall.BP_ActionDarkBall_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_SaintCentaur_OneSpearRushes",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_BlackGriffon_TackleLaser",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_ThunderDragonMan_ThunderSwordAttack",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_JetDragon_JumpBeam",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Ronin_Iai",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::SpecialCutter",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionSpecialCutter.BP_ActionSpecialCutter_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::PoisonFog",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/CuteButterfly/BP_Action_Unique_CuteButterfly_PoisonFog.BP_Action_Unique_CuteButterfly_PoisonFog_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_VolcanicMonster_Ice_IceAttack",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_FireKirin_Dark_DarkTossin",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_SakuraSaurus_SideTackle",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_CaptainPenguin_BodySlide",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_NaughtyCat_CatPress",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_BlackCentaur_TwoSpearRushes",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_GrassPanda_Electric_ElectricPunch",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::DarkLegion",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionDarkLegion.BP_ActionDarkLegion_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::SelfExplosion",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/ColorfulBird/BP_Action_SelfExplosion.BP_Action_SelfExplosion_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_WeaselDragon_FlyingTackle",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_NightLady_WarpBeam",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_NightLady_FlameNightmare",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::DarkCanon",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_DarkCanon.BP_Action_DarkCanon_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::DarkArrow",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionDarkArrow_2.BP_ActionDarkArrow_2_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::DarkPulse",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_DarkPulse.BP_Action_DarkPulse_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::RipTide",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionRipTide.BP_ActionRipTide_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Apocalypse",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_Apocalypse.BP_Action_Apocalypse_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Tremor",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionTremor.BP_ActionTremor_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::DiamondFall",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionDiamondFall.BP_ActionDiamondFall_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_NightLady_WarpBeam_Straight",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::StarMine",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_StarMine.BP_Action_StarMine_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_FeatherOstrich_Tossin",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_DarkScorpion_Pierce",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Commet",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionCommet.BP_ActionCommet_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::BeamSlicer",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionBeamSlicer.BP_ActionBeamSlicer_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::RootLance",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_RootLance.BP_Action_RootLance_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_ThunderDragonMan_NumerousSwordAttack",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_KingBahamut_AirCrash",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::LineGeyser",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionLineGeyser.BP_ActionLineGeyser_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::ChargeCanon",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_ChargeCanon.BP_Action_ChargeCanon_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::BlastCanon",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_BlastCannon.BP_Action_BlastCannon_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::ThreeCommet",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_ThreeCommet.BP_Action_ThreeCommet_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::CommetRain",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_CommetRain.BP_Action_CommetRain_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_KingBahamut_ArmSmash",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::HolyBlast",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_HolyBlast.BP_Action_HolyBlast_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Eruption",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_Eruption.BP_Action_Eruption_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_ElecPanda_GatlingAttack",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_LilyQueen_LilyHealing",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_WingGolem_RoundCutter",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_DarkAlien_JumpScractch",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::FlameWall",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_FlameWall.BP_Action_FlameWall_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_MoonQueen_MoonBeam",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_MoonQueen_MoonBlade",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::AirBlade",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_AirBlade.BP_Action_AirBlade_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_SifuDog_Counter",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::WallSplash",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_WallSplash.BP_Action_WallSplash_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_ScorpionMan_Uppercut",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::FlameFunnel",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_FlameFunnel.BP_Action_FlameFunnel_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::SandTwister",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_SandTwister.BP_Action_SandTwister_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::TriSpark",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_TriSpark.BP_Action_TriSpark_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::ThunderStorm",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_ThunderStorm.BP_Action_ThunderStorm_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::IcicleLine",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_IcicleLine.BP_Action_IcicleLine_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::RangeThunder",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionRangeThunder.BP_ActionRangeThunder_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::FlareTwister",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_FlareTwister.BP_Action_FlareTwister_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_BlackGriffon_TackleLaser2",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_MoonQueen_IceMoonBlade",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_LeafMomonga_SomerSault",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::ShokeiLaser",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_ShokeiLaser.BP_Action_ShokeiLaser_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Railbolt",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionRailbolt.BP_ActionRailbolt_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::BubbleShower",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_PoisonShower.BP_Action_PoisonShower_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::WindEdge",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_WindEdge.BP_Action_WindEdge_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::RaidCutter",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_RaidCutter.BP_Action_RaidCutter_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::DoubleIcicleThrow",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_DoubleIcicleThrow.BP_Action_DoubleIcicleThrow_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_TentacleTurtle_HydroSpin",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Horus_PerfectStorm",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_ThunderBird_ThunderStorm",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Manticore_InfernoStrike",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::IciclePierce",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionIciclePierce.BP_ActionIciclePierce_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::IceAge",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_IceAge.BP_Action_IceAge_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_LilyQueen_WindBarrier",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_BlackMetalDragon_FirePunch",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_GrassRabbitMan_GrassRoundKick",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Umihebi_WindingTackle",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Yeti_SnowBall",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_SoldierBee_NeedleLance",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_RedArmorBird_TriplePeck",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_ThunderDog_InazumaShorai",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_GhostBeast_Tossin",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_BirdDragon_FireBreath",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_WhiteTiger_IceScratch",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_DarkMechaDragon_SetFunnel",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_DarkMechaDragon_FunnelLaser",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_DarkMechaDragon_ConvergentBeam",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_DarkMechaDragon_BeamSlash",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_DarkMechaDragon_WarpComet",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_BirdDragon_Ice_IceBreath",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Umihebi_Fire_FireWindingTackle",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::PredatorLockon",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_PredatorLockon.BP_Action_PredatorLockon_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::PredatorBeam",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionPredatorBeam.BP_ActionPredatorBeam_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::PredatorWave",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionPredatorWave.BP_ActionPredatorWave_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_WhiteTiger_Ground_IronScratch",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_FengyunDeeper_Electric_ThunderTempest",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Horus_Water_AquaStorm",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Werewolf_Ice_SnowScratch",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_AmaterasuWolf_Dark_DarkCharge",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_Yeti_Grass_GrassBall",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::RockBeat",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_RockBeat.BP_Action_RockBeat_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_SnowTigerBeastman_SnowImpact",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_PurpleSpider_SpiderRaid",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_SnowTigerBeastman_TrampleSlash",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_MysteryMask_LifeSteal",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_GrimGirl_BrutalMachete",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_WhiteShieldDragon_ShieldTackle",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_BlueThunderHorse_FlashDash",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_WhiteDeer_HolyPillar",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_GoldenHorse_StoneDash",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_NightBlueHorse_DeathStep",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::HydroSlicer",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionHydroSlicer.BP_ActionHydroSlicer_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::CrossWind",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionCrossWind.BP_ActionCrossWind_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::IceWall",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_IceWall.BP_Action_IceWall_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Unique_OctopursGirl_InkJet",
+          "Value": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::DiversionLaser",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionDiversionLaser.BP_ActionDiversionLaser_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::Weapon_Use",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/NPC/BP_NPCAction_WeaponUse.BP_NPCAction_WeaponUse_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::GravityShot",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_GravityShot.BP_Action_GravityShot_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::ThunderSpear",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_ActionThunderSpear.BP_ActionThunderSpear_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWazaID::ReflectiveShuriken",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Action/Waza/BP_Action_ReflectiveShuriken.BP_Action_ReflectiveShuriken_C",
+            "SubPathString": ""
+          }
+        }
+      ],
+      "Ragdoll_GravityRate": 2.0,
+      "AISideStepCoolTime": 8.0
+    }
+  },
+  {
+    "Type": "PalStatusComponent",
+    "Name": "StatusComponent",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'PalStatusComponent'",
+    "Template": {
+      "ObjectName": "PalStatusComponent'Default__BP_NPC_NewBase_C:StatusComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.17"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StatusMap": [
+        {
+          "Key": "EPalStatusID::ControlSP",
+          "Value": {
+            "ObjectName": "Class'PalStatus_StaminaControl'",
+            "ObjectPath": "/Script/Pal"
+          }
+        },
+        {
+          "Key": "EPalStatusID::StepCooldown",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_StepCoolDown_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_StepCoolDown.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::Drown",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_Drown_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_Drown.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::Burn",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_Burn_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_Burn.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::Wetness",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_Wetness_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_Wetness.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::Freeze",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_Freeze_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_Freeze.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::Electrical",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_Electrical_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_Electrical.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::Muddy",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_Muddy_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_Muddy.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::IvyCling",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_IvyCling_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_IvyCling.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::Darkness",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_Darkness_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_Darkness.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::Poison",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_Poison_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_Poison.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::CollectItem",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_CollectItem_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_CollectItem.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::AttackUp",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_AttackUP_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_AttackUP.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::DefenseUp",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_DefenseUP_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_DefenseUP.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::UNKOTimer",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_UNKOTimer_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_UNKOTimer.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::FallDamage",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_FallDamage_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_FallDamage.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::DrownCheck",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_DrownCheck_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_DrownCheck.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::LifeSteal",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_LifeSteal_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_LifeSteal.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::LavaDamage",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_LavaDamage_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_LavaDamage.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::AcidDamage",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_AcidDamage_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_AcidDamage.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::ToxicGas",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_ToxicGas_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_ToxicGas.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::AwakeningAuraEffect",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_AwakeningAura_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_AwakeningAura.0"
+          }
+        },
+        {
+          "Key": "EPalStatusID::ToxicGas_FromAttack",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Status_ToxicGas_FromAttack_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_ToxicGas_FromAttack.0"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalVisualEffectComponent",
+    "Name": "VisualEffectComponent",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'PalVisualEffectComponent'",
+    "Template": {
+      "ObjectName": "PalVisualEffectComponent'Default__BP_NPC_NewBase_C:VisualEffectComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.18"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_NPC_Base_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.43"
+      },
+      "VariableGuid": "82F6F8EB-4C1A45F8-708ED2B1-47CD6160",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalShooterComponent'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalShooterComponent'BP_NPC_Base_C:PalShooter_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.37"
+      },
+      "VariableGuid": "FBCEC075-40512755-810FDAB1-FC852AFB",
+      "InternalVariableName": "PalShooter"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalInteractableSphereComponentNative'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalInteractableSphereComponentNative'BP_NPC_Base_C:BP_InteractableSphere_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.33"
+      },
+      "ParentComponentOrVariableName": "CollisionCylinder",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "A22F2752-4C36BFAA-598682B5-1A5335FD",
+      "InternalVariableName": "BP_InteractableSphere"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalNavigationInvokerComponent'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalNavigationInvokerComponent'BP_NPC_Base_C:PalNavigationInvoker_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.35"
+      },
+      "VariableGuid": "44BC0569-42770BED-A6E1DFA3-24C7FA24",
+      "InternalVariableName": "PalNavigationInvoker"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCInteractionComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Component/NPCInteraction/BP_NPCInteractionComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCInteractionComponent_C'BP_NPC_Base_C:BP_NPCInteractionComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.2"
+      },
+      "VariableGuid": "B17C95F4-4C23FA12-CFCC019E-CAA2A775",
+      "InternalVariableName": "BP_NPCInteractionComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalFacialComponent'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalFacialComponent'BP_NPC_Base_C:PalFacial_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.31"
+      },
+      "VariableGuid": "66C18031-412D9004-D0707697-33DEC857",
+      "InternalVariableName": "PalFacial"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalNPCTalkFlowComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Component/TalkFlow/BP_PalNPCTalkFlowComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalNPCTalkFlowComponent_C'BP_NPC_Base_C:BP_PalNPCTalkFlowComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.3"
+      },
+      "VariableGuid": "B76E4361-4881CB74-34A9BB95-47BDED99",
+      "InternalVariableName": "BP_PalNPCTalkFlowComponent"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_NPC_Base_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_NPC_Base_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.45"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_NPC_Base_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.46"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_NPC_Base_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.47"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_NPC_Base_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.49"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_NPC_Base_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.48"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_NPC_Base_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.50"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_NPC_Base_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.45"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_NPC_Base_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.46"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_NPC_Base_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.47"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_NPC_Base_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.49"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_NPC_Base_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.48"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_NPC_Base_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.50"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_NPC_Base_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.44"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "RagdollInteractiveSphere",
+    "Outer": "Default__BP_NPC_Base_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__BP_NPC_NewBase_C:RagdollInteractiveSphere'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_NewBase.23"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_Base_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.4"
+      }
+    }
+  }
+]

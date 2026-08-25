@@ -1,0 +1,1539 @@
+[
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_KeyGuide",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "E735DF8F4C064F705A1FA0ACB15BE331",
+        "SourceString": "スフィア投げ",
+        "LocalizedString": "スフィア投げ"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_01.0"
+        },
+        "OutlineSettings": {
+          "OutlineSize": 1,
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.4,
+            "Hex": "66000000"
+          }
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.14"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.5"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.4"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -12.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.1"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.2"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -8.0,
+          "Top": -1.0,
+          "Right": -8.0,
+          "Bottom": -1.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -50.0,
+          "Top": -1.0,
+          "Right": -8.0,
+          "Bottom": -1.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.Image_Grd'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.17"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnmEvent_In",
+    "Outer": "WBP_Ingame_PlayerGauge_KeyGuide_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_Ingame_PlayerGauge_KeyGuide",
+    "Outer": "WBP_Ingame_PlayerGauge_KeyGuide_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_OverrideActionName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_NameToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_DataTableRowHandle",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_MakeLiteralText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IgnoreCase_TextText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_TextIsEmpty_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInitialized",
+    "Outer": "WBP_Ingame_PlayerGauge_KeyGuide_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:OnInitialized'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OverrideUIText",
+    "Outer": "WBP_Ingame_PlayerGauge_KeyGuide_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "OverrideActionName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ResetUIText",
+    "Outer": "WBP_Ingame_PlayerGauge_KeyGuide_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetTitleText",
+    "Outer": "WBP_Ingame_PlayerGauge_KeyGuide_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "NewText",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.14"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.15"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.4"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Right": 8.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.13"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.Text_KeyGuide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.0"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.13"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.SizeBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.28"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "base",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.057861,
+        "G": 0.119934,
+        "B": 0.140625,
+        "A": 0.4,
+        "Hex": "66446169"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.5"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Grd",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_BaseGrd_4'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Ingame/MI_UI_BaseGrd_4.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.12,
+        "G": 0.770928,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "61E4FF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.6"
+      },
+      "RenderTransformPivot": {
+        "X": 1.0,
+        "Y": 0.5
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible",
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Anm_In",
+    "Outer": "Anm_In_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "ADA961A9-48187863-A5ACC7A1-E43341DC",
+          "Name": "Image_Grd",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "85A1B2E4-4E3A8F73-6005FAA6-2D068514",
+          "Name": "CanvasPanelSlot_2",
+          "ParentGuid": "ADA961A9-48187863-A5ACC7A1-E43341DC",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "ADA961A9-48187863-A5ACC7A1-E43341DC",
+          "BindingName": "Image_Grd",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Ingame_PlayerGauge_KeyGuide_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.25"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "85A1B2E4-4E3A8F73-6005FAA6-2D068514",
+          "BindingName": "CanvasPanelSlot_2",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneMarginTrack'WBP_Ingame_PlayerGauge_KeyGuide_C:Anm_In_INST.Anm_In.MovieSceneMarginTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.27"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 20001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 60
+      },
+      "Signature": "82B53AEA-428E1825-6100DFBA-CF9698E2"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneMarginSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneMarginSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Anm_In_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 2,
+                  "Capacity": 2
+                },
+                {
+                  "StartIndex": 2,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 2,
+                  "Capacity": 2
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 0,
+                      "Value": {
+                        "Value": 20000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                },
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 20000
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 20000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 1
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Ingame_PlayerGauge_KeyGuide_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.24"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneMarginSection'WBP_Ingame_PlayerGauge_KeyGuide_C:Anm_In_INST.Anm_In.MovieSceneMarginTrack_0.MovieSceneMarginSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.26"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 1
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "ADA961A9-48187863-A5ACC7A1-E43341DC"
+          },
+          {
+            "ObjectBindingID": "85A1B2E4-4E3A8F73-6005FAA6-2D068514"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 20000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "6983E5EF-44A63C40-4CB380BF-8F8D38C8",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 10000
+          },
+          {
+            "Value": 20000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Ingame_PlayerGauge_KeyGuide_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.19"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Ingame_PlayerGauge_KeyGuide_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.20"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 20000
+            }
+          }
+        }
+      },
+      "Signature": "4E4455E6-461D15AD-9F7161B5-64F00A3C"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Anm_In",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Ingame_PlayerGauge_KeyGuide_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.24"
+        }
+      ],
+      "EvaluationFieldGuid": "1C3894C2-4B4336F9-BA233785-CF86E233",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Ingame_PlayerGauge_KeyGuide_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.24"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": {
+                  "Value": 20000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "1C3894C2-4B4336F9-BA233785-CF86E233"
+    }
+  },
+  {
+    "Type": "MovieSceneMarginSection",
+    "Name": "MovieSceneMarginSection_0",
+    "Outer": "MovieSceneMarginTrack_0",
+    "Class": "UScriptClass'MovieSceneMarginSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LeftCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 20000
+          }
+        ],
+        "Values": [
+          {
+            "Value": -250.0,
+            "Tangent": {
+              "ArriveTangent": 0.030720677,
+              "LeaveTangent": 0.030720677,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 1
+          },
+          {
+            "Value": -50.0,
+            "Tangent": {
+              "ArriveTangent": 3.6861025E-09,
+              "LeaveTangent": 3.6861025E-09,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 1
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Ingame_PlayerGauge_KeyGuide_C:Anm_In_INST.Anm_In.MovieSceneMarginTrack_0.MovieSceneMarginSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.21"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Ingame_PlayerGauge_KeyGuide_C:Anm_In_INST.Anm_In.MovieSceneMarginTrack_0.MovieSceneMarginSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.22"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 20000
+            }
+          }
+        }
+      },
+      "Signature": "54CDD9EB-418C0243-AE1F03A4-53749569"
+    }
+  },
+  {
+    "Type": "MovieSceneMarginTrack",
+    "Name": "MovieSceneMarginTrack_0",
+    "Outer": "Anm_In",
+    "Class": "UScriptClass'MovieSceneMarginTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "Offsets",
+        "PropertyPath": "LayoutData.Offsets"
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneMarginSection'WBP_Ingame_PlayerGauge_KeyGuide_C:Anm_In_INST.Anm_In.MovieSceneMarginTrack_0.MovieSceneMarginSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.26"
+        }
+      ],
+      "EvaluationFieldGuid": "655AD4B4-4CE34ADE-9DD1F3B7-E0EBFA25",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneMarginSection'WBP_Ingame_PlayerGauge_KeyGuide_C:Anm_In_INST.Anm_In.MovieSceneMarginTrack_0.MovieSceneMarginSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.26"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 20000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "655AD4B4-4CE34ADE-9DD1F3B7-E0EBFA25"
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidthOverride": 24.0,
+      "HeightOverride": 24.0,
+      "MinDesiredWidth": 26.0,
+      "MinDesiredHeight": 26.0,
+      "MaxDesiredWidth": 32.0,
+      "MaxDesiredHeight": 32.0,
+      "bOverride_MinDesiredWidth": true,
+      "bOverride_MinDesiredHeight": true,
+      "bOverride_MaxDesiredWidth": true,
+      "bOverride_MaxDesiredHeight": true,
+      "bOverride_MinAspectRatio": true,
+      "bOverride_MaxAspectRatio": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.SizeBox.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.29"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.15"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.SizeBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.28"
+      },
+      "Content": {
+        "ObjectName": "WBP_PlayerInputKeyGuideIcon_C'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.WBP_PlayerInputKeyGuideIcon_ChangeBallAiming_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.31"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Ingame_PlayerGauge_KeyGuide_C",
+    "Name": "Default__WBP_Ingame_PlayerGauge_KeyGuide_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.WBP_Ingame_PlayerGauge_KeyGuide_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "MsgIDMap": [
+        {
+          "Key": "ThrowPal",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "PLAYER_ACTION_GUIDE_SUMMON_PAL"
+          }
+        },
+        {
+          "Key": "ThrowObject",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "PLAYER_ACTION_GUIDE_THROW_SPHERE"
+          }
+        },
+        {
+          "Key": "PartnerPalInstructions",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "PLAYER_ACTION_GUIDE_INTERACT_PAL"
+          }
+        },
+        {
+          "Key": "Reload",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "DataTable'DT_UI_Common_Text_Common'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text_Common.0"
+            },
+            "RowName": "CHANGE_WEAPON_BULLET_GUIDE"
+          }
+        },
+        {
+          "Key": "ChangeWeaponNext_Gamepad",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "DataTable'DT_UI_Common_Text_Common'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text_Common.0"
+            },
+            "RowName": "CHANGE_WEAPON_BULLET_GUIDE"
+          }
+        },
+        {
+          "Key": "PartnerPalInstruction",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "DIRECT_ATTACK_ORDER"
+          }
+        },
+        {
+          "Key": "DirectAttackOrder",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "DIRECT_ATTACK_ORDER"
+          }
+        },
+        {
+          "Key": "WeaponReady",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "COMMON_WingGlider_Boost"
+          }
+        },
+        {
+          "Key": "MoveForward",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "COMMON_WingGlider_Up"
+          }
+        },
+        {
+          "Key": "MoveBack",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "COMMON_WingGlider_Down"
+          }
+        },
+        {
+          "Key": "MoveRight",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "COMMON_WingGlider_Right"
+          }
+        },
+        {
+          "Key": "MoveLeft",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "COMMON_WingGlider_Left"
+          }
+        }
+      ],
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_PlayerInputKeyGuideIcon_C",
+    "Name": "WBP_PlayerInputKeyGuideIcon_ChangeBallAiming_1",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PlayerInputKeyGuideIcon.WBP_PlayerInputKeyGuideIcon_C'",
+    "Template": {
+      "ObjectName": "WBP_PlayerInputKeyGuideIcon_C'Default__WBP_PlayerInputKeyGuideIcon_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PlayerInputKeyGuideIcon.10"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.SizeBox.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.29"
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Anm_In_INST",
+    "Outer": "WBP_Ingame_PlayerGauge_KeyGuide_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_Ingame_PlayerGauge_KeyGuide_C:Anm_In_INST.Anm_In'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.18"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "Image_Grd",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "ADA961A9-48187863-A5ACC7A1-E43341DC",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Image_Grd",
+          "SlotWidgetName": "CanvasPanelSlot_2",
+          "AnimationGuid": "85A1B2E4-4E3A8F73-6005FAA6-2D068514",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Anm_In",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_Ingame_PlayerGauge_KeyGuide_C:Anm_In_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.23"
+      },
+      "Signature": "6983E5EF-44A63C40-4CB380BF-8F8D38C8"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_Ingame_PlayerGauge_KeyGuide_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.34"
+      },
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'WBP_Ingame_PlayerGauge_KeyGuide_C:Anm_In_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.32"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_KeyGuide_C:ExecuteUbergraph_WBP_Ingame_PlayerGauge_KeyGuide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.8"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_KeyGuide_C:SetTitleText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.12"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_KeyGuide_C:AnmEvent_In'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.7"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_KeyGuide_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.9"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_KeyGuide_C:OverrideUIText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.10"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_KeyGuide_C:ResetUIText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.11"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_KeyGuide_C:ExecuteUbergraph_WBP_Ingame_PlayerGauge_KeyGuide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.8"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Anm_In",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "base",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Grd",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_KeyGuide",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PlayerInputKeyGuideIcon_ChangeBallAiming_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PlayerInputKeyGuideIcon_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PlayerInputKeyGuideIcon.11"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "BindActionName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "MsgIDMap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "NameProperty",
+          "Name": "MsgIDMap",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        },
+        "ValueProp": {
+          "Type": "StructProperty",
+          "Name": "MsgIDMap_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "ScriptStruct'DataTableRowHandle'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "OverrideActionName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_Ingame_PlayerGauge_KeyGuide": {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_KeyGuide_C:ExecuteUbergraph_WBP_Ingame_PlayerGauge_KeyGuide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.8"
+      },
+      "ResetUIText": {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_KeyGuide_C:ResetUIText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.11"
+      },
+      "OverrideUIText": {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_KeyGuide_C:OverrideUIText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.10"
+      },
+      "OnInitialized": {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_KeyGuide_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.9"
+      },
+      "AnmEvent_In": {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_KeyGuide_C:AnmEvent_In'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.7"
+      },
+      "SetTitleText": {
+        "ObjectName": "Function'WBP_Ingame_PlayerGauge_KeyGuide_C:SetTitleText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.12"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_Ingame_PlayerGauge_KeyGuide_C'Default__WBP_Ingame_PlayerGauge_KeyGuide_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.30"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_Ingame_PlayerGauge_KeyGuide_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_PlayerGauge_KeyGuide_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/PlayerGauge/WBP_Ingame_PlayerGauge_KeyGuide.1"
+      }
+    }
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "pal_b07_tree_Bush-01_2_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'pal_b07_tree_Bush-01_2'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b07/tree/mesh/pal_b07_tree_Bush-01_2.2"
+      },
+      "UpdateGuid": "596DCFB1-4D08169E-6DBF00BA-A8691351",
+      "Density": 10.0,
+      "ScaleX": {
+        "Min": 0.3,
+        "Max": 0.5
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 5.589531,
+          "Y": -25.316597,
+          "Z": 164.86154
+        },
+        "BoxExtent": {
+          "X": 212.54678,
+          "Y": 227.99222,
+          "Z": 183.67795
+        },
+        "SphereRadius": 263.34837685551275
+      },
+      "LowBoundOriginRadius": {
+        "X": -17.715988,
+        "Y": -22.264046,
+        "Z": 30.21692
+      },
+      "CullDistance": {
+        "Max": 4000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

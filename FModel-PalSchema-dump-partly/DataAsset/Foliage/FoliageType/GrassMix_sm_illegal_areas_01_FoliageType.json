@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "GrassMix_sm_illegal_areas_01_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'GrassMix_sm_illegal_areas_01'",
+        "ObjectPath": "Pal/Content/GrassSV_MaterialPack/Meshes/GrassMix_sm_illegal_areas_01.2"
+      },
+      "UpdateGuid": "F8483ADF-4802C14B-4B0ACC96-7E16E1CD",
+      "Density": 10.0,
+      "ScaleX": {
+        "Min": 0.9,
+        "Max": 1.1
+      },
+      "AlignToNormal": false,
+      "MeshBounds": {
+        "Origin": {
+          "X": -0.24404526,
+          "Y": -3.5645065,
+          "Z": 19.483818
+        },
+        "BoxExtent": {
+          "X": 32.32905,
+          "Y": 41.994865,
+          "Z": 23.296795
+        },
+        "SphereRadius": 45.22537417374474
+      },
+      "LowBoundOriginRadius": {
+        "X": 1.0260973,
+        "Y": -1.0945349,
+        "Z": 35.667034
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

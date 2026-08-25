@@ -1,0 +1,4374 @@
+[
+  {
+    "Type": "BackgroundBlur",
+    "Name": "BackgroundBlur_157",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'BackgroundBlur'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BlurStrength": 3.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.12"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalRichTextBlock_C",
+    "Name": "BP_PalRichTextBlock_NoSet",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalRichTextBlock.BP_PalRichTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalRichTextBlock_C'Default__BP_PalRichTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalRichTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bOverrideDefaultStyle": true,
+      "DefaultTextStyleOverride": {
+        "Font": {
+          "FontObject": {
+            "ObjectName": "Font'Ft_PalDefaultFont'",
+            "ObjectPath": "Pal/Content/Pal/Font/Ft_PalDefaultFont.0"
+          },
+          "TypefaceFontName": "Regular",
+          "Size": 18
+        },
+        "ColorAndOpacity": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFFFF"
+          }
+        },
+        "ShadowOffset": {
+          "X": 2.0,
+          "Y": 2.0
+        },
+        "ShadowColorAndOpacity": {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 0.3,
+          "Hex": "4C000000"
+        }
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.10"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Status",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_WORK_HATCH_STATE_VERYCOMFORT"
+      },
+      "Text": {
+        "Namespace": "",
+        "Key": "5C922E3B4092AAE6BC2E329B3A60D64B",
+        "SourceString": "少し寒そうだ",
+        "LocalizedString": "少し寒そうだ"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 11
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.OverlayStatus.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.62"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_29",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_29.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_70",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_16'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_11'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.11"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_29.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_29",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -0.3999939,
+          "Right": 540.0,
+          "Bottom": 285.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_29'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.3"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_70",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 8.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_Incubator_Multiple_C:WidgetTree.BaseDot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.30"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasPanel_70",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 35.0,
+          "Top": -6.0,
+          "Right": 35.0,
+          "Bottom": 24.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.4"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_Ingame_Incubator_Multiple_C:WidgetTree.OverlayStatus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.60"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_16",
+    "Outer": "CanvasPanel_70",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 6.0,
+          "Top": 6.0,
+          "Right": 6.0,
+          "Bottom": 240.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.4"
+      },
+      "Content": {
+        "ObjectName": "WrapBox'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.79"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_70",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 61.5,
+          "Top": 66.0,
+          "Right": 105.0,
+          "Bottom": 120.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.4"
+      },
+      "Content": {
+        "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WBP_Ingame_Incubator_MultipleSlot_Simple'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.74"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_70",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.4"
+      },
+      "Content": {
+        "ObjectName": "BP_PalRichTextBlock_C'WBP_Ingame_Incubator_Multiple_C:WidgetTree.BP_PalRichTextBlock_NoSet'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.1"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_70",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 60.0,
+          "Top": -10.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.4"
+      },
+      "Content": {
+        "ObjectName": "WBP_RequirePalInfo_C'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WBP_RequirePalInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.75"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_70",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.4"
+      },
+      "Content": {
+        "ObjectName": "BackgroundBlur'WBP_Ingame_Incubator_Multiple_C:WidgetTree.BackgroundBlur_157'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.0"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_70",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_Incubator_Multiple_C:WidgetTree.Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.28"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_70",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_Incubator_Multiple_C:WidgetTree.BaseLineTop'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanel_70",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 8.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_Incubator_Multiple_C:WidgetTree.BaseDot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.29"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_70",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 12.0,
+          "Top": -12.0,
+          "Right": 12.0,
+          "Bottom": 1.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_Incubator_Multiple_C:WidgetTree.LineCenter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.32"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "WBP_Ingame_Incubator_Multiple_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Destruct",
+    "Outer": "WBP_Ingame_Incubator_Multiple_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Destruct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "DisplayCheck",
+    "Outer": "WBP_Ingame_Incubator_Multiple_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_Ingame_Incubator_Multiple",
+    "Outer": "WBP_Ingame_Incubator_Multiple_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EUMGSequencePlayMode'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EUMGSequencePlayMode'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalmi_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EUMGSequencePlayMode'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameSetting_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalGameSetting'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetParam_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameterBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_UIMap_Object_Status_Indicator_Parameter_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectStatusIndicatorParameterBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetConcreteModel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalMapObjectConcreteModelBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Map_Object_Multi_Hatching_Egg_Model",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalMapObjectMultiHatchingEggModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetMapObjectLocation_outVector",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Vector_Distance_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_BoolBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetEndTime_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Incubator_MultipleSlot_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.25"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Less_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEggArrayUpdated",
+    "Outer": "WBP_Ingame_Incubator_Multiple_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_GetItemContainerAccess_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "UObjectWrapper",
+        "InterfaceClass": {
+          "ObjectName": "Class'PalMapObjectItemContainerAccessInterface'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetItemContainer_ItemContainerAccessInterface_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalItemContainer'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInitialized",
+    "Outer": "WBP_Ingame_Incubator_Multiple_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:OnInitialized'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetup",
+    "Outer": "WBP_Ingame_Incubator_Multiple_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUserWidget:OnSetup'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup",
+    "Outer": "WBP_Ingame_Incubator_Multiple_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetWorkSuitabilityDisplayData_OutDisplayData",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "CallFunc_GetWorkSuitabilityDisplayData_OutDisplayData",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "Struct": {
+            "ObjectName": "ScriptStruct'PalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalMapObjectHatchingEggModelBase:UpdatePalEggArrayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalMapObjectEnergyModule:ReturnSelfMulticastDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Incubator_MultipleSlot_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.25"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_GetItemContainerAccess_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "UObjectWrapper",
+        "InterfaceClass": {
+          "ObjectName": "Class'PalMapObjectItemContainerAccessInterface'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetItemContainer_ItemContainerAccessInterface_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalItemContainer'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalItemSlot'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetEnergyModule_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalMapObjectEnergyModule'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetWorkProgress_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalWorkProgress'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsRequiredEnergy_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalMapObject'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Update Power Suffcient",
+    "Outer": "WBP_Ingame_Incubator_Multiple_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Module",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalMapObjectEnergyModule'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsRequiredEnergy_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Temp_name_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Temp_name_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Update Slots",
+    "Outer": "WBP_Ingame_Incubator_Multiple_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ItemContainer",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalItemContainer'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetWorkProgress_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalWorkProgress'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Incubator_MultipleSlot_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.25"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsEmpty_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateSimpleSlot",
+    "Outer": "WBP_Ingame_Incubator_Multiple_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "TempRemainTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "TempIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetWorkProgress_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalWorkProgress'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_GetItemContainerAccess_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "UObjectWrapper",
+        "InterfaceClass": {
+          "ObjectName": "Class'PalMapObjectItemContainerAccessInterface'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetWorkProgress_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalWorkProgress'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetItemContainer_ItemContainerAccessInterface_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalItemContainer'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalItemSlot'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetRemainWorkPredicateTime_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsCompleted_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "Base",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.001518,
+        "G": 0.006512,
+        "B": 0.01033,
+        "A": 0.35,
+        "Hex": "5905131A"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.13"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BaseDot_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.614773,
+        "G": 0.8581,
+        "B": 0.901042,
+        "A": 1.0,
+        "Hex": "CEEFF4"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.15"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BaseDot_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.614773,
+        "G": 0.8581,
+        "B": 0.901042,
+        "A": 1.0,
+        "Hex": "CEEFF4"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.6"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BaseLineTop",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_01.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.14"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "LineCenter",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.389648,
+        "G": 0.563134,
+        "B": 0.59375,
+        "A": 0.3,
+        "Hex": "4CA8C6CB"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.16"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible",
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "StatusBase",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 1.0,
+        "B": 0.799103,
+        "A": 0.301961,
+        "Hex": "4D00FFE7"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.OverlayStatus.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.61"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Anm_DetailToSimple",
+    "Outer": "Anm_DetailToSimple_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "957609BB-4C36D5DD-4432E7AB-A39A1B26",
+          "Name": "CanvasPanelSlot_0",
+          "ParentGuid": "A63921CC-4F12E9C6-C868F5A3-6352E1DC",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "A63921CC-4F12E9C6-C868F5A3-6352E1DC",
+          "Name": "CanvasPanel_70",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "D5C7F8E3-40F0E5CC-9F8A9AA0-B87E350D",
+          "Name": "WrapBox_153",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "FC341A7F-4D642FD8-D0AEB29A-A1DEC8F7",
+          "Name": "LineCenter",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "C7C796B1-46D7926C-BB978DA2-54CD415F",
+          "Name": "WBP_Ingame_Incubator_MultipleSlot_Simple",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "F6BCBA15-4616D275-DB3FD494-1CB5A4EB",
+          "Name": "CanvasPanelSlot_11",
+          "ParentGuid": "3F8D8A07-4E526C79-ED1FC4BF-A67C12BA",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "3F8D8A07-4E526C79-ED1FC4BF-A67C12BA",
+          "Name": "OverlayStatus",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "4CAA9570-45F49A27-FD36B98E-92F2F4E5",
+          "Name": "BP_PalRichTextBlock_NoSet",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "957609BB-4C36D5DD-4432E7AB-A39A1B26",
+          "BindingName": "CanvasPanelSlot_0",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneMarginTrack'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneMarginTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.58"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "A63921CC-4F12E9C6-C868F5A3-6352E1DC",
+          "BindingName": "CanvasPanel_70",
+          "Tracks": []
+        },
+        {
+          "ObjectGuid": "D5C7F8E3-40F0E5CC-9F8A9AA0-B87E350D",
+          "BindingName": "WrapBox_153",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.52"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "FC341A7F-4D642FD8-D0AEB29A-A1DEC8F7",
+          "BindingName": "LineCenter",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_2'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.54"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "C7C796B1-46D7926C-BB978DA2-54CD415F",
+          "BindingName": "WBP_Ingame_Incubator_MultipleSlot_Simple",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_3'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.55"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "F6BCBA15-4616D275-DB3FD494-1CB5A4EB",
+          "BindingName": "CanvasPanelSlot_11",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneMarginTrack'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneMarginTrack_1'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.59"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "3F8D8A07-4E526C79-ED1FC4BF-A67C12BA",
+          "BindingName": "OverlayStatus",
+          "Tracks": []
+        },
+        {
+          "ObjectGuid": "4CAA9570-45F49A27-FD36B98E-92F2F4E5",
+          "BindingName": "BP_PalRichTextBlock_NoSet",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_1'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.53"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 12001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 60
+      },
+      "Signature": "9A8203CC-4D096027-6556B6B6-1484FEEF"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneMarginSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneMarginSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneMarginSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneMarginSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Anm_DetailToSimple_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 5,
+                  "Capacity": 5
+                },
+                {
+                  "StartIndex": 5,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 2,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 4,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 5,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 3,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                },
+                {
+                  "StartIndex": 1,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 12000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": 1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                },
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 5000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": 0
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 1
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneMarginSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneMarginTrack_0.MovieSceneMarginSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.56"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.48"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 1
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.50"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 2
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_3.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.51"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 3
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneMarginSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneMarginTrack_1.MovieSceneMarginSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.57"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 4
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.49"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 5
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "957609BB-4C36D5DD-4432E7AB-A39A1B26"
+          },
+          {
+            "ObjectBindingID": "D5C7F8E3-40F0E5CC-9F8A9AA0-B87E350D"
+          },
+          {
+            "ObjectBindingID": "FC341A7F-4D642FD8-D0AEB29A-A1DEC8F7"
+          },
+          {
+            "ObjectBindingID": "C7C796B1-46D7926C-BB978DA2-54CD415F"
+          },
+          {
+            "ObjectBindingID": "F6BCBA15-4616D275-DB3FD494-1CB5A4EB"
+          },
+          {
+            "ObjectBindingID": "4CAA9570-45F49A27-FD36B98E-92F2F4E5"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 5000
+          },
+          "SubFrame": 0.0
+        },
+        {
+          "FrameNumber": {
+            "Value": 12000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "DC8719A0-46990EA8-DA0E54AB-02A2E348",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 1000
+          },
+          {
+            "Value": 12000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.35"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.36"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 12000
+            }
+          }
+        }
+      },
+      "Signature": "462653A4-4D4AE6FB-5FB5359C-8964F660"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_1",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 1000
+          },
+          {
+            "Value": 12000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.37"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.38"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 12000
+            }
+          }
+        }
+      },
+      "Signature": "920F6BFB-4054DA33-4E607291-77B90481"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_2",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 1000
+          },
+          {
+            "Value": 12000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.39"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.40"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 12000
+            }
+          }
+        }
+      },
+      "Signature": "2A0A4C58-468ACB6C-7451058F-6FF16625"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_3",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 1000
+          },
+          {
+            "Value": 5000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_3.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.41"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_3.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.42"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 5000
+            }
+          }
+        }
+      },
+      "Signature": "B5EDFF1B-4CB84EED-EAEDB08F-7FEFD1E5"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Anm_DetailToSimple",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.48"
+        }
+      ],
+      "EvaluationFieldGuid": "3E08E2FA-4E566B90-2CBFD092-7DFE39B7",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.48"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 12000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "3E08E2FA-4E566B90-2CBFD092-7DFE39B7"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_1",
+    "Outer": "Anm_DetailToSimple",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.49"
+        }
+      ],
+      "EvaluationFieldGuid": "51674351-49EFC0F0-25BE4A87-26782D5F",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.49"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 12000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "51674351-49EFC0F0-25BE4A87-26782D5F"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_2",
+    "Outer": "Anm_DetailToSimple",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.50"
+        }
+      ],
+      "EvaluationFieldGuid": "4DBF73AD-4AA8D6A8-75672793-A6FB1FCE",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.50"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 12000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "4DBF73AD-4AA8D6A8-75672793-A6FB1FCE"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_3",
+    "Outer": "Anm_DetailToSimple",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_3.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.51"
+        }
+      ],
+      "EvaluationFieldGuid": "60637A86-4B1E5CB7-DB42F4A4-8D78A300",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneFloatTrack_3.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.51"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 5000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "60637A86-4B1E5CB7-DB42F4A4-8D78A300"
+    }
+  },
+  {
+    "Type": "MovieSceneMarginSection",
+    "Name": "MovieSceneMarginSection_0",
+    "Outer": "MovieSceneMarginTrack_0",
+    "Class": "UScriptClass'MovieSceneMarginSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RightCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 12000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 540.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 124.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "BottomCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 12000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 285.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 152.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneMarginTrack_0.MovieSceneMarginSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.43"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneMarginTrack_0.MovieSceneMarginSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.44"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 12000
+            }
+          }
+        }
+      },
+      "Signature": "2C37B144-4AE65375-578DA4BE-291AD3C5"
+    }
+  },
+  {
+    "Type": "MovieSceneMarginSection",
+    "Name": "MovieSceneMarginSection_0",
+    "Outer": "MovieSceneMarginTrack_1",
+    "Class": "UScriptClass'MovieSceneMarginSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LeftCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 12000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 35.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 4.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "RightCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 12000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 35.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 4.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneMarginTrack_1.MovieSceneMarginSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.45"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneMarginTrack_1.MovieSceneMarginSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.46"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 12000
+            }
+          }
+        }
+      },
+      "Signature": "12DFCE9B-412E385F-52FDCEBA-07025A1E"
+    }
+  },
+  {
+    "Type": "MovieSceneMarginTrack",
+    "Name": "MovieSceneMarginTrack_0",
+    "Outer": "Anm_DetailToSimple",
+    "Class": "UScriptClass'MovieSceneMarginTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "Offsets",
+        "PropertyPath": "LayoutData.Offsets"
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneMarginSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneMarginTrack_0.MovieSceneMarginSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.56"
+        }
+      ],
+      "EvaluationFieldGuid": "74C8B6C0-47EEDEB5-C1A75BAE-42CDA63F",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneMarginSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneMarginTrack_0.MovieSceneMarginSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.56"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 12000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "74C8B6C0-47EEDEB5-C1A75BAE-42CDA63F"
+    }
+  },
+  {
+    "Type": "MovieSceneMarginTrack",
+    "Name": "MovieSceneMarginTrack_1",
+    "Outer": "Anm_DetailToSimple",
+    "Class": "UScriptClass'MovieSceneMarginTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "Offsets",
+        "PropertyPath": "LayoutData.Offsets"
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneMarginSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneMarginTrack_1.MovieSceneMarginSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.57"
+        }
+      ],
+      "EvaluationFieldGuid": "126E58F9-45C71436-CEF5E591-7A5E3723",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneMarginSection'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple.MovieSceneMarginTrack_1.MovieSceneMarginSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.57"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 12000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "126E58F9-45C71436-CEF5E591-7A5E3723"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "OverlayStatus",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.OverlayStatus.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.61"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.OverlayStatus.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.62"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_11'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.7"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "OverlayStatus",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Ingame_Incubator_Multiple_C:WidgetTree.OverlayStatus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.60"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_Incubator_Multiple_C:WidgetTree.StatusBase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.33"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "OverlayStatus",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Ingame_Incubator_Multiple_C:WidgetTree.OverlayStatus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.60"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Ingame_Incubator_Multiple_C:WidgetTree.Text_Status'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.2"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Ingame_Incubator_Multiple_C",
+    "Name": "Default__WBP_Ingame_Incubator_Multiple_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.WBP_Ingame_Incubator_Multiple_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "DisplayCheckTimer": {
+        "Handle": 0
+      },
+      "SimpleSlotUpdateTimer": {
+        "Handle": 0
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_Ingame_Incubator_MultipleSlot_C",
+    "Name": "WBP_Ingame_Incubator_MultipleSlot",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C'",
+    "Template": {
+      "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'Default__WBP_Ingame_Incubator_MultipleSlot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.23"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_27'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.80"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Ingame_Incubator_MultipleSlot_C",
+    "Name": "WBP_Ingame_Incubator_MultipleSlot_1",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C'",
+    "Template": {
+      "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'Default__WBP_Ingame_Incubator_MultipleSlot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.23"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.81"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Ingame_Incubator_MultipleSlot_C",
+    "Name": "WBP_Ingame_Incubator_MultipleSlot_2",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C'",
+    "Template": {
+      "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'Default__WBP_Ingame_Incubator_MultipleSlot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.23"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_29'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.82"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Ingame_Incubator_MultipleSlot_C",
+    "Name": "WBP_Ingame_Incubator_MultipleSlot_3",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C'",
+    "Template": {
+      "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'Default__WBP_Ingame_Incubator_MultipleSlot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.23"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_30'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.83"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Ingame_Incubator_MultipleSlot_C",
+    "Name": "WBP_Ingame_Incubator_MultipleSlot_4",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C'",
+    "Template": {
+      "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'Default__WBP_Ingame_Incubator_MultipleSlot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.23"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_31'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.84"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Ingame_Incubator_MultipleSlot_C",
+    "Name": "WBP_Ingame_Incubator_MultipleSlot_5",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C'",
+    "Template": {
+      "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'Default__WBP_Ingame_Incubator_MultipleSlot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.23"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_32'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.85"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Ingame_Incubator_MultipleSlot_C",
+    "Name": "WBP_Ingame_Incubator_MultipleSlot_6",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C'",
+    "Template": {
+      "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'Default__WBP_Ingame_Incubator_MultipleSlot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.23"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_33'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.86"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Ingame_Incubator_MultipleSlot_C",
+    "Name": "WBP_Ingame_Incubator_MultipleSlot_7",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C'",
+    "Template": {
+      "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'Default__WBP_Ingame_Incubator_MultipleSlot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.23"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_34'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.87"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Ingame_Incubator_MultipleSlot_C",
+    "Name": "WBP_Ingame_Incubator_MultipleSlot_8",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C'",
+    "Template": {
+      "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'Default__WBP_Ingame_Incubator_MultipleSlot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.23"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_35'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.88"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Ingame_Incubator_MultipleSlot_C",
+    "Name": "WBP_Ingame_Incubator_MultipleSlot_9",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C'",
+    "Template": {
+      "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'Default__WBP_Ingame_Incubator_MultipleSlot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.23"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_36'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.89"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Ingame_Incubator_MultipleSlot_C",
+    "Name": "WBP_Ingame_Incubator_MultipleSlot_Simple",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C'",
+    "Template": {
+      "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'Default__WBP_Ingame_Incubator_MultipleSlot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.23"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.9"
+      }
+    }
+  },
+  {
+    "Type": "WBP_RequirePalInfo_C",
+    "Name": "WBP_RequirePalInfo",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/RequirePalInfo/WBP_RequirePalInfo.WBP_RequirePalInfo_C'",
+    "Template": {
+      "ObjectName": "WBP_RequirePalInfo_C'Default__WBP_RequirePalInfo_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/RequirePalInfo/WBP_RequirePalInfo.131"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.11"
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Anm_DetailToSimple_INST",
+    "Outer": "WBP_Ingame_Incubator_Multiple_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.Anm_DetailToSimple'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.34"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "CanvasPanel_70",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "A63921CC-4F12E9C6-C868F5A3-6352E1DC",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "CanvasPanel_70",
+          "SlotWidgetName": "CanvasPanelSlot_0",
+          "AnimationGuid": "957609BB-4C36D5DD-4432E7AB-A39A1B26",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "WrapBox_153",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "D5C7F8E3-40F0E5CC-9F8A9AA0-B87E350D",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "LineCenter",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "FC341A7F-4D642FD8-D0AEB29A-A1DEC8F7",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "WBP_Ingame_Incubator_MultipleSlot_Simple",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "C7C796B1-46D7926C-BB978DA2-54CD415F",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "OverlayStatus",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "3F8D8A07-4E526C79-ED1FC4BF-A67C12BA",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "OverlayStatus",
+          "SlotWidgetName": "CanvasPanelSlot_11",
+          "AnimationGuid": "F6BCBA15-4616D275-DB3FD494-1CB5A4EB",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "BP_PalRichTextBlock_NoSet",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "4CAA9570-45F49A27-FD36B98E-92F2F4E5",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Anm_DetailToSimple",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.47"
+      },
+      "Signature": "DC8719A0-46990EA8-DA0E54AB-02A2E348"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_Ingame_Incubator_Multiple_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_Ingame_Incubator_Multiple_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.78"
+      },
+      "bClassRequiresNativeTick": true,
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'WBP_Ingame_Incubator_Multiple_C:Anm_DetailToSimple_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.76"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:ExecuteUbergraph_WBP_Ingame_Incubator_Multiple'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.20"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUIMapObjectStatusIndicatorBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:OnEggArrayUpdated'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.21"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:UpdateSimpleSlot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.27"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:Update Power Suffcient'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.25"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:Update Slots'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.26"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.24"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.23"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:Destruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.18"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.17"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:DisplayCheck'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.19"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.22"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:ExecuteUbergraph_WBP_Ingame_Incubator_Multiple'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.20"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Anm_DetailToSimple",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalRichTextBlock_NoSet",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRichTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalRichTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LineCenter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OverlayStatus",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Overlay'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_Status",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Ingame_Incubator_MultipleSlot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Incubator_MultipleSlot_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.25"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Ingame_Incubator_MultipleSlot_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Incubator_MultipleSlot_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.25"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Ingame_Incubator_MultipleSlot_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Incubator_MultipleSlot_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.25"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Ingame_Incubator_MultipleSlot_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Incubator_MultipleSlot_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.25"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Ingame_Incubator_MultipleSlot_4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Incubator_MultipleSlot_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.25"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Ingame_Incubator_MultipleSlot_5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Incubator_MultipleSlot_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.25"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Ingame_Incubator_MultipleSlot_6",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Incubator_MultipleSlot_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.25"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Ingame_Incubator_MultipleSlot_7",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Incubator_MultipleSlot_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.25"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Ingame_Incubator_MultipleSlot_8",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Incubator_MultipleSlot_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.25"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Ingame_Incubator_MultipleSlot_9",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Incubator_MultipleSlot_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.25"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Ingame_Incubator_MultipleSlot_Simple",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Incubator_MultipleSlot_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.25"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_RequirePalInfo",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_RequirePalInfo_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/RequirePalInfo/WBP_RequirePalInfo.134"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Model",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalMapObjectMultiHatchingEggModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "isDisplayedDetail",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "DisplayCheckTimer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Slots",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "Slots",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Incubator_MultipleSlot_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_MultipleSlot.25"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LastSimpleSlotIndex",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "SimpleSlotUpdateTimer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "NoEgg",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "HasPower",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_Ingame_Incubator_Multiple": {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:ExecuteUbergraph_WBP_Ingame_Incubator_Multiple'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.20"
+      },
+      "OnInitialized": {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.22"
+      },
+      "DisplayCheck": {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:DisplayCheck'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.19"
+      },
+      "Construct": {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.17"
+      },
+      "Destruct": {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:Destruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.18"
+      },
+      "OnSetup": {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.23"
+      },
+      "Setup": {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.24"
+      },
+      "Update Slots": {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:Update Slots'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.26"
+      },
+      "Update Power Suffcient": {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:Update Power Suffcient'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.25"
+      },
+      "UpdateSimpleSlot": {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:UpdateSimpleSlot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.27"
+      },
+      "OnEggArrayUpdated": {
+        "ObjectName": "Function'WBP_Ingame_Incubator_Multiple_C:OnEggArrayUpdated'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.21"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_Ingame_Incubator_Multiple_C'Default__WBP_Ingame_Incubator_Multiple_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.63"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_Ingame_Incubator_Multiple_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_29'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.3"
+      }
+    }
+  },
+  {
+    "Type": "WrapBox",
+    "Name": "WrapBox_153",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WrapBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_27'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.80"
+        },
+        {
+          "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_28'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.81"
+        },
+        {
+          "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_29'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.82"
+        },
+        {
+          "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_30'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.83"
+        },
+        {
+          "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_31'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.84"
+        },
+        {
+          "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_32'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.85"
+        },
+        {
+          "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_33'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.86"
+        },
+        {
+          "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_34'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.87"
+        },
+        {
+          "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_35'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.88"
+        },
+        {
+          "ObjectName": "WrapBoxSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153.WrapBoxSlot_36'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.89"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_Multiple_C:WidgetTree.CanvasPanel_70.CanvasPanelSlot_16'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.8"
+      }
+    }
+  },
+  {
+    "Type": "WrapBoxSlot",
+    "Name": "WrapBoxSlot_27",
+    "Outer": "WrapBox_153",
+    "Class": "UScriptClass'WrapBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WrapBox'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.79"
+      },
+      "Content": {
+        "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WBP_Ingame_Incubator_MultipleSlot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.64"
+      }
+    }
+  },
+  {
+    "Type": "WrapBoxSlot",
+    "Name": "WrapBoxSlot_28",
+    "Outer": "WrapBox_153",
+    "Class": "UScriptClass'WrapBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WrapBox'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.79"
+      },
+      "Content": {
+        "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WBP_Ingame_Incubator_MultipleSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.65"
+      }
+    }
+  },
+  {
+    "Type": "WrapBoxSlot",
+    "Name": "WrapBoxSlot_29",
+    "Outer": "WrapBox_153",
+    "Class": "UScriptClass'WrapBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WrapBox'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.79"
+      },
+      "Content": {
+        "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WBP_Ingame_Incubator_MultipleSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.66"
+      }
+    }
+  },
+  {
+    "Type": "WrapBoxSlot",
+    "Name": "WrapBoxSlot_30",
+    "Outer": "WrapBox_153",
+    "Class": "UScriptClass'WrapBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WrapBox'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.79"
+      },
+      "Content": {
+        "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WBP_Ingame_Incubator_MultipleSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.67"
+      }
+    }
+  },
+  {
+    "Type": "WrapBoxSlot",
+    "Name": "WrapBoxSlot_31",
+    "Outer": "WrapBox_153",
+    "Class": "UScriptClass'WrapBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WrapBox'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.79"
+      },
+      "Content": {
+        "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WBP_Ingame_Incubator_MultipleSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.68"
+      }
+    }
+  },
+  {
+    "Type": "WrapBoxSlot",
+    "Name": "WrapBoxSlot_32",
+    "Outer": "WrapBox_153",
+    "Class": "UScriptClass'WrapBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WrapBox'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.79"
+      },
+      "Content": {
+        "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WBP_Ingame_Incubator_MultipleSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.69"
+      }
+    }
+  },
+  {
+    "Type": "WrapBoxSlot",
+    "Name": "WrapBoxSlot_33",
+    "Outer": "WrapBox_153",
+    "Class": "UScriptClass'WrapBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WrapBox'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.79"
+      },
+      "Content": {
+        "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WBP_Ingame_Incubator_MultipleSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.70"
+      }
+    }
+  },
+  {
+    "Type": "WrapBoxSlot",
+    "Name": "WrapBoxSlot_34",
+    "Outer": "WrapBox_153",
+    "Class": "UScriptClass'WrapBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WrapBox'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.79"
+      },
+      "Content": {
+        "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WBP_Ingame_Incubator_MultipleSlot_7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.71"
+      }
+    }
+  },
+  {
+    "Type": "WrapBoxSlot",
+    "Name": "WrapBoxSlot_35",
+    "Outer": "WrapBox_153",
+    "Class": "UScriptClass'WrapBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WrapBox'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.79"
+      },
+      "Content": {
+        "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WBP_Ingame_Incubator_MultipleSlot_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.72"
+      }
+    }
+  },
+  {
+    "Type": "WrapBoxSlot",
+    "Name": "WrapBoxSlot_36",
+    "Outer": "WrapBox_153",
+    "Class": "UScriptClass'WrapBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WrapBox'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WrapBox_153'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.79"
+      },
+      "Content": {
+        "ObjectName": "WBP_Ingame_Incubator_MultipleSlot_C'WBP_Ingame_Incubator_Multiple_C:WidgetTree.WBP_Ingame_Incubator_MultipleSlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_Multiple.73"
+      }
+    }
+  }
+]

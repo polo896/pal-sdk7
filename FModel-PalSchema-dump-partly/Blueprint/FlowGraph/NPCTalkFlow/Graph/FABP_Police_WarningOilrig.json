@@ -1,0 +1,322 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_0",
+    "Outer": "FABP_Police_WarningOilrig",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "F23E7BA7-411FF9C3-E9C0629F-4B8E8C4A"
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_Police_WarningOilrig",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "D1633718-4707B252-1A5689B1-DBD86E0F",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "B6D681F4-48C5B4B8-94FDCF83-3F2E7761",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Timer",
+    "Name": "FlowNode_Timer_0",
+    "Outer": "FABP_Police_WarningOilrig",
+    "Class": "UScriptClass'FlowNode_Timer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CompletionTime": 5.0,
+      "GraphNode": null,
+      "NodeGuid": "AFE808B1-42CEA1A8-E0B90DAA-44493A76",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "5F94EB9A-4F218EA5-F657EB93-7831F94F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeIn_C",
+    "Name": "FNBP_FadeIn_C_0",
+    "Outer": "FABP_Police_WarningOilrig",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.FNBP_FadeIn_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeIn_C'Default__FNBP_FadeIn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "5F94EB9A-4F218EA5-F657EB93-7831F94F",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "F23E7BA7-411FF9C3-E9C0629F-4B8E8C4A",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeOut_C",
+    "Name": "FNBP_FadeOut_C_0",
+    "Outer": "FABP_Police_WarningOilrig",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.FNBP_FadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeOut_C'Default__FNBP_FadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "5E72E56C-4ADB9F1D-049A65AF-1A2F9F9E",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "C6547EDD-4FECAEC3-790760A3-E4706581",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_Police_WarningOilrig",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Police_WarningOilrig_1_1"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "ABC35FE3-4F4957C1-C310A0B0-0132F0EA"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_Police_WarningOilrig",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Marcus_Talk_040_2"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "241B1EF7-45D341C2-5181928E-1E59D99B",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "5E72E56C-4ADB9F1D-049A65AF-1A2F9F9E",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_6",
+    "Outer": "FABP_Police_WarningOilrig",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatDesertBoss"
+      },
+      "NetworkInvokeName": "BP_MainQuestBlock_DesertBoss_Investigate_Police_Progress",
+      "GraphNode": null,
+      "NodeGuid": "DE3F5024-44061B99-FBB9B7B8-9F09CD73",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "AFE808B1-42CEA1A8-E0B90DAA-44493A76",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_0",
+    "Outer": "FABP_Police_WarningOilrig",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_DesertBoss_Investigate_Police_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DesertBoss_Investigate_Police.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatDesertBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "B6D681F4-48C5B4B8-94FDCF83-3F2E7761",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "241B1EF7-45D341C2-5181928E-1E59D99B",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "ABC35FE3-4F4957C1-C310A0B0-0132F0EA",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_TextInFadeOut_C",
+    "Name": "FNBP_TextInFadeOut_C_0",
+    "Outer": "FABP_Police_WarningOilrig",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_TextInFadeOut.FNBP_TextInFadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_TextInFadeOut_C'Default__FNBP_TextInFadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_TextInFadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId": {
+        "RowName": "QUEST_MAIN_Boss_Marcus_Talk_040_3"
+      },
+      "GraphNode": null,
+      "NodeGuid": "C6547EDD-4FECAEC3-790760A3-E4706581",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "DE3F5024-44061B99-FBB9B7B8-9F09CD73",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_Police_WarningOilrig",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "2801DF83-4644293C-3766F19A-E7052C12",
+      "Nodes": [
+        {
+          "Key": "D1633718-4707B252-1A5689B1-DBD86E0F",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_Police_WarningOilrig:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Police_WarningOilrig.1"
+          }
+        },
+        {
+          "Key": "ABC35FE3-4F4957C1-C310A0B0-0132F0EA",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Police_WarningOilrig:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Police_WarningOilrig.5"
+          }
+        },
+        {
+          "Key": "B6D681F4-48C5B4B8-94FDCF83-3F2E7761",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_Police_WarningOilrig:FNBP_QuestBlockBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Police_WarningOilrig.8"
+          }
+        },
+        {
+          "Key": "241B1EF7-45D341C2-5181928E-1E59D99B",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Police_WarningOilrig:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Police_WarningOilrig.6"
+          }
+        },
+        {
+          "Key": "DE3F5024-44061B99-FBB9B7B8-9F09CD73",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_Police_WarningOilrig:FNBP_ProgressQuest_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Police_WarningOilrig.7"
+          }
+        },
+        {
+          "Key": "5E72E56C-4ADB9F1D-049A65AF-1A2F9F9E",
+          "Value": {
+            "ObjectName": "FNBP_FadeOut_C'FABP_Police_WarningOilrig:FNBP_FadeOut_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Police_WarningOilrig.4"
+          }
+        },
+        {
+          "Key": "C6547EDD-4FECAEC3-790760A3-E4706581",
+          "Value": {
+            "ObjectName": "FNBP_TextInFadeOut_C'FABP_Police_WarningOilrig:FNBP_TextInFadeOut_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Police_WarningOilrig.9"
+          }
+        },
+        {
+          "Key": "AFE808B1-42CEA1A8-E0B90DAA-44493A76",
+          "Value": {
+            "ObjectName": "FlowNode_Timer'FABP_Police_WarningOilrig:FlowNode_Timer_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Police_WarningOilrig.2"
+          }
+        },
+        {
+          "Key": "5F94EB9A-4F218EA5-F657EB93-7831F94F",
+          "Value": {
+            "ObjectName": "FNBP_FadeIn_C'FABP_Police_WarningOilrig:FNBP_FadeIn_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Police_WarningOilrig.3"
+          }
+        },
+        {
+          "Key": "F23E7BA7-411FF9C3-E9C0629F-4B8E8C4A",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_Police_WarningOilrig:FlowNode_Finish_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Police_WarningOilrig.0"
+          }
+        }
+      ]
+    }
+  }
+]

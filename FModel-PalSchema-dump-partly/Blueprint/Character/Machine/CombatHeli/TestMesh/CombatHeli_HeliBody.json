@@ -1,0 +1,602 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CombatHeli_HeliBody",
+    "Class": "UScriptClass'BodySetup'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "ClimbRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "557AF01A4EB5239D18EE019913DCB99B",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 20198,
+        "SizeOnDisk": 20198,
+        "OffsetInFile": "0x1713A"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "CombatHeli_HeliBody",
+    "Class": "UScriptClass'NavCollision'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1C062"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CombatHeli_HeliBody",
+    "Class": "UScriptClass'StaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Debug_Black'",
+            "ObjectPath": "Pal/Content/Pal/Material/Debug/MI_Debug_Black.0"
+          },
+          "MaterialSlotName": "Material",
+          "ImportedMaterialSlotName": "Material",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 2921.183,
+            "LocalUVDensities[1]": 1853.4895,
+            "LocalUVDensities[2]": 2572.0251,
+            "LocalUVDensities[3]": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2572.0251,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "Sockets": [
+        {
+          "ObjectName": "StaticMeshSocket'CombatHeli_HeliBody:StaticMeshSocket_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/TestMesh/CombatHeli_HeliBody.3"
+        },
+        {
+          "ObjectName": "StaticMeshSocket'CombatHeli_HeliBody:StaticMeshSocket_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/TestMesh/CombatHeli_HeliBody.4"
+        },
+        {
+          "ObjectName": "StaticMeshSocket'CombatHeli_HeliBody:StaticMeshSocket_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/TestMesh/CombatHeli_HeliBody.5"
+        }
+      ],
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 12.508423,
+          "Y": 0.0,
+          "Z": 298.3586
+        },
+        "BoxExtent": {
+          "X": 1237.9618,
+          "Y": 1318.6078,
+          "Z": 594.22485
+        },
+        "SphereRadius": 1504.017578125
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'CombatHeli_HeliBody:BodySetup_0'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/TestMesh/CombatHeli_HeliBody.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'CombatHeli_HeliBody:NavCollision_2'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/TestMesh/CombatHeli_HeliBody.1"
+    },
+    "LightingGuid": "EFE741D0-4EBCEEFA-5EF28EA5-8E24E32D",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 104,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 183,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 184
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 3,
+            "NumVertices": 184,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          },
+          "CardRepresentationData": {
+            "Bounds": {
+              "Min": {
+                "X": -1226.4534,
+                "Y": -1319.6078,
+                "Z": -296.86624
+              },
+              "Max": {
+                "X": 1251.4702,
+                "Y": 1319.6078,
+                "Z": 893.5835
+              },
+              "IsValid": 1
+            },
+            "MaxLodLevel": 0,
+            "bMostlyTwoSided": false,
+            "CardBuildData": [
+              {
+                "OBB": {
+                  "AxisX": {
+                    "X": 0.0,
+                    "Y": 1.0,
+                    "Z": 0.0
+                  },
+                  "AxisY": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 1.0
+                  },
+                  "AxisZ": {
+                    "X": -1.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "Origin": {
+                    "X": -673.8291,
+                    "Y": 0.0,
+                    "Z": 298.3586
+                  },
+                  "Extent": {
+                    "X": 1319.6078,
+                    "Y": 577.3284,
+                    "Z": 562.62427
+                  }
+                },
+                "LODLevel": 0,
+                "AxisAlignedDirectionIndex": 0
+              },
+              {
+                "OBB": {
+                  "AxisX": {
+                    "X": 0.0,
+                    "Y": 1.0,
+                    "Z": 0.0
+                  },
+                  "AxisY": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 1.0
+                  },
+                  "AxisZ": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "Origin": {
+                    "X": 698.84595,
+                    "Y": 0.0,
+                    "Z": 298.3586
+                  },
+                  "Extent": {
+                    "X": 1319.6078,
+                    "Y": 577.3284,
+                    "Z": 562.62427
+                  }
+                },
+                "LODLevel": 0,
+                "AxisAlignedDirectionIndex": 1
+              },
+              {
+                "OBB": {
+                  "AxisX": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "AxisY": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 1.0
+                  },
+                  "AxisZ": {
+                    "X": 0.0,
+                    "Y": -1.0,
+                    "Z": 0.0
+                  },
+                  "Origin": {
+                    "X": 12.508423,
+                    "Y": -685.4228,
+                    "Z": 298.3586
+                  },
+                  "Extent": {
+                    "X": 1237.1323,
+                    "Y": 577.3284,
+                    "Z": 644.185
+                  }
+                },
+                "LODLevel": 0,
+                "AxisAlignedDirectionIndex": 2
+              },
+              {
+                "OBB": {
+                  "AxisX": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "AxisY": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 1.0
+                  },
+                  "AxisZ": {
+                    "X": 0.0,
+                    "Y": -1.0,
+                    "Z": 0.0
+                  },
+                  "Origin": {
+                    "X": 12.508423,
+                    "Y": 164.95105,
+                    "Z": 545.78503
+                  },
+                  "Extent": {
+                    "X": 412.37744,
+                    "Y": 329.90198,
+                    "Z": 618.56616
+                  }
+                },
+                "LODLevel": 0,
+                "AxisAlignedDirectionIndex": 2
+              },
+              {
+                "OBB": {
+                  "AxisX": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "AxisY": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 1.0
+                  },
+                  "AxisZ": {
+                    "X": 0.0,
+                    "Y": -1.0,
+                    "Z": 0.0
+                  },
+                  "Origin": {
+                    "X": 12.508423,
+                    "Y": 701.0416,
+                    "Z": 422.0718
+                  },
+                  "Extent": {
+                    "X": 247.42645,
+                    "Y": 206.18872,
+                    "Z": 82.475525
+                  }
+                },
+                "LODLevel": 0,
+                "AxisAlignedDirectionIndex": 2
+              },
+              {
+                "OBB": {
+                  "AxisX": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "AxisY": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 1.0
+                  },
+                  "AxisZ": {
+                    "X": 0.0,
+                    "Y": 1.0,
+                    "Z": 0.0
+                  },
+                  "Origin": {
+                    "X": 12.508423,
+                    "Y": 685.4228,
+                    "Z": 298.3586
+                  },
+                  "Extent": {
+                    "X": 1237.1323,
+                    "Y": 577.3284,
+                    "Z": 644.185
+                  }
+                },
+                "LODLevel": 0,
+                "AxisAlignedDirectionIndex": 3
+              },
+              {
+                "OBB": {
+                  "AxisX": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "AxisY": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 1.0
+                  },
+                  "AxisZ": {
+                    "X": 0.0,
+                    "Y": 1.0,
+                    "Z": 0.0
+                  },
+                  "Origin": {
+                    "X": 12.508423,
+                    "Y": -164.95105,
+                    "Z": 545.78503
+                  },
+                  "Extent": {
+                    "X": 412.37744,
+                    "Y": 329.90198,
+                    "Z": 618.56616
+                  }
+                },
+                "LODLevel": 0,
+                "AxisAlignedDirectionIndex": 3
+              },
+              {
+                "OBB": {
+                  "AxisX": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "AxisY": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 1.0
+                  },
+                  "AxisZ": {
+                    "X": 0.0,
+                    "Y": 1.0,
+                    "Z": 0.0
+                  },
+                  "Origin": {
+                    "X": 12.508423,
+                    "Y": -701.0416,
+                    "Z": 422.0718
+                  },
+                  "Extent": {
+                    "X": 247.42645,
+                    "Y": 206.18872,
+                    "Z": 82.475525
+                  }
+                },
+                "LODLevel": 0,
+                "AxisAlignedDirectionIndex": 3
+              },
+              {
+                "OBB": {
+                  "AxisX": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "AxisY": {
+                    "X": 0.0,
+                    "Y": 1.0,
+                    "Z": 0.0
+                  },
+                  "AxisZ": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": -1.0
+                  },
+                  "Origin": {
+                    "X": 12.508423,
+                    "Y": 0.0,
+                    "Z": 222.55377
+                  },
+                  "Extent": {
+                    "X": 1237.1323,
+                    "Y": 1319.6078,
+                    "Z": 529.42004
+                  }
+                },
+                "LODLevel": 0,
+                "AxisAlignedDirectionIndex": 4
+              },
+              {
+                "OBB": {
+                  "AxisX": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "AxisY": {
+                    "X": 0.0,
+                    "Y": 1.0,
+                    "Z": 0.0
+                  },
+                  "AxisZ": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 1.0
+                  },
+                  "Origin": {
+                    "X": 12.508423,
+                    "Y": 0.0,
+                    "Z": 456.63892
+                  },
+                  "Extent": {
+                    "X": 1237.1323,
+                    "Y": 1319.6078,
+                    "Z": 446.94452
+                  }
+                },
+                "LODLevel": 0,
+                "AxisAlignedDirectionIndex": 5
+              }
+            ]
+          }
+        }
+      ],
+      "NaniteResources": {
+        "StreamablePages": {
+          "BulkDataFlags": "BULKDATA_None",
+          "ElementCount": 0,
+          "SizeOnDisk": 0,
+          "OffsetInFile": "0x1E2EE"
+        },
+        "AssemblyTransforms": [],
+        "AssemblyBoneAttachmentData": null,
+        "VoxelMaterialsMask": 0,
+        "MeshBounds": null,
+        "PageRangeLookup": null,
+        "NumRootPages": 0,
+        "PositionPrecision": 0,
+        "NormalPrecision": 0,
+        "NumInputTriangles": 0,
+        "NumInputVertices": 0,
+        "NumInputMeshes": 0,
+        "NumInputTexCoords": 0,
+        "NumClusters": 0,
+        "ResourceFlags": "NONE"
+      },
+      "Bounds": {
+        "Origin": {
+          "X": 12.508423,
+          "Y": 0.0,
+          "Z": 298.3586
+        },
+        "BoxExtent": {
+          "X": 1237.9618,
+          "Y": 1318.6078,
+          "Z": 594.22485
+        },
+        "SphereRadius": 1504.0176
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshSocket",
+    "Name": "StaticMeshSocket_0",
+    "Outer": "CombatHeli_HeliBody",
+    "Class": "UScriptClass'StaticMeshSocket'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SocketName": "Mzl1_R",
+      "RelativeLocation": {
+        "X": 334.71066,
+        "Y": 848.97876,
+        "Z": 577.6612
+      },
+      "RelativeRotation": {
+        "Pitch": -35.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshSocket",
+    "Name": "StaticMeshSocket_1",
+    "Outer": "CombatHeli_HeliBody",
+    "Class": "UScriptClass'StaticMeshSocket'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SocketName": "Mzl1_L",
+      "RelativeLocation": {
+        "X": 334.71066,
+        "Y": -848.97876,
+        "Z": 577.6612
+      },
+      "RelativeRotation": {
+        "Pitch": -35.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshSocket",
+    "Name": "StaticMeshSocket_2",
+    "Outer": "CombatHeli_HeliBody",
+    "Class": "UScriptClass'StaticMeshSocket'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SocketName": "Mzl_Bomb",
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -9.094947E-13,
+        "Z": -451.23895
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  }
+]

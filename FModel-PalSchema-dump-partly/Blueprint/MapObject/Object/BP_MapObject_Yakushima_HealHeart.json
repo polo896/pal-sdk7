@@ -1,0 +1,532 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MapObject_Yakushima_HealHeart_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_MapObject_Yakushima_HealHeart_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.13"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_MapObject_Yakushima_HealHeart_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.6"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_MapObject_Yakushima_HealHeart_C:ExecuteUbergraph_BP_MapObject_Yakushima_HealHeart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalMapObject'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_MapObject_Yakushima_HealHeart_C:IsAllowInstantEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.5"
+      },
+      {
+        "ObjectName": "Function'BP_MapObject_Yakushima_HealHeart_C:ExecuteInstantEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.3"
+      },
+      {
+        "ObjectName": "Function'BP_MapObject_Yakushima_HealHeart_C:CallHealEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.2"
+      },
+      {
+        "ObjectName": "Function'BP_MapObject_Yakushima_HealHeart_C:ExecuteUbergraph_BP_MapObject_Yakushima_HealHeart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_InteractableSphere",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalInteractableSphereComponentNative'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Mesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_MapObject_Yakushima_HealHeart": {
+        "ObjectName": "Function'BP_MapObject_Yakushima_HealHeart_C:ExecuteUbergraph_BP_MapObject_Yakushima_HealHeart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.4"
+      },
+      "CallHealEffect": {
+        "ObjectName": "Function'BP_MapObject_Yakushima_HealHeart_C:CallHealEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.2"
+      },
+      "ExecuteInstantEffect": {
+        "ObjectName": "Function'BP_MapObject_Yakushima_HealHeart_C:ExecuteInstantEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.3"
+      },
+      "IsAllowInstantEffect": {
+        "ObjectName": "Function'BP_MapObject_Yakushima_HealHeart_C:IsAllowInstantEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "Interfaces": [
+      {
+        "Class": {
+          "ObjectName": "Class'PalMapObjectInstantEffectInterface'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      }
+    ],
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MapObject_Yakushima_HealHeart_C'Default__BP_MapObject_Yakushima_HealHeart_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal",
+      "ImplementedInterfaces": "((Interface=/Script/CoreUObject.Class'\"/Script/Pal.PalMapObjectInstantEffectInterface\"'))"
+    }
+  },
+  {
+    "Type": "BP_MapObject_Yakushima_HealHeart_C",
+    "Name": "Default__BP_MapObject_Yakushima_HealHeart_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.BP_MapObject_Yakushima_HealHeart_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ConcreteModelClass": {
+        "ObjectName": "Class'PalMapObjectInstantEffectModel'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "DamageReaction": {
+        "ObjectName": "PalMapObjectDamageReactionComponent'Default__BP_MapObject_Yakushima_HealHeart_C:DamageReaction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.8"
+      },
+      "DestroyFXType": "EPalMapObjectDestroyFXType::None"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "CallHealEffect",
+    "Outer": "BP_MapObject_Yakushima_HealHeart_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "NewParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Net | FUNC_NetReliable | FUNC_NetMulticast | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteInstantEffect",
+    "Outer": "BP_MapObject_Yakushima_HealHeart_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "RequestPlayerID",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RequestActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_MapObject_Yakushima_HealHeart",
+    "Outer": "BP_MapObject_Yakushima_HealHeart_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_NewParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Event_RequestPlayerID",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_RequestActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSystemAttached_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMainMeshByActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacterParameterComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsAllowInstantEffect",
+    "Outer": "BP_MapObject_Yakushima_HealHeart_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "RequestPlayerID",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RequestActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_MapObject_Yakushima_HealHeart_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalInteractableSphereComponentNative",
+    "Name": "BP_InteractableSphere_GEN_VARIABLE",
+    "Outer": "BP_MapObject_Yakushima_HealHeart_C",
+    "Class": "UScriptClass'PalInteractableSphereComponentNative'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsEnableInteractingTick": true,
+      "bIsEnableInteractingTickInClientOnly": true,
+      "IndicatorOriginRef": {
+        "ComponentProperty": "IndicatorOrigin"
+      },
+      "SphereRadius": 30.0,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false
+    }
+  },
+  {
+    "Type": "PalMapObjectDamageReactionComponent",
+    "Name": "DamageReaction",
+    "Outer": "Default__BP_MapObject_Yakushima_HealHeart_C",
+    "Class": "UScriptClass'PalMapObjectDamageReactionComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_MapObject_Yakushima_HealHeart_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_MapObject_Yakushima_HealHeart_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.9"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_Yakushima_HealHeart_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.11"
+        }
+      ],
+      "VariableGuid": "95F97AC0-4D9582BD-582B00B2-B69CF68A",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_MapObject_Yakushima_HealHeart_C:Mesh_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.14"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_Yakushima_HealHeart_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.12"
+        }
+      ],
+      "VariableGuid": "28138F74-491C4465-03A96BAB-12DC0D7A",
+      "InternalVariableName": "Mesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalInteractableSphereComponentNative'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalInteractableSphereComponentNative'BP_MapObject_Yakushima_HealHeart_C:BP_InteractableSphere_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.7"
+      },
+      "VariableGuid": "5A65C24A-4C2B00A2-5814FA8F-BF53C128",
+      "InternalVariableName": "BP_InteractableSphere"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_MapObject_Yakushima_HealHeart_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_Yakushima_HealHeart_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.10"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_Yakushima_HealHeart_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.10"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_Yakushima_HealHeart_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.11"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_Yakushima_HealHeart_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.12"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_MapObject_Yakushima_HealHeart_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/BP_MapObject_Yakushima_HealHeart.10"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Mesh_GEN_VARIABLE",
+    "Outer": "BP_MapObject_Yakushima_HealHeart_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Heart'",
+        "ObjectPath": "Pal/Content/Pal/Model/Other/Yakushima/SM_Heart.2"
+      },
+      "bApplyImpulseOnDamage": false,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_GameTraceChannel16",
+        "bNotifyRigidBodyCollision": true,
+        "bLockXRotation": true,
+        "bLockYRotation": true,
+        "bOverrideMaxAngularVelocity": true,
+        "CollisionProfileName": "DropItem",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        },
+        "MassInKgOverride": 0.001,
+        "LinearDamping": 4.0,
+        "AngularDamping": 2.0,
+        "MaxAngularVelocity": 10.0,
+        "bSimulatePhysics": true,
+        "bOverrideMass": true
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      },
+      "bCanEverAffectNavigation": false
+    }
+  }
+]

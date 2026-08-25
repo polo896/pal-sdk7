@@ -1,0 +1,94 @@
+[
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "F_Pal_TalkableLevelObjectVisibilityCondition",
+    "Class": "UScriptClass'UserDefinedStruct'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Guid": "754FE373-457C9C3B-30912593-CEE888F8"
+    },
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "QuestId_2_D9B7606F4D3DB528F17220BE3FDFFB8B",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "State_10_BA3ED0E440A013B313AF37B99E1D72A4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'E_PalQuestState'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/E_PalQuestState.0"
+        }
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "Block_15_0276D8934E105B50A62AE298D3936387",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'PalQuestBlock'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Visibility_7_3D41B029498511674D48729FD0847C29",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Immediately_21_E0A3216843DFF0809FD000BD2264D0CD",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "OnlyBeginPlay_12_5EF77F294465B6E0DDB8839E52D7851F",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "StructFlags": 49152,
+    "DefaultProperties": {
+      "QuestId_2_D9B7606F4D3DB528F17220BE3FDFFB8B": "None",
+      "State_10_BA3ED0E440A013B313AF37B99E1D72A4": "E_PalQuestState::NewEnumerator1",
+      "Block_15_0276D8934E105B50A62AE298D3936387": null,
+      "Visibility_7_3D41B029498511674D48729FD0847C29": false,
+      "Immediately_21_E0A3216843DFF0809FD000BD2264D0CD": false,
+      "OnlyBeginPlay_12_5EF77F294465B6E0DDB8839E52D7851F": false
+    }
+  }
+]

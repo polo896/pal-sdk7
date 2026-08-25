@@ -1,0 +1,17 @@
+[
+  {
+    "Type": "DataLayerAsset",
+    "Name": "Fishing",
+    "Class": "UScriptClass'DataLayerAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DebugColor": {
+        "B": 220,
+        "G": 77,
+        "R": 0,
+        "A": 255,
+        "Hex": "004DDC"
+      }
+    }
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_ThunderBird_SnowStorm_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_ThunderBird_ThunderStorm_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderBird/BP_Action_Unique_ThunderBird_ThunderStorm.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_ThunderBird_ThunderStorm_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderBird/BP_Action_Unique_ThunderBird_ThunderStorm.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Action_Unique_ThunderBird_SnowStorm_C:GetEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderBird/BP_Action_Unique_ThunderBird_SnowStorm.2"
+      }
+    ],
+    "FuncMap": {
+      "GetEffect": {
+        "ObjectName": "Function'BP_Action_Unique_ThunderBird_SnowStorm_C:GetEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderBird/BP_Action_Unique_ThunderBird_SnowStorm.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_ThunderBird_SnowStorm_C'Default__BP_Action_Unique_ThunderBird_SnowStorm_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderBird/BP_Action_Unique_ThunderBird_SnowStorm.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_ThunderBird_SnowStorm_C",
+    "Name": "Default__BP_Action_Unique_ThunderBird_SnowStorm_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/ThunderBird/BP_Action_Unique_ThunderBird_SnowStorm.BP_Action_Unique_ThunderBird_SnowStorm_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_ThunderBird_ThunderStorm_C'Default__BP_Action_Unique_ThunderBird_ThunderStorm_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderBird/BP_Action_Unique_ThunderBird_ThunderStorm.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FlagName": "ThunderBird_SnowStorm",
+      "SkillModuleClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_ThunderStorm_ThunderBird_Ice_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderBird/BP_UniqueSkillModule_ThunderStorm_ThunderBird_Ice.0"
+      },
+      "WazaID": "EPalWazaID::Unique_ThunderBird_Ice_SnowStrom"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetEffect",
+    "Outer": "BP_Action_Unique_ThunderBird_SnowStorm_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_Unique_ThunderBird_ThunderStorm_C:GetEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderBird/BP_Action_Unique_ThunderBird_ThunderStorm.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_Unique_ThunderBird_ThunderStorm_C:GetEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderBird/BP_Action_Unique_ThunderBird_ThunderStorm.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "NewParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

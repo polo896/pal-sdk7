@@ -1,0 +1,1100 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.2"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.3"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.5"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.4"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot'WBP_BossDemoSkyIsland_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.24"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_BossDemoSkyIsland_C:WidgetTree.Image_179'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1920.0,
+          "Bottom": 1080.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.0"
+      },
+      "Content": {
+        "ObjectName": "WBP_BossBattle_BossCutBase07_C'WBP_BossDemoSkyIsland_C:WidgetTree.WBP_BossBattle_BossCutBase07'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.26"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_BossDemoSkyIsland_C:WidgetTree.Flash'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1920.0,
+          "Bottom": 1080.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.0"
+      },
+      "Content": {
+        "ObjectName": "WBP_BossBattle_BossCut07_C'WBP_BossDemoSkyIsland_C:WidgetTree.WBP_BossBattle_BossCut07'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.1"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox'WBP_BossDemoSkyIsland_C:WidgetTree.ScaleBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.1"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_BossDemoSkyIsland_C:WidgetTree.Image_107'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.15"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnmEvent_Open",
+    "Outer": "WBP_BossDemoSkyIsland_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_BossDemoSkyIsland",
+    "Outer": "WBP_BossDemoSkyIsland_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'WidgetAnimationResult__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimationPlayCallbackProxy'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "Finished_942E3210474D76E2229F11879BEC8C67",
+    "Outer": "WBP_BossDemoSkyIsland_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetOpenWidgetAnimation",
+    "Outer": "WBP_BossDemoSkyIsland_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'WBP_BossDemoBase_C:GetOpenWidgetAnimation'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoBase.1"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'WBP_BossDemoBase_C:GetOpenWidgetAnimation'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoBase.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OpenWidgetAnimation",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnStartEvent",
+    "Outer": "WBP_BossDemoSkyIsland_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'WBP_BossDemoBase_C:OnStartEvent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoBase.2"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'WBP_BossDemoBase_C:OnStartEvent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoBase.2"
+    },
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetupText",
+    "Outer": "WBP_BossDemoSkyIsland_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'WBP_BossDemoBase_C:SetupText'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoBase.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'WBP_BossDemoBase_C:SetupText'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoBase.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "Flash",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.817708,
+        "G": 0.998824,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "EAFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.4"
+      },
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_107",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.7"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_179",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "000000"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.2"
+      }
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Anm_Open",
+    "Outer": "Anm_Open_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "42D3FAE2-4B0D37BE-D27C4D9C-E13A0B74",
+          "Name": "Flash",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "42D3FAE2-4B0D37BE-D27C4D9C-E13A0B74",
+          "BindingName": "Flash",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_BossDemoSkyIsland_C:Anm_Open_INST.Anm_Open.MovieSceneFloatTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.22"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 15001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 60
+      },
+      "Signature": "2AA46626-47ACE7FE-1F741D8D-92B8447D"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Anm_Open_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 15000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_BossDemoSkyIsland_C:Anm_Open_INST.Anm_Open.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.21"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "42D3FAE2-4B0D37BE-D27C4D9C-E13A0B74"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 15000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "8B78B234-4ED159B7-E083B9BE-0A13BF62",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 15000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.16694187,
+              "LeaveTangentWeight": 0.16694187,
+              "TangentWeightMode": 3
+            },
+            "InterpMode": 2,
+            "TangentMode": 1
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 1.1867906E-11,
+              "LeaveTangent": 1.1867906E-11,
+              "ArriveTangentWeight": 0.1674113,
+              "LeaveTangentWeight": 0.1674113,
+              "TangentWeightMode": 3
+            },
+            "InterpMode": 2,
+            "TangentMode": 1
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_BossDemoSkyIsland_C:Anm_Open_INST.Anm_Open.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.18"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_BossDemoSkyIsland_C:Anm_Open_INST.Anm_Open.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.19"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 15000
+            }
+          }
+        }
+      },
+      "Signature": "148E4CB4-451D55A7-3039CB8C-15F38463"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Anm_Open",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_BossDemoSkyIsland_C:Anm_Open_INST.Anm_Open.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.21"
+        }
+      ],
+      "EvaluationFieldGuid": "8CE0D6AF-45C87BA9-550B888B-79F60154",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_BossDemoSkyIsland_C:Anm_Open_INST.Anm_Open.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.21"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 15000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "8CE0D6AF-45C87BA9-550B888B-79F60154"
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScaleBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot'WBP_BossDemoSkyIsland_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.24"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.6"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_0",
+    "Class": "UScriptClass'ScaleBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "ScaleBox'WBP_BossDemoSkyIsland_C:WidgetTree.ScaleBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.23"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.0"
+      }
+    }
+  },
+  {
+    "Type": "WBP_BossBattle_BossCut07_C",
+    "Name": "WBP_BossBattle_BossCut07",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_BossCut07.WBP_BossBattle_BossCut07_C'",
+    "Template": {
+      "ObjectName": "WBP_BossBattle_BossCut07_C'Default__WBP_BossBattle_BossCut07_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_BossCut07.84"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.5"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "WBP_BossBattle_BossCutBase07_C",
+    "Name": "WBP_BossBattle_BossCutBase07",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_BossCutBase07.WBP_BossBattle_BossCutBase07_C'",
+    "Template": {
+      "ObjectName": "WBP_BossBattle_BossCutBase07_C'Default__WBP_BossBattle_BossCutBase07_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_BossCutBase07.127"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.3"
+      }
+    }
+  },
+  {
+    "Type": "WBP_BossDemoSkyIsland_C",
+    "Name": "Default__WBP_BossDemoSkyIsland_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.WBP_BossDemoSkyIsland_C'",
+    "Template": {
+      "ObjectName": "WBP_BossDemoBase_C'Default__WBP_BossDemoBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoBase.4"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Anm_Open_INST",
+    "Outer": "WBP_BossDemoSkyIsland_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_BossDemoSkyIsland_C:Anm_Open_INST.Anm_Open'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.17"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "Flash",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "42D3FAE2-4B0D37BE-D27C4D9C-E13A0B74",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Anm_Open",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_BossDemoSkyIsland_C:Anm_Open_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.20"
+      },
+      "Signature": "8B78B234-4ED159B7-E083B9BE-0A13BF62"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_BossDemoSkyIsland_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "WidgetBlueprintGeneratedClass'WBP_BossDemoBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoBase.5"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_BossDemoSkyIsland_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.30"
+      },
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'WBP_BossDemoSkyIsland_C:Anm_Open_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.28"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_BossDemoSkyIsland_C:ExecuteUbergraph_WBP_BossDemoSkyIsland'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "WidgetBlueprintGeneratedClass'WBP_BossDemoBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoBase.5"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_BossDemoSkyIsland_C:GetOpenWidgetAnimation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.11"
+      },
+      {
+        "ObjectName": "Function'WBP_BossDemoSkyIsland_C:OnStartEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.12"
+      },
+      {
+        "ObjectName": "Function'WBP_BossDemoSkyIsland_C:SetupText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.13"
+      },
+      {
+        "ObjectName": "Function'WBP_BossDemoSkyIsland_C:Finished_942E3210474D76E2229F11879BEC8C67'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.10"
+      },
+      {
+        "ObjectName": "Function'WBP_BossDemoSkyIsland_C:AnmEvent_Open'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.8"
+      },
+      {
+        "ObjectName": "Function'WBP_BossDemoSkyIsland_C:ExecuteUbergraph_WBP_BossDemoSkyIsland'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.9"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Anm_Open",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Flash",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_107",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_179",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_BossBattle_BossCut07",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_BossBattle_BossCut07_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_BossCut07.86"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_BossBattle_BossCutBase07",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_BossBattle_BossCutBase07_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_BossCutBase07.133"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_BossDemoSkyIsland": {
+        "ObjectName": "Function'WBP_BossDemoSkyIsland_C:ExecuteUbergraph_WBP_BossDemoSkyIsland'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.9"
+      },
+      "AnmEvent_Open": {
+        "ObjectName": "Function'WBP_BossDemoSkyIsland_C:AnmEvent_Open'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.8"
+      },
+      "Finished_942E3210474D76E2229F11879BEC8C67": {
+        "ObjectName": "Function'WBP_BossDemoSkyIsland_C:Finished_942E3210474D76E2229F11879BEC8C67'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.10"
+      },
+      "SetupText": {
+        "ObjectName": "Function'WBP_BossDemoSkyIsland_C:SetupText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.13"
+      },
+      "OnStartEvent": {
+        "ObjectName": "Function'WBP_BossDemoSkyIsland_C:OnStartEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.12"
+      },
+      "GetOpenWidgetAnimation": {
+        "ObjectName": "Function'WBP_BossDemoSkyIsland_C:GetOpenWidgetAnimation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.11"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_BossDemoSkyIsland_C'Default__WBP_BossDemoSkyIsland_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.27"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_BossDemoSkyIsland_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_BossDemoSkyIsland_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BossDemo/WBP_BossDemoSkyIsland.1"
+      }
+    }
+  }
+]

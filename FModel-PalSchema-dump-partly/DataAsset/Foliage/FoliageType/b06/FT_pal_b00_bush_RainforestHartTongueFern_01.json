@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b00_bush_RainforestHartTongueFern_01",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b00_bush_RainforestHartTongueFern_01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b00/Rainforest/Mesh/Plants/SM_pal_b00_bush_RainforestHartTongueFern_01.2"
+      },
+      "UpdateGuid": "0D4B415B-42D73ED4-D1DE1CB2-C730AA41",
+      "ScaleX": {
+        "Min": 0.6
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 4.0590363,
+          "Y": -0.15402985,
+          "Z": 61.47667
+        },
+        "BoxExtent": {
+          "X": 197.47789,
+          "Y": 183.61304,
+          "Z": 69.73387
+        },
+        "SphereRadius": 202.48414611816406
+      },
+      "LowBoundOriginRadius": {
+        "X": 10.106796,
+        "Y": -8.383598,
+        "Z": 233.37013
+      },
+      "CullDistance": {
+        "Max": 4000
+      },
+      "bAffectDistanceFieldLighting": true,
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

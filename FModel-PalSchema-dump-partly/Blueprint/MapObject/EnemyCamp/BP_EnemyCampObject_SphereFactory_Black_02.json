@@ -1,0 +1,722 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_EnemyCampObject_SphereFactory_Black_02_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_EnemyCampObject_SphereFactory_Black_02_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.18"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_EnemyCampObject_SphereFactory_Black_02_C:ExecuteUbergraph_BP_EnemyCampObject_SphereFactory_Black_02'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalBuildObject'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_EnemyCampObject_SphereFactory_Black_02_C:OnAvailable_BlueprintImpl'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.5"
+      },
+      {
+        "ObjectName": "Function'BP_EnemyCampObject_SphereFactory_Black_02_C:OnSetConcreteModel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.6"
+      },
+      {
+        "ObjectName": "Function'BP_EnemyCampObject_SphereFactory_Black_02_C:ExecuteUbergraph_BP_EnemyCampObject_SphereFactory_Black_02'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WorkSound_Flowing",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalWorkEffectSoundComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "FactoryConveyorComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_BuildObjectFactoryConveyorComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Components/BP_BuildObjectFactoryConveyorComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StaticMesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CheckOverlapCollision",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Root",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_EnemyCampObject_SphereFactory_Black_02": {
+        "ObjectName": "Function'BP_EnemyCampObject_SphereFactory_Black_02_C:ExecuteUbergraph_BP_EnemyCampObject_SphereFactory_Black_02'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.4"
+      },
+      "OnSetConcreteModel": {
+        "ObjectName": "Function'BP_EnemyCampObject_SphereFactory_Black_02_C:OnSetConcreteModel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.6"
+      },
+      "OnAvailable_BlueprintImpl": {
+        "ObjectName": "Function'BP_EnemyCampObject_SphereFactory_Black_02_C:OnAvailable_BlueprintImpl'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_EnemyCampObject_SphereFactory_Black_02_C'Default__BP_EnemyCampObject_SphereFactory_Black_02_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "CheckOverlapCollision_GEN_VARIABLE",
+    "Outer": "BP_EnemyCampObject_SphereFactory_Black_02_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 97.5,
+        "Y": 500.0,
+        "Z": 47.5
+      },
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "BodyInstance": {
+        "CollisionProfileName": "BuildingOverlap",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -10.0,
+        "Z": 60.0
+      },
+      "bCanEverAffectNavigation": false
+    }
+  },
+  {
+    "Type": "BP_BuildObjectFactoryConveyorComponent_C",
+    "Name": "FactoryConveyorComponent_GEN_VARIABLE",
+    "Outer": "BP_EnemyCampObject_SphereFactory_Black_02_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Components/BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C'",
+    "Template": {
+      "ObjectName": "BP_BuildObjectFactoryConveyorComponent_C'Default__BP_BuildObjectFactoryConveyorComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Components/BP_BuildObjectFactoryConveyorComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ConveyorSpeed": 0.4,
+      "ItemSpawnInterval": 3.0,
+      "SplineCurves": {
+        "Position": {
+          "Points": [
+            {
+              "InVal": 0.0,
+              "OutVal": {
+                "X": 0.0,
+                "Y": -330.0,
+                "Z": 0.0
+              },
+              "ArriveTangent": {
+                "X": 0.0,
+                "Y": 650.0,
+                "Z": 0.0
+              },
+              "LeaveTangent": {
+                "X": 0.0,
+                "Y": 650.0,
+                "Z": 0.0
+              },
+              "InterpMode": "EInterpCurveMode::CIM_Linear"
+            },
+            {
+              "InVal": 1.0,
+              "OutVal": {
+                "X": 0.0,
+                "Y": 320.0,
+                "Z": 0.0
+              },
+              "ArriveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "LeaveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "InterpMode": "EInterpCurveMode::CIM_Linear"
+            }
+          ]
+        },
+        "ReparamTable": {
+          "Points": [
+            {
+              "InVal": 0.0,
+              "OutVal": 0.0,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "EInterpCurveMode::CIM_Linear"
+            },
+            {
+              "InVal": 65.0,
+              "OutVal": 0.1,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "EInterpCurveMode::CIM_Linear"
+            },
+            {
+              "InVal": 130.0,
+              "OutVal": 0.2,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "EInterpCurveMode::CIM_Linear"
+            },
+            {
+              "InVal": 195.00002,
+              "OutVal": 0.3,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "EInterpCurveMode::CIM_Linear"
+            },
+            {
+              "InVal": 260.0,
+              "OutVal": 0.4,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "EInterpCurveMode::CIM_Linear"
+            },
+            {
+              "InVal": 325.0,
+              "OutVal": 0.5,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "EInterpCurveMode::CIM_Linear"
+            },
+            {
+              "InVal": 390.00003,
+              "OutVal": 0.6,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "EInterpCurveMode::CIM_Linear"
+            },
+            {
+              "InVal": 455.0,
+              "OutVal": 0.7,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "EInterpCurveMode::CIM_Linear"
+            },
+            {
+              "InVal": 520.0,
+              "OutVal": 0.8,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "EInterpCurveMode::CIM_Linear"
+            },
+            {
+              "InVal": 585.0,
+              "OutVal": 0.90000004,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "EInterpCurveMode::CIM_Linear"
+            },
+            {
+              "InVal": 650.0,
+              "OutVal": 1.0,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "EInterpCurveMode::CIM_Linear"
+            }
+          ]
+        }
+      },
+      "Duration": 7.5,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 80.0
+      }
+    }
+  },
+  {
+    "Type": "BP_EnemyCampObject_SphereFactory_Black_02_C",
+    "Name": "Default__BP_EnemyCampObject_SphereFactory_Black_02_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.BP_EnemyCampObject_SphereFactory_Black_02_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "VisualCtrl": {
+        "ObjectName": "PalBuildObjectVisualControlComponent'Default__BP_EnemyCampObject_SphereFactory_Black_02_C:VisualController'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.7"
+      },
+      "OverlapCheckCollisionRef": {
+        "ComponentProperty": "CheckOverlapCollision"
+      },
+      "bPlayBuildCompleteFX": false,
+      "bNotConstructConnectorInGame": true,
+      "DamageReaction": {
+        "ObjectName": "PalMapObjectDamageReactionComponent'Default__BP_EnemyCampObject_SphereFactory_Black_02_C:DamageReaction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.8"
+      },
+      "DestroyFXType": "EPalMapObjectDestroyFXType::NormalMetal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_EnemyCampObject_SphereFactory_Black_02",
+    "Outer": "BP_EnemyCampObject_SphereFactory_Black_02_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalMapObjectConcreteModelDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_Model",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalMapObjectConcreteModelBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAvailable_BlueprintImpl",
+    "Outer": "BP_EnemyCampObject_SphereFactory_Black_02_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalBuildObject:OnAvailable_BlueprintImpl'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetConcreteModel",
+    "Outer": "BP_EnemyCampObject_SphereFactory_Black_02_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Model",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalMapObjectConcreteModelBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "PalBuildObjectVisualControlComponent",
+    "Name": "VisualController",
+    "Outer": "Default__BP_EnemyCampObject_SphereFactory_Black_02_C",
+    "Class": "UScriptClass'PalBuildObjectVisualControlComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalMapObjectDamageReactionComponent",
+    "Name": "DamageReaction",
+    "Outer": "Default__BP_EnemyCampObject_SphereFactory_Black_02_C",
+    "Class": "UScriptClass'PalMapObjectDamageReactionComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalWorkEffectSoundComponent",
+    "Name": "WorkSound_Flowing_GEN_VARIABLE",
+    "Outer": "BP_EnemyCampObject_SphereFactory_Black_02_C",
+    "Class": "UScriptClass'PalWorkEffectSoundComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent'AKE_PalSphereAssemblyLine_Flowing_01'",
+        "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/MapObject/PalSphereAssemblyLine/AKE_PalSphereAssemblyLine_Flowing_01.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_EnemyCampObject_SphereFactory_Black_02_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Root_GEN_VARIABLE",
+    "Outer": "BP_EnemyCampObject_SphereFactory_Black_02_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_EnemyCampObject_SphereFactory_Black_02_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.10"
+      },
+      "VariableGuid": "AB3DF206-458C6D3B-167047B7-82C66A20",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_EnemyCampObject_SphereFactory_Black_02_C:Root_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.11"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_EnemyCampObject_SphereFactory_Black_02_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_EnemyCampObject_SphereFactory_Black_02_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_EnemyCampObject_SphereFactory_Black_02_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.16"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_EnemyCampObject_SphereFactory_Black_02_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.15"
+        }
+      ],
+      "VariableGuid": "6F8E2680-4D476BCD-E90F8E80-C7D49F9A",
+      "InternalVariableName": "Root"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_EnemyCampObject_SphereFactory_Black_02_C:CheckOverlapCollision_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.1"
+      },
+      "VariableGuid": "AEE79C1A-45F327BB-567DEA8B-FCF33EA5",
+      "InternalVariableName": "CheckOverlapCollision"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalWorkEffectSoundComponent'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalWorkEffectSoundComponent'BP_EnemyCampObject_SphereFactory_Black_02_C:WorkSound_Flowing_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.9"
+      },
+      "VariableGuid": "28912A1E-428FA4A4-F4BB449A-DE7386CB",
+      "InternalVariableName": "WorkSound_Flowing"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_BuildObjectFactoryConveyorComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Components/BP_BuildObjectFactoryConveyorComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_BuildObjectFactoryConveyorComponent_C'BP_EnemyCampObject_SphereFactory_Black_02_C:FactoryConveyorComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.2"
+      },
+      "VariableGuid": "2C0F5187-4410B468-9D98B281-E013D615",
+      "InternalVariableName": "FactoryConveyorComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_EnemyCampObject_SphereFactory_Black_02_C:StaticMesh_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.19"
+      },
+      "VariableGuid": "E60F303C-4C132282-393A5A9A-0E6EDB82",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_EnemyCampObject_SphereFactory_Black_02_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_EnemyCampObject_SphereFactory_Black_02_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.13"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_EnemyCampObject_SphereFactory_Black_02_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.13"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_EnemyCampObject_SphereFactory_Black_02_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_EnemyCampObject_SphereFactory_Black_02_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_EnemyCampObject_SphereFactory_Black_02_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.16"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_EnemyCampObject_SphereFactory_Black_02_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.15"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_EnemyCampObject_SphereFactory_Black_02_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/EnemyCamp/BP_EnemyCampObject_SphereFactory_Black_02.12"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "BP_EnemyCampObject_SphereFactory_Black_02_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_PalSphereFactoryModern'",
+        "ObjectPath": "Pal/Content/Pal/Model/Prop/Architecture/PalSphereFactoryModern/SM_PalSphereFactoryModern.2"
+      },
+      "BodyInstance": {
+        "CollisionProfileName": "MapObjectPhysics",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AroundInfoCollect",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 5.0
+      }
+    }
+  }
+]

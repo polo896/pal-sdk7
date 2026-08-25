@@ -1,0 +1,2443 @@
+[
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Platform_0",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "WORLDSSETTING_CROSSPLAY_STEAM"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "8C26FF564908206E43BE23991A18F6B3",
+        "SourceString": "プライベートロック有効化",
+        "LocalizedString": "プライベートロック有効化"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.783538,
+          "G": 0.964686,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "E5FBFF"
+        }
+      },
+      "Font": {
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Steam.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.45"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Platform_1",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "WORLDSSETTING_CROSSPLAY_XBOX"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "8C26FF564908206E43BE23991A18F6B3",
+        "SourceString": "プライベートロック有効化",
+        "LocalizedString": "プライベートロック有効化"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.783538,
+          "G": 0.964686,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "E5FBFF"
+        }
+      },
+      "Font": {
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Xbox.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.47"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Platform_2",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "WORLDSSETTING_CROSSPLAY_PS5"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "8C26FF564908206E43BE23991A18F6B3",
+        "SourceString": "プライベートロック有効化",
+        "LocalizedString": "プライベートロック有効化"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.783538,
+          "G": 0.964686,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "E5FBFF"
+        }
+      },
+      "Font": {
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_PS5.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.43"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Platform_3",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "WORLDSSETTING_CROSSPLAY_MAC"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "919A9E6840935F8FB8F6668230EA5A98",
+        "SourceString": "プライベートロック有効化",
+        "LocalizedString": "プライベートロック有効化"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.783538,
+          "G": 0.964686,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "E5FBFF"
+        }
+      },
+      "Font": {
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Mac.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.41"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.9"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Steam.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.11"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Xbox.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_PS5.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_3.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_3.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.15"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Mac.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_35",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_35.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.17"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 36.0,
+          "Bottom": 36.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.4"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalInvisibleButton_C'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.ButtonToggle_Steam'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.58"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 28.0,
+          "Bottom": 28.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.4"
+      },
+      "Content": {
+        "ObjectName": "PalCheckBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CheckBox_Steam'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.51"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 36.0,
+          "Bottom": 36.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.5"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalInvisibleButton_C'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.ButtonToggle_Xbox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.59"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 28.0,
+          "Bottom": 28.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.5"
+      },
+      "Content": {
+        "ObjectName": "PalCheckBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CheckBox_Xbox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.52"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 36.0,
+          "Bottom": 36.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.6"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalInvisibleButton_C'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.ButtonToggle_PS5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.57"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 28.0,
+          "Bottom": 28.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.6"
+      },
+      "Content": {
+        "ObjectName": "PalCheckBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CheckBox_PS5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.50"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_3",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 36.0,
+          "Bottom": 36.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.7"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalInvisibleButton_C'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.ButtonToggle_Mac'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.56"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_3",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 28.0,
+          "Bottom": 28.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.7"
+      },
+      "Content": {
+        "ObjectName": "PalCheckBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CheckBox_Mac'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.49"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_35",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_35'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.8"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.30"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_OptionSettings_ListContentCheckbox_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "ButtonToggle_Mac",
+          "DelegatePropertyName": "OnButtonBaseClicked",
+          "FunctionNameToBind": "BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_Mac_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "ButtonToggle_Steam",
+          "DelegatePropertyName": "OnButtonBaseClicked",
+          "FunctionNameToBind": "BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_Steam_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "ButtonToggle_Xbox",
+          "DelegatePropertyName": "OnButtonBaseClicked",
+          "FunctionNameToBind": "BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_Xbox_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "ButtonToggle_PS5",
+          "DelegatePropertyName": "OnButtonBaseClicked",
+          "FunctionNameToBind": "BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_PS5_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_Mac_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature",
+    "Outer": "WBP_OptionSettings_ListContentCheckbox_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_PS5_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature",
+    "Outer": "WBP_OptionSettings_ListContentCheckbox_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_Steam_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature",
+    "Outer": "WBP_OptionSettings_ListContentCheckbox_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_Xbox_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature",
+    "Outer": "WBP_OptionSettings_ListContentCheckbox_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_OptionSettings_ListContentCheckbox",
+    "Outer": "WBP_OptionSettings_ListContentCheckbox_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_IsSteam",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_IsXbox",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_IsPS5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_IsMac",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsChecked_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_Checked_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_Checked_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_Checked_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsWindows_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsGDK_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsPS5_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsChecked_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsChecked_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_Checked",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsChecked_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsMac_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnClickedCheckButton__DelegateSignature",
+    "Outer": "WBP_OptionSettings_ListContentCheckbox_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetCheckButtonMac",
+    "Outer": "WBP_OptionSettings_ListContentCheckbox_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "Checked",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetCheckButtonPS5",
+    "Outer": "WBP_OptionSettings_ListContentCheckbox_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "Checked",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetCheckButtonSteam",
+    "Outer": "WBP_OptionSettings_ListContentCheckbox_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "Checked",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetCheckButtonXbox",
+    "Outer": "WBP_OptionSettings_ListContentCheckbox_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "Checked",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup",
+    "Outer": "WBP_OptionSettings_ListContentCheckbox_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsSteam",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsXbox",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsPS5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsMac",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.39"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.35"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.36"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.37"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.40"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.38"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_35.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.17"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_Mac",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Mac.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.42"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Mac.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.41"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.40"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_PS5",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_PS5.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.44"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_PS5.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.43"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.37"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_Steam",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Steam.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.46"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Steam.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.45"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.35"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_Xbox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Xbox.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.48"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Xbox.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.47"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.36"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Right": 20.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.30"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Steam'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.33"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Right": 20.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.30"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Xbox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.34"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Right": 20.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.30"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_PS5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.32"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.30"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.Spacer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.53"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.30"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.Spacer_66'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.54"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Right": 20.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.30"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Mac'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.31"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_Mac",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Mac'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.31"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.Text_Platform_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.3"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_Mac",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Mac'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.31"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.7"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_PS5",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_PS5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.32"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.Text_Platform_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.2"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_PS5",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_PS5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.32"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.6"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_Steam",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Steam'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.33"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.Text_Platform_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.0"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_Steam",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Steam'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.33"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.4"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_Xbox",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Xbox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.34"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.Text_Platform_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.1"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_Xbox",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_Xbox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.34"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.5"
+      }
+    }
+  },
+  {
+    "Type": "PalCheckBox",
+    "Name": "CheckBox_Mac",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'PalCheckBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CheckedState": "ECheckBoxState::Checked",
+      "WidgetStyle": {
+        "UncheckedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_off'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_off.0"
+          }
+        },
+        "UncheckedHoveredImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_off'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_off.0"
+          }
+        },
+        "UncheckedPressedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_off'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_off.0"
+          }
+        },
+        "CheckedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_on'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_on.0"
+          }
+        },
+        "CheckedHoveredImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_on'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_on.0"
+          }
+        },
+        "CheckedPressedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_on'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_on.0"
+          }
+        }
+      },
+      "IsFocusable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_3.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.16"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "PalCheckBox",
+    "Name": "CheckBox_PS5",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'PalCheckBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CheckedState": "ECheckBoxState::Checked",
+      "WidgetStyle": {
+        "UncheckedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_off'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_off.0"
+          }
+        },
+        "UncheckedHoveredImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_off'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_off.0"
+          }
+        },
+        "UncheckedPressedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_off'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_off.0"
+          }
+        },
+        "CheckedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_on'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_on.0"
+          }
+        },
+        "CheckedHoveredImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_on'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_on.0"
+          }
+        },
+        "CheckedPressedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_on'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_on.0"
+          }
+        }
+      },
+      "IsFocusable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.14"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "PalCheckBox",
+    "Name": "CheckBox_Steam",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'PalCheckBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CheckedState": "ECheckBoxState::Checked",
+      "WidgetStyle": {
+        "UncheckedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_off'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_off.0"
+          }
+        },
+        "UncheckedHoveredImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_off'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_off.0"
+          }
+        },
+        "UncheckedPressedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_off'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_off.0"
+          }
+        },
+        "CheckedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_on'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_on.0"
+          }
+        },
+        "CheckedHoveredImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_on'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_on.0"
+          }
+        },
+        "CheckedPressedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_on'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_on.0"
+          }
+        }
+      },
+      "IsFocusable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.10"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "PalCheckBox",
+    "Name": "CheckBox_Xbox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'PalCheckBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CheckedState": "ECheckBoxState::Checked",
+      "WidgetStyle": {
+        "UncheckedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_off'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_off.0"
+          }
+        },
+        "UncheckedHoveredImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_off'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_off.0"
+          }
+        },
+        "UncheckedPressedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_off'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_off.0"
+          }
+        },
+        "CheckedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_on'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_on.0"
+          }
+        },
+        "CheckedHoveredImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_on'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_on.0"
+          }
+        },
+        "CheckedPressedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_on'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_checkbox_on.0"
+          }
+        }
+      },
+      "IsFocusable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.12"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.38"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_66",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.39"
+      }
+    }
+  },
+  {
+    "Type": "WBP_OptionSettings_ListContentCheckbox_C",
+    "Name": "Default__WBP_OptionSettings_ListContentCheckbox_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.WBP_OptionSettings_ListContentCheckbox_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_PalInvisibleButton_C",
+    "Name": "ButtonToggle_Mac",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.WBP_PalInvisibleButton_C'",
+    "Template": {
+      "ObjectName": "WBP_PalInvisibleButton_C'Default__WBP_PalInvisibleButton_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_3.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.15"
+      },
+      "RenderOpacity": 0.3,
+      "Navigation": {
+        "ObjectName": "WidgetNavigation'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.ButtonToggle_Mac.WidgetNavigation_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.61"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalInvisibleButton_C",
+    "Name": "ButtonToggle_PS5",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.WBP_PalInvisibleButton_C'",
+    "Template": {
+      "ObjectName": "WBP_PalInvisibleButton_C'Default__WBP_PalInvisibleButton_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.13"
+      },
+      "RenderOpacity": 0.3,
+      "Navigation": {
+        "ObjectName": "WidgetNavigation'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.ButtonToggle_PS5.WidgetNavigation_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.62"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalInvisibleButton_C",
+    "Name": "ButtonToggle_Steam",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.WBP_PalInvisibleButton_C'",
+    "Template": {
+      "ObjectName": "WBP_PalInvisibleButton_C'Default__WBP_PalInvisibleButton_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.9"
+      },
+      "Navigation": {
+        "ObjectName": "WidgetNavigation'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.ButtonToggle_Steam.WidgetNavigation_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.63"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalInvisibleButton_C",
+    "Name": "ButtonToggle_Xbox",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.WBP_PalInvisibleButton_C'",
+    "Template": {
+      "ObjectName": "WBP_PalInvisibleButton_C'Default__WBP_PalInvisibleButton_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.11"
+      },
+      "Navigation": {
+        "ObjectName": "WidgetNavigation'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.ButtonToggle_Xbox.WidgetNavigation_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.64"
+      }
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_OptionSettings_ListContentCheckbox_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.65"
+      },
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_OptionSettings_ListContentCheckbox_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.18"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:ExecuteUbergraph_WBP_OptionSettings_ListContentCheckbox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.23"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.29"
+      },
+      {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:SetCheckButtonSteam'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.27"
+      },
+      {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:SetCheckButtonXbox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.28"
+      },
+      {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:SetCheckButtonPS5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.26"
+      },
+      {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_PS5_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.20"
+      },
+      {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_Xbox_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.22"
+      },
+      {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_Steam_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.21"
+      },
+      {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_Mac_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.19"
+      },
+      {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:SetCheckButtonMac'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.25"
+      },
+      {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:ExecuteUbergraph_WBP_OptionSettings_ListContentCheckbox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.23"
+      },
+      {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:OnClickedCheckButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.24"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ButtonToggle_Mac",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalInvisibleButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.2"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ButtonToggle_PS5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalInvisibleButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.2"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ButtonToggle_Steam",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalInvisibleButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.2"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ButtonToggle_Xbox",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalInvisibleButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.2"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CheckBox_Mac",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCheckBox'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CheckBox_PS5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCheckBox'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CheckBox_Steam",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCheckBox'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CheckBox_Xbox",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCheckBox'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HorizontalBox_Mac",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HorizontalBox_PS5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HorizontalBox_Steam",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HorizontalBox_Xbox",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnClickedCheckButton",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:OnClickedCheckButton__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.24"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnClickedCheckButton__DelegateSignature": {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:OnClickedCheckButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.24"
+      },
+      "ExecuteUbergraph_WBP_OptionSettings_ListContentCheckbox": {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:ExecuteUbergraph_WBP_OptionSettings_ListContentCheckbox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.23"
+      },
+      "SetCheckButtonMac": {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:SetCheckButtonMac'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.25"
+      },
+      "BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_Mac_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_Mac_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.19"
+      },
+      "BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_Steam_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_Steam_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.21"
+      },
+      "BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_Xbox_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_Xbox_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.22"
+      },
+      "BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_PS5_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:BndEvt__WBP_OptionSettings_ListContentCheckbox_ButtonToggle_PS5_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.20"
+      },
+      "SetCheckButtonPS5": {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:SetCheckButtonPS5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.26"
+      },
+      "SetCheckButtonXbox": {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:SetCheckButtonXbox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.28"
+      },
+      "SetCheckButtonSteam": {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:SetCheckButtonSteam'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.27"
+      },
+      "Setup": {
+        "ObjectName": "Function'WBP_OptionSettings_ListContentCheckbox_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.29"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_OptionSettings_ListContentCheckbox_C'Default__WBP_OptionSettings_ListContentCheckbox_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.55"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetNavigation",
+    "Name": "WidgetNavigation_0",
+    "Outer": "ButtonToggle_Mac",
+    "Class": "UScriptClass'WidgetNavigation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Down": {
+        "Rule": "EUINavigationRule::Custom",
+        "WidgetToFocus": "CustomNavigation_ToCloseButton"
+      }
+    }
+  },
+  {
+    "Type": "WidgetNavigation",
+    "Name": "WidgetNavigation_0",
+    "Outer": "ButtonToggle_PS5",
+    "Class": "UScriptClass'WidgetNavigation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Down": {
+        "Rule": "EUINavigationRule::Custom",
+        "WidgetToFocus": "CustomNavigation_ToCloseButton"
+      }
+    }
+  },
+  {
+    "Type": "WidgetNavigation",
+    "Name": "WidgetNavigation_0",
+    "Outer": "ButtonToggle_Steam",
+    "Class": "UScriptClass'WidgetNavigation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Down": {
+        "Rule": "EUINavigationRule::Custom",
+        "WidgetToFocus": "CustomNavigation_ToCloseButton"
+      }
+    }
+  },
+  {
+    "Type": "WidgetNavigation",
+    "Name": "WidgetNavigation_0",
+    "Outer": "ButtonToggle_Xbox",
+    "Class": "UScriptClass'WidgetNavigation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Down": {
+        "Rule": "EUINavigationRule::Custom",
+        "WidgetToFocus": "CustomNavigation_ToCloseButton"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_OptionSettings_ListContentCheckbox_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContentCheckbox_C:WidgetTree.CanvasPanel_35'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContentCheckbox.8"
+      }
+    }
+  }
+]

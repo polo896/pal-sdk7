@@ -1,0 +1,444 @@
+[
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_Reward_Food",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "D8F6B84B-4226E4FF-BFD237A7-75500F3D",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "669B5259-4BE5A850-FB94FA94-96F52673",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_AddTextArgument_FoodRequire_C",
+    "Name": "FNBP_AddTextArgument_FoodRequire_C_0",
+    "Outer": "FABP_Reward_Food",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_AddTextArgument_FoodRequire.FNBP_AddTextArgument_FoodRequire_C'",
+    "Template": {
+      "ObjectName": "FNBP_AddTextArgument_FoodRequire_C'Default__FNBP_AddTextArgument_FoodRequire_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_AddTextArgument_FoodRequire.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "669B5259-4BE5A850-FB94FA94-96F52673",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "AF58E8A3-420B6C38-976609A8-680CF101",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_CheckCircumItemTradeCompleted_C",
+    "Name": "FNBP_CheckCircumItemTradeCompleted_C_0",
+    "Outer": "FABP_Reward_Food",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_CheckCircumItemTradeCompleted.FNBP_CheckCircumItemTradeCompleted_C'",
+    "Template": {
+      "ObjectName": "FNBP_CheckCircumItemTradeCompleted_C'Default__FNBP_CheckCircumItemTradeCompleted_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_CheckCircumItemTradeCompleted.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "7E13B5EE-4B81B243-241E1EB1-0257DEE0",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "B2732EA9-4128E6C0-D32B8BB4-61960187",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotCompleted",
+          "Value": {
+            "NodeGuid": "C80A4ADE-44605B8A-C6A2059A-2B14D3AF",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_CircumItemTrade_C",
+    "Name": "FNBP_CheckCircumItemTrade_C_0",
+    "Outer": "FABP_Reward_Food",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_CircumItemTrade.FNBP_CircumItemTrade_C'",
+    "Template": {
+      "ObjectName": "FNBP_CircumItemTrade_C'Default__FNBP_CircumItemTrade_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_CircumItemTrade.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "64856B5C-40B409A5-000676B0-8337753E",
+      "Connections": [
+        {
+          "Key": "Success",
+          "Value": {
+            "NodeGuid": "D254C3AB-4DFC419B-0CE839A3-6B6598BE",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Failed",
+          "Value": {
+            "NodeGuid": "4FFBD88C-4CC33D0E-B5F648AA-B7C4FE1D",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_Reward_Food",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "FoodRequire_BlockCircum"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "B2732EA9-4128E6C0-D32B8BB4-61960187"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_Reward_Food",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "FoodRequire_FirstEncout_1"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "ABD90C36-4BAE6C41-E9072697-9FD3D4D3",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "61C196B7-45395463-2939FCAC-73905A53",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_Reward_Food",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "FoodRequire_No"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "23B0E661-4FDA20D4-340BC2B7-66DB83FC"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_3",
+    "Outer": "FABP_Reward_Food",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "FoodRequire_Yes_Success"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "D254C3AB-4DFC419B-0CE839A3-6B6598BE"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_Reward_Food",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "FoodRequire_Yes_Failed"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "4FFBD88C-4CC33D0E-B5F648AA-B7C4FE1D"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_5",
+    "Outer": "FABP_Reward_Food",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "FoodRequire_Test"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "C80A4ADE-44605B8A-C6A2059A-2B14D3AF",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "06976691-48EAD37E-490D1099-31FD8CAD",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkBranch_Yes_No_C",
+    "Name": "FNBP_NPCTalkBranch_Yes_No_C_0",
+    "Outer": "FABP_Reward_Food",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.FNBP_NPCTalkBranch_Yes_No_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'Default__FNBP_NPCTalkBranch_Yes_No_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "06976691-48EAD37E-490D1099-31FD8CAD",
+      "OutputPins": [
+        {
+          "PinName": "CHOICE_YES",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "CHOICE_NO",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "CHOICE_YES",
+          "Value": {
+            "NodeGuid": "64856B5C-40B409A5-000676B0-8337753E",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "CHOICE_NO",
+          "Value": {
+            "NodeGuid": "23B0E661-4FDA20D4-340BC2B7-66DB83FC",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_0",
+    "Outer": "FABP_Reward_Food",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_FoodReward"
+      },
+      "NetworkInvokeName": "OrderQuest",
+      "GraphNode": null,
+      "NodeGuid": "61C196B7-45395463-2939FCAC-73905A53"
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_Reward_Food",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_FoodReward"
+      },
+      "GraphNode": null,
+      "NodeGuid": "AF58E8A3-420B6C38-976609A8-680CF101",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "ABD90C36-4BAE6C41-E9072697-9FD3D4D3",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "7E13B5EE-4B81B243-241E1EB1-0257DEE0",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "B2732EA9-4128E6C0-D32B8BB4-61960187",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_Reward_Food",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "761F9FEE-4A698385-94ED7780-B1F373D9",
+      "Nodes": [
+        {
+          "Key": "D8F6B84B-4226E4FF-BFD237A7-75500F3D",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_Reward_Food:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_Food.0"
+          }
+        },
+        {
+          "Key": "669B5259-4BE5A850-FB94FA94-96F52673",
+          "Value": {
+            "ObjectName": "FNBP_AddTextArgument_FoodRequire_C'FABP_Reward_Food:FNBP_AddTextArgument_FoodRequire_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_Food.1"
+          }
+        },
+        {
+          "Key": "7E13B5EE-4B81B243-241E1EB1-0257DEE0",
+          "Value": {
+            "ObjectName": "FNBP_CheckCircumItemTradeCompleted_C'FABP_Reward_Food:FNBP_CheckCircumItemTradeCompleted_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_Food.2"
+          }
+        },
+        {
+          "Key": "B2732EA9-4128E6C0-D32B8BB4-61960187",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Reward_Food:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_Food.4"
+          }
+        },
+        {
+          "Key": "ABD90C36-4BAE6C41-E9072697-9FD3D4D3",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Reward_Food:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_Food.5"
+          }
+        },
+        {
+          "Key": "06976691-48EAD37E-490D1099-31FD8CAD",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'FABP_Reward_Food:FNBP_NPCTalkBranch_Yes_No_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_Food.10"
+          }
+        },
+        {
+          "Key": "64856B5C-40B409A5-000676B0-8337753E",
+          "Value": {
+            "ObjectName": "FNBP_CircumItemTrade_C'FABP_Reward_Food:FNBP_CheckCircumItemTrade_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_Food.3"
+          }
+        },
+        {
+          "Key": "23B0E661-4FDA20D4-340BC2B7-66DB83FC",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Reward_Food:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_Food.6"
+          }
+        },
+        {
+          "Key": "D254C3AB-4DFC419B-0CE839A3-6B6598BE",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Reward_Food:FNBP_NPCTalk_FixedMsdId_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_Food.7"
+          }
+        },
+        {
+          "Key": "4FFBD88C-4CC33D0E-B5F648AA-B7C4FE1D",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Reward_Food:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_Food.8"
+          }
+        },
+        {
+          "Key": "AF58E8A3-420B6C38-976609A8-680CF101",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_Reward_Food:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_Food.12"
+          }
+        },
+        {
+          "Key": "61C196B7-45395463-2939FCAC-73905A53",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_Reward_Food:FNBP_OrderQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_Food.11"
+          }
+        },
+        {
+          "Key": "C80A4ADE-44605B8A-C6A2059A-2B14D3AF",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Reward_Food:FNBP_NPCTalk_FixedMsdId_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Reward_Food.9"
+          }
+        }
+      ]
+    }
+  }
+]

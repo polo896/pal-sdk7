@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b08_AreaM_Bush_1",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b08_Euonymus_Bush_ORG_02'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b08/Area_M/Foliage/Mesh/SM_pal_b08_Euonymus_Bush_ORG_02.2"
+      },
+      "UpdateGuid": "C68817CA-455F4476-F0ED67B9-31A51FF1",
+      "Density": 50.0,
+      "ScaleX": {
+        "Max": 1.4
+      },
+      "GroundSlopeAngle": {
+        "Max": 180.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 3.8146973E-05,
+          "Y": -7.6293945E-06,
+          "Z": 97.97135
+        },
+        "BoxExtent": {
+          "X": 167.10895,
+          "Y": 134.91797,
+          "Z": 136.11563
+        },
+        "SphereRadius": 172.38215341087542
+      },
+      "LowBoundOriginRadius": {
+        "X": -1.5117416,
+        "Y": 6.1036453,
+        "Z": 60.328873
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      }
+    }
+  }
+]

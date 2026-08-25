@@ -1,0 +1,66 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "Enum_RadiantPurge_State",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "30D753874F2CF96D22BA95BC90140FE8",
+            "SourceString": "Move",
+            "LocalizedString": "Move"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "02AAA29A4BD5CB350D1AD5B36D806425",
+            "SourceString": "Charge",
+            "LocalizedString": "Charge"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "5DB401664FE020BB83B880BF565F2ED3",
+            "SourceString": "Act",
+            "LocalizedString": "Act"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "9E65745847EEE1A825BE5FAD05476D57",
+            "SourceString": "Weary",
+            "LocalizedString": "Weary"
+          }
+        },
+        {
+          "Key": "NewEnumerator4",
+          "Value": {
+            "Namespace": "",
+            "Key": "753B367544F567A974CE63B5860474DB",
+            "SourceString": "End",
+            "LocalizedString": "End"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "Enum_RadiantPurge_State::NewEnumerator0": 0,
+      "Enum_RadiantPurge_State::NewEnumerator1": 1,
+      "Enum_RadiantPurge_State::NewEnumerator2": 2,
+      "Enum_RadiantPurge_State::NewEnumerator3": 3,
+      "Enum_RadiantPurge_State::NewEnumerator4": 4,
+      "Enum_RadiantPurge_State::Enum_RadiantPurge_MAX": 5
+    },
+    "CppForm": "Namespaced"
+  }
+]

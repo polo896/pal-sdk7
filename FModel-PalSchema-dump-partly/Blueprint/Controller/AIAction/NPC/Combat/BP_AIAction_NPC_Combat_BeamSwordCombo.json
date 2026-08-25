@@ -1,0 +1,58 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AIAction_NPC_Combat_BeamSwordCombo_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Combat_Katana_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Katana.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Combat_Katana_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Katana.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AIAction_NPC_Combat_BeamSwordCombo_C'Default__BP_AIAction_NPC_Combat_BeamSwordCombo_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_BeamSwordCombo.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AIAction_NPC_Combat_BeamSwordCombo_C",
+    "Name": "Default__BP_AIAction_NPC_Combat_BeamSwordCombo_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_BeamSwordCombo.BP_AIAction_NPC_Combat_BeamSwordCombo_C'",
+    "Template": {
+      "ObjectName": "BP_AIAction_NPC_Combat_Katana_C'Default__BP_AIAction_NPC_Combat_Katana_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Katana.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StateMap": [
+        {
+          "Key": "EPal_NPC_CombatMeleeState::NewEnumerator2",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AINPC_CombatMeleeState_StepAttack_BeamSwordCombo_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatMeleeState_StepAttack_BeamSwordCombo.0"
+          }
+        },
+        {
+          "Key": "EPal_NPC_CombatMeleeState::NewEnumerator6",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AINPC_CombatMeleeState_StepAttack_BeamSwordCombo_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatMeleeState_StepAttack_BeamSwordCombo.0"
+          }
+        }
+      ]
+    }
+  }
+]

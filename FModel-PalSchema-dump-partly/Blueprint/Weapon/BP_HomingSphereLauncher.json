@@ -1,0 +1,2149 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_RocketLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_HomingSphereLauncher_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.31"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_HomingSphereLauncher_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.27"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:ExecuteUbergraph_BP_HomingSphereLauncher'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_RocketLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetRemainBulletCount'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.15"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetBulletClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.11"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:IsEnableAutoAim'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.18"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:ClearAttackTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.5"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetAttackTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.9"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetMuzzleTransform'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.14"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetShootTransformList'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.17"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetAimingBlurAngle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.8"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetBlurAngle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.10"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:OnShoot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.23"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetShootInterval'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.16"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetMuzzleRotator'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.13"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetMuzzleLocation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.12"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:ShootBullet'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.26"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:ChangeTransformForRocketWhenReloadIsDone'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.4"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:ChangeTransformForRocketReload'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.3"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.24"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:CustomEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.6"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:OnReleaseTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.22"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:OnPalSphereChangeSelectedIndex'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.20"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:ReceiveEndPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.25"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:OnPullTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.21"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:ExecuteUbergraph_BP_HomingSphereLauncher'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.7"
+      },
+      {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:OnLaunchPalSphere__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.19"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "TargetList",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "TargetList",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'Actor'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "ItemName_LevelTypeMap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | BlueprintReadOnly | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "NameProperty",
+          "Name": "ItemName_LevelTypeMap",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        },
+        "ValueProp": {
+          "Type": "EnumProperty",
+          "Name": "ItemName_LevelTypeMap_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalCaptureSphereLevelType'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": {
+              "ObjectName": "Enum'EPalCaptureSphereLevelType'",
+              "ObjectPath": "/Script/Pal"
+            }
+          }
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnLaunchPalSphere",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'BP_HomingSphereLauncher_C:OnLaunchPalSphere__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.19"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "SphereScale",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnLaunchPalSphere__DelegateSignature": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:OnLaunchPalSphere__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.19"
+      },
+      "ExecuteUbergraph_BP_HomingSphereLauncher": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:ExecuteUbergraph_BP_HomingSphereLauncher'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.7"
+      },
+      "OnPullTrigger": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:OnPullTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.21"
+      },
+      "ReceiveEndPlay": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:ReceiveEndPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.25"
+      },
+      "OnPalSphereChangeSelectedIndex": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:OnPalSphereChangeSelectedIndex'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.20"
+      },
+      "OnReleaseTrigger": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:OnReleaseTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.22"
+      },
+      "CustomEvent": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:CustomEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.6"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.24"
+      },
+      "ChangeTransformForRocketReload": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:ChangeTransformForRocketReload'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.3"
+      },
+      "ChangeTransformForRocketWhenReloadIsDone": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:ChangeTransformForRocketWhenReloadIsDone'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.4"
+      },
+      "ShootBullet": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:ShootBullet'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.26"
+      },
+      "GetMuzzleLocation": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetMuzzleLocation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.12"
+      },
+      "GetMuzzleRotator": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetMuzzleRotator'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.13"
+      },
+      "GetShootInterval": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetShootInterval'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.16"
+      },
+      "OnShoot": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:OnShoot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.23"
+      },
+      "GetBlurAngle": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetBlurAngle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.10"
+      },
+      "GetAimingBlurAngle": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetAimingBlurAngle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.8"
+      },
+      "GetShootTransformList": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetShootTransformList'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.17"
+      },
+      "GetMuzzleTransform": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetMuzzleTransform'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.14"
+      },
+      "GetAttackTarget": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetAttackTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.9"
+      },
+      "ClearAttackTarget": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:ClearAttackTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.5"
+      },
+      "IsEnableAutoAim": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:IsEnableAutoAim'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.18"
+      },
+      "GetBulletClass": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetBulletClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.11"
+      },
+      "GetRemainBulletCount": {
+        "ObjectName": "Function'BP_HomingSphereLauncher_C:GetRemainBulletCount'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.15"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_HomingSphereLauncher_C'Default__BP_HomingSphereLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_HomingSphereLauncher_C",
+    "Name": "Default__BP_HomingSphereLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.BP_HomingSphereLauncher_C'",
+    "Template": {
+      "ObjectName": "BP_RocketLauncher_C'Default__BP_RocketLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.2"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ItemName_LevelTypeMap": [
+        {
+          "Key": "PalSphere",
+          "Value": "EPalCaptureSphereLevelType::Normal"
+        },
+        {
+          "Key": "PalSphere_Mega",
+          "Value": "EPalCaptureSphereLevelType::Mega"
+        },
+        {
+          "Key": "PalSphere_Giga",
+          "Value": "EPalCaptureSphereLevelType::Giga"
+        },
+        {
+          "Key": "PalSphere_Tera",
+          "Value": "EPalCaptureSphereLevelType::Tera"
+        },
+        {
+          "Key": "PalSphere_Master",
+          "Value": "EPalCaptureSphereLevelType::Master"
+        },
+        {
+          "Key": "PalSphere_Legend",
+          "Value": "EPalCaptureSphereLevelType::Legend"
+        },
+        {
+          "Key": "PalSphere_Ultimate",
+          "Value": "EPalCaptureSphereLevelType::Ultimate"
+        },
+        {
+          "Key": "PalSphere_Exotic",
+          "Value": "EPalCaptureSphereLevelType::Exotic"
+        },
+        {
+          "Key": "PalSphere_Ancient_1",
+          "Value": "EPalCaptureSphereLevelType::Ancient_1"
+        },
+        {
+          "Key": "PalSphere_Ancient_2",
+          "Value": "EPalCaptureSphereLevelType::Ancient_2"
+        }
+      ],
+      "SphereScale": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      },
+      "RecoilCurve": null,
+      "SupportedBulletMap": [
+        {
+          "Key": {
+            "Key": "PalSphere"
+          },
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_PalSphere_ThrowObject_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/NewPalSPhere/BP_PalSphere_ThrowObject.0"
+          }
+        }
+      ],
+      "FallbackBulletItemId": {
+        "Key": "PalSphere"
+      },
+      "weaponIconTexture": {
+        "AssetPathName": "/Game/Pal/Texture/Item/Weapon/T_icon_SphereLauncher_UI.T_icon_SphereLauncher_UI",
+        "SubPathString": ""
+      },
+      "PalSoundSlotClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_SphereLauncher.BP_SoundSlot_Weapon_SphereLauncher_C",
+        "SubPathString": ""
+      },
+      "CoolDownTime": 2.0,
+      "BackWeaponClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_BackWeapon_SphereLauncher_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BackWeapon/BP_BackWeapon_SphereLauncher.0"
+      },
+      "RemoteRole": "ENetRole::ROLE_None"
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "BP_Ammo_Rocket_GEN_VARIABLE",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'ChildActorComponent'",
+    "Template": {
+      "ObjectName": "ChildActorComponent'BP_RocketLauncher_C:BP_Ammo_Rocket_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "ChildActorClass": null,
+      "ChildActorTemplate": null,
+      "RelativeLocation": {
+        "X": 64.929695,
+        "Y": 3.5830884,
+        "Z": 16.269663
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 180.0,
+        "Roll": 180.0
+      },
+      "RelativeScale3D": {
+        "X": 2.8264606,
+        "Y": 2.8264606,
+        "Z": 2.8264606
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ChangeTransformForRocketReload",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_RocketLauncher_C:ChangeTransformForRocketReload'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_RocketLauncher_C:ChangeTransformForRocketReload'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ChangeTransformForRocketWhenReloadIsDone",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_RocketLauncher_C:ChangeTransformForRocketWhenReloadIsDone'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_RocketLauncher_C:ChangeTransformForRocketWhenReloadIsDone'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.5"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Lotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ClearAttackTarget",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "CustomEvent",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "bulletsNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_HomingSphereLauncher",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalItemSelectorComponent:ChangeSelectedIndexDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_CustomEvent_bulletsNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_AttachToComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bCanShootOnRelease",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwnerCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_CustomEvent_inventoryType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalPlayerInventoryType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalPlayerInventoryType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_CustomEvent_index",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Player_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetRemainBulletCount_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwnerCharacter_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Player_Character_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalWeaponBase:ReloadBulletsDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Event_EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetAimingBlurAngle",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_RocketLauncher_C:GetAimingBlurAngle'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.8"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_RocketLauncher_C:GetAimingBlurAngle'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.8"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Angle",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetAttackTarget",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Target",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalFindEnemyOption",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalFindEnemyOption'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Player_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FindHomingTarget_ForPlayer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetBlurAngle",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_RocketLauncher_C:GetBlurAngle'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.10"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_RocketLauncher_C:GetBlurAngle'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.10"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Angle",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetBulletClass",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetBulletClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.11"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetBulletClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.11"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "NewParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'PalBullet'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetMuzzleLocation",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_RocketLauncher_C:GetMuzzleLocation'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.14"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_RocketLauncher_C:GetMuzzleLocation'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.14"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "MuzzleLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetMuzzleLocation_MuzzleLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetMuzzleRotator",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_RocketLauncher_C:GetMuzzleRotator'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.15"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_RocketLauncher_C:GetMuzzleRotator'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.15"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Rotator",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetMuzzleRotator_Rotator",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetMuzzleTransform",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Transform",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSocketTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetRemainBulletCount",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalWeaponBase:GetRemainBulletCount'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetRemainingCurrentSelectPalSphere_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetShootInterval",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_RocketLauncher_C:GetShootInterval'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.16"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_RocketLauncher_C:GetShootInterval'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.16"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Time",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetShootTransformList",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "BaseAnglePitch",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "BaseAngleYaw",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "BlurAngle",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "ShootTransformList",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "ShootTransformList",
+          "Flags": "RF_Public",
+          "ElementSize": 96,
+          "Struct": {
+            "ObjectName": "ScriptStruct'Transform'",
+            "ObjectPath": "/Script/CoreUObject"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "BaseTransform",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "TransformList",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "TransformList",
+          "Flags": "RF_Public",
+          "ElementSize": 96,
+          "Struct": {
+            "ObjectName": "ScriptStruct'Transform'",
+            "ObjectPath": "/Script/CoreUObject"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_IntFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetMuzzleTransform_Transform",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Scale",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetTargetPosition_TargetPosition",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetMuzzleTransform_Transform_1",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Location_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Rotation_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Scale_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotFromX_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_IntFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_ComposeRotators_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_MakeRotator_Yaw_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_MakeRotator_Pitch_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsEnableAutoAim",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalWeaponBase:IsEnableAutoAim'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnLaunchPalSphere__DelegateSignature",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Bullet",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPalSphereChangeSelectedIndex",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "inventoryType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalPlayerInventoryType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalPlayerInventoryType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPullTrigger",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_RocketLauncher_C:OnPullTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.24"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_RocketLauncher_C:OnPullTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.24"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnReleaseTrigger",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:OnReleaseTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.30"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:OnReleaseTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.30"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bCanShootOnRelease",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnShoot",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_RocketLauncher_C:OnShoot'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.27"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_RocketLauncher_C:OnShoot'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.27"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BulletActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalBullet'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_RocketLauncher_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.31"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_RocketLauncher_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.31"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveEndPlay",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveEndPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ShootBullet",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_RocketLauncher_C:ShootBullet'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.32"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_RocketLauncher_C:ShootBullet'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.32"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "tempHomingObject",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalSphere_HomingThrowObjectBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/NewPalSPhere/BP_PalSphere_HomingThrowObjectBase.0"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "ItemName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameSetting_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalGameSetting'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_DecrementCurrentSelectPalSphere_UsedItemID",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_DecrementCurrentSelectPalSphere_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalCaptureSphereLevelType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalCaptureSphereLevelType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetCaptureLevelBySphereType_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_DoubleToVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_DoubleToVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetMuzzleTransform_Transform",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_DoubleToVector_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Scale",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAttackTarget_Target",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetForwardVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetRightVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetForwardVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetMuzzleTransform_Transform_1",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Normal_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorVector_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetBulletCreator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalBulletCreator'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetWeaponDamage_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_CanShoot_can",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "CallFunc_GetBulletClass_NewParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'PalBullet'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateBullet_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalBullet'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Pal_Sphere_Homing_Throw_Object_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalSphere_HomingThrowObjectBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/NewPalSPhere/BP_PalSphere_HomingThrowObjectBase.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ChildActorComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ChildActorComponent'BP_HomingSphereLauncher_C:BP_Ammo_Rocket_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.2"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_RocketLauncher_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.0"
+            },
+            "SCSVariableName": "BP_Ammo_Rocket",
+            "AssociatedGuid": "120C41CE-4F2EEA27-3A845881-E4E214EC"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SkeletalMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SkeletalMeshComponent'BP_HomingSphereLauncher_C:SkeletalMesh_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.32"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_RocketLauncher_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.0"
+            },
+            "SCSVariableName": "SkeletalMesh",
+            "AssociatedGuid": "E69703BF-4060F0DA-356D4F9F-A7F9A472"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SceneComponent'BP_HomingSphereLauncher_C:ICH-DefaultSceneRoot_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.29"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AssaultRifleBase_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.0"
+            },
+            "SCSVariableName": "DefaultSceneRoot",
+            "AssociatedGuid": "13200B6F-4FEDE0AC-03EBFEB5-413F27FC"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "ICH-DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_HomingSphereLauncher_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.28"
+      },
+      "VariableGuid": "177D7BE4-46FDFE91-D69F2E8F-88733C34",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_HomingSphereLauncher_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_HomingSphereLauncher.30"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh_GEN_VARIABLE",
+    "Outer": "BP_HomingSphereLauncher_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SkeletalMeshComponent'BP_RocketLauncher_C:SkeletalMesh_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.40"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "AnimationMode": "EAnimationMode::AnimationCustomMode",
+      "bDisablePostProcessBlueprint": true,
+      "bPauseAnims": true,
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_Weapon_PalSphereLancher'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/PalSphereLancher/SK_Weapon_PalSphereLancher.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_Weapon_PalSphereLancher'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/PalSphereLancher/SK_Weapon_PalSphereLancher.0"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false,
+        "bAllowTickOnDedicatedServer": false
+      }
+    }
+  }
+]

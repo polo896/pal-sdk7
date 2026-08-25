@@ -1,0 +1,44 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_Deer_Ground_DirtyHorn_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_Deer_ActionPushupHorn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Deer/BP_Action_Unique_Deer_ActionPushupHorn.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_Deer_ActionPushupHorn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Deer/BP_Action_Unique_Deer_ActionPushupHorn.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_Deer_Ground_DirtyHorn_C'Default__BP_Action_Unique_Deer_Ground_DirtyHorn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Deer/BP_Action_Unique_Deer_Ground_DirtyHorn.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_Deer_Ground_DirtyHorn_C",
+    "Name": "Default__BP_Action_Unique_Deer_Ground_DirtyHorn_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/Deer/BP_Action_Unique_Deer_Ground_DirtyHorn.BP_Action_Unique_Deer_Ground_DirtyHorn_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_Deer_ActionPushupHorn_C'Default__BP_Action_Unique_Deer_ActionPushupHorn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Deer/BP_Action_Unique_Deer_ActionPushupHorn.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FlagName_0": "DirtyHorn",
+      "WazaID": "EPalWazaID::Unique_Deer_Ground_DirtyHorn"
+    }
+  }
+]

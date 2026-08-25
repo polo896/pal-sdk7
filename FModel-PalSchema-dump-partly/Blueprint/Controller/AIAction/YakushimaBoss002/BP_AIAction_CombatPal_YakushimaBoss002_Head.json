@@ -1,0 +1,376 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AIAction_CombatPal_YakushimaBoss002_Head_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_CombatPal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Combat/BP_AIAction_CombatPal.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_AIAction_CombatPal_YakushimaBoss002_Head_C:ExecuteUbergraph_BP_AIAction_CombatPal_YakushimaBoss002_Head'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss002_Head.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_CombatPal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Combat/BP_AIAction_CombatPal.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_AIAction_CombatPal_YakushimaBoss002_Head_C:CheckWazaMaxRange'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss002_Head.4"
+      },
+      {
+        "ObjectName": "Function'BP_AIAction_CombatPal_YakushimaBoss002_Head_C:GetCombatModuleRaid'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss002_Head.6"
+      },
+      {
+        "ObjectName": "Function'BP_AIAction_CombatPal_YakushimaBoss002_Head_C:ChangeNextAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss002_Head.3"
+      },
+      {
+        "ObjectName": "Function'BP_AIAction_CombatPal_YakushimaBoss002_Head_C:ActionStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss002_Head.2"
+      },
+      {
+        "ObjectName": "Function'BP_AIAction_CombatPal_YakushimaBoss002_Head_C:ExecuteUbergraph_BP_AIAction_CombatPal_YakushimaBoss002_Head'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss002_Head.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Camp ID",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Guid'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_AIAction_CombatPal_YakushimaBoss002_Head": {
+        "ObjectName": "Function'BP_AIAction_CombatPal_YakushimaBoss002_Head_C:ExecuteUbergraph_BP_AIAction_CombatPal_YakushimaBoss002_Head'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss002_Head.5"
+      },
+      "ActionStart": {
+        "ObjectName": "Function'BP_AIAction_CombatPal_YakushimaBoss002_Head_C:ActionStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss002_Head.2"
+      },
+      "ChangeNextAction": {
+        "ObjectName": "Function'BP_AIAction_CombatPal_YakushimaBoss002_Head_C:ChangeNextAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss002_Head.3"
+      },
+      "GetCombatModuleRaid": {
+        "ObjectName": "Function'BP_AIAction_CombatPal_YakushimaBoss002_Head_C:GetCombatModuleRaid'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss002_Head.6"
+      },
+      "CheckWazaMaxRange": {
+        "ObjectName": "Function'BP_AIAction_CombatPal_YakushimaBoss002_Head_C:CheckWazaMaxRange'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss002_Head.4"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AIAction_CombatPal_YakushimaBoss002_Head_C'Default__BP_AIAction_CombatPal_YakushimaBoss002_Head_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss002_Head.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AIAction_CombatPal_YakushimaBoss002_Head_C",
+    "Name": "Default__BP_AIAction_CombatPal_YakushimaBoss002_Head_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss002_Head.BP_AIAction_CombatPal_YakushimaBoss002_Head_C'",
+    "Template": {
+      "ObjectName": "BP_AIAction_CombatPal_C'Default__BP_AIAction_CombatPal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Combat/BP_AIAction_CombatPal.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Camp ID": "00000000-00000000-00000000-00000000",
+      "DisableTurn": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ActionStart",
+    "Outer": "BP_AIAction_CombatPal_YakushimaBoss002_Head_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AIAction_CombatPal_C:ActionStart'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Combat/BP_AIAction_CombatPal.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AIAction_CombatPal_C:ActionStart'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Combat/BP_AIAction_CombatPal.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ControlledPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ChangeNextAction",
+    "Outer": "BP_AIAction_CombatPal_YakushimaBoss002_Head_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AIAction_CombatPal_C:ChangeNextAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Combat/BP_AIAction_CombatPal.11"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AIAction_CombatPal_C:ChangeNextAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Combat/BP_AIAction_CombatPal.11"
+    },
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "CheckWazaMaxRange",
+    "Outer": "BP_AIAction_CombatPal_YakushimaBoss002_Head_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AIAction_CombatPal_C:CheckWazaMaxRange'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Combat/BP_AIAction_CombatPal.13"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AIAction_CombatPal_C:CheckWazaMaxRange'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Combat/BP_AIAction_CombatPal.13"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "InRange",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "RayPassed",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_CheckWazaMaxRange_InRange",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_CheckWazaMaxRange_RayPassed",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetIndividualParameter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsInRaidArea_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_AIAction_CombatPal_YakushimaBoss002_Head",
+    "Outer": "BP_AIAction_CombatPal_YakushimaBoss002_Head_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetCombatModuleRaid_ModuleRaidBoss",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalAICombatModule_RaidBoss'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_ControlledPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Controller'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Monster_AIController_Raid_Boss",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_MonsterAIController_RaidBoss_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_RaidBoss.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetTargetCampID_CampID",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Guid'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetCombatModuleRaid",
+    "Outer": "BP_AIAction_CombatPal_YakushimaBoss002_Head_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ModuleRaidBoss",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalAICombatModule_RaidBoss'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_AICombat_Module_Raid_Boss",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalAICombatModule_RaidBoss'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

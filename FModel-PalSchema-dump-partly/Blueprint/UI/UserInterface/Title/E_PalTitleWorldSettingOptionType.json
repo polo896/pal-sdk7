@@ -1,0 +1,86 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_PalTitleWorldSettingOptionType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "4166FC6C46C65114E3010A8D75AF83FA",
+            "SourceString": "ValueRange",
+            "LocalizedString": "ValueRange"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "8B90005A45B67216FD72E0B59CEC196A",
+            "SourceString": "NameList",
+            "LocalizedString": "NameList"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "6736046B4EC481377DD892AA900F246B",
+            "SourceString": "InputText",
+            "LocalizedString": "InputText"
+          }
+        },
+        {
+          "Key": "NewEnumerator5",
+          "Value": {
+            "Namespace": "",
+            "Key": "9573C9C640C2C4F5EA371091ADB55E2A",
+            "SourceString": "Invalid",
+            "LocalizedString": "Invalid"
+          }
+        },
+        {
+          "Key": "NewEnumerator6",
+          "Value": {
+            "Namespace": "",
+            "Key": "0C89368B46F8E4D5E6965A901D74EA4B",
+            "SourceString": "Button",
+            "LocalizedString": "Button"
+          }
+        },
+        {
+          "Key": "NewEnumerator7",
+          "Value": {
+            "Namespace": "",
+            "Key": "1AD416B94E65B8C9CDEB3AB773597861",
+            "SourceString": "OnOff",
+            "LocalizedString": "OnOff"
+          }
+        },
+        {
+          "Key": "NewEnumerator8",
+          "Value": {
+            "Namespace": "",
+            "Key": "D3F5C1724B7E38D5AC1806ADA95B2B59",
+            "SourceString": "CheckBox",
+            "LocalizedString": "CheckBox"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_PalTitleWorldSettingOptionType::NewEnumerator8": 0,
+      "E_PalTitleWorldSettingOptionType::NewEnumerator0": 1,
+      "E_PalTitleWorldSettingOptionType::NewEnumerator2": 2,
+      "E_PalTitleWorldSettingOptionType::NewEnumerator3": 3,
+      "E_PalTitleWorldSettingOptionType::NewEnumerator7": 4,
+      "E_PalTitleWorldSettingOptionType::NewEnumerator6": 5,
+      "E_PalTitleWorldSettingOptionType::NewEnumerator5": 6,
+      "E_PalTitleWorldSettingOptionType::E_MAX": 7
+    },
+    "CppForm": "Namespaced"
+  }
+]

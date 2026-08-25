@@ -1,0 +1,130 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueAction_LegendDeer_BarrierRelease_Water_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueAction_LegendDeer_BarrierRelease_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_BarrierRelease.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueAction_LegendDeer_BarrierRelease_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_BarrierRelease.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_BarrierRelease_Water_C:GetReleaseClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_BarrierRelease_Water.3"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_BarrierRelease_Water_C:GetBarrierClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_BarrierRelease_Water.2"
+      }
+    ],
+    "FuncMap": {
+      "GetBarrierClass": {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_BarrierRelease_Water_C:GetBarrierClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_BarrierRelease_Water.2"
+      },
+      "GetReleaseClass": {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_BarrierRelease_Water_C:GetReleaseClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_BarrierRelease_Water.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueAction_LegendDeer_BarrierRelease_Water_C'Default__BP_UniqueAction_LegendDeer_BarrierRelease_Water_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_BarrierRelease_Water.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueAction_LegendDeer_BarrierRelease_Water_C",
+    "Name": "Default__BP_UniqueAction_LegendDeer_BarrierRelease_Water_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_BarrierRelease_Water.BP_UniqueAction_LegendDeer_BarrierRelease_Water_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueAction_LegendDeer_BarrierRelease_C'Default__BP_UniqueAction_LegendDeer_BarrierRelease_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_BarrierRelease.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Weak Element Type": "EPalElementType::Electricity",
+      "WazaID": "EPalWazaID::Unique_LegendDeer_BarrierRelease_Water"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetBarrierClass",
+    "Outer": "BP_UniqueAction_LegendDeer_BarrierRelease_Water_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_UniqueAction_LegendDeer_BarrierRelease_C:GetBarrierClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_BarrierRelease.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_UniqueAction_LegendDeer_BarrierRelease_C:GetBarrierClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_BarrierRelease.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "Class",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Barrier_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Barrier.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetReleaseClass",
+    "Outer": "BP_UniqueAction_LegendDeer_BarrierRelease_Water_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_UniqueAction_LegendDeer_BarrierRelease_C:GetReleaseClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_BarrierRelease.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_UniqueAction_LegendDeer_BarrierRelease_C:GetReleaseClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_BarrierRelease.5"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "Class",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

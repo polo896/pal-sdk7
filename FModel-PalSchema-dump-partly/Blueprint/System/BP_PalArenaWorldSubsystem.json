@@ -1,0 +1,212 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalArenaWorldSubsystem_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalArenaWorldSubsystem'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalArenaWorldSubsystem_C'Default__BP_PalArenaWorldSubsystem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalArenaWorldSubsystem.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalArenaWorldSubsystem_C",
+    "Name": "Default__BP_PalArenaWorldSubsystem_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalArenaWorldSubsystem.BP_PalArenaWorldSubsystem_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DataLayers": [
+        {
+          "ObjectName": "DataLayerAsset'Arena_1'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_1.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_2'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_2.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_3'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_3.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_4'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_4.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_5'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_5.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_6'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_6.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_7'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_7.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_8'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_8.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_9'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_9.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_10'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_10.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_11'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_11.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_12'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_12.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_13'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_13.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_14'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_14.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_15'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_15.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_16'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_16.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_17'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_17.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_18'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_18.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_19'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_19.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_20'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_20.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_21'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_21.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_22'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_22.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_23'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_23.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_24'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_24.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_25'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_25.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_26'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_26.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_27'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_27.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_28'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_28.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_29'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_29.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_30'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_30.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_31'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_31.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'Arena_32'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/Arena/Arena_32.0"
+        }
+      ],
+      "ArenaSequencerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_ArenaSequencer_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Arena/Sequence/BP_ArenaSequencer.0"
+      },
+      "ArenaSpectateSequencerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_ArenaSpectateSequencer_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Arena/Sequence/BP_ArenaSpectateSequencer.0"
+      },
+      "InBattleTime": 120,
+      "DisablePassiveTypes": [
+        "EPalPassiveSkillEffectType::NonKilling"
+      ],
+      "DisablePassiveTypesToSubPals": [
+        "EPalPassiveSkillEffectType::ElementFire",
+        "EPalPassiveSkillEffectType::ElementWater",
+        "EPalPassiveSkillEffectType::ElementLeaf",
+        "EPalPassiveSkillEffectType::ElementElectricity",
+        "EPalPassiveSkillEffectType::ElementIce",
+        "EPalPassiveSkillEffectType::ElementEarth",
+        "EPalPassiveSkillEffectType::ElementDark",
+        "EPalPassiveSkillEffectType::ElementDragon",
+        "EPalPassiveSkillEffectType::ReloadSpeedUp"
+      ],
+      "SoloNPCPresetTable": {
+        "ObjectName": "DataTable'DT_ArenaSoloNPCTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Arena/DT_ArenaSoloNPCTable.0"
+      },
+      "SoloRewadTable": {
+        "ObjectName": "DataTable'DT_ArenaSoloRewardTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Arena/DT_ArenaSoloRewardTable.0"
+      },
+      "SoloNPCSpawnerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_Arena_SoloNPCSpawner_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Arena/BP_Arena_SoloNPCSpawner.0"
+      },
+      "ArenaWorldRankingInfoClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_ArenaWorldRankingInfo_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Arena/BP_ArenaWorldRankingInfo.0"
+      },
+      "InitialHateHigh": 100.0,
+      "InitialHateLow": 50.0,
+      "bShouldCreate": true,
+      "PrerequisiteWorldSubsystemList": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_StageWorldSubsystem_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_StageWorldSubsystem.0"
+        }
+      ]
+    }
+  }
+]

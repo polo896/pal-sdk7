@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Move_WorldTreeDragon",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 6.133333,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_WorldTreeDragon_Idle'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/AS_WorldTreeDragon_Idle.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_WorldTreeDragon_Walk'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/AS_WorldTreeDragon_Walk.0"
+          },
+          "SampleValue": {
+            "X": 400.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_WorldTreeDragon_Walk'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/WorldTreeDragon/AS_WorldTreeDragon_Walk.0"
+          },
+          "SampleValue": {
+            "X": 600.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.2
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.6666667
+          },
+          {
+            "SampleIndices": 1,
+            "SampleIndices[1]": 2,
+            "Vertices": 0.6666667,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 600.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_WorldTreeDragon_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/WorldTreeDragon/SK_WorldTreeDragon_Skeleton.9"
+      }
+    },
+    "SkeletonGuid": "550D05D0-4F365F21-BD6199AE-DCE21757"
+  }
+]

@@ -1,0 +1,792 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Sphere",
+    "Class": "UScriptClass'BodySetup'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 99.77929,
+                "Y": 41.345737,
+                "Z": -41.470715
+              },
+              {
+                "X": 99.77929,
+                "Y": -41.345722,
+                "Z": -41.47071
+              },
+              {
+                "X": 99.77929,
+                "Y": -41.34572,
+                "Z": 41.470707
+              },
+              {
+                "X": 99.77929,
+                "Y": 41.34572,
+                "Z": 41.47071
+              },
+              {
+                "X": -99.77925,
+                "Y": -41.345757,
+                "Z": -41.470745
+              },
+              {
+                "X": -99.77925,
+                "Y": 41.345764,
+                "Z": -41.470745
+              },
+              {
+                "X": -99.77925,
+                "Y": 41.345764,
+                "Z": 41.470753
+              },
+              {
+                "X": -99.77925,
+                "Y": -41.345734,
+                "Z": 41.47075
+              },
+              {
+                "X": -41.345642,
+                "Y": 99.77935,
+                "Z": -41.470646
+              },
+              {
+                "X": 41.34568,
+                "Y": 99.77935,
+                "Z": -41.470646
+              },
+              {
+                "X": 41.34567,
+                "Y": 99.77935,
+                "Z": 41.470642
+              },
+              {
+                "X": -41.345654,
+                "Y": 99.77935,
+                "Z": 41.470646
+              },
+              {
+                "X": 41.345783,
+                "Y": -99.77923,
+                "Z": -41.47074
+              },
+              {
+                "X": -41.34575,
+                "Y": -99.77923,
+                "Z": -41.470734
+              },
+              {
+                "X": -41.34575,
+                "Y": -99.77923,
+                "Z": 41.470768
+              },
+              {
+                "X": 41.345787,
+                "Y": -99.77923,
+                "Z": 41.470757
+              },
+              {
+                "X": -41.18276,
+                "Y": 41.18276,
+                "Z": 100.067245
+              },
+              {
+                "X": 41.182762,
+                "Y": 41.182766,
+                "Z": 100.067245
+              },
+              {
+                "X": 41.182766,
+                "Y": -41.182755,
+                "Z": 100.067245
+              },
+              {
+                "X": -41.18275,
+                "Y": -41.182755,
+                "Z": 100.067245
+              },
+              {
+                "X": -41.18275,
+                "Y": -41.182724,
+                "Z": -100.067245
+              },
+              {
+                "X": 41.182766,
+                "Y": -41.182728,
+                "Z": -100.067245
+              },
+              {
+                "X": 41.182766,
+                "Y": 41.182766,
+                "Z": -100.067245
+              },
+              {
+                "X": -41.182747,
+                "Y": 41.18277,
+                "Z": -100.067245
+              },
+              {
+                "X": 70.56253,
+                "Y": 70.562515,
+                "Z": 70.687485
+              },
+              {
+                "X": -70.5625,
+                "Y": 70.5625,
+                "Z": 70.6875
+              },
+              {
+                "X": 70.56251,
+                "Y": -70.562485,
+                "Z": -70.6875
+              },
+              {
+                "X": -70.562515,
+                "Y": -70.56247,
+                "Z": -70.68747
+              },
+              {
+                "X": -70.562485,
+                "Y": 70.5625,
+                "Z": -70.6875
+              },
+              {
+                "X": 70.56251,
+                "Y": 70.56251,
+                "Z": -70.687485
+              },
+              {
+                "X": 70.56254,
+                "Y": -70.56248,
+                "Z": 70.68746
+              },
+              {
+                "X": -70.5625,
+                "Y": -70.562485,
+                "Z": 70.6875
+              }
+            ],
+            "IndexData": [
+              14,
+              13,
+              15,
+              21,
+              26,
+              20,
+              13,
+              20,
+              26,
+              27,
+              13,
+              4,
+              12,
+              1,
+              15,
+              18,
+              30,
+              2,
+              13,
+              26,
+              12,
+              18,
+              24,
+              17,
+              26,
+              1,
+              12,
+              26,
+              0,
+              1,
+              22,
+              29,
+              0,
+              31,
+              7,
+              4,
+              3,
+              2,
+              0,
+              2,
+              1,
+              0,
+              30,
+              1,
+              2,
+              30,
+              15,
+              1,
+              24,
+              3,
+              0,
+              10,
+              17,
+              24,
+              9,
+              10,
+              24,
+              18,
+              15,
+              30,
+              24,
+              2,
+              3,
+              18,
+              2,
+              24,
+              5,
+              4,
+              7,
+              6,
+              5,
+              7,
+              14,
+              4,
+              13,
+              13,
+              12,
+              15,
+              27,
+              20,
+              13,
+              27,
+              4,
+              20,
+              22,
+              23,
+              9,
+              31,
+              16,
+              6,
+              5,
+              20,
+              4,
+              11,
+              5,
+              6,
+              25,
+              6,
+              16,
+              25,
+              16,
+              17,
+              11,
+              8,
+              5,
+              11,
+              10,
+              8,
+              22,
+              0,
+              26,
+              22,
+              9,
+              29,
+              23,
+              8,
+              9,
+              11,
+              6,
+              25,
+              9,
+              0,
+              29,
+              9,
+              24,
+              0,
+              23,
+              28,
+              8,
+              8,
+              28,
+              5,
+              23,
+              21,
+              20,
+              8,
+              10,
+              9,
+              23,
+              5,
+              28,
+              23,
+              20,
+              5,
+              22,
+              21,
+              23,
+              22,
+              26,
+              21,
+              19,
+              14,
+              18,
+              18,
+              14,
+              15,
+              19,
+              18,
+              16,
+              18,
+              17,
+              16,
+              31,
+              19,
+              16,
+              31,
+              6,
+              7,
+              31,
+              14,
+              19,
+              31,
+              4,
+              14,
+              11,
+              17,
+              10,
+              11,
+              25,
+              17
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -99.77925,
+                "Y": -99.77923,
+                "Z": -100.067245
+              },
+              "Max": {
+                "X": 99.77929,
+                "Y": 99.77935,
+                "Z": 100.067245
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "ClimbRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "16DB992749852996E1ED18A226CD4EAF",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 1465308,
+        "SizeOnDisk": 1465308,
+        "OffsetInFile": "0x2036B4"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_Sphere",
+    "Class": "UScriptClass'NavCollision'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 1513,
+        "SizeOnDisk": 1513,
+        "OffsetInFile": "0x3692D2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Sphere",
+    "Class": "UScriptClass'StaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material'WorldGridMaterial'",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "M_Material_001",
+          "ImportedMaterialSlotName": "M_Material_001",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 370.02585,
+            "LocalUVDensities[1]": 376.0345,
+            "LocalUVDensities[2]": 0.0,
+            "LocalUVDensities[3]": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 376.0345,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 2.2888184E-05,
+          "Y": 6.1035156E-05,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 99.679276,
+          "Y": 99.67929,
+          "Z": 99.96725
+        },
+        "SphereRadius": 99.96724700927734
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_Sphere:BodySetup_0'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Gimmick/Debug/SM_Sphere.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_Sphere:NavCollision_0'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Gimmick/Debug/SM_Sphere.1"
+    },
+    "LightingGuid": "53A6A8B2-4AE0891C-9DFFAC8C-51495701",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 16128,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 8750,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 8751
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 8751,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          },
+          "CardRepresentationData": {
+            "Bounds": {
+              "Min": {
+                "X": -100.679245,
+                "Y": -100.67923,
+                "Z": -100.96725
+              },
+              "Max": {
+                "X": 100.679306,
+                "Y": 100.67935,
+                "Z": 100.96725
+              },
+              "IsValid": 1
+            },
+            "MaxLodLevel": 0,
+            "bMostlyTwoSided": false,
+            "CardBuildData": [
+              {
+                "OBB": {
+                  "AxisX": {
+                    "X": 0.0,
+                    "Y": 1.0,
+                    "Z": 0.0
+                  },
+                  "AxisY": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 1.0
+                  },
+                  "AxisZ": {
+                    "X": -1.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "Origin": {
+                    "X": -59.99997,
+                    "Y": 6.1035156E-05,
+                    "Z": 0.0
+                  },
+                  "Extent": {
+                    "X": 100.0,
+                    "Y": 100.0,
+                    "Z": 45.0
+                  }
+                },
+                "LODLevel": 0,
+                "AxisAlignedDirectionIndex": 0
+              },
+              {
+                "OBB": {
+                  "AxisX": {
+                    "X": 0.0,
+                    "Y": 1.0,
+                    "Z": 0.0
+                  },
+                  "AxisY": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 1.0
+                  },
+                  "AxisZ": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "Origin": {
+                    "X": 60.00003,
+                    "Y": 6.1035156E-05,
+                    "Z": 0.0
+                  },
+                  "Extent": {
+                    "X": 100.0,
+                    "Y": 100.0,
+                    "Z": 45.0
+                  }
+                },
+                "LODLevel": 0,
+                "AxisAlignedDirectionIndex": 1
+              },
+              {
+                "OBB": {
+                  "AxisX": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "AxisY": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 1.0
+                  },
+                  "AxisZ": {
+                    "X": 0.0,
+                    "Y": -1.0,
+                    "Z": 0.0
+                  },
+                  "Origin": {
+                    "X": 3.0517578E-05,
+                    "Y": -59.99994,
+                    "Z": 0.0
+                  },
+                  "Extent": {
+                    "X": 100.0,
+                    "Y": 100.0,
+                    "Z": 45.0
+                  }
+                },
+                "LODLevel": 0,
+                "AxisAlignedDirectionIndex": 2
+              },
+              {
+                "OBB": {
+                  "AxisX": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "AxisY": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 1.0
+                  },
+                  "AxisZ": {
+                    "X": 0.0,
+                    "Y": 1.0,
+                    "Z": 0.0
+                  },
+                  "Origin": {
+                    "X": 3.0517578E-05,
+                    "Y": 60.00006,
+                    "Z": 0.0
+                  },
+                  "Extent": {
+                    "X": 100.0,
+                    "Y": 100.0,
+                    "Z": 45.0
+                  }
+                },
+                "LODLevel": 0,
+                "AxisAlignedDirectionIndex": 3
+              },
+              {
+                "OBB": {
+                  "AxisX": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "AxisY": {
+                    "X": 0.0,
+                    "Y": 1.0,
+                    "Z": 0.0
+                  },
+                  "AxisZ": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": -1.0
+                  },
+                  "Origin": {
+                    "X": 3.0517578E-05,
+                    "Y": 6.1035156E-05,
+                    "Z": -60.0
+                  },
+                  "Extent": {
+                    "X": 100.0,
+                    "Y": 100.0,
+                    "Z": 45.0
+                  }
+                },
+                "LODLevel": 0,
+                "AxisAlignedDirectionIndex": 4
+              },
+              {
+                "OBB": {
+                  "AxisX": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "AxisY": {
+                    "X": 0.0,
+                    "Y": 1.0,
+                    "Z": 0.0
+                  },
+                  "AxisZ": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 1.0
+                  },
+                  "Origin": {
+                    "X": 3.0517578E-05,
+                    "Y": 6.1035156E-05,
+                    "Z": 60.0
+                  },
+                  "Extent": {
+                    "X": 100.0,
+                    "Y": 100.0,
+                    "Z": 45.0
+                  }
+                },
+                "LODLevel": 0,
+                "AxisAlignedDirectionIndex": 5
+              }
+            ]
+          }
+        }
+      ],
+      "NaniteResources": {
+        "StreamablePages": {
+          "BulkDataFlags": "BULKDATA_None",
+          "ElementCount": 0,
+          "SizeOnDisk": 0,
+          "OffsetInFile": "0x403F74"
+        },
+        "AssemblyTransforms": [],
+        "AssemblyBoneAttachmentData": null,
+        "VoxelMaterialsMask": 0,
+        "MeshBounds": null,
+        "PageRangeLookup": null,
+        "NumRootPages": 0,
+        "PositionPrecision": 0,
+        "NormalPrecision": 0,
+        "NumInputTriangles": 0,
+        "NumInputVertices": 0,
+        "NumInputMeshes": 0,
+        "NumInputTexCoords": 0,
+        "NumClusters": 0,
+        "ResourceFlags": "NONE"
+      },
+      "Bounds": {
+        "Origin": {
+          "X": 2.670288E-05,
+          "Y": 6.1035156E-05,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 99.679276,
+          "Y": 99.67929,
+          "Z": 99.96725
+        },
+        "SphereRadius": 99.96725
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

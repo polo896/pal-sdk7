@@ -1,0 +1,58 @@
+[
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_MonochromeQueen_BalletJump_Move",
+    "Class": "UScriptClass'CurveFloat'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 0.0,
+            "ArriveTangent": 3.671702,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 3.671702,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.3,
+            "Value": 1.0,
+            "ArriveTangent": 0.59656,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.59656,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.65,
+            "Value": 1.0,
+            "ArriveTangent": -0.6607642,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -0.6607642,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 1.06,
+            "Value": 2.3705237E-08,
+            "ArriveTangent": -0.70222026,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -0.70222026,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  }
+]

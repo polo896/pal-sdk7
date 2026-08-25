@@ -1,0 +1,817 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SquadNPCSpawner_ForCampBase_Hunter_SeaBase_02_02_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/BP_SquadNPCSpawner_ForCampBase_Hunter_SeaBase_02_02.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.27"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.13"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SquadNPCSpawner_ForCampBase_Hunter_SeaBase_02_02_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/BP_SquadNPCSpawner_ForCampBase_Hunter_SeaBase_02_02.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCSpawnPointComponent2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCPathWalkPointComponent_8",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCPathWalkPointComponent_7",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCPathWalkPointComponent_6",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCPathWalkPointComponent_4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCPathWalkPointComponent_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCPathWalkPointComponent_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCPathWalkPointComponent_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCPathWalkPointComponent_5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCSpawnPointComponent1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCSpawnPointComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C'Default__BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.12"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_NPCPathWalkPointComponent_1_C",
+    "Name": "BP_NPCPathWalkPointComponent_1_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.BP_NPCPathWalkPointComponent_1_C'",
+    "Template": {
+      "ObjectName": "BP_NPCPathWalkPointComponent_1_C'Default__BP_NPCPathWalkPointComponent_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 2580.0,
+        "Y": 29.999912,
+        "Z": 50.0
+      },
+      "RelativeRotation": {
+        "Pitch": -0.0,
+        "Yaw": -2.7886917E-06,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCPathWalkPointComponent_1_C",
+    "Name": "BP_NPCPathWalkPointComponent_2_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.BP_NPCPathWalkPointComponent_1_C'",
+    "Template": {
+      "ObjectName": "BP_NPCPathWalkPointComponent_1_C'Default__BP_NPCPathWalkPointComponent_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WaitTime": 5.0,
+      "RelativeLocation": {
+        "X": 2590.0,
+        "Y": 789.99994,
+        "Z": 50.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCPathWalkPointComponent_1_C",
+    "Name": "BP_NPCPathWalkPointComponent_3_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.BP_NPCPathWalkPointComponent_1_C'",
+    "Template": {
+      "ObjectName": "BP_NPCPathWalkPointComponent_1_C'Default__BP_NPCPathWalkPointComponent_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 2585.0,
+        "Y": 29.999939,
+        "Z": 50.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": -0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCPathWalkPointComponent_1_C",
+    "Name": "BP_NPCPathWalkPointComponent_4_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.BP_NPCPathWalkPointComponent_1_C'",
+    "Template": {
+      "ObjectName": "BP_NPCPathWalkPointComponent_1_C'Default__BP_NPCPathWalkPointComponent_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WaitTime": 5.0,
+      "RelativeLocation": {
+        "X": 49.999985,
+        "Y": -2.6369147E-05,
+        "Z": 50.0
+      },
+      "RelativeRotation": {
+        "Pitch": -0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCPathWalkPointComponent_1_C",
+    "Name": "BP_NPCPathWalkPointComponent_5_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.BP_NPCPathWalkPointComponent_1_C'",
+    "Template": {
+      "ObjectName": "BP_NPCPathWalkPointComponent_1_C'Default__BP_NPCPathWalkPointComponent_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WaitTime": 5.0,
+      "RelativeLocation": {
+        "X": 930.00006,
+        "Y": 9.999976,
+        "Z": -275.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -180.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCPathWalkPointComponent_1_C",
+    "Name": "BP_NPCPathWalkPointComponent_6_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.BP_NPCPathWalkPointComponent_1_C'",
+    "Template": {
+      "ObjectName": "BP_NPCPathWalkPointComponent_1_C'Default__BP_NPCPathWalkPointComponent_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 930.00006,
+        "Y": -385.00003,
+        "Z": -275.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -270.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCPathWalkPointComponent_1_C",
+    "Name": "BP_NPCPathWalkPointComponent_7_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.BP_NPCPathWalkPointComponent_1_C'",
+    "Template": {
+      "ObjectName": "BP_NPCPathWalkPointComponent_1_C'Default__BP_NPCPathWalkPointComponent_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 40.000065,
+        "Y": -385.00003,
+        "Z": 55.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -360.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCPathWalkPointComponent_1_C",
+    "Name": "BP_NPCPathWalkPointComponent_8_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.BP_NPCPathWalkPointComponent_1_C'",
+    "Template": {
+      "ObjectName": "BP_NPCPathWalkPointComponent_1_C'Default__BP_NPCPathWalkPointComponent_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WaitTime": 5.0,
+      "RelativeLocation": {
+        "X": 40.000065,
+        "Y": -5.000024,
+        "Z": 55.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -450.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCSpawnPointComponent_C",
+    "Name": "BP_NPCSpawnPointComponent1_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C'",
+    "Template": {
+      "ObjectName": "BP_NPCSpawnPointComponent_C'Default__BP_NPCSpawnPointComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NPCName": {
+        "Key": "Hunter_RocketLauncher"
+      },
+      "OverrideDefaultAction": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Relax_PathWalk_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Relax/BP_AIAction_NPC_Relax_PathWalk.0"
+      },
+      "RelativeLocation": {
+        "X": 2400.0,
+        "Y": -1184.9999,
+        "Z": 480.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -450.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCSpawnPointComponent_C",
+    "Name": "BP_NPCSpawnPointComponent2_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C'",
+    "Template": {
+      "ObjectName": "BP_NPCSpawnPointComponent_C'Default__BP_NPCSpawnPointComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NPCName": {
+        "Key": "Hunter_Rifle"
+      },
+      "OverrideDefaultAction": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Relax_Fishing_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Relax/BP_AIAction_NPC_Relax_Fishing.0"
+      },
+      "OtomoName": {
+        "Key": "FlyingManta_Thunder"
+      },
+      "RelativeLocation": {
+        "X": 2840.0002,
+        "Y": -2539.9998,
+        "Z": 160.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -450.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCSpawnPointComponent_C",
+    "Name": "BP_NPCSpawnPointComponent_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C'",
+    "Template": {
+      "ObjectName": "BP_NPCSpawnPointComponent_C'Default__BP_NPCSpawnPointComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NPCName": {
+        "Key": "Hunter_Rifle"
+      },
+      "OverrideDefaultAction": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Relax_PathWalk_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Relax/BP_AIAction_NPC_Relax_PathWalk.0"
+      },
+      "RelativeLocation": {
+        "X": 1030.0001,
+        "Y": -2405.0,
+        "Z": 155.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -360.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Name": "Default__BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C'",
+    "Template": {
+      "ObjectName": "BP_SquadNPCSpawner_ForCampBase_Hunter_SeaBase_02_02_C'Default__BP_SquadNPCSpawner_ForCampBase_Hunter_SeaBase_02_02_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/BP_SquadNPCSpawner_ForCampBase_Hunter_SeaBase_02_02.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IgnoreRayAdjustFloor": true,
+      "HumanName": {
+        "Key": "Hunter_Rifle"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.14"
+      },
+      "VariableGuid": "2684183E-4FFE16E8-57D352BF-0A779A1F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCPathWalkPointComponent_1_C'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:BP_NPCPathWalkPointComponent_4_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.4"
+      },
+      "VariableGuid": "0C458FFF-4D23088F-DE473D82-87AEEE90",
+      "InternalVariableName": "BP_NPCPathWalkPointComponent_4"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_11",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCSpawnPointComponent_C'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:BP_NPCSpawnPointComponent1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.9"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_MonoNPCSpawner_C",
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_13'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.19"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_14'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.20"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_15'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.21"
+        }
+      ],
+      "VariableGuid": "F8F85444-433196A5-76ECF1B3-D5247A05",
+      "InternalVariableName": "BP_NPCSpawnPointComponent1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_12",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCPathWalkPointComponent_1_C'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:BP_NPCPathWalkPointComponent_5_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.5"
+      },
+      "VariableGuid": "8F0A643A-4899CE16-994DEC94-0E89301D",
+      "InternalVariableName": "BP_NPCPathWalkPointComponent_5"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_13",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCPathWalkPointComponent_1_C'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:BP_NPCPathWalkPointComponent_6_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.6"
+      },
+      "VariableGuid": "06BFB10B-493E23C0-385B86AE-D9D81BB0",
+      "InternalVariableName": "BP_NPCPathWalkPointComponent_6"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_14",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCPathWalkPointComponent_1_C'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:BP_NPCPathWalkPointComponent_7_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.7"
+      },
+      "VariableGuid": "5AE8B1CD-487DF000-8ED6AA92-486B05A2",
+      "InternalVariableName": "BP_NPCPathWalkPointComponent_7"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_15",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCPathWalkPointComponent_1_C'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:BP_NPCPathWalkPointComponent_8_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.8"
+      },
+      "VariableGuid": "68E3EBC3-4BC2BBF9-C55384AE-3964B7F8",
+      "InternalVariableName": "BP_NPCPathWalkPointComponent_8"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_16",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCSpawnPointComponent_C'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:BP_NPCSpawnPointComponent2_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.10"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_MonoNPCSpawner_C",
+      "VariableGuid": "4102F71D-47E34EE2-E5CDF19A-9B3E7DA9",
+      "InternalVariableName": "BP_NPCSpawnPointComponent2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCSpawnPointComponent_C'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:BP_NPCSpawnPointComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.11"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_MonoNPCSpawner_C",
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.26"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_21'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.25"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_20'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.24"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.16"
+        }
+      ],
+      "VariableGuid": "1016EB66-40225BD8-94706586-19720801",
+      "InternalVariableName": "BP_NPCSpawnPointComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_20",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCPathWalkPointComponent_1_C'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:BP_NPCPathWalkPointComponent_1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.1"
+      },
+      "VariableGuid": "776D45B7-4B52C516-B9682791-AB624ACC",
+      "InternalVariableName": "BP_NPCPathWalkPointComponent_1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_21",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCPathWalkPointComponent_1_C'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:BP_NPCPathWalkPointComponent_2_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.2"
+      },
+      "VariableGuid": "E0283C7C-42564685-9E62A791-4B0CF375",
+      "InternalVariableName": "BP_NPCPathWalkPointComponent_2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCPathWalkPointComponent_1_C'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:BP_NPCPathWalkPointComponent_3_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.3"
+      },
+      "VariableGuid": "B5813C24-40488DA4-274E6091-BF52ABC3",
+      "InternalVariableName": "BP_NPCPathWalkPointComponent_3"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.23"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_11'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_16'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.22"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.23"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_11'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.26"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_21'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.25"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_20'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.24"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.16"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_13'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.19"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_14'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.20"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_15'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.21"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_16'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.22"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Hunter_SeaBase_02/02/BP_SquadNPCSpawner_ForCamp_Hunter_SeaBase_02_02_SouthCorridor.15"
+      }
+    }
+  }
+]

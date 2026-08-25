@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_PalUIGuildSettingCategory",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "03D339294151E500CDDFB1B144E2177E",
+            "SourceString": "Invalid",
+            "LocalizedString": "Invalid"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "7752F2A14300637DEF72B6BB650A7D9E",
+            "SourceString": "Role",
+            "LocalizedString": "Role"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "38DCE41B4B9C9F8AAC81538F7134999E",
+            "SourceString": "Notice",
+            "LocalizedString": "Notice"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_PalUIGuildSettingCategory::NewEnumerator0": 0,
+      "E_PalUIGuildSettingCategory::NewEnumerator1": 1,
+      "E_PalUIGuildSettingCategory::NewEnumerator2": 2,
+      "E_PalUIGuildSettingCategory::E_MAX": 3
+    },
+    "CppForm": "Namespaced"
+  }
+]

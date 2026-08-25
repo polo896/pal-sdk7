@@ -1,0 +1,636 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalQuestManager_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalQuestManager'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalQuestManager_C'Default__BP_PalQuestManager_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalQuestManager.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalQuestManager_C",
+    "Name": "Default__BP_PalQuestManager_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalQuestManager.BP_PalQuestManager_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestDataSet": {
+        "ObjectName": "DataTable'DT_PalQuestData'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Quest/DT_PalQuestData.0"
+      },
+      "InitialOrderQuestIdArray": [
+        "Main_UnlockFastTravel",
+        "Hidden_ChangeWeaponBulletTutorialTrigger",
+        "Hidden_WhaleWhistleTrigger"
+      ],
+      "ForceTrackingQuestMap": [
+        {
+          "Key": "Main_UnlockFastTravel",
+          "Value": 0
+        },
+        {
+          "Key": "Main_TutorialStart",
+          "Value": 1
+        },
+        {
+          "Key": "Main_OpenSurvivalGuide",
+          "Value": 2
+        },
+        {
+          "Key": "Main_BuildWorkbench",
+          "Value": 3
+        },
+        {
+          "Key": "Main_CraftTools",
+          "Value": 4
+        },
+        {
+          "Key": "Main_StatusUp",
+          "Value": 5
+        },
+        {
+          "Key": "Main_CatchPal",
+          "Value": 6
+        },
+        {
+          "Key": "Main_WorkPal",
+          "Value": 7
+        },
+        {
+          "Key": "Main_EatFood",
+          "Value": 8
+        },
+        {
+          "Key": "Main_CaptureSheepBall",
+          "Value": 9
+        },
+        {
+          "Key": "Main_PrepareEquipment",
+          "Value": 10
+        },
+        {
+          "Key": "Main_SmallVillage",
+          "Value": 11
+        },
+        {
+          "Key": "Main_CraftPalGear",
+          "Value": 12
+        },
+        {
+          "Key": "Main_RayneSyndicate",
+          "Value": 13
+        },
+        {
+          "Key": "Main_ReturnSmallVillage",
+          "Value": 14
+        },
+        {
+          "Key": "Main_TalkGrassBoss",
+          "Value": 15
+        },
+        {
+          "Key": "Main_DefeatForestBoss",
+          "Value": 16
+        },
+        {
+          "Key": "Main_DefeatVolcanoBoss",
+          "Value": 17
+        },
+        {
+          "Key": "Main_DefeatDesertBoss",
+          "Value": 18
+        },
+        {
+          "Key": "Main_DefeatSnowyMountainBoss",
+          "Value": 19
+        },
+        {
+          "Key": "Main_DefeatSakurajimaBoss",
+          "Value": 20
+        },
+        {
+          "Key": "Main_DefeatVikingBoss",
+          "Value": 21
+        },
+        {
+          "Key": "Main_DefeatSkyIslandBoss",
+          "Value": 22
+        },
+        {
+          "Key": "Main_TalkSkyBoss",
+          "Value": 23
+        },
+        {
+          "Key": "Main_TalkSkyBossAgain",
+          "Value": 24
+        },
+        {
+          "Key": "Main_DefeatKingWhale",
+          "Value": 25
+        },
+        {
+          "Key": "Main_ReachWorldTree",
+          "Value": 26
+        },
+        {
+          "Key": "Main_TalkWorldTreeNPC",
+          "Value": 27
+        },
+        {
+          "Key": "Main_WorldTreeAbyss",
+          "Value": 28
+        },
+        {
+          "Key": "Main_DefeatWorldTreeMiddleBoss",
+          "Value": 29
+        },
+        {
+          "Key": "Main_DefeatWorldTreeDragon",
+          "Value": 30
+        }
+      ],
+      "QuestSettingsPerBossDefeat": [
+        {
+          "Key": "EPalBossType::GrassBoss",
+          "Value": {
+            "AutoCompleteQuests": [
+              {
+                "QuestId": "Main_SmallVillage",
+                "Blockers": []
+              },
+              {
+                "QuestId": "Main_CraftPalGear",
+                "Blockers": []
+              },
+              {
+                "QuestId": "Main_RayneSyndicate",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_RayneSyndicate",
+                    "BlockIndex": 1
+                  },
+                  {
+                    "QuestId": "Main_ReturnSmallVillage",
+                    "BlockIndex": -1
+                  }
+                ]
+              },
+              {
+                "QuestId": "Main_ReturnSmallVillage",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_RayneSyndicate",
+                    "BlockIndex": 1
+                  },
+                  {
+                    "QuestId": "Main_ReturnSmallVillage",
+                    "BlockIndex": -1
+                  }
+                ]
+              }
+            ],
+            "AutoOrderQuests": [
+              {
+                "QuestId": "Main_ReturnSmallVillage",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_RayneSyndicate",
+                    "BlockIndex": 1
+                  },
+                  {
+                    "QuestId": "Main_ReturnSmallVillage",
+                    "BlockIndex": -1
+                  },
+                  {
+                    "QuestId": "Main_TalkGrassBoss",
+                    "BlockIndex": -1
+                  }
+                ]
+              },
+              {
+                "QuestId": "Main_TalkGrassBoss",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_RayneSyndicate",
+                    "BlockIndex": 1
+                  },
+                  {
+                    "QuestId": "Main_ReturnSmallVillage",
+                    "BlockIndex": -1
+                  },
+                  {
+                    "QuestId": "Main_TalkGrassBoss",
+                    "BlockIndex": -1
+                  }
+                ]
+              },
+              {
+                "QuestId": "Main_DefeatForestBoss",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_RayneSyndicate",
+                    "BlockIndex": 1
+                  },
+                  {
+                    "QuestId": "Main_ReturnSmallVillage",
+                    "BlockIndex": -1
+                  },
+                  {
+                    "QuestId": "Main_TalkGrassBoss",
+                    "BlockIndex": -1
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Key": "EPalBossType::ForestBoss",
+          "Value": {
+            "AutoCompleteQuests": [
+              {
+                "QuestId": "Main_DefeatForestBoss",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_DefeatForestBoss",
+                    "BlockIndex": 5
+                  },
+                  {
+                    "QuestId": "Main_DefeatForestBoss",
+                    "BlockIndex": 6
+                  }
+                ]
+              }
+            ],
+            "AutoOrderQuests": [
+              {
+                "QuestId": "Main_DefeatVolcanoBoss",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_DefeatForestBoss",
+                    "BlockIndex": 5
+                  },
+                  {
+                    "QuestId": "Main_DefeatForestBoss",
+                    "BlockIndex": 6
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Key": "EPalBossType::ElectricBoss",
+          "Value": {
+            "AutoCompleteQuests": [
+              {
+                "QuestId": "Main_DefeatVolcanoBoss",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_DefeatVolcanoBoss",
+                    "BlockIndex": 4
+                  },
+                  {
+                    "QuestId": "Main_DefeatVolcanoBoss",
+                    "BlockIndex": 5
+                  }
+                ]
+              }
+            ],
+            "AutoOrderQuests": [
+              {
+                "QuestId": "Main_DefeatDesertBoss",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_DefeatVolcanoBoss",
+                    "BlockIndex": 4
+                  },
+                  {
+                    "QuestId": "Main_DefeatVolcanoBoss",
+                    "BlockIndex": 5
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Key": "EPalBossType::DesertBoss",
+          "Value": {
+            "AutoCompleteQuests": [
+              {
+                "QuestId": "Main_DefeatDesertBoss",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_DefeatDesertBoss",
+                    "BlockIndex": 8
+                  },
+                  {
+                    "QuestId": "Main_DefeatDesertBoss",
+                    "BlockIndex": 9
+                  }
+                ]
+              }
+            ],
+            "AutoOrderQuests": [
+              {
+                "QuestId": "Main_DefeatSnowyMountainBoss",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_DefeatDesertBoss",
+                    "BlockIndex": 8
+                  },
+                  {
+                    "QuestId": "Main_DefeatDesertBoss",
+                    "BlockIndex": 9
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Key": "EPalBossType::SnowBoss",
+          "Value": {
+            "AutoCompleteQuests": [
+              {
+                "QuestId": "Main_DefeatSnowyMountainBoss",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_DefeatSnowyMountainBoss",
+                    "BlockIndex": 8
+                  },
+                  {
+                    "QuestId": "Main_DefeatSnowyMountainBoss",
+                    "BlockIndex": 9
+                  }
+                ]
+              }
+            ],
+            "AutoOrderQuests": [
+              {
+                "QuestId": "Main_DefeatSakurajimaBoss",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_DefeatSnowyMountainBoss",
+                    "BlockIndex": 8
+                  },
+                  {
+                    "QuestId": "Main_DefeatSnowyMountainBoss",
+                    "BlockIndex": 9
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Key": "EPalBossType::SakurajimaBoss",
+          "Value": {
+            "AutoCompleteQuests": [
+              {
+                "QuestId": "Main_DefeatSakurajimaBoss",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_DefeatSakurajimaBoss",
+                    "BlockIndex": 6
+                  },
+                  {
+                    "QuestId": "Main_DefeatSakurajimaBoss",
+                    "BlockIndex": 7
+                  }
+                ]
+              }
+            ],
+            "AutoOrderQuests": [
+              {
+                "QuestId": "Main_DefeatVikingBoss",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_DefeatSakurajimaBoss",
+                    "BlockIndex": 6
+                  },
+                  {
+                    "QuestId": "Main_DefeatSakurajimaBoss",
+                    "BlockIndex": 7
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Key": "EPalBossType::VikingBoss",
+          "Value": {
+            "AutoCompleteQuests": [
+              {
+                "QuestId": "Main_DefeatVikingBoss",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_DefeatVikingBoss",
+                    "BlockIndex": 5
+                  },
+                  {
+                    "QuestId": "Main_DefeatVikingBoss",
+                    "BlockIndex": 6
+                  }
+                ]
+              }
+            ],
+            "AutoOrderQuests": [
+              {
+                "QuestId": "Main_DefeatSkyIslandBoss",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_DefeatVikingBoss",
+                    "BlockIndex": 5
+                  },
+                  {
+                    "QuestId": "Main_DefeatVikingBoss",
+                    "BlockIndex": 6
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Key": "EPalBossType::SorajimaBoss",
+          "Value": {
+            "AutoCompleteQuests": [
+              {
+                "QuestId": "Main_DefeatSkyIslandBoss",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_DefeatSkyIslandBoss",
+                    "BlockIndex": 3
+                  },
+                  {
+                    "QuestId": "Main_DefeatSkyIslandBoss",
+                    "BlockIndex": 4
+                  }
+                ]
+              }
+            ],
+            "AutoOrderQuests": [
+              {
+                "QuestId": "Main_TalkSkyBoss",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_DefeatSkyIslandBoss",
+                    "BlockIndex": 3
+                  },
+                  {
+                    "QuestId": "Main_DefeatSkyIslandBoss",
+                    "BlockIndex": 4
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Key": "EPalBossType::KingWhaleBoss",
+          "Value": {
+            "AutoCompleteQuests": [
+              {
+                "QuestId": "Main_DefeatKingWhale",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_DefeatKingWhale",
+                    "BlockIndex": 6
+                  },
+                  {
+                    "QuestId": "Main_DefeatKingWhale",
+                    "BlockIndex": 7
+                  }
+                ]
+              }
+            ],
+            "AutoOrderQuests": [
+              {
+                "QuestId": "Main_ReachWorldTree",
+                "Blockers": [
+                  {
+                    "QuestId": "Main_DefeatKingWhale",
+                    "BlockIndex": 6
+                  },
+                  {
+                    "QuestId": "Main_DefeatKingWhale",
+                    "BlockIndex": 7
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Key": "EPalBossType::WorldTreeBoss",
+          "Value": {
+            "AutoCompleteQuests": [
+              {
+                "QuestId": "Main_TalkWorldTreeNPC",
+                "Blockers": []
+              },
+              {
+                "QuestId": "Main_WorldTreeAbyss",
+                "Blockers": []
+              },
+              {
+                "QuestId": "Main_DefeatWorldTreeDragon",
+                "Blockers": []
+              }
+            ],
+            "AutoOrderQuests": []
+          }
+        }
+      ],
+      "QuestSettingsOnAnyBossDefeat": {
+        "AutoCompleteQuests": [
+          {
+            "QuestId": "Main_UnlockFastTravel",
+            "Blockers": []
+          },
+          {
+            "QuestId": "Main_TutorialStart",
+            "Blockers": []
+          },
+          {
+            "QuestId": "Main_OpenSurvivalGuide",
+            "Blockers": []
+          },
+          {
+            "QuestId": "Main_BuildWorkbench",
+            "Blockers": []
+          },
+          {
+            "QuestId": "Main_CraftTools",
+            "Blockers": []
+          },
+          {
+            "QuestId": "Main_StatusUp",
+            "Blockers": []
+          },
+          {
+            "QuestId": "Main_CatchPal",
+            "Blockers": []
+          },
+          {
+            "QuestId": "Main_WorkPal",
+            "Blockers": []
+          },
+          {
+            "QuestId": "Main_EatFood",
+            "Blockers": []
+          },
+          {
+            "QuestId": "Main_CaptureSheepBall",
+            "Blockers": []
+          },
+          {
+            "QuestId": "Main_PrepareEquipment",
+            "Blockers": []
+          }
+        ],
+        "AutoOrderQuests": [
+          {
+            "QuestId": "Main_CollectKeySpheres",
+            "Blockers": [
+              {
+                "QuestId": "Main_RayneSyndicate",
+                "BlockIndex": 1
+              },
+              {
+                "QuestId": "Main_ReturnSmallVillage",
+                "BlockIndex": -1
+              },
+              {
+                "QuestId": "Main_TalkGrassBoss",
+                "BlockIndex": -1
+              }
+            ]
+          },
+          {
+            "QuestId": "Main_SmallVillage",
+            "Blockers": []
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,379 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalUnlockMapCutsceneActor_volcano2_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_CutsceneActorBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/BP_CutsceneActorBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalUnlockMapCutsceneActor_volcano2_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.12"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_PalUnlockMapCutsceneActor_volcano2_C:ExecuteUbergraph_BP_PalUnlockMapCutsceneActor_volcano2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_CutsceneActorBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/BP_CutsceneActorBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_PalUnlockMapCutsceneActor_volcano2_C:OnFinishedCutscene'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.4"
+      },
+      {
+        "ObjectName": "Function'BP_PalUnlockMapCutsceneActor_volcano2_C:SetBindParameter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.5"
+      },
+      {
+        "ObjectName": "Function'BP_PalUnlockMapCutsceneActor_volcano2_C:ExecuteUbergraph_BP_PalUnlockMapCutsceneActor_volcano2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MyParameter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCutsceneBindParameter_FasttravelPoint'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NewVar",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_PalUnlockMapCutsceneActor_volcano2": {
+        "ObjectName": "Function'BP_PalUnlockMapCutsceneActor_volcano2_C:ExecuteUbergraph_BP_PalUnlockMapCutsceneActor_volcano2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.3"
+      },
+      "SetBindParameter": {
+        "ObjectName": "Function'BP_PalUnlockMapCutsceneActor_volcano2_C:SetBindParameter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.5"
+      },
+      "OnFinishedCutscene": {
+        "ObjectName": "Function'BP_PalUnlockMapCutsceneActor_volcano2_C:OnFinishedCutscene'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalUnlockMapCutsceneActor_volcano2_C'Default__BP_PalUnlockMapCutsceneActor_volcano2_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalUnlockMapCutsceneActor_volcano2_C",
+    "Name": "Default__BP_PalUnlockMapCutsceneActor_volcano2_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.BP_PalUnlockMapCutsceneActor_volcano2_C'",
+    "Template": {
+      "ObjectName": "BP_CutsceneActorBase_C'Default__BP_CutsceneActorBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/BP_CutsceneActorBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "NewVar": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "PlaybackSettings": {
+        "bHideHud": false
+      },
+      "SequencePlayer": {
+        "ObjectName": "LevelSequencePlayer'Default__BP_PalUnlockMapCutsceneActor_volcano2_C:AnimationPlayer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.7"
+      },
+      "LevelSequenceAsset": {
+        "ObjectName": "LevelSequence'LS_UnlockMap_Common_volcano2'",
+        "ObjectPath": "Pal/Content/Pal/Demo/UnlockMap/LS_UnlockMap_Common_volcano2.9"
+      },
+      "BurnInOptions": {
+        "ObjectName": "LevelSequenceBurnInOptions'Default__BP_PalUnlockMapCutsceneActor_volcano2_C:BurnInOptions'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.6"
+      },
+      "BindingOverrides": {
+        "ObjectName": "MovieSceneBindingOverrides'Default__BP_PalUnlockMapCutsceneActor_volcano2_C:BindingOverrides'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.8"
+      },
+      "DefaultInstanceData": {
+        "ObjectName": "DefaultLevelSequenceInstanceData'Default__BP_PalUnlockMapCutsceneActor_volcano2_C:InstanceData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.2"
+      },
+      "RemoteRole": "ENetRole::ROLE_None",
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_PalUnlockMapCutsceneActor_volcano2_C:SceneComp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.10"
+      }
+    }
+  },
+  {
+    "Type": "DefaultLevelSequenceInstanceData",
+    "Name": "InstanceData",
+    "Outer": "Default__BP_PalUnlockMapCutsceneActor_volcano2_C",
+    "Class": "UScriptClass'DefaultLevelSequenceInstanceData'",
+    "Template": {
+      "ObjectName": "DefaultLevelSequenceInstanceData'Default__BP_CutsceneActorBase_C:InstanceData'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/BP_CutsceneActorBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_PalUnlockMapCutsceneActor_volcano2",
+    "Outer": "BP_PalUnlockMapCutsceneActor_volcano2_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_BindParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCutsceneBindParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Cutscene_Bind_Parameter_Fasttravel_Point",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCutsceneBindParameter_FasttravelPoint'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnFinishedCutscene",
+    "Outer": "BP_PalUnlockMapCutsceneActor_volcano2_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalCutsceneActor:OnFinishedCutscene'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetBindParameter",
+    "Outer": "BP_PalUnlockMapCutsceneActor_volcano2_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalCutsceneActor:SetBindParameter'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BindParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCutsceneBindParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "LevelSequenceBurnInOptions",
+    "Name": "BurnInOptions",
+    "Outer": "Default__BP_PalUnlockMapCutsceneActor_volcano2_C",
+    "Class": "UScriptClass'LevelSequenceBurnInOptions'",
+    "Template": {
+      "ObjectName": "LevelSequenceBurnInOptions'Default__BP_CutsceneActorBase_C:BurnInOptions'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/BP_CutsceneActorBase.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "LevelSequencePlayer",
+    "Name": "AnimationPlayer",
+    "Outer": "Default__BP_PalUnlockMapCutsceneActor_volcano2_C",
+    "Class": "UScriptClass'LevelSequencePlayer'",
+    "Template": {
+      "ObjectName": "LevelSequencePlayer'Default__BP_CutsceneActorBase_C:AnimationPlayer'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/BP_CutsceneActorBase.4"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OnPlay": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_PalUnlockMapCutsceneActor_volcano2_C'Default__BP_PalUnlockMapCutsceneActor_volcano2_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.1"
+            },
+            "FunctionName": "ShowBurnin"
+          }
+        ]
+      },
+      "OnPlayReverse": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_PalUnlockMapCutsceneActor_volcano2_C'Default__BP_PalUnlockMapCutsceneActor_volcano2_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.1"
+            },
+            "FunctionName": "ShowBurnin"
+          }
+        ]
+      },
+      "OnStop": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_PalUnlockMapCutsceneActor_volcano2_C'Default__BP_PalUnlockMapCutsceneActor_volcano2_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.1"
+            },
+            "FunctionName": "HideBurnin"
+          }
+        ]
+      },
+      "PlaybackSettings": {
+        "bHideHud": false
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneBindingOverrides",
+    "Name": "BindingOverrides",
+    "Outer": "Default__BP_PalUnlockMapCutsceneActor_volcano2_C",
+    "Class": "UScriptClass'MovieSceneBindingOverrides'",
+    "Template": {
+      "ObjectName": "MovieSceneBindingOverrides'Default__BP_CutsceneActorBase_C:BindingOverrides'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/BP_CutsceneActorBase.5"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalUnlockMapCutsceneActor_volcano2_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComp",
+    "Outer": "Default__BP_PalUnlockMapCutsceneActor_volcano2_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__BP_CutsceneActorBase_C:SceneComp'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/BP_CutsceneActorBase.7"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalUnlockMapCutsceneActor_volcano2_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.9"
+      },
+      "VariableGuid": "4180870C-49F38DD3-CB43B082-43CF8072",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalUnlockMapCutsceneActor_volcano2_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalUnlockMapCutsceneActor_volcano2_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/UnlockMap/BP_PalUnlockMapCutsceneActor_volcano2.11"
+      }
+    }
+  }
+]

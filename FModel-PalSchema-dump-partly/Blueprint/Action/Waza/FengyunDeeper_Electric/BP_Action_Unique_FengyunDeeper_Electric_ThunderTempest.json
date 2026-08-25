@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_FengyunDeeper_Electric_ThunderTempest_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_FengyunDeeper_CloudTempest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FengyunDeeper/BP_Action_Unique_FengyunDeeper_CloudTempest.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_FengyunDeeper_CloudTempest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FengyunDeeper/BP_Action_Unique_FengyunDeeper_CloudTempest.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_FengyunDeeper_Electric_ThunderTempest_C'Default__BP_Action_Unique_FengyunDeeper_Electric_ThunderTempest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FengyunDeeper_Electric/BP_Action_Unique_FengyunDeeper_Electric_ThunderTempest.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_FengyunDeeper_Electric_ThunderTempest_C",
+    "Name": "Default__BP_Action_Unique_FengyunDeeper_Electric_ThunderTempest_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/FengyunDeeper_Electric/BP_Action_Unique_FengyunDeeper_Electric_ThunderTempest.BP_Action_Unique_FengyunDeeper_Electric_ThunderTempest_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_FengyunDeeper_CloudTempest_C'Default__BP_Action_Unique_FengyunDeeper_CloudTempest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FengyunDeeper/BP_Action_Unique_FengyunDeeper_CloudTempest.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FlagName_0": "FengyunDeeper_Electric_ThunderTempest",
+      "SkillModuleClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_FengyunDeeper_Electric_ThunderTempest_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FengyunDeeper_Electric/BP_UniqueSkillModule_Tackle_FengyunDeeper_Electric_ThunderTempest.0"
+      },
+      "WazaID": "EPalWazaID::Unique_FengyunDeeper_Electric_ThunderTempest"
+    }
+  }
+]

@@ -1,0 +1,1057 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_WildlifeSanctuaryDroneSpawner_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.20"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:ExecuteUbergraph_BP_WildlifeSanctuaryDroneSpawner'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalNPCSpawnerBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:OnDestroyedCharacter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.8"
+      },
+      {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:イベント発生位置確認'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.13"
+      },
+      {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:BlueprintTick_Despawning'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.2"
+      },
+      {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:DespawnDelegate'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.6"
+      },
+      {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:SpawnDelegate'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.12"
+      },
+      {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:Spawn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.11"
+      },
+      {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:CheckWorldLoadCompleted'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.4"
+      },
+      {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:BlueprintTick_Spawning'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.3"
+      },
+      {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:Despawn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.5"
+      },
+      {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.9"
+      },
+      {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:ReceiveEndPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.10"
+      },
+      {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:カスタムイベント'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.14"
+      },
+      {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:ExecuteUbergraph_BP_WildlifeSanctuaryDroneSpawner'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.7"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DebugSphere",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PalWildlifeSanctuarySpline",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalWildlifeSanctuarySplineComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SpawnedHandle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | AdvancedDisplay",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterHandle'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsLoading",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsWorldLoadComplete",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | AdvancedDisplay",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Level",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "DespawnPlusDistance",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "SpawnRadius",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "イベント発生位置確認_ProgressTime",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_WildlifeSanctuaryDroneSpawner": {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:ExecuteUbergraph_BP_WildlifeSanctuaryDroneSpawner'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.7"
+      },
+      "カスタムイベント": {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:カスタムイベント'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.14"
+      },
+      "ReceiveEndPlay": {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:ReceiveEndPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.10"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.9"
+      },
+      "Despawn": {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:Despawn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.5"
+      },
+      "BlueprintTick_Spawning": {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:BlueprintTick_Spawning'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.3"
+      },
+      "CheckWorldLoadCompleted": {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:CheckWorldLoadCompleted'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.4"
+      },
+      "Spawn": {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:Spawn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.11"
+      },
+      "SpawnDelegate": {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:SpawnDelegate'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.12"
+      },
+      "DespawnDelegate": {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:DespawnDelegate'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.6"
+      },
+      "BlueprintTick_Despawning": {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:BlueprintTick_Despawning'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.2"
+      },
+      "イベント発生位置確認": {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:イベント発生位置確認'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.13"
+      },
+      "OnDestroyedCharacter": {
+        "ObjectName": "Function'BP_WildlifeSanctuaryDroneSpawner_C:OnDestroyedCharacter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.8"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_WildlifeSanctuaryDroneSpawner_C'Default__BP_WildlifeSanctuaryDroneSpawner_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Name": "Default__BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.BP_WildlifeSanctuaryDroneSpawner_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Level": 80,
+      "DespawnPlusDistance": 5000.0,
+      "SpawnRadius": 45000.0
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BlueprintTick_Despawning",
+    "Outer": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalNPCSpawnerBase:BlueprintTick_Despawning'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BlueprintTick_Spawning",
+    "Outer": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalNPCSpawnerBase:BlueprintTick_Spawning'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "CheckWorldLoadCompleted",
+    "Outer": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameSetting_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalGameSetting'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetWorldSubsystem_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'WorldPartitionSubsystem'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_WorldPartitionStreamingQuerySource",
+        "Flags": "RF_Public",
+        "ElementSize": 152,
+        "Struct": {
+          "ObjectName": "ScriptStruct'WorldPartitionStreamingQuerySource'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_ApplyActorDataLayersToWorldPartitionQuerySource_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 152,
+        "Struct": {
+          "ObjectName": "ScriptStruct'WorldPartitionStreamingQuerySource'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 152,
+          "Struct": {
+            "ObjectName": "ScriptStruct'WorldPartitionStreamingQuerySource'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsStreamingCompleted_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Despawn",
+    "Outer": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalCharacterManager:IndividualIDCallback__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetCharacterManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacterManager'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "DespawnDelegate",
+    "Outer": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "id",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalInstanceID'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_WildlifeSanctuaryDroneSpawner",
+    "Outer": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalNPCSpawnerBase:CreatedGroupDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Event_EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetCheckRadius_SpawnRadius_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetCheckRadius_DespawnRadius_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnDestroyedCharacter",
+    "Outer": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "DestroyedActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_TryGetIndividualActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveEndPlay",
+    "Outer": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveEndPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Spawn",
+    "Outer": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalDebugSetting_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalDebugSetting'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetCharacterManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacterManager'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalCharacterManager:IndividualIDCallback__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerController'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_NetworkActorSpawnParameters",
+        "Flags": "RF_Public",
+        "ElementSize": 128,
+        "Struct": {
+          "ObjectName": "ScriptStruct'NetworkActorSpawnParameters'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_Guid",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Guid'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetInitializedCharacterSaveParemter_outParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 928,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalIndividualCharacterSaveParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetInitializedCharacterSaveParemter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnNewCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterHandle'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SpawnDelegate",
+    "Outer": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "id",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalInstanceID'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SpawnedCharacter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "SparseDelegateFunction'ActorDestroyedSignature__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalWildlifeSanctuarySplineMoverComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetLocationAtDistanceAlongSpline_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetDirectionAtDistanceAlongSpline_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_VectorToRotator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetActorLocationAndRotation_SweepHitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 240,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_SetActorLocationAndRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_TryGetIndividualActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "イベント発生位置確認",
+    "Outer": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsEditorBuild_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetWorldLocationAtProgressTime_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetWorldLocation_SweepHitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 240,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetWorldLocationAtProgressTime_ProgressTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "カスタムイベント",
+    "Outer": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "PalWildlifeSanctuarySplineComponent",
+    "Name": "PalWildlifeSanctuarySpline_GEN_VARIABLE",
+    "Outer": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'PalWildlifeSanctuarySplineComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 30.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_WildlifeSanctuaryDroneSpawner_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.16"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_WildlifeSanctuaryDroneSpawner_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_WildlifeSanctuaryDroneSpawner_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.19"
+        }
+      ],
+      "VariableGuid": "781F51EC-4E5D75D1-D1A432A9-9C0ACE75",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalWildlifeSanctuarySplineComponent'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalWildlifeSanctuarySplineComponent'BP_WildlifeSanctuaryDroneSpawner_C:PalWildlifeSanctuarySpline_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.15"
+      },
+      "VariableGuid": "DAAD5DBA-4F4DD5FE-3DCECDBF-747062F5",
+      "InternalVariableName": "PalWildlifeSanctuarySpline"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "VariableGuid": "A083B1A7-4EFA10A9-57EA49BA-99AD8796",
+      "InternalVariableName": "DebugSphere"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_WildlifeSanctuaryDroneSpawner_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_WildlifeSanctuaryDroneSpawner_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.17"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_WildlifeSanctuaryDroneSpawner_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_WildlifeSanctuaryDroneSpawner_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_WildlifeSanctuaryDroneSpawner_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.19"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_WildlifeSanctuaryDroneSpawner_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_WildlifeSanctuaryDroneSpawner.17"
+      }
+    }
+  }
+]

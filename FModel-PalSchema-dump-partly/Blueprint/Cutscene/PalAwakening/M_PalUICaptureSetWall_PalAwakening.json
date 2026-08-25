@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "Material",
+    "Name": "M_PalUICaptureSetWall_PalAwakening",
+    "Class": "UScriptClass'Material'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ShadingModel": "EMaterialShadingModel::MSM_Unlit",
+      "ShadingModels": {
+        "ShadingModelField": 1
+      },
+      "bUsedWithNanite": true,
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "87B74601-4F057551-3166FE95-913838A1"
+    },
+    "LoadedMaterialResources": [],
+    "CachedExpressionData": {
+      "RuntimeEntries": {
+        "ParameterInfoSet": [
+          {
+            "Name": "Param",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          }
+        ]
+      },
+      "RuntimeEntries[1]": {
+        "ParameterInfoSet": [
+          {
+            "Name": "Param",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          }
+        ]
+      },
+      "RuntimeEntries[2]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[3]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[4]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[5]": {
+        "ParameterInfoSet": []
+      },
+      "ScalarPrimitiveDataIndexValues": [
+        -1
+      ],
+      "VectorPrimitiveDataIndexValues": [
+        -1
+      ],
+      "ScalarValues": [
+        0.05
+      ],
+      "VectorValues": [
+        {
+          "R": 0.36905634,
+          "G": 0.2604167,
+          "B": 1.0,
+          "A": 0.0,
+          "Hex": "A48CFF"
+        }
+      ],
+      "DoubleVectorValues": [],
+      "TextureValues": [],
+      "FontValues": [],
+      "FontPageValues": [],
+      "RuntimeVirtualTextureValues": [],
+      "ReferencedTextures": [
+        {
+          "ObjectName": "TextureCube'T_typeD'",
+          "ObjectPath": "Pal/Content/Pal/Model/Stage/dungeon/Dungeon_Yakushima/Sky/Textures/T_typeD.0"
+        }
+      ],
+      "FunctionInfos": [],
+      "ParameterCollectionInfos": [],
+      "GrassTypes": [],
+      "MaterialLayers": {
+        "Layers": [],
+        "Blends": []
+      },
+      "DynamicParameterNames": [],
+      "QualityLevelsUsed": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "bHasMaterialLayers": false,
+      "bHasRuntimeVirtualTextureOutput": false,
+      "bHasSceneColor": false,
+      "bHasPerInstanceCustomData": false,
+      "bHasPerInstanceRandom": false,
+      "bHasVertexInterpolator": false,
+      "PropertyConnectedBitmask": 1
+    },
+    "ReferencedTextures": [
+      {
+        "ObjectName": "TextureCube'T_typeD'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/dungeon/Dungeon_Yakushima/Sky/Textures/T_typeD.0"
+      }
+    ]
+  }
+]

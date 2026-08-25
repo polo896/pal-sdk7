@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BI_PalGrapplingNotifyInterface_C",
+    "Name": "Default__BI_PalGrapplingNotifyInterface_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Interface/BI_PalGrapplingNotifyInterface.BI_PalGrapplingNotifyInterface_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BI_PalGrapplingNotifyInterface_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Interface'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BI_PalGrapplingNotifyInterface_C:OnGrapplingActionEnd'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalGrapplingNotifyInterface.2"
+      },
+      {
+        "ObjectName": "Function'BI_PalGrapplingNotifyInterface_C:OnGrapplingActionStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalGrapplingNotifyInterface.3"
+      }
+    ],
+    "FuncMap": {
+      "OnGrapplingActionStart": {
+        "ObjectName": "Function'BI_PalGrapplingNotifyInterface_C:OnGrapplingActionStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalGrapplingNotifyInterface.3"
+      },
+      "OnGrapplingActionEnd": {
+        "ObjectName": "Function'BI_PalGrapplingNotifyInterface_C:OnGrapplingActionEnd'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalGrapplingNotifyInterface.2"
+      }
+    },
+    "ClassFlags": "CLASS_Interface | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BI_PalGrapplingNotifyInterface_C'Default__BI_PalGrapplingNotifyInterface_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalGrapplingNotifyInterface.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Interface"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "OnGrapplingActionEnd",
+    "Outer": "BI_PalGrapplingNotifyInterface_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnGrapplingActionStart",
+    "Outer": "BI_PalGrapplingNotifyInterface_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "HitLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CoolTimeRate",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

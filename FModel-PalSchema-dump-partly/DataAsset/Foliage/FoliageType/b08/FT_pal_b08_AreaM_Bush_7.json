@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b08_AreaM_Bush_7",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b07_grass_RainforestGroundLeaves_01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b08/Area_M/Foliage/Mesh/SM_pal_b07_grass_RainforestGroundLeaves_01.2"
+      },
+      "UpdateGuid": "FFD8F951-44C81BE0-AA2598A3-315BB126",
+      "Density": 50.0,
+      "ScaleX": {
+        "Min": 0.7,
+        "Max": 0.9
+      },
+      "AlignToNormal": false,
+      "GroundSlopeAngle": {
+        "Max": 90.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -4.676422,
+          "Y": 3.248886,
+          "Z": 43.784107
+        },
+        "BoxExtent": {
+          "X": 121.07525,
+          "Y": 107.62107,
+          "Z": 45.723476
+        },
+        "SphereRadius": 131.07408374096684
+      },
+      "LowBoundOriginRadius": {
+        "X": 0.30488205,
+        "Y": 1.0100327,
+        "Z": 97.64122
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

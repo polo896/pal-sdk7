@@ -1,0 +1,327 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_NPCCampSpawner_DLC3_AreaBarrier_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NPCCampSpawnerAntiAirBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/BP_NPCCampSpawnerAntiAirBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_NPCCampSpawner_DLC3_AreaBarrier_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/SpawnerVariant/BP_NPCCampSpawner_DLC3_AreaBarrier.7"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_NPCCampSpawner_DLC3_AreaBarrier_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/SpawnerVariant/BP_NPCCampSpawner_DLC3_AreaBarrier.4"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_NPCCampSpawner_DLC3_AreaBarrier_C:ExecuteUbergraph_BP_NPCCampSpawner_DLC3_AreaBarrier'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/SpawnerVariant/BP_NPCCampSpawner_DLC3_AreaBarrier.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NPCCampSpawnerAntiAirBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/BP_NPCCampSpawnerAntiAirBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_NPCCampSpawner_DLC3_AreaBarrier_C:TryCampSpawn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/SpawnerVariant/BP_NPCCampSpawner_DLC3_AreaBarrier.3"
+      },
+      {
+        "ObjectName": "Function'BP_NPCCampSpawner_DLC3_AreaBarrier_C:ExecuteUbergraph_BP_NPCCampSpawner_DLC3_AreaBarrier'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/SpawnerVariant/BP_NPCCampSpawner_DLC3_AreaBarrier.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "RelatedVolumeId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Guid'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Quest Id",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "QuestBlock",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'PalQuestBlock'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_NPCCampSpawner_DLC3_AreaBarrier": {
+        "ObjectName": "Function'BP_NPCCampSpawner_DLC3_AreaBarrier_C:ExecuteUbergraph_BP_NPCCampSpawner_DLC3_AreaBarrier'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/SpawnerVariant/BP_NPCCampSpawner_DLC3_AreaBarrier.2"
+      },
+      "TryCampSpawn": {
+        "ObjectName": "Function'BP_NPCCampSpawner_DLC3_AreaBarrier_C:TryCampSpawn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/SpawnerVariant/BP_NPCCampSpawner_DLC3_AreaBarrier.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_NPCCampSpawner_DLC3_AreaBarrier_C'Default__BP_NPCCampSpawner_DLC3_AreaBarrier_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/SpawnerVariant/BP_NPCCampSpawner_DLC3_AreaBarrier.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_NPCCampSpawner_DLC3_AreaBarrier_C",
+    "Name": "Default__BP_NPCCampSpawner_DLC3_AreaBarrier_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/SpawnerVariant/BP_NPCCampSpawner_DLC3_AreaBarrier.BP_NPCCampSpawner_DLC3_AreaBarrier_C'",
+    "Template": {
+      "ObjectName": "BP_NPCCampSpawnerAntiAirBase_C'Default__BP_NPCCampSpawnerAntiAirBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/BP_NPCCampSpawnerAntiAirBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "RelatedVolumeId": "3A3BD9D7-4B7EBB4E-B9475191-6229AF53",
+      "RewardName": "Skyisland1",
+      "RespawnTime_RealMinutes": 1.0,
+      "PresetClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCCamp_Asia_01_01_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/BP_NPCCamp_Asia_01_01.0"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_NPCCampSpawner_DLC3_AreaBarrier",
+    "Outer": "BP_NPCCampSpawner_DLC3_AreaBarrier_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetLevelObjectInstanceId_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Guid'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllChildActors_ChildActors",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllChildActors_ChildActors",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'Actor'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Level_Gimmick_Area_Barrier_Lock",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalLevelGimmick_AreaBarrier_Lock'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Level_Gimmick_Area_Barrier_Lock",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_LevelGimmick_AreaBarrier_Lock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickAreaBarrier/BP_LevelGimmick_AreaBarrier_Lock.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "TryCampSpawn",
+    "Outer": "BP_NPCCampSpawner_DLC3_AreaBarrier_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_NPCCampSpawnerAntiAirBase_C:TryCampSpawn'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/BP_NPCCampSpawnerAntiAirBase.17"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_NPCCampSpawnerAntiAirBase_C:TryCampSpawn'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/BP_NPCCampSpawnerAntiAirBase.17"
+    },
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_NPCCampSpawner_DLC3_AreaBarrier_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_NPCCampSpawner_DLC3_AreaBarrier_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_NPCCampSpawner_DLC3_AreaBarrier_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/SpawnerVariant/BP_NPCCampSpawner_DLC3_AreaBarrier.5"
+      },
+      "VariableGuid": "D287D6A0-47301FA1-2594B3BF-BFC242F5",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_NPCCampSpawner_DLC3_AreaBarrier_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_NPCCampSpawner_DLC3_AreaBarrier_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/SpawnerVariant/BP_NPCCampSpawner_DLC3_AreaBarrier.6"
+      }
+    }
+  }
+]

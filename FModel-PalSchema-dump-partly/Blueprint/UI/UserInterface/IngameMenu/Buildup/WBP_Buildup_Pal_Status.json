@@ -1,0 +1,5169 @@
+[
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_C_35",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "BUILDUP_BLOCK_RESET"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "ACB377FF4FFC19238A34A5BA0F742DB2",
+        "SourceString": "遺伝子復元されたパルは捧げたパルソウルをリセット出来ません",
+        "LocalizedString": "遺伝子復元されたパルは捧げたパルソウルをリセット出来ません"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "Material'M_UI_FontColor_NumYellow'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/M_UI_FontColor_NumYellow.0"
+        },
+        "Size": 18
+      },
+      "Justification": "ETextJustify::Center",
+      "AutoWrapText": true,
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Buildup_Pal_Status_C:WidgetTree.Overlay_BlockReset.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.73"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Info",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "BUILDUP_PAL_RESET_INFO"
+      },
+      "IsAutoAdjustScale": true,
+      "MaxWidth": 220,
+      "Text": {
+        "Namespace": "",
+        "Key": "33C016B54F0E016D7CD8628058D15B12",
+        "SourceString": "パルソウル",
+        "LocalizedString": "パルソウル"
+      },
+      "Font": {
+        "TypefaceFontName": "Medium",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.Canvas_ItemUpdateInfo.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.11"
+      },
+      "RenderTransformPivot": {
+        "X": 0.0,
+        "Y": 0.5
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_PossessedMoney",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "SHOP_POSSESSED_MONEY"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "FontSizeOverride_VeryLarge": 17,
+      "Text": {
+        "Namespace": "",
+        "Key": "B041E7294ACDCE0ECDD5C9BEA1C7CCD9",
+        "SourceString": "所持金額aaa",
+        "LocalizedString": "所持金額aaa"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "Material'M_UI_FontColor_NumBlue'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/M_UI_FontColor_NumBlue.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 11
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_314.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.58"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_PossessedMoney_Num",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FontSizeOverride_VeryLarge": 17,
+      "Text": {
+        "Namespace": "",
+        "Key": "6276FF3446945C92ECAFCC94D2AF3948",
+        "SourceString": "0000",
+        "LocalizedString": "0000"
+      },
+      "Font": {
+        "TypefaceFontName": "Medium",
+        "Size": 14
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_314.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.60"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_RequireMoney",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "SHOP_REQUIRED_MONEY"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "FontSizeOverride_VeryLarge": 17,
+      "Text": {
+        "Namespace": "",
+        "Key": "33C016B54F0E016D7CD8628058D15B12",
+        "SourceString": "パルソウル",
+        "LocalizedString": "パルソウル"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "Material'M_UI_FontColor_NumBlue'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/M_UI_FontColor_NumBlue.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 11
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_165.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.54"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_RequireMoney_Num",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FontSizeOverride_VeryLarge": 17,
+      "Text": {
+        "Namespace": "",
+        "Key": "10CE5B364FD951EEF3C48D91756D61D0",
+        "SourceString": "0000",
+        "LocalizedString": "0000"
+      },
+      "Font": {
+        "TypefaceFontName": "Medium",
+        "Size": 14
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_165.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.56"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_ItemUpdateInfo",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.Canvas_ItemUpdateInfo.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.Canvas_ItemUpdateInfo.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_ResetInfo",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.Canvas_ResetInfo.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.Canvas_ResetInfo.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.14"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.18"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.15"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_Overall",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.21"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.15"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Line",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.Line.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.25"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.Line.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.Line.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.27"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_ItemUpdateInfo",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 24.0,
+          "Right": 220.0,
+          "Bottom": 24.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.Canvas_ItemUpdateInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.6"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Buildup_Pal_Status_C:WidgetTree.Text_Info'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.1"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Canvas_ItemUpdateInfo",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -16.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.Canvas_ItemUpdateInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.6"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_ResetInfo",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 180.0,
+          "Top": -20.0,
+          "Right": 160.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.Canvas_ResetInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.7"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_165'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Canvas_ResetInfo",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 180.0,
+          "Top": 20.0,
+          "Right": 160.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.Canvas_ResetInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.7"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_314'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.49"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 614.0,
+          "Bottom": 552.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_Overall",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.9"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Buildup_Pal_Status_C:WidgetTree.Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.62"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_Overall",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.9"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Buildup_Pal_Status_C:WidgetTree.Select'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.70"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_Overall",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 370.0,
+          "Right": 0.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.9"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.Canvas_ResetInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_Overall",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 12.0,
+          "Top": 480.0,
+          "Right": 12.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.9"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_Overall",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.9"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Buildup_Pal_Status_C:WidgetTree.Frame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.63"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_Overall",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.9"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_Buildup_Pal_Status_C:WidgetTree.Overlay_BlockReset'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.71"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_Overall",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 340.0,
+          "Right": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.9"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.Canvas_ItemUpdateInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_Overall",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 10.0,
+          "Right": 584.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.9"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'WBP_Buildup_Pal_Status_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.76"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_Overall",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -54.0,
+          "Right": 376.0,
+          "Bottom": 36.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.9"
+      },
+      "Content": {
+        "ObjectName": "WBP_CommonButton_C'WBP_Buildup_Pal_Status_C:WidgetTree.WBP_CommonButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.90"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Line",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 1.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.10"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Buildup_Pal_Status_C:WidgetTree.Image_602'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.67"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Line",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 3.0,
+          "Bottom": 3.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.10"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Buildup_Pal_Status_C:WidgetTree.Image'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.64"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Line",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 3.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.10"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Buildup_Pal_Status_C:WidgetTree.Image_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.65"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WBP_CommonButton",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_Buildup_Pal_Status_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_Buildup_Pal_Status_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ConfirmDialog",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "Confirmed",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "DoCustomNavigation",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "Navigation",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EUINavigation'",
+          "ObjectPath": "/Script/SlateCore"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EUINavigation'",
+            "ObjectPath": "/Script/SlateCore"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "EmptyEvent",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bResult",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_Buildup_Pal_Status",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalDialogBoolCallback__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_IsUpgrade",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_StatusContent_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.102"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_StatusContent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.102"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_Buildup_Pal_StatusContent_C:OnClicked__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.46"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalDialogBoolCallback__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_Confirmed",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_StatusContent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.102"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_SelectText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.40"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalMoneyData:UpdatedMoneyDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalMoneyData_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalMoneyData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetFocusTarget_Widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'UserWidget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_StaticItemID_Money_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "CallFunc_Conv_IntToInt64_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetItemName_outName",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_1",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array_1",
+          "Flags": "RF_Public",
+          "ElementSize": 80,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_StatusContent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.102"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_Get_Status_Status",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_bResult",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Dialog_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Guid'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_Array_Get_Item_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Contains_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_IsNotEmpty_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Select_Default_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_CustomEvent_InVisibility",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array_2",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_Item_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.40"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_4",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnVisibilityChangedEvent__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_StatusContent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.102"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsImportedCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsImportedCharacter_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Select_Default_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Select_Default_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text_4",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Dialog_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Guid'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetFocusTarget",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'UserWidget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_StatusContent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.102"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "InvokeRankup__DelegateSignature",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "MapProperty",
+        "Name": "Status",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "KeyProp": {
+          "Type": "EnumProperty",
+          "Name": "Status",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": {
+              "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+              "ObjectPath": "/Script/Pal"
+            }
+          }
+        },
+        "ValueProp": {
+          "Type": "IntProperty",
+          "Name": "Status_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "InvokeReset__DelegateSignature",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "On Money Changed",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "Int64Property",
+        "Name": "NewMoney",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_Int64ToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "CallFunc_Conv_IntToInt64_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_Int64Int64_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInvisible",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "InVisibility",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Predict Status",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "Status",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "TargetRank",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "RequiredItems",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "KeyProp": {
+          "Type": "NameProperty",
+          "Name": "RequiredItems",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        },
+        "ValueProp": {
+          "Type": "IntProperty",
+          "Name": "RequiredItems_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Remove_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_StatusContent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.102"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Refresh Info",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_StatusContent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.102"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_Get_Status_Status",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetCurrentStatusRank_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Handle",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterHandle'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "ItemIds",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Inner": {
+          "Type": "NameProperty",
+          "Name": "ItemIds",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_TryGetIndividualParameter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "CallFunc_GetReturnItemsForResetCharacterStatusAll_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "KeyProp": {
+          "Type": "NameProperty",
+          "Name": "CallFunc_GetReturnItemsForResetCharacterStatusAll_ReturnValue",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        },
+        "ValueProp": {
+          "Type": "IntProperty",
+          "Name": "CallFunc_GetReturnItemsForResetCharacterStatusAll_ReturnValue_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "CallFunc_Conv_IntToInt64_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalMoneyData_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalMoneyData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "CallFunc_GetNowMoney_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_Int64Int64_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetRequiredMoneyCountForResetCharacterStatusAll_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_Int64ToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_StatusContent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.102"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_Get_Status_Status",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetCurrentStatusRank_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ShowResult",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SwitchPanel",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsUpgrade",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Update Confirm Button State",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "BeforeBlock",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Temp",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Temp",
+          "Flags": "RF_Public",
+          "ElementSize": 16,
+          "Struct": {
+            "ObjectName": "ScriptStruct'PalStaticItemIdAndNum'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "RequiredItems",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "KeyProp": {
+          "Type": "NameProperty",
+          "Name": "RequiredItems",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        },
+        "ValueProp": {
+          "Type": "IntProperty",
+          "Name": "RequiredItems_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_True_if_break_was_hit_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_BoolBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_Map_Keys_Keys",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "NameProperty",
+          "Name": "CallFunc_Map_Keys_Keys",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalStaticItemIdAndNum'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_CollectLocalPlayerControllableItemInfos_OutItemInfos",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "CallFunc_CollectLocalPlayerControllableItemInfos_OutItemInfos",
+          "Flags": "RF_Public",
+          "ElementSize": 16,
+          "Struct": {
+            "ObjectName": "ScriptStruct'PalStaticItemIdAndNum'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "CallFunc_GetRequiredItemCountForCharacterStatus_RequiredItems",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "KeyProp": {
+          "Type": "NameProperty",
+          "Name": "CallFunc_GetRequiredItemCountForCharacterStatus_RequiredItems",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        },
+        "ValueProp": {
+          "Type": "IntProperty",
+          "Name": "CallFunc_GetRequiredItemCountForCharacterStatus_RequiredItems_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_IsEmpty_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalMoneyData_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalMoneyData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "CallFunc_GetNowMoney_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "CallFunc_Conv_IntToInt64_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_Int64Int64_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateRequiredItemSufficiency",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "Temp",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Temp",
+          "Flags": "RF_Public",
+          "ElementSize": 16,
+          "Struct": {
+            "ObjectName": "ScriptStruct'PalStaticItemIdAndNum'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "RequiredItems",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "KeyProp": {
+          "Type": "NameProperty",
+          "Name": "RequiredItems",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        },
+        "ValueProp": {
+          "Type": "IntProperty",
+          "Name": "RequiredItems_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_True_if_break_was_hit_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.40"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalStaticItemIdAndNum'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Map_Find_Value_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_Map_Keys_Keys",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "NameProperty",
+          "Name": "CallFunc_Map_Keys_Keys",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_CollectLocalPlayerControllableItemInfos_OutItemInfos",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "CallFunc_CollectLocalPlayerControllableItemInfos_OutItemInfos",
+          "Flags": "RF_Public",
+          "ElementSize": 16,
+          "Struct": {
+            "ObjectName": "ScriptStruct'PalStaticItemIdAndNum'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_Array_Get_Item_3",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.40"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Map_Find_Value_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "CallFunc_GetRequiredItemCountForCharacterStatus_RequiredItems",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "KeyProp": {
+          "Type": "NameProperty",
+          "Name": "CallFunc_GetRequiredItemCountForCharacterStatus_RequiredItems",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        },
+        "ValueProp": {
+          "Type": "IntProperty",
+          "Name": "CallFunc_GetRequiredItemCountForCharacterStatus_RequiredItems_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.51"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.52"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.53"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.50"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.Canvas_ItemUpdateInfo.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.12"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_165",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_165.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.54"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_165.HorizontalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.55"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_165.HorizontalBoxSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.57"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_165.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.56"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.Canvas_ResetInfo.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.13"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_314",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_314.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.58"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_314.HorizontalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.59"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_314.HorizontalBoxSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.61"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_314.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.60"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.Canvas_ResetInfo.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.14"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 4.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.47"
+      },
+      "Content": {
+        "ObjectName": "WBP_Buildup_Pal_Item_C'WBP_Buildup_Pal_Status_C:WidgetTree.WBP_Buildup_Pal_Item_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.84"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 4.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.47"
+      },
+      "Content": {
+        "ObjectName": "WBP_Buildup_Pal_Item_C'WBP_Buildup_Pal_Status_C:WidgetTree.WBP_Buildup_Pal_Item'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.81"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 4.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.47"
+      },
+      "Content": {
+        "ObjectName": "WBP_Buildup_Pal_Item_C'WBP_Buildup_Pal_Status_C:WidgetTree.WBP_Buildup_Pal_Item_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.82"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 4.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.47"
+      },
+      "Content": {
+        "ObjectName": "WBP_Buildup_Pal_Item_C'WBP_Buildup_Pal_Status_C:WidgetTree.WBP_Buildup_Pal_Item_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.83"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_165",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "Value": 0.6,
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Left",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_165'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.48"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Buildup_Pal_Status_C:WidgetTree.Text_RequireMoney'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.4"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_165",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "Value": 0.5,
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_165'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.48"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Buildup_Pal_Status_C:WidgetTree.Image_Money1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.68"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_165",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_165'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.48"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Buildup_Pal_Status_C:WidgetTree.Text_RequireMoney_Num'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.5"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_165",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_165'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.48"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_Buildup_Pal_Status_C:WidgetTree.Spacer_100'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.74"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_314",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "Value": 0.6,
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Left",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_314'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.49"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Buildup_Pal_Status_C:WidgetTree.Text_PossessedMoney'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.2"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_314",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "Value": 0.5,
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_314'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.49"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Buildup_Pal_Status_C:WidgetTree.Image_Money2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.69"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_314",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_314'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.49"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Buildup_Pal_Status_C:WidgetTree.Text_PossessedMoney_Num'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.3"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_314",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_314'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.49"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_Buildup_Pal_Status_C:WidgetTree.Spacer_188'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.75"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Base",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.003011,
+        "G": 0.003965,
+        "B": 0.005208,
+        "A": 0.4,
+        "Hex": "66090C10"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.16"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Frame",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_frame_1px'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_frame_1px.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.885417,
+        "G": 0.873042,
+        "B": 0.853136,
+        "A": 0.5,
+        "Hex": "7FF2F1EE"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.20"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.875,
+        "G": 0.868012,
+        "B": 0.856771,
+        "A": 0.5,
+        "Hex": "7FF1F0EF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.Line.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.26"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.875,
+        "G": 0.868012,
+        "B": 0.856771,
+        "A": 0.5,
+        "Hex": "7FF1F0EF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.Line.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.27"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_44",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 120.0,
+          "Y": 120.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.3,
+            "G": 0.3,
+            "B": 0.3,
+            "A": 0.8,
+            "Hex": "CC959595"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Menu_BGGrd_1'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Menu/MI_UI_Menu_BGGrd_1.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Buildup_Pal_Status_C:WidgetTree.Overlay_BlockReset.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.72"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_602",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.875,
+        "G": 0.868012,
+        "B": 0.856771,
+        "A": 0.5,
+        "Hex": "7FF1F0EF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.Line.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.25"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Money1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 36.0,
+          "Y": 36.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_icon_money'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_icon_money.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.439657,
+        "B": 0.814847,
+        "A": 1.0,
+        "Hex": "00B1E9"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_165.HorizontalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.55"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Money2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 36.0,
+          "Y": 36.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_icon_money'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_icon_money.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.439657,
+        "B": 0.814847,
+        "A": 1.0,
+        "Hex": "00B1E9"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_314.HorizontalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.59"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Select",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 47.0,
+          "Y": 36.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_condense_frame'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_condense_frame.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.733333,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "00DFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.17"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_BlockReset",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_Buildup_Pal_Status_C:WidgetTree.Overlay_BlockReset.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.72"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Buildup_Pal_Status_C:WidgetTree.Overlay_BlockReset.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.73"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.21"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_BlockReset",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": -15.0,
+        "Top": -15.0,
+        "Right": -15.0,
+        "Bottom": -15.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Buildup_Pal_Status_C:WidgetTree.Overlay_BlockReset'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.71"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Buildup_Pal_Status_C:WidgetTree.Image_44'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.66"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_BlockReset",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 15.0,
+        "Right": 15.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Buildup_Pal_Status_C:WidgetTree.Overlay_BlockReset'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.71"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Buildup_Pal_Status_C:WidgetTree.BP_PalTextBlock_C_35'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.0"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_100",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_165.HorizontalBoxSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.57"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_188",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_314.HorizontalBoxSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.61"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.77"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.78"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.79"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.80"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.23"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Bottom": 8.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_Buildup_Pal_Status_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.76"
+      },
+      "Content": {
+        "ObjectName": "WBP_Buildup_Pal_StatusContent_C'WBP_Buildup_Pal_Status_C:WidgetTree.WBP_Buildup_Pal_StatusContent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.86"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Bottom": 8.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_Buildup_Pal_Status_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.76"
+      },
+      "Content": {
+        "ObjectName": "WBP_Buildup_Pal_StatusContent_C'WBP_Buildup_Pal_Status_C:WidgetTree.WBP_Buildup_Pal_StatusContent_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.87"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Bottom": 8.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_Buildup_Pal_Status_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.76"
+      },
+      "Content": {
+        "ObjectName": "WBP_Buildup_Pal_StatusContent_C'WBP_Buildup_Pal_Status_C:WidgetTree.WBP_Buildup_Pal_StatusContent_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.88"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_3",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Bottom": 8.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_Buildup_Pal_Status_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.76"
+      },
+      "Content": {
+        "ObjectName": "WBP_Buildup_Pal_StatusContent_C'WBP_Buildup_Pal_Status_C:WidgetTree.WBP_Buildup_Pal_StatusContent_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.89"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Buildup_Pal_Item_C",
+    "Name": "WBP_Buildup_Pal_Item",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C'",
+    "Template": {
+      "ObjectName": "WBP_Buildup_Pal_Item_C'Default__WBP_Buildup_Pal_Item_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.39"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.51"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Buildup_Pal_Item_C",
+    "Name": "WBP_Buildup_Pal_Item_1",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C'",
+    "Template": {
+      "ObjectName": "WBP_Buildup_Pal_Item_C'Default__WBP_Buildup_Pal_Item_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.39"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.52"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Buildup_Pal_Item_C",
+    "Name": "WBP_Buildup_Pal_Item_2",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C'",
+    "Template": {
+      "ObjectName": "WBP_Buildup_Pal_Item_C'Default__WBP_Buildup_Pal_Item_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.39"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.53"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Buildup_Pal_Item_C",
+    "Name": "WBP_Buildup_Pal_Item_3",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C'",
+    "Template": {
+      "ObjectName": "WBP_Buildup_Pal_Item_C'Default__WBP_Buildup_Pal_Item_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.39"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.50"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Buildup_Pal_Status_C",
+    "Name": "Default__WBP_Buildup_Pal_Status_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "RankupMsgId": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "BUILDUP_CONFIRM_DIALOG"
+      },
+      "ResetMsgId": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "BUILDUP_RESET_CONFIRM_DIALOG"
+      },
+      "RankupButtonMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "BUILDUP_BUTTON"
+      },
+      "ResetButtonMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "BUILDUP_RESET_BUTTON"
+      },
+      "ResetResultMsgId": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "BUILDUP_RESET_RESULT_DIALOG"
+      },
+      "Status": [
+        "EPalCharacterStatusOperationName::HP",
+        "EPalCharacterStatusOperationName::Attack",
+        "EPalCharacterStatusOperationName::Defence",
+        "EPalCharacterStatusOperationName::WorkSpeed"
+      ],
+      "CurrentRankMap": [
+        {
+          "Key": "EPalCharacterStatusOperationName::HP",
+          "Value": 0
+        },
+        {
+          "Key": "EPalCharacterStatusOperationName::Attack",
+          "Value": 0
+        },
+        {
+          "Key": "EPalCharacterStatusOperationName::Defence",
+          "Value": 0
+        },
+        {
+          "Key": "EPalCharacterStatusOperationName::WorkSpeed",
+          "Value": 0
+        }
+      ],
+      "ReturnPalSoulMsgId": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "BUILDUP_PAL_RESET_INFO"
+      },
+      "ConsumePalSoulMsgId": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "BUILDUP_PAL_UPGRADE_ITEM_CONSUME"
+      },
+      "RankupMsgId_ImportedPal": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "BUILDUP_CONFIRM_DIALOG＿IMPORTED_PAL"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_Buildup_Pal_StatusContent_C",
+    "Name": "WBP_Buildup_Pal_StatusContent",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.WBP_Buildup_Pal_StatusContent_C'",
+    "Template": {
+      "ObjectName": "WBP_Buildup_Pal_StatusContent_C'Default__WBP_Buildup_Pal_StatusContent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.98"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.77"
+      },
+      "Navigation": {
+        "ObjectName": "WidgetNavigation'WBP_Buildup_Pal_Status_C:WidgetTree.WBP_Buildup_Pal_StatusContent.WidgetNavigation_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.92"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Buildup_Pal_StatusContent_C",
+    "Name": "WBP_Buildup_Pal_StatusContent_1",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.WBP_Buildup_Pal_StatusContent_C'",
+    "Template": {
+      "ObjectName": "WBP_Buildup_Pal_StatusContent_C'Default__WBP_Buildup_Pal_StatusContent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.98"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.78"
+      },
+      "Navigation": {
+        "ObjectName": "WidgetNavigation'WBP_Buildup_Pal_Status_C:WidgetTree.WBP_Buildup_Pal_StatusContent_1.WidgetNavigation_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.93"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Buildup_Pal_StatusContent_C",
+    "Name": "WBP_Buildup_Pal_StatusContent_2",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.WBP_Buildup_Pal_StatusContent_C'",
+    "Template": {
+      "ObjectName": "WBP_Buildup_Pal_StatusContent_C'Default__WBP_Buildup_Pal_StatusContent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.98"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.79"
+      },
+      "Navigation": {
+        "ObjectName": "WidgetNavigation'WBP_Buildup_Pal_Status_C:WidgetTree.WBP_Buildup_Pal_StatusContent_2.WidgetNavigation_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.94"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Buildup_Pal_StatusContent_C",
+    "Name": "WBP_Buildup_Pal_StatusContent_3",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.WBP_Buildup_Pal_StatusContent_C'",
+    "Template": {
+      "ObjectName": "WBP_Buildup_Pal_StatusContent_C'Default__WBP_Buildup_Pal_StatusContent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.98"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_Buildup_Pal_Status_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.80"
+      },
+      "Navigation": {
+        "ObjectName": "WidgetNavigation'WBP_Buildup_Pal_Status_C:WidgetTree.WBP_Buildup_Pal_StatusContent_3.WidgetNavigation_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.95"
+      }
+    }
+  },
+  {
+    "Type": "WBP_CommonButton_C",
+    "Name": "WBP_CommonButton",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton.WBP_CommonButton_C'",
+    "Template": {
+      "ObjectName": "WBP_CommonButton_C'Default__WBP_CommonButton_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton.279"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitializeMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "BUILDUP_BUTTON"
+      },
+      "OverrideHover": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_Overall.CanvasPanelSlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.24"
+      },
+      "Navigation": {
+        "ObjectName": "WidgetNavigation'WBP_Buildup_Pal_Status_C:WidgetTree.WBP_CommonButton.WidgetNavigation_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.96"
+      }
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_Buildup_Pal_Status_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.97"
+      },
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_Buildup_Pal_Status_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.28"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:ExecuteUbergraph_WBP_Buildup_Pal_Status'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.34"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:DoCustomNavigation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.32"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:UpdateRequiredItemSufficiency'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.46"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:Refresh Info'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.41"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:Predict Status'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.40"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:Update Confirm Button State'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.45"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:GetFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.35"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:On Money Changed'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.38"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.42"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:SwitchPanel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.44"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.31"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:BndEvt__WBP_Buildup_Pal_Status_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.29"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:ConfirmDialog'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.30"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:EmptyEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.33"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:ShowResult'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.43"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:OnInvisible'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.39"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:ExecuteUbergraph_WBP_Buildup_Pal_Status'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.34"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:InvokeReset__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.37"
+      },
+      {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:InvokeRankup__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.36"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Canvas_ResetInfo",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CanvasPanel_Overall",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_44",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Overlay_BlockReset",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Overlay'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_Info",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_PossessedMoney_Num",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_RequireMoney_Num",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Buildup_Pal_Item",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.40"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Buildup_Pal_Item_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.40"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Buildup_Pal_Item_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.40"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Buildup_Pal_Item_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.40"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Buildup_Pal_StatusContent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_StatusContent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.102"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Buildup_Pal_StatusContent_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_StatusContent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.102"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Buildup_Pal_StatusContent_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_StatusContent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.102"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Buildup_Pal_StatusContent_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_StatusContent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.102"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_CommonButton",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton.285"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "StatusContents",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "StatusContents",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_StatusContent_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_StatusContent.102"
+          }
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "TargetStatusRankMap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "EnumProperty",
+          "Name": "TargetStatusRankMap",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": {
+              "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+              "ObjectPath": "/Script/Pal"
+            }
+          }
+        },
+        "ValueProp": {
+          "Type": "IntProperty",
+          "Name": "TargetStatusRankMap_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "RankupMsgId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ResetMsgId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "RankupButtonMsgID",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ResetButtonMsgID",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ResetResultMsgId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "InvokeRankup",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_Buildup_Pal_Status_C:InvokeRankup__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.36"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "BlockInvoke",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Is Upgrade",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Upgrade Items",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "Upgrade Items",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Buildup_Pal_Item_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Item.40"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "RequiredMoney",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "InvokeReset",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_Buildup_Pal_Status_C:InvokeReset__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.37"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Item Ids",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "NameProperty",
+          "Name": "Item Ids",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CurrentIndividualParam",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Status",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | BlueprintReadOnly | DisableEditOnInstance",
+        "Inner": {
+          "Type": "EnumProperty",
+          "Name": "Status",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": {
+              "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+              "ObjectPath": "/Script/Pal"
+            }
+          }
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "CurrentRankMap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "EnumProperty",
+          "Name": "CurrentRankMap",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": {
+              "ObjectName": "Enum'EPalCharacterStatusOperationName'",
+              "ObjectPath": "/Script/Pal"
+            }
+          }
+        },
+        "ValueProp": {
+          "Type": "IntProperty",
+          "Name": "CurrentRankMap_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ReturnPalSoulMsgId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ConsumePalSoulMsgId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "ReturnItems",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "NameProperty",
+          "Name": "ReturnItems",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        },
+        "ValueProp": {
+          "Type": "IntProperty",
+          "Name": "ReturnItems_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "RankupMsgId_ImportedPal",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "InvokeRankup__DelegateSignature": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:InvokeRankup__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.36"
+      },
+      "InvokeReset__DelegateSignature": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:InvokeReset__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.37"
+      },
+      "ExecuteUbergraph_WBP_Buildup_Pal_Status": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:ExecuteUbergraph_WBP_Buildup_Pal_Status'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.34"
+      },
+      "OnInvisible": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:OnInvisible'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.39"
+      },
+      "ShowResult": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:ShowResult'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.43"
+      },
+      "EmptyEvent": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:EmptyEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.33"
+      },
+      "ConfirmDialog": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:ConfirmDialog'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.30"
+      },
+      "BndEvt__WBP_Buildup_Pal_Status_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:BndEvt__WBP_Buildup_Pal_Status_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.29"
+      },
+      "Construct": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.31"
+      },
+      "SwitchPanel": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:SwitchPanel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.44"
+      },
+      "Setup": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.42"
+      },
+      "On Money Changed": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:On Money Changed'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.38"
+      },
+      "GetFocusTarget": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:GetFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.35"
+      },
+      "Update Confirm Button State": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:Update Confirm Button State'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.45"
+      },
+      "Predict Status": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:Predict Status'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.40"
+      },
+      "Refresh Info": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:Refresh Info'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.41"
+      },
+      "UpdateRequiredItemSufficiency": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:UpdateRequiredItemSufficiency'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.46"
+      },
+      "DoCustomNavigation": {
+        "ObjectName": "Function'WBP_Buildup_Pal_Status_C:DoCustomNavigation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.32"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_Buildup_Pal_Status_C'Default__WBP_Buildup_Pal_Status_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.85"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetNavigation",
+    "Name": "WidgetNavigation_0",
+    "Outer": "WBP_Buildup_Pal_StatusContent",
+    "Class": "UScriptClass'WidgetNavigation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Left": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Right": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Next": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Previous": {
+        "Rule": "EUINavigationRule::Stop"
+      }
+    }
+  },
+  {
+    "Type": "WidgetNavigation",
+    "Name": "WidgetNavigation_0",
+    "Outer": "WBP_Buildup_Pal_StatusContent_1",
+    "Class": "UScriptClass'WidgetNavigation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Left": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Right": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Next": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Previous": {
+        "Rule": "EUINavigationRule::Stop"
+      }
+    }
+  },
+  {
+    "Type": "WidgetNavigation",
+    "Name": "WidgetNavigation_0",
+    "Outer": "WBP_Buildup_Pal_StatusContent_2",
+    "Class": "UScriptClass'WidgetNavigation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Left": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Right": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Next": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Previous": {
+        "Rule": "EUINavigationRule::Stop"
+      }
+    }
+  },
+  {
+    "Type": "WidgetNavigation",
+    "Name": "WidgetNavigation_0",
+    "Outer": "WBP_Buildup_Pal_StatusContent_3",
+    "Class": "UScriptClass'WidgetNavigation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Down": {
+        "Rule": "EUINavigationRule::Custom",
+        "WidgetToFocus": "DoCustomNavigation"
+      },
+      "Left": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Right": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Next": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Previous": {
+        "Rule": "EUINavigationRule::Stop"
+      }
+    }
+  },
+  {
+    "Type": "WidgetNavigation",
+    "Name": "WidgetNavigation_0",
+    "Outer": "WBP_CommonButton",
+    "Class": "UScriptClass'WidgetNavigation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Left": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Right": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Next": {
+        "Rule": "EUINavigationRule::Stop"
+      },
+      "Previous": {
+        "Rule": "EUINavigationRule::Stop"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_Buildup_Pal_Status_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_Buildup_Pal_Status_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Buildup/WBP_Buildup_Pal_Status.8"
+      }
+    }
+  }
+]

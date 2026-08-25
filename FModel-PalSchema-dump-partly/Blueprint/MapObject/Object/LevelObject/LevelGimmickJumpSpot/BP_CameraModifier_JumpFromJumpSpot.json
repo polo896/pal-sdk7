@@ -1,0 +1,47 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_CameraModifier_JumpFromJumpSpot_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalCameraModifier'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_CameraModifier_JumpFromJumpSpot_C'Default__BP_CameraModifier_JumpFromJumpSpot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_CameraModifier_JumpFromJumpSpot.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_CameraModifier_JumpFromJumpSpot_C",
+    "Name": "Default__BP_CameraModifier_JumpFromJumpSpot_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_CameraModifier_JumpFromJumpSpot.BP_CameraModifier_JumpFromJumpSpot_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Priority": 100.0,
+      "Duration": 0.0,
+      "BlendInTime": 0.71,
+      "BlendInEaseFunc": "EEasingFunc::ExpoIn",
+      "BlendInEaseExponent": 3.0,
+      "BlendOutTime": 2.0,
+      "BlendOutEaseFunc": "EEasingFunc::ExpoOut",
+      "BlendOutEaseExponent": 5.0,
+      "CameraLengthModifyType": "EPalCameraModifierParameterType::Additional",
+      "TargetCameraLength": 450.0,
+      "bOverrideCameraLag": true,
+      "bEnableCameraLag": true,
+      "CameraLagSpeed": 10.0
+    }
+  }
+]

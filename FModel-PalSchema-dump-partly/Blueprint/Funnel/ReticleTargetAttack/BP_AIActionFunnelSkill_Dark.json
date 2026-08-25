@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AIActionFunnelSkill_Dark_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIActionFunnelSkill_ReticleTargetAttack_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Funnel/ReticleTargetAttack/BP_AIActionFunnelSkill_ReticleTargetAttack.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIActionFunnelSkill_ReticleTargetAttack_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Funnel/ReticleTargetAttack/BP_AIActionFunnelSkill_ReticleTargetAttack.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AIActionFunnelSkill_Dark_C'Default__BP_AIActionFunnelSkill_Dark_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Funnel/ReticleTargetAttack/BP_AIActionFunnelSkill_Dark.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AIActionFunnelSkill_Dark_C",
+    "Name": "Default__BP_AIActionFunnelSkill_Dark_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Funnel/ReticleTargetAttack/BP_AIActionFunnelSkill_Dark.BP_AIActionFunnelSkill_Dark_C'",
+    "Template": {
+      "ObjectName": "BP_AIActionFunnelSkill_ReticleTargetAttack_C'Default__BP_AIActionFunnelSkill_ReticleTargetAttack_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Funnel/ReticleTargetAttack/BP_AIActionFunnelSkill_ReticleTargetAttack.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WazaAction": {
+        "ObjectName": "BlueprintGeneratedClass'BP_ActionFunnelDark_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BP_ActionFunnelDark.0"
+      }
+    }
+  }
+]

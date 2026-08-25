@@ -1,0 +1,32 @@
+[
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "F_StateSync",
+    "Class": "UScriptClass'UserDefinedStruct'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Guid": "75774110-455C18D8-C752F28C-8DDC54DA"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "State_2_ADB64886401A1A1125474CB0B3E02E82",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Revision_4_89E100ED48D17F691F655BB0039D53E2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      }
+    ],
+    "StructFlags": 57344,
+    "DefaultProperties": {
+      "State_2_ADB64886401A1A1125474CB0B3E02E82": 0,
+      "Revision_4_89E100ED48D17F691F655BB0039D53E2": 0
+    }
+  }
+]

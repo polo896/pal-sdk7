@@ -1,0 +1,92 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_ThunderDog_Ice_KoriShorai_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_ThunderDog_InazumaShorai_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_Action_Unique_ThunderDog_InazumaShorai.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_ThunderDog_InazumaShorai_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_Action_Unique_ThunderDog_InazumaShorai.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Action_Unique_ThunderDog_Ice_KoriShorai_C:GetEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_Action_Unique_ThunderDog_Ice_KoriShorai.2"
+      }
+    ],
+    "FuncMap": {
+      "GetEffect": {
+        "ObjectName": "Function'BP_Action_Unique_ThunderDog_Ice_KoriShorai_C:GetEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_Action_Unique_ThunderDog_Ice_KoriShorai.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_ThunderDog_Ice_KoriShorai_C'Default__BP_Action_Unique_ThunderDog_Ice_KoriShorai_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_Action_Unique_ThunderDog_Ice_KoriShorai.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_ThunderDog_Ice_KoriShorai_C",
+    "Name": "Default__BP_Action_Unique_ThunderDog_Ice_KoriShorai_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_Action_Unique_ThunderDog_Ice_KoriShorai.BP_Action_Unique_ThunderDog_Ice_KoriShorai_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_ThunderDog_InazumaShorai_C'Default__BP_Action_Unique_ThunderDog_InazumaShorai_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_Action_Unique_ThunderDog_InazumaShorai.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkillModuleClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SkillModule_Tackle_ThunderDog_Ice_KoriShorai_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_SkillModule_Tackle_ThunderDog_Ice_KoriShorai.0"
+      },
+      "WazaID": "EPalWazaID::Unique_ThunderDog_Ice_KoriShorai"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetEffect",
+    "Outer": "BP_Action_Unique_ThunderDog_Ice_KoriShorai_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_Unique_ThunderDog_InazumaShorai_C:GetEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_Action_Unique_ThunderDog_InazumaShorai.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_Unique_ThunderDog_InazumaShorai_C:GetEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_Action_Unique_ThunderDog_InazumaShorai.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "NewParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

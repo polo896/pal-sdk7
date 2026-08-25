@@ -1,0 +1,62 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalShopManager_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalShopManager'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalShopManager_C'Default__BP_PalShopManager_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalShopManager.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalShopManager_C",
+    "Name": "Default__BP_PalShopManager_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalShopManager.BP_PalShopManager_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ItemShopProductClassMap": [
+        {
+          "Key": "EPalItemShopProductType::OnlyPurchaseOne",
+          "Value": {
+            "ObjectName": "Class'PalShopProduct_OnlyBuyOneItem'",
+            "ObjectPath": "/Script/Pal"
+          }
+        },
+        {
+          "Key": "EPalItemShopProductType::Normal",
+          "Value": {
+            "ObjectName": "Class'PalShopProduct_TradeItem'",
+            "ObjectPath": "/Script/Pal"
+          }
+        },
+        {
+          "Key": "EPalItemShopProductType::Skin",
+          "Value": {
+            "ObjectName": "Class'PalShopProduct_InGameSkin'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      ],
+      "ItemShopSettingDataTable": {
+        "ObjectName": "CompositeDataTable'DT_ItemShopSettingData'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/ItemShop/DT_ItemShopSettingData.0"
+      },
+      "bShouldCreate": true
+    }
+  }
+]

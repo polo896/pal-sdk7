@@ -1,0 +1,164 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_1",
+    "Outer": "FABP_SnowBoss_Investigate",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "FE25856D-42EED559-B52E8CA8-9DB50234"
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_SnowBoss_Investigate",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "1541DE14-40E96B58-AC4A35BA-E7094911",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "2B8752E3-48E1E251-5490A6B0-B2E50289",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_SnowBoss_Investigate",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Victor_Talk_040"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "1AAFC195-415DECB3-4E821289-B8EDEA75",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "5582606B-4ACF090C-7989EC9B-2D7790F8",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_6",
+    "Outer": "FABP_SnowBoss_Investigate",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "NetworkInvokeName": "Progress1",
+      "GraphNode": null,
+      "NodeGuid": "5582606B-4ACF090C-7989EC9B-2D7790F8"
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_0",
+    "Outer": "FABP_SnowBoss_Investigate",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_SnowBoss_Investigate_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SnowBoss_Investigate.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "2B8752E3-48E1E251-5490A6B0-B2E50289",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "1AAFC195-415DECB3-4E821289-B8EDEA75",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "FE25856D-42EED559-B52E8CA8-9DB50234",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_SnowBoss_Investigate",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "B02975EC-4415F241-B5A571AF-E3F18748",
+      "Nodes": [
+        {
+          "Key": "1541DE14-40E96B58-AC4A35BA-E7094911",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_SnowBoss_Investigate:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SnowBoss_Investigate.1"
+          }
+        },
+        {
+          "Key": "1AAFC195-415DECB3-4E821289-B8EDEA75",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_SnowBoss_Investigate:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SnowBoss_Investigate.2"
+          }
+        },
+        {
+          "Key": "2B8752E3-48E1E251-5490A6B0-B2E50289",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_SnowBoss_Investigate:FNBP_QuestBlockBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SnowBoss_Investigate.4"
+          }
+        },
+        {
+          "Key": "FE25856D-42EED559-B52E8CA8-9DB50234",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_SnowBoss_Investigate:FlowNode_Finish_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SnowBoss_Investigate.0"
+          }
+        },
+        {
+          "Key": "5582606B-4ACF090C-7989EC9B-2D7790F8",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_SnowBoss_Investigate:FNBP_ProgressQuest_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SnowBoss_Investigate.3"
+          }
+        }
+      ]
+    }
+  }
+]

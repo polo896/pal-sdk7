@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Swim_FoxExorcist",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 1.3333334,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_FoxExorcist_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/FoxExorcist/AS_FoxExorcist_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.2
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_FoxExorcist_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/FoxExorcist/AS_FoxExorcist_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 300.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.4
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_FoxExorcist_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/FoxExorcist/AS_FoxExorcist_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 600.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.8
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.5
+          },
+          {
+            "SampleIndices": 1,
+            "SampleIndices[1]": 2,
+            "Vertices": 0.5,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 600.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_FoxExorcist_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/FoxExorcist/SK_FoxExorcist_Skeleton.4"
+      }
+    },
+    "SkeletonGuid": "83E82813-43DC46AF-B5DFB198-9D3D2F1D"
+  }
+]

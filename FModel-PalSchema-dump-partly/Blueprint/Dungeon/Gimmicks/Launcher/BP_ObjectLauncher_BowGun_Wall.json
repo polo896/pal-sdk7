@@ -1,0 +1,642 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "MuzzleDirection_GEN_VARIABLE",
+    "Outer": "BP_ObjectLauncher_BowGun_Wall_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 10.85122,
+        "Y": 0.0,
+        "Z": 83.0
+      },
+      "RelativeScale3D": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_ObjectLauncher_BowGun_Wall_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_StationaryLauncherBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/Base/BP_StationaryLauncherBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_ObjectLauncher_BowGun_Wall_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.14"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_ObjectLauncher_BowGun_Wall_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.8"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_ObjectLauncher_BowGun_Wall_C:ExecuteUbergraph_BP_ObjectLauncher_BowGun_Wall'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_StationaryLauncherBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/Base/BP_StationaryLauncherBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_ObjectLauncher_BowGun_Wall_C:OnSpawnedLaunchObject'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.5"
+      },
+      {
+        "ObjectName": "Function'BP_ObjectLauncher_BowGun_Wall_C:GetLaunchObjectSpawnTransform'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.4"
+      },
+      {
+        "ObjectName": "Function'BP_ObjectLauncher_BowGun_Wall_C:StartLaunchAnimation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.7"
+      },
+      {
+        "ObjectName": "Function'BP_ObjectLauncher_BowGun_Wall_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.6"
+      },
+      {
+        "ObjectName": "Function'BP_ObjectLauncher_BowGun_Wall_C:ExecuteUbergraph_BP_ObjectLauncher_BowGun_Wall'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StaticMesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MuzzleDirection",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ArrowComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefenseFacilityMedieval_Base",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "WeaponDamage",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "ArrowClass",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | UObjectWrapper",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_Arrow_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/BP_Arrow.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_ObjectLauncher_BowGun_Wall": {
+        "ObjectName": "Function'BP_ObjectLauncher_BowGun_Wall_C:ExecuteUbergraph_BP_ObjectLauncher_BowGun_Wall'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.3"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_ObjectLauncher_BowGun_Wall_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.6"
+      },
+      "StartLaunchAnimation": {
+        "ObjectName": "Function'BP_ObjectLauncher_BowGun_Wall_C:StartLaunchAnimation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.7"
+      },
+      "GetLaunchObjectSpawnTransform": {
+        "ObjectName": "Function'BP_ObjectLauncher_BowGun_Wall_C:GetLaunchObjectSpawnTransform'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.4"
+      },
+      "OnSpawnedLaunchObject": {
+        "ObjectName": "Function'BP_ObjectLauncher_BowGun_Wall_C:OnSpawnedLaunchObject'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_ObjectLauncher_BowGun_Wall_C'Default__BP_ObjectLauncher_BowGun_Wall_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_ObjectLauncher_BowGun_Wall_C",
+    "Name": "Default__BP_ObjectLauncher_BowGun_Wall_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.BP_ObjectLauncher_BowGun_Wall_C'",
+    "Template": {
+      "ObjectName": "BP_StationaryLauncherBase_C'Default__BP_StationaryLauncherBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/Base/BP_StationaryLauncherBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "WeaponDamage": 300,
+      "ArrowClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_DungeonGimmickBullet_Arrow_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/Bullet/BP_DungeonGimmickBullet_Arrow.0"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_ObjectLauncher_BowGun_Wall",
+    "Outer": "BP_ObjectLauncher_BowGun_Wall_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSystemAttached_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetLaunchObjectSpawnTransform",
+    "Outer": "BP_ObjectLauncher_BowGun_Wall_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStationaryLauncherBase:GetLaunchObjectSpawnTransform'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "OutLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "OutRotator",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSpawnedLaunchObject",
+    "Outer": "BP_ObjectLauncher_BowGun_Wall_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStationaryLauncherBase:OnSpawnedLaunchObject'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SpawnedLaunchObject",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ArrowActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_Arrow_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/BP_Arrow.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Arrow",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_Arrow_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/BP_Arrow.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_ObjectLauncher_BowGun_Wall_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StartLaunchAnimation",
+    "Outer": "BP_ObjectLauncher_BowGun_Wall_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStationaryLauncherBase:StartLaunchAnimation'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_ObjectLauncher_BowGun_Wall_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_ObjectLauncher_BowGun_Wall_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_ObjectLauncher_BowGun_Wall_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.9"
+      },
+      "VariableGuid": "EAB400D5-47FBFB1F-4A09458A-59BEB63D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent'BP_ObjectLauncher_BowGun_Wall_C:DefenseFacilityMedieval_Base_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.15"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_StationaryLauncherBase_C",
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_ObjectLauncher_BowGun_Wall_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.12"
+        }
+      ],
+      "VariableGuid": "71595DE1-418B9BB5-5218BA84-EC7151BC",
+      "InternalVariableName": "DefenseFacilityMedieval_Base"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ArrowComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ArrowComponent'BP_ObjectLauncher_BowGun_Wall_C:MuzzleDirection_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.0"
+      },
+      "VariableGuid": "386A041F-4B6841BD-D1A73DBD-1E01D183",
+      "InternalVariableName": "MuzzleDirection"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_ObjectLauncher_BowGun_Wall_C:StaticMesh_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.16"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_StationaryLauncherBase_C",
+      "VariableGuid": "C67B2E4B-4358F12E-80CA7086-D7F7FD3A",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_ObjectLauncher_BowGun_Wall_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_ObjectLauncher_BowGun_Wall_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.11"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_ObjectLauncher_BowGun_Wall_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.13"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_ObjectLauncher_BowGun_Wall_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.11"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_ObjectLauncher_BowGun_Wall_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_ObjectLauncher_BowGun_Wall_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.13"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_ObjectLauncher_BowGun_Wall_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/Launcher/BP_ObjectLauncher_BowGun_Wall.10"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "DefenseFacilityMedieval_Base_GEN_VARIABLE",
+    "Outer": "BP_ObjectLauncher_BowGun_Wall_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_DefenseFacilityMedieval_Base_Skeleton_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/StationaryWeapon/ABP_DefenseFacilityMedieval_Base_Skeleton.1"
+      },
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimMontage'AM_DefenseFacilityMedieval_Base_Anim'",
+          "ObjectPath": "Pal/Content/Pal/Model/Prop/Architecture/DefenseFacilityMedieval/AM_DefenseFacilityMedieval_Base_Anim.0"
+        }
+      },
+      "AnimationMode": "EAnimationMode::AnimationCustomMode"
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "BP_ObjectLauncher_BowGun_Wall_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_WallWindow_Wood'",
+        "ObjectPath": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_Wood/SM_WallWindow_Wood.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'MI_Yakushima_WallWindow_Wood'",
+          "ObjectPath": "Pal/Content/Pal/Model/Stage/dungeon/Dungeon_Yakushima/HouseSet/Material/MI_Yakushima_WallWindow_Wood.0"
+        }
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel2",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel3",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel4",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel5",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel6",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel17",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel18",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 62.0
+      },
+      "RelativeScale3D": {
+        "X": 0.18331586,
+        "Y": 0.11408153,
+        "Z": 0.14181271
+      }
+    }
+  }
+]

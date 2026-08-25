@@ -1,0 +1,380 @@
+[
+  {
+    "Type": "PalAchivementRewardDataAsset",
+    "Name": "DA_AchivementReward",
+    "Class": "UScriptClass'PalAchivementRewardDataAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BossDefeatRewardsMap": [
+        {
+          "Key": "BossDefeat_1",
+          "Value": {
+            "RecordID": "BossDefeat_1",
+            "RequireCount": 5,
+            "RewardItems": [
+              {
+                "StaticItemId": "ExpBoost_02",
+                "Num": 3
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "BossDefeat_2",
+          "Value": {
+            "RecordID": "BossDefeat_2",
+            "RequireCount": 10,
+            "RewardItems": [
+              {
+                "StaticItemId": "Fruit_hp_01",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "BossDefeat_3",
+          "Value": {
+            "RecordID": "BossDefeat_3",
+            "RequireCount": 20,
+            "RewardItems": [
+              {
+                "StaticItemId": "AncientTechnologyBook_G1",
+                "Num": 2
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "BossDefeat_4",
+          "Value": {
+            "RecordID": "BossDefeat_4",
+            "RequireCount": 30,
+            "RewardItems": [
+              {
+                "StaticItemId": "WorkSuitability_AddTicket_Collection",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "BossDefeat_5",
+          "Value": {
+            "RecordID": "BossDefeat_5",
+            "RequireCount": 50,
+            "RewardItems": [
+              {
+                "StaticItemId": "Elixir_weight_01",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "BossDefeat_6",
+          "Value": {
+            "RecordID": "BossDefeat_6",
+            "RequireCount": 100,
+            "RewardItems": [
+              {
+                "StaticItemId": "WorkSuitability_AddTicket_Watering",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 2
+          }
+        }
+      ],
+      "PalCaptureRewardsMap": [
+        {
+          "Key": "PalCapture_1",
+          "Value": {
+            "RecordID": "PalCapture_1",
+            "RequireCount": 100,
+            "RewardItems": [
+              {
+                "StaticItemId": "TechnologyBook_G2",
+                "Num": 2
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalCapture_2",
+          "Value": {
+            "RecordID": "PalCapture_2",
+            "RequireCount": 200,
+            "RewardItems": [
+              {
+                "StaticItemId": "Elixir_stamina_01",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalCapture_3",
+          "Value": {
+            "RecordID": "PalCapture_3",
+            "RequireCount": 300,
+            "RewardItems": [
+              {
+                "StaticItemId": "ExpBoost_04",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalCapture_4",
+          "Value": {
+            "RecordID": "PalCapture_4",
+            "RequireCount": 400,
+            "RewardItems": [
+              {
+                "StaticItemId": "Elixir_workspeed_01",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalCapture_5",
+          "Value": {
+            "RecordID": "PalCapture_5",
+            "RequireCount": 500,
+            "RewardItems": [
+              {
+                "StaticItemId": "WorkSuitability_AddTicket_Mining",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalCapture_6",
+          "Value": {
+            "RecordID": "PalCapture_6",
+            "RequireCount": 600,
+            "RewardItems": [
+              {
+                "StaticItemId": "Elixir_hp_01",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalCapture_7",
+          "Value": {
+            "RecordID": "PalCapture_7",
+            "RequireCount": 700,
+            "RewardItems": [
+              {
+                "StaticItemId": "TreasureMap03",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalCapture_8",
+          "Value": {
+            "RecordID": "PalCapture_8",
+            "RequireCount": 800,
+            "RewardItems": [
+              {
+                "StaticItemId": "WorkSuitability_AddTicket_GenerateElectricity",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalCapture_9",
+          "Value": {
+            "RecordID": "PalCapture_9",
+            "RequireCount": 900,
+            "RewardItems": [
+              {
+                "StaticItemId": "Fruit_attack_01",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalCapture_10",
+          "Value": {
+            "RecordID": "PalCapture_10",
+            "RequireCount": 1000,
+            "RewardItems": [
+              {
+                "StaticItemId": "WorkSuitability_AddTicket_Handcraft",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 2
+          }
+        }
+      ],
+      "PaldexRewardsMap": [
+        {
+          "Key": "PalDex_1",
+          "Value": {
+            "RecordID": "PalDex_1",
+            "RequireCount": 10,
+            "RewardItems": [
+              {
+                "StaticItemId": "TechnologyBook_G1",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalDex_2",
+          "Value": {
+            "RecordID": "PalDex_2",
+            "RequireCount": 20,
+            "RewardItems": [
+              {
+                "StaticItemId": "Elixir_attack_01",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalDex_3",
+          "Value": {
+            "RecordID": "PalDex_3",
+            "RequireCount": 30,
+            "RewardItems": [
+              {
+                "StaticItemId": "ExpBoost_04",
+                "Num": 3
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalDex_4",
+          "Value": {
+            "RecordID": "PalDex_4",
+            "RequireCount": 40,
+            "RewardItems": [
+              {
+                "StaticItemId": "Fruit__defense_01",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalDex_5",
+          "Value": {
+            "RecordID": "PalDex_5",
+            "RequireCount": 50,
+            "RewardItems": [
+              {
+                "StaticItemId": "WorkSuitability_AddTicket_ProductMedicine",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalDex_6",
+          "Value": {
+            "RecordID": "PalDex_6",
+            "RequireCount": 60,
+            "RewardItems": [
+              {
+                "StaticItemId": "TechnologyBook_G3",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalDex_7",
+          "Value": {
+            "RecordID": "PalDex_7",
+            "RequireCount": 70,
+            "RewardItems": [
+              {
+                "StaticItemId": "WorkSuitability_AddTicket_Seeding",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalDex_8",
+          "Value": {
+            "RecordID": "PalDex_8",
+            "RequireCount": 80,
+            "RewardItems": [
+              {
+                "StaticItemId": "TreasureMap03",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalDex_9",
+          "Value": {
+            "RecordID": "PalDex_9",
+            "RequireCount": 90,
+            "RewardItems": [
+              {
+                "StaticItemId": "AffectionFruit_01",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "PalDex_10",
+          "Value": {
+            "RecordID": "PalDex_10",
+            "RequireCount": 100,
+            "RewardItems": [
+              {
+                "StaticItemId": "WorkSuitability_AddTicket_Deforest",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 2
+          }
+        }
+      ]
+    }
+  }
+]

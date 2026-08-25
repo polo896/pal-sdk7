@@ -1,0 +1,79 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SubQuest_Breeder03_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SubQuest_Breeder03_C'Default__BP_SubQuest_Breeder03_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/BP_SubQuest_Breeder03.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SubQuest_Breeder03_C",
+    "Name": "Default__BP_SubQuest_Breeder03_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/SubQuest/BP_SubQuest_Breeder03.BP_SubQuest_Breeder03_C'",
+    "Template": {
+      "ObjectName": "BP_PalQuestDataBase_C'Default__BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestBlockGroupList": [
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Breeder03_FindQuestItem.BP_SubQuestBlock_Breeder03_FindQuestItem_C",
+              "SubPathString": ""
+            }
+          ]
+        },
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Breeder03_DeliveryItem.BP_SubQuestBlock_Breeder03_DeliveryItem_C",
+              "SubPathString": ""
+            }
+          ]
+        }
+      ],
+      "QuestTitleMsgId": "QUEST_SUB_QUESTNAME_BREEDER3",
+      "QuestDescriptionMsgId": "QUEST_SUB_INPROGRESS_DESC_BREEDER3",
+      "CommonRewardData": {
+        "Exp": 12170,
+        "Items": [
+          {
+            "Key": {
+              "Key": "Rankup_2"
+            },
+            "Value": 1
+          },
+          {
+            "Key": {
+              "Key": "Potion_High"
+            },
+            "Value": 10
+          }
+        ]
+      }
+    }
+  }
+]

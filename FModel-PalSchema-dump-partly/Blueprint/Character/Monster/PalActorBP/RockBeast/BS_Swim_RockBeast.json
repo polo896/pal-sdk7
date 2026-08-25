@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Swim_RockBeast",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 1.0,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_RockBeast_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/RockBeast/AS_RockBeast_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.2
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_RockBeast_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/RockBeast/AS_RockBeast_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 550.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.3
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_RockBeast_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/RockBeast/AS_RockBeast_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 275.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.25
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 2,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.5
+          },
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.5,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 550.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_RockBeast_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/RockBeast/SK_RockBeast_Skeleton.3"
+      }
+    },
+    "SkeletonGuid": "47C9E923-467F929B-D3BB4FB1-5DF4CB4C"
+  }
+]

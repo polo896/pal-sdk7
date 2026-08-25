@@ -1,0 +1,52 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AIAction_NPC_Combat_GiantClub_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Combat_Melee_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Melee.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Combat_Melee_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Melee.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AIAction_NPC_Combat_GiantClub_C'Default__BP_AIAction_NPC_Combat_GiantClub_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_GiantClub.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AIAction_NPC_Combat_GiantClub_C",
+    "Name": "Default__BP_AIAction_NPC_Combat_GiantClub_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_GiantClub.BP_AIAction_NPC_Combat_GiantClub_C'",
+    "Template": {
+      "ObjectName": "BP_AIAction_NPC_Combat_Melee_C'Default__BP_AIAction_NPC_Combat_Melee_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Melee.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ConstAttackStartRange": 500.0,
+      "StateMap": [
+        {
+          "Key": "EPal_NPC_CombatMeleeState::NewEnumerator2",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AINPC_CombatMeleeState_GiantClubAttack_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatMeleeState_GiantClubAttack.0"
+          }
+        }
+      ]
+    }
+  }
+]

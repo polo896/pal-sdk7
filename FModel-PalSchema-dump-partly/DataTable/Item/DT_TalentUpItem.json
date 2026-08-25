@@ -1,0 +1,28 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "DT_TalentUpItem",
+    "Class": "UScriptClass'DataTable'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "ScriptStruct'PalTalentUpItemDataRow'",
+        "ObjectPath": "/Script/Pal"
+      }
+    },
+    "Rows": {
+      "Fruit_hp_01": {
+        "TalentType": "EPalTalentType::HP",
+        "addValue": 10
+      },
+      "Fruit_attack_01": {
+        "TalentType": "EPalTalentType::Attack",
+        "addValue": 10
+      },
+      "Fruit__defense_01": {
+        "TalentType": "EPalTalentType::Defense",
+        "addValue": 10
+      }
+    }
+  }
+]

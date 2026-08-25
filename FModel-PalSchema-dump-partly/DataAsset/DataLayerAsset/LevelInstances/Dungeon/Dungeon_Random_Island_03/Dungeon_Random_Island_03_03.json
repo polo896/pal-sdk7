@@ -1,0 +1,18 @@
+[
+  {
+    "Type": "DataLayerAsset",
+    "Name": "Dungeon_Random_Island_03_03",
+    "Class": "UScriptClass'DataLayerAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DataLayerType": "EDataLayerType::Runtime",
+      "DebugColor": {
+        "B": 156,
+        "G": 241,
+        "R": 191,
+        "A": 255,
+        "Hex": "BFF19C"
+      }
+    }
+  }
+]

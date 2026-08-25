@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b00_grass_RainforestDrynariaFernHanging_01",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b00_grass_RainforestDrynariaFernHanging_01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b00/Rainforest/Mesh/Plants/SM_pal_b00_grass_RainforestDrynariaFernHanging_01.2"
+      },
+      "UpdateGuid": "F0BF06BC-46AFA321-8E1298AC-B451E6A7",
+      "GroundSlopeAngle": {
+        "Max": 120.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 31.428295,
+          "Y": 1.1851158,
+          "Z": -15.096806
+        },
+        "BoxExtent": {
+          "X": 50.11085,
+          "Y": 76.60669,
+          "Z": 61.944042
+        },
+        "SphereRadius": 85.2145662622319
+      },
+      "LowBoundOriginRadius": {
+        "X": 30.50635,
+        "Y": 10.248662,
+        "Z": 20.537643
+      },
+      "CullDistance": {
+        "Max": 5000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

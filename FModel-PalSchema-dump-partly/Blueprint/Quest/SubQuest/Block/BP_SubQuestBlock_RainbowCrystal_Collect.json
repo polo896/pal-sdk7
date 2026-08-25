@@ -1,0 +1,65 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SubQuestBlock_RainbowCrystal_Collect_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestBlock_HasItem_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_HasItem_Base.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestBlock_HasItem_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_HasItem_Base.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SubQuestBlock_RainbowCrystal_Collect_C'Default__BP_SubQuestBlock_RainbowCrystal_Collect_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_RainbowCrystal_Collect.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SubQuestBlock_RainbowCrystal_Collect_C",
+    "Name": "Default__BP_SubQuestBlock_RainbowCrystal_Collect_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_RainbowCrystal_Collect.BP_SubQuestBlock_RainbowCrystal_Collect_C'",
+    "Template": {
+      "ObjectName": "BP_PalQuestBlock_HasItem_Base_C'Default__BP_PalQuestBlock_HasItem_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_HasItem_Base.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ObjectiveText": {
+        "RowName": "QUEST_SUB_OBJECTIVE_CollectRainbowCrystal_010"
+      },
+      "RequireItemMap": [
+        {
+          "Key": {
+            "Key": "RainbowCrystal"
+          },
+          "Value": 10
+        }
+      ],
+      "IsAutoComplete": true,
+      "LocationSettingData": {
+        "FixedLocationPointArray": [
+          {
+            "DataTable": {
+              "ObjectName": "DataTable'DT_PalQuestLocationData'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Quest/DT_PalQuestLocationData.0"
+            },
+            "RowName": "RainbowCrystal_Collect"
+          }
+        ]
+      }
+    }
+  }
+]

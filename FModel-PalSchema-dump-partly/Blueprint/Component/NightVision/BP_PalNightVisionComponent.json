@@ -1,0 +1,211 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalNightVisionComponent_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_PalNightVisionComponent_C:ExecuteUbergraph_BP_PalNightVisionComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Component/NightVision/BP_PalNightVisionComponent.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalNightVisionComponent'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_PalNightVisionComponent_C:SetNightVisionEnabled_ForServer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Component/NightVision/BP_PalNightVisionComponent.4"
+      },
+      {
+        "ObjectName": "Function'BP_PalNightVisionComponent_C:OnInactive'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Component/NightVision/BP_PalNightVisionComponent.3"
+      },
+      {
+        "ObjectName": "Function'BP_PalNightVisionComponent_C:ExecuteUbergraph_BP_PalNightVisionComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Component/NightVision/BP_PalNightVisionComponent.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_PalNightVisionComponent": {
+        "ObjectName": "Function'BP_PalNightVisionComponent_C:ExecuteUbergraph_BP_PalNightVisionComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Component/NightVision/BP_PalNightVisionComponent.2"
+      },
+      "OnInactive": {
+        "ObjectName": "Function'BP_PalNightVisionComponent_C:OnInactive'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Component/NightVision/BP_PalNightVisionComponent.3"
+      },
+      "SetNightVisionEnabled_ForServer": {
+        "ObjectName": "Function'BP_PalNightVisionComponent_C:SetNightVisionEnabled_ForServer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Component/NightVision/BP_PalNightVisionComponent.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalNightVisionComponent_C'Default__BP_PalNightVisionComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Component/NightVision/BP_PalNightVisionComponent.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalNightVisionComponent_C",
+    "Name": "Default__BP_PalNightVisionComponent_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Component/NightVision/BP_PalNightVisionComponent.BP_PalNightVisionComponent_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_PalNightVisionComponent",
+    "Outer": "BP_PalNightVisionComponent_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bEnable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'BP_OtomoPalHolderComponent_C:OnInactiveOtomoEvent__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Component/OtomoHolder/BP_OtomoPalHolderComponent.45"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Player_Controller",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerController'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_OtomoPalHolderComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Component/OtomoHolder/BP_OtomoPalHolderComponent.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInactive",
+    "Outer": "BP_PalNightVisionComponent_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetNightVisionEnabled_ForServer",
+    "Outer": "BP_PalNightVisionComponent_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalNightVisionComponent:SetNightVisionEnabled_ForServer'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bEnable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

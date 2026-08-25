@@ -1,0 +1,56 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "EAction_PinkCat_CatPunch",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "6214B5EF454414CEA93BDCA56B50E270",
+            "SourceString": "Start",
+            "LocalizedString": "Start"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "A1DC52F44D3FAACACD66188C515F49C3",
+            "SourceString": "Loop",
+            "LocalizedString": "Loop"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "AD83FD0444DA5E2BC58C4891F206A830",
+            "SourceString": "End",
+            "LocalizedString": "End"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "D145642940A3D4E71FF5F59A7E65F578",
+            "SourceString": "AttackEnd",
+            "LocalizedString": "AttackEnd"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "EAction_PinkCat_CatPunch::NewEnumerator0": 0,
+      "EAction_PinkCat_CatPunch::NewEnumerator1": 1,
+      "EAction_PinkCat_CatPunch::NewEnumerator2": 2,
+      "EAction_PinkCat_CatPunch::NewEnumerator3": 3,
+      "EAction_PinkCat_CatPunch::EAction_PinkCat_MAX": 4
+    },
+    "CppForm": "Namespaced"
+  }
+]

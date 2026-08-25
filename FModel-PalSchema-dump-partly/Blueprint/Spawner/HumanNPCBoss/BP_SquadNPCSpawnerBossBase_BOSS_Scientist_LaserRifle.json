@@ -1,0 +1,334 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SquadNPCSpawnerBossBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.12"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SquadNPCSpawnerBossBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCSpawnPointComponent2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCSpawnPointComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCSpawnPointComponent1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C'Default__BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.4"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_NPCSpawnPointComponent_C",
+    "Name": "BP_NPCSpawnPointComponent1_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C'",
+    "Template": {
+      "ObjectName": "BP_NPCSpawnPointComponent_C'Default__BP_NPCSpawnPointComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NPCName": {
+        "Key": "Male_Scientist01_LaserRifle"
+      },
+      "OverrideLevel": 41,
+      "RelativeLocation": {
+        "X": 97.86116,
+        "Y": 157.05293,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -130.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCSpawnPointComponent_C",
+    "Name": "BP_NPCSpawnPointComponent2_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C'",
+    "Template": {
+      "ObjectName": "BP_NPCSpawnPointComponent_C'Default__BP_NPCSpawnPointComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NPCName": {
+        "Key": "Scientist_FlameThrower"
+      },
+      "OverrideLevel": 43,
+      "RelativeLocation": {
+        "X": 117.49491,
+        "Y": -207.96176,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -230.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCSpawnPointComponent_C",
+    "Name": "BP_NPCSpawnPointComponent_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C'",
+    "Template": {
+      "ObjectName": "BP_NPCSpawnPointComponent_C'Default__BP_NPCSpawnPointComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NPCName": {
+        "Key": "BOSS_Scientist_LaserRifle"
+      },
+      "OverrideLevel": 45,
+      "RelativeLocation": {
+        "X": -160.90161,
+        "Y": 0.0,
+        "Z": -0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C",
+    "Name": "Default__BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C'",
+    "Template": {
+      "ObjectName": "BP_SquadNPCSpawnerBossBase_C'Default__BP_SquadNPCSpawnerBossBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SaveKeyName": "BOSS_Scientist_LaserRifle"
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SceneComponent'BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C:ICH-DefaultSceneRoot_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.7"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_MonoNPCSpawner_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_MonoNPCSpawner.0"
+            },
+            "SCSVariableName": "DefaultSceneRoot",
+            "AssociatedGuid": "948DBB43-488A24C6-9F6BCFAA-E3CAE162"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "ICH-DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.6"
+      },
+      "VariableGuid": "D30A895A-44A27041-00E9EFAE-6CDA64B1",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCSpawnPointComponent_C'BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C:BP_NPCSpawnPointComponent1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.1"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_MonoNPCSpawner_C",
+      "VariableGuid": "F52A2645-46626478-3D2CB9A1-4FE81E27",
+      "InternalVariableName": "BP_NPCSpawnPointComponent1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCSpawnPointComponent_C'BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C:BP_NPCSpawnPointComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.3"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_MonoNPCSpawner_C",
+      "VariableGuid": "F0B8A6CB-48DB4039-609C18A1-9B406EBA",
+      "InternalVariableName": "BP_NPCSpawnPointComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCSpawnPointComponent_C'BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C:BP_NPCSpawnPointComponent2_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.2"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_MonoNPCSpawner_C",
+      "VariableGuid": "42EFF3C5-44336D75-6E61E48E-4BE25CEC",
+      "InternalVariableName": "BP_NPCSpawnPointComponent2"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.9"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.10"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.11"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.9"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.10"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.11"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/HumanNPCBoss/BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.8"
+      }
+    }
+  }
+]

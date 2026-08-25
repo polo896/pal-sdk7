@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SkillModule_Tackle_ThunderDog_Ice_KoriShorai_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_SkillModule_Tackle_ThunderDog_InazumaShorai.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_SkillModule_Tackle_ThunderDog_InazumaShorai.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SkillModule_Tackle_ThunderDog_Ice_KoriShorai_C'Default__BP_SkillModule_Tackle_ThunderDog_Ice_KoriShorai_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_SkillModule_Tackle_ThunderDog_Ice_KoriShorai.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SkillModule_Tackle_ThunderDog_Ice_KoriShorai_C",
+    "Name": "Default__BP_SkillModule_Tackle_ThunderDog_Ice_KoriShorai_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_SkillModule_Tackle_ThunderDog_Ice_KoriShorai.BP_SkillModule_Tackle_ThunderDog_Ice_KoriShorai_C'",
+    "Template": {
+      "ObjectName": "BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C'Default__BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_SkillModule_Tackle_ThunderDog_InazumaShorai.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ExtraLoopEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_ThunderDog_Ice_KoriShorai_Loop_Dust_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/ThunderDog_InazumaShorai/BP_SkillEffect_Unique_ThunderDog_Ice_KoriShorai_Loop_Dust.0"
+      },
+      "LoopSkillEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_ThunderDog_Ice_KoriShorai_Loop_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/ThunderDog_InazumaShorai/BP_SkillEffect_Unique_ThunderDog_Ice_KoriShorai_Loop.0"
+      }
+    }
+  }
+]

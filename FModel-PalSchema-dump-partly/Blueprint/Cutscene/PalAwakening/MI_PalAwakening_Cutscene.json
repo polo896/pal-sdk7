@@ -1,0 +1,96 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "MI_PalAwakening_Cutscene",
+    "Class": "UScriptClass'MaterialInstanceConstant'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material'M_PalAwakening_Cutscene'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/PalAwakening/M_PalAwakening_Cutscene.0"
+      },
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "OffsetAmount",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "2CB92B2B-46340A7F-C5E46F83-78CABF3E"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Opacity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "B7D9CB8B-4600CE53-32148590-44414681"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RimIntensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 50.0,
+          "ExpressionGUID": "4309A52C-4554B568-1D8F8684-F835D5A5"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RimPower",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 2.0,
+          "ExpressionGUID": "78119865-4FA9A5AA-E69DDA93-0E65006F"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RimSoftness",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "C295532F-4D9C1581-32F19491-30C6B6AC"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "RimColor",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "R": 10.0,
+            "G": 5.7200365,
+            "B": 0.28446496,
+            "A": 0.0,
+            "Hex": "FFFF91"
+          },
+          "ExpressionGUID": "69730582-4E77D4EF-8042C9A1-BFDB4B0F"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "BlendMode": "EBlendMode::BLEND_Translucent",
+        "ShadingModel": "EMaterialShadingModel::MSM_Unlit",
+        "OpacityMaskClipValue": 0.3333
+      }
+    },
+    "LoadedMaterialResources": [],
+    "CachedData": {
+      "ParentLayerIndexRemap": []
+    }
+  }
+]

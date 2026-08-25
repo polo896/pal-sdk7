@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b00_bamboo_medium",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_Plant_Bush_Bamboo_01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/tree/b00/SM_Plant_Bush_Bamboo_01.2"
+      },
+      "UpdateGuid": "CF46CA7C-4E6A96E2-B2B7DF8E-C2B233EA",
+      "Radius": 10.0,
+      "ScaleX": {
+        "Min": 1.1,
+        "Max": 1.5
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -7.0979176,
+          "Y": -2.6880302,
+          "Z": 41.012386
+        },
+        "BoxExtent": {
+          "X": 69.857414,
+          "Y": 67.78256,
+          "Z": 41.37949
+        },
+        "SphereRadius": 84.05774419835878
+      },
+      "LowBoundOriginRadius": {
+        "X": -10.894878,
+        "Y": -2.739418,
+        "Z": 94.10787
+      },
+      "CullDistance": {
+        "Max": 4000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

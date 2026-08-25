@@ -1,0 +1,1005 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_10",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_SimpleColorFade_C:WidgetTree.CanvasPanel_10.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_10",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_SimpleColorFade_C:WidgetTree.CanvasPanel_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_SimpleColorFade_C:WidgetTree.Image_14'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.12"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnmEvent_FadeIn",
+    "Outer": "WBP_SimpleColorFade_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "AnmEvent_FadeOut",
+    "Outer": "WBP_SimpleColorFade_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "WBP_SimpleColorFade_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_SimpleColorFade",
+    "Outer": "WBP_SimpleColorFade_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'WidgetAnimationResult__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreatePlayAnimationProxyObject_Result",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreatePlayAnimationProxyObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimationPlayCallbackProxy'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsAnimationPlaying_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'WidgetAnimationResult__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimationPlayCallbackProxy'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalDebugSetting_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalDebugSetting'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalDebugSetting:OnLoadingScreenVisibilityChangedDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_Visiable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_A_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_CreatePlayAnimationTimeRangeProxyObject_PlaybackSpeed_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "FadeIn",
+    "Outer": "WBP_SimpleColorFade_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'WBP_PalFadeWidgetBase_C:FadeIn'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_PalFadeWidgetBase.0"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'WBP_PalFadeWidgetBase_C:FadeIn'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_PalFadeWidgetBase.0"
+    },
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "FadeOut",
+    "Outer": "WBP_SimpleColorFade_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'WBP_PalFadeWidgetBase_C:FadeOut'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_PalFadeWidgetBase.1"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'WBP_PalFadeWidgetBase_C:FadeOut'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_PalFadeWidgetBase.1"
+    },
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Finished_212EE08E4C1C909EB4116D9853386FC5",
+    "Outer": "WBP_SimpleColorFade_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Finished_DE82E8EE4E2FF74CE3788F9F262A873A",
+    "Outer": "WBP_SimpleColorFade_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup_ForOverride",
+    "Outer": "WBP_SimpleColorFade_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'WBP_PalFadeWidgetBase_C:Setup_ForOverride'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_PalFadeWidgetBase.7"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'WBP_PalFadeWidgetBase_C:Setup_ForOverride'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_PalFadeWidgetBase.7"
+    },
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ToggleVisibility",
+    "Outer": "WBP_SimpleColorFade_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "Visiable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_14",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_SimpleColorFade_C:WidgetTree.CanvasPanel_10.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.1"
+      }
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Fade",
+    "Outer": "Fade_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "4BC5CFEB-4ACE2CE8-61E2AA81-E9938929",
+          "Name": "Image_14",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "4BC5CFEB-4ACE2CE8-61E2AA81-E9938929",
+          "BindingName": "Image_14",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_SimpleColorFade_C:Fade_INST.Fade.MovieSceneFloatTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.18"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 60001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "9E05DE6D-4229F682-1F578397-C5E66A60"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Fade_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 60000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_SimpleColorFade_C:Fade_INST.Fade.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.17"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "4BC5CFEB-4ACE2CE8-61E2AA81-E9938929"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 60000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "2F4984FB-43608E41-7C7284A5-C6F24935",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 60000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_SimpleColorFade_C:Fade_INST.Fade.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.14"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_SimpleColorFade_C:Fade_INST.Fade.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.15"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 60000
+            }
+          }
+        }
+      },
+      "Signature": "56D283D8-437EB29E-1F61BF8C-7D8067AD"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Fade",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_SimpleColorFade_C:Fade_INST.Fade.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.17"
+        }
+      ],
+      "EvaluationFieldGuid": "D8C64196-4A5B05C4-C0F481AA-7E6D20B7",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_SimpleColorFade_C:Fade_INST.Fade.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.17"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 60000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "D8C64196-4A5B05C4-C0F481AA-7E6D20B7"
+    }
+  },
+  {
+    "Type": "WBP_SimpleColorFade_C",
+    "Name": "Default__WBP_SimpleColorFade_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.WBP_SimpleColorFade_C'",
+    "Template": {
+      "ObjectName": "WBP_PalFadeWidgetBase_C'Default__WBP_PalFadeWidgetBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_PalFadeWidgetBase.8"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Fade_INST",
+    "Outer": "WBP_SimpleColorFade_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_SimpleColorFade_C:Fade_INST.Fade'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.13"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "Image_14",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "4BC5CFEB-4ACE2CE8-61E2AA81-E9938929",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Fade",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_SimpleColorFade_C:Fade_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.16"
+      },
+      "Signature": "2F4984FB-43608E41-7C7284A5-C6F24935"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_SimpleColorFade_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalFadeWidgetBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_PalFadeWidgetBase.9"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_SimpleColorFade_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.22"
+      },
+      "bClassRequiresNativeTick": true,
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'WBP_SimpleColorFade_C:Fade_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.20"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:ExecuteUbergraph_WBP_SimpleColorFade'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalFadeWidgetBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_PalFadeWidgetBase.9"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:Setup_ForOverride'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.10"
+      },
+      {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:FadeIn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.6"
+      },
+      {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:FadeOut'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.7"
+      },
+      {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:Finished_DE82E8EE4E2FF74CE3788F9F262A873A'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.9"
+      },
+      {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:Finished_212EE08E4C1C909EB4116D9853386FC5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.8"
+      },
+      {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:AnmEvent_FadeOut'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.3"
+      },
+      {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:AnmEvent_FadeIn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.2"
+      },
+      {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.4"
+      },
+      {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:ToggleVisibility'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.11"
+      },
+      {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:ExecuteUbergraph_WBP_SimpleColorFade'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Fade",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_14",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_SimpleColorFade": {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:ExecuteUbergraph_WBP_SimpleColorFade'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.5"
+      },
+      "ToggleVisibility": {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:ToggleVisibility'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.11"
+      },
+      "Construct": {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.4"
+      },
+      "AnmEvent_FadeIn": {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:AnmEvent_FadeIn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.2"
+      },
+      "AnmEvent_FadeOut": {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:AnmEvent_FadeOut'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.3"
+      },
+      "Finished_212EE08E4C1C909EB4116D9853386FC5": {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:Finished_212EE08E4C1C909EB4116D9853386FC5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.8"
+      },
+      "Finished_DE82E8EE4E2FF74CE3788F9F262A873A": {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:Finished_DE82E8EE4E2FF74CE3788F9F262A873A'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.9"
+      },
+      "FadeOut": {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:FadeOut'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.7"
+      },
+      "FadeIn": {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:FadeIn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.6"
+      },
+      "Setup_ForOverride": {
+        "ObjectName": "Function'WBP_SimpleColorFade_C:Setup_ForOverride'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.10"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_SimpleColorFade_C'Default__WBP_SimpleColorFade_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.19"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_SimpleColorFade_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_SimpleColorFade_C:WidgetTree.CanvasPanel_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Fade/WBP_SimpleColorFade.0"
+      }
+    }
+  }
+]

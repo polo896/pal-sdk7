@@ -1,0 +1,586 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_OptimizeParameter_DedicatedServer_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalOptimizeParameterSetting'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_OptimizeParameter_DedicatedServer_C'Default__BP_OptimizeParameter_DedicatedServer_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/Optimize/BP_OptimizeParameter_DedicatedServer.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_OptimizeParameter_DedicatedServer_C",
+    "Name": "Default__BP_OptimizeParameter_DedicatedServer_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/Optimize/BP_OptimizeParameter_DedicatedServer.BP_OptimizeParameter_DedicatedServer_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parameter": {
+        "FoliageISMDistance_Meters": 100,
+        "MinFPS": 1.0,
+        "CharacterImportance_FarDistance": 10000.0,
+        "CharacterImportance_TickInterval_Actor": [
+          {
+            "Key": "EPalCharacterImportanceType::Near",
+            "Value": 0.1
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidInSight",
+            "Value": 0.2
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarInSight",
+            "Value": 0.3
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidOutSight",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarOutSight",
+            "Value": 2.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Farthest",
+            "Value": 5.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::AllUpdate",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Nearest",
+            "Value": 0.1
+          }
+        ],
+        "CharacterImportance_TickInterval_Movement": [
+          {
+            "Key": "EPalCharacterImportanceType::Near",
+            "Value": 0.03
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidInSight",
+            "Value": 0.05
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarInSight",
+            "Value": 0.25
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidOutSight",
+            "Value": 0.5
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarOutSight",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Farthest",
+            "Value": 5.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::AllUpdate",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Nearest",
+            "Value": 0.025
+          }
+        ],
+        "CharacterImportance_TickInterval_Mesh": [
+          {
+            "Key": "EPalCharacterImportanceType::Near",
+            "Value": 0.1
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidInSight",
+            "Value": 0.25
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarInSight",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidOutSight",
+            "Value": 3.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarOutSight",
+            "Value": 3.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Farthest",
+            "Value": 5.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::AllUpdate",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Nearest",
+            "Value": 0.1
+          }
+        ],
+        "CharacterImportance_TickInterval_Mesh_Update": [
+          {
+            "Key": "EPalCharacterImportanceType::Near",
+            "Value": 0.05
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidInSight",
+            "Value": 0.05
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarInSight",
+            "Value": 0.2
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidOutSight",
+            "Value": 0.5
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarOutSight",
+            "Value": 0.5
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Farthest",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::AllUpdate",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Nearest",
+            "Value": 0.05
+          }
+        ],
+        "CharacterImportance_TickInterval_Mesh_Evaluation": [
+          {
+            "Key": "EPalCharacterImportanceType::Near",
+            "Value": 0.1
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidInSight",
+            "Value": 0.25
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarInSight",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidOutSight",
+            "Value": 3.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarOutSight",
+            "Value": 3.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Farthest",
+            "Value": 5.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::AllUpdate",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Nearest",
+            "Value": 0.1
+          }
+        ],
+        "CharacterImportance_TickInterval_Action": [
+          {
+            "Key": "EPalCharacterImportanceType::Near",
+            "Value": 0.05
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidInSight",
+            "Value": 0.05
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarInSight",
+            "Value": 0.2
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidOutSight",
+            "Value": 0.5
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarOutSight",
+            "Value": 0.5
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Farthest",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::AllUpdate",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Nearest",
+            "Value": 0.05
+          }
+        ],
+        "CharacterImportance_TickInterval_Status": [
+          {
+            "Key": "EPalCharacterImportanceType::Near",
+            "Value": 0.1
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidInSight",
+            "Value": 0.2
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarInSight",
+            "Value": 0.5
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidOutSight",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarOutSight",
+            "Value": 2.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Farthest",
+            "Value": 5.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::AllUpdate",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Nearest",
+            "Value": 0.1
+          }
+        ],
+        "CharacterImportance_TickInterval_LookAt": [
+          {
+            "Key": "EPalCharacterImportanceType::Near",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidInSight",
+            "Value": 0.1
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarInSight",
+            "Value": 0.2
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidOutSight",
+            "Value": 60.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarOutSight",
+            "Value": 60.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Farthest",
+            "Value": 60.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::AllUpdate",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Nearest",
+            "Value": 0.0
+          }
+        ],
+        "CharacterImportance_TickInterval_VisualEffect": [
+          {
+            "Key": "EPalCharacterImportanceType::Near",
+            "Value": 0.5
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidInSight",
+            "Value": 0.5
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarInSight",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidOutSight",
+            "Value": 3.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarOutSight",
+            "Value": 3.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Farthest",
+            "Value": 10.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::AllUpdate",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Nearest",
+            "Value": 0.5
+          }
+        ],
+        "CharacterImportance_TickInterval_Shooter": [
+          {
+            "Key": "EPalCharacterImportanceType::Near",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidInSight",
+            "Value": 0.05
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarInSight",
+            "Value": 0.1
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidOutSight",
+            "Value": 0.5
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarOutSight",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Farthest",
+            "Value": 10.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::AllUpdate",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Nearest",
+            "Value": 0.0
+          }
+        ],
+        "CharacterImportance_TickInterval_FlyMesh": [
+          {
+            "Key": "EPalCharacterImportanceType::Near",
+            "Value": 0.05
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidInSight",
+            "Value": 0.1
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarInSight",
+            "Value": 0.2
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidOutSight",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarOutSight",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Farthest",
+            "Value": 10.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::AllUpdate",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Nearest",
+            "Value": 0.05
+          }
+        ],
+        "CharacterImportance_TickInterval_Controller": [
+          {
+            "Key": "EPalCharacterImportanceType::Near",
+            "Value": 0.2
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidInSight",
+            "Value": 0.5
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarInSight",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidOutSight",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarOutSight",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Farthest",
+            "Value": 2.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::AllUpdate",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Nearest",
+            "Value": 0.2
+          }
+        ],
+        "CharacterImportance_TickInterval_AIAction": [
+          {
+            "Key": "EPalCharacterImportanceType::Near",
+            "Value": 0.2
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidInSight",
+            "Value": 0.4
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarInSight",
+            "Value": 0.5
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidOutSight",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarOutSight",
+            "Value": 5.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Farthest",
+            "Value": 5.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::AllUpdate",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Nearest",
+            "Value": 0.02
+          }
+        ],
+        "CharacterImportance_TickInterval_AISensor": [
+          {
+            "Key": "EPalCharacterImportanceType::Near",
+            "Value": 0.1
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidInSight",
+            "Value": 0.3
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarInSight",
+            "Value": 0.5
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidOutSight",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarOutSight",
+            "Value": 1.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Farthest",
+            "Value": 5.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::AllUpdate",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Nearest",
+            "Value": 0.1
+          }
+        ],
+        "CharacterImportance_TickInterval_PathFollowing": [
+          {
+            "Key": "EPalCharacterImportanceType::Near",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidInSight",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarInSight",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::MidOutSight",
+            "Value": 0.4
+          },
+          {
+            "Key": "EPalCharacterImportanceType::FarOutSight",
+            "Value": 0.5
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Farthest",
+            "Value": 3.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::AllUpdate",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalCharacterImportanceType::Nearest",
+            "Value": 0.0
+          }
+        ],
+        "SpawnerImportance_FarDistance": 30000.0,
+        "SpawnerImportance_TickInterval_NPCSpawner": [
+          {
+            "Key": "EPalSpwnerImportanceType::Near",
+            "Value": 0.05
+          },
+          {
+            "Key": "EPalSpwnerImportanceType::Mid",
+            "Value": 0.2
+          },
+          {
+            "Key": "EPalSpwnerImportanceType::Far",
+            "Value": 10.0
+          },
+          {
+            "Key": "EPalSpwnerImportanceType::AllUpdate",
+            "Value": 0.0
+          }
+        ],
+        "LevelObjectImportance_TickInterval_LevelObjectActor": [
+          {
+            "Key": "EPalSpwnerImportanceType::Near",
+            "Value": 0.0
+          },
+          {
+            "Key": "EPalSpwnerImportanceType::Mid",
+            "Value": 2.0
+          },
+          {
+            "Key": "EPalSpwnerImportanceType::Far",
+            "Value": 10.0
+          },
+          {
+            "Key": "EPalSpwnerImportanceType::AllUpdate",
+            "Value": 0.0
+          }
+        ]
+      }
+    }
+  }
+]

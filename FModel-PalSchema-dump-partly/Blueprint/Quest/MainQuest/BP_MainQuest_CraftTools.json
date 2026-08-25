@@ -1,0 +1,68 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MainQuest_CraftTools_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MainQuest_CraftTools_C'Default__BP_MainQuest_CraftTools_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_CraftTools.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MainQuest_CraftTools_C",
+    "Name": "Default__BP_MainQuest_CraftTools_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_CraftTools.BP_MainQuest_CraftTools_C'",
+    "Template": {
+      "ObjectName": "BP_PalQuestDataBase_C'Default__BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestBlockGroupList": [
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_CraftTools_PickupStone.BP_MainQuestBlock_CraftTools_PickupStone_C",
+              "SubPathString": ""
+            },
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_CraftTools_CraftAxe.BP_MainQuestBlock_CraftTools_CraftAxe_C",
+              "SubPathString": ""
+            },
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_CraftTools_CraftPickaxe.BP_MainQuestBlock_CraftTools_CraftPickaxe_C",
+              "SubPathString": ""
+            }
+          ]
+        }
+      ],
+      "QuestTitleMsgId": "Quest_Main_Title_CraftTools",
+      "QuestDescriptionMsgId": "Quest_Main_Desc_CraftTools",
+      "AutoOrderQuests": [
+        "Main_StatusUp"
+      ],
+      "CommonRewardData": {
+        "Exp": 15
+      }
+    }
+  }
+]

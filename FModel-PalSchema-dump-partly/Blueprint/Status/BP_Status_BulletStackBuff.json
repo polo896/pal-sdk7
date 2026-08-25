@@ -1,0 +1,315 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Status_BulletStackBuff_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:ExecuteUbergraph_BP_Status_BulletStackBuff'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalStatus_BulletStackBuff'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:GetDuration_ForHUD'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.5"
+      },
+      {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:GetHUDStackCount_ForHUD'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.6"
+      },
+      {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:GetRemainingTime_ForHUD'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.7"
+      },
+      {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:OnRep_StackCount'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.9"
+      },
+      {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:OnRep_RemainingTime'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.8"
+      },
+      {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:BP_OnStackBuffActivated'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.2"
+      },
+      {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:BP_OnStackBuffDeactivated'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.3"
+      },
+      {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:ExecuteUbergraph_BP_Status_BulletStackBuff'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Status_BulletStackBuff": {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:ExecuteUbergraph_BP_Status_BulletStackBuff'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.4"
+      },
+      "BP_OnStackBuffDeactivated": {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:BP_OnStackBuffDeactivated'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.3"
+      },
+      "BP_OnStackBuffActivated": {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:BP_OnStackBuffActivated'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.2"
+      },
+      "OnRep_RemainingTime": {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:OnRep_RemainingTime'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.8"
+      },
+      "OnRep_StackCount": {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:OnRep_StackCount'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.9"
+      },
+      "GetRemainingTime_ForHUD": {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:GetRemainingTime_ForHUD'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.7"
+      },
+      "GetHUDStackCount_ForHUD": {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:GetHUDStackCount_ForHUD'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.6"
+      },
+      "GetDuration_ForHUD": {
+        "ObjectName": "Function'BP_Status_BulletStackBuff_C:GetDuration_ForHUD'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.5"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Status_BulletStackBuff_C'Default__BP_Status_BulletStackBuff_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Status_BulletStackBuff_C",
+    "Name": "Default__BP_Status_BulletStackBuff_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Status/BP_Status_BulletStackBuff.BP_Status_BulletStackBuff_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "TargetEffectType": "EPalPassiveSkillEffectType::BulletHit_StackBuff",
+      "VisualEffectID": "EPalVisualEffectID::BulletStackBuff",
+      "bIsIgnoreRemoveAll": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BP_OnStackBuffActivated",
+    "Outer": "BP_Status_BulletStackBuff_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStatus_StackBuffBase:BP_OnStackBuffActivated'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BP_OnStackBuffDeactivated",
+    "Outer": "BP_Status_BulletStackBuff_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStatus_StackBuffBase:BP_OnStackBuffDeactivated'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Status_BulletStackBuff",
+    "Outer": "BP_Status_BulletStackBuff_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalVisualEffectComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalVisualEffectDynamicParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalVisualEffectDynamicParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalVisualEffectComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddVisualEffect_Local_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalVisualEffectBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetDuration_ForHUD",
+    "Outer": "BP_Status_BulletStackBuff_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStatusHUDQueryInterface:GetDuration_ForHUD'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetHUDStackCount_ForHUD",
+    "Outer": "BP_Status_BulletStackBuff_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStatusHUDQueryInterface:GetHUDStackCount_ForHUD'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetRemainingTime_ForHUD",
+    "Outer": "BP_Status_BulletStackBuff_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStatusHUDQueryInterface:GetRemainingTime_ForHUD'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRep_RemainingTime",
+    "Outer": "BP_Status_BulletStackBuff_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStatus_StackBuffBase:OnRep_RemainingTime'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRep_StackCount",
+    "Outer": "BP_Status_BulletStackBuff_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStatus_StackBuffBase:OnRep_StackCount'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  }
+]

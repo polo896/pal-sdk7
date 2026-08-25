@@ -1,0 +1,1755 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_47",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.1"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.2"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47.CanvasPanelSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.3"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.4"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.5"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_47",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 72.0,
+          "Bottom": 60.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.0"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_Arena_RuleButton_Element_C:WidgetTree.Spacer_128'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_47",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RuleButton_Element_C:WidgetTree.Image_Base_On'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_47",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RuleButton_Element_C:WidgetTree.Image_Frame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_47",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 48.0,
+          "Bottom": 48.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.0"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalElementIcon_C'WBP_Arena_RuleButton_Element_C:WidgetTree.WBP_PalElementIcon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_47",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.0"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_Arena_RuleButton_Element_C:WidgetTree.Overlay_Ban'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_47",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.0"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalInvisibleButton_C'WBP_Arena_RuleButton_Element_C:WidgetTree.WBP_PalInvisibleButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.43"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_47",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RuleButton_Element_C:WidgetTree.Image_Base_Off'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.19"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_Arena_RuleButton_Element_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WBP_PalInvisibleButton",
+          "DelegatePropertyName": "OnButtonBaseClicked",
+          "FunctionNameToBind": "BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnmEvent_Enable",
+    "Outer": "WBP_Arena_RuleButton_Element_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "AnmEvent_Restrict",
+    "Outer": "WBP_Arena_RuleButton_Element_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature",
+    "Outer": "WBP_Arena_RuleButton_Element_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_Arena_RuleButton_Element",
+    "Outer": "WBP_Arena_RuleButton_Element_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_CustomEvent_elementType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalElementType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalElementType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_IsRestrict",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnElementButtonClicked__DelegateSignature",
+    "Outer": "WBP_Arena_RuleButton_Element_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "ElementType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalElementType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalElementType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetRestrict",
+    "Outer": "WBP_Arena_RuleButton_Element_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsRestrict",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetupElement",
+    "Outer": "WBP_Arena_RuleButton_Element_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "elementType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalElementType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalElementType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 100.0,
+          "Y": 4.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.2,
+        "G": 0.034,
+        "B": 0.034,
+        "A": 1.0,
+        "Hex": "7C3333"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RuleButton_Element_C:WidgetTree.Overlay_Ban.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.38"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 2.0,
+          "Y": 1.0
+        },
+        "Angle": 40.0
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_LineFrame_1'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Common/MI_UI_LineFrame_1.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.2,
+        "G": 0.034,
+        "B": 0.034,
+        "A": 1.0,
+        "Hex": "7C3333"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RuleButton_Element_C:WidgetTree.Overlay_Ban.OverlaySlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.39"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_57",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.02,
+        "G": 0.004,
+        "B": 0.004,
+        "A": 0.5,
+        "Hex": "7F260C0C"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Arena_RuleButton_Element_C:WidgetTree.Overlay_Ban.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.37"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Base_Off",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.3,
+            "Hex": "4CFFFFFF"
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.00495,
+        "G": 0.004967,
+        "B": 0.005,
+        "A": 1.0,
+        "Hex": "0F0F0F"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47.CanvasPanelSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.7"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Base_On",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.4,
+            "Hex": "66FFFFFF"
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.332452,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "009CFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.2"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Frame",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.2,
+            "Hex": "33FFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_LineFrame_3'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Common/MI_UI_LineFrame_3.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.3"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Anm_OnToOff",
+    "Outer": "Anm_OnToOff_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "0E850424-49E1CDF8-538B6191-D52FAC74",
+          "Name": "Image_Base_Off",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "3455A797-40FC8B91-5889E6B3-1CB0A92E",
+          "Name": "Image_Base_On",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "FEAB8CD1-4BAB4D30-447722B2-2F2C03AA",
+          "Name": "Overlay_Ban",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "0E850424-49E1CDF8-538B6191-D52FAC74",
+          "BindingName": "Image_Base_Off",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.33"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "3455A797-40FC8B91-5889E6B3-1CB0A92E",
+          "BindingName": "Image_Base_On",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_1'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.34"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "FEAB8CD1-4BAB4D30-447722B2-2F2C03AA",
+          "BindingName": "Overlay_Ban",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_2'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.35"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 9001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 60
+      },
+      "Signature": "4832BCA2-43F91F42-FC07CEAC-6E08FA8E"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Anm_OnToOff_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 3,
+                  "Capacity": 3
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 2,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 9000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.30"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.31"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 1
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.32"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 2
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "0E850424-49E1CDF8-538B6191-D52FAC74"
+          },
+          {
+            "ObjectBindingID": "3455A797-40FC8B91-5889E6B3-1CB0A92E"
+          },
+          {
+            "ObjectBindingID": "FEAB8CD1-4BAB4D30-447722B2-2F2C03AA"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 9000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "50A66F7F-4DBD1586-7C605BAB-1BA01027",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 9000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.23"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.24"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 9000
+            }
+          }
+        }
+      },
+      "Signature": "FB2EA4EE-454FE135-256EBDA8-97B36A90"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_1",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 9000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.25"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.26"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 9000
+            }
+          }
+        }
+      },
+      "Signature": "21C4F44A-46050F05-3A578AB9-2AFEDDB8"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_2",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 9000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.27"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.28"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 9000
+            }
+          }
+        }
+      },
+      "Signature": "9EBA8231-454C178F-3A01D58E-A528942B"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Anm_OnToOff",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.30"
+        }
+      ],
+      "EvaluationFieldGuid": "EF12B21C-425A0930-38327CAA-5B8046A3",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.30"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 9000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "EF12B21C-425A0930-38327CAA-5B8046A3"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_1",
+    "Outer": "Anm_OnToOff",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.31"
+        }
+      ],
+      "EvaluationFieldGuid": "FAFE32AA-4606B46D-7EF0F2BE-3588D007",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.31"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 9000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "FAFE32AA-4606B46D-7EF0F2BE-3588D007"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_2",
+    "Outer": "Anm_OnToOff",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.32"
+        }
+      ],
+      "EvaluationFieldGuid": "957A9152-4E555E7C-A71845AB-E9EF8D6F",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.32"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 9000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "957A9152-4E555E7C-A71845AB-E9EF8D6F"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_Ban",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RuleButton_Element_C:WidgetTree.Overlay_Ban.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.37"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RuleButton_Element_C:WidgetTree.Overlay_Ban.OverlaySlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.39"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Arena_RuleButton_Element_C:WidgetTree.Overlay_Ban.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.38"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.5"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_Ban",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RuleButton_Element_C:WidgetTree.Overlay_Ban'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.36"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RuleButton_Element_C:WidgetTree.Image_57'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.18"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_Ban",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RuleButton_Element_C:WidgetTree.Overlay_Ban'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.36"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RuleButton_Element_C:WidgetTree.Image'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.16"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_2",
+    "Outer": "Overlay_Ban",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Arena_RuleButton_Element_C:WidgetTree.Overlay_Ban'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.36"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Arena_RuleButton_Element_C:WidgetTree.Image_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.17"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_128",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.1"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Arena_RuleButton_Element_C",
+    "Name": "Default__WBP_Arena_RuleButton_Element_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_PalElementIcon_C",
+    "Name": "WBP_PalElementIcon",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/PalStatusParts/WBP_PalElementIcon.WBP_PalElementIcon_C'",
+    "Template": {
+      "ObjectName": "WBP_PalElementIcon_C'Default__WBP_PalElementIcon_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalStatusParts/WBP_PalElementIcon.5"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.4"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalInvisibleButton_C",
+    "Name": "WBP_PalInvisibleButton",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.WBP_PalInvisibleButton_C'",
+    "Template": {
+      "ObjectName": "WBP_PalInvisibleButton_C'Default__WBP_PalInvisibleButton_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.6"
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Anm_OnToOff_INST",
+    "Outer": "WBP_Arena_RuleButton_Element_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.Anm_OnToOff'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.22"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "Image_Base_Off",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "0E850424-49E1CDF8-538B6191-D52FAC74",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Image_Base_On",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "3455A797-40FC8B91-5889E6B3-1CB0A92E",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Overlay_Ban",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "FEAB8CD1-4BAB4D30-447722B2-2F2C03AA",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Anm_OnToOff",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.29"
+      },
+      "Signature": "50A66F7F-4DBD1586-7C605BAB-1BA01027"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_Arena_RuleButton_Element_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_Arena_RuleButton_Element_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.46"
+      },
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'WBP_Arena_RuleButton_Element_C:Anm_OnToOff_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.44"
+        }
+      ],
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_Arena_RuleButton_Element_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.8"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_Arena_RuleButton_Element_C:ExecuteUbergraph_WBP_Arena_RuleButton_Element'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.12"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_Arena_RuleButton_Element_C:AnmEvent_Enable'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.9"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RuleButton_Element_C:AnmEvent_Restrict'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.10"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RuleButton_Element_C:SetupElement'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.15"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RuleButton_Element_C:SetRestrict'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.14"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RuleButton_Element_C:BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.11"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RuleButton_Element_C:ExecuteUbergraph_WBP_Arena_RuleButton_Element'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.12"
+      },
+      {
+        "ObjectName": "Function'WBP_Arena_RuleButton_Element_C:OnElementButtonClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.13"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Anm_OnToOff",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalElementIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalElementIcon_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalStatusParts/WBP_PalElementIcon.6"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalInvisibleButton",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalInvisibleButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.2"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnElementButtonClicked",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_Arena_RuleButton_Element_C:OnElementButtonClicked__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.13"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Element Type",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Enum": {
+          "ObjectName": "Enum'EPalElementType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalElementType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnElementButtonClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_Arena_RuleButton_Element_C:OnElementButtonClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.13"
+      },
+      "ExecuteUbergraph_WBP_Arena_RuleButton_Element": {
+        "ObjectName": "Function'WBP_Arena_RuleButton_Element_C:ExecuteUbergraph_WBP_Arena_RuleButton_Element'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.12"
+      },
+      "BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_Arena_RuleButton_Element_C:BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.11"
+      },
+      "SetRestrict": {
+        "ObjectName": "Function'WBP_Arena_RuleButton_Element_C:SetRestrict'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.14"
+      },
+      "SetupElement": {
+        "ObjectName": "Function'WBP_Arena_RuleButton_Element_C:SetupElement'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.15"
+      },
+      "AnmEvent_Restrict": {
+        "ObjectName": "Function'WBP_Arena_RuleButton_Element_C:AnmEvent_Restrict'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.10"
+      },
+      "AnmEvent_Enable": {
+        "ObjectName": "Function'WBP_Arena_RuleButton_Element_C:AnmEvent_Enable'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.9"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_Arena_RuleButton_Element_C'Default__WBP_Arena_RuleButton_Element_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.41"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_Arena_RuleButton_Element_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_Arena_RuleButton_Element_C:WidgetTree.CanvasPanel_47'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Arena/WBP_Arena_RuleButton_Element.0"
+      }
+    }
+  }
+]

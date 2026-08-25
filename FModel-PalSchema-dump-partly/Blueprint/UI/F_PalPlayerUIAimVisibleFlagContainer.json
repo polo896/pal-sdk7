@@ -1,0 +1,42 @@
+[
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "F_PalPlayerUIAimVisibleFlagContainer",
+    "Class": "UScriptClass'UserDefinedStruct'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Guid": "B542CB03-41503389-3838BD8A-D13BBD30"
+    },
+    "ChildProperties": [
+      {
+        "Type": "MapProperty",
+        "Name": "FlagMap_7_462638F54FA5634328998DBC4AB579D0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "KeyProp": {
+          "Type": "NameProperty",
+          "Name": "FlagMap_7_462638F54FA5634328998DBC4AB579D0",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        },
+        "ValueProp": {
+          "Type": "BoolProperty",
+          "Name": "FlagMap_7_462638F54FA5634328998DBC4AB579D0_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "FieldSize": 1,
+          "ByteOffset": 0,
+          "ByteMask": 1,
+          "FieldMask": 255,
+          "BoolSize": 1,
+          "bIsNativeBool": true
+        }
+      }
+    ],
+    "StructFlags": 0,
+    "DefaultProperties": {
+      "FlagMap_7_462638F54FA5634328998DBC4AB579D0": []
+    }
+  }
+]

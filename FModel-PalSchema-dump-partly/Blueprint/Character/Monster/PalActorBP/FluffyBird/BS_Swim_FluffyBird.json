@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Swim_FluffyBird",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 1.3333334,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_FluffyBird_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/FluffyBird/AS_FluffyBird_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.5
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_FluffyBird_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/FluffyBird/AS_FluffyBird_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 450.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.3
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_FluffyBird_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/FluffyBird/AS_FluffyBird_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 225.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 2,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.5
+          },
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.5,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 450.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_FluffyBird_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/FluffyBird/SK_FluffyBird_Skeleton.4"
+      }
+    },
+    "SkeletonGuid": "741464B9-4CF1BA33-8E48B8A9-54620EB4"
+  }
+]

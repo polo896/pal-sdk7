@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b00_PL_D_3",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b00_PL_D_3'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b00/Landscaping_Aquatic_Plants/Meshes/SM_pal_b00_PL_D_3.2"
+      },
+      "UpdateGuid": "DBD689B7-4B0E7CCE-49004983-2AEA6965",
+      "Density": 280.0,
+      "ScaleX": {
+        "Min": 0.8,
+        "Max": 1.5
+      },
+      "AlignToNormal": false,
+      "MeshBounds": {
+        "Origin": {
+          "X": 2.8599977,
+          "Y": -1.8972368,
+          "Z": 113.64528
+        },
+        "BoxExtent": {
+          "X": 29.88084,
+          "Y": 33.025,
+          "Z": 116.22711
+        },
+        "SphereRadius": 116.82281582286971
+      },
+      "LowBoundOriginRadius": {
+        "X": -8.858047,
+        "Y": -6.342133,
+        "Z": 27.684961
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

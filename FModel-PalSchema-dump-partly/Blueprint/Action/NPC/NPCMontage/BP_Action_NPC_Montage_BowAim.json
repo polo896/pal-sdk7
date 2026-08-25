@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_NPC_Montage_BowAim_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_NPC_MontageBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_MontageBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_NPC_MontageBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_MontageBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_NPC_Montage_BowAim_C'Default__BP_Action_NPC_Montage_BowAim_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/NPCMontage/BP_Action_NPC_Montage_BowAim.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_NPC_Montage_BowAim_C",
+    "Name": "Default__BP_Action_NPC_Montage_BowAim_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/NPC/NPCMontage/BP_Action_NPC_Montage_BowAim.BP_Action_NPC_Montage_BowAim_C'",
+    "Template": {
+      "ObjectName": "BP_Action_NPC_MontageBase_C'Default__BP_Action_NPC_MontageBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_MontageBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Montage": {
+        "AssetPathName": "/Game/Pal/Animation/Character/Player/Female/Bow/AM_Player_Female_FireChargeLoop_Bow.AM_Player_Female_FireChargeLoop_Bow",
+        "SubPathString": ""
+      },
+      "Prop": {
+        "ObjectName": "BlueprintGeneratedClass'BP_Prop_Bow_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Prop/BP_Prop_Bow.0"
+      }
+    }
+  }
+]

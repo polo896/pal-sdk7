@@ -1,0 +1,66 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "EPalTreasureBoxVisualType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "54AC7F294A9D00964116219F640450CE",
+            "SourceString": "Normal",
+            "LocalizedString": "Normal"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "8DF7C25145FACA31D476B0B7F7C48E4E",
+            "SourceString": "Rare01",
+            "LocalizedString": "Rare01"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "060ABC754A24369205E755ADB856CAF4",
+            "SourceString": "Rare02",
+            "LocalizedString": "Rare02"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "D6069E854E74CC61FF013C9FC011CE25",
+            "SourceString": "None",
+            "LocalizedString": "None"
+          }
+        },
+        {
+          "Key": "NewEnumerator4",
+          "Value": {
+            "Namespace": "",
+            "Key": "DCDE73104C444769EA158EAC988C3AC4",
+            "SourceString": "Common",
+            "LocalizedString": "Common"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "EPalTreasureBoxVisualType::NewEnumerator3": 0,
+      "EPalTreasureBoxVisualType::NewEnumerator0": 1,
+      "EPalTreasureBoxVisualType::NewEnumerator1": 2,
+      "EPalTreasureBoxVisualType::NewEnumerator2": 3,
+      "EPalTreasureBoxVisualType::NewEnumerator4": 4,
+      "EPalTreasureBoxVisualType::EPalTreasureBoxVisualType_MAX": 5
+    },
+    "CppForm": "Namespaced"
+  }
+]

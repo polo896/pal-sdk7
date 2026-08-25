@@ -1,0 +1,566 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueAction_LegendDeer_Raid_Death_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ActionDeath_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Reaction/BP_ActionDeath.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:ExecuteUbergraph_BP_UniqueAction_LegendDeer_Raid_Death'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ActionDeath_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Reaction/BP_ActionDeath.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:OnNotifyEnd_46F58B8345EDAC486B1D4891B83A09F6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.9"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:OnNotifyBegin_46F58B8345EDAC486B1D4891B83A09F6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.8"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:OnInterrupted_46F58B8345EDAC486B1D4891B83A09F6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.7"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:OnBlendOut_46F58B8345EDAC486B1D4891B83A09F6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.5"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:OnCompleted_46F58B8345EDAC486B1D4891B83A09F6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.6"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:ApplyRagdoll'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.2"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:OnBeginAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.4"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:ShowEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.10"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:ExecuteUbergraph_BP_UniqueAction_LegendDeer_Raid_Death'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_UniqueAction_LegendDeer_Raid_Death": {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:ExecuteUbergraph_BP_UniqueAction_LegendDeer_Raid_Death'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.3"
+      },
+      "ShowEffect": {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:ShowEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.10"
+      },
+      "OnBeginAction": {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:OnBeginAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.4"
+      },
+      "ApplyRagdoll": {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:ApplyRagdoll'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.2"
+      },
+      "OnCompleted_46F58B8345EDAC486B1D4891B83A09F6": {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:OnCompleted_46F58B8345EDAC486B1D4891B83A09F6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.6"
+      },
+      "OnBlendOut_46F58B8345EDAC486B1D4891B83A09F6": {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:OnBlendOut_46F58B8345EDAC486B1D4891B83A09F6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.5"
+      },
+      "OnInterrupted_46F58B8345EDAC486B1D4891B83A09F6": {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:OnInterrupted_46F58B8345EDAC486B1D4891B83A09F6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.7"
+      },
+      "OnNotifyBegin_46F58B8345EDAC486B1D4891B83A09F6": {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:OnNotifyBegin_46F58B8345EDAC486B1D4891B83A09F6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.8"
+      },
+      "OnNotifyEnd_46F58B8345EDAC486B1D4891B83A09F6": {
+        "ObjectName": "Function'BP_UniqueAction_LegendDeer_Raid_Death_C:OnNotifyEnd_46F58B8345EDAC486B1D4891B83A09F6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.9"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueAction_LegendDeer_Raid_Death_C'Default__BP_UniqueAction_LegendDeer_Raid_Death_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueAction_LegendDeer_Raid_Death_C",
+    "Name": "Default__BP_UniqueAction_LegendDeer_Raid_Death_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/LegendDeer/BP_UniqueAction_LegendDeer_Raid_Death.BP_UniqueAction_LegendDeer_Raid_Death_C'",
+    "Template": {
+      "ObjectName": "BP_ActionDeath_C'Default__BP_ActionDeath_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Reaction/BP_ActionDeath.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "NoEffect": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ApplyRagdoll",
+    "Outer": "BP_UniqueAction_LegendDeer_Raid_Death_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ActionDeath_C:ApplyRagdoll'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Reaction/BP_ActionDeath.2"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ActionDeath_C:ApplyRagdoll'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Reaction/BP_ActionDeath.2"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_UniqueAction_LegendDeer_Raid_Death",
+    "Outer": "BP_UniqueAction_LegendDeer_Raid_Death_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_4",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_3",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_2",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Temp_name_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalVisualEffectDynamicParameterFloat",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalVisualEffectDynamicParameterFloat'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalFacialComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 16,
+          "Struct": {
+            "ObjectName": "ScriptStruct'PalVisualEffectDynamicParameterFloat'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalVisualEffectDynamicParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalVisualEffectDynamicParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateProxyObjectForPlayMontage_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayMontageCallbackProxy'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddVisualEffectForActor_Local_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalVisualEffectBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSystemAtLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalmi_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_4",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Vector_Distance_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBeginAction",
+    "Outer": "BP_UniqueAction_LegendDeer_Raid_Death_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ActionDeath_C:OnBeginAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Reaction/BP_ActionDeath.9"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ActionDeath_C:OnBeginAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Reaction/BP_ActionDeath.9"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBlendOut_46F58B8345EDAC486B1D4891B83A09F6",
+    "Outer": "BP_UniqueAction_LegendDeer_Raid_Death_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnCompleted_46F58B8345EDAC486B1D4891B83A09F6",
+    "Outer": "BP_UniqueAction_LegendDeer_Raid_Death_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInterrupted_46F58B8345EDAC486B1D4891B83A09F6",
+    "Outer": "BP_UniqueAction_LegendDeer_Raid_Death_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNotifyBegin_46F58B8345EDAC486B1D4891B83A09F6",
+    "Outer": "BP_UniqueAction_LegendDeer_Raid_Death_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNotifyEnd_46F58B8345EDAC486B1D4891B83A09F6",
+    "Outer": "BP_UniqueAction_LegendDeer_Raid_Death_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ShowEffect",
+    "Outer": "BP_UniqueAction_LegendDeer_Raid_Death_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ActionDeath_C:ShowEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Reaction/BP_ActionDeath.24"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ActionDeath_C:ShowEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Reaction/BP_ActionDeath.24"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

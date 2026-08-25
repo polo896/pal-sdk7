@@ -1,0 +1,200 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Status_RaidBossModeChange_LegendDeer_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Status_RaidBossModeChange_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_RaidBossModeChange.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Status_RaidBossModeChange_LegendDeer_C:ExecuteUbergraph_BP_Status_RaidBossModeChange_LegendDeer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_RaidBossModeChange_LegendDeer.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Status_RaidBossModeChange_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_RaidBossModeChange.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Status_RaidBossModeChange_LegendDeer_C:FindModeChangeVisualEffectType'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_RaidBossModeChange_LegendDeer.3"
+      },
+      {
+        "ObjectName": "Function'BP_Status_RaidBossModeChange_LegendDeer_C:TickStatus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_RaidBossModeChange_LegendDeer.4"
+      },
+      {
+        "ObjectName": "Function'BP_Status_RaidBossModeChange_LegendDeer_C:ExecuteUbergraph_BP_Status_RaidBossModeChange_LegendDeer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_RaidBossModeChange_LegendDeer.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Status_RaidBossModeChange_LegendDeer": {
+        "ObjectName": "Function'BP_Status_RaidBossModeChange_LegendDeer_C:ExecuteUbergraph_BP_Status_RaidBossModeChange_LegendDeer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_RaidBossModeChange_LegendDeer.2"
+      },
+      "TickStatus": {
+        "ObjectName": "Function'BP_Status_RaidBossModeChange_LegendDeer_C:TickStatus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_RaidBossModeChange_LegendDeer.4"
+      },
+      "FindModeChangeVisualEffectType": {
+        "ObjectName": "Function'BP_Status_RaidBossModeChange_LegendDeer_C:FindModeChangeVisualEffectType'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_RaidBossModeChange_LegendDeer.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Status_RaidBossModeChange_LegendDeer_C'Default__BP_Status_RaidBossModeChange_LegendDeer_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_RaidBossModeChange_LegendDeer.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Status_RaidBossModeChange_LegendDeer_C",
+    "Name": "Default__BP_Status_RaidBossModeChange_LegendDeer_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Status/BP_Status_RaidBossModeChange_LegendDeer.BP_Status_RaidBossModeChange_LegendDeer_C'",
+    "Template": {
+      "ObjectName": "BP_Status_RaidBossModeChange_C'Default__BP_Status_RaidBossModeChange_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_RaidBossModeChange.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ReGeneTime": 0.0,
+      "ReGeneRate": 0.0
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Status_RaidBossModeChange_LegendDeer",
+    "Outer": "BP_Status_RaidBossModeChange_LegendDeer_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "FindModeChangeVisualEffectType",
+    "Outer": "BP_Status_RaidBossModeChange_LegendDeer_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Status_RaidBossModeChange_C:FindModeChangeVisualEffectType'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_RaidBossModeChange.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Status_RaidBossModeChange_C:FindModeChangeVisualEffectType'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_RaidBossModeChange.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "Element",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalElementType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalElementType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "VisualEffect",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "Enum": {
+          "ObjectName": "Enum'EPalVisualEffectID'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalVisualEffectID'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "TickStatus",
+    "Outer": "BP_Status_RaidBossModeChange_LegendDeer_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Status_RaidBossModeChange_C:TickStatus'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_RaidBossModeChange.9"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Status_RaidBossModeChange_C:TickStatus'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_RaidBossModeChange.9"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  }
+]

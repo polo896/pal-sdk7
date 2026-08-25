@@ -1,0 +1,2488 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_Player",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.Canvas_Player.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.Canvas_Player.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.6"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.CanvasPanel_30.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_PlayerHP",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.Canvas_PlayerHP.CanvasPanelSlot_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.Canvas_PlayerHP.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.8"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.Canvas_Player.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_Rival",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.Canvas_Rival.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.Canvas_Rival.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.10"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.CanvasPanel_30.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_RivalHP",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.Canvas_RivalHP.CanvasPanelSlot_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.Canvas_RivalHP.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.Canvas_Rival.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_28",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.14"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_30",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.CanvasPanel_30.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.CanvasPanel_30.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.CanvasPanel_30.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.17"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_Player",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 350.0,
+          "Bottom": 48.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.Canvas_Player'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.0"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_InGame_Match_HP_C:WidgetTree.Horizonta_PalIconl_Player'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Canvas_Player",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1.0,
+          "Top": -83.0,
+          "Right": 348.0,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.Canvas_Player'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.0"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.Canvas_PlayerHP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.1"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "Canvas_PlayerHP",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.Canvas_PlayerHP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.1"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar'WBP_InGame_Match_HP_C:WidgetTree.ProgressBar_HPGauge_Player'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.33"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "Canvas_PlayerHP",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.Canvas_PlayerHP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.1"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar'WBP_InGame_Match_HP_C:WidgetTree.ProgressBar_HPGauge_Player_Back'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_Rival",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 350.0,
+          "Bottom": 48.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.Canvas_Rival'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.2"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_InGame_Match_HP_C:WidgetTree.Horizontal_PalIcon_Rival'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.26"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Canvas_Rival",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1.0,
+          "Top": -83.0,
+          "Right": 348.0,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.Canvas_Rival'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.2"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.Canvas_RivalHP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "Canvas_RivalHP",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.Canvas_RivalHP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.3"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar'WBP_InGame_Match_HP_C:WidgetTree.ProgressBar_HPGauge_Rival'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "Canvas_RivalHP",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.Canvas_RivalHP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.3"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar'WBP_InGame_Match_HP_C:WidgetTree.ProgressBar_HPGauge_Rival_Back'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_28",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.CanvasPanel_30'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_30",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.CanvasPanel_30'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.5"
+      },
+      "Content": {
+        "ObjectName": "WBP_BossBattle_Timer_C'WBP_InGame_Match_HP_C:WidgetTree.WBP_BossBattle_Timer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_30",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -90.0,
+          "Right": 354.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.CanvasPanel_30'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.Canvas_Player'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.0"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_30",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 90.0,
+          "Right": 354.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.CanvasPanel_30'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.Canvas_Rival'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.2"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_InGame_Match_HP",
+    "Outer": "WBP_InGame_Match_HP_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsVisible_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIDelayGaugeCalculator'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnObject_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIDelayGaugeCalculator'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_InGame_Match_HPPal_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.92"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array_1",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_InGame_Match_HPPal_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.92"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalIndividualCharacterParameter:UpdateHPDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalIndividualCharacterParameter:UpdateHPDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_InGame_Match_HPPal_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.92"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_MyGeometry",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Geometry'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_InDeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_InGame_Match_HPPal_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.92"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInitialized",
+    "Outer": "WBP_InGame_Match_HP_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:OnInitialized'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup",
+    "Outer": "WBP_InGame_Match_HP_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "LocalPlayerIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalArenaPlayerIndex'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalArenaPlayerIndex'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "PlayerInfoMap",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "KeyProp": {
+          "Type": "EnumProperty",
+          "Name": "PlayerInfoMap",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalArenaPlayerIndex'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": {
+              "ObjectName": "Enum'EPalArenaPlayerIndex'",
+              "ObjectPath": "/Script/Pal"
+            }
+          }
+        },
+        "ValueProp": {
+          "Type": "StructProperty",
+          "Name": "PlayerInfoMap_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 88,
+          "Struct": {
+            "ObjectName": "ScriptStruct'PalArenaPlayerInfo'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "MaxBattleTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalArenaPlayerIndex'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalArenaPlayerIndex'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalArenaPlayerIndex'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalArenaPlayerIndex'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalArenaPlayerIndex'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalArenaPlayerIndex'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetMaxHP_withBuff_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FixedPoint64'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetHP_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FixedPoint64'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Convert_FixedPoint64ToFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Convert_FixedPoint64ToFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetMaxHP_withBuff_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FixedPoint64'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetHP_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FixedPoint64'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Convert_FixedPoint64ToFloat_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Convert_FixedPoint64ToFloat_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalArenaPlayerIndex'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalArenaPlayerIndex'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalArenaPlayerIndex'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalArenaPlayerIndex'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalArenaPlayerIndex'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalArenaPlayerIndex'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 88,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalArenaPlayerInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetPalId_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalInstanceID'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalArenaPlayerIndex'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalArenaPlayerIndex'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_6",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalArenaPlayerIndex'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalArenaPlayerIndex'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalIndividualCharacterParameter:UpdateHPDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalIndividualCharacterParameter:UpdateHPDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_7",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalArenaPlayerIndex'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalArenaPlayerIndex'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalArenaPlayerIndex'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalArenaPlayerIndex'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Map_Find_Value_1",
+        "Flags": "RF_Public",
+        "ElementSize": 88,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalArenaPlayerInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_InGame_Match_HPPal_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.92"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetPalId_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalInstanceID'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetCharacterManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacterManager'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetIndividualHandleReference_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterHandleReference'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetCharacterManager_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacterManager'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_InGame_Match_HPPal_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.92"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetIndividualHandleReference_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterHandleReference'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetPercentForce_percent_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_B_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_A_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetPercentForce_percent_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Tick",
+    "Outer": "WBP_InGame_Match_HP_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Tick'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "MyGeometry",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Geometry'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "InDeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Unbind",
+    "Outer": "WBP_InGame_Match_HP_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Update Rival HP",
+    "Outer": "WBP_InGame_Match_HP_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "NowHP",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'FixedPoint64'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "MaxHP",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'FixedPoint64'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Convert_FixedPoint64ToFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Convert_FixedPoint64ToFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetPercent_percent_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdatePlayerHP",
+    "Outer": "WBP_InGame_Match_HP_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "NowHP",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'FixedPoint64'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "MaxHP",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'FixedPoint64'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Convert_FixedPoint64ToFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Convert_FixedPoint64ToFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetPercent_percent_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "Horizonta_PalIconl_Player",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_InGame_Match_HP_C:WidgetTree.Horizonta_PalIconl_Player.HorizontalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.27"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_InGame_Match_HP_C:WidgetTree.Horizonta_PalIconl_Player.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.28"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_InGame_Match_HP_C:WidgetTree.Horizonta_PalIconl_Player.HorizontalBoxSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.29"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.Canvas_Player.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.6"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "Horizontal_PalIcon_Rival",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_InGame_Match_HP_C:WidgetTree.Horizontal_PalIcon_Rival.HorizontalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.30"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_InGame_Match_HP_C:WidgetTree.Horizontal_PalIcon_Rival.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.31"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_InGame_Match_HP_C:WidgetTree.Horizontal_PalIcon_Rival.HorizontalBoxSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.32"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.Canvas_Rival.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.10"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "Horizonta_PalIconl_Player",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Right": 2.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_InGame_Match_HP_C:WidgetTree.Horizonta_PalIconl_Player'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.25"
+      },
+      "Content": {
+        "ObjectName": "WBP_InGame_Match_HPPal_C'WBP_InGame_Match_HP_C:WidgetTree.WBP_InGame_Match_HPPal_Player_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.39"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "Horizonta_PalIconl_Player",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Right": 2.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_InGame_Match_HP_C:WidgetTree.Horizonta_PalIconl_Player'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.25"
+      },
+      "Content": {
+        "ObjectName": "WBP_InGame_Match_HPPal_C'WBP_InGame_Match_HP_C:WidgetTree.WBP_InGame_Match_HPPal_Player_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.40"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "Horizonta_PalIconl_Player",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Right": 2.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_InGame_Match_HP_C:WidgetTree.Horizonta_PalIconl_Player'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.25"
+      },
+      "Content": {
+        "ObjectName": "WBP_InGame_Match_HPPal_C'WBP_InGame_Match_HP_C:WidgetTree.WBP_InGame_Match_HPPal_Player_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.41"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "Horizontal_PalIcon_Rival",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Right": 2.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_InGame_Match_HP_C:WidgetTree.Horizontal_PalIcon_Rival'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.26"
+      },
+      "Content": {
+        "ObjectName": "WBP_InGame_Match_HPPal_C'WBP_InGame_Match_HP_C:WidgetTree.WBP_InGame_Match_HPPal_Rival_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.42"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "Horizontal_PalIcon_Rival",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Right": 2.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_InGame_Match_HP_C:WidgetTree.Horizontal_PalIcon_Rival'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.26"
+      },
+      "Content": {
+        "ObjectName": "WBP_InGame_Match_HPPal_C'WBP_InGame_Match_HP_C:WidgetTree.WBP_InGame_Match_HPPal_Rival_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.43"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "Horizontal_PalIcon_Rival",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Right": 2.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_InGame_Match_HP_C:WidgetTree.Horizontal_PalIcon_Rival'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.26"
+      },
+      "Content": {
+        "ObjectName": "WBP_InGame_Match_HPPal_C'WBP_InGame_Match_HP_C:WidgetTree.WBP_InGame_Match_HPPal_Rival_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.44"
+      }
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "ProgressBar_HPGauge_Player",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ProgressBar'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "ImageSize": {
+            "X": 4.0,
+            "Y": 4.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 0.0,
+              "Hex": "000000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_tex_white'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_tex_white.0"
+          }
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 4.0,
+            "Y": 4.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_tex_white'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_tex_white.0"
+          }
+        }
+      },
+      "Percent": 0.570817,
+      "FillColorAndOpacity": {
+        "R": 0.019382,
+        "G": 0.520996,
+        "B": 0.171441,
+        "A": 1.0,
+        "Hex": "26BF73"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.Canvas_PlayerHP.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.8"
+      }
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "ProgressBar_HPGauge_Player_Back",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ProgressBar'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "ImageSize": {
+            "X": 4.0,
+            "Y": 4.0
+          },
+          "Margin": {
+            "Left": 0.416667,
+            "Top": 0.416667,
+            "Right": 0.416667,
+            "Bottom": 0.416667
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.013396,
+              "G": 0.018555,
+              "B": 0.02,
+              "A": 1.0,
+              "Hex": "1E2526"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_tex_white'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_tex_white.0"
+          }
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 4.0,
+            "Y": 4.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_tex_white'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_tex_white.0"
+          }
+        }
+      },
+      "Percent": 0.68085,
+      "FillColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF0000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.Canvas_PlayerHP.CanvasPanelSlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.9"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "ProgressBar_HPGauge_Rival",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ProgressBar'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "ImageSize": {
+            "X": 4.0,
+            "Y": 4.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 0.0,
+              "Hex": "000000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_tex_white'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_tex_white.0"
+          }
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 4.0,
+            "Y": 4.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_tex_white'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_tex_white.0"
+          }
+        }
+      },
+      "Percent": 0.570817,
+      "FillColorAndOpacity": {
+        "R": 0.947307,
+        "G": 0.046665,
+        "B": 0.046665,
+        "A": 1.0,
+        "Hex": "F93D3D"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.Canvas_RivalHP.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.12"
+      }
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "ProgressBar_HPGauge_Rival_Back",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ProgressBar'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "ImageSize": {
+            "X": 4.0,
+            "Y": 4.0
+          },
+          "Margin": {
+            "Left": 0.416667,
+            "Top": 0.416667,
+            "Right": 0.416667,
+            "Bottom": 0.416667
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.013396,
+              "G": 0.018555,
+              "B": 0.02,
+              "A": 1.0,
+              "Hex": "1E2526"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_tex_white'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_tex_white.0"
+          }
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 4.0,
+            "Y": 4.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_tex_white'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_tex_white.0"
+          }
+        }
+      },
+      "Percent": 0.68085,
+      "FillColorAndOpacity": {
+        "R": 0.947307,
+        "G": 0.806952,
+        "B": 0.061246,
+        "A": 1.0,
+        "Hex": "F9E846"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.Canvas_RivalHP.CanvasPanelSlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.13"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "WBP_BossBattle_Timer_C",
+    "Name": "WBP_BossBattle_Timer",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_Timer.WBP_BossBattle_Timer_C'",
+    "Template": {
+      "ObjectName": "WBP_BossBattle_Timer_C'Default__WBP_BossBattle_Timer_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_Timer.85"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_InGame_Match_HP_C:WidgetTree.CanvasPanel_30.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.15"
+      }
+    }
+  },
+  {
+    "Type": "WBP_InGame_Match_HP_C",
+    "Name": "Default__WBP_InGame_Match_HP_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.WBP_InGame_Match_HP_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_InGame_Match_HPPal_C",
+    "Name": "WBP_InGame_Match_HPPal_Player_0",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.WBP_InGame_Match_HPPal_C'",
+    "Template": {
+      "ObjectName": "WBP_InGame_Match_HPPal_C'Default__WBP_InGame_Match_HPPal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.87"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_InGame_Match_HP_C:WidgetTree.Horizonta_PalIconl_Player.HorizontalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.27"
+      }
+    }
+  },
+  {
+    "Type": "WBP_InGame_Match_HPPal_C",
+    "Name": "WBP_InGame_Match_HPPal_Player_1",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.WBP_InGame_Match_HPPal_C'",
+    "Template": {
+      "ObjectName": "WBP_InGame_Match_HPPal_C'Default__WBP_InGame_Match_HPPal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.87"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_InGame_Match_HP_C:WidgetTree.Horizonta_PalIconl_Player.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.28"
+      }
+    }
+  },
+  {
+    "Type": "WBP_InGame_Match_HPPal_C",
+    "Name": "WBP_InGame_Match_HPPal_Player_2",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.WBP_InGame_Match_HPPal_C'",
+    "Template": {
+      "ObjectName": "WBP_InGame_Match_HPPal_C'Default__WBP_InGame_Match_HPPal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.87"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_InGame_Match_HP_C:WidgetTree.Horizonta_PalIconl_Player.HorizontalBoxSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.29"
+      }
+    }
+  },
+  {
+    "Type": "WBP_InGame_Match_HPPal_C",
+    "Name": "WBP_InGame_Match_HPPal_Rival_0",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.WBP_InGame_Match_HPPal_C'",
+    "Template": {
+      "ObjectName": "WBP_InGame_Match_HPPal_C'Default__WBP_InGame_Match_HPPal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.87"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_InGame_Match_HP_C:WidgetTree.Horizontal_PalIcon_Rival.HorizontalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.30"
+      }
+    }
+  },
+  {
+    "Type": "WBP_InGame_Match_HPPal_C",
+    "Name": "WBP_InGame_Match_HPPal_Rival_1",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.WBP_InGame_Match_HPPal_C'",
+    "Template": {
+      "ObjectName": "WBP_InGame_Match_HPPal_C'Default__WBP_InGame_Match_HPPal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.87"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_InGame_Match_HP_C:WidgetTree.Horizontal_PalIcon_Rival.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.31"
+      }
+    }
+  },
+  {
+    "Type": "WBP_InGame_Match_HPPal_C",
+    "Name": "WBP_InGame_Match_HPPal_Rival_2",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.WBP_InGame_Match_HPPal_C'",
+    "Template": {
+      "ObjectName": "WBP_InGame_Match_HPPal_C'Default__WBP_InGame_Match_HPPal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.87"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_InGame_Match_HP_C:WidgetTree.Horizontal_PalIcon_Rival.HorizontalBoxSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.32"
+      }
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_InGame_Match_HP_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_InGame_Match_HP_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.46"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_InGame_Match_HP_C:ExecuteUbergraph_WBP_InGame_Match_HP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.18"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_InGame_Match_HP_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.20"
+      },
+      {
+        "ObjectName": "Function'WBP_InGame_Match_HP_C:Update Rival HP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.23"
+      },
+      {
+        "ObjectName": "Function'WBP_InGame_Match_HP_C:UpdatePlayerHP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.24"
+      },
+      {
+        "ObjectName": "Function'WBP_InGame_Match_HP_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.19"
+      },
+      {
+        "ObjectName": "Function'WBP_InGame_Match_HP_C:Unbind'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.22"
+      },
+      {
+        "ObjectName": "Function'WBP_InGame_Match_HP_C:Tick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.21"
+      },
+      {
+        "ObjectName": "Function'WBP_InGame_Match_HP_C:ExecuteUbergraph_WBP_InGame_Match_HP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.18"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ProgressBar_HPGauge_Player",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'ProgressBar'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ProgressBar_HPGauge_Player_Back",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'ProgressBar'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ProgressBar_HPGauge_Rival",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'ProgressBar'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ProgressBar_HPGauge_Rival_Back",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'ProgressBar'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_BossBattle_Timer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_BossBattle_Timer_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_Timer.89"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_InGame_Match_HPPal_Player_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_InGame_Match_HPPal_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.92"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_InGame_Match_HPPal_Player_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_InGame_Match_HPPal_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.92"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_InGame_Match_HPPal_Player_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_InGame_Match_HPPal_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.92"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_InGame_Match_HPPal_Rival_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_InGame_Match_HPPal_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.92"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_InGame_Match_HPPal_Rival_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_InGame_Match_HPPal_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.92"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_InGame_Match_HPPal_Rival_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_InGame_Match_HPPal_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.92"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerHPGauge",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIDelayGaugeCalculator'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RivalHPGauge",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIDelayGaugeCalculator'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "PlayerPals",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "PlayerPals",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_InGame_Match_HPPal_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.92"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "RivalPals",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "RivalPals",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_InGame_Match_HPPal_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HPPal.92"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Player Individual Parameter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Rival Individual Parameter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_InGame_Match_HP": {
+        "ObjectName": "Function'WBP_InGame_Match_HP_C:ExecuteUbergraph_WBP_InGame_Match_HP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.18"
+      },
+      "Tick": {
+        "ObjectName": "Function'WBP_InGame_Match_HP_C:Tick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.21"
+      },
+      "Unbind": {
+        "ObjectName": "Function'WBP_InGame_Match_HP_C:Unbind'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.22"
+      },
+      "OnInitialized": {
+        "ObjectName": "Function'WBP_InGame_Match_HP_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.19"
+      },
+      "UpdatePlayerHP": {
+        "ObjectName": "Function'WBP_InGame_Match_HP_C:UpdatePlayerHP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.24"
+      },
+      "Update Rival HP": {
+        "ObjectName": "Function'WBP_InGame_Match_HP_C:Update Rival HP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.23"
+      },
+      "Setup": {
+        "ObjectName": "Function'WBP_InGame_Match_HP_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.20"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_InGame_Match_HP_C'Default__WBP_InGame_Match_HP_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.38"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_InGame_Match_HP_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_InGame_Match_HP_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Match/WBP_InGame_Match_HP.4"
+      }
+    }
+  }
+]

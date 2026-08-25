@@ -1,0 +1,57 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_ItemSlotEntryData_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "ItemAndNum",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 48,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalItemAndNum'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_ItemSlotEntryData_C'Default__BP_ItemSlotEntryData_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/BP_ItemSlotEntryData.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_ItemSlotEntryData_C",
+    "Name": "Default__BP_ItemSlotEntryData_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/BP_ItemSlotEntryData.BP_ItemSlotEntryData_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ItemAndNum": {
+        "ItemId": {
+          "StaticId": "None",
+          "DynamicId": {
+            "CreatedWorldId": "00000000-00000000-00000000-00000000",
+            "LocalIdInCreatedWorld": "00000000-00000000-00000000-00000000"
+          }
+        },
+        "Num": 0
+      }
+    }
+  }
+]

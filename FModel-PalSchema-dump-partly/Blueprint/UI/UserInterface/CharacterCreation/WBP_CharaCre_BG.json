@@ -1,0 +1,2305 @@
+[
+  {
+    "Type": "BackgroundBlur",
+    "Name": "BackgroundBlur_43",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'BackgroundBlur'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BlurStrength": 3.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_bg.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_12'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_21'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_17'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_15'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_22'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_13'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_11'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_bg.CanvasPanelSlot_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.29"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.22"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_84",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_84.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_84.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_84.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.25"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_bg.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.28"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_bg",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_bg.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_bg.CanvasPanelSlot_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_bg.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_bg.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.28"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "IngameMenu_Head",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.IngameMenu_Head.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.31"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.1"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_bg'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 36.0,
+          "Right": 1800.0,
+          "Bottom": 102.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.1"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.IngameMenu_Head'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 600.0,
+          "Right": 1000.0,
+          "Bottom": 276.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.1"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 48.6317,
+          "Right": 1324.8,
+          "Bottom": 1123.2
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image_Tri_04'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.49"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 161.89575,
+          "Right": 736.0,
+          "Bottom": 624.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image_Tri_07'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.52"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image_Tri_00'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_13",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.175326,
+          "Right": 736.0,
+          "Bottom": 624.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image_Tri_08'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.53"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_15",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 213.94508,
+          "Right": 1472.0,
+          "Bottom": 1248.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image_Tri_03'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_17",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -73.189186,
+          "Right": 1067.2,
+          "Bottom": 873.6
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image_Tri_02'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_21",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -118.03598,
+          "Right": 1472.0,
+          "Bottom": 1248.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image_Tri_01'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_22",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -833.1338,
+          "Right": 1059.84,
+          "Bottom": 898.56
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image_Tri_06'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.51"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 48.0,
+          "Top": -475.0,
+          "Right": 1324.8,
+          "Bottom": 1123.2
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image_Tri_05'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.50"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.BaseWhite'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -150.0,
+          "Top": 48.049,
+          "Right": -150.0,
+          "Bottom": 12.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.3"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 40.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.3"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image_181'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -1000.0,
+          "Top": -360.0,
+          "Right": -1000.0,
+          "Bottom": -360.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.3"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.41"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_84",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -280.0,
+          "Right": 1700.0,
+          "Bottom": 1700.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_84'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image_Particle_00'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_84",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -300.0,
+          "Right": 1500.0,
+          "Bottom": 1500.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_84'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image_Particle_02'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_84",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -263.50287,
+          "Right": 1800.0,
+          "Bottom": 1800.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_84'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image_Particle_01'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.43"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_bg",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_bg'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.5"
+      },
+      "Content": {
+        "ObjectName": "BackgroundBlur'WBP_CharaCre_BG_C:WidgetTree.BackgroundBlur_43'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.0"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_bg",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1920.0,
+          "Bottom": 1080.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_bg'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_84'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_bg",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_bg'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_bg",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_bg'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.5"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.Image_132'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.39"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "IngameMenu_Head",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 48.0,
+          "Top": 64.0,
+          "Right": 1616.0,
+          "Bottom": 8.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.IngameMenu_Head'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.6"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_CharaCre_BG_C:WidgetTree.FootLine'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.36"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnmEvent_FloorIn",
+    "Outer": "WBP_CharaCre_BG_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "AnmEvent_FloorOut",
+    "Outer": "WBP_CharaCre_BG_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_CharaCre_BG",
+    "Outer": "WBP_CharaCre_BG_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Image",
+    "Name": "BaseWhite",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 4.0,
+          "Y": 1024.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_menu_bggrd_v'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_menu_bggrd_v.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.001996,
+        "B": 0.005208,
+        "A": 1.0,
+        "Hex": "000610"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.20"
+      },
+      "RenderTransform": {
+        "Angle": 180.0
+      },
+      "bIsVariable": false,
+      "RenderOpacity": 0.9
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "FootLine",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_menu_footbase'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_menu_footbase.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.IngameMenu_Head.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.31"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible",
+      "RenderOpacity": 0.3
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 4.0,
+          "Y": 1024.0
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_CharaCre_Light'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Menu/MI_UI_CharaCre_Light.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.177083,
+        "G": 0.862847,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "75EFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_11'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.12"
+      },
+      "RenderTransform": {
+        "Angle": 180.0
+      },
+      "RenderOpacity": 0.5
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_CharaCre_Floor_00'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Menu/MI_UI_CharaCre_Floor_00.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.5,
+        "Hex": "7FFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.21"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible",
+      "RenderOpacity": 0.05
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_132",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.003255,
+        "G": 0.014453,
+        "B": 0.03125,
+        "A": 1.0,
+        "Hex": "0A2031"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_bg.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.30"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_181",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_CharaCre_Floor_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Menu/MI_UI_CharaCre_Floor_01.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.7,
+        "Hex": "B3FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.22"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible",
+      "RenderOpacity": 0.1
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 128.0,
+          "Y": 128.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_eff_flare_00'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/InGame/T_eff_flare_00.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.140544,
+        "G": 0.422696,
+        "B": 0.817708,
+        "A": 0.35,
+        "Hex": "5969AEEA"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.23"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Particle_00",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1024.0,
+          "Y": 1024.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_MaskedScroll_BGParticle_0'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Common/MI_UI_MaskedScroll_BGParticle_0.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.2,
+        "Hex": "33FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_84.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.24"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Particle_01",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1024.0,
+          "Y": 1024.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_MaskedScroll_BGParticle_1'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Common/MI_UI_MaskedScroll_BGParticle_1.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.15,
+        "Hex": "26FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_84.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.26"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Particle_02",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1024.0,
+          "Y": 1024.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_MaskedScroll_BGParticle_2'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Common/MI_UI_MaskedScroll_BGParticle_2.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.35,
+        "Hex": "59FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_84.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.25"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Tri_00",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 4.0,
+          "Y": 1024.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_menu_bggrd_v'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_menu_bggrd_v.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.011288,
+        "B": 0.036458,
+        "A": 1.0,
+        "Hex": "001B35"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_12'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.13"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": -1.0
+        },
+        "Angle": 180.0
+      },
+      "RenderOpacity": 0.5
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Tri_01",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 156.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_menu_pal_base_tri'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_menu_pal_base_tri.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.216471,
+        "G": 0.63476,
+        "B": 0.692708,
+        "A": 1.0,
+        "Hex": "80D1D9"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_21'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.17"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": -1.0
+        }
+      },
+      "RenderOpacity": 0.03
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Tri_02",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 156.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_menu_pal_base_tri'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_menu_pal_base_tri.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.216471,
+        "G": 0.63476,
+        "B": 0.692708,
+        "A": 1.0,
+        "Hex": "80D1D9"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_17'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.16"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": -1.0
+        }
+      },
+      "RenderOpacity": 0.04
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Tri_03",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 156.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_menu_pal_base_tri'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_menu_pal_base_tri.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.381326,
+        "B": 0.434154,
+        "A": 1.0,
+        "Hex": "00A6B0"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_15'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.15"
+      },
+      "RenderOpacity": 0.02
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Tri_04",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 156.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_menu_pal_base_tri'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_menu_pal_base_tri.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.128889,
+        "G": 0.397009,
+        "B": 0.434154,
+        "A": 1.0,
+        "Hex": "64A9B0"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.10"
+      },
+      "RenderOpacity": 0.05
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Tri_05",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 156.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_menu_pal_base_tri'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_menu_pal_base_tri.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.142457,
+        "G": 0.39866,
+        "B": 0.434154,
+        "A": 1.0,
+        "Hex": "69AAB0"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.19"
+      },
+      "RenderOpacity": 0.05
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Tri_06",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 156.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_menu_pal_base_tri'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_menu_pal_base_tri.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.381326,
+        "B": 0.434154,
+        "A": 1.0,
+        "Hex": "00A6B0"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_22'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.18"
+      },
+      "RenderOpacity": 0.02
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Tri_07",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 156.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_menu_pal_base_tri'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_menu_pal_base_tri.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.381326,
+        "B": 0.434154,
+        "A": 1.0,
+        "Hex": "00A6B0"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.11"
+      },
+      "RenderOpacity": 0.05
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Tri_08",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 156.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_menu_pal_base_tri'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_menu_pal_base_tri.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.216471,
+        "G": 0.63476,
+        "B": 0.692708,
+        "A": 1.0,
+        "Hex": "80D1D9"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_13'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.14"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": -1.0
+        }
+      },
+      "RenderOpacity": 0.03
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Anm_Light_OnToOff",
+    "Outer": "Anm_Light_OnToOff_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "B3DB352C-4616DC52-4DD15ABB-1E4729B6",
+          "Name": "CanvasPanel_2",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "B3DB352C-4616DC52-4DD15ABB-1E4729B6",
+          "BindingName": "CanvasPanel_2",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack'WBP_CharaCre_BG_C:Anm_Light_OnToOff_INST.Anm_Light_OnToOff.MovieScene2DTransformTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.56"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 5001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 60
+      },
+      "Signature": "E95CCAE5-48C418AA-5A593386-2E5E6D98"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Class": "UScriptClass'MovieScene2DTransformSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Translation[1]": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 5000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.03704423,
+              "TangentWeightMode": 3
+            },
+            "InterpMode": 2,
+            "TangentMode": 2
+          },
+          {
+            "Value": 200.0,
+            "Tangent": {
+              "ArriveTangent": 8.567321E-09,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.059368193,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 3
+            },
+            "InterpMode": 2,
+            "TangentMode": 2
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_CharaCre_BG_C:Anm_Light_OnToOff_INST.Anm_Light_OnToOff.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.57"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_CharaCre_BG_C:Anm_Light_OnToOff_INST.Anm_Light_OnToOff.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.58"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 5000
+            }
+          }
+        }
+      },
+      "Signature": "B75188D2-4475DF68-417DB8A4-77BA4C70"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "Anm_Light_OnToOff",
+    "Class": "UScriptClass'MovieScene2DTransformTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderTransform",
+        "PropertyPath": "RenderTransform",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection'WBP_CharaCre_BG_C:Anm_Light_OnToOff_INST.Anm_Light_OnToOff.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.55"
+        }
+      ],
+      "EvaluationFieldGuid": "21524473-485E1E49-1320B99C-610A7A13",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene2DTransformSection'WBP_CharaCre_BG_C:Anm_Light_OnToOff_INST.Anm_Light_OnToOff.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.55"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 5000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "21524473-485E1E49-1320B99C-610A7A13"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Anm_Light_OnToOff_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 5000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene2DTransformSection'WBP_CharaCre_BG_C:Anm_Light_OnToOff_INST.Anm_Light_OnToOff.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.55"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "B3DB352C-4616DC52-4DD15ABB-1E4729B6"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 5000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "8C1AA028-41448DFB-126D7892-5F5CF970",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "WBP_CharaCre_BG_C",
+    "Name": "Default__WBP_CharaCre_BG_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.WBP_CharaCre_BG_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Anm_Light_OnToOff_INST",
+    "Outer": "WBP_CharaCre_BG_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_CharaCre_BG_C:Anm_Light_OnToOff_INST.Anm_Light_OnToOff'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.54"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "CanvasPanel_2",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "B3DB352C-4616DC52-4DD15ABB-1E4729B6",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Anm_Light_OnToOff",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_CharaCre_BG_C:Anm_Light_OnToOff_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.59"
+      },
+      "Signature": "8C1AA028-41448DFB-126D7892-5F5CF970"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_CharaCre_BG_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_CharaCre_BG_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.63"
+      },
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'WBP_CharaCre_BG_C:Anm_Light_OnToOff_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.61"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_CharaCre_BG_C:ExecuteUbergraph_WBP_CharaCre_BG'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.34"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_CharaCre_BG_C:AnmEvent_FloorIn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.32"
+      },
+      {
+        "ObjectName": "Function'WBP_CharaCre_BG_C:AnmEvent_FloorOut'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.33"
+      },
+      {
+        "ObjectName": "Function'WBP_CharaCre_BG_C:ExecuteUbergraph_WBP_CharaCre_BG'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.34"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Anm_Light_OnToOff",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Tri_00",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Tri_01",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Tri_02",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Tri_03",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Tri_04",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Tri_05",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Tri_06",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Tri_07",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Tri_08",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_CharaCre_BG": {
+        "ObjectName": "Function'WBP_CharaCre_BG_C:ExecuteUbergraph_WBP_CharaCre_BG'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.34"
+      },
+      "AnmEvent_FloorOut": {
+        "ObjectName": "Function'WBP_CharaCre_BG_C:AnmEvent_FloorOut'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.33"
+      },
+      "AnmEvent_FloorIn": {
+        "ObjectName": "Function'WBP_CharaCre_BG_C:AnmEvent_FloorIn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.32"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_CharaCre_BG_C'Default__WBP_CharaCre_BG_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.60"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_CharaCre_BG_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_CharaCre_BG_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_BG.1"
+      }
+    }
+  }
+]

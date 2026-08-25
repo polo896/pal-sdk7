@@ -1,0 +1,17 @@
+[
+  {
+    "Type": "DataLayerAsset",
+    "Name": "AmbienceSound",
+    "Class": "UScriptClass'DataLayerAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DebugColor": {
+        "B": 255,
+        "G": 151,
+        "R": 191,
+        "A": 255,
+        "Hex": "BF97FF"
+      }
+    }
+  }
+]

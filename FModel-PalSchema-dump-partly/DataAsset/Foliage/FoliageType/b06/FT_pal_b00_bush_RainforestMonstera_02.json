@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b00_bush_RainforestMonstera_02",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b00_bush_RainforestMonstera_02'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b00/Rainforest/Mesh/Plants/SM_pal_b00_bush_RainforestMonstera_02.2"
+      },
+      "UpdateGuid": "69E7550E-412EF431-C0CD2FAF-A49D248F",
+      "ScaleX": {
+        "Min": 0.6
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 4.838928,
+          "Y": 9.684151,
+          "Z": 57.860966
+        },
+        "BoxExtent": {
+          "X": 78.7906,
+          "Y": 79.38326,
+          "Z": 61.342327
+        },
+        "SphereRadius": 97.104736328125
+      },
+      "LowBoundOriginRadius": {
+        "X": -0.66901016,
+        "Y": 10.158612,
+        "Z": 54.89676
+      },
+      "CullDistance": {
+        "Max": 4000
+      },
+      "bAffectDistanceFieldLighting": true,
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

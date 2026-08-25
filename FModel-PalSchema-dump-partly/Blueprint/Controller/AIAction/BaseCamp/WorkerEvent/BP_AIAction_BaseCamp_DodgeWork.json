@@ -1,0 +1,54 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AIAction_BaseCamp_DodgeWork_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalAIActionBaseCampDodgeWork'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AIAction_BaseCamp_DodgeWork_C'Default__BP_AIAction_BaseCamp_DodgeWork_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/BaseCamp/WorkerEvent/BP_AIAction_BaseCamp_DodgeWork.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AIAction_BaseCamp_DodgeWork_C",
+    "Name": "Default__BP_AIAction_BaseCamp_DodgeWork_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/AIAction/BaseCamp/WorkerEvent/BP_AIAction_BaseCamp_DodgeWork.BP_AIAction_BaseCamp_DodgeWork_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WalkAroundSettings": {
+        "Items": [
+          {
+            "State": "EPalBaseCampWorkerWalkAroundState::WalkAround",
+            "OccurWeight": 3,
+            "RandomTimeRange": {
+              "Min": 5.0,
+              "Max": 10.0
+            }
+          },
+          {
+            "State": "EPalBaseCampWorkerWalkAroundState::Rest",
+            "OccurWeight": 1,
+            "RandomTimeRange": {
+              "Min": 8.0,
+              "Max": 15.0
+            }
+          }
+        ]
+      }
+    }
+  }
+]

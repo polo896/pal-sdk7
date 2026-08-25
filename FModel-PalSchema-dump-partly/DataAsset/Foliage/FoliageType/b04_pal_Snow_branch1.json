@@ -1,0 +1,54 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "b04_pal_Snow_branch1",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'branch1'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b04/WinterNature/Mesh/branch1.2"
+      },
+      "UpdateGuid": "24F9017E-4B3AE881-5429FFBC-489FB646",
+      "Density": 0.5,
+      "Radius": 555.0,
+      "ScaleX": {
+        "Min": 0.5,
+        "Max": 0.8
+      },
+      "GroundSlopeAngle": {
+        "Max": 90.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 3.6808014,
+          "Y": -0.50379944,
+          "Z": 40.955994
+        },
+        "BoxExtent": {
+          "X": 83.71843,
+          "Y": 175.09508,
+          "Z": 48.629944
+        },
+        "SphereRadius": 182.2952880859375
+      },
+      "LowBoundOriginRadius": {
+        "X": 3.6808014,
+        "Y": -41.10437,
+        "Z": 139.02625
+      },
+      "CullDistance": {
+        "Max": 4000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b07_FlowerCluster_c_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b07_FlowerCluster_c'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b07/tree/mesh/SM_pal_b07_FlowerCluster_c.2"
+      },
+      "UpdateGuid": "9D1E52A8-445809FA-B474D8A6-6B9FD48B",
+      "Density": 3000.0,
+      "ScaleX": {
+        "Min": 1.2,
+        "Max": 1.4
+      },
+      "AlignToNormal": false,
+      "MeshBounds": {
+        "Origin": {
+          "X": -0.054821014,
+          "Y": 0.06257439,
+          "Z": 22.904026
+        },
+        "BoxExtent": {
+          "X": 24.31147,
+          "Y": 23.17633,
+          "Z": 31.519863
+        },
+        "SphereRadius": 37.56576510763695
+      },
+      "LowBoundOriginRadius": {
+        "X": -0.5710087,
+        "Y": -1.2427597,
+        "Z": 27.1951
+      },
+      "CullDistance": {
+        "Max": 4000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

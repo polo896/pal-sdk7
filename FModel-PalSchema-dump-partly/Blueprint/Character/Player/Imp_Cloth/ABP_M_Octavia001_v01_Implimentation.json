@@ -1,0 +1,1547 @@
+[
+  {
+    "Type": "ABP_M_Octavia001_v01_Implimentation_C",
+    "Name": "Default__ABP_M_Octavia001_v01_Implimentation_C",
+    "Class": "AnimBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.ABP_M_Octavia001_v01_Implimentation_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimBlueprintExtension_PropertyAccess": {},
+      "AnimBlueprintExtension_Base": {},
+      "AnimGraphNode_SequencePlayer": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'AS_Player_Male_OctaviaWing_Aim_wpn'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaWing/AS_Player_Male_OctaviaWing_Aim_wpn.0"
+        },
+        "PlayRateScaleBiasClampState": {},
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_ApplyAdditive": {
+        "Base": {
+          "LinkID": 7
+        },
+        "Additive": {
+          "LinkID": 0
+        },
+        "Alpha": 1.0,
+        "AlphaScaleBias": {
+          "Scale": 1.0,
+          "Bias": 0.0
+        },
+        "LODThreshold": -1,
+        "AlphaBoolBlend": {
+          "BlendInTime": 0.25,
+          "BlendOutTime": 0.25,
+          "BlendOption": "EAlphaBlendOption::Cubic",
+          "bInitialized": false,
+          "CustomCurve": null,
+          "AlphaBlend": {
+            "CustomCurve": null,
+            "BlendTime": 0.2,
+            "BlendOption": "EAlphaBlendOption::Linear"
+          }
+        },
+        "AlphaCurveName": "None",
+        "AlphaScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "AlphaInputType": "EAnimAlphaInputType::Bool",
+        "bAlphaBoolEnabled": true
+      },
+      "AnimGraphNode_Root_4": {
+        "Result": {
+          "LinkID": -1
+        }
+      },
+      "AnimGraphNode_LinkedInputPose_3": {
+        "Name": "InPose",
+        "Graph": "LeftHandAttach",
+        "InputPose": {
+          "LinkID": -1
+        }
+      },
+      "AnimGraphNode_Root_3": {
+        "Result": {
+          "LinkID": -1
+        }
+      },
+      "AnimGraphNode_LinkedInputPose_2": {
+        "Name": "InPose",
+        "Graph": "ClothLayer",
+        "InputPose": {
+          "LinkID": -1
+        }
+      },
+      "AnimGraphNode_SaveCachedPose": {
+        "Pose": {
+          "LinkID": 5
+        },
+        "CachePoseName": "None"
+      },
+      "AnimGraphNode_LinkedInputPose_1": {
+        "Name": "InPose_0",
+        "Graph": "OnAim",
+        "InputPose": {
+          "LinkID": -1
+        }
+      },
+      "AnimGraphNode_Root_2": {
+        "Result": {
+          "LinkID": 1
+        }
+      },
+      "AnimGraphNode_Root_1": {
+        "Result": {
+          "LinkID": -1
+        }
+      },
+      "AnimGraphNode_LinkedInputPose": {
+        "Name": "InPose",
+        "Graph": "HairLayer",
+        "InputPose": {
+          "LinkID": -1
+        }
+      },
+      "AnimGraphNode_Root": {
+        "Result": {
+          "LinkID": -1
+        }
+      }
+    },
+    "SerializedSparseClassDataStruct": "ScriptStruct'Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.ABP_M_Octavia001_v01_Implimentation_C:AnimBlueprintGeneratedConstantData'",
+    "SerializedSparseClassData": {
+      "__FloatProperty_42": 0.0,
+      "__StructProperty_43": {
+        "bMapRange": false,
+        "bClampResult": false,
+        "bInterpResult": false,
+        "InRange": {
+          "Min": 0.0,
+          "Max": 1.0
+        },
+        "OutRange": {
+          "Min": 0.0,
+          "Max": 1.0
+        },
+        "Scale": 1.0,
+        "Bias": 0.0,
+        "ClampMin": 0.0,
+        "ClampMax": 1.0,
+        "InterpSpeedIncreasing": 10.0,
+        "InterpSpeedDecreasing": 10.0
+      },
+      "__FloatProperty_44": 1.0,
+      "__BoolProperty_45": false,
+      "__EnumProperty_46": "EAnimSyncMethod::DoNotSync",
+      "__ByteProperty_47": "EAnimGroupRole::CanBeLeader",
+      "__NameProperty_48": "LeftHandAttach",
+      "__NameProperty_49": "ClothLayer",
+      "__NameProperty_50": "OnAim",
+      "__NameProperty_51": "HairLayer",
+      "__StructProperty_52": {
+        "ClassName": "None",
+        "FunctionName": "None"
+      },
+      "__NameProperty_53": "None",
+      "__NameProperty_54": "AnimGraph",
+      "AnimBlueprintExtension_PropertyAccess": {
+        "Library": {
+          "PathSegments": [
+            {
+              "Name": "IsAim",
+              "Struct": null,
+              "Property": {
+                "Path": [
+                  "IsAim"
+                ],
+                "ResolvedOwner": {
+                  "ObjectName": "AnimBlueprintGeneratedClass'ABP_M_Octavia001_v01_Implimentation_C'",
+                  "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.1"
+                }
+              },
+              "Function": null,
+              "ArrayIndex": -1,
+              "Flags": 2
+            },
+            {
+              "Name": "AnimGraphNode_ApplyAdditive",
+              "Struct": {
+                "ObjectName": "ScriptStruct'AnimNode_ApplyAdditive'",
+                "ObjectPath": "/Script/AnimGraphRuntime"
+              },
+              "Property": {
+                "Path": [
+                  "AnimGraphNode_ApplyAdditive"
+                ],
+                "ResolvedOwner": {
+                  "ObjectName": "AnimBlueprintGeneratedClass'ABP_M_Octavia001_v01_Implimentation_C'",
+                  "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.1"
+                }
+              },
+              "Function": null,
+              "ArrayIndex": -1,
+              "Flags": 1
+            },
+            {
+              "Name": "bAlphaBoolEnabled",
+              "Struct": null,
+              "Property": {
+                "Path": [
+                  "bAlphaBoolEnabled"
+                ],
+                "ResolvedOwner": {
+                  "ObjectName": "ScriptStruct'AnimNode_ApplyAdditive'",
+                  "ObjectPath": "/Script/AnimGraphRuntime"
+                }
+              },
+              "Function": null,
+              "ArrayIndex": -1,
+              "Flags": 2
+            }
+          ],
+          "SrcPaths": [
+            {
+              "PathSegmentStartIndex": 0,
+              "PathSegmentCount": 1
+            }
+          ],
+          "DestPaths": [
+            {
+              "PathSegmentStartIndex": 1,
+              "PathSegmentCount": 2
+            }
+          ],
+          "CopyBatchArray": [
+            {
+              "Copies": [
+                {
+                  "AccessIndex": 0,
+                  "DestAccessStartIndex": 0,
+                  "DestAccessEndIndex": 1,
+                  "Type": "EPropertyAccessCopyType::Bool"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "AnimBlueprintExtension_Base": {
+        "ExposedValueHandlers": [
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [
+              {
+                "CopyIndex": 0,
+                "PostCopyOperation": "EPostCopyOperation::None"
+              }
+            ],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_M_Octavia001_v01_Implimentation_C",
+    "Class": "UScriptClass'AnimBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton'SK_PalHuman_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/Human/SK_PalHuman_Skeleton.40"
+      },
+      "OrderedSavedPoseIndicesMap": [
+        {
+          "Key": "AnimGraph",
+          "Value": {
+            "OrderedSavedPoseNodeIndices": []
+          }
+        },
+        {
+          "Key": "HairLayer",
+          "Value": {
+            "OrderedSavedPoseNodeIndices": []
+          }
+        },
+        {
+          "Key": "ClothLayer",
+          "Value": {
+            "OrderedSavedPoseNodeIndices": []
+          }
+        },
+        {
+          "Key": "LeftHandAttach",
+          "Value": {
+            "OrderedSavedPoseNodeIndices": []
+          }
+        },
+        {
+          "Key": "OnAim",
+          "Value": {
+            "OrderedSavedPoseNodeIndices": []
+          }
+        }
+      ],
+      "GraphAssetPlayerInformation": [
+        {
+          "Key": "OnAim",
+          "Value": {
+            "PlayerNodeIndices": [
+              11
+            ]
+          }
+        }
+      ],
+      "AnimNodeData": [
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_M_Octavia001_v01_Implimentation_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.1"
+          },
+          "Entries": [
+            10,
+            10,
+            10,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            11,
+            5,
+            4,
+            3,
+            4294967295,
+            2,
+            2,
+            1,
+            4294967295,
+            0,
+            3,
+            3
+          ],
+          "NodeIndex": 0,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_M_Octavia001_v01_Implimentation_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.1"
+          },
+          "Entries": [
+            10,
+            10,
+            10,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 1,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_M_Octavia001_v01_Implimentation_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.1"
+          },
+          "Entries": [
+            10,
+            10,
+            10,
+            4294967295,
+            6,
+            11
+          ],
+          "NodeIndex": 2,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_M_Octavia001_v01_Implimentation_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.1"
+          },
+          "Entries": [
+            10,
+            10,
+            10,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 3,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_M_Octavia001_v01_Implimentation_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.1"
+          },
+          "Entries": [
+            10,
+            10,
+            10,
+            4294967295,
+            7,
+            11
+          ],
+          "NodeIndex": 4,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_M_Octavia001_v01_Implimentation_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.1"
+          },
+          "Entries": [
+            10,
+            10,
+            10,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 5,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_M_Octavia001_v01_Implimentation_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.1"
+          },
+          "Entries": [
+            10,
+            10,
+            10,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 6,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_M_Octavia001_v01_Implimentation_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.1"
+          },
+          "Entries": [
+            10,
+            10,
+            10,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 7,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_M_Octavia001_v01_Implimentation_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.1"
+          },
+          "Entries": [
+            10,
+            10,
+            10,
+            4294967295,
+            8,
+            11
+          ],
+          "NodeIndex": 8,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_M_Octavia001_v01_Implimentation_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.1"
+          },
+          "Entries": [
+            10,
+            10,
+            10,
+            4294967295,
+            9,
+            11
+          ],
+          "NodeIndex": 9,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_M_Octavia001_v01_Implimentation_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.1"
+          },
+          "Entries": [
+            10,
+            10,
+            10,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 10,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_M_Octavia001_v01_Implimentation_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.1"
+          },
+          "Entries": [
+            10,
+            10,
+            10,
+            4294967295,
+            12,
+            11
+          ],
+          "NodeIndex": 11,
+          "Flags": "EAnimNodeDataFlags::None"
+        }
+      ],
+      "NodeTypeMap": [
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_Root'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "Result",
+                "Value": 3
+              },
+              {
+                "Key": "Name",
+                "Value": 4
+              },
+              {
+                "Key": "Group",
+                "Value": 5
+              }
+            ],
+            "NumProperties": 6
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_Base'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              }
+            ],
+            "NumProperties": 3
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_LinkedInputPose'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "Name",
+                "Value": 3
+              },
+              {
+                "Key": "Graph",
+                "Value": 4
+              },
+              {
+                "Key": "InputPose",
+                "Value": 5
+              }
+            ],
+            "NumProperties": 6
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_SaveCachedPose'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "Pose",
+                "Value": 3
+              },
+              {
+                "Key": "CachePoseName",
+                "Value": 4
+              }
+            ],
+            "NumProperties": 5
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/AnimGraphRuntime.AnimNode_ApplyAdditive'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "Base",
+                "Value": 3
+              },
+              {
+                "Key": "Additive",
+                "Value": 4
+              },
+              {
+                "Key": "Alpha",
+                "Value": 5
+              },
+              {
+                "Key": "AlphaScaleBias",
+                "Value": 6
+              },
+              {
+                "Key": "LODThreshold",
+                "Value": 7
+              },
+              {
+                "Key": "AlphaBoolBlend",
+                "Value": 8
+              },
+              {
+                "Key": "AlphaCurveName",
+                "Value": 9
+              },
+              {
+                "Key": "AlphaScaleBiasClamp",
+                "Value": 10
+              },
+              {
+                "Key": "AlphaInputType",
+                "Value": 11
+              },
+              {
+                "Key": "bAlphaBoolEnabled",
+                "Value": 12
+              }
+            ],
+            "NumProperties": 13
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_SequencePlayer'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "GroupIndex",
+                "Value": 3
+              },
+              {
+                "Key": "GroupScope",
+                "Value": 4
+              },
+              {
+                "Key": "BlendWeight",
+                "Value": 5
+              },
+              {
+                "Key": "InternalTimeAccumulator",
+                "Value": 6
+              },
+              {
+                "Key": "PlayRateScaleBiasClampState",
+                "Value": 7
+              },
+              {
+                "Key": "GroupName",
+                "Value": 8
+              },
+              {
+                "Key": "GroupRole",
+                "Value": 9
+              },
+              {
+                "Key": "Method",
+                "Value": 10
+              },
+              {
+                "Key": "bIgnoreForRelevancyTest",
+                "Value": 11
+              },
+              {
+                "Key": "Sequence",
+                "Value": 12
+              },
+              {
+                "Key": "PlayRateBasis",
+                "Value": 13
+              },
+              {
+                "Key": "PlayRate",
+                "Value": 14
+              },
+              {
+                "Key": "PlayRateScaleBiasClampConstants",
+                "Value": 15
+              },
+              {
+                "Key": "PlayRateScaleBiasClamp",
+                "Value": 16
+              },
+              {
+                "Key": "StartPosition",
+                "Value": 17
+              },
+              {
+                "Key": "bLoopAnimation",
+                "Value": 18
+              },
+              {
+                "Key": "bStartFromMatchingPose",
+                "Value": 19
+              }
+            ],
+            "NumProperties": 20
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_SequencePlayerBase'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "GroupIndex",
+                "Value": 3
+              },
+              {
+                "Key": "GroupScope",
+                "Value": 4
+              },
+              {
+                "Key": "BlendWeight",
+                "Value": 5
+              },
+              {
+                "Key": "InternalTimeAccumulator",
+                "Value": 6
+              },
+              {
+                "Key": "PlayRateScaleBiasClampState",
+                "Value": 7
+              }
+            ],
+            "NumProperties": 8
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_AssetPlayerBase'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "GroupIndex",
+                "Value": 3
+              },
+              {
+                "Key": "GroupScope",
+                "Value": 4
+              },
+              {
+                "Key": "BlendWeight",
+                "Value": 5
+              },
+              {
+                "Key": "InternalTimeAccumulator",
+                "Value": 6
+              }
+            ],
+            "NumProperties": 7
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_AssetPlayerRelevancyBase'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              }
+            ],
+            "NumProperties": 3
+          }
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABP_M_Octavia001_v01_Implimentation_C:ExecuteUbergraph_ABP_M_Octavia001_v01_Implimentation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AnimInstance'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABP_M_Octavia001_v01_Implimentation_C:OnAim'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.7"
+      },
+      {
+        "ObjectName": "Function'ABP_M_Octavia001_v01_Implimentation_C:LeftHandAttach'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.6"
+      },
+      {
+        "ObjectName": "Function'ABP_M_Octavia001_v01_Implimentation_C:ClothLayer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.3"
+      },
+      {
+        "ObjectName": "Function'ABP_M_Octavia001_v01_Implimentation_C:HairLayer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.5"
+      },
+      {
+        "ObjectName": "Function'ABP_M_Octavia001_v01_Implimentation_C:AnimGraph'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.2"
+      },
+      {
+        "ObjectName": "Function'ABP_M_Octavia001_v01_Implimentation_C:ExecuteUbergraph_ABP_M_Octavia001_v01_Implimentation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimBlueprintExtension_PropertyAccess",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimSubsystemInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimBlueprintExtension_Base",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimSubsystemInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_SequencePlayer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 328,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_SequencePlayer'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_ApplyAdditive",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 344,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_ApplyAdditive'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root_4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 184,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_Root'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_LinkedInputPose_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 336,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_LinkedInputPose'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 184,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_Root'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_LinkedInputPose_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 336,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_LinkedInputPose'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_SaveCachedPose",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 392,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_SaveCachedPose'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_LinkedInputPose_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 336,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_LinkedInputPose'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 184,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_Root'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 184,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_Root'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_LinkedInputPose",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 336,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_LinkedInputPose'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 184,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_Root'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsAim",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintReadOnly",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABP_M_Octavia001_v01_Implimentation": {
+        "ObjectName": "Function'ABP_M_Octavia001_v01_Implimentation_C:ExecuteUbergraph_ABP_M_Octavia001_v01_Implimentation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.4"
+      },
+      "AnimGraph": {
+        "ObjectName": "Function'ABP_M_Octavia001_v01_Implimentation_C:AnimGraph'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.2"
+      },
+      "HairLayer": {
+        "ObjectName": "Function'ABP_M_Octavia001_v01_Implimentation_C:HairLayer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.5"
+      },
+      "ClothLayer": {
+        "ObjectName": "Function'ABP_M_Octavia001_v01_Implimentation_C:ClothLayer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.3"
+      },
+      "LeftHandAttach": {
+        "ObjectName": "Function'ABP_M_Octavia001_v01_Implimentation_C:LeftHandAttach'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.6"
+      },
+      "OnAim": {
+        "ObjectName": "Function'ABP_M_Octavia001_v01_Implimentation_C:OnAim'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.7"
+      }
+    },
+    "ClassFlags": "CLASS_Transient | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'SkeletalMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassConfigName": "Engine",
+    "Interfaces": [
+      {
+        "Class": {
+          "ObjectName": "AnimBlueprintGeneratedClass'ALI_HumanCloth_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ALI_HumanCloth.1"
+        },
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      },
+      {
+        "Class": {
+          "ObjectName": "AnimBlueprintGeneratedClass'ALI_PalmiSubFunction_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Palmi/ALI_PalmiSubFunction.1"
+        },
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      }
+    ],
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABP_M_Octavia001_v01_Implimentation_C'Default__ABP_M_Octavia001_v01_Implimentation_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Imp_Cloth/ABP_M_Octavia001_v01_Implimentation.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal",
+      "ImplementedInterfaces": "((Interface=/Script/Engine.AnimBlueprintGeneratedClass'\"/Game/Pal/Blueprint/Character/Player/Female/ALI_HumanCloth.ALI_HumanCloth_C\"'),(Interface=/Script/Engine.AnimBlueprintGeneratedClass'\"/Game/Pal/Blueprint/Character/Palmi/ALI_PalmiSubFunction.ALI_PalmiSubFunction_C\"'))"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_M_Octavia001_v01_Implimentation_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraph",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ClothLayer",
+    "Outer": "ABP_M_Octavia001_v01_Implimentation_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "InPose",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ClothLayer",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_M_Octavia001_v01_Implimentation",
+    "Outer": "ABP_M_Octavia001_v01_Implimentation_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "HairLayer",
+    "Outer": "ABP_M_Octavia001_v01_Implimentation_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "InPose",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "HairLayer",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "LeftHandAttach",
+    "Outer": "ABP_M_Octavia001_v01_Implimentation_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "InPose",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "LeftHandAttach",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAim",
+    "Outer": "ABP_M_Octavia001_v01_Implimentation_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "InPose_0",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsAim",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "OnAim",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable"
+  },
+  {
+    "Type": "ScriptStruct",
+    "Name": "AnimBlueprintGeneratedConstantData",
+    "Outer": "ABP_M_Octavia001_v01_Implimentation_C",
+    "Class": "UScriptClass'ScriptStruct'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "ScriptStruct'AnimBlueprintConstantData'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "__FloatProperty_42",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "__StructProperty_43",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 44,
+        "PropertyFlags": "BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'InputScaleBiasClampConstants'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "__FloatProperty_44",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "__BoolProperty_45",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "__EnumProperty_46",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible",
+        "Enum": {
+          "ObjectName": "Enum'EAnimSyncMethod'",
+          "ObjectPath": "/Script/Engine"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EAnimSyncMethod'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "__ByteProperty_47",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible",
+        "Enum": {
+          "ObjectName": "Enum'EAnimGroupRole'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "__NameProperty_48",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "__NameProperty_49",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "__NameProperty_50",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "__NameProperty_51",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "__StructProperty_52",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 40,
+        "PropertyFlags": "BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNodeFunctionRef'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "__NameProperty_53",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "__NameProperty_54",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimBlueprintExtension_PropertyAccess",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 192,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimSubsystem_PropertyAccess'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimBlueprintExtension_Base",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimSubsystem_Base'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ]
+  },
+  {
+    "Type": "ScriptStruct",
+    "Name": "AnimBlueprintGeneratedMutableData",
+    "Outer": "ABP_M_Octavia001_v01_Implimentation_C",
+    "Class": "UScriptClass'ScriptStruct'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "ScriptStruct'AnimBlueprintMutableData'",
+      "ObjectPath": "/Script/Engine"
+    }
+  }
+]

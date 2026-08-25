@@ -1,0 +1,66 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "ENum_AirCrash_State",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "405F114A4C5E9E4D992C58A28EBB1B96",
+            "SourceString": "Prepare",
+            "LocalizedString": "Prepare"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "4160CB5E41C8E3B23A42B9B7DD6527FC",
+            "SourceString": "JumpUp",
+            "LocalizedString": "JumpUp"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "7EFA750147BD7F22D3CD3AA5D7A7D55A",
+            "SourceString": "Warp",
+            "LocalizedString": "Warp"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "BBD578A34015BDF4562057B7D3C3B9CE",
+            "SourceString": "Fall",
+            "LocalizedString": "Fall"
+          }
+        },
+        {
+          "Key": "NewEnumerator4",
+          "Value": {
+            "Namespace": "",
+            "Key": "59DDD9B449D9B19136DEBF9F24705AAA",
+            "SourceString": "End",
+            "LocalizedString": "End"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "ENum_AirCrash_State::NewEnumerator0": 0,
+      "ENum_AirCrash_State::NewEnumerator1": 1,
+      "ENum_AirCrash_State::NewEnumerator2": 2,
+      "ENum_AirCrash_State::NewEnumerator3": 3,
+      "ENum_AirCrash_State::NewEnumerator4": 4,
+      "ENum_AirCrash_State::ENum_AirCrash_MAX": 5
+    },
+    "CppForm": "Namespaced"
+  }
+]

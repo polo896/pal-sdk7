@@ -1,0 +1,201 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_HUDDispatchParameter_TechnologyFilter_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalHUDDispatchParameterBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_HUDDispatchParameter_TechnologyFilter_C:OnFilterApplied__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Technology/BP_HUDDispatchParameter_TechnologyFilter.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "SetProperty",
+        "Name": "ItemTypes",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn",
+        "ElementProp": {
+          "Type": "EnumProperty",
+          "Name": "ItemTypes",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalItemTypeA'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": {
+              "ObjectName": "Enum'EPalItemTypeA'",
+              "ObjectPath": "/Script/Pal"
+            }
+          }
+        }
+      },
+      {
+        "Type": "SetProperty",
+        "Name": "BuildType",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn",
+        "ElementProp": {
+          "Type": "EnumProperty",
+          "Name": "BuildType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalBuildObjectTypeA'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": {
+              "ObjectName": "Enum'EPalBuildObjectTypeA'",
+              "ObjectPath": "/Script/Pal"
+            }
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ShowUnlocked",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnFilterApplied",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'BP_HUDDispatchParameter_TechnologyFilter_C:OnFilterApplied__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Technology/BP_HUDDispatchParameter_TechnologyFilter.2"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnFilterApplied__DelegateSignature": {
+        "ObjectName": "Function'BP_HUDDispatchParameter_TechnologyFilter_C:OnFilterApplied__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Technology/BP_HUDDispatchParameter_TechnologyFilter.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_HUDDispatchParameter_TechnologyFilter_C'Default__BP_HUDDispatchParameter_TechnologyFilter_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Technology/BP_HUDDispatchParameter_TechnologyFilter.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_HUDDispatchParameter_TechnologyFilter_C",
+    "Name": "Default__BP_HUDDispatchParameter_TechnologyFilter_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/Technology/BP_HUDDispatchParameter_TechnologyFilter.BP_HUDDispatchParameter_TechnologyFilter_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnFilterApplied__DelegateSignature",
+    "Outer": "BP_HUDDispatchParameter_TechnologyFilter_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "SetProperty",
+        "Name": "ItemFilter",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "ElementProp": {
+          "Type": "EnumProperty",
+          "Name": "ItemFilter",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalItemTypeA'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": {
+              "ObjectName": "Enum'EPalItemTypeA'",
+              "ObjectPath": "/Script/Pal"
+            }
+          }
+        }
+      },
+      {
+        "Type": "SetProperty",
+        "Name": "BuiltFilter",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "ElementProp": {
+          "Type": "EnumProperty",
+          "Name": "BuiltFilter",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalBuildObjectTypeA'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": {
+              "ObjectName": "Enum'EPalBuildObjectTypeA'",
+              "ObjectPath": "/Script/Pal"
+            }
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ShowUnlocked",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

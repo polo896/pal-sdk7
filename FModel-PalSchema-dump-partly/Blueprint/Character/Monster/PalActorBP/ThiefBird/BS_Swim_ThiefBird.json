@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Swim_ThiefBird",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 0.93333334,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_ThiefBird_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/ThiefBird/AS_ThiefBird_Run.1"
+          },
+          "SampleValue": {
+            "X": 1200.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.5
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_ThiefBird_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/ThiefBird/AS_ThiefBird_Run.1"
+          },
+          "SampleValue": {
+            "X": 900.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_ThiefBird_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/ThiefBird/AS_ThiefBird_Run.1"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.5
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.75
+          },
+          {
+            "SampleIndices": 1,
+            "SampleIndices[1]": 0,
+            "Vertices": 0.75,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 1200.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_ThiefBird_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/ThiefBird/SK_ThiefBird_Skeleton.4"
+      }
+    },
+    "SkeletonGuid": "5F2833C3-4C0AB83D-4EFE21BE-7957C211"
+  }
+]

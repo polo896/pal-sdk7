@@ -1,0 +1,35 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalDimensionLockerControlSubsystem_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalDimensionLockerControlSubsystem'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalDimensionLockerControlSubsystem_C'Default__BP_PalDimensionLockerControlSubsystem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalDimensionLockerControlSubsystem.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalDimensionLockerControlSubsystem_C",
+    "Name": "Default__BP_PalDimensionLockerControlSubsystem_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalDimensionLockerControlSubsystem.BP_PalDimensionLockerControlSubsystem_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bShouldCreate": true
+    }
+  }
+]

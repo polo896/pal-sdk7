@@ -1,0 +1,200 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalSpawner_Sheets_sakura_purple_C_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalSpawner_Standard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalSpawner_Sheets_sakura_purple_C_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_sakura_purple_C.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalSpawner_Standard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard.0"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalSpawner_Sheets_sakura_purple_C_C'Default__BP_PalSpawner_Sheets_sakura_purple_C_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_sakura_purple_C.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalSpawner_Sheets_sakura_purple_C_C",
+    "Name": "Default__BP_PalSpawner_Sheets_sakura_purple_C_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_sakura_purple_C.BP_PalSpawner_Sheets_sakura_purple_C_C'",
+    "Template": {
+      "ObjectName": "BP_PalSpawner_Standard_C'Default__BP_PalSpawner_Standard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnGroupList": [
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 40,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "DarkCrow"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 54,
+              "Level_Max": 57,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 3,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Ronin"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 54,
+              "Level_Max": 58,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 3,
+          "OnlyTime": "EPalOneDayTimeType::Night",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Ronin_Dark"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 54,
+              "Level_Max": 58,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 20,
+          "OnlyTime": "EPalOneDayTimeType::Night",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "CandleGhost"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 54,
+              "Level_Max": 58,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 1,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "MimicDog"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 54,
+              "Level_Max": 58,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        }
+      ],
+      "SpawnerName": "sakura_purple_C"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalSpawner_Sheets_sakura_purple_C_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalSpawner_Sheets_sakura_purple_C_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_sakura_purple_C.2"
+      },
+      "VariableGuid": "577F573D-44DC2C2C-894C438F-11552F4C",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalSpawner_Sheets_sakura_purple_C_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalSpawner_Sheets_sakura_purple_C_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_sakura_purple_C.3"
+      }
+    }
+  }
+]

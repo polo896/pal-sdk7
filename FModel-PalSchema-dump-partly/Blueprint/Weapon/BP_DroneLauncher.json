@@ -1,0 +1,1285 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_DroneLauncher_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_YakushimaBlade003_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_YakushimaBlade003.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_DroneLauncher_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.33"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_DroneLauncher_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.20"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_DroneLauncher_C:ExecuteUbergraph_BP_DroneLauncher'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.11"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_YakushimaBlade003_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_YakushimaBlade003.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_DroneLauncher_C:PlayShootAnim'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.17"
+      },
+      {
+        "ObjectName": "Function'BP_DroneLauncher_C:UpdateDroneVisiblity'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.19"
+      },
+      {
+        "ObjectName": "Function'BP_DroneLauncher_C:GetBladeSpawnTransform'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.12"
+      },
+      {
+        "ObjectName": "Function'BP_DroneLauncher_C:OnPullTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.15"
+      },
+      {
+        "ObjectName": "Function'BP_DroneLauncher_C:OnDestroyBlade'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.14"
+      },
+      {
+        "ObjectName": "Function'BP_DroneLauncher_C:OnAttachWeapon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.13"
+      },
+      {
+        "ObjectName": "Function'BP_DroneLauncher_C:OnStartAim'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.16"
+      },
+      {
+        "ObjectName": "Function'BP_DroneLauncher_C:SpawnBlade'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.18"
+      },
+      {
+        "ObjectName": "Function'BP_DroneLauncher_C:ExecuteUbergraph_BP_DroneLauncher'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.11"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Drone8",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Drone7",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Drone6",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Drone5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Drone4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Drone2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Drone3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Drone1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Drone0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_DroneLauncher": {
+        "ObjectName": "Function'BP_DroneLauncher_C:ExecuteUbergraph_BP_DroneLauncher'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.11"
+      },
+      "SpawnBlade": {
+        "ObjectName": "Function'BP_DroneLauncher_C:SpawnBlade'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.18"
+      },
+      "OnStartAim": {
+        "ObjectName": "Function'BP_DroneLauncher_C:OnStartAim'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.16"
+      },
+      "OnAttachWeapon": {
+        "ObjectName": "Function'BP_DroneLauncher_C:OnAttachWeapon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.13"
+      },
+      "OnDestroyBlade": {
+        "ObjectName": "Function'BP_DroneLauncher_C:OnDestroyBlade'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.14"
+      },
+      "OnPullTrigger": {
+        "ObjectName": "Function'BP_DroneLauncher_C:OnPullTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.15"
+      },
+      "GetBladeSpawnTransform": {
+        "ObjectName": "Function'BP_DroneLauncher_C:GetBladeSpawnTransform'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.12"
+      },
+      "UpdateDroneVisiblity": {
+        "ObjectName": "Function'BP_DroneLauncher_C:UpdateDroneVisiblity'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.19"
+      },
+      "PlayShootAnim": {
+        "ObjectName": "Function'BP_DroneLauncher_C:PlayShootAnim'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.17"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_DroneLauncher_C'Default__BP_DroneLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_DroneLauncher_C",
+    "Name": "Default__BP_DroneLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.BP_DroneLauncher_C'",
+    "Template": {
+      "ObjectName": "BP_YakushimaBlade003_C'Default__BP_YakushimaBlade003_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_YakushimaBlade003.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "BladeClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_Drone_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_DroneLauncher_Drone.0"
+      },
+      "RecoilCurve": null,
+      "ShotCameraShake": null,
+      "WeaponType": "EPalWeaponType::RocketLauncher",
+      "weaponIconTexture": {
+        "AssetPathName": "/Game/Pal/Texture/Item/Weapon/T_icon_DroneLauncher_UI.T_icon_DroneLauncher_UI",
+        "SubPathString": ""
+      },
+      "PalSoundSlotClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_DroneLauncher.BP_SoundSlot_Weapon_DroneLauncher_C",
+        "SubPathString": ""
+      },
+      "PlaySoundIds": [
+        {
+          "Key": "EWeaponPlaySoundType::OnStartAim",
+          "Value": {
+            "Key": "Weapon_Aim_Start"
+          }
+        },
+        {
+          "Key": "EWeaponPlaySoundType::OnEndAim",
+          "Value": {
+            "Key": "Weapon_Aim_End"
+          }
+        },
+        {
+          "Key": "EWeaponPlaySoundType::OnAttach",
+          "Value": {
+            "Key": "Weapon_Equip"
+          }
+        }
+      ],
+      "BackWeaponClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_BackWeapon_DroneLauncher_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BackWeapon/BP_BackWeapon_DroneLauncher.0"
+      }
+    }
+  },
+  {
+    "Type": "BP_DroneLauncher_DroneStaticMesh_C",
+    "Name": "Drone0_GEN_VARIABLE",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.BP_DroneLauncher_DroneStaticMesh_C'",
+    "Template": {
+      "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'Default__BP_DroneLauncher_DroneStaticMesh_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": -30.0
+      }
+    }
+  },
+  {
+    "Type": "BP_DroneLauncher_DroneStaticMesh_C",
+    "Name": "Drone1_GEN_VARIABLE",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.BP_DroneLauncher_DroneStaticMesh_C'",
+    "Template": {
+      "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'Default__BP_DroneLauncher_DroneStaticMesh_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 30.0
+      }
+    }
+  },
+  {
+    "Type": "BP_DroneLauncher_DroneStaticMesh_C",
+    "Name": "Drone2_GEN_VARIABLE",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.BP_DroneLauncher_DroneStaticMesh_C'",
+    "Template": {
+      "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'Default__BP_DroneLauncher_DroneStaticMesh_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": -30.0
+      }
+    }
+  },
+  {
+    "Type": "BP_DroneLauncher_DroneStaticMesh_C",
+    "Name": "Drone3_GEN_VARIABLE",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.BP_DroneLauncher_DroneStaticMesh_C'",
+    "Template": {
+      "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'Default__BP_DroneLauncher_DroneStaticMesh_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 30.0
+      }
+    }
+  },
+  {
+    "Type": "BP_DroneLauncher_DroneStaticMesh_C",
+    "Name": "Drone4_GEN_VARIABLE",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.BP_DroneLauncher_DroneStaticMesh_C'",
+    "Template": {
+      "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'Default__BP_DroneLauncher_DroneStaticMesh_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": -30.0
+      }
+    }
+  },
+  {
+    "Type": "BP_DroneLauncher_DroneStaticMesh_C",
+    "Name": "Drone5_GEN_VARIABLE",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.BP_DroneLauncher_DroneStaticMesh_C'",
+    "Template": {
+      "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'Default__BP_DroneLauncher_DroneStaticMesh_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 30.0
+      }
+    }
+  },
+  {
+    "Type": "BP_DroneLauncher_DroneStaticMesh_C",
+    "Name": "Drone6_GEN_VARIABLE",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.BP_DroneLauncher_DroneStaticMesh_C'",
+    "Template": {
+      "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'Default__BP_DroneLauncher_DroneStaticMesh_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": -30.0
+      }
+    }
+  },
+  {
+    "Type": "BP_DroneLauncher_DroneStaticMesh_C",
+    "Name": "Drone7_GEN_VARIABLE",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.BP_DroneLauncher_DroneStaticMesh_C'",
+    "Template": {
+      "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'Default__BP_DroneLauncher_DroneStaticMesh_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 30.0
+      }
+    }
+  },
+  {
+    "Type": "BP_DroneLauncher_DroneStaticMesh_C",
+    "Name": "Drone8_GEN_VARIABLE",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.BP_DroneLauncher_DroneStaticMesh_C'",
+    "Template": {
+      "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'Default__BP_DroneLauncher_DroneStaticMesh_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 25.0,
+        "Y": -33.000004,
+        "Z": 4.0154288E-07
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": -90.0
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_DroneLauncher",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_DestroyedActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_attachActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bForce",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetBladeSpawnTransform",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_YakushimaBlade003_C:GetBladeSpawnTransform'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_YakushimaBlade003.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_YakushimaBlade003_C:GetBladeSpawnTransform'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_YakushimaBlade003.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_CurrentBlades_Array_Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentToWorld_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAttachWeapon",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalWeaponBase:OnAttachWeapon'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "attachActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnDestroyBlade",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_YakushimaBlade003_C:OnDestroyBlade'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_YakushimaBlade003.7"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_YakushimaBlade003_C:OnDestroyBlade'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_YakushimaBlade003.7"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "DestroyedActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPullTrigger",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalWeaponBase:OnPullTrigger'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnStartAim",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_YakushimaBlade003_C:OnStartAim'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_YakushimaBlade003.8"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_YakushimaBlade003_C:OnStartAim'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_YakushimaBlade003.8"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayShootAnim",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_YakushimaBlade003_C:PlayShootAnim'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_YakushimaBlade003.10"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_YakushimaBlade003_C:PlayShootAnim'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_YakushimaBlade003.10"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalSoundOptions",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalSoundOptions'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalDataTableRowName_SoundID",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDataTableRowName_SoundID'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SpawnBlade",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_YakushimaBlade003_C:SpawnBlade'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_YakushimaBlade003.15"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_YakushimaBlade003_C:SpawnBlade'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_YakushimaBlade003.15"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bForce",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateDroneVisiblity",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "Instant",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_CurrentBlades_Array_Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_CurrentBlades_Array_Index_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SceneComponent'BP_DroneLauncher_C:ICH-DefaultSceneRoot_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.22"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_MeleeWeaponBase_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_MeleeWeaponBase.0"
+            },
+            "SCSVariableName": "DefaultSceneRoot",
+            "AssociatedGuid": "A6ACEA61-4BC8F7E4-3EDF279D-29DECAFF"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SkeletalMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SkeletalMeshComponent'BP_DroneLauncher_C:SkeletalMesh_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.34"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_MeleeWeaponBase_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_MeleeWeaponBase.0"
+            },
+            "SCSVariableName": "SkeletalMesh",
+            "AssociatedGuid": "AFD4F9AE-4632E562-DA7507AF-6A132605"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "ICH-DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_DroneLauncher_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.21"
+      },
+      "VariableGuid": "0B6A0308-4B16D28D-7D17F884-8C8128EC",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'BP_DroneLauncher_C:Drone4_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.6"
+      },
+      "AttachToName": "funnel_front_lower_right",
+      "ParentComponentOrVariableName": "SkeletalMesh",
+      "ParentComponentOwnerClassName": "BP_MeleeWeaponBase_C",
+      "VariableGuid": "4D4970E1-4A96BFC1-C27C938B-74DC27B7",
+      "InternalVariableName": "Drone4"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'BP_DroneLauncher_C:Drone8_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.10"
+      },
+      "AttachToName": "grip",
+      "ParentComponentOrVariableName": "SkeletalMesh",
+      "ParentComponentOwnerClassName": "BP_MeleeWeaponBase_C",
+      "VariableGuid": "5417443D-4E086BF7-63FD26B3-9B5F9A78",
+      "InternalVariableName": "Drone8"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'BP_DroneLauncher_C:Drone5_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.7"
+      },
+      "AttachToName": "funnel_front_lower_left",
+      "ParentComponentOrVariableName": "SkeletalMesh",
+      "ParentComponentOwnerClassName": "BP_MeleeWeaponBase_C",
+      "VariableGuid": "5BE75781-4846E463-EA22DEB5-15F6C673",
+      "InternalVariableName": "Drone5"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'BP_DroneLauncher_C:Drone6_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.8"
+      },
+      "AttachToName": "funnel_back_lower_right",
+      "ParentComponentOrVariableName": "SkeletalMesh",
+      "ParentComponentOwnerClassName": "BP_MeleeWeaponBase_C",
+      "VariableGuid": "7D131000-4BCC54F3-5804BBBB-07E4E1A2",
+      "InternalVariableName": "Drone6"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'BP_DroneLauncher_C:Drone7_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.9"
+      },
+      "AttachToName": "funnel_back_lower_left",
+      "ParentComponentOrVariableName": "SkeletalMesh",
+      "ParentComponentOwnerClassName": "BP_MeleeWeaponBase_C",
+      "VariableGuid": "37DDBE59-40A23101-2A325AA3-AA1360CE",
+      "InternalVariableName": "Drone7"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'BP_DroneLauncher_C:Drone0_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.2"
+      },
+      "AttachToName": "funnel_front_upper_right",
+      "ParentComponentOrVariableName": "SkeletalMesh",
+      "ParentComponentOwnerClassName": "BP_MeleeWeaponBase_C",
+      "VariableGuid": "175C552A-45E8A188-FC1EFA96-0D5527ED",
+      "InternalVariableName": "Drone0"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'BP_DroneLauncher_C:Drone1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.3"
+      },
+      "AttachToName": "funnel_front_upper_left",
+      "ParentComponentOrVariableName": "SkeletalMesh",
+      "ParentComponentOwnerClassName": "BP_MeleeWeaponBase_C",
+      "VariableGuid": "A69D410A-4C196EE5-E5DC219B-DC355F7E",
+      "InternalVariableName": "Drone1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'BP_DroneLauncher_C:Drone3_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.5"
+      },
+      "AttachToName": "funnel_back_upper_left",
+      "ParentComponentOrVariableName": "SkeletalMesh",
+      "ParentComponentOwnerClassName": "BP_MeleeWeaponBase_C",
+      "VariableGuid": "EAE28BD7-47D38C8D-35BEBF88-E0082D0C",
+      "InternalVariableName": "Drone3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_DroneLauncher_DroneStaticMesh_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'BP_DroneLauncher_C:Drone2_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.4"
+      },
+      "AttachToName": "funnel_back_upper_right",
+      "ParentComponentOrVariableName": "SkeletalMesh",
+      "ParentComponentOwnerClassName": "BP_MeleeWeaponBase_C",
+      "VariableGuid": "1E118D6C-4B351FD5-A0E407BB-77C01DFA",
+      "InternalVariableName": "Drone2"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.29"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.30"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.31"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.32"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.24"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.26"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.27"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.28"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.25"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.29"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.30"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.31"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.32"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.24"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.26"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.27"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.28"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.25"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_DroneLauncher_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_DroneLauncher.23"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh_GEN_VARIABLE",
+    "Outer": "BP_DroneLauncher_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SkeletalMeshComponent'BP_YakushimaBlade003_C:SkeletalMesh_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_YakushimaBlade003.20"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_FunnelLauncher'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/AncientWeapon/FunnelLauncher/SK_FunnelLauncher.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_FunnelLauncher'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/AncientWeapon/FunnelLauncher/SK_FunnelLauncher.0"
+      },
+      "OverrideMaterials": [
+        null,
+        null,
+        null
+      ]
+    }
+  }
+]

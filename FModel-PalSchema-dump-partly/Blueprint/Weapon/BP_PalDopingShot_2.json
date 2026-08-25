@@ -1,0 +1,225 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalDopingShot_2_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalDopingShot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalDopingShot_2_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot_2.7"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_PalDopingShot_2_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot_2.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalDopingShot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_PalDopingShot_2_C:GetMuzzleEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot_2.2"
+      }
+    ],
+    "FuncMap": {
+      "GetMuzzleEffect": {
+        "ObjectName": "Function'BP_PalDopingShot_2_C:GetMuzzleEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot_2.2"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalDopingShot_2_C'Default__BP_PalDopingShot_2_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot_2.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalDopingShot_2_C",
+    "Name": "Default__BP_PalDopingShot_2_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot_2.BP_PalDopingShot_2_C'",
+    "Template": {
+      "ObjectName": "BP_PalDopingShot_C'Default__BP_PalDopingShot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SupportedBulletMap": [
+        {
+          "Key": {
+            "Key": "PalDopingShotBullet"
+          },
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_PalDopingBullet_V2_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/BP_PalDopingBullet_V2.0"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetMuzzleEffect",
+    "Outer": "BP_PalDopingShot_2_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_PalDopingShot_C:GetMuzzleEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_PalDopingShot_C:GetMuzzleEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "NewParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraSystem'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_PalDopingShot_2_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'StaticMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "StaticMeshComponent'BP_PalDopingShot_2_C:Mag_0_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot_2.8"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_PalDopingShot_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot.0"
+            },
+            "SCSVariableName": "Mag_0",
+            "AssociatedGuid": "DD388E1F-4BEF8D43-14A6699C-A7123BFD"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SceneComponent'BP_PalDopingShot_2_C:ICH-DefaultSceneRoot_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot_2.5"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AssaultRifleBase_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.0"
+            },
+            "SCSVariableName": "DefaultSceneRoot",
+            "AssociatedGuid": "13200B6F-4FEDE0AC-03EBFEB5-413F27FC"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalDopingShot_2_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "ICH-DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalDopingShot_2_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalDopingShot_2_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot_2.4"
+      },
+      "VariableGuid": "9E124D2C-4DC0A15C-1C3202BB-0B3E78D3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalDopingShot_2_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalDopingShot_2_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot_2.6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Mag_0_GEN_VARIABLE",
+    "Outer": "BP_PalDopingShot_2_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Template": {
+      "ObjectName": "StaticMeshComponent'BP_PalDopingShot_C:Mag_0_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_PalDopingShot.18"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "OverrideMaterials": [
+        null,
+        {
+          "ObjectName": "MaterialInstanceConstant'MI_Weapon_Handgun_006_Liquid_2'",
+          "ObjectPath": "Pal/Content/Pal/Model/Weapon/Handgun/SK_Weapon_Handgun_006/Material/MI_Weapon_Handgun_006_Liquid_2.0"
+        }
+      ]
+    }
+  }
+]

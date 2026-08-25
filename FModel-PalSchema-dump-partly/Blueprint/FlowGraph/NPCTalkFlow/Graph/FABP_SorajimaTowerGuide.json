@@ -1,0 +1,182 @@
+[
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_SorajimaTowerGuide",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "D214FD65-4463F2E2-8FC477B7-26FBCC39",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "81968DC4-469D5EDA-FA2CDCA9-D63CF5BA",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_GetItem_C",
+    "Name": "FNBP_GetItem_C_0",
+    "Outer": "FABP_SorajimaTowerGuide",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetItem.FNBP_GetItem_C'",
+    "Template": {
+      "ObjectName": "FNBP_GetItem_C'Default__FNBP_GetItem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetItem.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LotteryDataTable": {
+        "ObjectName": "DataTable'DT_GiftSkyIslandOre'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/NPCTalk/FunctionArgument/DT_GiftSkyIslandOre.0"
+      },
+      "NetworkInvokeName": "Gift",
+      "bSaveNetworkInvoke": true,
+      "GraphNode": null,
+      "NodeGuid": "E562427B-4B3C0362-34EC0BBD-8EB56920"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_SorajimaTowerGuide",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Sorajima_Tower_guide"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "399F3BEE-482B8207-FF1BB08B-3D9249C8",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "E562427B-4B3C0362-34EC0BBD-8EB56920",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_SorajimaTowerGuide",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Sorajima_Tower_guide_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "0C8A686F-4B48C8AB-E9E7B081-1FA5D958"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkCountBranch_C",
+    "Name": "FNBP_NPCTalkCountBranch_C_0",
+    "Outer": "FABP_SorajimaTowerGuide",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkCountBranch.FNBP_NPCTalkCountBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkCountBranch_C'Default__FNBP_NPCTalkCountBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkCountBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "81968DC4-469D5EDA-FA2CDCA9-D63CF5BA",
+      "OutputPins": [
+        {
+          "PinName": "Loop",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "1",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "Loop",
+          "Value": {
+            "NodeGuid": "0C8A686F-4B48C8AB-E9E7B081-1FA5D958",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "1",
+          "Value": {
+            "NodeGuid": "399F3BEE-482B8207-FF1BB08B-3D9249C8",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_SorajimaTowerGuide",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "B65657D1-44FA037B-5C5DCFBD-7D55E1BE",
+      "Nodes": [
+        {
+          "Key": "D214FD65-4463F2E2-8FC477B7-26FBCC39",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_SorajimaTowerGuide:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SorajimaTowerGuide.0"
+          }
+        },
+        {
+          "Key": "81968DC4-469D5EDA-FA2CDCA9-D63CF5BA",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkCountBranch_C'FABP_SorajimaTowerGuide:FNBP_NPCTalkCountBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SorajimaTowerGuide.4"
+          }
+        },
+        {
+          "Key": "399F3BEE-482B8207-FF1BB08B-3D9249C8",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_SorajimaTowerGuide:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SorajimaTowerGuide.2"
+          }
+        },
+        {
+          "Key": "0C8A686F-4B48C8AB-E9E7B081-1FA5D958",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_SorajimaTowerGuide:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SorajimaTowerGuide.3"
+          }
+        },
+        {
+          "Key": "E562427B-4B3C0362-34EC0BBD-8EB56920",
+          "Value": {
+            "ObjectName": "FNBP_GetItem_C'FABP_SorajimaTowerGuide:FNBP_GetItem_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SorajimaTowerGuide.1"
+          }
+        }
+      ]
+    }
+  }
+]

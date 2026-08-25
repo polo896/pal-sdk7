@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueAction_VolcanoDragon_IceLaser_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueAction_VolcanoDragon_VolcanicLaser_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/VolcanoDragon/BP_UniqueAction_VolcanoDragon_VolcanicLaser.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueAction_VolcanoDragon_VolcanicLaser_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/VolcanoDragon/BP_UniqueAction_VolcanoDragon_VolcanicLaser.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_UniqueAction_VolcanoDragon_IceLaser_C:GetLaserClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/VolcanoDragon/BP_UniqueAction_VolcanoDragon_IceLaser.2"
+      }
+    ],
+    "FuncMap": {
+      "GetLaserClass": {
+        "ObjectName": "Function'BP_UniqueAction_VolcanoDragon_IceLaser_C:GetLaserClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/VolcanoDragon/BP_UniqueAction_VolcanoDragon_IceLaser.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueAction_VolcanoDragon_IceLaser_C'Default__BP_UniqueAction_VolcanoDragon_IceLaser_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/VolcanoDragon/BP_UniqueAction_VolcanoDragon_IceLaser.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueAction_VolcanoDragon_IceLaser_C",
+    "Name": "Default__BP_UniqueAction_VolcanoDragon_IceLaser_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/VolcanoDragon/BP_UniqueAction_VolcanoDragon_IceLaser.BP_UniqueAction_VolcanoDragon_IceLaser_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueAction_VolcanoDragon_VolcanicLaser_C'Default__BP_UniqueAction_VolcanoDragon_VolcanicLaser_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/VolcanoDragon/BP_UniqueAction_VolcanoDragon_VolcanicLaser.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FlagName": "IceLaser",
+      "WazaID": "EPalWazaID::Unique_VolcanoDragon_Ice_IceLaser"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetLaserClass",
+    "Outer": "BP_UniqueAction_VolcanoDragon_IceLaser_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_UniqueAction_VolcanoDragon_VolcanicLaser_C:GetLaserClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/VolcanoDragon/BP_UniqueAction_VolcanoDragon_VolcanicLaser.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_UniqueAction_VolcanoDragon_VolcanicLaser_C:GetLaserClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/VolcanoDragon/BP_UniqueAction_VolcanoDragon_VolcanicLaser.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "LaserClass",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_VolcanoDragon_VolcanicLaser_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/VolcanoDragon_VolcanicLaser/BP_UniqueSkillEffect_VolcanoDragon_VolcanicLaser.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

@@ -1,0 +1,207 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_NPC_GrassBoss_ShooterAnime_None_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalShooterAnimeAssetBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_NPC_GrassBoss_ShooterAnime_None_C'Default__BP_NPC_GrassBoss_ShooterAnime_None_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ShooterAnimeBP/BP_NPC_GrassBoss_ShooterAnime_None.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_NPC_GrassBoss_ShooterAnime_None_C",
+    "Name": "Default__BP_NPC_GrassBoss_ShooterAnime_None_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/NPC/ShooterAnimeBP/BP_NPC_GrassBoss_ShooterAnime_None.BP_NPC_GrassBoss_ShooterAnime_None_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimeInfo": {
+        "NormalMoveBlendSpace": {
+          "ObjectName": "BlendSpace1D'BS_GrassBoss_NormalMove'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BlendSpace/BS_GrassBoss_NormalMove.0"
+        },
+        "CrouchMoveBlendSpace": {
+          "ObjectName": "BlendSpace1D'BS_Player_Female_CrouchMove'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/BlendSpace/BS_Player_Female_CrouchMove.0"
+        },
+        "AimingMoveBlendSpace": {
+          "ObjectName": "BlendSpace'BS_Player_Female_HipShootingMove_Melee'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/BlendSpace/BS_Player_Female_HipShootingMove_Melee.0"
+        },
+        "HipShootingMoveBlendSpace": {
+          "ObjectName": "BlendSpace'BS_Player_Female_HipShootingMove_Melee'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/BlendSpace/BS_Player_Female_HipShootingMove_Melee.0"
+        },
+        "CrouchAimingMoveBlendSpace": {
+          "ObjectName": "BlendSpace'BS_Player_Female_AimCrouchShootingMove_Melee'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/BlendSpace/BS_Player_Female_AimCrouchShootingMove_Melee.0"
+        },
+        "JumpStart": {
+          "ObjectName": "AnimSequence'AS_Player_Female_JumpStart_None'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_JumpStart_None.0"
+        },
+        "JumpLoopUp": {
+          "ObjectName": "AnimSequence'AS_Player_Female_JumpUpLoop_None'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_JumpUpLoop_None.0"
+        },
+        "JumpLoopDown": {
+          "ObjectName": "AnimSequence'AS_Player_Female_JumpDownLoop_None'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_JumpDownLoop_None.0"
+        },
+        "JumpEnd": {
+          "ObjectName": "AnimSequence'AS_Player_Female_JumpEnd_None'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_JumpEnd_None.0"
+        },
+        "AirJumpUp": {
+          "ObjectName": "AnimSequence'AS_Player_Female_AirJump_None'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_AirJump_None.0"
+        },
+        "Sliding": {
+          "ObjectName": "AnimSequence'AS_Player_Female_SlidingLoop'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_SlidingLoop.0"
+        },
+        "SlidingEnd": {
+          "ObjectName": "AnimSequence'AS_Player_Female_SlidingEnd'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_SlidingEnd.0"
+        },
+        "Sprint": {
+          "ObjectName": "AnimSequence'AS_GrassBoss_Stand_Sprint'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AS_GrassBoss_Stand_Sprint.0"
+        },
+        "IdlePoseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::Stand",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_GrassBoss_Stand_Idle_None'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AS_GrassBoss_Stand_Idle_None.0"
+            }
+          },
+          {
+            "Key": "EWeaponAnimationPoseType::Crouch",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Female_Crouch_Idle_None'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_Crouch_Idle_None.0"
+            }
+          }
+        ],
+        "AimBaseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::Stand",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Female_Aim_None'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_Aim_None.0"
+            }
+          },
+          {
+            "Key": "EWeaponAnimationPoseType::Crouch",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Female_Crouch_Aim'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_Crouch_Aim.0"
+            }
+          }
+        ],
+        "AnimationMap": [
+          {
+            "Key": "EWeaponAnimationType::PullTrigger",
+            "Value": {
+              "PoseMap": [
+                {
+                  "Key": "EWeaponAnimationPoseType::Stand",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Female_Attack_None'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AM_Player_Female_Attack_None.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Crouch",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Female_Attack_None'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AM_Player_Female_Attack_None.0"
+                  }
+                }
+              ],
+              "isAutoStop": true,
+              "EndDelegateType": "EPalWeaponAnimationEndDelegateType::MontageBlendingOut"
+            }
+          }
+        ],
+        "RidingAnimationMap": [
+          {
+            "Key": "EPalRidePositionType::HorseRide",
+            "Value": {
+              "RidingAnimation": {
+                "ObjectName": "AnimSequence'AS_Player_Female_HorseRide_None'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_HorseRide_None.0"
+              },
+              "RidingSprintStartAnimation": null,
+              "RidingSprintAnimation": null,
+              "RidingShakingMontage": {
+                "ObjectName": "AnimMontage'AM_Player_Female_HorseRide_Yure_None'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AM_Player_Female_HorseRide_Yure_None.0"
+              },
+              "RideShootingAnimation": {
+                "ObjectName": "AnimSequence'AS_Player_Female_HorseRide_None'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_HorseRide_None.0"
+              },
+              "RideShootingAO": null
+            }
+          },
+          {
+            "Key": "EPalRidePositionType::SitRide",
+            "Value": {
+              "RidingAnimation": {
+                "ObjectName": "AnimSequence'AS_Player_Female_Crouch_Idle_None'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_Crouch_Idle_None.0"
+              },
+              "RidingSprintStartAnimation": null,
+              "RidingSprintAnimation": null,
+              "RidingShakingMontage": {
+                "ObjectName": "AnimMontage'AM_Player_Female_SitRide_Yure_None'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AM_Player_Female_SitRide_Yure_None.0"
+              },
+              "RideShootingAnimation": {
+                "ObjectName": "AnimSequence'AS_Player_Female_Crouch_Idle_None'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_Crouch_Idle_None.0"
+              },
+              "RideShootingAO": null
+            }
+          },
+          {
+            "Key": "EPalRidePositionType::BiggerHorseRide",
+            "Value": {
+              "RidingAnimation": {
+                "ObjectName": "AnimSequence'AS_Player_Female_BiggerHorseRide_None'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_BiggerHorseRide_None.0"
+              },
+              "RidingSprintStartAnimation": null,
+              "RidingSprintAnimation": null,
+              "RidingShakingMontage": {
+                "ObjectName": "AnimMontage'AM_Player_Female_HorseRide_Yure_None'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AM_Player_Female_HorseRide_Yure_None.0"
+              },
+              "RideShootingAnimation": {
+                "ObjectName": "AnimSequence'AS_Player_Female_BiggerHorseRide_None'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_BiggerHorseRide_None.0"
+              },
+              "RideShootingAO": null
+            }
+          }
+        ]
+      }
+    }
+  }
+]

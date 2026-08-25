@@ -1,0 +1,1395 @@
+[
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_C_100",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "WORKER_RADIAL_SHOW_STATUS"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_01.0"
+        },
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.30"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_C_384",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_CHARACTERISTIC_UI_DISPLAY"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "IgnoreFontSizeSetting": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "8CEA65A84122BA058798E8942E93248D",
+        "SourceString": "PASSIVE SKILL",
+        "LocalizedString": "PASSIVE SKILL"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_Blue_00'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_Blue_00.0"
+        },
+        "TypefaceFontName": "Bold",
+        "Size": 7
+      },
+      "ShadowOffset": {
+        "X": 2.0,
+        "Y": 2.0
+      },
+      "ShadowColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.1,
+        "Hex": "19000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive.CanvasPanelSlot_24'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canva_ItemInfo",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo.CanvasPanelSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo.CanvasPanelSlot_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo.CanvasPanelSlot_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_Guide_Close",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canvas_Guide_Close.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canvas_Guide_Close.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.15"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.18"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "PalSkill_Passive",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive.CanvasPanelSlot_24'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive.CanvasPanelSlot_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive.CanvasPanelSlot_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive.CanvasPanelSlot_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.20"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Canva_ItemInfo",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 465.0,
+          "Bottom": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.2"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Spacer_102'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.39"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Canva_ItemInfo",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Base_Line_T'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.33"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Canva_ItemInfo",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Top": 8.574656
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.2"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "Canva_ItemInfo",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.2"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canvas_Guide_Close'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "Canva_ItemInfo",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "Canva_ItemInfo",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Base_Dot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "Canva_ItemInfo",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 8.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Dot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "Canva_ItemInfo",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 8.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Dot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_Guide_Close",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canvas_Guide_Close'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.3"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Image_33'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Canvas_Guide_Close",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 300.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canvas_Guide_Close'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.3"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.28"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 465.0,
+          "Bottom": 497.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Top": 18.5,
+          "Right": -4.0,
+          "Bottom": 4.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Shadow_B'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 4.0,
+          "Bottom": -18.5
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Shadow_R'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "PalSkill_Passive",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 450.0,
+          "Bottom": 80.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.5"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Spacer_155'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "PalSkill_Passive",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 224.0,
+          "Top": 44.0,
+          "Right": 216.0,
+          "Bottom": 28.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.5"
+      },
+      "Content": {
+        "ObjectName": "WBP_MainMenu_Pal_Skill_Passive_C'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.WBP_MainMenu_Pal_Skill_Passive_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_24",
+    "Outer": "PalSkill_Passive",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -4.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.5"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.BP_PalTextBlock_C_384'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.1"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "PalSkill_Passive",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Top": 44.0,
+          "Right": 216.0,
+          "Bottom": 28.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.5"
+      },
+      "Content": {
+        "ObjectName": "WBP_MainMenu_Pal_Skill_Passive_C'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.WBP_MainMenu_Pal_Skill_Passive_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "PalSkill_Passive",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Top": 12.0,
+          "Right": 216.0,
+          "Bottom": 28.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.5"
+      },
+      "Content": {
+        "ObjectName": "WBP_MainMenu_Pal_Skill_Passive_C'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.WBP_MainMenu_Pal_Skill_Passive'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "PalSkill_Passive",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 224.0,
+          "Top": 12.0,
+          "Right": 216.0,
+          "Bottom": 28.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.5"
+      },
+      "Content": {
+        "ObjectName": "WBP_MainMenu_Pal_Skill_Passive_C'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.WBP_MainMenu_Pal_Skill_Passive_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.43"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo",
+    "Outer": "WBP_Ingame_Incubator_PalInfo_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_CustomEvent_passiveList",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "NameProperty",
+          "Name": "K2Node_CustomEvent_passiveList",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_MainMenu_Pal_Skill_Passive_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_Skill_Passive.568"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInitialized",
+    "Outer": "WBP_Ingame_Incubator_PalInfo_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:OnInitialized'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup",
+    "Outer": "WBP_Ingame_Incubator_PalInfo_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "passiveList",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Inner": {
+          "Type": "NameProperty",
+          "Name": "passiveList",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.29"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.30"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canvas_Guide_Close.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.15"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.28"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalKeyGuideIcon_C'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.WBP_PalKeyGuideIcon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.46"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 5.0
+      },
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.28"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.BP_PalTextBlock_C_100'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.0"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Base",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.001214,
+        "B": 0.005182,
+        "A": 0.8,
+        "Hex": "CC000410"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.10"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Base_Dot_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.783538,
+        "G": 0.964686,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "E5FBFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo.CanvasPanelSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.11"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Base_Line_T",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.783538,
+        "G": 0.964686,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "E5FBFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.7"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Dot_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.783538,
+        "G": 0.964686,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "E5FBFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo.CanvasPanelSlot_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.12"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Dot_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.783538,
+        "G": 0.964686,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "E5FBFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo.CanvasPanelSlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.13"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_33",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.8,
+            "Hex": "CCFFFFFF"
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.022174,
+        "G": 0.030713,
+        "B": 0.033105,
+        "A": 1.0,
+        "Hex": "293133"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canvas_Guide_Close.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.14"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Shadow_B",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.2,
+        "Hex": "33000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.17"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Shadow_R",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.2,
+        "Hex": "33000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.18"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_102",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "X": 408.0,
+        "Y": 1.0
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.Canva_ItemInfo.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.6"
+      },
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_155",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "X": 1.0,
+        "Y": 8.0
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.19"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Ingame_Incubator_PalInfo_C",
+    "Name": "Default__WBP_Ingame_Incubator_PalInfo_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.WBP_Ingame_Incubator_PalInfo_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_MainMenu_Pal_Skill_Passive_C",
+    "Name": "WBP_MainMenu_Pal_Skill_Passive",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_Skill_Passive.WBP_MainMenu_Pal_Skill_Passive_C'",
+    "Template": {
+      "ObjectName": "WBP_MainMenu_Pal_Skill_Passive_C'Default__WBP_MainMenu_Pal_Skill_Passive_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_Skill_Passive.555"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive.CanvasPanelSlot_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.23"
+      }
+    }
+  },
+  {
+    "Type": "WBP_MainMenu_Pal_Skill_Passive_C",
+    "Name": "WBP_MainMenu_Pal_Skill_Passive_1",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_Skill_Passive.WBP_MainMenu_Pal_Skill_Passive_C'",
+    "Template": {
+      "ObjectName": "WBP_MainMenu_Pal_Skill_Passive_C'Default__WBP_MainMenu_Pal_Skill_Passive_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_Skill_Passive.555"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive.CanvasPanelSlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.24"
+      }
+    }
+  },
+  {
+    "Type": "WBP_MainMenu_Pal_Skill_Passive_C",
+    "Name": "WBP_MainMenu_Pal_Skill_Passive_2",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_Skill_Passive.WBP_MainMenu_Pal_Skill_Passive_C'",
+    "Template": {
+      "ObjectName": "WBP_MainMenu_Pal_Skill_Passive_C'Default__WBP_MainMenu_Pal_Skill_Passive_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_Skill_Passive.555"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.22"
+      }
+    }
+  },
+  {
+    "Type": "WBP_MainMenu_Pal_Skill_Passive_C",
+    "Name": "WBP_MainMenu_Pal_Skill_Passive_3",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_Skill_Passive.WBP_MainMenu_Pal_Skill_Passive_C'",
+    "Template": {
+      "ObjectName": "WBP_MainMenu_Pal_Skill_Passive_C'Default__WBP_MainMenu_Pal_Skill_Passive_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_Skill_Passive.555"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.PalSkill_Passive.CanvasPanelSlot_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.20"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalKeyGuideIcon_C",
+    "Name": "WBP_PalKeyGuideIcon",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIcon.WBP_PalKeyGuideIcon_C'",
+    "Template": {
+      "ObjectName": "WBP_PalKeyGuideIcon_C'Default__WBP_PalKeyGuideIcon_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIcon.15"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindActionName": {
+        "Key": "PalBoxDetailStatus"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.29"
+      }
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_Ingame_Incubator_PalInfo_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_Ingame_Incubator_PalInfo_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.48"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_Ingame_Incubator_PalInfo_C:ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.25"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_Ingame_Incubator_PalInfo_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.27"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_Incubator_PalInfo_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.26"
+      },
+      {
+        "ObjectName": "Function'WBP_Ingame_Incubator_PalInfo_C:ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.25"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_MainMenu_Pal_Skill_Passive",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_MainMenu_Pal_Skill_Passive_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_Skill_Passive.568"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_MainMenu_Pal_Skill_Passive_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_MainMenu_Pal_Skill_Passive_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_Skill_Passive.568"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_MainMenu_Pal_Skill_Passive_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_MainMenu_Pal_Skill_Passive_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_Skill_Passive.568"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_MainMenu_Pal_Skill_Passive_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_MainMenu_Pal_Skill_Passive_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_Skill_Passive.568"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalKeyGuideIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalKeyGuideIcon_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIcon.16"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "PassiveSkillPanelArray",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "PassiveSkillPanelArray",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_MainMenu_Pal_Skill_Passive_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Pal/WBP_MainMenu_Pal_Skill_Passive.568"
+          }
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo": {
+        "ObjectName": "Function'WBP_Ingame_Incubator_PalInfo_C:ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.25"
+      },
+      "OnInitialized": {
+        "ObjectName": "Function'WBP_Ingame_Incubator_PalInfo_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.26"
+      },
+      "Setup": {
+        "ObjectName": "Function'WBP_Ingame_Incubator_PalInfo_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.27"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_Ingame_Incubator_PalInfo_C'Default__WBP_Ingame_Incubator_PalInfo_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.41"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_Ingame_Incubator_PalInfo_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_Ingame_Incubator_PalInfo_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Incubator/WBP_Ingame_Incubator_PalInfo.4"
+      }
+    }
+  }
+]

@@ -1,0 +1,356 @@
+[
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_GPSPalCompareWindow_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WBP_IngameMenu_PalCompare",
+          "DelegatePropertyName": "OnClickedCancel",
+          "FunctionNameToBind": "BndEvt__WBP_GPSPalCompareWindow_WBP_IngameMenu_PalCompare_K2Node_ComponentBoundEvent_1_OnClickedCancel__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_IngameMenu_PalCompare",
+          "DelegatePropertyName": "OnClickedConfirm",
+          "FunctionNameToBind": "BndEvt__WBP_GPSPalCompareWindow_WBP_IngameMenu_PalCompare_K2Node_ComponentBoundEvent_0_OnClickedConfirm__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_GPSPalCompareWindow_WBP_IngameMenu_PalCompare_K2Node_ComponentBoundEvent_0_OnClickedConfirm__DelegateSignature",
+    "Outer": "WBP_GPSPalCompareWindow_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_GPSPalCompareWindow_WBP_IngameMenu_PalCompare_K2Node_ComponentBoundEvent_1_OnClickedCancel__DelegateSignature",
+    "Outer": "WBP_GPSPalCompareWindow_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BP_GetDesiredFocusTarget",
+    "Outer": "WBP_GPSPalCompareWindow_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'CommonActivatableWidget:BP_GetDesiredFocusTarget'",
+      "ObjectPath": "/Script/CommonUI"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetCancelButtonFocusTarget_Widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_GPSPalCompareWindow",
+    "Outer": "WBP_GPSPalCompareWindow_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetParam_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameterBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_GPSPal_Compare_Window_Parameter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_GPSPalCompareWindowParameter_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/BP_GPSPalCompareWindowParameter.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetParam_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameterBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_GPSPal_Compare_Window_Parameter_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_GPSPalCompareWindowParameter_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/BP_GPSPalCompareWindowParameter.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetParam_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameterBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_GPSPal_Compare_Window_Parameter_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_GPSPalCompareWindowParameter_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/BP_GPSPalCompareWindowParameter.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetup",
+    "Outer": "WBP_GPSPalCompareWindow_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUserWidget:OnSetup'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WBP_GPSPalCompareWindow_C",
+    "Name": "Default__WBP_GPSPalCompareWindow_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GPSPalCompareWindow.WBP_GPSPalCompareWindow_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_IngameMenu_PalCompare_C",
+    "Name": "WBP_IngameMenu_PalCompare",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.WBP_IngameMenu_PalCompare_C'",
+    "Template": {
+      "ObjectName": "WBP_IngameMenu_PalCompare_C'Default__WBP_IngameMenu_PalCompare_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.63"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_GPSPalCompareWindow_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_GPSPalCompareWindow_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GPSPalCompareWindow.9"
+      },
+      "bClassRequiresNativeTick": true,
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_GPSPalCompareWindow_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GPSPalCompareWindow.0"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_GPSPalCompareWindow_C:ExecuteUbergraph_WBP_GPSPalCompareWindow'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GPSPalCompareWindow.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidgetOverlayUI'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_GPSPalCompareWindow_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GPSPalCompareWindow.3"
+      },
+      {
+        "ObjectName": "Function'WBP_GPSPalCompareWindow_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GPSPalCompareWindow.5"
+      },
+      {
+        "ObjectName": "Function'WBP_GPSPalCompareWindow_C:BndEvt__WBP_GPSPalCompareWindow_WBP_IngameMenu_PalCompare_K2Node_ComponentBoundEvent_0_OnClickedConfirm__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GPSPalCompareWindow.1"
+      },
+      {
+        "ObjectName": "Function'WBP_GPSPalCompareWindow_C:BndEvt__WBP_GPSPalCompareWindow_WBP_IngameMenu_PalCompare_K2Node_ComponentBoundEvent_1_OnClickedCancel__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GPSPalCompareWindow.2"
+      },
+      {
+        "ObjectName": "Function'WBP_GPSPalCompareWindow_C:ExecuteUbergraph_WBP_GPSPalCompareWindow'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GPSPalCompareWindow.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_IngameMenu_PalCompare",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_IngameMenu_PalCompare_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.66"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_GPSPalCompareWindow": {
+        "ObjectName": "Function'WBP_GPSPalCompareWindow_C:ExecuteUbergraph_WBP_GPSPalCompareWindow'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GPSPalCompareWindow.4"
+      },
+      "BndEvt__WBP_GPSPalCompareWindow_WBP_IngameMenu_PalCompare_K2Node_ComponentBoundEvent_1_OnClickedCancel__DelegateSignature": {
+        "ObjectName": "Function'WBP_GPSPalCompareWindow_C:BndEvt__WBP_GPSPalCompareWindow_WBP_IngameMenu_PalCompare_K2Node_ComponentBoundEvent_1_OnClickedCancel__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GPSPalCompareWindow.2"
+      },
+      "BndEvt__WBP_GPSPalCompareWindow_WBP_IngameMenu_PalCompare_K2Node_ComponentBoundEvent_0_OnClickedConfirm__DelegateSignature": {
+        "ObjectName": "Function'WBP_GPSPalCompareWindow_C:BndEvt__WBP_GPSPalCompareWindow_WBP_IngameMenu_PalCompare_K2Node_ComponentBoundEvent_0_OnClickedConfirm__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GPSPalCompareWindow.1"
+      },
+      "OnSetup": {
+        "ObjectName": "Function'WBP_GPSPalCompareWindow_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GPSPalCompareWindow.5"
+      },
+      "BP_GetDesiredFocusTarget": {
+        "ObjectName": "Function'WBP_GPSPalCompareWindow_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GPSPalCompareWindow.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_GPSPalCompareWindow_C'Default__WBP_GPSPalCompareWindow_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GPSPalCompareWindow.6"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_GPSPalCompareWindow_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "WBP_IngameMenu_PalCompare_C'WBP_GPSPalCompareWindow_C:WidgetTree.WBP_IngameMenu_PalCompare'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GPSPalCompareWindow.7"
+      }
+    }
+  }
+]

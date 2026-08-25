@@ -1,0 +1,358 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueAction_CubeTurtle_HolyPress_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueAction_CubeTurtle_CubePress_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_CubePress.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueAction_CubeTurtle_CubePress_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_CubePress.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_UniqueAction_CubeTurtle_HolyPress_C:SpawnBlast'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_HolyPress.4"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_CubeTurtle_HolyPress_C:GetPillarClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_HolyPress.3"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_CubeTurtle_HolyPress_C:GetBlastClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_HolyPress.2"
+      }
+    ],
+    "FuncMap": {
+      "GetBlastClass": {
+        "ObjectName": "Function'BP_UniqueAction_CubeTurtle_HolyPress_C:GetBlastClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_HolyPress.2"
+      },
+      "GetPillarClass": {
+        "ObjectName": "Function'BP_UniqueAction_CubeTurtle_HolyPress_C:GetPillarClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_HolyPress.3"
+      },
+      "SpawnBlast": {
+        "ObjectName": "Function'BP_UniqueAction_CubeTurtle_HolyPress_C:SpawnBlast'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_HolyPress.4"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueAction_CubeTurtle_HolyPress_C'Default__BP_UniqueAction_CubeTurtle_HolyPress_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_HolyPress.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueAction_CubeTurtle_HolyPress_C",
+    "Name": "Default__BP_UniqueAction_CubeTurtle_HolyPress_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_HolyPress.BP_UniqueAction_CubeTurtle_HolyPress_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueAction_CubeTurtle_CubePress_C'Default__BP_UniqueAction_CubeTurtle_CubePress_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_CubePress.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FlagName": "CubeTurtle_HolyPress",
+      "WazaID": "EPalWazaID::Unique_CubeTurtle_Neutral_HolyPress"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetBlastClass",
+    "Outer": "BP_UniqueAction_CubeTurtle_HolyPress_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_UniqueAction_CubeTurtle_CubePress_C:GetBlastClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_CubePress.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_UniqueAction_CubeTurtle_CubePress_C:GetBlastClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_CubePress.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "PressClass",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_CubeTurtle_CubePress_Blast_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/CubeTurtle_CubePress/BP_UniqueSkillEffect_CubeTurtle_CubePress_Blast.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetPillarClass",
+    "Outer": "BP_UniqueAction_CubeTurtle_HolyPress_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_UniqueAction_CubeTurtle_CubePress_C:GetPillarClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_CubePress.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_UniqueAction_CubeTurtle_CubePress_C:GetPillarClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_CubePress.5"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "PillarClass",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_CubeTurtle_CubePress_Pillar_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/CubeTurtle_CubePress/BP_UniqueSkillEffect_CubeTurtle_CubePress_Pillar.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "SpawnBlast",
+    "Outer": "BP_UniqueAction_CubeTurtle_HolyPress_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_UniqueAction_CubeTurtle_CubePress_C:SpawnBlast'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_CubePress.17"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_UniqueAction_CubeTurtle_CubePress_C:SpawnBlast'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CubeTurtle/BP_UniqueAction_CubeTurtle_CubePress.17"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "SpawnCenter",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "DegreeInterval",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "CallFunc_GetPillarClass_PillarClass",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_CubeTurtle_CubePress_Pillar_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/CubeTurtle_CubePress/BP_UniqueSkillEffect_CubeTurtle_CubePress_Pillar.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_FloatToVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Conv_IntToFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RotateAngleAxis_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FinishSpawningActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_CubeTurtle_CubePress_Pillar_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/CubeTurtle_CubePress/BP_UniqueSkillEffect_CubeTurtle_CubePress_Pillar.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AdjustActorToFloor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_RotateAngleAxis_AngleDeg_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

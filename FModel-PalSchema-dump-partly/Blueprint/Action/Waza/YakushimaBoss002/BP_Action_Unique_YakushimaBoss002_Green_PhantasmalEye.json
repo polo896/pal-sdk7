@@ -1,0 +1,1317 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_YakushimaBoss002_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Base.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:ExecuteUbergraph_BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_YakushimaBoss002_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Base.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:GetRandomTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.3"
+      },
+      {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:OldSpawnFunc'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.4"
+      },
+      {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:SetMoveState_Rotate'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.10"
+      },
+      {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:OnBeginAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.5"
+      },
+      {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:TickAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.11"
+      },
+      {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:OnSpawnBullet'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.7"
+      },
+      {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:OnStartHoming'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.9"
+      },
+      {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:OnSpawnEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.8"
+      },
+      {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:OnQueueAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.6"
+      },
+      {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:ExecuteUbergraph_BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "InnerSpawnCount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Effect List",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Effect List",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'SkillEffectSpawnParameter'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Duration",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "StartTime",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "EndTime",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Interval",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "RandomStream",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'RandomStream'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye": {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:ExecuteUbergraph_BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.2"
+      },
+      "OnQueueAction": {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:OnQueueAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.6"
+      },
+      "OnSpawnEffect": {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:OnSpawnEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.8"
+      },
+      "OnStartHoming": {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:OnStartHoming'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.9"
+      },
+      "OnSpawnBullet": {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:OnSpawnBullet'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.7"
+      },
+      "TickAction": {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:TickAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.11"
+      },
+      "OnBeginAction": {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:OnBeginAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.5"
+      },
+      "SetMoveState_Rotate": {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:SetMoveState_Rotate'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.10"
+      },
+      "OldSpawnFunc": {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:OldSpawnFunc'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.4"
+      },
+      "GetRandomTarget": {
+        "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C:GetRandomTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C'Default__BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C",
+    "Name": "Default__BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_YakushimaBoss002_Base_C'Default__BP_Action_Unique_YakushimaBoss002_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Base.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "StartTime": 0.8,
+      "EndTime": 3.53,
+      "RandomStream": {
+        "InitialSeed": 0,
+        "Seed": 0
+      },
+      "LeftMontage": {
+        "ObjectName": "AnimMontage'AM_YakushimaBoss002_PhantasmalEye_L'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/YakushimaBoss002/AM_YakushimaBoss002_PhantasmalEye_L.0"
+      },
+      "RightMontage": {
+        "ObjectName": "AnimMontage'AM_YakushimaBoss002_PhantasmalEye_R'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/YakushimaBoss002/AM_YakushimaBoss002_PhantasmalEye_R.0"
+      },
+      "EyeMontage": {
+        "ObjectName": "AnimMontage'AM_YakushimaBoss001_Green_PhantasmalEye'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/YakushimaBoss001/AM_YakushimaBoss001_Green_PhantasmalEye.0"
+      },
+      "IsHoming": true,
+      "BulletSpeed": 2000.0,
+      "RotPitchTowardReticle": false,
+      "EnableDestroyEffectOnBreakAction": false,
+      "SkillEffectSpawnParameters": [
+        {
+          "TimeOffset": 0.84,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.04,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.24,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.44,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.64,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.84,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 2.04,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 2.24,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 2.44,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 2.64,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 2.84,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 3.04,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 3.24,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 3.44,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        }
+      ],
+      "ProcessAnimationTime": 4.2,
+      "FlagName": "YakushimaBoss002_PhantasmalBolt",
+      "YawRate": 1.0,
+      "WazaID": "EPalWazaID::Unique_YakushimaBoss001_Green_PhantasmalEye"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye",
+    "Outer": "BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetRandomTarget_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetRandomTarget_Output",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C:OnSpawnBulletDelegate__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.3"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_FloatToVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_Bullet_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'ProjectileMovementComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_Bullet",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Skill_Effect_Unique_Yakushima_Boss_002_Green_Phantasmal_Eye_Bullet",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_Bullet_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_Bullet.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Conv_IntToFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetActorForwardVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Effect",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalSkillEffectBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RotatorFromAxisAndAngle_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Skill_Effect_Unique_Yakushima_Boss_002_Green_Phantasmal_Eye",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetUpVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "K2Node_MathExpression_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SkillEffectSpawnParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye_C:OnStartHomingDelegate__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_PhantasmalEye.4"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetRandomStream_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'RandomStream'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_SetFieldsInStruct_StructOut",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SkillEffectSpawnParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_RotatorFromAxisAndAngle_Angle_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_SetFieldsInStruct_TimeOffset_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetRandomTarget",
+    "Outer": "BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Output",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RandomItem",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetPredictedTargetLocation_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionTarget_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetOtherActionTargets_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetOtherActionTargets_ReturnValue",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'Actor'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_RandomFromStream_OutItem",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_RandomFromStream_OutIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OldSpawnFunc",
+    "Outer": "BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "self2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "self3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "self4",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_FloatToVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetActorUpVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetActorForwardVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'ProjectileMovementComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_FloatToVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_IntToVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_VLerp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RandomUnitVectorInConeInDegrees_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_ProjectVectorOnToPlane_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Normal_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorVector_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBeginAction",
+    "Outer": "BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Base_C:OnBeginAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Base.6"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Base_C:OnBeginAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Base.6"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnQueueAction",
+    "Outer": "BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalActionBase:OnQueueAction'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSpawnBullet",
+    "Outer": "BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Bullet",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSpawnEffect",
+    "Outer": "BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Base_C:OnSpawnEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Base.13"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_Unique_YakushimaBoss002_Base_C:OnSpawnEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Base.13"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Effect",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalSkillEffectBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnStartHoming",
+    "Outer": "BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Bullet",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetMoveState_Rotate",
+    "Outer": "BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "isDisable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacterMovementComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetYawRotatorMultiplier_rate_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TickAction",
+    "Outer": "BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ActionGeneralAttackFarBase_C:TickAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionGeneralAttackFarBase.24"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ActionGeneralAttackFarBase_C:TickAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionGeneralAttackFarBase.24"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  }
+]

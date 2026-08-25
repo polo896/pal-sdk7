@@ -1,0 +1,62 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueSkillModule_SaintCentaur_Tackle_New_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalSkillModule_HorseTackle'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueSkillModule_SaintCentaur_Tackle_New_C'Default__BP_UniqueSkillModule_SaintCentaur_Tackle_New_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/SaintCentaur/BP_UniqueSkillModule_SaintCentaur_Tackle_New.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueSkillModule_SaintCentaur_Tackle_New_C",
+    "Name": "Default__BP_UniqueSkillModule_SaintCentaur_Tackle_New_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/SaintCentaur/BP_UniqueSkillModule_SaintCentaur_Tackle_New.BP_UniqueSkillModule_SaintCentaur_Tackle_New_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TackleMaxCount": 2.0,
+      "StartAnimMontage": {
+        "ObjectName": "AnimMontage'AM_SaintCentaur_OneSpearRushes_Start'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/SaintCentaur/AM_SaintCentaur_OneSpearRushes_Start.0"
+      },
+      "LoopAnimMontage": {
+        "ObjectName": "AnimMontage'AM_SaintCentaur_OneSpearRushes_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/SaintCentaur/AM_SaintCentaur_OneSpearRushes_Loop.0"
+      },
+      "EndAnimMontage": {
+        "ObjectName": "AnimMontage'AM_SaintCentaur_OneSpearRushes_End'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/SaintCentaur/AM_SaintCentaur_OneSpearRushes_End.0"
+      },
+      "AttackTime": 2.0,
+      "MaxSpeedMultiply": 3.0,
+      "MinSpeedMultiply": 0.1,
+      "TackleHomingRate": 6.0,
+      "StartHomingRate": 6.0,
+      "EnableDashSkip": true,
+      "DashSkipTime": 1.2,
+      "StartSkillEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_SaintCentaur_Tackle_Start_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/SaintCentaur_Tackle/BP_SkillEffect_Unique_SaintCentaur_Tackle_Start.0"
+      },
+      "LoopSkillEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_SaintCentaur_Tackle_Loop_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/SaintCentaur_Tackle/BP_SkillEffect_Unique_SaintCentaur_Tackle_Loop.0"
+      }
+    }
+  }
+]

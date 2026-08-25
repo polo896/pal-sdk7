@@ -1,0 +1,17 @@
+[
+  {
+    "Type": "DataLayerAsset",
+    "Name": "WorldWall",
+    "Class": "UScriptClass'DataLayerAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DebugColor": {
+        "B": 21,
+        "G": 238,
+        "R": 249,
+        "A": 255,
+        "Hex": "F9EE15"
+      }
+    }
+  }
+]

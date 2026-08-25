@@ -1,0 +1,104 @@
+[
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_Blacksmith01",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "0FE37B26-46A2F29F-4ABD1699-DAD99843",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "BC95369F-43A577C6-12AE25AD-B7802CDE",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_Blacksmith01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Visitor_Blacksmith_1",
+        "Visitor_Blacksmith_2",
+        "Visitor_Blacksmith_3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "BC95369F-43A577C6-12AE25AD-B7802CDE",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "B183178E-4B5252F8-9D41E596-7E965E26",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCVisitorPresentAndReturn_C",
+    "Name": "FNBP_NPCVisitorPresentAndReturn_C_1",
+    "Outer": "FABP_Blacksmith01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCVisitorPresentAndReturn.FNBP_NPCVisitorPresentAndReturn_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCVisitorPresentAndReturn_C'Default__FNBP_NPCVisitorPresentAndReturn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCVisitorPresentAndReturn.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LotteryDataTable": {
+        "ObjectName": "DataTable'DT_VisitorNPCPresentLottery_Blacksmith01'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/NPCTalk/FunctionArgument/DT_VisitorNPCPresentLottery_Blacksmith01.0"
+      },
+      "NetworkInvokeName": "Gift",
+      "GraphNode": null,
+      "NodeGuid": "B183178E-4B5252F8-9D41E596-7E965E26"
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_Blacksmith01",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "942C997E-4D38D17F-4DF7EFB8-98E857B3",
+      "Nodes": [
+        {
+          "Key": "B183178E-4B5252F8-9D41E596-7E965E26",
+          "Value": {
+            "ObjectName": "FNBP_NPCVisitorPresentAndReturn_C'FABP_Blacksmith01:FNBP_NPCVisitorPresentAndReturn_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Blacksmith01.2"
+          }
+        },
+        {
+          "Key": "BC95369F-43A577C6-12AE25AD-B7802CDE",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Blacksmith01:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Blacksmith01.1"
+          }
+        },
+        {
+          "Key": "0FE37B26-46A2F29F-4ABD1699-DAD99843",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_Blacksmith01:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Blacksmith01.0"
+          }
+        }
+      ]
+    }
+  }
+]

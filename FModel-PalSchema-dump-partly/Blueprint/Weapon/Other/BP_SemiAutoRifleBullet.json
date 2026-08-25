@@ -1,0 +1,270 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SemiAutoRifleBullet_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_SemiAutoRifleBullet_C:ExecuteUbergraph_BP_SemiAutoRifleBullet'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_SemiAutoRifleBullet.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'StaticMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_SemiAutoRifleBullet_C:HideBullet'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_SemiAutoRifleBullet.3"
+      },
+      {
+        "ObjectName": "Function'BP_SemiAutoRifleBullet_C:ExecuteUbergraph_BP_SemiAutoRifleBullet'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_SemiAutoRifleBullet.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "ClipSlot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_SemiAutoRifleBullet": {
+        "ObjectName": "Function'BP_SemiAutoRifleBullet_C:ExecuteUbergraph_BP_SemiAutoRifleBullet'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_SemiAutoRifleBullet.2"
+      },
+      "HideBullet": {
+        "ObjectName": "Function'BP_SemiAutoRifleBullet_C:HideBullet'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_SemiAutoRifleBullet.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SemiAutoRifleBullet_C'Default__BP_SemiAutoRifleBullet_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_SemiAutoRifleBullet.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SemiAutoRifleBullet_C",
+    "Name": "Default__BP_SemiAutoRifleBullet_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/Other/BP_SemiAutoRifleBullet.BP_SemiAutoRifleBullet_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseToChannels": {
+            "WorldStatic": "ECollisionResponse::ECR_Ignore",
+            "WorldDynamic": "ECollisionResponse::ECR_Ignore",
+            "Pawn": "ECollisionResponse::ECR_Ignore",
+            "Visibility": "ECollisionResponse::ECR_Ignore",
+            "Camera": "ECollisionResponse::ECR_Ignore",
+            "PhysicsBody": "ECollisionResponse::ECR_Ignore",
+            "Vehicle": "ECollisionResponse::ECR_Ignore",
+            "Destructible": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel2": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel3": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel4": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel5": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel6": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel2": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel3": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel5": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel7": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel8": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel9": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel11": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel15": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel16": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel17": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel18": "ECollisionResponse::ECR_Ignore"
+          },
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel2",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel3",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel4",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel5",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel6",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel17",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel18",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_SemiAutoRifleBullet",
+    "Outer": "BP_SemiAutoRifleBullet_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_Weapon",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalWeaponBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetMagazineSize_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetRemainBulletCount_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "HideBullet",
+    "Outer": "BP_SemiAutoRifleBullet_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Weapon",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalWeaponBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

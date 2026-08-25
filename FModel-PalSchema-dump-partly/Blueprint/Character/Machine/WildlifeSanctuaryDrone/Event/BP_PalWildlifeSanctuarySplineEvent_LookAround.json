@@ -1,0 +1,37 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalWildlifeSanctuarySplineEvent_LookAround_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalWildlifeSanctuarySplineEvent_LookAround'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalWildlifeSanctuarySplineEvent_LookAround_C'Default__BP_PalWildlifeSanctuarySplineEvent_LookAround_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/Event/BP_PalWildlifeSanctuarySplineEvent_LookAround.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalWildlifeSanctuarySplineEvent_LookAround_C",
+    "Name": "Default__BP_PalWildlifeSanctuarySplineEvent_LookAround_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/Event/BP_PalWildlifeSanctuarySplineEvent_LookAround.BP_PalWildlifeSanctuarySplineEvent_LookAround_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LookDuration": 3.0,
+      "LookAngleDegrees": 60.0,
+      "RotationSpeed": 100.0
+    }
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SubQuest_LoneWolf03_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SubQuest_LoneWolf03_C'Default__BP_SubQuest_LoneWolf03_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/BP_SubQuest_LoneWolf03.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SubQuest_LoneWolf03_C",
+    "Name": "Default__BP_SubQuest_LoneWolf03_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/SubQuest/BP_SubQuest_LoneWolf03.BP_SubQuest_LoneWolf03_C'",
+    "Template": {
+      "ObjectName": "BP_PalQuestDataBase_C'Default__BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestBlockGroupList": [
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_LoneWolf03_Investigate.BP_SubQuestBlock_LoneWolf03_Investigate_C",
+              "SubPathString": ""
+            }
+          ]
+        },
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_LoneWolf03_Defeat.BP_SubQuestBlock_LoneWolf03_Defeat_C",
+              "SubPathString": ""
+            }
+          ]
+        },
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_LoneWolf03_Report.BP_SubQuestBlock_LoneWolf03_Report_C",
+              "SubPathString": ""
+            }
+          ]
+        }
+      ],
+      "QuestTitleMsgId": "QUEST_SUB_QUESTNAME_LoneWolf_03",
+      "QuestDescriptionMsgId": "QUEST_SUB_Desc_LoneWolf_130",
+      "CommonRewardData": {
+        "Exp": 35490,
+        "Items": [
+          {
+            "Key": {
+              "Key": "AffectionFruit_01"
+            },
+            "Value": 1
+          },
+          {
+            "Key": {
+              "Key": "Fruit__defense_01"
+            },
+            "Value": 3
+          },
+          {
+            "Key": {
+              "Key": "Rankup_Arbitrary"
+            },
+            "Value": 1
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,432 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_0",
+    "Outer": "FABP_BountyNavigator_G",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "9F14C692-467C2673-A8E97892-2D93B755"
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_BountyNavigator_G",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "50F425EC-406C088F-37F76DA5-5A25DBBD",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "CA8ACB81-42A97989-692194A2-4821EA8A",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C",
+    "Name": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C_0",
+    "Outer": "FABP_BountyNavigator_G",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+    "Template": {
+      "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'Default__FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnerName": "BOSS_Male_Trader01",
+      "GraphNode": null,
+      "NodeGuid": "8D043B37-4AAB7AB6-8C308FA6-596AABF3"
+    }
+  },
+  {
+    "Type": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C",
+    "Name": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C_1",
+    "Outer": "FABP_BountyNavigator_G",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+    "Template": {
+      "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'Default__FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnerName": "BOSS_Scientist_LaserRifle",
+      "GraphNode": null,
+      "NodeGuid": "F991754D-41E25213-4D5A55AA-6071ACDF"
+    }
+  },
+  {
+    "Type": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C",
+    "Name": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C_2",
+    "Outer": "FABP_BountyNavigator_G",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+    "Template": {
+      "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'Default__FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnerName": "BOSS_Male_People02",
+      "GraphNode": null,
+      "NodeGuid": "FA0B9387-4F6799F9-CC9087A6-F4386834"
+    }
+  },
+  {
+    "Type": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C",
+    "Name": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C_3",
+    "Outer": "FABP_BountyNavigator_G",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+    "Template": {
+      "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'Default__FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnerName": "BOSS_Male_Soldier03",
+      "GraphNode": null,
+      "NodeGuid": "8919FF99-4F5E1EDF-8CB2B3B2-2825112F"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_CustomChoice_C",
+    "Name": "FNBP_NPCTalk_CustomChoice_C_0",
+    "Outer": "FABP_BountyNavigator_G",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_CustomChoice.FNBP_NPCTalk_CustomChoice_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_CustomChoice_C'Default__FNBP_NPCTalk_CustomChoice_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_CustomChoice.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChoiceMsgIDList": [
+        "BountyNavigator_G_Choice_1",
+        "BountyNavigator_G_Choice_2",
+        "BountyNavigator_G_Choice_3",
+        "BountyNavigator_G_Choice_4",
+        "CHOICE_SHOP_DARK_CANCEL"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "BBCBE0FD-4E2655CF-E6DFC696-72519A70",
+      "OutputPins": [
+        {
+          "PinName": "BountyNavigator_G_Choice_1",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "BountyNavigator_G_Choice_2",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "BountyNavigator_G_Choice_3",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "BountyNavigator_G_Choice_4",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "CHOICE_SHOP_DARK_CANCEL",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "BountyNavigator_G_Choice_1",
+          "Value": {
+            "NodeGuid": "7AD3276B-447C24E3-FB94F7B8-969B6070",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "BountyNavigator_G_Choice_2",
+          "Value": {
+            "NodeGuid": "DF36ACBF-47A89120-9981B986-1BFD12C4",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "BountyNavigator_G_Choice_3",
+          "Value": {
+            "NodeGuid": "D041D727-42A94103-AB5EC78E-81042085",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "BountyNavigator_G_Choice_4",
+          "Value": {
+            "NodeGuid": "1F64B9DA-41746F42-72DDBFB0-1E472FA4",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "CHOICE_SHOP_DARK_CANCEL",
+          "Value": {
+            "NodeGuid": "9F14C692-467C2673-A8E97892-2D93B755",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_BountyNavigator_G",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "BountyNavigator_Common_1"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "CA8ACB81-42A97989-692194A2-4821EA8A",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "BBCBE0FD-4E2655CF-E6DFC696-72519A70",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_BountyNavigator_G",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "BountyNavigator_G_1_1",
+        "BountyNavigator_G_1_2",
+        "BountyNavigator_G_1_3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "7AD3276B-447C24E3-FB94F7B8-969B6070",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "8D043B37-4AAB7AB6-8C308FA6-596AABF3",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_3",
+    "Outer": "FABP_BountyNavigator_G",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "BountyNavigator_G_2_1",
+        "BountyNavigator_G_2_2",
+        "BountyNavigator_G_2_3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "DF36ACBF-47A89120-9981B986-1BFD12C4",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "F991754D-41E25213-4D5A55AA-6071ACDF",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_BountyNavigator_G",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "BountyNavigator_G_3_1",
+        "BountyNavigator_G_3_2",
+        "BountyNavigator_G_3_3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "D041D727-42A94103-AB5EC78E-81042085",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "FA0B9387-4F6799F9-CC9087A6-F4386834",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_5",
+    "Outer": "FABP_BountyNavigator_G",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "BountyNavigator_G_4_1",
+        "BountyNavigator_G_4_2",
+        "BountyNavigator_G_4_3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "1F64B9DA-41746F42-72DDBFB0-1E472FA4",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "8919FF99-4F5E1EDF-8CB2B3B2-2825112F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_BountyNavigator_G",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "FB57F462-47AFFA5E-54D76590-8456A4B4",
+      "Nodes": [
+        {
+          "Key": "50F425EC-406C088F-37F76DA5-5A25DBBD",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_BountyNavigator_G:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_G.1"
+          }
+        },
+        {
+          "Key": "CA8ACB81-42A97989-692194A2-4821EA8A",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_BountyNavigator_G:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_G.7"
+          }
+        },
+        {
+          "Key": "BBCBE0FD-4E2655CF-E6DFC696-72519A70",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_CustomChoice_C'FABP_BountyNavigator_G:FNBP_NPCTalk_CustomChoice_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_G.6"
+          }
+        },
+        {
+          "Key": "9F14C692-467C2673-A8E97892-2D93B755",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_BountyNavigator_G:FlowNode_Finish_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_G.0"
+          }
+        },
+        {
+          "Key": "D041D727-42A94103-AB5EC78E-81042085",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_BountyNavigator_G:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_G.10"
+          }
+        },
+        {
+          "Key": "DF36ACBF-47A89120-9981B986-1BFD12C4",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_BountyNavigator_G:FNBP_NPCTalk_FixedMsdId_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_G.9"
+          }
+        },
+        {
+          "Key": "7AD3276B-447C24E3-FB94F7B8-969B6070",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_BountyNavigator_G:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_G.8"
+          }
+        },
+        {
+          "Key": "1F64B9DA-41746F42-72DDBFB0-1E472FA4",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_BountyNavigator_G:FNBP_NPCTalk_FixedMsdId_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_G.11"
+          }
+        },
+        {
+          "Key": "8D043B37-4AAB7AB6-8C308FA6-596AABF3",
+          "Value": {
+            "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'FABP_BountyNavigator_G:FNBP_IgnoreMaskBossSpawnerForWorldMap_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_G.2"
+          }
+        },
+        {
+          "Key": "F991754D-41E25213-4D5A55AA-6071ACDF",
+          "Value": {
+            "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'FABP_BountyNavigator_G:FNBP_IgnoreMaskBossSpawnerForWorldMap_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_G.3"
+          }
+        },
+        {
+          "Key": "FA0B9387-4F6799F9-CC9087A6-F4386834",
+          "Value": {
+            "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'FABP_BountyNavigator_G:FNBP_IgnoreMaskBossSpawnerForWorldMap_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_G.4"
+          }
+        },
+        {
+          "Key": "8919FF99-4F5E1EDF-8CB2B3B2-2825112F",
+          "Value": {
+            "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'FABP_BountyNavigator_G:FNBP_IgnoreMaskBossSpawnerForWorldMap_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_G.5"
+          }
+        }
+      ]
+    }
+  }
+]

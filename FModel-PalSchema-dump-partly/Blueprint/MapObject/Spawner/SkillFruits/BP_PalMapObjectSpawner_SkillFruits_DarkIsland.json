@@ -1,0 +1,913 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.20"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalMapObjectSpawnerMultiItem'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "NS_SkillFruitsTree",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SM_FlowerMerge",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PointLight",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PointLightComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SM_SkillFruitsTree",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageReaction",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalMapObjectSpawnerDamageReactionComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LocationComponent_SkillFruits2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_MapObjectSpawnerLocationComponent_SkillFruits_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/Component/BP_MapObjectSpawnerLocationComponent_SkillFruits.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LocationComponent_SkillFruits1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_MapObjectSpawnerLocationComponent_SkillFruits_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/Component/BP_MapObjectSpawnerLocationComponent_SkillFruits.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LocationComponent_SkillFruits",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_MapObjectSpawnerLocationComponent_SkillFruits_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/Component/BP_MapObjectSpawnerLocationComponent_SkillFruits.0"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C'Default__BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.4"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MapObjectSpawnerLocationComponent_SkillFruits_C",
+    "Name": "LocationComponent_SkillFruits1_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/Component/BP_MapObjectSpawnerLocationComponent_SkillFruits.BP_MapObjectSpawnerLocationComponent_SkillFruits_C'",
+    "Template": {
+      "ObjectName": "BP_MapObjectSpawnerLocationComponent_SkillFruits_C'Default__BP_MapObjectSpawnerLocationComponent_SkillFruits_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/Component/BP_MapObjectSpawnerLocationComponent_SkillFruits.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 147.69249,
+        "Y": -253.66907,
+        "Z": 290.09372
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 68.399826,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_MapObjectSpawnerLocationComponent_SkillFruits_C",
+    "Name": "LocationComponent_SkillFruits2_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/Component/BP_MapObjectSpawnerLocationComponent_SkillFruits.BP_MapObjectSpawnerLocationComponent_SkillFruits_C'",
+    "Template": {
+      "ObjectName": "BP_MapObjectSpawnerLocationComponent_SkillFruits_C'Default__BP_MapObjectSpawnerLocationComponent_SkillFruits_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/Component/BP_MapObjectSpawnerLocationComponent_SkillFruits.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -250.30774,
+        "Y": -94.585045,
+        "Z": 300.83173
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 68.399826,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_MapObjectSpawnerLocationComponent_SkillFruits_C",
+    "Name": "LocationComponent_SkillFruits_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/Component/BP_MapObjectSpawnerLocationComponent_SkillFruits.BP_MapObjectSpawnerLocationComponent_SkillFruits_C'",
+    "Template": {
+      "ObjectName": "BP_MapObjectSpawnerLocationComponent_SkillFruits_C'Default__BP_MapObjectSpawnerLocationComponent_SkillFruits_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/Component/BP_MapObjectSpawnerLocationComponent_SkillFruits.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -67.64956,
+        "Y": -306.04202,
+        "Z": 174.19272
+      }
+    }
+  },
+  {
+    "Type": "BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C",
+    "Name": "Default__BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FieldLotteryName": {
+        "Key": "Fruits_DarkIsland_1"
+      },
+      "bNetLoadOnClient": true,
+      "bReplicates": true,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:Root'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.10"
+      }
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "NS_SkillFruitsTree_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_SkillFruitsTree'",
+        "ObjectPath": "Pal/Content/Pal/Model/Other/SkillFruitsTree/NS_SkillFruitsTree.18"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "BaseColor",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'LinearColor'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.BaseColor",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'LinearColor'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "LightColor",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'LinearColor'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.LightColor",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'LinearColor'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Rate",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Rate",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Scale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Scale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "SkeletalMeshLocation",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraDataInterfaceSkeletalMesh'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 1,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.SkeletalMeshLocation",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraDataInterfaceSkeletalMesh'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 1,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.BaseColor",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 16,
+            "Name": "User.LightColor",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 32,
+            "Name": "User.Rate",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 36,
+            "Name": "User.Scale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 0,
+            "Name": "User.SkeletalMeshLocation",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraDataInterfaceSkeletalMesh'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 1,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          160,
+          64,
+          89,
+          82,
+          180,
+          63,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          0,
+          64,
+          244,
+          53,
+          3,
+          63,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "DataInterfaces": [
+          {
+            "ObjectName": "NiagaraDataInterfaceSkeletalMesh'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:NS_SkillFruitsTree_GEN_VARIABLE.NiagaraDataInterfaceSkeletalMesh_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.6"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "NiagaraDataInterfaceSkeletalMesh",
+    "Name": "NiagaraDataInterfaceSkeletalMesh_0",
+    "Outer": "NS_SkillFruitsTree_GEN_VARIABLE",
+    "Class": "UScriptClass'NiagaraDataInterfaceSkeletalMesh'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalMapObjectSpawnerDamageReactionComponent",
+    "Name": "DamageReaction_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C",
+    "Class": "UScriptClass'PalMapObjectSpawnerDamageReactionComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bDropItemOnDamaged": true
+    }
+  },
+  {
+    "Type": "PointLightComponent",
+    "Name": "PointLight_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C",
+    "Class": "UScriptClass'PointLightComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttenuationRadius": 500.0,
+      "Intensity": 8000.0,
+      "LightColor": {
+        "B": 255,
+        "G": 193,
+        "R": 110,
+        "A": 255,
+        "Hex": "6EC1FF"
+      },
+      "CastShadows": false,
+      "RelativeLocation": {
+        "X": 18.742887,
+        "Y": 78.09133,
+        "Z": 119.123795
+      }
+    },
+    "RelativeRotation": {
+      "Pitch": -90.0,
+      "Yaw": 0.0,
+      "Roll": 0.0
+    },
+    "RelativeLocation": {
+      "X": 18.742887,
+      "Y": 78.09133,
+      "Z": 119.123795
+    },
+    "IntensityNits": 128000.0078125,
+    "bUseInverseSquaredFalloff": true
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mobility": "EComponentMobility::Static"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Root",
+    "Outer": "Default__BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.9"
+      },
+      "VariableGuid": "E276FC72-4DCE5B61-EE44BE99-9698C9EA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MapObjectSpawnerLocationComponent_SkillFruits_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/Component/BP_MapObjectSpawnerLocationComponent_SkillFruits.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_MapObjectSpawnerLocationComponent_SkillFruits_C'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:LocationComponent_SkillFruits_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.3"
+      },
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "188A0AA0-48557078-4FA6BDBA-947E2B61",
+      "InternalVariableName": "LocationComponent_SkillFruits"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MapObjectSpawnerLocationComponent_SkillFruits_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/Component/BP_MapObjectSpawnerLocationComponent_SkillFruits.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_MapObjectSpawnerLocationComponent_SkillFruits_C'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:LocationComponent_SkillFruits1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.1"
+      },
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "75331B31-44C1D5C1-AB78DC9F-A5621A0D",
+      "InternalVariableName": "LocationComponent_SkillFruits1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MapObjectSpawnerLocationComponent_SkillFruits_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/Component/BP_MapObjectSpawnerLocationComponent_SkillFruits.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_MapObjectSpawnerLocationComponent_SkillFruits_C'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:LocationComponent_SkillFruits2_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.2"
+      },
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "88A4A6FA-47D1332C-2D0D54AB-5032225E",
+      "InternalVariableName": "LocationComponent_SkillFruits2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalMapObjectSpawnerDamageReactionComponent'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalMapObjectSpawnerDamageReactionComponent'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:DamageReaction_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.7"
+      },
+      "VariableGuid": "35B61AA9-4A17BC62-D1DD32B5-0F29306D",
+      "InternalVariableName": "DamageReaction"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SM_FlowerMerge_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.21"
+      },
+      "VariableGuid": "4609BB14-4017030E-E380CD92-6548D88D",
+      "InternalVariableName": "SM_FlowerMerge"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'NiagaraComponent'",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:NS_SkillFruitsTree_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.5"
+      },
+      "VariableGuid": "78851D57-4A2ED7B7-8BE4DE94-27828B1E",
+      "InternalVariableName": "NS_SkillFruitsTree"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PointLightComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PointLightComponent'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:PointLight_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.8"
+      },
+      "VariableGuid": "18661D0A-4FDF967F-9DD628BA-01B90812",
+      "InternalVariableName": "PointLight"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SM_SkillFruitsTree_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.22"
+      },
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.16"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.17"
+        }
+      ],
+      "VariableGuid": "D4CC4DAD-46CDB00C-8C2BDDA9-54312CA9",
+      "InternalVariableName": "SM_SkillFruitsTree"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.15"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.13"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.19"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.13"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.15"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.19"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.16"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.17"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/BP_PalMapObjectSpawner_SkillFruits_DarkIsland.11"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "SM_FlowerMerge_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_FlowerMerge'",
+        "ObjectPath": "Pal/Content/Pal/Model/Other/SkillFruitsTree/SM_FlowerMerge.2"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel2",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel3",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel4",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel5",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel6",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel17",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel18",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -7.2542953,
+        "Y": 161.93076,
+        "Z": 1.5653555E-05
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": -0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "SM_SkillFruitsTree_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectSpawner_SkillFruits_DarkIsland_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_SkillFruitsTree'",
+        "ObjectPath": "Pal/Content/Pal/Model/Other/SkillFruitsTree/SM_SkillFruitsTree.2"
+      }
+    }
+  }
+]

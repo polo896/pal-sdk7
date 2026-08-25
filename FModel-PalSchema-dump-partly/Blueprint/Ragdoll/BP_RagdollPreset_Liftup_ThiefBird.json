@@ -1,0 +1,73 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_RagdollPreset_Liftup_ThiefBird_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalRagdollPreset'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_RagdollPreset_Liftup_ThiefBird_C'Default__BP_RagdollPreset_Liftup_ThiefBird_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Ragdoll/BP_RagdollPreset_Liftup_ThiefBird.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_RagdollPreset_Liftup_ThiefBird_C",
+    "Name": "Default__BP_RagdollPreset_Liftup_ThiefBird_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Ragdoll/BP_RagdollPreset_Liftup_ThiefBird.BP_RagdollPreset_Liftup_ThiefBird_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockBoneNames": [
+        "pelvis",
+        "thigh_l",
+        "calf_l",
+        "foot_l",
+        "thigh_r",
+        "calf_r",
+        "foot_r",
+        "hips",
+        "spine_01",
+        "spine_02",
+        "spine_03",
+        "wing_01_l",
+        "wing_02_l",
+        "wing_03_l",
+        "wing_04_l",
+        "wing_01_r",
+        "wing_02_r",
+        "wing_03_r",
+        "wing_04_r",
+        "None",
+        "None",
+        "tail_01",
+        "tail_02",
+        "tail_03",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "LinearDamping": 7.0,
+      "AngularDamping": 7.0
+    }
+  }
+]

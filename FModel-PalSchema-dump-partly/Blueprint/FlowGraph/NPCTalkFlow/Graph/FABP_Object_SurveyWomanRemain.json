@@ -1,0 +1,281 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_0",
+    "Outer": "FABP_Object_SurveyWomanRemain",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "9EAE2835-49267390-A122BC86-C72F8E16"
+    }
+  },
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_1",
+    "Outer": "FABP_Object_SurveyWomanRemain",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "F423E767-47DA367C-063D1386-AEEDAE98"
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_Object_SurveyWomanRemain",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "98EEC9E5-4E495620-6C7B7DB6-DA3467F8",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "18BF4EE6-4726962C-6D09BF99-695E741A",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Timer",
+    "Name": "FlowNode_Timer_0",
+    "Outer": "FABP_Object_SurveyWomanRemain",
+    "Class": "UScriptClass'FlowNode_Timer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CompletionTime": 5.0,
+      "GraphNode": null,
+      "NodeGuid": "C12C4942-4C95AE19-404090B1-A2B5945E",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "D78B531F-4F2A0DB7-2FE91E8E-19C66D8F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeIn_C",
+    "Name": "FNBP_FadeIn_C_0",
+    "Outer": "FABP_Object_SurveyWomanRemain",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.FNBP_FadeIn_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeIn_C'Default__FNBP_FadeIn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "D78B531F-4F2A0DB7-2FE91E8E-19C66D8F",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "F423E767-47DA367C-063D1386-AEEDAE98",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeOut_C",
+    "Name": "FNBP_FadeOut_C_0",
+    "Outer": "FABP_Object_SurveyWomanRemain",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.FNBP_FadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeOut_C'Default__FNBP_FadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "842C087F-44DC7C24-860A11B7-A51D61E2",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "BA9F6A76-44D68EEF-C2E431A5-C463F76C",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_0",
+    "Outer": "FABP_Object_SurveyWomanRemain",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_RookieExpeditionTeam02"
+      },
+      "NetworkInvokeName": "Progress01",
+      "GraphNode": null,
+      "NodeGuid": "FD071F21-44A98C88-9470C191-F2AF5C7E",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "C12C4942-4C95AE19-404090B1-A2B5945E",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_0",
+    "Outer": "FABP_Object_SurveyWomanRemain",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_RookieExpeditionTeam02_Search_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_RookieExpeditionTeam02_Search.0"
+      },
+      "QuestId": {
+        "RowName": "Sub_RookieExpeditionTeam02"
+      },
+      "GraphNode": null,
+      "NodeGuid": "18BF4EE6-4726962C-6D09BF99-695E741A",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "842C087F-44DC7C24-860A11B7-A51D61E2",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "9EAE2835-49267390-A122BC86-C72F8E16",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_TextInFadeOut_C",
+    "Name": "FNBP_TextInFadeOut_C_0",
+    "Outer": "FABP_Object_SurveyWomanRemain",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_TextInFadeOut.FNBP_TextInFadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_TextInFadeOut_C'Default__FNBP_TextInFadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_TextInFadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId": {
+        "RowName": "QUEST_SUB_RookieExpeditionTeam_Talk_110"
+      },
+      "GraphNode": null,
+      "NodeGuid": "BA9F6A76-44D68EEF-C2E431A5-C463F76C",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "FD071F21-44A98C88-9470C191-F2AF5C7E",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_Object_SurveyWomanRemain",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "D1C20AD8-474C8FAD-EB1C919C-07F6AABF",
+      "Nodes": [
+        {
+          "Key": "98EEC9E5-4E495620-6C7B7DB6-DA3467F8",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_Object_SurveyWomanRemain:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Object_SurveyWomanRemain.2"
+          }
+        },
+        {
+          "Key": "18BF4EE6-4726962C-6D09BF99-695E741A",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_Object_SurveyWomanRemain:FNBP_QuestBlockBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Object_SurveyWomanRemain.7"
+          }
+        },
+        {
+          "Key": "9EAE2835-49267390-A122BC86-C72F8E16",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_Object_SurveyWomanRemain:FlowNode_Finish_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Object_SurveyWomanRemain.0"
+          }
+        },
+        {
+          "Key": "D78B531F-4F2A0DB7-2FE91E8E-19C66D8F",
+          "Value": {
+            "ObjectName": "FNBP_FadeIn_C'FABP_Object_SurveyWomanRemain:FNBP_FadeIn_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Object_SurveyWomanRemain.4"
+          }
+        },
+        {
+          "Key": "FD071F21-44A98C88-9470C191-F2AF5C7E",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_Object_SurveyWomanRemain:FNBP_ProgressQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Object_SurveyWomanRemain.6"
+          }
+        },
+        {
+          "Key": "F423E767-47DA367C-063D1386-AEEDAE98",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_Object_SurveyWomanRemain:FlowNode_Finish_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Object_SurveyWomanRemain.1"
+          }
+        },
+        {
+          "Key": "842C087F-44DC7C24-860A11B7-A51D61E2",
+          "Value": {
+            "ObjectName": "FNBP_FadeOut_C'FABP_Object_SurveyWomanRemain:FNBP_FadeOut_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Object_SurveyWomanRemain.5"
+          }
+        },
+        {
+          "Key": "BA9F6A76-44D68EEF-C2E431A5-C463F76C",
+          "Value": {
+            "ObjectName": "FNBP_TextInFadeOut_C'FABP_Object_SurveyWomanRemain:FNBP_TextInFadeOut_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Object_SurveyWomanRemain.8"
+          }
+        },
+        {
+          "Key": "C12C4942-4C95AE19-404090B1-A2B5945E",
+          "Value": {
+            "ObjectName": "FlowNode_Timer'FABP_Object_SurveyWomanRemain:FlowNode_Timer_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Object_SurveyWomanRemain.3"
+          }
+        }
+      ]
+    }
+  }
+]

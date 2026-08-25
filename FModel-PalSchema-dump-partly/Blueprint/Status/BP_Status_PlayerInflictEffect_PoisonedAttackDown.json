@@ -1,0 +1,243 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Status_PlayerInflictEffect_PoisonedAttackDown_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Status_PlayerInflictEffect_PoisonedAttackDown_C:ExecuteUbergraph_BP_Status_PlayerInflictEffect_PoisonedAttackDown'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_PoisonedAttackDown.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Status_PlayerInflictEffect_PoisonedAttackDown_C:OnInflictDamage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_PoisonedAttackDown.3"
+      },
+      {
+        "ObjectName": "Function'BP_Status_PlayerInflictEffect_PoisonedAttackDown_C:OnPassiveEffectTriggered'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_PoisonedAttackDown.4"
+      },
+      {
+        "ObjectName": "Function'BP_Status_PlayerInflictEffect_PoisonedAttackDown_C:ExecuteUbergraph_BP_Status_PlayerInflictEffect_PoisonedAttackDown'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_PoisonedAttackDown.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "ConditionStatus",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Enum": {
+          "ObjectName": "Enum'EPalStatusID'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalStatusID'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Status_PlayerInflictEffect_PoisonedAttackDown": {
+        "ObjectName": "Function'BP_Status_PlayerInflictEffect_PoisonedAttackDown_C:ExecuteUbergraph_BP_Status_PlayerInflictEffect_PoisonedAttackDown'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_PoisonedAttackDown.2"
+      },
+      "OnPassiveEffectTriggered": {
+        "ObjectName": "Function'BP_Status_PlayerInflictEffect_PoisonedAttackDown_C:OnPassiveEffectTriggered'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_PoisonedAttackDown.4"
+      },
+      "OnInflictDamage": {
+        "ObjectName": "Function'BP_Status_PlayerInflictEffect_PoisonedAttackDown_C:OnInflictDamage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_PoisonedAttackDown.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Status_PlayerInflictEffect_PoisonedAttackDown_C'Default__BP_Status_PlayerInflictEffect_PoisonedAttackDown_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_PoisonedAttackDown.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Status_PlayerInflictEffect_PoisonedAttackDown_C",
+    "Name": "Default__BP_Status_PlayerInflictEffect_PoisonedAttackDown_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_PoisonedAttackDown.BP_Status_PlayerInflictEffect_PoisonedAttackDown_C'",
+    "Template": {
+      "ObjectName": "BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C'Default__BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ConditionStatus": "EPalStatusID::Poison",
+      "CooldownTime": 2.0
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Status_PlayerInflictEffect_PoisonedAttackDown",
+    "Outer": "BP_Status_PlayerInflictEffect_PoisonedAttackDown_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_TriggerInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalPassiveEffectTriggerInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInflictDamage",
+    "Outer": "BP_Status_PlayerInflictEffect_PoisonedAttackDown_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C:OnInflictDamage'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.6"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C:OnInflictDamage'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.6"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "DamageResult",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDamageResult'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalStatusComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetExecutionStatus_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalStatusBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPassiveEffectTriggered",
+    "Outer": "BP_Status_PlayerInflictEffect_PoisonedAttackDown_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C:OnPassiveEffectTriggered'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.7"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C:OnPassiveEffectTriggered'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.7"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "TriggerInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalPassiveEffectTriggerInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_CameraModifier_WaterRaise_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalCameraModifier'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_CameraModifier_WaterRaise_C'Default__BP_CameraModifier_WaterRaise_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BlueSkyDragon/BP_CameraModifier_WaterRaise.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_CameraModifier_WaterRaise_C",
+    "Name": "Default__BP_CameraModifier_WaterRaise_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/BlueSkyDragon/BP_CameraModifier_WaterRaise.BP_CameraModifier_WaterRaise_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Duration": 5.0,
+      "BlendInTime": 1.0,
+      "BlendInEaseFunc": "EEasingFunc::EaseOut",
+      "BlendOutTime": 2.0,
+      "BlendOutEaseFunc": "EEasingFunc::EaseOut",
+      "CameraLengthModifyType": "EPalCameraModifierParameterType::Replace",
+      "TargetCameraLength": 850.0,
+      "TargetOffsetModifyType": "EPalCameraModifierParameterType::Additional",
+      "TargetOffsetValue": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 200.0
+      },
+      "bOverrideCameraLag": true,
+      "bEnableCameraLag": true,
+      "CameraLagSpeed": 10.0,
+      "CameraLagMaxDistance": 100.0
+    }
+  }
+]

@@ -1,0 +1,205 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_0",
+    "Outer": "FABP_Quest_DesertBoss_Investigate2",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "1AEEC26E-4DA9440D-77DE0A83-A18D6460"
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_Quest_DesertBoss_Investigate2",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "4D3BCF10-442D1DA1-EAC8C795-A9570094",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "CD7F3F7D-44B7F3E4-8A386DA5-EEEB1637",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_Quest_DesertBoss_Investigate2",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Marcus_Talk_050"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "C0C3A062-4A458273-69029D8D-9D348940",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "2A704CD5-47BAB35D-6E31958F-706527CB",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_6",
+    "Outer": "FABP_Quest_DesertBoss_Investigate2",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatDesertBoss"
+      },
+      "NetworkInvokeName": "BP_MainQuestBlock_DesertBoss_Investigate2",
+      "GraphNode": null,
+      "NodeGuid": "DAEBC3BF-4D130299-D29A9AA1-CE37C3BA"
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_0",
+    "Outer": "FABP_Quest_DesertBoss_Investigate2",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_DesertBoss_Investigate2_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DesertBoss_Investigate2.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatDesertBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "2A704CD5-47BAB35D-6E31958F-706527CB",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "DAEBC3BF-4D130299-D29A9AA1-CE37C3BA",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "1AEEC26E-4DA9440D-77DE0A83-A18D6460",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_Quest_DesertBoss_Investigate2",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatDesertBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "CD7F3F7D-44B7F3E4-8A386DA5-EEEB1637",
+      "Connections": [
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "C0C3A062-4A458273-69029D8D-9D348940",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "C0C3A062-4A458273-69029D8D-9D348940",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_Quest_DesertBoss_Investigate2",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "9A313D34-46017CCF-8241EB98-165347E3",
+      "Nodes": [
+        {
+          "Key": "1AEEC26E-4DA9440D-77DE0A83-A18D6460",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_Quest_DesertBoss_Investigate2:FlowNode_Finish_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_DesertBoss_Investigate2.0"
+          }
+        },
+        {
+          "Key": "2A704CD5-47BAB35D-6E31958F-706527CB",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_Quest_DesertBoss_Investigate2:FNBP_QuestBlockBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_DesertBoss_Investigate2.4"
+          }
+        },
+        {
+          "Key": "DAEBC3BF-4D130299-D29A9AA1-CE37C3BA",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_Quest_DesertBoss_Investigate2:FNBP_ProgressQuest_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_DesertBoss_Investigate2.3"
+          }
+        },
+        {
+          "Key": "C0C3A062-4A458273-69029D8D-9D348940",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_DesertBoss_Investigate2:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_DesertBoss_Investigate2.2"
+          }
+        },
+        {
+          "Key": "CD7F3F7D-44B7F3E4-8A386DA5-EEEB1637",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_Quest_DesertBoss_Investigate2:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_DesertBoss_Investigate2.5"
+          }
+        },
+        {
+          "Key": "4D3BCF10-442D1DA1-EAC8C795-A9570094",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_Quest_DesertBoss_Investigate2:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_DesertBoss_Investigate2.1"
+          }
+        }
+      ]
+    }
+  }
+]

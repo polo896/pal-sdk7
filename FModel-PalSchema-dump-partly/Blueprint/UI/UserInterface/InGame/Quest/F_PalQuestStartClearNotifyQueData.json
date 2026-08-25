@@ -1,0 +1,36 @@
+[
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "F_PalQuestStartClearNotifyQueData",
+    "Class": "UScriptClass'UserDefinedStruct'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Guid": "B04D125B-4F285F47-810CE2A8-035BFD00"
+    },
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "QuestId_2_748C18354F9253FE20BD65905CCB0E03",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "NotifyType_5_B67BC4424627B400AE0C04BB8D7C1999",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'EPalQuestStartClearNotifyType'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Quest/EPalQuestStartClearNotifyType.0"
+        }
+      }
+    ],
+    "StructFlags": 57344,
+    "DefaultProperties": {
+      "QuestId_2_748C18354F9253FE20BD65905CCB0E03": "None",
+      "NotifyType_5_B67BC4424627B400AE0C04BB8D7C1999": "EPalQuestStartClearNotifyType::NewEnumerator0"
+    }
+  }
+]

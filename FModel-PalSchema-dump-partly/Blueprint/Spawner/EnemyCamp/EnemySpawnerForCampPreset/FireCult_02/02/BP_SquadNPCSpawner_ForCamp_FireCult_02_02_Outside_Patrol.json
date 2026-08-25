@@ -1,0 +1,408 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SquadNPCSpawner_ForCampBase_FireCult_02_02_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/BP_SquadNPCSpawner_ForCampBase_FireCult_02_02.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.14"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SquadNPCSpawner_ForCampBase_FireCult_02_02_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/BP_SquadNPCSpawner_ForCampBase_FireCult_02_02.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCSpawnPointComponent2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCPathWalkPointComponent_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCPathWalkPointComponent_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCSpawnPointComponent1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C'Default__BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_NPCPathWalkPointComponent_1_C",
+    "Name": "BP_NPCPathWalkPointComponent_1_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.BP_NPCPathWalkPointComponent_1_C'",
+    "Template": {
+      "ObjectName": "BP_NPCPathWalkPointComponent_1_C'Default__BP_NPCPathWalkPointComponent_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bEvaluateWorldPositionOffsetInRayTracing": true,
+      "RelativeLocation": {
+        "X": 780.467,
+        "Y": -775.55133,
+        "Z": 90.0
+      },
+      "RelativeRotation": {
+        "Pitch": -0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCPathWalkPointComponent_1_C",
+    "Name": "BP_NPCPathWalkPointComponent_2_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.BP_NPCPathWalkPointComponent_1_C'",
+    "Template": {
+      "ObjectName": "BP_NPCPathWalkPointComponent_1_C'Default__BP_NPCPathWalkPointComponent_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bEvaluateWorldPositionOffsetInRayTracing": true,
+      "RelativeLocation": {
+        "X": -1259.533,
+        "Y": -775.55145,
+        "Z": 90.0
+      },
+      "RelativeRotation": {
+        "Pitch": -0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCSpawnPointComponent_C",
+    "Name": "BP_NPCSpawnPointComponent1_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C'",
+    "Template": {
+      "ObjectName": "BP_NPCSpawnPointComponent_C'Default__BP_NPCSpawnPointComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NPCName": {
+        "Key": "FireCult_Rifle"
+      },
+      "OverrideDefaultAction": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Relax_PathWalk_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Relax/BP_AIAction_NPC_Relax_PathWalk.0"
+      },
+      "bEvaluateWorldPositionOffsetInRayTracing": true,
+      "RelativeLocation": {
+        "X": 860.4669,
+        "Y": 704.44867,
+        "Z": 10.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCSpawnPointComponent_C",
+    "Name": "BP_NPCSpawnPointComponent2_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C'",
+    "Template": {
+      "ObjectName": "BP_NPCSpawnPointComponent_C'Default__BP_NPCSpawnPointComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NPCName": {
+        "Key": "FireCult_FlameThrower"
+      },
+      "OtomoName": {
+        "Key": "Ronin_Dark"
+      },
+      "bEvaluateWorldPositionOffsetInRayTracing": true,
+      "RelativeLocation": {
+        "X": 1650.4669,
+        "Y": 1004.44867,
+        "Z": 10.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 450.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C",
+    "Name": "Default__BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C'",
+    "Template": {
+      "ObjectName": "BP_SquadNPCSpawner_ForCampBase_FireCult_02_02_C'Default__BP_SquadNPCSpawner_ForCampBase_FireCult_02_02_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/BP_SquadNPCSpawner_ForCampBase_FireCult_02_02.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IgnoreRayAdjustFloor": true,
+      "HumanName": {
+        "Key": "FireCult_FlameThrower"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SceneComponent'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:ICH-DefaultSceneRoot_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.8"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_MonoNPCSpawner_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_MonoNPCSpawner.0"
+            },
+            "SCSVariableName": "DefaultSceneRoot",
+            "AssociatedGuid": "948DBB43-488A24C6-9F6BCFAA-E3CAE162"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "ICH-DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.7"
+      },
+      "VariableGuid": "AD07B4C3-493E74D0-1A61408B-3692CCBC",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCSpawnPointComponent_C'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:BP_NPCSpawnPointComponent1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.3"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_MonoNPCSpawner_C",
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.11"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.12"
+        }
+      ],
+      "VariableGuid": "E8CFE1C1-4C4C8277-C1A09BAE-F017B1D6",
+      "InternalVariableName": "BP_NPCSpawnPointComponent1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCPathWalkPointComponent_1_C'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:BP_NPCPathWalkPointComponent_1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.1"
+      },
+      "VariableGuid": "0F4E0A08-46CCC733-29625FB0-4A2C03BF",
+      "InternalVariableName": "BP_NPCPathWalkPointComponent_1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCPathWalkPointComponent_1_C'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:BP_NPCPathWalkPointComponent_2_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.2"
+      },
+      "VariableGuid": "F7AB1670-473D5114-D065D6BA-FC60022E",
+      "InternalVariableName": "BP_NPCPathWalkPointComponent_2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCSpawnPointComponent_C'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:BP_NPCSpawnPointComponent2_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.4"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_MonoNPCSpawner_C",
+      "VariableGuid": "C2FFB567-426D3AE2-1F0DF291-7CC10843",
+      "InternalVariableName": "BP_NPCSpawnPointComponent2"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.10"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.13"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.10"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.11"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.13"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/FireCult_02/02/BP_SquadNPCSpawner_ForCamp_FireCult_02_02_Outside_Patrol.9"
+      }
+    }
+  }
+]

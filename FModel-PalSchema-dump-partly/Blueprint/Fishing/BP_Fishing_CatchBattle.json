@@ -1,0 +1,362 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Fishing_CatchBattle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Fishing_CatchBattle_C:ExecuteUbergraph_BP_Fishing_CatchBattle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalFishingCatchBattle'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Fishing_CatchBattle_C:Tick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle.4"
+      },
+      {
+        "ObjectName": "Function'BP_Fishing_CatchBattle_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle.3"
+      },
+      {
+        "ObjectName": "Function'BP_Fishing_CatchBattle_C:ExecuteUbergraph_BP_Fishing_CatchBattle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BehaviorModule",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_Fishing_CatchBattle_Behavior_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CatchBattleInfo",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 32,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalFishingCatchBattleInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "BehaviorMap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "EnumProperty",
+          "Name": "BehaviorMap",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalFishBattleBehaviorType'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": {
+              "ObjectName": "Enum'EPalFishBattleBehaviorType'",
+              "ObjectPath": "/Script/Pal"
+            }
+          }
+        },
+        "ValueProp": {
+          "Type": "ClassProperty",
+          "Name": "BehaviorMap_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'Class'",
+            "ObjectPath": "/Script/CoreUObject"
+          },
+          "MetaClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Fishing_CatchBattle_Behavior_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior.0"
+          }
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Fishing_CatchBattle": {
+        "ObjectName": "Function'BP_Fishing_CatchBattle_C:ExecuteUbergraph_BP_Fishing_CatchBattle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle.2"
+      },
+      "OnInitialized": {
+        "ObjectName": "Function'BP_Fishing_CatchBattle_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle.3"
+      },
+      "Tick": {
+        "ObjectName": "Function'BP_Fishing_CatchBattle_C:Tick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle.4"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Fishing_CatchBattle_C'Default__BP_Fishing_CatchBattle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Fishing_CatchBattle_C",
+    "Name": "Default__BP_Fishing_CatchBattle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle.BP_Fishing_CatchBattle_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "CatchBattleInfo": {
+        "BehaviorType": "EPalFishBattleBehaviorType::Normal",
+        "Difficulty": 0.0,
+        "HitBarSizeRate": 1.0,
+        "SuccessFightAmountRate": 1.0,
+        "MissFightAmountRate": 1.0,
+        "StartProgressAmountPercent": 1.0,
+        "InitFishPos": 0.0,
+        "bIsFirstFishing": false
+      },
+      "BehaviorMap": [
+        {
+          "Key": "EPalFishBattleBehaviorType::Jitter",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Fishing_CatchBattle_Behavior_Jitter_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior_Jitter.0"
+          }
+        },
+        {
+          "Key": "EPalFishBattleBehaviorType::Riser",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Fishing_CatchBattle_Behavior_Riser_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior_Riser.0"
+          }
+        },
+        {
+          "Key": "EPalFishBattleBehaviorType::Diver",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Fishing_CatchBattle_Behavior_Diver_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior_Diver.0"
+          }
+        },
+        {
+          "Key": "EPalFishBattleBehaviorType::Calm",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Fishing_CatchBattle_Behavior_Calm_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior_Calm.0"
+          }
+        },
+        {
+          "Key": "EPalFishBattleBehaviorType::Normal",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_Fishing_CatchBattle_Behavior_Normal_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior_Normal.0"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Fishing_CatchBattle",
+    "Outer": "BP_Fishing_CatchBattle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsStarted_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Tick_Calc_Fish_Pos_X_FishPosX",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_Info",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalFishingCatchBattleInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_Fishing_CatchBattle_Behavior_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_Fishing_CatchBattle_Behavior_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior.0"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Tick_Calc_Fish_Pos_X_DeltaTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetFishPosX_PosX_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInitialized",
+    "Outer": "BP_Fishing_CatchBattle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalFishingCatchBattle:OnInitialized'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Info",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalFishingCatchBattleInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Tick",
+    "Outer": "BP_Fishing_CatchBattle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalFishingCatchBattle:Tick'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  }
+]

@@ -1,0 +1,1241 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.3"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.4"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.5"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.9"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 2.0,
+          "Right": 2.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.0"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_MenuESC_tabset_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.0"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.1"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.1"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MenuESC_tabset_C:WidgetTree.base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.26"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.1"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MenuESC_tabset_C:WidgetTree.Frame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 2.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.1"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MenuESC_tabset_C:WidgetTree.Image_211'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.1"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MenuESC_tabset_C:WidgetTree.Image'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.28"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.1"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MenuESC_tabset_C:WidgetTree.Image_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.29"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.1"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MenuESC_tabset_C:WidgetTree.Image_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.30"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_MenuESC_tabset_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WBP_Main_Menu_Tab_Key_L",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_L_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_Main_Menu_Tab_Key_R",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_R_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_Paldex_tab_Model",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Model_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_Paldex_tab_Distribution",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Distribution_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_L_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature",
+    "Outer": "WBP_MenuESC_tabset_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_R_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature",
+    "Outer": "WBP_MenuESC_tabset_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Distribution_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature",
+    "Outer": "WBP_MenuESC_tabset_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Model_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature",
+    "Outer": "WBP_MenuESC_tabset_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_MenuESC_tabset",
+    "Outer": "WBP_MenuESC_tabset_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_PanelWidgetChildrenSelectorBase_C:OnChangedFocusIndex__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PanelWidgetChildrenSelector/WBP_PanelWidgetChildrenSelectorBase.7"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_PanelWidgetChildrenSelectorBase_C:OnNext__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PanelWidgetChildrenSelector/WBP_PanelWidgetChildrenSelectorBase.10"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_PanelWidgetChildrenSelectorBase_C:OnPrev__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PanelWidgetChildrenSelector/WBP_PanelWidgetChildrenSelectorBase.11"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnChangedIndexEvent",
+    "Outer": "WBP_MenuESC_tabset_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "OldIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "NewIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "FocusTargetWidget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchInteger_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInitialized",
+    "Outer": "WBP_MenuESC_tabset_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'WBP_PanelWidgetChildrenSelectorBase_C:OnInitialized'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PanelWidgetChildrenSelector/WBP_PanelWidgetChildrenSelectorBase.9"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'WBP_PanelWidgetChildrenSelectorBase_C:OnInitialized'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PanelWidgetChildrenSelector/WBP_PanelWidgetChildrenSelectorBase.9"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNextEvent",
+    "Outer": "WBP_MenuESC_tabset_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "OldIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "NewIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPrevEvent",
+    "Outer": "WBP_MenuESC_tabset_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "OldIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "NewIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSelectedDistributionTab__DelegateSignature",
+    "Outer": "WBP_MenuESC_tabset_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSelectedModelTab__DelegateSignature",
+    "Outer": "WBP_MenuESC_tabset_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RegisterPanelWidget",
+    "Outer": "WBP_MenuESC_tabset_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'WBP_PanelWidgetChildrenSelectorBase_C:RegisterPanelWidget'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PanelWidgetChildrenSelector/WBP_PanelWidgetChildrenSelectorBase.12"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'WBP_PanelWidgetChildrenSelectorBase_C:RegisterPanelWidget'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PanelWidgetChildrenSelector/WBP_PanelWidgetChildrenSelectorBase.12"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "PanelWidget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PanelWidget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_Tab",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_MenuESC_tabset_C:WidgetTree.HorizontalBox_Tab.HorizontalBoxSlot_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.24"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_MenuESC_tabset_C:WidgetTree.HorizontalBox_Tab.HorizontalBoxSlot_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.25"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_MenuESC_tabset_C:WidgetTree.Overlay_0.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.34"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_7",
+    "Outer": "HorizontalBox_Tab",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_MenuESC_tabset_C:WidgetTree.HorizontalBox_Tab'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.23"
+      },
+      "Content": {
+        "ObjectName": "WBP_Paldex_tab_C'WBP_MenuESC_tabset_C:WidgetTree.WBP_Paldex_tab_Model'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.40"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_8",
+    "Outer": "HorizontalBox_Tab",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_MenuESC_tabset_C:WidgetTree.HorizontalBox_Tab'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.23"
+      },
+      "Content": {
+        "ObjectName": "WBP_Paldex_tab_C'WBP_MenuESC_tabset_C:WidgetTree.WBP_Paldex_tab_Distribution'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.39"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "base",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.01709,
+        "G": 0.042407,
+        "B": 0.046875,
+        "A": 1.0,
+        "Hex": "233A3D"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.4"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Frame",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_frame_1px'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_frame_1px.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.760308,
+        "G": 0.919774,
+        "B": 0.947917,
+        "A": 0.4,
+        "Hex": "66E2F6FA"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.5"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.942708,
+        "G": 0.912594,
+        "B": 0.864149,
+        "A": 0.5,
+        "Hex": "7FF9F5F0"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.7"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.942708,
+        "G": 0.912594,
+        "B": 0.864149,
+        "A": 0.5,
+        "Hex": "7FF9F5F0"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.8"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.942708,
+        "G": 0.912594,
+        "B": 0.864149,
+        "A": 0.5,
+        "Hex": "7FF9F5F0"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.9"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_211",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.942708,
+        "G": 0.912594,
+        "B": 0.864149,
+        "A": 0.5,
+        "Hex": "7FF9F5F0"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.6"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_MenuESC_tabset_C:WidgetTree.Overlay_0.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.33"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_MenuESC_tabset_C:WidgetTree.Overlay_0.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.34"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_MenuESC_tabset_C:WidgetTree.Overlay_0.OverlaySlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.35"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.2"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": -50.0,
+        "Right": -50.0
+      },
+      "Parent": {
+        "ObjectName": "Overlay'WBP_MenuESC_tabset_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.32"
+      },
+      "Content": {
+        "ObjectName": "WBP_Main_Menu_Tab_Key_C'WBP_MenuESC_tabset_C:WidgetTree.WBP_Main_Menu_Tab_Key_L'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.36"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_MenuESC_tabset_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.32"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_MenuESC_tabset_C:WidgetTree.HorizontalBox_Tab'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.23"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_2",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": -50.0,
+        "Right": -50.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_MenuESC_tabset_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.32"
+      },
+      "Content": {
+        "ObjectName": "WBP_Main_Menu_Tab_Key_C'WBP_MenuESC_tabset_C:WidgetTree.WBP_Main_Menu_Tab_Key_R'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.37"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Main_Menu_Tab_Key_C",
+    "Name": "WBP_Main_Menu_Tab_Key_L",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/WBP_Main_Menu_Tab_Key.WBP_Main_Menu_Tab_Key_C'",
+    "Template": {
+      "ObjectName": "WBP_Main_Menu_Tab_Key_C'Default__WBP_Main_Menu_Tab_Key_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/WBP_Main_Menu_Tab_Key.60"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindActionName": {
+        "Key": "PaldexToModel"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_MenuESC_tabset_C:WidgetTree.Overlay_0.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.33"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Main_Menu_Tab_Key_C",
+    "Name": "WBP_Main_Menu_Tab_Key_R",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/WBP_Main_Menu_Tab_Key.WBP_Main_Menu_Tab_Key_C'",
+    "Template": {
+      "ObjectName": "WBP_Main_Menu_Tab_Key_C'Default__WBP_Main_Menu_Tab_Key_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/WBP_Main_Menu_Tab_Key.60"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindActionName": {
+        "Key": "PaldexToDistribution"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_MenuESC_tabset_C:WidgetTree.Overlay_0.OverlaySlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.35"
+      }
+    }
+  },
+  {
+    "Type": "WBP_MenuESC_tabset_C",
+    "Name": "Default__WBP_MenuESC_tabset_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.WBP_MenuESC_tabset_C'",
+    "Template": {
+      "ObjectName": "WBP_PanelWidgetChildrenSelectorBase_C'Default__WBP_PanelWidgetChildrenSelectorBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PanelWidgetChildrenSelector/WBP_PanelWidgetChildrenSelectorBase.18"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  },
+  {
+    "Type": "WBP_Paldex_tab_C",
+    "Name": "WBP_Paldex_tab_Distribution",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Paldex/WBP_Paldex_tab.WBP_Paldex_tab_C'",
+    "Template": {
+      "ObjectName": "WBP_Paldex_tab_C'Default__WBP_Paldex_tab_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Paldex/WBP_Paldex_tab.33"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "ESCMENU_TAB_SERVERINFO"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_MenuESC_tabset_C:WidgetTree.HorizontalBox_Tab.HorizontalBoxSlot_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.25"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Paldex_tab_C",
+    "Name": "WBP_Paldex_tab_Model",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Paldex/WBP_Paldex_tab.WBP_Paldex_tab_C'",
+    "Template": {
+      "ObjectName": "WBP_Paldex_tab_C'Default__WBP_Paldex_tab_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Paldex/WBP_Paldex_tab.33"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "ESCMENU_TAB_PLAYERLIST"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_MenuESC_tabset_C:WidgetTree.HorizontalBox_Tab.HorizontalBoxSlot_7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.24"
+      }
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_MenuESC_tabset_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PanelWidgetChildrenSelectorBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PanelWidgetChildrenSelector/WBP_PanelWidgetChildrenSelectorBase.19"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_MenuESC_tabset_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.42"
+      },
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_MenuESC_tabset_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.10"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:ExecuteUbergraph_WBP_MenuESC_tabset'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.15"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PanelWidgetChildrenSelectorBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PanelWidgetChildrenSelector/WBP_PanelWidgetChildrenSelectorBase.19"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:OnPrevEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.19"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:OnNextEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.18"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:OnChangedIndexEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.16"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:RegisterPanelWidget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.22"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Distribution_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.13"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Model_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.14"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.17"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_R_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.12"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_L_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.11"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:ExecuteUbergraph_WBP_MenuESC_tabset'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.15"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:OnSelectedDistributionTab__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.20"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:OnSelectedModelTab__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.21"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HorizontalBox_Tab",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Main_Menu_Tab_Key_L",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Main_Menu_Tab_Key_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/WBP_Main_Menu_Tab_Key.66"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Main_Menu_Tab_Key_R",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Main_Menu_Tab_Key_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/WBP_Main_Menu_Tab_Key.66"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Paldex_tab_Distribution",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Paldex_tab_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Paldex/WBP_Paldex_tab.37"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Paldex_tab_Model",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Paldex_tab_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Paldex/WBP_Paldex_tab.37"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnSelectedModelTab",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_MenuESC_tabset_C:OnSelectedModelTab__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.21"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnSelectedDistributionTab",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_MenuESC_tabset_C:OnSelectedDistributionTab__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.20"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnSelectedModelTab__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:OnSelectedModelTab__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.21"
+      },
+      "OnSelectedDistributionTab__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:OnSelectedDistributionTab__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.20"
+      },
+      "ExecuteUbergraph_WBP_MenuESC_tabset": {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:ExecuteUbergraph_WBP_MenuESC_tabset'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.15"
+      },
+      "BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_L_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_L_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.11"
+      },
+      "BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_R_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_R_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.12"
+      },
+      "OnInitialized": {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.17"
+      },
+      "BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Model_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Model_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.14"
+      },
+      "BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Distribution_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Distribution_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.13"
+      },
+      "RegisterPanelWidget": {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:RegisterPanelWidget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.22"
+      },
+      "OnChangedIndexEvent": {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:OnChangedIndexEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.16"
+      },
+      "OnNextEvent": {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:OnNextEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.18"
+      },
+      "OnPrevEvent": {
+        "ObjectName": "Function'WBP_MenuESC_tabset_C:OnPrevEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.19"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_MenuESC_tabset_C'Default__WBP_MenuESC_tabset_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.38"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_MenuESC_tabset_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_tabset_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_tabset.0"
+      }
+    }
+  }
+]

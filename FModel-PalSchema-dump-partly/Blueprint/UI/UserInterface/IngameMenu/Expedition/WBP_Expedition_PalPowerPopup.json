@@ -1,0 +1,779 @@
+[
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Power",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "EXPEDITION_PALPOWER"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "CAA9F5B0430C357E490DE7A4397FA858",
+        "SourceString": "戦力",
+        "LocalizedString": "戦力"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_01.0"
+        },
+        "OutlineSettings": {
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.0,
+            "Hex": "000000"
+          }
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 11
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.9"
+      },
+      "RenderOpacity": 0.6
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_PowerValue",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "81D5976D47F1BE04A3D03FBB9FFAA3CE",
+        "SourceString": "99999",
+        "LocalizedString": "99999"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_01.0"
+        },
+        "OutlineSettings": {
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.0,
+            "Hex": "000000"
+          }
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.7"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_36",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.CanvasPanel_36.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.3"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.CanvasPanel_36.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_36",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -32.0,
+          "Right": 294.0,
+          "Bottom": 36.0
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Expedition_PalPowerPopup_C:WidgetTree.CanvasPanel_36'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Expedition_PalPowerPopup_C:WidgetTree.Image_Line'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_36",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 256.0,
+          "Bottom": 36.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Expedition_PalPowerPopup_C:WidgetTree.CanvasPanel_36'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.2"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_Expedition_PalPowerPopup_C:WidgetTree.Overlay_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.17"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "SetPower",
+    "Outer": "WBP_Expedition_PalPowerPopup_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Power",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.11"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.8"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.9"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.7"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.10"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.Overlay_10.OverlaySlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.21"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 12.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Left",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Expedition_PalPowerPopup_C:WidgetTree.HorizontalBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.6"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Expedition_PalPowerPopup_C:WidgetTree.Text_PowerValue'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.1"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Expedition_PalPowerPopup_C:WidgetTree.HorizontalBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.6"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_Expedition_PalPowerPopup_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.22"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 2.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Expedition_PalPowerPopup_C:WidgetTree.HorizontalBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.6"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Expedition_PalPowerPopup_C:WidgetTree.Text_Power'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.0"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HorizontalBox_1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Expedition_PalPowerPopup_C:WidgetTree.HorizontalBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.6"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_Expedition_PalPowerPopup_C:WidgetTree.Spacer_79'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.25"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "HorizontalBox_1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Expedition_PalPowerPopup_C:WidgetTree.HorizontalBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.6"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_Expedition_PalPowerPopup_C:WidgetTree.Spacer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.24"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Icon_PalPower",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_icon_Expedition_StageInfo_Power'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_icon_Expedition_StageInfo_Power.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.783538,
+        "G": 0.964686,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "E5FBFF"
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.23"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_34",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.003922,
+        "B": 0.01,
+        "A": 0.7,
+        "Hex": "B3000C19"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.Overlay_10.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.19"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_BaseGrd",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 128.0,
+          "Y": 2.0
+        },
+        "Margin": {
+          "Left": 0.1,
+          "Top": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "Material'M_UI_BaseGrdBoth'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Ingame/M_UI_BaseGrdBoth.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.456411,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "00B4FF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.Overlay_10.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.18"
+      },
+      "RenderTransformPivot": {
+        "X": 0.0,
+        "Y": 0.5
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_BaseGrd_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 128.0,
+          "Y": 32.0
+        },
+        "Margin": {
+          "Left": 0.1,
+          "Top": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "Material'M_UI_BaseGrd_Vertical'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Ingame/M_UI_BaseGrd_Vertical.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.456411,
+        "B": 1.0,
+        "A": 0.25,
+        "Hex": "3F00B4FF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.Overlay_10.OverlaySlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.20"
+      },
+      "RenderTransformPivot": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Line",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 190.0,
+          "Y": 32.0
+        },
+        "Margin": {
+          "Left": 0.15,
+          "Right": 0.1
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.215861,
+            "G": 0.930111,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "80F7FF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_enemy_base_line'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/InGame/T_prt_enemy_base_line.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.CanvasPanel_36.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.3"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": -1.0
+        }
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_10",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.Overlay_10.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.19"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.Overlay_10.OverlaySlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.20"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.Overlay_10.OverlaySlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.21"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.Overlay_10.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.18"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.CanvasPanel_36.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.4"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_10",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Expedition_PalPowerPopup_C:WidgetTree.Overlay_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.17"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Expedition_PalPowerPopup_C:WidgetTree.Image_BaseGrd'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.14"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_10",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Expedition_PalPowerPopup_C:WidgetTree.Overlay_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.17"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Expedition_PalPowerPopup_C:WidgetTree.Image_34'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.13"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_2",
+    "Outer": "Overlay_10",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Expedition_PalPowerPopup_C:WidgetTree.Overlay_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.17"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Expedition_PalPowerPopup_C:WidgetTree.Image_BaseGrd_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.15"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_4",
+    "Outer": "Overlay_10",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Expedition_PalPowerPopup_C:WidgetTree.Overlay_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.17"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_Expedition_PalPowerPopup_C:WidgetTree.HorizontalBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.6"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidthOverride": 26.0,
+      "HeightOverride": 26.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.23"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.8"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_Expedition_PalPowerPopup_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.22"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Expedition_PalPowerPopup_C:WidgetTree.Icon_PalPower'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.12"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.11"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_79",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Expedition_PalPowerPopup_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.10"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Expedition_PalPowerPopup_C",
+    "Name": "Default__WBP_Expedition_PalPowerPopup_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.WBP_Expedition_PalPowerPopup_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_Expedition_PalPowerPopup_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_Expedition_PalPowerPopup_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.28"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_Expedition_PalPowerPopup_C:SetPower'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Icon_PalPower",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_34",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Line",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_PowerValue",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetPower": {
+        "ObjectName": "Function'WBP_Expedition_PalPowerPopup_C:SetPower'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.5"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_Expedition_PalPowerPopup_C'Default__WBP_Expedition_PalPowerPopup_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.26"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_Expedition_PalPowerPopup_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_Expedition_PalPowerPopup_C:WidgetTree.CanvasPanel_36'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Expedition/WBP_Expedition_PalPowerPopup.2"
+      }
+    }
+  }
+]

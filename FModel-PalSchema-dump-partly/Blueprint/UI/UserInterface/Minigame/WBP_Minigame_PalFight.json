@@ -1,0 +1,619 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Minigame_PalFight_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.1"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Minigame_PalFight_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.2"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Minigame_PalFight_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 100.0,
+          "Right": 0.0,
+          "Bottom": 200.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Minigame_PalFight_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.0"
+      },
+      "Content": {
+        "ObjectName": "WBP_BossBattle_Timer_C'WBP_Minigame_PalFight_C:WidgetTree.WBP_BossBattle_Timer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Minigame_PalFight_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.0"
+      },
+      "Content": {
+        "ObjectName": "WBP_BossBattle_BossEliminated_C'WBP_Minigame_PalFight_C:WidgetTree.WBP_BossBattle_BossEliminated'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Minigame_PalFight_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.0"
+      },
+      "Content": {
+        "ObjectName": "WBP_BossBattle_TimeOut_C'WBP_Minigame_PalFight_C:WidgetTree.WBP_BossBattle_TimeOut'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.15"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_Minigame_PalFight",
+    "Outer": "WBP_Minigame_PalFight_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'WidgetAnimationResult__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Event_RemainSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Event_RemainingCount",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Event_TotalCount",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreatePlayAnimationProxyObject_Result",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreatePlayAnimationProxyObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimationPlayCallbackProxy'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreatePlayAnimationProxyObject_Result_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimationPlayCallbackProxy'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_IsDesignTime",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'WidgetAnimationResult__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "Finished_C8A2103948E7C4A07681518D0E98D6CD",
+    "Outer": "WBP_Minigame_PalFight_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Finished_E352E4464B5EEEF73452E0A7FDC81C7D",
+    "Outer": "WBP_Minigame_PalFight_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAllEnemiesEliminated",
+    "Outer": "WBP_Minigame_PalFight_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalLockGimmickPalFightWidget:OnAllEnemiesEliminated'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBattleReset",
+    "Outer": "WBP_Minigame_PalFight_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBattleStarted",
+    "Outer": "WBP_Minigame_PalFight_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEnemyCountUpdated",
+    "Outer": "WBP_Minigame_PalFight_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalLockGimmickPalFightWidget:OnEnemyCountUpdated'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "RemainingCount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "TotalCount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTimeOut",
+    "Outer": "WBP_Minigame_PalFight_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalLockGimmickPalFightWidget:OnTimeOut'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTimerUpdated",
+    "Outer": "WBP_Minigame_PalFight_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalLockGimmickPalFightWidget:OnTimerUpdated'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "RemainSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PreConstruct",
+    "Outer": "WBP_Minigame_PalFight_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:PreConstruct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsDesignTime",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WBP_BossBattle_BossEliminated_C",
+    "Name": "WBP_BossBattle_BossEliminated",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_BossEliminated.WBP_BossBattle_BossEliminated_C'",
+    "Template": {
+      "ObjectName": "WBP_BossBattle_BossEliminated_C'Default__WBP_BossBattle_BossEliminated_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_BossEliminated.225"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Minigame_PalFight_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.2"
+      },
+      "Visibility": "ESlateVisibility::Visible"
+    }
+  },
+  {
+    "Type": "WBP_BossBattle_TimeOut_C",
+    "Name": "WBP_BossBattle_TimeOut",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_TimeOut.WBP_BossBattle_TimeOut_C'",
+    "Template": {
+      "ObjectName": "WBP_BossBattle_TimeOut_C'Default__WBP_BossBattle_TimeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_TimeOut.111"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Minigame_PalFight_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.3"
+      },
+      "Visibility": "ESlateVisibility::Visible"
+    }
+  },
+  {
+    "Type": "WBP_BossBattle_Timer_C",
+    "Name": "WBP_BossBattle_Timer",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_Timer.WBP_BossBattle_Timer_C'",
+    "Template": {
+      "ObjectName": "WBP_BossBattle_Timer_C'Default__WBP_BossBattle_Timer_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_Timer.85"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Minigame_PalFight_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.1"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "WBP_Minigame_PalFight_C",
+    "Name": "Default__WBP_Minigame_PalFight_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.WBP_Minigame_PalFight_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_Minigame_PalFight_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_Minigame_PalFight_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.19"
+      },
+      "bClassRequiresNativeTick": true,
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:ExecuteUbergraph_WBP_Minigame_PalFight'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalLockGimmickPalFightWidget'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:Finished_E352E4464B5EEEF73452E0A7FDC81C7D'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.6"
+      },
+      {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:Finished_C8A2103948E7C4A07681518D0E98D6CD'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.5"
+      },
+      {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:OnTimerUpdated'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.12"
+      },
+      {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:OnEnemyCountUpdated'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.10"
+      },
+      {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:OnAllEnemiesEliminated'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.7"
+      },
+      {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:OnTimeOut'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.11"
+      },
+      {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:OnBattleReset'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.8"
+      },
+      {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:OnBattleStarted'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.9"
+      },
+      {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:PreConstruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.13"
+      },
+      {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:ExecuteUbergraph_WBP_Minigame_PalFight'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_BossBattle_BossEliminated",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_BossBattle_BossEliminated_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_BossEliminated.227"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_BossBattle_TimeOut",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_BossBattle_TimeOut_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_TimeOut.113"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_BossBattle_Timer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_BossBattle_Timer_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BossBattle/WBP_BossBattle_Timer.89"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_Minigame_PalFight": {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:ExecuteUbergraph_WBP_Minigame_PalFight'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.4"
+      },
+      "PreConstruct": {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:PreConstruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.13"
+      },
+      "OnBattleStarted": {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:OnBattleStarted'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.9"
+      },
+      "OnBattleReset": {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:OnBattleReset'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.8"
+      },
+      "OnTimeOut": {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:OnTimeOut'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.11"
+      },
+      "OnAllEnemiesEliminated": {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:OnAllEnemiesEliminated'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.7"
+      },
+      "OnEnemyCountUpdated": {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:OnEnemyCountUpdated'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.10"
+      },
+      "OnTimerUpdated": {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:OnTimerUpdated'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.12"
+      },
+      "Finished_C8A2103948E7C4A07681518D0E98D6CD": {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:Finished_C8A2103948E7C4A07681518D0E98D6CD'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.5"
+      },
+      "Finished_E352E4464B5EEEF73452E0A7FDC81C7D": {
+        "ObjectName": "Function'WBP_Minigame_PalFight_C:Finished_E352E4464B5EEEF73452E0A7FDC81C7D'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.6"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_Minigame_PalFight_C'Default__WBP_Minigame_PalFight_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.17"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_Minigame_PalFight_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_Minigame_PalFight_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_PalFight.0"
+      }
+    }
+  }
+]

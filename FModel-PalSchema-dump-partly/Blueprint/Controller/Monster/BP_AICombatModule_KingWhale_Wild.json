@@ -1,0 +1,112 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AICombatModule_KingWhale_Wild_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalAICombatModule_KingWhale_Wild'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AICombatModule_KingWhale_Wild_C'Default__BP_AICombatModule_KingWhale_Wild_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/Monster/BP_AICombatModule_KingWhale_Wild.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AICombatModule_KingWhale_Wild_C",
+    "Name": "Default__BP_AICombatModule_KingWhale_Wild_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/Monster/BP_AICombatModule_KingWhale_Wild.BP_AICombatModule_KingWhale_Wild_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BattleEndDistance": 200000.0,
+      "PhaseHPRate": [
+        {
+          "Key": "EPalKingWhaleBattlePhase::Phase2",
+          "Value": 0.5
+        },
+        {
+          "Key": "EPalKingWhaleBattlePhase::Phase1",
+          "Value": 0.8
+        }
+      ],
+      "PhaseWazaList": [
+        {
+          "Key": "EPalKingWhaleBattlePhase::Phase3",
+          "Value": {
+            "WazaList": [
+              "EPalWazaID::Unique_KingWhale_WaveTackle",
+              "EPalWazaID::Unique_KingWhale_HomingBubble",
+              "EPalWazaID::Unique_KingWhale_AquaBlade",
+              "EPalWazaID::CreepingBubble",
+              "EPalWazaID::Unique_KingWhale_Breaching_P3",
+              "EPalWazaID::Unique_KingWhale_Maelstrom",
+              "EPalWazaID::Unique_KingWhale_AquaTornado",
+              "EPalWazaID::HolyBlast"
+            ]
+          }
+        },
+        {
+          "Key": "EPalKingWhaleBattlePhase::Phase2",
+          "Value": {
+            "WazaList": [
+              "EPalWazaID::Unique_KingWhale_WaveTackle",
+              "EPalWazaID::Unique_KingWhale_HomingBubble",
+              "EPalWazaID::Unique_KingWhale_AquaBlade",
+              "EPalWazaID::CreepingBubble",
+              "EPalWazaID::Unique_KingWhale_Breaching",
+              "EPalWazaID::Unique_KingWhale_Maelstrom"
+            ]
+          }
+        },
+        {
+          "Key": "EPalKingWhaleBattlePhase::Phase1",
+          "Value": {
+            "WazaList": [
+              "EPalWazaID::Unique_KingWhale_WaveTackle",
+              "EPalWazaID::Unique_KingWhale_HomingBubble",
+              "EPalWazaID::Unique_KingWhale_AquaBlade",
+              "EPalWazaID::CreepingBubble"
+            ]
+          }
+        }
+      ],
+      "InterruptWazaMap": [
+        {
+          "Key": "0,8",
+          "Value": "EPalWazaID::Unique_KingWhale_Breaching"
+        },
+        {
+          "Key": "0,5",
+          "Value": "EPalWazaID::Unique_KingWhale_AquaTornado"
+        },
+        {
+          "Key": "0,3",
+          "Value": "EPalWazaID::Unique_KingWhale_TidalBore"
+        },
+        {
+          "Key": "0,1",
+          "Value": "EPalWazaID::Unique_KingWhale_SuperTidalBore"
+        }
+      ],
+      "Phase1_AggroRange": 9000.0,
+      "ReturnWazaRange": 20000.0,
+      "ReturnWazaClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_UniqueAction_KingWhale_Breaching_PositionAdjust_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_Breaching_PositionAdjust.0"
+      },
+      "CaptureReplaceSourceCharacterID": "BOSS_KingWhale",
+      "CaptureReplaceTargetCharacterID": "BOSS_KingWhale_otomo"
+    }
+  }
+]

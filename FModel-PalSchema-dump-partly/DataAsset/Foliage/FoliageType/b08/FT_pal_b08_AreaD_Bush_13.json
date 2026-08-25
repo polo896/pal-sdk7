@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b08_AreaD_Bush_13",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'CoralGroups_Coral5_G2_SM'",
+        "ObjectPath": "Pal/Content/Others/nakano_test/model_check/Corals/Meshes/Grouped/CoralGroups_Coral5_G2_SM.2"
+      },
+      "UpdateGuid": "7347D069-40EA9820-EB6365BF-8DD75BAF",
+      "Density": 80.0,
+      "ScaleX": {
+        "Min": 0.7,
+        "Max": 1.6
+      },
+      "AverageNormal": true,
+      "GroundSlopeAngle": {
+        "Max": 90.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 7.6293945E-06,
+          "Y": 0.0,
+          "Z": 17.900072
+        },
+        "BoxExtent": {
+          "X": 64.049866,
+          "Y": 73.381645,
+          "Z": 19.742056
+        },
+        "SphereRadius": 75.6064873286327
+      },
+      "LowBoundOriginRadius": {
+        "X": -0.11146736,
+        "Y": 16.217709,
+        "Z": 56.862595
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

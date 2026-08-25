@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Move_GrassMinotaur",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 3.0,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GrassMinotaur_Idle'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GrassMinotaur/AS_GrassMinotaur_Idle.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GrassMinotaur_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GrassMinotaur/AS_GrassMinotaur_Run.0"
+          },
+          "SampleValue": {
+            "X": 700.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GrassMinotaur_Walk'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GrassMinotaur/AS_GrassMinotaur_Walk.0"
+          },
+          "SampleValue": {
+            "X": 150.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GrassMinotaur_Walk'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GrassMinotaur/AS_GrassMinotaur_Walk.0"
+          },
+          "SampleValue": {
+            "X": 50.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.333
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GrassMinotaur_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GrassMinotaur/AS_GrassMinotaur_Run.0"
+          },
+          "SampleValue": {
+            "X": 1050.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.5
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 3,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.04761905
+          },
+          {
+            "SampleIndices": 3,
+            "SampleIndices[1]": 2,
+            "Vertices": 0.04761905,
+            "Vertices[1]": 0.14285715
+          },
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.14285715,
+            "Vertices[1]": 0.6666667
+          },
+          {
+            "SampleIndices": 1,
+            "SampleIndices[1]": 4,
+            "Vertices": 0.6666667,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 1050.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_GrassMinotaur_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/GrassMinotaur/SK_GrassMinotaur_Skeleton.4"
+      }
+    },
+    "SkeletonGuid": "FF0D1F86-470A78E1-092273A2-A984AE53"
+  }
+]

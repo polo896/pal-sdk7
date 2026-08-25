@@ -1,0 +1,895 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_Reticle",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Canvas_Reticle.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.4"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Canvas_Reticle.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.3"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Horizonta_Reticle.HorizontalBoxSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_Reticle_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Canvas_Reticle_1.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Canvas_Reticle_1.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.5"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Horizonta_Reticle.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_36",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.CanvasPanel_36.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.CanvasPanel_36.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_Reticle",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 64.0,
+          "Bottom": 64.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Canvas_Reticle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Image_Reticle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Canvas_Reticle",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 64.0,
+          "Bottom": 64.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Canvas_Reticle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Image_Outline'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_Reticle_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 64.0,
+          "Bottom": 64.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Canvas_Reticle_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.1"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Image_Reticle_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Canvas_Reticle_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 64.0,
+          "Bottom": 64.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Canvas_Reticle_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.1"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Image_Outline_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_36",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.CanvasPanel_36'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.2"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Horizontal_BG'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_36",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 105.4253
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.CanvasPanel_36'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.2"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Horizonta_Reticle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.12"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview",
+    "Outer": "WBP_OptionSettings_ListContent_ReticlePreview_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_CustomEvent_ColorIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "K2Node_CustomEvent_OutlineOpacity",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetRenderOpacity_InOpacity_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetOutline",
+    "Outer": "WBP_OptionSettings_ListContent_ReticlePreview_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "OutlineOpacity",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetReticleColor",
+    "Outer": "WBP_OptionSettings_ListContent_ReticlePreview_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "ColorIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "Horizonta_Reticle",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Horizonta_Reticle.HorizontalBoxSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.15"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Horizonta_Reticle.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.14"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.CanvasPanel_36.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.8"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "Horizontal_BG",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Horizontal_BG.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.16"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Horizontal_BG.HorizontalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.17"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.CanvasPanel_36.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.7"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "Horizonta_Reticle",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Horizonta_Reticle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.12"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Canvas_Reticle_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.1"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "Horizonta_Reticle",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Horizonta_Reticle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.12"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Canvas_Reticle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.0"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "Horizontal_BG",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Horizontal_BG'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.13"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.ScaleBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.24"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "Horizontal_BG",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Horizontal_BG'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.13"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.ScaleBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.25"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_BG_Day",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 596.0,
+          "Y": 167.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_image_option_reticleBG_0'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_image_option_reticleBG_0.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.26"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_BG_Night",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 596.0,
+          "Y": 167.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_image_option_reticleBG_1'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_image_option_reticleBG_1.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.ScaleBox_1.ScaleBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.27"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Outline",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_aim_2'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Aim/T_aim_2.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Canvas_Reticle.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.4"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Outline_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_aim_2'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Aim/T_aim_2.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Canvas_Reticle_1.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.6"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Reticle",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Option_ReticleColor_0'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Ingame/MI_UI_Option_ReticleColor_0.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Canvas_Reticle.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.3"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Reticle_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Option_ReticleColor_0'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Ingame/MI_UI_Option_ReticleColor_0.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Canvas_Reticle_1.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.5"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScaleBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Stretch": "EStretch::ScaleToFitX",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.26"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Horizontal_BG.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.16"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScaleBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Stretch": "EStretch::ScaleToFitX",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.ScaleBox_1.ScaleBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.27"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Horizontal_BG.HorizontalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.17"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_0",
+    "Class": "UScriptClass'ScaleBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.ScaleBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.24"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Image_BG_Day'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.18"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_1",
+    "Class": "UScriptClass'ScaleBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.ScaleBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.25"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.Image_BG_Night'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.19"
+      }
+    }
+  },
+  {
+    "Type": "WBP_OptionSettings_ListContent_ReticlePreview_C",
+    "Name": "Default__WBP_OptionSettings_ListContent_ReticlePreview_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.WBP_OptionSettings_ListContent_ReticlePreview_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_OptionSettings_ListContent_ReticlePreview_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.30"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_OptionSettings_ListContent_ReticlePreview_C:ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_OptionSettings_ListContent_ReticlePreview_C:SetReticleColor'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.11"
+      },
+      {
+        "ObjectName": "Function'WBP_OptionSettings_ListContent_ReticlePreview_C:SetOutline'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.10"
+      },
+      {
+        "ObjectName": "Function'WBP_OptionSettings_ListContent_ReticlePreview_C:ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.9"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Outline",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Outline_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Reticle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Reticle_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview": {
+        "ObjectName": "Function'WBP_OptionSettings_ListContent_ReticlePreview_C:ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.9"
+      },
+      "SetOutline": {
+        "ObjectName": "Function'WBP_OptionSettings_ListContent_ReticlePreview_C:SetOutline'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.10"
+      },
+      "SetReticleColor": {
+        "ObjectName": "Function'WBP_OptionSettings_ListContent_ReticlePreview_C:SetReticleColor'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.11"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_OptionSettings_ListContent_ReticlePreview_C'Default__WBP_OptionSettings_ListContent_ReticlePreview_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.28"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_OptionSettings_ListContent_ReticlePreview_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_OptionSettings_ListContent_ReticlePreview_C:WidgetTree.CanvasPanel_36'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Option/WBP_OptionSettings_ListContent_ReticlePreview.2"
+      }
+    }
+  }
+]

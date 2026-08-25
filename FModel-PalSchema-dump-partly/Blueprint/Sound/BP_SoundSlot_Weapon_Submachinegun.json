@@ -1,0 +1,81 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SoundSlot_Weapon_Submachinegun_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalSoundSlot'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SoundSlot_Weapon_Submachinegun_C'Default__BP_SoundSlot_Weapon_Submachinegun_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_Submachinegun.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SoundSlot_Weapon_Submachinegun_C",
+    "Name": "Default__BP_SoundSlot_Weapon_Submachinegun_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_Submachinegun.BP_SoundSlot_Weapon_Submachinegun_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SoundMap": [
+        {
+          "Key": {
+            "Key": "Weapon_Aim_Start"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_Submachinegun_AimStart'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/Submachinegun/AKE_Submachinegun_AimStart.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Aim_End"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_Submachinegun_AimEnd'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/Submachinegun/AKE_Submachinegun_AimEnd.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Fire"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_Submachinegun_ShotLoop'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/Submachinegun/AKE_Submachinegun_ShotLoop.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Fire_End"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_Submachinegun_ShotEnd'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/Submachinegun/AKE_Submachinegun_ShotEnd.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Equip"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_Submachinegun_Equip'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/Submachinegun/AKE_Submachinegun_Equip.0"
+          }
+        }
+      ]
+    }
+  }
+]

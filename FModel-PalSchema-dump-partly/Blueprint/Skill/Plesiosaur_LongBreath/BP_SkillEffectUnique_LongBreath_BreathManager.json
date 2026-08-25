@@ -1,0 +1,522 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SkillEffectUnique_LongBreath_BreathManager_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SkillEffectUnique_LongBreath_BreathManager_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.13"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_SkillEffectUnique_LongBreath_BreathManager_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.8"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_SkillEffectUnique_LongBreath_BreathManager_C:ExecuteUbergraph_BP_SkillEffectUnique_LongBreath_BreathManager'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_SkillEffectUnique_LongBreath_BreathManager_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.5"
+      },
+      {
+        "ObjectName": "Function'BP_SkillEffectUnique_LongBreath_BreathManager_C:EndBreath'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.3"
+      },
+      {
+        "ObjectName": "Function'BP_SkillEffectUnique_LongBreath_BreathManager_C:SetDirectRotation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.6"
+      },
+      {
+        "ObjectName": "Function'BP_SkillEffectUnique_LongBreath_BreathManager_C:SpawnBreathCollision'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.7"
+      },
+      {
+        "ObjectName": "Function'BP_SkillEffectUnique_LongBreath_BreathManager_C:EnableLongBreath'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.2"
+      },
+      {
+        "ObjectName": "Function'BP_SkillEffectUnique_LongBreath_BreathManager_C:ExecuteUbergraph_BP_SkillEffectUnique_LongBreath_BreathManager'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "BreathTimer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CollisionLife_Short",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CollisionLife_Long",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "ScatterDegree_Short",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Long",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "ScatterDegree_Long",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SpeedDecrease_Short",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SpeedDecrease_Long",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_SkillEffectUnique_LongBreath_BreathManager": {
+        "ObjectName": "Function'BP_SkillEffectUnique_LongBreath_BreathManager_C:ExecuteUbergraph_BP_SkillEffectUnique_LongBreath_BreathManager'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.4"
+      },
+      "EnableLongBreath": {
+        "ObjectName": "Function'BP_SkillEffectUnique_LongBreath_BreathManager_C:EnableLongBreath'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.2"
+      },
+      "SpawnBreathCollision": {
+        "ObjectName": "Function'BP_SkillEffectUnique_LongBreath_BreathManager_C:SpawnBreathCollision'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.7"
+      },
+      "SetDirectRotation": {
+        "ObjectName": "Function'BP_SkillEffectUnique_LongBreath_BreathManager_C:SetDirectRotation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.6"
+      },
+      "EndBreath": {
+        "ObjectName": "Function'BP_SkillEffectUnique_LongBreath_BreathManager_C:EndBreath'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.3"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_SkillEffectUnique_LongBreath_BreathManager_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SkillEffectUnique_LongBreath_BreathManager_C'Default__BP_SkillEffectUnique_LongBreath_BreathManager_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SkillEffectUnique_LongBreath_BreathManager_C",
+    "Name": "Default__BP_SkillEffectUnique_LongBreath_BreathManager_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.BP_SkillEffectUnique_LongBreath_BreathManager_C'",
+    "Template": {
+      "ObjectName": "BP_SkillEffectBase_C'Default__BP_SkillEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "BreathTimer": {
+        "Handle": 0
+      },
+      "CollisionLife_Short": 0.3,
+      "CollisionLife_Long": 1.6,
+      "ScatterDegree_Short": 12.0,
+      "ScatterDegree_Long": 3.0,
+      "SpeedDecrease_Short": 2.0,
+      "SpeedDecrease_Long": 1.0,
+      "EnableDisplayHitNum": true,
+      "AttackFilter": {
+        "ObjectName": "PalAttackFilter'Default__BP_SkillEffectUnique_LongBreath_BreathManager_C:PalAttackFilter_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.9"
+      },
+      "HitFilterGround": {
+        "ObjectName": "PalHitFilter'Default__BP_SkillEffectUnique_LongBreath_BreathManager_C:PalHitFilter_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.10"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "EnableLongBreath",
+    "Outer": "BP_SkillEffectUnique_LongBreath_BreathManager_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "EndBreath",
+    "Outer": "BP_SkillEffectUnique_LongBreath_BreathManager_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_SkillEffectUnique_LongBreath_BreathManager",
+    "Outer": "BP_SkillEffectUnique_LongBreath_BreathManager_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwnerCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_Direct",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_SetActorRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetActorForwardVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FinishSpawningActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectUnique_LongBreath_BreathCollision_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathCollision.0"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RandomUnitVectorInConeInDegrees_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_RandomUnitVectorInConeInDegrees_ConeHalfAngleInDegrees_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_B_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_A_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_SkillEffectUnique_LongBreath_BreathManager_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_SkillEffectBase_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.27"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_SkillEffectBase_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.27"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetDirectRotation",
+    "Outer": "BP_SkillEffectUnique_LongBreath_BreathManager_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Direct",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SpawnBreathCollision",
+    "Outer": "BP_SkillEffectUnique_LongBreath_BreathManager_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_SkillEffectUnique_LongBreath_BreathManager_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalAttackFilter",
+    "Name": "PalAttackFilter_0",
+    "Outer": "Default__BP_SkillEffectUnique_LongBreath_BreathManager_C",
+    "Class": "UScriptClass'PalAttackFilter'",
+    "Template": {
+      "ObjectName": "PalAttackFilter'Default__BP_SkillEffectBase_C:PalAttackFilter_0'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.34"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Waza": "EPalWazaID::Unique_Plesiosaur_LongBreath",
+      "WazaPowerRate": 0.05,
+      "OverrideHitEffect": {
+        "AssetPathName": "/Game/Pal/Effect/Skill/Plesiosaur/LongBreath/NS_UniqueSkill_Plesiosaur_LongBreath_Hit.NS_UniqueSkill_Plesiosaur_LongBreath_Hit",
+        "SubPathString": ""
+      },
+      "MaxHitNum": 18,
+      "HitInterval": 0.1
+    }
+  },
+  {
+    "Type": "PalHitFilter",
+    "Name": "PalHitFilter_1",
+    "Outer": "Default__BP_SkillEffectUnique_LongBreath_BreathManager_C",
+    "Class": "UScriptClass'PalHitFilter'",
+    "Template": {
+      "ObjectName": "PalHitFilter'Default__BP_SkillEffectBase_C:PalHitFilter_1'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.35"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SkillEffectUnique_LongBreath_BreathManager_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SkillEffectUnique_LongBreath_BreathManager_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.11"
+      },
+      "VariableGuid": "CCE1FC14-4DB65794-B10D14AE-54B32534",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_SkillEffectUnique_LongBreath_BreathManager_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SkillEffectUnique_LongBreath_BreathManager_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Plesiosaur_LongBreath/BP_SkillEffectUnique_LongBreath_BreathManager.12"
+      }
+    }
+  }
+]

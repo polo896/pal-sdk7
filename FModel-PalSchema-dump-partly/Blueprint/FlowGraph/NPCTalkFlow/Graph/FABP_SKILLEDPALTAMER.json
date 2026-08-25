@@ -1,0 +1,197 @@
+[
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_SKILLEDPALTAMER",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "EC5B8A00-47FDEF91-B5E0A1B9-84FE2F6C",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "E2C1C6B7-4B61A6B5-3246798D-B3BE4592",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_GetItem_C",
+    "Name": "FNBP_GetItem_C_0",
+    "Outer": "FABP_SKILLEDPALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetItem.FNBP_GetItem_C'",
+    "Template": {
+      "ObjectName": "FNBP_GetItem_C'Default__FNBP_GetItem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetItem.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LotteryDataTable": {
+        "ObjectName": "DataTable'DT_GiftPalCrystal'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/NPCTalk/FunctionArgument/DT_GiftPalCrystal.0"
+      },
+      "NetworkInvokeName": "GetItem",
+      "GraphNode": null,
+      "NodeGuid": "BBCAFA28-40DF24C8-21A7A2B3-712B7135"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_SKILLEDPALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "SKILLED_PALTAMIER_1_1",
+        "SKILLED_PALTAMIER_1_2",
+        "SKILLED_PALTAMIER_1_3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "8B0369C5-43CFD7BC-8D68CDB6-122F256D",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "BBCAFA28-40DF24C8-21A7A2B3-712B7135",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_SKILLEDPALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "SKILLED_PALTAMIER_2_1"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "A70775AC-4CFF5216-EC9447BF-CE5B931F"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkCountBranch_C",
+    "Name": "FNBP_NPCTalkCountBranch_C_0",
+    "Outer": "FABP_SKILLEDPALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkCountBranch.FNBP_NPCTalkCountBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkCountBranch_C'Default__FNBP_NPCTalkCountBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkCountBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "E2C1C6B7-4B61A6B5-3246798D-B3BE4592",
+      "OutputPins": [
+        {
+          "PinName": "Loop",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "1",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "2",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "Loop",
+          "Value": {
+            "NodeGuid": "A70775AC-4CFF5216-EC9447BF-CE5B931F",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "1",
+          "Value": {
+            "NodeGuid": "8B0369C5-43CFD7BC-8D68CDB6-122F256D",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "2",
+          "Value": {
+            "NodeGuid": "A70775AC-4CFF5216-EC9447BF-CE5B931F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_SKILLEDPALTAMER",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 2,
+      "AssetGuid": "11BA233D-4DF76C83-A529DF83-EAFDF23A",
+      "Nodes": [
+        {
+          "Key": "EC5B8A00-47FDEF91-B5E0A1B9-84FE2F6C",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_SKILLEDPALTAMER:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SKILLEDPALTAMER.0"
+          }
+        },
+        {
+          "Key": "8B0369C5-43CFD7BC-8D68CDB6-122F256D",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_SKILLEDPALTAMER:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SKILLEDPALTAMER.2"
+          }
+        },
+        {
+          "Key": "E2C1C6B7-4B61A6B5-3246798D-B3BE4592",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkCountBranch_C'FABP_SKILLEDPALTAMER:FNBP_NPCTalkCountBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SKILLEDPALTAMER.4"
+          }
+        },
+        {
+          "Key": "A70775AC-4CFF5216-EC9447BF-CE5B931F",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_SKILLEDPALTAMER:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SKILLEDPALTAMER.3"
+          }
+        },
+        {
+          "Key": "BBCAFA28-40DF24C8-21A7A2B3-712B7135",
+          "Value": {
+            "ObjectName": "FNBP_GetItem_C'FABP_SKILLEDPALTAMER:FNBP_GetItem_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SKILLEDPALTAMER.1"
+          }
+        }
+      ]
+    }
+  }
+]

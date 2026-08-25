@@ -1,0 +1,165 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Status_Stealth_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Status_Stealth_C:ExecuteUbergraph_BP_Status_Stealth'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_Stealth.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalStatusBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Status_Stealth_C:OnBeginStatus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_Stealth.3"
+      },
+      {
+        "ObjectName": "Function'BP_Status_Stealth_C:OnEndStatus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_Stealth.4"
+      },
+      {
+        "ObjectName": "Function'BP_Status_Stealth_C:ExecuteUbergraph_BP_Status_Stealth'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_Stealth.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Opacity",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "FlagName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Status_Stealth": {
+        "ObjectName": "Function'BP_Status_Stealth_C:ExecuteUbergraph_BP_Status_Stealth'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_Stealth.2"
+      },
+      "OnEndStatus": {
+        "ObjectName": "Function'BP_Status_Stealth_C:OnEndStatus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_Stealth.4"
+      },
+      "OnBeginStatus": {
+        "ObjectName": "Function'BP_Status_Stealth_C:OnBeginStatus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_Stealth.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Status_Stealth_C'Default__BP_Status_Stealth_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_Stealth.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Status_Stealth_C",
+    "Name": "Default__BP_Status_Stealth_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Status/BP_Status_Stealth.BP_Status_Stealth_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Opacity": 0.5,
+      "FlagName": "StatusStealth"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Status_Stealth",
+    "Outer": "BP_Status_Stealth_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetOpacityFlagForCharacter_opacityIntensity_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBeginStatus",
+    "Outer": "BP_Status_Stealth_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStatusBase:OnBeginStatus'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEndStatus",
+    "Outer": "BP_Status_Stealth_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStatusBase:OnEndStatus'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  }
+]

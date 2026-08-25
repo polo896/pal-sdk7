@@ -1,0 +1,538 @@
+[
+  {
+    "Type": "CircularThrobber",
+    "Name": "CircularThrobber",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CircularThrobber'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_EquipSkin_SkinIcon_C:WidgetTree.Overlay_29.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.12"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_EquipSkin_SkinIcon",
+    "Outer": "WBP_EquipSkin_SkinIcon_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'KismetSystemLibrary:OnAssetLoaded__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_Loaded",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsTexture_2D",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Texture2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "K2Node_CustomEvent_softTexture",
+        "Flags": "RF_Public",
+        "ElementSize": 56,
+        "PropertyClass": {
+          "ObjectName": "Class'Texture2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "LoadIconEvent_Internal",
+    "Outer": "WBP_EquipSkin_SkinIcon_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "softTexture",
+        "Flags": "RF_Public",
+        "ElementSize": 56,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Texture2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnLoaded_F4FCEC97410E591228B5AA8532DA5248",
+    "Outer": "WBP_EquipSkin_SkinIcon_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Loaded",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnLoadedTexture__DelegateSignature",
+    "Outer": "WBP_EquipSkin_SkinIcon_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Texture",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Texture2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetEmpty__DelegateSignature",
+    "Outer": "WBP_EquipSkin_SkinIcon_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnStartLoadTexture__DelegateSignature",
+    "Outer": "WBP_EquipSkin_SkinIcon_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetEmpty",
+    "Outer": "WBP_EquipSkin_SkinIcon_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup",
+    "Outer": "WBP_EquipSkin_SkinIcon_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "SkinName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsEquip",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetItemIDManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalItemIDManager'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetStaticItemData_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalStaticItemDataBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_EquipSkin_SkinIcon_C:WidgetTree.Overlay_29.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.11"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_29",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_EquipSkin_SkinIcon_C:WidgetTree.Overlay_29.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.11"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_EquipSkin_SkinIcon_C:WidgetTree.Overlay_29.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.12"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_29",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_EquipSkin_SkinIcon_C:WidgetTree.Overlay_29'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.10"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_EquipSkin_SkinIcon_C:WidgetTree.Image'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.9"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_29",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_EquipSkin_SkinIcon_C:WidgetTree.Overlay_29'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.10"
+      },
+      "Content": {
+        "ObjectName": "CircularThrobber'WBP_EquipSkin_SkinIcon_C:WidgetTree.CircularThrobber'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.0"
+      }
+    }
+  },
+  {
+    "Type": "WBP_EquipSkin_SkinIcon_C",
+    "Name": "Default__WBP_EquipSkin_SkinIcon_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.WBP_EquipSkin_SkinIcon_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_EquipSkin_SkinIcon_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_EquipSkin_SkinIcon_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.15"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:ExecuteUbergraph_WBP_EquipSkin_SkinIcon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.1"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidget'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:SetEmpty'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.7"
+      },
+      {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.8"
+      },
+      {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:OnLoaded_F4FCEC97410E591228B5AA8532DA5248'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.3"
+      },
+      {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:LoadIconEvent_Internal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.2"
+      },
+      {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:ExecuteUbergraph_WBP_EquipSkin_SkinIcon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.1"
+      },
+      {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:OnSetEmpty__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.5"
+      },
+      {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:OnStartLoadTexture__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.6"
+      },
+      {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:OnLoadedTexture__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CircularThrobber",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CircularThrobber'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnLoadedTexture",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:OnLoadedTexture__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.4"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnStartLoadTexture",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:OnStartLoadTexture__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.6"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnSetEmpty",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:OnSetEmpty__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.5"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnLoadedTexture__DelegateSignature": {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:OnLoadedTexture__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.4"
+      },
+      "OnStartLoadTexture__DelegateSignature": {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:OnStartLoadTexture__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.6"
+      },
+      "OnSetEmpty__DelegateSignature": {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:OnSetEmpty__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.5"
+      },
+      "ExecuteUbergraph_WBP_EquipSkin_SkinIcon": {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:ExecuteUbergraph_WBP_EquipSkin_SkinIcon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.1"
+      },
+      "LoadIconEvent_Internal": {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:LoadIconEvent_Internal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.2"
+      },
+      "OnLoaded_F4FCEC97410E591228B5AA8532DA5248": {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:OnLoaded_F4FCEC97410E591228B5AA8532DA5248'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.3"
+      },
+      "Setup": {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.8"
+      },
+      "SetEmpty": {
+        "ObjectName": "Function'WBP_EquipSkin_SkinIcon_C:SetEmpty'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.7"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_EquipSkin_SkinIcon_C'Default__WBP_EquipSkin_SkinIcon_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.13"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_EquipSkin_SkinIcon_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "Overlay'WBP_EquipSkin_SkinIcon_C:WidgetTree.Overlay_29'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/EquipSkin/WBP_EquipSkin_SkinIcon.10"
+      }
+    }
+  }
+]

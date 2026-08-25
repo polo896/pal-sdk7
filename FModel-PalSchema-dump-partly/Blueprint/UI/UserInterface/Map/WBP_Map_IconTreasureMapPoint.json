@@ -1,0 +1,599 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Map_IconTreasureMapPoint_C:WidgetTree.CanvasPanel.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.3"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Map_IconTreasureMapPoint_C:WidgetTree.CanvasPanel.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.2"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Map_IconTreasureMapPoint_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Map_IconTreasureMapPoint_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Map_IconTreasureMapPoint_C:WidgetTree.CanvasPanel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.0"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalCommonButton_C'WBP_Map_IconTreasureMapPoint_C:WidgetTree.WBP_PalCommonButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Map_IconTreasureMapPoint_C:WidgetTree.CanvasPanel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Map_IconTreasureMapPoint_C:WidgetTree.Icon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 64.0,
+          "Bottom": 64.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Map_IconTreasureMapPoint_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.1"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Map_IconTreasureMapPoint_C:WidgetTree.CanvasPanel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.0"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_Map_IconTreasureMapPoint_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WBP_PalCommonButton",
+          "DelegatePropertyName": "OnButtonBaseClicked",
+          "FunctionNameToBind": "BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_PalCommonButton",
+          "DelegatePropertyName": "OnButtonBaseUnhovered",
+          "FunctionNameToBind": "BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_PalCommonButton",
+          "DelegatePropertyName": "OnButtonBaseHovered",
+          "FunctionNameToBind": "BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature",
+    "Outer": "WBP_Map_IconTreasureMapPoint_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature",
+    "Outer": "WBP_Map_IconTreasureMapPoint_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature",
+    "Outer": "WBP_Map_IconTreasureMapPoint_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_Map_IconTreasureMapPoint",
+    "Outer": "WBP_Map_IconTreasureMapPoint_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetInvisibleButton",
+    "Outer": "WBP_Map_IconTreasureMapPoint_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'WBP_WorldMap_IconBase_NoDesign_C:GetInvisibleButton'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorldMap/IconWidgets/WBP_WorldMap_IconBase_NoDesign.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'WBP_WorldMap_IconBase_NoDesign_C:GetInvisibleButton'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorldMap/IconWidgets/WBP_WorldMap_IconBase_NoDesign.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup_Internal",
+    "Outer": "WBP_Map_IconTreasureMapPoint_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'WBP_WorldMap_IconBase_NoDesign_C:Setup_Internal'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorldMap/IconWidgets/WBP_WorldMap_IconBase_NoDesign.19"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'WBP_WorldMap_IconBase_NoDesign_C:Setup_Internal'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorldMap/IconWidgets/WBP_WorldMap_IconBase_NoDesign.19"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "LocationPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalLocationPoint'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetWorldSubsystem_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTreasureMapWorldSubsystem_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalTreasureMapWorldSubsystem.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Location_Point_Treasure_Map_Point",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalLocationPoint_TreasureMapPoint'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetRarity_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Texture2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "Icon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 80.0,
+          "Y": 80.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_icon_compass_TreasureMap_01'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/InGame/T_icon_compass_TreasureMap_01.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Map_IconTreasureMapPoint_C:WidgetTree.CanvasPanel.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.3"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "WBP_Map_IconTreasureMapPoint_C",
+    "Name": "Default__WBP_Map_IconTreasureMapPoint_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.WBP_Map_IconTreasureMapPoint_C'",
+    "Template": {
+      "ObjectName": "WBP_WorldMap_IconBase_NoDesign_C'Default__WBP_WorldMap_IconBase_NoDesign_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorldMap/IconWidgets/WBP_WorldMap_IconBase_NoDesign.22"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "IgnoreMask": true,
+      "LocationType": "EPalLocationType::TreasureMapPoint"
+    }
+  },
+  {
+    "Type": "WBP_PalCommonButton_C",
+    "Name": "WBP_PalCommonButton",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalCommonButton.WBP_PalCommonButton_C'",
+    "Template": {
+      "ObjectName": "WBP_PalCommonButton_C'Default__WBP_PalCommonButton_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalCommonButton.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsFocusable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Map_IconTreasureMapPoint_C:WidgetTree.CanvasPanel.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.2"
+      },
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_Map_IconTreasureMapPoint_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "WidgetBlueprintGeneratedClass'WBP_WorldMap_IconBase_NoDesign_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorldMap/IconWidgets/WBP_WorldMap_IconBase_NoDesign.23"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_Map_IconTreasureMapPoint_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.16"
+      },
+      "bClassRequiresNativeTick": true,
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_Map_IconTreasureMapPoint_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.5"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_Map_IconTreasureMapPoint_C:ExecuteUbergraph_WBP_Map_IconTreasureMapPoint'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "WidgetBlueprintGeneratedClass'WBP_WorldMap_IconBase_NoDesign_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorldMap/IconWidgets/WBP_WorldMap_IconBase_NoDesign.23"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_Map_IconTreasureMapPoint_C:Setup_Internal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.11"
+      },
+      {
+        "ObjectName": "Function'WBP_Map_IconTreasureMapPoint_C:GetInvisibleButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.10"
+      },
+      {
+        "ObjectName": "Function'WBP_Map_IconTreasureMapPoint_C:BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.6"
+      },
+      {
+        "ObjectName": "Function'WBP_Map_IconTreasureMapPoint_C:BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.7"
+      },
+      {
+        "ObjectName": "Function'WBP_Map_IconTreasureMapPoint_C:BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.8"
+      },
+      {
+        "ObjectName": "Function'WBP_Map_IconTreasureMapPoint_C:ExecuteUbergraph_WBP_Map_IconTreasureMapPoint'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.9"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Icon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalCommonButton",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCommonButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalCommonButton.2"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_Map_IconTreasureMapPoint": {
+        "ObjectName": "Function'WBP_Map_IconTreasureMapPoint_C:ExecuteUbergraph_WBP_Map_IconTreasureMapPoint'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.9"
+      },
+      "BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_Map_IconTreasureMapPoint_C:BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.8"
+      },
+      "BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_Map_IconTreasureMapPoint_C:BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.7"
+      },
+      "BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_Map_IconTreasureMapPoint_C:BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.6"
+      },
+      "GetInvisibleButton": {
+        "ObjectName": "Function'WBP_Map_IconTreasureMapPoint_C:GetInvisibleButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.10"
+      },
+      "Setup_Internal": {
+        "ObjectName": "Function'WBP_Map_IconTreasureMapPoint_C:Setup_Internal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.11"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_Map_IconTreasureMapPoint_C'Default__WBP_Map_IconTreasureMapPoint_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.13"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_Map_IconTreasureMapPoint_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_Map_IconTreasureMapPoint_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Map/WBP_Map_IconTreasureMapPoint.1"
+      }
+    }
+  }
+]

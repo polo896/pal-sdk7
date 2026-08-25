@@ -1,0 +1,146 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_PalUIPlayerDebuffNoticeType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "080208C44AE8508617B78285791BE8A4",
+            "SourceString": "Invalid",
+            "LocalizedString": "Invalid"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "13E3485249886663C7A6A599CA2889E9",
+            "SourceString": "HungerPlayer",
+            "LocalizedString": "HungerPlayer"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "8DB2E3434A42955A9A8ED0B226356B70",
+            "SourceString": "Cold",
+            "LocalizedString": "Cold"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "DBB9035C4933AB2FCB8891966AB0A07A",
+            "SourceString": "Hot",
+            "LocalizedString": "Hot"
+          }
+        },
+        {
+          "Key": "NewEnumerator4",
+          "Value": {
+            "Namespace": "",
+            "Key": "D18A58994F3B9DD9F8328FB764E0DE69",
+            "SourceString": "HungerOtomo",
+            "LocalizedString": "HungerOtomo"
+          }
+        },
+        {
+          "Key": "NewEnumerator5",
+          "Value": {
+            "Namespace": "",
+            "Key": "0125FBC542604BC38580DCB5F163A4CA",
+            "SourceString": "BreakWeapon",
+            "LocalizedString": "BreakWeapon"
+          }
+        },
+        {
+          "Key": "NewEnumerator6",
+          "Value": {
+            "Namespace": "",
+            "Key": "1320CF2E419034F0205110801C8CCE51",
+            "SourceString": "BreakAnyArmor",
+            "LocalizedString": "BreakAnyArmor"
+          }
+        },
+        {
+          "Key": "NewEnumerator7",
+          "Value": {
+            "Namespace": "",
+            "Key": "4264A307414A5AF352E3D49F89EFBDB2",
+            "SourceString": "StarvationPlayer",
+            "LocalizedString": "StarvationPlayer"
+          }
+        },
+        {
+          "Key": "NewEnumerator8",
+          "Value": {
+            "Namespace": "",
+            "Key": "5E9673DD44EA5707FE9E9BBE43C3A1EB",
+            "SourceString": "StarvationOtomo",
+            "LocalizedString": "StarvationOtomo"
+          }
+        },
+        {
+          "Key": "NewEnumerator9",
+          "Value": {
+            "Namespace": "",
+            "Key": "CB54521E4B8476B6E737B990DA99CB45",
+            "SourceString": "EmptyMagazine",
+            "LocalizedString": "EmptyMagazine"
+          }
+        },
+        {
+          "Key": "NewEnumerator10",
+          "Value": {
+            "Namespace": "",
+            "Key": "B08827EB49E379E5D89807B42411999C",
+            "SourceString": "WeaponOverheat",
+            "LocalizedString": "WeaponOverheat"
+          }
+        },
+        {
+          "Key": "NewEnumerator11",
+          "Value": {
+            "Namespace": "",
+            "Key": "4F71FE954A681E55CC2971A6DF3BD6FA",
+            "SourceString": "Coldest",
+            "LocalizedString": "Coldest"
+          }
+        },
+        {
+          "Key": "NewEnumerator12",
+          "Value": {
+            "Namespace": "",
+            "Key": "A80944AA4EAD5DCEDEB6B5901F70D2BB",
+            "SourceString": "Hottest ",
+            "LocalizedString": "Hottest "
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_PalUIPlayerDebuffNoticeType::NewEnumerator0": 0,
+      "E_PalUIPlayerDebuffNoticeType::NewEnumerator1": 1,
+      "E_PalUIPlayerDebuffNoticeType::NewEnumerator4": 2,
+      "E_PalUIPlayerDebuffNoticeType::NewEnumerator2": 3,
+      "E_PalUIPlayerDebuffNoticeType::NewEnumerator3": 4,
+      "E_PalUIPlayerDebuffNoticeType::NewEnumerator5": 5,
+      "E_PalUIPlayerDebuffNoticeType::NewEnumerator6": 6,
+      "E_PalUIPlayerDebuffNoticeType::NewEnumerator7": 7,
+      "E_PalUIPlayerDebuffNoticeType::NewEnumerator8": 8,
+      "E_PalUIPlayerDebuffNoticeType::NewEnumerator9": 9,
+      "E_PalUIPlayerDebuffNoticeType::NewEnumerator10": 10,
+      "E_PalUIPlayerDebuffNoticeType::NewEnumerator11": 11,
+      "E_PalUIPlayerDebuffNoticeType::NewEnumerator12": 12,
+      "E_PalUIPlayerDebuffNoticeType::E_MAX": 13
+    },
+    "CppForm": "Namespaced"
+  }
+]

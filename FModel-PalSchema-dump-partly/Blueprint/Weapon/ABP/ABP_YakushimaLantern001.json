@@ -1,0 +1,899 @@
+[
+  {
+    "Type": "ABP_YakushimaLantern001_C",
+    "Name": "Default__ABP_YakushimaLantern001_C",
+    "Class": "AnimBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/ABP/ABP_YakushimaLantern001.ABP_YakushimaLantern001_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimBlueprintExtension_PropertyAccess": {},
+      "AnimBlueprintExtension_Base": {},
+      "AnimGraphNode_Root": {
+        "Result": {
+          "LinkID": 3
+        }
+      },
+      "AnimGraphNode_RigidBody": {
+        "OverridePhysicsAsset": {
+          "ObjectName": "PhysicsAsset'PA_YakushimaLantern001_PhysicsAsset'",
+          "ObjectPath": "Pal/Content/Pal/Model/Weapon/Yakushima/YakushimaLantern001/PA_YakushimaLantern001_PhysicsAsset.0"
+        },
+        "OverrideWorldGravity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "ExternalForce": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "ComponentLinearAccScale": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "ComponentLinearVelScale": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "ComponentAppliedLinearAccClamp": {
+          "X": 10000.0,
+          "Y": 10000.0,
+          "Z": 10000.0
+        },
+        "SimSpaceSettings": {
+          "WorldAlpha": 0.0,
+          "VelocityScaleZ": 1.0,
+          "MaxLinearVelocity": 10000.0,
+          "MaxAngularVelocity": 10000.0,
+          "MaxLinearAcceleration": 10000.0,
+          "MaxAngularAcceleration": 10000.0,
+          "ExternalLinearDragV": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "ExternalLinearVelocity": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "ExternalAngularVelocity": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        "CachedBoundsScale": 1.2,
+        "BaseBoneRef": {
+          "BoneName": "None"
+        },
+        "OverlapChannel": "ECollisionChannel::ECC_WorldStatic",
+        "SimulationSpace": "ESimulationSpace::ComponentSpace",
+        "bForceDisableCollisionBetweenConstraintBodies": false,
+        "bUseExternalClothCollision": false,
+        "bEnableWorldGeometry": false,
+        "bOverrideWorldGravity": false,
+        "bTransferBoneVelocities": false,
+        "bFreezeIncomingPoseOnStart": false,
+        "bClampLinearTranslationLimitToRefPose": false,
+        "WorldSpaceMinimumScale": 0.01,
+        "EvaluationResetTime": 0.01,
+        "SimulationTiming": "ESimulationTiming::Default",
+        "ComponentPose": {
+          "LinkID": 2
+        },
+        "LODThreshold": -1,
+        "ActualAlpha": 0.0,
+        "AlphaInputType": "EAnimAlphaInputType::Float",
+        "bAlphaBoolEnabled": true,
+        "Alpha": 1.0,
+        "AlphaScaleBias": {
+          "Scale": 1.0,
+          "Bias": 0.0
+        },
+        "AlphaBoolBlend": {
+          "BlendInTime": 0.0,
+          "BlendOutTime": 0.0,
+          "BlendOption": "EAlphaBlendOption::Linear",
+          "bInitialized": false,
+          "CustomCurve": null,
+          "AlphaBlend": {
+            "CustomCurve": null,
+            "BlendTime": 0.2,
+            "BlendOption": "EAlphaBlendOption::Linear"
+          }
+        },
+        "AlphaCurveName": "None",
+        "AlphaScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        }
+      },
+      "AnimGraphNode_LocalToComponentSpace": {
+        "LocalPose": {
+          "LinkID": 4
+        }
+      },
+      "AnimGraphNode_ComponentToLocalSpace": {
+        "ComponentPose": {
+          "LinkID": 1
+        }
+      },
+      "AnimGraphNode_LinkedInputPose": {
+        "Name": "InPose",
+        "Graph": "AnimGraph",
+        "InputPose": {
+          "LinkID": -1
+        }
+      }
+    },
+    "SerializedSparseClassDataStruct": "ScriptStruct'Pal/Content/Pal/Blueprint/Weapon/ABP/ABP_YakushimaLantern001.ABP_YakushimaLantern001_C:AnimBlueprintGeneratedConstantData'",
+    "SerializedSparseClassData": {
+      "__NameProperty_13": "None",
+      "__NameProperty_14": "AnimGraph",
+      "__StructProperty_15": {
+        "ClassName": "None",
+        "FunctionName": "None"
+      },
+      "AnimBlueprintExtension_PropertyAccess": {
+        "Library": {
+          "PathSegments": [],
+          "SrcPaths": [],
+          "DestPaths": [],
+          "CopyBatchArray": []
+        }
+      },
+      "AnimBlueprintExtension_Base": {
+        "ExposedValueHandlers": [
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_YakushimaLantern001_C",
+    "Class": "UScriptClass'AnimBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton'SK_YakushimaLantern001_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/Skeleton/SK_YakushimaLantern001_Skeleton.0"
+      },
+      "AnimNodeData": [
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_YakushimaLantern001_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/ABP/ABP_YakushimaLantern001.1"
+          },
+          "Entries": [
+            2,
+            2,
+            2,
+            4294967295,
+            1,
+            0
+          ],
+          "NodeIndex": 0,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_YakushimaLantern001_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/ABP/ABP_YakushimaLantern001.1"
+          },
+          "Entries": [
+            2,
+            2,
+            2,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 1,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_YakushimaLantern001_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/ABP/ABP_YakushimaLantern001.1"
+          },
+          "Entries": [
+            2,
+            2,
+            2,
+            4294967295
+          ],
+          "NodeIndex": 2,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_YakushimaLantern001_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/ABP/ABP_YakushimaLantern001.1"
+          },
+          "Entries": [
+            2,
+            2,
+            2,
+            4294967295
+          ],
+          "NodeIndex": 3,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_YakushimaLantern001_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/ABP/ABP_YakushimaLantern001.1"
+          },
+          "Entries": [
+            2,
+            2,
+            2,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 4,
+          "Flags": "EAnimNodeDataFlags::None"
+        }
+      ],
+      "NodeTypeMap": [
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_LinkedInputPose'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "Name",
+                "Value": 3
+              },
+              {
+                "Key": "Graph",
+                "Value": 4
+              },
+              {
+                "Key": "InputPose",
+                "Value": 5
+              }
+            ],
+            "NumProperties": 6
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_Base'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              }
+            ],
+            "NumProperties": 3
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_ConvertComponentToLocalSpace'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "ComponentPose",
+                "Value": 3
+              }
+            ],
+            "NumProperties": 4
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_ConvertLocalToComponentSpace'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "LocalPose",
+                "Value": 3
+              }
+            ],
+            "NumProperties": 4
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/AnimGraphRuntime.AnimNode_RigidBody'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "ComponentPose",
+                "Value": 3
+              },
+              {
+                "Key": "LODThreshold",
+                "Value": 4
+              },
+              {
+                "Key": "ActualAlpha",
+                "Value": 5
+              },
+              {
+                "Key": "AlphaInputType",
+                "Value": 6
+              },
+              {
+                "Key": "bAlphaBoolEnabled",
+                "Value": 7
+              },
+              {
+                "Key": "Alpha",
+                "Value": 8
+              },
+              {
+                "Key": "AlphaScaleBias",
+                "Value": 9
+              },
+              {
+                "Key": "AlphaBoolBlend",
+                "Value": 10
+              },
+              {
+                "Key": "AlphaCurveName",
+                "Value": 11
+              },
+              {
+                "Key": "AlphaScaleBiasClamp",
+                "Value": 12
+              },
+              {
+                "Key": "OverridePhysicsAsset",
+                "Value": 13
+              },
+              {
+                "Key": "OverrideWorldGravity",
+                "Value": 14
+              },
+              {
+                "Key": "ExternalForce",
+                "Value": 15
+              },
+              {
+                "Key": "ComponentLinearAccScale",
+                "Value": 16
+              },
+              {
+                "Key": "ComponentLinearVelScale",
+                "Value": 17
+              },
+              {
+                "Key": "ComponentAppliedLinearAccClamp",
+                "Value": 18
+              },
+              {
+                "Key": "SimSpaceSettings",
+                "Value": 19
+              },
+              {
+                "Key": "CachedBoundsScale",
+                "Value": 20
+              },
+              {
+                "Key": "BaseBoneRef",
+                "Value": 21
+              },
+              {
+                "Key": "OverlapChannel",
+                "Value": 22
+              },
+              {
+                "Key": "SimulationSpace",
+                "Value": 23
+              },
+              {
+                "Key": "bForceDisableCollisionBetweenConstraintBodies",
+                "Value": 24
+              },
+              {
+                "Key": "bUseExternalClothCollision",
+                "Value": 25
+              },
+              {
+                "Key": "bEnableWorldGeometry",
+                "Value": 26
+              },
+              {
+                "Key": "bFreezeIncomingPoseOnStart",
+                "Value": 27
+              },
+              {
+                "Key": "bOverrideWorldGravity",
+                "Value": 28
+              },
+              {
+                "Key": "bTransferBoneVelocities",
+                "Value": 29
+              },
+              {
+                "Key": "bClampLinearTranslationLimitToRefPose",
+                "Value": 30
+              },
+              {
+                "Key": "WorldSpaceMinimumScale",
+                "Value": 31
+              },
+              {
+                "Key": "EvaluationResetTime",
+                "Value": 32
+              },
+              {
+                "Key": "bComponentSpaceSimulation",
+                "Value": 33
+              },
+              {
+                "Key": "SimulationTiming",
+                "Value": 34
+              }
+            ],
+            "NumProperties": 35
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/AnimGraphRuntime.AnimNode_SkeletalControlBase'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "ComponentPose",
+                "Value": 3
+              },
+              {
+                "Key": "LODThreshold",
+                "Value": 4
+              },
+              {
+                "Key": "ActualAlpha",
+                "Value": 5
+              },
+              {
+                "Key": "AlphaInputType",
+                "Value": 6
+              },
+              {
+                "Key": "bAlphaBoolEnabled",
+                "Value": 7
+              },
+              {
+                "Key": "Alpha",
+                "Value": 8
+              },
+              {
+                "Key": "AlphaScaleBias",
+                "Value": 9
+              },
+              {
+                "Key": "AlphaBoolBlend",
+                "Value": 10
+              },
+              {
+                "Key": "AlphaCurveName",
+                "Value": 11
+              },
+              {
+                "Key": "AlphaScaleBiasClamp",
+                "Value": 12
+              }
+            ],
+            "NumProperties": 13
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_Root'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "Result",
+                "Value": 3
+              },
+              {
+                "Key": "Name",
+                "Value": 4
+              },
+              {
+                "Key": "Group",
+                "Value": 5
+              }
+            ],
+            "NumProperties": 6
+          }
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABP_YakushimaLantern001_C:ExecuteUbergraph_ABP_YakushimaLantern001'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/ABP/ABP_YakushimaLantern001.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AnimInstance'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABP_YakushimaLantern001_C:AnimGraph'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/ABP/ABP_YakushimaLantern001.2"
+      },
+      {
+        "ObjectName": "Function'ABP_YakushimaLantern001_C:ExecuteUbergraph_ABP_YakushimaLantern001'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/ABP/ABP_YakushimaLantern001.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimBlueprintExtension_PropertyAccess",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimSubsystemInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimBlueprintExtension_Base",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimSubsystemInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 184,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_Root'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_RigidBody",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 2704,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_RigidBody'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_LocalToComponentSpace",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 160,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_ConvertLocalToComponentSpace'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_ComponentToLocalSpace",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 160,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_ConvertComponentToLocalSpace'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_LinkedInputPose",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 336,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_LinkedInputPose'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABP_YakushimaLantern001": {
+        "ObjectName": "Function'ABP_YakushimaLantern001_C:ExecuteUbergraph_ABP_YakushimaLantern001'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/ABP/ABP_YakushimaLantern001.3"
+      },
+      "AnimGraph": {
+        "ObjectName": "Function'ABP_YakushimaLantern001_C:AnimGraph'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/ABP/ABP_YakushimaLantern001.2"
+      }
+    },
+    "ClassFlags": "CLASS_Transient | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'SkeletalMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABP_YakushimaLantern001_C'Default__ABP_YakushimaLantern001_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/ABP/ABP_YakushimaLantern001.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_YakushimaLantern001_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "InPose",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraph",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_YakushimaLantern001",
+    "Outer": "ABP_YakushimaLantern001_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "ScriptStruct",
+    "Name": "AnimBlueprintGeneratedConstantData",
+    "Outer": "ABP_YakushimaLantern001_C",
+    "Class": "UScriptClass'ScriptStruct'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "ScriptStruct'AnimBlueprintConstantData'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "__NameProperty_13",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "__NameProperty_14",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "__StructProperty_15",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 40,
+        "PropertyFlags": "BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNodeFunctionRef'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimBlueprintExtension_PropertyAccess",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 192,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimSubsystem_PropertyAccess'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimBlueprintExtension_Base",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimSubsystem_Base'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ]
+  },
+  {
+    "Type": "ScriptStruct",
+    "Name": "AnimBlueprintGeneratedMutableData",
+    "Outer": "ABP_YakushimaLantern001_C",
+    "Class": "UScriptClass'ScriptStruct'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "ScriptStruct'AnimBlueprintMutableData'",
+      "ObjectPath": "/Script/Engine"
+    }
+  }
+]

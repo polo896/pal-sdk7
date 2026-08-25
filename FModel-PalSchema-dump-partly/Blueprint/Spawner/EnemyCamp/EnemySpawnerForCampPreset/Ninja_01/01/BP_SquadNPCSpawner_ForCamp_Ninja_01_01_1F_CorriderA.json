@@ -1,0 +1,735 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SquadNPCSpawner_ForCampBase_Ninja_01_01_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/BP_SquadNPCSpawner_ForCampBase_Ninja_01_01.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.24"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.11"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SquadNPCSpawner_ForCampBase_Ninja_01_01_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/BP_SquadNPCSpawner_ForCampBase_Ninja_01_01.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCPathWalkPointComponent_6",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCPathWalkPointComponent_5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCSpawnPointComponent2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCPathWalkPointComponent_4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCPathWalkPointComponent_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCSpawnPointComponent1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCPathWalkPointComponent_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCPathWalkPointComponent_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_NPCSpawnPointComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C'Default__BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.10"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_NPCPathWalkPointComponent_1_C",
+    "Name": "BP_NPCPathWalkPointComponent_1_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.BP_NPCPathWalkPointComponent_1_C'",
+    "Template": {
+      "ObjectName": "BP_NPCPathWalkPointComponent_1_C'Default__BP_NPCPathWalkPointComponent_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bEvaluateWorldPositionOffsetInRayTracing": true,
+      "RelativeLocation": {
+        "X": 2432.6096,
+        "Y": 9.487888,
+        "Z": 30.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 6.4154297E-06,
+        "Roll": -0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCPathWalkPointComponent_1_C",
+    "Name": "BP_NPCPathWalkPointComponent_2_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.BP_NPCPathWalkPointComponent_1_C'",
+    "Template": {
+      "ObjectName": "BP_NPCPathWalkPointComponent_1_C'Default__BP_NPCPathWalkPointComponent_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bEvaluateWorldPositionOffsetInRayTracing": true,
+      "RelativeLocation": {
+        "X": 2.6097536,
+        "Y": -770.5124,
+        "Z": 30.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 6.4154297E-06,
+        "Roll": -0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCPathWalkPointComponent_1_C",
+    "Name": "BP_NPCPathWalkPointComponent_3_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.BP_NPCPathWalkPointComponent_1_C'",
+    "Template": {
+      "ObjectName": "BP_NPCPathWalkPointComponent_1_C'Default__BP_NPCPathWalkPointComponent_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bEvaluateWorldPositionOffsetInRayTracing": true,
+      "RelativeLocation": {
+        "X": 549.4879,
+        "Y": -42.609734,
+        "Z": 30.0
+      },
+      "RelativeRotation": {
+        "Pitch": -0.0,
+        "Yaw": -89.99999,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCPathWalkPointComponent_1_C",
+    "Name": "BP_NPCPathWalkPointComponent_4_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.BP_NPCPathWalkPointComponent_1_C'",
+    "Template": {
+      "ObjectName": "BP_NPCPathWalkPointComponent_1_C'Default__BP_NPCPathWalkPointComponent_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bEvaluateWorldPositionOffsetInRayTracing": true,
+      "RelativeLocation": {
+        "X": -890.5121,
+        "Y": -42.609913,
+        "Z": 30.0
+      },
+      "RelativeRotation": {
+        "Pitch": -0.0,
+        "Yaw": -89.99999,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCPathWalkPointComponent_1_C",
+    "Name": "BP_NPCPathWalkPointComponent_5_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.BP_NPCPathWalkPointComponent_1_C'",
+    "Template": {
+      "ObjectName": "BP_NPCPathWalkPointComponent_1_C'Default__BP_NPCPathWalkPointComponent_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bEvaluateWorldPositionOffsetInRayTracing": true,
+      "RelativeLocation": {
+        "X": 1102.61,
+        "Y": -10.512126,
+        "Z": 30.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 6.4154297E-06,
+        "Roll": -0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCPathWalkPointComponent_1_C",
+    "Name": "BP_NPCPathWalkPointComponent_6_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.BP_NPCPathWalkPointComponent_1_C'",
+    "Template": {
+      "ObjectName": "BP_NPCPathWalkPointComponent_1_C'Default__BP_NPCPathWalkPointComponent_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bEvaluateWorldPositionOffsetInRayTracing": true,
+      "RelativeLocation": {
+        "X": -1337.3901,
+        "Y": 679.4876,
+        "Z": 30.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 6.4154297E-06,
+        "Roll": -0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCSpawnPointComponent_C",
+    "Name": "BP_NPCSpawnPointComponent1_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C'",
+    "Template": {
+      "ObjectName": "BP_NPCSpawnPointComponent_C'Default__BP_NPCSpawnPointComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NPCName": {
+        "Key": "Male_Ninja01"
+      },
+      "OverrideDefaultAction": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Relax_PathWalk_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Relax/BP_AIAction_NPC_Relax_PathWalk.0"
+      },
+      "bEvaluateWorldPositionOffsetInRayTracing": true,
+      "RelativeLocation": {
+        "X": 2061.5667,
+        "Y": -6.9999914,
+        "Z": 420.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 1170.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCSpawnPointComponent_C",
+    "Name": "BP_NPCSpawnPointComponent2_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C'",
+    "Template": {
+      "ObjectName": "BP_NPCSpawnPointComponent_C'Default__BP_NPCSpawnPointComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NPCName": {
+        "Key": "Male_Ninja01"
+      },
+      "OverrideDefaultAction": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Relax_PathWalk_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Relax/BP_AIAction_NPC_Relax_PathWalk.0"
+      },
+      "bEvaluateWorldPositionOffsetInRayTracing": true,
+      "RelativeLocation": {
+        "X": 1001.56665,
+        "Y": -1186.9999,
+        "Z": 420.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 1080.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_NPCSpawnPointComponent_C",
+    "Name": "BP_NPCSpawnPointComponent_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C'",
+    "Template": {
+      "ObjectName": "BP_NPCSpawnPointComponent_C'Default__BP_NPCSpawnPointComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NPCName": {
+        "Key": "Male_Ninja01"
+      },
+      "OverrideDefaultAction": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Relax_PathWalk_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Relax/BP_AIAction_NPC_Relax_PathWalk.0"
+      },
+      "OtomoName": {
+        "Key": "SmallArmadillo"
+      },
+      "bEvaluateWorldPositionOffsetInRayTracing": true,
+      "RelativeLocation": {
+        "X": -328.4331,
+        "Y": 1203.0002,
+        "Z": 420.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 1080.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C",
+    "Name": "Default__BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C'",
+    "Template": {
+      "ObjectName": "BP_SquadNPCSpawner_ForCampBase_Ninja_01_01_C'Default__BP_SquadNPCSpawner_ForCampBase_Ninja_01_01_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/BP_SquadNPCSpawner_ForCampBase_Ninja_01_01.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IgnoreRayAdjustFloor": true,
+      "HumanName": {
+        "Key": "Male_Ninja01"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SceneComponent'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:ICH-DefaultSceneRoot_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.13"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_MonoNPCSpawner_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_MonoNPCSpawner.0"
+            },
+            "SCSVariableName": "DefaultSceneRoot",
+            "AssociatedGuid": "948DBB43-488A24C6-9F6BCFAA-E3CAE162"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "ICH-DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.12"
+      },
+      "VariableGuid": "AD07B4C3-493E74D0-1A61408B-3692CCBC",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCSpawnPointComponent_C'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:BP_NPCSpawnPointComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.9"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_MonoNPCSpawner_C",
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.16"
+        }
+      ],
+      "VariableGuid": "9F24C2B5-4F00C5FD-AA3B2D97-ED776F2D",
+      "InternalVariableName": "BP_NPCSpawnPointComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCPathWalkPointComponent_1_C'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:BP_NPCPathWalkPointComponent_1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.1"
+      },
+      "VariableGuid": "D8D81533-4DB81DAA-7F377ABC-24B09FB4",
+      "InternalVariableName": "BP_NPCPathWalkPointComponent_1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCPathWalkPointComponent_1_C'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:BP_NPCPathWalkPointComponent_2_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.2"
+      },
+      "VariableGuid": "187182BD-413FB4DD-70D39AB2-5CA25F54",
+      "InternalVariableName": "BP_NPCPathWalkPointComponent_2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCSpawnPointComponent_C'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:BP_NPCSpawnPointComponent1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.7"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_MonoNPCSpawner_C",
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.19"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.20"
+        }
+      ],
+      "VariableGuid": "2ECEC56E-49B315DE-509887B7-940C8B71",
+      "InternalVariableName": "BP_NPCSpawnPointComponent1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCPathWalkPointComponent_1_C'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:BP_NPCPathWalkPointComponent_3_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.3"
+      },
+      "VariableGuid": "708A2229-4DE3D8A0-4A4840B6-C785134E",
+      "InternalVariableName": "BP_NPCPathWalkPointComponent_3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCPathWalkPointComponent_1_C'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:BP_NPCPathWalkPointComponent_4_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.4"
+      },
+      "VariableGuid": "51EA1013-439E896D-F6DA0EA1-065A0597",
+      "InternalVariableName": "BP_NPCPathWalkPointComponent_4"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCSpawnPointComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCSpawnPointComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCSpawnPointComponent_C'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:BP_NPCSpawnPointComponent2_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.8"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_MonoNPCSpawner_C",
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.22"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.23"
+        }
+      ],
+      "VariableGuid": "520AA102-4BEAD37C-1BD7F8AE-9CD3008A",
+      "InternalVariableName": "BP_NPCSpawnPointComponent2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCPathWalkPointComponent_1_C'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:BP_NPCPathWalkPointComponent_5_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.5"
+      },
+      "VariableGuid": "17F45DEA-490950DC-9E7FF6A7-D139231F",
+      "InternalVariableName": "BP_NPCPathWalkPointComponent_5"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCPathWalkPointComponent_1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/Z_Struct/BP_NPCPathWalkPointComponent_1.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_NPCPathWalkPointComponent_1_C'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:BP_NPCPathWalkPointComponent_6_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.6"
+      },
+      "VariableGuid": "7EEF23C6-4DE92642-063CCFA6-88932FC1",
+      "InternalVariableName": "BP_NPCPathWalkPointComponent_6"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.15"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.21"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.15"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.16"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.19"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.20"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.21"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.22"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.23"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/EnemySpawnerForCampPreset/Ninja_01/01/BP_SquadNPCSpawner_ForCamp_Ninja_01_01_1F_CorriderA.14"
+      }
+    }
+  }
+]

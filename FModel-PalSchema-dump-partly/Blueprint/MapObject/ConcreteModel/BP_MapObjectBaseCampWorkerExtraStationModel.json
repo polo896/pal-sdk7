@@ -1,0 +1,42 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MapObjectBaseCampWorkerExtraStationModel_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalMapObjectBaseCampWorkerExtraStationModel'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MapObjectBaseCampWorkerExtraStationModel_C'Default__BP_MapObjectBaseCampWorkerExtraStationModel_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_MapObjectBaseCampWorkerExtraStationModel.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MapObjectBaseCampWorkerExtraStationModel_C",
+    "Name": "Default__BP_MapObjectBaseCampWorkerExtraStationModel_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_MapObjectBaseCampWorkerExtraStationModel.BP_MapObjectBaseCampWorkerExtraStationModel_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PalBoxWidget": {
+        "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalStorageMenu_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalStorage/WBP_PalStorageMenu.41"
+      },
+      "CampTaskWidget": {
+        "ObjectName": "WidgetBlueprintGeneratedClass'WBP_IngameMenu_Mission_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Task/WBP_IngameMenu_Mission.218"
+      }
+    }
+  }
+]

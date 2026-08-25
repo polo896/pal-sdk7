@@ -1,0 +1,634 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD",
+    "Outer": "WBP_RaidBossAreaStatusWorldHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_MyGeometry",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Geometry'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_InDeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetUIModel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRaidBossAreaStatusModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsExistBoundInstanceModel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetUIModel",
+    "Outer": "WBP_RaidBossAreaStatusWorldHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRaidBossAreaStatusModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetParam_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameterBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_UIMap_Object_Status_Indicator_Parameter_Raid_Boss_Area",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectStatusIndicatorParameter_RaidBossArea'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetUIModel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRaidBossAreaStatusModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetup",
+    "Outer": "WBP_RaidBossAreaStatusWorldHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUserWidget:OnSetup'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUpdatePhase",
+    "Outer": "WBP_RaidBossAreaStatusWorldHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "UIModel",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRaidBossAreaStatusModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_GetCurrentPhase_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalRaidBossAreaPhase'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalRaidBossAreaPhase'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUpdateRaidBossStaticItemId",
+    "Outer": "WBP_RaidBossAreaStatusWorldHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "UIModel",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRaidBossAreaStatusModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetRaidBossStaticItemId_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReflectCurrentPhase",
+    "Outer": "WBP_RaidBossAreaStatusWorldHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "InPhase",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalRaidBossAreaPhase'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalRaidBossAreaPhase'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReflectCurrentRemaingTime",
+    "Outer": "WBP_RaidBossAreaStatusWorldHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "RemainingTotalSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Divide_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Percent_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetUIModel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRaidBossAreaStatusModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetPhaseRemainingTime_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_FTrunc_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FTrunc_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup",
+    "Outer": "WBP_RaidBossAreaStatusWorldHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalUIMapObjectRaidBossAreaStatusModel:ReturnSelfMulticastDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetUIModel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRaidBossAreaStatusModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalUIMapObjectRaidBossAreaStatusModel:ReturnSelfMulticastDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetUIModel_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRaidBossAreaStatusModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetUIModel_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRaidBossAreaStatusModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_GetTowerBossBattleBossType_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalBossType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalBossType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetTowerBossPalId_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsTowerBossBattleMode_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Tick",
+    "Outer": "WBP_RaidBossAreaStatusWorldHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Tick'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "MyGeometry",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Geometry'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "InDeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WBP_Altar_Info_C",
+    "Name": "WBP_Altar_Info",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Altar/WBP_Altar_Info.WBP_Altar_Info_C'",
+    "Template": {
+      "ObjectName": "WBP_Altar_Info_C'Default__WBP_Altar_Info_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Altar/WBP_Altar_Info.183"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "WBP_RaidBossAreaStatusWorldHUD_C",
+    "Name": "Default__WBP_RaidBossAreaStatusWorldHUD_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_RaidBossAreaStatusWorldHUD_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_RaidBossAreaStatusWorldHUD_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.12"
+      },
+      "bClassRequiresNativeTick": true,
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUIMapObjectStatusIndicatorBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:ReflectCurrentRemaingTime'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.6"
+      },
+      {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:ReflectCurrentPhase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.5"
+      },
+      {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:OnUpdatePhase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.3"
+      },
+      {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:OnUpdateRaidBossStaticItemId'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.4"
+      },
+      {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:GetUIModel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.1"
+      },
+      {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.7"
+      },
+      {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.2"
+      },
+      {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:Tick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.8"
+      },
+      {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Altar_Info",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Altar_Info_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Altar/WBP_Altar_Info.188"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Cached_UIModel",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRaidBossAreaStatusModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD": {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.0"
+      },
+      "Tick": {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:Tick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.8"
+      },
+      "OnSetup": {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.2"
+      },
+      "Setup": {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.7"
+      },
+      "GetUIModel": {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:GetUIModel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.1"
+      },
+      "OnUpdateRaidBossStaticItemId": {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:OnUpdateRaidBossStaticItemId'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.4"
+      },
+      "OnUpdatePhase": {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:OnUpdatePhase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.3"
+      },
+      "ReflectCurrentPhase": {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:ReflectCurrentPhase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.5"
+      },
+      "ReflectCurrentRemaingTime": {
+        "ObjectName": "Function'WBP_RaidBossAreaStatusWorldHUD_C:ReflectCurrentRemaingTime'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.6"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_RaidBossAreaStatusWorldHUD_C'Default__WBP_RaidBossAreaStatusWorldHUD_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.10"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_RaidBossAreaStatusWorldHUD_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "WBP_Altar_Info_C'WBP_RaidBossAreaStatusWorldHUD_C:WidgetTree.WBP_Altar_Info'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RaidBoss/WBP_RaidBossAreaStatusWorldHUD.9"
+      }
+    }
+  }
+]

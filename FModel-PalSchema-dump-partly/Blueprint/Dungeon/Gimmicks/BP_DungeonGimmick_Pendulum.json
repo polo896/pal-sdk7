@@ -1,0 +1,486 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_DungeonGimmick_Pendulum_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_DungeonGimmick_Pendulum_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.11"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_DungeonGimmick_Pendulum_C:ExecuteUbergraph_BP_DungeonGimmick_Pendulum'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalDungeonGimmick_Pendulum'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_DungeonGimmick_Pendulum_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.6"
+      },
+      {
+        "ObjectName": "Function'BP_DungeonGimmick_Pendulum_C:CustomEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.4"
+      },
+      {
+        "ObjectName": "Function'BP_DungeonGimmick_Pendulum_C:ExecuteUbergraph_BP_DungeonGimmick_Pendulum'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCollision1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "X (Roll)",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_DungeonGimmick_Pendulum": {
+        "ObjectName": "Function'BP_DungeonGimmick_Pendulum_C:ExecuteUbergraph_BP_DungeonGimmick_Pendulum'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.5"
+      },
+      "CustomEvent": {
+        "ObjectName": "Function'BP_DungeonGimmick_Pendulum_C:CustomEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.4"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_DungeonGimmick_Pendulum_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.6"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_DungeonGimmick_Pendulum_C'Default__BP_DungeonGimmick_Pendulum_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "DamageCollision1_GEN_VARIABLE",
+    "Outer": "BP_DungeonGimmick_Pendulum_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 30.0,
+        "Y": 220.0,
+        "Z": 30.0
+      },
+      "BodyInstance": {
+        "bUseCCD": true
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 2.555271E-07,
+        "Z": -239.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 90.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "DamageCollision",
+    "Outer": "Default__BP_DungeonGimmick_Pendulum_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 30.0,
+        "Y": 240.0,
+        "Z": 50.0
+      },
+      "BodyInstance": {
+        "bUseCCD": true,
+        "CollisionProfileName": "OverlapAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent'Default__BP_DungeonGimmick_Pendulum_C:PendulumMesh'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.12"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -502.0
+      }
+    }
+  },
+  {
+    "Type": "BP_DungeonGimmick_Pendulum_C",
+    "Name": "Default__BP_DungeonGimmick_Pendulum_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.BP_DungeonGimmick_Pendulum_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "PivotPoint": {
+        "ObjectName": "SceneComponent'Default__BP_DungeonGimmick_Pendulum_C:PivotPoint'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.8"
+      },
+      "PendulumMesh": {
+        "ObjectName": "StaticMeshComponent'Default__BP_DungeonGimmick_Pendulum_C:PendulumMesh'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.12"
+      },
+      "DamageCollision": {
+        "ObjectName": "BoxComponent'Default__BP_DungeonGimmick_Pendulum_C:DamageCollision'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.2"
+      },
+      "SwingPeriod": 6.0,
+      "LaunchStrengthMultiplier": 25.0,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_DungeonGimmick_Pendulum_C:PivotPoint'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.8"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "CustomEvent",
+    "Outer": "BP_DungeonGimmick_Pendulum_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_DungeonGimmick_Pendulum",
+    "Outer": "BP_DungeonGimmick_Pendulum_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "Temp_delegate_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "PropertyFlags": "ConstParm",
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnAkPostEventCallback__DelegateSignature'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Roll",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Pitch",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Yaw",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostEvent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Abs_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorRotation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Roll_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Pitch_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Yaw_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Abs_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NearlyEqual_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Abs_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Abs_A_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_DungeonGimmick_Pendulum_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_DungeonGimmick_Pendulum_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "PivotPoint",
+    "Outer": "Default__BP_DungeonGimmick_Pendulum_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_DungeonGimmick_Pendulum_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.7"
+      },
+      "VariableGuid": "CD8EE504-45353E64-147900BA-C96CDFF1",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_DungeonGimmick_Pendulum_C:DamageCollision1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.1"
+      },
+      "ParentComponentOrVariableName": "PivotPoint",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "C6CFB831-48542C20-929EDF97-ADBE25C7",
+      "InternalVariableName": "DamageCollision1"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_DungeonGimmick_Pendulum_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_DungeonGimmick_Pendulum_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.10"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_DungeonGimmick_Pendulum_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.10"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_DungeonGimmick_Pendulum_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "PendulumMesh",
+    "Outer": "Default__BP_DungeonGimmick_Pendulum_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Pendulum_axe_Gimmick'",
+        "ObjectPath": "Pal/Content/Others/Traps/Meshes/SkeletalMeshes/SM_Pendulum_axe_Gimmick.2"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_DungeonGimmick_Pendulum_C:PivotPoint'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Dungeon/Gimmicks/BP_DungeonGimmick_Pendulum.8"
+      }
+    }
+  }
+]

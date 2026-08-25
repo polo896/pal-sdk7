@@ -1,0 +1,268 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalSpawner_Sheets_50_9_dungeon_dessert_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalSpawner_Standard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalSpawner_Sheets_50_9_dungeon_dessert_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_50_9_dungeon_dessert.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalSpawner_Standard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard.0"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalSpawner_Sheets_50_9_dungeon_dessert_C'Default__BP_PalSpawner_Sheets_50_9_dungeon_dessert_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_50_9_dungeon_dessert.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalSpawner_Sheets_50_9_dungeon_dessert_C",
+    "Name": "Default__BP_PalSpawner_Sheets_50_9_dungeon_dessert_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_50_9_dungeon_dessert.BP_PalSpawner_Sheets_50_9_dungeon_dessert_C'",
+    "Template": {
+      "ObjectName": "BP_PalSpawner_Standard_C'Default__BP_PalSpawner_Standard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnGroupList": [
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 20,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "GrassPanda_Electric"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 35,
+              "Level_Max": 37,
+              "Num": 1,
+              "Num_Max": 2
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 20,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "PinkLizard"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 35,
+              "Level_Max": 37,
+              "Num": 1,
+              "Num_Max": 2
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 20,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "DarkCrow"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 30,
+              "Level_Max": 34,
+              "Num": 2,
+              "Num_Max": 3
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 20,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "LizardMan"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 30,
+              "Level_Max": 34,
+              "Num": 2,
+              "Num_Max": 3
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 20,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "CuteMole"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 30,
+              "Level_Max": 34,
+              "Num": 2,
+              "Num_Max": 3
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 20,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "ColorfulBird"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 30,
+              "Level_Max": 34,
+              "Num": 3,
+              "Num_Max": 4
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 60,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "None"
+              },
+              "NPCID": {
+                "Key": "Hunter_Fat_GatlingGun"
+              },
+              "Level": 35,
+              "Level_Max": 39,
+              "Num": 1,
+              "Num_Max": 1
+            },
+            {
+              "PalId": {
+                "Key": "None"
+              },
+              "NPCID": {
+                "Key": "Hunter_Rifle"
+              },
+              "Level": 31,
+              "Level_Max": 33,
+              "Num": 1,
+              "Num_Max": 1
+            },
+            {
+              "PalId": {
+                "Key": "None"
+              },
+              "NPCID": {
+                "Key": "Hunter_Grenade"
+              },
+              "Level": 31,
+              "Level_Max": 33,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        }
+      ],
+      "SpawnerName": "50_9_dungeon_dessert"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalSpawner_Sheets_50_9_dungeon_dessert_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalSpawner_Sheets_50_9_dungeon_dessert_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_50_9_dungeon_dessert.2"
+      },
+      "VariableGuid": "E6B045EE-49F3E04C-1327BDB9-F2B5230C",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalSpawner_Sheets_50_9_dungeon_dessert_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalSpawner_Sheets_50_9_dungeon_dessert_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_50_9_dungeon_dessert.3"
+      }
+    }
+  }
+]

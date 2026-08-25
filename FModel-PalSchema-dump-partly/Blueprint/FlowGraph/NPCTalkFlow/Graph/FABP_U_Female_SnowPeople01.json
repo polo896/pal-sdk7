@@ -1,0 +1,1452 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_0",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "9C53FCB2-430A6BC8-4EA025A4-5D4B52AF"
+    }
+  },
+  {
+    "Type": "FlowNode_Reroute",
+    "Name": "FlowNode_Reroute_0",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "UScriptClass'FlowNode_Reroute'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "3DD707CA-48834792-229D46AA-4BDD1F3B",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "E98A138D-4177E8DD-ABFE2794-9282BD17",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Reroute",
+    "Name": "FlowNode_Reroute_1",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "UScriptClass'FlowNode_Reroute'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "E98A138D-4177E8DD-ABFE2794-9282BD17",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "5ED95B06-446290FE-B38B7788-26D9EB31",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Reroute",
+    "Name": "FlowNode_Reroute_2",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "UScriptClass'FlowNode_Reroute'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "8E8C7C47-471C35CA-F6770695-F786E85E",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "2C3CB1EE-40BE6B6F-8FB656AC-EFA78C13",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "BA172742-4B76A1A0-EBC37999-8AD8FEFF",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "C251BE70-455CB31B-3C3E8790-552796A2",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_GetItem_C",
+    "Name": "FNBP_GetItem_C_0",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetItem.FNBP_GetItem_C'",
+    "Template": {
+      "ObjectName": "FNBP_GetItem_C'Default__FNBP_GetItem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetItem.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GetItemList": [
+        {
+          "Key": {
+            "Key": "Curry"
+          },
+          "Value": 10
+        }
+      ],
+      "NetworkInvokeName": "Gift1",
+      "GraphNode": null,
+      "NodeGuid": "F2AE0A1A-4DFAF3A7-B4CDCFAF-AFC60F93",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "413A0426-4D70EBDE-7159238D-305CFBD4",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_GetItem_C",
+    "Name": "FNBP_GetItem_C_2",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetItem.FNBP_GetItem_C'",
+    "Template": {
+      "ObjectName": "FNBP_GetItem_C'Default__FNBP_GetItem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetItem.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GetItemList": [
+        {
+          "Key": {
+            "Key": "DeerStew"
+          },
+          "Value": 1
+        },
+        {
+          "Key": {
+            "Key": "Hamburger_2"
+          },
+          "Value": 1
+        }
+      ],
+      "NetworkInvokeName": "Gift2",
+      "GraphNode": null,
+      "NodeGuid": "7605CA09-4FF13F21-63ED419F-D1F40501"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Victor_Talk_010"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "1593D52E-41D84BF7-B2A7FB98-795A6083",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "83E7143D-4487E347-5ED39386-4D1C577A",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Victor_Talk_010_Yes"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "CCDFE68A-40482B9E-865A52A2-A73CF183",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "C1EAD09D-4989533F-4CF67398-392A63B3",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_10",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Victor_Talk_080"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "DB7C551E-4E1C218D-25043D99-EC99874E",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "5F8D6804-47726070-BC6C3AA6-9FFB5D24",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_11",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Victor_Talk_080_Completed_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "2BBDF129-41FF2FBB-9A80F89C-22D713A8"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_12",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Victor_Talk_070_Ordered_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "B36EE8F5-4E371F21-A45C7793-DA44A2B6"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Victor_Talk_010_No_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "7B099C9F-4122CCF7-381C43B6-F88E8766",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "83E7143D-4487E347-5ED39386-4D1C577A",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_3",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Victor_Talk_010_No"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "755ED243-44982BB1-2EB0DE9C-269EEB2E"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Victor_Talk_010_Ordered_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "993A0BA2-4C2C0FF9-64152DB5-65085A78"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_5",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Victor_Talk_030"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "5981E508-42720ED9-49F32092-E013E02C",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "F2AE0A1A-4DFAF3A7-B4CDCFAF-AFC60F93",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_6",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Victor_Talk_030_Ordered_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "4AB5375A-4D420A51-4F1EBBA6-27136793"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_7",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Victor_Talk_050"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "FE8A8C45-44634242-B25CAB9B-2C4D7CFA",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "BC238151-478DBE27-3F325E8C-9A838AC2",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_8",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Victor_Talk_050_Ordered_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "4287D427-44DBC9B9-B0D134B9-6B0FA7CA"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_9",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Victor_Talk_070"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "DA4FEBA0-4DB63A52-002A0EBA-EAD7A57E",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "5B622AD8-411351FA-8880FAA0-4541801F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkBranch_Yes_No_C",
+    "Name": "FNBP_NPCTalkBranch_Yes_No_C_1",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.FNBP_NPCTalkBranch_Yes_No_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'Default__FNBP_NPCTalkBranch_Yes_No_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "83E7143D-4487E347-5ED39386-4D1C577A",
+      "OutputPins": [
+        {
+          "PinName": "CHOICE_YES",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "CHOICE_NO",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "CHOICE_YES",
+          "Value": {
+            "NodeGuid": "CCDFE68A-40482B9E-865A52A2-A73CF183",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "CHOICE_NO",
+          "Value": {
+            "NodeGuid": "755ED243-44982BB1-2EB0DE9C-269EEB2E",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkCountBranch_C",
+    "Name": "FNBP_NPCTalkCountBranch_C_6",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkCountBranch.FNBP_NPCTalkCountBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkCountBranch_C'Default__FNBP_NPCTalkCountBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkCountBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "5ED95B06-446290FE-B38B7788-26D9EB31",
+      "OutputPins": [
+        {
+          "PinName": "Loop",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "1",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "Loop",
+          "Value": {
+            "NodeGuid": "7B099C9F-4122CCF7-381C43B6-F88E8766",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "1",
+          "Value": {
+            "NodeGuid": "1593D52E-41D84BF7-B2A7FB98-795A6083",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_0",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "NetworkInvokeName": "Order",
+      "GraphNode": null,
+      "NodeGuid": "8868A75A-4E09A722-57DE5DB2-A69A81E9",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "2C3CB1EE-40BE6B6F-8FB656AC-EFA78C13",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_0",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "NetworkInvokeName": "Progress2",
+      "GraphNode": null,
+      "NodeGuid": "7B93EBFD-45B2566A-041FF39E-9ECA8384"
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_1",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "NetworkInvokeName": "Progress3",
+      "GraphNode": null,
+      "NodeGuid": "413A0426-4D70EBDE-7159238D-305CFBD4"
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_2",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "NetworkInvokeName": "Progress4",
+      "GraphNode": null,
+      "NodeGuid": "BC238151-478DBE27-3F325E8C-9A838AC2"
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_3",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "NetworkInvokeName": "Progress5",
+      "GraphNode": null,
+      "NodeGuid": "5B622AD8-411351FA-8880FAA0-4541801F"
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_4",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "NetworkInvokeName": "Progress5",
+      "GraphNode": null,
+      "NodeGuid": "5F8D6804-47726070-BC6C3AA6-9FFB5D24"
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_6",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "NetworkInvokeName": "Progress1",
+      "GraphNode": null,
+      "NodeGuid": "2C3CB1EE-40BE6B6F-8FB656AC-EFA78C13",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "7605CA09-4FF13F21-63ED419F-D1F40501",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_0",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_SnowBoss_Order_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SnowBoss_Order.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "21AA6E29-49C51E47-9352E2A0-E350B953",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "5ED95B06-446290FE-B38B7788-26D9EB31",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "50CAE0CA-46E88AB3-4E50B789-16312F05",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_1",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_SnowBoss_KillEnemy_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SnowBoss_KillEnemy.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "50CAE0CA-46E88AB3-4E50B789-16312F05",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "993A0BA2-4C2C0FF9-64152DB5-65085A78",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "28BD0197-47CA1181-EDBCE09E-1C64E54D",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_2",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_SnowBoss_SearchSphere_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SnowBoss_SearchSphere.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "28BD0197-47CA1181-EDBCE09E-1C64E54D",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "993A0BA2-4C2C0FF9-64152DB5-65085A78",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "F4335080-4E6C9C0B-04CB16BD-FCE9EBA4",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_3",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_SnowBoss_ReturnSphere_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SnowBoss_ReturnSphere.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "F4335080-4E6C9C0B-04CB16BD-FCE9EBA4",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "5981E508-42720ED9-49F32092-E013E02C",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "F457C2DB-43D9D16A-82BE9C99-21480E63",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_4",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_SnowBoss_Investigate_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SnowBoss_Investigate.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "F457C2DB-43D9D16A-82BE9C99-21480E63",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "4AB5375A-4D420A51-4F1EBBA6-27136793",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "8303922F-4AF968C1-406924AA-A0AC783F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_5",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_SnowBoss_Report_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SnowBoss_Report.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "8303922F-4AF968C1-406924AA-A0AC783F",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "FE8A8C45-44634242-B25CAB9B-2C4D7CFA",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "4CEC9467-4DE0B6AB-6BE8B3AC-73C81032",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_6",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_SnowBoss_SearchResearcher_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SnowBoss_SearchResearcher.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "4CEC9467-4DE0B6AB-6BE8B3AC-73C81032",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "4287D427-44DBC9B9-B0D134B9-6B0FA7CA",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "8293E2E4-4D1177DD-CE6E1A99-5208E7B7",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_7",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_SnowBoss_Report2_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SnowBoss_Report2.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "8293E2E4-4D1177DD-CE6E1A99-5208E7B7",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "DA4FEBA0-4DB63A52-002A0EBA-EAD7A57E",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "FE861B77-4558E7C8-80E1CDB8-C4D61780",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_8",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_SnowBoss_Report3_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SnowBoss_Report3.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "B66D6060-468012D9-1AFBFBB0-455C447D",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "DB7C551E-4E1C218D-25043D99-EC99874E",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "9C53FCB2-430A6BC8-4EA025A4-5D4B52AF",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_9",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalQuestBlock_TutorialDefeatSnowyMountainBoss_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_TutorialDefeatSnowyMountainBoss.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "FE861B77-4558E7C8-80E1CDB8-C4D61780",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "B36EE8F5-4E371F21-A45C7793-DA44A2B6",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "B66D6060-468012D9-1AFBFBB0-455C447D",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "C251BE70-455CB31B-3C3E8790-552796A2",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "3DD707CA-48834792-229D46AA-4BDD1F3B",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "21AA6E29-49C51E47-9352E2A0-E350B953",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "2BBDF129-41FF2FBB-9A80F89C-22D713A8",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_1",
+    "Outer": "FABP_U_Female_SnowPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSnowyMountainBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "C1EAD09D-4989533F-4CF67398-392A63B3",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "8868A75A-4E09A722-57DE5DB2-A69A81E9",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "8E8C7C47-471C35CA-F6770695-F786E85E",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_U_Female_SnowPeople01",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "1B569D64-48EE3C00-D8D6449F-B92AD0DC",
+      "Nodes": [
+        {
+          "Key": "BA172742-4B76A1A0-EBC37999-8AD8FEFF",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_U_Female_SnowPeople01:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.4"
+          }
+        },
+        {
+          "Key": "C251BE70-455CB31B-3C3E8790-552796A2",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_U_Female_SnowPeople01:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.39"
+          }
+        },
+        {
+          "Key": "1593D52E-41D84BF7-B2A7FB98-795A6083",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SnowPeople01:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.7"
+          }
+        },
+        {
+          "Key": "C1EAD09D-4989533F-4CF67398-392A63B3",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_U_Female_SnowPeople01:FNBP_QuestBranch_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.40"
+          }
+        },
+        {
+          "Key": "83E7143D-4487E347-5ED39386-4D1C577A",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'FABP_U_Female_SnowPeople01:FNBP_NPCTalkBranch_Yes_No_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.20"
+          }
+        },
+        {
+          "Key": "CCDFE68A-40482B9E-865A52A2-A73CF183",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SnowPeople01:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.8"
+          }
+        },
+        {
+          "Key": "5ED95B06-446290FE-B38B7788-26D9EB31",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkCountBranch_C'FABP_U_Female_SnowPeople01:FNBP_NPCTalkCountBranch_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.21"
+          }
+        },
+        {
+          "Key": "7B099C9F-4122CCF7-381C43B6-F88E8766",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SnowPeople01:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.12"
+          }
+        },
+        {
+          "Key": "755ED243-44982BB1-2EB0DE9C-269EEB2E",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SnowPeople01:FNBP_NPCTalk_FixedMsdId_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.13"
+          }
+        },
+        {
+          "Key": "21AA6E29-49C51E47-9352E2A0-E350B953",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_U_Female_SnowPeople01:FNBP_QuestBlockBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.29"
+          }
+        },
+        {
+          "Key": "8868A75A-4E09A722-57DE5DB2-A69A81E9",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_U_Female_SnowPeople01:FNBP_OrderQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.22"
+          }
+        },
+        {
+          "Key": "7B93EBFD-45B2566A-041FF39E-9ECA8384",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_U_Female_SnowPeople01:FNBP_ProgressQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.23"
+          }
+        },
+        {
+          "Key": "50CAE0CA-46E88AB3-4E50B789-16312F05",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_U_Female_SnowPeople01:FNBP_QuestBlockBranch_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.30"
+          }
+        },
+        {
+          "Key": "3DD707CA-48834792-229D46AA-4BDD1F3B",
+          "Value": {
+            "ObjectName": "FlowNode_Reroute'FABP_U_Female_SnowPeople01:FlowNode_Reroute_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.1"
+          }
+        },
+        {
+          "Key": "E98A138D-4177E8DD-ABFE2794-9282BD17",
+          "Value": {
+            "ObjectName": "FlowNode_Reroute'FABP_U_Female_SnowPeople01:FlowNode_Reroute_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.2"
+          }
+        },
+        {
+          "Key": "993A0BA2-4C2C0FF9-64152DB5-65085A78",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SnowPeople01:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.14"
+          }
+        },
+        {
+          "Key": "2BBDF129-41FF2FBB-9A80F89C-22D713A8",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SnowPeople01:FNBP_NPCTalk_FixedMsdId_C_11'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.10"
+          }
+        },
+        {
+          "Key": "2C3CB1EE-40BE6B6F-8FB656AC-EFA78C13",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_U_Female_SnowPeople01:FNBP_ProgressQuest_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.28"
+          }
+        },
+        {
+          "Key": "28BD0197-47CA1181-EDBCE09E-1C64E54D",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_U_Female_SnowPeople01:FNBP_QuestBlockBranch_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.31"
+          }
+        },
+        {
+          "Key": "F4335080-4E6C9C0B-04CB16BD-FCE9EBA4",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_U_Female_SnowPeople01:FNBP_QuestBlockBranch_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.32"
+          }
+        },
+        {
+          "Key": "5981E508-42720ED9-49F32092-E013E02C",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SnowPeople01:FNBP_NPCTalk_FixedMsdId_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.15"
+          }
+        },
+        {
+          "Key": "413A0426-4D70EBDE-7159238D-305CFBD4",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_U_Female_SnowPeople01:FNBP_ProgressQuest_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.24"
+          }
+        },
+        {
+          "Key": "4AB5375A-4D420A51-4F1EBBA6-27136793",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SnowPeople01:FNBP_NPCTalk_FixedMsdId_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.16"
+          }
+        },
+        {
+          "Key": "F2AE0A1A-4DFAF3A7-B4CDCFAF-AFC60F93",
+          "Value": {
+            "ObjectName": "FNBP_GetItem_C'FABP_U_Female_SnowPeople01:FNBP_GetItem_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.5"
+          }
+        },
+        {
+          "Key": "F457C2DB-43D9D16A-82BE9C99-21480E63",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_U_Female_SnowPeople01:FNBP_QuestBlockBranch_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.33"
+          }
+        },
+        {
+          "Key": "8303922F-4AF968C1-406924AA-A0AC783F",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_U_Female_SnowPeople01:FNBP_QuestBlockBranch_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.34"
+          }
+        },
+        {
+          "Key": "4CEC9467-4DE0B6AB-6BE8B3AC-73C81032",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_U_Female_SnowPeople01:FNBP_QuestBlockBranch_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.35"
+          }
+        },
+        {
+          "Key": "8293E2E4-4D1177DD-CE6E1A99-5208E7B7",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_U_Female_SnowPeople01:FNBP_QuestBlockBranch_C_7'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.36"
+          }
+        },
+        {
+          "Key": "B66D6060-468012D9-1AFBFBB0-455C447D",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_U_Female_SnowPeople01:FNBP_QuestBlockBranch_C_8'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.37"
+          }
+        },
+        {
+          "Key": "FE861B77-4558E7C8-80E1CDB8-C4D61780",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_U_Female_SnowPeople01:FNBP_QuestBlockBranch_C_9'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.38"
+          }
+        },
+        {
+          "Key": "FE8A8C45-44634242-B25CAB9B-2C4D7CFA",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SnowPeople01:FNBP_NPCTalk_FixedMsdId_C_7'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.17"
+          }
+        },
+        {
+          "Key": "BC238151-478DBE27-3F325E8C-9A838AC2",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_U_Female_SnowPeople01:FNBP_ProgressQuest_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.25"
+          }
+        },
+        {
+          "Key": "4287D427-44DBC9B9-B0D134B9-6B0FA7CA",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SnowPeople01:FNBP_NPCTalk_FixedMsdId_C_8'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.18"
+          }
+        },
+        {
+          "Key": "DA4FEBA0-4DB63A52-002A0EBA-EAD7A57E",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SnowPeople01:FNBP_NPCTalk_FixedMsdId_C_9'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.19"
+          }
+        },
+        {
+          "Key": "DB7C551E-4E1C218D-25043D99-EC99874E",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SnowPeople01:FNBP_NPCTalk_FixedMsdId_C_10'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.9"
+          }
+        },
+        {
+          "Key": "B36EE8F5-4E371F21-A45C7793-DA44A2B6",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SnowPeople01:FNBP_NPCTalk_FixedMsdId_C_12'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.11"
+          }
+        },
+        {
+          "Key": "9C53FCB2-430A6BC8-4EA025A4-5D4B52AF",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_U_Female_SnowPeople01:FlowNode_Finish_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.0"
+          }
+        },
+        {
+          "Key": "7605CA09-4FF13F21-63ED419F-D1F40501",
+          "Value": {
+            "ObjectName": "FNBP_GetItem_C'FABP_U_Female_SnowPeople01:FNBP_GetItem_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.6"
+          }
+        },
+        {
+          "Key": "8E8C7C47-471C35CA-F6770695-F786E85E",
+          "Value": {
+            "ObjectName": "FlowNode_Reroute'FABP_U_Female_SnowPeople01:FlowNode_Reroute_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.3"
+          }
+        },
+        {
+          "Key": "5B622AD8-411351FA-8880FAA0-4541801F",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_U_Female_SnowPeople01:FNBP_ProgressQuest_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.26"
+          }
+        },
+        {
+          "Key": "5F8D6804-47726070-BC6C3AA6-9FFB5D24",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_U_Female_SnowPeople01:FNBP_ProgressQuest_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SnowPeople01.27"
+          }
+        }
+      ]
+    }
+  }
+]

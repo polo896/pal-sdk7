@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "GrassMix_b05_white_sm",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'GrassMix_b05_white_sm'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b05/tree/GrassMix_b05_white_sm.2"
+      },
+      "UpdateGuid": "8F1C2239-42365137-5F0AB3A8-62D03FB9",
+      "Density": 25.0,
+      "Radius": 30.0,
+      "ScaleX": {
+        "Min": 0.8,
+        "Max": 1.2
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -0.008562088,
+          "Y": -6.922902,
+          "Z": 16.250252
+        },
+        "BoxExtent": {
+          "X": 29.314323,
+          "Y": 32.75957,
+          "Z": 18.601597
+        },
+        "SphereRadius": 38.368629455566406
+      },
+      "LowBoundOriginRadius": {
+        "X": 1.2699156,
+        "Y": -3.2069445,
+        "Z": 33.746674
+      },
+      "CullDistance": {
+        "Max": 1200
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

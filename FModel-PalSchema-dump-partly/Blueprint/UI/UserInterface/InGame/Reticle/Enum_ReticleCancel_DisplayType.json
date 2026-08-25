@@ -1,0 +1,86 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "Enum_ReticleCancel_DisplayType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "DD022C3E450580F1600574A89C4E016A",
+            "SourceString": "ThrowCancel",
+            "LocalizedString": "ThrowCancel"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "BB2B845641CBF0802BDA56B9E4EF5958",
+            "SourceString": "BaseCampPalThrow",
+            "LocalizedString": "BaseCampPalThrow"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "007355E34D4FC406B634A38E00133C45",
+            "SourceString": "GetupBed",
+            "LocalizedString": "GetupBed"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "DBDDD908438DF044A2E365BD5733FF21",
+            "SourceString": "GrapplingCancel",
+            "LocalizedString": "GrapplingCancel"
+          }
+        },
+        {
+          "Key": "NewEnumerator4",
+          "Value": {
+            "Namespace": "",
+            "Key": "398857384BE9007525DBF6BFA2D58D79",
+            "SourceString": "FishingAim",
+            "LocalizedString": "FishingAim"
+          }
+        },
+        {
+          "Key": "NewEnumerator5",
+          "Value": {
+            "Namespace": "",
+            "Key": "2FEE328C4F9CA54A0E694E85E11EA521",
+            "SourceString": "FishingCast",
+            "LocalizedString": "FishingCast"
+          }
+        },
+        {
+          "Key": "NewEnumerator6",
+          "Value": {
+            "Namespace": "",
+            "Key": "496F14FA446AB5D3936D169E2B692782",
+            "SourceString": "FishingHook",
+            "LocalizedString": "FishingHook"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "Enum_ReticleCancel_DisplayType::NewEnumerator0": 0,
+      "Enum_ReticleCancel_DisplayType::NewEnumerator1": 1,
+      "Enum_ReticleCancel_DisplayType::NewEnumerator2": 2,
+      "Enum_ReticleCancel_DisplayType::NewEnumerator3": 3,
+      "Enum_ReticleCancel_DisplayType::NewEnumerator4": 4,
+      "Enum_ReticleCancel_DisplayType::NewEnumerator5": 5,
+      "Enum_ReticleCancel_DisplayType::NewEnumerator6": 6,
+      "Enum_ReticleCancel_DisplayType::Enum_ReticleCancel_MAX": 7
+    },
+    "CppForm": "Namespaced"
+  }
+]

@@ -1,0 +1,357 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueAction_KingWhale_NormalEncount_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_UniqueAction_KingWhale_NormalEncount_C:ExecuteUbergraph_BP_UniqueAction_KingWhale_NormalEncount'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalActionWazaBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_UniqueAction_KingWhale_NormalEncount_C:OnNotifyEnd_28FF18C94DD73189716FDD8570A75DFF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.8"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_KingWhale_NormalEncount_C:OnNotifyBegin_28FF18C94DD73189716FDD8570A75DFF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.7"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_KingWhale_NormalEncount_C:OnInterrupted_28FF18C94DD73189716FDD8570A75DFF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.6"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_KingWhale_NormalEncount_C:OnBlendOut_28FF18C94DD73189716FDD8570A75DFF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.4"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_KingWhale_NormalEncount_C:OnCompleted_28FF18C94DD73189716FDD8570A75DFF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.5"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_KingWhale_NormalEncount_C:OnBeginAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.3"
+      },
+      {
+        "ObjectName": "Function'BP_UniqueAction_KingWhale_NormalEncount_C:ExecuteUbergraph_BP_UniqueAction_KingWhale_NormalEncount'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_UniqueAction_KingWhale_NormalEncount": {
+        "ObjectName": "Function'BP_UniqueAction_KingWhale_NormalEncount_C:ExecuteUbergraph_BP_UniqueAction_KingWhale_NormalEncount'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.2"
+      },
+      "OnBeginAction": {
+        "ObjectName": "Function'BP_UniqueAction_KingWhale_NormalEncount_C:OnBeginAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.3"
+      },
+      "OnCompleted_28FF18C94DD73189716FDD8570A75DFF": {
+        "ObjectName": "Function'BP_UniqueAction_KingWhale_NormalEncount_C:OnCompleted_28FF18C94DD73189716FDD8570A75DFF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.5"
+      },
+      "OnBlendOut_28FF18C94DD73189716FDD8570A75DFF": {
+        "ObjectName": "Function'BP_UniqueAction_KingWhale_NormalEncount_C:OnBlendOut_28FF18C94DD73189716FDD8570A75DFF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.4"
+      },
+      "OnInterrupted_28FF18C94DD73189716FDD8570A75DFF": {
+        "ObjectName": "Function'BP_UniqueAction_KingWhale_NormalEncount_C:OnInterrupted_28FF18C94DD73189716FDD8570A75DFF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.6"
+      },
+      "OnNotifyBegin_28FF18C94DD73189716FDD8570A75DFF": {
+        "ObjectName": "Function'BP_UniqueAction_KingWhale_NormalEncount_C:OnNotifyBegin_28FF18C94DD73189716FDD8570A75DFF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.7"
+      },
+      "OnNotifyEnd_28FF18C94DD73189716FDD8570A75DFF": {
+        "ObjectName": "Function'BP_UniqueAction_KingWhale_NormalEncount_C:OnNotifyEnd_28FF18C94DD73189716FDD8570A75DFF'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.8"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueAction_KingWhale_NormalEncount_C'Default__BP_UniqueAction_KingWhale_NormalEncount_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueAction_KingWhale_NormalEncount_C",
+    "Name": "Default__BP_UniqueAction_KingWhale_NormalEncount_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_NormalEncount.BP_UniqueAction_KingWhale_NormalEncount_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_UniqueAction_KingWhale_NormalEncount",
+    "Outer": "BP_UniqueAction_KingWhale_NormalEncount_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_4",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_3",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_2",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_4",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Temp_name_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMainMesh_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalSkeletalMeshComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateProxyObjectForPlayMontage_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayMontageCallbackProxy'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBeginAction",
+    "Outer": "BP_UniqueAction_KingWhale_NormalEncount_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalActionBase:OnBeginAction'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBlendOut_28FF18C94DD73189716FDD8570A75DFF",
+    "Outer": "BP_UniqueAction_KingWhale_NormalEncount_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnCompleted_28FF18C94DD73189716FDD8570A75DFF",
+    "Outer": "BP_UniqueAction_KingWhale_NormalEncount_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInterrupted_28FF18C94DD73189716FDD8570A75DFF",
+    "Outer": "BP_UniqueAction_KingWhale_NormalEncount_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNotifyBegin_28FF18C94DD73189716FDD8570A75DFF",
+    "Outer": "BP_UniqueAction_KingWhale_NormalEncount_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNotifyEnd_28FF18C94DD73189716FDD8570A75DFF",
+    "Outer": "BP_UniqueAction_KingWhale_NormalEncount_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

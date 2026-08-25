@@ -1,0 +1,164 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_0",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_2",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "8B051FF5-4798B19A-D42AB8BB-B695E208"
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_2",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "2D079EBD-41B52A79-213C2CB8-5117AB80",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "EF1CDF80-4F7CBC89-447E229A-E8AF7DEC",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_2",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_LoneWolf_Talk_120"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "EF1CDF80-4F7CBC89-447E229A-E8AF7DEC",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "0FA031D6-416496A5-D6C2CCB5-BBA1E4DC",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_0",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_2",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_LoneWolf02"
+      },
+      "NetworkInvokeName": "progress01",
+      "GraphNode": null,
+      "NodeGuid": "EFB62B93-40FAD258-DAD13DA7-BE6DA71E"
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_0",
+    "Outer": "FABP_AmaterasuWolf_Dark_Quest_Friend_2",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_LoneWolf02_CheckWolf_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_LoneWolf02_CheckWolf.0"
+      },
+      "QuestId": {
+        "RowName": "Sub_LoneWolf02"
+      },
+      "GraphNode": null,
+      "NodeGuid": "0FA031D6-416496A5-D6C2CCB5-BBA1E4DC",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "EFB62B93-40FAD258-DAD13DA7-BE6DA71E",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "8B051FF5-4798B19A-D42AB8BB-B695E208",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_AmaterasuWolf_Dark_Quest_Friend_2",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "788D72E2-4E388819-51122899-E07B475B",
+      "Nodes": [
+        {
+          "Key": "2D079EBD-41B52A79-213C2CB8-5117AB80",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_AmaterasuWolf_Dark_Quest_Friend_2:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_2.1"
+          }
+        },
+        {
+          "Key": "EF1CDF80-4F7CBC89-447E229A-E8AF7DEC",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_AmaterasuWolf_Dark_Quest_Friend_2:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_2.2"
+          }
+        },
+        {
+          "Key": "0FA031D6-416496A5-D6C2CCB5-BBA1E4DC",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_AmaterasuWolf_Dark_Quest_Friend_2:FNBP_QuestBlockBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_2.4"
+          }
+        },
+        {
+          "Key": "EFB62B93-40FAD258-DAD13DA7-BE6DA71E",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_AmaterasuWolf_Dark_Quest_Friend_2:FNBP_ProgressQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_2.3"
+          }
+        },
+        {
+          "Key": "8B051FF5-4798B19A-D42AB8BB-B695E208",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_AmaterasuWolf_Dark_Quest_Friend_2:FlowNode_Finish_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_AmaterasuWolf_Dark_Quest_Friend_2.0"
+          }
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,328 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_0",
+    "Outer": "FABP_Quest_Scholar03",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "4C43B7AA-4B870152-08163FB1-0CA19E3B"
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_Quest_Scholar03",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "3E1A6B89-40A7708C-078C1E9F-9FF3ACAA",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "204D2AB0-48032A54-D050329C-63F27CD4",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_CompleteQuest_C",
+    "Name": "FNBP_CompleteQuest_C_0",
+    "Outer": "FABP_Quest_Scholar03",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.FNBP_CompleteQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_CompleteQuest_C'Default__FNBP_CompleteQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Scholar03"
+      },
+      "NetworkInvokeName": "Complete_Sub_Scholar03",
+      "GraphNode": null,
+      "NodeGuid": "8384AC1C-408E8657-2C1EC9BC-2382C326"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_3",
+    "Outer": "FABP_Quest_Scholar03",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_START_DESC_SCHOLAR3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "BF9E5C37-44781889-D598A5BE-9E7D1A96",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "8DDC5F92-4427FF3A-7F653CB7-9EA43BC9",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_Quest_Scholar03",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_COMPLETED_DESC_SCHOLAR3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "9E04A97C-4E948E4C-08A8BEBC-A5CCCAC4"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_5",
+    "Outer": "FABP_Quest_Scholar03",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_INPROGRESS_DESC_SCHOLAR3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "1D802716-4A18E035-11DDB383-7AC941A8",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "5E1EFE31-47683B70-A0BFE2BB-A195927B",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_6",
+    "Outer": "FABP_Quest_Scholar03",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_COMPLETED_DESC_SCHOLAR3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "82A0F37A-43884E91-0EBCB8A4-0A6E5602",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "8384AC1C-408E8657-2C1EC9BC-2382C326",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_0",
+    "Outer": "FABP_Quest_Scholar03",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Scholar03"
+      },
+      "NetworkInvokeName": "Order_Sub_Scholar03",
+      "GraphNode": null,
+      "NodeGuid": "8DDC5F92-4427FF3A-7F653CB7-9EA43BC9"
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_Quest_Scholar03",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Scholar03"
+      },
+      "GraphNode": null,
+      "NodeGuid": "204D2AB0-48032A54-D050329C-63F27CD4",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "BF9E5C37-44781889-D598A5BE-9E7D1A96",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "1D802716-4A18E035-11DDB383-7AC941A8",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "9E04A97C-4E948E4C-08A8BEBC-A5CCCAC4",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestDeliveryPal_C",
+    "Name": "FNBP_QuestDeliveryPal_C_0",
+    "Outer": "FABP_Quest_Scholar03",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestDeliveryPal.FNBP_QuestDeliveryPal_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestDeliveryPal_C'Default__FNBP_QuestDeliveryPal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestDeliveryPal.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Scholar03"
+      },
+      "NetworkInvokeName": "DeliveryPal",
+      "GraphNode": null,
+      "NodeGuid": "5E1EFE31-47683B70-A0BFE2BB-A195927B",
+      "Connections": [
+        {
+          "Key": "Complete",
+          "Value": {
+            "NodeGuid": "82A0F37A-43884E91-0EBCB8A4-0A6E5602",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Continue",
+          "Value": {
+            "NodeGuid": "4C43B7AA-4B870152-08163FB1-0CA19E3B",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_Quest_Scholar03",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "77A70295-46FBAF9A-328DCB86-75424852",
+      "Nodes": [
+        {
+          "Key": "3E1A6B89-40A7708C-078C1E9F-9FF3ACAA",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_Quest_Scholar03:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Scholar03.1"
+          }
+        },
+        {
+          "Key": "204D2AB0-48032A54-D050329C-63F27CD4",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_Quest_Scholar03:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Scholar03.8"
+          }
+        },
+        {
+          "Key": "BF9E5C37-44781889-D598A5BE-9E7D1A96",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Scholar03:FNBP_NPCTalk_FixedMsdId_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Scholar03.3"
+          }
+        },
+        {
+          "Key": "8DDC5F92-4427FF3A-7F653CB7-9EA43BC9",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_Quest_Scholar03:FNBP_OrderQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Scholar03.7"
+          }
+        },
+        {
+          "Key": "9E04A97C-4E948E4C-08A8BEBC-A5CCCAC4",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Scholar03:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Scholar03.4"
+          }
+        },
+        {
+          "Key": "1D802716-4A18E035-11DDB383-7AC941A8",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Scholar03:FNBP_NPCTalk_FixedMsdId_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Scholar03.5"
+          }
+        },
+        {
+          "Key": "5E1EFE31-47683B70-A0BFE2BB-A195927B",
+          "Value": {
+            "ObjectName": "FNBP_QuestDeliveryPal_C'FABP_Quest_Scholar03:FNBP_QuestDeliveryPal_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Scholar03.9"
+          }
+        },
+        {
+          "Key": "8384AC1C-408E8657-2C1EC9BC-2382C326",
+          "Value": {
+            "ObjectName": "FNBP_CompleteQuest_C'FABP_Quest_Scholar03:FNBP_CompleteQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Scholar03.2"
+          }
+        },
+        {
+          "Key": "82A0F37A-43884E91-0EBCB8A4-0A6E5602",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Scholar03:FNBP_NPCTalk_FixedMsdId_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Scholar03.6"
+          }
+        },
+        {
+          "Key": "4C43B7AA-4B870152-08163FB1-0CA19E3B",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_Quest_Scholar03:FlowNode_Finish_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Scholar03.0"
+          }
+        }
+      ]
+    }
+  }
+]

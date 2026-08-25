@@ -1,0 +1,67 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_RagdollPreset_Liftup_MonochromeQueen_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalRagdollPreset'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_RagdollPreset_Liftup_MonochromeQueen_C'Default__BP_RagdollPreset_Liftup_MonochromeQueen_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Ragdoll/BP_RagdollPreset_Liftup_MonochromeQueen.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_RagdollPreset_Liftup_MonochromeQueen_C",
+    "Name": "Default__BP_RagdollPreset_Liftup_MonochromeQueen_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Ragdoll/BP_RagdollPreset_Liftup_MonochromeQueen.BP_RagdollPreset_Liftup_MonochromeQueen_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockBoneNames": [
+        "pelvis",
+        "spine_01",
+        "spine_02",
+        "spine_03",
+        "thigh_l",
+        "None",
+        "thigh_r",
+        "neck",
+        "None",
+        "skirtA_01_l",
+        "skirtA_01_r",
+        "skirtB_01_l",
+        "skirtB_01_r",
+        "skirtC_01_l",
+        "skirtC_01_r",
+        "skirtD_01_l",
+        "skirtD_01_r",
+        "skirtE_01_l",
+        "skirtE_01_r",
+        "skirtF_01_l",
+        "skirtF_01_r",
+        "skirtG_01_l",
+        "skirtG_01_r",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "LinearDamping": 7.0,
+      "AngularDamping": 7.0
+    }
+  }
+]

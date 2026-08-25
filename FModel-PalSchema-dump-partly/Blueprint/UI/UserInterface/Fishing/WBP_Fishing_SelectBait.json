@@ -1,0 +1,2470 @@
+[
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_ItemName",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FontSizeOverride_VeryLarge": 18,
+      "Text": {
+        "Namespace": "",
+        "Key": "CB4C284C4780AF3C5BBB31A1345060A7",
+        "SourceString": "ItemName",
+        "LocalizedString": "ItemName"
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 1,
+          "OutlineBlur": 2,
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.3,
+            "Hex": "4C000000"
+          }
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 16
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.SizeBox_ItemName.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.45"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_NoItem",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "FISHING_SELECTBAIT_NOITEM"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "DD2F81684B3196C0A39F3D993C71DA6F",
+        "SourceString": "(仮)エサがありません",
+        "LocalizedString": "(仮)エサがありません"
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 1,
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.3,
+            "Hex": "4C000000"
+          }
+        },
+        "Size": 14
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.SizeBox_NoItem.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.47"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_23",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_23.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_69",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_69.CanvasPanelSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_69.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_69.CanvasPanelSlot_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_69.CanvasPanelSlot_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.8"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_23.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_72",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_72.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_72.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.11"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_69.CanvasPanelSlot_7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.8"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_23",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1000.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_23'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.2"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_69'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_69",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_69'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.3"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_Fishing_SelectBait_C:WidgetTree.Overlay_Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_69",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -20.0,
+          "Right": 400.0,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_69'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.3"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_Fishing_SelectBait_C:WidgetTree.SizeBox_ItemName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_69",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 160.0,
+          "Right": 160.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_69'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.3"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_72'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_69",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 30.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_69'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.3"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_Fishing_SelectBait_C:WidgetTree.SizeBox_KeyGuide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.43"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_72",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1000.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_72'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.4"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_72",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 500.0,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_72'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.4"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_Fishing_SelectBait_C:WidgetTree.SizeBox_NoItem'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.44"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnmEvent_In",
+    "Outer": "WBP_Fishing_SelectBait_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ChangeSelect",
+    "Outer": "WBP_Fishing_SelectBait_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "NewIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_Fishing_SelectBait",
+    "Outer": "WBP_Fishing_SelectBait_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_MyGeometry",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Geometry'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_InDeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Fishing_SelectBait_Item_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.30"
+          }
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInitialized",
+    "Outer": "WBP_Fishing_SelectBait_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:OnInitialized'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSelected",
+    "Outer": "WBP_Fishing_SelectBait_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Fishing_SelectBait_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.30"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetItemName_outName",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup",
+    "Outer": "WBP_Fishing_SelectBait_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "ItemArray",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "ItemArray",
+          "Flags": "RF_Public",
+          "ElementSize": 16,
+          "Struct": {
+            "ObjectName": "ScriptStruct'PalStaticItemIdAndNum'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "SelectIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalStaticItemIdAndNum'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_IsValidIndex_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_IsEmpty_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Fishing_SelectBait_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.30"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetVisibleItems",
+    "Outer": "WBP_Fishing_SelectBait_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsVisible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Tick",
+    "Outer": "WBP_Fishing_SelectBait_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Tick'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "MyGeometry",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Geometry'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "InDeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.21"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.24"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.29"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.30"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.32"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.22"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_19'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.23"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_20'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.25"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_21'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.26"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_22'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.27"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_23'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.28"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.31"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_72.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.10"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.20"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_Fishing_SelectBait_C:WidgetTree.Spacer_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.48"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_10",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.20"
+      },
+      "Content": {
+        "ObjectName": "WBP_Fishing_SelectBait_Item_C'WBP_Fishing_SelectBait_C:WidgetTree.WBP_Fishing_SelectBait_Item_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.55"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_19",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.20"
+      },
+      "Content": {
+        "ObjectName": "WBP_Fishing_SelectBait_Item_C'WBP_Fishing_SelectBait_C:WidgetTree.WBP_Fishing_SelectBait_Item_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.56"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.20"
+      },
+      "Content": {
+        "ObjectName": "WBP_Fishing_SelectBait_Item_C'WBP_Fishing_SelectBait_C:WidgetTree.WBP_Fishing_SelectBait_Item'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.51"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_20",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.20"
+      },
+      "Content": {
+        "ObjectName": "WBP_Fishing_SelectBait_Item_C'WBP_Fishing_SelectBait_C:WidgetTree.WBP_Fishing_SelectBait_Item_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.57"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_21",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.20"
+      },
+      "Content": {
+        "ObjectName": "WBP_Fishing_SelectBait_Item_C'WBP_Fishing_SelectBait_C:WidgetTree.WBP_Fishing_SelectBait_Item_7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.58"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_22",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.20"
+      },
+      "Content": {
+        "ObjectName": "WBP_Fishing_SelectBait_Item_C'WBP_Fishing_SelectBait_C:WidgetTree.WBP_Fishing_SelectBait_Item_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.59"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_23",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.20"
+      },
+      "Content": {
+        "ObjectName": "WBP_Fishing_SelectBait_Item_C'WBP_Fishing_SelectBait_C:WidgetTree.WBP_Fishing_SelectBait_Item_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.60"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.20"
+      },
+      "Content": {
+        "ObjectName": "WBP_Fishing_SelectBait_Item_C'WBP_Fishing_SelectBait_C:WidgetTree.WBP_Fishing_SelectBait_Item_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.52"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.20"
+      },
+      "Content": {
+        "ObjectName": "WBP_Fishing_SelectBait_Item_C'WBP_Fishing_SelectBait_C:WidgetTree.WBP_Fishing_SelectBait_Item_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.53"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.20"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_Fishing_SelectBait_C:WidgetTree.Spacer_73'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.49"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_9",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.20"
+      },
+      "Content": {
+        "ObjectName": "WBP_Fishing_SelectBait_Item_C'WBP_Fishing_SelectBait_C:WidgetTree.WBP_Fishing_SelectBait_Item_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.54"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_126",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "Margin": {
+          "Top": 0.5,
+          "Bottom": 0.5
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.7,
+            "Hex": "B3FFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_BossBattleBase'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Ingame/MI_UI_BossBattleBase.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.001518,
+        "G": 0.006512,
+        "B": 0.01033,
+        "A": 1.0,
+        "Hex": "05131A"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Fishing_SelectBait_C:WidgetTree.Overlay_Base.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.41"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Anm_In",
+    "Outer": "Anm_In_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "C338FD12-41033E6F-71DF2BBC-7E6163E0",
+          "Name": "CanvasPanel_23",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "C338FD12-41033E6F-71DF2BBC-7E6163E0",
+          "BindingName": "CanvasPanel_23",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Fishing_SelectBait_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.39"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 9000
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 60
+      },
+      "Signature": "40BABD42-4E4A66E9-FD7D128C-3F4E69E4"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Anm_In_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 0,
+                      "Value": {
+                        "Value": 9000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Fishing_SelectBait_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.38"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "C338FD12-41033E6F-71DF2BBC-7E6163E0"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 9000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "0CF6334D-44B57189-109E6FB1-244A29E5",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 9000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_SelectBait_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.35"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_SelectBait_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.36"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 9000
+            }
+          }
+        }
+      },
+      "Signature": "B3BD1F72-42117F27-22C63DBB-AFEB66C8"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Anm_In",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Fishing_SelectBait_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.38"
+        }
+      ],
+      "EvaluationFieldGuid": "A9194F4C-45FB57DA-CF5DD89C-38B1A181",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Fishing_SelectBait_C:Anm_In_INST.Anm_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.38"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": {
+                  "Value": 9000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "A9194F4C-45FB57DA-CF5DD89C-38B1A181"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_Base",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_Fishing_SelectBait_C:WidgetTree.Overlay_Base.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.41"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_69.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.6"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_Base",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Fishing_SelectBait_C:WidgetTree.Overlay_Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.40"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Fishing_SelectBait_C:WidgetTree.Image_126'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.33"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_ItemName",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.SizeBox_ItemName.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.45"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_69.CanvasPanelSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.7"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_KeyGuide",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidthOverride": 30.0,
+      "HeightOverride": 30.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.SizeBox_KeyGuide.SizeBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.46"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_69.CanvasPanelSlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.9"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_NoItem",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.SizeBox_NoItem.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.47"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_72.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.11"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_ItemName",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_Fishing_SelectBait_C:WidgetTree.SizeBox_ItemName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.42"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Fishing_SelectBait_C:WidgetTree.Text_ItemName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.0"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_1",
+    "Outer": "SizeBox_KeyGuide",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_Fishing_SelectBait_C:WidgetTree.SizeBox_KeyGuide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.43"
+      },
+      "Content": {
+        "ObjectName": "WBP_PlayerInputKeyGuideIcon_C'WBP_Fishing_SelectBait_C:WidgetTree.WBP_PlayerInputKeyGuideIcon_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.61"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_NoItem",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_Fishing_SelectBait_C:WidgetTree.SizeBox_NoItem'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.44"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Fishing_SelectBait_C:WidgetTree.Text_NoItem'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.1"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.21"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_73",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.31"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Fishing_SelectBait_C",
+    "Name": "Default__WBP_Fishing_SelectBait_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.WBP_Fishing_SelectBait_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ItemSize": 84.0,
+      "DefaultPosX": -124.0,
+      "MoveDuration": 0.08,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_Fishing_SelectBait_Item_C",
+    "Name": "WBP_Fishing_SelectBait_Item",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.WBP_Fishing_SelectBait_Item_C'",
+    "Template": {
+      "ObjectName": "WBP_Fishing_SelectBait_Item_C'Default__WBP_Fishing_SelectBait_Item_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.27"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.24"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Fishing_SelectBait_Item_C",
+    "Name": "WBP_Fishing_SelectBait_Item_1",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.WBP_Fishing_SelectBait_Item_C'",
+    "Template": {
+      "ObjectName": "WBP_Fishing_SelectBait_Item_C'Default__WBP_Fishing_SelectBait_Item_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.27"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.29"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Fishing_SelectBait_Item_C",
+    "Name": "WBP_Fishing_SelectBait_Item_2",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.WBP_Fishing_SelectBait_Item_C'",
+    "Template": {
+      "ObjectName": "WBP_Fishing_SelectBait_Item_C'Default__WBP_Fishing_SelectBait_Item_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.27"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.30"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Fishing_SelectBait_Item_C",
+    "Name": "WBP_Fishing_SelectBait_Item_3",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.WBP_Fishing_SelectBait_Item_C'",
+    "Template": {
+      "ObjectName": "WBP_Fishing_SelectBait_Item_C'Default__WBP_Fishing_SelectBait_Item_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.27"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.32"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Fishing_SelectBait_Item_C",
+    "Name": "WBP_Fishing_SelectBait_Item_4",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.WBP_Fishing_SelectBait_Item_C'",
+    "Template": {
+      "ObjectName": "WBP_Fishing_SelectBait_Item_C'Default__WBP_Fishing_SelectBait_Item_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.27"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.22"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Fishing_SelectBait_Item_C",
+    "Name": "WBP_Fishing_SelectBait_Item_5",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.WBP_Fishing_SelectBait_Item_C'",
+    "Template": {
+      "ObjectName": "WBP_Fishing_SelectBait_Item_C'Default__WBP_Fishing_SelectBait_Item_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.27"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_19'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.23"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Fishing_SelectBait_Item_C",
+    "Name": "WBP_Fishing_SelectBait_Item_6",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.WBP_Fishing_SelectBait_Item_C'",
+    "Template": {
+      "ObjectName": "WBP_Fishing_SelectBait_Item_C'Default__WBP_Fishing_SelectBait_Item_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.27"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_20'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.25"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Fishing_SelectBait_Item_C",
+    "Name": "WBP_Fishing_SelectBait_Item_7",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.WBP_Fishing_SelectBait_Item_C'",
+    "Template": {
+      "ObjectName": "WBP_Fishing_SelectBait_Item_C'Default__WBP_Fishing_SelectBait_Item_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.27"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_21'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.26"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Fishing_SelectBait_Item_C",
+    "Name": "WBP_Fishing_SelectBait_Item_8",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.WBP_Fishing_SelectBait_Item_C'",
+    "Template": {
+      "ObjectName": "WBP_Fishing_SelectBait_Item_C'Default__WBP_Fishing_SelectBait_Item_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.27"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_22'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.27"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Fishing_SelectBait_Item_C",
+    "Name": "WBP_Fishing_SelectBait_Item_9",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.WBP_Fishing_SelectBait_Item_C'",
+    "Template": {
+      "ObjectName": "WBP_Fishing_SelectBait_Item_C'Default__WBP_Fishing_SelectBait_Item_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.27"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_23'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.28"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PlayerInputKeyGuideIcon_C",
+    "Name": "WBP_PlayerInputKeyGuideIcon_0",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PlayerInputKeyGuideIcon.WBP_PlayerInputKeyGuideIcon_C'",
+    "Template": {
+      "ObjectName": "WBP_PlayerInputKeyGuideIcon_C'Default__WBP_PlayerInputKeyGuideIcon_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PlayerInputKeyGuideIcon.10"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "overrideImage": [
+        {
+          "Key": "ECommonInputType::Gamepad",
+          "Value": {
+            "ObjectName": "Texture2D'T_KeyGuide_CrossLR'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/KeyGuide/T_KeyGuide_CrossLR.0"
+          }
+        },
+        {
+          "Key": "ECommonInputType::MouseAndKeyboard",
+          "Value": {
+            "ObjectName": "Texture2D'T_MenuKeyGuide_MouseWheelAxis'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/KeyGuide/mouse/T_MenuKeyGuide_MouseWheelAxis.0"
+          }
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_Fishing_SelectBait_C:WidgetTree.SizeBox_KeyGuide.SizeBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.46"
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Anm_In_INST",
+    "Outer": "WBP_Fishing_SelectBait_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_Fishing_SelectBait_C:Anm_In_INST.Anm_In'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.34"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "CanvasPanel_23",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "C338FD12-41033E6F-71DF2BBC-7E6163E0",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Anm_In",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_Fishing_SelectBait_C:Anm_In_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.37"
+      },
+      "Signature": "0CF6334D-44B57189-109E6FB1-244A29E5"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_Fishing_SelectBait_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_Fishing_SelectBait_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.64"
+      },
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'WBP_Fishing_SelectBait_C:Anm_In_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.62"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:ExecuteUbergraph_WBP_Fishing_SelectBait'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.14"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:ChangeSelect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.13"
+      },
+      {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:OnSelected'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.16"
+      },
+      {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:SetVisibleItems'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.18"
+      },
+      {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.17"
+      },
+      {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:AnmEvent_In'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.12"
+      },
+      {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.15"
+      },
+      {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:Tick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.19"
+      },
+      {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:ExecuteUbergraph_WBP_Fishing_SelectBait'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.14"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Anm_In",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HorizontalBox_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_ItemName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_NoItem",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Fishing_SelectBait_Item",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Fishing_SelectBait_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.30"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Fishing_SelectBait_Item_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Fishing_SelectBait_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.30"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Fishing_SelectBait_Item_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Fishing_SelectBait_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.30"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Fishing_SelectBait_Item_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Fishing_SelectBait_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.30"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Fishing_SelectBait_Item_4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Fishing_SelectBait_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.30"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Fishing_SelectBait_Item_5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Fishing_SelectBait_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.30"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Fishing_SelectBait_Item_6",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Fishing_SelectBait_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.30"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Fishing_SelectBait_Item_7",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Fishing_SelectBait_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.30"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Fishing_SelectBait_Item_8",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Fishing_SelectBait_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.30"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Fishing_SelectBait_Item_9",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Fishing_SelectBait_Item_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.30"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PlayerInputKeyGuideIcon_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PlayerInputKeyGuideIcon_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PlayerInputKeyGuideIcon.11"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "SelectStaticItemId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "SelectBaitList",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "SelectBaitList",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Fishing_SelectBait_Item_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait_Item.30"
+          }
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "ItemSize",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CurrentPosX",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "DefaultPosX",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "MaxIndex",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CurrentIndex",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "MoveStartPosX",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "MoveEndPosX",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "MoveTimer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "MoveDuration",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "MoveAlpha",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_Fishing_SelectBait": {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:ExecuteUbergraph_WBP_Fishing_SelectBait'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.14"
+      },
+      "Tick": {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:Tick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.19"
+      },
+      "OnInitialized": {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.15"
+      },
+      "AnmEvent_In": {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:AnmEvent_In'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.12"
+      },
+      "Setup": {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.17"
+      },
+      "SetVisibleItems": {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:SetVisibleItems'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.18"
+      },
+      "OnSelected": {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:OnSelected'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.16"
+      },
+      "ChangeSelect": {
+        "ObjectName": "Function'WBP_Fishing_SelectBait_C:ChangeSelect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.13"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_Fishing_SelectBait_C'Default__WBP_Fishing_SelectBait_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.50"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_Fishing_SelectBait_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_SelectBait_C:WidgetTree.CanvasPanel_23'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_SelectBait.2"
+      }
+    }
+  }
+]

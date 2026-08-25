@@ -1,0 +1,47 @@
+[
+  {
+    "Type": "CurveFloat",
+    "Name": "Curve_SlimePress_JumpZ",
+    "Class": "UScriptClass'CurveFloat'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 0.0,
+            "ArriveTangent": 2.6366026,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 2.6366026,
+            "LeaveTangentWeight": 0.33333334
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.5,
+            "Value": 1.0000001,
+            "ArriveTangent": 0.039609898,
+            "ArriveTangentWeight": 0.13333334,
+            "LeaveTangent": 0.039609898,
+            "LeaveTangentWeight": 0.20000002
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedBoth",
+            "Time": 1.0,
+            "Value": 0.0,
+            "ArriveTangent": -14.198166,
+            "ArriveTangentWeight": 1.0127443,
+            "LeaveTangent": -14.198166,
+            "LeaveTangentWeight": 1.0127443
+          }
+        ]
+      }
+    }
+  }
+]

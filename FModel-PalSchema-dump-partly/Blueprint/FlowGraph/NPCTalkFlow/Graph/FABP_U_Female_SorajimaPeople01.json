@@ -1,0 +1,1082 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_0",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "95388455-415B7235-2378A29D-0185E3CD"
+    }
+  },
+  {
+    "Type": "FlowNode_Reroute",
+    "Name": "FlowNode_Reroute_0",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "UScriptClass'FlowNode_Reroute'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "04CB12AB-415C3729-8E808D81-B9A939EB",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "EB697317-4520EB0E-018A478F-244675CF",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Reroute",
+    "Name": "FlowNode_Reroute_1",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "UScriptClass'FlowNode_Reroute'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "EB697317-4520EB0E-018A478F-244675CF",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "CAEF2153-49769D12-3CE490AC-220F9056",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Reroute",
+    "Name": "FlowNode_Reroute_2",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "UScriptClass'FlowNode_Reroute'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "855183B1-4141C776-06E39996-E99A2C1F",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "21D70FE1-411DC0F6-0609B0B5-394C0B62",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "B6F588F5-47A707EC-47892BA0-254EAB2A",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "4423D335-4F8211FC-FB104E85-78C672E8",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_DespawnTalkCamera_C",
+    "Name": "FNBP_DespawnTalkCamera_C_0",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_DespawnTalkCamera.FNBP_DespawnTalkCamera_C'",
+    "Template": {
+      "ObjectName": "FNBP_DespawnTalkCamera_C'Default__FNBP_DespawnTalkCamera_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_DespawnTalkCamera.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BlendTime": 1.0,
+      "BlendExp": 1.0,
+      "NetworkInvokeName": "DespawnTalkCamera01",
+      "GraphNode": null,
+      "NodeGuid": "1314BEDD-4A77EEB5-64E47E9C-32CD8604",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "254102B5-4120E6FF-2EF1E5A7-B2734172",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Auri_Talk_010_1"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "ADDFC2DB-40FC2DF5-D6A27AB7-ECC54A78",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "DFF1B3D5-4FC57DD6-8C65FDA0-32D9ECA5",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Auri_Talk_010_Yes"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "5A1F349A-4B2010CE-BC0A4CAD-49551048",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "3CB16BD2-44E00333-6CBAF480-1C9387C2",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_11",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Auri_Talk_060_Completed_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "534A15DE-43A2D44F-1C45DAAA-55D5B707"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Auri_Talk_010_No_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "399417BC-43D2F4FF-4D818790-41301E17",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "6505A428-4DF0B830-6E15EF84-6B5677B9",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_3",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Auri_Talk_010_No"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "25B30135-4A0832FC-07DBCD85-351F4977"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Auri_Talk_010_Ordered_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "55073D43-4E3F9A34-2772248A-551E2F94"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_5",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Auri_Talk_030"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "9F82D186-4F03FA53-CB312689-E9F53219",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "75C1BEE2-41011806-6789E382-D95CBF51",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_6",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Auri_Talk_030_Ordered_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "FF7748C6-4BE3232B-CFEA1DB0-DD08DEB9"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_7",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Auri_Talk_050"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "C089C885-4A65337C-A5896991-4F6AC82E",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "46D3BE0E-47387D66-AADEC98B-DD663F90",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_8",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Auri_Talk_010_2"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "806F608E-41DDB04A-572A55BD-64CAA7E0",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "1314BEDD-4A77EEB5-64E47E9C-32CD8604",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_9",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Auri_Talk_010_3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "254102B5-4120E6FF-2EF1E5A7-B2734172",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "6505A428-4DF0B830-6E15EF84-6B5677B9",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkBranch_Yes_No_C",
+    "Name": "FNBP_NPCTalkBranch_Yes_No_C_1",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.FNBP_NPCTalkBranch_Yes_No_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'Default__FNBP_NPCTalkBranch_Yes_No_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "6505A428-4DF0B830-6E15EF84-6B5677B9",
+      "OutputPins": [
+        {
+          "PinName": "CHOICE_YES",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "CHOICE_NO",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "CHOICE_YES",
+          "Value": {
+            "NodeGuid": "5A1F349A-4B2010CE-BC0A4CAD-49551048",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "CHOICE_NO",
+          "Value": {
+            "NodeGuid": "25B30135-4A0832FC-07DBCD85-351F4977",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkCountBranch_C",
+    "Name": "FNBP_NPCTalkCountBranch_C_6",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkCountBranch.FNBP_NPCTalkCountBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkCountBranch_C'Default__FNBP_NPCTalkCountBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkCountBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "CAEF2153-49769D12-3CE490AC-220F9056",
+      "OutputPins": [
+        {
+          "PinName": "Loop",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "1",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "Loop",
+          "Value": {
+            "NodeGuid": "399417BC-43D2F4FF-4D818790-41301E17",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "1",
+          "Value": {
+            "NodeGuid": "ADDFC2DB-40FC2DF5-D6A27AB7-ECC54A78",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_0",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSkyIslandBoss"
+      },
+      "NetworkInvokeName": "Order",
+      "GraphNode": null,
+      "NodeGuid": "FE3663D3-4BAF63D7-E664EE8F-4F58A5DF",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "21D70FE1-411DC0F6-0609B0B5-394C0B62",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_0",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSkyIslandBoss"
+      },
+      "NetworkInvokeName": "Progress2",
+      "GraphNode": null,
+      "NodeGuid": "75C1BEE2-41011806-6789E382-D95CBF51"
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_1",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSkyIslandBoss"
+      },
+      "NetworkInvokeName": "Progress3",
+      "GraphNode": null,
+      "NodeGuid": "46D3BE0E-47387D66-AADEC98B-DD663F90"
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_6",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSkyIslandBoss"
+      },
+      "NetworkInvokeName": "Progress1",
+      "GraphNode": null,
+      "NodeGuid": "21D70FE1-411DC0F6-0609B0B5-394C0B62"
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_0",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_SkyIslandBoss_Order_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SkyIslandBoss_Order.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSkyIslandBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "0C7430C9-433C7C38-ED2EFBB9-112DE014",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "CAEF2153-49769D12-3CE490AC-220F9056",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "5E39606C-44A4C795-A12C19BF-5B068222",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_1",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_QuestBlock_UnlockAreaBarriers_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_QuestBlock_UnlockAreaBarriers.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSkyIslandBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "5E39606C-44A4C795-A12C19BF-5B068222",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "55073D43-4E3F9A34-2772248A-551E2F94",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "B72A5E1E-4A3B7C5F-2555A083-FE658DB8",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_2",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_SkyIslandBoss_Report_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SkyIslandBoss_Report.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSkyIslandBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "B72A5E1E-4A3B7C5F-2555A083-FE658DB8",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "9F82D186-4F03FA53-CB312689-E9F53219",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "532FFD87-48973FE6-D0F09691-BA284408",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_3",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_SkyIslandBoss_DefeatBoss_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SkyIslandBoss_DefeatBoss.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSkyIslandBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "532FFD87-48973FE6-D0F09691-BA284408",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "FF7748C6-4BE3232B-CFEA1DB0-DD08DEB9",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "D328CC1A-4076E548-0909CCBA-87B89672",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_4",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_SkyIslandBoss_Report2_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SkyIslandBoss_Report2.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSkyIslandBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "D328CC1A-4076E548-0909CCBA-87B89672",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "C089C885-4A65337C-A5896991-4F6AC82E",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "95388455-415B7235-2378A29D-0185E3CD",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSkyIslandBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "4423D335-4F8211FC-FB104E85-78C672E8",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "04CB12AB-415C3729-8E808D81-B9A939EB",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "0C7430C9-433C7C38-ED2EFBB9-112DE014",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "534A15DE-43A2D44F-1C45DAAA-55D5B707",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_1",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSkyIslandBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "3CB16BD2-44E00333-6CBAF480-1C9387C2",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "FE3663D3-4BAF63D7-E664EE8F-4F58A5DF",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "855183B1-4141C776-06E39996-E99A2C1F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_SpawnTalkCamera_C",
+    "Name": "FNBP_SpawnTalkCamera_C_0",
+    "Outer": "FABP_U_Female_SorajimaPeople01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_SpawnTalkCamera.FNBP_SpawnTalkCamera_C'",
+    "Template": {
+      "ObjectName": "FNBP_SpawnTalkCamera_C'Default__FNBP_SpawnTalkCamera_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_SpawnTalkCamera.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BlendTime": 2.5,
+      "RowName": "FocusSkyIslandTower",
+      "BlendExp": 2.5,
+      "NetworkInvokeName": "SpawnTalkCamera01",
+      "GraphNode": null,
+      "NodeGuid": "DFF1B3D5-4FC57DD6-8C65FDA0-32D9ECA5",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "806F608E-41DDB04A-572A55BD-64CAA7E0",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_U_Female_SorajimaPeople01",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "6E049021-42A5D0D1-4A0F53A8-5734DA2D",
+      "Nodes": [
+        {
+          "Key": "B6F588F5-47A707EC-47892BA0-254EAB2A",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_U_Female_SorajimaPeople01:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.4"
+          }
+        },
+        {
+          "Key": "4423D335-4F8211FC-FB104E85-78C672E8",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_U_Female_SorajimaPeople01:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.28"
+          }
+        },
+        {
+          "Key": "ADDFC2DB-40FC2DF5-D6A27AB7-ECC54A78",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SorajimaPeople01:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.6"
+          }
+        },
+        {
+          "Key": "3CB16BD2-44E00333-6CBAF480-1C9387C2",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_U_Female_SorajimaPeople01:FNBP_QuestBranch_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.29"
+          }
+        },
+        {
+          "Key": "6505A428-4DF0B830-6E15EF84-6B5677B9",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'FABP_U_Female_SorajimaPeople01:FNBP_NPCTalkBranch_Yes_No_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.17"
+          }
+        },
+        {
+          "Key": "5A1F349A-4B2010CE-BC0A4CAD-49551048",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SorajimaPeople01:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.7"
+          }
+        },
+        {
+          "Key": "CAEF2153-49769D12-3CE490AC-220F9056",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkCountBranch_C'FABP_U_Female_SorajimaPeople01:FNBP_NPCTalkCountBranch_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.18"
+          }
+        },
+        {
+          "Key": "399417BC-43D2F4FF-4D818790-41301E17",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SorajimaPeople01:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.9"
+          }
+        },
+        {
+          "Key": "25B30135-4A0832FC-07DBCD85-351F4977",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SorajimaPeople01:FNBP_NPCTalk_FixedMsdId_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.10"
+          }
+        },
+        {
+          "Key": "0C7430C9-433C7C38-ED2EFBB9-112DE014",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_U_Female_SorajimaPeople01:FNBP_QuestBlockBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.23"
+          }
+        },
+        {
+          "Key": "FE3663D3-4BAF63D7-E664EE8F-4F58A5DF",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_U_Female_SorajimaPeople01:FNBP_OrderQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.19"
+          }
+        },
+        {
+          "Key": "5E39606C-44A4C795-A12C19BF-5B068222",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_U_Female_SorajimaPeople01:FNBP_QuestBlockBranch_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.24"
+          }
+        },
+        {
+          "Key": "04CB12AB-415C3729-8E808D81-B9A939EB",
+          "Value": {
+            "ObjectName": "FlowNode_Reroute'FABP_U_Female_SorajimaPeople01:FlowNode_Reroute_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.1"
+          }
+        },
+        {
+          "Key": "EB697317-4520EB0E-018A478F-244675CF",
+          "Value": {
+            "ObjectName": "FlowNode_Reroute'FABP_U_Female_SorajimaPeople01:FlowNode_Reroute_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.2"
+          }
+        },
+        {
+          "Key": "55073D43-4E3F9A34-2772248A-551E2F94",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SorajimaPeople01:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.11"
+          }
+        },
+        {
+          "Key": "534A15DE-43A2D44F-1C45DAAA-55D5B707",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SorajimaPeople01:FNBP_NPCTalk_FixedMsdId_C_11'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.8"
+          }
+        },
+        {
+          "Key": "21D70FE1-411DC0F6-0609B0B5-394C0B62",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_U_Female_SorajimaPeople01:FNBP_ProgressQuest_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.22"
+          }
+        },
+        {
+          "Key": "855183B1-4141C776-06E39996-E99A2C1F",
+          "Value": {
+            "ObjectName": "FlowNode_Reroute'FABP_U_Female_SorajimaPeople01:FlowNode_Reroute_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.3"
+          }
+        },
+        {
+          "Key": "B72A5E1E-4A3B7C5F-2555A083-FE658DB8",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_U_Female_SorajimaPeople01:FNBP_QuestBlockBranch_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.25"
+          }
+        },
+        {
+          "Key": "9F82D186-4F03FA53-CB312689-E9F53219",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SorajimaPeople01:FNBP_NPCTalk_FixedMsdId_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.12"
+          }
+        },
+        {
+          "Key": "532FFD87-48973FE6-D0F09691-BA284408",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_U_Female_SorajimaPeople01:FNBP_QuestBlockBranch_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.26"
+          }
+        },
+        {
+          "Key": "FF7748C6-4BE3232B-CFEA1DB0-DD08DEB9",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SorajimaPeople01:FNBP_NPCTalk_FixedMsdId_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.13"
+          }
+        },
+        {
+          "Key": "D328CC1A-4076E548-0909CCBA-87B89672",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_U_Female_SorajimaPeople01:FNBP_QuestBlockBranch_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.27"
+          }
+        },
+        {
+          "Key": "C089C885-4A65337C-A5896991-4F6AC82E",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SorajimaPeople01:FNBP_NPCTalk_FixedMsdId_C_7'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.14"
+          }
+        },
+        {
+          "Key": "75C1BEE2-41011806-6789E382-D95CBF51",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_U_Female_SorajimaPeople01:FNBP_ProgressQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.20"
+          }
+        },
+        {
+          "Key": "46D3BE0E-47387D66-AADEC98B-DD663F90",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_U_Female_SorajimaPeople01:FNBP_ProgressQuest_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.21"
+          }
+        },
+        {
+          "Key": "DFF1B3D5-4FC57DD6-8C65FDA0-32D9ECA5",
+          "Value": {
+            "ObjectName": "FNBP_SpawnTalkCamera_C'FABP_U_Female_SorajimaPeople01:FNBP_SpawnTalkCamera_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.30"
+          }
+        },
+        {
+          "Key": "1314BEDD-4A77EEB5-64E47E9C-32CD8604",
+          "Value": {
+            "ObjectName": "FNBP_DespawnTalkCamera_C'FABP_U_Female_SorajimaPeople01:FNBP_DespawnTalkCamera_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.5"
+          }
+        },
+        {
+          "Key": "806F608E-41DDB04A-572A55BD-64CAA7E0",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SorajimaPeople01:FNBP_NPCTalk_FixedMsdId_C_8'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.15"
+          }
+        },
+        {
+          "Key": "254102B5-4120E6FF-2EF1E5A7-B2734172",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_U_Female_SorajimaPeople01:FNBP_NPCTalk_FixedMsdId_C_9'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.16"
+          }
+        },
+        {
+          "Key": "95388455-415B7235-2378A29D-0185E3CD",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_U_Female_SorajimaPeople01:FlowNode_Finish_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_U_Female_SorajimaPeople01.0"
+          }
+        }
+      ]
+    }
+  }
+]

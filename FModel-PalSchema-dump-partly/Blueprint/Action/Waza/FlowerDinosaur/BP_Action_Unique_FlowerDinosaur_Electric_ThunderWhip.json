@@ -1,0 +1,126 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_FlowerDinosaur_Whip_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FlowerDinosaur/BP_Action_Unique_FlowerDinosaur_Whip.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_FlowerDinosaur_Whip_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FlowerDinosaur/BP_Action_Unique_FlowerDinosaur_Whip.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip_C:GetSkillEffectClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FlowerDinosaur/BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip.3"
+      },
+      {
+        "ObjectName": "Function'BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip_C:GetAM'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FlowerDinosaur/BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip.2"
+      }
+    ],
+    "FuncMap": {
+      "GetAM": {
+        "ObjectName": "Function'BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip_C:GetAM'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FlowerDinosaur/BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip.2"
+      },
+      "GetSkillEffectClass": {
+        "ObjectName": "Function'BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip_C:GetSkillEffectClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FlowerDinosaur/BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip_C'Default__BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FlowerDinosaur/BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip_C",
+    "Name": "Default__BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/FlowerDinosaur/BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip.BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_FlowerDinosaur_Whip_C'Default__BP_Action_Unique_FlowerDinosaur_Whip_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FlowerDinosaur/BP_Action_Unique_FlowerDinosaur_Whip.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FlagName": "FlowerDinosaur_ThunderWhip",
+      "WazaID": "EPalWazaID::Unique_FlowerDinosaur_Electric_ThunderWhip"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetAM",
+    "Outer": "BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_Unique_FlowerDinosaur_Whip_C:GetAM'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FlowerDinosaur/BP_Action_Unique_FlowerDinosaur_Whip.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_Unique_FlowerDinosaur_Whip_C:GetAM'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FlowerDinosaur/BP_Action_Unique_FlowerDinosaur_Whip.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OutAM",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetSkillEffectClass",
+    "Outer": "BP_Action_Unique_FlowerDinosaur_Electric_ThunderWhip_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_Unique_FlowerDinosaur_Whip_C:GetSkillEffectClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FlowerDinosaur/BP_Action_Unique_FlowerDinosaur_Whip.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_Unique_FlowerDinosaur_Whip_C:GetSkillEffectClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FlowerDinosaur/BP_Action_Unique_FlowerDinosaur_Whip.5"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "EffectClass",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

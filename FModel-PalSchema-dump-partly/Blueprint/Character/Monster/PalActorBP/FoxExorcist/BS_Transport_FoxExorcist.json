@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Transport_FoxExorcist",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 0.6666667,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_FoxExorcist_Transport'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/FoxExorcist/AS_FoxExorcist_Transport.0"
+          },
+          "SampleValue": {
+            "X": 50.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.1
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_FoxExorcist_Transport'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/FoxExorcist/AS_FoxExorcist_Transport.0"
+          },
+          "SampleValue": {
+            "X": 600.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.2
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_FoxExorcist_Transport'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/FoxExorcist/AS_FoxExorcist_Transport.0"
+          },
+          "SampleValue": {
+            "X": 500.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 2,
+            "Vertices": 0.083333336,
+            "Vertices[1]": 0.8333333
+          },
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.8333333,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 600.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_FoxExorcist_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/FoxExorcist/SK_FoxExorcist_Skeleton.4"
+      }
+    },
+    "SkeletonGuid": "83E82813-43DC46AF-B5DFB198-9D3D2F1D"
+  }
+]

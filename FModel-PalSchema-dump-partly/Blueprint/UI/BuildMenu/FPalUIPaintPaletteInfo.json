@@ -1,0 +1,34 @@
+[
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "FPalUIPaintPaletteInfo",
+    "Class": "UScriptClass'UserDefinedStruct'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Guid": "40201B25-41462C53-0DEF35AC-9325C7E1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Color_2_C66C191D48980832471A46BC1738E195",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Color'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "StructFlags": 57344,
+    "DefaultProperties": {
+      "Color_2_C66C191D48980832471A46BC1738E195": {
+        "B": 0,
+        "G": 0,
+        "R": 0,
+        "A": 0,
+        "Hex": "000000"
+      }
+    }
+  }
+]

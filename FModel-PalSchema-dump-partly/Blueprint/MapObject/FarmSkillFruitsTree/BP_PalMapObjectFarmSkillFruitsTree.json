@@ -1,0 +1,1105 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalMapObjectFarmSkillFruitsTree_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.26"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalMapObjectFarmSkillFruitsTree'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_PalMapObjectFarmSkillFruitsTree_C:GetVisualComponents'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.9"
+      },
+      {
+        "ObjectName": "Function'BP_PalMapObjectFarmSkillFruitsTree_C:GetInteractiveSphereComponents'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.8"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "InteractiveSphere2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalFarmSkillFruitsProductInteractiveSphereComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalFarmSkillFruitsVisualComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalFarmSkillFruitsVisualComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalFarmSkillFruitsVisualComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalFarmSkillFruitsVisualComponent1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalFarmSkillFruitsVisualComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalFarmSkillFruitsVisualComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalFarmSkillFruitsVisualComponent2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalFarmSkillFruitsVisualComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalFarmSkillFruitsVisualComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NS_Skilltree1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "InteractiveSphere1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalFarmSkillFruitsProductInteractiveSphereComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SM_SkillFruitsTree_unglown",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "InteractiveSphere3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalFarmSkillFruitsProductInteractiveSphereComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SM_SkillFruitsTree",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "GetInteractiveSphereComponents": {
+        "ObjectName": "Function'BP_PalMapObjectFarmSkillFruitsTree_C:GetInteractiveSphereComponents'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.8"
+      },
+      "GetVisualComponents": {
+        "ObjectName": "Function'BP_PalMapObjectFarmSkillFruitsTree_C:GetVisualComponents'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.9"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalMapObjectFarmSkillFruitsTree_C'Default__BP_PalMapObjectFarmSkillFruitsTree_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.7"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Item_Any_C",
+    "Name": "BP_PalFarmSkillFruitsVisualComponent1_GEN_VARIABLE_BP_Item_Any_C_CAT",
+    "Outer": "BP_PalFarmSkillFruitsVisualComponent1_GEN_VARIABLE",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Any.BP_Item_Any_C'",
+    "Template": {
+      "ObjectName": "BP_Item_Any_C'Default__BP_Item_Any_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Any.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "ActorLabel": "BP_Item_Any"
+  },
+  {
+    "Type": "BP_Item_Any_C",
+    "Name": "BP_PalFarmSkillFruitsVisualComponent2_GEN_VARIABLE_BP_Item_Any_C_CAT",
+    "Outer": "BP_PalFarmSkillFruitsVisualComponent2_GEN_VARIABLE",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Any.BP_Item_Any_C'",
+    "Template": {
+      "ObjectName": "BP_Item_Any_C'Default__BP_Item_Any_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Any.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "ActorLabel": "BP_Item_Any"
+  },
+  {
+    "Type": "BP_Item_Any_C",
+    "Name": "BP_PalFarmSkillFruitsVisualComponent_GEN_VARIABLE_BP_Item_Any_C_CAT",
+    "Outer": "BP_PalFarmSkillFruitsVisualComponent_GEN_VARIABLE",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Any.BP_Item_Any_C'",
+    "Template": {
+      "ObjectName": "BP_Item_Any_C'Default__BP_Item_Any_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Any.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "ActorLabel": "BP_Item_Any"
+  },
+  {
+    "Type": "BP_PalFarmSkillFruitsVisualComponent_C",
+    "Name": "BP_PalFarmSkillFruitsVisualComponent1_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectFarmSkillFruitsTree_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalFarmSkillFruitsVisualComponent.BP_PalFarmSkillFruitsVisualComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalFarmSkillFruitsVisualComponent_C'Default__BP_PalFarmSkillFruitsVisualComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalFarmSkillFruitsVisualComponent.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChildActorTemplate": {
+        "ObjectName": "BP_Item_Any_C'BP_PalMapObjectFarmSkillFruitsTree_C:BP_PalFarmSkillFruitsVisualComponent1_GEN_VARIABLE.BP_PalFarmSkillFruitsVisualComponent1_GEN_VARIABLE_BP_Item_Any_C_CAT'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.1"
+      },
+      "RelativeLocation": {
+        "X": 202.93524,
+        "Y": 118.15399,
+        "Z": 232.07497
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 158.39983,
+        "Roll": -0.0
+      },
+      "bHiddenInGame": false,
+      "bReplicates": false
+    }
+  },
+  {
+    "Type": "BP_PalFarmSkillFruitsVisualComponent_C",
+    "Name": "BP_PalFarmSkillFruitsVisualComponent2_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectFarmSkillFruitsTree_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalFarmSkillFruitsVisualComponent.BP_PalFarmSkillFruitsVisualComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalFarmSkillFruitsVisualComponent_C'Default__BP_PalFarmSkillFruitsVisualComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalFarmSkillFruitsVisualComponent.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChildActorTemplate": {
+        "ObjectName": "BP_Item_Any_C'BP_PalMapObjectFarmSkillFruitsTree_C:BP_PalFarmSkillFruitsVisualComponent2_GEN_VARIABLE.BP_PalFarmSkillFruitsVisualComponent2_GEN_VARIABLE_BP_Item_Any_C_CAT'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.2"
+      },
+      "RelativeLocation": {
+        "X": 75.66804,
+        "Y": -200.24619,
+        "Z": 240.66537
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 158.39983,
+        "Roll": -0.0
+      },
+      "bHiddenInGame": false,
+      "bReplicates": false
+    }
+  },
+  {
+    "Type": "BP_PalFarmSkillFruitsVisualComponent_C",
+    "Name": "BP_PalFarmSkillFruitsVisualComponent_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectFarmSkillFruitsTree_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalFarmSkillFruitsVisualComponent.BP_PalFarmSkillFruitsVisualComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalFarmSkillFruitsVisualComponent_C'Default__BP_PalFarmSkillFruitsVisualComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalFarmSkillFruitsVisualComponent.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChildActorTemplate": {
+        "ObjectName": "BP_Item_Any_C'BP_PalMapObjectFarmSkillFruitsTree_C:BP_PalFarmSkillFruitsVisualComponent_GEN_VARIABLE.BP_PalFarmSkillFruitsVisualComponent_GEN_VARIABLE_BP_Item_Any_C_CAT'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.3"
+      },
+      "RelativeLocation": {
+        "X": 244.83362,
+        "Y": -54.119648,
+        "Z": 139.35417
+      },
+      "RelativeRotation": {
+        "Pitch": -0.0,
+        "Yaw": -111.600174,
+        "Roll": 0.0
+      },
+      "bHiddenInGame": false,
+      "bReplicates": false
+    }
+  },
+  {
+    "Type": "BP_PalMapObjectFarmSkillFruitsTree_C",
+    "Name": "Default__BP_PalMapObjectFarmSkillFruitsTree_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.BP_PalMapObjectFarmSkillFruitsTree_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GrowupProcessSets": [
+        {
+          "State": "EPalFarmSkillFruitsState::Watered",
+          "TargetCompRefs": [
+            {
+              "OtherActor": null,
+              "ComponentProperty": "SM_SkillFruitsTree_unglown",
+              "PathToComponent": ""
+            }
+          ]
+        },
+        {
+          "State": "EPalFarmSkillFruitsState::Growup",
+          "TargetCompRefs": [
+            {
+              "OtherActor": null,
+              "ComponentProperty": "SM_SkillFruitsTree",
+              "PathToComponent": ""
+            },
+            {
+              "OtherActor": null,
+              "ComponentProperty": "NS_Skilltree1",
+              "PathToComponent": ""
+            }
+          ]
+        },
+        {
+          "State": "EPalFarmSkillFruitsState::Harvestable",
+          "TargetCompRefs": [
+            {
+              "OtherActor": null,
+              "ComponentProperty": "SM_SkillFruitsTree",
+              "PathToComponent": ""
+            },
+            {
+              "OtherActor": null,
+              "ComponentProperty": "NS_Skilltree1",
+              "PathToComponent": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetInteractiveSphereComponents",
+    "Outer": "BP_PalMapObjectFarmSkillFruitsTree_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalMapObjectFarmSkillFruitsTree:GetInteractiveSphereComponents'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "ReturnValue",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "Class'PalFarmSkillFruitsProductInteractiveSphereComponent'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "Class'PalFarmSkillFruitsProductInteractiveSphereComponent'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetVisualComponents",
+    "Outer": "BP_PalMapObjectFarmSkillFruitsTree_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalMapObjectFarmSkillFruitsTree:GetVisualComponents'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "ReturnValue",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "Class'PalFarmSkillFruitsVisualComponent'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "Class'PalFarmSkillFruitsVisualComponent'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "NS_Skilltree1_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectFarmSkillFruitsTree_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_Skilltree'",
+        "ObjectPath": "Pal/Content/Pal/Model/Prop/Resource/SkillTree/NS_Skilltree.18"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "BaseColor",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'LinearColor'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.BaseColor",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'LinearColor'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "LightColor",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'LinearColor'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.LightColor",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'LinearColor'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Rate",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Rate",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Scale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Scale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "SkeletalMeshLocation",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraDataInterfaceSkeletalMesh'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 1,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.SkeletalMeshLocation",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraDataInterfaceSkeletalMesh'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 1,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.BaseColor",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 16,
+            "Name": "User.LightColor",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 32,
+            "Name": "User.Rate",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 36,
+            "Name": "User.Scale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 0,
+            "Name": "User.SkeletalMeshLocation",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraDataInterfaceSkeletalMesh'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 1,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          219,
+          193,
+          108,
+          63,
+          143,
+          168,
+          194,
+          63,
+          0,
+          0,
+          160,
+          64,
+          0,
+          0,
+          128,
+          63,
+          85,
+          24,
+          27,
+          62,
+          182,
+          190,
+          68,
+          63,
+          0,
+          0,
+          0,
+          64,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "DataInterfaces": [
+          {
+            "ObjectName": "NiagaraDataInterfaceSkeletalMesh'BP_PalMapObjectFarmSkillFruitsTree_C:NS_Skilltree1_GEN_VARIABLE.NiagaraDataInterfaceSkeletalMesh_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.11"
+          }
+        ]
+      },
+      "RelativeLocation": {
+        "X": 41.854473,
+        "Y": -19.675318,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": -0.0
+      }
+    }
+  },
+  {
+    "Type": "NiagaraDataInterfaceSkeletalMesh",
+    "Name": "NiagaraDataInterfaceSkeletalMesh_0",
+    "Outer": "NS_Skilltree1_GEN_VARIABLE",
+    "Class": "UScriptClass'NiagaraDataInterfaceSkeletalMesh'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalFarmSkillFruitsProductInteractiveSphereComponent",
+    "Name": "InteractiveSphere1_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectFarmSkillFruitsTree_C",
+    "Class": "UScriptClass'PalFarmSkillFruitsProductInteractiveSphereComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsImplementedTriggerInteract": true,
+      "RelativeLocation": {
+        "X": 244.83362,
+        "Y": -54.119648,
+        "Z": 99.35417
+      }
+    }
+  },
+  {
+    "Type": "PalFarmSkillFruitsProductInteractiveSphereComponent",
+    "Name": "InteractiveSphere2_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectFarmSkillFruitsTree_C",
+    "Class": "UScriptClass'PalFarmSkillFruitsProductInteractiveSphereComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ProductIndex": 1,
+      "bIsImplementedTriggerInteract": true,
+      "RelativeLocation": {
+        "X": 202.93524,
+        "Y": 118.15399,
+        "Z": 192.07497
+      }
+    }
+  },
+  {
+    "Type": "PalFarmSkillFruitsProductInteractiveSphereComponent",
+    "Name": "InteractiveSphere3_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectFarmSkillFruitsTree_C",
+    "Class": "UScriptClass'PalFarmSkillFruitsProductInteractiveSphereComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ProductIndex": 2,
+      "bIsImplementedTriggerInteract": true,
+      "RelativeLocation": {
+        "X": 75.66804,
+        "Y": -200.24619,
+        "Z": 200.66537
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectFarmSkillFruitsTree_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mobility": "EComponentMobility::Static"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalMapObjectFarmSkillFruitsTree_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.15"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.23"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_11'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.19"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.21"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.20"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.25"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.24"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.22"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.18"
+        }
+      ],
+      "VariableGuid": "C87C60C9-4B7C195E-0772F98C-BF8443FB",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_PalMapObjectFarmSkillFruitsTree_C:SM_SkillFruitsTree_unglown_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.28"
+      },
+      "VariableGuid": "764C25A1-4BF49A0E-152107AA-43065258",
+      "InternalVariableName": "SM_SkillFruitsTree_unglown"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalFarmSkillFruitsProductInteractiveSphereComponent'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalFarmSkillFruitsProductInteractiveSphereComponent'BP_PalMapObjectFarmSkillFruitsTree_C:InteractiveSphere2_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.13"
+      },
+      "VariableGuid": "ED48F026-4D203558-A595D6B3-9F91AA9A",
+      "InternalVariableName": "InteractiveSphere2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_11",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalFarmSkillFruitsProductInteractiveSphereComponent'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalFarmSkillFruitsProductInteractiveSphereComponent'BP_PalMapObjectFarmSkillFruitsTree_C:InteractiveSphere3_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.14"
+      },
+      "VariableGuid": "00DE52D0-4961FAF7-8E3276AD-F5FC0A6D",
+      "InternalVariableName": "InteractiveSphere3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'NiagaraComponent'",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent'BP_PalMapObjectFarmSkillFruitsTree_C:NS_Skilltree1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.10"
+      },
+      "VariableGuid": "8AA2AF57-4333C67E-7D2D5F98-9FB1AB05",
+      "InternalVariableName": "NS_Skilltree1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalFarmSkillFruitsProductInteractiveSphereComponent'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalFarmSkillFruitsProductInteractiveSphereComponent'BP_PalMapObjectFarmSkillFruitsTree_C:InteractiveSphere1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.12"
+      },
+      "VariableGuid": "19F071CE-401194E6-8C6EB189-106AD431",
+      "InternalVariableName": "InteractiveSphere1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalFarmSkillFruitsVisualComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalFarmSkillFruitsVisualComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalFarmSkillFruitsVisualComponent_C'BP_PalMapObjectFarmSkillFruitsTree_C:BP_PalFarmSkillFruitsVisualComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.6"
+      },
+      "VariableGuid": "7918AFA8-40031B55-E357CDA6-AC5E8B58",
+      "InternalVariableName": "BP_PalFarmSkillFruitsVisualComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_PalMapObjectFarmSkillFruitsTree_C:SM_SkillFruitsTree_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.27"
+      },
+      "VariableGuid": "D8B225BA-40AFA9FB-A2F4D7AE-E360B203",
+      "InternalVariableName": "SM_SkillFruitsTree"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalFarmSkillFruitsVisualComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalFarmSkillFruitsVisualComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalFarmSkillFruitsVisualComponent_C'BP_PalMapObjectFarmSkillFruitsTree_C:BP_PalFarmSkillFruitsVisualComponent1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.4"
+      },
+      "VariableGuid": "A783BD19-40942DF4-522A7BA9-748A5B0E",
+      "InternalVariableName": "BP_PalFarmSkillFruitsVisualComponent1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalFarmSkillFruitsVisualComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalFarmSkillFruitsVisualComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalFarmSkillFruitsVisualComponent_C'BP_PalMapObjectFarmSkillFruitsTree_C:BP_PalFarmSkillFruitsVisualComponent2_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.5"
+      },
+      "VariableGuid": "EB0995EC-4A44807D-A8DB4B8D-94EFD0E7",
+      "InternalVariableName": "BP_PalFarmSkillFruitsVisualComponent2"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalMapObjectFarmSkillFruitsTree_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.16"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.16"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.23"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_11'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.19"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.21"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.20"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.25"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.24"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.22"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.18"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalMapObjectFarmSkillFruitsTree_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmSkillFruitsTree/BP_PalMapObjectFarmSkillFruitsTree.16"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "SM_SkillFruitsTree_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectFarmSkillFruitsTree_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_SkillFruitsTree'",
+        "ObjectPath": "Pal/Content/Pal/Model/Other/SkillFruitsTree/SM_SkillFruitsTree.2"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": -0.0
+      },
+      "RelativeScale3D": {
+        "X": 0.8,
+        "Y": 0.8,
+        "Z": 0.8
+      },
+      "bReplicates": true
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "SM_SkillFruitsTree_unglown_GEN_VARIABLE",
+    "Outer": "BP_PalMapObjectFarmSkillFruitsTree_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_SkillFruitsTree_unglown'",
+        "ObjectPath": "Pal/Content/Pal/Model/Other/SkillFruitsTree/SM_SkillFruitsTree_unglown.2"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": -0.0
+      },
+      "RelativeScale3D": {
+        "X": 0.8,
+        "Y": 0.8,
+        "Z": 0.8
+      },
+      "bReplicates": true
+    }
+  }
+]

@@ -1,0 +1,708 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_20",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ResearchEffectIcon_C:WidgetTree.CanvasPanel_20.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Research/WBP_ResearchEffectIcon.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_20",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ResearchEffectIcon_C:WidgetTree.CanvasPanel_20'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Research/WBP_ResearchEffectIcon.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_ResearchEffectIcon_C:WidgetTree.Icon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Research/WBP_ResearchEffectIcon.4"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_ResearchEffectIcon",
+    "Outer": "WBP_ResearchEffectIcon_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_CustomEvent_WorkType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalWorkSuitability'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalWorkSuitability'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_CustomEvent_SubType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalLabCategorySubType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalLabCategorySubType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 56,
+        "PropertyClass": {
+          "ObjectName": "Class'Texture2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "CallFunc_Map_Find_Value_1",
+        "Flags": "RF_Public",
+        "ElementSize": 56,
+        "PropertyClass": {
+          "ObjectName": "Class'Texture2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetupIcon",
+    "Outer": "WBP_ResearchEffectIcon_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "WorkType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalWorkSuitability'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalWorkSuitability'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "SubType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalLabCategorySubType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalLabCategorySubType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "Icon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 80.0,
+          "Y": 80.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_icon_Research_PalWork_01_0'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/Research/T_icon_Research_PalWork_01_0.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ResearchEffectIcon_C:WidgetTree.CanvasPanel_20.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Research/WBP_ResearchEffectIcon.1"
+      }
+    }
+  },
+  {
+    "Type": "WBP_ResearchEffectIcon_C",
+    "Name": "Default__WBP_ResearchEffectIcon_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Research/WBP_ResearchEffectIcon.WBP_ResearchEffectIcon_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "MainTypeIcons": [
+        {
+          "Key": "EPalWorkSuitability::EmitFlame",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/T_icon_Research_PalWork_00_0.T_icon_Research_PalWork_00_0",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWorkSuitability::Watering",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/T_icon_Research_PalWork_01_0.T_icon_Research_PalWork_01_0",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWorkSuitability::Seeding",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/T_icon_Research_PalWork_02_0.T_icon_Research_PalWork_02_0",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWorkSuitability::GenerateElectricity",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/T_icon_Research_PalWork_03_0.T_icon_Research_PalWork_03_0",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWorkSuitability::Handcraft",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/T_icon_Research_PalWork_04_0.T_icon_Research_PalWork_04_0",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWorkSuitability::Collection",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/T_icon_Research_PalWork_05_0.T_icon_Research_PalWork_05_0",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWorkSuitability::Deforest",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/T_icon_Research_PalWork_06_0.T_icon_Research_PalWork_06_0",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWorkSuitability::Mining",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/T_icon_Research_PalWork_07_0.T_icon_Research_PalWork_07_0",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWorkSuitability::ProductMedicine",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/T_icon_Research_PalWork_08_0.T_icon_Research_PalWork_08_0",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWorkSuitability::Cool",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/T_icon_Research_PalWork_09_0.T_icon_Research_PalWork_09_0",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWorkSuitability::Transport",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/T_icon_Research_PalWork_10_0.T_icon_Research_PalWork_10_0",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWorkSuitability::MonsterFarm",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/T_icon_Research_PalWork_11_0.T_icon_Research_PalWork_11_0",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalWorkSuitability::Anyone",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/T_icon_Research_PalWork_13_0.T_icon_Research_PalWork_13_0",
+            "SubPathString": ""
+          }
+        }
+      ],
+      "SubTypeIcons": [
+        {
+          "Key": "EPalLabCategorySubType::CraftSpeed_EmitFlame",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_CraftSpeed_00.T_icon_Research_CraftSpeed_00",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::CraftSpeed_Watering",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_CraftSpeed_01.T_icon_Research_CraftSpeed_01",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::CraftSpeed_Seeding",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_CraftSpeed_02.T_icon_Research_CraftSpeed_02",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::CraftSpeed_GenerateElectricity",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_CraftSpeed_03.T_icon_Research_CraftSpeed_03",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::CraftSpeed_Handcraft",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_CraftSpeed_04.T_icon_Research_CraftSpeed_04",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::CraftSpeed_Deforest",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_CraftSpeed_06.T_icon_Research_CraftSpeed_06",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::CraftSpeed_Mining",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_CraftSpeed_07.T_icon_Research_CraftSpeed_07",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::CraftSpeed_ProductMedicine",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_CraftSpeed_08.T_icon_Research_CraftSpeed_08",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::CraftSpeed_Cool",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_CraftSpeed_09.T_icon_Research_CraftSpeed_09",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::AttackRateBaseCampWorker",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_Attack.T_icon_Research_Attack",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::DefenseRateBaseCampWorker",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_Defense.T_icon_Research_Defense",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::ProductExtraItemProbability",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_ProductExtraItem.T_icon_Research_ProductExtraItem",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::ProductExtraItemProbability_Bullet",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_ProductExtraItem_Bullet.T_icon_Research_ProductExtraItem_Bullet",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::ProductExtraItemProbability_Sphere",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_ProductExtraItem_Sphere.T_icon_Research_ProductExtraItem_Sphere",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::ProductExtraItemProbability_Ingot",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_ProductExtraItem_Ingot.T_icon_Research_ProductExtraItem_Ingot",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::ProductExtraItemProbability_Food",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_ProductExtraItem_Food.T_icon_Research_ProductExtraItem_Food",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::ProductExtraItemProbability_Ore",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_ProductExtraItem_Ore.T_icon_Research_ProductExtraItem_Ore",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::ProductItemConsumeMaterialNumRate",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_ProductCostDown.T_icon_Research_ProductCostDown",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::LabResearchSpeed",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_ResearchSpeed.T_icon_Research_ResearchSpeed",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::PalEggHatchingSpeed",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_EggHatchingSpeed.T_icon_Research_EggHatchingSpeed",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::EnergyStorageRate",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_EnergyStorage.T_icon_Research_EnergyStorage",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::ConsumeEnergyRate",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_ConsumeEnergy.T_icon_Research_ConsumeEnergy",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::ExpeditionRewardRate",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_ExpeditionReward.T_icon_Research_ExpeditionReward",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::ExpeditionTimeCostRate",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_ExpeditionTime.T_icon_Research_ExpeditionTime",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::FarmCropGrowupSpeed",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_FarmGrowup.T_icon_Research_FarmGrowup",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::FarmCropHarvestNumRate",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_FarmHarvest.T_icon_Research_FarmHarvest",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::ItemCorruptionSpeedRate",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_ItemCorruptionSpeed.T_icon_Research_ItemCorruptionSpeed",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::OilExtractionSpeedRate",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/EffectIcon/T_icon_Research_OilSpeed.T_icon_Research_OilSpeed",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalLabCategorySubType::TechnologyUnlock",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Texture/UI/IngameMenu/Research/T_icon_Research_TechnologyPrerequisite.T_icon_Research_TechnologyPrerequisite",
+            "SubPathString": ""
+          }
+        }
+      ],
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_ResearchEffectIcon_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_ResearchEffectIcon_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Research/WBP_ResearchEffectIcon.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_ResearchEffectIcon_C:ExecuteUbergraph_WBP_ResearchEffectIcon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Research/WBP_ResearchEffectIcon.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_ResearchEffectIcon_C:SetupIcon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Research/WBP_ResearchEffectIcon.3"
+      },
+      {
+        "ObjectName": "Function'WBP_ResearchEffectIcon_C:ExecuteUbergraph_WBP_ResearchEffectIcon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Research/WBP_ResearchEffectIcon.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Icon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "MainTypeIcons",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | BlueprintReadOnly | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "EnumProperty",
+          "Name": "MainTypeIcons",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalWorkSuitability'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": {
+              "ObjectName": "Enum'EPalWorkSuitability'",
+              "ObjectPath": "/Script/Pal"
+            }
+          }
+        },
+        "ValueProp": {
+          "Type": "SoftObjectProperty",
+          "Name": "MainTypeIcons_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 56,
+          "PropertyClass": {
+            "ObjectName": "Class'Texture2D'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "SubTypeIcons",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | BlueprintReadOnly | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "EnumProperty",
+          "Name": "SubTypeIcons",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalLabCategorySubType'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": {
+              "ObjectName": "Enum'EPalLabCategorySubType'",
+              "ObjectPath": "/Script/Pal"
+            }
+          }
+        },
+        "ValueProp": {
+          "Type": "SoftObjectProperty",
+          "Name": "SubTypeIcons_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 56,
+          "PropertyClass": {
+            "ObjectName": "Class'Texture2D'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_ResearchEffectIcon": {
+        "ObjectName": "Function'WBP_ResearchEffectIcon_C:ExecuteUbergraph_WBP_ResearchEffectIcon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Research/WBP_ResearchEffectIcon.2"
+      },
+      "SetupIcon": {
+        "ObjectName": "Function'WBP_ResearchEffectIcon_C:SetupIcon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Research/WBP_ResearchEffectIcon.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_ResearchEffectIcon_C'Default__WBP_ResearchEffectIcon_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Research/WBP_ResearchEffectIcon.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_ResearchEffectIcon_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_ResearchEffectIcon_C:WidgetTree.CanvasPanel_20'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Research/WBP_ResearchEffectIcon.0"
+      }
+    }
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_RagdollPreset_MimicDog_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalRagdollPreset'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_RagdollPreset_MimicDog_C'Default__BP_RagdollPreset_MimicDog_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Ragdoll/BP_RagdollPreset_MimicDog.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_RagdollPreset_MimicDog_C",
+    "Name": "Default__BP_RagdollPreset_MimicDog_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Ragdoll/BP_RagdollPreset_MimicDog.BP_RagdollPreset_MimicDog_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockBoneNames": [
+        "pelvis",
+        "tongue_01",
+        "tongue_02",
+        "tongue_03",
+        "tongue_04",
+        "head",
+        "mouth"
+      ],
+      "LinearDamping": 7.0,
+      "AngularDamping": 7.0
+    }
+  }
+]

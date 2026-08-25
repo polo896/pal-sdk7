@@ -1,0 +1,44 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueSkillModule_SpawnFunnel_SaintCentaur_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_SpawnFunnelBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BlackCentaur/BP_UniqueSkillModule_SpawnFunnelBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_SpawnFunnelBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BlackCentaur/BP_UniqueSkillModule_SpawnFunnelBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueSkillModule_SpawnFunnel_SaintCentaur_C'Default__BP_UniqueSkillModule_SpawnFunnel_SaintCentaur_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/SaintCentaur/BP_UniqueSkillModule_SpawnFunnel_SaintCentaur.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueSkillModule_SpawnFunnel_SaintCentaur_C",
+    "Name": "Default__BP_UniqueSkillModule_SpawnFunnel_SaintCentaur_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/SaintCentaur/BP_UniqueSkillModule_SpawnFunnel_SaintCentaur.BP_UniqueSkillModule_SpawnFunnel_SaintCentaur_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueSkillModule_SpawnFunnelBase_C'Default__BP_UniqueSkillModule_SpawnFunnelBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BlackCentaur/BP_UniqueSkillModule_SpawnFunnelBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PartnerFunnelTribeID": "EPalTribeID::BlackCentaur",
+      "FunnelWazaID": "EPalWazaID::None"
+    }
+  }
+]

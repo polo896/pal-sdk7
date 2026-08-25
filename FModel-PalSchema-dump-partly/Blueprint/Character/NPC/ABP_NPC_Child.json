@@ -1,0 +1,3857 @@
+[
+  {
+    "Type": "ABP_NPC_Child_C",
+    "Name": "Default__ABP_NPC_Child_C",
+    "Class": "AnimBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.ABP_NPC_Child_C'",
+    "Template": {
+      "ObjectName": "ABP_NPC_Base_C'Default__ABP_NPC_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Base.0"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "SerializedSparseClassDataStruct": "ScriptStruct'Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.ABP_NPC_Child_C:AnimBlueprintGeneratedConstantData'",
+    "SerializedSparseClassData": {}
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_NPC_Child_C",
+    "Class": "UScriptClass'AnimBlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Base.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton'SK_PalGrayHuman_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/Human/SK_PalGrayHuman_Skeleton.7"
+      },
+      "AnimNodeData": [
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            0,
+            34
+          ],
+          "NodeIndex": 0,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 1,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 2,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 3,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 4,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 5,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 6,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            2,
+            24,
+            1,
+            30,
+            22,
+            21,
+            2147483648
+          ],
+          "NodeIndex": 7,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 8,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            3,
+            34
+          ],
+          "NodeIndex": 9,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 10,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 11,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 12,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 13,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 14,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            25,
+            24,
+            23,
+            30,
+            22,
+            21,
+            2147483649
+          ],
+          "NodeIndex": 15,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 16,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 17,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4,
+            34
+          ],
+          "NodeIndex": 18,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 19,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 20,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 21,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 22,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 23,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 24,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 25,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            25,
+            24,
+            23,
+            30,
+            22,
+            21,
+            2147483650
+          ],
+          "NodeIndex": 26,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            25,
+            24,
+            23,
+            30,
+            22,
+            21,
+            2147483651
+          ],
+          "NodeIndex": 27,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 28,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 29,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            4294967295,
+            29,
+            29,
+            28,
+            4294967295,
+            27,
+            26,
+            30
+          ],
+          "NodeIndex": 30,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            4294967295,
+            29,
+            29,
+            28,
+            4294967295,
+            27,
+            26,
+            30
+          ],
+          "NodeIndex": 31,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            4294967295,
+            29,
+            29,
+            28,
+            4294967295,
+            27,
+            26,
+            30
+          ],
+          "NodeIndex": 32,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            4294967295,
+            29,
+            29,
+            28,
+            4294967295,
+            27,
+            26,
+            30
+          ],
+          "NodeIndex": 33,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            6,
+            24,
+            23,
+            30,
+            22,
+            21,
+            2147483652
+          ],
+          "NodeIndex": 34,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 35,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 36,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            6,
+            24,
+            23,
+            30,
+            22,
+            21,
+            2147483653
+          ],
+          "NodeIndex": 37,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 38,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            5,
+            34
+          ],
+          "NodeIndex": 39,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 40,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 41,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 42,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 43,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 44,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 45,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 46,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            6,
+            24,
+            23,
+            30,
+            22,
+            21,
+            2147483654
+          ],
+          "NodeIndex": 47,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 48,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 49,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 50,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 51,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 52,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 53,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 54,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 55,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 56,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 57,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 58,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            6,
+            24,
+            23,
+            30,
+            22,
+            21,
+            2147483655
+          ],
+          "NodeIndex": 59,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            7,
+            34
+          ],
+          "NodeIndex": 60,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 61,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 62,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 63,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 64,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 65,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 66,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 67,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 68,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            2147483656,
+            27,
+            29,
+            26,
+            26,
+            27,
+            4294967295
+          ],
+          "NodeIndex": 69,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            8,
+            34,
+            18
+          ],
+          "NodeIndex": 70,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 71,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 72,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 73,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 74,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 75,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            4294967295,
+            29,
+            29,
+            28,
+            4294967295,
+            27,
+            26,
+            30
+          ],
+          "NodeIndex": 76,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            9,
+            34,
+            18
+          ],
+          "NodeIndex": 77,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            4294967295,
+            29,
+            29,
+            28,
+            4294967295,
+            27,
+            26,
+            30
+          ],
+          "NodeIndex": 78,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            10,
+            34,
+            20
+          ],
+          "NodeIndex": 79,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            4294967295,
+            29,
+            29,
+            28,
+            4294967295,
+            27,
+            26,
+            30
+          ],
+          "NodeIndex": 80,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            11,
+            34,
+            36
+          ],
+          "NodeIndex": 81,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 82,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            12,
+            34,
+            20
+          ],
+          "NodeIndex": 83,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 84,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 85,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 86,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 87,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 88,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295
+          ],
+          "NodeIndex": 89,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            4294967295,
+            29,
+            29,
+            28,
+            4294967295,
+            27,
+            26,
+            30
+          ],
+          "NodeIndex": 90,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            25,
+            24,
+            23,
+            30,
+            22,
+            21,
+            2147483657
+          ],
+          "NodeIndex": 91,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            2147483658,
+            27,
+            29,
+            26,
+            26,
+            27,
+            4294967295
+          ],
+          "NodeIndex": 92,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            13,
+            34,
+            14
+          ],
+          "NodeIndex": 93,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 94,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            2147483660,
+            2147483659,
+            29,
+            26,
+            26,
+            27,
+            4294967295
+          ],
+          "NodeIndex": 95,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            2147483662,
+            2147483661,
+            29,
+            26,
+            26,
+            27,
+            4294967295
+          ],
+          "NodeIndex": 96,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            15,
+            34,
+            16
+          ],
+          "NodeIndex": 97,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            4294967295,
+            29,
+            29,
+            28,
+            4294967295,
+            27,
+            26,
+            30
+          ],
+          "NodeIndex": 98,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            4294967295,
+            29,
+            29,
+            28,
+            4294967295,
+            27,
+            26,
+            30
+          ],
+          "NodeIndex": 99,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            25,
+            24,
+            23,
+            30,
+            22,
+            21,
+            2147483663
+          ],
+          "NodeIndex": 100,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            17,
+            34,
+            18
+          ],
+          "NodeIndex": 101,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            25,
+            24,
+            23,
+            30,
+            22,
+            21,
+            2147483664
+          ],
+          "NodeIndex": 102,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            2147483666,
+            2147483665,
+            29,
+            26,
+            26,
+            27,
+            4294967295
+          ],
+          "NodeIndex": 103,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            25,
+            24,
+            23,
+            30,
+            22,
+            21,
+            2147483667
+          ],
+          "NodeIndex": 104,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            2147483668,
+            27,
+            29,
+            26,
+            26,
+            27,
+            4294967295
+          ],
+          "NodeIndex": 105,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            2147483670,
+            2147483669,
+            29,
+            26,
+            26,
+            27,
+            4294967295
+          ],
+          "NodeIndex": 106,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            19,
+            34,
+            20
+          ],
+          "NodeIndex": 107,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            29,
+            29,
+            29,
+            26,
+            26,
+            27,
+            4294967295
+          ],
+          "NodeIndex": 108,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            25,
+            24,
+            23,
+            30,
+            22,
+            21,
+            2147483671
+          ],
+          "NodeIndex": 109,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            34,
+            32,
+            31,
+            30,
+            4294967295,
+            29,
+            29,
+            28,
+            4294967295,
+            27,
+            26,
+            30
+          ],
+          "NodeIndex": 110,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            33,
+            34,
+            36
+          ],
+          "NodeIndex": 111,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 112,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            35,
+            34,
+            36
+          ],
+          "NodeIndex": 113,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 114,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 115,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 116,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 117,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Child_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.1"
+          },
+          "Entries": [
+            37,
+            37,
+            37,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 118,
+          "Flags": "EAnimNodeDataFlags::None"
+        }
+      ],
+      "NodeTypeMap": [
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_LinkedAnimLayer'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "SourcePropertyNames",
+                "Value": 3
+              },
+              {
+                "Key": "DestPropertyNames",
+                "Value": 4
+              },
+              {
+                "Key": "TargetInstance",
+                "Value": 5
+              },
+              {
+                "Key": "SourceInstance",
+                "Value": 6
+              },
+              {
+                "Key": "InputPoses",
+                "Value": 7
+              },
+              {
+                "Key": "InputPoseNames",
+                "Value": 8
+              },
+              {
+                "Key": "InstanceClass",
+                "Value": 9
+              },
+              {
+                "Key": "Tag",
+                "Value": 10
+              },
+              {
+                "Key": "PendingBlendOutProfile",
+                "Value": 11
+              },
+              {
+                "Key": "PendingBlendInProfile",
+                "Value": 12
+              },
+              {
+                "Key": "bPropagateNotifiesToLinkedInstances",
+                "Value": 13
+              },
+              {
+                "Key": "bReceiveNotifiesFromLinkedInstances",
+                "Value": 14
+              },
+              {
+                "Key": "Interface",
+                "Value": 15
+              },
+              {
+                "Key": "Layer",
+                "Value": 16
+              }
+            ],
+            "NumProperties": 17
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_LinkedAnimGraph'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "SourcePropertyNames",
+                "Value": 3
+              },
+              {
+                "Key": "DestPropertyNames",
+                "Value": 4
+              },
+              {
+                "Key": "TargetInstance",
+                "Value": 5
+              },
+              {
+                "Key": "SourceInstance",
+                "Value": 6
+              },
+              {
+                "Key": "InputPoses",
+                "Value": 7
+              },
+              {
+                "Key": "InputPoseNames",
+                "Value": 8
+              },
+              {
+                "Key": "InstanceClass",
+                "Value": 9
+              },
+              {
+                "Key": "Tag",
+                "Value": 10
+              },
+              {
+                "Key": "PendingBlendOutProfile",
+                "Value": 11
+              },
+              {
+                "Key": "PendingBlendInProfile",
+                "Value": 12
+              },
+              {
+                "Key": "bReceiveNotifiesFromLinkedInstances",
+                "Value": 13
+              },
+              {
+                "Key": "bPropagateNotifiesToLinkedInstances",
+                "Value": 14
+              }
+            ],
+            "NumProperties": 15
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_CustomProperty'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "SourcePropertyNames",
+                "Value": 3
+              },
+              {
+                "Key": "DestPropertyNames",
+                "Value": 4
+              },
+              {
+                "Key": "TargetInstance",
+                "Value": 5
+              },
+              {
+                "Key": "SourceInstance",
+                "Value": 6
+              }
+            ],
+            "NumProperties": 7
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_Base'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              }
+            ],
+            "NumProperties": 3
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/AnimGraphRuntime.AnimNode_Slot'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "Source",
+                "Value": 3
+              },
+              {
+                "Key": "SlotName",
+                "Value": 4
+              },
+              {
+                "Key": "bAlwaysUpdateSourcePose",
+                "Value": 5
+              }
+            ],
+            "NumProperties": 6
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_StateMachine'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "StateMachineIndexInClass",
+                "Value": 3
+              },
+              {
+                "Key": "MaxTransitionsPerFrame",
+                "Value": 4
+              },
+              {
+                "Key": "MaxTransitionsRequests",
+                "Value": 5
+              },
+              {
+                "Key": "bSkipFirstUpdateTransition",
+                "Value": 6
+              },
+              {
+                "Key": "bReinitializeOnBecomingRelevant",
+                "Value": 7
+              },
+              {
+                "Key": "bCreateNotifyMetaData",
+                "Value": 8
+              },
+              {
+                "Key": "bAllowConduitEntryStates",
+                "Value": 9
+              }
+            ],
+            "NumProperties": 10
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/AnimGraphRuntime.AnimNode_StateResult'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "Result",
+                "Value": 3
+              },
+              {
+                "Key": "Name",
+                "Value": 4
+              },
+              {
+                "Key": "Group",
+                "Value": 5
+              },
+              {
+                "Key": "StateIndex",
+                "Value": 6
+              }
+            ],
+            "NumProperties": 7
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_Root'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "Result",
+                "Value": 3
+              },
+              {
+                "Key": "Name",
+                "Value": 4
+              },
+              {
+                "Key": "Group",
+                "Value": 5
+              }
+            ],
+            "NumProperties": 6
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_SequencePlayer'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "GroupIndex",
+                "Value": 3
+              },
+              {
+                "Key": "GroupScope",
+                "Value": 4
+              },
+              {
+                "Key": "BlendWeight",
+                "Value": 5
+              },
+              {
+                "Key": "InternalTimeAccumulator",
+                "Value": 6
+              },
+              {
+                "Key": "PlayRateScaleBiasClampState",
+                "Value": 7
+              },
+              {
+                "Key": "GroupName",
+                "Value": 8
+              },
+              {
+                "Key": "GroupRole",
+                "Value": 9
+              },
+              {
+                "Key": "Method",
+                "Value": 10
+              },
+              {
+                "Key": "bIgnoreForRelevancyTest",
+                "Value": 11
+              },
+              {
+                "Key": "Sequence",
+                "Value": 12
+              },
+              {
+                "Key": "PlayRateBasis",
+                "Value": 13
+              },
+              {
+                "Key": "PlayRate",
+                "Value": 14
+              },
+              {
+                "Key": "PlayRateScaleBiasClampConstants",
+                "Value": 15
+              },
+              {
+                "Key": "PlayRateScaleBiasClamp",
+                "Value": 16
+              },
+              {
+                "Key": "StartPosition",
+                "Value": 17
+              },
+              {
+                "Key": "bLoopAnimation",
+                "Value": 18
+              },
+              {
+                "Key": "bStartFromMatchingPose",
+                "Value": 19
+              }
+            ],
+            "NumProperties": 20
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_SequencePlayerBase'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "GroupIndex",
+                "Value": 3
+              },
+              {
+                "Key": "GroupScope",
+                "Value": 4
+              },
+              {
+                "Key": "BlendWeight",
+                "Value": 5
+              },
+              {
+                "Key": "InternalTimeAccumulator",
+                "Value": 6
+              },
+              {
+                "Key": "PlayRateScaleBiasClampState",
+                "Value": 7
+              }
+            ],
+            "NumProperties": 8
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_AssetPlayerBase'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "GroupIndex",
+                "Value": 3
+              },
+              {
+                "Key": "GroupScope",
+                "Value": 4
+              },
+              {
+                "Key": "BlendWeight",
+                "Value": 5
+              },
+              {
+                "Key": "InternalTimeAccumulator",
+                "Value": 6
+              }
+            ],
+            "NumProperties": 7
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_AssetPlayerRelevancyBase'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              }
+            ],
+            "NumProperties": 3
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/AnimGraphRuntime.AnimNode_BlendListByBool'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "BlendPose",
+                "Value": 3
+              },
+              {
+                "Key": "BlendTime",
+                "Value": 4
+              },
+              {
+                "Key": "TransitionType",
+                "Value": 5
+              },
+              {
+                "Key": "BlendType",
+                "Value": 6
+              },
+              {
+                "Key": "bResetChildOnActivation",
+                "Value": 7
+              },
+              {
+                "Key": "CustomBlendCurve",
+                "Value": 8
+              },
+              {
+                "Key": "BlendProfile",
+                "Value": 9
+              },
+              {
+                "Key": "bActiveValue",
+                "Value": 10
+              }
+            ],
+            "NumProperties": 11
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/AnimGraphRuntime.AnimNode_BlendListBase'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "BlendPose",
+                "Value": 3
+              },
+              {
+                "Key": "BlendTime",
+                "Value": 4
+              },
+              {
+                "Key": "TransitionType",
+                "Value": 5
+              },
+              {
+                "Key": "BlendType",
+                "Value": 6
+              },
+              {
+                "Key": "bResetChildOnActivation",
+                "Value": 7
+              },
+              {
+                "Key": "CustomBlendCurve",
+                "Value": 8
+              },
+              {
+                "Key": "BlendProfile",
+                "Value": 9
+              }
+            ],
+            "NumProperties": 10
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/AnimGraphRuntime.AnimNode_BlendSpacePlayer'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "GroupIndex",
+                "Value": 3
+              },
+              {
+                "Key": "GroupScope",
+                "Value": 4
+              },
+              {
+                "Key": "BlendWeight",
+                "Value": 5
+              },
+              {
+                "Key": "InternalTimeAccumulator",
+                "Value": 6
+              },
+              {
+                "Key": "PreviousBlendSpace",
+                "Value": 7
+              },
+              {
+                "Key": "GroupName",
+                "Value": 8
+              },
+              {
+                "Key": "GroupRole",
+                "Value": 9
+              },
+              {
+                "Key": "Method",
+                "Value": 10
+              },
+              {
+                "Key": "bIgnoreForRelevancyTest",
+                "Value": 11
+              },
+              {
+                "Key": "X",
+                "Value": 12
+              },
+              {
+                "Key": "Y",
+                "Value": 13
+              },
+              {
+                "Key": "PlayRate",
+                "Value": 14
+              },
+              {
+                "Key": "bLoop",
+                "Value": 15
+              },
+              {
+                "Key": "bResetPlayTimeWhenBlendSpaceChanges",
+                "Value": 16
+              },
+              {
+                "Key": "StartPosition",
+                "Value": 17
+              },
+              {
+                "Key": "BlendSpace",
+                "Value": 18
+              }
+            ],
+            "NumProperties": 19
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/AnimGraphRuntime.AnimNode_BlendSpacePlayerBase'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "GroupIndex",
+                "Value": 3
+              },
+              {
+                "Key": "GroupScope",
+                "Value": 4
+              },
+              {
+                "Key": "BlendWeight",
+                "Value": 5
+              },
+              {
+                "Key": "InternalTimeAccumulator",
+                "Value": 6
+              },
+              {
+                "Key": "PreviousBlendSpace",
+                "Value": 7
+              }
+            ],
+            "NumProperties": 8
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/AnimGraphRuntime.AnimNode_TwoWayBlend'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "A",
+                "Value": 3
+              },
+              {
+                "Key": "B",
+                "Value": 4
+              },
+              {
+                "Key": "AlphaInputType",
+                "Value": 5
+              },
+              {
+                "Key": "bAlphaBoolEnabled",
+                "Value": 6
+              },
+              {
+                "Key": "bResetChildOnActivation",
+                "Value": 7
+              },
+              {
+                "Key": "Alpha",
+                "Value": 8
+              },
+              {
+                "Key": "AlphaScaleBias",
+                "Value": 9
+              },
+              {
+                "Key": "AlphaBoolBlend",
+                "Value": 10
+              },
+              {
+                "Key": "AlphaCurveName",
+                "Value": 11
+              },
+              {
+                "Key": "AlphaScaleBiasClamp",
+                "Value": 12
+              }
+            ],
+            "NumProperties": 13
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_TransitionResult'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "bCanEnterTransition",
+                "Value": 3
+              }
+            ],
+            "NumProperties": 4
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_UseCachedPose'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "LinkToCachingNode",
+                "Value": 3
+              },
+              {
+                "Key": "CachePoseName",
+                "Value": 4
+              }
+            ],
+            "NumProperties": 5
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_SaveCachedPose'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "Pose",
+                "Value": 3
+              },
+              {
+                "Key": "CachePoseName",
+                "Value": 4
+              }
+            ],
+            "NumProperties": 5
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_ConvertComponentToLocalSpace'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "ComponentPose",
+                "Value": 3
+              }
+            ],
+            "NumProperties": 4
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/AnimGraphRuntime.AnimNode_ModifyBone'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "ComponentPose",
+                "Value": 3
+              },
+              {
+                "Key": "LODThreshold",
+                "Value": 4
+              },
+              {
+                "Key": "ActualAlpha",
+                "Value": 5
+              },
+              {
+                "Key": "AlphaInputType",
+                "Value": 6
+              },
+              {
+                "Key": "bAlphaBoolEnabled",
+                "Value": 7
+              },
+              {
+                "Key": "Alpha",
+                "Value": 8
+              },
+              {
+                "Key": "AlphaScaleBias",
+                "Value": 9
+              },
+              {
+                "Key": "AlphaBoolBlend",
+                "Value": 10
+              },
+              {
+                "Key": "AlphaCurveName",
+                "Value": 11
+              },
+              {
+                "Key": "AlphaScaleBiasClamp",
+                "Value": 12
+              },
+              {
+                "Key": "BoneToModify",
+                "Value": 13
+              },
+              {
+                "Key": "Translation",
+                "Value": 14
+              },
+              {
+                "Key": "Rotation",
+                "Value": 15
+              },
+              {
+                "Key": "Scale",
+                "Value": 16
+              },
+              {
+                "Key": "TranslationMode",
+                "Value": 17
+              },
+              {
+                "Key": "RotationMode",
+                "Value": 18
+              },
+              {
+                "Key": "ScaleMode",
+                "Value": 19
+              },
+              {
+                "Key": "TranslationSpace",
+                "Value": 20
+              },
+              {
+                "Key": "RotationSpace",
+                "Value": 21
+              },
+              {
+                "Key": "ScaleSpace",
+                "Value": 22
+              }
+            ],
+            "NumProperties": 23
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/AnimGraphRuntime.AnimNode_SkeletalControlBase'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "ComponentPose",
+                "Value": 3
+              },
+              {
+                "Key": "LODThreshold",
+                "Value": 4
+              },
+              {
+                "Key": "ActualAlpha",
+                "Value": 5
+              },
+              {
+                "Key": "AlphaInputType",
+                "Value": 6
+              },
+              {
+                "Key": "bAlphaBoolEnabled",
+                "Value": 7
+              },
+              {
+                "Key": "Alpha",
+                "Value": 8
+              },
+              {
+                "Key": "AlphaScaleBias",
+                "Value": 9
+              },
+              {
+                "Key": "AlphaBoolBlend",
+                "Value": 10
+              },
+              {
+                "Key": "AlphaCurveName",
+                "Value": 11
+              },
+              {
+                "Key": "AlphaScaleBiasClamp",
+                "Value": 12
+              }
+            ],
+            "NumProperties": 13
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_ConvertLocalToComponentSpace'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "LocalPose",
+                "Value": 3
+              }
+            ],
+            "NumProperties": 4
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/AnimGraphRuntime.AnimNode_LayeredBoneBlend'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "BasePose",
+                "Value": 3
+              },
+              {
+                "Key": "BlendPoses",
+                "Value": 4
+              },
+              {
+                "Key": "BlendMode",
+                "Value": 5
+              },
+              {
+                "Key": "BlendMasks",
+                "Value": 6
+              },
+              {
+                "Key": "LayerSetup",
+                "Value": 7
+              },
+              {
+                "Key": "BlendWeights",
+                "Value": 8
+              },
+              {
+                "Key": "bMeshSpaceRotationBlend",
+                "Value": 9
+              },
+              {
+                "Key": "bMeshSpaceScaleBlend",
+                "Value": 10
+              },
+              {
+                "Key": "CurveBlendOption",
+                "Value": 11
+              },
+              {
+                "Key": "bBlendRootMotionBasedOnRootBone",
+                "Value": 12
+              },
+              {
+                "Key": "LODThreshold",
+                "Value": 13
+              },
+              {
+                "Key": "PerBoneBlendWeights",
+                "Value": 14
+              },
+              {
+                "Key": "SkeletonGuid",
+                "Value": 15
+              },
+              {
+                "Key": "VirtualBoneGuid",
+                "Value": 16
+              }
+            ],
+            "NumProperties": 17
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_LinkedInputPose'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "Name",
+                "Value": 3
+              },
+              {
+                "Key": "Graph",
+                "Value": 4
+              },
+              {
+                "Key": "InputPose",
+                "Value": 5
+              }
+            ],
+            "NumProperties": 6
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/AnimGraphRuntime.AnimNode_Fabrik'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "ComponentPose",
+                "Value": 3
+              },
+              {
+                "Key": "LODThreshold",
+                "Value": 4
+              },
+              {
+                "Key": "ActualAlpha",
+                "Value": 5
+              },
+              {
+                "Key": "AlphaInputType",
+                "Value": 6
+              },
+              {
+                "Key": "bAlphaBoolEnabled",
+                "Value": 7
+              },
+              {
+                "Key": "Alpha",
+                "Value": 8
+              },
+              {
+                "Key": "AlphaScaleBias",
+                "Value": 9
+              },
+              {
+                "Key": "AlphaBoolBlend",
+                "Value": 10
+              },
+              {
+                "Key": "AlphaCurveName",
+                "Value": 11
+              },
+              {
+                "Key": "AlphaScaleBiasClamp",
+                "Value": 12
+              },
+              {
+                "Key": "EffectorTransform",
+                "Value": 13
+              },
+              {
+                "Key": "EffectorTarget",
+                "Value": 14
+              },
+              {
+                "Key": "TipBone",
+                "Value": 15
+              },
+              {
+                "Key": "RootBone",
+                "Value": 16
+              },
+              {
+                "Key": "Precision",
+                "Value": 17
+              },
+              {
+                "Key": "MaxIterations",
+                "Value": 18
+              },
+              {
+                "Key": "EffectorTransformSpace",
+                "Value": 19
+              },
+              {
+                "Key": "EffectorRotationSource",
+                "Value": 20
+              },
+              {
+                "Key": "bEnableDebugDraw",
+                "Value": 21
+              },
+              {
+                "Key": "EffectorTransformBone",
+                "Value": 22
+              }
+            ],
+            "NumProperties": 23
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/AnimGraphRuntime.AnimNode_LookAt'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "ComponentPose",
+                "Value": 3
+              },
+              {
+                "Key": "LODThreshold",
+                "Value": 4
+              },
+              {
+                "Key": "ActualAlpha",
+                "Value": 5
+              },
+              {
+                "Key": "AlphaInputType",
+                "Value": 6
+              },
+              {
+                "Key": "bAlphaBoolEnabled",
+                "Value": 7
+              },
+              {
+                "Key": "Alpha",
+                "Value": 8
+              },
+              {
+                "Key": "AlphaScaleBias",
+                "Value": 9
+              },
+              {
+                "Key": "AlphaBoolBlend",
+                "Value": 10
+              },
+              {
+                "Key": "AlphaCurveName",
+                "Value": 11
+              },
+              {
+                "Key": "AlphaScaleBiasClamp",
+                "Value": 12
+              },
+              {
+                "Key": "BoneToModify",
+                "Value": 13
+              },
+              {
+                "Key": "LookAtTarget",
+                "Value": 14
+              },
+              {
+                "Key": "LookAtLocation",
+                "Value": 15
+              },
+              {
+                "Key": "LookAt_Axis",
+                "Value": 16
+              },
+              {
+                "Key": "bUseLookUpAxis",
+                "Value": 17
+              },
+              {
+                "Key": "InterpolationType",
+                "Value": 18
+              },
+              {
+                "Key": "LookUp_Axis",
+                "Value": 19
+              },
+              {
+                "Key": "LookAtClamp",
+                "Value": 20
+              },
+              {
+                "Key": "InterpolationTime",
+                "Value": 21
+              },
+              {
+                "Key": "InterpolationTriggerThreashold",
+                "Value": 22
+              },
+              {
+                "Key": "LookAtBone",
+                "Value": 23
+              },
+              {
+                "Key": "LookAtSocket",
+                "Value": 24
+              },
+              {
+                "Key": "LookAtAxis",
+                "Value": 25
+              },
+              {
+                "Key": "CustomLookAtAxis",
+                "Value": 26
+              },
+              {
+                "Key": "LookUpAxis",
+                "Value": 27
+              },
+              {
+                "Key": "CustomLookUpAxis",
+                "Value": 28
+              }
+            ],
+            "NumProperties": 29
+          }
+        }
+      ]
+    },
+    "SuperStruct": {
+      "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Base.1"
+    },
+    "ClassFlags": "CLASS_Transient | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'SkeletalMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABP_NPC_Child_C'Default__ABP_NPC_Child_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Child.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "ScriptStruct",
+    "Name": "AnimBlueprintGeneratedConstantData",
+    "Outer": "ABP_NPC_Child_C",
+    "Class": "UScriptClass'ScriptStruct'",
+    "Super": {
+      "ObjectName": "ScriptStruct'ABP_NPC_Base_C:AnimBlueprintGeneratedConstantData'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Base.34"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "ScriptStruct'ABP_NPC_Base_C:AnimBlueprintGeneratedConstantData'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/ABP_NPC_Base.34"
+    }
+  }
+]

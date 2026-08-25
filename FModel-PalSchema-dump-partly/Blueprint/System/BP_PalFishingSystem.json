@@ -1,0 +1,140 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalFishingSystem_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalFishingSystem'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalFishingSystem_C'Default__BP_PalFishingSystem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalFishingSystem.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalFishingSystem_C",
+    "Name": "Default__BP_PalFishingSystem_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalFishingSystem.BP_PalFishingSystem_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CatchBattleParameter": {
+        "DefaultProgressAmount": 300.0,
+        "SuccessFightCatchAmount": 100.0,
+        "MissFightCatchAmount": 160.0,
+        "FishingInputAcceptTime": 2.6,
+        "SinkWaitMinTime": 1.2,
+        "SinkWaitMaxTime": 7.0,
+        "HitBarDefaultSize": 15.5,
+        "HitBarMoveSpeed": 67.0,
+        "HitBarMoveGravity": 22.0,
+        "HitBarMoveLiftForce": 22.0,
+        "InitFishPos": 50.0,
+        "InitHitBarPos": 50.0,
+        "StartDelayTime": 0.7,
+        "OverrideSearchAreaRate": 0.4,
+        "FirstFishingMissFightCatchAmountRate": 0.25
+      },
+      "FishShadowSizeScaleMap": [
+        {
+          "Key": "EPalFishShadowSizeType::A",
+          "Value": 0.6
+        },
+        {
+          "Key": "EPalFishShadowSizeType::B",
+          "Value": 0.85
+        },
+        {
+          "Key": "EPalFishShadowSizeType::C",
+          "Value": 1.2
+        },
+        {
+          "Key": "EPalFishShadowSizeType::D",
+          "Value": 1.5
+        }
+      ],
+      "RarePalEffect": {
+        "ObjectName": "NiagaraSystem'NS_RareFishGlow_Purple'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Common/Glow/NS_RareFishGlow_Purple.79"
+      },
+      "RarePassiveEffect": {
+        "ObjectName": "NiagaraSystem'NS_RareFishGlow_Green'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Common/Glow/NS_RareFishGlow_Green.79"
+      },
+      "OverrideRarePassiveEffectInfos": [
+        {
+          "PassiveSkillId": {
+            "Key": "Nushi"
+          },
+          "RareEffect": {
+            "ObjectName": "NiagaraSystem'NS_RareKingFishGlow'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Glow/NS_RareKingFishGlow.132"
+          }
+        }
+      ],
+      "FishingSuccessCutsceneMap": [
+        {
+          "Key": "EPalSizeType::XS",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Cutscene/Fishing/BP_CutsceneActor_FishingSuccess_1.BP_CutsceneActor_FishingSuccess_1_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalSizeType::S",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Cutscene/Fishing/BP_CutsceneActor_FishingSuccess_1.BP_CutsceneActor_FishingSuccess_1_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalSizeType::M",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Cutscene/Fishing/BP_CutsceneActor_FishingSuccess_2.BP_CutsceneActor_FishingSuccess_2_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalSizeType::L",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Cutscene/Fishing/BP_CutsceneActor_FishingSuccess_3.BP_CutsceneActor_FishingSuccess_3_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalSizeType::XL",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Cutscene/Fishing/BP_CutsceneActor_FishingSuccess_3.BP_CutsceneActor_FishingSuccess_3_C",
+            "SubPathString": ""
+          }
+        }
+      ],
+      "KingPassiveSkillId": {
+        "Key": "Nushi"
+      },
+      "BossPassiveSkillId": {
+        "Key": "MiniNushi"
+      },
+      "CatchBattleBlueprintClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_Fishing_CatchBattle_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle.0"
+      },
+      "BaitItemDataTable": {
+        "ObjectName": "DataTable'DT_FishingBaitItem'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Item/DT_FishingBaitItem.0"
+      },
+      "bShouldCreate": true
+    }
+  }
+]

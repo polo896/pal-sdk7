@@ -1,0 +1,2116 @@
+[
+  {
+    "Type": "AnalogSlider",
+    "Name": "AnalogSlider_H",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'AnalogSlider'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 0.264,
+      "WidgetStyle": {
+        "NormalBarImage": {
+          "ResourceObject": {
+            "ObjectName": "Material'M_UIHSVColorBar'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CharacterMake/M_UIHSVColorBar.0"
+          }
+        },
+        "HoveredBarImage": {
+          "ResourceObject": {
+            "ObjectName": "Material'M_UIHSVColorBar'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CharacterMake/M_UIHSVColorBar.0"
+          }
+        },
+        "DisabledBarImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.5,
+              "G": 0.5,
+              "B": 0.5,
+              "A": 0.3,
+              "Hex": "4CBCBCBC"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_option_slider_thumb'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_option_slider_thumb.0"
+          }
+        },
+        "NormalThumbImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_option_slider_thumb'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_option_slider_thumb.0"
+          }
+        },
+        "HoveredThumbImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.7605,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "00E2FF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_option_slider_thumb'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_option_slider_thumb.0"
+          }
+        },
+        "BarThickness": 8.0
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.16"
+      }
+    }
+  },
+  {
+    "Type": "AnalogSlider",
+    "Name": "AnalogSlider_S",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'AnalogSlider'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 1.0,
+      "WidgetStyle": {
+        "NormalBarImage": {
+          "ResourceObject": {
+            "ObjectName": "Material'M_UIHSVView_SGradient'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CharacterMake/M_UIHSVView_SGradient.0"
+          }
+        },
+        "DisabledBarImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.5,
+              "G": 0.5,
+              "B": 0.5,
+              "A": 0.3,
+              "Hex": "4CBCBCBC"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_option_slider_thumb'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_option_slider_thumb.0"
+          }
+        },
+        "NormalThumbImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_option_slider_thumb'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_option_slider_thumb.0"
+          }
+        },
+        "HoveredThumbImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.7605,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "00E2FF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_option_slider_thumb'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_option_slider_thumb.0"
+          }
+        },
+        "BarThickness": 8.0
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.CanvasPanel_3.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.17"
+      }
+    }
+  },
+  {
+    "Type": "AnalogSlider",
+    "Name": "AnalogSlider_V",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'AnalogSlider'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 1.0,
+      "WidgetStyle": {
+        "NormalBarImage": {
+          "ResourceObject": {
+            "ObjectName": "Material'M_UIHSVView_VGradient'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CharacterMake/M_UIHSVView_VGradient.0"
+          }
+        },
+        "DisabledBarImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.5,
+              "G": 0.5,
+              "B": 0.5,
+              "A": 0.3,
+              "Hex": "4CBCBCBC"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_option_slider_thumb'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_option_slider_thumb.0"
+          }
+        },
+        "NormalThumbImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_option_slider_thumb'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_option_slider_thumb.0"
+          }
+        },
+        "HoveredThumbImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.7605,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "00E2FF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_option_slider_thumb'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_option_slider_thumb.0"
+          }
+        },
+        "BarThickness": 8.0
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.CanvasPanel_4.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_H",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.Canvas_H.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.Canvas_H.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.10"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_ColorSlider_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.38"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_S",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.Canvas_S.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.Canvas_S.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.11"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_ColorSlider_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.39"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_V",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.Canvas_V.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.Canvas_V.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.14"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_ColorSlider_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.40"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.16"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.Canvas_H.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.CanvasPanel_3.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.CanvasPanel_3.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.17"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.Canvas_S.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_4",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.CanvasPanel_4.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.CanvasPanel_4.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.20"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.Canvas_V.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_H",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.Canvas_H'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.3"
+      },
+      "Content": {
+        "ObjectName": "WBP_CharaCre_SliderBase_C'WBP_ColorSlider_C:WidgetTree.WBP_CharaCre_SliderBase_H'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.41"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Canvas_H",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 112.0,
+          "Right": 46.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.Canvas_H'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.3"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Canvas_S",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 112.0,
+          "Right": 46.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.Canvas_S'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.CanvasPanel_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Canvas_S",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.Canvas_S'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.4"
+      },
+      "Content": {
+        "ObjectName": "WBP_CharaCre_SliderBase_C'WBP_ColorSlider_C:WidgetTree.WBP_CharaCre_SliderBase_S'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_V",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.Canvas_V'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.5"
+      },
+      "Content": {
+        "ObjectName": "WBP_CharaCre_SliderBase_C'WBP_ColorSlider_C:WidgetTree.WBP_CharaCre_SliderBase_V'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.43"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Canvas_V",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 112.0,
+          "Right": 46.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.Canvas_V'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.CanvasPanel_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 13.0,
+          "Right": 13.0,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.6"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_ColorSlider_C:WidgetTree.Image_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.6"
+      },
+      "Content": {
+        "ObjectName": "AnalogSlider'WBP_ColorSlider_C:WidgetTree.AnalogSlider_H'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.0"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_3",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.CanvasPanel_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.7"
+      },
+      "Content": {
+        "ObjectName": "AnalogSlider'WBP_ColorSlider_C:WidgetTree.AnalogSlider_S'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.1"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_3",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 13.0,
+          "Right": 13.0,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.CanvasPanel_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.7"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_ColorSlider_C:WidgetTree.Image'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_4",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 13.0,
+          "Right": 13.0,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.CanvasPanel_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.8"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_ColorSlider_C:WidgetTree.Image_293'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_4",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.CanvasPanel_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.8"
+      },
+      "Content": {
+        "ObjectName": "AnalogSlider'WBP_ColorSlider_C:WidgetTree.AnalogSlider_V'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.2"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_ColorSlider_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "AnalogSlider_V",
+          "DelegatePropertyName": "OnValueChanged",
+          "FunctionNameToBind": "BndEvt__WBP_ColorSlider_AnalogSlider_V_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "AnalogSlider_S",
+          "DelegatePropertyName": "OnValueChanged",
+          "FunctionNameToBind": "BndEvt__WBP_ColorSlider_AnalogSlider_S_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "AnalogSlider_H",
+          "DelegatePropertyName": "OnValueChanged",
+          "FunctionNameToBind": "BndEvt__WBP_ColorSlider_AnalogSlider_H_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ApplyColorSetting",
+    "Outer": "WBP_ColorSlider_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsTriggerEvent",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetValue_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_FTrunc_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetValue_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_FTrunc_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetValue_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_FTrunc_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetValue_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetValue_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetValue_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_LinearColor",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_LinearColor_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_HSVToRGBLinear_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetScalarParameterValue_Value_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_MakeStruct_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_B_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_A_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetScalarParameterValue_Value_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_MakeStruct_G_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_MakeStruct_R_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_ColorSlider_AnalogSlider_H_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature",
+    "Outer": "WBP_ColorSlider_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "Value",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_ColorSlider_AnalogSlider_S_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature",
+    "Outer": "WBP_ColorSlider_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "Value",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_ColorSlider_AnalogSlider_V_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature",
+    "Outer": "WBP_ColorSlider_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "Value",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "WBP_ColorSlider_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_ColorSlider",
+    "Outer": "WBP_ColorSlider_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetDynamicMaterial_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetDynamicMaterial_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_ComponentBoundEvent_Value_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_ComponentBoundEvent_Value_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_ComponentBoundEvent_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetHSVColor",
+    "Outer": "WBP_ColorSlider_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "HSV",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetLinearColor",
+    "Outer": "WBP_ColorSlider_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "LinearColor",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnColorChanged__DelegateSignature",
+    "Outer": "WBP_ColorSlider_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "HSV",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Set Enable Slider",
+    "Outer": "WBP_ColorSlider_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsEnable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_DoubleToLinearColor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetRenderOpacity_InOpacity_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetColor",
+    "Outer": "WBP_ColorSlider_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "NewColor",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RGBLinearToHSV_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetValue_InValue_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetValue_InValue_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_B_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetValue_InValue_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetColorForce",
+    "Outer": "WBP_ColorSlider_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "NewColor",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RGBLinearToHSV_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetValue_InValue_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetValue_InValue_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.2,
+        "Hex": "33FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.CanvasPanel_3.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.18"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.2,
+        "Hex": "33FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.15"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_293",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.2,
+        "Hex": "33FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.CanvasPanel_4.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.19"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_ColorSlider_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.38"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_ColorSlider_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.39"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_ColorSlider_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.40"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_ColorSlider_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.37"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.Canvas_H'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.3"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Top": 8.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_ColorSlider_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.37"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.Canvas_S'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.4"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Top": 8.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_ColorSlider_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.37"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_ColorSlider_C:WidgetTree.Canvas_V'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.5"
+      }
+    }
+  },
+  {
+    "Type": "WBP_CharaCre_SliderBase_C",
+    "Name": "WBP_CharaCre_SliderBase_H",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_SliderBase.WBP_CharaCre_SliderBase_C'",
+    "Template": {
+      "ObjectName": "WBP_CharaCre_SliderBase_C'Default__WBP_CharaCre_SliderBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_SliderBase.16"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "CHARACTER_CREATION_COLOR_SELECT_H"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.Canvas_H.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.9"
+      }
+    }
+  },
+  {
+    "Type": "WBP_CharaCre_SliderBase_C",
+    "Name": "WBP_CharaCre_SliderBase_S",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_SliderBase.WBP_CharaCre_SliderBase_C'",
+    "Template": {
+      "ObjectName": "WBP_CharaCre_SliderBase_C'Default__WBP_CharaCre_SliderBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_SliderBase.16"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "CHARACTER_CREATION_COLOR_SELECT_S"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.Canvas_S.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.12"
+      }
+    }
+  },
+  {
+    "Type": "WBP_CharaCre_SliderBase_C",
+    "Name": "WBP_CharaCre_SliderBase_V",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_SliderBase.WBP_CharaCre_SliderBase_C'",
+    "Template": {
+      "ObjectName": "WBP_CharaCre_SliderBase_C'Default__WBP_CharaCre_SliderBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_SliderBase.16"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "CHARACTER_CREATION_COLOR_SELECT_V"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_ColorSlider_C:WidgetTree.Canvas_V.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.13"
+      }
+    }
+  },
+  {
+    "Type": "WBP_ColorSlider_C",
+    "Name": "Default__WBP_ColorSlider_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.WBP_ColorSlider_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "CurrentHSVColor": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.0,
+        "Hex": "000000"
+      },
+      "CurrentLinearColor": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.0,
+        "Hex": "000000"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_ColorSlider_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_ColorSlider_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.46"
+      },
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_ColorSlider_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.21"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_ColorSlider_C:ExecuteUbergraph_WBP_ColorSlider'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.27"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidget'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_ColorSlider_C:GetLinearColor'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.29"
+      },
+      {
+        "ObjectName": "Function'WBP_ColorSlider_C:GetHSVColor'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.28"
+      },
+      {
+        "ObjectName": "Function'WBP_ColorSlider_C:SetColor'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.32"
+      },
+      {
+        "ObjectName": "Function'WBP_ColorSlider_C:SetColorForce'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.33"
+      },
+      {
+        "ObjectName": "Function'WBP_ColorSlider_C:Set Enable Slider'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.31"
+      },
+      {
+        "ObjectName": "Function'WBP_ColorSlider_C:ApplyColorSetting'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.22"
+      },
+      {
+        "ObjectName": "Function'WBP_ColorSlider_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.26"
+      },
+      {
+        "ObjectName": "Function'WBP_ColorSlider_C:BndEvt__WBP_ColorSlider_AnalogSlider_H_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.23"
+      },
+      {
+        "ObjectName": "Function'WBP_ColorSlider_C:BndEvt__WBP_ColorSlider_AnalogSlider_S_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.24"
+      },
+      {
+        "ObjectName": "Function'WBP_ColorSlider_C:BndEvt__WBP_ColorSlider_AnalogSlider_V_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.25"
+      },
+      {
+        "ObjectName": "Function'WBP_ColorSlider_C:ExecuteUbergraph_WBP_ColorSlider'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.27"
+      },
+      {
+        "ObjectName": "Function'WBP_ColorSlider_C:OnColorChanged__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.30"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AnalogSlider_H",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'AnalogSlider'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AnalogSlider_S",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'AnalogSlider'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AnalogSlider_V",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'AnalogSlider'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Canvas_H",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Canvas_S",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Canvas_V",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_293",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_CharaCre_SliderBase_H",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CharaCre_SliderBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_SliderBase.17"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_CharaCre_SliderBase_S",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CharaCre_SliderBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_SliderBase.17"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_CharaCre_SliderBase_V",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CharaCre_SliderBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_CharaCre_SliderBase.17"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnColorChanged",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_ColorSlider_C:OnColorChanged__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.30"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SGradientMaterial",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "VGradientMaterial",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CurrentHSVColor",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CurrentLinearColor",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnColorChanged__DelegateSignature": {
+        "ObjectName": "Function'WBP_ColorSlider_C:OnColorChanged__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.30"
+      },
+      "ExecuteUbergraph_WBP_ColorSlider": {
+        "ObjectName": "Function'WBP_ColorSlider_C:ExecuteUbergraph_WBP_ColorSlider'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.27"
+      },
+      "BndEvt__WBP_ColorSlider_AnalogSlider_V_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature": {
+        "ObjectName": "Function'WBP_ColorSlider_C:BndEvt__WBP_ColorSlider_AnalogSlider_V_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.25"
+      },
+      "BndEvt__WBP_ColorSlider_AnalogSlider_S_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature": {
+        "ObjectName": "Function'WBP_ColorSlider_C:BndEvt__WBP_ColorSlider_AnalogSlider_S_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.24"
+      },
+      "BndEvt__WBP_ColorSlider_AnalogSlider_H_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature": {
+        "ObjectName": "Function'WBP_ColorSlider_C:BndEvt__WBP_ColorSlider_AnalogSlider_H_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.23"
+      },
+      "Construct": {
+        "ObjectName": "Function'WBP_ColorSlider_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.26"
+      },
+      "ApplyColorSetting": {
+        "ObjectName": "Function'WBP_ColorSlider_C:ApplyColorSetting'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.22"
+      },
+      "Set Enable Slider": {
+        "ObjectName": "Function'WBP_ColorSlider_C:Set Enable Slider'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.31"
+      },
+      "SetColorForce": {
+        "ObjectName": "Function'WBP_ColorSlider_C:SetColorForce'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.33"
+      },
+      "SetColor": {
+        "ObjectName": "Function'WBP_ColorSlider_C:SetColor'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.32"
+      },
+      "GetHSVColor": {
+        "ObjectName": "Function'WBP_ColorSlider_C:GetHSVColor'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.28"
+      },
+      "GetLinearColor": {
+        "ObjectName": "Function'WBP_ColorSlider_C:GetLinearColor'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.29"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_ColorSlider_C'Default__WBP_ColorSlider_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.44"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_ColorSlider_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "VerticalBox'WBP_ColorSlider_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/CharacterCreation/WBP_ColorSlider.37"
+      }
+    }
+  }
+]

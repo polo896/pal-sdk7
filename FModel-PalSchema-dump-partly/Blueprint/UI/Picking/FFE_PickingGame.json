@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "ForceFeedbackEffect",
+    "Name": "FFE_PickingGame",
+    "Class": "UScriptClass'ForceFeedbackEffect'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChannelDetails": [
+        {
+          "bAffectsLeftLarge": false,
+          "bAffectsLeftSmall": true,
+          "bAffectsRightLarge": false,
+          "bAffectsRightSmall": true,
+          "Curve": {
+            "EditorCurveData": {
+              "Keys": [
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Break",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": -0.0016782284,
+                  "Value": 0.0,
+                  "ArriveTangent": 0.0,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Break",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.03644809,
+                  "Value": 0.5601909,
+                  "ArriveTangent": -1.2237558,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": -1.1522183,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Break",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.10421592,
+                  "Value": 0.01201719,
+                  "ArriveTangent": 0.0,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Break",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.16927305,
+                  "Value": 0.43470538,
+                  "ArriveTangent": -0.8121485,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": -0.8121485,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Linear",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.19186231,
+                  "Value": -0.0077962875,
+                  "ArriveTangent": 0.0,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0,
+                  "LeaveTangentWeight": 0.0
+                }
+              ],
+              "DefaultValue": 3.4028235E+38,
+              "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+              "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant"
+            },
+            "ExternalCurve": null
+          }
+        }
+      ],
+      "Duration": 0.19186231
+    }
+  }
+]

@@ -1,0 +1,1391 @@
+[
+  {
+    "Type": "BackgroundBlur",
+    "Name": "BackgroundBlur",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'BackgroundBlur'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BlurStrength": 4.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.8"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_C",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "ENTRY_DUNGEON_EXPIRE"
+      },
+      "IsAutoAdjustScale": true,
+      "FontSizeOverride_VeryLarge": 17,
+      "MaxWidth": 290,
+      "Text": {
+        "Namespace": "",
+        "Key": "65B5FCCD41097A6CDF5761B78C4A7F14",
+        "SourceString": "誰でも拾えるまで",
+        "LocalizedString": "誰でも拾えるまで"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.07,
+          "B": 0.07,
+          "A": 1.0,
+          "Hex": "FF4B4B"
+        }
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 1,
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.3,
+            "Hex": "4C000000"
+          }
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_DroppedTimer_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.21"
+      },
+      "RenderTransformPivot": {
+        "X": 0.0,
+        "Y": 0.5
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_Dot",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "9276485E4B14EDCEB898AE85ABC9E16E",
+        "SourceString": ":",
+        "LocalizedString": ":"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.07,
+          "B": 0.07,
+          "A": 1.0,
+          "Hex": "FF4B4B"
+        }
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.517647,
+            "B": 1.0,
+            "A": 0.3,
+            "Hex": "4C00BFFF"
+          }
+        },
+        "Size": 16
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_DroppedTimer_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.19"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_Hour",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "A766C12D40936009CFF2C78A9273F949",
+        "SourceString": "10",
+        "LocalizedString": "10"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.07,
+          "B": 0.07,
+          "A": 1.0,
+          "Hex": "FF4B4B"
+        }
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.517647,
+            "B": 1.0,
+            "A": 0.3,
+            "Hex": "4C00BFFF"
+          }
+        },
+        "Size": 16
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_DroppedTimer_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.18"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_Minute",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "06E927E2496BEDD3ADE442BB425512B2",
+        "SourceString": "00",
+        "LocalizedString": "00"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.07,
+          "B": 0.07,
+          "A": 1.0,
+          "Hex": "FF4B4B"
+        }
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.517647,
+            "B": 1.0,
+            "A": 0.3,
+            "Hex": "4C00BFFF"
+          }
+        },
+        "Size": 16
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_DroppedTimer_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.20"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_40",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_40.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_56",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_11'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_12'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_13'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_15'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_40.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_40",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_40'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_56'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_56",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_56'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.6"
+      },
+      "Content": {
+        "ObjectName": "BackgroundBlur'WBP_DroppedTimer_C:WidgetTree.BackgroundBlur'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.0"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasPanel_56",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_56'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.6"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_DroppedTimer_C:WidgetTree.Image_Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_56",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_56'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.6"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_DroppedTimer_C:WidgetTree.Line_L'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_13",
+    "Outer": "CanvasPanel_56",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_56'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.6"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_DroppedTimer_C:WidgetTree.Line_R'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.26"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_15",
+    "Outer": "CanvasPanel_56",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -10.0,
+          "Top": -10.0,
+          "Right": 142.0,
+          "Bottom": -10.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_56'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.6"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_DroppedTimer_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.17"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "WBP_DroppedTimer_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_DroppedTimer",
+    "Outer": "WBP_DroppedTimer_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Temp_name_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Temp_name_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_IsOpen",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_CustomEvent_Hour",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_CustomEvent_Minute",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetOpenText",
+    "Outer": "WBP_DroppedTimer_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsOpen",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetTime",
+    "Outer": "WBP_DroppedTimer_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Hour",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Minute",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_DroppedTimer_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.21"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_DroppedTimer_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.22"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_DroppedTimer_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.18"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_DroppedTimer_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.19"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_DroppedTimer_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.20"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_15'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.12"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Top": -1.5
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_DroppedTimer_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.17"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_DroppedTimer_C:WidgetTree.BP_PalTextBlock_Hour'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.3"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Top": -1.5
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_DroppedTimer_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.17"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_DroppedTimer_C:WidgetTree.BP_PalTextBlock_Dot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.2"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Top": -1.5
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_DroppedTimer_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.17"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_DroppedTimer_C:WidgetTree.BP_PalTextBlock_Minute'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.4"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 6.0
+      },
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_DroppedTimer_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.17"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_DroppedTimer_C:WidgetTree.BP_PalTextBlock_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.1"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 32.0,
+        "Top": 1.0,
+        "Right": 2.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Left",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_DroppedTimer_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.17"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_DroppedTimer_C:WidgetTree.Image_143'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.23"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_143",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 26.0,
+          "Y": 26.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_icon_Expedition_StageInfo_Time'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_icon_Expedition_StageInfo_Time.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.05,
+        "B": 0.05,
+        "A": 1.0,
+        "Hex": "FF3F3F"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_DroppedTimer_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.22"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Base",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.029557,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "300000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_11'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.9"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible",
+      "RenderOpacity": 0.75
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_L",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.07,
+        "B": 0.07,
+        "A": 1.0,
+        "Hex": "FF4B4B"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_12'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.10"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_R",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.07,
+        "B": 0.07,
+        "A": 1.0,
+        "Hex": "FF4B4B"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_13'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.11"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Anm_Loop",
+    "Outer": "Anm_Loop_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "B7C9A8C3-493A2A4E-C25D0E9E-7AC9DAC7",
+          "Name": "BP_PalTextBlock_Dot",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "B7C9A8C3-493A2A4E-C25D0E9E-7AC9DAC7",
+          "BindingName": "BP_PalTextBlock_Dot",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_DroppedTimer_C:Anm_Loop_INST.Anm_Loop.MovieSceneFloatTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.32"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 120227
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "E63F82B6-4B767307-D9520290-CF702630"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Anm_Loop_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 120226
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_DroppedTimer_C:Anm_Loop_INST.Anm_Loop.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.31"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "B7C9A8C3-493A2A4E-C25D0E9E-7AC9DAC7"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 120226
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "69FB8B1B-4E98776D-EBD2539B-722F70BE",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 30058
+          },
+          {
+            "Value": 90171
+          },
+          {
+            "Value": 120226
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 1,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 1,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 1,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 1,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_DroppedTimer_C:Anm_Loop_INST.Anm_Loop.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.28"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_DroppedTimer_C:Anm_Loop_INST.Anm_Loop.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.29"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 120226
+            }
+          }
+        }
+      },
+      "Signature": "D03DBB76-4835E200-C4C4D283-99DADA91"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Anm_Loop",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_DroppedTimer_C:Anm_Loop_INST.Anm_Loop.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.31"
+        }
+      ],
+      "EvaluationFieldGuid": "164FCFEF-4C5D95FE-5A182287-D16F4A5D",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_DroppedTimer_C:Anm_Loop_INST.Anm_Loop.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.31"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 120226
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "164FCFEF-4C5D95FE-5A182287-D16F4A5D"
+    }
+  },
+  {
+    "Type": "WBP_DroppedTimer_C",
+    "Name": "Default__WBP_DroppedTimer_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.WBP_DroppedTimer_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Anm_Loop_INST",
+    "Outer": "WBP_DroppedTimer_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_DroppedTimer_C:Anm_Loop_INST.Anm_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.27"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "BP_PalTextBlock_Dot",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "B7C9A8C3-493A2A4E-C25D0E9E-7AC9DAC7",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Anm_Loop",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_DroppedTimer_C:Anm_Loop_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.30"
+      },
+      "Signature": "69FB8B1B-4E98776D-EBD2539B-722F70BE"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_DroppedTimer_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_DroppedTimer_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.36"
+      },
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'WBP_DroppedTimer_C:Anm_Loop_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.34"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_DroppedTimer_C:ExecuteUbergraph_WBP_DroppedTimer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.14"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_DroppedTimer_C:SetOpenText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.15"
+      },
+      {
+        "ObjectName": "Function'WBP_DroppedTimer_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.13"
+      },
+      {
+        "ObjectName": "Function'WBP_DroppedTimer_C:SetTime'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.16"
+      },
+      {
+        "ObjectName": "Function'WBP_DroppedTimer_C:ExecuteUbergraph_WBP_DroppedTimer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.14"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Anm_Loop",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalTextBlock_C",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalTextBlock_Hour",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalTextBlock_Minute",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_DroppedTimer": {
+        "ObjectName": "Function'WBP_DroppedTimer_C:ExecuteUbergraph_WBP_DroppedTimer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.14"
+      },
+      "SetTime": {
+        "ObjectName": "Function'WBP_DroppedTimer_C:SetTime'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.16"
+      },
+      "Construct": {
+        "ObjectName": "Function'WBP_DroppedTimer_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.13"
+      },
+      "SetOpenText": {
+        "ObjectName": "Function'WBP_DroppedTimer_C:SetOpenText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.15"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_DroppedTimer_C'Default__WBP_DroppedTimer_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.33"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_DroppedTimer_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_DroppedTimer_C:WidgetTree.CanvasPanel_40'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_DroppedTimer.5"
+      }
+    }
+  }
+]

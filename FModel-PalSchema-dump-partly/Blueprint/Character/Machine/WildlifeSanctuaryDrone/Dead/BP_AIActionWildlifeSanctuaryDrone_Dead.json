@@ -1,0 +1,159 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AIActionWildlifeSanctuaryDrone_Dead_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_AIActionWildlifeSanctuaryDrone_Dead_C:ExecuteUbergraph_BP_AIActionWildlifeSanctuaryDrone_Dead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/Dead/BP_AIActionWildlifeSanctuaryDrone_Dead.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalAIActionBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_AIActionWildlifeSanctuaryDrone_Dead_C:ActionStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/Dead/BP_AIActionWildlifeSanctuaryDrone_Dead.2"
+      },
+      {
+        "ObjectName": "Function'BP_AIActionWildlifeSanctuaryDrone_Dead_C:ExecuteUbergraph_BP_AIActionWildlifeSanctuaryDrone_Dead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/Dead/BP_AIActionWildlifeSanctuaryDrone_Dead.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_AIActionWildlifeSanctuaryDrone_Dead": {
+        "ObjectName": "Function'BP_AIActionWildlifeSanctuaryDrone_Dead_C:ExecuteUbergraph_BP_AIActionWildlifeSanctuaryDrone_Dead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/Dead/BP_AIActionWildlifeSanctuaryDrone_Dead.3"
+      },
+      "ActionStart": {
+        "ObjectName": "Function'BP_AIActionWildlifeSanctuaryDrone_Dead_C:ActionStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/Dead/BP_AIActionWildlifeSanctuaryDrone_Dead.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AIActionWildlifeSanctuaryDrone_Dead_C'Default__BP_AIActionWildlifeSanctuaryDrone_Dead_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/Dead/BP_AIActionWildlifeSanctuaryDrone_Dead.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AIActionWildlifeSanctuaryDrone_Dead_C",
+    "Name": "Default__BP_AIActionWildlifeSanctuaryDrone_Dead_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/Dead/BP_AIActionWildlifeSanctuaryDrone_Dead.BP_AIActionWildlifeSanctuaryDrone_Dead_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "DefaultPriority": "EAIRequestPriority::Reaction"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ActionStart",
+    "Outer": "BP_AIActionWildlifeSanctuaryDrone_Dead_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PawnAction_BlueprintBase:ActionStart'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ControlledPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_AIActionWildlifeSanctuaryDrone_Dead",
+    "Outer": "BP_AIActionWildlifeSanctuaryDrone_Dead_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalActionComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAction_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalActionBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_ControlledPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalWildlifeSanctuarySplineMoverComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b00_flower_b_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b00_flower_b'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/grass_bush/b00/SM_pal_b00_flower_b.2"
+      },
+      "UpdateGuid": "81ECEDE9-4FC127F3-6B123584-B5666C4B",
+      "ScaleX": {
+        "Max": 2.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -2.1889067,
+          "Y": -0.79192924,
+          "Z": 25.302774
+        },
+        "BoxExtent": {
+          "X": 20.902794,
+          "Y": 21.144848,
+          "Z": 28.065115
+        },
+        "SphereRadius": 31.420932737551492
+      },
+      "LowBoundOriginRadius": {
+        "X": -0.050472736,
+        "Y": -1.8227801,
+        "Z": 18.479752
+      },
+      "CullDistance": {
+        "Max": 6000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "Type": "DataLayerAsset",
+    "Name": "DataLayer",
+    "Class": "UScriptClass'DataLayerAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DebugColor": {
+        "B": 217,
+        "G": 250,
+        "R": 173,
+        "A": 255,
+        "Hex": "ADFAD9"
+      }
+    }
+  }
+]

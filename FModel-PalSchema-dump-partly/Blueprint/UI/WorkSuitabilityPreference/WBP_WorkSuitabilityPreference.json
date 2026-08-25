@@ -1,0 +1,683 @@
+[
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_WorkSuitabilityPreference_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WBP_WorkSuitabilityPreferenceMenu",
+          "DelegatePropertyName": "OnChangedBattleModeSetting",
+          "FunctionNameToBind": "BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_2_OnChangedBattleModeSetting__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_WorkSuitabilityPreferenceMenu",
+          "DelegatePropertyName": "OnChangedSuitabilitySetting",
+          "FunctionNameToBind": "BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_1_OnChangedSuitabilitySetting__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_WorkSuitabilityPreferenceMenu",
+          "DelegatePropertyName": "OnClickedCloseButton",
+          "FunctionNameToBind": "BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature",
+    "Outer": "WBP_WorkSuitabilityPreference_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_1_OnChangedSuitabilitySetting__DelegateSignature",
+    "Outer": "WBP_WorkSuitabilityPreference_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsOn",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Suitability",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalWorkSuitability'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalWorkSuitability'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TargetSlot",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterSlot'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_2_OnChangedBattleModeSetting__DelegateSignature",
+    "Outer": "WBP_WorkSuitabilityPreference_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CanBattle",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Slot",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterSlot'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BP_GetDesiredFocusTarget",
+    "Outer": "WBP_WorkSuitabilityPreference_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'CommonActivatableWidget:BP_GetDesiredFocusTarget'",
+      "ObjectPath": "/Script/CommonUI"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetTopFocusTarget_TargetWidget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "Destruct",
+    "Outer": "WBP_WorkSuitabilityPreference_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Destruct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_WorkSuitabilityPreference",
+    "Outer": "WBP_WorkSuitabilityPreference_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_ComponentBoundEvent_CanBattle",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Slot",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterSlot'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_ComponentBoundEvent_IsOn",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_ComponentBoundEvent_Suitability",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalWorkSuitability'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalWorkSuitability'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_TargetSlot",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterSlot'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetup",
+    "Outer": "WBP_WorkSuitabilityPreference_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUserWidget:OnSetup'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTrigger_ToggleDetail",
+    "Outer": "WBP_WorkSuitabilityPreference_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup",
+    "Outer": "WBP_WorkSuitabilityPreference_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasBasePalOperationPermissionByLocalPlayer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnInputAction__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RegisterActionBinding_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetTopFocusTarget_TargetWidget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetTargetCharacterContainer_OutContainer",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterContainer'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetTargetCharacterContainer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Default_In",
+    "Outer": "Default_In_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 300001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "03A2DD86-4DD0D827-31B30ABF-239E2DA7"
+    }
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Default_In_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CompiledSignature": "461B0EF5-49A3A2A9-62CD15AE-A507CD01",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_WorkSuitabilityPreference_C:WidgetTree.Overlay_0.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.13"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_WorkSuitabilityPreference_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.12"
+      },
+      "Content": {
+        "ObjectName": "WBP_WorkSuitabilityPreferenceMenu_C'WBP_WorkSuitabilityPreference_C:WidgetTree.WBP_WorkSuitabilityPreferenceMenu'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.15"
+      }
+    }
+  },
+  {
+    "Type": "WBP_WorkSuitabilityPreference_C",
+    "Name": "Default__WBP_WorkSuitabilityPreference_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.WBP_WorkSuitabilityPreference_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ToggleWorkerDetailInputAction": {
+        "Key": "SuitabilitySeting_ToggleDetail"
+      },
+      "bSyncPlayerInventory": true,
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_WorkSuitabilityPreferenceMenu_C",
+    "Name": "WBP_WorkSuitabilityPreferenceMenu",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/WorkSuitabilityPreference/WBP_WorkSuitabilityPreferenceMenu.WBP_WorkSuitabilityPreferenceMenu_C'",
+    "Template": {
+      "ObjectName": "WBP_WorkSuitabilityPreferenceMenu_C'Default__WBP_WorkSuitabilityPreferenceMenu_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/WorkSuitabilityPreference/WBP_WorkSuitabilityPreferenceMenu.124"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_WorkSuitabilityPreference_C:WidgetTree.Overlay_0.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.13"
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Default_In_INST",
+    "Outer": "WBP_WorkSuitabilityPreference_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_WorkSuitabilityPreference_C:Default_In_INST.Default_In'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.10"
+      },
+      "DisplayLabel": "Default_In",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_WorkSuitabilityPreference_C:Default_In_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.11"
+      },
+      "Signature": "461B0EF5-49A3A2A9-62CD15AE-A507CD01"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_WorkSuitabilityPreference_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_WorkSuitabilityPreference_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.18"
+      },
+      "bClassRequiresNativeTick": true,
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'WBP_WorkSuitabilityPreference_C:Default_In_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.16"
+        }
+      ],
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_WorkSuitabilityPreference_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.0"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:ExecuteUbergraph_WBP_WorkSuitabilityPreference'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUIWorkSuitabilitySelect'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:OnTrigger_ToggleDetail'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.8"
+      },
+      {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.9"
+      },
+      {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.4"
+      },
+      {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.7"
+      },
+      {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.1"
+      },
+      {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:Destruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.5"
+      },
+      {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_1_OnChangedSuitabilitySetting__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.2"
+      },
+      {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_2_OnChangedBattleModeSetting__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.3"
+      },
+      {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:ExecuteUbergraph_WBP_WorkSuitabilityPreference'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.6"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Default_In",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_WorkSuitabilityPreferenceMenu",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_WorkSuitabilityPreferenceMenu_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/WorkSuitabilityPreference/WBP_WorkSuitabilityPreferenceMenu.125"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ToggleWorkerDetailInputAction",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDataTableRowName_UIInputAction'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsDisplayDetail",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_WorkSuitabilityPreference": {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:ExecuteUbergraph_WBP_WorkSuitabilityPreference'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.6"
+      },
+      "BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_2_OnChangedBattleModeSetting__DelegateSignature": {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_2_OnChangedBattleModeSetting__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.3"
+      },
+      "BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_1_OnChangedSuitabilitySetting__DelegateSignature": {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_1_OnChangedSuitabilitySetting__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.2"
+      },
+      "Destruct": {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:Destruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.5"
+      },
+      "BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature": {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.1"
+      },
+      "OnSetup": {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.7"
+      },
+      "BP_GetDesiredFocusTarget": {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.4"
+      },
+      "Setup": {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.9"
+      },
+      "OnTrigger_ToggleDetail": {
+        "ObjectName": "Function'WBP_WorkSuitabilityPreference_C:OnTrigger_ToggleDetail'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.8"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_WorkSuitabilityPreference_C'Default__WBP_WorkSuitabilityPreference_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.14"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_WorkSuitabilityPreference_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "Overlay'WBP_WorkSuitabilityPreference_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkSuitabilityPreference/WBP_WorkSuitabilityPreference.12"
+      }
+    }
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_HUDDispatchParameter_QuickStackConfirm_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalHUDDispatchParameterBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_HUDDispatchParameter_QuickStackConfirm_C:OnQuickStackConfirmed__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/BP_HUDDispatchParameter_QuickStackConfirm.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnQuickStackConfirmed",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'BP_HUDDispatchParameter_QuickStackConfirm_C:OnQuickStackConfirmed__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/BP_HUDDispatchParameter_QuickStackConfirm.2"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "StackItemSlots",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "StackItemSlots",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'PalItemSlot'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnQuickStackConfirmed__DelegateSignature": {
+        "ObjectName": "Function'BP_HUDDispatchParameter_QuickStackConfirm_C:OnQuickStackConfirmed__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/BP_HUDDispatchParameter_QuickStackConfirm.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_HUDDispatchParameter_QuickStackConfirm_C'Default__BP_HUDDispatchParameter_QuickStackConfirm_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/BP_HUDDispatchParameter_QuickStackConfirm.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_HUDDispatchParameter_QuickStackConfirm_C",
+    "Name": "Default__BP_HUDDispatchParameter_QuickStackConfirm_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/InventoryEquipment/BP_HUDDispatchParameter_QuickStackConfirm.BP_HUDDispatchParameter_QuickStackConfirm_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnQuickStackConfirmed__DelegateSignature",
+    "Outer": "BP_HUDDispatchParameter_QuickStackConfirm_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsYes",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

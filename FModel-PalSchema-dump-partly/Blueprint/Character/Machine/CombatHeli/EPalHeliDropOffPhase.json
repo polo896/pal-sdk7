@@ -1,0 +1,56 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "EPalHeliDropOffPhase",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "0F7137B044D50A07331CE491FBF95E8D",
+            "SourceString": "Approaching",
+            "LocalizedString": "Approaching"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "05EA42AB4FFF2DA53C001D988D7C8B35",
+            "SourceString": "Hovering",
+            "LocalizedString": "Hovering"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "1A23DF7446A21211956C9C94C7DD05F0",
+            "SourceString": "DropOff",
+            "LocalizedString": "DropOff"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "E3DFC93442095AFC8371F6B59249E437",
+            "SourceString": "Ascending",
+            "LocalizedString": "Ascending"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "EPalHeliDropOffPhase::NewEnumerator0": 0,
+      "EPalHeliDropOffPhase::NewEnumerator1": 1,
+      "EPalHeliDropOffPhase::NewEnumerator2": 2,
+      "EPalHeliDropOffPhase::NewEnumerator3": 3,
+      "EPalHeliDropOffPhase::EPalHeliDropOffPhase_MAX": 4
+    },
+    "CppForm": "Namespaced"
+  }
+]

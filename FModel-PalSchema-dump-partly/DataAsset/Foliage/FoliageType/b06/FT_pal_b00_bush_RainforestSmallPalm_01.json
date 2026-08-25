@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b00_bush_RainforestSmallPalm_01",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b00_bush_RainforestSmallPalm_01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b00/Rainforest/Mesh/Plants/SM_pal_b00_bush_RainforestSmallPalm_01.2"
+      },
+      "UpdateGuid": "AEEF752F-4D09EF04-46AF459E-9BF199A2",
+      "ScaleX": {
+        "Min": 0.6
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -4.2675133,
+          "Y": -12.164917,
+          "Z": 70.30807
+        },
+        "BoxExtent": {
+          "X": 119.71126,
+          "Y": 95.4947,
+          "Z": 73.82189
+        },
+        "SphereRadius": 134.816650390625
+      },
+      "LowBoundOriginRadius": {
+        "X": 46.100586,
+        "Y": -31.816463,
+        "Z": 61.15001
+      },
+      "CullDistance": {
+        "Max": 4000
+      },
+      "bAffectDistanceFieldLighting": true,
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

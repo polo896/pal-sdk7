@@ -1,0 +1,168 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_BuildObjectSimulateArrowComponent_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalBuildObjectSimulatingVisualMeshComponent'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_BuildObjectSimulateArrowComponent_C'Default__BP_BuildObjectSimulateArrowComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Components/BP_BuildObjectSimulateArrowComponent.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_BuildObjectSimulateArrowComponent_C",
+    "Name": "Default__BP_BuildObjectSimulateArrowComponent_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Components/BP_BuildObjectSimulateArrowComponent.BP_BuildObjectSimulateArrowComponent_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Pointer'",
+        "ObjectPath": "Pal/Content/Pal/Model/Other/Pointer/SM_Pointer.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'MI_PalProp_Pointer'",
+          "ObjectPath": "Pal/Content/Pal/Model/Other/Pointer/MI_PalProp_Pointer.0"
+        }
+      ],
+      "bGenerateOverlapEvents": false,
+      "CastShadow": false,
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseToChannels": {
+            "WorldStatic": "ECollisionResponse::ECR_Ignore",
+            "WorldDynamic": "ECollisionResponse::ECR_Ignore",
+            "Pawn": "ECollisionResponse::ECR_Ignore",
+            "Visibility": "ECollisionResponse::ECR_Ignore",
+            "Camera": "ECollisionResponse::ECR_Ignore",
+            "PhysicsBody": "ECollisionResponse::ECR_Ignore",
+            "Vehicle": "ECollisionResponse::ECR_Ignore",
+            "Destructible": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel2": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel3": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel4": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel5": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel6": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel2": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel3": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel5": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel7": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel8": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel9": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel11": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel15": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel16": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel17": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel18": "ECollisionResponse::ECR_Ignore"
+          },
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel2",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel3",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel4",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel5",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel6",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel17",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel18",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeScale3D": {
+        "X": 0.5,
+        "Y": 0.5,
+        "Z": 0.5
+      },
+      "bComponentToWorldUpdated": true,
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false,
+        "bAllowTickOnDedicatedServer": false
+      },
+      "bCanEverAffectNavigation": false
+    }
+  }
+]

@@ -1,0 +1,192 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_MiningDrillGame.8"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalRandomIncidentObjectPlacement'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalMapObjectSpawner_RockCopper",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ChildActorComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C'Default__BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_MiningDrillGame.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalMapObjectSpawner_RockCopper_C",
+    "Name": "BP_PalMapObjectSpawner_RockCopper_GEN_VARIABLE_BP_PalMapObjectSpawner_RockCopper_C_CAT",
+    "Outer": "BP_PalMapObjectSpawner_RockCopper_GEN_VARIABLE",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawner_RockCopper.BP_PalMapObjectSpawner_RockCopper_C'",
+    "Template": {
+      "ObjectName": "BP_PalMapObjectSpawner_RockCopper_C'Default__BP_PalMapObjectSpawner_RockCopper_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawner_RockCopper.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bAllowOverlapForMapObject": true,
+      "bRespawnableMulti": false,
+      "bAdjustMapObjectToFloor": true,
+      "LevelObjectInstanceId": "671190FE-4A746CFF-DF599EA0-C1CDF8EA",
+      "RootComponent": {
+        "ObjectName": "SceneComponent'BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C:BP_PalMapObjectSpawner_RockCopper_GEN_VARIABLE.BP_PalMapObjectSpawner_RockCopper_GEN_VARIABLE_BP_PalMapObjectSpawner_RockCopper_C_CAT.Root'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_MiningDrillGame.4"
+      }
+    },
+    "ActorLabel": "BP_PalMapObjectSpawner_RockCopper"
+  },
+  {
+    "Type": "BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C",
+    "Name": "Default__BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_MiningDrillGame.BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "BP_PalMapObjectSpawner_RockCopper_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C",
+    "Class": "UScriptClass'ChildActorComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalMapObjectSpawner_RockCopper_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawner_RockCopper.0"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "BP_PalMapObjectSpawner_RockCopper_C'BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C:BP_PalMapObjectSpawner_RockCopper_GEN_VARIABLE.BP_PalMapObjectSpawner_RockCopper_GEN_VARIABLE_BP_PalMapObjectSpawner_RockCopper_C_CAT'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_MiningDrillGame.1"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Root",
+    "Outer": "BP_PalMapObjectSpawner_RockCopper_GEN_VARIABLE_BP_PalMapObjectSpawner_RockCopper_C_CAT",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__BP_PalMapObjectSpawner_RockCopper_C:Root'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawner_RockCopper.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_MiningDrillGame.5"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_MiningDrillGame.7"
+        }
+      ],
+      "VariableGuid": "6F930226-49139BB2-200414B6-7A373D7A",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ChildActorComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ChildActorComponent'BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C:BP_PalMapObjectSpawner_RockCopper_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_MiningDrillGame.3"
+      },
+      "VariableGuid": "3F17A754-4C6987AB-C394C9B5-3DFA55AB",
+      "InternalVariableName": "BP_PalMapObjectSpawner_RockCopper"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_MiningDrillGame.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_MiningDrillGame.6"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_MiningDrillGame.7"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_MiningDrillGame_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_MiningDrillGame.6"
+      }
+    }
+  }
+]

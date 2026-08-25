@@ -1,0 +1,4387 @@
+[
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_BoxName",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FontSizeOverride_VeryLarge": 17,
+      "Text": {
+        "Namespace": "",
+        "Key": "BC8E2B7141418D1E1071BEA5989A6DD2",
+        "SourceString": "パルボックス",
+        "LocalizedString": "パルボックス"
+      },
+      "Font": {
+        "TypefaceFontName": "Medium",
+        "Size": 11
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.16"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_PageNum_Max",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "40745C9B46935CF9C72830B222B9E524",
+        "SourceString": "/300",
+        "LocalizedString": "/300"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "BCBCBC"
+        }
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 18
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page.HorizontalBoxSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.83"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_PageNum_Now",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "08F580D8497B8C155968FB96887E0D01",
+        "SourceString": "1",
+        "LocalizedString": "1"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 18
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.80"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_SliderValue",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FontSizeOverride_VeryLarge": 18,
+      "Text": {
+        "Namespace": "",
+        "Key": "18C586044F6CA3B1793F328F82623C99",
+        "SourceString": "9999",
+        "LocalizedString": "9999"
+      },
+      "Font": {
+        "TypefaceFontName": "Medium",
+        "Size": 14
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.Canvas_SliderValue.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.11"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_Page",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.Canvas_Page.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.9"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.19"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_SliderValue",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.Canvas_SliderValue.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.Canvas_SliderValue.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.11"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanel_148.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.12"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_148",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanel_148.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanel_148.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanelPalBoxHead",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.25"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_15'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_14'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.19"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.PalBox.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "PalBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.PalBox.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.PalBox.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.26"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_Page",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.Canvas_Page'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.4"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.78"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_SliderValue",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 2.0,
+          "Right": 64.0,
+          "Bottom": 42.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.Canvas_SliderValue'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.5"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_BoxPalListBase_C:WidgetTree.Image_23'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.94"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Canvas_SliderValue",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -2.0,
+          "Right": 0.0,
+          "Bottom": 31.744581
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.Canvas_SliderValue'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.5"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_BoxPalListBase_C:WidgetTree.Text_SliderValue'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_148",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.CanvasPanel_148'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.Canvas_SliderValue'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_148",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -4.0,
+          "Right": -4.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.CanvasPanel_148'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.6"
+      },
+      "Content": {
+        "ObjectName": "Slider'WBP_BoxPalListBase_C:WidgetTree.Slider'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.103"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanelPalBoxHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.7"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_BoxPalListBase_C:WidgetTree.CharaHeadFrame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.93"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanelPalBoxHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.7"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_BoxPalListBase_C:WidgetTree.CharaHeadBase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.92"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanelPalBoxHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 14.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.7"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_BoxPalListBase_C:WidgetTree.Text_BoxName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.0"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_14",
+    "Outer": "CanvasPanelPalBoxHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -28.0,
+          "Top": 44.0,
+          "Right": 24.0,
+          "Bottom": 24.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.7"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalKeyGuideIcon_C'WBP_BoxPalListBase_C:WidgetTree.WBP_PalKeyGuideIcon_NextPage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.112"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_15",
+    "Outer": "CanvasPanelPalBoxHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 28.0,
+          "Top": 44.0,
+          "Right": 24.0,
+          "Bottom": 24.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.7"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalKeyGuideIcon_C'WBP_BoxPalListBase_C:WidgetTree.WBP_PalKeyGuideIcon_PrevPage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.113"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanelPalBoxHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 40.0,
+          "Top": 28.0,
+          "Right": 40.0,
+          "Bottom": 36.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.Canvas_Page'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanelPalBoxHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 2.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.7"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_BoxPalListBase_C:WidgetTree.CharaHead_Dot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.88"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanelPalBoxHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.7"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_BoxPalListBase_C:WidgetTree.CharaHead_Dot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.89"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanelPalBoxHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.7"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_BoxPalListBase_C:WidgetTree.CharaHead_Dot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.90"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanelPalBoxHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.7"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_BoxPalListBase_C:WidgetTree.CharaHead_Dot_7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.91"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanelPalBoxHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 50.0,
+          "Top": 30.0,
+          "Right": 50.0,
+          "Bottom": 28.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.CanvasPanel_148'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanelPalBoxHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 270.0,
+          "Bottom": 28.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.7"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_BoxPalListBase_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.79"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "PalBox",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 60.0,
+          "Right": 490.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.PalBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.8"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalCharacterScrollList_C'WBP_BoxPalListBase_C:WidgetTree.WBP_BoxPalScrollList'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.111"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "PalBox",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 28.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.PalBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.7"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WBP_BoxPalScrollList",
+          "DelegatePropertyName": "OnSlotSynced",
+          "FunctionNameToBind": "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_9_OnSlotSynced__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_CommonButton_Activation_Search",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_BoxPalListBase_WBP_CommonButton_Activation_Search_K2Node_ComponentBoundEvent_10_OnClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_BoxPalScrollList",
+          "DelegatePropertyName": "OnUpdateSlot",
+          "FunctionNameToBind": "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_8_OnUpdateSlot__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "Slider",
+          "DelegatePropertyName": "OnMouseCaptureBegin",
+          "FunctionNameToBind": "BndEvt__WBP_BoxPalListBase_Slider_K2Node_ComponentBoundEvent_7_OnMouseCaptureBeginEvent__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_BoxPalScrollList",
+          "DelegatePropertyName": "OnCreatedSlot",
+          "FunctionNameToBind": "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_6_OnCreatedSlot__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_BoxPalScrollList",
+          "DelegatePropertyName": "OnUnhoveredSlot",
+          "FunctionNameToBind": "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_5_OnUnhoveredSlot__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_BoxPalScrollList",
+          "DelegatePropertyName": "OnHoveredSlot",
+          "FunctionNameToBind": "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_BoxPalScrollList",
+          "DelegatePropertyName": "OnRightClickedSlot",
+          "FunctionNameToBind": "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_3_OnRightClickedSlot__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_BoxPalScrollList",
+          "DelegatePropertyName": "OnLeftClickedSlot",
+          "FunctionNameToBind": "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_2_OnLeftClickedSlot__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_CommonButton_Sort",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_BoxPalListBase_WBP_CommonButton_Sort_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "Slider",
+          "DelegatePropertyName": "OnMouseCaptureEnd",
+          "FunctionNameToBind": "BndEvt__WBP_BoxPalListBase_Slider_K2Node_ComponentBoundEvent_0_OnMouseCaptureEndEvent__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_BoxPalListBase_Slider_K2Node_ComponentBoundEvent_0_OnMouseCaptureEndEvent__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_BoxPalListBase_Slider_K2Node_ComponentBoundEvent_7_OnMouseCaptureBeginEvent__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_2_OnLeftClickedSlot__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "pressType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalItemSlotPressType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalItemSlotPressType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_3_OnRightClickedSlot__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_5_OnUnhoveredSlot__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_6_OnCreatedSlot__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "createdSlot",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_8_OnUpdateSlot__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SlotButton",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_9_OnSlotSynced__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SlotButton",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_BoxPalListBase_WBP_CommonButton_Activation_Search_K2Node_ComponentBoundEvent_10_OnClicked__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_BoxPalListBase_WBP_CommonButton_Sort_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ClearPageSettings",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Destruct",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Destruct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_BoxPalListBase",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_SlotButton",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_widget_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_ComponentBoundEvent_pressType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalItemSlotPressType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalItemSlotPressType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_widget_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_widget_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_createdSlot",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsWBP_Pal_Common_Character_Slot_Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCommonCharacterSlotButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/WBP_PalCommonCharacterSlotButton.81"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetTargetSlot_targetSlot",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterSlot'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_MyGeometry",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Geometry'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_InDeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetPageIndexFromSlider_PageIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsVisible_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetValue_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetCachedGeometry_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Geometry'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetLocalSize_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_Vector2DVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_Vector2DVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetPageIndexFromSlider_PageIndex_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_Vector2DVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetPageIndexFromSlider_PageIndex_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_SlotButton_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "FindWidgetBySlot",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Slot",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterSlot'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "FindWidget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCommonCharacterSlotButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/WBP_PalCommonCharacterSlotButton.81"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetCurrentDisplaySlotWidgets",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "SlotWidgets",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "SlotWidgets",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCommonCharacterSlotButton_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/WBP_PalCommonCharacterSlotButton.81"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_Map_Values_Values",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_Map_Values_Values",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCommonCharacterSlotButton_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/WBP_PalCommonCharacterSlotButton.81"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetCurrentPage",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "CurrentPageNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetPageIndexFromSlider",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "PageIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetValue_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Round_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Min_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetTopFocusTarget",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetCurrentDisplaySlotWidgets_SlotWidgets",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetCurrentDisplaySlotWidgets_SlotWidgets",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCommonCharacterSlotButton_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/WBP_PalCommonCharacterSlotButton.81"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_IsEmpty_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCommonCharacterSlotButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/WBP_PalCommonCharacterSlotButton.81"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsValidChangePageInputAction",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bValidAction",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnClickedSearchButton__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnClickedSortButton__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnCreatedNewSlot__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "NewSlot",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnHoveredSlot__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnLeftClickedSlot__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "PressType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalItemSlotPressType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalItemSlotPressType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNextPageInput__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPressedNextPageInputInternal",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPressedPrevPageInputInternal",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPrevPageInput__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnReleasedNextPageInputInternal",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnReleasedPrevPageInputInternal",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRightClickedSlot__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSelectPalBoxPage__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Page",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSlotSynced__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SlotButton",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUnhoveredSlot__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUpdatedPage__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "NowPage",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUpdateSlot__DelegateSignature",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SlotButton",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterSlotButtonBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/Base/WBP_PalCharacterSlotButtonBase.39"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RemovePageControlAction",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetCharacterSlots",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "DisplaySlots",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "DisplaySlots",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'PalIndividualCharacterSlot'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetCurrentPage",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "CurrentPage",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetCurrentPageNum_WithoutEvent",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "CurrentPage",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "CallFunc_Conv_IntToInt64_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 80,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetValue_InValue_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetMaxPageNum",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "MaxPage",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetPageControlAction",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "NextPageAction",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDataTableRowName_UIInputAction'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "PrevPageAction",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDataTableRowName_UIInputAction'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnInputAction__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnInputAction__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RegisterActionBinding_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RegisterActionBinding_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnInputAction__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnInputAction__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RegisterActionBinding_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RegisterActionBinding_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetSearchButtonActivation",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bIsActive",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Tick",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Tick'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "MyGeometry",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Geometry'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "InDeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ToNextPage",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_SelectInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ToNextPage_Timer",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_SelectInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ToPrevPage",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_SelectInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ToPrevPage_Timer",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_SelectInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "Horizontal_Page",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.81"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page.HorizontalBoxSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.84"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.80"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page.HorizontalBoxSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.83"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page.HorizontalBoxSlot_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.85"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page.HorizontalBoxSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.82"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.Canvas_Page.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.9"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_BoxPalListBase_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.87"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_BoxPalListBase_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.86"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.25"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "Horizontal_Page",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.78"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_BoxPalListBase_C:WidgetTree.Text_PageNum_Now'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.2"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "Horizontal_Page",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.78"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_BoxPalListBase_C:WidgetTree.Spacer_86'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.105"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "Horizontal_Page",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.78"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_BoxPalListBase_C:WidgetTree.Spacer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.104"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "Horizontal_Page",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 4.0
+      },
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.78"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_BoxPalListBase_C:WidgetTree.Text_PageNum_Max'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.1"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "Horizontal_Page",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Right": 25.0,
+        "Bottom": -1.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.78"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_BoxPalListBase_C:WidgetTree.SizeBox_L'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.99"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_8",
+    "Outer": "Horizontal_Page",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 25.0,
+        "Bottom": -1.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.78"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_BoxPalListBase_C:WidgetTree.SizeBox_R'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.100"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Padding": {
+        "Left": 4.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_BoxPalListBase_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.79"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_BoxPalListBase_C:WidgetTree.Overlay_Sort'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.96"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_BoxPalListBase_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.79"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_BoxPalListBase_C:WidgetTree.Overlay_Search'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.95"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CharaHead_Dot_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.20"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CharaHead_Dot_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.21"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CharaHead_Dot_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.22"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CharaHead_Dot_7",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.23"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CharaHeadBase",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.040915,
+        "G": 0.057805,
+        "B": 0.059511,
+        "A": 1.0,
+        "Hex": "394445"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.15"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CharaHeadFrame",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_frame_1px'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_frame_1px.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.2,
+        "Hex": "33FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.14"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_23",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 42.0
+        },
+        "Margin": {
+          "Left": 0.4,
+          "Top": 0.4,
+          "Right": 0.4,
+          "Bottom": 0.4
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_MainMenu_Baloon'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_MainMenu_Baloon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.Canvas_SliderValue.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.10"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_Search",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_BoxPalListBase_C:WidgetTree.Overlay_Search.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.97"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_BoxPalListBase_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.87"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_Sort",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_BoxPalListBase_C:WidgetTree.Overlay_Sort.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.98"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_BoxPalListBase_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.86"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_Search",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_BoxPalListBase_C:WidgetTree.Overlay_Search'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.95"
+      },
+      "Content": {
+        "ObjectName": "WBP_CommonButton_Activation_C'WBP_BoxPalListBase_C:WidgetTree.WBP_CommonButton_Activation_Search'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.110"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_Sort",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_BoxPalListBase_C:WidgetTree.Overlay_Sort'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.96"
+      },
+      "Content": {
+        "ObjectName": "WBP_CommonButton_1_C'WBP_BoxPalListBase_C:WidgetTree.WBP_CommonButton_Sort'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.109"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_L",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidthOverride": 16.0,
+      "HeightOverride": 24.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_BoxPalListBase_C:WidgetTree.SizeBox_L.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.101"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page.HorizontalBoxSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.84"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_R",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidthOverride": 16.0,
+      "HeightOverride": 24.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_BoxPalListBase_C:WidgetTree.SizeBox_R.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.102"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page.HorizontalBoxSlot_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.85"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_L",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_BoxPalListBase_C:WidgetTree.SizeBox_L'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.99"
+      },
+      "Content": {
+        "ObjectName": "WBP_Common_NumArrow_C'WBP_BoxPalListBase_C:WidgetTree.WBP_Common_NumArrow_L'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.107"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_R",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_BoxPalListBase_C:WidgetTree.SizeBox_R'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.100"
+      },
+      "Content": {
+        "ObjectName": "WBP_Common_NumArrow_C'WBP_BoxPalListBase_C:WidgetTree.WBP_Common_NumArrow_R'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.108"
+      }
+    }
+  },
+  {
+    "Type": "Slider",
+    "Name": "Slider",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Slider'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 1.0,
+      "WidgetStyle": {
+        "NormalBarImage": {
+          "ImageSize": {
+            "X": 4.0,
+            "Y": 4.0
+          }
+        },
+        "HoveredBarImage": {
+          "ImageSize": {
+            "X": 4.0,
+            "Y": 4.0
+          }
+        },
+        "NormalThumbImage": {
+          "ImageSize": {
+            "X": 22.0,
+            "Y": 22.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_option_slider_thumb'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_option_slider_thumb.0"
+          }
+        },
+        "HoveredThumbImage": {
+          "ImageSize": {
+            "X": 22.0,
+            "Y": 22.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.145098,
+              "G": 0.74902,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "6AE1FF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_option_slider_thumb'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_option_slider_thumb.0"
+          }
+        },
+        "DisabledThumbImage": {
+          "ImageSize": {
+            "X": 22.0,
+            "Y": 22.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.501961,
+              "G": 0.501961,
+              "B": 0.501961,
+              "A": 1.0,
+              "Hex": "BCBCBC"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_option_slider_thumb'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_option_slider_thumb.0"
+          }
+        },
+        "BarThickness": 3.0
+      },
+      "SliderBarColor": {
+        "R": 0.783538,
+        "G": 0.964686,
+        "B": 1.0,
+        "A": 0.4,
+        "Hex": "66E5FBFF"
+      },
+      "StepSize": 0.0,
+      "IsFocusable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanel_148.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.13"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page.HorizontalBoxSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.82"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_86",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_BoxPalListBase_C:WidgetTree.Horizontal_Page.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.81"
+      }
+    }
+  },
+  {
+    "Type": "WBP_BoxPalListBase_C",
+    "Name": "Default__WBP_BoxPalListBase_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.WBP_BoxPalListBase_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "PageNameMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "PAL_BOX_BOX_NAME"
+      },
+      "ToNextPageTimer": {
+        "Handle": 0
+      },
+      "ToPrevPageTimer": {
+        "Handle": 0
+      },
+      "NextPagePressedActionHandle": {},
+      "NextPageReleasedActionHandle": {},
+      "PrevPagePressedActionHandle": {},
+      "PrevPageReleasedActionHandle": {},
+      "SkipPageNum": 10,
+      "SkipPageStartCount": 10,
+      "InputConfig": "EPalWidgetInputMode::Menu",
+      "bAutoActivate": true,
+      "bSupportsActivationFocus": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_Common_NumArrow_C",
+    "Name": "WBP_Common_NumArrow_L",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_Common_NumArrow.WBP_Common_NumArrow_C'",
+    "Template": {
+      "ObjectName": "WBP_Common_NumArrow_C'Default__WBP_Common_NumArrow_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_Common_NumArrow.26"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_BoxPalListBase_C:WidgetTree.SizeBox_L.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.101"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Common_NumArrow_C",
+    "Name": "WBP_Common_NumArrow_R",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_Common_NumArrow.WBP_Common_NumArrow_C'",
+    "Template": {
+      "ObjectName": "WBP_Common_NumArrow_C'Default__WBP_Common_NumArrow_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_Common_NumArrow.26"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_BoxPalListBase_C:WidgetTree.SizeBox_R.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.102"
+      }
+    }
+  },
+  {
+    "Type": "WBP_CommonButton_1_C",
+    "Name": "WBP_CommonButton_Sort",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_1.WBP_CommonButton_1_C'",
+    "Template": {
+      "ObjectName": "WBP_CommonButton_1_C'Default__WBP_CommonButton_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_1.105"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitializeMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_SORT"
+      },
+      "bIsFocusable": true,
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_BoxPalListBase_C:WidgetTree.Overlay_Sort.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.98"
+      }
+    }
+  },
+  {
+    "Type": "WBP_CommonButton_Activation_C",
+    "Name": "WBP_CommonButton_Activation_Search",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_Activation.WBP_CommonButton_Activation_C'",
+    "Template": {
+      "ObjectName": "WBP_CommonButton_Activation_C'Default__WBP_CommonButton_Activation_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_Activation.116"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitializeMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_SEARCH"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_BoxPalListBase_C:WidgetTree.Overlay_Search.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.97"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalCharacterScrollList_C",
+    "Name": "WBP_BoxPalScrollList",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/CommonScrollList/WBP_PalCharacterScrollList.WBP_PalCharacterScrollList_C'",
+    "Template": {
+      "ObjectName": "WBP_PalCharacterScrollList_C'Default__WBP_PalCharacterScrollList_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/CommonScrollList/WBP_PalCharacterScrollList.36"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IsDisplayArrow": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.PalBox.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.26"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalKeyGuideIcon_C",
+    "Name": "WBP_PalKeyGuideIcon_NextPage",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIcon.WBP_PalKeyGuideIcon_C'",
+    "Template": {
+      "ObjectName": "WBP_PalKeyGuideIcon_C'Default__WBP_PalKeyGuideIcon_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIcon.15"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindActionName": {
+        "Key": "PalBoxNextBox"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_14'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.17"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalKeyGuideIcon_C",
+    "Name": "WBP_PalKeyGuideIcon_PrevPage",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIcon.WBP_PalKeyGuideIcon_C'",
+    "Template": {
+      "ObjectName": "WBP_PalKeyGuideIcon_C'Default__WBP_PalKeyGuideIcon_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIcon.15"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindActionName": {
+        "Key": "PalBoxPrevBox"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_BoxPalListBase_C:WidgetTree.CanvasPanelPalBoxHead.CanvasPanelSlot_15'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.18"
+      }
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_BoxPalListBase_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.115"
+      },
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_BoxPalListBase_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.28"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:ExecuteUbergraph_WBP_BoxPalListBase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.42"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidget'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:SetSearchButtonActivation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.72"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:SetCurrentPageNum_WithoutEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.69"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:GetPageIndexFromSlider'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.46"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:ToPrevPage_Timer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.77"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:ToNextPage_Timer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.75"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:ToPrevPage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.76"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:ToNextPage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.74"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:IsValidChangePageInputAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.48"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:GetTopFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.47"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:GetCurrentPage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.45"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:RemovePageControlAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.66"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:GetCurrentDisplaySlotWidgets'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.44"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:FindWidgetBySlot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.43"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnReleasedPrevPageInputInternal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.59"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnPressedPrevPageInputInternal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.56"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnReleasedNextPageInputInternal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.58"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnPressedNextPageInputInternal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.55"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:SetPageControlAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.71"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:SetCharacterSlots'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.67"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:SetCurrentPage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.68"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:ClearPageSettings'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.40"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:SetMaxPageNum'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.70"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:Destruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.41"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_Slider_K2Node_ComponentBoundEvent_0_OnMouseCaptureEndEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.29"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_CommonButton_Sort_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.39"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_2_OnLeftClickedSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.31"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_3_OnRightClickedSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.32"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.33"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_5_OnUnhoveredSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.34"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_6_OnCreatedSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.35"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_Slider_K2Node_ComponentBoundEvent_7_OnMouseCaptureBeginEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.30"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:Tick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.73"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_8_OnUpdateSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.36"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_CommonButton_Activation_Search_K2Node_ComponentBoundEvent_10_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.38"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_9_OnSlotSynced__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.37"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:ExecuteUbergraph_WBP_BoxPalListBase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.42"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnSlotSynced__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.62"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnClickedSearchButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.49"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnUpdateSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.65"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnClickedSortButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.50"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnPrevPageInput__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.57"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnNextPageInput__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.54"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnSelectPalBoxPage__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.61"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnCreatedNewSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.51"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnUpdatedPage__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.64"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnUnhoveredSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.63"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnHoveredSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.52"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnRightClickedSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.60"
+      },
+      {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnLeftClickedSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.53"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Canvas_SliderValue",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_23",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Slider",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Slider'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_BoxName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_SliderValue",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_BoxPalScrollList",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCharacterScrollList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/CommonScrollList/WBP_PalCharacterScrollList.37"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Common_NumArrow_L",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Common_NumArrow_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_Common_NumArrow.29"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Common_NumArrow_R",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Common_NumArrow_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_Common_NumArrow.29"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_CommonButton_Activation_Search",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonButton_Activation_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_Activation.121"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_CommonButton_Sort",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonButton_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_1.110"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalKeyGuideIcon_NextPage",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalKeyGuideIcon_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIcon.16"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalKeyGuideIcon_PrevPage",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalKeyGuideIcon_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIcon.16"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnLeftClickedSlot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_BoxPalListBase_C:OnLeftClickedSlot__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.53"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnRightClickedSlot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_BoxPalListBase_C:OnRightClickedSlot__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.60"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnHoveredSlot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_BoxPalListBase_C:OnHoveredSlot__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.52"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnUnhoveredSlot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_BoxPalListBase_C:OnUnhoveredSlot__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.63"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnUpdatedPage",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_BoxPalListBase_C:OnUpdatedPage__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.64"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnCreatedNewSlot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_BoxPalListBase_C:OnCreatedNewSlot__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.51"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnSelectPalBoxPage",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_BoxPalListBase_C:OnSelectPalBoxPage__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.61"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LastSelectedPageNum",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "MaxPageNum",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "PageNameMsgID",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "CurrentPalBoxSlotMap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | ContainsInstancedReference",
+        "KeyProp": {
+          "Type": "ObjectProperty",
+          "Name": "CurrentPalBoxSlotMap",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'PalIndividualCharacterSlot'",
+            "ObjectPath": "/Script/Pal"
+          }
+        },
+        "ValueProp": {
+          "Type": "ObjectProperty",
+          "Name": "CurrentPalBoxSlotMap_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCommonCharacterSlotButton_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Thumbnails/Character/WBP_PalCommonCharacterSlotButton.81"
+          }
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnNextPageInput",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_BoxPalListBase_C:OnNextPageInput__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.54"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnPrevPageInput",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_BoxPalListBase_C:OnPrevPageInput__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.57"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ToNextPageTimer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ToPrevPageTimer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnClickedSortButton",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_BoxPalListBase_C:OnClickedSortButton__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.50"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NextPagePressedActionHandle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NextPageReleasedActionHandle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "PrevPagePressedActionHandle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "PrevPageReleasedActionHandle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bIsValidPageAction",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "PageMoveCount_Timer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "SkipPageNum",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "SkipPageStartCount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bSkipPage",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnUpdateSlot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_BoxPalListBase_C:OnUpdateSlot__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.65"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnClickedSearchButton",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_BoxPalListBase_C:OnClickedSearchButton__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.49"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnSlotSynced",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_BoxPalListBase_C:OnSlotSynced__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.62"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnLeftClickedSlot__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnLeftClickedSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.53"
+      },
+      "OnRightClickedSlot__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnRightClickedSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.60"
+      },
+      "OnHoveredSlot__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnHoveredSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.52"
+      },
+      "OnUnhoveredSlot__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnUnhoveredSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.63"
+      },
+      "OnUpdatedPage__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnUpdatedPage__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.64"
+      },
+      "OnCreatedNewSlot__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnCreatedNewSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.51"
+      },
+      "OnSelectPalBoxPage__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnSelectPalBoxPage__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.61"
+      },
+      "OnNextPageInput__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnNextPageInput__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.54"
+      },
+      "OnPrevPageInput__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnPrevPageInput__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.57"
+      },
+      "OnClickedSortButton__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnClickedSortButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.50"
+      },
+      "OnUpdateSlot__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnUpdateSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.65"
+      },
+      "OnClickedSearchButton__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnClickedSearchButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.49"
+      },
+      "OnSlotSynced__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnSlotSynced__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.62"
+      },
+      "ExecuteUbergraph_WBP_BoxPalListBase": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:ExecuteUbergraph_WBP_BoxPalListBase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.42"
+      },
+      "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_9_OnSlotSynced__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_9_OnSlotSynced__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.37"
+      },
+      "BndEvt__WBP_BoxPalListBase_WBP_CommonButton_Activation_Search_K2Node_ComponentBoundEvent_10_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_CommonButton_Activation_Search_K2Node_ComponentBoundEvent_10_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.38"
+      },
+      "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_8_OnUpdateSlot__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_8_OnUpdateSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.36"
+      },
+      "Tick": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:Tick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.73"
+      },
+      "BndEvt__WBP_BoxPalListBase_Slider_K2Node_ComponentBoundEvent_7_OnMouseCaptureBeginEvent__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_Slider_K2Node_ComponentBoundEvent_7_OnMouseCaptureBeginEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.30"
+      },
+      "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_6_OnCreatedSlot__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_6_OnCreatedSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.35"
+      },
+      "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_5_OnUnhoveredSlot__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_5_OnUnhoveredSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.34"
+      },
+      "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.33"
+      },
+      "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_3_OnRightClickedSlot__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_3_OnRightClickedSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.32"
+      },
+      "BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_2_OnLeftClickedSlot__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_BoxPalScrollList_K2Node_ComponentBoundEvent_2_OnLeftClickedSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.31"
+      },
+      "BndEvt__WBP_BoxPalListBase_WBP_CommonButton_Sort_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_WBP_CommonButton_Sort_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.39"
+      },
+      "BndEvt__WBP_BoxPalListBase_Slider_K2Node_ComponentBoundEvent_0_OnMouseCaptureEndEvent__DelegateSignature": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:BndEvt__WBP_BoxPalListBase_Slider_K2Node_ComponentBoundEvent_0_OnMouseCaptureEndEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.29"
+      },
+      "Destruct": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:Destruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.41"
+      },
+      "SetMaxPageNum": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:SetMaxPageNum'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.70"
+      },
+      "ClearPageSettings": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:ClearPageSettings'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.40"
+      },
+      "SetCurrentPage": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:SetCurrentPage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.68"
+      },
+      "SetCharacterSlots": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:SetCharacterSlots'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.67"
+      },
+      "SetPageControlAction": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:SetPageControlAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.71"
+      },
+      "OnPressedNextPageInputInternal": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnPressedNextPageInputInternal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.55"
+      },
+      "OnReleasedNextPageInputInternal": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnReleasedNextPageInputInternal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.58"
+      },
+      "OnPressedPrevPageInputInternal": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnPressedPrevPageInputInternal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.56"
+      },
+      "OnReleasedPrevPageInputInternal": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:OnReleasedPrevPageInputInternal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.59"
+      },
+      "FindWidgetBySlot": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:FindWidgetBySlot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.43"
+      },
+      "GetCurrentDisplaySlotWidgets": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:GetCurrentDisplaySlotWidgets'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.44"
+      },
+      "RemovePageControlAction": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:RemovePageControlAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.66"
+      },
+      "GetCurrentPage": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:GetCurrentPage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.45"
+      },
+      "GetTopFocusTarget": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:GetTopFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.47"
+      },
+      "IsValidChangePageInputAction": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:IsValidChangePageInputAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.48"
+      },
+      "ToNextPage": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:ToNextPage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.74"
+      },
+      "ToPrevPage": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:ToPrevPage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.76"
+      },
+      "ToNextPage_Timer": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:ToNextPage_Timer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.75"
+      },
+      "ToPrevPage_Timer": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:ToPrevPage_Timer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.77"
+      },
+      "GetPageIndexFromSlider": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:GetPageIndexFromSlider'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.46"
+      },
+      "SetCurrentPageNum_WithoutEvent": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:SetCurrentPageNum_WithoutEvent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.69"
+      },
+      "SetSearchButtonActivation": {
+        "ObjectName": "Function'WBP_BoxPalListBase_C:SetSearchButtonActivation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.72"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_BoxPalListBase_C'Default__WBP_BoxPalListBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.106"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_BoxPalListBase_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_BoxPalListBase_C:WidgetTree.PalBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_BoxPalListBase.8"
+      }
+    }
+  }
+]

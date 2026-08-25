@@ -1,0 +1,76 @@
+[
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "E_MonsterFootIK_VirtualBoneNames",
+    "Class": "UScriptClass'UserDefinedStruct'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Guid": "492C22C0-4B0AD658-4C1BCE8F-859C5F95"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "LeftFrontVBName_26_73DE31FE47027318AE3DF6A9979CF545",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'RigElementKey'",
+          "ObjectPath": "/Script/ControlRig"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "RightFrontVBName_27_69679B7A4C18138B1006899D4A25154F",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'RigElementKey'",
+          "ObjectPath": "/Script/ControlRig"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "LeftBackVBName_28_C5E4AE9043D777A6129439B165395C0F",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'RigElementKey'",
+          "ObjectPath": "/Script/ControlRig"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "RightBackVBName_29_90C396874EC3BA81DA375B8A2A97A58D",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'RigElementKey'",
+          "ObjectPath": "/Script/ControlRig"
+        }
+      }
+    ],
+    "StructFlags": 16384,
+    "DefaultProperties": {
+      "LeftFrontVBName_26_73DE31FE47027318AE3DF6A9979CF545": {
+        "Type": "ERigElementType::Bone",
+        "Name": "VB IKFront_l"
+      },
+      "RightFrontVBName_27_69679B7A4C18138B1006899D4A25154F": {
+        "Type": "ERigElementType::Bone",
+        "Name": "VB IKFront_r"
+      },
+      "LeftBackVBName_28_C5E4AE9043D777A6129439B165395C0F": {
+        "Type": "ERigElementType::Bone",
+        "Name": "VB IKBack_l"
+      },
+      "RightBackVBName_29_90C396874EC3BA81DA375B8A2A97A58D": {
+        "Type": "ERigElementType::Bone",
+        "Name": "VB IKBack_r"
+      }
+    }
+  }
+]

@@ -1,0 +1,188 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Status_DefenseRateHPThreshold_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Status_DefenseRateHPThreshold_C:ExecuteUbergraph_BP_Status_DefenseRateHPThreshold'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_DefenseRateHPThreshold.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalStatus_HPThresholdBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Status_DefenseRateHPThreshold_C:BP_OnHPThresholdVfxOn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_DefenseRateHPThreshold.3"
+      },
+      {
+        "ObjectName": "Function'BP_Status_DefenseRateHPThreshold_C:BP_OnHPThresholdVfxOff'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_DefenseRateHPThreshold.2"
+      },
+      {
+        "ObjectName": "Function'BP_Status_DefenseRateHPThreshold_C:ExecuteUbergraph_BP_Status_DefenseRateHPThreshold'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_DefenseRateHPThreshold.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Status_DefenseRateHPThreshold": {
+        "ObjectName": "Function'BP_Status_DefenseRateHPThreshold_C:ExecuteUbergraph_BP_Status_DefenseRateHPThreshold'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_DefenseRateHPThreshold.4"
+      },
+      "BP_OnHPThresholdVfxOff": {
+        "ObjectName": "Function'BP_Status_DefenseRateHPThreshold_C:BP_OnHPThresholdVfxOff'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_DefenseRateHPThreshold.2"
+      },
+      "BP_OnHPThresholdVfxOn": {
+        "ObjectName": "Function'BP_Status_DefenseRateHPThreshold_C:BP_OnHPThresholdVfxOn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_DefenseRateHPThreshold.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Status_DefenseRateHPThreshold_C'Default__BP_Status_DefenseRateHPThreshold_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_DefenseRateHPThreshold.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Status_DefenseRateHPThreshold_C",
+    "Name": "Default__BP_Status_DefenseRateHPThreshold_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Status/BP_Status_DefenseRateHPThreshold.BP_Status_DefenseRateHPThreshold_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "TargetEffectType": "EPalPassiveSkillEffectType::DefenseRateHPThreshold",
+      "VisualEffectID": "EPalVisualEffectID::DefenseRateHPThreshold",
+      "bIsIgnoreRemoveAll": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BP_OnHPThresholdVfxOff",
+    "Outer": "BP_Status_DefenseRateHPThreshold_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStatus_HPThresholdBase:BP_OnHPThresholdVfxOff'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BP_OnHPThresholdVfxOn",
+    "Outer": "BP_Status_DefenseRateHPThreshold_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStatus_HPThresholdBase:BP_OnHPThresholdVfxOn'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Status_DefenseRateHPThreshold",
+    "Outer": "BP_Status_DefenseRateHPThreshold_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalVisualEffectDynamicParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalVisualEffectDynamicParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalVisualEffectComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalVisualEffectComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddVisualEffect_Local_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalVisualEffectBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  }
+]

@@ -1,0 +1,175 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water.8"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release.0"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C'Default__BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C",
+    "Name": "Default__BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water.BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_C'Default__BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttackFilter": {
+        "ObjectName": "PalAttackFilter'Default__BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C:PalAttackFilter_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water.4"
+      },
+      "HitFilterGround": {
+        "ObjectName": "PalHitFilter'Default__BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C:PalHitFilter_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water.5"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'NiagaraComponent'",
+            "ObjectPath": "/Script/Niagara"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "NiagaraComponent'BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C:Niagara_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water.3"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release.0"
+            },
+            "SCSVariableName": "Niagara",
+            "AssociatedGuid": "8B266CC8-490E70EE-55EED3AB-7EC61D2E"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "Niagara_GEN_VARIABLE",
+    "Outer": "BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Template": {
+      "ObjectName": "NiagaraComponent'BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_C:Niagara_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release.8"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_UniqueSkill_LegendDeer_BarrierRelease_Water_Explosion'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Skill/LegendDeer/BarrierRelease/NS_UniqueSkill_LegendDeer_BarrierRelease_Water_Explosion.382"
+      },
+      "OverrideParameters": {}
+    }
+  },
+  {
+    "Type": "PalAttackFilter",
+    "Name": "PalAttackFilter_0",
+    "Outer": "Default__BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C",
+    "Class": "UScriptClass'PalAttackFilter'",
+    "Template": {
+      "ObjectName": "PalAttackFilter'Default__BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_C:PalAttackFilter_0'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release.9"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Waza": "EPalWazaID::Unique_LegendDeer_BarrierRelease_Water"
+    }
+  },
+  {
+    "Type": "PalHitFilter",
+    "Name": "PalHitFilter_1",
+    "Outer": "Default__BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C",
+    "Class": "UScriptClass'PalHitFilter'",
+    "Template": {
+      "ObjectName": "PalHitFilter'Default__BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_C:PalHitFilter_1'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release.10"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water.6"
+      },
+      "VariableGuid": "80E0DDC3-416931F1-41CEB6A0-2B65CEE2",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/LegendDeer_BarrierRelease/BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water.7"
+      }
+    }
+  }
+]

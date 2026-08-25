@@ -1,0 +1,65 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalLogManager_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalLogManager'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalLogManager_C'Default__BP_PalLogManager_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalLogManager.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalLogManager_C",
+    "Name": "Default__BP_PalLogManager_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalLogManager.BP_PalLogManager_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "normalLogDisplayTime": 7.0,
+      "importantLogDisplayTime": 10.0,
+      "DeathLogShortDisplayTime": 2.0,
+      "staticLogCollectorClass": {
+        "ObjectName": "Class'PalStaticLogCollector'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "OverrideClassMap": [
+        {
+          "Key": "EPalLogWidgetOverrideClassType::StartExpedition",
+          "Value": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ExpeditionStartLog_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Log/WBP_ExpeditionStartLog.34"
+          }
+        },
+        {
+          "Key": "EPalLogWidgetOverrideClassType::FriendshipRankup",
+          "Value": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_BlinkedLog_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Log/WBP_BlinkedLog.34"
+          }
+        },
+        {
+          "Key": "EPalLogWidgetOverrideClassType::CompleteExpedition",
+          "Value": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ExpeditionCompleteLog_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Log/WBP_ExpeditionCompleteLog.34"
+          }
+        }
+      ],
+      "bShouldCreate": true
+    }
+  }
+]

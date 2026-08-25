@@ -1,0 +1,249 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalPickingGameProcessor_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalPickingGameProcessor'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_PalPickingGameProcessor_C:GetSettingDataByDifficultyType'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalPickingGameProcessor.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "MapProperty",
+        "Name": "SettingDataRowNameMap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "EnumProperty",
+          "Name": "SettingDataRowNameMap",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalPickingGameDifficultyType'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": {
+              "ObjectName": "Enum'EPalPickingGameDifficultyType'",
+              "ObjectPath": "/Script/Pal"
+            }
+          }
+        },
+        "ValueProp": {
+          "Type": "StructProperty",
+          "Name": "SettingDataRowNameMap_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "ScriptStruct'DataTableRowHandle'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      }
+    ],
+    "FuncMap": {
+      "GetSettingDataByDifficultyType": {
+        "ObjectName": "Function'BP_PalPickingGameProcessor_C:GetSettingDataByDifficultyType'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalPickingGameProcessor.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalPickingGameProcessor_C'Default__BP_PalPickingGameProcessor_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalPickingGameProcessor.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalPickingGameProcessor_C",
+    "Name": "Default__BP_PalPickingGameProcessor_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalPickingGameProcessor.BP_PalPickingGameProcessor_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SettingDataRowNameMap": [
+        {
+          "Key": "EPalPickingGameDifficultyType::VeryHard",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "DataTable'DT_PalPickingGameSettings'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/PickingGame/DT_PalPickingGameSettings.0"
+            },
+            "RowName": "VeryHard"
+          }
+        },
+        {
+          "Key": "EPalPickingGameDifficultyType::Hard",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "DataTable'DT_PalPickingGameSettings'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/PickingGame/DT_PalPickingGameSettings.0"
+            },
+            "RowName": "Hard"
+          }
+        },
+        {
+          "Key": "EPalPickingGameDifficultyType::Normal",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "DataTable'DT_PalPickingGameSettings'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/PickingGame/DT_PalPickingGameSettings.0"
+            },
+            "RowName": "Normal"
+          }
+        },
+        {
+          "Key": "EPalPickingGameDifficultyType::Easy",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "DataTable'DT_PalPickingGameSettings'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/PickingGame/DT_PalPickingGameSettings.0"
+            },
+            "RowName": "Easy"
+          }
+        },
+        {
+          "Key": "EPalPickingGameDifficultyType::VeryEasy",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "DataTable'DT_PalPickingGameSettings'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/PickingGame/DT_PalPickingGameSettings.0"
+            },
+            "RowName": "VeryEasy"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetSettingDataByDifficultyType",
+    "Outer": "BP_PalPickingGameProcessor_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalPickingGameProcessor:GetSettingDataByDifficultyType'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "DifficultyType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalPickingGameDifficultyType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalPickingGameDifficultyType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "OutSettingData",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalPickingGameSettingData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_OutRow",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalPickingGameSettingData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_OutRow_1",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalPickingGameSettingData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

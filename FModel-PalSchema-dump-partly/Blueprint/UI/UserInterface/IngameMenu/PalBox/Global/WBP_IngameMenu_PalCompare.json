@@ -1,0 +1,2057 @@
+[
+  {
+    "Type": "BackgroundBlur",
+    "Name": "BackgroundBlur_129",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'BackgroundBlur'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BlurStrength": 6.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.16"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_C",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "GLOBAL_PALSTORAGE_ORIGINAL_DATA"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "IsAutoAdjustScale": true,
+      "MaxWidth": 465,
+      "Text": {
+        "Namespace": "",
+        "Key": "2C7141D940D3C703C3F9A79486250B3E",
+        "SourceString": "既存の遺伝子",
+        "LocalizedString": "既存の遺伝子"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.6,
+          "G": 0.6,
+          "B": 0.6,
+          "A": 1.0,
+          "Hex": "CCCCCC"
+        }
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_01.0"
+        },
+        "OutlineSettings": {
+          "OutlineSize": 1,
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.3,
+            "Hex": "4C000000"
+          }
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 14
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite_1.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.13"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_C_63",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "GLOBAL_PALSTORAGE_OVERWRITE_DATA"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "IsAutoAdjustScale": true,
+      "MaxWidth": 465,
+      "Text": {
+        "Namespace": "",
+        "Key": "3FDFDBCD43A2CA1EEF59B8BD5EE8593D",
+        "SourceString": "上書きする遺伝子",
+        "LocalizedString": "上書きする遺伝子"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_Blue_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_Blue_01.0"
+        },
+        "OutlineSettings": {
+          "OutlineSize": 1,
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.3,
+            "Hex": "4C000000"
+          }
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 14
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_Arrow",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Arrow.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Arrow.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.9"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_Overwrite",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.10"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_Overwrite_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite_1.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite_1.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite_1.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_28",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_12'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_11'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_13'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.25"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.22"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Line_T",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Line_T.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Line_T.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Line_T.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.28"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_Arrow",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -10.0,
+          "Right": 36.0,
+          "Bottom": 54.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Arrow'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.3"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_PalCompare_C:WidgetTree.Image_Arrow_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.50"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Canvas_Arrow",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Right": 36.0,
+          "Bottom": 54.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Arrow'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.3"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_PalCompare_C:WidgetTree.Image_Arrow_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.51"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Canvas_Overwrite",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.4"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_IngameMenu_PalCompare_C:WidgetTree.BP_PalTextBlock_C_63'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Canvas_Overwrite",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1.0,
+          "Top": 2.0,
+          "Right": 1.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_PalCompare_C:WidgetTree.Image_61'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.49"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Canvas_Overwrite",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_PalCompare_C:WidgetTree.Image'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.43"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Canvas_Overwrite_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.5"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_IngameMenu_PalCompare_C:WidgetTree.BP_PalTextBlock_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.1"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Canvas_Overwrite_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1.0,
+          "Top": 2.0,
+          "Right": 1.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.5"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_PalCompare_C:WidgetTree.Image_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Canvas_Overwrite_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.5"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_PalCompare_C:WidgetTree.Image_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_28",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.6"
+      },
+      "Content": {
+        "ObjectName": "BackgroundBlur'WBP_IngameMenu_PalCompare_C:WidgetTree.BackgroundBlur_129'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.0"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_28",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -20.0,
+          "Right": 24.0,
+          "Bottom": 36.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Arrow'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasPanel_28",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -310.0,
+          "Top": -30.0,
+          "Right": 520.0,
+          "Bottom": 840.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.6"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalCommonInfo_SaveParameter_C'WBP_IngameMenu_PalCompare_C:WidgetTree.WBP_PalCommonInfo_SaveParameter_Overwrite'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.65"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_28",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.6"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_PalCompare_C:WidgetTree.Image_Pattern'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.53"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_13",
+    "Outer": "CanvasPanel_28",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 310.0,
+          "Top": -30.0,
+          "Right": 520.0,
+          "Bottom": 840.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.6"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalCommonInfo_SaveParameter_C'WBP_IngameMenu_PalCompare_C:WidgetTree.WBP_PalCommonInfo_SaveParameter_Original'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.64"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_28",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.6"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_PalCompare_C:WidgetTree.Image_dark'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.52"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_28",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -125.0,
+          "Right": 800.0,
+          "Bottom": 44.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.6"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_IngameMenu_PalCompare_C:WidgetTree.HorizontalBox_29'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_28",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -310.0,
+          "Top": -460.0,
+          "Right": 475.0,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanel_28",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 310.0,
+          "Top": -460.0,
+          "Right": 475.0,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_28",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -140.0,
+          "Right": 1300.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.Line_T'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Line_T",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 3.0,
+          "Top": -0.75,
+          "Right": 3.0,
+          "Bottom": 1.5
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.Line_T'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.7"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_PalCompare_C:WidgetTree.Image_602'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Line_T",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 3.0,
+          "Bottom": 3.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.Line_T'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.7"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_PalCompare_C:WidgetTree.Image_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Line_T",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 3.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.Line_T'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.7"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_PalCompare_C:WidgetTree.Image_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.47"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_IngameMenu_PalCompare_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WBP_CommonButton_Cancel",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_IngameMenu_PalCompare_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_CommonButton_OK",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_IngameMenu_PalCompare_WBP_CommonButton_OK_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_IngameMenu_PalCompare_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature",
+    "Outer": "WBP_IngameMenu_PalCompare_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_IngameMenu_PalCompare_WBP_CommonButton_OK_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature",
+    "Outer": "WBP_IngameMenu_PalCompare_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_IngameMenu_PalCompare",
+    "Outer": "WBP_IngameMenu_PalCompare_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetCancelButtonFocusTarget",
+    "Outer": "WBP_IngameMenu_PalCompare_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnClickedCancel__DelegateSignature",
+    "Outer": "WBP_IngameMenu_PalCompare_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnClickedConfirm__DelegateSignature",
+    "Outer": "WBP_IngameMenu_PalCompare_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetCompareParameter",
+    "Outer": "WBP_IngameMenu_PalCompare_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "OverwriteParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 928,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalIndividualCharacterSaveParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "OriginalParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 928,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalIndividualCharacterSaveParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_29",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.HorizontalBox_29.HorizontalBoxSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.42"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.HorizontalBox_29.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.38"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.HorizontalBox_29.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.40"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.HorizontalBox_29.HorizontalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.39"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.HorizontalBox_29.HorizontalBoxSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.41"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.22"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_29",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_IngameMenu_PalCompare_C:WidgetTree.HorizontalBox_29'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.37"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_IngameMenu_PalCompare_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.54"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_29",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_IngameMenu_PalCompare_C:WidgetTree.HorizontalBox_29'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.37"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_IngameMenu_PalCompare_C:WidgetTree.SizeBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.55"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_29",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_IngameMenu_PalCompare_C:WidgetTree.HorizontalBox_29'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.37"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_IngameMenu_PalCompare_C:WidgetTree.Spacer_49'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.60"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HorizontalBox_29",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_IngameMenu_PalCompare_C:WidgetTree.HorizontalBox_29'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.37"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_IngameMenu_PalCompare_C:WidgetTree.Spacer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.58"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "HorizontalBox_29",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_IngameMenu_PalCompare_C:WidgetTree.HorizontalBox_29'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.37"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_IngameMenu_PalCompare_C:WidgetTree.Spacer_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.59"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 20.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_common_gauge_frame'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Common/T_prt_common_gauge_frame.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.147027,
+        "G": 0.799103,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "6BE7FF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.12"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 20.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.31537,
+        "G": 0.465767,
+        "B": 0.5,
+        "A": 0.3,
+        "Hex": "4C98B6BC"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite_1.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.14"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 20.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_common_gauge_frame'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Common/T_prt_common_gauge_frame.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.3564,
+        "G": 0.412543,
+        "B": 0.450786,
+        "A": 1.0,
+        "Hex": "A1ACB3"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite_1.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.15"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.875,
+        "G": 0.868012,
+        "B": 0.856771,
+        "A": 0.5,
+        "Hex": "7FF1F0EF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Line_T.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.27"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_4",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.875,
+        "G": 0.868012,
+        "B": 0.856771,
+        "A": 0.5,
+        "Hex": "7FF1F0EF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Line_T.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.28"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_602",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 4.0,
+          "Y": 4.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_tex_white'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_tex_white.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.783538,
+        "G": 0.964686,
+        "B": 1.0,
+        "A": 0.3,
+        "Hex": "4CE5FBFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Line_T.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.26"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_61",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 20.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.147027,
+        "G": 0.799103,
+        "B": 1.0,
+        "A": 0.3,
+        "Hex": "4C6BE7FF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Overwrite.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.11"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Arrow_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 24.0,
+          "Y": 36.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_arrow_0'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_arrow_0.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.147027,
+        "G": 0.799103,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "6BE7FF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Arrow.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.8"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Arrow_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 24.0,
+          "Y": 36.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_arrow_0'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_arrow_0.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.147027,
+        "G": 0.799103,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "6BE7FF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.Canvas_Arrow.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.9"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_dark",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.004025,
+            "G": 0.006995,
+            "B": 0.01033,
+            "A": 1.0,
+            "Hex": "0D141A"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.21"
+      },
+      "RenderOpacity": 0.8
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Pattern",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "Tiling": "ESlateBrushTileType::Both",
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_pattern_stripe_0'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Map/T_prt_pattern_stripe_0.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.147027,
+        "G": 0.799103,
+        "B": 1.0,
+        "A": 0.07,
+        "Hex": "116BE7FF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_12'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.19"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidthOverride": 260.0,
+      "HeightOverride": 44.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.56"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.HorizontalBox_29.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.38"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidthOverride": 260.0,
+      "HeightOverride": 44.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.SizeBox_1.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.57"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.HorizontalBox_29.HorizontalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.39"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_IngameMenu_PalCompare_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.54"
+      },
+      "Content": {
+        "ObjectName": "WBP_CommonButton_1_C'WBP_IngameMenu_PalCompare_C:WidgetTree.WBP_CommonButton_Cancel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.61"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_1",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_IngameMenu_PalCompare_C:WidgetTree.SizeBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.55"
+      },
+      "Content": {
+        "ObjectName": "WBP_CommonButton_2_C'WBP_IngameMenu_PalCompare_C:WidgetTree.WBP_CommonButton_OK'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.62"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "X": 20.0,
+        "Y": 1.0
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.HorizontalBox_29.HorizontalBoxSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.41"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "X": 20.0,
+        "Y": 1.0
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.HorizontalBox_29.HorizontalBoxSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.42"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_49",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "X": 50.0,
+        "Y": 1.0
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.HorizontalBox_29.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.40"
+      }
+    }
+  },
+  {
+    "Type": "WBP_CommonButton_1_C",
+    "Name": "WBP_CommonButton_Cancel",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_1.WBP_CommonButton_1_C'",
+    "Template": {
+      "ObjectName": "WBP_CommonButton_1_C'Default__WBP_CommonButton_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_1.105"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitializeMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_CANCEL"
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.56"
+      }
+    }
+  },
+  {
+    "Type": "WBP_CommonButton_2_C",
+    "Name": "WBP_CommonButton_OK",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_2.WBP_CommonButton_2_C'",
+    "Template": {
+      "ObjectName": "WBP_CommonButton_2_C'Default__WBP_CommonButton_2_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_2.181"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitializeMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_OK"
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.SizeBox_1.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.57"
+      }
+    }
+  },
+  {
+    "Type": "WBP_IngameMenu_PalCompare_C",
+    "Name": "Default__WBP_IngameMenu_PalCompare_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.WBP_IngameMenu_PalCompare_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_PalCommonInfo_SaveParameter_C",
+    "Name": "WBP_PalCommonInfo_SaveParameter_Original",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_PalCommonInfo_SaveParameter.WBP_PalCommonInfo_SaveParameter_C'",
+    "Template": {
+      "ObjectName": "WBP_PalCommonInfo_SaveParameter_C'Default__WBP_PalCommonInfo_SaveParameter_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_PalCommonInfo_SaveParameter.20"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_13'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.20"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalCommonInfo_SaveParameter_C",
+    "Name": "WBP_PalCommonInfo_SaveParameter_Overwrite",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_PalCommonInfo_SaveParameter.WBP_PalCommonInfo_SaveParameter_C'",
+    "Template": {
+      "ObjectName": "WBP_PalCommonInfo_SaveParameter_C'Default__WBP_PalCommonInfo_SaveParameter_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_PalCommonInfo_SaveParameter.20"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_11'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.18"
+      }
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_IngameMenu_PalCompare_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_IngameMenu_PalCompare_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.67"
+      },
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_IngameMenu_PalCompare_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.29"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:ExecuteUbergraph_WBP_IngameMenu_PalCompare'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.32"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:SetCompareParameter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.36"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:GetCancelButtonFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.33"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:BndEvt__WBP_IngameMenu_PalCompare_WBP_CommonButton_OK_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.31"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:BndEvt__WBP_IngameMenu_PalCompare_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.30"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:ExecuteUbergraph_WBP_IngameMenu_PalCompare'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.32"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:OnClickedCancel__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.34"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:OnClickedConfirm__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.35"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_61",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Arrow_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Arrow_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_dark",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Pattern",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_CommonButton_Cancel",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonButton_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_1.110"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_CommonButton_OK",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonButton_2_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_2.186"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalCommonInfo_SaveParameter_Original",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCommonInfo_SaveParameter_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_PalCommonInfo_SaveParameter.21"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalCommonInfo_SaveParameter_Overwrite",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalCommonInfo_SaveParameter_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/PalSaveParameterDisplayWidget/WBP_PalCommonInfo_SaveParameter.21"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnClickedConfirm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:OnClickedConfirm__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.35"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnClickedCancel",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:OnClickedCancel__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.34"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnClickedConfirm__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:OnClickedConfirm__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.35"
+      },
+      "OnClickedCancel__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:OnClickedCancel__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.34"
+      },
+      "ExecuteUbergraph_WBP_IngameMenu_PalCompare": {
+        "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:ExecuteUbergraph_WBP_IngameMenu_PalCompare'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.32"
+      },
+      "BndEvt__WBP_IngameMenu_PalCompare_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:BndEvt__WBP_IngameMenu_PalCompare_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.30"
+      },
+      "BndEvt__WBP_IngameMenu_PalCompare_WBP_CommonButton_OK_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:BndEvt__WBP_IngameMenu_PalCompare_WBP_CommonButton_OK_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.31"
+      },
+      "GetCancelButtonFocusTarget": {
+        "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:GetCancelButtonFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.33"
+      },
+      "SetCompareParameter": {
+        "ObjectName": "Function'WBP_IngameMenu_PalCompare_C:SetCompareParameter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.36"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_IngameMenu_PalCompare_C'Default__WBP_IngameMenu_PalCompare_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.63"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_IngameMenu_PalCompare_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_PalCompare_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/PalBox/Global/WBP_IngameMenu_PalCompare.6"
+      }
+    }
+  }
+]

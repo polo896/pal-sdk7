@@ -1,0 +1,374 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalSupplyIncidentSpawnerBase_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentSpawnerTemplate_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawnerTemplate.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalSupplyIncidentSpawnerBase_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.11"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_PalSupplyIncidentSpawnerBase_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_PalSupplyIncidentSpawnerBase_C:ExecuteUbergraph_BP_PalSupplyIncidentSpawnerBase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentSpawnerTemplate_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawnerTemplate.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_PalSupplyIncidentSpawnerBase_C:ReleaseIncident'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.5"
+      },
+      {
+        "ObjectName": "Function'BP_PalSupplyIncidentSpawnerBase_C:WipedOut'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.6"
+      },
+      {
+        "ObjectName": "Function'BP_PalSupplyIncidentSpawnerBase_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.4"
+      },
+      {
+        "ObjectName": "Function'BP_PalSupplyIncidentSpawnerBase_C:OnIncidentSpawned'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.3"
+      },
+      {
+        "ObjectName": "Function'BP_PalSupplyIncidentSpawnerBase_C:ExecuteUbergraph_BP_PalSupplyIncidentSpawnerBase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bIsPalSpawner",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bWipedOut",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_PalSupplyIncidentSpawnerBase": {
+        "ObjectName": "Function'BP_PalSupplyIncidentSpawnerBase_C:ExecuteUbergraph_BP_PalSupplyIncidentSpawnerBase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.2"
+      },
+      "OnIncidentSpawned": {
+        "ObjectName": "Function'BP_PalSupplyIncidentSpawnerBase_C:OnIncidentSpawned'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.3"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_PalSupplyIncidentSpawnerBase_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.4"
+      },
+      "WipedOut": {
+        "ObjectName": "Function'BP_PalSupplyIncidentSpawnerBase_C:WipedOut'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.6"
+      },
+      "ReleaseIncident": {
+        "ObjectName": "Function'BP_PalSupplyIncidentSpawnerBase_C:ReleaseIncident'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalSupplyIncidentSpawnerBase_C'Default__BP_PalSupplyIncidentSpawnerBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalSupplyIncidentSpawnerBase_C",
+    "Name": "Default__BP_PalSupplyIncidentSpawnerBase_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.BP_PalSupplyIncidentSpawnerBase_C'",
+    "Template": {
+      "ObjectName": "BP_PalRandomIncidentSpawnerTemplate_C'Default__BP_PalRandomIncidentSpawnerTemplate_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawnerTemplate.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bIsPalSpawner": true,
+      "LotteryClass": null
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_PalSupplyIncidentSpawnerBase",
+    "Outer": "BP_PalSupplyIncidentSpawnerBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Incident",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIncidentBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_DynamicParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIncidentDynamicParameterRandom'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnIncidentSpawned",
+    "Outer": "BP_PalSupplyIncidentSpawnerBase_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_PalRandomIncidentSpawner_C:OnIncidentSpawned'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner.10"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_PalRandomIncidentSpawner_C:OnIncidentSpawned'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner.10"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Incident",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIncidentBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DynamicParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIncidentDynamicParameterRandom'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_PalSupplyIncidentSpawnerBase_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_PalRandomIncidentSpawner_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner.11"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_PalRandomIncidentSpawner_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner.11"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReleaseIncident",
+    "Outer": "BP_PalSupplyIncidentSpawnerBase_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_PalRandomIncidentSpawner_C:ReleaseIncident'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner.13"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_PalRandomIncidentSpawner_C:ReleaseIncident'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner.13"
+    },
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "WipedOut",
+    "Outer": "BP_PalSupplyIncidentSpawnerBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_PalSupplyIncidentSpawnerBase_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'StaticMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "StaticMeshComponent'BP_PalSupplyIncidentSpawnerBase_C:StaticMesh_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.12"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentSpawner_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner.0"
+            },
+            "SCSVariableName": "StaticMesh",
+            "AssociatedGuid": "12631B6C-4F972FF9-7D2FFEAB-1CBE8A94"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SceneComponent'BP_PalSupplyIncidentSpawnerBase_C:ICH-DefaultSceneRoot_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.9"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentSpawner_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner.0"
+            },
+            "SCSVariableName": "DefaultSceneRoot",
+            "AssociatedGuid": "DA6F97C9-43883DFB-8AEB47AD-AFDD1D4E"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalSupplyIncidentSpawnerBase_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "ICH-DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalSupplyIncidentSpawnerBase_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalSupplyIncidentSpawnerBase_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.8"
+      },
+      "VariableGuid": "DA6F97C9-43883DFB-8AEB47AD-AFDD1D4E",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalSupplyIncidentSpawnerBase_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalSupplyIncidentSpawnerBase_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentSpawnerBase.10"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "BP_PalSupplyIncidentSpawnerBase_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Template": {
+      "ObjectName": "StaticMeshComponent'BP_PalRandomIncidentSpawner_C:StaticMesh_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner.28"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "bEvaluateWorldPositionOffsetInRayTracing": true
+    }
+  }
+]

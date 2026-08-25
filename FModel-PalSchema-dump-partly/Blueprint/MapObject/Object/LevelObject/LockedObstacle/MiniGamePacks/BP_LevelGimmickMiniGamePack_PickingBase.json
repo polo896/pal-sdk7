@@ -1,0 +1,42 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_LevelGimmickMiniGamePack_PickingBase_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalMiniGamePack_Picking'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_LevelGimmickMiniGamePack_PickingBase_C'Default__BP_LevelGimmickMiniGamePack_PickingBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LockedObstacle/MiniGamePacks/BP_LevelGimmickMiniGamePack_PickingBase.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_LevelGimmickMiniGamePack_PickingBase_C",
+    "Name": "Default__BP_LevelGimmickMiniGamePack_PickingBase_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LockedObstacle/MiniGamePacks/BP_LevelGimmickMiniGamePack_PickingBase.BP_LevelGimmickMiniGamePack_PickingBase_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ProcessorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalPickingGameProcessor_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalPickingGameProcessor.0"
+      },
+      "MiniGameWidgetClass": {
+        "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PickingGame02_ForDisplay_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Picking/WBP_PickingGame02_ForDisplay.47"
+      }
+    }
+  }
+]

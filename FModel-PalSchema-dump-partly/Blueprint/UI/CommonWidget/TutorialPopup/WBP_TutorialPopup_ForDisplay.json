@@ -1,0 +1,307 @@
+[
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_TutorialPopup_ForDisplay_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WBP_CommonTutorialPopup",
+          "DelegatePropertyName": "OnClickedYes",
+          "FunctionNameToBind": "BndEvt__WBP_TutorialPopup_ForDisplay_WBP_CommonTutorialPopup_K2Node_ComponentBoundEvent_0_OnClickedYes__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_TutorialPopup_ForDisplay_WBP_CommonTutorialPopup_K2Node_ComponentBoundEvent_0_OnClickedYes__DelegateSignature",
+    "Outer": "WBP_TutorialPopup_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BP_GetDesiredFocusTarget",
+    "Outer": "WBP_TutorialPopup_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'CommonActivatableWidget:BP_GetDesiredFocusTarget'",
+      "ObjectPath": "/Script/CommonUI"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetFocusTarget_YesButton_TargetWidget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_TutorialPopup_ForDisplay",
+    "Outer": "WBP_TutorialPopup_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetParam_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameterBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_HUDDispatch_Parameter_Tutorial_Popup",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_HUDDispatchParameter_TutorialPopup_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/TutorialPopup/BP_HUDDispatchParameter_TutorialPopup.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_TextIsEmpty_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetup",
+    "Outer": "WBP_TutorialPopup_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUserWidget:OnSetup'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WBP_CommonTutorialPopup_C",
+    "Name": "WBP_CommonTutorialPopup",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonTutorialPopup.WBP_CommonTutorialPopup_C'",
+    "Template": {
+      "ObjectName": "WBP_CommonTutorialPopup_C'Default__WBP_CommonTutorialPopup_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonTutorialPopup.37"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "WBP_TutorialPopup_ForDisplay_C",
+    "Name": "Default__WBP_TutorialPopup_ForDisplay_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/TutorialPopup/WBP_TutorialPopup_ForDisplay.WBP_TutorialPopup_ForDisplay_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_TutorialPopup_ForDisplay_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_TutorialPopup_ForDisplay_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/TutorialPopup/WBP_TutorialPopup_ForDisplay.8"
+      },
+      "bClassRequiresNativeTick": true,
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_TutorialPopup_ForDisplay_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/TutorialPopup/WBP_TutorialPopup_ForDisplay.0"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_TutorialPopup_ForDisplay_C:ExecuteUbergraph_WBP_TutorialPopup_ForDisplay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/TutorialPopup/WBP_TutorialPopup_ForDisplay.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidgetOverlayUI'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_TutorialPopup_ForDisplay_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/TutorialPopup/WBP_TutorialPopup_ForDisplay.2"
+      },
+      {
+        "ObjectName": "Function'WBP_TutorialPopup_ForDisplay_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/TutorialPopup/WBP_TutorialPopup_ForDisplay.4"
+      },
+      {
+        "ObjectName": "Function'WBP_TutorialPopup_ForDisplay_C:BndEvt__WBP_TutorialPopup_ForDisplay_WBP_CommonTutorialPopup_K2Node_ComponentBoundEvent_0_OnClickedYes__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/TutorialPopup/WBP_TutorialPopup_ForDisplay.1"
+      },
+      {
+        "ObjectName": "Function'WBP_TutorialPopup_ForDisplay_C:ExecuteUbergraph_WBP_TutorialPopup_ForDisplay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/TutorialPopup/WBP_TutorialPopup_ForDisplay.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_CommonTutorialPopup",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonTutorialPopup_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonTutorialPopup.40"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_TutorialPopup_ForDisplay": {
+        "ObjectName": "Function'WBP_TutorialPopup_ForDisplay_C:ExecuteUbergraph_WBP_TutorialPopup_ForDisplay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/TutorialPopup/WBP_TutorialPopup_ForDisplay.3"
+      },
+      "BndEvt__WBP_TutorialPopup_ForDisplay_WBP_CommonTutorialPopup_K2Node_ComponentBoundEvent_0_OnClickedYes__DelegateSignature": {
+        "ObjectName": "Function'WBP_TutorialPopup_ForDisplay_C:BndEvt__WBP_TutorialPopup_ForDisplay_WBP_CommonTutorialPopup_K2Node_ComponentBoundEvent_0_OnClickedYes__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/TutorialPopup/WBP_TutorialPopup_ForDisplay.1"
+      },
+      "OnSetup": {
+        "ObjectName": "Function'WBP_TutorialPopup_ForDisplay_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/TutorialPopup/WBP_TutorialPopup_ForDisplay.4"
+      },
+      "BP_GetDesiredFocusTarget": {
+        "ObjectName": "Function'WBP_TutorialPopup_ForDisplay_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/TutorialPopup/WBP_TutorialPopup_ForDisplay.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_TutorialPopup_ForDisplay_C'Default__WBP_TutorialPopup_ForDisplay_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/TutorialPopup/WBP_TutorialPopup_ForDisplay.6"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_TutorialPopup_ForDisplay_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "WBP_CommonTutorialPopup_C'WBP_TutorialPopup_ForDisplay_C:WidgetTree.WBP_CommonTutorialPopup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/TutorialPopup/WBP_TutorialPopup_ForDisplay.5"
+      }
+    }
+  }
+]

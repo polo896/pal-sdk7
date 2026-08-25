@@ -1,0 +1,52 @@
+[
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "ST_RideBossAnimation",
+    "Class": "UScriptClass'UserDefinedStruct'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Guid": "0ECB6958-44E5996F-A4ACA1A7-6DBCEBBF"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Start_6_C7B30EDC41E967F89A3806B66CD8B02F",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Loop_7_D7226C18460A4DF614177A8A27BA584C",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "End_8_4804F93B4C862C9A6D46E181F86598D2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "StructFlags": 49152,
+    "DefaultProperties": {
+      "Start_6_C7B30EDC41E967F89A3806B66CD8B02F": null,
+      "Loop_7_D7226C18460A4DF614177A8A27BA584C": null,
+      "End_8_4804F93B4C862C9A6D46E181F86598D2": null
+    }
+  }
+]

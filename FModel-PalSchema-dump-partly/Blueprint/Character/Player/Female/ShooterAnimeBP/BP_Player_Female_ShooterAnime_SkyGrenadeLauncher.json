@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Player_Female_ShooterAnime_SkyGrenadeLauncher_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_ShooterAnime_Bullpup_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_Bullpup.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_ShooterAnime_Bullpup_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_Bullpup.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Player_Female_ShooterAnime_SkyGrenadeLauncher_C'Default__BP_Player_Female_ShooterAnime_SkyGrenadeLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_SkyGrenadeLauncher.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Player_Female_ShooterAnime_SkyGrenadeLauncher_C",
+    "Name": "Default__BP_Player_Female_ShooterAnime_SkyGrenadeLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_SkyGrenadeLauncher.BP_Player_Female_ShooterAnime_SkyGrenadeLauncher_C'",
+    "Template": {
+      "ObjectName": "BP_Player_Female_ShooterAnime_Bullpup_C'Default__BP_Player_Female_ShooterAnime_Bullpup_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_Bullpup.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimeInfo": {
+        "ReloadMontage": {
+          "ObjectName": "AnimMontage'AM_Player_Female_Reload_SkyGrenadeLauncher'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/Bullpup/AM_Player_Female_Reload_SkyGrenadeLauncher.0"
+        },
+        "AimBaseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::Stand",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Female_Aim_SkyGrenadeLauncher'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/Bullpup/AS_Player_Female_Aim_SkyGrenadeLauncher.0"
+            }
+          }
+        ],
+        "AnimationMap": [
+          {
+            "Key": "EWeaponAnimationType::Shoot",
+            "Value": {
+              "PoseMap": [
+                {
+                  "Key": "EWeaponAnimationPoseType::Stand",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Female_Fire_SkyGrenadeLauncher'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/Bullpup/AM_Player_Female_Fire_SkyGrenadeLauncher.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Crouch",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Female_Fire_SkyGrenadeLauncher'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/Bullpup/AM_Player_Female_Fire_SkyGrenadeLauncher.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Riding",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Female_Fire_SkyGrenadeLauncher'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/Bullpup/AM_Player_Female_Fire_SkyGrenadeLauncher.0"
+                  }
+                }
+              ],
+              "isAutoStop": false,
+              "EndDelegateType": "EPalWeaponAnimationEndDelegateType::MontageBlendingOut"
+            }
+          }
+        ]
+      }
+    }
+  }
+]

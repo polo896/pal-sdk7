@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b08_AreaM_Bush_13",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b08_grass_mwDuneDesertPlantC_01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b08/Area_D/mesh/SM_pal_b08_grass_mwDuneDesertPlantC_01.2"
+      },
+      "UpdateGuid": "76917A15-48C19E52-BD883D87-F9954E9A",
+      "Density": 50.0,
+      "ScaleX": {
+        "Max": 2.0
+      },
+      "AverageNormal": true,
+      "GroundSlopeAngle": {
+        "Max": 90.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 4.02087,
+          "Y": -2.7589169,
+          "Z": 41.46109
+        },
+        "BoxExtent": {
+          "X": 75.80951,
+          "Y": 62.031807,
+          "Z": 59.864677
+        },
+        "SphereRadius": 90.89618416370136
+      },
+      "LowBoundOriginRadius": {
+        "X": 4.06975,
+        "Y": -7.7123356,
+        "Z": 56.57913
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

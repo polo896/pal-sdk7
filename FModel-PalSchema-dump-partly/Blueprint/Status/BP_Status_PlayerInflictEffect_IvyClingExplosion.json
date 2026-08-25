@@ -1,0 +1,147 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Status_PlayerInflictEffect_IvyClingExplosion_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Status_PlayerInflictEffect_IvyClingExplosion_C:CheckAdditionalCondition'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_IvyClingExplosion.2"
+      }
+    ],
+    "FuncMap": {
+      "CheckAdditionalCondition": {
+        "ObjectName": "Function'BP_Status_PlayerInflictEffect_IvyClingExplosion_C:CheckAdditionalCondition'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_IvyClingExplosion.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Status_PlayerInflictEffect_IvyClingExplosion_C'Default__BP_Status_PlayerInflictEffect_IvyClingExplosion_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_IvyClingExplosion.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Status_PlayerInflictEffect_IvyClingExplosion_C",
+    "Name": "Default__BP_Status_PlayerInflictEffect_IvyClingExplosion_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_IvyClingExplosion.BP_Status_PlayerInflictEffect_IvyClingExplosion_C'",
+    "Template": {
+      "ObjectName": "BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C'Default__BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CooldownTime": 2.0,
+      "SkillEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_FoxExorcist_PartnerSkill_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/FoxExorcist_PartnerSkill/BP_SkillEffect_FoxExorcist_PartnerSkill.0"
+      },
+      "Status ID": "EPalStatusID::PlayerInflictEffect_AttackIvyCling_ApplyExplosion"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "CheckAdditionalCondition",
+    "Outer": "BP_Status_PlayerInflictEffect_IvyClingExplosion_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C:CheckAdditionalCondition'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C:CheckAdditionalCondition'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "DamageResult",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDamageResult'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CanActivate",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalStatusComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetExecutionStatus_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalStatusBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

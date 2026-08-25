@@ -1,0 +1,101 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_RaidBossAreaWorldSubsystem_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalRaidBossAreaWorldSubsystem'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_RaidBossAreaWorldSubsystem_C'Default__BP_RaidBossAreaWorldSubsystem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_RaidBossAreaWorldSubsystem.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_RaidBossAreaWorldSubsystem_C",
+    "Name": "Default__BP_RaidBossAreaWorldSubsystem_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_RaidBossAreaWorldSubsystem.BP_RaidBossAreaWorldSubsystem_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RaidBossAreaDataLayers": [
+        {
+          "ObjectName": "DataLayerAsset'RaidBossArea_01'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/RaidBoss/RaidBossArea_01.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'RaidBossArea_02'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/RaidBoss/RaidBossArea_02.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'RaidBossArea_03'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/RaidBoss/RaidBossArea_03.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'RaidBossArea_04'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/RaidBoss/RaidBossArea_04.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'RaidBossArea_05'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/RaidBoss/RaidBossArea_05.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'RaidBossArea_06'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/RaidBoss/RaidBossArea_06.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'RaidBossArea_07'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/RaidBoss/RaidBossArea_07.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'RaidBossArea_08'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/RaidBoss/RaidBossArea_08.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'RaidBossArea_09'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/RaidBoss/RaidBossArea_09.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'RaidBossArea_10'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/RaidBoss/RaidBossArea_10.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'RaidBossArea_11'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/RaidBoss/RaidBossArea_11.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'RaidBossArea_12'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/RaidBoss/RaidBossArea_12.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'RaidBossArea_13'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/RaidBoss/RaidBossArea_13.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'RaidBossArea_14'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/RaidBoss/RaidBossArea_14.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'RaidBossArea_15'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/RaidBoss/RaidBossArea_15.0"
+        },
+        {
+          "ObjectName": "DataLayerAsset'RaidBossArea_16'",
+          "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/RaidBoss/RaidBossArea_16.0"
+        }
+      ],
+      "bShouldCreate": true
+    }
+  }
+]

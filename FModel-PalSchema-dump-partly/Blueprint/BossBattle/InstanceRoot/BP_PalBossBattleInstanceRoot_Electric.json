@@ -1,0 +1,908 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalBossBattleInstanceRoot_Electric_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalBossBattleInstanceRootBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRootBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.22"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_PalBossBattleInstanceRoot_Electric_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalBossBattleInstanceRootBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRootBase.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "TowerBox4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TowerBox8",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TowerBox5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TowerBox6",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TowerBox7",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TowerBox1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TowerBox2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TowerBox3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalBossBattleInstanceRoot_Electric_C'Default__BP_PalBossBattleInstanceRoot_Electric_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.9"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "TowerBox1_GEN_VARIABLE",
+    "Outer": "BP_PalBossBattleInstanceRoot_Electric_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 160.0,
+        "Y": 160.0,
+        "Z": 1000.0
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BackgroundNoClimbBanOverlapObject",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "vsGroundRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -1445.5432,
+        "Y": 1816.2107,
+        "Z": 950.03467
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "TowerBox2_GEN_VARIABLE",
+    "Outer": "BP_PalBossBattleInstanceRoot_Electric_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 160.0,
+        "Y": 160.0,
+        "Z": 1000.0
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BackgroundNoClimbBanOverlapObject",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "vsGroundRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -1445.5432,
+        "Y": 689.95135,
+        "Z": 950.03467
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "TowerBox3_GEN_VARIABLE",
+    "Outer": "BP_PalBossBattleInstanceRoot_Electric_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 160.0,
+        "Y": 160.0,
+        "Z": 1000.0
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BackgroundNoClimbBanOverlapObject",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "vsGroundRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -1445.5432,
+        "Y": -689.95135,
+        "Z": 950.03467
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "TowerBox4_GEN_VARIABLE",
+    "Outer": "BP_PalBossBattleInstanceRoot_Electric_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 160.0,
+        "Y": 160.0,
+        "Z": 1000.0
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BackgroundNoClimbBanOverlapObject",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "vsGroundRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -1445.5432,
+        "Y": -1816.2107,
+        "Z": 950.03467
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "TowerBox5_GEN_VARIABLE",
+    "Outer": "BP_PalBossBattleInstanceRoot_Electric_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 160.0,
+        "Y": 160.0,
+        "Z": 1000.0
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BackgroundNoClimbBanOverlapObject",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "vsGroundRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 1445.5432,
+        "Y": 689.95135,
+        "Z": 950.03467
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "TowerBox6_GEN_VARIABLE",
+    "Outer": "BP_PalBossBattleInstanceRoot_Electric_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 160.0,
+        "Y": 160.0,
+        "Z": 1000.0
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BackgroundNoClimbBanOverlapObject",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "vsGroundRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 1445.5432,
+        "Y": -689.95135,
+        "Z": 950.03467
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "TowerBox7_GEN_VARIABLE",
+    "Outer": "BP_PalBossBattleInstanceRoot_Electric_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 160.0,
+        "Y": 160.0,
+        "Z": 1000.0
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BackgroundNoClimbBanOverlapObject",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "vsGroundRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 1445.5432,
+        "Y": -1816.2107,
+        "Z": 950.03467
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "TowerBox8_GEN_VARIABLE",
+    "Outer": "BP_PalBossBattleInstanceRoot_Electric_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 160.0,
+        "Y": 160.0,
+        "Z": 1000.0
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BackgroundNoClimbBanOverlapObject",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "vsGroundRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 1445.5432,
+        "Y": 1816.2107,
+        "Z": 950.03467
+      }
+    }
+  },
+  {
+    "Type": "BP_PalBossBattleInstanceRoot_Electric_C",
+    "Name": "Default__BP_PalBossBattleInstanceRoot_Electric_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.BP_PalBossBattleInstanceRoot_Electric_C'",
+    "Template": {
+      "ObjectName": "BP_PalBossBattleInstanceRootBase_C'Default__BP_PalBossBattleInstanceRootBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRootBase.11"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BossType": "EPalBossType::ElectricBoss",
+      "SceneRootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_PalBossBattleInstanceRoot_Electric_C:SceneRoot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.12"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_PalBossBattleInstanceRoot_Electric_C:SceneRoot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.12"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_PalBossBattleInstanceRoot_Electric_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalBossBattleInstanceRoot_Electric_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneRoot",
+    "Outer": "Default__BP_PalBossBattleInstanceRoot_Electric_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__BP_PalBossBattleInstanceRootBase_C:SceneRoot'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRootBase.21"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalBossBattleInstanceRoot_Electric_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.11"
+      },
+      "VariableGuid": "3DE10936-4BD92B6F-173C6C94-36B1535B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_PalBossBattleInstanceRoot_Electric_C:TowerBox3_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.3"
+      },
+      "ParentComponentOrVariableName": "SceneRoot",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "CC147423-43E54C5A-31DF538C-76CD29DC",
+      "InternalVariableName": "TowerBox3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_PalBossBattleInstanceRoot_Electric_C:TowerBox2_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.2"
+      },
+      "ParentComponentOrVariableName": "SceneRoot",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "A3EFCE11-45A14067-787E3AB8-9B7932C5",
+      "InternalVariableName": "TowerBox2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_PalBossBattleInstanceRoot_Electric_C:TowerBox1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.1"
+      },
+      "ParentComponentOrVariableName": "SceneRoot",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "0BDCD3CB-4268468E-87184EA0-75296128",
+      "InternalVariableName": "TowerBox1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_PalBossBattleInstanceRoot_Electric_C:TowerBox7_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.7"
+      },
+      "ParentComponentOrVariableName": "SceneRoot",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "522E2EB3-4FAC74DC-91706597-F00BC829",
+      "InternalVariableName": "TowerBox7"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_PalBossBattleInstanceRoot_Electric_C:TowerBox6_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.6"
+      },
+      "ParentComponentOrVariableName": "SceneRoot",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "D51A199D-43A2C2F1-66520EB1-2AA67158",
+      "InternalVariableName": "TowerBox6"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_PalBossBattleInstanceRoot_Electric_C:TowerBox5_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.5"
+      },
+      "ParentComponentOrVariableName": "SceneRoot",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "B24B06C7-40B2F797-D26B5FA5-51D29506",
+      "InternalVariableName": "TowerBox5"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_PalBossBattleInstanceRoot_Electric_C:TowerBox8_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.8"
+      },
+      "ParentComponentOrVariableName": "SceneRoot",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "9E54804B-43FFB192-A5D5E185-91E879FD",
+      "InternalVariableName": "TowerBox8"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_PalBossBattleInstanceRoot_Electric_C:TowerBox4_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.4"
+      },
+      "ParentComponentOrVariableName": "SceneRoot",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "04A758EF-480ABF0D-B15D5298-2D08DA7F",
+      "InternalVariableName": "TowerBox4"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalBossBattleInstanceRoot_Electric_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.15"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.16"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.19"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.20"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.21"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.15"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.16"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.19"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.20"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.21"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalBossBattleInstanceRoot_Electric_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/InstanceRoot/BP_PalBossBattleInstanceRoot_Electric.13"
+      }
+    }
+  }
+]

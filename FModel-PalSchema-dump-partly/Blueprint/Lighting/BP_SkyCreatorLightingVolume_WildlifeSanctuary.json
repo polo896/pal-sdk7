@@ -1,0 +1,345 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SkyCreatorLightingVolume_WildlifeSanctuary_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SkyCreatorLightingSphereVolume_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingSphereVolume.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SkyCreatorLightingVolume_WildlifeSanctuary_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingVolume_WildlifeSanctuary.9"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_SkyCreatorLightingVolume_WildlifeSanctuary_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingVolume_WildlifeSanctuary.6"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_SkyCreatorLightingVolume_WildlifeSanctuary_C:ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingVolume_WildlifeSanctuary.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SkyCreatorLightingSphereVolume_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingSphereVolume.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_SkyCreatorLightingVolume_WildlifeSanctuary_C:ShouldMaintainAlertWhilePresent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingVolume_WildlifeSanctuary.5"
+      },
+      {
+        "ObjectName": "Function'BP_SkyCreatorLightingVolume_WildlifeSanctuary_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingVolume_WildlifeSanctuary.4"
+      },
+      {
+        "ObjectName": "Function'BP_SkyCreatorLightingVolume_WildlifeSanctuary_C:OnAlertStateChanged'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingVolume_WildlifeSanctuary.3"
+      },
+      {
+        "ObjectName": "Function'BP_SkyCreatorLightingVolume_WildlifeSanctuary_C:ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingVolume_WildlifeSanctuary.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary": {
+        "ObjectName": "Function'BP_SkyCreatorLightingVolume_WildlifeSanctuary_C:ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingVolume_WildlifeSanctuary.2"
+      },
+      "OnAlertStateChanged": {
+        "ObjectName": "Function'BP_SkyCreatorLightingVolume_WildlifeSanctuary_C:OnAlertStateChanged'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingVolume_WildlifeSanctuary.3"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_SkyCreatorLightingVolume_WildlifeSanctuary_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingVolume_WildlifeSanctuary.4"
+      },
+      "ShouldMaintainAlertWhilePresent": {
+        "ObjectName": "Function'BP_SkyCreatorLightingVolume_WildlifeSanctuary_C:ShouldMaintainAlertWhilePresent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingVolume_WildlifeSanctuary.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "Interfaces": [
+      {
+        "Class": {
+          "ObjectName": "Class'PalWildlifeSanctuaryAlertStateListenerInterface'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      }
+    ],
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SkyCreatorLightingVolume_WildlifeSanctuary_C'Default__BP_SkyCreatorLightingVolume_WildlifeSanctuary_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingVolume_WildlifeSanctuary.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal",
+      "ImplementedInterfaces": "((Interface=/Script/CoreUObject.Class'\"/Script/Pal.PalWildlifeSanctuaryAlertStateListenerInterface\"'))"
+    }
+  },
+  {
+    "Type": "BP_SkyCreatorLightingVolume_WildlifeSanctuary_C",
+    "Name": "Default__BP_SkyCreatorLightingVolume_WildlifeSanctuary_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingVolume_WildlifeSanctuary.BP_SkyCreatorLightingVolume_WildlifeSanctuary_C'",
+    "Template": {
+      "ObjectName": "BP_SkyCreatorLightingSphereVolume_C'Default__BP_SkyCreatorLightingSphereVolume_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingSphereVolume.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Priority": 3,
+      "RayleighScattering": {
+        "R": 0.623529,
+        "G": 0.03253,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "CF3200"
+      },
+      "LightAlbedo": {
+        "R": 1.0,
+        "G": 0.021217,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF2800"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary",
+    "Outer": "BP_SkyCreatorLightingVolume_WildlifeSanctuary_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Event_NewState",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalWildlifeSanctuaryAlertState'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalWildlifeSanctuaryAlertState'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_DetectedPlayer",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetWildlifeSanctuarySubsystem_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalWildlifeSanctuarySubsystem'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_ResisterAlertStateListener_AlertInterface_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "UObjectWrapper",
+        "InterfaceClass": {
+          "ObjectName": "Class'PalWildlifeSanctuaryAlertStateListenerInterface'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAlertStateChanged",
+    "Outer": "BP_SkyCreatorLightingVolume_WildlifeSanctuary_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "NewState",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalWildlifeSanctuaryAlertState'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalWildlifeSanctuaryAlertState'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DetectedPlayer",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_SkyCreatorLightingVolume_WildlifeSanctuary_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ShouldMaintainAlertWhilePresent",
+    "Outer": "BP_SkyCreatorLightingVolume_WildlifeSanctuary_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_SkyCreatorLightingVolume_WildlifeSanctuary_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SkyCreatorLightingVolume_WildlifeSanctuary_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SkyCreatorLightingVolume_WildlifeSanctuary_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingVolume_WildlifeSanctuary.7"
+      },
+      "VariableGuid": "405AFBE9-41279AB0-76BB1595-D366AF2C",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_SkyCreatorLightingVolume_WildlifeSanctuary_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SkyCreatorLightingVolume_WildlifeSanctuary_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_SkyCreatorLightingVolume_WildlifeSanctuary.8"
+      }
+    }
+  }
+]

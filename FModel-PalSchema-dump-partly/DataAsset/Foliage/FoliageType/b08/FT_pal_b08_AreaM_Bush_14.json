@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b08_AreaM_Bush_14",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b08_TwistedSnag_07'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b08/Area_D/mesh/SM_pal_b08_TwistedSnag_07.2"
+      },
+      "UpdateGuid": "CF89F8D3-49E7CB34-115A2E9B-906F0CC6",
+      "Density": 400.0,
+      "ScaleX": {
+        "Min": 5.0,
+        "Max": 8.0
+      },
+      "AverageNormal": true,
+      "GroundSlopeAngle": {
+        "Max": 90.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -18.999126,
+          "Y": 10.08038,
+          "Z": 56.458878
+        },
+        "BoxExtent": {
+          "X": 34.351795,
+          "Y": 27.325699,
+          "Z": 58.953964
+        },
+        "SphereRadius": 63.47043800766049
+      },
+      "LowBoundOriginRadius": {
+        "X": 0.011794686,
+        "Y": -0.052329898,
+        "Z": 4.191016
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "yakushima_grass_02",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'Grass_Lowpoly_sm'",
+        "ObjectPath": "Pal/Content/GrassSV_MaterialPack/Meshes/Grass_Lowpoly_sm.2"
+      },
+      "UpdateGuid": "AB55B48A-4010DFA7-63E7D185-D9019C03",
+      "Density": 10000.0,
+      "Radius": 20.0,
+      "ScaleX": {
+        "Min": 0.5,
+        "Max": 1.2
+      },
+      "ZOffset": {
+        "Min": -10.0,
+        "Max": -10.0
+      },
+      "RandomYaw": false,
+      "GroundSlopeAngle": {
+        "Max": 30.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 0.29309464,
+          "Y": -1.6040154,
+          "Z": 21.611345
+        },
+        "BoxExtent": {
+          "X": 35.60874,
+          "Y": 46.38628,
+          "Z": 25.799772
+        },
+        "SphereRadius": 50.80118349256145
+      },
+      "LowBoundOriginRadius": {
+        "X": 0.78953457,
+        "Y": 0.57960606,
+        "Z": 35.947994
+      },
+      "CullDistance": {
+        "Max": 1200
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

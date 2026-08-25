@@ -1,0 +1,842 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BossBattleEventBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEventBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.13"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.10"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BossBattleEventBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEventBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:GetWaveList'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.3"
+      },
+      {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:SpawnWave'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.9"
+      },
+      {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:IsBossCleared'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.4"
+      },
+      {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:OnInitialize'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.7"
+      },
+      {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:OnCombatStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.5"
+      },
+      {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:OnSpawnCharacter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.8"
+      },
+      {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:OnDead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.6"
+      },
+      {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Offset List",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Offset List",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "ScriptStruct'Vector'",
+            "ObjectPath": "/Script/CoreUObject"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "WaveList",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "WaveList",
+          "Flags": "RF_Public",
+          "ElementSize": 16,
+          "Struct": {
+            "ObjectName": "ScriptStruct'PalBossBattleEventBossRushWave'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "WaveIndex",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CurrentWaveDeadBossCount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsCleared",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "SpawnInterval",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal": {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.2"
+      },
+      "OnDead": {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:OnDead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.6"
+      },
+      "OnSpawnCharacter": {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:OnSpawnCharacter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.8"
+      },
+      "OnCombatStart": {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:OnCombatStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.5"
+      },
+      "OnInitialize": {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:OnInitialize'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.7"
+      },
+      "IsBossCleared": {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:IsBossCleared'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.4"
+      },
+      "SpawnWave": {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:SpawnWave'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.9"
+      },
+      "GetWaveList": {
+        "ObjectName": "Function'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:GetWaveList'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C'Default__BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C",
+    "Name": "Default__BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C'",
+    "Template": {
+      "ObjectName": "BP_BossBattleEventBase_C'Default__BP_BossBattleEventBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEventBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "WaveList": [
+        {
+          "SpawnCharacterInfos": [
+            {
+              "PalId": {
+                "Key": "BOSS_ElecPanda_BossRush"
+              },
+              "Level": 78,
+              "SpawnOffset": {
+                "X": 0.0,
+                "Y": -500.0,
+                "Z": 0.0
+              },
+              "AIControllerClass": {
+                "ObjectName": "BlueprintGeneratedClass'BP_MonsterAIController_Boss_C'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_Boss.0"
+              }
+            },
+            {
+              "PalId": {
+                "Key": "BOSS_LilyQueen_BossRush"
+              },
+              "Level": 78,
+              "SpawnOffset": {
+                "X": 0.0,
+                "Y": 500.0,
+                "Z": 0.0
+              },
+              "AIControllerClass": {
+                "ObjectName": "BlueprintGeneratedClass'BP_MonsterAIController_Boss_C'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_Boss.0"
+              }
+            }
+          ]
+        },
+        {
+          "SpawnCharacterInfos": [
+            {
+              "PalId": {
+                "Key": "BOSS_ThunderDragonMan_BossRush"
+              },
+              "Level": 78,
+              "SpawnOffset": {
+                "X": 0.0,
+                "Y": -500.0,
+                "Z": 0.0
+              },
+              "AIControllerClass": {
+                "ObjectName": "BlueprintGeneratedClass'BP_MonsterAIController_Boss_C'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_Boss.0"
+              }
+            },
+            {
+              "PalId": {
+                "Key": "BOSS_Horus_BossRush"
+              },
+              "Level": 78,
+              "SpawnOffset": {
+                "X": 0.0,
+                "Y": 500.0,
+                "Z": 0.0
+              },
+              "AIControllerClass": {
+                "ObjectName": "BlueprintGeneratedClass'BP_MonsterAIController_Boss_C'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_Boss.0"
+              }
+            }
+          ]
+        },
+        {
+          "SpawnCharacterInfos": [
+            {
+              "PalId": {
+                "Key": "BOSS_BlackGriffon_BossRush"
+              },
+              "Level": 78,
+              "SpawnOffset": {
+                "X": 0.0,
+                "Y": -500.0,
+                "Z": 0.0
+              },
+              "AIControllerClass": {
+                "ObjectName": "BlueprintGeneratedClass'BP_MonsterAIController_Boss_C'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_Boss.0"
+              }
+            },
+            {
+              "PalId": {
+                "Key": "BOSS_MoonQueen_BossRush"
+              },
+              "Level": 78,
+              "SpawnOffset": {
+                "X": 0.0,
+                "Y": 500.0,
+                "Z": 0.0
+              },
+              "AIControllerClass": {
+                "ObjectName": "BlueprintGeneratedClass'BP_MonsterAIController_Boss_C'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_Boss.0"
+              }
+            }
+          ]
+        },
+        {
+          "SpawnCharacterInfos": [
+            {
+              "PalId": {
+                "Key": "BOSS_SnowTigerBeastman_BossRush"
+              },
+              "Level": 78,
+              "SpawnOffset": {
+                "X": 0.0,
+                "Y": -500.0,
+                "Z": 0.0
+              },
+              "AIControllerClass": {
+                "ObjectName": "BlueprintGeneratedClass'BP_MonsterAIController_Boss_C'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_Boss.0"
+              }
+            },
+            {
+              "PalId": {
+                "Key": "BOSS_BlueSkyDragon_BossRush"
+              },
+              "Level": 78,
+              "SpawnOffset": {
+                "X": 0.0,
+                "Y": 500.0,
+                "Z": 0.0
+              },
+              "AIControllerClass": {
+                "ObjectName": "BlueprintGeneratedClass'BP_MonsterAIController_Boss_C'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_Boss.0"
+              }
+            }
+          ]
+        }
+      ],
+      "SpawnInterval": 5.0,
+      "bIsClearConditionOverride": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal",
+    "Outer": "BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_SpawnHandle",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterHandle'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'PalIndividualCharacterHandle'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_TryGetIndividualActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAIController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AIController'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Monster_AIController_Boss",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_MonsterAIController_Boss_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_Boss.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalDamageReactionComponent:OnDeadDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetBossBattleSequencer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalBossBattleSequencer'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetInRoomPlayers_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetInRoomPlayers_ReturnValue",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'PalPlayerCharacter'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FindFirstCombatTargetForBossAI_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_DeadInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDeadInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalVisualEffectDynamicParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalVisualEffectDynamicParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddVisualEffect_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalVisualEffectBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Delay_Duration_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetWaveList",
+    "Outer": "BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "WaveList",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "WaveList",
+          "Flags": "RF_Public",
+          "ElementSize": 16,
+          "Struct": {
+            "ObjectName": "ScriptStruct'PalBossBattleEventBossRushWave'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsBossCleared",
+    "Outer": "BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalBossBattleEventBase:IsBossCleared'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnCombatStart",
+    "Outer": "BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalBossBattleEventBase:OnCombatStart'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnDead",
+    "Outer": "BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "DeadInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDeadInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInitialize",
+    "Outer": "BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalBossBattleEventBase:OnInitialize'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSpawnCharacter",
+    "Outer": "BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalBossBattleEventBase:OnSpawnCharacter'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SpawnHandle",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterHandle'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SpawnWave",
+    "Outer": "BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "WaveInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalBossBattleEventBossRushWave'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalBossBattleEventSpawnCharacterInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.11"
+      },
+      "VariableGuid": "B73AB552-4BA93312-B046EAB3-FD9243E2",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.12"
+      }
+    }
+  }
+]

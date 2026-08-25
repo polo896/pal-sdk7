@@ -1,0 +1,1708 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalSpawner_Standard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura.5"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalSpawner_Standard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard.0"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura_C'Default__BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura_C",
+    "Name": "Default__BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura.BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura_C'",
+    "Template": {
+      "ObjectName": "BP_PalSpawner_Standard_C'Default__BP_PalSpawner_Standard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnGroupList": [
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Umihebi"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Deer"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Manticore"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Kirin"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Suzaku"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BlueDragon"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "ElecPanda"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Gorilla"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Anubis"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "FairyDragon"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "FengyunDeeper"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "LazyDragon"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "FireKirin"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "GrassMammoth"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "SakuraSaurus"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Horus"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "KingBahamut"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "IceDeer"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BlackGriffon"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BlackMetalDragon"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "SkyDragon"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "GrassPanda"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "LilyQueen"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Yeti"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "HadesBird"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "KingAlpaca"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "HerculesBeetle"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "ThunderBird"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "RedArmorBird"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "WeaselDragon"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "WingGolem"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "ThunderDragonMan"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "VolcanoDragon"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "NightBlueHorse"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "WhiteShieldDragon"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "WhiteDeer"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Sekhmet"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "MoonQueen"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "GrimGirl"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BlueThunderHorse"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "IceNarwhal"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "SnowTigerBeastman"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Plesiosaur"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "GrassGolem"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "CubeTurtle"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "LotusDragon"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "GrassMinotaur"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "GhostDragon"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "KabukiMan"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Umihebi_Fire"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Deer_Ground"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Manticore_Dark"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Suzaku_Water"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "BlueDragon_Ice"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Gorilla_Ground"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "FairyDragon_Water"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "FengyunDeeper_Electric"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "LazyDragon_Electric"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "FireKirin_Dark"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "GrassMammoth_Ice"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "SakuraSaurus_Water"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Horus_Water"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "SkyDragon_Grass"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "GrassPanda_Electric"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "LilyQueen_Dark"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "Yeti_Grass"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "HadesBird_Electric"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "WeaselDragon_Fire"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "IceNarwhal_Fire"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "FoxExorcist"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "MummyPal"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 10,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "MimicDog"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        },
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 6500,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "None"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 80,
+              "Level_Max": 80,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        }
+      ],
+      "SpawnerName": "worldtree_9_55_WorldTreeAura",
+      "HasWorldTreeAura": true
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura.3"
+      },
+      "VariableGuid": "A22EEB01-4B87660D-F1053E8B-112A4976",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SheetsVariant/BP_PalSpawner_Sheets_worldtree_9_55_WorldTreeAura.4"
+      }
+    }
+  }
+]

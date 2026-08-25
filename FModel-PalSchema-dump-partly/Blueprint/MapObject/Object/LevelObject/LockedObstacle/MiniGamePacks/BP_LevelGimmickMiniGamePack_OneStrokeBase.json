@@ -1,0 +1,47 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_LevelGimmickMiniGamePack_OneStrokeBase_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalMiniGamePack_OneStroke'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_LevelGimmickMiniGamePack_OneStrokeBase_C'Default__BP_LevelGimmickMiniGamePack_OneStrokeBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LockedObstacle/MiniGamePacks/BP_LevelGimmickMiniGamePack_OneStrokeBase.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_LevelGimmickMiniGamePack_OneStrokeBase_C",
+    "Name": "Default__BP_LevelGimmickMiniGamePack_OneStrokeBase_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LockedObstacle/MiniGamePacks/BP_LevelGimmickMiniGamePack_OneStrokeBase.BP_LevelGimmickMiniGamePack_OneStrokeBase_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ProcessorClass": {
+        "ObjectName": "Class'PalOneStrokeGameProcessor'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "GameDataAsset": {
+        "ObjectName": "PalOneStrokeGameDataAsset'DA_OneStrokeMinigameData'",
+        "ObjectPath": "Pal/Content/Pal/DataAsset/OneStrokeGame/DA_OneStrokeMinigameData.0"
+      },
+      "GameDataKey": "Normal_0",
+      "MiniGameWidgetClass": {
+        "ObjectName": "WidgetBlueprintGeneratedClass'WBP_OneStrokeGame_ForDisplay_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.41"
+      }
+    }
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueSkillModule_Horus_Tackle2_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_Horus_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Horus/BP_UniqueSkillModule_Tackle_Horus.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_Horus_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Horus/BP_UniqueSkillModule_Tackle_Horus.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueSkillModule_Horus_Tackle2_C'Default__BP_UniqueSkillModule_Horus_Tackle2_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Horus/BP_UniqueSkillModule_Horus_Tackle2.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueSkillModule_Horus_Tackle2_C",
+    "Name": "Default__BP_UniqueSkillModule_Horus_Tackle2_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/Horus/BP_UniqueSkillModule_Horus_Tackle2.BP_UniqueSkillModule_Horus_Tackle2_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueSkillModule_Tackle_Horus_C'Default__BP_UniqueSkillModule_Tackle_Horus_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Horus/BP_UniqueSkillModule_Tackle_Horus.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LoopAnimMontage": {
+        "ObjectName": "AnimMontage'AM_Horus_PerfectStorm_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/Horus/AM_Horus_PerfectStorm_Loop.0"
+      },
+      "FlagName": "Horus_PerfectStorm"
+    }
+  }
+]

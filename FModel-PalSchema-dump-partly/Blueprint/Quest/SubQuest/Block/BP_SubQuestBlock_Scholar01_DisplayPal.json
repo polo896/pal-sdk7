@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SubQuestBlock_Scholar01_DisplayPal_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalQuestBlock_DisplayOtomo'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_SubQuestBlock_Scholar01_DisplayPal_C:GetDescriptionText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Scholar01_DisplayPal.2"
+      }
+    ],
+    "FuncMap": {
+      "GetDescriptionText": {
+        "ObjectName": "Function'BP_SubQuestBlock_Scholar01_DisplayPal_C:GetDescriptionText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Scholar01_DisplayPal.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SubQuestBlock_Scholar01_DisplayPal_C'Default__BP_SubQuestBlock_Scholar01_DisplayPal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Scholar01_DisplayPal.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SubQuestBlock_Scholar01_DisplayPal_C",
+    "Name": "Default__BP_SubQuestBlock_Scholar01_DisplayPal_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Scholar01_DisplayPal.BP_SubQuestBlock_Scholar01_DisplayPal_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RequirePassiveIdArray_OR": [
+        {
+          "Key": "Legend"
+        }
+      ],
+      "LocationSettingData": {
+        "FixedLocationPointArray": [
+          {
+            "DataTable": {
+              "ObjectName": "DataTable'DT_PalQuestLocationData'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Quest/DT_PalQuestLocationData.0"
+            },
+            "RowName": "Sub_Scholar01"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetDescriptionText",
+    "Outer": "BP_SubQuestBlock_Scholar01_DisplayPal_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalQuestBlock:GetDescriptionText'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "OutText",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NewLocalVar",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MainQuest_DefeatWorldTreeMiddleBoss_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MainQuest_DefeatWorldTreeMiddleBoss_C'Default__BP_MainQuest_DefeatWorldTreeMiddleBoss_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_DefeatWorldTreeMiddleBoss.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MainQuest_DefeatWorldTreeMiddleBoss_C",
+    "Name": "Default__BP_MainQuest_DefeatWorldTreeMiddleBoss_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_DefeatWorldTreeMiddleBoss.BP_MainQuest_DefeatWorldTreeMiddleBoss_C'",
+    "Template": {
+      "ObjectName": "BP_PalQuestDataBase_C'Default__BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestBlockGroupList": [
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Note.BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Note_C",
+              "SubPathString": ""
+            }
+          ]
+        },
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat.BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_C",
+              "SubPathString": ""
+            }
+          ]
+        },
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Return.BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Return_C",
+              "SubPathString": ""
+            }
+          ]
+        }
+      ],
+      "QuestTitleMsgId": "QUEST_SUB_Title_WorldTreeAreaBoss",
+      "QuestDescriptionMsgId": "QUEST_SUB_Desc_WorldTreeAreaBoss",
+      "CommonRewardData": {
+        "Exp": 102669
+      },
+      "bPlayOrderEffect": false,
+      "bPlayCompleteEffect": false
+    }
+  }
+]

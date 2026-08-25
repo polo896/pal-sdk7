@@ -1,0 +1,129 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Move_SleeveRabbit",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 1.3333334,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_SleeveRabbit_Idle'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/SleeveRabbit/AS_SleeveRabbit_Idle.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_SleeveRabbit_Walk'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/SleeveRabbit/AS_SleeveRabbit_Walk.0"
+          },
+          "SampleValue": {
+            "X": 40.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_SleeveRabbit_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/SleeveRabbit/AS_SleeveRabbit_Run.0"
+          },
+          "SampleValue": {
+            "X": 600.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_SleeveRabbit_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/SleeveRabbit/AS_SleeveRabbit_Run.0"
+          },
+          "SampleValue": {
+            "X": 700.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.1
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_SleeveRabbit_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/SleeveRabbit/AS_SleeveRabbit_Run.0"
+          },
+          "SampleValue": {
+            "X": 500.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.9
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_SleeveRabbit_Walk'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/SleeveRabbit/AS_SleeveRabbit_Walk.0"
+          },
+          "SampleValue": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.5
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 5,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.0014285714
+          },
+          {
+            "SampleIndices": 5,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.0014285714,
+            "Vertices[1]": 0.057142857
+          },
+          {
+            "SampleIndices": 1,
+            "SampleIndices[1]": 4,
+            "Vertices": 0.057142857,
+            "Vertices[1]": 0.71428573
+          },
+          {
+            "SampleIndices": 4,
+            "SampleIndices[1]": 2,
+            "Vertices": 0.71428573,
+            "Vertices[1]": 0.85714287
+          },
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 3,
+            "Vertices": 0.85714287,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 700.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_SleeveRabbit_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/SleeveRabbit/SK_SleeveRabbit_Skeleton.3"
+      }
+    },
+    "SkeletonGuid": "AB2167E2-42E64991-858C3DB6-4D4BBEA4"
+  }
+]

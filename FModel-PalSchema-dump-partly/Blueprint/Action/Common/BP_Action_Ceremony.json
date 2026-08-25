@@ -1,0 +1,45 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Ceremony_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalAction_ObtainCeremony'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Ceremony_C'Default__BP_Action_Ceremony_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_Ceremony.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Ceremony_C",
+    "Name": "Default__BP_Action_Ceremony_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Common/BP_Action_Ceremony.BP_Action_Ceremony_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TimeScaleCurve": {
+        "ObjectName": "CurveFloat'C_CeremonyTimeScale'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/C_CeremonyTimeScale.0"
+      },
+      "CeremonyMontage": {
+        "ObjectName": "AnimMontage'AM_Player_Female_PickupRelic_None'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AM_Player_Female_PickupRelic_None.0"
+      },
+      "ObtainTriggerRealTime": 1.8,
+      "PlayObtainFXRealTime": 0.46,
+      "PlayObtainCompleteFXRealTime": 1.8
+    }
+  }
+]

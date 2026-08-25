@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "EGroundHitResult",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "B220B74447C79055CA84659F28AD931C",
+            "SourceString": "NoHit",
+            "LocalizedString": "NoHit"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "5DD8295149A84AC712CAAC87BD0EB96E",
+            "SourceString": "IsWater",
+            "LocalizedString": "IsWater"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "5330F4354717E6B73FA2098D545074CC",
+            "SourceString": "IsGround",
+            "LocalizedString": "IsGround"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "EGroundHitResult::NewEnumerator0": 0,
+      "EGroundHitResult::NewEnumerator1": 1,
+      "EGroundHitResult::NewEnumerator2": 2,
+      "EGroundHitResult::EGroundHitResult_MAX": 3
+    },
+    "CppForm": "Namespaced"
+  }
+]

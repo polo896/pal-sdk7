@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b05_grass_AncientMushroomGrass_A_03",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b05_grass_AncientMushroomGrass_A_03'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b05/tree/SM_pal_b05_grass_AncientMushroomGrass_A_03.2"
+      },
+      "UpdateGuid": "5B04A623-4F3E69EC-059463AD-65259324",
+      "Density": 50.0,
+      "Radius": 30.0,
+      "ScaleX": {
+        "Min": 0.5,
+        "Max": 0.8
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 0.20891762,
+          "Y": 0.7984905,
+          "Z": 107.21075
+        },
+        "BoxExtent": {
+          "X": 37.640198,
+          "Y": 40.88028,
+          "Z": 113.06176
+        },
+        "SphereRadius": 115.81036314097484
+      },
+      "LowBoundOriginRadius": {
+        "X": 1.1088552,
+        "Y": 3.1476212,
+        "Z": 36.717346
+      },
+      "CullDistance": {
+        "Max": 4000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

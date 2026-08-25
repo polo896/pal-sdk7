@@ -1,0 +1,44 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_KingAlpaca_Ice_IcePress_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_KingAlpaca_BodyPress_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingAlpaca/BP_Action_Unique_KingAlpaca_BodyPress.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_KingAlpaca_BodyPress_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingAlpaca/BP_Action_Unique_KingAlpaca_BodyPress.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_KingAlpaca_Ice_IcePress_C'Default__BP_Action_Unique_KingAlpaca_Ice_IcePress_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingAlpaca/BP_Action_Unique_KingAlpaca_Ice_IcePress.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_KingAlpaca_Ice_IcePress_C",
+    "Name": "Default__BP_Action_Unique_KingAlpaca_Ice_IcePress_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/KingAlpaca/BP_Action_Unique_KingAlpaca_Ice_IcePress.BP_Action_Unique_KingAlpaca_Ice_IcePress_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_KingAlpaca_BodyPress_C'Default__BP_Action_Unique_KingAlpaca_BodyPress_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingAlpaca/BP_Action_Unique_KingAlpaca_BodyPress.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FlagName": "Unique_KingAlpaca_Ice",
+      "WazaID": "EPalWazaID::Unique_KingAlpaca_Ice_IcePress"
+    }
+  }
+]

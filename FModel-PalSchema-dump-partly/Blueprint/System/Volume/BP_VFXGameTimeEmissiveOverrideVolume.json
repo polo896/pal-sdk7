@@ -1,0 +1,433 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_VFXGameTimeEmissiveOverrideVolume_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_VFXGameTimeEmissiveOverrideVolume_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.11"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_VFXGameTimeEmissiveOverrideVolume_C:ExecuteUbergraph_BP_VFXGameTimeEmissiveOverrideVolume'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_VFXGameTimeEmissiveOverrideVolume_C:SetTimeOverrideDisabled'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.6"
+      },
+      {
+        "ObjectName": "Function'BP_VFXGameTimeEmissiveOverrideVolume_C:SetTimeOverrideEnabled'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.7"
+      },
+      {
+        "ObjectName": "Function'BP_VFXGameTimeEmissiveOverrideVolume_C:ReceiveActorBeginOverlap'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.4"
+      },
+      {
+        "ObjectName": "Function'BP_VFXGameTimeEmissiveOverrideVolume_C:ReceiveActorEndOverlap'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.5"
+      },
+      {
+        "ObjectName": "Function'BP_VFXGameTimeEmissiveOverrideVolume_C:ExecuteUbergraph_BP_VFXGameTimeEmissiveOverrideVolume'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Box",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsTimeOverrideEnabled",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_VFXGameTimeEmissiveOverrideVolume": {
+        "ObjectName": "Function'BP_VFXGameTimeEmissiveOverrideVolume_C:ExecuteUbergraph_BP_VFXGameTimeEmissiveOverrideVolume'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.3"
+      },
+      "ReceiveActorEndOverlap": {
+        "ObjectName": "Function'BP_VFXGameTimeEmissiveOverrideVolume_C:ReceiveActorEndOverlap'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.5"
+      },
+      "ReceiveActorBeginOverlap": {
+        "ObjectName": "Function'BP_VFXGameTimeEmissiveOverrideVolume_C:ReceiveActorBeginOverlap'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.4"
+      },
+      "SetTimeOverrideEnabled": {
+        "ObjectName": "Function'BP_VFXGameTimeEmissiveOverrideVolume_C:SetTimeOverrideEnabled'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.7"
+      },
+      "SetTimeOverrideDisabled": {
+        "ObjectName": "Function'BP_VFXGameTimeEmissiveOverrideVolume_C:SetTimeOverrideDisabled'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.6"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_VFXGameTimeEmissiveOverrideVolume_C'Default__BP_VFXGameTimeEmissiveOverrideVolume_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box_GEN_VARIABLE",
+    "Outer": "BP_VFXGameTimeEmissiveOverrideVolume_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_GameTraceChannel5",
+        "CollisionProfileName": "Volume_PlayerOnly",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "BP_VFXGameTimeEmissiveOverrideVolume_C",
+    "Name": "Default__BP_VFXGameTimeEmissiveOverrideVolume_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.BP_VFXGameTimeEmissiveOverrideVolume_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bGenerateOverlapEventsDuringLevelStreaming": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_VFXGameTimeEmissiveOverrideVolume",
+    "Outer": "BP_VFXGameTimeEmissiveOverrideVolume_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_OtherActor_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Player_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Player_Character_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveActorBeginOverlap",
+    "Outer": "BP_VFXGameTimeEmissiveOverrideVolume_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveActorBeginOverlap'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveActorEndOverlap",
+    "Outer": "BP_VFXGameTimeEmissiveOverrideVolume_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveActorEndOverlap'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetTimeOverrideDisabled",
+    "Outer": "BP_VFXGameTimeEmissiveOverrideVolume_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetTimeManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalTimeManager'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetTimeOverrideEnabled",
+    "Outer": "BP_VFXGameTimeEmissiveOverrideVolume_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetTimeManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalTimeManager'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_VFXGameTimeEmissiveOverrideVolume_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_VFXGameTimeEmissiveOverrideVolume_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.8"
+      },
+      "VariableGuid": "949B0775-4CEC0A63-06CA1DB0-9A61FE56",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_VFXGameTimeEmissiveOverrideVolume_C:Box_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.1"
+      },
+      "VariableGuid": "B3714B36-41E87C05-7B3B3C92-51AD6BC6",
+      "InternalVariableName": "Box"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_VFXGameTimeEmissiveOverrideVolume_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_VFXGameTimeEmissiveOverrideVolume_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.10"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_VFXGameTimeEmissiveOverrideVolume_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.10"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_VFXGameTimeEmissiveOverrideVolume_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/System/Volume/BP_VFXGameTimeEmissiveOverrideVolume.9"
+      }
+    }
+  }
+]

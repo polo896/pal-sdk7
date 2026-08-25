@@ -1,0 +1,203 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalRaidBossBattle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalRaidBossBattle_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossBattle.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_PalRaidBossBattle_C:ExecuteUbergraph_BP_PalRaidBossBattle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossBattle.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_PalRaidBossBattle_C:ExecuteUbergraph_BP_PalRaidBossBattle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossBattle.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalRaidBossComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRaidBossComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_PalRaidBossBattle": {
+        "ObjectName": "Function'BP_PalRaidBossBattle_C:ExecuteUbergraph_BP_PalRaidBossBattle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossBattle.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalRaidBossBattle_C'Default__BP_PalRaidBossBattle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossBattle.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalRaidBossBattle_C",
+    "Name": "Default__BP_PalRaidBossBattle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossBattle.BP_PalRaidBossBattle_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "PrimaryActorTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAlwaysRelevant": true,
+      "bReplicates": true
+    }
+  },
+  {
+    "Type": "BP_PalRaidBossComponent_C",
+    "Name": "BP_PalRaidBossComponent_GEN_VARIABLE",
+    "Outer": "BP_PalRaidBossBattle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossComponent.BP_PalRaidBossComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalRaidBossComponent_C'Default__BP_PalRaidBossComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_PalRaidBossBattle",
+    "Outer": "BP_PalRaidBossBattle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalRaidBossBattle_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalRaidBossBattle_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossBattle.4"
+      },
+      "VariableGuid": "ED7AB0B2-4AF98C05-4F1C2D87-59033DD9",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalRaidBossComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalRaidBossComponent_C'BP_PalRaidBossBattle_C:BP_PalRaidBossComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossBattle.2"
+      },
+      "VariableGuid": "24629EBA-4A31E581-4EC86BA6-D5CF9E6F",
+      "InternalVariableName": "BP_PalRaidBossComponent"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalRaidBossBattle_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalRaidBossBattle_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossBattle.5"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRaidBossBattle_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossBattle.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalRaidBossBattle_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossBattle.5"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRaidBossBattle_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossBattle.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalRaidBossBattle_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossBattle.5"
+      }
+    }
+  }
+]

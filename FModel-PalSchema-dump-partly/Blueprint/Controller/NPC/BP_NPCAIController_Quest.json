@@ -1,0 +1,505 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_NPCAIController_Quest_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NPCAIController_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_NPCAIController_Quest_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.13"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_NPCAIController_Quest_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_NPCAIController_Quest_C:ExecuteUbergraph_BP_NPCAIController_Quest'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NPCAIController_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_NPCAIController_Quest_C:EnableTickTurn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.2"
+      },
+      {
+        "ObjectName": "Function'BP_NPCAIController_Quest_C:ReceiveTick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.6"
+      },
+      {
+        "ObjectName": "Function'BP_NPCAIController_Quest_C:OnNpcTalkIncidentNotify'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.5"
+      },
+      {
+        "ObjectName": "Function'BP_NPCAIController_Quest_C:NotifyTalkStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.4"
+      },
+      {
+        "ObjectName": "Function'BP_NPCAIController_Quest_C:ExecuteUbergraph_BP_NPCAIController_Quest'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Is Enable Tick Turn",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Talk Player",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_NPCAIController_Quest": {
+        "ObjectName": "Function'BP_NPCAIController_Quest_C:ExecuteUbergraph_BP_NPCAIController_Quest'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.3"
+      },
+      "NotifyTalkStart": {
+        "ObjectName": "Function'BP_NPCAIController_Quest_C:NotifyTalkStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.4"
+      },
+      "OnNpcTalkIncidentNotify": {
+        "ObjectName": "Function'BP_NPCAIController_Quest_C:OnNpcTalkIncidentNotify'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.5"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_NPCAIController_Quest_C:ReceiveTick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.6"
+      },
+      "EnableTickTurn": {
+        "ObjectName": "Function'BP_NPCAIController_Quest_C:EnableTickTurn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.2"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NotPlaceable | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_NPCAIController_Quest_C'Default__BP_NPCAIController_Quest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_NPCAIController_Quest_C",
+    "Name": "Default__BP_NPCAIController_Quest_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.BP_NPCAIController_Quest_C'",
+    "Template": {
+      "ObjectName": "BP_NPCAIController_C'Default__BP_NPCAIController_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController.2"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AIActionComponent": {
+        "ObjectName": "PalAIActionComponent'Default__BP_NPCAIController_Quest_C:ActionsComp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.8"
+      },
+      "PathFollowingComponent": {
+        "ObjectName": "PalFollowingComponent'Default__BP_NPCAIController_Quest_C:PathFollowingComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.9"
+      },
+      "ActionsComp": {
+        "ObjectName": "PalAIActionComponent'Default__BP_NPCAIController_Quest_C:ActionsComp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.8"
+      },
+      "TransformComponent": {
+        "ObjectName": "SceneComponent'Default__BP_NPCAIController_Quest_C:TransformComponent0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.11"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_NPCAIController_Quest_C:TransformComponent0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.11"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "EnableTickTurn",
+    "Outer": "BP_NPCAIController_Quest_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsEnableTickTurn",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_NPCAIController_Quest",
+    "Outer": "BP_NPCAIController_Quest_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_K2_GetPawn_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Listener",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIncidentNotifyListener'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Event_IncidentState",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalIncidentState'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalIncidentState'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_Parameter",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalIncidentNotifyParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_InFanShap_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetDynamicParameter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIncidentDynamicParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsActiveAI_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_TalkPlayer",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "NotifyTalkStart",
+    "Outer": "BP_NPCAIController_Quest_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_NPCAIController_C:NotifyTalkStart'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController.15"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_NPCAIController_C:NotifyTalkStart'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController.15"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "TalkPlayer",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNpcTalkIncidentNotify",
+    "Outer": "BP_NPCAIController_Quest_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_NPCAIController_C:OnNpcTalkIncidentNotify'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController.17"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_NPCAIController_C:OnNpcTalkIncidentNotify'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController.17"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Listener",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIncidentNotifyListener'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "IncidentState",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalIncidentState'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalIncidentState'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Parameter",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalIncidentNotifyParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "BP_NPCAIController_Quest_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_NPCAIController_C:ReceiveTick'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController.23"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_NPCAIController_C:ReceiveTick'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController.23"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_NPCAIController_Quest_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalAIActionComponent",
+    "Name": "ActionsComp",
+    "Outer": "Default__BP_NPCAIController_Quest_C",
+    "Class": "UScriptClass'PalAIActionComponent'",
+    "Template": {
+      "ObjectName": "PalAIActionComponent'Default__BP_NPCAIController_C:ActionsComp'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController.38"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalFollowingComponent",
+    "Name": "PathFollowingComponent",
+    "Outer": "Default__BP_NPCAIController_Quest_C",
+    "Class": "UScriptClass'PalFollowingComponent'",
+    "Template": {
+      "ObjectName": "PalFollowingComponent'Default__BP_NPCAIController_C:PathFollowingComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController.40"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_NPCAIController_Quest_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "TransformComponent0",
+    "Outer": "Default__BP_NPCAIController_Quest_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__BP_NPCAIController_C:TransformComponent0'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController.42"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_NPCAIController_Quest_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.10"
+      },
+      "VariableGuid": "87CEB155-48FA79BA-8980D78F-6C674F96",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_NPCAIController_Quest_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_NPCAIController_Quest_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController_Quest.12"
+      }
+    }
+  }
+]

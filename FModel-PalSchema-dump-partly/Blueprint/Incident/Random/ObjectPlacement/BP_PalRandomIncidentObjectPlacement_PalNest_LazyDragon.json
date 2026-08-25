@@ -1,0 +1,717 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.21"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalRandomIncidentObjectPlacement'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalRandomIncidentPlacementEggDataComponent1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementEggDataComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalRandomIncidentPlacementEggDataComponent2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementEggDataComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalRandomIncidentPlacementDropItemDataComponent3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalRandomIncidentPlacementDropItemDataComponent4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StaticMesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalRandomIncidentPlacementDropItemDataComponent2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalRandomIncidentPlacementEggDataComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementEggDataComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalRandomIncidentPlacementDropItemDataComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalRandomIncidentPlacementDropItemDataComponent1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C'Default__BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C",
+    "Name": "Default__BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BP_PalRandomIncidentPlacementDropItemDataComponent_C",
+    "Name": "BP_PalRandomIncidentPlacementDropItemDataComponent1_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalRandomIncidentPlacementDropItemDataComponent_C'Default__BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ItemId": {
+        "Key": "Money"
+      },
+      "itemNum": 1000,
+      "RelativeLocation": {
+        "X": -365.20938,
+        "Y": -516.3995,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 50.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_PalRandomIncidentPlacementDropItemDataComponent_C",
+    "Name": "BP_PalRandomIncidentPlacementDropItemDataComponent2_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalRandomIncidentPlacementDropItemDataComponent_C'Default__BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ItemId": {
+        "Key": "AssaultRifleBullet"
+      },
+      "itemNum": 10,
+      "RelativeLocation": {
+        "X": 277.83148,
+        "Y": -321.33145,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_PalRandomIncidentPlacementDropItemDataComponent_C",
+    "Name": "BP_PalRandomIncidentPlacementDropItemDataComponent3_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalRandomIncidentPlacementDropItemDataComponent_C'Default__BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ItemId": {
+        "Key": "PalSphere"
+      },
+      "itemNum": 5,
+      "RelativeLocation": {
+        "X": 334.85468,
+        "Y": -582.4986,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 120.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_PalRandomIncidentPlacementDropItemDataComponent_C",
+    "Name": "BP_PalRandomIncidentPlacementDropItemDataComponent4_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalRandomIncidentPlacementDropItemDataComponent_C'Default__BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ItemId": {
+        "Key": "DogCoin"
+      },
+      "itemNum": 15,
+      "RelativeLocation": {
+        "X": -297.91354,
+        "Y": -224.70715,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -110.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_PalRandomIncidentPlacementDropItemDataComponent_C",
+    "Name": "BP_PalRandomIncidentPlacementDropItemDataComponent_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalRandomIncidentPlacementDropItemDataComponent_C'Default__BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ItemId": {
+        "Key": "ShotgunBullet"
+      },
+      "itemNum": 5,
+      "RelativeLocation": {
+        "X": -50.0,
+        "Y": -190.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 10.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_PalRandomIncidentPlacementEggDataComponent_C",
+    "Name": "BP_PalRandomIncidentPlacementEggDataComponent1_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.BP_PalRandomIncidentPlacementEggDataComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalRandomIncidentPlacementEggDataComponent_C'Default__BP_PalRandomIncidentPlacementEggDataComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PalMonsterId": {
+        "Key": "LazyDragon"
+      },
+      "RelativeLocation": {
+        "X": -150.0909,
+        "Y": -531.41815,
+        "Z": 78.49397
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 6.574001,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_PalRandomIncidentPlacementEggDataComponent_C",
+    "Name": "BP_PalRandomIncidentPlacementEggDataComponent2_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.BP_PalRandomIncidentPlacementEggDataComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalRandomIncidentPlacementEggDataComponent_C'Default__BP_PalRandomIncidentPlacementEggDataComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PalMonsterId": {
+        "Key": "LazyDragon"
+      },
+      "RelativeLocation": {
+        "X": -16.152153,
+        "Y": -634.9199,
+        "Z": 76.256096
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 70.33304,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_PalRandomIncidentPlacementEggDataComponent_C",
+    "Name": "BP_PalRandomIncidentPlacementEggDataComponent_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.BP_PalRandomIncidentPlacementEggDataComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalRandomIncidentPlacementEggDataComponent_C'Default__BP_PalRandomIncidentPlacementEggDataComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PalMonsterId": {
+        "Key": "LazyDragon"
+      },
+      "RelativeLocation": {
+        "X": -37.520103,
+        "Y": -427.13577,
+        "Z": 65.45312
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -233.44894,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.10"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_21'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_22'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.13"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_23'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_24'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.15"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_25'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.16"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_26'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_27'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_28'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.19"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_29'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.20"
+        }
+      ],
+      "VariableGuid": "F7F17DEF-460603EC-6D8D9998-DB91B674",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_21",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalRandomIncidentPlacementDropItemDataComponent_C'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:BP_PalRandomIncidentPlacementDropItemDataComponent1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.2"
+      },
+      "VariableGuid": "E2AA7F92-40F868E3-605E4698-2EDF4EA7",
+      "InternalVariableName": "BP_PalRandomIncidentPlacementDropItemDataComponent1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_22",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalRandomIncidentPlacementDropItemDataComponent_C'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:BP_PalRandomIncidentPlacementDropItemDataComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.6"
+      },
+      "VariableGuid": "2A102412-42FC38FC-43914E85-1095C238",
+      "InternalVariableName": "BP_PalRandomIncidentPlacementDropItemDataComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_23",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementEggDataComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalRandomIncidentPlacementEggDataComponent_C'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:BP_PalRandomIncidentPlacementEggDataComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.9"
+      },
+      "VariableGuid": "70E8933C-45FCAE47-14AF5D93-3905C7A4",
+      "InternalVariableName": "BP_PalRandomIncidentPlacementEggDataComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_24",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalRandomIncidentPlacementDropItemDataComponent_C'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:BP_PalRandomIncidentPlacementDropItemDataComponent2_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.3"
+      },
+      "VariableGuid": "7934DCDE-454034EE-B9EDF995-B3589997",
+      "InternalVariableName": "BP_PalRandomIncidentPlacementDropItemDataComponent2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_25",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:StaticMesh_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.22"
+      },
+      "VariableGuid": "7AA189C8-4C76E417-C11733B5-961F3051",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_26",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalRandomIncidentPlacementDropItemDataComponent_C'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:BP_PalRandomIncidentPlacementDropItemDataComponent4_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.5"
+      },
+      "VariableGuid": "4115C607-43F43D3A-B77B48A8-7E9D6AA7",
+      "InternalVariableName": "BP_PalRandomIncidentPlacementDropItemDataComponent4"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_27",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementDropItemDataComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementDropItemDataComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalRandomIncidentPlacementDropItemDataComponent_C'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:BP_PalRandomIncidentPlacementDropItemDataComponent3_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.4"
+      },
+      "VariableGuid": "66533350-4FE3503B-D6949790-9725C8F5",
+      "InternalVariableName": "BP_PalRandomIncidentPlacementDropItemDataComponent3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_28",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementEggDataComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalRandomIncidentPlacementEggDataComponent_C'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:BP_PalRandomIncidentPlacementEggDataComponent2_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.8"
+      },
+      "VariableGuid": "A8780949-4FF74617-E2BD3291-203B152A",
+      "InternalVariableName": "BP_PalRandomIncidentPlacementEggDataComponent2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_29",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementEggDataComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalRandomIncidentPlacementEggDataComponent_C'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:BP_PalRandomIncidentPlacementEggDataComponent1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.7"
+      },
+      "VariableGuid": "14FF4181-46CE1927-7AB0B79C-A57F3B80",
+      "InternalVariableName": "BP_PalRandomIncidentPlacementEggDataComponent1"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.11"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.11"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_21'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_22'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.13"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_23'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_24'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.15"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_25'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.16"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_26'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_27'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_28'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.19"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_29'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.20"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon.11"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_LazyDragon_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_PalsNest'",
+        "ObjectPath": "Pal/Content/Pal/Model/Other/PalsNest/SM_PalsNest.2"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionProfileName": "Background",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "vsGroundRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "ClimbRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 4E-06,
+        "Y": -522.145,
+        "Z": 0.0
+      }
+    }
+  }
+]

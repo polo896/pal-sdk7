@@ -1,0 +1,98 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_LevelInstance_WorldTree_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_LevelInstance_WorldTree_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/WorldTree/BP_LevelInstance_WorldTree.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalLevelInstance'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_LevelInstance_WorldTree_C'Default__BP_LevelInstance_WorldTree_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/WorldTree/BP_LevelInstance_WorldTree.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_LevelInstance_WorldTree_C",
+    "Name": "Default__BP_LevelInstance_WorldTree_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/WorldTree/BP_LevelInstance_WorldTree.BP_LevelInstance_WorldTree_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CookedWorldAsset": {
+        "AssetPathName": "/Game/Pal/DataAsset/LevelInstance/LI_WorldTreeVisual_01.LI_WorldTreeVisual_01",
+        "SubPathString": ""
+      },
+      "PrimaryActorTick": {
+        "bStartWithTickEnabled": false,
+        "bAllowTickOnDedicatedServer": false
+      },
+      "RootComponent": {
+        "ObjectName": "LevelInstanceComponent'Default__BP_LevelInstance_WorldTree_C:Root'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/WorldTree/BP_LevelInstance_WorldTree.2"
+      }
+    }
+  },
+  {
+    "Type": "LevelInstanceComponent",
+    "Name": "Root",
+    "Outer": "Default__BP_LevelInstance_WorldTree_C",
+    "Class": "UScriptClass'LevelInstanceComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_LevelInstance_WorldTree_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_LevelInstance_WorldTree_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/WorldTree/BP_LevelInstance_WorldTree.3"
+      },
+      "VariableGuid": "D6E055EA-4AE6F536-9AEDF0B7-AC997957",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_LevelInstance_WorldTree_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_LevelInstance_WorldTree_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/WorldTree/BP_LevelInstance_WorldTree.4"
+      }
+    }
+  }
+]

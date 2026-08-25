@@ -1,0 +1,236 @@
+[
+  {
+    "Type": "Function",
+    "Name": "OnClicked__DelegateSignature",
+    "Outer": "WBP_MenuESC_Button_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "MenuType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'E_PalEscMenuType'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/E_PalEscMenuType.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WBP_MenuESC_Button_Base_C",
+    "Name": "Default__WBP_MenuESC_Button_Base_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_Button_Base.WBP_MenuESC_Button_Base_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MenuType": "E_PalEscMenuType::NewEnumerator0",
+      "BaseTextIDMap": [
+        {
+          "Key": "E_PalEscMenuType::NewEnumerator0",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "ESC_MENU_CONTINUE"
+          }
+        },
+        {
+          "Key": "E_PalEscMenuType::NewEnumerator1",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "COMMON_OPTION"
+          }
+        },
+        {
+          "Key": "E_PalEscMenuType::NewEnumerator2",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "COMMON_TIPS"
+          }
+        },
+        {
+          "Key": "E_PalEscMenuType::NewEnumerator3",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "COMMON_RETURN_TO_TITLE"
+          }
+        },
+        {
+          "Key": "E_PalEscMenuType::NewEnumerator5",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "NOTE_TITLE"
+          }
+        },
+        {
+          "Key": "E_PalEscMenuType::NewEnumerator6",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "SETTING_OTHER_KILL"
+          }
+        },
+        {
+          "Key": "E_PalEscMenuType::NewEnumerator7",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "ESC_MENU_CONTACT"
+          }
+        },
+        {
+          "Key": "E_PalEscMenuType::NewEnumerator8",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "TITLE_EULA"
+          }
+        },
+        {
+          "Key": "E_PalEscMenuType::NewEnumerator10",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "COMMON_DISCORD_LINK"
+          }
+        },
+        {
+          "Key": "E_PalEscMenuType::NewEnumerator11",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "ESCMENU_PAUSE"
+          }
+        }
+      ],
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_MenuESC_Button_Base_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_MenuESC_Button_Base_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_Button_Base.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_MenuESC_Button_Base_C:OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_Button_Base.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "MenuType",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | BlueprintReadOnly",
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'E_PalEscMenuType'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/E_PalEscMenuType.0"
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "BaseTextIDMap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "ByteProperty",
+          "Name": "BaseTextIDMap",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "UserDefinedEnum'E_PalEscMenuType'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/E_PalEscMenuType.0"
+          }
+        },
+        "ValueProp": {
+          "Type": "StructProperty",
+          "Name": "BaseTextIDMap_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "ScriptStruct'DataTableRowHandle'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnClicked",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_MenuESC_Button_Base_C:OnClicked__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_Button_Base.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_Button_Base_C:OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_Button_Base.0"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_MenuESC_Button_Base_C'Default__WBP_MenuESC_Button_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_Button_Base.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_MenuESC_Button_Base_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  }
+]

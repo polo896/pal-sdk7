@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_Mothman_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalQuestBlock_CheckBossDefeat'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_Mothman_C'Default__BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_Mothman_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_Mothman.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_Mothman_C",
+    "Name": "Default__BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_Mothman_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_Mothman.BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_Mothman_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CheckBossType": "EPalBossType::WorldTreeMiddleBoss2",
+      "IsAutoComplete": true,
+      "bHideFromUI": true,
+      "LocationSettingData": {
+        "FixedLocationPointArray": [
+          {
+            "DataTable": {
+              "ObjectName": "DataTable'DT_PalQuestLocationData'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Quest/DT_PalQuestLocationData.0"
+            },
+            "RowName": "MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_2"
+          }
+        ]
+      }
+    }
+  }
+]

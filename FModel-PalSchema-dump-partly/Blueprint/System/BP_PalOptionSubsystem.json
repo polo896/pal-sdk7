@@ -1,0 +1,364 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalOptionSubsystem_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalOptionSubsystem'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalOptionSubsystem_C'Default__BP_PalOptionSubsystem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalOptionSubsystem.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalOptionSubsystem_C",
+    "Name": "Default__BP_PalOptionSubsystem_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalOptionSubsystem.BP_PalOptionSubsystem_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionWorldStaticSettings": {
+        "DayTimeSpeedRate": {
+          "Min": 0.1,
+          "Max": 5.0
+        },
+        "NightTimeSpeedRate": {
+          "Min": 0.1,
+          "Max": 5.0
+        },
+        "ExpRate": {
+          "Min": 0.1,
+          "Max": 20.0
+        },
+        "PalCaptureRate": {
+          "Min": 0.5,
+          "Max": 2.0
+        },
+        "PalSpawnNumRate": {
+          "Min": 0.5,
+          "Max": 3.0
+        },
+        "PalDamageRateAttack": {
+          "Min": 0.1,
+          "Max": 5.0
+        },
+        "PalDamageRateDefense": {
+          "Min": 0.1,
+          "Max": 5.0
+        },
+        "PlayerDamageRateAttack": {
+          "Min": 0.1,
+          "Max": 5.0
+        },
+        "PlayerDamageRateDefense": {
+          "Min": 0.1,
+          "Max": 5.0
+        },
+        "PlayerStomachDecreaceRate": {
+          "Min": 0.1,
+          "Max": 5.0
+        },
+        "PlayerStaminaDecreaceRate": {
+          "Min": 0.1,
+          "Max": 5.0
+        },
+        "PlayerAutoHPRegeneRate": {
+          "Min": 0.1,
+          "Max": 5.0
+        },
+        "PlayerAutoHpRegeneRateInSleep": {
+          "Min": 0.1,
+          "Max": 5.0
+        },
+        "PalStomachDecreaceRate": {
+          "Min": 0.1,
+          "Max": 5.0
+        },
+        "PalStaminaDecreaceRate": {
+          "Min": 0.1,
+          "Max": 5.0
+        },
+        "PalAutoHPRegeneRate": {
+          "Min": 0.1,
+          "Max": 5.0
+        },
+        "PalAutoHpRegeneRateInSleep": {
+          "Min": 0.1,
+          "Max": 5.0
+        },
+        "BuildObjectDamageRate": {
+          "Min": 0.5,
+          "Max": 3.0
+        },
+        "BuildObjectDeteriorationDamageRate": {
+          "Max": 10.0
+        },
+        "CollectionDropRate": {
+          "Min": 0.5,
+          "Max": 3.0
+        },
+        "CollectionObjectHpRate": {
+          "Min": 0.5,
+          "Max": 3.0
+        },
+        "CollectionObjectRespawnSpeedRate": {
+          "Min": 0.5,
+          "Max": 3.0
+        },
+        "EnemyDropItemRate": {
+          "Min": 0.5,
+          "Max": 3.0
+        },
+        "DropItemMaxNum": {
+          "Max": 5000
+        },
+        "DropItemMaxNum_UNKO": {
+          "Max": 300
+        },
+        "WorkSpeedRate": {
+          "Min": 0.1,
+          "Max": 5.0
+        },
+        "AutoResetGuildTimeNoOnlinePlayers": {
+          "Min": 1,
+          "Max": 1000
+        },
+        "GuildPlayerMaxNum": {
+          "Min": 1,
+          "Max": 100
+        },
+        "BaseCampMaxNumInGuild": {
+          "Min": 2,
+          "Max": 10
+        },
+        "PalEggDefaultHatchingTime": {
+          "Max": 240
+        },
+        "BaseCampWorkerMaxNum": {
+          "Min": 1,
+          "Max": 50
+        },
+        "autoSaveSpan": {
+          "Min": 30,
+          "Max": 1800
+        },
+        "SupplyDropSpan": {
+          "Min": 1,
+          "Max": 999
+        },
+        "ItemWeightRate": {
+          "Max": 10.0
+        },
+        "BuildingLimitType": [
+          {
+            "Key": "EPalBuildingLimitType::UltraLow",
+            "Value": 400
+          },
+          {
+            "Key": "EPalBuildingLimitType::VeryLow",
+            "Value": 500
+          },
+          {
+            "Key": "EPalBuildingLimitType::Low",
+            "Value": 2000
+          },
+          {
+            "Key": "EPalBuildingLimitType::Medium",
+            "Value": 5000
+          },
+          {
+            "Key": "EPalBuildingLimitType::High",
+            "Value": 10000
+          }
+        ],
+        "ServerReplicatePawnCullDistance": {
+          "Min": 5000.0,
+          "Max": 15000.0
+        },
+        "EquipmentDurabilityDamageRate": {
+          "Max": 5.0
+        },
+        "ItemCorruptionMultiplier": {
+          "Max": 10.0
+        },
+        "MonsterFarmActionSpeedRate": {
+          "Min": 0.5,
+          "Max": 3.0
+        }
+      },
+      "OptionLocalStaticSettings": {
+        "MouseSensitivity": {
+          "Min": 0.1,
+          "Max": 10.0
+        },
+        "MouseAimSensitivity": {
+          "Min": 0.1,
+          "Max": 10.0
+        },
+        "LeftStickThreshold": {
+          "Max": 100.0
+        },
+        "RightStickSensitivity": {
+          "Min": 0.1,
+          "Max": 10.0
+        },
+        "RightStickAimSensitivity": {
+          "Min": 0.1,
+          "Max": 10.0
+        },
+        "RightStickThreshold": {
+          "Max": 100.0
+        },
+        "PalRideCameraLengthRate": {
+          "Min": 0.5,
+          "Max": 2.0
+        },
+        "FOV": {
+          "Min": 70.0,
+          "Max": 90.0
+        },
+        "MapObjectDrawDistanceMaxMap": [
+          {
+            "Key": "EPalOptionMapObjectDrawDistanceType::VeryShort",
+            "Value": 50
+          },
+          {
+            "Key": "EPalOptionMapObjectDrawDistanceType::Short",
+            "Value": 100
+          },
+          {
+            "Key": "EPalOptionMapObjectDrawDistanceType::Normal",
+            "Value": 300
+          },
+          {
+            "Key": "EPalOptionMapObjectDrawDistanceType::Long",
+            "Value": 600
+          },
+          {
+            "Key": "EPalOptionMapObjectDrawDistanceType::VeryLong",
+            "Value": 1000
+          },
+          {
+            "Key": "EPalOptionMapObjectDrawDistanceType::NoLimit",
+            "Value": -1
+          }
+        ],
+        "DamageTextScale": {
+          "Max": 2.0
+        },
+        "DamageTextMaxNum": {
+          "Max": 100.0
+        },
+        "ChatUICloseDelayTime": {
+          "Min": 2.0,
+          "Max": 60.0
+        }
+      },
+      "OptionWorldPresetTable": {
+        "ObjectName": "DataTable'DT_OptionWorldPresetTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Option/DT_OptionWorldPresetTable.0"
+      },
+      "OptionWorldModePresetTable": {
+        "ObjectName": "DataTable'DT_OptionWorldModePresetTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Option/DT_OptionWorldModePresetTable.0"
+      },
+      "OptionGraphicsPresetTable": {
+        "ObjectName": "DataTable'DT_OptionGraphicsTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Option/DT_OptionGraphicsTable.0"
+      },
+      "WorldSettingThreshold": {
+        "BaseCampMaxNumInGuild": [
+          {
+            "Key": "EPalSupportedPlatformType::XB1",
+            "Value": 2
+          },
+          {
+            "Key": "EPalSupportedPlatformType::XB1S",
+            "Value": 2
+          },
+          {
+            "Key": "EPalSupportedPlatformType::XB1X",
+            "Value": 3
+          },
+          {
+            "Key": "EPalSupportedPlatformType::XSX",
+            "Value": 4
+          },
+          {
+            "Key": "EPalSupportedPlatformType::XSS",
+            "Value": 3
+          },
+          {
+            "Key": "EPalSupportedPlatformType::PS5Base",
+            "Value": 4
+          },
+          {
+            "Key": "EPalSupportedPlatformType::PS5Trinity",
+            "Value": 4
+          }
+        ],
+        "BaseCampWorkerMaxNum": [
+          {
+            "Key": "EPalSupportedPlatformType::XB1",
+            "Value": 15
+          },
+          {
+            "Key": "EPalSupportedPlatformType::XB1S",
+            "Value": 15
+          },
+          {
+            "Key": "EPalSupportedPlatformType::XB1X",
+            "Value": 15
+          },
+          {
+            "Key": "EPalSupportedPlatformType::XSS",
+            "Value": 15
+          },
+          {
+            "Key": "EPalSupportedPlatformType::XSX",
+            "Value": 20
+          },
+          {
+            "Key": "EPalSupportedPlatformType::PS5Base",
+            "Value": 20
+          },
+          {
+            "Key": "EPalSupportedPlatformType::PS5Trinity",
+            "Value": 20
+          }
+        ],
+        "MaxBuildingLimitNum": [
+          {
+            "Key": "EPalSupportedPlatformType::XB1",
+            "Value": 400
+          },
+          {
+            "Key": "EPalSupportedPlatformType::XB1S",
+            "Value": 400
+          },
+          {
+            "Key": "EPalSupportedPlatformType::XSS",
+            "Value": 500
+          }
+        ]
+      },
+      "PalPlayerCharacterClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/BP_Player_Female.0"
+      },
+      "bShouldCreate": true
+    }
+  }
+]

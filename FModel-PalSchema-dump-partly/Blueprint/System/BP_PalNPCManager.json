@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalNPCManager_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalNPCManager'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalNPCManager_C'Default__BP_PalNPCManager_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalNPCManager.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalNPCManager_C",
+    "Name": "Default__BP_PalNPCManager_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalNPCManager.BP_PalNPCManager_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NPCAIControllerBaseClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCAIController_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIController.0"
+      },
+      "UniqueNPCDataTable": {
+        "ObjectName": "CompositeDataTable'DT_UniqueNPC'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Character/DT_UniqueNPC.0"
+      },
+      "NPCTalkFlowDataTable": {
+        "ObjectName": "DataTable'DT_NPCTalkFlow'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/NPCTalk/DT_NPCTalkFlow.0"
+      }
+    }
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "FPalUIPalInfoDisplayData",
+    "Class": "UScriptClass'UserDefinedStruct'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Guid": "651C5678-45AF3E81-92F755BD-1EED06B3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "infoType_7_1896329049BDD64BD64164AE06093B27",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'EPalUIPalInfoType'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Notice/EPalUIPalInfoType.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CaptureInfo_13_25C6EFCC45C7B38BB1ADEF97B8AE4627",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 56,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIPalCaptureInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ActivatedOtomoHandle_16_CE5D7B7343BD1A4E5A078C8066BAB2F9",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterHandle'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "StructFlags": 0,
+    "DefaultProperties": {
+      "infoType_7_1896329049BDD64BD64164AE06093B27": "EPalUIPalInfoType::NewEnumerator0",
+      "CaptureInfo_13_25C6EFCC45C7B38BB1ADEF97B8AE4627": {
+        "CharacterID": "None",
+        "UniqueNPCID": "None",
+        "CaptureCount": 0,
+        "Level": 0,
+        "PassiveSkillNameList": [],
+        "IsRarePal": false,
+        "IsUnlockedPaldeck": false,
+        "IsCompleteCaptureBonus": false,
+        "Exp": 0
+      },
+      "ActivatedOtomoHandle_16_CE5D7B7343BD1A4E5A078C8066BAB2F9": null
+    }
+  }
+]

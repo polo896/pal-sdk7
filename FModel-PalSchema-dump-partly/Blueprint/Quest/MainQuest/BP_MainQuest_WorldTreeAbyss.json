@@ -1,0 +1,117 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MainQuest_WorldTreeAbyss_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MainQuest_WorldTreeAbyss_C'Default__BP_MainQuest_WorldTreeAbyss_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_WorldTreeAbyss.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MainQuest_WorldTreeAbyss_C",
+    "Name": "Default__BP_MainQuest_WorldTreeAbyss_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_WorldTreeAbyss.BP_MainQuest_WorldTreeAbyss_C'",
+    "Template": {
+      "ObjectName": "BP_PalQuestDataBase_C'Default__BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestBlockGroupList": [
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_WorldTreeAbyss_Reach.BP_MainQuestBlock_WorldTreeAbyss_Reach_C",
+              "SubPathString": ""
+            }
+          ]
+        },
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Note.BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Note_C",
+              "SubPathString": ""
+            }
+          ]
+        },
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat.BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_C",
+              "SubPathString": ""
+            },
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Marker_FlowerPrince.BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Marker_FlowerPrince_C",
+              "SubPathString": ""
+            },
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Marker_BossRush.BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Marker_BossRush_C",
+              "SubPathString": ""
+            },
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_FlowerPrince.BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_FlowerPrince_C",
+              "SubPathString": ""
+            },
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_Mothman.BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_Mothman_C",
+              "SubPathString": ""
+            },
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_BossRush.BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_BossRush_C",
+              "SubPathString": ""
+            }
+          ]
+        },
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Return.BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Return_C",
+              "SubPathString": ""
+            }
+          ]
+        },
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_WorldTreeAbyss_Reach_2.BP_MainQuestBlock_WorldTreeAbyss_Reach_2_C",
+              "SubPathString": ""
+            }
+          ]
+        },
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_WorldTreeAbyss_Unseal.BP_MainQuestBlock_WorldTreeAbyss_Unseal_C",
+              "SubPathString": ""
+            }
+          ]
+        }
+      ],
+      "QuestTitleMsgId": "Quest_Main_Title_WorldTreeAbyss",
+      "QuestDescriptionMsgId": "Quest_Main_Desc_WorldTreeAbyss",
+      "CommonRewardData": {
+        "Exp": 102669
+      }
+    }
+  }
+]

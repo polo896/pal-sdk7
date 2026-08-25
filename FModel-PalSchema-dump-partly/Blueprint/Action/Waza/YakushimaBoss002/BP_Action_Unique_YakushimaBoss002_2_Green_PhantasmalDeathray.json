@@ -1,0 +1,62 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_YakushimaBoss002_2_Green_PhantasmalDeathray_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalDeathray_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalDeathray.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalDeathray_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalDeathray.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_YakushimaBoss002_2_Green_PhantasmalDeathray_C'Default__BP_Action_Unique_YakushimaBoss002_2_Green_PhantasmalDeathray_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_2_Green_PhantasmalDeathray.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_YakushimaBoss002_2_Green_PhantasmalDeathray_C",
+    "Name": "Default__BP_Action_Unique_YakushimaBoss002_2_Green_PhantasmalDeathray_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_2_Green_PhantasmalDeathray.BP_Action_Unique_YakushimaBoss002_2_Green_PhantasmalDeathray_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_YakushimaBoss002_Green_PhantasmalDeathray_C'Default__BP_Action_Unique_YakushimaBoss002_Green_PhantasmalDeathray_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalDeathray.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkillEffectSpawnParameters": [
+        {
+          "TimeOffset": 2.0,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_2_Green_PhantasmalDeathray_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_2_Green_PhantasmalDeathray.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        }
+      ],
+      "ReadyAnimationTime": 2.0,
+      "ProcessAnimationTime": 1.0,
+      "WazaID": "EPalWazaID::Unique_YakushimaBoss001_Green_2_PhantasmalDeathray"
+    }
+  }
+]

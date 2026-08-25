@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b06_flower_Ginger_Red_Hero_Field_01",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b06_flower_Ginger_Red_Hero_Field_01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b06/Tree/Meshes/SM_pal_b06_flower_Ginger_Red_Hero_Field_01.2"
+      },
+      "UpdateGuid": "C767883A-4840AD4F-B09525A3-CD50EFA9",
+      "ScaleX": {
+        "Min": 0.6
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -2.09272,
+          "Y": 3.298256,
+          "Z": 73.02012
+        },
+        "BoxExtent": {
+          "X": 76.86298,
+          "Y": 77.98022,
+          "Z": 80.90043
+        },
+        "SphereRadius": 111.26066373749951
+      },
+      "LowBoundOriginRadius": {
+        "X": -2.0430794,
+        "Y": 1.9130526,
+        "Z": 40.476307
+      },
+      "CullDistance": {
+        "Max": 6000
+      },
+      "bAffectDistanceFieldLighting": true,
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

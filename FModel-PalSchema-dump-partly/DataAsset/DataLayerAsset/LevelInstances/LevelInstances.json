@@ -1,0 +1,18 @@
+[
+  {
+    "Type": "DataLayerAsset",
+    "Name": "LevelInstances",
+    "Class": "UScriptClass'DataLayerAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DataLayerType": "EDataLayerType::Runtime",
+      "DebugColor": {
+        "B": 139,
+        "G": 159,
+        "R": 220,
+        "A": 255,
+        "Hex": "DC9F8B"
+      }
+    }
+  }
+]

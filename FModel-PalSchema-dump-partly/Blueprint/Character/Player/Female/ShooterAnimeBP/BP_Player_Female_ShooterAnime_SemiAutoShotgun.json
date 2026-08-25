@@ -1,0 +1,173 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Player_Female_ShooterAnime_SemiAutoShotgun_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_ShooterAnime_AssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_AssaultRifle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_ShooterAnime_AssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_AssaultRifle.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Player_Female_ShooterAnime_SemiAutoShotgun_C'Default__BP_Player_Female_ShooterAnime_SemiAutoShotgun_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_SemiAutoShotgun.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Player_Female_ShooterAnime_SemiAutoShotgun_C",
+    "Name": "Default__BP_Player_Female_ShooterAnime_SemiAutoShotgun_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_SemiAutoShotgun.BP_Player_Female_ShooterAnime_SemiAutoShotgun_C'",
+    "Template": {
+      "ObjectName": "BP_Player_Female_ShooterAnime_AssaultRifle_C'Default__BP_Player_Female_ShooterAnime_AssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_AssaultRifle.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimeInfo": {
+        "NormalMoveBlendSpace": {
+          "ObjectName": "BlendSpace1D'BS_Player_Female_SemiAutoShotgun_Move'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/BlendSpace/BS_Player_Female_SemiAutoShotgun_Move.0"
+        },
+        "CrouchMoveBlendSpace": {
+          "ObjectName": "BlendSpace1D'BS_Player_Female_CrouchSemiAutoShotgunMove'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/BlendSpace/BS_Player_Female_CrouchSemiAutoShotgunMove.0"
+        },
+        "JumpLoopUp": {
+          "ObjectName": "AnimSequence'AS_Player_Female_JumpUpLoop_SemiAutoShotgun'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/SemiAutoShotgun/AS_Player_Female_JumpUpLoop_SemiAutoShotgun.0"
+        },
+        "JumpLoopDown": {
+          "ObjectName": "AnimSequence'AS_Player_Female_JumpDownLoop_SemiAutoShotgun'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/SemiAutoShotgun/AS_Player_Female_JumpDownLoop_SemiAutoShotgun.0"
+        },
+        "JumpEnd": {
+          "ObjectName": "AnimSequence'AS_Player_Female_JumpEnd_SemiAutoShotgun'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/SemiAutoShotgun/AS_Player_Female_JumpEnd_SemiAutoShotgun.0"
+        },
+        "Sliding": {
+          "ObjectName": "AnimSequence'AS_Player_Female_SlidingLoop_SemiAutoShotgun'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/SemiAutoShotgun/AS_Player_Female_SlidingLoop_SemiAutoShotgun.0"
+        },
+        "Sprint": {
+          "ObjectName": "AnimSequence'AS_Player_Female_Sprint_SemiAutoShotgun'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/SemiAutoShotgun/AS_Player_Female_Sprint_SemiAutoShotgun.0"
+        },
+        "ReloadMontage": {
+          "ObjectName": "AnimMontage'AM_Player_Female_Reload_SemiAutoShotgun'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/SemiAutoShotgun/AM_Player_Female_Reload_SemiAutoShotgun.0"
+        },
+        "WeaponChangeMontage": {
+          "ObjectName": "AnimMontage'AM_Player_Female_Draw_SemiAutoShotgun'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/SemiAutoShotgun/AM_Player_Female_Draw_SemiAutoShotgun.0"
+        },
+        "IdlePoseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::Stand",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Female_Idle_SemiAutoShotgun'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/SemiAutoShotgun/AS_Player_Female_Idle_SemiAutoShotgun.0"
+            }
+          },
+          {
+            "Key": "EWeaponAnimationPoseType::Crouch",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Female_Crouch_Idle_SemiAutoShotgun'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/SemiAutoShotgun/AS_Player_Female_Crouch_Idle_SemiAutoShotgun.0"
+            }
+          }
+        ],
+        "JogPoseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::Stand",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Female_Jog_SemiAutoShotgun'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/SemiAutoShotgun/AS_Player_Female_Jog_SemiAutoShotgun.0"
+            }
+          },
+          {
+            "Key": "EWeaponAnimationPoseType::Crouch",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Female_Crouch_Walk_SemiAutoShotgun'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/SemiAutoShotgun/AS_Player_Female_Crouch_Walk_SemiAutoShotgun.0"
+            }
+          }
+        ],
+        "AimBaseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::Stand",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Female_Aim_SemiAutoShotgun'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/SemiAutoShotgun/AS_Player_Female_Aim_SemiAutoShotgun.0"
+            }
+          },
+          {
+            "Key": "EWeaponAnimationPoseType::Crouch",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Female_Crouch_Aim_SemiAutoShotgun'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/SemiAutoShotgun/AS_Player_Female_Crouch_Aim_SemiAutoShotgun.0"
+            }
+          }
+        ],
+        "AnimationMap": [
+          {
+            "Key": "EWeaponAnimationType::Shoot",
+            "Value": {
+              "PoseMap": [
+                {
+                  "Key": "EWeaponAnimationPoseType::Stand",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Female_Fire_SemiAutoShotgun'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/SemiAutoShotgun/AM_Player_Female_Fire_SemiAutoShotgun.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Crouch",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Female_Fire_SemiAutoShotgun'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/SemiAutoShotgun/AM_Player_Female_Fire_SemiAutoShotgun.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Riding",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Female_Fire_SemiAutoShotgun'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/SemiAutoShotgun/AM_Player_Female_Fire_SemiAutoShotgun.0"
+                  }
+                }
+              ],
+              "isAutoStop": false,
+              "EndDelegateType": "EPalWeaponAnimationEndDelegateType::MontageBlendingOut"
+            }
+          }
+        ],
+        "RidingAnimationMap": [
+          {
+            "Key": "EPalRidePositionType::None",
+            "Value": {
+              "RidingAnimation": null,
+              "RidingSprintStartAnimation": null,
+              "RidingSprintAnimation": null,
+              "RidingShakingMontage": null,
+              "RideShootingAnimation": null,
+              "RideShootingAO": null
+            }
+          }
+        ]
+      }
+    }
+  }
+]

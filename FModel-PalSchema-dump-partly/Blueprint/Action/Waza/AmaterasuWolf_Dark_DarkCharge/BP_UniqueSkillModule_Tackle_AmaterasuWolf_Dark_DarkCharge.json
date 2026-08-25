@@ -1,0 +1,68 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueSkillModule_Tackle_AmaterasuWolf_Dark_DarkCharge_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueSkillModule_Tackle_AmaterasuWolf_Dark_DarkCharge_C'Default__BP_UniqueSkillModule_Tackle_AmaterasuWolf_Dark_DarkCharge_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/AmaterasuWolf_Dark_DarkCharge/BP_UniqueSkillModule_Tackle_AmaterasuWolf_Dark_DarkCharge.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueSkillModule_Tackle_AmaterasuWolf_Dark_DarkCharge_C",
+    "Name": "Default__BP_UniqueSkillModule_Tackle_AmaterasuWolf_Dark_DarkCharge_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/AmaterasuWolf_Dark_DarkCharge/BP_UniqueSkillModule_Tackle_AmaterasuWolf_Dark_DarkCharge.BP_UniqueSkillModule_Tackle_AmaterasuWolf_Dark_DarkCharge_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueSkillModule_Tackle_C'Default__BP_UniqueSkillModule_Tackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StartAnimMontage": {
+        "ObjectName": "AnimMontage'AM_AmaterasuWolf_Dark_DarkCharge_Start'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/AmaterasuWolf_Dark/AM_AmaterasuWolf_Dark_DarkCharge_Start.0"
+      },
+      "LoopAnimMontage": {
+        "ObjectName": "AnimMontage'AM_AmaterasuWolf_Dark_DarkCharge_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/AmaterasuWolf_Dark/AM_AmaterasuWolf_Dark_DarkCharge_Loop.0"
+      },
+      "EndAnimMontage": {
+        "ObjectName": "AnimMontage'AM_AmaterasuWolf_Dark_DarkCharge_End'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/AmaterasuWolf_Dark/AM_AmaterasuWolf_Dark_DarkCharge_End.0"
+      },
+      "AttackTime": 2.0,
+      "EndBrakeTime": 0.3,
+      "MaxSpeedMultiply": 3.5,
+      "TackleHomingRate": 1.0,
+      "StartSkillEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_AmaterasuWolf_Dark_DarkCharge_Start_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/AmaterasuWolf_Dark_DarkCharge/BP_SkillEffect_Unique_AmaterasuWolf_Dark_DarkCharge_Start.0"
+      },
+      "LoopSkillEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_AmaterasuWolf_Dark_DarkCharge_Loop_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/AmaterasuWolf_Dark_DarkCharge/BP_SkillEffect_Unique_AmaterasuWolf_Dark_DarkCharge_Loop.0"
+      },
+      "EnableDashSkip": true,
+      "DashSkipTime": 0.45
+    }
+  }
+]

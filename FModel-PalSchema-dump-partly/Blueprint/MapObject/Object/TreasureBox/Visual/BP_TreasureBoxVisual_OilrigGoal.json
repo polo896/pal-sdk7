@@ -1,0 +1,353 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_TreasureBoxVisual_OilrigGoal_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_TreasureBoxVisual_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_Base.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_TreasureBoxVisual_OilrigGoal_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.12"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_TreasureBoxVisual_OilrigGoal_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.5"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_TreasureBoxVisual_OilrigGoal_C:ExecuteUbergraph_BP_TreasureBoxVisual_OilrigGoal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_TreasureBoxVisual_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_Base.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_TreasureBoxVisual_OilrigGoal_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.4"
+      },
+      {
+        "ObjectName": "Function'BP_TreasureBoxVisual_OilrigGoal_C:OnFinishOpenAnimation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.3"
+      },
+      {
+        "ObjectName": "Function'BP_TreasureBoxVisual_OilrigGoal_C:ExecuteUbergraph_BP_TreasureBoxVisual_OilrigGoal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PointLight",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PointLightComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_TreasureBoxVisual_OilrigGoal": {
+        "ObjectName": "Function'BP_TreasureBoxVisual_OilrigGoal_C:ExecuteUbergraph_BP_TreasureBoxVisual_OilrigGoal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.2"
+      },
+      "OnFinishOpenAnimation": {
+        "ObjectName": "Function'BP_TreasureBoxVisual_OilrigGoal_C:OnFinishOpenAnimation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.3"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_TreasureBoxVisual_OilrigGoal_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_TreasureBoxVisual_OilrigGoal_C'Default__BP_TreasureBoxVisual_OilrigGoal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_TreasureBoxVisual_OilrigGoal_C",
+    "Name": "Default__BP_TreasureBoxVisual_OilrigGoal_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.BP_TreasureBoxVisual_OilrigGoal_C'",
+    "Template": {
+      "ObjectName": "BP_TreasureBoxVisual_Base_C'Default__BP_TreasureBoxVisual_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_Base.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "OpenAnimMontage": {
+        "ObjectName": "AnimMontage'AM_OilrigTreasurebox_Open'",
+        "ObjectPath": "Pal/Content/Pal/Model/Other/OilrigTreasurebox/AM_OilrigTreasurebox_Open.0"
+      },
+      "SkeletalMeshComponent": {
+        "ObjectName": "PalSkeletalMeshComponent'Default__BP_TreasureBoxVisual_OilrigGoal_C:SkeletalMesh'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.7"
+      },
+      "RootComponent": {
+        "ObjectName": "PalSkeletalMeshComponent'Default__BP_TreasureBoxVisual_OilrigGoal_C:SkeletalMesh'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.7"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_TreasureBoxVisual_OilrigGoal",
+    "Outer": "BP_TreasureBoxVisual_OilrigGoal_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnFinishOpenAnimation",
+    "Outer": "BP_TreasureBoxVisual_OilrigGoal_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_TreasureBoxVisual_Base_C:OnFinishOpenAnimation'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_Base.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_TreasureBoxVisual_Base_C:OnFinishOpenAnimation'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_Base.3"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_TreasureBoxVisual_OilrigGoal_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_TreasureBoxVisual_Base_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_Base.9"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_TreasureBoxVisual_Base_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_Base.9"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_TreasureBoxVisual_OilrigGoal_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'NiagaraComponent'",
+            "ObjectPath": "/Script/Niagara"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "NiagaraComponent'BP_TreasureBoxVisual_OilrigGoal_C:Glow_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.6"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_TreasureBoxVisual_Base_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_Base.0"
+            },
+            "SCSVariableName": "Glow",
+            "AssociatedGuid": "8FD0F95B-430FBBAB-B26FB8BC-B7FC18A1"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "Glow_GEN_VARIABLE",
+    "Outer": "BP_TreasureBoxVisual_OilrigGoal_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Template": {
+      "ObjectName": "NiagaraComponent'BP_TreasureBoxVisual_Base_C:Glow_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_Base.14"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "OverrideParameters": {}
+    }
+  },
+  {
+    "Type": "PalSkeletalMeshComponent",
+    "Name": "SkeletalMesh",
+    "Outer": "Default__BP_TreasureBoxVisual_OilrigGoal_C",
+    "Class": "UScriptClass'PalSkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "PalSkeletalMeshComponent'Default__BP_TreasureBoxVisual_Base_C:SkeletalMesh'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_Base.15"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence'AS_OilrigTreasurebox_Open'",
+          "ObjectPath": "Pal/Content/Pal/Model/Other/OilrigTreasurebox/AS_OilrigTreasurebox_Open.0"
+        }
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_OilrigTreasurebox'",
+        "ObjectPath": "Pal/Content/Pal/Model/Other/OilrigTreasurebox/SK_OilrigTreasurebox.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_OilrigTreasurebox'",
+        "ObjectPath": "Pal/Content/Pal/Model/Other/OilrigTreasurebox/SK_OilrigTreasurebox.0"
+      },
+      "RelativeScale3D": {
+        "X": 2.0,
+        "Y": 2.0000002,
+        "Z": 2.0000002
+      }
+    }
+  },
+  {
+    "Type": "PointLightComponent",
+    "Name": "PointLight_GEN_VARIABLE",
+    "Outer": "BP_TreasureBoxVisual_OilrigGoal_C",
+    "Class": "UScriptClass'PointLightComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bUseInverseSquaredFalloff": false,
+      "AttenuationRadius": 350.0,
+      "Intensity": 1000.0,
+      "LightColor": {
+        "B": 255,
+        "G": 239,
+        "R": 98,
+        "A": 255,
+        "Hex": "62EFFF"
+      },
+      "CastShadows": false
+    },
+    "RelativeRotation": {
+      "Pitch": -90.0,
+      "Yaw": 0.0,
+      "Roll": 0.0
+    },
+    "RelativeLocation": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "IntensityNits": 1000.0,
+    "bUseInverseSquaredFalloff": false
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_TreasureBoxVisual_OilrigGoal_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_TreasureBoxVisual_OilrigGoal_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.9"
+      },
+      "VariableGuid": "6F8DD313-480199C1-DAC474BF-58D105DF",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PointLightComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PointLightComponent'BP_TreasureBoxVisual_OilrigGoal_C:PointLight_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.8"
+      },
+      "ParentComponentOrVariableName": "SkeletalMesh",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "9DE7CDB1-4F1B25A6-C7EDD7BF-9194EFA3",
+      "InternalVariableName": "PointLight"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_TreasureBoxVisual_OilrigGoal_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_TreasureBoxVisual_OilrigGoal_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.11"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_TreasureBoxVisual_OilrigGoal_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.11"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_TreasureBoxVisual_OilrigGoal_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.10"
+      }
+    }
+  }
+]

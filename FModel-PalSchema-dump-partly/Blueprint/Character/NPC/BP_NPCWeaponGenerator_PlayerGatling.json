@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_NPCWeaponGenerator_PlayerGatling_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NPCWeaponGenerator_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPCWeaponGenerator.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NPCWeaponGenerator_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPCWeaponGenerator.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_NPCWeaponGenerator_PlayerGatling_C'Default__BP_NPCWeaponGenerator_PlayerGatling_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPCWeaponGenerator_PlayerGatling.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_NPCWeaponGenerator_PlayerGatling_C",
+    "Name": "Default__BP_NPCWeaponGenerator_PlayerGatling_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/NPC/BP_NPCWeaponGenerator_PlayerGatling.BP_NPCWeaponGenerator_PlayerGatling_C'",
+    "Template": {
+      "ObjectName": "BP_NPCWeaponGenerator_C'Default__BP_NPCWeaponGenerator_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPCWeaponGenerator.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WeaponIDMap": [
+        {
+          "Key": "EPalWeaponType::GatlingGun",
+          "Value": "GatlingGun_NPC_GrassBoss"
+        }
+      ]
+    }
+  }
+]

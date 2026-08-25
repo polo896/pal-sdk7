@@ -1,0 +1,283 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C:ExecuteUbergraph_BP_SkillModule_Tackle_ThunderDog_InazumaShorai'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_SkillModule_Tackle_ThunderDog_InazumaShorai.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C:OnStartTossin'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_SkillModule_Tackle_ThunderDog_InazumaShorai.4"
+      },
+      {
+        "ObjectName": "Function'BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C:OnEndModule'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_SkillModule_Tackle_ThunderDog_InazumaShorai.3"
+      },
+      {
+        "ObjectName": "Function'BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C:ExecuteUbergraph_BP_SkillModule_Tackle_ThunderDog_InazumaShorai'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_SkillModule_Tackle_ThunderDog_InazumaShorai.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "ExtraLoopEffectClass",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ExtraLoopEffect",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_SkillModule_Tackle_ThunderDog_InazumaShorai": {
+        "ObjectName": "Function'BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C:ExecuteUbergraph_BP_SkillModule_Tackle_ThunderDog_InazumaShorai'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_SkillModule_Tackle_ThunderDog_InazumaShorai.2"
+      },
+      "OnEndModule": {
+        "ObjectName": "Function'BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C:OnEndModule'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_SkillModule_Tackle_ThunderDog_InazumaShorai.3"
+      },
+      "OnStartTossin": {
+        "ObjectName": "Function'BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C:OnStartTossin'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_SkillModule_Tackle_ThunderDog_InazumaShorai.4"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C'Default__BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_SkillModule_Tackle_ThunderDog_InazumaShorai.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C",
+    "Name": "Default__BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/ThunderDog/BP_SkillModule_Tackle_ThunderDog_InazumaShorai.BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueSkillModule_Tackle_C'Default__BP_UniqueSkillModule_Tackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ExtraLoopEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_ThunderDog_InazumaShorai_Loop_Dust_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/ThunderDog_InazumaShorai/BP_SkillEffect_Unique_ThunderDog_InazumaShorai_Loop_Dust.0"
+      },
+      "StartAnimMontage": {
+        "ObjectName": "AnimMontage'AM_ThunderDog_InazumaShorai_Start'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/ThunderDog/AM_ThunderDog_InazumaShorai_Start.0"
+      },
+      "LoopAnimMontage": {
+        "ObjectName": "AnimMontage'AM_ThunderDog_InazumaShorai_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/ThunderDog/AM_ThunderDog_InazumaShorai_Loop.0"
+      },
+      "EndAnimMontage": {
+        "ObjectName": "AnimMontage'AM_ThunderDog_InazumaShorai_End'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/ThunderDog/AM_ThunderDog_InazumaShorai_End.0"
+      },
+      "AttackTime": 1.2,
+      "MaxSpeedMultiply": 5.0,
+      "TackleHomingRate": 2.3,
+      "LoopSkillEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_ThunderDog_InazumaShorai_Loop_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/ThunderDog_InazumaShorai/BP_SkillEffect_Unique_ThunderDog_InazumaShorai_Loop.0"
+      },
+      "StartHomingRate": 10.0
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_SkillModule_Tackle_ThunderDog_InazumaShorai",
+    "Outer": "BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AdjustActorToFloor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValidClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FinishSpawningActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEndModule",
+    "Outer": "BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_UniqueSkillModule_Tackle_C:OnEndModule'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.14"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_UniqueSkillModule_Tackle_C:OnEndModule'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.14"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnStartTossin",
+    "Outer": "BP_SkillModule_Tackle_ThunderDog_InazumaShorai_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_UniqueSkillModule_Tackle_C:OnStartTossin'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.22"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_UniqueSkillModule_Tackle_C:OnStartTossin'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.22"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b07_Ground_tree_RainforestRosewoodTreeS_01_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b07_Ground_tree_RainforestRosewoodTreeS_01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b07/tree/mesh/SM_pal_b07_Ground_tree_RainforestRosewoodTreeS_01.2"
+      },
+      "UpdateGuid": "8CBE496E-48D259BF-33C4D282-945F38BC",
+      "Density": 300.0,
+      "Radius": 50.0,
+      "ScaleX": {
+        "Min": 0.3,
+        "Max": 0.6
+      },
+      "AlignToNormal": false,
+      "MeshBounds": {
+        "Origin": {
+          "X": 10.81193,
+          "Y": 7.0138893,
+          "Z": 77.34502
+        },
+        "BoxExtent": {
+          "X": 70.75688,
+          "Y": 69.975845,
+          "Z": 88.73161
+        },
+        "SphereRadius": 101.28610176241554
+      },
+      "LowBoundOriginRadius": {
+        "X": 0.75818586,
+        "Y": 0.6230328,
+        "Z": 5.0126557
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

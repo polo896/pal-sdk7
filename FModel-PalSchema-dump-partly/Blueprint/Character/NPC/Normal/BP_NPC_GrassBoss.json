@@ -1,0 +1,894 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NPC_StandardHumanDataSet_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_NPC_GrassBoss_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.27"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_NPC_GrassBoss_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_NPC_GrassBoss_C:ExecuteUbergraph_BP_NPC_GrassBoss'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NPC_StandardHumanDataSet_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_NPC_GrassBoss_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.6"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_GrassBoss_C:OnChangeBattleModeDelegate_イベント'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.5"
+      },
+      {
+        "ObjectName": "Function'BP_NPC_GrassBoss_C:ExecuteUbergraph_BP_NPC_GrassBoss'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalCryComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalCryComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Sound/Pal/Cry/BP_PalCryComponent.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_NPC_GrassBoss": {
+        "ObjectName": "Function'BP_NPC_GrassBoss_C:ExecuteUbergraph_BP_NPC_GrassBoss'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.4"
+      },
+      "OnChangeBattleModeDelegate_イベント": {
+        "ObjectName": "Function'BP_NPC_GrassBoss_C:OnChangeBattleModeDelegate_イベント'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.5"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_NPC_GrassBoss_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.6"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_NPC_GrassBoss_C'Default__BP_NPC_GrassBoss_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_NPC_GrassBoss_C",
+    "Name": "Default__BP_NPC_GrassBoss_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.BP_NPC_GrassBoss_C'",
+    "Template": {
+      "ObjectName": "BP_NPC_StandardHumanDataSet_C'Default__BP_NPC_StandardHumanDataSet_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.2"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimLayerClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_GrassBoss001_Implimentation_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Imp/ABP_NPC_GrassBoss001_Implimentation.1"
+      },
+      "WeaponGeneratorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_NPCWeaponGenerator_GrassBoss_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPCWeaponGenerator_GrassBoss.0"
+      },
+      "DefaultVoiceID": 2,
+      "ActionComponent": {
+        "ObjectName": "PalActionComponent'Default__BP_NPC_GrassBoss_C:ActionComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.8"
+      },
+      "CharacterParameterComponent": {
+        "ObjectName": "PalCharacterParameterComponent'Default__BP_NPC_GrassBoss_C:CharacterParameterComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.13"
+      },
+      "StaticCharacterParameterComponent": {
+        "ObjectName": "PalStaticCharacterParameterComponent'Default__BP_NPC_GrassBoss_C:StaticCharacterParameterComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.21"
+      },
+      "DamageReactionComponent": {
+        "ObjectName": "PalDamageReactionComponent'Default__BP_NPC_GrassBoss_C:DamageReactionComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.14"
+      },
+      "StatusComponent": {
+        "ObjectName": "PalStatusComponent'Default__BP_NPC_GrassBoss_C:StatusComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.22"
+      },
+      "CameraBoom": {
+        "ObjectName": "PalShooterSpringArmComponent'Default__BP_NPC_GrassBoss_C:CameraBoom'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.19"
+      },
+      "FollowCamera": {
+        "ObjectName": "PalCharacterCameraComponent'Default__BP_NPC_GrassBoss_C:FollowCamera'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.11"
+      },
+      "LookAtComponent": {
+        "ObjectName": "PalLookAtComponent'Default__BP_NPC_GrassBoss_C:LookAtComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.16"
+      },
+      "FootIKComponent": {
+        "ObjectName": "PalFootIKComponent'Default__BP_NPC_GrassBoss_C:FootIKComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.15"
+      },
+      "VisualEffectComponent": {
+        "ObjectName": "PalVisualEffectComponent'Default__BP_NPC_GrassBoss_C:VisualEffectComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.23"
+      },
+      "PassiveSkillComponent": {
+        "ObjectName": "PalPassiveSkillComponent'Default__BP_NPC_GrassBoss_C:PassiveSkillComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.17"
+      },
+      "AnimNotifyComponent": {
+        "ObjectName": "PalAnimNotifyParameterComponent'Default__BP_NPC_GrassBoss_C:AnimNotifyComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.9"
+      },
+      "AroundInfoCollectorComponent": {
+        "ObjectName": "PalCharacterAroundInfoCollectorComponent'Default__BP_NPC_GrassBoss_C:AroundInfoCollectorComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.10"
+      },
+      "RagdollInteractiveSphere": {
+        "ObjectName": "SphereComponent'Default__BP_NPC_GrassBoss_C:RagdollInteractiveSphere'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.28"
+      },
+      "Mesh": {
+        "ObjectName": "PalSkeletalMeshComponent'Default__BP_NPC_GrassBoss_C:CharacterMesh0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.20"
+      },
+      "CharacterMovement": {
+        "ObjectName": "PalCharacterMovementComponent'Default__BP_NPC_GrassBoss_C:CharMoveComp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.12"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_GrassBoss_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.3"
+      },
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_GrassBoss_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.3"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalCryComponent_C",
+    "Name": "BP_PalCryComponent_GEN_VARIABLE",
+    "Outer": "BP_NPC_GrassBoss_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Sound/Pal/Cry/BP_PalCryComponent.BP_PalCryComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalCryComponent_C'Default__BP_PalCryComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Sound/Pal/Cry/BP_PalCryComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CryNPCId": {
+        "Key": "GrassBoss"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__BP_NPC_StandardHumanDataSet_C:CollisionCylinder'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_NPC_GrassBoss",
+    "Outer": "BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalCharacter:OnChangeBattleMode__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Controller'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_bIsBattleMode",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Monster_AIController_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_MonsterAIControllerBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/Monster/BP_MonsterAIControllerBase.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnChangeBattleModeDelegate_イベント",
+    "Outer": "BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bIsBattleMode",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_NPC_Base_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.13"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_NPC_Base_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.13"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'PalShooterComponent'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "PalShooterComponent'BP_NPC_GrassBoss_C:PalShooter_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.18"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_NPC_Base_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_Base.0"
+            },
+            "SCSVariableName": "PalShooter",
+            "AssociatedGuid": "FBCEC075-40512755-810FDAB1-FC852AFB"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalActionComponent",
+    "Name": "ActionComponent",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'PalActionComponent'",
+    "Template": {
+      "ObjectName": "PalActionComponent'Default__BP_NPC_StandardHumanDataSet_C:ActionComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.5"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ActionMap": [
+        {
+          "Key": "EPalActionType::IdleInSpa",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_ActionIdleInSpa_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionIdleInSpa.0"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalAnimNotifyParameterComponent",
+    "Name": "AnimNotifyComponent",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'PalAnimNotifyParameterComponent'",
+    "Template": {
+      "ObjectName": "PalAnimNotifyParameterComponent'Default__BP_NPC_StandardHumanDataSet_C:AnimNotifyComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.6"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalCharacterAroundInfoCollectorComponent",
+    "Name": "AroundInfoCollectorComponent",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'PalCharacterAroundInfoCollectorComponent'",
+    "Template": {
+      "ObjectName": "PalCharacterAroundInfoCollectorComponent'Default__BP_NPC_StandardHumanDataSet_C:AroundInfoCollectorComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.9"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_GrassBoss_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.3"
+      }
+    }
+  },
+  {
+    "Type": "PalCharacterCameraComponent",
+    "Name": "FollowCamera",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'PalCharacterCameraComponent'",
+    "Template": {
+      "ObjectName": "PalCharacterCameraComponent'Default__BP_NPC_StandardHumanDataSet_C:FollowCamera'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.10"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "PalShooterSpringArmComponent'Default__BP_NPC_GrassBoss_C:CameraBoom'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.19"
+      }
+    }
+  },
+  {
+    "Type": "PalCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'PalCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "PalCharacterMovementComponent'Default__BP_NPC_StandardHumanDataSet_C:CharMoveComp'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.11"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalCharacterParameterComponent",
+    "Name": "CharacterParameterComponent",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'PalCharacterParameterComponent'",
+    "Template": {
+      "ObjectName": "PalCharacterParameterComponent'Default__BP_NPC_StandardHumanDataSet_C:CharacterParameterComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.12"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalDamageReactionComponent",
+    "Name": "DamageReactionComponent",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'PalDamageReactionComponent'",
+    "Template": {
+      "ObjectName": "PalDamageReactionComponent'Default__BP_NPC_StandardHumanDataSet_C:DamageReactionComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.13"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalFootIKComponent",
+    "Name": "FootIKComponent",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'PalFootIKComponent'",
+    "Template": {
+      "ObjectName": "PalFootIKComponent'Default__BP_NPC_StandardHumanDataSet_C:FootIKComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.14"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalLookAtComponent",
+    "Name": "LookAtComponent",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'PalLookAtComponent'",
+    "Template": {
+      "ObjectName": "PalLookAtComponent'Default__BP_NPC_StandardHumanDataSet_C:LookAtComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.15"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalPassiveSkillComponent",
+    "Name": "PassiveSkillComponent",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'PalPassiveSkillComponent'",
+    "Template": {
+      "ObjectName": "PalPassiveSkillComponent'Default__BP_NPC_StandardHumanDataSet_C:PassiveSkillComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.16"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalShooterComponent",
+    "Name": "PalShooter_GEN_VARIABLE",
+    "Outer": "BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'PalShooterComponent'",
+    "Template": {
+      "ObjectName": "PalShooterComponent'BP_NPC_StandardHumanDataSet_C:PalShooter_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.17"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "DefaultWeaponAnimeAssetBPSoftClassMap": [
+        {
+          "Key": "EPalWeaponType::LaserMiningTool",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Character/NPC/ShooterAnimeBP/BP_NPC_GrassBoss_ShooterAnime_None.BP_NPC_GrassBoss_ShooterAnime_None_C",
+            "SubPathString": ""
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalShooterSpringArmComponent",
+    "Name": "CameraBoom",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'PalShooterSpringArmComponent'",
+    "Template": {
+      "ObjectName": "PalShooterSpringArmComponent'Default__BP_NPC_StandardHumanDataSet_C:CameraBoom'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.18"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_GrassBoss_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.3"
+      }
+    }
+  },
+  {
+    "Type": "PalSkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'PalSkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "PalSkeletalMeshComponent'Default__BP_NPC_StandardHumanDataSet_C:CharacterMesh0'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.19"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_NPC_Outfit_GrassBoss001_ALL'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/NPC/Boss/GrassBoss/SK_NPC_Outfit_GrassBoss001/SK_NPC_Outfit_GrassBoss001_ALL.7"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_NPC_Outfit_GrassBoss001_ALL'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/NPC/Boss/GrassBoss/SK_NPC_Outfit_GrassBoss001/SK_NPC_Outfit_GrassBoss001_ALL.7"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_GrassBoss_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.3"
+      }
+    }
+  },
+  {
+    "Type": "PalStaticCharacterParameterComponent",
+    "Name": "StaticCharacterParameterComponent",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'PalStaticCharacterParameterComponent'",
+    "Template": {
+      "ObjectName": "PalStaticCharacterParameterComponent'Default__BP_NPC_StandardHumanDataSet_C:StaticCharacterParameterComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.20"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RandomRestMontageInfos": [
+        {
+          "RandomRestMontage": {
+            "ObjectName": "AnimMontage'AM_GrassBoss_Stand_Rest01'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AM_GrassBoss_Stand_Rest01.0"
+          },
+          "Weight": 1.0,
+          "LoopNum_Min": 2,
+          "LoopNum_Max": 5,
+          "AfterIdleTime": 2.0
+        },
+        {
+          "RandomRestMontage": {
+            "ObjectName": "AnimMontage'AM_GrassBoss_Stand_Rest02'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AM_GrassBoss_Stand_Rest02.0"
+          },
+          "Weight": 0.5,
+          "LoopNum_Min": 1,
+          "LoopNum_Max": 1,
+          "AfterIdleTime": 6.0
+        },
+        {
+          "RandomRestMontage": {
+            "ObjectName": "AnimMontage'AM_GrassBoss_Stand_Rest03'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AM_GrassBoss_Stand_Rest03.0"
+          },
+          "Weight": 0.5,
+          "LoopNum_Min": 1,
+          "LoopNum_Max": 2,
+          "AfterIdleTime": 5.0
+        },
+        {
+          "RandomRestMontage": {
+            "ObjectName": "AnimMontage'AM_GrassBoss_Stand_Rest04'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AM_GrassBoss_Stand_Rest04.0"
+          },
+          "Weight": 0.3,
+          "LoopNum_Min": 1,
+          "LoopNum_Max": 2,
+          "AfterIdleTime": 4.0
+        }
+      ],
+      "GeneralMontageMap": [
+        {
+          "Key": "EPalGeneralMontageType::SleepStart",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_GrassBoss_Stand_SleepStart'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AM_GrassBoss_Stand_SleepStart.0"
+          }
+        },
+        {
+          "Key": "EPalGeneralMontageType::SleepLoop",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_GrassBoss_Stand_SleepLoop'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AM_GrassBoss_Stand_SleepLoop.0"
+          }
+        },
+        {
+          "Key": "EPalGeneralMontageType::SleepEnd",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_GrassBoss_Stand_SleepEnd'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AM_GrassBoss_Stand_SleepEnd.0"
+          }
+        },
+        {
+          "Key": "EPalGeneralMontageType::GeneralAttackReady_Far",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_NPC_Female_Farskill_Start'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/FarSkill/AM_NPC_Female_Farskill_Start.0"
+          }
+        },
+        {
+          "Key": "EPalGeneralMontageType::GeneralAttackReadyLoop_Far",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_NPC_Female_Farskill_Loop'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/FarSkill/AM_NPC_Female_Farskill_Loop.0"
+          }
+        },
+        {
+          "Key": "EPalGeneralMontageType::GeneralAttackProcess_Far",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_NPC_Female_Farskill_Loop'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/FarSkill/AM_NPC_Female_Farskill_Loop.0"
+          }
+        },
+        {
+          "Key": "EPalGeneralMontageType::GeneralAttackProcessLoop_Far",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_NPC_Female_Farskill_Loop'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/FarSkill/AM_NPC_Female_Farskill_Loop.0"
+          }
+        },
+        {
+          "Key": "EPalGeneralMontageType::GeneralAttackAfter_Far",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_NPC_Female_Farskill_End'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/FarSkill/AM_NPC_Female_Farskill_End.0"
+          }
+        }
+      ],
+      "GeneralBlendSpaceMap": [
+        {
+          "Key": "EPalGeneralBlendSpaceType::GeneralMove",
+          "Value": {
+            "ObjectName": "BlendSpace1D'BS_GrassBoss_NormalMove'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BlendSpace/BS_GrassBoss_NormalMove.0"
+          }
+        }
+      ],
+      "ActionMontageMap": [
+        {
+          "Key": "EPalActionType::GroundSit",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_GrassBoss_GroundSit'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AM_GrassBoss_GroundSit.0"
+          }
+        },
+        {
+          "Key": "EPalActionType::Eat",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_GrassBoss_Stand_Eat'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AM_GrassBoss_Stand_Eat.0"
+          }
+        },
+        {
+          "Key": "EPalActionType::IdleInSpa",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_GrassBoss_Stand_Spa'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AM_GrassBoss_Stand_Spa.0"
+          }
+        },
+        {
+          "Key": "EPalActionType::FishPond",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_GrassBoss_GroundSit'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AM_GrassBoss_GroundSit.0"
+          }
+        },
+        {
+          "Key": "EPalActionType::PalPetting",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_GrassBoss_Stand_Petting'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AM_GrassBoss_Stand_Petting.0"
+          }
+        },
+        {
+          "Key": "EPalActionType::Happy",
+          "Value": {
+            "ObjectName": "AnimMontage'AM_GrassBoss_Stand_Happy'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AM_GrassBoss_Stand_Happy.0"
+          }
+        }
+      ],
+      "SleepOnSideInfoMapForMapObject": [
+        {
+          "Key": {
+            "Key": "MedicalPalBed_02"
+          },
+          "Value": {
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 30.0,
+              "Z": 0.0
+            },
+            "RotatorOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bShouldApply": true
+          }
+        },
+        {
+          "Key": {
+            "Key": "MedicalPalBed_03"
+          },
+          "Value": {
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 30.0,
+              "Z": 0.0
+            },
+            "RotatorOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bShouldApply": true
+          }
+        },
+        {
+          "Key": {
+            "Key": "MedicalPalBed_04"
+          },
+          "Value": {
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 120.0,
+              "Z": 0.0
+            },
+            "RotatorOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bShouldApply": true
+          }
+        }
+      ],
+      "SleepOnSideAnimMontage": {
+        "ObjectName": "AnimMontage'AM_GrassBoss_Stand_SleepLoopTogether'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AM_GrassBoss_Stand_SleepLoopTogether.0"
+      },
+      "bFadeSleepOnSide": false,
+      "OverrideCommonWazaID": "EPalWazaID::Weapon_Use"
+    }
+  },
+  {
+    "Type": "PalStatusComponent",
+    "Name": "StatusComponent",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'PalStatusComponent'",
+    "Template": {
+      "ObjectName": "PalStatusComponent'Default__BP_NPC_StandardHumanDataSet_C:StatusComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.21"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalVisualEffectComponent",
+    "Name": "VisualEffectComponent",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'PalVisualEffectComponent'",
+    "Template": {
+      "ObjectName": "PalVisualEffectComponent'Default__BP_NPC_StandardHumanDataSet_C:VisualEffectComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.22"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_NPC_GrassBoss_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.24"
+      },
+      "VariableGuid": "6E4CA0C4-48575A06-9D0318B5-1BB1B02A",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalCryComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Sound/Pal/Cry/BP_PalCryComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalCryComponent_C'BP_NPC_GrassBoss_C:BP_PalCryComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.2"
+      },
+      "VariableGuid": "26271BE9-42423B3B-BBD86FAE-6F450853",
+      "InternalVariableName": "BP_PalCryComponent"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_NPC_GrassBoss_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.26"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_NPC_GrassBoss_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.26"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_NPC_GrassBoss_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.25"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "RagdollInteractiveSphere",
+    "Outer": "Default__BP_NPC_GrassBoss_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__BP_NPC_StandardHumanDataSet_C:RagdollInteractiveSphere'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/BP_NPC_StandardHumanDataSet.29"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_GrassBoss_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss.3"
+      }
+    }
+  }
+]

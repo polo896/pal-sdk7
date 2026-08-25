@@ -1,0 +1,427 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NPC_PalDisplay_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_NPC_PalDisplay_D_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.22"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_NPC_PalDisplay_D_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NPC_PalDisplay_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.0"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_NPC_PalDisplay_D_C'Default__BP_NPC_PalDisplay_D_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_NPC_PalDisplay_D_C",
+    "Name": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.BP_NPC_PalDisplay_D_C'",
+    "Template": {
+      "ObjectName": "BP_NPC_PalDisplay_1_C'Default__BP_NPC_PalDisplay_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ActionComponent": {
+        "ObjectName": "PalActionComponent'Default__BP_NPC_PalDisplay_D_C:ActionComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.4"
+      },
+      "CharacterParameterComponent": {
+        "ObjectName": "PalCharacterParameterComponent'Default__BP_NPC_PalDisplay_D_C:CharacterParameterComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.9"
+      },
+      "StaticCharacterParameterComponent": {
+        "ObjectName": "PalStaticCharacterParameterComponent'Default__BP_NPC_PalDisplay_D_C:StaticCharacterParameterComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.17"
+      },
+      "DamageReactionComponent": {
+        "ObjectName": "PalDamageReactionComponent'Default__BP_NPC_PalDisplay_D_C:DamageReactionComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.10"
+      },
+      "StatusComponent": {
+        "ObjectName": "PalStatusComponent'Default__BP_NPC_PalDisplay_D_C:StatusComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.18"
+      },
+      "CameraBoom": {
+        "ObjectName": "PalShooterSpringArmComponent'Default__BP_NPC_PalDisplay_D_C:CameraBoom'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.15"
+      },
+      "FollowCamera": {
+        "ObjectName": "PalCharacterCameraComponent'Default__BP_NPC_PalDisplay_D_C:FollowCamera'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.7"
+      },
+      "LookAtComponent": {
+        "ObjectName": "PalLookAtComponent'Default__BP_NPC_PalDisplay_D_C:LookAtComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.13"
+      },
+      "FootIKComponent": {
+        "ObjectName": "PalFootIKComponent'Default__BP_NPC_PalDisplay_D_C:FootIKComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.12"
+      },
+      "VisualEffectComponent": {
+        "ObjectName": "PalVisualEffectComponent'Default__BP_NPC_PalDisplay_D_C:VisualEffectComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.19"
+      },
+      "PassiveSkillComponent": {
+        "ObjectName": "PalPassiveSkillComponent'Default__BP_NPC_PalDisplay_D_C:PassiveSkillComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.14"
+      },
+      "AnimNotifyComponent": {
+        "ObjectName": "PalAnimNotifyParameterComponent'Default__BP_NPC_PalDisplay_D_C:AnimNotifyComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.5"
+      },
+      "AroundInfoCollectorComponent": {
+        "ObjectName": "PalCharacterAroundInfoCollectorComponent'Default__BP_NPC_PalDisplay_D_C:AroundInfoCollectorComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.6"
+      },
+      "RagdollInteractiveSphere": {
+        "ObjectName": "SphereComponent'Default__BP_NPC_PalDisplay_D_C:RagdollInteractiveSphere'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.23"
+      },
+      "Mesh": {
+        "ObjectName": "PalSkeletalMeshComponent'Default__BP_NPC_PalDisplay_D_C:CharacterMesh0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.16"
+      },
+      "CharacterMovement": {
+        "ObjectName": "PalCharacterMovementComponent'Default__BP_NPC_PalDisplay_D_C:CharMoveComp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.8"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_PalDisplay_D_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.2"
+      },
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_PalDisplay_D_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.2"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__BP_NPC_PalDisplay_1_C:CollisionCylinder'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'PalDisplayPalNPCComponent'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "PalDisplayPalNPCComponent'BP_NPC_PalDisplay_D_C:PalDisplayPalNPC_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.11"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_NPC_PalDisplay_1_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.0"
+            },
+            "SCSVariableName": "PalDisplayPalNPC",
+            "AssociatedGuid": "AE19F3D9-4C235998-402E9E96-FAD53BF6"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalActionComponent",
+    "Name": "ActionComponent",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'PalActionComponent'",
+    "Template": {
+      "ObjectName": "PalActionComponent'Default__BP_NPC_PalDisplay_1_C:ActionComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.4"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalAnimNotifyParameterComponent",
+    "Name": "AnimNotifyComponent",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'PalAnimNotifyParameterComponent'",
+    "Template": {
+      "ObjectName": "PalAnimNotifyParameterComponent'Default__BP_NPC_PalDisplay_1_C:AnimNotifyComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.5"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalCharacterAroundInfoCollectorComponent",
+    "Name": "AroundInfoCollectorComponent",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'PalCharacterAroundInfoCollectorComponent'",
+    "Template": {
+      "ObjectName": "PalCharacterAroundInfoCollectorComponent'Default__BP_NPC_PalDisplay_1_C:AroundInfoCollectorComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.6"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_PalDisplay_D_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.2"
+      }
+    }
+  },
+  {
+    "Type": "PalCharacterCameraComponent",
+    "Name": "FollowCamera",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'PalCharacterCameraComponent'",
+    "Template": {
+      "ObjectName": "PalCharacterCameraComponent'Default__BP_NPC_PalDisplay_1_C:FollowCamera'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.7"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "PalShooterSpringArmComponent'Default__BP_NPC_PalDisplay_D_C:CameraBoom'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.15"
+      }
+    }
+  },
+  {
+    "Type": "PalCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'PalCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "PalCharacterMovementComponent'Default__BP_NPC_PalDisplay_1_C:CharMoveComp'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.8"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalCharacterParameterComponent",
+    "Name": "CharacterParameterComponent",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'PalCharacterParameterComponent'",
+    "Template": {
+      "ObjectName": "PalCharacterParameterComponent'Default__BP_NPC_PalDisplay_1_C:CharacterParameterComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.9"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalDamageReactionComponent",
+    "Name": "DamageReactionComponent",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'PalDamageReactionComponent'",
+    "Template": {
+      "ObjectName": "PalDamageReactionComponent'Default__BP_NPC_PalDisplay_1_C:DamageReactionComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.10"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalDisplayPalNPCComponent",
+    "Name": "PalDisplayPalNPC_GEN_VARIABLE",
+    "Outer": "BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'PalDisplayPalNPCComponent'",
+    "Template": {
+      "ObjectName": "PalDisplayPalNPCComponent'BP_NPC_PalDisplay_1_C:PalDisplayPalNPC_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.11"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "RequestCategory": "EPalPalDisplayCategory::Area_D1"
+    }
+  },
+  {
+    "Type": "PalFootIKComponent",
+    "Name": "FootIKComponent",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'PalFootIKComponent'",
+    "Template": {
+      "ObjectName": "PalFootIKComponent'Default__BP_NPC_PalDisplay_1_C:FootIKComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.12"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalLookAtComponent",
+    "Name": "LookAtComponent",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'PalLookAtComponent'",
+    "Template": {
+      "ObjectName": "PalLookAtComponent'Default__BP_NPC_PalDisplay_1_C:LookAtComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.13"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalPassiveSkillComponent",
+    "Name": "PassiveSkillComponent",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'PalPassiveSkillComponent'",
+    "Template": {
+      "ObjectName": "PalPassiveSkillComponent'Default__BP_NPC_PalDisplay_1_C:PassiveSkillComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.14"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalShooterSpringArmComponent",
+    "Name": "CameraBoom",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'PalShooterSpringArmComponent'",
+    "Template": {
+      "ObjectName": "PalShooterSpringArmComponent'Default__BP_NPC_PalDisplay_1_C:CameraBoom'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.15"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_PalDisplay_D_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.2"
+      }
+    }
+  },
+  {
+    "Type": "PalSkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'PalSkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "PalSkeletalMeshComponent'Default__BP_NPC_PalDisplay_1_C:CharacterMesh0'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.16"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_PalDisplay_D_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.2"
+      }
+    }
+  },
+  {
+    "Type": "PalStaticCharacterParameterComponent",
+    "Name": "StaticCharacterParameterComponent",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'PalStaticCharacterParameterComponent'",
+    "Template": {
+      "ObjectName": "PalStaticCharacterParameterComponent'Default__BP_NPC_PalDisplay_1_C:StaticCharacterParameterComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.17"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalStatusComponent",
+    "Name": "StatusComponent",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'PalStatusComponent'",
+    "Template": {
+      "ObjectName": "PalStatusComponent'Default__BP_NPC_PalDisplay_1_C:StatusComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.18"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalVisualEffectComponent",
+    "Name": "VisualEffectComponent",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'PalVisualEffectComponent'",
+    "Template": {
+      "ObjectName": "PalVisualEffectComponent'Default__BP_NPC_PalDisplay_1_C:VisualEffectComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.19"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_NPC_PalDisplay_D_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.20"
+      },
+      "VariableGuid": "CFBAE944-4250B30A-C6907682-80C22FF1",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_NPC_PalDisplay_D_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.21"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "RagdollInteractiveSphere",
+    "Outer": "Default__BP_NPC_PalDisplay_D_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__BP_NPC_PalDisplay_1_C:RagdollInteractiveSphere'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_1.24"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_NPC_PalDisplay_D_C:CollisionCylinder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Normal/PalDisplay/BP_NPC_PalDisplay_D.2"
+      }
+    }
+  }
+]

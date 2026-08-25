@@ -1,0 +1,527 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalBossGimmick_Water_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SimpleWater_C'",
+      "ObjectPath": "Pal/Content/Others/FluidInteractionTool/Blueprints/NotNeeded/BP_SimpleWater.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalBossGimmick_Water_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.14"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_PalBossGimmick_Water_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.9"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_PalBossGimmick_Water_C:ExecuteUbergraph_BP_PalBossGimmick_Water'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SimpleWater_C'",
+      "ObjectPath": "Pal/Content/Others/FluidInteractionTool/Blueprints/NotNeeded/BP_SimpleWater.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_PalBossGimmick_Water_C:LowerWaterLevel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.5"
+      },
+      {
+        "ObjectName": "Function'BP_PalBossGimmick_Water_C:RaiseWaterLevel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.6"
+      },
+      {
+        "ObjectName": "Function'BP_PalBossGimmick_Water_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.7"
+      },
+      {
+        "ObjectName": "Function'BP_PalBossGimmick_Water_C:FlagHightLevel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.3"
+      },
+      {
+        "ObjectName": "Function'BP_PalBossGimmick_Water_C:FlagLowLevel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.4"
+      },
+      {
+        "ObjectName": "Function'BP_PalBossGimmick_Water_C:ExecuteUbergraph_BP_PalBossGimmick_Water'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PalBossBattleWaterTwoPointMover",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalBossBattleWaterTwoPointMoverComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "水位上昇量",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "水位上昇時間(秒)",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "InitialLocation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "水位下降時間(秒)",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsNowHighLevel",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_PalBossGimmick_Water": {
+        "ObjectName": "Function'BP_PalBossGimmick_Water_C:ExecuteUbergraph_BP_PalBossGimmick_Water'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.2"
+      },
+      "FlagLowLevel": {
+        "ObjectName": "Function'BP_PalBossGimmick_Water_C:FlagLowLevel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.4"
+      },
+      "FlagHightLevel": {
+        "ObjectName": "Function'BP_PalBossGimmick_Water_C:FlagHightLevel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.3"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_PalBossGimmick_Water_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.7"
+      },
+      "RaiseWaterLevel": {
+        "ObjectName": "Function'BP_PalBossGimmick_Water_C:RaiseWaterLevel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.6"
+      },
+      "LowerWaterLevel": {
+        "ObjectName": "Function'BP_PalBossGimmick_Water_C:LowerWaterLevel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalBossGimmick_Water_C'Default__BP_PalBossGimmick_Water_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalBossGimmick_Water_C",
+    "Name": "Default__BP_PalBossGimmick_Water_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.BP_PalBossGimmick_Water_C'",
+    "Template": {
+      "ObjectName": "BP_SimpleWater_C'Default__BP_SimpleWater_C'",
+      "ObjectPath": "Pal/Content/Others/FluidInteractionTool/Blueprints/NotNeeded/BP_SimpleWater.2"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "水位上昇量": 800.0,
+      "水位上昇時間(秒)": 9.0,
+      "InitialLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "水位下降時間(秒)": 9.0,
+      "WaterPlaneMesh": {
+        "ObjectName": "StaticMesh'S_WaterMesh'",
+        "ObjectPath": "Pal/Content/Others/FluidInteractionTool/Meshes/S_WaterMesh.2"
+      },
+      "WaterMaterial": {
+        "ObjectName": "MaterialInstanceConstant'MI_Water'",
+        "ObjectPath": "Pal/Content/Others/FluidInteractionTool/Materials/MI_Water.0"
+      },
+      "PrimaryActorTick": {
+        "bStartWithTickEnabled": true
+      },
+      "bReplicates": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_PalBossGimmick_Water",
+    "Outer": "BP_PalBossGimmick_Water_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "FlagHightLevel",
+    "Outer": "BP_PalBossGimmick_Water_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "FlagLowLevel",
+    "Outer": "BP_PalBossGimmick_Water_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "LowerWaterLevel",
+    "Outer": "BP_PalBossGimmick_Water_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSystemAttached_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_StartMove_InDuration_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_Time_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RaiseWaterLevel",
+    "Outer": "BP_PalBossGimmick_Water_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSystemAttached_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_StartMove_InDuration_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_Time_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_PalBossGimmick_Water_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_SimpleWater_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Others/FluidInteractionTool/Blueprints/NotNeeded/BP_SimpleWater.12"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_SimpleWater_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Others/FluidInteractionTool/Blueprints/NotNeeded/BP_SimpleWater.12"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HierarchicalInstancedStaticMeshComponent",
+    "Name": "HierarchicalInstancedStaticMesh_GEN_VARIABLE",
+    "Outer": "BP_PalBossGimmick_Water_C",
+    "Class": "UScriptClass'HierarchicalInstancedStaticMeshComponent'",
+    "Template": {
+      "ObjectName": "HierarchicalInstancedStaticMeshComponent'BP_SimpleWater_C:HierarchicalInstancedStaticMesh_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Others/FluidInteractionTool/Blueprints/NotNeeded/BP_SimpleWater.16"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "Mobility": "EComponentMobility::Movable"
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_PalBossGimmick_Water_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'HierarchicalInstancedStaticMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "HierarchicalInstancedStaticMeshComponent'BP_PalBossGimmick_Water_C:HierarchicalInstancedStaticMesh_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.8"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_SimpleWater_C'",
+              "ObjectPath": "Pal/Content/Others/FluidInteractionTool/Blueprints/NotNeeded/BP_SimpleWater.0"
+            },
+            "SCSVariableName": "HierarchicalInstancedStaticMesh",
+            "AssociatedGuid": "E5D88F74-4A3FB838-E860F083-03553B20"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalBossBattleWaterTwoPointMoverComponent",
+    "Name": "PalBossBattleWaterTwoPointMover_GEN_VARIABLE",
+    "Outer": "BP_PalBossGimmick_Water_C",
+    "Class": "UScriptClass'PalBossBattleWaterTwoPointMoverComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalBossGimmick_Water_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalBossGimmick_Water_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.11"
+      },
+      "VariableGuid": "C8EC18CC-4031480E-17FA7F9D-1279BAA0",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalBossBattleWaterTwoPointMoverComponent'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalBossBattleWaterTwoPointMoverComponent'BP_PalBossGimmick_Water_C:PalBossBattleWaterTwoPointMover_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.10"
+      },
+      "VariableGuid": "0D0132AC-49879549-42EE5695-F3A824E2",
+      "InternalVariableName": "PalBossBattleWaterTwoPointMover"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalBossGimmick_Water_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalBossGimmick_Water_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.13"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalBossGimmick_Water_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.13"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalBossGimmick_Water_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossGimmick_Water.12"
+      }
+    }
+  }
+]

@@ -1,0 +1,916 @@
+[
+  {
+    "Type": "Border",
+    "Name": "Border_77",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Border'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ContentColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.089,
+        "Hex": "16FFFFFF"
+      },
+      "BrushColor": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.146,
+        "Hex": "25FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_GuildLab_C:WidgetTree.CanvasPanel_135.CanvasPanelSlot_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.10"
+      }
+    }
+  },
+  {
+    "Type": "Border",
+    "Name": "Border_96",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Border'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ContentColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.4,
+        "Hex": "66FFFFFF"
+      },
+      "Slots": [
+        {
+          "ObjectName": "BorderSlot'WBP_GuildLab_C:WidgetTree.Border_96.BorderSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.2"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_GuildLab_C:WidgetTree.CanvasPanel_135.CanvasPanelSlot_11'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.11"
+      }
+    }
+  },
+  {
+    "Type": "BorderSlot",
+    "Name": "BorderSlot_0",
+    "Outer": "Border_96",
+    "Class": "UScriptClass'BorderSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Border'WBP_GuildLab_C:WidgetTree.Border_96'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.1"
+      },
+      "Content": {
+        "ObjectName": "EditableText'WBP_GuildLab_C:WidgetTree.EditableText_ResearchId'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.15"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_CancelCurrentResearch",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Button'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot'WBP_GuildLab_C:WidgetTree.Button_CancelCurrentResearch.ButtonSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.5"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WrapBoxSlot'WBP_GuildLab_C:WidgetTree.WrapBox_0.WrapBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.32"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_StartResearch",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Button'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot'WBP_GuildLab_C:WidgetTree.Button_StartResearch.ButtonSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.6"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_GuildLab_C:WidgetTree.CanvasPanel_135.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.9"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_CancelCurrentResearch",
+    "Class": "UScriptClass'ButtonSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Button'WBP_GuildLab_C:WidgetTree.Button_CancelCurrentResearch'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.3"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'WBP_GuildLab_C:WidgetTree.TextBlock_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.27"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_StartResearch",
+    "Class": "UScriptClass'ButtonSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Button'WBP_GuildLab_C:WidgetTree.Button_StartResearch'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.4"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'WBP_GuildLab_C:WidgetTree.TextBlock'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.26"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_135",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_GuildLab_C:WidgetTree.CanvasPanel_135.CanvasPanelSlot_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_GuildLab_C:WidgetTree.CanvasPanel_135.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_GuildLab_C:WidgetTree.CanvasPanel_135.CanvasPanelSlot_11'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_GuildLab_C:WidgetTree.CanvasPanel_135.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_GuildLab_C:WidgetTree.DebugCanvas.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "DebugCanvas",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_GuildLab_C:WidgetTree.DebugCanvas.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_GuildLab_C:WidgetTree.Overlay_0.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_135",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Top": 10.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_GuildLab_C:WidgetTree.CanvasPanel_135'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.7"
+      },
+      "Content": {
+        "ObjectName": "Button'WBP_GuildLab_C:WidgetTree.Button_StartResearch'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_135",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_GuildLab_C:WidgetTree.CanvasPanel_135'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.7"
+      },
+      "Content": {
+        "ObjectName": "Border'WBP_GuildLab_C:WidgetTree.Border_77'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.0"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasPanel_135",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -692.0,
+          "Top": -49.0,
+          "Right": 198.25,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_GuildLab_C:WidgetTree.CanvasPanel_135'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.7"
+      },
+      "Content": {
+        "ObjectName": "Border'WBP_GuildLab_C:WidgetTree.Border_96'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.1"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_135",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 20.0,
+          "Top": -15.0,
+          "Right": 20.0,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_GuildLab_C:WidgetTree.CanvasPanel_135'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.7"
+      },
+      "Content": {
+        "ObjectName": "WrapBox'WBP_GuildLab_C:WidgetTree.WrapBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "DebugCanvas",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 130.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_GuildLab_C:WidgetTree.DebugCanvas'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_GuildLab_C:WidgetTree.CanvasPanel_135'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.7"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_GuildLab_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "Button_CancelCurrentResearch",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_GuildLab_Button_CancelCurrentResearch_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "Button_StartResearch",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_GuildLab_Button_StartResearch_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "EditableText",
+    "Name": "EditableText_ResearchId",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'EditableText'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HintText": {
+        "Namespace": "",
+        "Key": "B8F4C40B46542F8913F5D0BAD84B84A6",
+        "SourceString": "ResearchId",
+        "LocalizedString": "ResearchId"
+      },
+      "WidgetStyle": {
+        "ColorAndOpacity": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "000000"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        }
+      },
+      "Slot": {
+        "ObjectName": "BorderSlot'WBP_GuildLab_C:WidgetTree.Border_96.BorderSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.2"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_GuildLab_Button_CancelCurrentResearch_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature",
+    "Outer": "WBP_GuildLab_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_GuildLab_Button_StartResearch_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+    "Outer": "WBP_GuildLab_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_GuildLab",
+    "Outer": "WBP_GuildLab_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetModel_Model",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIGuildLabModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetModel_Model_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIGuildLabModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_TextToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_Conv_StringToName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetModel",
+    "Outer": "WBP_GuildLab_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Model",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIGuildLabModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetParam_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameterBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Guild_Lab",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameter_GuildLab'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Image",
+    "Name": "BGBase",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.001518,
+        "G": 0.006512,
+        "B": 0.01033,
+        "A": 0.8,
+        "Hex": "CC05131A"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_GuildLab_C:WidgetTree.Overlay_0.OverlaySlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.24"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BGBase_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "Tiling": "ESlateBrushTileType::Both",
+        "ImageSize": {
+          "X": 128.0,
+          "Y": 128.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_tex_stripe_horizontal'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_tex_stripe_horizontal.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.381326,
+        "G": 0.871367,
+        "B": 1.0,
+        "A": 0.05,
+        "Hex": "0CA6F0FF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_GuildLab_C:WidgetTree.Overlay_0.OverlaySlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.25"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_GuildLab_C:WidgetTree.Overlay_0.OverlaySlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.24"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_GuildLab_C:WidgetTree.Overlay_0.OverlaySlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.25"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_GuildLab_C:WidgetTree.Overlay_0.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.23"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_GuildLab_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.22"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_GuildLab_C:WidgetTree.DebugCanvas'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.8"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_5",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_GuildLab_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.22"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_GuildLab_C:WidgetTree.BGBase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.20"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_6",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_GuildLab_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.22"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_GuildLab_C:WidgetTree.BGBase_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.21"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "CA7140A84A3138A83CCC6799426F7F6D",
+        "SourceString": "Research Start!",
+        "LocalizedString": "Research Start!"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "000000"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot'WBP_GuildLab_C:WidgetTree.Button_StartResearch.ButtonSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.6"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "57E6EE154AFD2CDC8C61C7A1DE58FD90",
+        "SourceString": "Cancel Current",
+        "LocalizedString": "Cancel Current"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "000000"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot'WBP_GuildLab_C:WidgetTree.Button_CancelCurrentResearch.ButtonSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.5"
+      }
+    }
+  },
+  {
+    "Type": "WBP_GuildLab_C",
+    "Name": "Default__WBP_GuildLab_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.WBP_GuildLab_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_GuildLab_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_GuildLab_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.30"
+      },
+      "bClassRequiresNativeTick": true,
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_GuildLab_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.14"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_GuildLab_C:ExecuteUbergraph_WBP_GuildLab'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.18"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidgetOverlayUI'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_GuildLab_C:GetModel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.19"
+      },
+      {
+        "ObjectName": "Function'WBP_GuildLab_C:BndEvt__WBP_GuildLab_Button_StartResearch_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.17"
+      },
+      {
+        "ObjectName": "Function'WBP_GuildLab_C:BndEvt__WBP_GuildLab_Button_CancelCurrentResearch_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.16"
+      },
+      {
+        "ObjectName": "Function'WBP_GuildLab_C:ExecuteUbergraph_WBP_GuildLab'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.18"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button_CancelCurrentResearch",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Button'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button_StartResearch",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Button'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "EditableText_ResearchId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'EditableText'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_GuildLab": {
+        "ObjectName": "Function'WBP_GuildLab_C:ExecuteUbergraph_WBP_GuildLab'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.18"
+      },
+      "BndEvt__WBP_GuildLab_Button_CancelCurrentResearch_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature": {
+        "ObjectName": "Function'WBP_GuildLab_C:BndEvt__WBP_GuildLab_Button_CancelCurrentResearch_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.16"
+      },
+      "BndEvt__WBP_GuildLab_Button_StartResearch_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature": {
+        "ObjectName": "Function'WBP_GuildLab_C:BndEvt__WBP_GuildLab_Button_StartResearch_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.17"
+      },
+      "GetModel": {
+        "ObjectName": "Function'WBP_GuildLab_C:GetModel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.19"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_GuildLab_C'Default__WBP_GuildLab_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.28"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_GuildLab_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "Overlay'WBP_GuildLab_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.22"
+      }
+    }
+  },
+  {
+    "Type": "WrapBox",
+    "Name": "WrapBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WrapBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InnerSlotPadding": {
+        "X": 20.0,
+        "Y": 0.0
+      },
+      "Slots": [
+        {
+          "ObjectName": "WrapBoxSlot'WBP_GuildLab_C:WidgetTree.WrapBox_0.WrapBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.32"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_GuildLab_C:WidgetTree.CanvasPanel_135.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.12"
+      }
+    }
+  },
+  {
+    "Type": "WrapBoxSlot",
+    "Name": "WrapBoxSlot_0",
+    "Outer": "WrapBox_0",
+    "Class": "UScriptClass'WrapBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WrapBox'WBP_GuildLab_C:WidgetTree.WrapBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.31"
+      },
+      "Content": {
+        "ObjectName": "Button'WBP_GuildLab_C:WidgetTree.Button_CancelCurrentResearch'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Lab/WBP_GuildLab.3"
+      }
+    }
+  }
+]

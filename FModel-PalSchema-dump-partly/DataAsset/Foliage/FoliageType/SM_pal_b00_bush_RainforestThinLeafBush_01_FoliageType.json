@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b00_bush_RainforestThinLeafBush_01_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b00_bush_RainforestThinLeafBush_01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b00/Rainforest/Mesh/Plants/SM_pal_b00_bush_RainforestThinLeafBush_01.2"
+      },
+      "UpdateGuid": "628A99AD-4DC37471-779F1AA1-57E9D858",
+      "Density": 80.0,
+      "Radius": 20.0,
+      "bSingleInstanceModeOverrideRadius": true,
+      "SingleInstanceModeRadius": 20.0,
+      "GroundSlopeAngle": {
+        "Max": 90.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -9.92725,
+          "Y": -8.353537,
+          "Z": 56.552143
+        },
+        "BoxExtent": {
+          "X": 76.19345,
+          "Y": 66.2187,
+          "Z": 58.93726
+        },
+        "SphereRadius": 88.70569558548061
+      },
+      "LowBoundOriginRadius": {
+        "X": -0.0058978796,
+        "Y": 0.38635254,
+        "Z": 4.78839
+      },
+      "bAffectDistanceFieldLighting": true,
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

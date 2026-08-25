@@ -1,0 +1,43 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_StageWorldSubsystem_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalStageWorldSubsystem'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_StageWorldSubsystem_C'Default__BP_StageWorldSubsystem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_StageWorldSubsystem.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_StageWorldSubsystem_C",
+    "Name": "Default__BP_StageWorldSubsystem_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_StageWorldSubsystem.BP_StageWorldSubsystem_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RoomInfos": [
+        {
+          "DataLayerAsset": {
+            "ObjectName": "DataLayerAsset'TestStage01'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/Test/TestStage01.0"
+          }
+        }
+      ],
+      "bShouldCreate": true
+    }
+  }
+]

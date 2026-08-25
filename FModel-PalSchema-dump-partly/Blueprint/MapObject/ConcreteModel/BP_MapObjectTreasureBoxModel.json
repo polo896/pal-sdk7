@@ -1,0 +1,32 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MapObjectTreasureBoxModel_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalMapObjectTreasureBoxModel'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MapObjectTreasureBoxModel_C'Default__BP_MapObjectTreasureBoxModel_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_MapObjectTreasureBoxModel.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MapObjectTreasureBoxModel_C",
+    "Name": "Default__BP_MapObjectTreasureBoxModel_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_MapObjectTreasureBoxModel.BP_MapObjectTreasureBoxModel_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  }
+]

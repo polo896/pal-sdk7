@@ -1,0 +1,92 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Move_ElecPomeranian",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimLength": 0.6666667,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_ElecPomeranian_Idle'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/ElecPomeranian/AS_ElecPomeranian_Idle.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_ElecPomeranian_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/ElecPomeranian/AS_ElecPomeranian_Run.0"
+          },
+          "SampleValue": {
+            "X": 200.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_ElecPomeranian_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/ElecPomeranian/AS_ElecPomeranian_Run.0"
+          },
+          "SampleValue": {
+            "X": 350.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.75
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_ElecPomeranian_Walk'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/ElecPomeranian/AS_ElecPomeranian_Walk.0"
+          },
+          "SampleValue": {
+            "X": 70.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 3,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.2
+          },
+          {
+            "SampleIndices": 3,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.2,
+            "Vertices[1]": 0.5714286
+          },
+          {
+            "SampleIndices": 1,
+            "SampleIndices[1]": 2,
+            "Vertices": 0.5714286,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 350.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_ElecPomeranian_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/ElecPomeranian/SK_ElecPomeranian_Skeleton.4"
+      }
+    },
+    "SkeletonGuid": "EF9EA23A-4C47E003-2927A9A3-D85765D8"
+  }
+]

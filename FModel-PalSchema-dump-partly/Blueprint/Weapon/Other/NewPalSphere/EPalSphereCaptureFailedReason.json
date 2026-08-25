@@ -1,0 +1,36 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "EPalSphereCaptureFailedReason",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "53889EE144D55078AD72858B58DB813F",
+            "SourceString": "OutOfBall",
+            "LocalizedString": "OutOfBall"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "78F1FEDB4D5900F038FB3086AB9324DA",
+            "SourceString": "BounceBall",
+            "LocalizedString": "BounceBall"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "EPalSphereCaptureFailedReason::NewEnumerator0": 0,
+      "EPalSphereCaptureFailedReason::NewEnumerator1": 1,
+      "EPalSphereCaptureFailedReason::EPalSphereCaptureFailedReason_MAX": 2
+    },
+    "CppForm": "Namespaced"
+  }
+]

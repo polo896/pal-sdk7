@@ -1,0 +1,67 @@
+[
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "Struct_WingDamageMontageInfo",
+    "Class": "UScriptClass'UserDefinedStruct'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Guid": "73F117F7-4325494A-D8F973B8-F7637662"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "StartMontage_6_7D5D9FEC4E4538E0A10D68A996BD68E2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'ReserveMontage'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "EndMontage_8_FD7ECF8449334FA5FAACD49BBBA30094",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'ReserveMontage'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "PartsList_12_445B3401468E0E6BB1B3188033D5AB80",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "PartsList_12_445B3401468E0E6BB1B3188033D5AB80",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "Class'PalBodyPartsSphereComponent'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "StructFlags": 4,
+    "DefaultProperties": {
+      "StartMontage_6_7D5D9FEC4E4538E0A10D68A996BD68E2": {
+        "Montage": null,
+        "PlayRate": 1.0,
+        "StartTime": 0.0
+      },
+      "EndMontage_8_FD7ECF8449334FA5FAACD49BBBA30094": {
+        "Montage": null,
+        "PlayRate": 1.0,
+        "StartTime": 0.0
+      },
+      "PartsList_12_445B3401468E0E6BB1B3188033D5AB80": []
+    }
+  }
+]

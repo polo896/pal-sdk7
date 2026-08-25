@@ -1,0 +1,513 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MapObject_TreasureBox_RequiredLongHold_Junk_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.15"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.4"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:ExecuteUbergraph_BP_MapObject_TreasureBox_RequiredLongHold_Junk'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalMapObjectTreasureBox'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:TriggerOpen'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.3"
+      },
+      {
+        "ObjectName": "Function'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:ExecuteUbergraph_BP_MapObject_TreasureBox_RequiredLongHold_Junk'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NS_SingleStar",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StaticMesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_InteractableSphere",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalInteractableSphereComponentNative'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "IndicatorOrigin",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OpenSE",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'AkAudioEvent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_MapObject_TreasureBox_RequiredLongHold_Junk": {
+        "ObjectName": "Function'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:ExecuteUbergraph_BP_MapObject_TreasureBox_RequiredLongHold_Junk'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.2"
+      },
+      "TriggerOpen": {
+        "ObjectName": "Function'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:TriggerOpen'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MapObject_TreasureBox_RequiredLongHold_Junk_C'Default__BP_MapObject_TreasureBox_RequiredLongHold_Junk_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MapObject_TreasureBox_RequiredLongHold_Junk_C",
+    "Name": "Default__BP_MapObject_TreasureBox_RequiredLongHold_Junk_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.BP_MapObject_TreasureBox_RequiredLongHold_Junk_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "OpenSE": {
+        "ObjectName": "AkAudioEvent'AKE_Salvage_Item'",
+        "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/UI/salvage/AKE_Salvage_Item.0"
+      },
+      "bPlayOpenAnimation": false,
+      "LongHoldInteractDuration": 3.0,
+      "InteractPlayerActionType": "EPalActionType::DigOut",
+      "ConcreteModelClass": {
+        "ObjectName": "Class'PalMapObjectTreasureBoxModel'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "DamageReaction": {
+        "ObjectName": "PalMapObjectDamageReactionComponent'Default__BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:DamageReaction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.7"
+      },
+      "bNotSpawnableIfOverlapMapObject": true,
+      "bLevelSpawnObject": true,
+      "DestroyFXType": "EPalMapObjectDestroyFXType::Pickup"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_MapObject_TreasureBox_RequiredLongHold_Junk",
+    "Outer": "BP_MapObject_TreasureBox_RequiredLongHold_Junk_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "Temp_delegate_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "PropertyFlags": "ConstParm",
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnAkPostEventCallback__DelegateSignature'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostEvent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "TriggerOpen",
+    "Outer": "BP_MapObject_TreasureBox_RequiredLongHold_Junk_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalMapObjectTreasureBox:TriggerOpen'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_MapObject_TreasureBox_RequiredLongHold_Junk_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "NS_SingleStar_GEN_VARIABLE",
+    "Outer": "BP_MapObject_TreasureBox_RequiredLongHold_Junk_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_SingleStar'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Common/Glow/NS_SingleStar.41"
+      },
+      "OverrideParameters": {},
+      "RelativeLocation": {
+        "X": 4.6684685,
+        "Y": 7.08473,
+        "Z": 78.18699
+      }
+    }
+  },
+  {
+    "Type": "PalInteractableSphereComponentNative",
+    "Name": "BP_InteractableSphere_GEN_VARIABLE",
+    "Outer": "BP_MapObject_TreasureBox_RequiredLongHold_Junk_C",
+    "Class": "UScriptClass'PalInteractableSphereComponentNative'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IndicatorOriginRef": {
+        "ComponentProperty": "BP_InteractableSphere"
+      },
+      "SphereRadius": 140.0,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false
+    }
+  },
+  {
+    "Type": "PalMapObjectDamageReactionComponent",
+    "Name": "DamageReaction",
+    "Outer": "Default__BP_MapObject_TreasureBox_RequiredLongHold_Junk_C",
+    "Class": "UScriptClass'PalMapObjectDamageReactionComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_MapObject_TreasureBox_RequiredLongHold_Junk_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "IndicatorOrigin_GEN_VARIABLE",
+    "Outer": "BP_MapObject_TreasureBox_RequiredLongHold_Junk_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.8"
+      },
+      "VariableGuid": "9C9DC427-4F40B49F-BFB83E8E-F4D800F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalInteractableSphereComponentNative'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalInteractableSphereComponentNative'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:BP_InteractableSphere_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.6"
+      },
+      "VariableGuid": "4758C3D3-43671EF7-4451468D-F7A0C29B",
+      "InternalVariableName": "BP_InteractableSphere"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:IndicatorOrigin_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.9"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.11"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.13"
+        }
+      ],
+      "VariableGuid": "F60A8DC2-46CA6FC9-9320409F-E60F5A66",
+      "InternalVariableName": "IndicatorOrigin"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'NiagaraComponent'",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:NS_SingleStar_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.5"
+      },
+      "VariableGuid": "0C2C6E63-4DB1C317-CDF0E48C-49BF2BDB",
+      "InternalVariableName": "NS_SingleStar"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:StaticMesh_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.16"
+      },
+      "VariableGuid": "E1AE8F88-445CDE10-2A0B5581-5103ED11",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_MapObject_TreasureBox_RequiredLongHold_Junk_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.12"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.11"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.13"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_MapObject_TreasureBox_RequiredLongHold_Junk_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_RequiredLongHold_Junk.10"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "BP_MapObject_TreasureBox_RequiredLongHold_Junk_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Junkyard'",
+        "ObjectPath": "Pal/Content/Pal/Model/Other/Jankyard/SM_Junkyard.2"
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel2",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel3",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel4",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel5",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel6",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel17",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel18",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "bCanEverAffectNavigation": false
+    }
+  }
+]

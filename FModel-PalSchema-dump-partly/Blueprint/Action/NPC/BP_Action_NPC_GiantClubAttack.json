@@ -1,0 +1,410 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_NPC_GiantClubAttack_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_NPC_MeleeAttack_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_MeleeAttack.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:ExecuteUbergraph_BP_Action_NPC_GiantClubAttack'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_NPC_MeleeAttack_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_MeleeAttack.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:OnNotifyEnd_CFE0CA6A45DC574AD72A9C9E56E021A6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.9"
+      },
+      {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:OnNotifyBegin_CFE0CA6A45DC574AD72A9C9E56E021A6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.8"
+      },
+      {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:OnInterrupted_CFE0CA6A45DC574AD72A9C9E56E021A6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.7"
+      },
+      {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:OnBlendOut_CFE0CA6A45DC574AD72A9C9E56E021A6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.4"
+      },
+      {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:OnCompleted_CFE0CA6A45DC574AD72A9C9E56E021A6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.5"
+      },
+      {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:OnBeginAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.3"
+      },
+      {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:OnEndAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.6"
+      },
+      {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:ExecuteUbergraph_BP_Action_NPC_GiantClubAttack'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CameraShake",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Action_NPC_GiantClubAttack": {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:ExecuteUbergraph_BP_Action_NPC_GiantClubAttack'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.2"
+      },
+      "OnEndAction": {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:OnEndAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.6"
+      },
+      "OnBeginAction": {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:OnBeginAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.3"
+      },
+      "OnCompleted_CFE0CA6A45DC574AD72A9C9E56E021A6": {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:OnCompleted_CFE0CA6A45DC574AD72A9C9E56E021A6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.5"
+      },
+      "OnBlendOut_CFE0CA6A45DC574AD72A9C9E56E021A6": {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:OnBlendOut_CFE0CA6A45DC574AD72A9C9E56E021A6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.4"
+      },
+      "OnInterrupted_CFE0CA6A45DC574AD72A9C9E56E021A6": {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:OnInterrupted_CFE0CA6A45DC574AD72A9C9E56E021A6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.7"
+      },
+      "OnNotifyBegin_CFE0CA6A45DC574AD72A9C9E56E021A6": {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:OnNotifyBegin_CFE0CA6A45DC574AD72A9C9E56E021A6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.8"
+      },
+      "OnNotifyEnd_CFE0CA6A45DC574AD72A9C9E56E021A6": {
+        "ObjectName": "Function'BP_Action_NPC_GiantClubAttack_C:OnNotifyEnd_CFE0CA6A45DC574AD72A9C9E56E021A6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.9"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_NPC_GiantClubAttack_C'Default__BP_Action_NPC_GiantClubAttack_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_NPC_GiantClubAttack_C",
+    "Name": "Default__BP_Action_NPC_GiantClubAttack_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_GiantClubAttack.BP_Action_NPC_GiantClubAttack_C'",
+    "Template": {
+      "ObjectName": "BP_Action_NPC_MeleeAttack_C'Default__BP_Action_NPC_MeleeAttack_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_MeleeAttack.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Action_NPC_GiantClubAttack",
+    "Outer": "BP_Action_NPC_GiantClubAttack_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_4",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_3",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_2",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_4",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Temp_name_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMainMesh_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalSkeletalMeshComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateProxyObjectForPlayMontage_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayMontageCallbackProxy'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBeginAction",
+    "Outer": "BP_Action_NPC_GiantClubAttack_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_NPC_MeleeAttack_C:OnBeginAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_MeleeAttack.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_NPC_MeleeAttack_C:OnBeginAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_MeleeAttack.3"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBlendOut_CFE0CA6A45DC574AD72A9C9E56E021A6",
+    "Outer": "BP_Action_NPC_GiantClubAttack_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnCompleted_CFE0CA6A45DC574AD72A9C9E56E021A6",
+    "Outer": "BP_Action_NPC_GiantClubAttack_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEndAction",
+    "Outer": "BP_Action_NPC_GiantClubAttack_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_NPC_MeleeAttack_C:OnEndAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_MeleeAttack.6"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_NPC_MeleeAttack_C:OnEndAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_MeleeAttack.6"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInterrupted_CFE0CA6A45DC574AD72A9C9E56E021A6",
+    "Outer": "BP_Action_NPC_GiantClubAttack_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNotifyBegin_CFE0CA6A45DC574AD72A9C9E56E021A6",
+    "Outer": "BP_Action_NPC_GiantClubAttack_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNotifyEnd_CFE0CA6A45DC574AD72A9C9E56E021A6",
+    "Outer": "BP_Action_NPC_GiantClubAttack_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

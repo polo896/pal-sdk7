@@ -1,0 +1,813 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_0",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "A3F25486-4D3CA161-EA312F82-7BCB1F85"
+    }
+  },
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_1",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "E8313B17-4254273F-7D387780-F942C263"
+    }
+  },
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_2",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "4B4AAAF8-46CA2D77-2C40B581-51236889"
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "9E805F7A-495F9EC0-6CC2C3BC-824BF3F6",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "B254E29E-4BEAE8AE-B2B37188-19D89A6C",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_AlreadyDeliveredItem_C",
+    "Name": "FNBP_AlreadyDeliveredItem_C_0",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_AlreadyDeliveredItem.FNBP_AlreadyDeliveredItem_C'",
+    "Template": {
+      "ObjectName": "FNBP_AlreadyDeliveredItem_C'Default__FNBP_AlreadyDeliveredItem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_AlreadyDeliveredItem.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Kigurumi01"
+      },
+      "QuestBlock": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_Kigurumi01_DeliveryItem1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Kigurumi01_DeliveryItem1.0"
+      },
+      "GraphNode": null,
+      "NodeGuid": "F1D74E81-488E9F02-E8B90CB8-5E24E48C",
+      "Connections": [
+        {
+          "Key": "Delivered",
+          "Value": {
+            "NodeGuid": "30B47D9F-4073CC0F-A4FA0185-C43C462B",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotYet",
+          "Value": {
+            "NodeGuid": "2E2282AB-405D98DD-7C3FDF9B-DC3DA0BF",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_AlreadyDeliveredItem_C",
+    "Name": "FNBP_AlreadyDeliveredItem_C_1",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_AlreadyDeliveredItem.FNBP_AlreadyDeliveredItem_C'",
+    "Template": {
+      "ObjectName": "FNBP_AlreadyDeliveredItem_C'Default__FNBP_AlreadyDeliveredItem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_AlreadyDeliveredItem.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Kigurumi01_Replay"
+      },
+      "QuestBlock": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_Kigurumi01_DeliveryItem1_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Kigurumi01_DeliveryItem1.0"
+      },
+      "GraphNode": null,
+      "NodeGuid": "CD986065-47428C87-A2D2A88B-FE141211",
+      "Connections": [
+        {
+          "Key": "Delivered",
+          "Value": {
+            "NodeGuid": "F66A5468-400DF5D0-A3AA6AA1-9E281CC4",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotYet",
+          "Value": {
+            "NodeGuid": "B4E88D16-45E5C1FD-E851CE9B-282E5F36",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_CompleteQuest_C",
+    "Name": "FNBP_CompleteQuest_C_0",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.FNBP_CompleteQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_CompleteQuest_C'Default__FNBP_CompleteQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Kigurumi01_Replay"
+      },
+      "NetworkInvokeName": "CompleteQuest_kigurumiRE",
+      "GraphNode": null,
+      "NodeGuid": "E4E58168-42169A7E-ECD5B0B8-4161BE4E"
+    }
+  },
+  {
+    "Type": "FNBP_CompleteQuest_C",
+    "Name": "FNBP_CompleteQuest_C_4",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.FNBP_CompleteQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_CompleteQuest_C'Default__FNBP_CompleteQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Kigurumi01"
+      },
+      "NetworkInvokeName": "CompleteQuest_kigurumi01",
+      "GraphNode": null,
+      "NodeGuid": "81C50AC5-4EE0B597-2C5B70AB-EBF20160"
+    }
+  },
+  {
+    "Type": "FNBP_ExistItemBranch_C",
+    "Name": "FNBP_ExistItemBranch_C_0",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ExistItemBranch.FNBP_ExistItemBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_ExistItemBranch_C'Default__FNBP_ExistItemBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ExistItemBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CheckItemMap": [
+        {
+          "Key": {
+            "Key": "Cloth2"
+          },
+          "Value": 20
+        },
+        {
+          "Key": {
+            "Key": "Venom"
+          },
+          "Value": 100
+        }
+      ],
+      "GraphNode": null,
+      "NodeGuid": "2E2282AB-405D98DD-7C3FDF9B-DC3DA0BF",
+      "Connections": [
+        {
+          "Key": "Exist",
+          "Value": {
+            "NodeGuid": "F8A7D053-410C7A78-CE736893-55714758",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotExist",
+          "Value": {
+            "NodeGuid": "4AB4ADE2-42D5ACA8-7158EEB5-63A16415",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ExistItemBranch_C",
+    "Name": "FNBP_ExistItemBranch_C_1",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ExistItemBranch.FNBP_ExistItemBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_ExistItemBranch_C'Default__FNBP_ExistItemBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ExistItemBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CheckItemMap": [
+        {
+          "Key": {
+            "Key": "Cloth2"
+          },
+          "Value": 20
+        },
+        {
+          "Key": {
+            "Key": "Venom"
+          },
+          "Value": 100
+        }
+      ],
+      "GraphNode": null,
+      "NodeGuid": "B4E88D16-45E5C1FD-E851CE9B-282E5F36",
+      "Connections": [
+        {
+          "Key": "Exist",
+          "Value": {
+            "NodeGuid": "3750D9CA-4D37E769-54020AA5-674EDE74",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotExist",
+          "Value": {
+            "NodeGuid": "3ADAD996-47F271B4-FD70E7B9-287ED51F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_START_DESC_KIGURUMI1_REPLAY"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "DB923F2A-4A870397-CD1FC6A9-11D2117D",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "586FB523-4FF98E2C-8B7050B0-D6CD5DFB",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_COMPLETED_DESC_KIGURUMI1_REPLAY"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "F66A5468-400DF5D0-A3AA6AA1-9E281CC4",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "E4E58168-42169A7E-ECD5B0B8-4161BE4E",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_INPROGRESS_DESC_KIGURUMI1_REPLAY"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "3ADAD996-47F271B4-FD70E7B9-287ED51F"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_21",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_START_DESC_KIGURUMI1"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "2D8912AE-4D9F782E-C5D8F9A2-FB4DC2A0",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "01F43807-4177B741-2FBFC9B7-77AE37F0",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_22",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_COMPLETED_DESC_KIGURUMI1"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "30B47D9F-4073CC0F-A4FA0185-C43C462B",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "81C50AC5-4EE0B597-2C5B70AB-EBF20160",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_26",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_INPROGRESS_DESC_KIGURUMI1"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "4AB4ADE2-42D5ACA8-7158EEB5-63A16415"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkBranch_Yes_No_C",
+    "Name": "FNBP_NPCTalkBranch_Yes_No_C_1",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.FNBP_NPCTalkBranch_Yes_No_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'Default__FNBP_NPCTalkBranch_Yes_No_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "586FB523-4FF98E2C-8B7050B0-D6CD5DFB",
+      "OutputPins": [
+        {
+          "PinName": "CHOICE_YES",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "CHOICE_NO",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "CHOICE_YES",
+          "Value": {
+            "NodeGuid": "177DCBD3-4A77D22D-0A6630B4-1F64DD7A",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "CHOICE_NO",
+          "Value": {
+            "NodeGuid": "A3F25486-4D3CA161-EA312F82-7BCB1F85",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_0",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Kigurumi01_Replay"
+      },
+      "NetworkInvokeName": "OrderQuest_KigurumiRE",
+      "GraphNode": null,
+      "NodeGuid": "177DCBD3-4A77D22D-0A6630B4-1F64DD7A"
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_4",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Kigurumi01"
+      },
+      "NetworkInvokeName": "OrderQuest_Kigurumi01",
+      "GraphNode": null,
+      "NodeGuid": "01F43807-4177B741-2FBFC9B7-77AE37F0"
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Kigurumi01_Replay"
+      },
+      "GraphNode": null,
+      "NodeGuid": "F3B569AC-4D25E78E-D3105494-A25DE295",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "DB923F2A-4A870397-CD1FC6A9-11D2117D",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "CD986065-47428C87-A2D2A88B-FE141211",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "DB923F2A-4A870397-CD1FC6A9-11D2117D",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_4",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Kigurumi01"
+      },
+      "GraphNode": null,
+      "NodeGuid": "B254E29E-4BEAE8AE-B2B37188-19D89A6C",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "2D8912AE-4D9F782E-C5D8F9A2-FB4DC2A0",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "F1D74E81-488E9F02-E8B90CB8-5E24E48C",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "F3B569AC-4D25E78E-D3105494-A25DE295",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestDeliveryItem_C",
+    "Name": "FNBP_QuestDeliveryItem_C_0",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestDeliveryItem.FNBP_QuestDeliveryItem_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestDeliveryItem_C'Default__FNBP_QuestDeliveryItem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestDeliveryItem.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Kigurumi01_Replay"
+      },
+      "NetworkInvokeName": "Delivery_kigurumiRE",
+      "GraphNode": null,
+      "NodeGuid": "3750D9CA-4D37E769-54020AA5-674EDE74",
+      "Connections": [
+        {
+          "Key": "Complete",
+          "Value": {
+            "NodeGuid": "F66A5468-400DF5D0-A3AA6AA1-9E281CC4",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Continue",
+          "Value": {
+            "NodeGuid": "4B4AAAF8-46CA2D77-2C40B581-51236889",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestDeliveryItem_C",
+    "Name": "FNBP_QuestDeliveryItem_C_1",
+    "Outer": "FABP_Quest_Kigurumi01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestDeliveryItem.FNBP_QuestDeliveryItem_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestDeliveryItem_C'Default__FNBP_QuestDeliveryItem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestDeliveryItem.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Kigurumi01"
+      },
+      "NetworkInvokeName": "Delivery_kigurumi01",
+      "GraphNode": null,
+      "NodeGuid": "F8A7D053-410C7A78-CE736893-55714758",
+      "Connections": [
+        {
+          "Key": "Complete",
+          "Value": {
+            "NodeGuid": "30B47D9F-4073CC0F-A4FA0185-C43C462B",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Continue",
+          "Value": {
+            "NodeGuid": "E8313B17-4254273F-7D387780-F942C263",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_Quest_Kigurumi01",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "5BC0B662-4871388A-A3F1AB82-2F0FE6CC",
+      "Nodes": [
+        {
+          "Key": "F3B569AC-4D25E78E-D3105494-A25DE295",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_Quest_Kigurumi01:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.19"
+          }
+        },
+        {
+          "Key": "4AB4ADE2-42D5ACA8-7158EEB5-63A16415",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Kigurumi01:FNBP_NPCTalk_FixedMsdId_C_26'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.15"
+          }
+        },
+        {
+          "Key": "F8A7D053-410C7A78-CE736893-55714758",
+          "Value": {
+            "ObjectName": "FNBP_QuestDeliveryItem_C'FABP_Quest_Kigurumi01:FNBP_QuestDeliveryItem_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.22"
+          }
+        },
+        {
+          "Key": "30B47D9F-4073CC0F-A4FA0185-C43C462B",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Kigurumi01:FNBP_NPCTalk_FixedMsdId_C_22'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.14"
+          }
+        },
+        {
+          "Key": "9E805F7A-495F9EC0-6CC2C3BC-824BF3F6",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_Quest_Kigurumi01:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.3"
+          }
+        },
+        {
+          "Key": "81C50AC5-4EE0B597-2C5B70AB-EBF20160",
+          "Value": {
+            "ObjectName": "FNBP_CompleteQuest_C'FABP_Quest_Kigurumi01:FNBP_CompleteQuest_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.7"
+          }
+        },
+        {
+          "Key": "2E2282AB-405D98DD-7C3FDF9B-DC3DA0BF",
+          "Value": {
+            "ObjectName": "FNBP_ExistItemBranch_C'FABP_Quest_Kigurumi01:FNBP_ExistItemBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.8"
+          }
+        },
+        {
+          "Key": "B254E29E-4BEAE8AE-B2B37188-19D89A6C",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_Quest_Kigurumi01:FNBP_QuestBranch_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.20"
+          }
+        },
+        {
+          "Key": "01F43807-4177B741-2FBFC9B7-77AE37F0",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_Quest_Kigurumi01:FNBP_OrderQuest_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.18"
+          }
+        },
+        {
+          "Key": "B4E88D16-45E5C1FD-E851CE9B-282E5F36",
+          "Value": {
+            "ObjectName": "FNBP_ExistItemBranch_C'FABP_Quest_Kigurumi01:FNBP_ExistItemBranch_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.9"
+          }
+        },
+        {
+          "Key": "2D8912AE-4D9F782E-C5D8F9A2-FB4DC2A0",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Kigurumi01:FNBP_NPCTalk_FixedMsdId_C_21'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.13"
+          }
+        },
+        {
+          "Key": "586FB523-4FF98E2C-8B7050B0-D6CD5DFB",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'FABP_Quest_Kigurumi01:FNBP_NPCTalkBranch_Yes_No_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.16"
+          }
+        },
+        {
+          "Key": "DB923F2A-4A870397-CD1FC6A9-11D2117D",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Kigurumi01:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.10"
+          }
+        },
+        {
+          "Key": "177DCBD3-4A77D22D-0A6630B4-1F64DD7A",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_Quest_Kigurumi01:FNBP_OrderQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.17"
+          }
+        },
+        {
+          "Key": "F66A5468-400DF5D0-A3AA6AA1-9E281CC4",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Kigurumi01:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.11"
+          }
+        },
+        {
+          "Key": "E4E58168-42169A7E-ECD5B0B8-4161BE4E",
+          "Value": {
+            "ObjectName": "FNBP_CompleteQuest_C'FABP_Quest_Kigurumi01:FNBP_CompleteQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.6"
+          }
+        },
+        {
+          "Key": "3ADAD996-47F271B4-FD70E7B9-287ED51F",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Kigurumi01:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.12"
+          }
+        },
+        {
+          "Key": "3750D9CA-4D37E769-54020AA5-674EDE74",
+          "Value": {
+            "ObjectName": "FNBP_QuestDeliveryItem_C'FABP_Quest_Kigurumi01:FNBP_QuestDeliveryItem_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.21"
+          }
+        },
+        {
+          "Key": "A3F25486-4D3CA161-EA312F82-7BCB1F85",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_Quest_Kigurumi01:FlowNode_Finish_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.0"
+          }
+        },
+        {
+          "Key": "E8313B17-4254273F-7D387780-F942C263",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_Quest_Kigurumi01:FlowNode_Finish_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.1"
+          }
+        },
+        {
+          "Key": "4B4AAAF8-46CA2D77-2C40B581-51236889",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_Quest_Kigurumi01:FlowNode_Finish_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.2"
+          }
+        },
+        {
+          "Key": "F1D74E81-488E9F02-E8B90CB8-5E24E48C",
+          "Value": {
+            "ObjectName": "FNBP_AlreadyDeliveredItem_C'FABP_Quest_Kigurumi01:FNBP_AlreadyDeliveredItem_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.4"
+          }
+        },
+        {
+          "Key": "CD986065-47428C87-A2D2A88B-FE141211",
+          "Value": {
+            "ObjectName": "FNBP_AlreadyDeliveredItem_C'FABP_Quest_Kigurumi01:FNBP_AlreadyDeliveredItem_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Kigurumi01.5"
+          }
+        }
+      ]
+    }
+  }
+]

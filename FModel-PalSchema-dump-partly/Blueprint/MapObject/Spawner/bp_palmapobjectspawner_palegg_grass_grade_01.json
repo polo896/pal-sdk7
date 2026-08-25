@@ -1,0 +1,1034 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "bp_palmapobjectspawner_palegg_grass_grade_01_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'bp_palmapobjectspawner_palegg_grass_grade_01_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.11"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalMapObjectSpawnerPalEgg'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SK_Kurinuki_EggA4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SK_Kurinuki_EggA3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SK_Kurinuki_EggA2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SK_Kurinuki_EggA1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SM_basket",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SK_Kurinuki_EggA",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "bp_palmapobjectspawner_palegg_grass_grade_01_C'Default__bp_palmapobjectspawner_palegg_grass_grade_01_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "bp_palmapobjectspawner_palegg_grass_grade_01_C",
+    "Name": "Default__bp_palmapobjectspawner_palegg_grass_grade_01_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.bp_palmapobjectspawner_palegg_grass_grade_01_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnPalEggLotteryDataArray": [
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "PinkRabbit"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "FlowerDinosaur"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "DreamDemon"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "NightFox"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "WeaselDragon"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "LavaGirl"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "CaptainPenguin"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "CatBat"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "FlyingManta"
+            }
+          },
+          "Weight": 5.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Deer"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Alpaca"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Garm"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_PinkRabbit"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_FlyingManta"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_LavaGirl"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_DreamDemon"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_NightFox"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_WeaselDragon"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_CatBat"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_FlowerDinosaur"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Garm"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Deer"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Alpaca"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "ChickenPal"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "PinkCat"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "SheepBall"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Ganesha"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "SamuraiDog"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "PlantSlime"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BerryGoat_Dark"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "GrassMammoth"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Kitsunebi"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "CuteFox"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "LeafMomonga"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "NegativeKoala"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "CloverFairy"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Boar"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "HawkBird"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "WindChimes"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Hedgehog"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "WizardOwl"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "WoolFox"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "FlameBambi"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Kelpie"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "SakuraSaurus"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "KendoFrog"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Hedgehog"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "CowPal"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "GhostBlackCat"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "ClioneTwins"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Monkey"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BluePlatypus"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Plesiosaur"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Penguin"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Kitsunebi_Ice"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Monkey_Fire"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_ChickenPal"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_PinkCat"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_SheepBall"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Ganesha"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_SamuraiDog"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_PlantSlime"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_BerryGoat_Dark"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_GrassMammoth"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Kitsunebi"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_CuteFox"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_LeafMomonga"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_NegativeKoala"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_CloverFairy"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Boar"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_HawkBird"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_WindChimes"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Hedgehog"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_WizardOwl"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_WoolFox"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_FlameBambi"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Kelpie"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_SakuraSaurus"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_KendoFrog"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Hedgehog_Ice"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_CowPal"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_GhostBlackCat"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_ClioneTwins"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Monkey"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_BluePlatypus"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Plesiosaur"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Penguin"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Kitsunebi_Ice"
+            }
+          },
+          "Weight": 0.5
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Monkey_Fire"
+            }
+          },
+          "Weight": 0.5
+        }
+      ],
+      "RespawnTimeMinutesObtained": 180.0,
+      "LotteryCoolTimeMinutes": 180.0,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__bp_palmapobjectspawner_palegg_grass_grade_01_C:Root'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "bp_palmapobjectspawner_palegg_grass_grade_01_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Root",
+    "Outer": "Default__bp_palmapobjectspawner_palegg_grass_grade_01_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'bp_palmapobjectspawner_palegg_grass_grade_01_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.2"
+      },
+      "VariableGuid": "241835D4-4C1B8977-968C809C-291D95A4",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "CF4C92CF-4B660DD9-F87455B2-E6172E5F",
+      "InternalVariableName": "SK_Kurinuki_EggA1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "398F3A7A-43559876-E89617A5-D612FABA",
+      "InternalVariableName": "SK_Kurinuki_EggA2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "F2B12502-47FA5BFA-851AF6BC-35303420",
+      "InternalVariableName": "SK_Kurinuki_EggA3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "BC47F137-42106EBB-5BA1548D-977343DF",
+      "InternalVariableName": "SK_Kurinuki_EggA4"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "CD44C08A-4423AD20-5D27DF86-E4E19325",
+      "InternalVariableName": "SK_Kurinuki_EggA"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "69F6CF5D-4794584D-B10F44BC-852B28BE",
+      "InternalVariableName": "SM_basket"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "bp_palmapobjectspawner_palegg_grass_grade_01_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_grass_grade_01_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.9"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_grass_grade_01_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.10"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_grass_grade_01_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.5"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_grass_grade_01_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.6"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_grass_grade_01_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.7"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_grass_grade_01_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.8"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_grass_grade_01_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.9"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_grass_grade_01_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.10"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_grass_grade_01_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.5"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_grass_grade_01_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.6"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_grass_grade_01_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.7"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_grass_grade_01_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.8"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_grass_grade_01_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.4"
+      }
+    }
+  }
+]

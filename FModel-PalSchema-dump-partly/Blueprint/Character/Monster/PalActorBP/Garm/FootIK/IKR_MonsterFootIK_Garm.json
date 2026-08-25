@@ -1,0 +1,3401 @@
+[
+  {
+    "Type": "IKRig_BodyMover",
+    "Name": "IKRig_BodyMover_0",
+    "Outer": "IKR_MonsterFootIK_Garm",
+    "Class": "UScriptClass'IKRig_BodyMover'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootBone": "pelvis",
+      "RotationAlpha": 0.3,
+      "Effectors": [
+        {
+          "ObjectName": "IKRig_BodyMoverEffector'IKR_MonsterFootIK_Garm:IKRig_BodyMover_0.IKRig_BodyMoverEffector_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.1"
+        },
+        {
+          "ObjectName": "IKRig_BodyMoverEffector'IKR_MonsterFootIK_Garm:IKRig_BodyMover_0.IKRig_BodyMoverEffector_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.2"
+        },
+        {
+          "ObjectName": "IKRig_BodyMoverEffector'IKR_MonsterFootIK_Garm:IKRig_BodyMover_0.IKRig_BodyMoverEffector_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.3"
+        },
+        {
+          "ObjectName": "IKRig_BodyMoverEffector'IKR_MonsterFootIK_Garm:IKRig_BodyMover_0.IKRig_BodyMoverEffector_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IKRig_BodyMoverEffector",
+    "Name": "IKRig_BodyMoverEffector_0",
+    "Outer": "IKRig_BodyMover_0",
+    "Class": "UScriptClass'IKRig_BodyMoverEffector'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GoalName": "leg_back_04_l_Goal",
+      "BoneName": "leg_back_04_l"
+    }
+  },
+  {
+    "Type": "IKRig_BodyMoverEffector",
+    "Name": "IKRig_BodyMoverEffector_1",
+    "Outer": "IKRig_BodyMover_0",
+    "Class": "UScriptClass'IKRig_BodyMoverEffector'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GoalName": "leg_back_04_r_Goal",
+      "BoneName": "leg_back_04_r"
+    }
+  },
+  {
+    "Type": "IKRig_BodyMoverEffector",
+    "Name": "IKRig_BodyMoverEffector_2",
+    "Outer": "IKRig_BodyMover_0",
+    "Class": "UScriptClass'IKRig_BodyMoverEffector'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GoalName": "leg_front_03_r_Goal",
+      "BoneName": "leg_front_03_r"
+    }
+  },
+  {
+    "Type": "IKRig_BodyMoverEffector",
+    "Name": "IKRig_BodyMoverEffector_3",
+    "Outer": "IKRig_BodyMover_0",
+    "Class": "UScriptClass'IKRig_BodyMoverEffector'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GoalName": "leg_front_03_l_Goal",
+      "BoneName": "leg_front_03_l"
+    }
+  },
+  {
+    "Type": "IKRig_LimbEffector",
+    "Name": "Effector",
+    "Outer": "IKRig_LimbSolver_0",
+    "Class": "UScriptClass'IKRig_LimbEffector'",
+    "Flags": "RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GoalName": "leg_front_03_l_Goal",
+      "BoneName": "leg_front_03_l"
+    }
+  },
+  {
+    "Type": "IKRig_LimbEffector",
+    "Name": "Effector",
+    "Outer": "IKRig_LimbSolver_1",
+    "Class": "UScriptClass'IKRig_LimbEffector'",
+    "Flags": "RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GoalName": "leg_front_03_r_Goal",
+      "BoneName": "leg_front_03_r"
+    }
+  },
+  {
+    "Type": "IKRig_LimbEffector",
+    "Name": "Effector",
+    "Outer": "IKRig_LimbSolver_2",
+    "Class": "UScriptClass'IKRig_LimbEffector'",
+    "Flags": "RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GoalName": "leg_back_04_l_Goal",
+      "BoneName": "leg_back_04_l"
+    }
+  },
+  {
+    "Type": "IKRig_LimbEffector",
+    "Name": "Effector",
+    "Outer": "IKRig_LimbSolver_3",
+    "Class": "UScriptClass'IKRig_LimbEffector'",
+    "Flags": "RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GoalName": "leg_back_04_r_Goal",
+      "BoneName": "leg_back_04_r"
+    }
+  },
+  {
+    "Type": "IKRig_LimbSolver",
+    "Name": "IKRig_LimbSolver_0",
+    "Outer": "IKR_MonsterFootIK_Garm",
+    "Class": "UScriptClass'IKRig_LimbSolver'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootName": "leg_front_01_l",
+      "Effector": {
+        "ObjectName": "IKRig_LimbEffector'IKR_MonsterFootIK_Garm:IKRig_LimbSolver_0.Effector'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.5"
+      }
+    }
+  },
+  {
+    "Type": "IKRig_LimbSolver",
+    "Name": "IKRig_LimbSolver_1",
+    "Outer": "IKR_MonsterFootIK_Garm",
+    "Class": "UScriptClass'IKRig_LimbSolver'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootName": "leg_front_01_r",
+      "Effector": {
+        "ObjectName": "IKRig_LimbEffector'IKR_MonsterFootIK_Garm:IKRig_LimbSolver_1.Effector'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.6"
+      }
+    }
+  },
+  {
+    "Type": "IKRig_LimbSolver",
+    "Name": "IKRig_LimbSolver_2",
+    "Outer": "IKR_MonsterFootIK_Garm",
+    "Class": "UScriptClass'IKRig_LimbSolver'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootName": "leg_back_02_l",
+      "Effector": {
+        "ObjectName": "IKRig_LimbEffector'IKR_MonsterFootIK_Garm:IKRig_LimbSolver_2.Effector'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.7"
+      }
+    }
+  },
+  {
+    "Type": "IKRig_LimbSolver",
+    "Name": "IKRig_LimbSolver_3",
+    "Outer": "IKR_MonsterFootIK_Garm",
+    "Class": "UScriptClass'IKRig_LimbSolver'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootName": "leg_back_02_r",
+      "Effector": {
+        "ObjectName": "IKRig_LimbEffector'IKR_MonsterFootIK_Garm:IKRig_LimbSolver_3.Effector'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.8"
+      }
+    }
+  },
+  {
+    "Type": "IKRigDefinition",
+    "Name": "IKR_MonsterFootIK_Garm",
+    "Class": "UScriptClass'IKRigDefinition'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PreviewSkeletalMesh": {
+        "AssetPathName": "/Game/Pal/Model/Character/Monster/Garm/SK_Garm.SK_Garm",
+        "SubPathString": ""
+      },
+      "Skeleton": {
+        "BoneNames": [
+          "root",
+          "pelvis",
+          "spine_01",
+          "spine_02",
+          "spine_03",
+          "neck_01",
+          "neck_02",
+          "head",
+          "ear_l",
+          "teeth_l",
+          "jaw",
+          "ear_r",
+          "teeth_r",
+          "fur_02",
+          "shoulder_l",
+          "leg_front_01_l",
+          "leg_front_02_l",
+          "leg_front_03_l",
+          "foot_front_01_l",
+          "fur_l_01",
+          "shoulder_r",
+          "leg_front_01_r",
+          "leg_front_02_r",
+          "leg_front_03_r",
+          "foot_front_01_r",
+          "fur_r_01",
+          "fur_01",
+          "fur_03_l",
+          "fur_03_r",
+          "tail_01",
+          "tail_02",
+          "tail_03",
+          "tail_04",
+          "tail_05",
+          "leg_back_01_l",
+          "leg_back_02_l",
+          "leg_back_03_l",
+          "leg_back_04_l",
+          "foot_back_01_l",
+          "fur_l_02",
+          "leg_back_01_r",
+          "leg_back_02_r",
+          "leg_back_03_r",
+          "leg_back_04_r",
+          "foot_back_01_r",
+          "fur_r_02"
+        ],
+        "ParentIndices": [
+          -1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          7,
+          7,
+          7,
+          7,
+          5,
+          4,
+          14,
+          15,
+          16,
+          17,
+          16,
+          4,
+          20,
+          21,
+          22,
+          23,
+          22,
+          4,
+          4,
+          4,
+          1,
+          29,
+          30,
+          31,
+          32,
+          1,
+          34,
+          35,
+          36,
+          37,
+          36,
+          1,
+          40,
+          41,
+          42,
+          43,
+          42
+        ],
+        "CurrentPoseGlobal": [
+          {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.50000024,
+              "Y": 0.49999997,
+              "Z": -0.4999998,
+              "W": -0.5,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 2.5855625E-06,
+              "Y": -37.122253,
+              "Z": 87.55619
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.5001349,
+              "Y": -0.49986526,
+              "Z": 0.50013465,
+              "W": 0.49986514,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 5.1902252E-06,
+              "Y": -27.36798,
+              "Z": 87.55619
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.5001589,
+              "Y": 0.4998412,
+              "Z": -0.50015706,
+              "W": -0.4998427,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 9.585705E-06,
+              "Y": 2.5501084,
+              "Z": 87.54006
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.5949815,
+              "Y": -0.3820959,
+              "Z": -0.5949812,
+              "W": -0.38209572,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.00012620339,
+              "Y": 37.12989,
+              "Z": 87.51821
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.5760882,
+              "Y": 0.4100276,
+              "Z": 0.576088,
+              "W": 0.41002733,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.00012920874,
+              "Y": 51.139782,
+              "Z": 93.927414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.5870458,
+              "Y": -0.39417946,
+              "Z": -0.58704555,
+              "W": -0.39417925,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.00012904916,
+              "Y": 62.69748,
+              "Z": 97.933624
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.70710677,
+              "Y": 2.022176E-07,
+              "Z": 0.70710677,
+              "W": -9.320458E-08,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": 0.00013070197,
+              "Y": 74.56978,
+              "Z": 102.788345
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.82465184,
+              "Y": -0.21156336,
+              "Z": -0.50813043,
+              "W": -0.13036023,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 11.95474,
+              "Y": 84.7363,
+              "Z": 118.07017
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.7069469,
+              "Y": 0.01503457,
+              "Z": -0.7069469,
+              "W": -0.015034564,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.9999999
+            },
+            "Translation": {
+              "X": 2.7923563,
+              "Y": 107.20867,
+              "Z": 90.23593
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.5725355,
+              "Y": 0.41497362,
+              "Z": -0.5725355,
+              "W": -0.41497362,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.00012417411,
+              "Y": 88.311325,
+              "Z": 93.640396
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.13036023,
+              "Y": -0.5081304,
+              "Z": 0.21156336,
+              "W": -0.82465184,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -11.9544735,
+              "Y": 84.73632,
+              "Z": 118.07015
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.015034862,
+              "Y": 0.70694697,
+              "Z": 0.015034271,
+              "W": -0.7069469,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -2.7920887,
+              "Y": 107.20872,
+              "Z": 90.23591
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.69115514,
+              "Y": 0.14934665,
+              "Z": -0.69115525,
+              "W": -0.14934729,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0000001
+            },
+            "Translation": {
+              "X": -0.6299474,
+              "Y": 65.85358,
+              "Z": 78.5714
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.8666385,
+              "Y": -0.08762049,
+              "Z": 0.4886913,
+              "W": 0.049408548,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 4.0550547,
+              "Y": 37.056313,
+              "Z": 87.42409
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.7030481,
+              "Y": -0.07565294,
+              "Z": -0.7030481,
+              "W": 0.07565294,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.740511,
+              "Y": 40.880043,
+              "Z": 71.40836
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.70047295,
+              "Y": -0.09663145,
+              "Z": 0.70047295,
+              "W": 0.096631445,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.740513,
+              "Y": 33.72789,
+              "Z": 38.560463
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.63407975,
+              "Y": 0.3129583,
+              "Z": -0.6340797,
+              "W": -0.3129583,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.740514,
+              "Y": 42.240063,
+              "Z": 8.295597
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.50000006,
+              "Y": -0.5,
+              "Z": 0.5,
+              "W": 0.49999997,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.740514,
+              "Y": 48.62468,
+              "Z": 3.4033186
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.5949765,
+              "Y": -0.38210317,
+              "Z": 0.5949766,
+              "W": -0.38210332,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": 13.740513,
+              "Y": 28.434376,
+              "Z": 38.4573
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.049408562,
+              "Y": -0.4886913,
+              "Z": -0.0876205,
+              "W": 0.8666385,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -4.0548,
+              "Y": 37.05636,
+              "Z": 87.42408
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.075652935,
+              "Y": 0.7030481,
+              "Z": -0.07565293,
+              "W": -0.7030481,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -13.74024,
+              "Y": 40.88004,
+              "Z": 71.408394
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.09663145,
+              "Y": -0.70047295,
+              "Z": -0.09663146,
+              "W": 0.70047295,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -13.740241,
+              "Y": 33.72792,
+              "Z": 38.56044
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.3129583,
+              "Y": 0.6340797,
+              "Z": 0.31295833,
+              "W": -0.6340797,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.9999999
+            },
+            "Translation": {
+              "X": -13.740241,
+              "Y": 42.240116,
+              "Z": 8.295598
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.49999997,
+              "Y": -0.5,
+              "Z": -0.5,
+              "W": 0.5,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -13.740241,
+              "Y": 48.624718,
+              "Z": 3.4033175
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.38210332,
+              "Y": -0.5949766,
+              "Z": -0.3821032,
+              "W": -0.59497654,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0000001
+            },
+            "Translation": {
+              "X": -13.740241,
+              "Y": 28.434359,
+              "Z": 38.457237
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.55016595,
+              "Y": 0.4442041,
+              "Z": -0.5501661,
+              "W": 0.44420427,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": 0.00012583486,
+              "Y": 43.747932,
+              "Z": 118.60948
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.7979196,
+              "Y": 0.6021905,
+              "Z": -0.02098161,
+              "W": 0.015834788,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 22.9563,
+              "Y": 36.412243,
+              "Z": 99.251076
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.015834792,
+              "Y": 0.020981604,
+              "Z": 0.6021905,
+              "W": 0.7979196,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -22.956001,
+              "Y": 36.4122,
+              "Z": 99.25104
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.34095815,
+              "Y": 0.6194737,
+              "Z": -0.34095806,
+              "W": 0.6194736,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 9.0829184E-07,
+              "Y": -46.497753,
+              "Z": 93.426384
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.3614084,
+              "Y": -0.6077698,
+              "Z": 0.36140844,
+              "W": -0.6077695,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": -1.1777653E-06,
+              "Y": -62.978657,
+              "Z": 82.99016
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.48531342,
+              "Y": 0.5142681,
+              "Z": -0.48531494,
+              "W": 0.5142651,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": -8.9719115E-06,
+              "Y": -78.93265,
+              "Z": 74.318985
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.6153432,
+              "Y": -0.34835756,
+              "Z": 0.6153459,
+              "W": -0.34835207,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": -0.00014522992,
+              "Y": -109.04611,
+              "Z": 72.573074
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.6153432,
+              "Y": 0.34835756,
+              "Z": -0.6153459,
+              "W": 0.34835207,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": -0.000343884,
+              "Y": -132.91026,
+              "Z": 86.89535
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.70360637,
+              "Y": -0.070271686,
+              "Z": 0.70360637,
+              "W": 0.07027168,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0000001
+            },
+            "Translation": {
+              "X": 13.74051,
+              "Y": -37.12227,
+              "Z": 87.5562
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.6728217,
+              "Y": -0.21751094,
+              "Z": -0.67282164,
+              "W": 0.21751094,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.74051,
+              "Y": -32.527668,
+              "Z": 64.78353
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.70485973,
+              "Y": -0.05632699,
+              "Z": 0.70485973,
+              "W": 0.05632698,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.740511,
+              "Y": -47.51642,
+              "Z": 44.024143
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.58411896,
+              "Y": 0.39850348,
+              "Z": -0.58411896,
+              "W": -0.39850345,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.740511,
+              "Y": -41.604797,
+              "Z": 7.2721944
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.5,
+              "Y": -0.50000006,
+              "Z": 0.49999997,
+              "W": 0.49999997,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.740511,
+              "Y": -33.401066,
+              "Z": 4.05817
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.64296573,
+              "Y": -0.29427034,
+              "Z": 0.6429658,
+              "W": -0.29427034,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.74051,
+              "Y": -54.479706,
+              "Z": 45.10478
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.07027168,
+              "Y": -0.70360637,
+              "Z": -0.07027168,
+              "W": 0.70360637,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0000001
+            },
+            "Translation": {
+              "X": -13.740479,
+              "Y": -37.12224,
+              "Z": 87.556206
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.21751094,
+              "Y": 0.67282164,
+              "Z": -0.21751094,
+              "W": -0.67282164,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.9999999
+            },
+            "Translation": {
+              "X": -13.740479,
+              "Y": -32.52768,
+              "Z": 64.78356
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.056326985,
+              "Y": -0.70485973,
+              "Z": -0.056326985,
+              "W": 0.70485973,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": -13.7404785,
+              "Y": -47.5164,
+              "Z": 44.024162
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.39850348,
+              "Y": 0.58411896,
+              "Z": 0.39850345,
+              "W": -0.58411896,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -13.7404785,
+              "Y": -41.604843,
+              "Z": 7.2721934
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.5,
+              "Y": -0.49999997,
+              "Z": -0.5,
+              "W": 0.5,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -13.7404785,
+              "Y": -33.401043,
+              "Z": 4.0581737
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.29427034,
+              "Y": -0.6429658,
+              "Z": -0.29427034,
+              "W": -0.64296573,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -13.7404785,
+              "Y": -54.47976,
+              "Z": 45.10476
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        ],
+        "CurrentPoseLocal": [
+          {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.50000024,
+              "Y": 0.49999997,
+              "Z": -0.4999998,
+              "W": -0.5,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 2.5855625E-06,
+              "Y": -37.122253,
+              "Z": 87.55619
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -4.4491966E-11,
+              "Y": 1.6507244E-07,
+              "Z": -0.00026953022,
+              "W": -0.99999994,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": 9.754273,
+              "Y": -3.8758776E-06,
+              "Z": 2.0465359E-06
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 7.49234E-11,
+              "Y": -1.6127339E-06,
+              "Z": -4.6457386E-05,
+              "W": -1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 29.918093,
+              "Y": 7.336354E-12,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.97700983,
+              "Y": -0.21319427,
+              "Z": 1.5542693E-06,
+              "W": -7.9736475E-07,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 34.57979,
+              "Y": -5.73408E-12,
+              "Z": 2.060574E-13
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -3.948181E-09,
+              "Y": -8.271918E-08,
+              "Z": 0.047675658,
+              "W": -0.99886286,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 15.406329,
+              "Y": 7.460699E-14,
+              "Z": 5.062617E-14
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -1.5964102E-09,
+              "Y": 5.857154E-08,
+              "Z": -0.027245615,
+              "W": -0.9996288,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 12.232337,
+              "Y": -4.0856207E-14,
+              "Z": -6.217249E-15
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -1.6094843E-08,
+              "Y": -3.0379957E-07,
+              "Z": -0.55745375,
+              "W": -0.830208,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 12.826525,
+              "Y": 1.7763568E-14,
+              "Z": -9.769963E-15
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.057419103,
+              "Y": 0.2238145,
+              "Z": 0.24177638,
+              "W": -0.9424194,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 15.281828,
+              "Y": -10.166516,
+              "Z": 11.954614
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.021262165,
+              "Y": -0.9997739,
+              "Z": 2.0443822E-07,
+              "W": -4.347782E-09,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -12.552408,
+              "Y": -32.638897,
+              "Z": 2.792239
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.5868614,
+              "Y": -0.80968744,
+              "Z": 1.6571838E-07,
+              "W": 1.2011269E-07,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -9.1479435,
+              "Y": -13.741551,
+              "Z": -9.513898E-07
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.22381441,
+              "Y": 0.057419494,
+              "Z": 0.94241935,
+              "W": 0.24177647,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 15.281813,
+              "Y": -10.166551,
+              "Z": -11.954599
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.9997739,
+              "Y": 0.021262165,
+              "Z": -3.1343493E-08,
+              "W": -2.0843603E-07,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -12.552427,
+              "Y": -32.638947,
+              "Z": -2.792206
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.73885924,
+              "Y": -0.67385983,
+              "Z": 4.752062E-07,
+              "W": -1.7303354E-07,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 8.873051,
+              "Y": -19.328007,
+              "Z": -0.63006777
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.5993955,
+              "Y": -0.7540376,
+              "Z": 0.12167676,
+              "W": 0.23947234,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -0.10606209,
+              "Y": -0.05497917,
+              "Z": 4.0549283
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.0017279894,
+              "Y": 0.2686059,
+              "Z": -0.1988727,
+              "W": -0.9424954,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0000001
+            },
+            "Translation": {
+              "X": 19.103203,
+              "Y": -3.7303494E-14,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 1.3877788E-17,
+              "Y": 0.0,
+              "Z": 0.2418588,
+              "W": -0.97031146,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 33.617523,
+              "Y": 2.4868996E-14,
+              "Z": 2.842171E-14
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -2.7755576E-17,
+              "Y": 5.551115E-17,
+              "Z": 0.31589356,
+              "W": -0.9487946,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": 31.439135,
+              "Y": -1.4210855E-14,
+              "Z": 4.654055E-13
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 1.4104837E-08,
+              "Y": -4.782664E-09,
+              "Z": 0.3211214,
+              "W": -0.94703805,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 8.043489,
+              "Y": 1.4210855E-14,
+              "Z": -2.9813773E-08
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.42031908,
+              "Y": -0.90737635,
+              "Z": 8.919651E-08,
+              "W": 4.131802E-08,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": -1.3339103,
+              "Y": 5.123732,
+              "Z": 3.1682323E-08
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.75403774,
+              "Y": 0.59939563,
+              "Z": 0.23947193,
+              "W": -0.12167654,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0000001
+            },
+            "Translation": {
+              "X": -0.106025316,
+              "Y": -0.055011347,
+              "Z": -4.0549264
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.0017279894,
+              "Y": 0.2686059,
+              "Z": -0.1988727,
+              "W": -0.9424954,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0000001
+            },
+            "Translation": {
+              "X": -19.10315,
+              "Y": -3.9349103E-05,
+              "Z": 8.572439E-06
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 2.0816682E-17,
+              "Y": -1.3877788E-17,
+              "Z": 0.2418588,
+              "W": -0.97031146,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -33.617573,
+              "Y": 3.9374125E-05,
+              "Z": -1.4210855E-14
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 6.938894E-18,
+              "Y": -1.0408341E-17,
+              "Z": 0.31589356,
+              "W": -0.9487946,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": -31.439117,
+              "Y": 3.0959243E-05,
+              "Z": 4.7606363E-13
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -5.551115E-17,
+              "Y": 8.326673E-17,
+              "Z": 0.3211214,
+              "W": -0.94703805,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -8.043477,
+              "Y": -1.1761131E-05,
+              "Z": 2.3270275E-13
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.42031908,
+              "Y": -0.90737635,
+              "Z": 8.814585E-08,
+              "W": 4.083133E-08,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": 1.3338909,
+              "Y": -5.123784,
+              "Z": -1.657563E-13
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 6.2101435E-08,
+              "Y": 3.8998252E-07,
+              "Z": 0.94901866,
+              "W": 0.31521988,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 18.952496,
+              "Y": 25.519968,
+              "Z": -1.5213449E-05
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.05200591,
+              "Y": -0.6863075,
+              "Z": 0.6806124,
+              "W": 0.25108612,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 4.2284093,
+              "Y": 10.967953,
+              "Z": 22.95617
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.68630785,
+              "Y": -0.052005935,
+              "Z": 0.251086,
+              "W": -0.6806121,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 4.2283454,
+              "Y": 10.9679165,
+              "Z": -22.956133
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.27851555,
+              "Y": -0.9604317,
+              "Z": -3.6664358E-07,
+              "W": -1.4417427E-07,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": -9.375499,
+              "Y": -5.870189,
+              "Z": -5.2425494E-06
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -5.569489E-09,
+              "Y": -1.6706869E-07,
+              "Z": 0.033318013,
+              "W": -0.9994448,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": 19.507305,
+              "Y": 1.154632E-13,
+              "Z": -1.1723955E-13
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.0,
+              "Y": -2.155491E-06,
+              "Z": 0.21819785,
+              "W": -0.9759045,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": 18.158169,
+              "Y": -3.907985E-14,
+              "Z": -1.7763568E-15
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 2.7755576E-17,
+              "Y": -2.1620444E-06,
+              "Z": 0.29477927,
+              "W": -0.9555654,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0000001
+            },
+            "Translation": {
+              "X": 30.16403,
+              "Y": -1.030287E-13,
+              "Z": 1.0658141E-14
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": -1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 27.832096,
+              "Y": 3.1974423E-14,
+              "Z": 2.0428104E-14
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 2.7755576E-17,
+              "Y": 3.131412E-07,
+              "Z": -0.63333464,
+              "W": -0.77387804,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -1.0255159E-05,
+              "Y": 1.603299E-06,
+              "Z": -13.740507
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 2.7755576E-17,
+              "Y": 5.551115E-17,
+              "Z": -0.40064478,
+              "W": -0.9162335,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 23.23154,
+              "Y": 5.3290705E-15,
+              "Z": 7.1054274E-15
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -1.3877788E-17,
+              "Y": 0.0,
+              "Z": 0.38242546,
+              "W": -0.9239864,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 25.604979,
+              "Y": 3.5527137E-15,
+              "Z": 6.702828E-08
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.49597478,
+              "W": -0.8683369,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 37.22436,
+              "Y": 2.6645353E-14,
+              "Z": 5.2548472E-09
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 4.441311E-08,
+              "Y": -8.389552E-09,
+              "Z": 0.18561552,
+              "W": -0.98262244,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 8.810858,
+              "Y": 5.3290705E-15,
+              "Z": 8.881784E-15
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.34240597,
+              "Y": -0.93955207,
+              "Z": 1.12751435E-08,
+              "W": 2.2614564E-08,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": -2.172763,
+              "Y": 6.7033005,
+              "Z": 2.600636E-07
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -3.1086242E-07,
+              "Y": -2.7844391E-09,
+              "Z": 0.77387804,
+              "W": -0.63333464,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 6.992238E-06,
+              "Y": -1.7319077E-05,
+              "Z": 13.740482
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 2.0816682E-17,
+              "Y": -1.110223E-16,
+              "Z": -0.40064478,
+              "W": -0.9162335,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -23.231512,
+              "Y": -3.9438153E-05,
+              "Z": -1.4566126E-13
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -2.7755576E-17,
+              "Y": -5.2041704E-17,
+              "Z": 0.38242546,
+              "W": -0.9239864,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -25.604969,
+              "Y": 3.2201828E-05,
+              "Z": -6.8245896E-08
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -2.0816682E-17,
+              "Y": 3.469447E-18,
+              "Z": 0.49597478,
+              "W": -0.8683369,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -37.22437,
+              "Y": -6.226329E-05,
+              "Z": -5.350536E-09
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 4.2062457E-08,
+              "Y": -7.945518E-09,
+              "Z": 0.18561552,
+              "W": -0.98262244,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -8.810917,
+              "Y": 2.7800295E-05,
+              "Z": 2.6887289E-08
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.34240597,
+              "Y": -0.93955207,
+              "Z": 1.0590068E-08,
+              "W": 2.2386017E-08,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": 2.172741,
+              "Y": -6.7033777,
+              "Z": -2.4004725E-08
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        ],
+        "RefPoseGlobal": [
+          {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.50000024,
+              "Y": 0.49999997,
+              "Z": -0.4999998,
+              "W": -0.5,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 2.5855625E-06,
+              "Y": -37.122253,
+              "Z": 87.55619
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.5001349,
+              "Y": -0.49986526,
+              "Z": 0.50013465,
+              "W": 0.49986514,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 5.1902252E-06,
+              "Y": -27.36798,
+              "Z": 87.55619
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.5001589,
+              "Y": 0.4998412,
+              "Z": -0.50015706,
+              "W": -0.4998427,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 9.585705E-06,
+              "Y": 2.5501084,
+              "Z": 87.54006
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.5949815,
+              "Y": -0.3820959,
+              "Z": -0.5949812,
+              "W": -0.38209572,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.00012620339,
+              "Y": 37.12989,
+              "Z": 87.51821
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.5760882,
+              "Y": 0.4100276,
+              "Z": 0.576088,
+              "W": 0.41002733,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.00012920874,
+              "Y": 51.139782,
+              "Z": 93.927414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.5870458,
+              "Y": -0.39417946,
+              "Z": -0.58704555,
+              "W": -0.39417925,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.00012904916,
+              "Y": 62.69748,
+              "Z": 97.933624
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.70710677,
+              "Y": 2.022176E-07,
+              "Z": 0.70710677,
+              "W": -9.320458E-08,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": 0.00013070197,
+              "Y": 74.56978,
+              "Z": 102.788345
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.82465184,
+              "Y": -0.21156336,
+              "Z": -0.50813043,
+              "W": -0.13036023,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 11.95474,
+              "Y": 84.7363,
+              "Z": 118.07017
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.7069469,
+              "Y": 0.01503457,
+              "Z": -0.7069469,
+              "W": -0.015034564,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.9999999
+            },
+            "Translation": {
+              "X": 2.7923563,
+              "Y": 107.20867,
+              "Z": 90.23593
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.5725355,
+              "Y": 0.41497362,
+              "Z": -0.5725355,
+              "W": -0.41497362,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.00012417411,
+              "Y": 88.311325,
+              "Z": 93.640396
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.13036023,
+              "Y": -0.5081304,
+              "Z": 0.21156336,
+              "W": -0.82465184,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -11.9544735,
+              "Y": 84.73632,
+              "Z": 118.07015
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.015034862,
+              "Y": 0.70694697,
+              "Z": 0.015034271,
+              "W": -0.7069469,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -2.7920887,
+              "Y": 107.20872,
+              "Z": 90.23591
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.69115514,
+              "Y": 0.14934665,
+              "Z": -0.69115525,
+              "W": -0.14934729,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0000001
+            },
+            "Translation": {
+              "X": -0.6299474,
+              "Y": 65.85358,
+              "Z": 78.5714
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.8666385,
+              "Y": -0.08762049,
+              "Z": 0.4886913,
+              "W": 0.049408548,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 4.0550547,
+              "Y": 37.056313,
+              "Z": 87.42409
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.7030481,
+              "Y": -0.07565294,
+              "Z": -0.7030481,
+              "W": 0.07565294,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.740511,
+              "Y": 40.880043,
+              "Z": 71.40836
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.70047295,
+              "Y": -0.09663145,
+              "Z": 0.70047295,
+              "W": 0.096631445,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.740513,
+              "Y": 33.72789,
+              "Z": 38.560463
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.63407975,
+              "Y": 0.3129583,
+              "Z": -0.6340797,
+              "W": -0.3129583,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.740514,
+              "Y": 42.240063,
+              "Z": 8.295597
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.50000006,
+              "Y": -0.5,
+              "Z": 0.5,
+              "W": 0.49999997,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.740514,
+              "Y": 48.62468,
+              "Z": 3.4033186
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.5949765,
+              "Y": -0.38210317,
+              "Z": 0.5949766,
+              "W": -0.38210332,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": 13.740513,
+              "Y": 28.434376,
+              "Z": 38.4573
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.049408562,
+              "Y": -0.4886913,
+              "Z": -0.0876205,
+              "W": 0.8666385,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -4.0548,
+              "Y": 37.05636,
+              "Z": 87.42408
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.075652935,
+              "Y": 0.7030481,
+              "Z": -0.07565293,
+              "W": -0.7030481,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -13.74024,
+              "Y": 40.88004,
+              "Z": 71.408394
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.09663145,
+              "Y": -0.70047295,
+              "Z": -0.09663146,
+              "W": 0.70047295,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -13.740241,
+              "Y": 33.72792,
+              "Z": 38.56044
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.3129583,
+              "Y": 0.6340797,
+              "Z": 0.31295833,
+              "W": -0.6340797,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.9999999
+            },
+            "Translation": {
+              "X": -13.740241,
+              "Y": 42.240116,
+              "Z": 8.295598
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.49999997,
+              "Y": -0.5,
+              "Z": -0.5,
+              "W": 0.5,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -13.740241,
+              "Y": 48.624718,
+              "Z": 3.4033175
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.38210332,
+              "Y": -0.5949766,
+              "Z": -0.3821032,
+              "W": -0.59497654,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0000001
+            },
+            "Translation": {
+              "X": -13.740241,
+              "Y": 28.434359,
+              "Z": 38.457237
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.55016595,
+              "Y": 0.4442041,
+              "Z": -0.5501661,
+              "W": 0.44420427,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": 0.00012583486,
+              "Y": 43.747932,
+              "Z": 118.60948
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.7979196,
+              "Y": 0.6021905,
+              "Z": -0.02098161,
+              "W": 0.015834788,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 22.9563,
+              "Y": 36.412243,
+              "Z": 99.251076
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.015834792,
+              "Y": 0.020981604,
+              "Z": 0.6021905,
+              "W": 0.7979196,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -22.956001,
+              "Y": 36.4122,
+              "Z": 99.25104
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.34095815,
+              "Y": 0.6194737,
+              "Z": -0.34095806,
+              "W": 0.6194736,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 9.0829184E-07,
+              "Y": -46.497753,
+              "Z": 93.426384
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.3614084,
+              "Y": -0.6077698,
+              "Z": 0.36140844,
+              "W": -0.6077695,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": -1.1777653E-06,
+              "Y": -62.978657,
+              "Z": 82.99016
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.48531342,
+              "Y": 0.5142681,
+              "Z": -0.48531494,
+              "W": 0.5142651,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": -8.9719115E-06,
+              "Y": -78.93265,
+              "Z": 74.318985
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.6153432,
+              "Y": -0.34835756,
+              "Z": 0.6153459,
+              "W": -0.34835207,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": -0.00014522992,
+              "Y": -109.04611,
+              "Z": 72.573074
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.6153432,
+              "Y": 0.34835756,
+              "Z": -0.6153459,
+              "W": 0.34835207,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": -0.000343884,
+              "Y": -132.91026,
+              "Z": 86.89535
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.70360637,
+              "Y": -0.070271686,
+              "Z": 0.70360637,
+              "W": 0.07027168,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0000001
+            },
+            "Translation": {
+              "X": 13.74051,
+              "Y": -37.12227,
+              "Z": 87.5562
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.6728217,
+              "Y": -0.21751094,
+              "Z": -0.67282164,
+              "W": 0.21751094,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.74051,
+              "Y": -32.527668,
+              "Z": 64.78353
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.70485973,
+              "Y": -0.05632699,
+              "Z": 0.70485973,
+              "W": 0.05632698,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.740511,
+              "Y": -47.51642,
+              "Z": 44.024143
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.58411896,
+              "Y": 0.39850348,
+              "Z": -0.58411896,
+              "W": -0.39850345,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.740511,
+              "Y": -41.604797,
+              "Z": 7.2721944
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.5,
+              "Y": -0.50000006,
+              "Z": 0.49999997,
+              "W": 0.49999997,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.740511,
+              "Y": -33.401066,
+              "Z": 4.05817
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.64296573,
+              "Y": -0.29427034,
+              "Z": 0.6429658,
+              "W": -0.29427034,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 13.74051,
+              "Y": -54.479706,
+              "Z": 45.10478
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.07027168,
+              "Y": -0.70360637,
+              "Z": -0.07027168,
+              "W": 0.70360637,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0000001
+            },
+            "Translation": {
+              "X": -13.740479,
+              "Y": -37.12224,
+              "Z": 87.556206
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.21751094,
+              "Y": 0.67282164,
+              "Z": -0.21751094,
+              "W": -0.67282164,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.9999999
+            },
+            "Translation": {
+              "X": -13.740479,
+              "Y": -32.52768,
+              "Z": 64.78356
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.056326985,
+              "Y": -0.70485973,
+              "Z": -0.056326985,
+              "W": 0.70485973,
+              "IsNormalized": true,
+              "Size": 0.99999994,
+              "SizeSquared": 0.99999994
+            },
+            "Translation": {
+              "X": -13.7404785,
+              "Y": -47.5164,
+              "Z": 44.024162
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.39850348,
+              "Y": 0.58411896,
+              "Z": 0.39850345,
+              "W": -0.58411896,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -13.7404785,
+              "Y": -41.604843,
+              "Z": 7.2721934
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": 0.5,
+              "Y": -0.49999997,
+              "Z": -0.5,
+              "W": 0.5,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -13.7404785,
+              "Y": -33.401043,
+              "Z": 4.0581737
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          {
+            "Rotation": {
+              "X": -0.29427034,
+              "Y": -0.6429658,
+              "Z": -0.29427034,
+              "W": -0.64296573,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -13.7404785,
+              "Y": -54.47976,
+              "Z": 45.10476
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        ]
+      },
+      "Goals": [
+        {
+          "ObjectName": "IKRigEffectorGoal'IKR_MonsterFootIK_Garm:IKRigEffectorGoal_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.14"
+        },
+        {
+          "ObjectName": "IKRigEffectorGoal'IKR_MonsterFootIK_Garm:IKRigEffectorGoal_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.15"
+        },
+        {
+          "ObjectName": "IKRigEffectorGoal'IKR_MonsterFootIK_Garm:IKRigEffectorGoal_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.16"
+        },
+        {
+          "ObjectName": "IKRigEffectorGoal'IKR_MonsterFootIK_Garm:IKRigEffectorGoal_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.17"
+        }
+      ],
+      "Solvers": [
+        {
+          "ObjectName": "IKRig_BodyMover'IKR_MonsterFootIK_Garm:IKRig_BodyMover_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.0"
+        },
+        {
+          "ObjectName": "IKRig_LimbSolver'IKR_MonsterFootIK_Garm:IKRig_LimbSolver_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.9"
+        },
+        {
+          "ObjectName": "IKRig_LimbSolver'IKR_MonsterFootIK_Garm:IKRig_LimbSolver_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.10"
+        },
+        {
+          "ObjectName": "IKRig_LimbSolver'IKR_MonsterFootIK_Garm:IKRig_LimbSolver_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.11"
+        },
+        {
+          "ObjectName": "IKRig_LimbSolver'IKR_MonsterFootIK_Garm:IKRig_LimbSolver_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/PalActorBP/Garm/FootIK/IKR_MonsterFootIK_Garm.12"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IKRigEffectorGoal",
+    "Name": "IKRigEffectorGoal_0",
+    "Outer": "IKR_MonsterFootIK_Garm",
+    "Class": "UScriptClass'IKRigEffectorGoal'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GoalName": "leg_back_04_l_Goal",
+      "BoneName": "leg_back_04_l",
+      "CurrentTransform": {
+        "Rotation": {
+          "X": 0.58411896,
+          "Y": 0.39850348,
+          "Z": -0.58411896,
+          "W": -0.39850345,
+          "IsNormalized": true,
+          "Size": 1.0,
+          "SizeSquared": 1.0
+        },
+        "Translation": {
+          "X": 13.740511,
+          "Y": -41.604797,
+          "Z": 7.2721944
+        }
+      },
+      "InitialTransform": {
+        "Rotation": {
+          "X": 0.58411896,
+          "Y": 0.39850348,
+          "Z": -0.58411896,
+          "W": -0.39850345,
+          "IsNormalized": true,
+          "Size": 1.0,
+          "SizeSquared": 1.0
+        },
+        "Translation": {
+          "X": 13.740511,
+          "Y": -41.604797,
+          "Z": 7.2721944
+        }
+      }
+    }
+  },
+  {
+    "Type": "IKRigEffectorGoal",
+    "Name": "IKRigEffectorGoal_1",
+    "Outer": "IKR_MonsterFootIK_Garm",
+    "Class": "UScriptClass'IKRigEffectorGoal'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GoalName": "leg_back_04_r_Goal",
+      "BoneName": "leg_back_04_r",
+      "CurrentTransform": {
+        "Rotation": {
+          "X": -0.39850348,
+          "Y": 0.58411896,
+          "Z": 0.39850345,
+          "W": -0.58411896,
+          "IsNormalized": true,
+          "Size": 1.0,
+          "SizeSquared": 1.0
+        },
+        "Translation": {
+          "X": -13.7404785,
+          "Y": -41.604843,
+          "Z": 7.2721934
+        }
+      },
+      "InitialTransform": {
+        "Rotation": {
+          "X": -0.39850348,
+          "Y": 0.58411896,
+          "Z": 0.39850345,
+          "W": -0.58411896,
+          "IsNormalized": true,
+          "Size": 1.0,
+          "SizeSquared": 1.0
+        },
+        "Translation": {
+          "X": -13.7404785,
+          "Y": -41.604843,
+          "Z": 7.2721934
+        }
+      }
+    }
+  },
+  {
+    "Type": "IKRigEffectorGoal",
+    "Name": "IKRigEffectorGoal_2",
+    "Outer": "IKR_MonsterFootIK_Garm",
+    "Class": "UScriptClass'IKRigEffectorGoal'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GoalName": "leg_front_03_r_Goal",
+      "BoneName": "leg_front_03_r",
+      "CurrentTransform": {
+        "Rotation": {
+          "X": -0.3129583,
+          "Y": 0.6340797,
+          "Z": 0.31295833,
+          "W": -0.6340797,
+          "IsNormalized": true,
+          "Size": 0.99999994,
+          "SizeSquared": 0.9999999
+        },
+        "Translation": {
+          "X": -13.740241,
+          "Y": 42.240116,
+          "Z": 8.295598
+        }
+      },
+      "InitialTransform": {
+        "Rotation": {
+          "X": -0.3129583,
+          "Y": 0.6340797,
+          "Z": 0.31295833,
+          "W": -0.6340797,
+          "IsNormalized": true,
+          "Size": 0.99999994,
+          "SizeSquared": 0.9999999
+        },
+        "Translation": {
+          "X": -13.740241,
+          "Y": 42.240116,
+          "Z": 8.295598
+        }
+      }
+    }
+  },
+  {
+    "Type": "IKRigEffectorGoal",
+    "Name": "IKRigEffectorGoal_3",
+    "Outer": "IKR_MonsterFootIK_Garm",
+    "Class": "UScriptClass'IKRigEffectorGoal'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GoalName": "leg_front_03_l_Goal",
+      "BoneName": "leg_front_03_l",
+      "CurrentTransform": {
+        "Rotation": {
+          "X": 0.63407975,
+          "Y": 0.3129583,
+          "Z": -0.6340797,
+          "W": -0.3129583,
+          "IsNormalized": true,
+          "Size": 1.0,
+          "SizeSquared": 1.0
+        },
+        "Translation": {
+          "X": 13.740514,
+          "Y": 42.240063,
+          "Z": 8.295597
+        }
+      },
+      "InitialTransform": {
+        "Rotation": {
+          "X": 0.63407975,
+          "Y": 0.3129583,
+          "Z": -0.6340797,
+          "W": -0.3129583,
+          "IsNormalized": true,
+          "Size": 1.0,
+          "SizeSquared": 1.0
+        },
+        "Translation": {
+          "X": 13.740514,
+          "Y": 42.240063,
+          "Z": 8.295597
+        }
+      }
+    }
+  }
+]

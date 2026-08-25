@@ -1,0 +1,125 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalQuestBlock_TutorialCraftPalGear_Capture_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalQuestBlock_CheckPalCaptureNum'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_PalQuestBlock_TutorialCraftPalGear_Capture_C:GetProgressText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_TutorialCraftPalGear_Capture.3"
+      },
+      {
+        "ObjectName": "Function'BP_PalQuestBlock_TutorialCraftPalGear_Capture_C:GetDescriptionText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_TutorialCraftPalGear_Capture.2"
+      }
+    ],
+    "FuncMap": {
+      "GetDescriptionText": {
+        "ObjectName": "Function'BP_PalQuestBlock_TutorialCraftPalGear_Capture_C:GetDescriptionText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_TutorialCraftPalGear_Capture.2"
+      },
+      "GetProgressText": {
+        "ObjectName": "Function'BP_PalQuestBlock_TutorialCraftPalGear_Capture_C:GetProgressText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_TutorialCraftPalGear_Capture.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalQuestBlock_TutorialCraftPalGear_Capture_C'Default__BP_PalQuestBlock_TutorialCraftPalGear_Capture_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_TutorialCraftPalGear_Capture.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalQuestBlock_TutorialCraftPalGear_Capture_C",
+    "Name": "Default__BP_PalQuestBlock_TutorialCraftPalGear_Capture_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_TutorialCraftPalGear_Capture.BP_PalQuestBlock_TutorialCraftPalGear_Capture_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RequireCount": 1,
+      "CountPalName": {
+        "Key": "Kitsunebi"
+      },
+      "IsAutoComplete": true,
+      "LocationSettingData": {
+        "TrackingPalIdArray": [
+          {
+            "Key": "Kitsunebi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetDescriptionText",
+    "Outer": "BP_PalQuestBlock_TutorialCraftPalGear_Capture_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalQuestBlock:GetDescriptionText'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "OutText",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NewLocalVar",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetProgressText",
+    "Outer": "BP_PalQuestBlock_TutorialCraftPalGear_Capture_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalQuestBlock:GetProgressText'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "OutText",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

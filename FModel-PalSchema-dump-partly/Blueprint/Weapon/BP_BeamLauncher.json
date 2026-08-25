@@ -1,0 +1,350 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_BeamLauncher_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_OverheatRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_OverheatRifle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_BeamLauncher_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.10"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_BeamLauncher_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_OverheatRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_OverheatRifle.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_BeamLauncher_C:StopFireSound'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.6"
+      },
+      {
+        "ObjectName": "Function'BP_BeamLauncher_C:PlayFireSound'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.5"
+      },
+      {
+        "ObjectName": "Function'BP_BeamLauncher_C:PlayEndFireSound'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.4"
+      },
+      {
+        "ObjectName": "Function'BP_BeamLauncher_C:OnShoot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.3"
+      },
+      {
+        "ObjectName": "Function'BP_BeamLauncher_C:GetShootInterval'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.2"
+      }
+    ],
+    "FuncMap": {
+      "GetShootInterval": {
+        "ObjectName": "Function'BP_BeamLauncher_C:GetShootInterval'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.2"
+      },
+      "OnShoot": {
+        "ObjectName": "Function'BP_BeamLauncher_C:OnShoot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.3"
+      },
+      "PlayEndFireSound": {
+        "ObjectName": "Function'BP_BeamLauncher_C:PlayEndFireSound'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.4"
+      },
+      "PlayFireSound": {
+        "ObjectName": "Function'BP_BeamLauncher_C:PlayFireSound'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.5"
+      },
+      "StopFireSound": {
+        "ObjectName": "Function'BP_BeamLauncher_C:StopFireSound'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.6"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_BeamLauncher_C'Default__BP_BeamLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_BeamLauncher_C",
+    "Name": "Default__BP_BeamLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.BP_BeamLauncher_C'",
+    "Template": {
+      "ObjectName": "BP_OverheatRifle_C'Default__BP_OverheatRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_OverheatRifle.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Const_HeatUpOneShot": 0.45,
+      "Const_HeatDownSpeed": 0.1,
+      "ReloadAnim": {
+        "ObjectName": "AnimSequence'AS_BeamLauncher_Reload'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Weapon/BeamLauncher/AS_BeamLauncher_Reload.3"
+      },
+      "WeaponCoopType": "EWeaponCoopType::None",
+      "WeaponType": "EPalWeaponType::RocketLauncher",
+      "SupportedBulletMap": [
+        {
+          "Key": {
+            "Key": "BeamLauncherBullet"
+          },
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_BeamRocketBullet_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/BP_BeamRocketBullet.0"
+          }
+        }
+      ],
+      "FallbackBulletItemId": {
+        "Key": "BeamLauncherBullet"
+      },
+      "weaponIconTexture": {
+        "AssetPathName": "/Game/Pal/Texture/Item/Weapon/T_icon_BeamLauncher_UI.T_icon_BeamLauncher_UI",
+        "SubPathString": ""
+      },
+      "weaponBulletDamageReactionType": "EPalDamageAnimationReactionType::Big",
+      "PalSoundSlotClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_BeamLauncher.BP_SoundSlot_Weapon_BeamLauncher_C",
+        "SubPathString": ""
+      },
+      "IsTriggerOnlyFireWeapon": true,
+      "BackWeaponClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_BackWeapon_BeamLauncher_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BackWeapon/BP_BackWeapon_BeamLauncher.0"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetShootInterval",
+    "Outer": "BP_BeamLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_NormalRifle_C:GetShootInterval'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.10"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_NormalRifle_C:GetShootInterval'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.10"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Time",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnShoot",
+    "Outer": "BP_BeamLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_OverheatRifle_C:OnShoot'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_OverheatRifle.19"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_OverheatRifle_C:OnShoot'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_OverheatRifle.19"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BulletActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalBullet'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalSoundOptions",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalSoundOptions'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalDataTableRowName_SoundID",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDataTableRowName_SoundID'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayEndFireSound",
+    "Outer": "BP_BeamLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_NormalRifle_C:PlayEndFireSound'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.21"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_NormalRifle_C:PlayEndFireSound'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.21"
+    },
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayFireSound",
+    "Outer": "BP_BeamLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_NormalRifle_C:PlayFireSound'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.23"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_NormalRifle_C:PlayFireSound'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.23"
+    },
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StopFireSound",
+    "Outer": "BP_BeamLauncher_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_NormalRifle_C:StopFireSound'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.27"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_NormalRifle_C:StopFireSound'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.27"
+    },
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_BeamLauncher_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SkeletalMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SkeletalMeshComponent'BP_BeamLauncher_C:Weapon_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.11"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_NormalRifle_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.0"
+            },
+            "SCSVariableName": "Weapon",
+            "AssociatedGuid": "21F8BED2-4028E662-046451AE-1619888F"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_BeamLauncher_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_BeamLauncher_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.8"
+      },
+      "VariableGuid": "4AE8C4E6-4371A27F-770FF484-BF2E0CF5",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_BeamLauncher_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_BeamLauncher_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_BeamLauncher.9"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "Weapon_GEN_VARIABLE",
+    "Outer": "BP_BeamLauncher_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SkeletalMeshComponent'BP_OverheatRifle_C:Weapon_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_OverheatRifle.32"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_AncientRocketLauncher'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/AncientWeapon/AncientRocketLauncher/SK_AncientRocketLauncher.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_AncientRocketLauncher'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/AncientWeapon/AncientRocketLauncher/SK_AncientRocketLauncher.0"
+      },
+      "OverrideMaterials": [
+        null
+      ]
+    }
+  }
+]

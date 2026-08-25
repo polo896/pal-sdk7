@@ -1,0 +1,129 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_WhiteDeer_DarkPillar_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_WhiteDeer_HolyPillar_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WhiteDeer/BP_Action_Unique_WhiteDeer_HolyPillar.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_WhiteDeer_HolyPillar_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WhiteDeer/BP_Action_Unique_WhiteDeer_HolyPillar.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Action_Unique_WhiteDeer_DarkPillar_C:GetRainClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WhiteDeer/BP_Action_Unique_WhiteDeer_DarkPillar.3"
+      },
+      {
+        "ObjectName": "Function'BP_Action_Unique_WhiteDeer_DarkPillar_C:GetBlastClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WhiteDeer/BP_Action_Unique_WhiteDeer_DarkPillar.2"
+      }
+    ],
+    "FuncMap": {
+      "GetBlastClass": {
+        "ObjectName": "Function'BP_Action_Unique_WhiteDeer_DarkPillar_C:GetBlastClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WhiteDeer/BP_Action_Unique_WhiteDeer_DarkPillar.2"
+      },
+      "GetRainClass": {
+        "ObjectName": "Function'BP_Action_Unique_WhiteDeer_DarkPillar_C:GetRainClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WhiteDeer/BP_Action_Unique_WhiteDeer_DarkPillar.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_WhiteDeer_DarkPillar_C'Default__BP_Action_Unique_WhiteDeer_DarkPillar_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WhiteDeer/BP_Action_Unique_WhiteDeer_DarkPillar.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_WhiteDeer_DarkPillar_C",
+    "Name": "Default__BP_Action_Unique_WhiteDeer_DarkPillar_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/WhiteDeer/BP_Action_Unique_WhiteDeer_DarkPillar.BP_Action_Unique_WhiteDeer_DarkPillar_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_WhiteDeer_HolyPillar_C'Default__BP_Action_Unique_WhiteDeer_HolyPillar_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WhiteDeer/BP_Action_Unique_WhiteDeer_HolyPillar.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WazaID": "EPalWazaID::Unique_WhiteDeer_Dark_DarkPillar"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetBlastClass",
+    "Outer": "BP_Action_Unique_WhiteDeer_DarkPillar_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_Unique_WhiteDeer_HolyPillar_C:GetBlastClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WhiteDeer/BP_Action_Unique_WhiteDeer_HolyPillar.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_Unique_WhiteDeer_HolyPillar_C:GetBlastClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WhiteDeer/BP_Action_Unique_WhiteDeer_HolyPillar.5"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "Class",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_WhiteDeer_HolyPillar_Blast_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/WhiteDeer_HolyPillar/BP_SkillEffect_Unique_WhiteDeer_HolyPillar_Blast.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetRainClass",
+    "Outer": "BP_Action_Unique_WhiteDeer_DarkPillar_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_Unique_WhiteDeer_HolyPillar_C:GetRainClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WhiteDeer/BP_Action_Unique_WhiteDeer_HolyPillar.6"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_Unique_WhiteDeer_HolyPillar_C:GetRainClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WhiteDeer/BP_Action_Unique_WhiteDeer_HolyPillar.6"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "Class",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

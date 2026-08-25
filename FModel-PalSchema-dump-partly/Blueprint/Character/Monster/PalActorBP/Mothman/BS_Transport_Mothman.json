@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Transport_Mothman",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 2.0,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_Mothman_Transport'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/Mothman/AS_Mothman_Transport.0"
+          },
+          "SampleValue": {
+            "X": 10.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.5
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_Mothman_Transport'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/Mothman/AS_Mothman_Transport.0"
+          },
+          "SampleValue": {
+            "X": 500.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_Mothman_Idle'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/Mothman/AS_Mothman_Idle.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 0,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.02
+          },
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.02,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 500.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_Mothman_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/Mothman/SK_Mothman_Skeleton.12"
+      }
+    },
+    "SkeletonGuid": "0DEA88C3-44D87E2A-E6D38788-FC8CDC2F"
+  }
+]

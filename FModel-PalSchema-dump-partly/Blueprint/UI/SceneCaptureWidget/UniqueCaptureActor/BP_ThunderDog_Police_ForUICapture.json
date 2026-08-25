@@ -1,0 +1,249 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_ThunderDog_Police_ForUICapture_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_ThunderDog_Police_ForUICapture_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/SceneCaptureWidget/UniqueCaptureActor/BP_ThunderDog_Police_ForUICapture.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SkeletalMesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SkeletalMesh1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_ThunderDog_Police_ForUICapture_C'Default__BP_ThunderDog_Police_ForUICapture_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/SceneCaptureWidget/UniqueCaptureActor/BP_ThunderDog_Police_ForUICapture.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_ThunderDog_Police_ForUICapture_C",
+    "Name": "Default__BP_ThunderDog_Police_ForUICapture_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/SceneCaptureWidget/UniqueCaptureActor/BP_ThunderDog_Police_ForUICapture.BP_ThunderDog_Police_ForUICapture_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_ThunderDog_Police_ForUICapture_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_ThunderDog_Police_ForUICapture_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/SceneCaptureWidget/UniqueCaptureActor/BP_ThunderDog_Police_ForUICapture.2"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_ThunderDog_Police_ForUICapture_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/SceneCaptureWidget/UniqueCaptureActor/BP_ThunderDog_Police_ForUICapture.4"
+        }
+      ],
+      "VariableGuid": "B5C3DFBD-4C8DCF3D-7DC131A2-9ABDE505",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent'BP_ThunderDog_Police_ForUICapture_C:SkeletalMesh1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/SceneCaptureWidget/UniqueCaptureActor/BP_ThunderDog_Police_ForUICapture.7"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_ThunderDog_Police_ForUICapture_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/SceneCaptureWidget/UniqueCaptureActor/BP_ThunderDog_Police_ForUICapture.5"
+        }
+      ],
+      "VariableGuid": "40A3C5F3-44002CD6-3161B08D-E3AE5F3C",
+      "InternalVariableName": "SkeletalMesh1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent'BP_ThunderDog_Police_ForUICapture_C:SkeletalMesh_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/SceneCaptureWidget/UniqueCaptureActor/BP_ThunderDog_Police_ForUICapture.8"
+      },
+      "AttachToName": "spine_01",
+      "VariableGuid": "A8EDBC01-4E7C92ED-EF65B1B3-75BD445D",
+      "InternalVariableName": "SkeletalMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_ThunderDog_Police_ForUICapture_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_ThunderDog_Police_ForUICapture_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/SceneCaptureWidget/UniqueCaptureActor/BP_ThunderDog_Police_ForUICapture.3"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_ThunderDog_Police_ForUICapture_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/SceneCaptureWidget/UniqueCaptureActor/BP_ThunderDog_Police_ForUICapture.3"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_ThunderDog_Police_ForUICapture_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/SceneCaptureWidget/UniqueCaptureActor/BP_ThunderDog_Police_ForUICapture.4"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_ThunderDog_Police_ForUICapture_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/SceneCaptureWidget/UniqueCaptureActor/BP_ThunderDog_Police_ForUICapture.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_ThunderDog_Police_ForUICapture_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/SceneCaptureWidget/UniqueCaptureActor/BP_ThunderDog_Police_ForUICapture.3"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh1_GEN_VARIABLE",
+    "Outer": "BP_ThunderDog_Police_ForUICapture_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence'AS_ThunderDog_Idle'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/ThunderDog/AS_ThunderDog_Idle.0"
+        }
+      },
+      "AnimationMode": "EAnimationMode::AnimationSingleNode",
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_ThunderDog'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Monster/ThunderDog/SK_ThunderDog.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_ThunderDog'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Monster/ThunderDog/SK_ThunderDog.0"
+      },
+      "LightingChannels": {
+        "bChannel0": false,
+        "bChannel1": true
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh_GEN_VARIABLE",
+    "Outer": "BP_ThunderDog_Police_ForUICapture_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence'AS_GrassBoss_Ride_Idle'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Boss/GrassBoss/AS_GrassBoss_Ride_Idle.0"
+        }
+      },
+      "AnimationMode": "EAnimationMode::AnimationSingleNode",
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_NPC_Male_Police01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/NPC/SK_NPC_Male_Police01/SK_NPC_Male_Police01.1"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_NPC_Male_Police01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/NPC/SK_NPC_Male_Police01/SK_NPC_Male_Police01.1"
+      },
+      "LightingChannels": {
+        "bChannel0": false,
+        "bChannel1": true
+      },
+      "RelativeLocation": {
+        "X": 5.3290705E-15,
+        "Y": 80.0,
+        "Z": 10.0
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": -56.309933,
+        "Roll": -33.690067
+      }
+    }
+  }
+]

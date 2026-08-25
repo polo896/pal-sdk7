@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "ENum_BossGaugeDisplayMode",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "AC04B3644CFA436BF639A0BDD2FF1B3B",
+            "SourceString": "Long",
+            "LocalizedString": "Long"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "7D4B27A741AFDB3EAC26608B54E0CD3A",
+            "SourceString": "Short",
+            "LocalizedString": "Short"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "819C646040FAF6A4AECC3A8BA03C8E19",
+            "SourceString": "Short_NoPrefix",
+            "LocalizedString": "Short_NoPrefix"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "ENum_BossGaugeDisplayMode::NewEnumerator0": 0,
+      "ENum_BossGaugeDisplayMode::NewEnumerator1": 1,
+      "ENum_BossGaugeDisplayMode::NewEnumerator2": 2,
+      "ENum_BossGaugeDisplayMode::ENum_MAX": 3
+    },
+    "CppForm": "Namespaced"
+  }
+]

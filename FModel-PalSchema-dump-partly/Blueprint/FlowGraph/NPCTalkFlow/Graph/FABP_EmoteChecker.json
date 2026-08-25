@@ -1,0 +1,129 @@
+[
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_EmoteChecker",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "3B399536-46FAC443-5043E3B5-99199628",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "EE973212-45CEB100-59223BB8-9B163EB4",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_EmoteCheck_C",
+    "Name": "FNBP_EmoteCheck_C_0",
+    "Outer": "FABP_EmoteChecker",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_EmoteCheck.FNBP_EmoteCheck_C'",
+    "Template": {
+      "ObjectName": "FNBP_EmoteCheck_C'Default__FNBP_EmoteCheck_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_EmoteCheck.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "EE973212-45CEB100-59223BB8-9B163EB4",
+      "Connections": [
+        {
+          "Key": "Success",
+          "Value": {
+            "NodeGuid": "0FEBC909-4C7A7AD0-F2019D8B-DAA0A469",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Failed",
+          "Value": {
+            "NodeGuid": "F6E5AED2-4E13995D-D34BE99F-3E184F2E",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_EmoteChecker",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "EmoteTester_Acted"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "0FEBC909-4C7A7AD0-F2019D8B-DAA0A469"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_EmoteChecker",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "EmoteTester_FirstEncout_1"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "F6E5AED2-4E13995D-D34BE99F-3E184F2E"
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_EmoteChecker",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "35C6F861-4EDAB1B0-B5B6ACB1-C01725E7",
+      "Nodes": [
+        {
+          "Key": "3B399536-46FAC443-5043E3B5-99199628",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_EmoteChecker:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_EmoteChecker.0"
+          }
+        },
+        {
+          "Key": "EE973212-45CEB100-59223BB8-9B163EB4",
+          "Value": {
+            "ObjectName": "FNBP_EmoteCheck_C'FABP_EmoteChecker:FNBP_EmoteCheck_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_EmoteChecker.1"
+          }
+        },
+        {
+          "Key": "0FEBC909-4C7A7AD0-F2019D8B-DAA0A469",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_EmoteChecker:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_EmoteChecker.2"
+          }
+        },
+        {
+          "Key": "F6E5AED2-4E13995D-D34BE99F-3E184F2E",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_EmoteChecker:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_EmoteChecker.3"
+          }
+        }
+      ]
+    }
+  }
+]

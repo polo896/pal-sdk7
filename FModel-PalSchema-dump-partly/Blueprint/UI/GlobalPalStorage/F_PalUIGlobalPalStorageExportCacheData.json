@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "F_PalUIGlobalPalStorageExportCacheData",
+    "Class": "UScriptClass'UserDefinedStruct'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Guid": "A9831E92-4672907E-49C97889-5ABD0BEB"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "TargetSlot_2_65F5EB184623BD10CEB034948F2F5BC6",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterSlot'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "ExportIndex_5_1343716941E6450D5D2C75A2DD812F20",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ExportOption_8_486E79264E5ED3B76037BF92D31997D8",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 2,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalGlobalPalStorageExportOption'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "StructFlags": 16384,
+    "DefaultProperties": {
+      "TargetSlot_2_65F5EB184623BD10CEB034948F2F5BC6": null,
+      "ExportIndex_5_1343716941E6450D5D2C75A2DD812F20": 0,
+      "ExportOption_8_486E79264E5ED3B76037BF92D31997D8": {
+        "bRemoveOldData": false,
+        "bForceExport": false
+      }
+    }
+  }
+]

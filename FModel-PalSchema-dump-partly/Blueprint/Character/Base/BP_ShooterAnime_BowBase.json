@@ -1,0 +1,271 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_ShooterAnime_BowBase_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalShooterAnimeAssetBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_ShooterAnime_BowBase_C:Change_FireAnime_forRide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Base/BP_ShooterAnime_BowBase.3"
+      },
+      {
+        "ObjectName": "Function'BP_ShooterAnime_BowBase_C:GetChargeLoopAnime_forRide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Base/BP_ShooterAnime_BowBase.4"
+      },
+      {
+        "ObjectName": "Function'BP_ShooterAnime_BowBase_C:Change_ChargeAnime_forRide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Base/BP_ShooterAnime_BowBase.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Charge_Ride_up",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ChargeLoop_Ride_up",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Fire_Ride_up",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "Change_ChargeAnime_forRide": {
+        "ObjectName": "Function'BP_ShooterAnime_BowBase_C:Change_ChargeAnime_forRide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Base/BP_ShooterAnime_BowBase.2"
+      },
+      "GetChargeLoopAnime_forRide": {
+        "ObjectName": "Function'BP_ShooterAnime_BowBase_C:GetChargeLoopAnime_forRide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Base/BP_ShooterAnime_BowBase.4"
+      },
+      "Change_FireAnime_forRide": {
+        "ObjectName": "Function'BP_ShooterAnime_BowBase_C:Change_FireAnime_forRide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Base/BP_ShooterAnime_BowBase.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_ShooterAnime_BowBase_C'Default__BP_ShooterAnime_BowBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Base/BP_ShooterAnime_BowBase.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_ShooterAnime_BowBase_C",
+    "Name": "Default__BP_ShooterAnime_BowBase_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Base/BP_ShooterAnime_BowBase.BP_ShooterAnime_BowBase_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimeInfo": {
+        "IdlePoseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::None",
+            "Value": null
+          },
+          {
+            "Key": "EWeaponAnimationPoseType::Crouch",
+            "Value": null
+          }
+        ],
+        "JogPoseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::None",
+            "Value": null
+          },
+          {
+            "Key": "EWeaponAnimationPoseType::Crouch",
+            "Value": null
+          }
+        ],
+        "AimBaseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::None",
+            "Value": null
+          },
+          {
+            "Key": "EWeaponAnimationPoseType::Crouch",
+            "Value": null
+          }
+        ],
+        "AnimationMap": [
+          {
+            "Key": "EWeaponAnimationType::Shoot",
+            "Value": {
+              "PoseMap": [
+                {
+                  "Key": "EWeaponAnimationPoseType::None",
+                  "Value": null
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Crouch",
+                  "Value": null
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Riding",
+                  "Value": null
+                }
+              ],
+              "isAutoStop": false,
+              "EndDelegateType": "EPalWeaponAnimationEndDelegateType::MontageEnded"
+            }
+          },
+          {
+            "Key": "EWeaponAnimationType::PullTrigger",
+            "Value": {
+              "PoseMap": [
+                {
+                  "Key": "EWeaponAnimationPoseType::None",
+                  "Value": null
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Crouch",
+                  "Value": null
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Riding",
+                  "Value": null
+                }
+              ],
+              "isAutoStop": true,
+              "EndDelegateType": "EPalWeaponAnimationEndDelegateType::MontageEnded"
+            }
+          }
+        ],
+        "RidingAnimationMap": [
+          {
+            "Key": "EPalRidePositionType::BackRide",
+            "Value": {
+              "RidingAnimation": null,
+              "RidingSprintStartAnimation": null,
+              "RidingSprintAnimation": null,
+              "RidingShakingMontage": null,
+              "RideShootingAnimation": null,
+              "RideShootingAO": null
+            }
+          },
+          {
+            "Key": "EPalRidePositionType::HorseRide",
+            "Value": {
+              "RidingAnimation": null,
+              "RidingSprintStartAnimation": null,
+              "RidingSprintAnimation": null,
+              "RidingShakingMontage": null,
+              "RideShootingAnimation": null,
+              "RideShootingAO": null
+            }
+          },
+          {
+            "Key": "EPalRidePositionType::SitRide",
+            "Value": {
+              "RidingAnimation": null,
+              "RidingSprintStartAnimation": null,
+              "RidingSprintAnimation": null,
+              "RidingShakingMontage": null,
+              "RideShootingAnimation": null,
+              "RideShootingAO": null
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Change_ChargeAnime_forRide",
+    "Outer": "BP_ShooterAnime_BowBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Next",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Change_FireAnime_forRide",
+    "Outer": "BP_ShooterAnime_BowBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Next",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetChargeLoopAnime_forRide",
+    "Outer": "BP_ShooterAnime_BowBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Result",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

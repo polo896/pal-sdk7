@@ -1,0 +1,14 @@
+[
+  {
+    "Type": "PalGamepadButtonImageDatabase",
+    "Name": "DA_PalGamepadButtonImage",
+    "Class": "UScriptClass'PalGamepadButtonImageDatabase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GamepadButtonImageDataTable": {
+        "ObjectName": "DataTable'DT_PalGamepadButtonImage'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/UI/DT_PalGamepadButtonImage.0"
+      }
+    }
+  }
+]

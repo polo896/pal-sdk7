@@ -1,0 +1,101 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "tree_Spruce_Norway_Desktop_1_Forest",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PresetType": "EPalFoliagePresetType::NormalTree_L",
+      "Mesh": {
+        "ObjectName": "StaticMesh'Spruce_Norway_Desktop_1_Forest'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/tree/b00/SpeedTree/Mesh/Spruce_002/Spruce_Norway_Desktop_1_Forest.2"
+      },
+      "ComponentClass": {
+        "ObjectName": "Class'PalFoliageISMComponentBase'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "UpdateGuid": "AB2A4173-4A081B5E-E752469C-E2555B4C",
+      "Density": 50.0,
+      "Radius": 200.0,
+      "ScaleX": {
+        "Min": 1.55,
+        "Max": 2.1
+      },
+      "ZOffset": {
+        "Min": -80.0
+      },
+      "AlignToNormal": false,
+      "AverageNormalSingleComponent": false,
+      "GroundSlopeAngle": {
+        "Max": 90.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -3.7261658,
+          "Y": -8.411583,
+          "Z": 671.8165
+        },
+        "BoxExtent": {
+          "X": 268.9549,
+          "Y": 261.24872,
+          "Z": 714.687
+        },
+        "SphereRadius": 716.3677978515625
+      },
+      "LowBoundOriginRadius": {
+        "X": 6.2744026,
+        "Y": -11.470251,
+        "Z": 49.147903
+      },
+      "bAffectDistanceFieldLighting": true,
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "Background",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "vsGroundRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "ClimbRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      }
+    }
+  }
+]

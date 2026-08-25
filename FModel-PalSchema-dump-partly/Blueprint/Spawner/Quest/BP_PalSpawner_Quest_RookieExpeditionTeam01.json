@@ -1,0 +1,133 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalSpawner_Quest_RookieExpeditionTeam01_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalSpawner_Standard_Quest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard_Quest.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalSpawner_Quest_RookieExpeditionTeam01_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/Quest/BP_PalSpawner_Quest_RookieExpeditionTeam01.5"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_PalSpawner_Quest_RookieExpeditionTeam01_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/Quest/BP_PalSpawner_Quest_RookieExpeditionTeam01.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalSpawner_Standard_Quest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard_Quest.0"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalSpawner_Quest_RookieExpeditionTeam01_C'Default__BP_PalSpawner_Quest_RookieExpeditionTeam01_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/Quest/BP_PalSpawner_Quest_RookieExpeditionTeam01.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalSpawner_Quest_RookieExpeditionTeam01_C",
+    "Name": "Default__BP_PalSpawner_Quest_RookieExpeditionTeam01_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/Quest/BP_PalSpawner_Quest_RookieExpeditionTeam01.BP_PalSpawner_Quest_RookieExpeditionTeam01_C'",
+    "Template": {
+      "ObjectName": "BP_PalSpawner_Standard_Quest_C'Default__BP_PalSpawner_Standard_Quest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/BP_PalSpawner_Standard_Quest.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetQuest": {
+        "RowName": "Sub_RookieExpeditionTeam01"
+      },
+      "TargetQuestBlock": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_RookieExpeditionTeam01_DefeatPal_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_RookieExpeditionTeam01_DefeatPal.0"
+      },
+      "SpawnGroupList": [
+        {
+          "OriginalRowName": "None",
+          "OriginalSpawnerName": "None",
+          "Weight": 1,
+          "OnlyTime": "EPalOneDayTimeType::Undefined",
+          "OnlyWeather": "EPalWeatherConditionType::Undefined",
+          "PalList": [
+            {
+              "PalId": {
+                "Key": "PREDATOR_Garm_Quest"
+              },
+              "NPCID": {
+                "Key": "None"
+              },
+              "Level": 12,
+              "Level_Max": 12,
+              "Num": 1,
+              "Num_Max": 1
+            }
+          ],
+          "bHasWorldTreeAura": false
+        }
+      ],
+      "SpawnerRuleClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SpawnerRule_RookieExpeditionTeam01_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SpawnerRule/BP_SpawnerRule_RookieExpeditionTeam01.0"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_PalSpawner_Quest_RookieExpeditionTeam01_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalSpawner_Quest_RookieExpeditionTeam01_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalSpawner_Quest_RookieExpeditionTeam01_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/Quest/BP_PalSpawner_Quest_RookieExpeditionTeam01.3"
+      },
+      "VariableGuid": "0738D439-45A17587-D41C49B5-9020BC1D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalSpawner_Quest_RookieExpeditionTeam01_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalSpawner_Quest_RookieExpeditionTeam01_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/Quest/BP_PalSpawner_Quest_RookieExpeditionTeam01.4"
+      }
+    }
+  }
+]

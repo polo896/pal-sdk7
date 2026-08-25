@@ -1,0 +1,86 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_RagdollPreset_Liftup_HoodGhost_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalRagdollPreset'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_RagdollPreset_Liftup_HoodGhost_C'Default__BP_RagdollPreset_Liftup_HoodGhost_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Ragdoll/BP_RagdollPreset_Liftup_HoodGhost.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_RagdollPreset_Liftup_HoodGhost_C",
+    "Name": "Default__BP_RagdollPreset_Liftup_HoodGhost_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Ragdoll/BP_RagdollPreset_Liftup_HoodGhost.BP_RagdollPreset_Liftup_HoodGhost_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockBoneNames": [
+        "pelvis",
+        "spine_01",
+        "spine_02",
+        "spine_03",
+        "hips",
+        "clavicle_l",
+        "upperarm_l",
+        "upperarm_sub_l",
+        "lowerarm_l",
+        "lowerarm_sub_l",
+        "hand_l",
+        "hand_sub_l",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "hat_01_l",
+        "hat_02_l",
+        "hat_03_l",
+        "hat_04_l",
+        "hat_05_l",
+        "hat_01_r",
+        "hat_02_r",
+        "hat_03_r",
+        "hat_04_r",
+        "hat_05_r",
+        "head",
+        "clavicle_r",
+        "upperarm_r",
+        "upperarm_sub_r",
+        "lowerarm_r",
+        "lowerarm_sub_r",
+        "hand_r",
+        "hand_sub_r",
+        "tail_03",
+        "tail_04",
+        "tail_05",
+        "tail_06",
+        "tail_07",
+        "tail_08",
+        "tail_09",
+        "tail_10",
+        "tail_11",
+        "tail_11_l",
+        "tail_11_r",
+        "tail_12"
+      ],
+      "LinearDamping": 7.0,
+      "AngularDamping": 7.0
+    }
+  }
+]

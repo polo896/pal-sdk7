@@ -1,0 +1,18 @@
+[
+  {
+    "Type": "DataLayerAsset",
+    "Name": "Dungeon_Random_Volcano_01_07",
+    "Class": "UScriptClass'DataLayerAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DataLayerType": "EDataLayerType::Runtime",
+      "DebugColor": {
+        "B": 168,
+        "G": 242,
+        "R": 129,
+        "A": 255,
+        "Hex": "81F2A8"
+      }
+    }
+  }
+]

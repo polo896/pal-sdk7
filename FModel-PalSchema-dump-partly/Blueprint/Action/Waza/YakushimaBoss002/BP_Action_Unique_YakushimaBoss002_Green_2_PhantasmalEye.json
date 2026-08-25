@@ -1,0 +1,450 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'Default__BP_Action_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_2_PhantasmalEye.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C",
+    "Name": "Default__BP_Action_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_2_PhantasmalEye.BP_Action_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C'Default__BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss002_Green_PhantasmalEye.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkillEffectSpawnParameters": [
+        {
+          "TimeOffset": 0.84,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 0.94,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.04,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.14,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.24,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.34,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.44,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.54,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.64,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.74,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.84,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.94,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 2.04,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 2.14,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 2.24,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 2.34,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 2.44,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 2.54,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 2.64,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 2.74,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 2.84,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 2.94,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 3.04,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 3.14,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 3.24,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 3.34,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 3.44,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss002_Green_2_PhantasmalEye.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        }
+      ],
+      "WazaID": "EPalWazaID::Unique_YakushimaBoss001_Green_2_PhantasmalEye"
+    }
+  }
+]

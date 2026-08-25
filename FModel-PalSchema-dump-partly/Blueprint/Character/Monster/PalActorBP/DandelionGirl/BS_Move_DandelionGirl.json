@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Move_DandelionGirl",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 3.0,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_DandelionGirl_Idle'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/DandelionGirl/AS_DandelionGirl_Idle.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_DandelionGirl_Walk'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/DandelionGirl/AS_DandelionGirl_Walk.0"
+          },
+          "SampleValue": {
+            "X": 100.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_DandelionGirl_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/DandelionGirl/AS_DandelionGirl_Run.0"
+          },
+          "SampleValue": {
+            "X": 300.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.22222222
+          },
+          {
+            "SampleIndices": 1,
+            "SampleIndices[1]": 2,
+            "Vertices": 0.22222222,
+            "Vertices[1]": 0.6666667
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 450.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_DandelionGirl_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/DandelionGirl/SK_DandelionGirl_Skeleton.4"
+      }
+    },
+    "SkeletonGuid": "8D13D5AA-4599FD45-145E0C83-CE7B4AFC"
+  }
+]

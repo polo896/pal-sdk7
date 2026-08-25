@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b06_flower_Yucca_Aloe_Hero_Field_1",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b06_flower_Yucca_Aloe_Hero_Field_1'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b06/Tree/Meshes/SM_pal_b06_flower_Yucca_Aloe_Hero_Field_1.2"
+      },
+      "UpdateGuid": "45C74459-40F8BD89-2C0F9BAA-FE8F8F29",
+      "ScaleX": {
+        "Min": 0.6
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 1.6711006,
+          "Y": -1.986557,
+          "Z": 95.97698
+        },
+        "BoxExtent": {
+          "X": 83.403625,
+          "Y": 79.53163,
+          "Z": 113.090935
+        },
+        "SphereRadius": 125.77202502021403
+      },
+      "LowBoundOriginRadius": {
+        "X": 0.56627274,
+        "Y": -0.085409164,
+        "Z": 81.37602
+      },
+      "CullDistance": {
+        "Max": 6000
+      },
+      "bAffectDistanceFieldLighting": true,
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

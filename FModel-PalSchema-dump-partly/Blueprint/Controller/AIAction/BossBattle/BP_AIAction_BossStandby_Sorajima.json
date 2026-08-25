@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AIAction_BossStandby_Sorajima_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_BossStandby_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/BossBattle/BP_AIAction_BossStandby.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_BossStandby_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/BossBattle/BP_AIAction_BossStandby.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AIAction_BossStandby_Sorajima_C'Default__BP_AIAction_BossStandby_Sorajima_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/BossBattle/BP_AIAction_BossStandby_Sorajima.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AIAction_BossStandby_Sorajima_C",
+    "Name": "Default__BP_AIAction_BossStandby_Sorajima_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/AIAction/BossBattle/BP_AIAction_BossStandby_Sorajima.BP_AIAction_BossStandby_Sorajima_C'",
+    "Template": {
+      "ObjectName": "BP_AIAction_BossStandby_C'Default__BP_AIAction_BossStandby_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/BossBattle/BP_AIAction_BossStandby.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PalEncountClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AIAction_TurnAndEncount_SorajimaGYM_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/WildPal/BP_AIAction_TurnAndEncount_SorajimaGYM.0"
+      }
+    }
+  }
+]

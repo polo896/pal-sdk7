@@ -1,0 +1,1564 @@
+[
+  {
+    "Type": "Material",
+    "Name": "M_PalLit_Crystal_test",
+    "Class": "UScriptClass'Material'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BlendMode": "EBlendMode::BLEND_Masked",
+      "ShadingModel": "EMaterialShadingModel::MSM_Subsurface",
+      "ShadingModels": {
+        "ShadingModelField": 4
+      },
+      "bUseEmissiveForDynamicAreaLighting": true,
+      "bUsedWithSkeletalMesh": true,
+      "bUsedWithNiagaraSprites": true,
+      "bUsedWithStaticLighting": true,
+      "bUsedWithMorphTargets": true,
+      "bUsedWithSplineMeshes": true,
+      "bUsedWithInstancedStaticMeshes": true,
+      "bUsesDistortion": true,
+      "StateId": "3584FFB0-4E995BEF-B9CC259A-10D6BC8E",
+      "SubsurfaceProfile": {
+        "ObjectName": "SubsurfaceProfile'SP_CharacterBodyBase'",
+        "ObjectPath": "Pal/Content/Pal/Material/Character/Common/SP_CharacterBodyBase.0"
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "Black"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "DefaultBaseTexture"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "DefaultNormalMap"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_Cloud_00"
+        }
+      ]
+    },
+    "LoadedMaterialResources": [],
+    "CachedExpressionData": {
+      "RuntimeEntries": {
+        "ParameterInfoSet": [
+          {
+            "Name": "CaptureEmission",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Wetness",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Frostbite",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "CameraFade Distance",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Jewel Refraction",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Jewel Opacity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Jewel Refract Color Rate",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Jewel Refract Color Power",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Shield Damage",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Far Dither Start",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Far Dither Distance",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Shake Speed",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Shake Rate",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Saturation",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Value",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Contrast",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Character CameraFade Distance",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Character CameraFade Rate",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Light Affect Subsurface Min",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Light Affect Subsurface Max",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Dissolve Scale",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Dissolve Rate",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Dissolve Emissive Power",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Light Affect Emissive Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Base Emissive Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Light Affect Emissive Min",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Light Affect Emissive Max",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Fresnel Exponent",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Fresnel Fraction",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Base Color Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Up Normal Rate",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Character CameraFade Min",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Character CameraFade Start Bias",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Radiation Speed",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Radiation Strength",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Jewel Metallic",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Jewel Roughness",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Motion Vector Scale",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Rust Rate",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Wetness Effect Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Desaturation",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Emissive Texture Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Roughness Mul",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Roughness Add",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Metallic",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Metallic Mul",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Metallic Add",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Roughness",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Occlusion Mul",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Occlusion Add",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Occlusion",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Specular",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Dither Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Dissolve FadeOut",
+            "Association": "EMaterialParameterAssociation::LayerParameter",
+            "Index": 0
+          },
+          {
+            "Name": "Dissolve Emissive",
+            "Association": "EMaterialParameterAssociation::LayerParameter",
+            "Index": 0
+          },
+          {
+            "Name": "MaterialLayerBlend Rate",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Toony Factor",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Half Lambert",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Refract",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Bump Offset Height",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Eye Pupil Height",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Eye Cornea Height",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Eye Highlight Height",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Normal Map Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Normal Mask 1 Intensity 1",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Normal Mask 2 Intensity 1",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Normal Mask 3 Intensity 1",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Normal Map 1 Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Normal Mask 4 Intensity 1",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Normal Mask 1 Intensity 2",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Normal Mask 2 Intensity 2",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Normal Mask 3 Intensity 2",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Normal Map 2 Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Normal Mask 4 Intensity 2",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Max Expensive Steps Debug Color",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "POM HeightRatio",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "POM Shadow Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Emitter Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "SSS Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Emissive Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "opacity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "TilingScale",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Distance_To_Ground",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "DistanceField_",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Emmi Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Emissive Contrast",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Saturation Emissive_SSS",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Value Emissive_SSS",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Contrast Emissive_SSS",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          }
+        ]
+      },
+      "RuntimeEntries[1]": {
+        "ParameterInfoSet": [
+          {
+            "Name": "Shake Offset",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Hue",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Dissolve Emissive Color",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Fresnel Emissive Color",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Panner Speed",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "EmissionCorrectionByTime",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "BaseColor",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "UV Scale",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "BaseColor Backface",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "UVOffset0",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "UVOffset1",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Subsurface Color",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Masked BaseColor",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "POM HeightMap Channel",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Emmisive_",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Hue Emissive_SSS",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          }
+        ]
+      },
+      "RuntimeEntries[2]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[3]": {
+        "ParameterInfoSet": [
+          {
+            "Name": "Jewel Mask",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Rust Color Texture",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Rust Normal Map",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Rust Mask Map",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Base Texture",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Base Texture Backface",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Emissive Texture",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "MetallicRoughnessOcclusionSpecularTexture",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Subsurface Texture",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Eye White Texture",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Eye Pupil Texture",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Eye Cornea Texture",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Eye Highlight Texture",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "BaseColor Mask",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Normal Map",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Normal Map 1",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Normal Mask 1",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Normal Mask 2",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Normal Mask 3",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Normal Mask 4",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Override Normal Map 2",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "POM HeightMap",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "ObjectEmitter Texture",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Opacity Texture",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Crack",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          }
+        ]
+      },
+      "RuntimeEntries[4]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[5]": {
+        "ParameterInfoSet": []
+      },
+      "ScalarPrimitiveDataIndexValues": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "VectorPrimitiveDataIndexValues": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "ScalarValues": [
+        0.0,
+        0.0,
+        0.0,
+        100.0,
+        1.0,
+        0.75,
+        0.5,
+        1.5,
+        0.0,
+        5000.0,
+        8000.0,
+        10.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        100.0,
+        1.0,
+        0.0,
+        1.0,
+        3.0,
+        0.0,
+        6.0,
+        1.0,
+        0.5,
+        0.0,
+        0.5,
+        5.0,
+        0.04,
+        0.5,
+        0.0,
+        0.35,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.5,
+        1.0,
+        0.0,
+        1.0,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.5,
+        -1.0,
+        -0.25,
+        -3.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        32.0,
+        0.02,
+        0.7,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        1.0,
+        100.0,
+        0.5,
+        0.0,
+        2.0,
+        0.0,
+        2.0,
+        2.0
+      ],
+      "VectorValues": [
+        {
+          "R": 10.0,
+          "G": 10.0,
+          "B": 0.0,
+          "A": 0.0,
+          "Hex": "FFFF00"
+        },
+        {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFFFFF"
+        },
+        {
+          "R": 16.0,
+          "G": 4.0,
+          "B": 0.0,
+          "A": 0.0,
+          "Hex": "FFFF00"
+        },
+        {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 0.0,
+          "Hex": "000000"
+        },
+        {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 0.0,
+          "Hex": "000000"
+        },
+        {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "000000"
+        },
+        {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFFFFF"
+        },
+        {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 0.0,
+          "A": 0.0,
+          "Hex": "FFFF00"
+        },
+        {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFFFFF"
+        },
+        {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 0.0,
+          "Hex": "000000"
+        },
+        {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 0.0,
+          "Hex": "000000"
+        },
+        {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 0.0,
+          "Hex": "000000"
+        },
+        {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFFFFF"
+        },
+        {
+          "R": 1.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 0.0,
+          "Hex": "FF0000"
+        },
+        {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "000000"
+        },
+        {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFFFFF"
+        }
+      ],
+      "DoubleVectorValues": [],
+      "TextureValues": [
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultBaseTexture.DefaultBaseTexture",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultBaseTexture.DefaultBaseTexture",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultNormalMap.DefaultNormalMap",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultMaskMap.DefaultMaskMap",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultBaseTexture.DefaultBaseTexture",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultBaseTexture.DefaultBaseTexture",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Engine/EngineResources/Black.Black",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultMaskMap.DefaultMaskMap",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultBaseTexture.DefaultBaseTexture",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultBaseTexture.DefaultBaseTexture",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultBaseTexture.DefaultBaseTexture",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultBaseTexture.DefaultBaseTexture",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultBaseTexture.DefaultBaseTexture",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Engine/EngineResources/Black.Black",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultNormalMap.DefaultNormalMap",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultNormalMap.DefaultNormalMap",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Engine/MaterialTemplates/LayerBlends/T_DefaultMaskTexture.T_DefaultMaskTexture",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Engine/MaterialTemplates/LayerBlends/T_DefaultMaskTexture.T_DefaultMaskTexture",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Engine/MaterialTemplates/LayerBlends/T_DefaultMaskTexture.T_DefaultMaskTexture",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Engine/MaterialTemplates/LayerBlends/T_DefaultMaskTexture.T_DefaultMaskTexture",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultNormalMap.DefaultNormalMap",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultBaseTexture.DefaultBaseTexture",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Engine/EngineResources/Black.Black",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Pal/Material/DefaultBaseTexture.DefaultBaseTexture",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/Others/nakano_test/model_check/CrystalPack/Crystal/Crystal_MaterialLibrary/T_Crystal_Bubble_Crack_Dirt_M.T_Crystal_Bubble_Crack_Dirt_M",
+          "SubPathString": ""
+        }
+      ],
+      "FontValues": [],
+      "FontPageValues": [],
+      "RuntimeVirtualTextureValues": [],
+      "ReferencedTextures": [
+        {
+          "ObjectName": "Texture2D'Good64x64TilingNoiseHighFreq'",
+          "ObjectPath": "Engine/Content/EngineMaterials/Good64x64TilingNoiseHighFreq.0"
+        },
+        {
+          "ObjectName": "Texture2D'T_Common_FM'",
+          "ObjectPath": "Pal/Content/Pal/Texture/ModelCommon/FacialMask/T_Common_FM.0"
+        },
+        {
+          "ObjectName": "Texture2D'DefaultBaseTexture'",
+          "ObjectPath": "Pal/Content/Pal/Material/DefaultBaseTexture.0"
+        },
+        {
+          "ObjectName": "Texture2D'DefaultNormalMap'",
+          "ObjectPath": "Pal/Content/Pal/Material/DefaultNormalMap.0"
+        },
+        {
+          "ObjectName": "Texture2D'DefaultMaskMap'",
+          "ObjectPath": "Pal/Content/Pal/Material/DefaultMaskMap.0"
+        },
+        {
+          "ObjectName": "Texture2D'T_Cloud_00'",
+          "ObjectPath": "Pal/Content/Pal/Effect/Textures/T_Cloud_00.0"
+        },
+        {
+          "ObjectName": "Texture2D'Black'",
+          "ObjectPath": "Engine/Content/EngineResources/Black.0"
+        },
+        {
+          "ObjectName": "Texture2D'T_DefaultMaskTexture'",
+          "ObjectPath": "Engine/Content/MaterialTemplates/LayerBlends/T_DefaultMaskTexture.0"
+        },
+        {
+          "ObjectName": "Texture2D'T_EV_BlankWhite_01'",
+          "ObjectPath": "Engine/Content/EngineVolumetrics/Fogsheet/Materials/T_EV_BlankWhite_01.0"
+        },
+        {
+          "ObjectName": "Texture2D'T_Crystal_Bubble_Crack_Dirt_M'",
+          "ObjectPath": "Pal/Content/Others/nakano_test/model_check/CrystalPack/Crystal/Crystal_MaterialLibrary/T_Crystal_Bubble_Crack_Dirt_M.0"
+        }
+      ],
+      "FunctionInfos": [
+        {
+          "StateId": "892D7BBB-413A0586-E4D10BA8-F0545AD5",
+          "Function": {
+            "ObjectName": "MaterialFunction'MatLayerBlend_Standard'",
+            "ObjectPath": "Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_Standard.0"
+          }
+        },
+        {
+          "StateId": "E6A85460-4E707DD6-EBF457B4-A3E80A43",
+          "Function": {
+            "ObjectName": "MaterialFunction'MakeFloat3'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.0"
+          }
+        },
+        {
+          "StateId": "E6A85460-4E707DD6-EBF457B4-A3E80A43",
+          "Function": {
+            "ObjectName": "MaterialFunction'MakeFloat3'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.0"
+          }
+        },
+        {
+          "StateId": "E6A85460-4E707DD6-EBF457B4-A3E80A43",
+          "Function": {
+            "ObjectName": "MaterialFunction'MakeFloat3'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.0"
+          }
+        },
+        {
+          "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+          "Function": {
+            "ObjectName": "MaterialFunction'BreakOutFloat3Components'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+          }
+        },
+        {
+          "StateId": "C93EF2CA-44187655-D5EE81B3-C78DD8C2",
+          "Function": {
+            "ObjectName": "MaterialFunction'MF_PalLit_MaskMap'",
+            "ObjectPath": "Pal/Content/Pal/Material/Character/Common/MF_PalLit_MaskMap.0"
+          }
+        },
+        {
+          "StateId": "71028A8D-47BF4037-3A3A0B8A-D7B60E53",
+          "Function": {
+            "ObjectName": "MaterialFunction'ScreenAlignedPixelToPixelUVs'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedPixelToPixelUVs.0"
+          }
+        },
+        {
+          "StateId": "22D58D0F-45CC84AB-89A3628B-351D83C8",
+          "Function": {
+            "ObjectName": "MaterialFunction'DitherTemporalAA'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DitherTemporalAA.0"
+          }
+        },
+        {
+          "StateId": "B6067F67-4AC0092A-9D7DF581-EBEEE180",
+          "Function": {
+            "ObjectName": "MaterialFunction'HueShift'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/HueShift.0"
+          }
+        },
+        {
+          "StateId": "A9E4F021-46161CC9-A22A4F96-722D7232",
+          "Function": {
+            "ObjectName": "MaterialFunction'SplitComponents'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/SplitComponents.0"
+          }
+        },
+        {
+          "StateId": "A9E4F021-46161CC9-A22A4F96-722D7232",
+          "Function": {
+            "ObjectName": "MaterialFunction'SplitComponents'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/SplitComponents.0"
+          }
+        },
+        {
+          "StateId": "E6A85460-4E707DD6-EBF457B4-A3E80A43",
+          "Function": {
+            "ObjectName": "MaterialFunction'MakeFloat3'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.0"
+          }
+        },
+        {
+          "StateId": "9266BF7A-41122BB3-EC5C82B7-A3E751C3",
+          "Function": {
+            "ObjectName": "MaterialFunction'MakeFloat4'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat4.0"
+          }
+        },
+        {
+          "StateId": "9266BF7A-41122BB3-EC5C82B7-A3E751C3",
+          "Function": {
+            "ObjectName": "MaterialFunction'MakeFloat4'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat4.0"
+          }
+        },
+        {
+          "StateId": "DDB616F6-45461DBB-6B0367AD-CBAD6687",
+          "Function": {
+            "ObjectName": "MaterialFunction'LocalPosition'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/LocalPosition.0"
+          }
+        },
+        {
+          "StateId": "4E136F49-473A286C-A461A4A4-20CF7A36",
+          "Function": {
+            "ObjectName": "MaterialFunction'MF_PalLit'",
+            "ObjectPath": "Pal/Content/Pal/Material/Character/Common/MF_PalLit.0"
+          }
+        },
+        {
+          "StateId": "7560E2DA-4356343C-18E6818A-A015BAC5",
+          "Function": {
+            "ObjectName": "MaterialFunction'MakeFloat2'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2.0"
+          }
+        },
+        {
+          "StateId": "9266BF7A-41122BB3-EC5C82B7-A3E751C3",
+          "Function": {
+            "ObjectName": "MaterialFunction'MakeFloat4'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat4.0"
+          }
+        },
+        {
+          "StateId": "7560E2DA-4356343C-18E6818A-A015BAC5",
+          "Function": {
+            "ObjectName": "MaterialFunction'MakeFloat2'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2.0"
+          }
+        },
+        {
+          "StateId": "7560E2DA-4356343C-18E6818A-A015BAC5",
+          "Function": {
+            "ObjectName": "MaterialFunction'MakeFloat2'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2.0"
+          }
+        },
+        {
+          "StateId": "FB5DED02-43ED57EC-04B296BB-3DA5A983",
+          "Function": {
+            "ObjectName": "MaterialFunctionMaterialLayer'ML_PalDissolveFadeOut'",
+            "ObjectPath": "Pal/Content/Pal/Material/Character/Common/ML_PalDissolveFadeOut.0"
+          }
+        },
+        {
+          "StateId": "9266BF7A-41122BB3-EC5C82B7-A3E751C3",
+          "Function": {
+            "ObjectName": "MaterialFunction'MakeFloat4'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat4.0"
+          }
+        },
+        {
+          "StateId": "D1683AE0-48FBC6EA-7530739F-BD58AE16",
+          "Function": {
+            "ObjectName": "MaterialFunction'MF_PalLit_SampleNormalMap'",
+            "ObjectPath": "Pal/Content/Pal/Material/Character/Common/MF_PalLit_SampleNormalMap.0"
+          }
+        },
+        {
+          "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+          "Function": {
+            "ObjectName": "MaterialFunction'VectorLength'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+          }
+        },
+        {
+          "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+          "Function": {
+            "ObjectName": "MaterialFunction'VectorLength'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+          }
+        },
+        {
+          "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+          "Function": {
+            "ObjectName": "MaterialFunction'VectorLength'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+          }
+        },
+        {
+          "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+          "Function": {
+            "ObjectName": "MaterialFunction'VectorLength'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+          }
+        },
+        {
+          "StateId": "50EBF8C6-4FF5F3EF-E9520A92-C416A78F",
+          "Function": {
+            "ObjectName": "MaterialFunction'CameraDirectionVector'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.0"
+          }
+        },
+        {
+          "StateId": "057104BE-419EB8A2-40A62A8C-3874BCD2",
+          "Function": {
+            "ObjectName": "MaterialFunction'InverseTransformMatrix'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Math/InverseTransformMatrix.0"
+          }
+        },
+        {
+          "StateId": "972EFAAA-4C1C2B16-4BC287A2-B11C51DA",
+          "Function": {
+            "ObjectName": "MaterialFunction'SafeNormalize'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.0"
+          }
+        },
+        {
+          "StateId": "972EFAAA-4C1C2B16-4BC287A2-B11C51DA",
+          "Function": {
+            "ObjectName": "MaterialFunction'SafeNormalize'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.0"
+          }
+        },
+        {
+          "StateId": "B404464D-42313D79-E67091AA-AD61BE51",
+          "Function": {
+            "ObjectName": "MaterialFunction'CreateThirdOrthogonalVector'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Math/CreateThirdOrthogonalVector.0"
+          }
+        },
+        {
+          "StateId": "4A0C0323-41EFBE0F-65260B88-B780A3F3",
+          "Function": {
+            "ObjectName": "MaterialFunction'TransformToZVector'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Math/TransformToZVector.0"
+          }
+        },
+        {
+          "StateId": "7E10F3A5-4FD73956-EC1C998B-E232916D",
+          "Function": {
+            "ObjectName": "MaterialFunction'ParallaxOcclusionMapping'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/ParallaxOcclusionMapping.0"
+          }
+        },
+        {
+          "StateId": "9266BF7A-41122BB3-EC5C82B7-A3E751C3",
+          "Function": {
+            "ObjectName": "MaterialFunction'MakeFloat4'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat4.0"
+          }
+        },
+        {
+          "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+          "Function": {
+            "ObjectName": "MaterialFunction'VectorLength'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+          }
+        },
+        {
+          "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+          "Function": {
+            "ObjectName": "MaterialFunction'VectorLength'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+          }
+        },
+        {
+          "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+          "Function": {
+            "ObjectName": "MaterialFunction'VectorLength'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+          }
+        },
+        {
+          "StateId": "41E48A6E-4C65ABBC-54009EA3-2611D5C6",
+          "Function": {
+            "ObjectName": "MaterialFunction'ObjectScale'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/V2/ObjectScale.0"
+          }
+        },
+        {
+          "StateId": "E6A85460-4E707DD6-EBF457B4-A3E80A43",
+          "Function": {
+            "ObjectName": "MaterialFunction'MakeFloat3'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.0"
+          }
+        },
+        {
+          "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+          "Function": {
+            "ObjectName": "MaterialFunction'BreakOutFloat3Components'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+          }
+        },
+        {
+          "StateId": "00F13223-46CA1863-F8FC86AE-A1EBDF33",
+          "Function": {
+            "ObjectName": "MaterialFunction'MF_HSVToRGB'",
+            "ObjectPath": "Pal/Content/Pal/Material/UI/MF_HSVToRGB.0"
+          }
+        },
+        {
+          "StateId": "E6A85460-4E707DD6-EBF457B4-A3E80A43",
+          "Function": {
+            "ObjectName": "MaterialFunction'MakeFloat3'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.0"
+          }
+        }
+      ],
+      "ParameterCollectionInfos": [
+        {
+          "StateId": "E1B1A7FD-45421408-0B26A982-64781A9A",
+          "ParameterCollection": {
+            "ObjectName": "MaterialParameterCollection'MPC_PalLitParameterCollection'",
+            "ObjectPath": "Pal/Content/Pal/Material/MPC_PalLitParameterCollection.0"
+          }
+        }
+      ],
+      "GrassTypes": [],
+      "MaterialLayers": {
+        "Layers": [
+          {
+            "ObjectName": "MaterialFunctionMaterialLayer'ML_PalDissolveFadeOut'",
+            "ObjectPath": "Pal/Content/Pal/Material/Character/Common/ML_PalDissolveFadeOut.0"
+          }
+        ],
+        "Blends": []
+      },
+      "DynamicParameterNames": [],
+      "QualityLevelsUsed": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bHasMaterialLayers": true,
+      "bHasRuntimeVirtualTextureOutput": false,
+      "bHasSceneColor": false,
+      "bHasPerInstanceCustomData": true,
+      "bHasPerInstanceRandom": false,
+      "bHasVertexInterpolator": false,
+      "PropertyConnectedBitmask": 2684329959
+    },
+    "ReferencedTextures": [
+      {
+        "ObjectName": "Texture2D'Good64x64TilingNoiseHighFreq'",
+        "ObjectPath": "Engine/Content/EngineMaterials/Good64x64TilingNoiseHighFreq.0"
+      },
+      {
+        "ObjectName": "Texture2D'Black'",
+        "ObjectPath": "Engine/Content/EngineResources/Black.0"
+      },
+      {
+        "ObjectName": "Texture2D'T_EV_BlankWhite_01'",
+        "ObjectPath": "Engine/Content/EngineVolumetrics/Fogsheet/Materials/T_EV_BlankWhite_01.0"
+      },
+      {
+        "ObjectName": "Texture2D'T_DefaultMaskTexture'",
+        "ObjectPath": "Engine/Content/MaterialTemplates/LayerBlends/T_DefaultMaskTexture.0"
+      },
+      {
+        "ObjectName": "Texture2D'T_Crystal_Bubble_Crack_Dirt_M'",
+        "ObjectPath": "Pal/Content/Others/nakano_test/model_check/CrystalPack/Crystal/Crystal_MaterialLibrary/T_Crystal_Bubble_Crack_Dirt_M.0"
+      },
+      {
+        "ObjectName": "Texture2D'T_Cloud_00'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Textures/T_Cloud_00.0"
+      },
+      {
+        "ObjectName": "Texture2D'DefaultBaseTexture'",
+        "ObjectPath": "Pal/Content/Pal/Material/DefaultBaseTexture.0"
+      },
+      {
+        "ObjectName": "Texture2D'DefaultMaskMap'",
+        "ObjectPath": "Pal/Content/Pal/Material/DefaultMaskMap.0"
+      },
+      {
+        "ObjectName": "Texture2D'DefaultNormalMap'",
+        "ObjectPath": "Pal/Content/Pal/Material/DefaultNormalMap.0"
+      },
+      {
+        "ObjectName": "Texture2D'T_Common_FM'",
+        "ObjectPath": "Pal/Content/Pal/Texture/ModelCommon/FacialMask/T_Common_FM.0"
+      }
+    ]
+  }
+]

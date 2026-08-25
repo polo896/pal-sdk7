@@ -1,0 +1,334 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Status_PlayerInflictEffect_BurnFireVortex_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Status_PlayerInflictEffect_BurnFireVortex_C:OnDestroyEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_BurnFireVortex.3"
+      },
+      {
+        "ObjectName": "Function'BP_Status_PlayerInflictEffect_BurnFireVortex_C:OnSpawnEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_BurnFireVortex.4"
+      },
+      {
+        "ObjectName": "Function'BP_Status_PlayerInflictEffect_BurnFireVortex_C:CheckAdditionalCondition'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_BurnFireVortex.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Max",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Probability",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "EffectList",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "EffectList",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_PassiveAttackBase_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_PassiveAttackBase.0"
+          }
+        }
+      }
+    ],
+    "FuncMap": {
+      "CheckAdditionalCondition": {
+        "ObjectName": "Function'BP_Status_PlayerInflictEffect_BurnFireVortex_C:CheckAdditionalCondition'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_BurnFireVortex.2"
+      },
+      "OnSpawnEffect": {
+        "ObjectName": "Function'BP_Status_PlayerInflictEffect_BurnFireVortex_C:OnSpawnEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_BurnFireVortex.4"
+      },
+      "OnDestroyEffect": {
+        "ObjectName": "Function'BP_Status_PlayerInflictEffect_BurnFireVortex_C:OnDestroyEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_BurnFireVortex.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Status_PlayerInflictEffect_BurnFireVortex_C'Default__BP_Status_PlayerInflictEffect_BurnFireVortex_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_BurnFireVortex.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Status_PlayerInflictEffect_BurnFireVortex_C",
+    "Name": "Default__BP_Status_PlayerInflictEffect_BurnFireVortex_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_BurnFireVortex.BP_Status_PlayerInflictEffect_BurnFireVortex_C'",
+    "Template": {
+      "ObjectName": "BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C'Default__BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Max": 1,
+      "Probability": 1.0,
+      "CooldownTime": 0.1,
+      "SkillEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_DarkFlameFox_PartnerSkill_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/DarkFlameFox_PartnerSkill/BP_SkillEffect_DarkFlameFox_PartnerSkill.0"
+      },
+      "Status ID": "EPalStatusID::PlayerInflictEffect_AttackBurning_ApplyFireVortex"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "CheckAdditionalCondition",
+    "Outer": "BP_Status_PlayerInflictEffect_BurnFireVortex_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C:CheckAdditionalCondition'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C:CheckAdditionalCondition'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "DamageResult",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDamageResult'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CanActivate",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalStatusComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetExecutionStatus_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalStatusBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnDestroyEffect",
+    "Outer": "BP_Status_PlayerInflictEffect_BurnFireVortex_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "DestroyedActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Passive_Attack_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PassiveAttackBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_PassiveAttackBase.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_RemoveItem_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSpawnEffect",
+    "Outer": "BP_Status_PlayerInflictEffect_BurnFireVortex_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C:OnSpawnEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.8"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Status_PlayerInflictEffect_ConditionHitEffectBase_C:OnSpawnEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_PlayerInflictEffect_ConditionHitEffectBase.8"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SpawnEffect",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PassiveAttackBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_PassiveAttackBase.0"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "SparseDelegateFunction'ActorDestroyedSignature__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

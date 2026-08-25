@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "ENum_KingWhale_CommonSkillState",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "9B5E4F464471D9411C20CEB2D2B59042",
+            "SourceString": "Start",
+            "LocalizedString": "Start"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "D06CFE2A4057766FC540EFB2364C2086",
+            "SourceString": "Action",
+            "LocalizedString": "Action"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "A7B796CA460C878F11FBABB3409107E1",
+            "SourceString": "End",
+            "LocalizedString": "End"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "ENum_KingWhale_CommonSkillState::NewEnumerator0": 0,
+      "ENum_KingWhale_CommonSkillState::NewEnumerator1": 1,
+      "ENum_KingWhale_CommonSkillState::NewEnumerator2": 2,
+      "ENum_KingWhale_CommonSkillState::ENum_KingWhale_MAX": 3
+    },
+    "CppForm": "Namespaced"
+  }
+]

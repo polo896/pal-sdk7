@@ -1,0 +1,53 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_b07_Ivy_01A_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'pal_b07_tree_Ivy_01A_RandomDungeon'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/grass_bush/b07/pal_b07_tree_Ivy_01A_RandomDungeon.2"
+      },
+      "UpdateGuid": "BE9BABF4-46B784F9-E17F99A7-69FF4811",
+      "ScaleX": {
+        "Max": 1.4
+      },
+      "AlignToNormal": false,
+      "AlignMaxAngle": 90.0,
+      "GroundSlopeAngle": {
+        "Max": 180.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -1.8427582,
+          "Y": 5.897217,
+          "Z": -77.30333
+        },
+        "BoxExtent": {
+          "X": 20.840042,
+          "Y": 66.667656,
+          "Z": 122.11441
+        },
+        "SphereRadius": 127.30997221103505
+      },
+      "LowBoundOriginRadius": {
+        "X": 5.192689,
+        "Y": 13.000655,
+        "Z": 26.967896
+      },
+      "CullDistance": {
+        "Max": 6500
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "pal_b00_tree_Small_Bush_Yellow_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'pal_b05_tree_Small_Bush_Yellow1'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b05/tree/pal_b05_tree_Small_Bush_Yellow1.2"
+      },
+      "UpdateGuid": "2F9CACE9-401A4886-665C07B1-3C8D87BD",
+      "Density": 1.0,
+      "Radius": 1.0,
+      "SingleInstanceModeRadius": 222.0,
+      "ScaleX": {
+        "Max": 1.7
+      },
+      "AverageNormal": true,
+      "AlignMaxAngle": 35.0,
+      "GroundSlopeAngle": {
+        "Max": 90.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 22.108109,
+          "Y": 18.714172,
+          "Z": 70.0674
+        },
+        "BoxExtent": {
+          "X": 359.8675,
+          "Y": 337.76627,
+          "Z": 314.3424
+        },
+        "SphereRadius": 379.57889243959534
+      },
+      "LowBoundOriginRadius": {
+        "X": 29.30307,
+        "Y": 114.018074,
+        "Z": 160.15411
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

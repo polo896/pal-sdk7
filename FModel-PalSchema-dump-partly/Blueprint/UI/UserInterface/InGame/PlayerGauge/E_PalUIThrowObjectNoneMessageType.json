@@ -1,0 +1,56 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_PalUIThrowObjectNoneMessageType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "01702AC04CF7C3D50E4F95988D9481CE",
+            "SourceString": "NothingSphere",
+            "LocalizedString": "NothingSphere"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "43FBF60A4A046B8D04B7FFA5857C3790",
+            "SourceString": "NothingOtomo",
+            "LocalizedString": "NothingOtomo"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "E75AC7D2476795A6F1A17BBC02E76A27",
+            "SourceString": "Invalid",
+            "LocalizedString": "Invalid"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "953AE3A2462398FC89A9F29F7ACAF9AA",
+            "SourceString": "DeadOtomo",
+            "LocalizedString": "DeadOtomo"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_PalUIThrowObjectNoneMessageType::NewEnumerator2": 0,
+      "E_PalUIThrowObjectNoneMessageType::NewEnumerator0": 1,
+      "E_PalUIThrowObjectNoneMessageType::NewEnumerator1": 2,
+      "E_PalUIThrowObjectNoneMessageType::NewEnumerator3": 3,
+      "E_PalUIThrowObjectNoneMessageType::E_MAX": 4
+    },
+    "CppForm": "Namespaced"
+  }
+]

@@ -1,0 +1,585 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_WidePenetrateShotgun_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ShotgunBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ShotgunBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_WidePenetrateShotgun_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.14"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_WidePenetrateShotgun_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.10"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:ExecuteUbergraph_BP_WidePenetrateShotgun'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ShotgunBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ShotgunBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:PlayShootAnim'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.8"
+      },
+      {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:OnShot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.7"
+      },
+      {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:OnPullTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.4"
+      },
+      {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:OnReleaseTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.5"
+      },
+      {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:OnReloadStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.6"
+      },
+      {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:OnDetachWeapon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.3"
+      },
+      {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:ReceiveEndPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.9"
+      },
+      {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:ExecuteUbergraph_BP_WidePenetrateShotgun'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ShootingHandle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_WidePenetrateShotgun": {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:ExecuteUbergraph_BP_WidePenetrateShotgun'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.2"
+      },
+      "ReceiveEndPlay": {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:ReceiveEndPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.9"
+      },
+      "OnDetachWeapon": {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:OnDetachWeapon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.3"
+      },
+      "OnReloadStart": {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:OnReloadStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.6"
+      },
+      "OnReleaseTrigger": {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:OnReleaseTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.5"
+      },
+      "OnPullTrigger": {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:OnPullTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.4"
+      },
+      "OnShot": {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:OnShot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.7"
+      },
+      "PlayShootAnim": {
+        "ObjectName": "Function'BP_WidePenetrateShotgun_C:PlayShootAnim'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.8"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_WidePenetrateShotgun_C'Default__BP_WidePenetrateShotgun_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_WidePenetrateShotgun_C",
+    "Name": "Default__BP_WidePenetrateShotgun_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.BP_WidePenetrateShotgun_C'",
+    "Template": {
+      "ObjectName": "BP_ShotgunBase_C'Default__BP_ShotgunBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ShotgunBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ShootingHandle": {
+        "Handle": 0
+      },
+      "ShotInterval": 0.18,
+      "MuzzleEffect": {
+        "ObjectName": "NiagaraSystem'NS_EnergyShotgun_Muzzle'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Weapon/EnergyShotgun/NS_EnergyShotgun_Muzzle.75"
+      },
+      "Max Bullets": 6,
+      "RecoilCurve": {
+        "ObjectName": "CurveFloat'C_AssaultRifleRecoilCurve'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/RecoilCurve/C_AssaultRifleRecoilCurve.0"
+      },
+      "SupportedBulletMap": [
+        {
+          "Key": {
+            "Key": "WidePenetrateShotgunBullet"
+          },
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_ShotgunBullet_Laser_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/BP_ShotgunBullet_Laser.0"
+          }
+        }
+      ],
+      "FallbackBulletItemId": {
+        "Key": "WidePenetrateShotgunBullet"
+      },
+      "weaponIconTexture": {
+        "AssetPathName": "/Game/Pal/Texture/Item/Weapon/T_icon_WidePenetrateShotgun_UI.T_icon_WidePenetrateShotgun_UI",
+        "SubPathString": ""
+      },
+      "PalSoundSlotClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_WidePenetrateShotgun.BP_SoundSlot_Weapon_WidePenetrateShotgun_C",
+        "SubPathString": ""
+      },
+      "IsTriggerOnlyFireWeapon": false,
+      "BackWeaponClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_BackWeapon_WideSpreadShotgun_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BackWeapon/BP_BackWeapon_WideSpreadShotgun.0"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_WidePenetrateShotgun",
+    "Outer": "BP_WidePenetrateShotgun_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Event_EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bCanShootOnRelease",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_InReloadSpeedPlayRate",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_detachActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_Time_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_InitialStartDelay_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnDetachWeapon",
+    "Outer": "BP_WidePenetrateShotgun_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ShotgunBase_C:OnDetachWeapon'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ShotgunBase.17"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ShotgunBase_C:OnDetachWeapon'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ShotgunBase.17"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "detachActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPullTrigger",
+    "Outer": "BP_WidePenetrateShotgun_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ShotgunBase_C:OnPullTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ShotgunBase.18"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ShotgunBase_C:OnPullTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ShotgunBase.18"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnReleaseTrigger",
+    "Outer": "BP_WidePenetrateShotgun_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ShotgunBase_C:OnReleaseTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ShotgunBase.19"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ShotgunBase_C:OnReleaseTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ShotgunBase.19"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bCanShootOnRelease",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnReloadStart",
+    "Outer": "BP_WidePenetrateShotgun_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalWeaponBase:OnReloadStart'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "InReloadSpeedPlayRate",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnShot",
+    "Outer": "BP_WidePenetrateShotgun_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ShotgunBase_C:OnShot'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ShotgunBase.20"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ShotgunBase_C:OnShot'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ShotgunBase.20"
+    },
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayShootAnim",
+    "Outer": "BP_WidePenetrateShotgun_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ShotgunBase_C:PlayShootAnim'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ShotgunBase.24"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ShotgunBase_C:PlayShootAnim'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ShotgunBase.24"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalSoundOptions",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalSoundOptions'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalDataTableRowName_SoundID",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDataTableRowName_SoundID'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveEndPlay",
+    "Outer": "BP_WidePenetrateShotgun_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveEndPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_WidePenetrateShotgun_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SkeletalMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SkeletalMeshComponent'BP_WidePenetrateShotgun_C:Weapon_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.15"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_ShotgunBase_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ShotgunBase.0"
+            },
+            "SCSVariableName": "Weapon",
+            "AssociatedGuid": "1FA840BD-4BCBCF41-335879B8-24E7EDF4"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SceneComponent'BP_WidePenetrateShotgun_C:ICH-DefaultSceneRoot_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.12"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_ShotgunBase_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ShotgunBase.0"
+            },
+            "SCSVariableName": "DefaultSceneRoot",
+            "AssociatedGuid": "E127FC84-4FD27DEC-BA6E9196-A400807F"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_WidePenetrateShotgun_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "ICH-DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_WidePenetrateShotgun_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_WidePenetrateShotgun_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.11"
+      },
+      "VariableGuid": "746D418B-49644A79-A7984880-98CC09D7",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_WidePenetrateShotgun_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_WidePenetrateShotgun_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.13"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "Weapon_GEN_VARIABLE",
+    "Outer": "BP_WidePenetrateShotgun_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SkeletalMeshComponent'BP_ShotgunBase_C:Weapon_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ShotgunBase.31"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_PiercingShotgun'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/AncientWeapon/PiercingShotgun/SK_PiercingShotgun.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_PiercingShotgun'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/AncientWeapon/PiercingShotgun/SK_PiercingShotgun.0"
+      },
+      "OverrideMaterials": [
+        null,
+        null,
+        null
+      ]
+    }
+  }
+]

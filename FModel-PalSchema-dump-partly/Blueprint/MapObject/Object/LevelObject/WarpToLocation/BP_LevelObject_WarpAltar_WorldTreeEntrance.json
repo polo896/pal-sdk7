@@ -1,0 +1,193 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_LevelObject_WarpAltar_WorldTreeEntrance_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_LevelObject_WarpAltar_WorldTreeEntrance_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/WarpToLocation/BP_LevelObject_WarpAltar_WorldTreeEntrance.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalLevelObjectWarpPointToLocation'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_InteractableBox",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_InteractableBox_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Components/BP_InteractableBox.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_LevelObject_WarpAltar_WorldTreeEntrance_C'Default__BP_LevelObject_WarpAltar_WorldTreeEntrance_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/WarpToLocation/BP_LevelObject_WarpAltar_WorldTreeEntrance.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_InteractableBox_C",
+    "Name": "BP_InteractableBox_GEN_VARIABLE",
+    "Outer": "BP_LevelObject_WarpAltar_WorldTreeEntrance_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Components/BP_InteractableBox.BP_InteractableBox_C'",
+    "Template": {
+      "ObjectName": "BP_InteractableBox_C'Default__BP_InteractableBox_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Components/BP_InteractableBox.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 50.0,
+        "Y": 50.0,
+        "Z": 50.0
+      }
+    }
+  },
+  {
+    "Type": "BP_LevelObject_WarpAltar_WorldTreeEntrance_C",
+    "Name": "Default__BP_LevelObject_WarpAltar_WorldTreeEntrance_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/WarpToLocation/BP_LevelObject_WarpAltar_WorldTreeEntrance.BP_LevelObject_WarpAltar_WorldTreeEntrance_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IndicatorTextId": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "INTERACT_INDICATOR_WarpAltar"
+      },
+      "WarpConfirmDialogTextId": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "SYSTEM_DIALOG_EnterWorldTree"
+      },
+      "Performance": {
+        "ObjectName": "PalLevelObjectWarpPointToLocationPerformance_Cutscene'Default__BP_LevelObject_WarpAltar_WorldTreeEntrance_C:PalLevelObjectWarpPointToLocationPerformance_Cutscene_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/WarpToLocation/BP_LevelObject_WarpAltar_WorldTreeEntrance.3"
+      }
+    }
+  },
+  {
+    "Type": "PalLevelObjectWarpPointToLocationPerformance_Cutscene",
+    "Name": "PalLevelObjectWarpPointToLocationPerformance_Cutscene_0",
+    "Outer": "Default__BP_LevelObject_WarpAltar_WorldTreeEntrance_C",
+    "Class": "UScriptClass'PalLevelObjectWarpPointToLocationPerformance_Cutscene'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SoftCutsceneActor": {
+        "AssetPathName": "/Game/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.BP_CutsceneActor_WotldTreeEntrance_C",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_LevelObject_WarpAltar_WorldTreeEntrance_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_LevelObject_WarpAltar_WorldTreeEntrance_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/WarpToLocation/BP_LevelObject_WarpAltar_WorldTreeEntrance.4"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_LevelObject_WarpAltar_WorldTreeEntrance_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/WarpToLocation/BP_LevelObject_WarpAltar_WorldTreeEntrance.6"
+        }
+      ],
+      "VariableGuid": "559EF70F-46F9322B-882CA795-650FE8EC",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_12",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_InteractableBox_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Components/BP_InteractableBox.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_InteractableBox_C'BP_LevelObject_WarpAltar_WorldTreeEntrance_C:BP_InteractableBox_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/WarpToLocation/BP_LevelObject_WarpAltar_WorldTreeEntrance.1"
+      },
+      "VariableGuid": "0D9CD4A1-49B1E52C-10B9ECBD-11A08942",
+      "InternalVariableName": "BP_InteractableBox"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_LevelObject_WarpAltar_WorldTreeEntrance_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_LevelObject_WarpAltar_WorldTreeEntrance_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/WarpToLocation/BP_LevelObject_WarpAltar_WorldTreeEntrance.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_LevelObject_WarpAltar_WorldTreeEntrance_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/WarpToLocation/BP_LevelObject_WarpAltar_WorldTreeEntrance.5"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_LevelObject_WarpAltar_WorldTreeEntrance_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/WarpToLocation/BP_LevelObject_WarpAltar_WorldTreeEntrance.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_LevelObject_WarpAltar_WorldTreeEntrance_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/WarpToLocation/BP_LevelObject_WarpAltar_WorldTreeEntrance.5"
+      }
+    }
+  }
+]

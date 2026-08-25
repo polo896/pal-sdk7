@@ -1,0 +1,45 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b07_lotusLeaf_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b07_lotusLeaf'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b07/tree/mesh/SM_pal_b07_lotusLeaf.2"
+      },
+      "UpdateGuid": "BD2D09EF-46692EC0-E493ED84-C3AD095E",
+      "MeshBounds": {
+        "Origin": {
+          "X": 6.632023,
+          "Y": 1.5103626,
+          "Z": -34.701714
+        },
+        "BoxExtent": {
+          "X": 45.81104,
+          "Y": 45.009575,
+          "Z": 124.96468
+        },
+        "SphereRadius": 132.93571600448578
+      },
+      "LowBoundOriginRadius": {
+        "X": 8.145065,
+        "Y": -12.225273,
+        "Z": 12.655188
+      },
+      "CullDistance": {
+        "Max": 8000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

@@ -1,0 +1,1031 @@
+[
+  {
+    "Type": "BackgroundBlur",
+    "Name": "BackgroundBlur_36",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'BackgroundBlur'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BlurStrength": 4.0,
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0.OverlaySlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.30"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalRichTextBlock_C",
+    "Name": "BP_PalRichTextBlock_C_284",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalRichTextBlock.BP_PalRichTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalRichTextBlock_C'Default__BP_PalRichTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalRichTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "FISHING_TutorialGuide"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "DefaultStyleName": "White_13",
+      "Text": {
+        "Namespace": "",
+        "Key": "CD27EBF840628E3DC161DE8150CF8E40",
+        "SourceString": "AAAAAAAAAAAAAAA",
+        "LocalizedString": "AAAAAAAAAAAAAAA"
+      },
+      "DecoratorClasses": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRichTextIconDecorator_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalRichTextIconDecorator.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRichTextDecorator_ItemName_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalRichTextDecorator_ItemName.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRichTextDecorator_CharacterName_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalRichTextDecorator_CharacterName.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRichTextDecorator_MapObject_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalRichTextDecorator_MapObject.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRichTextDecorator_ActiveSkillName_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalRichTextDecorator_ActiveSkillName.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRichTextDecorator_UICommon_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalRichTextDecorator_UICommon.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRichTextDecorator_KeyGuideIcon_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalRichTextDecorator_KeyGuideIcon.0"
+        }
+      ],
+      "DefaultTextStyleOverride": {
+        "Font": {
+          "FontObject": {
+            "ObjectName": "Font'Ft_PalDefaultFont'",
+            "ObjectPath": "Pal/Content/Pal/Font/Ft_PalDefaultFont.0"
+          },
+          "OutlineSettings": {
+            "OutlineSize": 1,
+            "OutlineColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 0.3,
+              "Hex": "4C000000"
+            }
+          },
+          "TypefaceFontName": "Medium",
+          "Size": 13
+        },
+        "ColorAndOpacity": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 0.984,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFEFF"
+          }
+        },
+        "SelectedBackgroundColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFFFF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        }
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.11"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_C",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "3E373544406FE9A2A4737ABA27DFAFB4",
+        "SourceString": "を押したり放したりで",
+        "LocalizedString": "を押したり放したりで"
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 1,
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.3,
+            "Hex": "4C000000"
+          }
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 13
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.14"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_C_1",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "E3295832456B9295C65E0DBED852C133",
+        "SourceString": "を魚に合わせる",
+        "LocalizedString": "を魚に合わせる"
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 1,
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.3,
+            "Hex": "4C000000"
+          }
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 13
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.16"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_C_173",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "5C1D85104B7242A6F7E4D3AF1914CCEB",
+        "SourceString": "バー",
+        "LocalizedString": "バー"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.012983,
+          "G": 1.0,
+          "B": 0.341914,
+          "A": 1.0,
+          "Hex": "1EFF9E"
+        }
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 1,
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.3,
+            "Hex": "4C000000"
+          }
+        },
+        "TypefaceFontName": "Bold",
+        "Size": 13
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_19",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_19.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_56",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_19.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_19",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1317.7634
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_19'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_56'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_56",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -20.0,
+          "Top": -5.0,
+          "Right": -20.0,
+          "Bottom": -5.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_56'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.6"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_56",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Bottom": 40.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_56'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.6"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_Fishing_TutorialGuide_C:WidgetTree.Spacer_265'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_56",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_56'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.6"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_Fishing_TutorialGuide_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_56",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_56'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.6"
+      },
+      "Content": {
+        "ObjectName": "BP_PalRichTextBlock_C'WBP_Fishing_TutorialGuide_C:WidgetTree.BP_PalRichTextBlock_C_284'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.1"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_56",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_56'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.6"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_TutorialGuide_C:WidgetTree.HorizontalBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.13"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.17"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.14"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.15"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.16"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.12"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_TutorialGuide_C:WidgetTree.HorizontalBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.13"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Fishing_TutorialGuide_C:WidgetTree.BP_PalTextBlock_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.2"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_TutorialGuide_C:WidgetTree.HorizontalBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.13"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Fishing_TutorialGuide_C:WidgetTree.BP_PalTextBlock_C_173'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.4"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_TutorialGuide_C:WidgetTree.HorizontalBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.13"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_Fishing_TutorialGuide_C:WidgetTree.BP_PalTextBlock_C_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.3"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "HorizontalBox_1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_Fishing_TutorialGuide_C:WidgetTree.HorizontalBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.13"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Fishing_TutorialGuide_C:WidgetTree.Image_231'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.22"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 3.0,
+          "Y": 3.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.171441,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "73FFFF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0.OverlaySlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.27"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 3.0,
+          "Y": 3.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.171441,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "73FFFF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0.OverlaySlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.28"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_133",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 3.0,
+          "Y": 3.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.171441,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "73FFFF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0.OverlaySlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.26"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 3.0,
+          "Y": 3.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.171441,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "73FFFF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0.OverlaySlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.29"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_231",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 40.0,
+          "Y": 40.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_MenuKeyGuide_MouseButtonLeft'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/KeyGuide/mouse/T_MenuKeyGuide_MouseButtonLeft.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.17"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Base",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.6,
+            "Hex": "99FFFFFF"
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.001214,
+        "G": 0.05448,
+        "B": 0.168269,
+        "A": 1.0,
+        "Hex": "044272"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.25"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0.OverlaySlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.30"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.25"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0.OverlaySlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.26"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0.OverlaySlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.27"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0.OverlaySlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.28"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0.OverlaySlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.29"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.8"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.24"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Fishing_TutorialGuide_C:WidgetTree.Image_Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.23"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_2",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.24"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Fishing_TutorialGuide_C:WidgetTree.Image_133'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.20"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_3",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.24"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Fishing_TutorialGuide_C:WidgetTree.Image'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.18"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_4",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.24"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Fishing_TutorialGuide_C:WidgetTree.Image_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.19"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_5",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.24"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Fishing_TutorialGuide_C:WidgetTree.Image_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.21"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_6",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Fishing_TutorialGuide_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.24"
+      },
+      "Content": {
+        "ObjectName": "BackgroundBlur'WBP_Fishing_TutorialGuide_C:WidgetTree.BackgroundBlur_36'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.0"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.10"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_265",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_56.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.9"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Fishing_TutorialGuide_C",
+    "Name": "Default__WBP_Fishing_TutorialGuide_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.WBP_Fishing_TutorialGuide_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_Fishing_TutorialGuide_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_Fishing_TutorialGuide_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.35"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalRichTextBlock_C_284",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRichTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalRichTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_133",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_231",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Base",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_Fishing_TutorialGuide_C'Default__WBP_Fishing_TutorialGuide_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.33"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_Fishing_TutorialGuide_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_TutorialGuide_C:WidgetTree.CanvasPanel_19'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_TutorialGuide.5"
+      }
+    }
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "Type": "PalBreedingItemEffectDataAsset",
+    "Name": "DA_BreedingItemEffectData",
+    "Class": "UScriptClass'PalBreedingItemEffectDataAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ItemEffectMap": [
+        {
+          "Key": {
+            "Key": "Cake02"
+          },
+          "Value": {
+            "TalentBonusMin": 1,
+            "TalentBonusMax": 5,
+            "MutationRateBonusPercent": 0.0,
+            "CombiRankBonus": 0,
+            "BreedCount": 1,
+            "bInheritAllActiveSkills": false,
+            "PassiveInheritCountOverride": 0
+          }
+        },
+        {
+          "Key": {
+            "Key": "Cake03"
+          },
+          "Value": {
+            "TalentBonusMin": 0,
+            "TalentBonusMax": 0,
+            "MutationRateBonusPercent": 0.0,
+            "CombiRankBonus": 0,
+            "BreedCount": 2,
+            "bInheritAllActiveSkills": false,
+            "PassiveInheritCountOverride": 0
+          }
+        },
+        {
+          "Key": {
+            "Key": "Cake04"
+          },
+          "Value": {
+            "TalentBonusMin": 1,
+            "TalentBonusMax": 5,
+            "MutationRateBonusPercent": 2.0,
+            "CombiRankBonus": 0,
+            "BreedCount": 1,
+            "bInheritAllActiveSkills": false,
+            "PassiveInheritCountOverride": 0
+          }
+        },
+        {
+          "Key": {
+            "Key": "Cake05"
+          },
+          "Value": {
+            "TalentBonusMin": 0,
+            "TalentBonusMax": 0,
+            "MutationRateBonusPercent": 0.0,
+            "CombiRankBonus": 0,
+            "BreedCount": 1,
+            "bInheritAllActiveSkills": true,
+            "PassiveInheritCountOverride": 4
+          }
+        }
+      ]
+    }
+  }
+]

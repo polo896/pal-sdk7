@@ -1,0 +1,3634 @@
+[
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_C_112",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "AD2784BC487F20D1BA59F880D15DC754",
+        "SourceString": "工事中",
+        "LocalizedString": "工事中"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_205.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.77"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_Desc",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "ITEM_FILTER_DESCRIPTION"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "22AA472B4871D183A8B975A97948AC06",
+        "SourceString": "プレイヤーとパルがチェストに入れられるアイテムの種別を指定できます",
+        "LocalizedString": "プレイヤーとパルがチェストに入れられるアイテムの種別を指定できます"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.75,
+          "G": 0.75,
+          "B": 0.75,
+          "A": 1.0,
+          "Hex": "E1E1E1"
+        }
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 12
+      },
+      "AutoWrapText": true,
+      "LineHeightPercentage": 0.85,
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_Desc.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.78"
+      },
+      "RenderTransformPivot": {
+        "X": 0.0,
+        "Y": 0.5
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_Desc_1",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "ITEMCHEST_ProductSupply"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "B9EA447D4E77FB169670BB86A10B00A2",
+        "SourceString": "素材供給",
+        "LocalizedString": "素材供給"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_Blue_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_Blue_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 12
+      },
+      "AutoWrapText": true,
+      "LineHeightPercentage": 0.85,
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_SupplyTitle.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.82"
+      },
+      "RenderTransformPivot": {
+        "X": 0.0,
+        "Y": 0.5
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_Desc_2",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "ITEM_FILTER_SETTING_ProductSupply"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "FontSizeOverride_VeryLarge": 17,
+      "Text": {
+        "Namespace": "",
+        "Key": "E7BC6EDC48B714199D72019FD16008E4",
+        "SourceString": "作成予約への素材供給を有効にする",
+        "LocalizedString": "作成予約への素材供給を有効にする"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 12
+      },
+      "AutoWrapText": true,
+      "LineHeightPercentage": 0.85,
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_203.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.75"
+      },
+      "RenderTransformPivot": {
+        "X": 0.0,
+        "Y": 0.5
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_Desc_3",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "ITEM_FILTER_SETTING_FilterTitle"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "Text": {
+        "Namespace": "",
+        "Key": "1B9C4F0D404F167CF244119314B5B3E1",
+        "SourceString": "アイテムフィルタ",
+        "LocalizedString": "アイテムフィルタ"
+      },
+      "Font": {
+        "FontMaterial": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_Blue_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_Blue_01.0"
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 12
+      },
+      "AutoWrapText": true,
+      "LineHeightPercentage": 0.85,
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_FilterTitle.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.80"
+      },
+      "RenderTransformPivot": {
+        "X": 0.0,
+        "Y": 0.5
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Button",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Button.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Button.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.14"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.SizeBoxButton.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.91"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_Filter",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_Filter.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.15"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter.VerticalBoxSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.101"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_NameEdit",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEdit.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEdit.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.16"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Horizontal_Name.HorizontalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.54"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_NameEditRoot",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEditRoot.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEditRoot.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEditRoot.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.18"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter.VerticalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.98"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_Supply",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_Supply.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_Supply.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_Supply.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.23"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter.VerticalBoxSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.99"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.24"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_82",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.CanvasPanel_82.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.25"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter.VerticalBoxSlot_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.102"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Line_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Line_1.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Line_1.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Line_1.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.28"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_71.VerticalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.96"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Button",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -183.0,
+          "Right": 334.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Button'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.5"
+      },
+      "Content": {
+        "ObjectName": "WBP_CommonButton_1_C'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.WBP_CommonButton_CheckAll'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.103"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "Button",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 167.0,
+          "Right": 334.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Button'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.5"
+      },
+      "Content": {
+        "ObjectName": "WBP_CommonButton_1_C'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.WBP_CommonButton_UncheckAll'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.104"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_Filter",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -15.0,
+          "Right": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_Filter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.6"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_FilterTitle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.70"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Canvas_NameEdit",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEdit'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.7"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalInvisibleButton_C'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.WBP_PalInvisibleButton_NameEdit'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.107"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Canvas_NameEdit",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 32.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEdit'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.7"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Image_52'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.62"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_NameEditRoot",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEditRoot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.8"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Horizontal_Name'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.52"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Canvas_NameEditRoot",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -15.0,
+          "Right": -15.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEditRoot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.8"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Image_80'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.64"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Canvas_NameEditRoot",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -15.0,
+          "Right": -15.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEditRoot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.8"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Image'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.56"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_Supply",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -15.0,
+          "Right": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_Supply'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.9"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_SupplyTitle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.71"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Canvas_Supply",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 40.0,
+          "Right": 0.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_Supply'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.9"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_71'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.93"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "Canvas_Supply",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -20.0,
+          "Right": -20.0,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_Supply'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.9"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_205'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.68"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.10"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.94"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_82",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.CanvasPanel_82'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.11"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_Desc'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.69"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Line_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 3.0,
+          "Right": 3.0,
+          "Bottom": 1.5
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Line_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.12"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Image_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.58"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Line_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 3.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Line_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.12"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Image_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.59"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Line_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 3.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Line_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.12"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Image_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.60"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "EditableTextBox_Name",
+          "DelegatePropertyName": "OnTextCommitted",
+          "FunctionNameToBind": "BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_EditableTextBox_Name_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_PalInvisibleButton_NameEdit",
+          "DelegatePropertyName": "OnButtonBaseClicked",
+          "FunctionNameToBind": "BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_WBP_PalInvisibleButton_NameEdit_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_CommonButton_UncheckAll",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_IngameMenu_Chest_Filter_WBP_CommonButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_CommonButton_CheckAll",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_IngameMenu_Chest_Filter_WBP_CommonButton_1_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AddContentItem",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "FilterId",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "FilterTextId",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_IngameMenu_Chest_FilterContent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_Chest_FilterContent.20"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwningPlayer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerController'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Create_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_IngameMenu_Chest_FilterContent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_Chest_FilterContent.20"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddChild_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_IngameMenu_Chest_Filter_WBP_CommonButton_1_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_IngameMenu_Chest_Filter_WBP_CommonButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_EditableTextBox_Name_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "Text",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm"
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CommitMethod",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'ETextCommit'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_WBP_PalInvisibleButton_NameEdit_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BP_GetDesiredFocusTarget",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'CommonActivatableWidget:BP_GetDesiredFocusTarget'",
+      "ObjectPath": "/Script/CommonUI"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetChildAt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsWBP_Ingame_Menu_Chest_Filter_Content",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_IngameMenu_Chest_FilterContent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_Chest_FilterContent.20"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "ClearContent",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Destruct",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Destruct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "DoCustomNavi_ToEditCustomName",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "Navigation",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EUINavigation'",
+          "ObjectPath": "/Script/SlateCore"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EUINavigation'",
+            "ObjectPath": "/Script/SlateCore"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsVisible_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "DoCustomNavi_ToLockAllButton",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "Navigation",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EUINavigation'",
+          "ObjectPath": "/Script/SlateCore"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EUINavigation'",
+            "ObjectPath": "/Script/SlateCore"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "EndEditCustomName",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_IngameMenu_ChestSetting_FilterBlock",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "K2Node_ComponentBoundEvent_Text",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_ComponentBoundEvent_CommitMethod",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ETextCommit'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameSetting_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalGameSetting'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_TextToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Left_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsEmpty_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateWordFilterWaiter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalWordFilterWaiter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnPalWordFilterWaiterCompleted__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsEditingCustomName",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bEditing",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasKeyboardFocus_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAnyUserFocus_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnClickedAllCheckButton__DelegateSignature",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnClickedAllUncheckButton__DelegateSignature",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnClickedEditCustomNameButton__DelegateSignature",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEditedCustomName__DelegateSignature",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "NewCustomName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTextFiltered",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Waiter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalWordFilterWaiter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "FilteredString",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsEmpty_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetCustomName",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "InCustomName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetEnableCustomNameEdit",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bEnableNameEdit",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StartEditCustomName",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "Horizontal_Name",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Horizontal_Name.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.53"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Horizontal_Name.HorizontalBoxSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.55"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Horizontal_Name.HorizontalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.54"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEditRoot.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.18"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "Horizontal_Name",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Horizontal_Name'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.52"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.SizeBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.87"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "Horizontal_Name",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Horizontal_Name'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.52"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEdit'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.7"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "Horizontal_Name",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Horizontal_Name'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.52"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Spacer_98'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.92"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.1,
+            "Hex": "19FFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_LineFrame_1'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Common/MI_UI_LineFrame_1.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.783538,
+        "G": 0.964686,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "E5FBFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEditRoot.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.20"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_186",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.145833,
+        "G": 0.145833,
+        "B": 0.145833,
+        "A": 0.76,
+        "Hex": "C26B6B6B"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_205.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.76"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.2,
+        "Hex": "33FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Line_1.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.26"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.5,
+        "Hex": "7FFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Line_1.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.27"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_4",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.5,
+        "Hex": "7FFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Line_1.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.28"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_5",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 3.0,
+          "Y": 24.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.147027,
+        "G": 0.799103,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "6BE7FF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_FilterTitle.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.81"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_52",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 40.0,
+          "Y": 40.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_icon_Guild_Edit'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_icon_Guild_Edit.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.783538,
+        "G": 0.964686,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "E5FBFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEdit.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.17"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_77",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 3.0,
+          "Y": 24.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.147027,
+        "G": 0.799103,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "6BE7FF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_SupplyTitle.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.83"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_80",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.5,
+            "Hex": "7FFFFFFF"
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEditRoot.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.19"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "InfoTextBase",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 336.0,
+          "Y": 64.0
+        },
+        "Margin": {
+          "Left": 0.1
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_text_base_flare'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_prt_text_base_flare.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.866667,
+        "B": 1.0,
+        "A": 0.15,
+        "Hex": "2600F0FF"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_Desc.OverlaySlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.79"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_201",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_201.OverlaySlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.72"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_201.OverlaySlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.73"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.89"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_203",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_203.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.74"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_203.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.75"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_71.VerticalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.95"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_205",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_205.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.76"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_205.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.77"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_Supply.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.23"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_Desc",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_Desc.OverlaySlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.79"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_Desc.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.78"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.CanvasPanel_82.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.25"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_FilterTitle",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_FilterTitle.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.81"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_FilterTitle.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.80"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_Filter.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.15"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_SupplyTitle",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_SupplyTitle.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.83"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_SupplyTitle.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.82"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_Supply.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.21"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_2",
+    "Outer": "Overlay_201",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_201'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.66"
+      },
+      "Content": {
+        "ObjectName": "PalCheckBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.PalCheckBox_43'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.84"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_4",
+    "Outer": "Overlay_201",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_201'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.66"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalInvisibleButton_C'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.WBP_PalInvisibleButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.106"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_203",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_203'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.67"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.86"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_203",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 34.0,
+        "Top": -1.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_203'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.67"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.BP_PalTextBlock_Desc_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.3"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_205",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_205'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.68"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Image_186'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.57"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_205",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_205'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.68"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.BP_PalTextBlock_C_112'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.0"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_Desc",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_Desc'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.69"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.BP_PalTextBlock_Desc'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.1"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_2",
+    "Outer": "Overlay_Desc",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": -25.0,
+        "Top": -15.0,
+        "Bottom": -15.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_Desc'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.69"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.InfoTextBase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.65"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_FilterTitle",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 8.0,
+        "Bottom": 1.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_FilterTitle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.70"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.BP_PalTextBlock_Desc_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.4"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_FilterTitle",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_FilterTitle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.70"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Image_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.61"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_SupplyTitle",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 8.0,
+        "Bottom": 1.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_SupplyTitle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.71"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.BP_PalTextBlock_Desc_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.2"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_SupplyTitle",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_SupplyTitle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.71"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Image_77'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.63"
+      }
+    }
+  },
+  {
+    "Type": "PalCheckBox",
+    "Name": "PalCheckBox_43",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'PalCheckBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CheckedState": "ECheckBoxState::Checked",
+      "WidgetStyle": {
+        "CheckBoxType": "ESlateCheckBoxType::ToggleButton",
+        "UncheckedImage": {
+          "ImageSize": {
+            "X": 24.0,
+            "Y": 24.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_filter_off'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_checkbox_filter_off.0"
+          }
+        },
+        "UncheckedHoveredImage": {
+          "ImageSize": {
+            "X": 24.0,
+            "Y": 24.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_filter_off'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_checkbox_filter_off.0"
+          }
+        },
+        "UncheckedPressedImage": {
+          "ImageSize": {
+            "X": 24.0,
+            "Y": 24.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_filter_off'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_checkbox_filter_off.0"
+          }
+        },
+        "CheckedImage": {
+          "ImageSize": {
+            "X": 24.0,
+            "Y": 24.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_filter_on'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_checkbox_filter_on.0"
+          }
+        },
+        "CheckedHoveredImage": {
+          "ImageSize": {
+            "X": 24.0,
+            "Y": 24.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_filter_on'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_checkbox_filter_on.0"
+          }
+        },
+        "CheckedPressedImage": {
+          "ImageSize": {
+            "X": 24.0,
+            "Y": 24.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'T_prt_checkbox_filter_on'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_checkbox_filter_on.0"
+          }
+        },
+        "UndeterminedImage": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType",
+          "ImageSize": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        "UndeterminedHoveredImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          }
+        },
+        "UndeterminedPressedImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 28.0
+          }
+        },
+        "Padding": {
+          "Left": 0.0
+        }
+      },
+      "IsFocusable": false,
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_201.OverlaySlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.72"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "PalEditableTextBox",
+    "Name": "EditableTextBox_Name",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'PalEditableTextBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImageNormal": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "BackgroundImageHovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.928066,
+              "B": 1.0,
+              "A": 0.2,
+              "Hex": "3300F7FF"
+            }
+          }
+        },
+        "BackgroundImageFocused": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.051269,
+              "G": 0.018149,
+              "B": 0.018149,
+              "A": 0.5,
+              "Hex": "7F402424"
+            }
+          }
+        },
+        "TextStyle": {
+          "Font": {
+            "FontObject": {
+              "ObjectName": "Font'Ft_PalDefaultFont'",
+              "ObjectPath": "Pal/Content/Pal/Font/Ft_PalDefaultFont.0"
+            },
+            "FontMaterial": {
+              "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_01'",
+              "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_01.0"
+            },
+            "TypefaceFontName": "Medium",
+            "Size": 16
+          },
+          "ColorAndOpacity": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "FFFFFF"
+            },
+            "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+          },
+          "ShadowOffset": {
+            "X": 3.0,
+            "Y": 3.0
+          },
+          "ShadowColorAndOpacity": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.3,
+            "Hex": "4C000000"
+          }
+        }
+      },
+      "HintText": {
+        "Namespace": "",
+        "Key": "D9606B414F9372F111C301985D92FBAC",
+        "SourceString": "[仮テキスト] ここにテキストを入力（最大24文字）",
+        "LocalizedString": "[仮テキスト] ここにテキストを入力（最大24文字）"
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.SizeBox_1.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.90"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidthOverride": 24.0,
+      "HeightOverride": 24.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.89"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_203.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.74"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidthOverride": 660.0,
+      "bOverride_WidthOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.SizeBox_1.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.90"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Horizontal_Name.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.53"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBoxButton",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidthOverride": 732.0,
+      "HeightOverride": 76.0,
+      "MinDesiredWidth": 706.0,
+      "MinDesiredHeight": 36.0,
+      "MaxDesiredWidth": 732.0,
+      "MaxDesiredHeight": 36.0,
+      "bOverride_MinDesiredWidth": true,
+      "bOverride_MinDesiredHeight": true,
+      "bOverride_MaxDesiredWidth": true,
+      "bOverride_MaxDesiredHeight": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.SizeBoxButton.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.91"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter.VerticalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.97"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.86"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_201'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.66"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_1",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.SizeBox_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.87"
+      },
+      "Content": {
+        "ObjectName": "PalEditableTextBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.EditableTextBox_Name'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.85"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBoxButton",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Top",
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.SizeBoxButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.88"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Button'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.5"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_98",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Horizontal_Name.HorizontalBoxSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.55"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_71",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_71.VerticalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.95"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_71.VerticalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.96"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_Supply.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.22"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_Filter",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter.VerticalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.98"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter.VerticalBoxSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.99"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter.VerticalBoxSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.101"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter.VerticalBoxSlot_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.102"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter.VerticalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.97"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter.VerticalBoxSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.100"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.24"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_71",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_71'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.93"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_203'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.67"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_71",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": -18.0,
+        "Top": 12.0,
+        "Right": -18.0,
+        "Bottom": 12.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_71'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.93"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Line_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.12"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_Filter",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Top": 12.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.94"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.SizeBoxButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.88"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_Filter",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Bottom": 15.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.94"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEditRoot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.8"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_4",
+    "Outer": "VerticalBox_Filter",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.94"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_Supply'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.9"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_5",
+    "Outer": "VerticalBox_Filter",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Top": 10.0,
+        "Bottom": 30.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.94"
+      },
+      "Content": {
+        "ObjectName": "WrapBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.WrapBox_FilterList'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.112"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_6",
+    "Outer": "VerticalBox_Filter",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.94"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_Filter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.6"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_8",
+    "Outer": "VerticalBox_Filter",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Top": 4.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.94"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.CanvasPanel_82'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.11"
+      }
+    }
+  },
+  {
+    "Type": "WBP_CommonButton_1_C",
+    "Name": "WBP_CommonButton_CheckAll",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_1.WBP_CommonButton_1_C'",
+    "Template": {
+      "ObjectName": "WBP_CommonButton_1_C'Default__WBP_CommonButton_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_1.105"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitializeMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_CHECK_ALL"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Button.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.13"
+      },
+      "Navigation": {
+        "ObjectName": "WidgetNavigation'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.WBP_CommonButton_CheckAll.WidgetNavigation_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.109"
+      }
+    }
+  },
+  {
+    "Type": "WBP_CommonButton_1_C",
+    "Name": "WBP_CommonButton_UncheckAll",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_1.WBP_CommonButton_1_C'",
+    "Template": {
+      "ObjectName": "WBP_CommonButton_1_C'Default__WBP_CommonButton_1_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_1.105"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitializeMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_UNCHECK_ALL"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Button.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.14"
+      },
+      "Navigation": {
+        "ObjectName": "WidgetNavigation'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.WBP_CommonButton_UncheckAll.WidgetNavigation_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.110"
+      }
+    }
+  },
+  {
+    "Type": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Name": "Default__WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.WBP_IngameMenu_ChestSetting_FilterBlock_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "CustomNameHintText": {
+        "DataTable": {
+          "ObjectName": "DataTable'DT_UI_Common_Text_Common'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text_Common.0"
+        },
+        "RowName": "CHESTSETTING_INPUTTEXT"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_PalInvisibleButton_C",
+    "Name": "WBP_PalInvisibleButton",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.WBP_PalInvisibleButton_C'",
+    "Template": {
+      "ObjectName": "WBP_PalInvisibleButton_C'Default__WBP_PalInvisibleButton_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Overlay_201.OverlaySlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.73"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalInvisibleButton_C",
+    "Name": "WBP_PalInvisibleButton_NameEdit",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.WBP_PalInvisibleButton_C'",
+    "Template": {
+      "ObjectName": "WBP_PalInvisibleButton_C'Default__WBP_PalInvisibleButton_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.Canvas_NameEdit.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.16"
+      }
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.111"
+      },
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_IngameMenu_ChestSetting_FilterBlock_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.29"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:ExecuteUbergraph_WBP_IngameMenu_ChestSetting_FilterBlock'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.42"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidget'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:OnTextFiltered'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.48"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:SetEnableCustomNameEdit'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.50"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:DoCustomNavi_ToLockAllButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.40"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:DoCustomNavi_ToEditCustomName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.39"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:IsEditingCustomName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.43"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:EndEditCustomName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.41"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:StartEditCustomName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.51"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:SetCustomName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.49"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.35"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:AddContentItem'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.30"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:ClearContent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.36"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:BndEvt__WBP_IngameMenu_Chest_Filter_WBP_CommonButton_1_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.31"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:BndEvt__WBP_IngameMenu_Chest_Filter_WBP_CommonButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.32"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.37"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_WBP_PalInvisibleButton_NameEdit_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.34"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_EditableTextBox_Name_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.33"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:Destruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.38"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:ExecuteUbergraph_WBP_IngameMenu_ChestSetting_FilterBlock'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.42"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:OnEditedCustomName__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.47"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:OnClickedEditCustomNameButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.46"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:OnClickedAllUncheckButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.45"
+      },
+      {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:OnClickedAllCheckButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.44"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Canvas_NameEdit",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Canvas_NameEditRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Canvas_Supply",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "EditableTextBox_Name",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalEditableTextBox'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_52",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_80",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Overlay_Desc",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Overlay'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PalCheckBox_43",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCheckBox'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_CommonButton_CheckAll",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonButton_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_1.110"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_CommonButton_UncheckAll",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonButton_1_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_1.110"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalInvisibleButton",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalInvisibleButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.2"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalInvisibleButton_NameEdit",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalInvisibleButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.2"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WrapBox_FilterList",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WrapBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnClickedAllCheckButton",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:OnClickedAllCheckButton__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.44"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnClickedAllUncheckButton",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:OnClickedAllUncheckButton__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.45"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CustomNameHintText",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnClickedEditCustomNameButton",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:OnClickedEditCustomNameButton__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.46"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnEditedCustomName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:OnEditedCustomName__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.47"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CurrentFilteringWaiter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalWordFilterWaiter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnClickedAllCheckButton__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:OnClickedAllCheckButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.44"
+      },
+      "OnClickedAllUncheckButton__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:OnClickedAllUncheckButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.45"
+      },
+      "OnClickedEditCustomNameButton__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:OnClickedEditCustomNameButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.46"
+      },
+      "OnEditedCustomName__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:OnEditedCustomName__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.47"
+      },
+      "ExecuteUbergraph_WBP_IngameMenu_ChestSetting_FilterBlock": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:ExecuteUbergraph_WBP_IngameMenu_ChestSetting_FilterBlock'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.42"
+      },
+      "Destruct": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:Destruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.38"
+      },
+      "BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_EditableTextBox_Name_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_EditableTextBox_Name_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.33"
+      },
+      "BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_WBP_PalInvisibleButton_NameEdit_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:BndEvt__WBP_IngameMenu_ChestSetting_FilterBlock_WBP_PalInvisibleButton_NameEdit_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.34"
+      },
+      "Construct": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.37"
+      },
+      "BndEvt__WBP_IngameMenu_Chest_Filter_WBP_CommonButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:BndEvt__WBP_IngameMenu_Chest_Filter_WBP_CommonButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.32"
+      },
+      "BndEvt__WBP_IngameMenu_Chest_Filter_WBP_CommonButton_1_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:BndEvt__WBP_IngameMenu_Chest_Filter_WBP_CommonButton_1_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.31"
+      },
+      "ClearContent": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:ClearContent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.36"
+      },
+      "AddContentItem": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:AddContentItem'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.30"
+      },
+      "BP_GetDesiredFocusTarget": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.35"
+      },
+      "SetCustomName": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:SetCustomName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.49"
+      },
+      "StartEditCustomName": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:StartEditCustomName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.51"
+      },
+      "EndEditCustomName": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:EndEditCustomName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.41"
+      },
+      "IsEditingCustomName": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:IsEditingCustomName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.43"
+      },
+      "DoCustomNavi_ToEditCustomName": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:DoCustomNavi_ToEditCustomName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.39"
+      },
+      "DoCustomNavi_ToLockAllButton": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:DoCustomNavi_ToLockAllButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.40"
+      },
+      "SetEnableCustomNameEdit": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:SetEnableCustomNameEdit'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.50"
+      },
+      "OnTextFiltered": {
+        "ObjectName": "Function'WBP_IngameMenu_ChestSetting_FilterBlock_C:OnTextFiltered'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.48"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_IngameMenu_ChestSetting_FilterBlock_C'Default__WBP_IngameMenu_ChestSetting_FilterBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.105"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetNavigation",
+    "Name": "WidgetNavigation_0",
+    "Outer": "WBP_CommonButton_CheckAll",
+    "Class": "UScriptClass'WidgetNavigation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Up": {
+        "Rule": "EUINavigationRule::Custom",
+        "WidgetToFocus": "DoCustomNavi_ToEditCustomName"
+      }
+    }
+  },
+  {
+    "Type": "WidgetNavigation",
+    "Name": "WidgetNavigation_0",
+    "Outer": "WBP_CommonButton_UncheckAll",
+    "Class": "UScriptClass'WidgetNavigation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Up": {
+        "Rule": "EUINavigationRule::Custom",
+        "WidgetToFocus": "DoCustomNavi_ToEditCustomName"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_IngameMenu_ChestSetting_FilterBlock_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.10"
+      }
+    }
+  },
+  {
+    "Type": "WrapBox",
+    "Name": "WrapBox_FilterList",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WrapBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InnerSlotPadding": {
+        "X": 0.0,
+        "Y": 10.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_IngameMenu_ChestSetting_FilterBlock_C:WidgetTree.VerticalBox_Filter.VerticalBoxSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Chest/WBP_IngameMenu_ChestSetting_FilterBlock.100"
+      },
+      "bIsVariable": true
+    }
+  }
+]

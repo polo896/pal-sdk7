@@ -1,0 +1,312 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalOilrigController_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalOilrigController_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.10"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_PalOilrigController_C:ExecuteUbergraph_BP_PalOilrigController'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalOilrigController'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_PalOilrigController_C:SoundStop'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.5"
+      },
+      {
+        "ObjectName": "Function'BP_PalOilrigController_C:OnStartCombatToAll_BP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.4"
+      },
+      {
+        "ObjectName": "Function'BP_PalOilrigController_C:ExecuteUbergraph_BP_PalOilrigController'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Debug_Mesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_OilrigMachineSpawnerComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_OilrigMachineSpawnerComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/MachineSpawn/BP_OilrigMachineSpawnerComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_PalOilrigController": {
+        "ObjectName": "Function'BP_PalOilrigController_C:ExecuteUbergraph_BP_PalOilrigController'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.3"
+      },
+      "OnStartCombatToAll_BP": {
+        "ObjectName": "Function'BP_PalOilrigController_C:OnStartCombatToAll_BP'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.4"
+      },
+      "SoundStop": {
+        "ObjectName": "Function'BP_PalOilrigController_C:SoundStop'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalOilrigController_C'Default__BP_PalOilrigController_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_OilrigMachineSpawnerComponent_C",
+    "Name": "BP_OilrigMachineSpawnerComponent_GEN_VARIABLE",
+    "Outer": "BP_PalOilrigController_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/OilRig/MachineSpawn/BP_OilrigMachineSpawnerComponent.BP_OilrigMachineSpawnerComponent_C'",
+    "Template": {
+      "ObjectName": "BP_OilrigMachineSpawnerComponent_C'Default__BP_OilrigMachineSpawnerComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/MachineSpawn/BP_OilrigMachineSpawnerComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BP_PalOilrigController_C",
+    "Name": "Default__BP_PalOilrigController_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.BP_PalOilrigController_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "CombatEndDistance": 40000.0,
+      "TrackingDistance": 40000.0,
+      "bAlwaysRelevant": true,
+      "bReplicates": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_PalOilrigController",
+    "Outer": "BP_PalOilrigController_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "Temp_delegate_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "PropertyFlags": "ConstParm",
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnAkPostEventCallback__DelegateSignature'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostEvent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnStartCombatToAll_BP",
+    "Outer": "BP_PalOilrigController_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalOilrigController:OnStartCombatToAll_BP'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SoundStop",
+    "Outer": "BP_PalOilrigController_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalOilrigController_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalOilrigController_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.6"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalOilrigController_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.9"
+        }
+      ],
+      "VariableGuid": "93664CD5-49FCFCF4-17335EA9-0F5D7D5B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_OilrigMachineSpawnerComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/MachineSpawn/BP_OilrigMachineSpawnerComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_OilrigMachineSpawnerComponent_C'BP_PalOilrigController_C:BP_OilrigMachineSpawnerComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.1"
+      },
+      "VariableGuid": "5A8C47D7-4EECEA9C-DD1C14B0-FFE7C368",
+      "InternalVariableName": "BP_OilrigMachineSpawnerComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "VariableGuid": "AAE127CA-44E2E6C5-253CA680-47E5DA94",
+      "InternalVariableName": "Debug_Mesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalOilrigController_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalOilrigController_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.7"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalOilrigController_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.8"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalOilrigController_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.7"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalOilrigController_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.8"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalOilrigController_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.9"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalOilrigController_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController.7"
+      }
+    }
+  }
+]

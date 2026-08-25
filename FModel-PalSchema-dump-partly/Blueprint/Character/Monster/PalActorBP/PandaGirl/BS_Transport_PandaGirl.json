@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Transport_PandaGirl",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 1.3333334,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_PandaGirl_Transport'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/PandaGirl/AS_PandaGirl_Transport.0"
+          },
+          "SampleValue": {
+            "X": 600.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_PandaGirl_Transport'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/PandaGirl/AS_PandaGirl_Transport.0"
+          },
+          "SampleValue": {
+            "X": 700.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.2
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_PandaGirl_Transport'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/PandaGirl/AS_PandaGirl_Transport.0"
+          },
+          "SampleValue": {
+            "X": 300.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.5
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_PandaGirl_Idle'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/PandaGirl/AS_PandaGirl_Idle.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_PandaGirl_Transport'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/PandaGirl/AS_PandaGirl_Transport.0"
+          },
+          "SampleValue": {
+            "X": 120.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.3
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 3,
+            "SampleIndices[1]": 4,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.17142858
+          },
+          {
+            "SampleIndices": 4,
+            "SampleIndices[1]": 2,
+            "Vertices": 0.17142858,
+            "Vertices[1]": 0.42857143
+          },
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 0,
+            "Vertices": 0.42857143,
+            "Vertices[1]": 0.85714287
+          },
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.85714287,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 700.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_PandaGirl_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/PandaGirl/SK_PandaGirl_Skeleton.4"
+      }
+    },
+    "SkeletonGuid": "1B883E29-4383337C-BDBF7F87-1663A29B"
+  }
+]

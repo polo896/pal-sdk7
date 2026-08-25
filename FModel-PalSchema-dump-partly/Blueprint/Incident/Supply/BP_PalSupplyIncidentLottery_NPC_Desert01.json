@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalSupplyIncidentLottery_NPC_Desert01_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalRandomIncidentLotteryBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalSupplyIncidentLottery_NPC_Desert01_C'Default__BP_PalSupplyIncidentLottery_NPC_Desert01_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentLottery_NPC_Desert01.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalSupplyIncidentLottery_NPC_Desert01_C",
+    "Name": "Default__BP_PalSupplyIncidentLottery_NPC_Desert01_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Supply/BP_PalSupplyIncidentLottery_NPC_Desert01.BP_PalSupplyIncidentLottery_NPC_Desert01_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LotteryRate": 100.0,
+      "LotteryParameters": [
+        {
+          "IncidentId": "SupplyPal_Common",
+          "SettingName": "SupplyIncident_NPC_Desert",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        }
+      ]
+    }
+  }
+]

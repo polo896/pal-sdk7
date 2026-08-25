@@ -1,0 +1,80 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SoundSlot_Weapon_SkyGrenadeLauncher_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SoundSlot_Weapon_GrenadeLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_GrenadeLauncher.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SoundSlot_Weapon_GrenadeLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_GrenadeLauncher.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SoundSlot_Weapon_SkyGrenadeLauncher_C'Default__BP_SoundSlot_Weapon_SkyGrenadeLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_SkyGrenadeLauncher.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SoundSlot_Weapon_SkyGrenadeLauncher_C",
+    "Name": "Default__BP_SoundSlot_Weapon_SkyGrenadeLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_SkyGrenadeLauncher.BP_SoundSlot_Weapon_SkyGrenadeLauncher_C'",
+    "Template": {
+      "ObjectName": "BP_SoundSlot_Weapon_GrenadeLauncher_C'Default__BP_SoundSlot_Weapon_GrenadeLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_GrenadeLauncher.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SoundMap": [
+        {
+          "Key": {
+            "Key": "Weapon_Fire"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_SkyGrenadeLauncher_Fire'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/SkyGrenadeLauncher/AKE_SkyGrenadeLauncher_Fire.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Aim_Start"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_SkyGrenadeLauncher_Aim'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/SkyGrenadeLauncher/AKE_SkyGrenadeLauncher_Aim.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Equip"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_SkyGrenadeLauncher_Equip'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/SkyGrenadeLauncher/AKE_SkyGrenadeLauncher_Equip.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Aim_End"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_SkyGrenadeLauncher_AimEnd'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/SkyGrenadeLauncher/AKE_SkyGrenadeLauncher_AimEnd.0"
+          }
+        }
+      ]
+    }
+  }
+]

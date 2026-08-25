@@ -1,0 +1,182 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SkyAssaultRifle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NormalRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SkyAssaultRifle_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_SkyAssaultRifle.5"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_SkyAssaultRifle_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_SkyAssaultRifle.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NormalRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.0"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SkyAssaultRifle_C'Default__BP_SkyAssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_SkyAssaultRifle.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SkyAssaultRifle_C",
+    "Name": "Default__BP_SkyAssaultRifle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/BP_SkyAssaultRifle.BP_SkyAssaultRifle_C'",
+    "Template": {
+      "ObjectName": "BP_NormalRifle_C'Default__BP_NormalRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EmptyAnim": null,
+      "FireAnim": {
+        "ObjectName": "AnimSequence'AS_Weapon_AssaultRifle_012_Fire'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Weapon/AssaultRifle/SK_Weapon_AssaultRifle_012/AS_Weapon_AssaultRifle_012_Fire.0"
+      },
+      "ReloadAnim": {
+        "ObjectName": "AnimSequence'SK_Weapon_AssaultRifle_012_Reload'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Weapon/AssaultRifle/SK_Weapon_AssaultRifle_012/SK_Weapon_AssaultRifle_012_Reload.3"
+      },
+      "BulletDecayStartRate": 0.4,
+      "SupportedBulletMap": [
+        {
+          "Key": {
+            "Key": "SkyAssaultRifleBullet"
+          },
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_NormalBullet_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/BP_NormalBullet.0"
+          }
+        }
+      ],
+      "FallbackBulletItemId": {
+        "Key": "SkyAssaultRifleBullet"
+      },
+      "weaponIconTexture": {
+        "AssetPathName": "/Game/Pal/Texture/Item/Weapon/T_icon_SkyAssaultRifle_UI.T_icon_SkyAssaultRifle_UI",
+        "SubPathString": ""
+      },
+      "PalSoundSlotClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_SkyAssaultRifle.BP_SoundSlot_Weapon_SkyAssaultRifle_C",
+        "SubPathString": ""
+      },
+      "BackWeaponClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_BackWeapon_SkyAssaultRifle_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BackWeapon/BP_BackWeapon_SkyAssaultRifle.0"
+      },
+      "RemoteRole": "ENetRole::ROLE_None"
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_SkyAssaultRifle_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SkeletalMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SkeletalMeshComponent'BP_SkyAssaultRifle_C:Weapon_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_SkyAssaultRifle.6"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_NormalRifle_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.0"
+            },
+            "SCSVariableName": "Weapon",
+            "AssociatedGuid": "21F8BED2-4028E662-046451AE-1619888F"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SkyAssaultRifle_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SkyAssaultRifle_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_SkyAssaultRifle.3"
+      },
+      "VariableGuid": "2D305B54-46B1561D-C5E4C2A0-AA10E460",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_SkyAssaultRifle_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SkyAssaultRifle_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_SkyAssaultRifle.4"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "Weapon_GEN_VARIABLE",
+    "Outer": "BP_SkyAssaultRifle_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SkeletalMeshComponent'BP_NormalRifle_C:Weapon_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.34"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_Weapon_AssaultRifle_012'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/AssaultRifle/SK_Weapon_AssaultRifle_012/SK_Weapon_AssaultRifle_012.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_Weapon_AssaultRifle_012'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/AssaultRifle/SK_Weapon_AssaultRifle_012/SK_Weapon_AssaultRifle_012.0"
+      }
+    }
+  }
+]

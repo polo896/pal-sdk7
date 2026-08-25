@@ -1,0 +1,306 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_NPCAIWeaponHandle_Invader_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NPCAIWeaponHandle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIWeaponHandle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NPCAIWeaponHandle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIWeaponHandle.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_NPCAIWeaponHandle_Invader_C'Default__BP_NPCAIWeaponHandle_Invader_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIWeaponHandle_Invader.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_NPCAIWeaponHandle_Invader_C",
+    "Name": "Default__BP_NPCAIWeaponHandle_Invader_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIWeaponHandle_Invader.BP_NPCAIWeaponHandle_Invader_C'",
+    "Template": {
+      "ObjectName": "BP_NPCAIWeaponHandle_C'Default__BP_NPCAIWeaponHandle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIWeaponHandle.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CombatAIParamMap": [
+        {
+          "Key": "EPalWeaponType::AssaultRifle",
+          "Value": {
+            "CombatAIActionClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Combat_Gun_Invader_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Gun_Invader.0"
+            },
+            "NPCWeaponRange_Near_cm": 0,
+            "NPCWeaponRange_Far_cm": 5000,
+            "ShootInterval": 0.1,
+            "MagazineSize": 30,
+            "MaxShootCount": 30,
+            "ReloadTime": 3.0,
+            "RandomMoveTime_Min": 0.5,
+            "AimOffset_Height": 0.0,
+            "UseSideDashMovement": false,
+            "UseReloadMotion": true,
+            "MeleeAttackWithGun": false,
+            "AimRotateSpeed": 360.0,
+            "FireStateClass": null,
+            "SphereCastRadius": 5.0
+          }
+        },
+        {
+          "Key": "EPalWeaponType::Handgun",
+          "Value": {
+            "CombatAIActionClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Combat_Gun_Invader_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Gun_Invader.0"
+            },
+            "NPCWeaponRange_Near_cm": 0,
+            "NPCWeaponRange_Far_cm": 3000,
+            "ShootInterval": 0.25,
+            "MagazineSize": 10,
+            "MaxShootCount": 12,
+            "ReloadTime": 3.0,
+            "RandomMoveTime_Min": 1.0,
+            "AimOffset_Height": 0.0,
+            "UseSideDashMovement": false,
+            "UseReloadMotion": true,
+            "MeleeAttackWithGun": false,
+            "AimRotateSpeed": 360.0,
+            "FireStateClass": null,
+            "SphereCastRadius": 5.0
+          }
+        },
+        {
+          "Key": "EPalWeaponType::Shotgun",
+          "Value": {
+            "CombatAIActionClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Combat_Gun_Invader_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Gun_Invader.0"
+            },
+            "NPCWeaponRange_Near_cm": 100,
+            "NPCWeaponRange_Far_cm": 2000,
+            "ShootInterval": 1.0,
+            "MagazineSize": 8,
+            "MaxShootCount": 8,
+            "ReloadTime": 3.0,
+            "RandomMoveTime_Min": 3.0,
+            "AimOffset_Height": 0.0,
+            "UseSideDashMovement": false,
+            "UseReloadMotion": true,
+            "MeleeAttackWithGun": false,
+            "AimRotateSpeed": 360.0,
+            "FireStateClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AINPC_CombatGunState_FireMove_Shotgun_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatGunState_FireMove_Shotgun.0"
+            },
+            "SphereCastRadius": 10.0
+          }
+        },
+        {
+          "Key": "EPalWeaponType::RocketLauncher",
+          "Value": {
+            "CombatAIActionClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Combat_Gun_Invader_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Gun_Invader.0"
+            },
+            "NPCWeaponRange_Near_cm": 1000,
+            "NPCWeaponRange_Far_cm": 5000,
+            "ShootInterval": 1.0,
+            "MagazineSize": 1,
+            "MaxShootCount": 1,
+            "ReloadTime": 6.0,
+            "RandomMoveTime_Min": 2.0,
+            "AimOffset_Height": -60.0,
+            "UseSideDashMovement": false,
+            "UseReloadMotion": true,
+            "MeleeAttackWithGun": false,
+            "AimRotateSpeed": 360.0,
+            "FireStateClass": null,
+            "SphereCastRadius": 20.0
+          }
+        },
+        {
+          "Key": "EPalWeaponType::FlameThrower",
+          "Value": {
+            "CombatAIActionClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Combat_Gun_Invader_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Gun_Invader.0"
+            },
+            "NPCWeaponRange_Near_cm": 500,
+            "NPCWeaponRange_Far_cm": 1000,
+            "ShootInterval": 0.5,
+            "MagazineSize": 100,
+            "MaxShootCount": 3,
+            "ReloadTime": 2.0,
+            "RandomMoveTime_Min": 2.0,
+            "AimOffset_Height": 0.0,
+            "UseSideDashMovement": false,
+            "UseReloadMotion": true,
+            "MeleeAttackWithGun": false,
+            "AimRotateSpeed": 360.0,
+            "FireStateClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AINPC_CombatGunState_FireMove_FlameThrower_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatGunState_FireMove_FlameThrower.0"
+            },
+            "SphereCastRadius": 5.0
+          }
+        },
+        {
+          "Key": "EPalWeaponType::GatlingGun",
+          "Value": {
+            "CombatAIActionClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Combat_Gun_Invader_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Gun_Invader.0"
+            },
+            "NPCWeaponRange_Near_cm": 300,
+            "NPCWeaponRange_Far_cm": 8000,
+            "ShootInterval": 0.1,
+            "MagazineSize": 50,
+            "MaxShootCount": 50,
+            "ReloadTime": 4.0,
+            "RandomMoveTime_Min": 5.0,
+            "AimOffset_Height": 0.0,
+            "UseSideDashMovement": false,
+            "UseReloadMotion": true,
+            "MeleeAttackWithGun": true,
+            "AimRotateSpeed": 180.0,
+            "FireStateClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AINPC_CombatGunState_Fire_Gatling_Oilrig_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatGunState_Fire_Gatling_Oilrig.0"
+            },
+            "SphereCastRadius": 20.0
+          }
+        },
+        {
+          "Key": "EPalWeaponType::BowGun",
+          "Value": {
+            "CombatAIActionClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Combat_Gun_Invader_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Gun_Invader.0"
+            },
+            "NPCWeaponRange_Near_cm": 300,
+            "NPCWeaponRange_Far_cm": 3000,
+            "ShootInterval": 0.2,
+            "MagazineSize": 1,
+            "MaxShootCount": 1,
+            "ReloadTime": 2.0,
+            "RandomMoveTime_Min": 1.0,
+            "AimOffset_Height": 0.0,
+            "UseSideDashMovement": false,
+            "UseReloadMotion": true,
+            "MeleeAttackWithGun": false,
+            "AimRotateSpeed": 360.0,
+            "FireStateClass": null,
+            "SphereCastRadius": 5.0
+          }
+        },
+        {
+          "Key": "EPalWeaponType::ThrowObject",
+          "Value": {
+            "CombatAIActionClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Combat_Gun_Invader_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Gun_Invader.0"
+            },
+            "NPCWeaponRange_Near_cm": 2000,
+            "NPCWeaponRange_Far_cm": 2500,
+            "ShootInterval": 1.0,
+            "MagazineSize": 1,
+            "MaxShootCount": 1,
+            "ReloadTime": 2.0,
+            "RandomMoveTime_Min": 2.0,
+            "AimOffset_Height": -100.0,
+            "UseSideDashMovement": false,
+            "UseReloadMotion": true,
+            "MeleeAttackWithGun": false,
+            "AimRotateSpeed": 360.0,
+            "FireStateClass": null,
+            "SphereCastRadius": 20.0
+          }
+        },
+        {
+          "Key": "EPalWeaponType::LaserRifle",
+          "Value": {
+            "CombatAIActionClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Combat_Gun_Invader_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Gun_Invader.0"
+            },
+            "NPCWeaponRange_Near_cm": 300,
+            "NPCWeaponRange_Far_cm": 5000,
+            "ShootInterval": 0.5,
+            "MagazineSize": 10,
+            "MaxShootCount": 8,
+            "ReloadTime": 2.0,
+            "RandomMoveTime_Min": 1.0,
+            "AimOffset_Height": 0.0,
+            "UseSideDashMovement": false,
+            "UseReloadMotion": true,
+            "MeleeAttackWithGun": false,
+            "AimRotateSpeed": 360.0,
+            "FireStateClass": null,
+            "SphereCastRadius": 10.0
+          }
+        },
+        {
+          "Key": "EPalWeaponType::MissileLauncher",
+          "Value": {
+            "CombatAIActionClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Combat_Gun_Invader_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Gun_Invader.0"
+            },
+            "NPCWeaponRange_Near_cm": 1000,
+            "NPCWeaponRange_Far_cm": 10000,
+            "ShootInterval": 1.0,
+            "MagazineSize": 1,
+            "MaxShootCount": 1,
+            "ReloadTime": 6.0,
+            "RandomMoveTime_Min": 2.0,
+            "AimOffset_Height": 0.0,
+            "UseSideDashMovement": false,
+            "UseReloadMotion": true,
+            "MeleeAttackWithGun": false,
+            "AimRotateSpeed": 360.0,
+            "FireStateClass": null,
+            "SphereCastRadius": 20.0
+          }
+        },
+        {
+          "Key": "EPalWeaponType::GrenadeLauncher",
+          "Value": {
+            "CombatAIActionClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Combat_Gun_Invader_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_Gun_Invader.0"
+            },
+            "NPCWeaponRange_Near_cm": 500,
+            "NPCWeaponRange_Far_cm": 3000,
+            "ShootInterval": 1.0,
+            "MagazineSize": 1,
+            "MaxShootCount": 1,
+            "ReloadTime": 3.0,
+            "RandomMoveTime_Min": 2.0,
+            "AimOffset_Height": 50.0,
+            "UseSideDashMovement": false,
+            "UseReloadMotion": true,
+            "MeleeAttackWithGun": false,
+            "AimRotateSpeed": 360.0,
+            "FireStateClass": null,
+            "SphereCastRadius": 20.0
+          }
+        }
+      ]
+    }
+  }
+]

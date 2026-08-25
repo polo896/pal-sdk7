@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "pal_b00_tree_Small_Bush_blue_FoliageType1",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'pal_b00_tree_Small_Bush_blue'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/grass_bush/b00/pal_b00_tree_Small_Bush_blue.2"
+      },
+      "UpdateGuid": "2F9E1A8D-4A1DB0FB-51A711A0-992DFDE6",
+      "Density": 50.0,
+      "ScaleX": {
+        "Min": 0.2,
+        "Max": 0.4
+      },
+      "RandomPitchAngle": 90.0,
+      "GroundSlopeAngle": {
+        "Max": 180.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 22.108109,
+          "Y": 18.714172,
+          "Z": 70.0674
+        },
+        "BoxExtent": {
+          "X": 359.8675,
+          "Y": 337.76627,
+          "Z": 314.3424
+        },
+        "SphereRadius": 379.57889243959534
+      },
+      "LowBoundOriginRadius": {
+        "X": 29.30307,
+        "Y": 114.018074,
+        "Z": 160.15411
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      }
+    }
+  }
+]

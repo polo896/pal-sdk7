@@ -1,0 +1,1336 @@
+[
+  {
+    "Type": "PalFoliagePresetDataSet",
+    "Name": "DA_FoliagePresetDataSet",
+    "Class": "UScriptClass'PalFoliagePresetDataSet'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Presets": [
+        {
+          "Key": "EPalFoliagePresetType::LowTree",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 50,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 2
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood"
+            },
+            "DropItemNum": 3,
+            "DropEXP": 1,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::LowTree",
+            "DestroyFXLocationRateByStaticMesh": 0.0,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::NormalTree_L",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 1000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::NormalTree_L_CherryBlossom",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 6000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_Fine"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_Fine"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_CherryBlossom",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::Mushroom_L",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 1000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Mushroom"
+                },
+                "Num": 4
+              },
+              {
+                "StaticItemId": {
+                  "Key": "PoisonMushroom"
+                },
+                "Num": 2
+              }
+            ],
+            "DropItemId": {
+              "Key": "Mushroom"
+            },
+            "DropItemNum": 1,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::Mushroom",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::Mushroom_S",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 300,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Mushroom"
+                },
+                "Num": 2
+              },
+              {
+                "StaticItemId": {
+                  "Key": "PoisonMushroom"
+                },
+                "Num": 1
+              }
+            ],
+            "DropItemId": {
+              "Key": "Mushroom"
+            },
+            "DropItemNum": 1,
+            "DropEXP": 2,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::Mushroom",
+            "DestroyFXLocationRateByStaticMesh": 0.5,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::NormalTree_L_Red",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 1000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_Red",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::NormalTree_L_Yellow",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 1000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_Yellow",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::NormalTree_L_Pink",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 6000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_Fine"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_Fine"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_Pink",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::NormalTree_L_Dead",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 6000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_Fine"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_Fine"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_Dead",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::NormalTree_L_Snow",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 6000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_Fine"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_Fine"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_Snow",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::FineTree_L_Yellow",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 6000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_Fine"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_Fine"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_Yellow",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WorldTree_L",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 20000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_WorldTree"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_WorldTree"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_DarkGreen",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 700.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::FineTree_L",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 6000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_Fine"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_Fine"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::FineTree_L_CherryBlossom",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 6000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_Fine"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_Fine"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_CherryBlossom",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::FineTree_L_Red",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 6000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_Fine"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_Fine"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_Red",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::FineTree_L_Pink",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 6000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_Fine"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_Fine"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_Pink",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::FineTree_L_Dead",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 6000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_Fine"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_Fine"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_Dead",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::FineTree_L_Snow",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 6000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_Fine"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_Fine"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_Snow",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WorldTree_L_CherryBlossom",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 20000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_WorldTree"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_WorldTree"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_Yellow",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 700.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WorldTree_L_Red",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 20000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_WorldTree"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_WorldTree"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_Yellow",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 700.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WorldTree_L_Yellow",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 20000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_WorldTree"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_WorldTree"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_BrightYellow",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 700.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WorldTree_L_Pink",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 20000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_WorldTree"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_WorldTree"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_Yellow",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 700.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WorldTree_L_Dead",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 20000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_WorldTree"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_WorldTree"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_White",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 700.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WorldTree_L_Snow",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 20000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_WorldTree"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_WorldTree"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_White",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 700.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WorldTree_L_Yellow2",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 20000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_WorldTree"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_WorldTree"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_BrightYellow",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 700.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WorldTree_L_Purple",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 20000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_WorldTree"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_WorldTree"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_Purple",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 700.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WorldTree_L_Orange",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 20000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_WorldTree"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_WorldTree"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_Orange",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 700.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::FineTree_L_Blue",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 6000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_Fine"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_Fine"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_Blue",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::FineTree_L_Purple",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 6000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_Fine"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_Fine"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::FineTree_L_DeepGreen",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 6000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_Fine"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_Fine"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_DarkGreen",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WildlifeSanctuaryTree_L",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 1000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WorldTree_L_Yellow_2",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 20000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_WorldTree"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_WorldTree"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_BrightYellow",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 700.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WorldTree_L_Yellow2_2",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 20000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_WorldTree"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_WorldTree"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_Yellow",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 700.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WorldTree_L_2",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 20000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_WorldTree"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_WorldTree"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_Green",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 700.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WorldTree_L_Orange_2",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 20000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_WorldTree"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_WorldTree"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_RedOrange",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 700.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WorldTree_L_Snow_2",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 20000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_WorldTree"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_WorldTree"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_White01",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 700.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::WorldTree_L_Dead_2",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 20000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_WorldTree"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_WorldTree"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_White01",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 700.0
+          }
+        },
+        {
+          "Key": "EPalFoliagePresetType::FineTree_L_TreeSea",
+          "Value": {
+            "FoliageMapObjectId": {
+              "Key": "None"
+            },
+            "Hp": 6000,
+            "bNotDropItemIfDamagedOverMaxHp": true,
+            "DamagedDropItems": [
+              {
+                "StaticItemId": {
+                  "Key": "Wood_Fine"
+                },
+                "Num": 20
+              },
+              {
+                "StaticItemId": {
+                  "Key": "Fiber"
+                },
+                "Num": 12
+              }
+            ],
+            "DropItemId": {
+              "Key": "Wood_Fine"
+            },
+            "DropItemNum": 2,
+            "DropEXP": 5,
+            "DestroyFXType": "EPalMapObjectDestroyFXType::FoliageTree_TreeSea",
+            "DestroyFXLocationRateByStaticMesh": 0.8,
+            "DistanceFromPlayerNotRespawn": 500.0,
+            "RespawnIntervalRealMinutes": 30,
+            "RetryRespawnIntervalRealMinutes": 1,
+            "AutoDecayProximityDistance": 0.0
+          }
+        }
+      ]
+    }
+  }
+]

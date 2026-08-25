@@ -1,0 +1,498 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MapObject_LockGimmickDestructionTarget_Test_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_MapObject_LockGimmickDestructionTarget_Test_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.12"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_MapObject_LockGimmickDestructionTarget_Test_C:ExecuteUbergraph_BP_MapObject_LockGimmickDestructionTarget_Test'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalMapObject'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_MapObject_LockGimmickDestructionTarget_Test_C:GetObjectPoolParameter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.3"
+      },
+      {
+        "ObjectName": "Function'BP_MapObject_LockGimmickDestructionTarget_Test_C:InitializeFromPool'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.4"
+      },
+      {
+        "ObjectName": "Function'BP_MapObject_LockGimmickDestructionTarget_Test_C:ReturnToPool'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.5"
+      },
+      {
+        "ObjectName": "Function'BP_MapObject_LockGimmickDestructionTarget_Test_C:ExecuteUbergraph_BP_MapObject_LockGimmickDestructionTarget_Test'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NS_CrystalGlow_Blue",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Mesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_MapObject_LockGimmickDestructionTarget_Test": {
+        "ObjectName": "Function'BP_MapObject_LockGimmickDestructionTarget_Test_C:ExecuteUbergraph_BP_MapObject_LockGimmickDestructionTarget_Test'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.2"
+      },
+      "ReturnToPool": {
+        "ObjectName": "Function'BP_MapObject_LockGimmickDestructionTarget_Test_C:ReturnToPool'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.5"
+      },
+      "InitializeFromPool": {
+        "ObjectName": "Function'BP_MapObject_LockGimmickDestructionTarget_Test_C:InitializeFromPool'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.4"
+      },
+      "GetObjectPoolParameter": {
+        "ObjectName": "Function'BP_MapObject_LockGimmickDestructionTarget_Test_C:GetObjectPoolParameter'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "Interfaces": [
+      {
+        "Class": {
+          "ObjectName": "Class'PalObjectPoolable'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      }
+    ],
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MapObject_LockGimmickDestructionTarget_Test_C'Default__BP_MapObject_LockGimmickDestructionTarget_Test_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal",
+      "ImplementedInterfaces": "((Interface=/Script/CoreUObject.Class'\"/Script/Pal.PalObjectPoolable\"'))"
+    }
+  },
+  {
+    "Type": "BP_MapObject_LockGimmickDestructionTarget_Test_C",
+    "Name": "Default__BP_MapObject_LockGimmickDestructionTarget_Test_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.BP_MapObject_LockGimmickDestructionTarget_Test_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "DamageReaction": {
+        "ObjectName": "PalMapObjectDamageReactionComponent'Default__BP_MapObject_LockGimmickDestructionTarget_Test_C:DamageReaction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.7"
+      },
+      "bLevelSpawnObject": true,
+      "bShakeOnDamaged": true,
+      "DestroyFXType": "EPalMapObjectDestroyFXType::Rock",
+      "bShowOutlineInTargettingReticle": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_MapObject_LockGimmickDestructionTarget_Test",
+    "Outer": "BP_MapObject_LockGimmickDestructionTarget_Test_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetObjectPoolParameter",
+    "Outer": "BP_MapObject_LockGimmickDestructionTarget_Test_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalObjectPoolParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalObjectPoolParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalObjectPoolParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "InitializeFromPool",
+    "Outer": "BP_MapObject_LockGimmickDestructionTarget_Test_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReturnToPool",
+    "Outer": "BP_MapObject_LockGimmickDestructionTarget_Test_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "NS_CrystalGlow_Blue_GEN_VARIABLE",
+    "Outer": "BP_MapObject_LockGimmickDestructionTarget_Test_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_CrystalGlow_Blue'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Common/Glow/NS_CrystalGlow_Blue.56"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Scale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Scale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Trail_Alpha",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Trail_Alpha",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.Scale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 4,
+            "Name": "User.Trail_Alpha",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "RelativeLocation": {
+        "X": 137.76048,
+        "Y": 14.634415,
+        "Z": -8.007412
+      }
+    }
+  },
+  {
+    "Type": "PalMapObjectDamageReactionComponent",
+    "Name": "DamageReaction",
+    "Outer": "Default__BP_MapObject_LockGimmickDestructionTarget_Test_C",
+    "Class": "UScriptClass'PalMapObjectDamageReactionComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_MapObject_LockGimmickDestructionTarget_Test_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_MapObject_LockGimmickDestructionTarget_Test_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.8"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_LockGimmickDestructionTarget_Test_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.10"
+        }
+      ],
+      "VariableGuid": "EB106C56-4E825FE3-23F145B8-2E2D25B5",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_MapObject_LockGimmickDestructionTarget_Test_C:Mesh_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.13"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_LockGimmickDestructionTarget_Test_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.11"
+        }
+      ],
+      "VariableGuid": "7AC85B1C-4620C4A7-F4C979A0-07F10905",
+      "InternalVariableName": "Mesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'NiagaraComponent'",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent'BP_MapObject_LockGimmickDestructionTarget_Test_C:NS_CrystalGlow_Blue_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.6"
+      },
+      "VariableGuid": "28465E30-499EC48A-5A636296-113C82C7",
+      "InternalVariableName": "NS_CrystalGlow_Blue"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_MapObject_LockGimmickDestructionTarget_Test_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_LockGimmickDestructionTarget_Test_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.9"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_LockGimmickDestructionTarget_Test_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.9"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_LockGimmickDestructionTarget_Test_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.10"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_MapObject_LockGimmickDestructionTarget_Test_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.11"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_MapObject_LockGimmickDestructionTarget_Test_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LockGimmick/BP_MapObject_LockGimmickDestructionTarget_Test.9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Mesh_GEN_VARIABLE",
+    "Outer": "BP_MapObject_LockGimmickDestructionTarget_Test_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_pal_b00_rock_MineableRocks'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b00/MineableRocks/Mesh/SM_pal_b00_rock_MineableRocks.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'MI_pal_b00_DamagableRock0001'",
+          "ObjectPath": "Pal/Content/Pal/Material/MapObject/MI_pal_b00_DamagableRock0001.0"
+        }
+      ],
+      "LDMaxDrawDistance": 50000.0,
+      "CachedMaxDrawDistance": 50000.0,
+      "BodyInstance": {
+        "CollisionProfileName": "MapObjectPhysics",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AroundInfoCollect",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 40.0
+      },
+      "RelativeScale3D": {
+        "X": 0.4,
+        "Y": 0.4,
+        "Z": 0.4
+      }
+    }
+  }
+]

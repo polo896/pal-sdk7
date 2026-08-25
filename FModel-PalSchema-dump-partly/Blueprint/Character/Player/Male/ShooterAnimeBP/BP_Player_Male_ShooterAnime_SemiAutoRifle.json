@@ -1,0 +1,80 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Player_Male_ShooterAnime_SemiAutoRifle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_ShooterAnime_SingleShotRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_SingleShotRifle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_ShooterAnime_SingleShotRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_SingleShotRifle.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Player_Male_ShooterAnime_SemiAutoRifle_C'Default__BP_Player_Male_ShooterAnime_SemiAutoRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_SemiAutoRifle.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Player_Male_ShooterAnime_SemiAutoRifle_C",
+    "Name": "Default__BP_Player_Male_ShooterAnime_SemiAutoRifle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_SemiAutoRifle.BP_Player_Male_ShooterAnime_SemiAutoRifle_C'",
+    "Template": {
+      "ObjectName": "BP_Player_Female_ShooterAnime_SingleShotRifle_C'Default__BP_Player_Female_ShooterAnime_SingleShotRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_SingleShotRifle.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimeInfo": {
+        "ReloadMontage": {
+          "ObjectName": "AnimMontage'AM_Player_Male_Reload_SemiAutoRifle'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/SingleShotRifle/AM_Player_Male_Reload_SemiAutoRifle.0"
+        },
+        "AnimationMap": [
+          {
+            "Key": "EWeaponAnimationType::Shoot",
+            "Value": {
+              "PoseMap": [
+                {
+                  "Key": "EWeaponAnimationPoseType::Stand",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Female_Fire_LaserRifle'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/LaserRifle/AM_Player_Female_Fire_LaserRifle.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Crouch",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Female_Fire_LaserRifle'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/LaserRifle/AM_Player_Female_Fire_LaserRifle.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Riding",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Female_Fire_LaserRifle'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/LaserRifle/AM_Player_Female_Fire_LaserRifle.0"
+                  }
+                }
+              ],
+              "isAutoStop": false,
+              "EndDelegateType": "EPalWeaponAnimationEndDelegateType::MontageBlendingOut"
+            }
+          }
+        ]
+      }
+    }
+  }
+]

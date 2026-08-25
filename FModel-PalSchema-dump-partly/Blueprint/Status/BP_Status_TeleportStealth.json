@@ -1,0 +1,131 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Status_TeleportStealth_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Status_TeleportStealth_C:ExecuteUbergraph_BP_Status_TeleportStealth'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_TeleportStealth.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalStatusBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Status_TeleportStealth_C:OnBeginStatus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_TeleportStealth.3"
+      },
+      {
+        "ObjectName": "Function'BP_Status_TeleportStealth_C:OnEndStatus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_TeleportStealth.4"
+      },
+      {
+        "ObjectName": "Function'BP_Status_TeleportStealth_C:ExecuteUbergraph_BP_Status_TeleportStealth'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_TeleportStealth.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "FlagName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Status_TeleportStealth": {
+        "ObjectName": "Function'BP_Status_TeleportStealth_C:ExecuteUbergraph_BP_Status_TeleportStealth'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_TeleportStealth.2"
+      },
+      "OnEndStatus": {
+        "ObjectName": "Function'BP_Status_TeleportStealth_C:OnEndStatus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_TeleportStealth.4"
+      },
+      "OnBeginStatus": {
+        "ObjectName": "Function'BP_Status_TeleportStealth_C:OnBeginStatus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_TeleportStealth.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Status_TeleportStealth_C'Default__BP_Status_TeleportStealth_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_TeleportStealth.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Status_TeleportStealth_C",
+    "Name": "Default__BP_Status_TeleportStealth_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Status/BP_Status_TeleportStealth.BP_Status_TeleportStealth_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "FlagName": "StatusTeleportStealth"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Status_TeleportStealth",
+    "Outer": "BP_Status_TeleportStealth_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBeginStatus",
+    "Outer": "BP_Status_TeleportStealth_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStatusBase:OnBeginStatus'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEndStatus",
+    "Outer": "BP_Status_TeleportStealth_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStatusBase:OnEndStatus'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  }
+]

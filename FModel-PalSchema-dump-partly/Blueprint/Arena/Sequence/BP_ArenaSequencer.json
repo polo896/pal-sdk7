@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_ArenaSequencer_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalArenaSequencer'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_ArenaSequencer_C'Default__BP_ArenaSequencer_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Arena/Sequence/BP_ArenaSequencer.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_ArenaSequencer_C",
+    "Name": "Default__BP_ArenaSequencer_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Arena/Sequence/BP_ArenaSequencer.BP_ArenaSequencer_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SequenceClassMap": [
+        {
+          "Key": "EPalArenaSequenceType::PartySelect",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_ArenaSequence_PartySelect_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Arena/Sequence/BP_ArenaSequence_PartySelect.0"
+          }
+        },
+        {
+          "Key": "EPalArenaSequenceType::PreBattle",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_ArenaSequence_PreBattle_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Arena/Sequence/BP_ArenaSequence_PreBattle.0"
+          }
+        },
+        {
+          "Key": "EPalArenaSequenceType::InBattle",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_ArenaSequence_InBattle_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Arena/Sequence/BP_ArenaSequence_InBattle.0"
+          }
+        },
+        {
+          "Key": "EPalArenaSequenceType::Result",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_ArenaSequence_Result_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Arena/Sequence/BP_ArenaSequence_Result.0"
+          }
+        },
+        {
+          "Key": "EPalArenaSequenceType::Enter",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_ArenaSequence_Enter_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Arena/Sequence/BP_ArenaSequence_Enter.0"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalArenaCharacterRefresher",
+    "Name": "CharacterRefresher",
+    "Outer": "Default__BP_ArenaSequencer_C",
+    "Class": "UScriptClass'PalArenaCharacterRefresher'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  }
+]

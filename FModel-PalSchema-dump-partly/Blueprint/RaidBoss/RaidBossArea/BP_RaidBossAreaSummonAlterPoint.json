@@ -1,0 +1,231 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_RaidBossAreaSummonAlterPoint_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_RaidBossAreaSummonAlterPoint_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/RaidBossArea/BP_RaidBossAreaSummonAlterPoint.8"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalRaidBossAreaSummonAltarPoint'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_RaidBossAreaSummonAlterPoint_C:GetSummonAltarPoint'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/RaidBossArea/BP_RaidBossAreaSummonAlterPoint.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SM_PalSummoningStand",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Point",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "GetSummonAltarPoint": {
+        "ObjectName": "Function'BP_RaidBossAreaSummonAlterPoint_C:GetSummonAltarPoint'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/RaidBossArea/BP_RaidBossAreaSummonAlterPoint.2"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_RaidBossAreaSummonAlterPoint_C'Default__BP_RaidBossAreaSummonAlterPoint_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/RaidBossArea/BP_RaidBossAreaSummonAlterPoint.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_RaidBossAreaSummonAlterPoint_C",
+    "Name": "Default__BP_RaidBossAreaSummonAlterPoint_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/RaidBoss/RaidBossArea/BP_RaidBossAreaSummonAlterPoint.BP_RaidBossAreaSummonAlterPoint_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetSummonAltarPoint",
+    "Outer": "BP_RaidBossAreaSummonAlterPoint_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalRaidBossAreaSummonAltarPoint:GetSummonAltarPoint'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentToWorld_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_RaidBossAreaSummonAlterPoint_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Point_GEN_VARIABLE",
+    "Outer": "BP_RaidBossAreaSummonAlterPoint_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_RaidBossAreaSummonAlterPoint_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/RaidBossArea/BP_RaidBossAreaSummonAlterPoint.3"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_RaidBossAreaSummonAlterPoint_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/RaidBossArea/BP_RaidBossAreaSummonAlterPoint.6"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_RaidBossAreaSummonAlterPoint_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/RaidBossArea/BP_RaidBossAreaSummonAlterPoint.7"
+        }
+      ],
+      "VariableGuid": "630E3F56-4F89F50D-93961BAC-4DA777D3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_RaidBossAreaSummonAlterPoint_C:Point_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/RaidBossArea/BP_RaidBossAreaSummonAlterPoint.4"
+      },
+      "VariableGuid": "920A6AEA-4AFD6078-721C7089-CDB891BC",
+      "InternalVariableName": "Point"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "VariableGuid": "D91588A0-4C5216AC-F43FDB90-F5FF06EF",
+      "InternalVariableName": "SM_PalSummoningStand"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_RaidBossAreaSummonAlterPoint_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_RaidBossAreaSummonAlterPoint_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/RaidBossArea/BP_RaidBossAreaSummonAlterPoint.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_RaidBossAreaSummonAlterPoint_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/RaidBossArea/BP_RaidBossAreaSummonAlterPoint.5"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_RaidBossAreaSummonAlterPoint_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/RaidBossArea/BP_RaidBossAreaSummonAlterPoint.6"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_RaidBossAreaSummonAlterPoint_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/RaidBossArea/BP_RaidBossAreaSummonAlterPoint.7"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_RaidBossAreaSummonAlterPoint_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/RaidBossArea/BP_RaidBossAreaSummonAlterPoint.5"
+      }
+    }
+  }
+]

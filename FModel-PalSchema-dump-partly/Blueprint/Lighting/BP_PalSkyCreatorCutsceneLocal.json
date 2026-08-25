@@ -1,0 +1,224 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalSkyCreatorCutsceneLocal_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalSkyCreatorCutsceneLocal_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_PalSkyCreatorCutsceneLocal.11"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalSkyCreatorCutsceneLocal'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalSkyCreatorCutsceneLocal_C'Default__BP_PalSkyCreatorCutsceneLocal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_PalSkyCreatorCutsceneLocal.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalSkyCreatorCutsceneLocal_C",
+    "Name": "Default__BP_PalSkyCreatorCutsceneLocal_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Lighting/BP_PalSkyCreatorCutsceneLocal.BP_PalSkyCreatorCutsceneLocal_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "DirectionalLightComponent",
+    "Name": "Moon Light Component",
+    "Outer": "Default__BP_PalSkyCreatorCutsceneLocal_C",
+    "Class": "UScriptClass'DirectionalLightComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_PalSkyCreatorCutsceneLocal_C:Root Component'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_PalSkyCreatorCutsceneLocal.9"
+      }
+    },
+    "RelativeRotation": {
+      "Pitch": -90.0,
+      "Yaw": 0.0,
+      "Roll": 0.0
+    },
+    "RelativeLocation": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    }
+  },
+  {
+    "Type": "DirectionalLightComponent",
+    "Name": "Sun Light Component",
+    "Outer": "Default__BP_PalSkyCreatorCutsceneLocal_C",
+    "Class": "UScriptClass'DirectionalLightComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_PalSkyCreatorCutsceneLocal_C:Root Component'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_PalSkyCreatorCutsceneLocal.9"
+      }
+    },
+    "RelativeRotation": {
+      "Pitch": -90.0,
+      "Yaw": 0.0,
+      "Roll": 0.0
+    },
+    "RelativeLocation": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "Weather FX Component",
+    "Outer": "Default__BP_PalSkyCreatorCutsceneLocal_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OverrideParameters": {},
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_PalSkyCreatorCutsceneLocal_C:Root Component'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_PalSkyCreatorCutsceneLocal.9"
+      }
+    }
+  },
+  {
+    "Type": "PalPostProcessHeightFogComponent",
+    "Name": "Exponential Height Fog Component",
+    "Outer": "Default__BP_PalSkyCreatorCutsceneLocal_C",
+    "Class": "UScriptClass'PalPostProcessHeightFogComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_PalSkyCreatorCutsceneLocal_C:Root Component'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_PalSkyCreatorCutsceneLocal.9"
+      }
+    }
+  },
+  {
+    "Type": "PostProcessComponent",
+    "Name": "Post Process Component",
+    "Outer": "Default__BP_PalSkyCreatorCutsceneLocal_C",
+    "Class": "UScriptClass'PostProcessComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_PalSkyCreatorCutsceneLocal_C:Root Component'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_PalSkyCreatorCutsceneLocal.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneCaptureComponent2D",
+    "Name": "Occlusion Capture Component",
+    "Outer": "Default__BP_PalSkyCreatorCutsceneLocal_C",
+    "Class": "UScriptClass'SceneCaptureComponent2D'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_PalSkyCreatorCutsceneLocal_C:Root Component'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_PalSkyCreatorCutsceneLocal.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalSkyCreatorCutsceneLocal_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Root Component",
+    "Outer": "Default__BP_PalSkyCreatorCutsceneLocal_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalSkyCreatorCutsceneLocal_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_PalSkyCreatorCutsceneLocal.8"
+      },
+      "VariableGuid": "99B81670-45839A13-9B878EBC-F8D658D4",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalSkyCreatorCutsceneLocal_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalSkyCreatorCutsceneLocal_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_PalSkyCreatorCutsceneLocal.10"
+      }
+    }
+  },
+  {
+    "Type": "SkyAtmosphereComponent",
+    "Name": "Sky Atmosphere Component",
+    "Outer": "Default__BP_PalSkyCreatorCutsceneLocal_C",
+    "Class": "UScriptClass'SkyAtmosphereComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bStaticLightingBuiltGUID": "996517CB-4746DA36-93F0678A-124616B6",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_PalSkyCreatorCutsceneLocal_C:Root Component'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_PalSkyCreatorCutsceneLocal.9"
+      }
+    },
+    "bStaticLightingBuiltGUID": "996517CB-4746DA36-93F0678A-124616B6"
+  },
+  {
+    "Type": "SkyLightComponent",
+    "Name": "Sky Light Component",
+    "Outer": "Default__BP_PalSkyCreatorCutsceneLocal_C",
+    "Class": "UScriptClass'SkyLightComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_PalSkyCreatorCutsceneLocal_C:Root Component'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_PalSkyCreatorCutsceneLocal.9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Sky Sphere Component",
+    "Outer": "Default__BP_PalSkyCreatorCutsceneLocal_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_PalSkyCreatorCutsceneLocal_C:Root Component'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Lighting/BP_PalSkyCreatorCutsceneLocal.9"
+      }
+    }
+  }
+]

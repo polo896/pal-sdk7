@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Swim_ElecLizard",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 2.0,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_ElecLizard_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/ElecLizard/AS_ElecLizard_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 390.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.5
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_ElecLizard_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/ElecLizard/AS_ElecLizard_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.7
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_ElecLizard_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/ElecLizard/AS_ElecLizard_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 194.66907,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 1,
+            "SampleIndices[1]": 2,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.49915147
+          },
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 0,
+            "Vertices": 0.49915147,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 390.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_ElecLizard_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/ElecLizard/SK_ElecLizard_Skeleton.3"
+      }
+    },
+    "SkeletonGuid": "32A6A339-40A20C26-26810C86-B966BBB7"
+  }
+]

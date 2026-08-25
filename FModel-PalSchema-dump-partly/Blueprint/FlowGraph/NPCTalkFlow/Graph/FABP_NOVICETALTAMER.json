@@ -1,0 +1,772 @@
+[
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "88C9D9E8-496E168C-65B4E286-17411AF9",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "4202B0FE-45337C88-01333F8A-8CB0E069",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Timer",
+    "Name": "FlowNode_Timer_0",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "UScriptClass'FlowNode_Timer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CompletionTime": 5.0,
+      "GraphNode": null,
+      "NodeGuid": "95DEFF50-4733FB6B-5315FAB1-87BB0D52",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "43F54BD5-4CE7098F-02304381-5DED5594",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_CompleteQuest_C",
+    "Name": "FNBP_CompleteQuest_C_1",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.FNBP_CompleteQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_CompleteQuest_C'Default__FNBP_CompleteQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_BeginAdventure"
+      },
+      "NetworkInvokeName": "Main_BeginAdventure",
+      "GraphNode": null,
+      "NodeGuid": "9A77DE23-44D0DACB-E18546A7-B21A11BF",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "52CD1156-454C9DAE-F11F7C96-19828EEB",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_DespawnTalkCamera_C",
+    "Name": "FNBP_DespawnTalkCamera_C_0",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_DespawnTalkCamera.FNBP_DespawnTalkCamera_C'",
+    "Template": {
+      "ObjectName": "FNBP_DespawnTalkCamera_C'Default__FNBP_DespawnTalkCamera_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_DespawnTalkCamera.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BlendTime": 1.0,
+      "BlendExp": 1.0,
+      "NetworkInvokeName": "DespawnTalkCamera01",
+      "GraphNode": null,
+      "NodeGuid": "36D87315-4BB6FC6E-49FE34BC-E70F8A4B",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "9A77DE23-44D0DACB-E18546A7-B21A11BF",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeIn_C",
+    "Name": "FNBP_FadeIn_C_1",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.FNBP_FadeIn_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeIn_C'Default__FNBP_FadeIn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "43F54BD5-4CE7098F-02304381-5DED5594",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "3A9E36BE-4ED4A216-9260569E-E00B0FBE",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeOut_C",
+    "Name": "FNBP_FadeOut_C_0",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.FNBP_FadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeOut_C'Default__FNBP_FadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "83A2BAA5-4CDE6BC9-7C099693-E86A4211",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "760EBB3F-43FF1A13-5F076D9E-4AC7E7A9",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Quest_Main_TutorialStart_01"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "D36FED9A-4C6D529E-6B0877AF-789F72EA",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "83A2BAA5-4CDE6BC9-7C099693-E86A4211",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Quest_Main_BeginAdventure_01"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "FD71B9CD-4B8246F8-298017B2-699F4816",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "D0ACE175-468BCA65-9D97EBAC-B878DC1F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Quest_Main_TutorialStart_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "E8C53E94-458077AD-EA7074B2-49C889E7"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_3",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Quest_Main_BeginAdventure_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "1D909168-4B3B4043-5723ED81-F6362FAE"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_5",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Quest_Main_BeginAdventure_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "B77BED8A-49ED656B-7DE1CBB7-A83D3A1D"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_6",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Quest_Main_BeginAdventure_02"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "326563A4-4AFBAB80-5020DCBF-7B06C332",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "DF5557D2-4B26E24E-502A25A5-2D955494",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_7",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Quest_Main_BeginAdventure_03"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "6E433773-43F7AA2C-1AE016AF-2D0AAA5E",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "36D87315-4BB6FC6E-49FE34BC-E70F8A4B",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_8",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Quest_Main_TutorialStart_02"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "3A9E36BE-4ED4A216-9260569E-E00B0FBE",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "663E6362-452D85DE-C4C7E88D-2BD98B26",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_0",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_SmallVillage"
+      },
+      "GraphNode": null,
+      "NodeGuid": "52CD1156-454C9DAE-F11F7C96-19828EEB"
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_1",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_TutorialStart"
+      },
+      "NetworkInvokeName": "Order1",
+      "GraphNode": null,
+      "NodeGuid": "722EDB48-4EA8822D-D543CB93-B9D32740",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "664442C0-4BCB0B03-0F3199B8-23EAD567",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_0",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_TutorialStart"
+      },
+      "NetworkInvokeName": "Progress1",
+      "GraphNode": null,
+      "NodeGuid": "664442C0-4BCB0B03-0F3199B8-23EAD567"
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_TutorialStart"
+      },
+      "GraphNode": null,
+      "NodeGuid": "4202B0FE-45337C88-01333F8A-8CB0E069",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "D36FED9A-4C6D529E-6B0877AF-789F72EA",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "D36FED9A-4C6D529E-6B0877AF-789F72EA",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "1D909168-4B3B4043-5723ED81-F6362FAE",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_1",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_BeginAdventure"
+      },
+      "GraphNode": null,
+      "NodeGuid": "B566CDC6-4B4DE4C9-DBCAC6A5-D6E875A9",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "E8C53E94-458077AD-EA7074B2-49C889E7",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "FD71B9CD-4B8246F8-298017B2-699F4816",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "B77BED8A-49ED656B-7DE1CBB7-A83D3A1D",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_2",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_TutorialStart"
+      },
+      "GraphNode": null,
+      "NodeGuid": "663E6362-452D85DE-C4C7E88D-2BD98B26",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "722EDB48-4EA8822D-D543CB93-B9D32740",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "664442C0-4BCB0B03-0F3199B8-23EAD567",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_SpawnTalkCamera_C",
+    "Name": "FNBP_SpawnTalkCamera_C_0",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_SpawnTalkCamera.FNBP_SpawnTalkCamera_C'",
+    "Template": {
+      "ObjectName": "FNBP_SpawnTalkCamera_C'Default__FNBP_SpawnTalkCamera_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_SpawnTalkCamera.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BlendTime": 2.5,
+      "RowName": "FocusWorldTree",
+      "BlendExp": 2.5,
+      "NetworkInvokeName": "SpawnTalkCamera01",
+      "GraphNode": null,
+      "NodeGuid": "D0ACE175-468BCA65-9D97EBAC-B878DC1F",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "326563A4-4AFBAB80-5020DCBF-7B06C332",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_SpawnTalkCamera_C",
+    "Name": "FNBP_SpawnTalkCamera_C_1",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_SpawnTalkCamera.FNBP_SpawnTalkCamera_C'",
+    "Template": {
+      "ObjectName": "FNBP_SpawnTalkCamera_C'Default__FNBP_SpawnTalkCamera_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_SpawnTalkCamera.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BlendTime": 2.0,
+      "RowName": "FocusGrassTower",
+      "BlendExp": 2.0,
+      "NetworkInvokeName": "SpawnTalkCamera02",
+      "GraphNode": null,
+      "NodeGuid": "DF5557D2-4B26E24E-502A25A5-2D955494",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "6E433773-43F7AA2C-1AE016AF-2D0AAA5E",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_TextInFadeOut_C",
+    "Name": "FNBP_TextInFadeOut_C_0",
+    "Outer": "FABP_NOVICETALTAMER",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_TextInFadeOut.FNBP_TextInFadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_TextInFadeOut_C'Default__FNBP_TextInFadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_TextInFadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId": {
+        "RowName": "QUEST_Main_Message_TutorialStart_01"
+      },
+      "GraphNode": null,
+      "NodeGuid": "760EBB3F-43FF1A13-5F076D9E-4AC7E7A9",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "95DEFF50-4733FB6B-5315FAB1-87BB0D52",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_NOVICETALTAMER",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "904C55D6-4A378094-4F2FA19B-B427D8AF",
+      "Nodes": [
+        {
+          "Key": "88C9D9E8-496E168C-65B4E286-17411AF9",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_NOVICETALTAMER:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.0"
+          }
+        },
+        {
+          "Key": "4202B0FE-45337C88-01333F8A-8CB0E069",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_NOVICETALTAMER:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.17"
+          }
+        },
+        {
+          "Key": "D36FED9A-4C6D529E-6B0877AF-789F72EA",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_NOVICETALTAMER:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.6"
+          }
+        },
+        {
+          "Key": "E8C53E94-458077AD-EA7074B2-49C889E7",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_NOVICETALTAMER:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.8"
+          }
+        },
+        {
+          "Key": "43F54BD5-4CE7098F-02304381-5DED5594",
+          "Value": {
+            "ObjectName": "FNBP_FadeIn_C'FABP_NOVICETALTAMER:FNBP_FadeIn_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.4"
+          }
+        },
+        {
+          "Key": "3A9E36BE-4ED4A216-9260569E-E00B0FBE",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_NOVICETALTAMER:FNBP_NPCTalk_FixedMsdId_C_8'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.13"
+          }
+        },
+        {
+          "Key": "722EDB48-4EA8822D-D543CB93-B9D32740",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_NOVICETALTAMER:FNBP_OrderQuest_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.15"
+          }
+        },
+        {
+          "Key": "1D909168-4B3B4043-5723ED81-F6362FAE",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_NOVICETALTAMER:FNBP_NPCTalk_FixedMsdId_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.9"
+          }
+        },
+        {
+          "Key": "B566CDC6-4B4DE4C9-DBCAC6A5-D6E875A9",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_NOVICETALTAMER:FNBP_QuestBranch_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.18"
+          }
+        },
+        {
+          "Key": "FD71B9CD-4B8246F8-298017B2-699F4816",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_NOVICETALTAMER:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.7"
+          }
+        },
+        {
+          "Key": "B77BED8A-49ED656B-7DE1CBB7-A83D3A1D",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_NOVICETALTAMER:FNBP_NPCTalk_FixedMsdId_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.10"
+          }
+        },
+        {
+          "Key": "D0ACE175-468BCA65-9D97EBAC-B878DC1F",
+          "Value": {
+            "ObjectName": "FNBP_SpawnTalkCamera_C'FABP_NOVICETALTAMER:FNBP_SpawnTalkCamera_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.20"
+          }
+        },
+        {
+          "Key": "36D87315-4BB6FC6E-49FE34BC-E70F8A4B",
+          "Value": {
+            "ObjectName": "FNBP_DespawnTalkCamera_C'FABP_NOVICETALTAMER:FNBP_DespawnTalkCamera_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.3"
+          }
+        },
+        {
+          "Key": "DF5557D2-4B26E24E-502A25A5-2D955494",
+          "Value": {
+            "ObjectName": "FNBP_SpawnTalkCamera_C'FABP_NOVICETALTAMER:FNBP_SpawnTalkCamera_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.21"
+          }
+        },
+        {
+          "Key": "326563A4-4AFBAB80-5020DCBF-7B06C332",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_NOVICETALTAMER:FNBP_NPCTalk_FixedMsdId_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.11"
+          }
+        },
+        {
+          "Key": "6E433773-43F7AA2C-1AE016AF-2D0AAA5E",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_NOVICETALTAMER:FNBP_NPCTalk_FixedMsdId_C_7'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.12"
+          }
+        },
+        {
+          "Key": "9A77DE23-44D0DACB-E18546A7-B21A11BF",
+          "Value": {
+            "ObjectName": "FNBP_CompleteQuest_C'FABP_NOVICETALTAMER:FNBP_CompleteQuest_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.2"
+          }
+        },
+        {
+          "Key": "95DEFF50-4733FB6B-5315FAB1-87BB0D52",
+          "Value": {
+            "ObjectName": "FlowNode_Timer'FABP_NOVICETALTAMER:FlowNode_Timer_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.1"
+          }
+        },
+        {
+          "Key": "83A2BAA5-4CDE6BC9-7C099693-E86A4211",
+          "Value": {
+            "ObjectName": "FNBP_FadeOut_C'FABP_NOVICETALTAMER:FNBP_FadeOut_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.5"
+          }
+        },
+        {
+          "Key": "760EBB3F-43FF1A13-5F076D9E-4AC7E7A9",
+          "Value": {
+            "ObjectName": "FNBP_TextInFadeOut_C'FABP_NOVICETALTAMER:FNBP_TextInFadeOut_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.22"
+          }
+        },
+        {
+          "Key": "52CD1156-454C9DAE-F11F7C96-19828EEB",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_NOVICETALTAMER:FNBP_OrderQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.14"
+          }
+        },
+        {
+          "Key": "663E6362-452D85DE-C4C7E88D-2BD98B26",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_NOVICETALTAMER:FNBP_QuestBranch_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.19"
+          }
+        },
+        {
+          "Key": "664442C0-4BCB0B03-0F3199B8-23EAD567",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_NOVICETALTAMER:FNBP_ProgressQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_NOVICETALTAMER.16"
+          }
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_CameraShake_Umihebi_WindingTackle_Tackle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalCameraShakeBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_CameraShake_Umihebi_WindingTackle_Tackle_C'Default__BP_CameraShake_Umihebi_WindingTackle_Tackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Umihebi/BP_CameraShake_Umihebi_WindingTackle_Tackle.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_CameraShake_Umihebi_WindingTackle_Tackle_C",
+    "Name": "Default__BP_CameraShake_Umihebi_WindingTackle_Tackle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/Umihebi/BP_CameraShake_Umihebi_WindingTackle_Tackle.BP_CameraShake_Umihebi_WindingTackle_Tackle_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CurveAsset": {
+        "ObjectName": "CurveFloat'C_CameraShake_Umihebi_WindingTackle_Tackle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Umihebi/C_CameraShake_Umihebi_WindingTackle_Tackle.0"
+      },
+      "OscillationDuration": 3.0,
+      "OscillationBlendInTime": 1.0,
+      "OscillationBlendOutTime": 1.0,
+      "RotOscillation": {
+        "Pitch": {
+          "Amplitude": 3.0,
+          "Frequency": 40.0,
+          "InitialOffset": "EInitialOscillatorOffset::EOO_OffsetZero"
+        }
+      },
+      "LocOscillation": {
+        "X": {
+          "Amplitude": 3.0,
+          "Frequency": 60.0
+        },
+        "Y": {
+          "Amplitude": 3.0,
+          "Frequency": 60.0,
+          "InitialOffset": "EInitialOscillatorOffset::EOO_OffsetZero"
+        }
+      },
+      "RootShakePattern": {
+        "ObjectName": "PalCameraShakePattern'Default__BP_CameraShake_Umihebi_WindingTackle_Tackle_C:PalCameraShakePattern_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Umihebi/BP_CameraShake_Umihebi_WindingTackle_Tackle.2"
+      }
+    }
+  },
+  {
+    "Type": "PalCameraShakePattern",
+    "Name": "PalCameraShakePattern_0",
+    "Outer": "Default__BP_CameraShake_Umihebi_WindingTackle_Tackle_C",
+    "Class": "UScriptClass'PalCameraShakePattern'",
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  }
+]

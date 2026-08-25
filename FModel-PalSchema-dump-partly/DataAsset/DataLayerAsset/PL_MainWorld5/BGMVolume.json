@@ -1,0 +1,17 @@
+[
+  {
+    "Type": "DataLayerAsset",
+    "Name": "BGMVolume",
+    "Class": "UScriptClass'DataLayerAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DebugColor": {
+        "B": 15,
+        "G": 157,
+        "R": 90,
+        "A": 255,
+        "Hex": "5A9D0F"
+      }
+    }
+  }
+]

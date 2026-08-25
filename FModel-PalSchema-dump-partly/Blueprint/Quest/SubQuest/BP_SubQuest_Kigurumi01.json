@@ -1,0 +1,137 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SubQuest_Kigurumi01_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_SubQuest_Kigurumi01_C:FormatQuestDescriptionText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/BP_SubQuest_Kigurumi01.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "NewVar_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "FormatQuestDescriptionText": {
+        "ObjectName": "Function'BP_SubQuest_Kigurumi01_C:FormatQuestDescriptionText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/BP_SubQuest_Kigurumi01.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SubQuest_Kigurumi01_C'Default__BP_SubQuest_Kigurumi01_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/BP_SubQuest_Kigurumi01.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SubQuest_Kigurumi01_C",
+    "Name": "Default__BP_SubQuest_Kigurumi01_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/SubQuest/BP_SubQuest_Kigurumi01.BP_SubQuest_Kigurumi01_C'",
+    "Template": {
+      "ObjectName": "BP_PalQuestDataBase_C'Default__BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NewVar_0": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_NpcTalkText'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_NpcTalkText.0"
+        },
+        "RowName": "QUEST_SUB_INPROGRESS_DESC_KIGURUMI1"
+      },
+      "QuestBlockGroupList": [
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Kigurumi01_DeliveryItem1.BP_SubQuestBlock_Kigurumi01_DeliveryItem1_C",
+              "SubPathString": ""
+            }
+          ]
+        }
+      ],
+      "QuestTitleMsgId": "QUEST_SUB_QUESTNAME_KIGURUMI1",
+      "QuestDescriptionMsgId": "QUEST_SUB_INPROGRESS_DESC_KIGURUMI1",
+      "CommonRewardData": {
+        "Exp": 1031,
+        "Items": [
+          {
+            "Key": {
+              "Key": "HeadEquip045"
+            },
+            "Value": 1
+          },
+          {
+            "Key": {
+              "Key": "Player_Outfit_Kigurumi001"
+            },
+            "Value": 1
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "FormatQuestDescriptionText",
+    "Outer": "BP_SubQuest_Kigurumi01_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalQuestData:FormatQuestDescriptionText'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "InOriginalText",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "OutText",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  }
+]

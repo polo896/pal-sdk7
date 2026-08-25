@@ -1,0 +1,436 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MultiMissileAmmo_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_MultiMissileAmmo_C:ExecuteUbergraph_BP_MultiMissileAmmo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'StaticMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_MultiMissileAmmo_C:SetAmmoHidden'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.7"
+      },
+      {
+        "ObjectName": "Function'BP_MultiMissileAmmo_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.6"
+      },
+      {
+        "ObjectName": "Function'BP_MultiMissileAmmo_C:Delegate_OnShoot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.3"
+      },
+      {
+        "ObjectName": "Function'BP_MultiMissileAmmo_C:Delegate_OnAttach'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.2"
+      },
+      {
+        "ObjectName": "Function'BP_MultiMissileAmmo_C:Delegate_Reload'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.4"
+      },
+      {
+        "ObjectName": "Function'BP_MultiMissileAmmo_C:ShowAmmo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.8"
+      },
+      {
+        "ObjectName": "Function'BP_MultiMissileAmmo_C:ExecuteUbergraph_BP_MultiMissileAmmo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ParentWeapon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalWeaponBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "MagazineSlot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_MultiMissileAmmo": {
+        "ObjectName": "Function'BP_MultiMissileAmmo_C:ExecuteUbergraph_BP_MultiMissileAmmo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.5"
+      },
+      "ShowAmmo": {
+        "ObjectName": "Function'BP_MultiMissileAmmo_C:ShowAmmo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.8"
+      },
+      "Delegate_Reload": {
+        "ObjectName": "Function'BP_MultiMissileAmmo_C:Delegate_Reload'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.4"
+      },
+      "Delegate_OnAttach": {
+        "ObjectName": "Function'BP_MultiMissileAmmo_C:Delegate_OnAttach'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.2"
+      },
+      "Delegate_OnShoot": {
+        "ObjectName": "Function'BP_MultiMissileAmmo_C:Delegate_OnShoot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.3"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_MultiMissileAmmo_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.6"
+      },
+      "SetAmmoHidden": {
+        "ObjectName": "Function'BP_MultiMissileAmmo_C:SetAmmoHidden'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.7"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MultiMissileAmmo_C'Default__BP_MultiMissileAmmo_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MultiMissileAmmo_C",
+    "Name": "Default__BP_MultiMissileAmmo_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/Other/BP_MultiMissileAmmo.BP_MultiMissileAmmo_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseToChannels": {
+            "WorldStatic": "ECollisionResponse::ECR_Ignore",
+            "WorldDynamic": "ECollisionResponse::ECR_Ignore",
+            "Pawn": "ECollisionResponse::ECR_Ignore",
+            "Visibility": "ECollisionResponse::ECR_Ignore",
+            "Camera": "ECollisionResponse::ECR_Ignore",
+            "PhysicsBody": "ECollisionResponse::ECR_Ignore",
+            "Vehicle": "ECollisionResponse::ECR_Ignore",
+            "Destructible": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel2": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel3": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel4": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel5": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel6": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel2": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel3": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel5": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel7": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel8": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel9": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel11": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel15": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel16": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel17": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel18": "ECollisionResponse::ECR_Ignore"
+          },
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel2",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel3",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel4",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel5",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel6",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel16",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel17",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel18",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Delegate_OnAttach",
+    "Outer": "BP_MultiMissileAmmo_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Delegate_OnShoot",
+    "Outer": "BP_MultiMissileAmmo_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Delegate_Reload",
+    "Outer": "BP_MultiMissileAmmo_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "bulletsNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_MultiMissileAmmo",
+    "Outer": "BP_MultiMissileAmmo_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAttachParent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalWeaponBase:OnShootBulletDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Weapon_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalWeaponBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalWeaponBase:OnAttachWeaponDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalWeaponBase:ReloadBulletsDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_CustomEvent_bulletsNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_MultiMissileAmmo_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'ActorComponent:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetAmmoHidden",
+    "Outer": "BP_MultiMissileAmmo_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetMagazineSize_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetRemainBulletCount_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ShowAmmo",
+    "Outer": "BP_MultiMissileAmmo_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

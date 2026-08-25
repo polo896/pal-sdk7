@@ -1,0 +1,850 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "bp_palmapobjectspawner_palegg_desert_grade_01_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'bp_palmapobjectspawner_palegg_desert_grade_01_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.11"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalMapObjectSpawnerPalEgg'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SK_Kurinuki_EggA4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SK_Kurinuki_EggA3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SK_Kurinuki_EggA2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SK_Kurinuki_EggA1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SM_basket",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SK_Kurinuki_EggA",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "bp_palmapobjectspawner_palegg_desert_grade_01_C'Default__bp_palmapobjectspawner_palegg_desert_grade_01_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "bp_palmapobjectspawner_palegg_desert_grade_01_C",
+    "Name": "Default__bp_palmapobjectspawner_palegg_desert_grade_01_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.bp_palmapobjectspawner_palegg_desert_grade_01_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnPalEggLotteryDataArray": [
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "ThunderBird"
+            }
+          },
+          "Weight": 2.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "CuteMole"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "DarkCrow"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Gorilla_Ground"
+            }
+          },
+          "Weight": 2.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Serpent"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "PinkLizard"
+            }
+          },
+          "Weight": 2.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "RobinHood_Ground"
+            }
+          },
+          "Weight": 2.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "FlowerDinosaur_Electric"
+            }
+          },
+          "Weight": 2.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "FlowerDinosaur"
+            }
+          },
+          "Weight": 2.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Suzaku"
+            }
+          },
+          "Weight": 2.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "DrillGame"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "ColorfulBird"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "FlyingManta_Thunder"
+            }
+          },
+          "Weight": 2.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "NegativeOctopus_Neutral"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "LizardMan"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_DarkCrow"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_CuteMole"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_PinkLizard"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_RobinHood_Ground"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_FlowerDinosaur_Electric"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_DrillGame"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Suzaku"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "TropicalOstrich"
+            }
+          },
+          "Weight": 2.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Plesiosaur"
+            }
+          },
+          "Weight": 2.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_TropicalOstrich"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Plesiosaur"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "RaijinDaughter"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "CubeTurtle"
+            }
+          },
+          "Weight": 2.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "MummyPal"
+            }
+          },
+          "Weight": 2.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Sekhmet"
+            }
+          },
+          "Weight": 2.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "FeatherOstrich"
+            }
+          },
+          "Weight": 2.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_ThunderBird"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Gorilla_Ground"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Serpent"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_FlowerDinosaur"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_ColorfulBird"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_FlyingManta_Thunder"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_NegativeOctopus_Neutral"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_LizardMan"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_RaijinDaughter"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_CubeTurtle"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_MummyPal"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Sekhmet"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_FeatherOstrich"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Serpent_Ground"
+            }
+          },
+          "Weight": 10.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Serpent_Ground"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "DarkScorpion"
+            }
+          },
+          "Weight": 2.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_DarkScorpion"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_LazyDragon_Electric"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "LazyDragon_Electric"
+            }
+          },
+          "Weight": 3.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Ronin"
+            }
+          },
+          "Weight": 3.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Ronin"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_IceSeal"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "IceSeal"
+            }
+          },
+          "Weight": 4.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_CaptainPenguin"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Penguin"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Penguin"
+            }
+          },
+          "Weight": 8.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "CaptainPenguin"
+            }
+          },
+          "Weight": 4.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_TentacleTurtle"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "TentacleTurtle"
+            }
+          },
+          "Weight": 8.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "Kitsunebi_Ice"
+            }
+          },
+          "Weight": 8.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_Kitsunebi_Ice"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "ThunderDog"
+            }
+          },
+          "Weight": 2.0
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_ThunderDog"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "BOSS_IceCrocodile"
+            }
+          },
+          "Weight": 0.3
+        },
+        {
+          "PalEggData": {
+            "PalMonsterId": {
+              "Key": "IceCrocodile"
+            }
+          },
+          "Weight": 2.0
+        }
+      ],
+      "RespawnTimeMinutesObtained": 180.0,
+      "LotteryCoolTimeMinutes": 180.0,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__bp_palmapobjectspawner_palegg_desert_grade_01_C:Root'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "bp_palmapobjectspawner_palegg_desert_grade_01_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Root",
+    "Outer": "Default__bp_palmapobjectspawner_palegg_desert_grade_01_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'bp_palmapobjectspawner_palegg_desert_grade_01_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.2"
+      },
+      "VariableGuid": "241835D4-4C1B8977-968C809C-291D95A4",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "CF4C92CF-4B660DD9-F87455B2-E6172E5F",
+      "InternalVariableName": "SK_Kurinuki_EggA1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "398F3A7A-43559876-E89617A5-D612FABA",
+      "InternalVariableName": "SK_Kurinuki_EggA2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "F2B12502-47FA5BFA-851AF6BC-35303420",
+      "InternalVariableName": "SK_Kurinuki_EggA3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "BC47F137-42106EBB-5BA1548D-977343DF",
+      "InternalVariableName": "SK_Kurinuki_EggA4"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "CD44C08A-4423AD20-5D27DF86-E4E19325",
+      "InternalVariableName": "SK_Kurinuki_EggA"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "ParentComponentOrVariableName": "Root",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "69F6CF5D-4794584D-B10F44BC-852B28BE",
+      "InternalVariableName": "SM_basket"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "bp_palmapobjectspawner_palegg_desert_grade_01_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_desert_grade_01_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.9"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_desert_grade_01_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.10"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_desert_grade_01_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.5"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_desert_grade_01_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.6"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_desert_grade_01_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.7"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_desert_grade_01_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.8"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_desert_grade_01_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.9"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_desert_grade_01_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.10"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_desert_grade_01_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.5"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_desert_grade_01_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.6"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_desert_grade_01_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.7"
+        },
+        {
+          "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_desert_grade_01_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.8"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'bp_palmapobjectspawner_palegg_desert_grade_01_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_desert_grade_01.4"
+      }
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "Type": "DataLayerAsset",
+    "Name": "RespawnPoint",
+    "Class": "UScriptClass'DataLayerAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DebugColor": {
+        "B": 217,
+        "G": 247,
+        "R": 162,
+        "A": 255,
+        "Hex": "A2F7D9"
+      }
+    }
+  }
+]

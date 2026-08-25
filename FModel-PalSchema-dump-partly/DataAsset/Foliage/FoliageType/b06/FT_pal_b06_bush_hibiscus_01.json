@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b06_bush_hibiscus_01",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b06_bush_hibiscus_01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b06/Tree/Meshes/SM_pal_b06_bush_hibiscus_01.2"
+      },
+      "UpdateGuid": "34B94285-4B8CEF48-E603B7A9-87674AB7",
+      "ScaleX": {
+        "Min": 0.6
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -8.529221,
+          "Y": -0.102176666,
+          "Z": 66.705376
+        },
+        "BoxExtent": {
+          "X": 78.96267,
+          "Y": 87.44562,
+          "Z": 82.006676
+        },
+        "SphereRadius": 99.81791502061003
+      },
+      "LowBoundOriginRadius": {
+        "X": -8.59897,
+        "Y": -1.5052681,
+        "Z": 65.32547
+      },
+      "CullDistance": {
+        "Max": 8000
+      },
+      "bAffectDistanceFieldLighting": true,
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

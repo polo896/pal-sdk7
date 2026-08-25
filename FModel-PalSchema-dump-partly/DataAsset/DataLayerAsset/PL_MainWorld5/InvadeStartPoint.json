@@ -1,0 +1,17 @@
+[
+  {
+    "Type": "DataLayerAsset",
+    "Name": "InvadeStartPoint",
+    "Class": "UScriptClass'DataLayerAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DebugColor": {
+        "B": 181,
+        "G": 136,
+        "R": 185,
+        "A": 255,
+        "Hex": "B988B5"
+      }
+    }
+  }
+]

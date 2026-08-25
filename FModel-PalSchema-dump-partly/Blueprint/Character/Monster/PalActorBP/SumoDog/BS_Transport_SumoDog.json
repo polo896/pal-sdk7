@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Transport_SumoDog",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 1.0,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_SumoDog_Transport'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/SumoDog/AS_SumoDog_Transport.0"
+          },
+          "SampleValue": {
+            "X": 120.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_SumoDog_Transport'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/SumoDog/AS_SumoDog_Transport.0"
+          },
+          "SampleValue": {
+            "X": 240.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 2.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_SumoDog_Transport'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/SumoDog/AS_SumoDog_Transport.0"
+          },
+          "SampleValue": {
+            "X": 12.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.1
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 0,
+            "Vertices": 0.05,
+            "Vertices[1]": 0.5
+          },
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.5,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 240.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_SumoDog_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/SumoDog/SK_SumoDog_Skeleton.4"
+      }
+    },
+    "SkeletonGuid": "1EDB7368-4886C54A-F56A5AB4-11B4AA33"
+  }
+]

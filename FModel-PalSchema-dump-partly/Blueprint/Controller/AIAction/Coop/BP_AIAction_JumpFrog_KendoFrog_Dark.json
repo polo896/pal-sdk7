@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AIAction_JumpFrog_KendoFrog_Dark_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_JumpFrog_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_JumpFrog.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_JumpFrog_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_JumpFrog.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AIAction_JumpFrog_KendoFrog_Dark_C'Default__BP_AIAction_JumpFrog_KendoFrog_Dark_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_JumpFrog_KendoFrog_Dark.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AIAction_JumpFrog_KendoFrog_Dark_C",
+    "Name": "Default__BP_AIAction_JumpFrog_KendoFrog_Dark_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_JumpFrog_KendoFrog_Dark.BP_AIAction_JumpFrog_KendoFrog_Dark_C'",
+    "Template": {
+      "ObjectName": "BP_AIAction_JumpFrog_C'Default__BP_AIAction_JumpFrog_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_JumpFrog.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Action Class": {
+        "ObjectName": "BlueprintGeneratedClass'BP_Action_Coop_JumpFrogAction_KendoFrog_Dark_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/MonsterCoop/BP_Action_Coop_JumpFrogAction_KendoFrog_Dark.0"
+      }
+    }
+  }
+]

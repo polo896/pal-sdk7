@@ -1,0 +1,118 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalRandomIncidentLottery_DarkIsland_YellowArea_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalRandomIncidentLotteryBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalRandomIncidentLottery_DarkIsland_YellowArea_C'Default__BP_PalRandomIncidentLottery_DarkIsland_YellowArea_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/Lottery/BP_PalRandomIncidentLottery_DarkIsland_YellowArea.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalRandomIncidentLottery_DarkIsland_YellowArea_C",
+    "Name": "Default__BP_PalRandomIncidentLottery_DarkIsland_YellowArea_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/Lottery/BP_PalRandomIncidentLottery_DarkIsland_YellowArea.BP_PalRandomIncidentLottery_DarkIsland_YellowArea_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LotteryRate": 40.0,
+      "LotteryParameters": [
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "HerculesBeetle_Ground_vs_HerculesBeetle",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "PinkRabbit_Couple",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "Viking_vs_ThunderDog",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "PalBattle_16",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "PalBattle_17",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "PalBattle_18",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "MerchantwithPAL_3",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "PalPassive",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "Reward_Emote_I",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        }
+      ]
+    }
+  }
+]

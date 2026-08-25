@@ -1,0 +1,180 @@
+[
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_Quest_ForestBoss_Investigate",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "EE234BE6-4FF5C163-97D2FBA1-D0F0E435",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "FA3DCD4D-43FA33E2-7FE1D9BC-E12E7DCB",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_Quest_ForestBoss_Investigate",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Lily_Talk_020"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "0CA9F7E9-4E059DA1-08172289-5B5C7554",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "CD0C89EB-48EC1587-D121888F-75D5D897",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_6",
+    "Outer": "FABP_Quest_ForestBoss_Investigate",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "NetworkInvokeName": "BP_MainQuestBlock_ForestBoss_Report",
+      "GraphNode": null,
+      "NodeGuid": "5DDB09AA-4A7708EA-1F0284A4-BE687A19"
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_0",
+    "Outer": "FABP_Quest_ForestBoss_Investigate",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_ForestBoss_Investigate_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_ForestBoss_Investigate.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "CD0C89EB-48EC1587-D121888F-75D5D897",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "5DDB09AA-4A7708EA-1F0284A4-BE687A19",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_Quest_ForestBoss_Investigate",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "FA3DCD4D-43FA33E2-7FE1D9BC-E12E7DCB",
+      "Connections": [
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "0CA9F7E9-4E059DA1-08172289-5B5C7554",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "0CA9F7E9-4E059DA1-08172289-5B5C7554",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_Quest_ForestBoss_Investigate",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "853BEB57-48F414A1-93C0FEB1-E5BF75A2",
+      "Nodes": [
+        {
+          "Key": "EE234BE6-4FF5C163-97D2FBA1-D0F0E435",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_Quest_ForestBoss_Investigate:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_ForestBoss_Investigate.0"
+          }
+        },
+        {
+          "Key": "FA3DCD4D-43FA33E2-7FE1D9BC-E12E7DCB",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_Quest_ForestBoss_Investigate:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_ForestBoss_Investigate.4"
+          }
+        },
+        {
+          "Key": "5DDB09AA-4A7708EA-1F0284A4-BE687A19",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_Quest_ForestBoss_Investigate:FNBP_ProgressQuest_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_ForestBoss_Investigate.2"
+          }
+        },
+        {
+          "Key": "CD0C89EB-48EC1587-D121888F-75D5D897",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_Quest_ForestBoss_Investigate:FNBP_QuestBlockBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_ForestBoss_Investigate.3"
+          }
+        },
+        {
+          "Key": "0CA9F7E9-4E059DA1-08172289-5B5C7554",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_ForestBoss_Investigate:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_ForestBoss_Investigate.1"
+          }
+        }
+      ]
+    }
+  }
+]

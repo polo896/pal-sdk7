@@ -1,0 +1,92 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_FireKirin_Dark_Tackle_New_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_FireKirin_Tackle_New_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FireKirin/BP_Action_Unique_FireKirin_Tackle_New.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_FireKirin_Tackle_New_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FireKirin/BP_Action_Unique_FireKirin_Tackle_New.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Action_Unique_FireKirin_Dark_Tackle_New_C:GetCollisionEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FireKirin/FireKirin_Dark/BP_Action_Unique_FireKirin_Dark_Tackle_New.2"
+      }
+    ],
+    "FuncMap": {
+      "GetCollisionEffect": {
+        "ObjectName": "Function'BP_Action_Unique_FireKirin_Dark_Tackle_New_C:GetCollisionEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FireKirin/FireKirin_Dark/BP_Action_Unique_FireKirin_Dark_Tackle_New.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_FireKirin_Dark_Tackle_New_C'Default__BP_Action_Unique_FireKirin_Dark_Tackle_New_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FireKirin/FireKirin_Dark/BP_Action_Unique_FireKirin_Dark_Tackle_New.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_FireKirin_Dark_Tackle_New_C",
+    "Name": "Default__BP_Action_Unique_FireKirin_Dark_Tackle_New_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/FireKirin/FireKirin_Dark/BP_Action_Unique_FireKirin_Dark_Tackle_New.BP_Action_Unique_FireKirin_Dark_Tackle_New_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_FireKirin_Tackle_New_C'Default__BP_Action_Unique_FireKirin_Tackle_New_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FireKirin/BP_Action_Unique_FireKirin_Tackle_New.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkillModuleClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_FireKirin_Dark_New_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FireKirin/FireKirin_Dark/BP_UniqueSkillModule_Tackle_FireKirin_Dark_New.0"
+      },
+      "WazaID": "EPalWazaID::Unique_FireKirin_Dark_DarkTossin"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetCollisionEffect",
+    "Outer": "BP_Action_Unique_FireKirin_Dark_Tackle_New_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_Unique_FireKirin_Tackle_New_C:GetCollisionEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FireKirin/BP_Action_Unique_FireKirin_Tackle_New.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_Unique_FireKirin_Tackle_New_C:GetCollisionEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/FireKirin/BP_Action_Unique_FireKirin_Tackle_New.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "CollisionEffect",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

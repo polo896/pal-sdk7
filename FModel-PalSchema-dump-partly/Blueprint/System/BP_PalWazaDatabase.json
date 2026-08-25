@@ -1,0 +1,138 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalWazaDatabase_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalWazaDatabase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalWazaDatabase_C'Default__BP_PalWazaDatabase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalWazaDatabase.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalWazaDatabase_C",
+    "Name": "Default__BP_PalWazaDatabase_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalWazaDatabase.BP_PalWazaDatabase_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WazaDataTable": {
+        "ObjectName": "CompositeDataTable'DT_WazaDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Waza/DT_WazaDataTable.0"
+      },
+      "AdditionalEffectToStatusID": [
+        {
+          "Key": "EPalAdditionalEffectType::Burn",
+          "Value": "EPalStatusID::Burn"
+        },
+        {
+          "Key": "EPalAdditionalEffectType::Wetness",
+          "Value": "EPalStatusID::Wetness"
+        },
+        {
+          "Key": "EPalAdditionalEffectType::Freeze",
+          "Value": "EPalStatusID::Freeze"
+        },
+        {
+          "Key": "EPalAdditionalEffectType::Electrical",
+          "Value": "EPalStatusID::Electrical"
+        },
+        {
+          "Key": "EPalAdditionalEffectType::Muddy",
+          "Value": "EPalStatusID::Muddy"
+        },
+        {
+          "Key": "EPalAdditionalEffectType::IvyCling",
+          "Value": "EPalStatusID::IvyCling"
+        },
+        {
+          "Key": "EPalAdditionalEffectType::Darkness",
+          "Value": "EPalStatusID::Darkness"
+        },
+        {
+          "Key": "EPalAdditionalEffectType::EPalAdditionalEffectType_MAX",
+          "Value": "EPalStatusID::EPalStatusID_MAX"
+        },
+        {
+          "Key": "EPalAdditionalEffectType::EPalAdditionalEffectType_MAX",
+          "Value": "EPalStatusID::EPalStatusID_MAX"
+        },
+        {
+          "Key": "EPalAdditionalEffectType::DefenseUp",
+          "Value": "EPalStatusID::DefenseUp"
+        },
+        {
+          "Key": "EPalAdditionalEffectType::Poison",
+          "Value": "EPalStatusID::Poison"
+        },
+        {
+          "Key": "EPalAdditionalEffectType::AttackUp",
+          "Value": "EPalStatusID::AttackUp"
+        }
+      ],
+      "WazaMasterLevel_DataTable": {
+        "ObjectName": "CompositeDataTable'DT_WazaMasterLevel'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Waza/DT_WazaMasterLevel.0"
+      },
+      "WazaMasterTamago_DataTable": {
+        "ObjectName": "DataTable'DT_WazaMasterTamago'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Waza/DT_WazaMasterTamago.0"
+      },
+      "OtomoBoringTimeWazaID": [
+        {
+          "Key": "EPalElementType::Normal",
+          "Value": "EPalWazaID::AirCanon"
+        },
+        {
+          "Key": "EPalElementType::Fire",
+          "Value": "EPalWazaID::FireBlast"
+        },
+        {
+          "Key": "EPalElementType::Water",
+          "Value": "EPalWazaID::AquaJet"
+        },
+        {
+          "Key": "EPalElementType::Leaf",
+          "Value": "EPalWazaID::WindCutter"
+        },
+        {
+          "Key": "EPalElementType::Electricity",
+          "Value": "EPalWazaID::ThunderSpear"
+        },
+        {
+          "Key": "EPalElementType::Ice",
+          "Value": "EPalWazaID::IceMissile"
+        },
+        {
+          "Key": "EPalElementType::Earth",
+          "Value": "EPalWazaID::MudShot"
+        },
+        {
+          "Key": "EPalElementType::Dark",
+          "Value": "EPalWazaID::GravityShot"
+        },
+        {
+          "Key": "EPalElementType::Dragon",
+          "Value": "EPalWazaID::DragonCanon"
+        },
+        {
+          "Key": "EPalElementType::None",
+          "Value": "EPalWazaID::AirCanon"
+        }
+      ]
+    }
+  }
+]

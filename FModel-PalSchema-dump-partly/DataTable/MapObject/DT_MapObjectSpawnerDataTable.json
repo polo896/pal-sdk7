@@ -1,0 +1,23 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "DT_MapObjectSpawnerDataTable",
+    "Class": "UScriptClass'DataTable'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "ScriptStruct'PalMapObjectSpawnerBlueprintData'",
+        "ObjectPath": "/Script/Pal"
+      }
+    },
+    "Rows": {
+      "PalEgg_Grass01": {
+        "BlueprintClassName": "bp_palmapobjectspawner_palegg_grass_grade_01",
+        "BlueprintClassSoft": {
+          "AssetPathName": "/Game/Pal/Blueprint/MapObject/Spawner/bp_palmapobjectspawner_palegg_grass_grade_01.bp_palmapobjectspawner_palegg_grass_grade_01_C",
+          "SubPathString": ""
+        }
+      }
+    }
+  }
+]

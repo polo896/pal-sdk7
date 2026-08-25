@@ -1,0 +1,47 @@
+[
+  {
+    "Type": "CurveLinearColorAtlas",
+    "Name": "CA_UI_CircleGaugeLowAmmoFlashColorAtlas",
+    "Class": "UScriptClass'CurveLinearColorAtlas'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bSquareResolution": false,
+      "TextureHeight": 4,
+      "GradientCurves": [
+        {
+          "ObjectName": "CurveLinearColor'C_UI_CircleGaugeLowAmmoFlashCurveDefault'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/SampleMaterial/LyraAmmoGauge/C_UI_CircleGaugeLowAmmoFlashCurveDefault.0"
+        },
+        {
+          "ObjectName": "CurveLinearColor'C_UI_CircleGaugeLowAmmoFlashCurve_00'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/SampleMaterial/LyraAmmoGauge/C_UI_CircleGaugeLowAmmoFlashCurve_00.0"
+        }
+      ],
+      "ImportedSize": {
+        "X": 256,
+        "Y": 4
+      },
+      "LightingGuid": "FCDADE39-49254469-890C81B1-A7F3AD7E",
+      "LODGroup": "TextureGroup::TEXTUREGROUP_Project03",
+      "NeverStream": true
+    },
+    "SizeX": 256,
+    "SizeY": 4,
+    "PackedData": 1,
+    "PixelFormat": "PF_FloatRGBA",
+    "FirstMipToSerialize": 0,
+    "Mips": [
+      {
+        "BulkData": {
+          "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+          "ElementCount": 8192,
+          "SizeOnDisk": 8192,
+          "OffsetInFile": "0x2BDA"
+        },
+        "SizeX": 256,
+        "SizeY": 4,
+        "SizeZ": 1
+      }
+    ]
+  }
+]

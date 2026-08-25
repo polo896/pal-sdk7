@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "PalDataLayerRuntimeSettingsData",
+    "Name": "DA_DataLayerRuntimeSettings_FieldCheck",
+    "Class": "UScriptClass'PalDataLayerRuntimeSettingsData'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Settings": [
+        {
+          "DataLayerAsset": {
+            "ObjectName": "DataLayerAsset'dungeon'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/PL_MainWorld5/dungeon.0"
+          },
+          "bRuntimeUnload": true
+        },
+        {
+          "DataLayerAsset": {
+            "ObjectName": "DataLayerAsset'FieldItem'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/PL_MainWorld5/FieldItem.0"
+          },
+          "bRuntimeUnload": true
+        },
+        {
+          "DataLayerAsset": {
+            "ObjectName": "DataLayerAsset'MapObject'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/PL_MainWorld5/MapObject.0"
+          },
+          "bRuntimeUnload": true
+        },
+        {
+          "DataLayerAsset": {
+            "ObjectName": "DataLayerAsset'Note'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/PL_MainWorld5/Note.0"
+          },
+          "bRuntimeUnload": true
+        },
+        {
+          "DataLayerAsset": {
+            "ObjectName": "DataLayerAsset'Relic'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/PL_MainWorld5/Relic.0"
+          },
+          "bRuntimeUnload": true
+        },
+        {
+          "DataLayerAsset": {
+            "ObjectName": "DataLayerAsset'Spawners'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/PL_MainWorld5/Spawners.0"
+          },
+          "bRuntimeUnload": true
+        },
+        {
+          "DataLayerAsset": {
+            "ObjectName": "DataLayerAsset'TreasureBox'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/PL_MainWorld5/TreasureBox.0"
+          },
+          "bRuntimeUnload": true
+        },
+        {
+          "DataLayerAsset": {
+            "ObjectName": "DataLayerAsset'MapObject_Skyland'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/PL_MainWorld5/MapObject_Skyland.0"
+          },
+          "bRuntimeUnload": false
+        },
+        {
+          "DataLayerAsset": {
+            "ObjectName": "DataLayerAsset'MapObject_WorldTree'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/PL_MainWorld5/MapObject_WorldTree.0"
+          },
+          "bRuntimeUnload": false
+        }
+      ]
+    }
+  }
+]

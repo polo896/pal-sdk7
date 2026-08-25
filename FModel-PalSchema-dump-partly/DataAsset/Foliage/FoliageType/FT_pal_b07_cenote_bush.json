@@ -1,0 +1,52 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b07_cenote_bush",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b07_cenote_bush'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b07/cenote/mesh/SM_pal_b07_cenote_bush.2"
+      },
+      "UpdateGuid": "735DD0E4-4C69F275-A82830BA-A712F39B",
+      "ScaleX": {
+        "Min": 0.6,
+        "Max": 0.8
+      },
+      "GroundSlopeAngle": {
+        "Max": 120.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -2.4015388,
+          "Y": 1.4627991,
+          "Z": 87.00839
+        },
+        "BoxExtent": {
+          "X": 111.54216,
+          "Y": 118.204475,
+          "Z": 100.86856
+        },
+        "SphereRadius": 128.09825134277344
+      },
+      "LowBoundOriginRadius": {
+        "X": -5.565708,
+        "Y": -16.400747,
+        "Z": 67.04866
+      },
+      "CullDistance": {
+        "Max": 5000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

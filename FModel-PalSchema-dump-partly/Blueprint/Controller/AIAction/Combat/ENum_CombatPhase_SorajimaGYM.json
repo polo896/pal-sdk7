@@ -1,0 +1,66 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "ENum_CombatPhase_SorajimaGYM",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "F8F9A49B46F63435B25C979BC33E7A6C",
+            "SourceString": "None",
+            "LocalizedString": "None"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "5A4785D04F5D6E8D44AE6F80D704ED39",
+            "SourceString": "WaterRaise1",
+            "LocalizedString": "WaterRaise1"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "B6E424D1463CDF0CF85344A92EDFB945",
+            "SourceString": "SPAct1",
+            "LocalizedString": "SPAct1"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "540898144B755006A07D8FB2FE25525C",
+            "SourceString": "WaterRaise2",
+            "LocalizedString": "WaterRaise2"
+          }
+        },
+        {
+          "Key": "NewEnumerator4",
+          "Value": {
+            "Namespace": "",
+            "Key": "F671FF554B5DC001649AE794B25D104E",
+            "SourceString": "SPAct2",
+            "LocalizedString": "SPAct2"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "ENum_CombatPhase_SorajimaGYM::NewEnumerator0": 0,
+      "ENum_CombatPhase_SorajimaGYM::NewEnumerator1": 1,
+      "ENum_CombatPhase_SorajimaGYM::NewEnumerator2": 2,
+      "ENum_CombatPhase_SorajimaGYM::NewEnumerator3": 3,
+      "ENum_CombatPhase_SorajimaGYM::NewEnumerator4": 4,
+      "ENum_CombatPhase_SorajimaGYM::ENum_CombatPhase_MAX": 5
+    },
+    "CppForm": "Namespaced"
+  }
+]

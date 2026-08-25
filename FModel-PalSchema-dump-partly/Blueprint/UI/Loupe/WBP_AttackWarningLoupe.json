@@ -1,0 +1,563 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_35",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_AttackWarningLoupe_C:WidgetTree.CanvasPanel_35.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_35",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 84.0,
+          "Bottom": 72.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_AttackWarningLoupe_C:WidgetTree.CanvasPanel_35'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_AttackWarningLoupe_C:WidgetTree.Loupe_Angle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.10"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "CalcScreenPosition",
+    "Outer": "WBP_AttackWarningLoupe_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUIOffScreenLoupeBase:CalcScreenPosition'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetTargetWorldLocation_outVector",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerController'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetCameraRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetForwardVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Normal_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Dot_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetLoupeWidgetSize",
+    "Outer": "WBP_AttackWarningLoupe_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'WBP_LoupeBase_C:GetLoupeWidgetSize'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_LoupeBase.1"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'WBP_LoupeBase_C:GetLoupeWidgetSize'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_LoupeBase.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "widgetSize",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSize_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetTargetWidgetSize",
+    "Outer": "WBP_AttackWarningLoupe_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUIOffScreenLoupeBase:GetTargetWidgetSize'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "outVector",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSize_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetTargetWorldLocation",
+    "Outer": "WBP_AttackWarningLoupe_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUIOffScreenLoupeBase:GetTargetWorldLocation'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "outVector",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsEnableLoupe",
+    "Outer": "WBP_AttackWarningLoupe_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUIOffScreenLoupeBase:IsEnableLoupe'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetFinalWidgetOpacity",
+    "Outer": "WBP_AttackWarningLoupe_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'WBP_LoupeBase_C:SetFinalWidgetOpacity'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_LoupeBase.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'WBP_LoupeBase_C:SetFinalWidgetOpacity'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_LoupeBase.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "calcedOpacity",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetRenderOpacity_InOpacity_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup",
+    "Outer": "WBP_AttackWarningLoupe_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "TargetLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateArrowImageAngle",
+    "Outer": "WBP_AttackWarningLoupe_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'WBP_LoupeBase_C:UpdateArrowImageAngle'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_LoupeBase.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'WBP_LoupeBase_C:UpdateArrowImageAngle'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_LoupeBase.5"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "newAngle",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetRenderTransformAngle_Angle_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "Loupe_Angle",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 84.0,
+          "Y": 72.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_BossWarningArrow'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/InGame/T_prt_BossWarningArrow.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.964,
+        "G": 0.03,
+        "B": 0.036,
+        "A": 1.0,
+        "Hex": "FB3035"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_AttackWarningLoupe_C:WidgetTree.CanvasPanel_35.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.1"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "WBP_AttackWarningLoupe_C",
+    "Name": "Default__WBP_AttackWarningLoupe_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.WBP_AttackWarningLoupe_C'",
+    "Template": {
+      "ObjectName": "WBP_LoupeBase_C'Default__WBP_LoupeBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_LoupeBase.8"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_AttackWarningLoupe_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "WidgetBlueprintGeneratedClass'WBP_LoupeBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_LoupeBase.9"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_AttackWarningLoupe_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.13"
+      },
+      "bClassRequiresNativeTick": true
+    },
+    "SuperStruct": {
+      "ObjectName": "WidgetBlueprintGeneratedClass'WBP_LoupeBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_LoupeBase.9"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_AttackWarningLoupe_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.8"
+      },
+      {
+        "ObjectName": "Function'WBP_AttackWarningLoupe_C:CalcScreenPosition'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.2"
+      },
+      {
+        "ObjectName": "Function'WBP_AttackWarningLoupe_C:IsEnableLoupe'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.6"
+      },
+      {
+        "ObjectName": "Function'WBP_AttackWarningLoupe_C:GetTargetWidgetSize'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.4"
+      },
+      {
+        "ObjectName": "Function'WBP_AttackWarningLoupe_C:GetTargetWorldLocation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.5"
+      },
+      {
+        "ObjectName": "Function'WBP_AttackWarningLoupe_C:SetFinalWidgetOpacity'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.7"
+      },
+      {
+        "ObjectName": "Function'WBP_AttackWarningLoupe_C:GetLoupeWidgetSize'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.3"
+      },
+      {
+        "ObjectName": "Function'WBP_AttackWarningLoupe_C:UpdateArrowImageAngle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.9"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Loupe_Angle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TargetLocation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FuncMap": {
+      "UpdateArrowImageAngle": {
+        "ObjectName": "Function'WBP_AttackWarningLoupe_C:UpdateArrowImageAngle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.9"
+      },
+      "GetLoupeWidgetSize": {
+        "ObjectName": "Function'WBP_AttackWarningLoupe_C:GetLoupeWidgetSize'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.3"
+      },
+      "SetFinalWidgetOpacity": {
+        "ObjectName": "Function'WBP_AttackWarningLoupe_C:SetFinalWidgetOpacity'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.7"
+      },
+      "GetTargetWorldLocation": {
+        "ObjectName": "Function'WBP_AttackWarningLoupe_C:GetTargetWorldLocation'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.5"
+      },
+      "GetTargetWidgetSize": {
+        "ObjectName": "Function'WBP_AttackWarningLoupe_C:GetTargetWidgetSize'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.4"
+      },
+      "IsEnableLoupe": {
+        "ObjectName": "Function'WBP_AttackWarningLoupe_C:IsEnableLoupe'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.6"
+      },
+      "CalcScreenPosition": {
+        "ObjectName": "Function'WBP_AttackWarningLoupe_C:CalcScreenPosition'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.2"
+      },
+      "Setup": {
+        "ObjectName": "Function'WBP_AttackWarningLoupe_C:Setup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.8"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_AttackWarningLoupe_C'Default__WBP_AttackWarningLoupe_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.11"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_AttackWarningLoupe_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_AttackWarningLoupe_C:WidgetTree.CanvasPanel_35'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Loupe/WBP_AttackWarningLoupe.0"
+      }
+    }
+  }
+]

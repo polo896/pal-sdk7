@@ -1,0 +1,36 @@
+[
+  {
+    "Type": "CurveFloat",
+    "Name": "C_CameraShake_SnowTigerBeastman_SnowImpact_Impact",
+    "Class": "UScriptClass'CurveFloat'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 1.0,
+            "ArriveTangent": -0.07034651,
+            "ArriveTangentWeight": 1.0205951,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 1.0205951
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 1.0,
+            "Value": -6.2764784E-08,
+            "ArriveTangent": -3.092749,
+            "ArriveTangentWeight": 0.34154963,
+            "LeaveTangent": -3.092749,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  }
+]

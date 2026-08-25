@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AIActionCoop_StatusUp_StuffedShark_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIActionCoop_AssignPassiveSkill_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIActionCoop_AssignPassiveSkill.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIActionCoop_AssignPassiveSkill_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIActionCoop_AssignPassiveSkill.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AIActionCoop_StatusUp_StuffedShark_C'Default__BP_AIActionCoop_StatusUp_StuffedShark_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIActionCoop_StatusUp_StuffedShark.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AIActionCoop_StatusUp_StuffedShark_C",
+    "Name": "Default__BP_AIActionCoop_StatusUp_StuffedShark_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIActionCoop_StatusUp_StuffedShark.BP_AIActionCoop_StatusUp_StuffedShark_C'",
+    "Template": {
+      "ObjectName": "BP_AIActionCoop_AssignPassiveSkill_C'Default__BP_AIActionCoop_AssignPassiveSkill_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIActionCoop_AssignPassiveSkill.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Skill Module Class": {
+        "ObjectName": "BlueprintGeneratedClass'BP_CoopSkill_StatusUp_StuffedShark_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/StatusUp/BP_CoopSkill_StatusUp_StuffedShark.0"
+      }
+    }
+  }
+]

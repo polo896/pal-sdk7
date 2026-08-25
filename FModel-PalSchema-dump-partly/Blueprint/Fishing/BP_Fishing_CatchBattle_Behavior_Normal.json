@@ -1,0 +1,44 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Fishing_CatchBattle_Behavior_Normal_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Fishing_CatchBattle_Behavior_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Fishing_CatchBattle_Behavior_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Fishing_CatchBattle_Behavior_Normal_C'Default__BP_Fishing_CatchBattle_Behavior_Normal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior_Normal.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Fishing_CatchBattle_Behavior_Normal_C",
+    "Name": "Default__BP_Fishing_CatchBattle_Behavior_Normal_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior_Normal.BP_Fishing_CatchBattle_Behavior_Normal_C'",
+    "Template": {
+      "ObjectName": "BP_Fishing_CatchBattle_Behavior_C'Default__BP_Fishing_CatchBattle_Behavior_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetRandMax": 30.0,
+      "IntervalMax": 4.0
+    }
+  }
+]

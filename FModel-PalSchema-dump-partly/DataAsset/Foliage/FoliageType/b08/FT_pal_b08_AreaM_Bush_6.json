@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b08_AreaM_Bush_6",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b07_bush_RainforestGalanga_02'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b08/Area_M/Foliage/Mesh/SM_pal_b07_bush_RainforestGalanga_02.2"
+      },
+      "UpdateGuid": "D619F3FD-4771C20E-D68A6B89-E3483692",
+      "Density": 50.0,
+      "ScaleX": {
+        "Min": 0.9,
+        "Max": 1.1
+      },
+      "GroundSlopeAngle": {
+        "Max": 180.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 6.7983856,
+          "Y": -3.058895,
+          "Z": 54.99093
+        },
+        "BoxExtent": {
+          "X": 78.024124,
+          "Y": 77.26279,
+          "Z": 60.991905
+        },
+        "SphereRadius": 102.95189951565654
+      },
+      "LowBoundOriginRadius": {
+        "X": 0.32974434,
+        "Y": -0.36368656,
+        "Z": 18.649649
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

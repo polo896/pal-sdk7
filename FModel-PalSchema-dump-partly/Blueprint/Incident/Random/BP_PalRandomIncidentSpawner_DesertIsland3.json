@@ -1,0 +1,102 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalRandomIncidentSpawner_DesertIsland3_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentSpawner_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalRandomIncidentSpawner_DesertIsland3_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner_DesertIsland3.5"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_PalRandomIncidentSpawner_DesertIsland3_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner_DesertIsland3.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentSpawner_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner.0"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalRandomIncidentSpawner_DesertIsland3_C'Default__BP_PalRandomIncidentSpawner_DesertIsland3_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner_DesertIsland3.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalRandomIncidentSpawner_DesertIsland3_C",
+    "Name": "Default__BP_PalRandomIncidentSpawner_DesertIsland3_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner_DesertIsland3.BP_PalRandomIncidentSpawner_DesertIsland3_C'",
+    "Template": {
+      "ObjectName": "BP_PalRandomIncidentSpawner_C'Default__BP_PalRandomIncidentSpawner_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LotteryClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentLottery_DesertIsland3_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/Lottery/BP_PalRandomIncidentLottery_DesertIsland3.0"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_PalRandomIncidentSpawner_DesertIsland3_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentSpawner_DesertIsland3_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalRandomIncidentSpawner_DesertIsland3_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner_DesertIsland3.3"
+      },
+      "VariableGuid": "DDD6150B-41CAF901-3BF008A4-5AECB39A",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalRandomIncidentSpawner_DesertIsland3_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalRandomIncidentSpawner_DesertIsland3_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/BP_PalRandomIncidentSpawner_DesertIsland3.4"
+      }
+    }
+  }
+]

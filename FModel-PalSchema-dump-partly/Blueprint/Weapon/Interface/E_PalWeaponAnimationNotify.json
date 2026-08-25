@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_PalWeaponAnimationNotify",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "18DF504F4540A355F08FA6A15D7B8239",
+            "SourceString": "Eject",
+            "LocalizedString": "Eject"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "4EC4ED4C4D71D2278FAD6B8B4030FFB8",
+            "SourceString": "Insert",
+            "LocalizedString": "Insert"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "B61C77B44C8F7127C2E5FBACE8F919F6",
+            "SourceString": "Grab",
+            "LocalizedString": "Grab"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_PalWeaponAnimationNotify::NewEnumerator0": 0,
+      "E_PalWeaponAnimationNotify::NewEnumerator1": 1,
+      "E_PalWeaponAnimationNotify::NewEnumerator2": 2,
+      "E_PalWeaponAnimationNotify::E_MAX": 3
+    },
+    "CppForm": "Namespaced"
+  }
+]

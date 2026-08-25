@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_PalUIGuildHPGaugeDisplayType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "A54F62824FCDB58FD60B88AAD48521C8",
+            "SourceString": "Invalid",
+            "LocalizedString": "Invalid"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "50136E404E8A3776212AD0B28C274308",
+            "SourceString": "Friend",
+            "LocalizedString": "Friend"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "EB38AC1144A436114BD38AB8B5946D21",
+            "SourceString": "Enemy",
+            "LocalizedString": "Enemy"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_PalUIGuildHPGaugeDisplayType::NewEnumerator0": 0,
+      "E_PalUIGuildHPGaugeDisplayType::NewEnumerator1": 1,
+      "E_PalUIGuildHPGaugeDisplayType::NewEnumerator2": 2,
+      "E_PalUIGuildHPGaugeDisplayType::E_MAX": 3
+    },
+    "CppForm": "Namespaced"
+  }
+]

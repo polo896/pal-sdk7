@@ -1,0 +1,691 @@
+[
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_Doctor",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "8402636C-4DFD9178-7D952783-35D3F2A7",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "DEB1F115-4019864A-5552E582-9C527144",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Timer",
+    "Name": "FlowNode_Timer_0",
+    "Outer": "FABP_Doctor",
+    "Class": "UScriptClass'FlowNode_Timer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CompletionTime": 3.0,
+      "GraphNode": null,
+      "NodeGuid": "5569CD2C-4D081A74-7AB4B7B5-34314A58",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "44F8CB06-4D6A3AE5-53A86BAB-9712A506",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_DoctorLimitCheck_C",
+    "Name": "FNBP_DoctorLimitCheck_C_0",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_DoctorLimitCheck.FNBP_DoctorLimitCheck_C'",
+    "Template": {
+      "ObjectName": "FNBP_DoctorLimitCheck_C'Default__FNBP_DoctorLimitCheck_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_DoctorLimitCheck.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "DEB1F115-4019864A-5552E582-9C527144",
+      "Connections": [
+        {
+          "Key": "Success",
+          "Value": {
+            "NodeGuid": "E808512B-46D8BF06-2CAD16A4-BD049877",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Failed",
+          "Value": {
+            "NodeGuid": "AB51E00A-4A086196-EF27EAB7-58F0F36F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_DoctorSurgi_C",
+    "Name": "FNBP_DoctorSurgi_C_0",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_DoctorSurgi.FNBP_DoctorSurgi_C'",
+    "Template": {
+      "ObjectName": "FNBP_DoctorSurgi_C'Default__FNBP_DoctorSurgi_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_DoctorSurgi.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "D4D214D3-4D470595-3EFBD1BE-0C56D2E8",
+      "Connections": [
+        {
+          "Key": "Success",
+          "Value": {
+            "NodeGuid": "DC8BF8DC-4F564493-AD1AB28E-A25BC9B9",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Failed",
+          "Value": {
+            "NodeGuid": "79AC52B7-4341ACEA-7AB1B2A1-F2E2F0C2",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeIn_C",
+    "Name": "FNBP_FadeIn_C_1",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.FNBP_FadeIn_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeIn_C'Default__FNBP_FadeIn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "44F8CB06-4D6A3AE5-53A86BAB-9712A506",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "D4D214D3-4D470595-3EFBD1BE-0C56D2E8",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeOut_C",
+    "Name": "FNBP_FadeOut_C_0",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.FNBP_FadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeOut_C'Default__FNBP_FadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "5FEBFC9E-4EB1A140-22D06DBE-16B1EED0",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "E0ECCFC1-46E54E93-8431549B-33349E47",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_CustomChoice_C",
+    "Name": "FNBP_NPCTalk_CustomChoice_C_0",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_CustomChoice.FNBP_NPCTalk_CustomChoice_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_CustomChoice_C'Default__FNBP_NPCTalk_CustomChoice_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_CustomChoice.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChoiceMsgIDList": [
+        "CHOICE_DOC_Y",
+        "CHOICE_DOC_N"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "1B112767-4BAE72D8-72D56FBE-5E7F04D1",
+      "OutputPins": [
+        {
+          "PinName": "CHOICE_DOC_Y",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "CHOICE_DOC_N",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "CHOICE_DOC_Y",
+          "Value": {
+            "NodeGuid": "DE1D7B74-4D5B1191-1196EF94-5F4BA2DD",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "CHOICE_DOC_N",
+          "Value": {
+            "NodeGuid": "BFF476FF-487575A0-E5B66593-D3BD5BC6",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_CustomChoice_C",
+    "Name": "FNBP_NPCTalk_CustomChoice_C_1",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_CustomChoice.FNBP_NPCTalk_CustomChoice_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_CustomChoice_C'Default__FNBP_NPCTalk_CustomChoice_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_CustomChoice.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChoiceMsgIDList": [
+        "CHOICE_DOC_Y_Check",
+        "CHOICE_DOC_N"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "49A83816-47D7EB2B-D5811DAD-8C951727",
+      "OutputPins": [
+        {
+          "PinName": "CHOICE_DOC_Y_Check",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "CHOICE_DOC_N",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "CHOICE_DOC_Y_Check",
+          "Value": {
+            "NodeGuid": "9FEFD444-47A0EB6A-C0487380-6801754B",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "CHOICE_DOC_N",
+          "Value": {
+            "NodeGuid": "BFF476FF-487575A0-E5B66593-D3BD5BC6",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Doctor_Day_Limit"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "AB51E00A-4A086196-EF27EAB7-58F0F36F"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "DOCTOR_WELCOME"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "E808512B-46D8BF06-2CAD16A4-BD049877",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "5C7CA44C-45334AE4-48DE3DB3-8BF1FE39",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "DOCTOR_NO_OTOMO"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "B5D39C5B-40AED31B-9D8D2D86-13711517"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_3",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "DOCTOR_SURGI"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "98AF7608-4497D222-A7C5C6B8-27A99FAA",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "1B112767-4BAE72D8-72D56FBE-5E7F04D1",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "DOCTOR_EXIT"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "BFF476FF-487575A0-E5B66593-D3BD5BC6"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_5",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "DOCTOR_SURGI_CHECK"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "DE1D7B74-4D5B1191-1196EF94-5F4BA2DD",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "49A83816-47D7EB2B-D5811DAD-8C951727",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_6",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "DOCTOR_SURGI_SUCCESS"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "DC8BF8DC-4F564493-AD1AB28E-A25BC9B9"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_7",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "DOCTOR_SURGI_FAILED"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "79AC52B7-4341ACEA-7AB1B2A1-F2E2F0C2"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_8",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "DOCTOR_SURGI_PROCESS"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "9FEFD444-47A0EB6A-C0487380-6801754B",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "5FEBFC9E-4EB1A140-22D06DBE-16B1EED0",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_OtomoSpawnedBranch_C",
+    "Name": "FNBP_OtomoSpawnedBranch_C_0",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OtomoSpawnedBranch.FNBP_OtomoSpawnedBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_OtomoSpawnedBranch_C'Default__FNBP_OtomoSpawnedBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OtomoSpawnedBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "5C7CA44C-45334AE4-48DE3DB3-8BF1FE39",
+      "Connections": [
+        {
+          "Key": "Spawned",
+          "Value": {
+            "NodeGuid": "98AF7608-4497D222-A7C5C6B8-27A99FAA",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotSpawned",
+          "Value": {
+            "NodeGuid": "B5D39C5B-40AED31B-9D8D2D86-13711517",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_PlaySound_C",
+    "Name": "FNBP_PlaySound_C_0",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlaySound.FNBP_PlaySound_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlaySound_C'Default__FNBP_PlaySound_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlaySound.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Ak Event": {
+        "ObjectName": "AkAudioEvent'AKE_UI_Doctor_Surgery'",
+        "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/UI/Doctor/AKE_UI_Doctor_Surgery.0"
+      },
+      "GraphNode": null,
+      "NodeGuid": "3539BF9F-44CA070D-AF9FD8BC-2D722DFC",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "5569CD2C-4D081A74-7AB4B7B5-34314A58",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_TextInFadeOut_C",
+    "Name": "FNBP_TextInFadeOut_C_0",
+    "Outer": "FABP_Doctor",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_TextInFadeOut.FNBP_TextInFadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_TextInFadeOut_C'Default__FNBP_TextInFadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_TextInFadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId": {
+        "RowName": "DOCTOR_SURGI_PROCESS_Message"
+      },
+      "GraphNode": null,
+      "NodeGuid": "E0ECCFC1-46E54E93-8431549B-33349E47",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "3539BF9F-44CA070D-AF9FD8BC-2D722DFC",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_Doctor",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "5850FB15-41B6A644-96F78EBB-CAC7C664",
+      "Nodes": [
+        {
+          "Key": "8402636C-4DFD9178-7D952783-35D3F2A7",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_Doctor:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.0"
+          }
+        },
+        {
+          "Key": "DEB1F115-4019864A-5552E582-9C527144",
+          "Value": {
+            "ObjectName": "FNBP_DoctorLimitCheck_C'FABP_Doctor:FNBP_DoctorLimitCheck_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.2"
+          }
+        },
+        {
+          "Key": "AB51E00A-4A086196-EF27EAB7-58F0F36F",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Doctor:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.8"
+          }
+        },
+        {
+          "Key": "E808512B-46D8BF06-2CAD16A4-BD049877",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Doctor:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.9"
+          }
+        },
+        {
+          "Key": "5C7CA44C-45334AE4-48DE3DB3-8BF1FE39",
+          "Value": {
+            "ObjectName": "FNBP_OtomoSpawnedBranch_C'FABP_Doctor:FNBP_OtomoSpawnedBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.17"
+          }
+        },
+        {
+          "Key": "B5D39C5B-40AED31B-9D8D2D86-13711517",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Doctor:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.10"
+          }
+        },
+        {
+          "Key": "98AF7608-4497D222-A7C5C6B8-27A99FAA",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Doctor:FNBP_NPCTalk_FixedMsdId_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.11"
+          }
+        },
+        {
+          "Key": "1B112767-4BAE72D8-72D56FBE-5E7F04D1",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_CustomChoice_C'FABP_Doctor:FNBP_NPCTalk_CustomChoice_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.6"
+          }
+        },
+        {
+          "Key": "BFF476FF-487575A0-E5B66593-D3BD5BC6",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Doctor:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.12"
+          }
+        },
+        {
+          "Key": "DE1D7B74-4D5B1191-1196EF94-5F4BA2DD",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Doctor:FNBP_NPCTalk_FixedMsdId_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.13"
+          }
+        },
+        {
+          "Key": "49A83816-47D7EB2B-D5811DAD-8C951727",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_CustomChoice_C'FABP_Doctor:FNBP_NPCTalk_CustomChoice_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.7"
+          }
+        },
+        {
+          "Key": "D4D214D3-4D470595-3EFBD1BE-0C56D2E8",
+          "Value": {
+            "ObjectName": "FNBP_DoctorSurgi_C'FABP_Doctor:FNBP_DoctorSurgi_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.3"
+          }
+        },
+        {
+          "Key": "DC8BF8DC-4F564493-AD1AB28E-A25BC9B9",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Doctor:FNBP_NPCTalk_FixedMsdId_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.14"
+          }
+        },
+        {
+          "Key": "79AC52B7-4341ACEA-7AB1B2A1-F2E2F0C2",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Doctor:FNBP_NPCTalk_FixedMsdId_C_7'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.15"
+          }
+        },
+        {
+          "Key": "9FEFD444-47A0EB6A-C0487380-6801754B",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Doctor:FNBP_NPCTalk_FixedMsdId_C_8'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.16"
+          }
+        },
+        {
+          "Key": "5FEBFC9E-4EB1A140-22D06DBE-16B1EED0",
+          "Value": {
+            "ObjectName": "FNBP_FadeOut_C'FABP_Doctor:FNBP_FadeOut_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.5"
+          }
+        },
+        {
+          "Key": "E0ECCFC1-46E54E93-8431549B-33349E47",
+          "Value": {
+            "ObjectName": "FNBP_TextInFadeOut_C'FABP_Doctor:FNBP_TextInFadeOut_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.19"
+          }
+        },
+        {
+          "Key": "5569CD2C-4D081A74-7AB4B7B5-34314A58",
+          "Value": {
+            "ObjectName": "FlowNode_Timer'FABP_Doctor:FlowNode_Timer_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.1"
+          }
+        },
+        {
+          "Key": "44F8CB06-4D6A3AE5-53A86BAB-9712A506",
+          "Value": {
+            "ObjectName": "FNBP_FadeIn_C'FABP_Doctor:FNBP_FadeIn_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.4"
+          }
+        },
+        {
+          "Key": "3539BF9F-44CA070D-AF9FD8BC-2D722DFC",
+          "Value": {
+            "ObjectName": "FNBP_PlaySound_C'FABP_Doctor:FNBP_PlaySound_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Doctor.18"
+          }
+        }
+      ]
+    }
+  }
+]

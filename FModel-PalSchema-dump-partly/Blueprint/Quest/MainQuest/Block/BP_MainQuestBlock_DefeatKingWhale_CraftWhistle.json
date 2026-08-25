@@ -1,0 +1,91 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MainQuestBlock_DefeatKingWhale_CraftWhistle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestBlock_HasItem_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_HasItem_Base.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestBlock_HasItem_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_HasItem_Base.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_MainQuestBlock_DefeatKingWhale_CraftWhistle_C:GetProgressText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatKingWhale_CraftWhistle.2"
+      }
+    ],
+    "FuncMap": {
+      "GetProgressText": {
+        "ObjectName": "Function'BP_MainQuestBlock_DefeatKingWhale_CraftWhistle_C:GetProgressText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatKingWhale_CraftWhistle.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MainQuestBlock_DefeatKingWhale_CraftWhistle_C'Default__BP_MainQuestBlock_DefeatKingWhale_CraftWhistle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatKingWhale_CraftWhistle.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MainQuestBlock_DefeatKingWhale_CraftWhistle_C",
+    "Name": "Default__BP_MainQuestBlock_DefeatKingWhale_CraftWhistle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatKingWhale_CraftWhistle.BP_MainQuestBlock_DefeatKingWhale_CraftWhistle_C'",
+    "Template": {
+      "ObjectName": "BP_PalQuestBlock_HasItem_Base_C'Default__BP_PalQuestBlock_HasItem_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_HasItem_Base.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ObjectiveText": {
+        "RowName": "QUEST_SUB_QUESTOBJECT_WhaleWhistle02"
+      },
+      "RequireItemMap": [
+        {
+          "Key": {
+            "Key": "WhaleWhistle"
+          },
+          "Value": 1
+        }
+      ],
+      "IsAutoComplete": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetProgressText",
+    "Outer": "BP_MainQuestBlock_DefeatKingWhale_CraftWhistle_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_PalQuestBlock_HasItem_Base_C:GetProgressText'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_HasItem_Base.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_PalQuestBlock_HasItem_Base_C:GetProgressText'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_HasItem_Base.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "OutText",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

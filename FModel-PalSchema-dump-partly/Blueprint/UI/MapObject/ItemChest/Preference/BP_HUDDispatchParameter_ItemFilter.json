@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_HUDDispatchParameter_ItemFilter_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalHUDDispatchParameterBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_HUDDispatchParameter_ItemFilter_C:OnFilterApply__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/MapObject/ItemChest/Preference/BP_HUDDispatchParameter_ItemFilter.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnFilterApply",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'BP_HUDDispatchParameter_ItemFilter_C:OnFilterApply__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/MapObject/ItemChest/Preference/BP_HUDDispatchParameter_ItemFilter.2"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CurrentFilter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn",
+        "Inner": {
+          "Type": "NameProperty",
+          "Name": "CurrentFilter",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "RemoveEssential",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "OnFilterApply__DelegateSignature": {
+        "ObjectName": "Function'BP_HUDDispatchParameter_ItemFilter_C:OnFilterApply__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/MapObject/ItemChest/Preference/BP_HUDDispatchParameter_ItemFilter.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_HUDDispatchParameter_ItemFilter_C'Default__BP_HUDDispatchParameter_ItemFilter_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/MapObject/ItemChest/Preference/BP_HUDDispatchParameter_ItemFilter.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_HUDDispatchParameter_ItemFilter_C",
+    "Name": "Default__BP_HUDDispatchParameter_ItemFilter_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/MapObject/ItemChest/Preference/BP_HUDDispatchParameter_ItemFilter.BP_HUDDispatchParameter_ItemFilter_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnFilterApply__DelegateSignature",
+    "Outer": "BP_HUDDispatchParameter_ItemFilter_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "Types",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Inner": {
+          "Type": "NameProperty",
+          "Name": "Types",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

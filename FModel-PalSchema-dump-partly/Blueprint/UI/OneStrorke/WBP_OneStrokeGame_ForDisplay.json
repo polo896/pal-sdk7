@@ -1,0 +1,1986 @@
+[
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_C_123",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "FD77E10045BE8EB1B0E2CA946167CAB0",
+        "SourceString": "デバッグ用：Keyを選択するとパズルが更新されます",
+        "LocalizedString": "デバッグ用：Keyを選択するとパズルが更新されます"
+      },
+      "Font": {
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.37"
+      }
+    }
+  },
+  {
+    "Type": "ComboBoxString",
+    "Name": "ComboBoxString_95",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ComboBoxString'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ItemStyle": {
+        "TextColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFFFF"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.38"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WBP_Minigame_OneStroke",
+          "DelegatePropertyName": "OnEndOutAnim",
+          "FunctionNameToBind": "BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_5_OnEndOutAnim__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_Minigame_OneStroke",
+          "DelegatePropertyName": "OnEndResetOutAnim",
+          "FunctionNameToBind": "BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_4_OnEndResetOutAnim__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "ComboBoxString_95",
+          "DelegatePropertyName": "OnSelectionChanged",
+          "FunctionNameToBind": "BndEvt__WBP_OneStrokeGame_ForDisplay_ComboBoxString_95_K2Node_ComponentBoundEvent_3_OnSelectionChangedEvent__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_Minigame_OneStroke",
+          "DelegatePropertyName": "OnHoveredAnyPanel",
+          "FunctionNameToBind": "BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_1_OnHoveredAnyPanel__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_Minigame_OneStroke",
+          "DelegatePropertyName": "OnClickedAnyPanel",
+          "FunctionNameToBind": "BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_0_OnClickedAnyPanel__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_OneStrokeGame_ForDisplay_ComboBoxString_95_K2Node_ComponentBoundEvent_3_OnSelectionChangedEvent__DelegateSignature",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "SelectedItem",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "SelectionType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'ESelectInfo'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_0_OnClickedAnyPanel__DelegateSignature",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Minigame_OneStroke_Square_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_OneStroke_Square.22"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_1_OnHoveredAnyPanel__DelegateSignature",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Minigame_OneStroke_Square_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_OneStroke_Square.22"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_4_OnEndResetOutAnim__DelegateSignature",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_5_OnEndOutAnim__DelegateSignature",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BP_GetDesiredFocusTarget",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'CommonActivatableWidget:BP_GetDesiredFocusTarget'",
+      "ObjectPath": "/Script/CommonUI"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetCurrentPosition_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOneStrokeGridCoord'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPanelByCoord_PanelWidget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Minigame_OneStroke_Square_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_OneStroke_Square.22"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasStarted_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetStartPointFocusTarget_Target",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetTopLeftPanelFocusTarget_Target",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Destruct",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Destruct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_OneStrokeGame_ForDisplay",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetParam_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameterBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_One_Stroke_Mini_Game",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameter_OneStrokeMiniGame'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalOneStrokeGameProcessor:OnStartGame__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalOneStrokeGameProcessor:OnGameFail__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalOneStrokeGameProcessor:OnMove__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalOneStrokeGameProcessor:OnInvalidMove__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_4",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalOneStrokeGameProcessor:OnUpdateCurrentPosition__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_5",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalOneStrokeGameProcessor:OnUpdateTileState__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_6",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalOneStrokeGameProcessor:OnGameSuccess__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Widget_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Minigame_OneStroke_Square_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_OneStroke_Square.22"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetCoord_Coord",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOneStrokeGridCoord'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasStarted_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_SelectStartPosition_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Widget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Minigame_OneStroke_Square_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_OneStroke_Square.22"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetCoord_Coord_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOneStrokeGridCoord'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasStarted_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalDebugSetting_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalDebugSetting'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_ComponentBoundEvent_SelectedItem",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_ComponentBoundEvent_SelectionType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESelectInfo'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_TryMoveTo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_Conv_StringToName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_TryGetGameSetting_OutData",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOneStrokeGameSettingData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_TryGetGameSetting_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_7",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalOneStrokeGameProcessor:OnStuck__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnFailGame",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInputAction_Reset",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInvalidMove",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "TargetCoord",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOneStrokeGridCoord'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnMove",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "FromCoord",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOneStrokeGridCoord'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ToCoord",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOneStrokeGridCoord'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetup",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUserWidget:OnSetup'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnStartGame",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "SettingData",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOneStrokeGameSettingData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalPlayerSubsystem_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'CommonInputSubsystem'",
+          "ObjectPath": "/Script/CommonInput"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_GetCurrentInputType_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ECommonInputType'",
+          "ObjectPath": "/Script/CommonInput"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ECommonInputType'",
+            "ObjectPath": "/Script/CommonInput"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetStartPosition_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOneStrokeGridCoord'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_SelectStartPosition_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetStartPointFocusTarget_Target",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetGridSize_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetGridTiles_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "CallFunc_GetGridTiles_ReturnValue",
+          "Flags": "RF_Public",
+          "ElementSize": 16,
+          "Struct": {
+            "ObjectName": "ScriptStruct'PalOneStrokeTileInfo'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnStuck",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSuccessGame",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetParam_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameterBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_One_Stroke_Mini_Game",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameter_OneStrokeMiniGame'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTimerEvent_Close",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTimerEvent_Stuck",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUndo",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "NewCurrentCoord",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOneStrokeGridCoord'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUpdatePosition",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "NewPosition",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOneStrokeGridCoord'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUpdateTileState",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Coord",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOneStrokeGridCoord'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "NewState",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalOneStrokeTileState'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalOneStrokeTileState'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RegisterInputAction",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnInputAction__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RegisterActionBinding_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RestartFlow",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetHUDService_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDService'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetupDebug",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalDebugSetting_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalDebugSetting'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_Map_Keys_Keys",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "NameProperty",
+          "Name": "CallFunc_Map_Keys_Keys",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_NameToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StartGame",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StartgameByKey_ForDebug",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "SettingKey",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_TryGetGameSetting_OutData",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOneStrokeGameSettingData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_TryGetGameSetting_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalDebugSetting_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalDebugSetting'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UnregisterInoutAction",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_138",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.Overlay_138.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.33"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.Overlay_138.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.34"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_Debug",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.Overlay_Debug.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.35"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.Overlay_138.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.34"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_138",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.Overlay_138'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.31"
+      },
+      "Content": {
+        "ObjectName": "WBP_Minigame_OneStroke_C'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.WBP_Minigame_OneStroke'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.39"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_138",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Bottom": 64.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.Overlay_138'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.31"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.Overlay_Debug'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.32"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_Debug",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.Overlay_Debug'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.32"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.36"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.37"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.38"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.Overlay_Debug.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.35"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.36"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.BP_PalTextBlock_C_123'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.0"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.36"
+      },
+      "Content": {
+        "ObjectName": "ComboBoxString'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.ComboBoxString_95'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.1"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Minigame_OneStroke_C",
+    "Name": "WBP_Minigame_OneStroke",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_OneStroke.WBP_Minigame_OneStroke_C'",
+    "Template": {
+      "ObjectName": "WBP_Minigame_OneStroke_C'Default__WBP_Minigame_OneStroke_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_OneStroke.272"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.Overlay_138.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.33"
+      }
+    }
+  },
+  {
+    "Type": "WBP_OneStrokeGame_ForDisplay_C",
+    "Name": "Default__WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.WBP_OneStrokeGame_ForDisplay_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "DataAsset": {
+        "ObjectName": "PalOneStrokeGameDataAsset'DA_OneStrokeMinigameData'",
+        "ObjectPath": "Pal/Content/Pal/DataAsset/OneStrokeGame/DA_OneStrokeMinigameData.0"
+      },
+      "CloseTimerhandle": {
+        "Handle": 0
+      },
+      "ResetInputAction": {
+        "Key": "OneStrokeGame_Reset"
+      },
+      "ResetActionHandle": {},
+      "StuckTimer": {
+        "Handle": 0
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_OneStrokeGame_ForDisplay_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.42"
+      },
+      "bClassRequiresNativeTick": true,
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_OneStrokeGame_ForDisplay_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.2"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:ExecuteUbergraph_WBP_OneStrokeGame_ForDisplay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.11"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidgetOverlayUI'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnTimerEvent_Stuck'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.21"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnStuck'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.18"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:RestartFlow'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.26"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnInputAction_Reset'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.13"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:UnregisterInoutAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.30"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:RegisterInputAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.25"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnTimerEvent_Close'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.20"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:StartgameByKey_ForDebug'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.29"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:SetupDebug'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.27"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnUndo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.22"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnUpdateTileState'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.24"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnUpdatePosition'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.23"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:StartGame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.28"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.8"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnInvalidMove'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.14"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnMove'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.15"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnFailGame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.12"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnSuccessGame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.19"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnStartGame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.17"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.16"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:Destruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.10"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_0_OnClickedAnyPanel__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.4"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_1_OnHoveredAnyPanel__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.5"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.9"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:BndEvt__WBP_OneStrokeGame_ForDisplay_ComboBoxString_95_K2Node_ComponentBoundEvent_3_OnSelectionChangedEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.3"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_4_OnEndResetOutAnim__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.6"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_5_OnEndOutAnim__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.7"
+      },
+      {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:ExecuteUbergraph_WBP_OneStrokeGame_ForDisplay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.11"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ComboBoxString_95",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'ComboBoxString'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Overlay_Debug",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Overlay'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Minigame_OneStroke",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Minigame_OneStroke_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Minigame/WBP_Minigame_OneStroke.305"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MyGameProcessor",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | UObjectWrapper",
+        "PropertyClass": {
+          "ObjectName": "Class'PalOneStrokeGameProcessor'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DataAsset",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalOneStrokeGameDataAsset'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CloseTimerhandle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ResetInputAction",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDataTableRowName_UIInputAction'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bRestarting",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ResetActionHandle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bSuccessed",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "StuckTimer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_OneStrokeGame_ForDisplay": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:ExecuteUbergraph_WBP_OneStrokeGame_ForDisplay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.11"
+      },
+      "BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_5_OnEndOutAnim__DelegateSignature": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_5_OnEndOutAnim__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.7"
+      },
+      "BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_4_OnEndResetOutAnim__DelegateSignature": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_4_OnEndResetOutAnim__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.6"
+      },
+      "BndEvt__WBP_OneStrokeGame_ForDisplay_ComboBoxString_95_K2Node_ComponentBoundEvent_3_OnSelectionChangedEvent__DelegateSignature": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:BndEvt__WBP_OneStrokeGame_ForDisplay_ComboBoxString_95_K2Node_ComponentBoundEvent_3_OnSelectionChangedEvent__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.3"
+      },
+      "Construct": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.9"
+      },
+      "BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_1_OnHoveredAnyPanel__DelegateSignature": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_1_OnHoveredAnyPanel__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.5"
+      },
+      "BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_0_OnClickedAnyPanel__DelegateSignature": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:BndEvt__WBP_OneStrokeGame_ForDisplay_WBP_Minigame_OneStroke_K2Node_ComponentBoundEvent_0_OnClickedAnyPanel__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.4"
+      },
+      "Destruct": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:Destruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.10"
+      },
+      "OnSetup": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.16"
+      },
+      "OnStartGame": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnStartGame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.17"
+      },
+      "OnSuccessGame": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnSuccessGame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.19"
+      },
+      "OnFailGame": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnFailGame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.12"
+      },
+      "OnMove": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnMove'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.15"
+      },
+      "OnInvalidMove": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnInvalidMove'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.14"
+      },
+      "BP_GetDesiredFocusTarget": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.8"
+      },
+      "StartGame": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:StartGame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.28"
+      },
+      "OnUpdatePosition": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnUpdatePosition'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.23"
+      },
+      "OnUpdateTileState": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnUpdateTileState'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.24"
+      },
+      "OnUndo": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnUndo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.22"
+      },
+      "SetupDebug": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:SetupDebug'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.27"
+      },
+      "StartgameByKey_ForDebug": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:StartgameByKey_ForDebug'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.29"
+      },
+      "OnTimerEvent_Close": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnTimerEvent_Close'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.20"
+      },
+      "RegisterInputAction": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:RegisterInputAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.25"
+      },
+      "UnregisterInoutAction": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:UnregisterInoutAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.30"
+      },
+      "OnInputAction_Reset": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnInputAction_Reset'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.13"
+      },
+      "RestartFlow": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:RestartFlow'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.26"
+      },
+      "OnStuck": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnStuck'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.18"
+      },
+      "OnTimerEvent_Stuck": {
+        "ObjectName": "Function'WBP_OneStrokeGame_ForDisplay_C:OnTimerEvent_Stuck'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.21"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_OneStrokeGame_ForDisplay_C'Default__WBP_OneStrokeGame_ForDisplay_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.40"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_OneStrokeGame_ForDisplay_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "Overlay'WBP_OneStrokeGame_ForDisplay_C:WidgetTree.Overlay_138'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.31"
+      }
+    }
+  }
+]

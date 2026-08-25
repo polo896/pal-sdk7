@@ -1,0 +1,184 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AINPC_CombatGunState_FireMove_Shotgun_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AINPC_CombatGunState_FireMove_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatGunState_FireMove.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AINPC_CombatGunState_FireMove_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatGunState_FireMove.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_AINPC_CombatGunState_FireMove_Shotgun_C:CanMove'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatGunState_FireMove_Shotgun.2"
+      },
+      {
+        "ObjectName": "Function'BP_AINPC_CombatGunState_FireMove_Shotgun_C:MoveDIrectionWorldSpace'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatGunState_FireMove_Shotgun.3"
+      }
+    ],
+    "FuncMap": {
+      "MoveDIrectionWorldSpace": {
+        "ObjectName": "Function'BP_AINPC_CombatGunState_FireMove_Shotgun_C:MoveDIrectionWorldSpace'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatGunState_FireMove_Shotgun.3"
+      },
+      "CanMove": {
+        "ObjectName": "Function'BP_AINPC_CombatGunState_FireMove_Shotgun_C:CanMove'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatGunState_FireMove_Shotgun.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AINPC_CombatGunState_FireMove_Shotgun_C'Default__BP_AINPC_CombatGunState_FireMove_Shotgun_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatGunState_FireMove_Shotgun.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AINPC_CombatGunState_FireMove_Shotgun_C",
+    "Name": "Default__BP_AINPC_CombatGunState_FireMove_Shotgun_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatGunState_FireMove_Shotgun.BP_AINPC_CombatGunState_FireMove_Shotgun_C'",
+    "Template": {
+      "ObjectName": "BP_AINPC_CombatGunState_FireMove_C'Default__BP_AINPC_CombatGunState_FireMove_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatGunState_FireMove.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "CanMove",
+    "Outer": "BP_AINPC_CombatGunState_FireMove_Shotgun_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AINPC_CombatGunState_AimMove_C:CanMove'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatGunState_AimMove.2"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AINPC_CombatGunState_AimMove_C:CanMove'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatGunState_AimMove.2"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CanMove",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSelfActor_SelfActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetTargetActor_TargetActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsNearTwoActorWithRootRadius_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "MoveDIrectionWorldSpace",
+    "Outer": "BP_AINPC_CombatGunState_FireMove_Shotgun_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AINPC_CombatGunState_AimMove_C:MoveDIrectionWorldSpace'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatGunState_AimMove.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AINPC_CombatGunState_AimMove_C:MoveDIrectionWorldSpace'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/State/BP_AINPC_CombatGunState_AimMove.5"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Direction",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSelfActor_SelfActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetActorForwardVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_YakushimaBoss001_Green_2_PhantasmalSphere_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_YakushimaBoss001_Green_PhantasmalSphere_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss001_Green_PhantasmalSphere.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_YakushimaBoss001_Green_PhantasmalSphere_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss001_Green_PhantasmalSphere.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_YakushimaBoss001_Green_2_PhantasmalSphere_C'Default__BP_Action_Unique_YakushimaBoss001_Green_2_PhantasmalSphere_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss001_Green_2_PhantasmalSphere.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_YakushimaBoss001_Green_2_PhantasmalSphere_C",
+    "Name": "Default__BP_Action_Unique_YakushimaBoss001_Green_2_PhantasmalSphere_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss001_Green_2_PhantasmalSphere.BP_Action_Unique_YakushimaBoss001_Green_2_PhantasmalSphere_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_YakushimaBoss001_Green_PhantasmalSphere_C'Default__BP_Action_Unique_YakushimaBoss001_Green_PhantasmalSphere_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_Action_Unique_YakushimaBoss001_Green_PhantasmalSphere.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkillEffectSpawnParameters": [
+        {
+          "TimeOffset": 0.8,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss001_Green_2_PhantasmalSphere_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss001_Green_2_PhantasmalSphere.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 0.9,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss001_Green_2_PhantasmalSphere_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss001_Green_2_PhantasmalSphere.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.0,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss001_Green_2_PhantasmalSphere_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss001_Green_2_PhantasmalSphere.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.1,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss001_Green_2_PhantasmalSphere_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss001_Green_2_PhantasmalSphere.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.2,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss001_Green_2_PhantasmalSphere_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss001_Green_2_PhantasmalSphere.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.3,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_YakushimaBoss001_Green_2_PhantasmalSphere_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/YakushimaBoss002/BP_SkillEffect_Unique_YakushimaBoss001_Green_2_PhantasmalSphere.0"
+          },
+          "SpawnOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "bAttachToOwner": true,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        }
+      ],
+      "WazaID": "EPalWazaID::Unique_YakushimaBoss001_Green_2_PhantasmalSphere"
+    }
+  }
+]

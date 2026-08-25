@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_ScorpionMan_Electric_UpperThunder_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_ScorpionMan_Uppercut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ScorpionMan/BP_Action_Unique_ScorpionMan_Uppercut.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_ScorpionMan_Uppercut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ScorpionMan/BP_Action_Unique_ScorpionMan_Uppercut.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Action_Unique_ScorpionMan_Electric_UpperThunder_C:GetEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ScorpionMan/BP_Action_Unique_ScorpionMan_Electric_UpperThunder.2"
+      }
+    ],
+    "FuncMap": {
+      "GetEffect": {
+        "ObjectName": "Function'BP_Action_Unique_ScorpionMan_Electric_UpperThunder_C:GetEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ScorpionMan/BP_Action_Unique_ScorpionMan_Electric_UpperThunder.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_ScorpionMan_Electric_UpperThunder_C'Default__BP_Action_Unique_ScorpionMan_Electric_UpperThunder_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ScorpionMan/BP_Action_Unique_ScorpionMan_Electric_UpperThunder.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_ScorpionMan_Electric_UpperThunder_C",
+    "Name": "Default__BP_Action_Unique_ScorpionMan_Electric_UpperThunder_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/ScorpionMan/BP_Action_Unique_ScorpionMan_Electric_UpperThunder.BP_Action_Unique_ScorpionMan_Electric_UpperThunder_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_ScorpionMan_Uppercut_C'Default__BP_Action_Unique_ScorpionMan_Uppercut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ScorpionMan/BP_Action_Unique_ScorpionMan_Uppercut.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WazaID": "EPalWazaID::Unique_ScorpionMan_Erectric_UpperThunder"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetEffect",
+    "Outer": "BP_Action_Unique_ScorpionMan_Electric_UpperThunder_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_Unique_ScorpionMan_Uppercut_C:GetEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ScorpionMan/BP_Action_Unique_ScorpionMan_Uppercut.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_Unique_ScorpionMan_Uppercut_C:GetEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/ScorpionMan/BP_Action_Unique_ScorpionMan_Uppercut.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "NewParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

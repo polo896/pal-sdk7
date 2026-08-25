@@ -1,0 +1,96 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "ENum_Raid_LegendDeer_CombatPhase",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "3E8A995A4A2E95015E05E291D4A9CEB8",
+            "SourceString": "P1_Barrier1",
+            "LocalizedString": "P1_Barrier1"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "D2DFCA9245882FB3B0C662825964DAFC",
+            "SourceString": "P1_Barrier2",
+            "LocalizedString": "P1_Barrier2"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "D99187054FB66A7614655A8160C7B003",
+            "SourceString": "P2_Purge1",
+            "LocalizedString": "P2_Purge1"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "74FDE8954BBCCD4C66EB1496A4CB1721",
+            "SourceString": "P2_Purge2",
+            "LocalizedString": "P2_Purge2"
+          }
+        },
+        {
+          "Key": "NewEnumerator4",
+          "Value": {
+            "Namespace": "",
+            "Key": "D2C64C72416AE359532534BFBCD69B85",
+            "SourceString": "P2_Purge_End",
+            "LocalizedString": "P2_Purge_End"
+          }
+        },
+        {
+          "Key": "NewEnumerator5",
+          "Value": {
+            "Namespace": "",
+            "Key": "BCC2BA11495BAF098D70E5B69AD51B84",
+            "SourceString": "P2_Barrier",
+            "LocalizedString": "P2_Barrier"
+          }
+        },
+        {
+          "Key": "NewEnumerator6",
+          "Value": {
+            "Namespace": "",
+            "Key": "BCF48DCC4C3C0A883AD2DCAEAC9D6AE5",
+            "SourceString": "None",
+            "LocalizedString": "None"
+          }
+        },
+        {
+          "Key": "NewEnumerator7",
+          "Value": {
+            "Namespace": "",
+            "Key": "A4772CEB47EDB0DD6A00BF85F8B205C8",
+            "SourceString": "ModeChange",
+            "LocalizedString": "ModeChange"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "ENum_Raid_LegendDeer_CombatPhase::NewEnumerator6": 0,
+      "ENum_Raid_LegendDeer_CombatPhase::NewEnumerator0": 1,
+      "ENum_Raid_LegendDeer_CombatPhase::NewEnumerator1": 2,
+      "ENum_Raid_LegendDeer_CombatPhase::NewEnumerator7": 3,
+      "ENum_Raid_LegendDeer_CombatPhase::NewEnumerator2": 4,
+      "ENum_Raid_LegendDeer_CombatPhase::NewEnumerator3": 5,
+      "ENum_Raid_LegendDeer_CombatPhase::NewEnumerator5": 6,
+      "ENum_Raid_LegendDeer_CombatPhase::NewEnumerator4": 7,
+      "ENum_Raid_LegendDeer_CombatPhase::ENum_Raid_LegendDeer_MAX": 8
+    },
+    "CppForm": "Namespaced"
+  }
+]

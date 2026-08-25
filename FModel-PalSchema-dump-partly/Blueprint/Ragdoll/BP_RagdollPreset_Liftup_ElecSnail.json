@@ -1,0 +1,61 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_RagdollPreset_Liftup_ElecSnail_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalRagdollPreset'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_RagdollPreset_Liftup_ElecSnail_C'Default__BP_RagdollPreset_Liftup_ElecSnail_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Ragdoll/BP_RagdollPreset_Liftup_ElecSnail.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_RagdollPreset_Liftup_ElecSnail_C",
+    "Name": "Default__BP_RagdollPreset_Liftup_ElecSnail_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Ragdoll/BP_RagdollPreset_Liftup_ElecSnail.BP_RagdollPreset_Liftup_ElecSnail_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockBoneNames": [
+        "pelvis",
+        "shell",
+        "spine_01",
+        "spine_02",
+        "spine_03",
+        "thornA_01_r",
+        "thornA_01_l",
+        "thornA_02_l",
+        "thornA_02_r",
+        "thornB_01_l",
+        "thornB_01_r",
+        "thornB_02_l",
+        "thornB_02_r",
+        "thornC_01_l",
+        "thornC_01_r",
+        "thornC_02_l",
+        "thornC_02_r",
+        "thornD_01_l",
+        "thornD_01_r",
+        "thornD_02_l",
+        "thornD_02_r",
+        "None",
+        "None"
+      ],
+      "LinearDamping": 7.0,
+      "AngularDamping": 7.0
+    }
+  }
+]

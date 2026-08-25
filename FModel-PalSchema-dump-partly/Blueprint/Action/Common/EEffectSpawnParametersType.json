@@ -1,0 +1,36 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "EEffectSpawnParametersType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "2DC4BF1044F553C2FA3D62AC17918359",
+            "SourceString": "SkillEffectSpawnParameters",
+            "LocalizedString": "SkillEffectSpawnParameters"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "F5F77A9A47C1B846C288F88131B787D0",
+            "SourceString": "GeneralEffectSpawnParameters",
+            "LocalizedString": "GeneralEffectSpawnParameters"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "EEffectSpawnParametersType::NewEnumerator0": 0,
+      "EEffectSpawnParametersType::NewEnumerator1": 1,
+      "EEffectSpawnParametersType::EEffectSpawnParametersType_MAX": 2
+    },
+    "CppForm": "Namespaced"
+  }
+]

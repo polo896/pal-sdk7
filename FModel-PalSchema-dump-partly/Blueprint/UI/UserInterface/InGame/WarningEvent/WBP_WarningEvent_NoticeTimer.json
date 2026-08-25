@@ -1,0 +1,2005 @@
+[
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_C_54",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindTextDatatableHandle": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "INVADER_WAITING_START_INVADE"
+      },
+      "IsAutoTextSetWhenWidgetRebuilt": true,
+      "IsAutoAdjustScale": true,
+      "MaxWidth": 130,
+      "Text": {
+        "Namespace": "",
+        "Key": "E8C46A0E41A14B47A8199084EEDFA08A",
+        "SourceString": "(仮)襲撃まで",
+        "LocalizedString": "(仮)襲撃まで"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "000000"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Medium",
+        "Size": 11
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.45"
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "Text_Timer",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "5F6C45AB401DDF52BEB2949CDD57B4A4",
+        "SourceString": "00:59:59",
+        "LocalizedString": "00:59:59"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.049707,
+          "B": 0.049707,
+          "A": 1.0,
+          "Hex": "FF3F3F"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Medium",
+        "Size": 14,
+        "LetterSpacing": -50
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.SizeBox.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.44"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_100",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_100.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.5"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_100.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.6"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_55.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_55",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_55.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_707",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_707.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_707.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_707.CanvasPanelSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_707.CanvasPanelSlot_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.11"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_100.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_100",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -30.0,
+          "Right": 44.0,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_100'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.2"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Image_CautionIcon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_100",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 18.0,
+          "Bottom": 77.415215
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_100'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.2"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_707'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_55",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_55'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.3"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_100'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_707",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1.5,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_707'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Image_Line_L'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_707",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_707'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.4"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'WBP_WarningEvent_NoticeTimer_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_707",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1.5,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_707'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Image_Line_R'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_707",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 13.0,
+          "Right": 130.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_707'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.4"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_WarningEvent_NoticeTimer_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.42"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnmEvent_ForceSimpleDetail",
+    "Outer": "WBP_WarningEvent_NoticeTimer_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "AnmEvent_NormalToSimple",
+    "Outer": "WBP_WarningEvent_NoticeTimer_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "AnmEvent_SimpleToNormal",
+    "Outer": "WBP_WarningEvent_NoticeTimer_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_WarningEvent_NoticeTimer",
+    "Outer": "WBP_WarningEvent_NoticeTimer_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetEndTime_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetRemainTime",
+    "Outer": "WBP_WarningEvent_NoticeTimer_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "RemainTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_TimeSecondsToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_TimeSecondsToString_InSeconds_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 26.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.049707,
+        "B": 0.049707,
+        "A": 1.0,
+        "Hex": "FF3F3F"
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.SizeBox_2.SizeBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.46"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_104",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.75,
+            "Hex": "BFFFFFFF"
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.029557,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "300000"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Overlay_229.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.39"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_CautionIcon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 44.0,
+          "Y": 40.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_icon_caution_tri'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Main_Menu/T_icon_caution_tri.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.049707,
+        "B": 0.049707,
+        "A": 1.0,
+        "Hex": "FF3F3F"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_100.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.5"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Line_L",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 2.0,
+          "Y": 32.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.049707,
+        "B": 0.049707,
+        "A": 1.0,
+        "Hex": "FF3F3F"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_707.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.8"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Line_R",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 2.0,
+          "Y": 32.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.049707,
+        "B": 0.049707,
+        "A": 1.0,
+        "Hex": "FF3F3F"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_707.CanvasPanelSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.10"
+      }
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Anm_NormalToSimple",
+    "Outer": "Anm_NormalToSimple_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "893B7483-4748AEFC-41C2198F-196ACDF9",
+          "Name": "CanvasPanelSlot_7",
+          "ParentGuid": "2F4F12F4-4C4FBF4B-6789F4BC-CF76851B",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "2F4F12F4-4C4FBF4B-6789F4BC-CF76851B",
+          "Name": "SizeBox_0",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "CAE44F98-4C579592-C699EBAD-EB664DA0",
+          "Name": "CanvasPanel_707",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "A6757082-45AC3F1A-784746AA-5F84EC0A",
+          "Name": "Image_CautionIcon",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "893B7483-4748AEFC-41C2198F-196ACDF9",
+          "BindingName": "CanvasPanelSlot_7",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneMarginTrack'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieSceneMarginTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.35"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "2F4F12F4-4C4FBF4B-6789F4BC-CF76851B",
+          "BindingName": "SizeBox_0",
+          "Tracks": []
+        },
+        {
+          "ObjectGuid": "CAE44F98-4C579592-C699EBAD-EB664DA0",
+          "BindingName": "CanvasPanel_707",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieSceneFloatTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.33"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "A6757082-45AC3F1A-784746AA-5F84EC0A",
+          "BindingName": "Image_CautionIcon",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieScene2DTransformTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.24"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 15001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 60
+      },
+      "Signature": "E2A91399-4088B2B5-C47C43AA-B2A73236"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Class": "UScriptClass'MovieScene2DTransformSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 15000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Translation[1]": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 15000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 30.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.25"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.26"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 15000
+            }
+          }
+        }
+      },
+      "Signature": "E3B7548E-417D86F0-DF73C5A8-AF41018A"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "Anm_NormalToSimple",
+    "Class": "UScriptClass'MovieScene2DTransformTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderTransform",
+        "PropertyPath": "RenderTransform",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.23"
+        }
+      ],
+      "EvaluationFieldGuid": "F7E81CD3-4D099983-92B338B5-63D1AAB2",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene2DTransformSection'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.23"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 15000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "F7E81CD3-4D099983-92B338B5-63D1AAB2"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneMarginSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneMarginSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Anm_NormalToSimple_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 3,
+                  "Capacity": 3
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 2,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 15000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneMarginSection'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieSceneMarginTrack_0.MovieSceneMarginSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.34"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.32"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 1
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene2DTransformSection'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.23"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 2
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "893B7483-4748AEFC-41C2198F-196ACDF9"
+          },
+          {
+            "ObjectBindingID": "CAE44F98-4C579592-C699EBAD-EB664DA0"
+          },
+          {
+            "ObjectBindingID": "A6757082-45AC3F1A-784746AA-5F84EC0A"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 15000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "7C6A6BD8-44343F37-A86D31A3-65FEBE89",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 3000
+          },
+          {
+            "Value": 10000
+          },
+          {
+            "Value": 15000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.60641396,
+            "Tangent": {
+              "ArriveTangent": -0.0001,
+              "LeaveTangent": -0.0001,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.27"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.28"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 15000
+            }
+          }
+        }
+      },
+      "Signature": "6A9C9BBC-40F4DBBC-8D6CCEB5-89E58F73"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Anm_NormalToSimple",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.32"
+        }
+      ],
+      "EvaluationFieldGuid": "A5D75355-44CC4500-6E8F63A7-C2DA26D0",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.32"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 15000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "A5D75355-44CC4500-6E8F63A7-C2DA26D0"
+    }
+  },
+  {
+    "Type": "MovieSceneMarginSection",
+    "Name": "MovieSceneMarginSection_0",
+    "Outer": "MovieSceneMarginTrack_0",
+    "Class": "UScriptClass'MovieSceneMarginSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RightCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 7000
+          },
+          {
+            "Value": 15000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 130.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 80.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 80.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieSceneMarginTrack_0.MovieSceneMarginSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.29"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieSceneMarginTrack_0.MovieSceneMarginSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.30"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 15000
+            }
+          }
+        }
+      },
+      "Signature": "4833CCF5-4AAF4799-420484B2-7A69D76D"
+    }
+  },
+  {
+    "Type": "MovieSceneMarginTrack",
+    "Name": "MovieSceneMarginTrack_0",
+    "Outer": "Anm_NormalToSimple",
+    "Class": "UScriptClass'MovieSceneMarginTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "Offsets",
+        "PropertyPath": "LayoutData.Offsets"
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneMarginSection'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieSceneMarginTrack_0.MovieSceneMarginSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.34"
+        }
+      ],
+      "EvaluationFieldGuid": "0D6FDF0E-42B016F3-7B784EBE-62C1E126",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneMarginSection'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple.MovieSceneMarginTrack_0.MovieSceneMarginSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.34"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 15000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "0D6FDF0E-42B016F3-7B784EBE-62C1E126"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_227",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Overlay_227.OverlaySlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.38"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.49"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_229",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Overlay_229.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.39"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Overlay_229.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.40"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.48"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_5",
+    "Outer": "Overlay_227",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Overlay_227'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.36"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_WarningEvent_NoticeTimer_C:WidgetTree.SizeBox_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.43"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_229",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Overlay_229'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.37"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Image_104'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.18"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_229",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Overlay_229'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.37"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_WarningEvent_NoticeTimer_C:WidgetTree.SizeBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.41"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MinDesiredHeight": 16.0,
+      "MaxDesiredHeight": 26.0,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.SizeBox.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.44"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Overlay_229.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.40"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MinDesiredHeight": 16.0,
+      "MaxDesiredHeight": 26.0,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.45"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_707.CanvasPanelSlot_7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.11"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MinDesiredHeight": 20.0,
+      "MaxDesiredHeight": 28.0,
+      "bOverride_MinDesiredHeight": true,
+      "bOverride_MaxDesiredHeight": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.SizeBox_2.SizeBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.46"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Overlay_227.OverlaySlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.38"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_WarningEvent_NoticeTimer_C:WidgetTree.SizeBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.41"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Text_Timer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.1"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_WarningEvent_NoticeTimer_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.42"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_WarningEvent_NoticeTimer_C:WidgetTree.BP_PalTextBlock_C_54'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.0"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_1",
+    "Outer": "SizeBox_2",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_WarningEvent_NoticeTimer_C:WidgetTree.SizeBox_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.43"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Image'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.17"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.49"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.48"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_707.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.9"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_WarningEvent_NoticeTimer_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.47"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Overlay_229'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.37"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_WarningEvent_NoticeTimer_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.47"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_WarningEvent_NoticeTimer_C:WidgetTree.Overlay_227'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.36"
+      }
+    }
+  },
+  {
+    "Type": "WBP_WarningEvent_NoticeTimer_C",
+    "Name": "Default__WBP_WarningEvent_NoticeTimer_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.WBP_WarningEvent_NoticeTimer_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bFirstAnimation": true,
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Anm_NormalToSimple_INST",
+    "Outer": "WBP_WarningEvent_NoticeTimer_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.Anm_NormalToSimple'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.22"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "SizeBox_0",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "2F4F12F4-4C4FBF4B-6789F4BC-CF76851B",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "SizeBox_0",
+          "SlotWidgetName": "CanvasPanelSlot_7",
+          "AnimationGuid": "893B7483-4748AEFC-41C2198F-196ACDF9",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "CanvasPanel_707",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "CAE44F98-4C579592-C699EBAD-EB664DA0",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Image_CautionIcon",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "A6757082-45AC3F1A-784746AA-5F84EC0A",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Anm_NormalToSimple",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.31"
+      },
+      "Signature": "7C6A6BD8-44343F37-A86D31A3-65FEBE89"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_WarningEvent_NoticeTimer_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_WarningEvent_NoticeTimer_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.53"
+      },
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'WBP_WarningEvent_NoticeTimer_C:Anm_NormalToSimple_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.51"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_WarningEvent_NoticeTimer_C:ExecuteUbergraph_WBP_WarningEvent_NoticeTimer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.15"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_WarningEvent_NoticeTimer_C:SetRemainTime'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.16"
+      },
+      {
+        "ObjectName": "Function'WBP_WarningEvent_NoticeTimer_C:AnmEvent_ForceSimpleDetail'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.12"
+      },
+      {
+        "ObjectName": "Function'WBP_WarningEvent_NoticeTimer_C:AnmEvent_SimpleToNormal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.14"
+      },
+      {
+        "ObjectName": "Function'WBP_WarningEvent_NoticeTimer_C:AnmEvent_NormalToSimple'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.13"
+      },
+      {
+        "ObjectName": "Function'WBP_WarningEvent_NoticeTimer_C:ExecuteUbergraph_WBP_WarningEvent_NoticeTimer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.15"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Anm_NormalToSimple",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_104",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_CautionIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Line_L",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Line_R",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_Timer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bSimpleDetail",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bFirstAnimation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_WarningEvent_NoticeTimer": {
+        "ObjectName": "Function'WBP_WarningEvent_NoticeTimer_C:ExecuteUbergraph_WBP_WarningEvent_NoticeTimer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.15"
+      },
+      "AnmEvent_NormalToSimple": {
+        "ObjectName": "Function'WBP_WarningEvent_NoticeTimer_C:AnmEvent_NormalToSimple'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.13"
+      },
+      "AnmEvent_SimpleToNormal": {
+        "ObjectName": "Function'WBP_WarningEvent_NoticeTimer_C:AnmEvent_SimpleToNormal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.14"
+      },
+      "AnmEvent_ForceSimpleDetail": {
+        "ObjectName": "Function'WBP_WarningEvent_NoticeTimer_C:AnmEvent_ForceSimpleDetail'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.12"
+      },
+      "SetRemainTime": {
+        "ObjectName": "Function'WBP_WarningEvent_NoticeTimer_C:SetRemainTime'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.16"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_WarningEvent_NoticeTimer_C'Default__WBP_WarningEvent_NoticeTimer_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.50"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_WarningEvent_NoticeTimer_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_WarningEvent_NoticeTimer_C:WidgetTree.CanvasPanel_55'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/WarningEvent/WBP_WarningEvent_NoticeTimer.3"
+      }
+    }
+  }
+]

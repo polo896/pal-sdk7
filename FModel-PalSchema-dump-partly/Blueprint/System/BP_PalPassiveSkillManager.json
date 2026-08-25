@@ -1,0 +1,412 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalPassiveSkillManager_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalPassiveSkillManager'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalPassiveSkillManager_C'Default__BP_PalPassiveSkillManager_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalPassiveSkillManager.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C",
+    "Name": "BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C_0",
+    "Outer": "Default__BP_PalPassiveSkillManager_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs.BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C'",
+    "Template": {
+      "ObjectName": "BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C'Default__BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C",
+    "Name": "BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C_1",
+    "Outer": "Default__BP_PalPassiveSkillManager_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs.BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C'",
+    "Template": {
+      "ObjectName": "BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C'Default__BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BP_PalPassiveSkillManager_C",
+    "Name": "Default__BP_PalPassiveSkillManager_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalPassiveSkillManager.BP_PalPassiveSkillManager_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PassiveSkillDataTable": {
+        "ObjectName": "CompositeDataTable'DT_PassiveSkill_Main'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/PassiveSkill/DT_PassiveSkill_Main.0"
+      },
+      "PassiveSkillConditionDataTable": {
+        "ObjectName": "DataTable'DT_PassiveSkillEffectCondition'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/PassiveSkill/DT_PassiveSkillEffectCondition.0"
+      },
+      "PassiveSkillExtraParameters": [
+        {
+          "Key": "EPalPassiveSkillEffectType::ForYakushimaAttackRate",
+          "Value": {
+            "ObjectName": "BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C'Default__BP_PalPassiveSkillManager_C:BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalPassiveSkillManager.1"
+          }
+        },
+        {
+          "Key": "EPalPassiveSkillEffectType::ForYakushimaDefenceRate",
+          "Value": {
+            "ObjectName": "BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C'Default__BP_PalPassiveSkillManager_C:BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalPassiveSkillManager.2"
+          }
+        },
+        {
+          "Key": "EPalPassiveSkillEffectType::DamageUpIfEquipped_YakushimaMeleeWeapon",
+          "Value": {
+            "ObjectName": "PalPassiveSkillExtraParameterItemIDList'Default__BP_PalPassiveSkillManager_C:PalPassiveSkillExtraParameterItemIDList_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalPassiveSkillManager.4"
+          }
+        },
+        {
+          "Key": "EPalPassiveSkillEffectType::DamageUpIfEquipped_YakushimaRangedWeapon",
+          "Value": {
+            "ObjectName": "PalPassiveSkillExtraParameterItemIDList'Default__BP_PalPassiveSkillManager_C:PalPassiveSkillExtraParameterItemIDList_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalPassiveSkillManager.5"
+          }
+        },
+        {
+          "Key": "EPalPassiveSkillEffectType::DamageUpIfEquipped_YakushimaMagicWeapon",
+          "Value": {
+            "ObjectName": "PalPassiveSkillExtraParameterItemIDList'Default__BP_PalPassiveSkillManager_C:PalPassiveSkillExtraParameterItemIDList_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalPassiveSkillManager.6"
+          }
+        },
+        {
+          "Key": "EPalPassiveSkillEffectType::DamageUpIfEquipped_YakushimaSummonWeapon",
+          "Value": {
+            "ObjectName": "PalPassiveSkillExtraParameterItemIDList'Default__BP_PalPassiveSkillManager_C:PalPassiveSkillExtraParameterItemIDList_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalPassiveSkillManager.7"
+          }
+        },
+        {
+          "Key": "EPalPassiveSkillEffectType::DamageUpPartnerSkillAttack",
+          "Value": {
+            "ObjectName": "PalPassiveSkillExtraParameterTribeIDList'Default__BP_PalPassiveSkillManager_C:PalPassiveSkillExtraParameterTribeIDList_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalPassiveSkillManager.8"
+          }
+        }
+      ],
+      "PassiveSkillEffectGroupTypeMap": [
+        {
+          "Key": "EPalPassiveSkillEffectGroupType::Element",
+          "Value": {
+            "EffectTypes": [
+              "EPalPassiveSkillEffectType::ElementFire",
+              "EPalPassiveSkillEffectType::ElementWater",
+              "EPalPassiveSkillEffectType::ElementLeaf",
+              "EPalPassiveSkillEffectType::ElementElectricity",
+              "EPalPassiveSkillEffectType::ElementIce",
+              "EPalPassiveSkillEffectType::ElementEarth",
+              "EPalPassiveSkillEffectType::ElementDark",
+              "EPalPassiveSkillEffectType::ElementDragon"
+            ]
+          }
+        },
+        {
+          "Key": "EPalPassiveSkillEffectGroupType::AdditionalEffect",
+          "Value": {
+            "EffectTypes": [
+              "EPalPassiveSkillEffectType::AdditionalEffect_Stun",
+              "EPalPassiveSkillEffectType::AdditionalEffect_Poison",
+              "EPalPassiveSkillEffectType::AdditionalEffect_Burn",
+              "EPalPassiveSkillEffectType::AdditionalEffect_Wetness",
+              "EPalPassiveSkillEffectType::AdditionalEffect_Freeze",
+              "EPalPassiveSkillEffectType::AdditionalEffect_Electrical",
+              "EPalPassiveSkillEffectType::AdditionalEffect_Muddy",
+              "EPalPassiveSkillEffectType::AdditionalEffect_IvyCling",
+              "EPalPassiveSkillEffectType::AdditionalEffect_Darkness"
+            ]
+          }
+        },
+        {
+          "Key": "EPalPassiveSkillEffectGroupType::PlayerElementStepAttack",
+          "Value": {
+            "EffectTypes": [
+              "EPalPassiveSkillEffectType::PlayerElementStepAttack_Fire",
+              "EPalPassiveSkillEffectType::PlayerElementStepAttack_Water",
+              "EPalPassiveSkillEffectType::PlayerElementStepAttack_Leaf"
+            ]
+          }
+        }
+      ],
+      "FirstOtomoOnlyStatusPassiveTypes": [
+        "EPalPassiveSkillEffectType::PlayerLowHealthBlast",
+        "EPalPassiveSkillEffectType::PlayerElementStepAttack_Fire",
+        "EPalPassiveSkillEffectType::PlayerElementStepAttack_Water",
+        "EPalPassiveSkillEffectType::PlayerInflictEffect_AttackBurning_ApplyExplosion",
+        "EPalPassiveSkillEffectType::PlayerInflictEffect_AttackBurning_ApplyFireVortex",
+        "EPalPassiveSkillEffectType::PlayerInflictEffect_AttackElectrified_ApplySpark",
+        "EPalPassiveSkillEffectType::PlayerInflictEffect_MeleeHitBarrier",
+        "EPalPassiveSkillEffectType::Player_ArrowExplosion",
+        "EPalPassiveSkillEffectType::PlayerElementStepAttack_Leaf"
+      ],
+      "BulletWeaponTypes": [
+        "EPalWeaponType::Handgun",
+        "EPalWeaponType::AssaultRifle",
+        "EPalWeaponType::Shotgun",
+        "EPalWeaponType::SniperRifle",
+        "EPalWeaponType::GatlingGun",
+        "EPalWeaponType::LaserRifle",
+        "EPalWeaponType::MissileLauncher",
+        "EPalWeaponType::GrenadeLauncher",
+        "EPalWeaponType::RocketLauncher"
+      ],
+      "AdditionalEffectExcludedItemIds": [
+        {
+          "Key": "DroneLauncher"
+        },
+        {
+          "Key": "DroneLauncher_2"
+        },
+        {
+          "Key": "DroneLauncher_3"
+        },
+        {
+          "Key": "DroneLauncher_4"
+        },
+        {
+          "Key": "DroneLauncher_5"
+        },
+        {
+          "Key": "YakushimaBlade003"
+        },
+        {
+          "Key": "YakushimaBlade003_2"
+        },
+        {
+          "Key": "YakushimaBlade003_3"
+        },
+        {
+          "Key": "YakushimaBlade003_4"
+        },
+        {
+          "Key": "YakushimaBlade003_5"
+        }
+      ],
+      "CollectItemDropNaturalObjectExcludedItemIds": [
+        {
+          "Key": "Elixir_hp_Yakushima"
+        }
+      ],
+      "IgnoredPassiveIdsForBuffDisplay": [
+        {
+          "Key": "MoveSpeed_up_PartnerSkill_Ride_1"
+        },
+        {
+          "Key": "MoveSpeed_up_PartnerSkill_Ride_2"
+        },
+        {
+          "Key": "MoveSpeed_up_PartnerSkill_Ride_3"
+        },
+        {
+          "Key": "MoveSpeed_up_PartnerSkill_Ride_4"
+        },
+        {
+          "Key": "SwimSpeed_up_PartnerSkill_1"
+        },
+        {
+          "Key": "SwimSpeed_up_PartnerSkill_2"
+        },
+        {
+          "Key": "SwimSpeed_up_PartnerSkill_3"
+        },
+        {
+          "Key": "SwimSpeed_up_PartnerSkill_4"
+        },
+        {
+          "Key": "JumpPower_Increase_Ride_PartnerSkill"
+        },
+        {
+          "Key": "Stamina_Down_1"
+        },
+        {
+          "Key": "Stamina_Up_1"
+        },
+        {
+          "Key": "Stamina_Up_2"
+        },
+        {
+          "Key": "Stamina_Up_3"
+        },
+        {
+          "Key": "RideJumpCount_Increase1"
+        },
+        {
+          "Key": "RideJumpCount_Increase2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalPassiveSkillExtraParameterItemIDList",
+    "Name": "PalPassiveSkillExtraParameterItemIDList_0",
+    "Outer": "Default__BP_PalPassiveSkillManager_C",
+    "Class": "UScriptClass'PalPassiveSkillExtraParameterItemIDList'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ItemIds": [
+        {
+          "Key": "YakushimaBlade"
+        },
+        {
+          "Key": "YakushimaBlade002"
+        },
+        {
+          "Key": "YakushimaBlade004"
+        },
+        {
+          "Key": "YakushimaBlade005"
+        },
+        {
+          "Key": "YakushimaBlade002_2"
+        },
+        {
+          "Key": "YakushimaBlade002_3"
+        },
+        {
+          "Key": "YakushimaBlade002_4"
+        },
+        {
+          "Key": "YakushimaBlade002_5"
+        },
+        {
+          "Key": "YakushimaBlade004_2"
+        },
+        {
+          "Key": "YakushimaBlade004_3"
+        },
+        {
+          "Key": "YakushimaBlade004_4"
+        },
+        {
+          "Key": "YakushimaBlade004_5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalPassiveSkillExtraParameterItemIDList",
+    "Name": "PalPassiveSkillExtraParameterItemIDList_1",
+    "Outer": "Default__BP_PalPassiveSkillManager_C",
+    "Class": "UScriptClass'PalPassiveSkillExtraParameterItemIDList'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ItemIds": [
+        {
+          "Key": "YakushimaGun001"
+        },
+        {
+          "Key": "YakushimaGun001_2"
+        },
+        {
+          "Key": "YakushimaGun001_3"
+        },
+        {
+          "Key": "YakushimaGun001_4"
+        },
+        {
+          "Key": "YakushimaGun001_5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalPassiveSkillExtraParameterItemIDList",
+    "Name": "PalPassiveSkillExtraParameterItemIDList_2",
+    "Outer": "Default__BP_PalPassiveSkillManager_C",
+    "Class": "UScriptClass'PalPassiveSkillExtraParameterItemIDList'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ItemIds": [
+        {
+          "Key": "YakushimaLantern001"
+        },
+        {
+          "Key": "YakushimaLantern001_2"
+        },
+        {
+          "Key": "YakushimaLantern001_3"
+        },
+        {
+          "Key": "YakushimaLantern001_4"
+        },
+        {
+          "Key": "YakushimaLantern001_5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalPassiveSkillExtraParameterItemIDList",
+    "Name": "PalPassiveSkillExtraParameterItemIDList_3",
+    "Outer": "Default__BP_PalPassiveSkillManager_C",
+    "Class": "UScriptClass'PalPassiveSkillExtraParameterItemIDList'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ItemIds": [
+        {
+          "Key": "YakushimaBlade003"
+        },
+        {
+          "Key": "YakushimaBlade003_2"
+        },
+        {
+          "Key": "YakushimaBlade003_3"
+        },
+        {
+          "Key": "YakushimaBlade003_4"
+        },
+        {
+          "Key": "YakushimaBlade003_5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalPassiveSkillExtraParameterTribeIDList",
+    "Name": "PalPassiveSkillExtraParameterTribeIDList_0",
+    "Outer": "Default__BP_PalPassiveSkillManager_C",
+    "Class": "UScriptClass'PalPassiveSkillExtraParameterTribeIDList'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TribeIDs": [
+        "EPalTribeID::BadCatgirl",
+        "EPalTribeID::Carbunclo",
+        "EPalTribeID::ElecPanda",
+        "EPalTribeID::LazyDragon",
+        "EPalTribeID::LazyDragon_Electric",
+        "EPalTribeID::GrassPanda",
+        "EPalTribeID::GrassPanda_Electric",
+        "EPalTribeID::JetDragon",
+        "EPalTribeID::Monkey",
+        "EPalTribeID::Monkey_Ice",
+        "EPalTribeID::Monkey_Fire",
+        "EPalTribeID::SnowTigerBeastman"
+      ]
+    }
+  }
+]

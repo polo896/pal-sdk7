@@ -1,0 +1,190 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_TalkableLevelObjectBase_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_TalkableLevelObjectBase_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalLevelObject_Talkable'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_TalkableLevelObjectBase_C:CanTalk'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalNPCTalkFlowComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalNPCTalkFlowComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Component/TalkFlow/BP_PalNPCTalkFlowComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "CanTalk": {
+        "ObjectName": "Function'BP_TalkableLevelObjectBase_C:CanTalk'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_TalkableLevelObjectBase_C'Default__BP_TalkableLevelObjectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalNPCTalkFlowComponent_C",
+    "Name": "BP_PalNPCTalkFlowComponent_GEN_VARIABLE",
+    "Outer": "BP_TalkableLevelObjectBase_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Component/TalkFlow/BP_PalNPCTalkFlowComponent.BP_PalNPCTalkFlowComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalNPCTalkFlowComponent_C'Default__BP_PalNPCTalkFlowComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Component/TalkFlow/BP_PalNPCTalkFlowComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BP_TalkableLevelObjectBase_C",
+    "Name": "Default__BP_TalkableLevelObjectBase_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.BP_TalkableLevelObjectBase_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "CanTalk",
+    "Outer": "BP_TalkableLevelObjectBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalLevelObject_Talkable:CanTalk'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_TalkableLevelObjectBase_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_TalkableLevelObjectBase_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.4"
+      },
+      "VariableGuid": "28D65A81-4F1A53E9-E4832BB2-6D62DE87",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalNPCTalkFlowComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Component/TalkFlow/BP_PalNPCTalkFlowComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalNPCTalkFlowComponent_C'BP_TalkableLevelObjectBase_C:BP_PalNPCTalkFlowComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.1"
+      },
+      "VariableGuid": "958F8865-4360DB8F-8A4DB0A4-56B3480A",
+      "InternalVariableName": "BP_PalNPCTalkFlowComponent"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_TalkableLevelObjectBase_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_TalkableLevelObjectBase_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.5"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_TalkableLevelObjectBase_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_TalkableLevelObjectBase_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.5"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_TalkableLevelObjectBase_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_TalkableLevelObjectBase_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.5"
+      }
+    }
+  }
+]

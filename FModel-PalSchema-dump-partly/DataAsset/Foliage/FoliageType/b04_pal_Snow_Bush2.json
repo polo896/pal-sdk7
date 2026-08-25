@@ -1,0 +1,54 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "b04_pal_Snow_Bush2",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'Bush2'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b04/WinterNature/Mesh/Bush2.2"
+      },
+      "UpdateGuid": "3470612D-49674BBE-6097F49F-D3E735AD",
+      "Density": 0.8,
+      "Radius": 50.0,
+      "ScaleX": {
+        "Min": 0.3,
+        "Max": 0.9
+      },
+      "GroundSlopeAngle": {
+        "Max": 90.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 107.87372
+        },
+        "BoxExtent": {
+          "X": 129.93597,
+          "Y": 114.85304,
+          "Z": 115.7831
+        },
+        "SphereRadius": 145.68368876279737
+      },
+      "LowBoundOriginRadius": {
+        "X": -17.288612,
+        "Y": 1.6335697,
+        "Z": 47.48497
+      },
+      "CullDistance": {
+        "Max": 4000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

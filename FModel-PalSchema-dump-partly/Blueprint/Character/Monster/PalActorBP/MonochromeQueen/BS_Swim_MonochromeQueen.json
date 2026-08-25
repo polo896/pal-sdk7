@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Swim_MonochromeQueen",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 1.0666667,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_MonochromeQueen_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/MonochromeQueen/AS_MonochromeQueen_Run.0"
+          },
+          "SampleValue": {
+            "X": 600.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.2
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_MonochromeQueen_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/MonochromeQueen/AS_MonochromeQueen_Run.0"
+          },
+          "SampleValue": {
+            "X": 450.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_MonochromeQueen_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/MonochromeQueen/AS_MonochromeQueen_Run.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.5
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.75
+          },
+          {
+            "SampleIndices": 1,
+            "SampleIndices[1]": 0,
+            "Vertices": 0.75,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 600.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_MonochromeQueen_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/MonochromeQueen/SK_MonochromeQueen_Skeleton.5"
+      }
+    },
+    "SkeletonGuid": "48C07E6E-472E4C14-153E8A84-FF965334"
+  }
+]

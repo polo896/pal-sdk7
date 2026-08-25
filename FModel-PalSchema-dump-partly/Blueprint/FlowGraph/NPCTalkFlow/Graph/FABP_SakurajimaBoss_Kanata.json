@@ -1,0 +1,280 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_0",
+    "Outer": "FABP_SakurajimaBoss_Kanata",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "F1A89293-4B1ADB0A-E4C68F93-A0F54BE3"
+    }
+  },
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_1",
+    "Outer": "FABP_SakurajimaBoss_Kanata",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "D7F901A3-4B75DCD0-85355597-2A7D308D"
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_SakurajimaBoss_Kanata",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "26BE9781-49EFE71E-3E763281-1DDB20C6",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "C274658D-4B875B84-BF671FA8-F92392E0",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Timer",
+    "Name": "FlowNode_Timer_0",
+    "Outer": "FABP_SakurajimaBoss_Kanata",
+    "Class": "UScriptClass'FlowNode_Timer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "A6F5A613-4E157064-45F7F5BD-C51390C1",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "DD4207D2-4713AD9F-460681BF-1F124EDB",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeIn_C",
+    "Name": "FNBP_FadeIn_C_0",
+    "Outer": "FABP_SakurajimaBoss_Kanata",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.FNBP_FadeIn_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeIn_C'Default__FNBP_FadeIn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "DD4207D2-4713AD9F-460681BF-1F124EDB",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "F1A89293-4B1ADB0A-E4C68F93-A0F54BE3",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeOut_C",
+    "Name": "FNBP_FadeOut_C_0",
+    "Outer": "FABP_SakurajimaBoss_Kanata",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.FNBP_FadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeOut_C'Default__FNBP_FadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "3BFE05C6-465EA029-4FDED4AC-2FFAF81A",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "BA26FDB4-4B7B9BB9-5792D5B1-86C998B1",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_SakurajimaBoss_Kanata",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Saya_Talk_030"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "E1FB9466-4CBDBBF6-EC2B6296-02D82C50",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "3BFE05C6-465EA029-4FDED4AC-2FFAF81A",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_6",
+    "Outer": "FABP_SakurajimaBoss_Kanata",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatSakurajimaBoss"
+      },
+      "NetworkInvokeName": "Progress1",
+      "GraphNode": null,
+      "NodeGuid": "BA26FDB4-4B7B9BB9-5792D5B1-86C998B1",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "A6F5A613-4E157064-45F7F5BD-C51390C1",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_0",
+    "Outer": "FABP_SakurajimaBoss_Kanata",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_SakurajimaBoss_SearchKatana_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SakurajimaBoss_SearchKatana.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatSakurajimaBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "C274658D-4B875B84-BF671FA8-F92392E0",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "E1FB9466-4CBDBBF6-EC2B6296-02D82C50",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "D7F901A3-4B75DCD0-85355597-2A7D308D",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_SakurajimaBoss_Kanata",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "9C66EDA6-4A89FF24-FC8B1191-E0C0DE80",
+      "Nodes": [
+        {
+          "Key": "26BE9781-49EFE71E-3E763281-1DDB20C6",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_SakurajimaBoss_Kanata:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SakurajimaBoss_Kanata.2"
+          }
+        },
+        {
+          "Key": "E1FB9466-4CBDBBF6-EC2B6296-02D82C50",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_SakurajimaBoss_Kanata:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SakurajimaBoss_Kanata.6"
+          }
+        },
+        {
+          "Key": "3BFE05C6-465EA029-4FDED4AC-2FFAF81A",
+          "Value": {
+            "ObjectName": "FNBP_FadeOut_C'FABP_SakurajimaBoss_Kanata:FNBP_FadeOut_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SakurajimaBoss_Kanata.5"
+          }
+        },
+        {
+          "Key": "BA26FDB4-4B7B9BB9-5792D5B1-86C998B1",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_SakurajimaBoss_Kanata:FNBP_ProgressQuest_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SakurajimaBoss_Kanata.7"
+          }
+        },
+        {
+          "Key": "DD4207D2-4713AD9F-460681BF-1F124EDB",
+          "Value": {
+            "ObjectName": "FNBP_FadeIn_C'FABP_SakurajimaBoss_Kanata:FNBP_FadeIn_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SakurajimaBoss_Kanata.4"
+          }
+        },
+        {
+          "Key": "A6F5A613-4E157064-45F7F5BD-C51390C1",
+          "Value": {
+            "ObjectName": "FlowNode_Timer'FABP_SakurajimaBoss_Kanata:FlowNode_Timer_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SakurajimaBoss_Kanata.3"
+          }
+        },
+        {
+          "Key": "F1A89293-4B1ADB0A-E4C68F93-A0F54BE3",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_SakurajimaBoss_Kanata:FlowNode_Finish_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SakurajimaBoss_Kanata.0"
+          }
+        },
+        {
+          "Key": "C274658D-4B875B84-BF671FA8-F92392E0",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_SakurajimaBoss_Kanata:FNBP_QuestBlockBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SakurajimaBoss_Kanata.8"
+          }
+        },
+        {
+          "Key": "D7F901A3-4B75DCD0-85355597-2A7D308D",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_SakurajimaBoss_Kanata:FlowNode_Finish_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SakurajimaBoss_Kanata.1"
+          }
+        }
+      ]
+    }
+  }
+]

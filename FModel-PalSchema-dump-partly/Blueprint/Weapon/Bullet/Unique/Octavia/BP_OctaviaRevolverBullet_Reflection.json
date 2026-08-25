@@ -1,0 +1,227 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_OctaviaRevolverBullet_Reflection_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_OctaviaRevolverBullet_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_OctaviaRevolverBullet_Reflection_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet_Reflection.8"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_OctaviaRevolverBullet_Reflection_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet_Reflection.4"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_OctaviaRevolverBullet_Reflection_C:ExecuteUbergraph_BP_OctaviaRevolverBullet_Reflection'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet_Reflection.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_OctaviaRevolverBullet_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_OctaviaRevolverBullet_Reflection_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet_Reflection.3"
+      },
+      {
+        "ObjectName": "Function'BP_OctaviaRevolverBullet_Reflection_C:ExecuteUbergraph_BP_OctaviaRevolverBullet_Reflection'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet_Reflection.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_OctaviaRevolverBullet_Reflection": {
+        "ObjectName": "Function'BP_OctaviaRevolverBullet_Reflection_C:ExecuteUbergraph_BP_OctaviaRevolverBullet_Reflection'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet_Reflection.2"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_OctaviaRevolverBullet_Reflection_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet_Reflection.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_OctaviaRevolverBullet_Reflection_C'Default__BP_OctaviaRevolverBullet_Reflection_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet_Reflection.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_OctaviaRevolverBullet_Reflection_C",
+    "Name": "Default__BP_OctaviaRevolverBullet_Reflection_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet_Reflection.BP_OctaviaRevolverBullet_Reflection_C'",
+    "Template": {
+      "ObjectName": "BP_OctaviaRevolverBullet_C'Default__BP_OctaviaRevolverBullet_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "CollisionComp": {
+        "ObjectName": "SphereComponent'Default__BP_OctaviaRevolverBullet_Reflection_C:SphereComp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet_Reflection.9"
+      },
+      "ProjectileMovement": {
+        "ObjectName": "PalProjectileMovementComponent'Default__BP_OctaviaRevolverBullet_Reflection_C:ProjectileComp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet_Reflection.5"
+      },
+      "RootComponent": {
+        "ObjectName": "SphereComponent'Default__BP_OctaviaRevolverBullet_Reflection_C:SphereComp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet_Reflection.9"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_OctaviaRevolverBullet_Reflection",
+    "Outer": "BP_OctaviaRevolverBullet_Reflection_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_OctaviaRevolverBullet_Reflection_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_OctaviaRevolverBullet_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet.21"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_OctaviaRevolverBullet_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet.21"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_OctaviaRevolverBullet_Reflection_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalProjectileMovementComponent",
+    "Name": "ProjectileComp",
+    "Outer": "Default__BP_OctaviaRevolverBullet_Reflection_C",
+    "Class": "UScriptClass'PalProjectileMovementComponent'",
+    "Template": {
+      "ObjectName": "PalProjectileMovementComponent'Default__BP_OctaviaRevolverBullet_C:ProjectileComp'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet.28"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_OctaviaRevolverBullet_Reflection_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_OctaviaRevolverBullet_Reflection_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet_Reflection.6"
+      },
+      "VariableGuid": "8331239F-48192193-153B9989-5BC14D31",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_OctaviaRevolverBullet_Reflection_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_OctaviaRevolverBullet_Reflection_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet_Reflection.7"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComp",
+    "Outer": "Default__BP_OctaviaRevolverBullet_Reflection_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__BP_OctaviaRevolverBullet_C:SphereComp'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet.32"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OnComponentHit": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_OctaviaRevolverBullet_Reflection_C'Default__BP_OctaviaRevolverBullet_Reflection_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet_Reflection.1"
+            },
+            "FunctionName": "OnHit"
+          }
+        ]
+      },
+      "OnComponentBeginOverlap": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_OctaviaRevolverBullet_Reflection_C'Default__BP_OctaviaRevolverBullet_Reflection_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/Unique/Octavia/BP_OctaviaRevolverBullet_Reflection.1"
+            },
+            "FunctionName": "OnHit"
+          }
+        ]
+      }
+    }
+  }
+]

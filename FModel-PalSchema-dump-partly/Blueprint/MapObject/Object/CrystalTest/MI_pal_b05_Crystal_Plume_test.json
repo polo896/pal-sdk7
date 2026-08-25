@@ -1,0 +1,246 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "MI_pal_b05_Crystal_Plume_test",
+    "Class": "UScriptClass'MaterialInstanceConstant'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "MaterialInstanceConstant'MI_PalLit_Crystal_test'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/CrystalTest/MI_PalLit_Crystal_test.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Distance_To_Ground",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 46.399998,
+          "ExpressionGUID": "77A48D27-4BAA7648-9AD403A8-8482F4EB"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "DistanceField_",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.384,
+          "ExpressionGUID": "6A0AE923-42FECC51-56A6729F-B3292C0A"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Emissive Contrast",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 10.0,
+          "ExpressionGUID": "9D3EF331-4B2FAFC1-491A6AB6-386EC288"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Emissive Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.4,
+          "ExpressionGUID": "809ADE09-4C6146CB-776B259E-C2E1A100"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Emmi Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 3.569359,
+          "ExpressionGUID": "07425DB1-40D6DA16-F40228AB-6F9BC284"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "opacity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.976,
+          "ExpressionGUID": "CC0D7E82-4312711B-8F487FA0-912AB484"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "SSS Intensity",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "5867C71A-49A4A053-5D74E095-642C5AA9"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "TilingScale",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 1.0,
+          "ExpressionGUID": "6AFA5739-47038F3D-FF3EA6A0-705E2028"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Emmisive_",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "R": 0.421875,
+            "G": 0.141931,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "AE6900"
+          },
+          "ExpressionGUID": "04A2214A-4AE13A56-1F4C2AA2-3CF675B4"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Subsurface Color",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "R": 0.2,
+            "G": 0.2,
+            "B": 0.2,
+            "A": 0.0,
+            "Hex": "7C7C7C"
+          },
+          "ExpressionGUID": "183E6C06-4F10EC83-0855FEA2-FEC6BD84"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Base Texture",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Crystal_Font_Diffuse_Opacity'",
+            "ObjectPath": "Pal/Content/Others/nakano_test/model_check/CrystalPack/Crystal/Crystal_Props/PalLIt/Textures/T_Crystal_Font_Diffuse_Opacity.0"
+          },
+          "ExpressionGUID": "5A741B87-4C6AE118-BBA25EBF-61D5DECD"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Emissive Texture",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Crystal_Plume_Emissive'",
+            "ObjectPath": "Pal/Content/Others/nakano_test/model_check/CrystalPack/Crystal/Crystal_Props/PalLIt/Textures/SPtextures/T_Crystal_Plume_Emissive.0"
+          },
+          "ExpressionGUID": "AB052EB1-4BC7AA1F-6DD179A9-6752F061"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "MetallicRoughnessOcclusionSpecularTexture",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Crystal_Plume_MRO'",
+            "ObjectPath": "Pal/Content/Others/nakano_test/model_check/CrystalPack/Crystal/Crystal_Props/PalLIt/Textures/SPtextures/T_Crystal_Plume_MRO.0"
+          },
+          "ExpressionGUID": "9F9BB42A-4137101A-447895B1-584A24EA"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Normal Map",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Crystal_Plume_N'",
+            "ObjectPath": "Pal/Content/Others/nakano_test/model_check/CrystalPack/Crystal/Crystal_Props/PalLIt/Textures/SPtextures/T_Crystal_Plume_N.0"
+          },
+          "ExpressionGUID": "42795FDE-41E03A25-33075D8C-177EAEA0"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Opacity Texture",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Crystal_Plume_SSOpacity'",
+            "ObjectPath": "Pal/Content/Others/nakano_test/model_check/CrystalPack/Crystal/Crystal_Props/PalLIt/Textures/SPtextures/T_Crystal_Plume_SSOpacity.0"
+          },
+          "ExpressionGUID": "CABBCA1A-4C48C02C-9FD8BBB6-245521B5"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Subsurface Texture",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Crystal_Plume_SSColor'",
+            "ObjectPath": "Pal/Content/Others/nakano_test/model_check/CrystalPack/Crystal/Crystal_Props/PalLIt/Textures/SPtextures/T_Crystal_Plume_SSColor.0"
+          },
+          "ExpressionGUID": "0A2B9A16-489A246A-C3AAC392-728490A3"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "BlendMode": "EBlendMode::BLEND_Masked",
+        "ShadingModel": "EMaterialShadingModel::MSM_Subsurface",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "SubsurfaceProfile": {
+        "ObjectName": "SubsurfaceProfile'SP_CharacterBodyBase'",
+        "ObjectPath": "Pal/Content/Pal/Material/Character/Common/SP_CharacterBodyBase.0"
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "Black"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_Cloud_00"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_Crystal_Plume_MRO"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_Crystal_Plume_N"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_Crystal_Plume_SSColor"
+        }
+      ]
+    },
+    "LoadedMaterialResources": [],
+    "CachedData": {
+      "ParentLayerIndexRemap": [
+        0
+      ]
+    }
+  }
+]

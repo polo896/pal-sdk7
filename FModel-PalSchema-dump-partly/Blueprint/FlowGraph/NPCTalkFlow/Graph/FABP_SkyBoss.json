@@ -1,0 +1,858 @@
+[
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_SkyBoss",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "32AB66D9-4C312E4D-EDD8A19B-8AA5049B",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "B2BDC688-499F7434-652742AF-55FCB137",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_CompleteQuest_C",
+    "Name": "FNBP_CompleteQuest_C_0",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.FNBP_CompleteQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_CompleteQuest_C'Default__FNBP_CompleteQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_TalkSkyBoss"
+      },
+      "NetworkInvokeName": "Main_TalkSkyBoss",
+      "GraphNode": null,
+      "NodeGuid": "2973F1C6-451E71EF-2EEB72B7-B9160293",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "E21585C5-41712A6C-5331558D-D43A902C",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_CompleteQuest_C",
+    "Name": "FNBP_CompleteQuest_C_1",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.FNBP_CompleteQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_CompleteQuest_C'Default__FNBP_CompleteQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_TalkSkyBossAgain"
+      },
+      "NetworkInvokeName": "Main_TalkSkyBossAgain",
+      "GraphNode": null,
+      "NodeGuid": "68F23C56-41EC24C8-FFAA0EBB-3E482F4F",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "E3FF625B-4C5249FC-76B354AD-337A196C",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Quest_Main_TalkSkyBoss"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "CFA1B513-455DBE4C-87AF32B3-FFE14FBD",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "2973F1C6-451E71EF-2EEB72B7-B9160293",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Quest_Main_TalkSkyBossAgain_01"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "576D8797-4128E726-884D209F-659DDB40",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "50124CF9-4BF0DB6E-8F32E7B1-E1B8A0F6",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Quest_NoResponse"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "91456563-4ADFE717-2C103991-0BC23A04",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "180ED496-42DFA9C4-A0D4C9BB-FA122B01",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_3",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Quest_Main_TalkSkyBossAgain_01_CHOICE_YES"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "3DAF192A-47089EDB-AA760C8E-34026283",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "68F23C56-41EC24C8-FFAA0EBB-3E482F4F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Quest_NoResponse"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "7827BA0F-4B05EA67-4F08FC97-185A5631"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_5",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Quest_Main_TalkSkyBossAgain_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "640D2B29-434E7DBF-B5ECCFA3-B2C4BF6C",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "B492F46E-4962946E-0C308CB7-AA1AD1FF",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_6",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Quest_Main_TalkSkyBossAgain_01_CHOICE_NO"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "BA4330D6-4D49F079-8F06BF83-288A8F34",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "E3FF625B-4C5249FC-76B354AD-337A196C",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkBranch_Yes_No_C",
+    "Name": "FNBP_NPCTalkBranch_Yes_No_C_0",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.FNBP_NPCTalkBranch_Yes_No_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'Default__FNBP_NPCTalkBranch_Yes_No_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "50124CF9-4BF0DB6E-8F32E7B1-E1B8A0F6",
+      "OutputPins": [
+        {
+          "PinName": "CHOICE_YES",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "CHOICE_NO",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "CHOICE_YES",
+          "Value": {
+            "NodeGuid": "3DAF192A-47089EDB-AA760C8E-34026283",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "CHOICE_NO",
+          "Value": {
+            "NodeGuid": "BA4330D6-4D49F079-8F06BF83-288A8F34",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_PlayAnimMontage_C",
+    "Name": "FNBP_PlayAnimMontage_C_0",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.FNBP_PlayAnimMontage_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlayAnimMontage_C'Default__FNBP_PlayAnimMontage_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Montage to Play": {
+        "ObjectName": "AnimMontage'AM_NPC_Female_Talking4_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/AM_NPC_Female_Talking4_Loop.0"
+      },
+      "GraphNode": null,
+      "NodeGuid": "A22573EE-45BFF803-BF47AAA1-CB12D7FA",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "37E31335-4FDCC989-1DE17682-CE04B55D",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_PlayAnimMontage_C",
+    "Name": "FNBP_PlayAnimMontage_C_1",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.FNBP_PlayAnimMontage_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlayAnimMontage_C'Default__FNBP_PlayAnimMontage_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "E21585C5-41712A6C-5331558D-D43A902C"
+    }
+  },
+  {
+    "Type": "FNBP_PlayAnimMontage_C",
+    "Name": "FNBP_PlayAnimMontage_C_2",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.FNBP_PlayAnimMontage_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlayAnimMontage_C'Default__FNBP_PlayAnimMontage_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Montage to Play": {
+        "ObjectName": "AnimMontage'AM_NPC_Female_Talking4_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/AM_NPC_Female_Talking4_Loop.0"
+      },
+      "GraphNode": null,
+      "NodeGuid": "28FD11A5-4CF2FA48-BCA1058B-31A52E51",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "72EEFB21-4540E3DE-BDCC0CA9-AD98B5A2",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_PlayAnimMontage_C",
+    "Name": "FNBP_PlayAnimMontage_C_3",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.FNBP_PlayAnimMontage_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlayAnimMontage_C'Default__FNBP_PlayAnimMontage_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "180ED496-42DFA9C4-A0D4C9BB-FA122B01"
+    }
+  },
+  {
+    "Type": "FNBP_PlayAnimMontage_C",
+    "Name": "FNBP_PlayAnimMontage_C_4",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.FNBP_PlayAnimMontage_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlayAnimMontage_C'Default__FNBP_PlayAnimMontage_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Montage to Play": {
+        "ObjectName": "AnimMontage'AM_NPC_Female_Talking4_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/AM_NPC_Female_Talking4_Loop.0"
+      },
+      "GraphNode": null,
+      "NodeGuid": "0B6259B9-4794266D-D617E7A6-FBE8260F",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "E4F00D58-4B643634-B1846794-D323C86B",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_PlayAnimMontage_C",
+    "Name": "FNBP_PlayAnimMontage_C_5",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.FNBP_PlayAnimMontage_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlayAnimMontage_C'Default__FNBP_PlayAnimMontage_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "E3FF625B-4C5249FC-76B354AD-337A196C"
+    }
+  },
+  {
+    "Type": "FNBP_PlayAnimMontage_C",
+    "Name": "FNBP_PlayAnimMontage_C_6",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.FNBP_PlayAnimMontage_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlayAnimMontage_C'Default__FNBP_PlayAnimMontage_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Montage to Play": {
+        "ObjectName": "AnimMontage'AM_NPC_Female_Talking4_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/AM_NPC_Female_Talking4_Loop.0"
+      },
+      "GraphNode": null,
+      "NodeGuid": "F93FF703-4B50C282-0740CF88-26F05D40",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "0F39997C-420B132C-971825B9-1AA0BB60",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_PlayAnimMontage_C",
+    "Name": "FNBP_PlayAnimMontage_C_7",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.FNBP_PlayAnimMontage_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlayAnimMontage_C'Default__FNBP_PlayAnimMontage_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayAnimMontage.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "B492F46E-4962946E-0C308CB7-AA1AD1FF"
+    }
+  },
+  {
+    "Type": "FNBP_PlaySound_C",
+    "Name": "FNBP_PlaySound_C_0",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlaySound.FNBP_PlaySound_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlaySound_C'Default__FNBP_PlaySound_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlaySound.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Ak Event": {
+        "ObjectName": "AkAudioEvent'AKE_TalkStart_Auri'",
+        "ObjectPath": "Pal/Content/Pal/Sound/Events/Voice/Human/NPC/NPCTalk/AKE_TalkStart_Auri.0"
+      },
+      "GraphNode": null,
+      "NodeGuid": "37E31335-4FDCC989-1DE17682-CE04B55D",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "CFA1B513-455DBE4C-87AF32B3-FFE14FBD",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_PlaySound_C",
+    "Name": "FNBP_PlaySound_C_1",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlaySound.FNBP_PlaySound_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlaySound_C'Default__FNBP_PlaySound_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlaySound.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Ak Event": {
+        "ObjectName": "AkAudioEvent'AKE_TalkStart_Auri'",
+        "ObjectPath": "Pal/Content/Pal/Sound/Events/Voice/Human/NPC/NPCTalk/AKE_TalkStart_Auri.0"
+      },
+      "GraphNode": null,
+      "NodeGuid": "72EEFB21-4540E3DE-BDCC0CA9-AD98B5A2",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "91456563-4ADFE717-2C103991-0BC23A04",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_PlaySound_C",
+    "Name": "FNBP_PlaySound_C_2",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlaySound.FNBP_PlaySound_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlaySound_C'Default__FNBP_PlaySound_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlaySound.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Ak Event": {
+        "ObjectName": "AkAudioEvent'AKE_TalkStart_Auri'",
+        "ObjectPath": "Pal/Content/Pal/Sound/Events/Voice/Human/NPC/NPCTalk/AKE_TalkStart_Auri.0"
+      },
+      "GraphNode": null,
+      "NodeGuid": "E4F00D58-4B643634-B1846794-D323C86B",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "576D8797-4128E726-884D209F-659DDB40",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_PlaySound_C",
+    "Name": "FNBP_PlaySound_C_3",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlaySound.FNBP_PlaySound_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlaySound_C'Default__FNBP_PlaySound_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlaySound.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Ak Event": {
+        "ObjectName": "AkAudioEvent'AKE_TalkStart_Auri'",
+        "ObjectPath": "Pal/Content/Pal/Sound/Events/Voice/Human/NPC/NPCTalk/AKE_TalkStart_Auri.0"
+      },
+      "GraphNode": null,
+      "NodeGuid": "0F39997C-420B132C-971825B9-1AA0BB60",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "640D2B29-434E7DBF-B5ECCFA3-B2C4BF6C",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_TalkSkyBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "B2BDC688-499F7434-652742AF-55FCB137",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "7827BA0F-4B05EA67-4F08FC97-185A5631",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "A22573EE-45BFF803-BF47AAA1-CB12D7FA",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "FFCF72CE-42A78BA7-F5A1B684-5DA6C8DF",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_1",
+    "Outer": "FABP_SkyBoss",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_TalkSkyBossAgain"
+      },
+      "GraphNode": null,
+      "NodeGuid": "FFCF72CE-42A78BA7-F5A1B684-5DA6C8DF",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "28FD11A5-4CF2FA48-BCA1058B-31A52E51",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "0B6259B9-4794266D-D617E7A6-FBE8260F",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "F93FF703-4B50C282-0740CF88-26F05D40",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_SkyBoss",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "537F6007-4869687C-EE8F3F90-AE596FEE",
+      "Nodes": [
+        {
+          "Key": "91456563-4ADFE717-2C103991-0BC23A04",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_SkyBoss:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.5"
+          }
+        },
+        {
+          "Key": "FFCF72CE-42A78BA7-F5A1B684-5DA6C8DF",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_SkyBoss:FNBP_QuestBranch_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.24"
+          }
+        },
+        {
+          "Key": "640D2B29-434E7DBF-B5ECCFA3-B2C4BF6C",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_SkyBoss:FNBP_NPCTalk_FixedMsdId_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.8"
+          }
+        },
+        {
+          "Key": "576D8797-4128E726-884D209F-659DDB40",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_SkyBoss:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.4"
+          }
+        },
+        {
+          "Key": "68F23C56-41EC24C8-FFAA0EBB-3E482F4F",
+          "Value": {
+            "ObjectName": "FNBP_CompleteQuest_C'FABP_SkyBoss:FNBP_CompleteQuest_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.2"
+          }
+        },
+        {
+          "Key": "B2BDC688-499F7434-652742AF-55FCB137",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_SkyBoss:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.23"
+          }
+        },
+        {
+          "Key": "CFA1B513-455DBE4C-87AF32B3-FFE14FBD",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_SkyBoss:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.3"
+          }
+        },
+        {
+          "Key": "2973F1C6-451E71EF-2EEB72B7-B9160293",
+          "Value": {
+            "ObjectName": "FNBP_CompleteQuest_C'FABP_SkyBoss:FNBP_CompleteQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.1"
+          }
+        },
+        {
+          "Key": "7827BA0F-4B05EA67-4F08FC97-185A5631",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_SkyBoss:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.7"
+          }
+        },
+        {
+          "Key": "32AB66D9-4C312E4D-EDD8A19B-8AA5049B",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_SkyBoss:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.0"
+          }
+        },
+        {
+          "Key": "50124CF9-4BF0DB6E-8F32E7B1-E1B8A0F6",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'FABP_SkyBoss:FNBP_NPCTalkBranch_Yes_No_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.10"
+          }
+        },
+        {
+          "Key": "3DAF192A-47089EDB-AA760C8E-34026283",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_SkyBoss:FNBP_NPCTalk_FixedMsdId_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.6"
+          }
+        },
+        {
+          "Key": "BA4330D6-4D49F079-8F06BF83-288A8F34",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_SkyBoss:FNBP_NPCTalk_FixedMsdId_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.9"
+          }
+        },
+        {
+          "Key": "A22573EE-45BFF803-BF47AAA1-CB12D7FA",
+          "Value": {
+            "ObjectName": "FNBP_PlayAnimMontage_C'FABP_SkyBoss:FNBP_PlayAnimMontage_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.11"
+          }
+        },
+        {
+          "Key": "E21585C5-41712A6C-5331558D-D43A902C",
+          "Value": {
+            "ObjectName": "FNBP_PlayAnimMontage_C'FABP_SkyBoss:FNBP_PlayAnimMontage_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.12"
+          }
+        },
+        {
+          "Key": "28FD11A5-4CF2FA48-BCA1058B-31A52E51",
+          "Value": {
+            "ObjectName": "FNBP_PlayAnimMontage_C'FABP_SkyBoss:FNBP_PlayAnimMontage_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.13"
+          }
+        },
+        {
+          "Key": "180ED496-42DFA9C4-A0D4C9BB-FA122B01",
+          "Value": {
+            "ObjectName": "FNBP_PlayAnimMontage_C'FABP_SkyBoss:FNBP_PlayAnimMontage_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.14"
+          }
+        },
+        {
+          "Key": "0B6259B9-4794266D-D617E7A6-FBE8260F",
+          "Value": {
+            "ObjectName": "FNBP_PlayAnimMontage_C'FABP_SkyBoss:FNBP_PlayAnimMontage_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.15"
+          }
+        },
+        {
+          "Key": "E3FF625B-4C5249FC-76B354AD-337A196C",
+          "Value": {
+            "ObjectName": "FNBP_PlayAnimMontage_C'FABP_SkyBoss:FNBP_PlayAnimMontage_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.16"
+          }
+        },
+        {
+          "Key": "F93FF703-4B50C282-0740CF88-26F05D40",
+          "Value": {
+            "ObjectName": "FNBP_PlayAnimMontage_C'FABP_SkyBoss:FNBP_PlayAnimMontage_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.17"
+          }
+        },
+        {
+          "Key": "B492F46E-4962946E-0C308CB7-AA1AD1FF",
+          "Value": {
+            "ObjectName": "FNBP_PlayAnimMontage_C'FABP_SkyBoss:FNBP_PlayAnimMontage_C_7'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.18"
+          }
+        },
+        {
+          "Key": "37E31335-4FDCC989-1DE17682-CE04B55D",
+          "Value": {
+            "ObjectName": "FNBP_PlaySound_C'FABP_SkyBoss:FNBP_PlaySound_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.19"
+          }
+        },
+        {
+          "Key": "72EEFB21-4540E3DE-BDCC0CA9-AD98B5A2",
+          "Value": {
+            "ObjectName": "FNBP_PlaySound_C'FABP_SkyBoss:FNBP_PlaySound_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.20"
+          }
+        },
+        {
+          "Key": "E4F00D58-4B643634-B1846794-D323C86B",
+          "Value": {
+            "ObjectName": "FNBP_PlaySound_C'FABP_SkyBoss:FNBP_PlaySound_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.21"
+          }
+        },
+        {
+          "Key": "0F39997C-420B132C-971825B9-1AA0BB60",
+          "Value": {
+            "ObjectName": "FNBP_PlaySound_C'FABP_SkyBoss:FNBP_PlaySound_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_SkyBoss.22"
+          }
+        }
+      ]
+    }
+  }
+]

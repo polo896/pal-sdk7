@@ -1,0 +1,647 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalMapObjectManager_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalMapObjectManager'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalMapObjectManager_C'Default__BP_PalMapObjectManager_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalMapObjectManager.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalMapObjectManager_C",
+    "Name": "Default__BP_PalMapObjectManager_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalMapObjectManager.BP_PalMapObjectManager_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BuildObjectDataTable": {
+        "ObjectName": "CompositeDataTable'DT_BuildObjectDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/MapObject/Building/DT_BuildObjectDataTable.0"
+      },
+      "BuildObjectNameTable": {
+        "ObjectName": "CompositeDataTable'DT_MapObjectNameText'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_MapObjectNameText.0"
+      },
+      "BuildObjectDescTable": {
+        "ObjectName": "CompositeDataTable'DT_BuildObjectDescText'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_BuildObjectDescText.0"
+      },
+      "MapObjectAssignTable": {
+        "ObjectName": "CompositeDataTable'DT_MapObjectAssignData'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/MapObject/DT_MapObjectAssignData.0"
+      },
+      "MapObjectDataTableForEnemyCamp": {
+        "ObjectName": "DataTable'DT_MapObjectMasterDataTable_EnemyCamp'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/MapObject/DT_MapObjectMasterDataTable_EnemyCamp.0"
+      },
+      "BuildingSurfaceMaterialSet": {
+        "Highlight": {
+          "ObjectName": "MaterialInstanceConstant'MI_LooksPredicatorNormal'",
+          "ObjectPath": "Pal/Content/Pal/Material/MapObject/BuildObject/BuildingProcess/MI_LooksPredicatorNormal.0"
+        },
+        "HighlightTwoSided": {
+          "ObjectName": "MaterialInstanceConstant'MI_LooksPredicatorNormal_TwoSided'",
+          "ObjectPath": "Pal/Content/Pal/Material/MapObject/BuildObject/BuildingProcess/MI_LooksPredicatorNormal_TwoSided.0"
+        },
+        "HighlightWorkPositionVisualizer": {
+          "ObjectName": "MaterialInstanceConstant'MI_LooksPredicatorNormal_WorkPositionVisualizer'",
+          "ObjectPath": "Pal/Content/Pal/Material/MapObject/BuildObject/BuildingProcess/MI_LooksPredicatorNormal_WorkPositionVisualizer.0"
+        },
+        "Error": {
+          "ObjectName": "MaterialInstanceConstant'MI_LooksPredicatorError'",
+          "ObjectPath": "Pal/Content/Pal/Material/MapObject/BuildObject/BuildingProcess/MI_LooksPredicatorError.0"
+        },
+        "ErrorTwoSided": {
+          "ObjectName": "MaterialInstanceConstant'MI_LooksPredicatorError_TwoSided'",
+          "ObjectPath": "Pal/Content/Pal/Material/MapObject/BuildObject/BuildingProcess/MI_LooksPredicatorError_TwoSided.0"
+        },
+        "ErrorWorkPositionVisualizer": {
+          "ObjectName": "MaterialInstanceConstant'MI_LooksPredicatorError_WorkPositionVisualizer'",
+          "ObjectPath": "Pal/Content/Pal/Material/MapObject/BuildObject/BuildingProcess/MI_LooksPredicatorError_WorkPositionVisualizer.0"
+        },
+        "Building": {
+          "ObjectName": "MaterialInstanceConstant'MI_LooksPredicatorBuilding'",
+          "ObjectPath": "Pal/Content/Pal/Material/MapObject/BuildObject/BuildingProcess/MI_LooksPredicatorBuilding.0"
+        },
+        "BuildingTwoSided": {
+          "ObjectName": "MaterialInstanceConstant'MI_LooksPredicatorBuilding_TwoSided'",
+          "ObjectPath": "Pal/Content/Pal/Material/MapObject/BuildObject/BuildingProcess/MI_LooksPredicatorBuilding_TwoSided.0"
+        },
+        "BuildComplete": {
+          "ObjectName": "MaterialInstanceConstant'MI_BuildObjectComplete'",
+          "ObjectPath": "Pal/Content/Pal/Material/MapObject/BuildObject/BuildingProcess/MI_BuildObjectComplete.0"
+        },
+        "BuildCompleteTwoSided": {
+          "ObjectName": "MaterialInstanceConstant'MI_BuildObjectComplete_TwoSided'",
+          "ObjectPath": "Pal/Content/Pal/Material/MapObject/BuildObject/BuildingProcess/MI_BuildObjectComplete_TwoSided.0"
+        },
+        "Dismantle": {
+          "ObjectName": "MaterialInstanceConstant'MI_LooksPredicatorDismantle'",
+          "ObjectPath": "Pal/Content/Pal/Material/MapObject/BuildObject/BuildingProcess/MI_LooksPredicatorDismantle.0"
+        },
+        "DismantleTwoSided": {
+          "ObjectName": "MaterialInstanceConstant'MI_LooksPredicatorDismantle_TwoSided'",
+          "ObjectPath": "Pal/Content/Pal/Material/MapObject/BuildObject/BuildingProcess/MI_LooksPredicatorDismantle_TwoSided.0"
+        },
+        "BuildCompleteAnimationCurve": {
+          "ObjectName": "CurveFloat'C_BuildCompleteMaterialAnimation'",
+          "ObjectPath": "Pal/Content/Pal/Material/MapObject/BuildObject/BuildingProcess/C_BuildCompleteMaterialAnimation.0"
+        }
+      },
+      "WorkPositionVisualizerSettings": {
+        "VisualizerMesh": {
+          "AssetPathName": "/Game/Pal/Model/Character/Monster/PinkCat/SM_PinkCat_Commonwork.SM_PinkCat_Commonwork",
+          "SubPathString": ""
+        },
+        "LocationOffset": {
+          "X": 45.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "RotationOffset": {
+          "Pitch": 0.0,
+          "Yaw": 180.0,
+          "Roll": 0.0
+        },
+        "Scale": {
+          "X": 0.8,
+          "Y": 0.8,
+          "Z": 0.8
+        }
+      },
+      "FoliagePresetDataSet": {
+        "ObjectName": "PalFoliagePresetDataSet'DA_FoliagePresetDataSet'",
+        "ObjectPath": "Pal/Content/Pal/DataAsset/Foliage/DA_FoliagePresetDataSet.0"
+      },
+      "FoliageModelChunkClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_FoliageModelChunk_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Foliage/BP_FoliageModelChunk.0"
+      },
+      "StaticData": {
+        "DummyFoliageMapObjectId": "DummyFoliage",
+        "DropItem3DMapObjectId": "CommonDropItem3D",
+        "DropItem3DSKMapObjectId": "CommonDropItem3D_SK",
+        "BuildObjectId_PalStorage": "PalBoxV2",
+        "MapObjectId_ItemChest": "ItemChest",
+        "MapObjectId_DeathPenalty": "DeathPenaltyChest",
+        "MapObjectId_DroppedCharacter": "DroppedCharacter",
+        "MapObjectId_TreasureBox_VisibleContent": "TreasureBox_VisibleContent",
+        "MapObjectId_SkillFruit_VisibleContent": "TreasureBox_VisibleContent_SkillFruits",
+        "MapObjectId_BaseCampPoint_RaidBossArea": "PalBox_RaidBossArea",
+        "MapObjectId_Alter_RaidBossArea": "Altar_RaidBossArea",
+        "DecayEffectActorClass": {
+          "AssetPathName": "/Game/Pal/Blueprint/MapObject/Object/Performance/BP_DecayEffectActor_Foliage.BP_DecayEffectActor_Foliage_C",
+          "SubPathString": ""
+        },
+        "FoliageTickFrequencyBands": [
+          {
+            "MaxGridDistance": 1000,
+            "TickIntervalSeconds": 0.0
+          },
+          {
+            "MaxGridDistance": 10000,
+            "TickIntervalSeconds": 1.0
+          },
+          {
+            "MaxGridDistance": 100000,
+            "TickIntervalSeconds": 5.0
+          }
+        ],
+        "MaxFoliageGridModelTicksPerFrame": 128,
+        "MaxConnectivityCollapseDisposePerFrame": 3
+      },
+      "CannotPlayerSpawnMapObjectIds": [
+        {
+          "Key": "PalBox_RaidBossArea"
+        },
+        {
+          "Key": "Altar_RaidBossArea"
+        }
+      ],
+      "SkipApplySaveDataMapObjectIds": [
+        "LockGimmickDestructionTarget_Test"
+      ],
+      "BuildObjectId_PalStorage": "PalBoxV2",
+      "SearchObjectTypes": [
+        "ObjectTypeQuery2",
+        "ObjectTypeQuery7",
+        "ObjectTypeQuery13"
+      ],
+      "SignificanceInfoList": [
+        {
+          "DistanceInRangeFromPlayer": 0.0,
+          "TickInterval": 0.0,
+          "bBuildObjectVisible": true,
+          "bInvalidTickForSkeletalMeshComponent": false
+        },
+        {
+          "DistanceInRangeFromPlayer": 3000.0,
+          "TickInterval": 0.1,
+          "bBuildObjectVisible": true,
+          "bInvalidTickForSkeletalMeshComponent": false
+        },
+        {
+          "DistanceInRangeFromPlayer": 5000.0,
+          "TickInterval": 0.5,
+          "bBuildObjectVisible": true,
+          "bInvalidTickForSkeletalMeshComponent": false
+        },
+        {
+          "DistanceInRangeFromPlayer": 7000.0,
+          "TickInterval": 1.0,
+          "bBuildObjectVisible": true,
+          "bInvalidTickForSkeletalMeshComponent": true
+        },
+        {
+          "DistanceInRangeFromPlayer": 8500.0,
+          "TickInterval": 3.0,
+          "bBuildObjectVisible": true,
+          "bInvalidTickForSkeletalMeshComponent": true
+        },
+        {
+          "DistanceInRangeFromPlayer": 10000.0,
+          "TickInterval": 5.0,
+          "bBuildObjectVisible": true,
+          "bInvalidTickForSkeletalMeshComponent": true
+        },
+        {
+          "DistanceInRangeFromPlayer": 15000.0,
+          "TickInterval": 10.0,
+          "bBuildObjectVisible": true,
+          "bInvalidTickForSkeletalMeshComponent": true
+        }
+      ],
+      "DestroyEffectMap": [
+        {
+          "Key": "EPalMapObjectDestroyFXType::Normal",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_Destruction_Smoke_Metal'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Smoke/NS_Destruction_Smoke_Metal.56"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::LowTree",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_Destruction_Smoke_Small'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Smoke/NS_Destruction_Smoke_Small.21"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::Pickup",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_PickUpItem'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Harvest/NS_PickUpItem.27"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::Pickup_Wood",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_PickUpWoodStick'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Harvest/NS_PickUpWoodStick.69"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::Pickup_Stone",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_PickUpStone'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Harvest/NS_PickUpStone.69"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::Pickup_Berry",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_HarvestBerry'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Harvest/NS_HarvestBerry.71"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_TreeDestroy'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_TreeDestroy.71"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::Rock",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_RockSmoke_Destory'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Smoke/NS_RockSmoke_Destory.49"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::NormalWood",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_Destruction_Smoke_Wood'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Smoke/NS_Destruction_Smoke_Wood.83"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::NormalRock",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_Destruction_Smoke_Rock'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Smoke/NS_Destruction_Smoke_Rock.20"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::NormalMetal",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_Destruction_Smoke_Metal'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Smoke/NS_Destruction_Smoke_Metal.56"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_CherryBlossom",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_SakuraTreeDestroy'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_SakuraTreeDestroy.45"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::Mushroom",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_PickUpItem_Mushroom'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Harvest/NS_PickUpItem_Mushroom.15"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::Glass",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_Destruction_Smoke_Glass'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Smoke/NS_Destruction_Smoke_Glass.84"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_Red",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_TreeDestroy_Red'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_TreeDestroy_Red.71"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_Yellow",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_TreeDestroy_Yellow'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_TreeDestroy_Yellow.71"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_Pink",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_TreeDestroy_Pink'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_TreeDestroy_Pink.71"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_Dead",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_TreeDestroy_Branch'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_TreeDestroy_Branch.30"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_Snow",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_TreeDestroy_White'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_TreeDestroy_White.86"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::Blueprint_BuildCancel",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_Destruction_Smoke_Cancel'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Smoke/NS_Destruction_Smoke_Cancel.24"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::DestroyableWall_Rock01",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_Yakushima_RockSmoke_Destory01'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Smoke/NS_Yakushima_RockSmoke_Destory01.43"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::DestroyableWall_Rock02",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_Yakushima_RockSmoke_Destory02'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Smoke/NS_Yakushima_RockSmoke_Destory02.43"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::Pot",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_Yakushima_PotSmoke_Destory'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Smoke/NS_Yakushima_PotSmoke_Destory.63"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::LifeCrystal",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_Yakushima_CrystalHeart_Destory'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Smoke/NS_Yakushima_CrystalHeart_Destory.76"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_BrightYellow",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_WorldTreeArea_TreeDestroy_BrightYellow'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_WorldTreeArea_TreeDestroy_BrightYellow.40"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_Yellow",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_WorldTreeArea_TreeDestroy_Yellow'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_WorldTreeArea_TreeDestroy_Yellow.40"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_DarkGreen",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_WorldTreeArea_TreeDestroy_DarkGreen'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_WorldTreeArea_TreeDestroy_DarkGreen.40"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_Green",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_WorldTreeArea_TreeDestroy_Green'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_WorldTreeArea_TreeDestroy_Green.40"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_Orange",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_WorldTreeArea_TreeDestroy_Orange'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_WorldTreeArea_TreeDestroy_Orange.40"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_RedOrange",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_WorldTreeArea_TreeDestroy_RedOrange'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_WorldTreeArea_TreeDestroy_RedOrange.40"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_Purple",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_WorldTreeArea_TreeDestroy_Purple'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_WorldTreeArea_TreeDestroy_Purple.40"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_White",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_WorldTreeArea_TreeDestroy_White'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_WorldTreeArea_TreeDestroy_White.40"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_WorldTree_White01",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_WorldTreeArea_TreeDestroy_White01'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_WorldTreeArea_TreeDestroy_White01.40"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_Blue",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_SkyIsland_TreeDestroy_Pine'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_SkyIsland_TreeDestroy_Pine.44"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_TreeSea",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_SkyIsland_TreeDestroy_Pine01'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_SkyIsland_TreeDestroy_Pine01.79"
+          }
+        },
+        {
+          "Key": "EPalMapObjectDestroyFXType::FoliageTree_DarkGreen",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_SkyIsland_TreeDestroy_Pine_Green'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Axe/NS_SkyIsland_TreeDestroy_Pine_Green.44"
+          }
+        }
+      ],
+      "MapObjectDestroyFXUserParamName_BoxSize": "User.Rectangle",
+      "MapObjectDestroyFXUserParamName_BoxSurfaceArea": "User.SurfaceArea",
+      "BuildStartEffect": {
+        "ObjectName": "NiagaraSystem'NS_BuildObject_Start'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Common/CraftFin/NS_BuildObject_Start.15"
+      },
+      "BuildCompleteEffect": {
+        "ObjectName": "NiagaraSystem'NS_BuildObject_Complete'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Common/CraftFin/NS_BuildObject_Complete.32"
+      },
+      "BuildFXUserParamName_BoxCenter": "User.BoxCenter",
+      "BuildFXUserParamName_BoxSize": "User.BoxSize",
+      "BuildFXUserParamName_BoxSurfaceArea": "User.SurfaceArea",
+      "PaintEffect": {
+        "ObjectName": "NiagaraSystem'NS_BuildObject_Painted'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Common/CraftFin/NS_BuildObject_Painted.26"
+      },
+      "PaintFXUserParamName_Color": "User.Color",
+      "PaintRemoveEffect": {
+        "ObjectName": "NiagaraSystem'NS_BuildObject_RemovePaint'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Common/CraftFin/NS_BuildObject_RemovePaint.41"
+      },
+      "BuildCompleteSE": {
+        "ObjectName": "AkAudioEvent'AKE_Build_NormalObject'",
+        "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/MapObject/Build/AKE_Build_NormalObject.0"
+      },
+      "RepairEffect": {
+        "ObjectName": "NiagaraSystem'NS_ObjectFixStars'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Common/Glow/NS_ObjectFixStars.46"
+      },
+      "DamageEffect": {
+        "ObjectName": "NiagaraSystem'NS_Damage_Smoke'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Common/Smoke/NS_Damage_Smoke.32"
+      },
+      "DamageFXUserParamName_Alpha": "User.Alpha",
+      "DamageFXUserParamName_Rate": "User.Rate",
+      "DamageFXUserParamName_Scale": "User.Scale",
+      "DamageFXUserParamName_RadiusScale": "User.RadiusScale",
+      "DamageFXUserParamName_AddRate": "User.AddRate",
+      "DamageFXUserParamName_EndAlpha": "User.EndAlpha",
+      "DamageParam_MaxScale": 3.0,
+      "DamageParam_MaxRadiusScale": 14.0,
+      "DamageParam_RadiusScaleMultiplier": 1.0,
+      "DamageFX_DefaultBoundsSphereRadius": 100.0,
+      "DamageFX_EndFadeTime": 0.7,
+      "DropItemSpawnDirectionZ": 8.0,
+      "FoliageDropItemSpawnOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 100.0
+      },
+      "DropItemReleaseDirectionRelative": {
+        "X": 0.0,
+        "Y": -1.0,
+        "Z": -1.0
+      },
+      "FarmCropStateChangeAnimationScale": {
+        "ObjectName": "CurveVector'C_ScaleAnimation_FarmCrop_ChangedState'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/FarmCrop/C_ScaleAnimation_FarmCrop_ChangedState.0"
+      },
+      "HitEffectSlotClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_HitEffectSlot_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/BP_HitEffectSlot.0"
+      },
+      "ChangeMeshEffectMap": [
+        {
+          "Key": "EPalMapObjectChangeMeshFXType::RockDestroyProgress",
+          "Value": {
+            "ObjectName": "NiagaraSystem'NS_RockSmoke'",
+            "ObjectPath": "Pal/Content/Pal/Effect/Common/Smoke/NS_RockSmoke.35"
+          }
+        }
+      ],
+      "VisualEffectAssets": {
+        "AssetMap": [
+          {
+            "Key": "EPalMapObjectVisualEffectType::Burn",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Effect/Common/StatusEffect/Flamed/NS_Status_Flamed_StaticMesh.NS_Status_Flamed_StaticMesh",
+              "SubPathString": ""
+            }
+          }
+        ]
+      },
+      "BuildObjectSimulatingVisualMeshComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_BuildObjectSimulateArrowComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Components/BP_BuildObjectSimulateArrowComponent.0"
+      },
+      "TreasureBoxOpenRequiredItemMapForSpecialType": [
+        {
+          "Key": "EPalMapObjectTreasureSpecialType::Salvage",
+          "Value": {
+            "Key": "Salvage_TreasureBoxKey01"
+          }
+        }
+      ],
+      "TreasureBoxOpenRequiredItemMapByGrade": {
+        "RequiredItemMapByGrade": [
+          {
+            "Key": "EPalMapObjectTreasureGradeType::Grade2",
+            "Value": {
+              "Key": "TreasureBoxKey01"
+            }
+          },
+          {
+            "Key": "EPalMapObjectTreasureGradeType::Grade4",
+            "Value": {
+              "Key": "TreasureBoxKey02"
+            }
+          },
+          {
+            "Key": "EPalMapObjectTreasureGradeType::Grade6",
+            "Value": {
+              "Key": "TreasureBoxKey03"
+            }
+          }
+        ]
+      },
+      "TreasureBoxOpenRequiredItemMapByGradeBySpecialType": [
+        {
+          "Key": "EPalMapObjectTreasureSpecialType::Salvage",
+          "Value": {
+            "RequiredItemMapByGrade": [
+              {
+                "Key": "EPalMapObjectTreasureGradeType::Grade2",
+                "Value": {
+                  "Key": "Salvage_TreasureBoxKey02"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "BuildAccessoryStaticMesh_RaftFloat": {
+        "AssetPathName": "/Game/Pal/Model/Prop/Architecture/RaftFloat/SM_RaftFloat.SM_RaftFloat",
+        "SubPathString": ""
+      },
+      "BuildAccessoryStaticMesh_RaftFloatDiagonal": {
+        "AssetPathName": "/Game/Pal/Model/Prop/Architecture/RaftFloat/SM_RaftFloat_long.SM_RaftFloat_long",
+        "SubPathString": ""
+      },
+      "BuildAccessoryRaftFloatRelativeZOffset": 40.0,
+      "BuildAccessoryRaftFloatMaxZOffsetFromWater": 40.0,
+      "SnapModeFXClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SnapModeFX_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/BP_SnapModeFX.0"
+      },
+      "bShouldCreate": true,
+      "PrerequisiteWorldSubsystemList": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalCharacterContainerManager_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalCharacterContainerManager.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalWorkProgressManager_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalWorkProgressManager.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalOptionSubsystem_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalOptionSubsystem.0"
+        }
+      ]
+    }
+  }
+]

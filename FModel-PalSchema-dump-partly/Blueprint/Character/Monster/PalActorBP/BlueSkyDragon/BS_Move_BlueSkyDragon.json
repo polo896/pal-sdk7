@@ -1,0 +1,165 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Move_BlueSkyDragon",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 3.4666667,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_BlueSkyDragon_Idle'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/BlueSkyDragon/AS_BlueSkyDragon_Idle.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_BlueSkyDragon_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/BlueSkyDragon/AS_BlueSkyDragon_Run.0"
+          },
+          "SampleValue": {
+            "X": 1400.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_BlueSkyDragon_Walk'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/BlueSkyDragon/AS_BlueSkyDragon_Walk.0"
+          },
+          "SampleValue": {
+            "X": 600.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_BlueSkyDragon_Walk'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/BlueSkyDragon/AS_BlueSkyDragon_Walk.0"
+          },
+          "SampleValue": {
+            "X": 4.8916845,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.5
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_BlueSkyDragon_Walk'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/BlueSkyDragon/AS_BlueSkyDragon_Walk.0"
+          },
+          "SampleValue": {
+            "X": 900.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.5
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_BlueSkyDragon_Sprint'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/BlueSkyDragon/AS_BlueSkyDragon_Sprint.0"
+          },
+          "SampleValue": {
+            "X": 2800.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.5
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_BlueSkyDragon_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/BlueSkyDragon/AS_BlueSkyDragon_Run.0"
+          },
+          "SampleValue": {
+            "X": 940.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.7
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_BlueSkyDragon_Sprint'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/BlueSkyDragon/AS_BlueSkyDragon_Sprint.0"
+          },
+          "SampleValue": {
+            "X": 2000.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 3,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.0017470302
+          },
+          {
+            "SampleIndices": 3,
+            "SampleIndices[1]": 2,
+            "Vertices": 0.0017470302,
+            "Vertices[1]": 0.21428572
+          },
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 4,
+            "Vertices": 0.21428572,
+            "Vertices[1]": 0.32142857
+          },
+          {
+            "SampleIndices": 4,
+            "SampleIndices[1]": 6,
+            "Vertices": 0.32142857,
+            "Vertices[1]": 0.33571428
+          },
+          {
+            "SampleIndices": 6,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.33571428,
+            "Vertices[1]": 0.5
+          },
+          {
+            "SampleIndices": 1,
+            "SampleIndices[1]": 7,
+            "Vertices": 0.5,
+            "Vertices[1]": 0.71428573
+          },
+          {
+            "SampleIndices": 7,
+            "SampleIndices[1]": 5,
+            "Vertices": 0.71428573,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 2800.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_BlueSkyDragon_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/BlueSkyDragon/SK_BlueSkyDragon_Skeleton.4"
+      }
+    },
+    "SkeletonGuid": "6DAAC8AF-493F65E8-6FC80FA8-E009F4DD"
+  }
+]

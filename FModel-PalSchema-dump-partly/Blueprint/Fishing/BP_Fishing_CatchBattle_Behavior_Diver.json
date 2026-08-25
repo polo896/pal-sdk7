@@ -1,0 +1,248 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Fishing_CatchBattle_Behavior_Diver_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Fishing_CatchBattle_Behavior_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Fishing_CatchBattle_Behavior_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Fishing_CatchBattle_Behavior_Diver_C:OverRideNotMove_DiverRiser'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior_Diver.3"
+      },
+      {
+        "ObjectName": "Function'BP_Fishing_CatchBattle_Behavior_Diver_C:GetNextInterval'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior_Diver.2"
+      }
+    ],
+    "FuncMap": {
+      "GetNextInterval": {
+        "ObjectName": "Function'BP_Fishing_CatchBattle_Behavior_Diver_C:GetNextInterval'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior_Diver.2"
+      },
+      "OverRideNotMove_DiverRiser": {
+        "ObjectName": "Function'BP_Fishing_CatchBattle_Behavior_Diver_C:OverRideNotMove_DiverRiser'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior_Diver.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Fishing_CatchBattle_Behavior_Diver_C'Default__BP_Fishing_CatchBattle_Behavior_Diver_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior_Diver.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Fishing_CatchBattle_Behavior_Diver_C",
+    "Name": "Default__BP_Fishing_CatchBattle_Behavior_Diver_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior_Diver.BP_Fishing_CatchBattle_Behavior_Diver_C'",
+    "Template": {
+      "ObjectName": "BP_Fishing_CatchBattle_Behavior_C'Default__BP_Fishing_CatchBattle_Behavior_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BehaviorType": "EPalFishBattleBehaviorType::Diver",
+      "TargetRandMax": 40.0,
+      "IntervalMax": 4.0
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetNextInterval",
+    "Outer": "BP_Fishing_CatchBattle_Behavior_Diver_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Fishing_CatchBattle_Behavior_C:GetNextInterval'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior.8"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Fishing_CatchBattle_Behavior_C:GetNextInterval'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior.8"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "NextInterval",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "OverRideNotMove_DiverRiser",
+    "Outer": "BP_Fishing_CatchBattle_Behavior_Diver_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Fishing_CatchBattle_Behavior_C:OverRideNotMove_DiverRiser'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior.13"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Fishing_CatchBattle_Behavior_C:OverRideNotMove_DiverRiser'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Fishing/BP_Fishing_CatchBattle_Behavior.13"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "deltatime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "mod",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_ClampLimitPos_ClampedPosX",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

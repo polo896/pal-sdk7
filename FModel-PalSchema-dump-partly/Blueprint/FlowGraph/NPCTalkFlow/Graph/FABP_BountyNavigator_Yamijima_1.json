@@ -1,0 +1,506 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_0",
+    "Outer": "FABP_BountyNavigator_Yamijima_1",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "68C7B09D-4A1DC08D-B315F693-8B4D1239"
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_BountyNavigator_Yamijima_1",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "571E6D27-4FB602AB-4401818E-3B907411",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "4978AA64-492629AD-CC3744B4-0F89D02D",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C",
+    "Name": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C_0",
+    "Outer": "FABP_BountyNavigator_Yamijima_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+    "Template": {
+      "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'Default__FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnerName": "BOSS_Viking",
+      "GraphNode": null,
+      "NodeGuid": "DB82348F-45FAB040-3AE0CC96-BE391E3B"
+    }
+  },
+  {
+    "Type": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C",
+    "Name": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C_1",
+    "Outer": "FABP_BountyNavigator_Yamijima_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+    "Template": {
+      "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'Default__FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnerName": "BOSS_Female_Soldier02",
+      "GraphNode": null,
+      "NodeGuid": "18879793-40063B0E-77946DBB-837A7F9A"
+    }
+  },
+  {
+    "Type": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C",
+    "Name": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C_2",
+    "Outer": "FABP_BountyNavigator_Yamijima_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+    "Template": {
+      "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'Default__FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnerName": "BOSS_Male_Trader03",
+      "GraphNode": null,
+      "NodeGuid": "96D708F7-4A58DC38-FE0E979D-5C4899B9"
+    }
+  },
+  {
+    "Type": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C",
+    "Name": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C_3",
+    "Outer": "FABP_BountyNavigator_Yamijima_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+    "Template": {
+      "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'Default__FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnerName": "BOSS_DarkTrader",
+      "GraphNode": null,
+      "NodeGuid": "A6189D9D-49086971-E1F79998-BABAFA2C"
+    }
+  },
+  {
+    "Type": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C",
+    "Name": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C_4",
+    "Outer": "FABP_BountyNavigator_Yamijima_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+    "Template": {
+      "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'Default__FNBP_IgnoreMaskBossSpawnerForWorldMap_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_IgnoreMaskBossSpawnerForWorldMap.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnerName": "BOSS_Police_Old",
+      "GraphNode": null,
+      "NodeGuid": "9BE628F2-4A733FB0-6B29419F-89861854"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_CustomChoice_C",
+    "Name": "FNBP_NPCTalk_CustomChoice_C_0",
+    "Outer": "FABP_BountyNavigator_Yamijima_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_CustomChoice.FNBP_NPCTalk_CustomChoice_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_CustomChoice_C'Default__FNBP_NPCTalk_CustomChoice_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_CustomChoice.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChoiceMsgIDList": [
+        "BountyNavigator_Yamijima_1_Choice_1",
+        "BountyNavigator_Yamijima_1_Choice_2",
+        "BountyNavigator_Yamijima_1_Choice_3",
+        "BountyNavigator_Yamijima_1_Choice_4",
+        "BountyNavigator_Yamijima_1_Choice_5",
+        "CHOICE_SHOP_DARK_CANCEL"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "1DF9D6E1-464181AC-DDB76C9A-0A23850F",
+      "OutputPins": [
+        {
+          "PinName": "BountyNavigator_Yamijima_1_Choice_1",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "BountyNavigator_Yamijima_1_Choice_2",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "BountyNavigator_Yamijima_1_Choice_3",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "BountyNavigator_Yamijima_1_Choice_4",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "BountyNavigator_Yamijima_1_Choice_5",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "CHOICE_SHOP_DARK_CANCEL",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "BountyNavigator_Yamijima_1_Choice_1",
+          "Value": {
+            "NodeGuid": "B86B87D3-4AE000A0-D8ADE78D-E0D6A09B",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "BountyNavigator_Yamijima_1_Choice_2",
+          "Value": {
+            "NodeGuid": "17804C8B-4F711929-AE9FB195-27800866",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "BountyNavigator_Yamijima_1_Choice_3",
+          "Value": {
+            "NodeGuid": "E3B1970C-4A36BECA-FA0D5D8E-E60CEAF4",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "BountyNavigator_Yamijima_1_Choice_4",
+          "Value": {
+            "NodeGuid": "9E84935F-43A67DE0-F3DCAA84-178A49B1",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "BountyNavigator_Yamijima_1_Choice_5",
+          "Value": {
+            "NodeGuid": "3914AF89-46DBDC71-0B5925A1-E81595A4",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "CHOICE_SHOP_DARK_CANCEL",
+          "Value": {
+            "NodeGuid": "68C7B09D-4A1DC08D-B315F693-8B4D1239",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_BountyNavigator_Yamijima_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "BountyNavigator_Common_2"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "4978AA64-492629AD-CC3744B4-0F89D02D",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "1DF9D6E1-464181AC-DDB76C9A-0A23850F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_BountyNavigator_Yamijima_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "BountyNavigator_Yamijima_1_1_1",
+        "BountyNavigator_Yamijima_1_1_2",
+        "BountyNavigator_Yamijima_1_1_3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "B86B87D3-4AE000A0-D8ADE78D-E0D6A09B",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "DB82348F-45FAB040-3AE0CC96-BE391E3B",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_BountyNavigator_Yamijima_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "BountyNavigator_Yamijima_1_2_1",
+        "BountyNavigator_Yamijima_1_2_2",
+        "BountyNavigator_Yamijima_1_2_3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "17804C8B-4F711929-AE9FB195-27800866",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "18879793-40063B0E-77946DBB-837A7F9A",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_3",
+    "Outer": "FABP_BountyNavigator_Yamijima_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "BountyNavigator_Yamijima_1_3_1",
+        "BountyNavigator_Yamijima_1_3_2",
+        "BountyNavigator_Yamijima_1_3_3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "E3B1970C-4A36BECA-FA0D5D8E-E60CEAF4",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "96D708F7-4A58DC38-FE0E979D-5C4899B9",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_BountyNavigator_Yamijima_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "BountyNavigator_Yamijima_1_4_1",
+        "BountyNavigator_Yamijima_1_4_2",
+        "BountyNavigator_Yamijima_1_4_3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "9E84935F-43A67DE0-F3DCAA84-178A49B1",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "A6189D9D-49086971-E1F79998-BABAFA2C",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_5",
+    "Outer": "FABP_BountyNavigator_Yamijima_1",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "BountyNavigator_Yamijima_1_5_1",
+        "BountyNavigator_Yamijima_1_5_2",
+        "BountyNavigator_Yamijima_1_5_3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "3914AF89-46DBDC71-0B5925A1-E81595A4",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "9BE628F2-4A733FB0-6B29419F-89861854",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_BountyNavigator_Yamijima_1",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "515F9FB8-407DB1EF-410E509C-C00DA9DD",
+      "Nodes": [
+        {
+          "Key": "571E6D27-4FB602AB-4401818E-3B907411",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_BountyNavigator_Yamijima_1:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_Yamijima_1.1"
+          }
+        },
+        {
+          "Key": "4978AA64-492629AD-CC3744B4-0F89D02D",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_BountyNavigator_Yamijima_1:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_Yamijima_1.8"
+          }
+        },
+        {
+          "Key": "1DF9D6E1-464181AC-DDB76C9A-0A23850F",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_CustomChoice_C'FABP_BountyNavigator_Yamijima_1:FNBP_NPCTalk_CustomChoice_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_Yamijima_1.7"
+          }
+        },
+        {
+          "Key": "B86B87D3-4AE000A0-D8ADE78D-E0D6A09B",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_BountyNavigator_Yamijima_1:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_Yamijima_1.9"
+          }
+        },
+        {
+          "Key": "17804C8B-4F711929-AE9FB195-27800866",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_BountyNavigator_Yamijima_1:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_Yamijima_1.10"
+          }
+        },
+        {
+          "Key": "E3B1970C-4A36BECA-FA0D5D8E-E60CEAF4",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_BountyNavigator_Yamijima_1:FNBP_NPCTalk_FixedMsdId_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_Yamijima_1.11"
+          }
+        },
+        {
+          "Key": "9E84935F-43A67DE0-F3DCAA84-178A49B1",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_BountyNavigator_Yamijima_1:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_Yamijima_1.12"
+          }
+        },
+        {
+          "Key": "3914AF89-46DBDC71-0B5925A1-E81595A4",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_BountyNavigator_Yamijima_1:FNBP_NPCTalk_FixedMsdId_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_Yamijima_1.13"
+          }
+        },
+        {
+          "Key": "68C7B09D-4A1DC08D-B315F693-8B4D1239",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_BountyNavigator_Yamijima_1:FlowNode_Finish_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_Yamijima_1.0"
+          }
+        },
+        {
+          "Key": "DB82348F-45FAB040-3AE0CC96-BE391E3B",
+          "Value": {
+            "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'FABP_BountyNavigator_Yamijima_1:FNBP_IgnoreMaskBossSpawnerForWorldMap_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_Yamijima_1.2"
+          }
+        },
+        {
+          "Key": "18879793-40063B0E-77946DBB-837A7F9A",
+          "Value": {
+            "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'FABP_BountyNavigator_Yamijima_1:FNBP_IgnoreMaskBossSpawnerForWorldMap_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_Yamijima_1.3"
+          }
+        },
+        {
+          "Key": "96D708F7-4A58DC38-FE0E979D-5C4899B9",
+          "Value": {
+            "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'FABP_BountyNavigator_Yamijima_1:FNBP_IgnoreMaskBossSpawnerForWorldMap_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_Yamijima_1.4"
+          }
+        },
+        {
+          "Key": "A6189D9D-49086971-E1F79998-BABAFA2C",
+          "Value": {
+            "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'FABP_BountyNavigator_Yamijima_1:FNBP_IgnoreMaskBossSpawnerForWorldMap_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_Yamijima_1.5"
+          }
+        },
+        {
+          "Key": "9BE628F2-4A733FB0-6B29419F-89861854",
+          "Value": {
+            "ObjectName": "FNBP_IgnoreMaskBossSpawnerForWorldMap_C'FABP_BountyNavigator_Yamijima_1:FNBP_IgnoreMaskBossSpawnerForWorldMap_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_BountyNavigator_Yamijima_1.6"
+          }
+        }
+      ]
+    }
+  }
+]

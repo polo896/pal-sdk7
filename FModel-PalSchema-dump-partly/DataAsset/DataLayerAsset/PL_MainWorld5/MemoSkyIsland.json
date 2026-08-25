@@ -1,0 +1,17 @@
+[
+  {
+    "Type": "DataLayerAsset",
+    "Name": "MemoSkyIsland",
+    "Class": "UScriptClass'DataLayerAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DebugColor": {
+        "B": 226,
+        "G": 210,
+        "R": 180,
+        "A": 255,
+        "Hex": "B4D2E2"
+      }
+    }
+  }
+]

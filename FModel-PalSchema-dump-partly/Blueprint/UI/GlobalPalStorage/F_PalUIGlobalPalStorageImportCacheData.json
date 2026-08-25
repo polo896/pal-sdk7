@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "F_PalUIGlobalPalStorageImportCacheData",
+    "Class": "UScriptClass'UserDefinedStruct'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Guid": "2B0AD3B7-43922A3C-09A8FD96-BC8FE123"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "GPSDataIndex_10_65F5EB184623BD10CEB034948F2F5BC6",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "ImportSlotIndex_11_1343716941E6450D5D2C75A2DD812F20",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ImportOption_13_486E79264E5ED3B76037BF92D31997D8",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalGlobalPalStorageImportOption'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "StructFlags": 16384,
+    "DefaultProperties": {
+      "GPSDataIndex_10_65F5EB184623BD10CEB034948F2F5BC6": 0,
+      "ImportSlotIndex_11_1343716941E6450D5D2C75A2DD812F20": 0,
+      "ImportOption_13_486E79264E5ED3B76037BF92D31997D8": {
+        "bOverwriteData": false
+      }
+    }
+  }
+]

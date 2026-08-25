@@ -1,0 +1,140 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_ActionUnique_Yeti_GrassBall_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ActionUnique_Yeti_SnowBall_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_ActionUnique_Yeti_SnowBall.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ActionUnique_Yeti_SnowBall_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_ActionUnique_Yeti_SnowBall.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_ActionUnique_Yeti_GrassBall_C:GetStartEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_ActionUnique_Yeti_GrassBall.3"
+      },
+      {
+        "ObjectName": "Function'BP_ActionUnique_Yeti_GrassBall_C:GetBallClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_ActionUnique_Yeti_GrassBall.2"
+      }
+    ],
+    "FuncMap": {
+      "GetBallClass": {
+        "ObjectName": "Function'BP_ActionUnique_Yeti_GrassBall_C:GetBallClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_ActionUnique_Yeti_GrassBall.2"
+      },
+      "GetStartEffect": {
+        "ObjectName": "Function'BP_ActionUnique_Yeti_GrassBall_C:GetStartEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_ActionUnique_Yeti_GrassBall.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_ActionUnique_Yeti_GrassBall_C'Default__BP_ActionUnique_Yeti_GrassBall_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_ActionUnique_Yeti_GrassBall.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_ActionUnique_Yeti_GrassBall_C",
+    "Name": "Default__BP_ActionUnique_Yeti_GrassBall_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_ActionUnique_Yeti_GrassBall.BP_ActionUnique_Yeti_GrassBall_C'",
+    "Template": {
+      "ObjectName": "BP_ActionUnique_Yeti_SnowBall_C'Default__BP_ActionUnique_Yeti_SnowBall_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_ActionUnique_Yeti_SnowBall.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WazaID": "EPalWazaID::Unique_Yeti_Grass_GrassBall"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetBallClass",
+    "Outer": "BP_ActionUnique_Yeti_GrassBall_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ActionUnique_Yeti_SnowBall_C:GetBallClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_ActionUnique_Yeti_SnowBall.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ActionUnique_Yeti_SnowBall_C:GetBallClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_ActionUnique_Yeti_SnowBall.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "Class",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectUnique_Yeti_SnowBall_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Yeti/BP_SkillEffectUnique_Yeti_SnowBall.0"
+        }
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "NewLocalVar",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectUnique_Yeti_SnowBall_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Yeti/BP_SkillEffectUnique_Yeti_SnowBall.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetStartEffect",
+    "Outer": "BP_ActionUnique_Yeti_GrassBall_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ActionUnique_Yeti_SnowBall_C:GetStartEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_ActionUnique_Yeti_SnowBall.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ActionUnique_Yeti_SnowBall_C:GetStartEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Yeti/BP_ActionUnique_Yeti_SnowBall.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Effect",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraSystem'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

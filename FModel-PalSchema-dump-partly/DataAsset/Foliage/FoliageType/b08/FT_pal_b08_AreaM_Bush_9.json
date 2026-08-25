@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b08_AreaM_Bush_9",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b08_WinterEnvironment_Bush_A_03'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b08/Area_M/Foliage/Mesh/SM_pal_b08_WinterEnvironment_Bush_A_03.2"
+      },
+      "UpdateGuid": "FB0CE8A4-487E56D2-6D47FCB2-982E81C9",
+      "Density": 50.0,
+      "ScaleX": {
+        "Min": 0.7,
+        "Max": 1.5
+      },
+      "AverageNormal": true,
+      "GroundSlopeAngle": {
+        "Max": 90.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 17.193657,
+          "Y": 20.602951,
+          "Z": 82.34192
+        },
+        "BoxExtent": {
+          "X": 173.24649,
+          "Y": 181.382,
+          "Z": 107.35309
+        },
+        "SphereRadius": 202.49745814569454
+      },
+      "LowBoundOriginRadius": {
+        "X": -11.20784,
+        "Y": 29.20165,
+        "Z": 116.4606
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      }
+    }
+  }
+]

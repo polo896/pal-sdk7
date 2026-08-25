@@ -1,0 +1,55 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MainQuestBlock_SkyIslandBoss_Barrier_4_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_QuestBlock_Test_UnlockAreaBarriers_C'",
+      "ObjectPath": "Pal/Content/PalEditor/Maps/Quest/Test_Hidden_UnlockAreaBarriers/BP_QuestBlock_Test_UnlockAreaBarriers.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_QuestBlock_Test_UnlockAreaBarriers_C'",
+      "ObjectPath": "Pal/Content/PalEditor/Maps/Quest/Test_Hidden_UnlockAreaBarriers/BP_QuestBlock_Test_UnlockAreaBarriers.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MainQuestBlock_SkyIslandBoss_Barrier_4_C'Default__BP_MainQuestBlock_SkyIslandBoss_Barrier_4_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SkyIslandBoss_Barrier_4.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MainQuestBlock_SkyIslandBoss_Barrier_4_C",
+    "Name": "Default__BP_MainQuestBlock_SkyIslandBoss_Barrier_4_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SkyIslandBoss_Barrier_4.BP_MainQuestBlock_SkyIslandBoss_Barrier_4_C'",
+    "Template": {
+      "ObjectName": "BP_QuestBlock_Test_UnlockAreaBarriers_C'Default__BP_QuestBlock_Test_UnlockAreaBarriers_C'",
+      "ObjectPath": "Pal/Content/PalEditor/Maps/Quest/Test_Hidden_UnlockAreaBarriers/BP_QuestBlock_Test_UnlockAreaBarriers.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RequireCount": 6,
+      "bHideFromUI": true,
+      "LocationSettingData": {
+        "FixedLocationPointArray": [
+          {
+            "DataTable": {
+              "ObjectName": "DataTable'DT_PalQuestLocationData'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Quest/DT_PalQuestLocationData.0"
+            },
+            "RowName": "MainQuestBlock_SkyIslandBoss_Barrier_4"
+          }
+        ]
+      }
+    }
+  }
+]

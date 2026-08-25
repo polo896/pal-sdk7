@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b07_grass_RainforestGroundLeaves_02_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b07_grass_RainforestGroundLeaves_02'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b07/tree/mesh/SM_pal_b07_grass_RainforestGroundLeaves_02.2"
+      },
+      "UpdateGuid": "CDD99470-448085DF-60080ABB-E50EA7E1",
+      "Density": 150.0,
+      "Radius": 10.0,
+      "ScaleX": {
+        "Min": 0.4,
+        "Max": 0.6
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 2.8806343,
+          "Y": -8.63179,
+          "Z": 30.145948
+        },
+        "BoxExtent": {
+          "X": 121.17244,
+          "Y": 122.46643,
+          "Z": 35.015846
+        },
+        "SphereRadius": 139.41941540443355
+      },
+      "LowBoundOriginRadius": {
+        "X": 6.951742,
+        "Y": -2.3994484,
+        "Z": 97.66622
+      },
+      "CullDistance": {
+        "Max": 5000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

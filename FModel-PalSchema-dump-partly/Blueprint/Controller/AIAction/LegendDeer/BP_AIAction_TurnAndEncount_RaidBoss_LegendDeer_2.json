@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AIAction_TurnAndEncount_RaidBoss_LegendDeer_2_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_TurnAndEncount_RaidBoss_LegendDeer_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/LegendDeer/BP_AIAction_TurnAndEncount_RaidBoss_LegendDeer.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_TurnAndEncount_RaidBoss_LegendDeer_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/LegendDeer/BP_AIAction_TurnAndEncount_RaidBoss_LegendDeer.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AIAction_TurnAndEncount_RaidBoss_LegendDeer_2_C'Default__BP_AIAction_TurnAndEncount_RaidBoss_LegendDeer_2_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/LegendDeer/BP_AIAction_TurnAndEncount_RaidBoss_LegendDeer_2.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AIAction_TurnAndEncount_RaidBoss_LegendDeer_2_C",
+    "Name": "Default__BP_AIAction_TurnAndEncount_RaidBoss_LegendDeer_2_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/AIAction/LegendDeer/BP_AIAction_TurnAndEncount_RaidBoss_LegendDeer_2.BP_AIAction_TurnAndEncount_RaidBoss_LegendDeer_2_C'",
+    "Template": {
+      "ObjectName": "BP_AIAction_TurnAndEncount_RaidBoss_LegendDeer_C'Default__BP_AIAction_TurnAndEncount_RaidBoss_LegendDeer_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/LegendDeer/BP_AIAction_TurnAndEncount_RaidBoss_LegendDeer.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CombatAIActionClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AIAction_CombatPal_RaidBoss_LegendDeer2_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/LegendDeer/BP_AIAction_CombatPal_RaidBoss_LegendDeer2.0"
+      }
+    }
+  }
+]

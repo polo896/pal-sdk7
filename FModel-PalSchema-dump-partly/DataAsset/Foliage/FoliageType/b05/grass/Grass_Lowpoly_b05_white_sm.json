@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "Grass_Lowpoly_b05_white_sm",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'Grass_Lowpoly_b05_white_sm'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b05/tree/Grass_Lowpoly_b05_white_sm.2"
+      },
+      "UpdateGuid": "EBD49267-49044136-4628D682-F8758EFA",
+      "Density": 75.0,
+      "Radius": 30.0,
+      "ScaleX": {
+        "Max": 1.4
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -1.7121563,
+          "Y": -5.375086,
+          "Z": 21.897263
+        },
+        "BoxExtent": {
+          "X": 30.866827,
+          "Y": 43.080086,
+          "Z": 23.51297
+        },
+        "SphereRadius": 51.436031341552734
+      },
+      "LowBoundOriginRadius": {
+        "X": 0.8311157,
+        "Y": -1.8758116,
+        "Z": 34.177536
+      },
+      "CullDistance": {
+        "Max": 1200
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

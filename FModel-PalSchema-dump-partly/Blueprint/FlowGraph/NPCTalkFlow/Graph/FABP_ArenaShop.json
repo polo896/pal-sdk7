@@ -1,0 +1,211 @@
+[
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_ArenaShop",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "8187457D-4A40597D-EC7E2C93-9E6E649D",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "EC165CEC-4C4CADAF-6CF47082-4A9B9D6E",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_CustomChoice_C",
+    "Name": "FNBP_NPCTalk_CustomChoice_C_0",
+    "Outer": "FABP_ArenaShop",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_CustomChoice.FNBP_NPCTalk_CustomChoice_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_CustomChoice_C'Default__FNBP_NPCTalk_CustomChoice_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_CustomChoice.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChoiceMsgIDList": [
+        "CHOICE_BOUNTY_SHOP_BUY",
+        "CHOICE_SHOP_CANCEL"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "306AE760-462D5517-E67468A4-BFEA93A4",
+      "OutputPins": [
+        {
+          "PinName": "CHOICE_BOUNTY_SHOP_BUY",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "CHOICE_SHOP_CANCEL",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "CHOICE_BOUNTY_SHOP_BUY",
+          "Value": {
+            "NodeGuid": "6B7BE9B8-4823EAFF-D11BA392-354C1F8B",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "CHOICE_SHOP_CANCEL",
+          "Value": {
+            "NodeGuid": "AFC7B6B4-4651FAB7-699BBF8E-68DD344F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_ArenaShop",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "ArenaShop_1_1"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "5BAD3EBB-42EE2AAA-67B049A7-64D1BEEC",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "306AE760-462D5517-E67468A4-BFEA93A4",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_ArenaShop",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "ArenaShop_Exit"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "AFC7B6B4-4651FAB7-699BBF8E-68DD344F"
+    }
+  },
+  {
+    "Type": "FNBP_OpenItemShop_C",
+    "Name": "FNBP_OpenItemShop_C_0",
+    "Outer": "FABP_ArenaShop",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OpenItemShop.FNBP_OpenItemShop_C'",
+    "Template": {
+      "ObjectName": "FNBP_OpenItemShop_C'Default__FNBP_OpenItemShop_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OpenItemShop.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "6B7BE9B8-4823EAFF-D11BA392-354C1F8B"
+    }
+  },
+  {
+    "Type": "FNBP_PlayShopJingle_C",
+    "Name": "FNBP_PlayShopJingle_C_0",
+    "Outer": "FABP_ArenaShop",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayShopJingle.FNBP_PlayShopJingle_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlayShopJingle_C'Default__FNBP_PlayShopJingle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayShopJingle.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "EC165CEC-4C4CADAF-6CF47082-4A9B9D6E",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "5BAD3EBB-42EE2AAA-67B049A7-64D1BEEC",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_ArenaShop",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "DC681402-447A5332-60A824AA-79136DD7",
+      "Nodes": [
+        {
+          "Key": "8187457D-4A40597D-EC7E2C93-9E6E649D",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_ArenaShop:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_ArenaShop.0"
+          }
+        },
+        {
+          "Key": "5BAD3EBB-42EE2AAA-67B049A7-64D1BEEC",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_ArenaShop:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_ArenaShop.2"
+          }
+        },
+        {
+          "Key": "306AE760-462D5517-E67468A4-BFEA93A4",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_CustomChoice_C'FABP_ArenaShop:FNBP_NPCTalk_CustomChoice_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_ArenaShop.1"
+          }
+        },
+        {
+          "Key": "6B7BE9B8-4823EAFF-D11BA392-354C1F8B",
+          "Value": {
+            "ObjectName": "FNBP_OpenItemShop_C'FABP_ArenaShop:FNBP_OpenItemShop_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_ArenaShop.4"
+          }
+        },
+        {
+          "Key": "AFC7B6B4-4651FAB7-699BBF8E-68DD344F",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_ArenaShop:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_ArenaShop.3"
+          }
+        },
+        {
+          "Key": "EC165CEC-4C4CADAF-6CF47082-4A9B9D6E",
+          "Value": {
+            "ObjectName": "FNBP_PlayShopJingle_C'FABP_ArenaShop:FNBP_PlayShopJingle_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_ArenaShop.5"
+          }
+        }
+      ]
+    }
+  }
+]

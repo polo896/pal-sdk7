@@ -1,0 +1,54 @@
+[
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "TreeNodeData",
+    "Class": "UScriptClass'UserDefinedStruct'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Guid": "6E1C23A3-4D06A7BC-E756228A-80314552"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Level_2_177B5E4641DE419C4AA1A7A06630FC37",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "ChildNodesID_6_246C490040340E242BF09AB9348F35C7",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "NameProperty",
+          "Name": "ChildNodesID_6_246C490040340E242BF09AB9348F35C7",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "ParentID_9_5A4EDA0F4F65598914F0CF9E9C07CDF0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "RequireRank_12_C31EBFB4474C1BF8FD3C0BA62ED2770D",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      }
+    ],
+    "StructFlags": 0,
+    "DefaultProperties": {
+      "Level_2_177B5E4641DE419C4AA1A7A06630FC37": 0,
+      "ChildNodesID_6_246C490040340E242BF09AB9348F35C7": [],
+      "ParentID_9_5A4EDA0F4F65598914F0CF9E9C07CDF0": "None",
+      "RequireRank_12_C31EBFB4474C1BF8FD3C0BA62ED2770D": 0
+    }
+  }
+]

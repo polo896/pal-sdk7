@@ -1,0 +1,820 @@
+[
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_29",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/PinkCat/BP_PinkCat_Skin001.BP_PinkCat_Skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/PinkCat/BP_PinkCat_BOSS_Skin001.BP_PinkCat_BOSS_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "PinkCat_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "PinkCat",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_30",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/WeaselDragon/BP_WeaselDragon_Skin001.BP_WeaselDragon_Skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/WeaselDragon/BP_WeaselDragon_BOSS_Skin001.BP_WeaselDragon_BOSS_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "WeaselDragon_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "WeaselDragon",
+      "bAutoGetItem": true,
+      "PlatformItemID_Steam": 21001
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_31",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/LazyDragon/BP_LazyDragon_Skin001.BP_LazyDragon_Skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/LazyDragon/BP_LazyDragon_BOSS_Skin001.BP_LazyDragon_BOSS_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "LazyDragon_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "LazyDragon",
+      "bAutoGetItem": true,
+      "PlatformItemID_Steam": 21002
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_32",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/SkyDragon/BP_SkyDragon_skin001.BP_SkyDragon_skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/SkyDragon/BP_SkyDragon_BOSS_Skin001.BP_SkyDragon_BOSS_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "SkyDragon_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "SkyDragon",
+      "bAutoGetItem": true,
+      "PlatformItemID_Steam": 21003
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_33",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/PlantSlime/BP_PlantSlime_Skin001.BP_PlantSlime_Skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/PlantSlime/BP_PlantSlime_BOSS_Skin001.BP_PlantSlime_BOSS_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "PlantSlime_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "PlantSlime",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_34",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/IceHorse/BP_IceHorse_Skin001.BP_IceHorse_Skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/IceHorse/BP_IceHorse_BOSS_Skin001.BP_IceHorse_BOSS_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "IceHorse_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "IceHorse"
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_35",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/Penguin/BP_Penguin_Skin001.BP_Penguin_Skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/Penguin/BP_Penguin_BOSS_Skin001.BP_Penguin_BOSS_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "Penguin_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "Penguin",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_36",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/NegativeKoala/BP_NegativeKoala_Skin001.BP_NegativeKoala_Skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/NegativeKoala/BP_NegativeKoala_BOSS_Skin001.BP_NegativeKoala_BOSS_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "NegativeKoala_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "NegativeKoala",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_37",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/CatMage/BP_CatMage_Skin001.BP_CatMage_Skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/CatMage/BP_CatMage_BOSS_Skin001.BP_CatMage_BOSS_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "CatMage_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "CatMage",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_38",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/NegativeKoala/BP_NegativeKoala_Skin002.BP_NegativeKoala_Skin002_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/NegativeKoala/BP_NegativeKoala_BOSS_Skin002.BP_NegativeKoala_BOSS_Skin002_C",
+        "SubPathString": ""
+      },
+      "SkinName": "NegativeKoala_Skin002",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "NegativeKoala"
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_39",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/LilyQueen/BP_LilyQueen_Skin001.BP_LilyQueen_Skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/LilyQueen/BP_LilyQueen_BOSS_Skin001.BP_LilyQueen_BOSS_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "LilyQueen_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "LilyQueen"
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_40",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/PinkCat/BP_PinkCat_Skin002.BP_PinkCat_Skin002_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/PinkCat/BP_PinkCat_BOSS_Skin002.BP_PinkCat_BOSS_Skin002_C",
+        "SubPathString": ""
+      },
+      "SkinName": "PinkCat_Skin002",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "PinkCat"
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_41",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/ThunderDragonMan/BP_ThunderDragonMan_Skin001.BP_ThunderDragonMan_Skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/ThunderDragonMan/BP_ThunderDragonMan_BOSS_Skin001.BP_ThunderDragonMan_BOSS_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "ThunderDragonMan_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "ThunderDragonMan"
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_42",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/JetDragon/BP_JetDragon_Skin001.BP_JetDragon_Skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/JetDragon/BP_JetDragon_BOSS_Skin001.BP_JetDragon_BOSS_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "JetDragon_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "JetDragon",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_43",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/WeaselDragon/BP_WeaselDragon_Skin002.BP_WeaselDragon_Skin002_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/WeaselDragon/BP_WeaselDragon_BOSS_Skin002.BP_WeaselDragon_BOSS_Skin002_C",
+        "SubPathString": ""
+      },
+      "SkinName": "WeaselDragon_Skin002",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "WeaselDragon",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_44",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/Anubis/BP_Anubis_Skin001.BP_Anubis_Skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/Anubis/BP_Anubis_MiddleBoss_Skin001.BP_Anubis_MiddleBoss_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "Anubis_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "Anubis",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_45",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/IceHorse/BP_IceHorse_Skin002.BP_IceHorse_Skin002_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/IceHorse/BP_IceHorse_BOSS_Skin002.BP_IceHorse_BOSS_Skin002_C",
+        "SubPathString": ""
+      },
+      "SkinName": "IceHorse_Skin002",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "IceHorse",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_46",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/BlackGriffon/BP_BlackGriffon_Skin001.BP_BlackGriffon_Skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/BlackGriffon/BP_BlackGriffon_BOSS_Skin001.BP_BlackGriffon_BOSS_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "BlackGriffon_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "BlackGriffon",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_47",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/PinkCat/BP_PinkCat_Skin003.BP_PinkCat_Skin003_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/PinkCat/BP_PinkCat_BOSS_Skin003.BP_PinkCat_BOSS_Skin003_C",
+        "SubPathString": ""
+      },
+      "SkinName": "PinkCat_Skin003",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "PinkCat",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_48",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/KendoFrog/BP_KendoFrog_Skin001.BP_KendoFrog_Skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/KendoFrog/BP_KendoFrog_BOSS_Skin001.BP_KendoFrog_BOSS_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "KendoFrog_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "KendoFrog",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_49",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/WeaselDragon/BP_WeaselDragon_Fire_Skin002.BP_WeaselDragon_Fire_Skin002_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/WeaselDragon/BP_WeaselDragon_Fire_BOSS_Skin002.BP_WeaselDragon_Fire_BOSS_Skin002_C",
+        "SubPathString": ""
+      },
+      "SkinName": "WeaselDragon_Fire_Skin002",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "WeaselDragon_Fire",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_50",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/PinkCat/BP_PinkCat_Skin004.BP_PinkCat_Skin004_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/PinkCat/BP_PinkCat_BOSS_Skin004.BP_PinkCat_BOSS_Skin004_C",
+        "SubPathString": ""
+      },
+      "SkinName": "PinkCat_Skin004",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "PinkCat",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_51",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/WeaselDragon/BP_WeaselDragon_Skin003.BP_WeaselDragon_Skin003_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/WeaselDragon/BP_WeaselDragon_BOSS_Skin003.BP_WeaselDragon_BOSS_Skin003_C",
+        "SubPathString": ""
+      },
+      "SkinName": "WeaselDragon_Skin003",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "WeaselDragon",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_52",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/WeaselDragon/BP_WeaselDragon_Fire_Skin003.BP_WeaselDragon_Fire_Skin003_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/WeaselDragon/BP_WeaselDragon_Fire_BOSS_Skin003.BP_WeaselDragon_Fire_BOSS_Skin003_C",
+        "SubPathString": ""
+      },
+      "SkinName": "WeaselDragon_Fire_Skin003",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "WeaselDragon_Fire",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_53",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/LilyQueen/BP_LilyQueen_Skin002.BP_LilyQueen_Skin002_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/LilyQueen/BP_LilyQueen_BOSS_Skin002.BP_LilyQueen_BOSS_Skin002_C",
+        "SubPathString": ""
+      },
+      "SkinName": "LilyQueen_Skin002",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "LilyQueen",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_54",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/LilyQueen/BP_LilyQueen_Dark_Skin002.BP_LilyQueen_Dark_Skin002_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/LilyQueen/BP_LilyQueen_Dark_BOSS_Skin002.BP_LilyQueen_Dark_BOSS_Skin002_C",
+        "SubPathString": ""
+      },
+      "SkinName": "LilyQueen_Dark_Skin002",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "LilyQueen_Dark",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_55",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/WeaselDragon/BP_WeaselDragon_Skin004.BP_WeaselDragon_Skin004_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/WeaselDragon/BP_WeaselDragon_BOSS_Skin004.BP_WeaselDragon_BOSS_Skin004_C",
+        "SubPathString": ""
+      },
+      "SkinName": "WeaselDragon_Skin004",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "WeaselDragon",
+      "bAutoGetItem": true
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_85",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss_Skin001.BP_NPC_GrassBoss_Skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/NPC/Normal/BP_NPC_GrassBoss_Skin001.BP_NPC_GrassBoss_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "GrassBoss_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "GrassBoss"
+    }
+  },
+  {
+    "Type": "PalSkinDataPalCharacterClass",
+    "Name": "PalSkinDataPalCharacterClass_86",
+    "Outer": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalSkinDataPalCharacterClass'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NormalCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/ElecPanda/BP_ElecPanda_Gym_Skin001.BP_ElecPanda_Gym_Skin001_C",
+        "SubPathString": ""
+      },
+      "BossCharacterClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Character/Monster/PalActorBP/ElecPanda/BP_ElecPanda_Gym_Skin001.BP_ElecPanda_Gym_Skin001_C",
+        "SubPathString": ""
+      },
+      "SkinName": "GYM_ElecPanda_Otomo_Skin001",
+      "SkinType": "EPalSkinType::Pal",
+      "TargetPalName": "GYM_ElecPanda_Otomo"
+    }
+  },
+  {
+    "Type": "PalStaticSkinDataAsset",
+    "Name": "DA_StaticSkinDataAsset",
+    "Class": "UScriptClass'PalStaticSkinDataAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticSkinMap": [
+        {
+          "Key": "PinkCat_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_29'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.0"
+          }
+        },
+        {
+          "Key": "WeaselDragon_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_30'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.1"
+          }
+        },
+        {
+          "Key": "LazyDragon_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_31'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.2"
+          }
+        },
+        {
+          "Key": "SkyDragon_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_32'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.3"
+          }
+        },
+        {
+          "Key": "PlantSlime_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_33'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.4"
+          }
+        },
+        {
+          "Key": "IceHorse_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_34'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.5"
+          }
+        },
+        {
+          "Key": "Penguin_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_35'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.6"
+          }
+        },
+        {
+          "Key": "NegativeKoala_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_36'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.7"
+          }
+        },
+        {
+          "Key": "CatMage_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_37'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.8"
+          }
+        },
+        {
+          "Key": "NegativeKoala_Skin002",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_38'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.9"
+          }
+        },
+        {
+          "Key": "LilyQueen_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_39'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.10"
+          }
+        },
+        {
+          "Key": "PinkCat_Skin002",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_40'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.11"
+          }
+        },
+        {
+          "Key": "ThunderDragonMan_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_41'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.12"
+          }
+        },
+        {
+          "Key": "JetDragon_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_42'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.13"
+          }
+        },
+        {
+          "Key": "WeaselDragon_Skin002",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_43'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.14"
+          }
+        },
+        {
+          "Key": "Anubis_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_44'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.15"
+          }
+        },
+        {
+          "Key": "IceHorse_Skin002",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_45'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.16"
+          }
+        },
+        {
+          "Key": "BlackGriffon_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_46'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.17"
+          }
+        },
+        {
+          "Key": "PinkCat_Skin003",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_47'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.18"
+          }
+        },
+        {
+          "Key": "KendoFrog_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_48'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.19"
+          }
+        },
+        {
+          "Key": "WeaselDragon_Fire_Skin002",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_49'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.20"
+          }
+        },
+        {
+          "Key": "PinkCat_Skin004",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_50'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.21"
+          }
+        },
+        {
+          "Key": "WeaselDragon_Skin003",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_51'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.22"
+          }
+        },
+        {
+          "Key": "WeaselDragon_Fire_Skin003",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_52'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.23"
+          }
+        },
+        {
+          "Key": "LilyQueen_Skin002",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_53'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.24"
+          }
+        },
+        {
+          "Key": "LilyQueen_Dark_Skin002",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_54'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.25"
+          }
+        },
+        {
+          "Key": "WeaselDragon_Skin004",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_55'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.26"
+          }
+        },
+        {
+          "Key": "GrassBoss_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_85'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.27"
+          }
+        },
+        {
+          "Key": "GYM_ElecPanda_Otomo_Skin001",
+          "Value": {
+            "ObjectName": "PalSkinDataPalCharacterClass'DA_StaticSkinDataAsset:PalSkinDataPalCharacterClass_86'",
+            "ObjectPath": "Pal/Content/Pal/DataAsset/Skin/DA_StaticSkinDataAsset.28"
+          }
+        }
+      ]
+    }
+  }
+]

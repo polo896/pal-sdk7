@@ -1,0 +1,56 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "Enum_WarpPillarBurst_State",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "1826788C4A9561EDAC2581AA96477A3D",
+            "SourceString": "Warp",
+            "LocalizedString": "Warp"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "B099D87E49DBB48A5591C787063B2051",
+            "SourceString": "Charge",
+            "LocalizedString": "Charge"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "3C06984640D1F483F22A5388CE686F20",
+            "SourceString": "Attack",
+            "LocalizedString": "Attack"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "EA3E591641DB961EF91904A41E317482",
+            "SourceString": "End",
+            "LocalizedString": "End"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "Enum_WarpPillarBurst_State::NewEnumerator0": 0,
+      "Enum_WarpPillarBurst_State::NewEnumerator1": 1,
+      "Enum_WarpPillarBurst_State::NewEnumerator2": 2,
+      "Enum_WarpPillarBurst_State::NewEnumerator3": 3,
+      "Enum_WarpPillarBurst_State::Enum_WarpPillarBurst_MAX": 4
+    },
+    "CppForm": "Namespaced"
+  }
+]

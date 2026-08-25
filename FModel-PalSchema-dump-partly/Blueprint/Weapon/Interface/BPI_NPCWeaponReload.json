@@ -1,0 +1,52 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPI_NPCWeaponReload_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Interface'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BPI_NPCWeaponReload_C:BPI_OnReload'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Interface/BPI_NPCWeaponReload.2"
+      }
+    ],
+    "FuncMap": {
+      "BPI_OnReload": {
+        "ObjectName": "Function'BPI_NPCWeaponReload_C:BPI_OnReload'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Interface/BPI_NPCWeaponReload.2"
+      }
+    },
+    "ClassFlags": "CLASS_Interface | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPI_NPCWeaponReload_C'Default__BPI_NPCWeaponReload_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Interface/BPI_NPCWeaponReload.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Interface"
+    }
+  },
+  {
+    "Type": "BPI_NPCWeaponReload_C",
+    "Name": "Default__BPI_NPCWeaponReload_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/Interface/BPI_NPCWeaponReload.BPI_NPCWeaponReload_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "BPI_OnReload",
+    "Outer": "BPI_NPCWeaponReload_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

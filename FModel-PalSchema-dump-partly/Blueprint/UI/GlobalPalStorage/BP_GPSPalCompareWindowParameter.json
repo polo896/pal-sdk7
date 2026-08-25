@@ -1,0 +1,405 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_GPSPalCompareWindowParameter_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalHUDDispatchParameterBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bResult",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "OverwriteParameter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 928,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalIndividualCharacterSaveParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "OriginalParameter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 928,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalIndividualCharacterSaveParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_GPSPalCompareWindowParameter_C'Default__BP_GPSPalCompareWindowParameter_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/BP_GPSPalCompareWindowParameter.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_GPSPalCompareWindowParameter_C",
+    "Name": "Default__BP_GPSPalCompareWindowParameter_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/BP_GPSPalCompareWindowParameter.BP_GPSPalCompareWindowParameter_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OverwriteParameter": {
+        "CharacterID": "None",
+        "UniqueNPCID": "None",
+        "Gender": "EPalGenderType::None",
+        "CharacterClass": null,
+        "Level": 1,
+        "Rank": 1,
+        "RankUpExp": 0,
+        "Rank_HP": 0,
+        "Rank_Attack": 0,
+        "Rank_Defence": 0,
+        "Rank_CraftSpeed": 0,
+        "Exp": 0,
+        "NickName": "",
+        "FilteredNickName": "",
+        "IsRarePal": false,
+        "bIsAwakening": false,
+        "EquipWaza": [],
+        "MasteredWaza": [],
+        "Hp": {
+          "Value": 0
+        },
+        "Talent_HP": 0,
+        "Talent_Melee": 0,
+        "Talent_Shot": 0,
+        "Talent_Defense": 0,
+        "FullStomach": 100.0,
+        "PhysicalHealth": "EPalStatusPhysicalHealthType::Healthful",
+        "WorkerSick": "EPalBaseCampWorkerSickType::None",
+        "PassiveSkillList": [],
+        "DyingTimer": 0,
+        "MP": {
+          "Value": 0
+        },
+        "IsPlayer": false,
+        "OwnedTime": {
+          "Ticks": 0
+        },
+        "OwnerPlayerUId": "00000000-00000000-00000000-00000000",
+        "OldOwnerPlayerUIds": [],
+        "MaxHP": {
+          "Value": 0
+        },
+        "Support": 0,
+        "CraftSpeed": 0,
+        "CraftSpeeds": [],
+        "ShieldHP": {
+          "Value": 0
+        },
+        "ShieldMaxHP": {
+          "Value": 0
+        },
+        "bApplyShieldDamage": false,
+        "MaxMP": {
+          "Value": 100000
+        },
+        "MaxSP": {
+          "Value": 100000
+        },
+        "HungerType": "EPalStatusHungerType::Default",
+        "SanityValue": 100.0,
+        "BaseCampWorkerEventType": "EPalBaseCampWorkerEventType::None",
+        "BaseCampWorkerEventProgressTime": 0.0,
+        "ItemContainerId": {
+          "ID": "00000000-00000000-00000000-00000000"
+        },
+        "EquipItemContainerId": {
+          "ID": "00000000-00000000-00000000-00000000"
+        },
+        "SlotId": {
+          "ContainerId": {
+            "ID": "00000000-00000000-00000000-00000000"
+          },
+          "SlotIndex": -1
+        },
+        "MaxFullStomach": 100.0,
+        "FullStomachDecreaseRate_Tribe": 1.0,
+        "UnusedStatusPoint": 0,
+        "GotStatusPointList": [],
+        "GotExStatusPointList": [],
+        "DecreaseFullStomachRates": {
+          "Values": []
+        },
+        "AffectSanityRates": {
+          "Values": []
+        },
+        "CraftSpeedRates": {
+          "Values": []
+        },
+        "LastJumpedLocation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1E+09
+        },
+        "FoodWithStatusEffect": "None",
+        "Tiemr_FoodWithStatusEffect": 0,
+        "FoodRegeneEffectInfo": {
+          "ItemId": "None",
+          "EffectTime": 0,
+          "RemainingTime": 0,
+          "RegeneEfectParameters": []
+        },
+        "FoodWithFullStomachKeep": "None",
+        "Tiemr_FoodWithFullStomachKeep": 0,
+        "CurrentWorkSuitability": "EPalWorkSuitability::None",
+        "WorkSuitabilityOptionInfo": {
+          "OffWorkSuitabilityList": [],
+          "bAllowBaseCampBattle": true
+        },
+        "bAppliedDeathPenarty": false,
+        "bEnablePlayerRespawnInHardcore": false,
+        "PalReviveTimer": 0.0,
+        "VoiceID": 0,
+        "SkinAppliedCharacterId": "00000000-00000000-00000000-00000000",
+        "SkinName": "None",
+        "FavoriteIndex": 0,
+        "MapObjectConcreteInstanceIdAssignedToExpedition": "00000000-00000000-00000000-00000000",
+        "ArenaRestoreParameter": {
+          "bValid": false,
+          "Hp": {
+            "Value": 0
+          },
+          "FullStomach": 0.0,
+          "SanityValue": 0.0,
+          "WorkerSick": "EPalBaseCampWorkerSickType::None",
+          "FoodWithStatusEffect": "None",
+          "Tiemr_FoodWithStatusEffect": 0,
+          "FoodRegeneEffectInfo": {
+            "ItemId": "None",
+            "EffectTime": 0,
+            "RemainingTime": 0,
+            "RegeneEfectParameters": []
+          },
+          "FoodWithFullStomachKeep": "None",
+          "Tiemr_FoodWithFullStomachKeep": 0
+        },
+        "GotWorkSuitabilityAddRankList": [],
+        "LastNickNameModifierPlayerUid": "00000000-00000000-00000000-00000000",
+        "bImportedCharacter": false,
+        "FriendshipPoint": 0,
+        "FriendshipOtomoSec": 0,
+        "FriendshipActiveOtomoSec": 0,
+        "FriendshipBasecampSec": 0,
+        "bFavoriteChangedByFriendship": false,
+        "ArenaRankPoint": 0,
+        "bDisableSaleInPalLost": true,
+        "bIsExcludedFromTeamMission": false,
+        "WorkSuitabilityOverflowGrantedRankList": [],
+        "PartnerSkillLastUsedTime": {
+          "Ticks": 0
+        },
+        "PartnerSkillCoolDownTimeMax": 0.0,
+        "ExpTableMigrationVersion": 0,
+        "Dynamic": {
+          "GroupId": "00000000-00000000-00000000-00000000",
+          "bSleeping": false,
+          "bContinueSleepingUntilFullRecovery": false,
+          "bResurrectingOnBed": false,
+          "InvaderTargetBaseCampId": "00000000-00000000-00000000-00000000",
+          "InvaderType": "EPalInvaderType::None",
+          "bIsInArena": false,
+          "ArenaDamageRate": 1.0,
+          "OverrideLevel": -1,
+          "GroupType": "EPalGroupType::Undefined",
+          "WantedPoliceTargetPlayerId": "00000000-00000000-00000000-00000000"
+        }
+      },
+      "OriginalParameter": {
+        "CharacterID": "None",
+        "UniqueNPCID": "None",
+        "Gender": "EPalGenderType::None",
+        "CharacterClass": null,
+        "Level": 1,
+        "Rank": 1,
+        "RankUpExp": 0,
+        "Rank_HP": 0,
+        "Rank_Attack": 0,
+        "Rank_Defence": 0,
+        "Rank_CraftSpeed": 0,
+        "Exp": 0,
+        "NickName": "",
+        "FilteredNickName": "",
+        "IsRarePal": false,
+        "bIsAwakening": false,
+        "EquipWaza": [],
+        "MasteredWaza": [],
+        "Hp": {
+          "Value": 0
+        },
+        "Talent_HP": 0,
+        "Talent_Melee": 0,
+        "Talent_Shot": 0,
+        "Talent_Defense": 0,
+        "FullStomach": 100.0,
+        "PhysicalHealth": "EPalStatusPhysicalHealthType::Healthful",
+        "WorkerSick": "EPalBaseCampWorkerSickType::None",
+        "PassiveSkillList": [],
+        "DyingTimer": 0,
+        "MP": {
+          "Value": 0
+        },
+        "IsPlayer": false,
+        "OwnedTime": {
+          "Ticks": 0
+        },
+        "OwnerPlayerUId": "00000000-00000000-00000000-00000000",
+        "OldOwnerPlayerUIds": [],
+        "MaxHP": {
+          "Value": 0
+        },
+        "Support": 0,
+        "CraftSpeed": 0,
+        "CraftSpeeds": [],
+        "ShieldHP": {
+          "Value": 0
+        },
+        "ShieldMaxHP": {
+          "Value": 0
+        },
+        "bApplyShieldDamage": false,
+        "MaxMP": {
+          "Value": 100000
+        },
+        "MaxSP": {
+          "Value": 100000
+        },
+        "HungerType": "EPalStatusHungerType::Default",
+        "SanityValue": 100.0,
+        "BaseCampWorkerEventType": "EPalBaseCampWorkerEventType::None",
+        "BaseCampWorkerEventProgressTime": 0.0,
+        "ItemContainerId": {
+          "ID": "00000000-00000000-00000000-00000000"
+        },
+        "EquipItemContainerId": {
+          "ID": "00000000-00000000-00000000-00000000"
+        },
+        "SlotId": {
+          "ContainerId": {
+            "ID": "00000000-00000000-00000000-00000000"
+          },
+          "SlotIndex": -1
+        },
+        "MaxFullStomach": 100.0,
+        "FullStomachDecreaseRate_Tribe": 1.0,
+        "UnusedStatusPoint": 0,
+        "GotStatusPointList": [],
+        "GotExStatusPointList": [],
+        "DecreaseFullStomachRates": {
+          "Values": []
+        },
+        "AffectSanityRates": {
+          "Values": []
+        },
+        "CraftSpeedRates": {
+          "Values": []
+        },
+        "LastJumpedLocation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1E+09
+        },
+        "FoodWithStatusEffect": "None",
+        "Tiemr_FoodWithStatusEffect": 0,
+        "FoodRegeneEffectInfo": {
+          "ItemId": "None",
+          "EffectTime": 0,
+          "RemainingTime": 0,
+          "RegeneEfectParameters": []
+        },
+        "FoodWithFullStomachKeep": "None",
+        "Tiemr_FoodWithFullStomachKeep": 0,
+        "CurrentWorkSuitability": "EPalWorkSuitability::None",
+        "WorkSuitabilityOptionInfo": {
+          "OffWorkSuitabilityList": [],
+          "bAllowBaseCampBattle": true
+        },
+        "bAppliedDeathPenarty": false,
+        "bEnablePlayerRespawnInHardcore": false,
+        "PalReviveTimer": 0.0,
+        "VoiceID": 0,
+        "SkinAppliedCharacterId": "00000000-00000000-00000000-00000000",
+        "SkinName": "None",
+        "FavoriteIndex": 0,
+        "MapObjectConcreteInstanceIdAssignedToExpedition": "00000000-00000000-00000000-00000000",
+        "ArenaRestoreParameter": {
+          "bValid": false,
+          "Hp": {
+            "Value": 0
+          },
+          "FullStomach": 0.0,
+          "SanityValue": 0.0,
+          "WorkerSick": "EPalBaseCampWorkerSickType::None",
+          "FoodWithStatusEffect": "None",
+          "Tiemr_FoodWithStatusEffect": 0,
+          "FoodRegeneEffectInfo": {
+            "ItemId": "None",
+            "EffectTime": 0,
+            "RemainingTime": 0,
+            "RegeneEfectParameters": []
+          },
+          "FoodWithFullStomachKeep": "None",
+          "Tiemr_FoodWithFullStomachKeep": 0
+        },
+        "GotWorkSuitabilityAddRankList": [],
+        "LastNickNameModifierPlayerUid": "00000000-00000000-00000000-00000000",
+        "bImportedCharacter": false,
+        "FriendshipPoint": 0,
+        "FriendshipOtomoSec": 0,
+        "FriendshipActiveOtomoSec": 0,
+        "FriendshipBasecampSec": 0,
+        "bFavoriteChangedByFriendship": false,
+        "ArenaRankPoint": 0,
+        "bDisableSaleInPalLost": true,
+        "bIsExcludedFromTeamMission": false,
+        "WorkSuitabilityOverflowGrantedRankList": [],
+        "PartnerSkillLastUsedTime": {
+          "Ticks": 0
+        },
+        "PartnerSkillCoolDownTimeMax": 0.0,
+        "ExpTableMigrationVersion": 0,
+        "Dynamic": {
+          "GroupId": "00000000-00000000-00000000-00000000",
+          "bSleeping": false,
+          "bContinueSleepingUntilFullRecovery": false,
+          "bResurrectingOnBed": false,
+          "InvaderTargetBaseCampId": "00000000-00000000-00000000-00000000",
+          "InvaderType": "EPalInvaderType::None",
+          "bIsInArena": false,
+          "ArenaDamageRate": 1.0,
+          "OverrideLevel": -1,
+          "GroupType": "EPalGroupType::Undefined",
+          "WantedPoliceTargetPlayerId": "00000000-00000000-00000000-00000000"
+        }
+      }
+    }
+  }
+]

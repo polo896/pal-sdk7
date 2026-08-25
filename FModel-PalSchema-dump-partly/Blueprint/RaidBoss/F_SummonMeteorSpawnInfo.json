@@ -1,0 +1,62 @@
+[
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "F_SummonMeteorSpawnInfo",
+    "Class": "UScriptClass'UserDefinedStruct'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Guid": "6D1F8594-4FD05B6F-5C46F7A2-00157FA7"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "SpawnTransform_2_11F1C8464580B8FC10189D8A22D6B6D8",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 96,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "SummonInfo_5_2F35A6B9400E4725CFD13C96F3C5F3CF",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalRaidBossSummonPalInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "StructFlags": 0,
+    "DefaultProperties": {
+      "SpawnTransform_2_11F1C8464580B8FC10189D8A22D6B6D8": {
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0,
+          "W": 1.0,
+          "IsNormalized": true,
+          "Size": 1.0,
+          "SizeSquared": 1.0
+        },
+        "Translation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale3D": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      },
+      "SummonInfo_5_2F35A6B9400E4725CFD13C96F3C5F3CF": {
+        "PalNameAndNum": []
+      }
+    }
+  }
+]

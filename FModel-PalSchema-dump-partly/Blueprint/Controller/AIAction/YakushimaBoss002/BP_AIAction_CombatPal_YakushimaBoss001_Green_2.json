@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AIAction_CombatPal_YakushimaBoss001_Green_2_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_CombatPal_YakushimaBoss001_Green_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss001_Green.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_CombatPal_YakushimaBoss001_Green_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss001_Green.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AIAction_CombatPal_YakushimaBoss001_Green_2_C'Default__BP_AIAction_CombatPal_YakushimaBoss001_Green_2_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss001_Green_2.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AIAction_CombatPal_YakushimaBoss001_Green_2_C",
+    "Name": "Default__BP_AIAction_CombatPal_YakushimaBoss001_Green_2_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss001_Green_2.BP_AIAction_CombatPal_YakushimaBoss001_Green_2_C'",
+    "Template": {
+      "ObjectName": "BP_AIAction_CombatPal_YakushimaBoss001_Green_C'Default__BP_AIAction_CombatPal_YakushimaBoss001_Green_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/YakushimaBoss002/BP_AIAction_CombatPal_YakushimaBoss001_Green.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WazaRoutineList": [
+        "EPalWazaID::Unique_YakushimaBoss001_Green_2_PhantasmalBolt",
+        "EPalWazaID::Unique_YakushimaBoss001_Green_2_PhantasmalSphere",
+        "EPalWazaID::Unique_YakushimaBoss001_Green_2_PhantasmalEye",
+        "EPalWazaID::Unique_YakushimaBoss001_Green_2_PhantasmalDeathray"
+      ]
+    }
+  }
+]

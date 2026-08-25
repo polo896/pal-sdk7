@@ -1,0 +1,56 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "ENum_WarpComet_State",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "5323C7A34A5A030E33E10F96E39289DD",
+            "SourceString": "Start",
+            "LocalizedString": "Start"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "8D75EA014EDA9A158290F39D02DF842D",
+            "SourceString": "MeteorRain",
+            "LocalizedString": "MeteorRain"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "F9BF146048BC5A846DCAF8B0A0BB3CA4",
+            "SourceString": "Crash",
+            "LocalizedString": "Crash"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "37A6825A4E629A79D06536A87BBBC91E",
+            "SourceString": "End",
+            "LocalizedString": "End"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "ENum_WarpComet_State::NewEnumerator0": 0,
+      "ENum_WarpComet_State::NewEnumerator1": 1,
+      "ENum_WarpComet_State::NewEnumerator2": 2,
+      "ENum_WarpComet_State::NewEnumerator3": 3,
+      "ENum_WarpComet_State::ENum_WarpComet_MAX": 4
+    },
+    "CppForm": "Namespaced"
+  }
+]

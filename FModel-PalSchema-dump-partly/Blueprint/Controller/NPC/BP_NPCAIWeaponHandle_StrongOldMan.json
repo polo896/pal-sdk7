@@ -1,0 +1,67 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_NPCAIWeaponHandle_StrongOldMan_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NPCAIWeaponHandle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIWeaponHandle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NPCAIWeaponHandle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIWeaponHandle.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_NPCAIWeaponHandle_StrongOldMan_C'Default__BP_NPCAIWeaponHandle_StrongOldMan_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIWeaponHandle_StrongOldMan.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_NPCAIWeaponHandle_StrongOldMan_C",
+    "Name": "Default__BP_NPCAIWeaponHandle_StrongOldMan_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIWeaponHandle_StrongOldMan.BP_NPCAIWeaponHandle_StrongOldMan_C'",
+    "Template": {
+      "ObjectName": "BP_NPCAIWeaponHandle_C'Default__BP_NPCAIWeaponHandle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/NPC/BP_NPCAIWeaponHandle.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CombatAIParamMap": [
+        {
+          "Key": "EPalWeaponType::Katana",
+          "Value": {
+            "CombatAIActionClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_Combat_BeamSwordCombo_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Combat/BP_AIAction_NPC_Combat_BeamSwordCombo.0"
+            },
+            "NPCWeaponRange_Near_cm": 0,
+            "NPCWeaponRange_Far_cm": 0,
+            "ShootInterval": 0.0,
+            "MagazineSize": 0,
+            "MaxShootCount": 0,
+            "ReloadTime": 2.0,
+            "RandomMoveTime_Min": 2.0,
+            "AimOffset_Height": 0.0,
+            "UseSideDashMovement": true,
+            "UseReloadMotion": true,
+            "MeleeAttackWithGun": false,
+            "AimRotateSpeed": 360.0,
+            "FireStateClass": null,
+            "SphereCastRadius": 5.0
+          }
+        }
+      ]
+    }
+  }
+]

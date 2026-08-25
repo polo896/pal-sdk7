@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SoundSlot_Weapon_SkyAssaultRifle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SoundSlot_Weapon_AssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_AssaultRifle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SoundSlot_Weapon_AssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_AssaultRifle.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SoundSlot_Weapon_SkyAssaultRifle_C'Default__BP_SoundSlot_Weapon_SkyAssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_SkyAssaultRifle.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SoundSlot_Weapon_SkyAssaultRifle_C",
+    "Name": "Default__BP_SoundSlot_Weapon_SkyAssaultRifle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_SkyAssaultRifle.BP_SoundSlot_Weapon_SkyAssaultRifle_C'",
+    "Template": {
+      "ObjectName": "BP_SoundSlot_Weapon_AssaultRifle_C'Default__BP_SoundSlot_Weapon_AssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_AssaultRifle.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SoundMap": [
+        {
+          "Key": {
+            "Key": "Weapon_Fire"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_SkyAssaultRifle_Fireloop'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/SkyAssaultRifle/AKE_SkyAssaultRifle_Fireloop.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Fire_End"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_SkyAssaultRifle_FireEnd'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/SkyAssaultRifle/AKE_SkyAssaultRifle_FireEnd.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Aim_Start"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_SkyAssaultRifle_Aim'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/SkyAssaultRifle/AKE_SkyAssaultRifle_Aim.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Equip"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_SkyAssaultRifle_Equip'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/SkyAssaultRifle/AKE_SkyAssaultRifle_Equip.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Aim_End"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_SkyAssaultRifle_AimEnd'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/SkyAssaultRifle/AKE_SkyAssaultRifle_AimEnd.0"
+          }
+        }
+      ]
+    }
+  }
+]

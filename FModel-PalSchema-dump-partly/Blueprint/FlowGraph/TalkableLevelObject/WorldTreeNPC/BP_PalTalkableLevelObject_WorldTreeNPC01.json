@@ -1,0 +1,609 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_TalkableLevelObjectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalTalkableLevelObject_WorldTreeNPC01_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.17"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_PalTalkableLevelObject_WorldTreeNPC01_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.12"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:ExecuteUbergraph_BP_PalTalkableLevelObject_WorldTreeNPC01'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_TalkableLevelObjectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:WaitForPlayerState'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.11"
+      },
+      {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:RefreshVisibility'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.9"
+      },
+      {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:CanTalk'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.3"
+      },
+      {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:UserConstructionScript'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.10"
+      },
+      {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:K2Node_Event_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.6"
+      },
+      {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:OnUpdatedQuestDelegate_イベント'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.7"
+      },
+      {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:DoBindDelegates'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.4"
+      },
+      {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.8"
+      },
+      {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:ExecuteUbergraph_BP_PalTalkableLevelObject_WorldTreeNPC01'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_InteractableCapsule",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_InteractableCapsule_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Components/BP_InteractableCapsule.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SK_NPC_Male_Kigurumi01",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "QuestManagerRef",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalQuestManager'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "QuestId_DefeatKingWhale",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_PalTalkableLevelObject_WorldTreeNPC01": {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:ExecuteUbergraph_BP_PalTalkableLevelObject_WorldTreeNPC01'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.5"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.8"
+      },
+      "DoBindDelegates": {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:DoBindDelegates'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.4"
+      },
+      "OnUpdatedQuestDelegate_イベント": {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:OnUpdatedQuestDelegate_イベント'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.7"
+      },
+      "K2Node_Event_1": {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:K2Node_Event_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.6"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:UserConstructionScript'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.10"
+      },
+      "CanTalk": {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:CanTalk'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.3"
+      },
+      "RefreshVisibility": {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:RefreshVisibility'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.9"
+      },
+      "WaitForPlayerState": {
+        "ObjectName": "Function'BP_PalTalkableLevelObject_WorldTreeNPC01_C:WaitForPlayerState'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.11"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalTalkableLevelObject_WorldTreeNPC01_C'Default__BP_PalTalkableLevelObject_WorldTreeNPC01_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_InteractableCapsule_C",
+    "Name": "BP_InteractableCapsule_GEN_VARIABLE",
+    "Outer": "BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Components/BP_InteractableCapsule.BP_InteractableCapsule_C'",
+    "Template": {
+      "ObjectName": "BP_InteractableCapsule_C'Default__BP_InteractableCapsule_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Components/BP_InteractableCapsule.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CapsuleHalfHeight": 120.0,
+      "CapsuleRadius": 80.0,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 90.0
+      }
+    }
+  },
+  {
+    "Type": "BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Name": "Default__BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.BP_PalTalkableLevelObject_WorldTreeNPC01_C'",
+    "Template": {
+      "ObjectName": "BP_TalkableLevelObjectBase_C'Default__BP_TalkableLevelObjectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.2"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "QuestId_DefeatKingWhale": "Main_DefeatKingWhale",
+      "TalkFlowId": "WorldTreeNPC_Main"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "CanTalk",
+    "Outer": "BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_TalkableLevelObjectBase_C:CanTalk'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_TalkableLevelObjectBase_C:CanTalk'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/QuestGiver/BP_TalkableLevelObjectBase.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_CanTalk_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "DoBindDelegates",
+    "Outer": "BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_PalTalkableLevelObject_WorldTreeNPC01",
+    "Outer": "BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalQuestManager:CompletedQuestDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_PlayerState",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerState'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_QuestId",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetQuestManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalQuestManager'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2Node_Event_1",
+    "Outer": "BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerState",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerState'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUpdatedQuestDelegate_イベント",
+    "Outer": "BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "QuestId",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RefreshVisibility",
+    "Outer": "BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsQuestCompleted_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "WaitForPlayerState",
+    "Outer": "BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalPlayerState_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerState'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetQuestManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalQuestManager'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalTalkableLevelObject_WorldTreeNPC01_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.13"
+      },
+      "VariableGuid": "C5D76E2F-435E788B-C37EBB8E-5FA56CEE",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent'BP_PalTalkableLevelObject_WorldTreeNPC01_C:SK_NPC_Male_Kigurumi01_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.18"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_TalkableLevelObjectBase_C",
+      "VariableGuid": "BEAECFE0-4BD28183-670B4D9C-31ECDCD3",
+      "InternalVariableName": "SK_NPC_Male_Kigurumi01"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_InteractableCapsule_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Components/BP_InteractableCapsule.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_InteractableCapsule_C'BP_PalTalkableLevelObject_WorldTreeNPC01_C:BP_InteractableCapsule_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.1"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_TalkableLevelObjectBase_C",
+      "VariableGuid": "B13E229F-41B31F1E-15576088-59328642",
+      "InternalVariableName": "BP_InteractableCapsule"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalTalkableLevelObject_WorldTreeNPC01_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.15"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalTalkableLevelObject_WorldTreeNPC01_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.16"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalTalkableLevelObject_WorldTreeNPC01_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.15"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalTalkableLevelObject_WorldTreeNPC01_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.16"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalTalkableLevelObject_WorldTreeNPC01_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/TalkableLevelObject/WorldTreeNPC/BP_PalTalkableLevelObject_WorldTreeNPC01.14"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SK_NPC_Male_Kigurumi01_GEN_VARIABLE",
+    "Outer": "BP_PalTalkableLevelObject_WorldTreeNPC01_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_NPC_GrassBoss001_Implimentation_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/NPC/Imp/ABP_NPC_GrassBoss001_Implimentation.1"
+      },
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimMontage'AM_NPC_Female_GroundSit'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/NPC/Female/AM_NPC_Female_GroundSit.0"
+        }
+      },
+      "AnimationMode": "EAnimationMode::AnimationSingleNode",
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_NPC_Male_WorldTreePeople01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/NPC/SK_NPC_Male_WorldTreePeople01/SK_NPC_Male_WorldTreePeople01.3"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_NPC_Male_WorldTreePeople01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/NPC/SK_NPC_Male_WorldTreePeople01/SK_NPC_Male_WorldTreePeople01.3"
+      }
+    }
+  }
+]

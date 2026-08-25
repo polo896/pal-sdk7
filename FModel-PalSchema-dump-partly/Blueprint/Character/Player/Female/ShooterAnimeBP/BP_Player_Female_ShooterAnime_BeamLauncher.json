@@ -1,0 +1,94 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Player_Female_ShooterAnime_BeamLauncher_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_ShooterAnime_MultiGuidedMissileLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_MultiGuidedMissileLauncher.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_ShooterAnime_MultiGuidedMissileLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_MultiGuidedMissileLauncher.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Player_Female_ShooterAnime_BeamLauncher_C'Default__BP_Player_Female_ShooterAnime_BeamLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_BeamLauncher.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Player_Female_ShooterAnime_BeamLauncher_C",
+    "Name": "Default__BP_Player_Female_ShooterAnime_BeamLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_BeamLauncher.BP_Player_Female_ShooterAnime_BeamLauncher_C'",
+    "Template": {
+      "ObjectName": "BP_Player_Female_ShooterAnime_MultiGuidedMissileLauncher_C'Default__BP_Player_Female_ShooterAnime_MultiGuidedMissileLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_MultiGuidedMissileLauncher.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimeInfo": {
+        "NormalMoveBlendSpace": {
+          "ObjectName": "BlendSpace1D'BS_Player_Female_BeamLauncherMove'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/BlendSpace/BS_Player_Female_BeamLauncherMove.0"
+        },
+        "CrouchMoveBlendSpace": {
+          "ObjectName": "BlendSpace1D'BS_Player_Female_CrouchBeamLauncherMove'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/BlendSpace/BS_Player_Female_CrouchBeamLauncherMove.0"
+        },
+        "Sprint": {
+          "ObjectName": "AnimSequence'AS_Player_Female_Sprint_BeamLauncher'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/BeamLauncher/AS_Player_Female_Sprint_BeamLauncher.0"
+        },
+        "ReloadMontage": {
+          "ObjectName": "AnimMontage'AM_Player_Female_Reload_BeamLauncher'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/BeamLauncher/AM_Player_Female_Reload_BeamLauncher.0"
+        },
+        "IdlePoseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::Stand",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Female_Idle_BeamLauncher'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/BeamLauncher/AS_Player_Female_Idle_BeamLauncher.0"
+            }
+          }
+        ],
+        "JogPoseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::Stand",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Female_Jog_BeamLauncher'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/BeamLauncher/AS_Player_Female_Jog_BeamLauncher.0"
+            }
+          }
+        ],
+        "AimBaseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::Stand",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Female_Aim_BeamLauncher'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/BeamLauncher/AS_Player_Female_Aim_BeamLauncher.0"
+            }
+          },
+          {
+            "Key": "EWeaponAnimationPoseType::Crouch",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Female_Crouch_Aim_BeamLauncher'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/BeamLauncher/AS_Player_Female_Crouch_Aim_BeamLauncher.0"
+            }
+          }
+        ]
+      }
+    }
+  }
+]

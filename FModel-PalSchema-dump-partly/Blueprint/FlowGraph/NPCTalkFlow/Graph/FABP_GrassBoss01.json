@@ -1,0 +1,2022 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_0",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "131D9241-45212529-3CB963B6-364C69E6"
+    }
+  },
+  {
+    "Type": "FlowNode_Reroute",
+    "Name": "FlowNode_Reroute_0",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "UScriptClass'FlowNode_Reroute'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "B2A25DDC-475C98E3-527216B4-23AFD2AD",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "2C0A6598-4B534D0A-801913A7-9B181B24",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Reroute",
+    "Name": "FlowNode_Reroute_1",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "UScriptClass'FlowNode_Reroute'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "2C0A6598-4B534D0A-801913A7-9B181B24",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "1E23F54D-4B9A01CC-DBC8E3B4-2DC24DBD",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Reroute",
+    "Name": "FlowNode_Reroute_2",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "UScriptClass'FlowNode_Reroute'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "FAAE8D3F-46C324CC-33249292-10E5BFE4",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "677342B3-4017B2D0-A3C136AA-ADB6DE69",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Reroute",
+    "Name": "FlowNode_Reroute_3",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "UScriptClass'FlowNode_Reroute'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "677342B3-4017B2D0-A3C136AA-ADB6DE69",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "DB92A82B-497C9559-E571F796-259D8DCD",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Reroute",
+    "Name": "FlowNode_Reroute_4",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "UScriptClass'FlowNode_Reroute'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "DB92A82B-497C9559-E571F796-259D8DCD",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "9411A430-4271BFBE-2F5FBE95-EFE55019",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "FDB0F1BE-4C2CCDD8-5882BCAE-88EE6A7A",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "9B8AE05D-45C7E91F-F2048A9A-E13735B9",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_AlreadyDeliveredItem_C",
+    "Name": "FNBP_AlreadyDeliveredItem_C_1",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_AlreadyDeliveredItem.FNBP_AlreadyDeliveredItem_C'",
+    "Template": {
+      "ObjectName": "FNBP_AlreadyDeliveredItem_C'Default__FNBP_AlreadyDeliveredItem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_AlreadyDeliveredItem.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe03"
+      },
+      "QuestBlock": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_Zoe03_DeliveryQuestItem_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Zoe03_DeliveryQuestItem.0"
+      },
+      "GraphNode": null,
+      "NodeGuid": "5EC2B950-42A3739C-F51E7886-F7C57EA0",
+      "Connections": [
+        {
+          "Key": "Delivered",
+          "Value": {
+            "NodeGuid": "6596F487-48970C33-0BE0E58C-133ACE0E",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotYet",
+          "Value": {
+            "NodeGuid": "7C80DF8A-47A79F08-F7B25485-699FAAB8",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_AlreadyDeliveredItem_C",
+    "Name": "FNBP_AlreadyDeliveredItem_C_2",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_AlreadyDeliveredItem.FNBP_AlreadyDeliveredItem_C'",
+    "Template": {
+      "ObjectName": "FNBP_AlreadyDeliveredItem_C'Default__FNBP_AlreadyDeliveredItem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_AlreadyDeliveredItem.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe_Halloween"
+      },
+      "QuestBlock": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_Zoe_Halloween_DeliveryQuestItem_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Zoe_Halloween_DeliveryQuestItem.0"
+      },
+      "GraphNode": null,
+      "NodeGuid": "56195FB7-46A1F629-15023B91-D524EB88",
+      "Connections": [
+        {
+          "Key": "Delivered",
+          "Value": {
+            "NodeGuid": "86D0452A-4BFF0AB4-AA2CA1B1-09DBA463",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotYet",
+          "Value": {
+            "NodeGuid": "BF8BF7C2-4E2B9BFB-D0719B92-443C4584",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_BossDefeatBranch_C",
+    "Name": "FNBP_BossDefeatBranch_C_0",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_BossDefeatBranch.FNBP_BossDefeatBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_BossDefeatBranch_C'Default__FNBP_BossDefeatBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_BossDefeatBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BossType": "EPalBossType::GrassBoss",
+      "GraphNode": null,
+      "NodeGuid": "9B8AE05D-45C7E91F-F2048A9A-E13735B9",
+      "Connections": [
+        {
+          "Key": "Defeated",
+          "Value": {
+            "NodeGuid": "634ABE15-406E99A4-F1725993-68967383",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotDefeated",
+          "Value": {
+            "NodeGuid": "51F1418C-4640A699-0A8583BF-F96EEF35",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_CompleteQuest_C",
+    "Name": "FNBP_CompleteQuest_C_0",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.FNBP_CompleteQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_CompleteQuest_C'Default__FNBP_CompleteQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe01"
+      },
+      "NetworkInvokeName": "CompleteQuest_Zoe01",
+      "GraphNode": null,
+      "NodeGuid": "EB5FA673-46625DF6-38A67AAB-46D98988"
+    }
+  },
+  {
+    "Type": "FNBP_CompleteQuest_C",
+    "Name": "FNBP_CompleteQuest_C_1",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.FNBP_CompleteQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_CompleteQuest_C'Default__FNBP_CompleteQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe02"
+      },
+      "NetworkInvokeName": "CompleteQuest_Zoe02",
+      "GraphNode": null,
+      "NodeGuid": "2D4B026B-41EE779A-8247C98B-A6F1F444"
+    }
+  },
+  {
+    "Type": "FNBP_CompleteQuest_C",
+    "Name": "FNBP_CompleteQuest_C_2",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.FNBP_CompleteQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_CompleteQuest_C'Default__FNBP_CompleteQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe03"
+      },
+      "NetworkInvokeName": "CompleteQuest_Zoe03",
+      "GraphNode": null,
+      "NodeGuid": "7A46460F-4C36330B-313077AB-960EDA58",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "53F3FC27-4623337F-7B1168BB-9EDB3978",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_CompleteQuest_C",
+    "Name": "FNBP_CompleteQuest_C_3",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.FNBP_CompleteQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_CompleteQuest_C'Default__FNBP_CompleteQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe_Halloween"
+      },
+      "NetworkInvokeName": "CompleteQuest_Zoe_Halloween",
+      "GraphNode": null,
+      "NodeGuid": "1679DB7D-44CB7D98-EB3D7099-9C9A3C28"
+    }
+  },
+  {
+    "Type": "FNBP_CompleteQuest_C",
+    "Name": "FNBP_CompleteQuest_C_4",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.FNBP_CompleteQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_CompleteQuest_C'Default__FNBP_CompleteQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe04"
+      },
+      "NetworkInvokeName": "CompleteQuest_Zoe04",
+      "GraphNode": null,
+      "NodeGuid": "B4CECA3B-465EC07F-A2985691-A8A59C8B"
+    }
+  },
+  {
+    "Type": "FNBP_ExistItemBranch_C",
+    "Name": "FNBP_ExistItemBranch_C_0",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ExistItemBranch.FNBP_ExistItemBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_ExistItemBranch_C'Default__FNBP_ExistItemBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ExistItemBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CheckItemMap": [
+        {
+          "Key": {
+            "Key": "QuestItem_Zoe_1"
+          },
+          "Value": 1
+        }
+      ],
+      "GraphNode": null,
+      "NodeGuid": "7C80DF8A-47A79F08-F7B25485-699FAAB8",
+      "Connections": [
+        {
+          "Key": "Exist",
+          "Value": {
+            "NodeGuid": "422F8537-4AFB0562-A11167BC-DA963BE5",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotExist",
+          "Value": {
+            "NodeGuid": "2C0A6598-4B534D0A-801913A7-9B181B24",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ExistItemBranch_C",
+    "Name": "FNBP_ExistItemBranch_C_1",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ExistItemBranch.FNBP_ExistItemBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_ExistItemBranch_C'Default__FNBP_ExistItemBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ExistItemBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CheckItemMap": [
+        {
+          "Key": {
+            "Key": "QuestItem_Zoe_Halloweenskin_1"
+          },
+          "Value": 1
+        }
+      ],
+      "GraphNode": null,
+      "NodeGuid": "BF8BF7C2-4E2B9BFB-D0719B92-443C4584",
+      "Connections": [
+        {
+          "Key": "Exist",
+          "Value": {
+            "NodeGuid": "228F704B-48C1F0B3-76BAAFBD-13B95AA2",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotExist",
+          "Value": {
+            "NodeGuid": "677342B3-4017B2D0-A3C136AA-ADB6DE69",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ExistItemBranch_C",
+    "Name": "FNBP_ExistItemBranch_C_3",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ExistItemBranch.FNBP_ExistItemBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_ExistItemBranch_C'Default__FNBP_ExistItemBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ExistItemBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CheckItemMap": [
+        {
+          "Key": {
+            "Key": "Blueprint_Zoe_Halloweenskin_1"
+          },
+          "Value": 1
+        }
+      ],
+      "GraphNode": null,
+      "NodeGuid": "9411A430-4271BFBE-2F5FBE95-EFE55019",
+      "Connections": [
+        {
+          "Key": "Exist",
+          "Value": {
+            "NodeGuid": "B58F6016-4DC3F9ED-7CF9B8A8-1F20DF98",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotExist",
+          "Value": {
+            "NodeGuid": "261DA7D8-4F7BB6EE-2BF3F5B5-16467146",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_GetCharacter_C",
+    "Name": "FNBP_GetCharacter_C_0",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetCharacter.FNBP_GetCharacter_C'",
+    "Template": {
+      "ObjectName": "FNBP_GetCharacter_C'Default__FNBP_GetCharacter_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetCharacter.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PalId": {
+        "Key": "GYM_ElecPanda_Otomo"
+      },
+      "Level": 1,
+      "NetworkInvokeName": "Get_Zoe",
+      "GraphNode": null,
+      "NodeGuid": "6596F487-48970C33-0BE0E58C-133ACE0E",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "7A46460F-4C36330B-313077AB-960EDA58",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_GetCharacter_C",
+    "Name": "FNBP_GetCharacter_C_2",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetCharacter.FNBP_GetCharacter_C'",
+    "Template": {
+      "ObjectName": "FNBP_GetCharacter_C'Default__FNBP_GetCharacter_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetCharacter.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PalId": {
+        "Key": "GYM_ElecPanda_Otomo"
+      },
+      "Level": 1,
+      "NetworkInvokeName": "Get_ZoeRE",
+      "GraphNode": null,
+      "NodeGuid": "8736E42A-483FFEAD-A9D0D9B4-51DB91DB",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "B4CECA3B-465EC07F-A2985691-A8A59C8B",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_GetItem_C",
+    "Name": "FNBP_GetItem_C_0",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetItem.FNBP_GetItem_C'",
+    "Template": {
+      "ObjectName": "FNBP_GetItem_C'Default__FNBP_GetItem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetItem.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GetItemList": [
+        {
+          "Key": {
+            "Key": "Blueprint_Zoe_Halloweenskin_1"
+          },
+          "Value": 1
+        }
+      ],
+      "NetworkInvokeName": "GetItem_Quest",
+      "GraphNode": null,
+      "NodeGuid": "CB0076EB-4B90B859-D1D46DA4-ED4233E5"
+    }
+  },
+  {
+    "Type": "FNBP_GetItem_C",
+    "Name": "FNBP_GetItem_C_2",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetItem.FNBP_GetItem_C'",
+    "Template": {
+      "ObjectName": "FNBP_GetItem_C'Default__FNBP_GetItem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_GetItem.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GetItemList": [
+        {
+          "Key": {
+            "Key": "Blueprint_Zoe_Halloweenskin_1"
+          },
+          "Value": 1
+        }
+      ],
+      "NetworkInvokeName": "RestoreItem_Quest",
+      "GraphNode": null,
+      "NodeGuid": "1E0ADB32-4B3316FA-285B3186-2B083907"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_BOSS_START_DESC_ZOE_NOTCLEARD"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "51F1418C-4640A699-0A8583BF-F96EEF35"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_BOSS_START_DESC_ZOE1"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "24C91E5B-4AC1CC1D-6BD3A7A0-04562893",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "BC5EAF02-4FE1F983-B692489F-E8BB50FF",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_10",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_BOSS_REWARD_DESC_ZOE"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "485E1C48-4855489B-716F64AA-DEADD080"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_12",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_START_DESC_ZOE5"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "4D5F6C8D-47772557-55F7269D-0F0CB4F6",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "21A362AC-4025004B-67FDA1BB-326D7593",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_13",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_INPROGRESS_DESC_ZOE5"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "B58F6016-4DC3F9ED-7CF9B8A8-1F20DF98"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_14",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_COMPLETED_DESC_ZOE5"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "86D0452A-4BFF0AB4-AA2CA1B1-09DBA463",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "1679DB7D-44CB7D98-EB3D7099-9C9A3C28",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_15",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_INPROGRESS_DESC_ZOE5"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "261DA7D8-4F7BB6EE-2BF3F5B5-16467146",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "1E0ADB32-4B3316FA-285B3186-2B083907",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_16",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_BOSS_START_DESC_ZOE_REPLAY"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "C271EC26-463C9B0B-35F70B84-08D5F0C7",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "20307FDA-4ABB6BF1-F0654D9D-D90CDD51",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_17",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_BOSS_INPROGRESS_DESC_ZOE_REPLAY"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "59666EE8-42FCAA40-627D39B9-64EEAF08"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_18",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_BOSS_COMPLETED_DESC_ZOE_REPLAY"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "12C112E2-4EEDA6FF-C459F78E-1AF74516",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "8736E42A-483FFEAD-A9D0D9B4-51DB91DB",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_BOSS_INPROGRESS_DESC_ZOE1"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "0696E8F8-41A25429-532F59B1-1CD2885A"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_3",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_BOSS_COMPLETED_DESC_ZOE1"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "B0D06581-4C883D6A-43450EA2-F628E04F",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "EB5FA673-46625DF6-38A67AAB-46D98988",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_BOSS_START_DESC_ZOE2"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "37BC152F-4067712A-5A485FB1-52437A50",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "68AF8A39-4FD82DEE-4C864884-C4891C8C",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_5",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_BOSS_INPROGRESS_DESC_ZOE2"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "3677FFC1-4D56E9A1-A0E71CB4-01FD8510"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_6",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_BOSS_COMPLETED_DESC_ZOE2"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "63FE949F-49A35928-70585A8F-92F71249",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "2D4B026B-41EE779A-8247C98B-A6F1F444",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_7",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_BOSS_START_DESC_ZOE3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "1A999D0C-4AD84776-9928F5B7-D0CF4819",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "87228DEC-46D80E27-866C84AC-CB256D23",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_8",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_BOSS_INPROGRESS_DESC_ZOE3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "1E23F54D-4B9A01CC-DBC8E3B4-2DC24DBD"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_9",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_BOSS_COMPLETED_DESC_ZOE3"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "53F3FC27-4623337F-7B1168BB-9EDB3978",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "485E1C48-4855489B-716F64AA-DEADD080",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkBranch_Yes_No_C",
+    "Name": "FNBP_NPCTalkBranch_Yes_No_C_0",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.FNBP_NPCTalkBranch_Yes_No_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'Default__FNBP_NPCTalkBranch_Yes_No_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "20307FDA-4ABB6BF1-F0654D9D-D90CDD51",
+      "OutputPins": [
+        {
+          "PinName": "CHOICE_YES",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "CHOICE_NO",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "CHOICE_YES",
+          "Value": {
+            "NodeGuid": "FC7A4416-42E1E3EA-3E40598F-2177C0B4",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "CHOICE_NO",
+          "Value": {
+            "NodeGuid": "131D9241-45212529-3CB963B6-364C69E6",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_0",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe01"
+      },
+      "NetworkInvokeName": "OrderQuest_Zoe01",
+      "GraphNode": null,
+      "NodeGuid": "BC5EAF02-4FE1F983-B692489F-E8BB50FF"
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_1",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe02"
+      },
+      "NetworkInvokeName": "OrderQuest_Zoe02",
+      "GraphNode": null,
+      "NodeGuid": "68AF8A39-4FD82DEE-4C864884-C4891C8C"
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_2",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe03"
+      },
+      "NetworkInvokeName": "OrderQuest_Zoe03",
+      "GraphNode": null,
+      "NodeGuid": "87228DEC-46D80E27-866C84AC-CB256D23"
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_3",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe_Halloween"
+      },
+      "NetworkInvokeName": "OrderQuest_Zoe_Halloween",
+      "GraphNode": null,
+      "NodeGuid": "21A362AC-4025004B-67FDA1BB-326D7593",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "CB0076EB-4B90B859-D1D46DA4-ED4233E5",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_4",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe04"
+      },
+      "NetworkInvokeName": "OrderQuest_Zoe04",
+      "GraphNode": null,
+      "NodeGuid": "FC7A4416-42E1E3EA-3E40598F-2177C0B4"
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_0",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_Zoe02_Return_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Zoe02_Return.0"
+      },
+      "QuestId": {
+        "RowName": "Sub_Zoe02"
+      },
+      "GraphNode": null,
+      "NodeGuid": "DFADE505-412F2D5E-3D028289-1F9FE0FC",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "63FE949F-49A35928-70585A8F-92F71249",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "3677FFC1-4D56E9A1-A0E71CB4-01FD8510",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_1",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_Zoe03_DeliveryQuestItem_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Zoe03_DeliveryQuestItem.0"
+      },
+      "QuestId": {
+        "RowName": "Sub_Zoe03"
+      },
+      "GraphNode": null,
+      "NodeGuid": "21107125-453A74EB-51A697A2-7E56208D",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "5EC2B950-42A3739C-F51E7886-F7C57EA0",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "B2A25DDC-475C98E3-527216B4-23AFD2AD",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_2",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_Zoe_Halloween_DeliveryQuestItem_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Zoe_Halloween_DeliveryQuestItem.0"
+      },
+      "QuestId": {
+        "RowName": "Sub_Zoe_Halloween"
+      },
+      "GraphNode": null,
+      "NodeGuid": "990E5AD7-497514A2-2D1A02A1-9289EADF",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "56195FB7-46A1F629-15023B91-D524EB88",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "FAAE8D3F-46C324CC-33249292-10E5BFE4",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_3",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_Zoe04_Return_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Zoe04_Return.0"
+      },
+      "QuestId": {
+        "RowName": "Sub_Zoe04"
+      },
+      "GraphNode": null,
+      "NodeGuid": "631E02AD-4D9F5AC4-C520E08B-D578B073",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "12C112E2-4EEDA6FF-C459F78E-1AF74516",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "59666EE8-42FCAA40-627D39B9-64EEAF08",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe01"
+      },
+      "GraphNode": null,
+      "NodeGuid": "634ABE15-406E99A4-F1725993-68967383",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "24C91E5B-4AC1CC1D-6BD3A7A0-04562893",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "C5DDA8B2-44C09CDF-3E8FF18D-526267F8",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "A3D78BA0-4FB02493-2AB6EEA7-52D01D9E",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_1",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe02"
+      },
+      "GraphNode": null,
+      "NodeGuid": "A3D78BA0-4FB02493-2AB6EEA7-52D01D9E",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "37BC152F-4067712A-5A485FB1-52437A50",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "DFADE505-412F2D5E-3D028289-1F9FE0FC",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "94290314-45602003-487B1488-DC7232C2",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_2",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe03"
+      },
+      "GraphNode": null,
+      "NodeGuid": "94290314-45602003-487B1488-DC7232C2",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "1A999D0C-4AD84776-9928F5B7-D0CF4819",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "21107125-453A74EB-51A697A2-7E56208D",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "BED524F2-4ADDF288-6834F19A-4110AEE6",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_3",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe_Halloween"
+      },
+      "GraphNode": null,
+      "NodeGuid": "BED524F2-4ADDF288-6834F19A-4110AEE6",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "4D5F6C8D-47772557-55F7269D-0F0CB4F6",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "990E5AD7-497514A2-2D1A02A1-9289EADF",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "677E7E5F-45190876-81152298-26E4A43D",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_4",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe04"
+      },
+      "GraphNode": null,
+      "NodeGuid": "677E7E5F-45190876-81152298-26E4A43D",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "C271EC26-463C9B0B-35F70B84-08D5F0C7",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "631E02AD-4D9F5AC4-C520E08B-D578B073",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "C271EC26-463C9B0B-35F70B84-08D5F0C7",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestDeliveryItem_C",
+    "Name": "FNBP_QuestDeliveryItem_C_0",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestDeliveryItem.FNBP_QuestDeliveryItem_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestDeliveryItem_C'Default__FNBP_QuestDeliveryItem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestDeliveryItem.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe03"
+      },
+      "NetworkInvokeName": "DeliveryItem_Zoe03",
+      "GraphNode": null,
+      "NodeGuid": "422F8537-4AFB0562-A11167BC-DA963BE5",
+      "Connections": [
+        {
+          "Key": "Complete",
+          "Value": {
+            "NodeGuid": "6596F487-48970C33-0BE0E58C-133ACE0E",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Continue",
+          "Value": {
+            "NodeGuid": "1E23F54D-4B9A01CC-DBC8E3B4-2DC24DBD",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestDeliveryItem_C",
+    "Name": "FNBP_QuestDeliveryItem_C_1",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestDeliveryItem.FNBP_QuestDeliveryItem_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestDeliveryItem_C'Default__FNBP_QuestDeliveryItem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestDeliveryItem.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe_Halloween"
+      },
+      "NetworkInvokeName": "DeliveryItem_Zoe_Halloween",
+      "GraphNode": null,
+      "NodeGuid": "228F704B-48C1F0B3-76BAAFBD-13B95AA2",
+      "Connections": [
+        {
+          "Key": "Complete",
+          "Value": {
+            "NodeGuid": "86D0452A-4BFF0AB4-AA2CA1B1-09DBA463",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Continue",
+          "Value": {
+            "NodeGuid": "DB92A82B-497C9559-E571F796-259D8DCD",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestDisplayOtomo_C",
+    "Name": "FNBP_QuestDisplayOtomo_C_0",
+    "Outer": "FABP_GrassBoss01",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestDisplayOtomo.FNBP_QuestDisplayOtomo_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestDisplayOtomo_C'Default__FNBP_QuestDisplayOtomo_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestDisplayOtomo.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_Zoe01"
+      },
+      "NetworkInvokeName": "DisplayOtomo_Zoe01",
+      "GraphNode": null,
+      "NodeGuid": "C5DDA8B2-44C09CDF-3E8FF18D-526267F8",
+      "Connections": [
+        {
+          "Key": "Complete",
+          "Value": {
+            "NodeGuid": "B0D06581-4C883D6A-43450EA2-F628E04F",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Continue",
+          "Value": {
+            "NodeGuid": "0696E8F8-41A25429-532F59B1-1CD2885A",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_GrassBoss01",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 3,
+      "AssetGuid": "975E3704-41D1E922-71289889-96576991",
+      "Nodes": [
+        {
+          "Key": "FDB0F1BE-4C2CCDD8-5882BCAE-88EE6A7A",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_GrassBoss01:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.6"
+          }
+        },
+        {
+          "Key": "9B8AE05D-45C7E91F-F2048A9A-E13735B9",
+          "Value": {
+            "ObjectName": "FNBP_BossDefeatBranch_C'FABP_GrassBoss01:FNBP_BossDefeatBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.9"
+          }
+        },
+        {
+          "Key": "51F1418C-4640A699-0A8583BF-F96EEF35",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.22"
+          }
+        },
+        {
+          "Key": "634ABE15-406E99A4-F1725993-68967383",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_GrassBoss01:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.50"
+          }
+        },
+        {
+          "Key": "24C91E5B-4AC1CC1D-6BD3A7A0-04562893",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.23"
+          }
+        },
+        {
+          "Key": "BC5EAF02-4FE1F983-B692489F-E8BB50FF",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_GrassBoss01:FNBP_OrderQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.41"
+          }
+        },
+        {
+          "Key": "C5DDA8B2-44C09CDF-3E8FF18D-526267F8",
+          "Value": {
+            "ObjectName": "FNBP_QuestDisplayOtomo_C'FABP_GrassBoss01:FNBP_QuestDisplayOtomo_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.57"
+          }
+        },
+        {
+          "Key": "0696E8F8-41A25429-532F59B1-1CD2885A",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.32"
+          }
+        },
+        {
+          "Key": "B0D06581-4C883D6A-43450EA2-F628E04F",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.33"
+          }
+        },
+        {
+          "Key": "EB5FA673-46625DF6-38A67AAB-46D98988",
+          "Value": {
+            "ObjectName": "FNBP_CompleteQuest_C'FABP_GrassBoss01:FNBP_CompleteQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.10"
+          }
+        },
+        {
+          "Key": "A3D78BA0-4FB02493-2AB6EEA7-52D01D9E",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_GrassBoss01:FNBP_QuestBranch_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.51"
+          }
+        },
+        {
+          "Key": "37BC152F-4067712A-5A485FB1-52437A50",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.34"
+          }
+        },
+        {
+          "Key": "68AF8A39-4FD82DEE-4C864884-C4891C8C",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_GrassBoss01:FNBP_OrderQuest_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.42"
+          }
+        },
+        {
+          "Key": "2D4B026B-41EE779A-8247C98B-A6F1F444",
+          "Value": {
+            "ObjectName": "FNBP_CompleteQuest_C'FABP_GrassBoss01:FNBP_CompleteQuest_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.11"
+          }
+        },
+        {
+          "Key": "3677FFC1-4D56E9A1-A0E71CB4-01FD8510",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.35"
+          }
+        },
+        {
+          "Key": "63FE949F-49A35928-70585A8F-92F71249",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.36"
+          }
+        },
+        {
+          "Key": "DFADE505-412F2D5E-3D028289-1F9FE0FC",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_GrassBoss01:FNBP_QuestBlockBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.46"
+          }
+        },
+        {
+          "Key": "94290314-45602003-487B1488-DC7232C2",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_GrassBoss01:FNBP_QuestBranch_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.52"
+          }
+        },
+        {
+          "Key": "1A999D0C-4AD84776-9928F5B7-D0CF4819",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_7'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.37"
+          }
+        },
+        {
+          "Key": "87228DEC-46D80E27-866C84AC-CB256D23",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_GrassBoss01:FNBP_OrderQuest_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.43"
+          }
+        },
+        {
+          "Key": "7C80DF8A-47A79F08-F7B25485-699FAAB8",
+          "Value": {
+            "ObjectName": "FNBP_ExistItemBranch_C'FABP_GrassBoss01:FNBP_ExistItemBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.15"
+          }
+        },
+        {
+          "Key": "1E23F54D-4B9A01CC-DBC8E3B4-2DC24DBD",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_8'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.38"
+          }
+        },
+        {
+          "Key": "422F8537-4AFB0562-A11167BC-DA963BE5",
+          "Value": {
+            "ObjectName": "FNBP_QuestDeliveryItem_C'FABP_GrassBoss01:FNBP_QuestDeliveryItem_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.55"
+          }
+        },
+        {
+          "Key": "53F3FC27-4623337F-7B1168BB-9EDB3978",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_9'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.39"
+          }
+        },
+        {
+          "Key": "7A46460F-4C36330B-313077AB-960EDA58",
+          "Value": {
+            "ObjectName": "FNBP_CompleteQuest_C'FABP_GrassBoss01:FNBP_CompleteQuest_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.12"
+          }
+        },
+        {
+          "Key": "485E1C48-4855489B-716F64AA-DEADD080",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_10'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.24"
+          }
+        },
+        {
+          "Key": "6596F487-48970C33-0BE0E58C-133ACE0E",
+          "Value": {
+            "ObjectName": "FNBP_GetCharacter_C'FABP_GrassBoss01:FNBP_GetCharacter_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.18"
+          }
+        },
+        {
+          "Key": "990E5AD7-497514A2-2D1A02A1-9289EADF",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_GrassBoss01:FNBP_QuestBlockBranch_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.48"
+          }
+        },
+        {
+          "Key": "21107125-453A74EB-51A697A2-7E56208D",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_GrassBoss01:FNBP_QuestBlockBranch_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.47"
+          }
+        },
+        {
+          "Key": "BED524F2-4ADDF288-6834F19A-4110AEE6",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_GrassBoss01:FNBP_QuestBranch_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.53"
+          }
+        },
+        {
+          "Key": "4D5F6C8D-47772557-55F7269D-0F0CB4F6",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_12'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.25"
+          }
+        },
+        {
+          "Key": "21A362AC-4025004B-67FDA1BB-326D7593",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_GrassBoss01:FNBP_OrderQuest_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.44"
+          }
+        },
+        {
+          "Key": "BF8BF7C2-4E2B9BFB-D0719B92-443C4584",
+          "Value": {
+            "ObjectName": "FNBP_ExistItemBranch_C'FABP_GrassBoss01:FNBP_ExistItemBranch_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.16"
+          }
+        },
+        {
+          "Key": "B58F6016-4DC3F9ED-7CF9B8A8-1F20DF98",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_13'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.26"
+          }
+        },
+        {
+          "Key": "228F704B-48C1F0B3-76BAAFBD-13B95AA2",
+          "Value": {
+            "ObjectName": "FNBP_QuestDeliveryItem_C'FABP_GrassBoss01:FNBP_QuestDeliveryItem_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.56"
+          }
+        },
+        {
+          "Key": "86D0452A-4BFF0AB4-AA2CA1B1-09DBA463",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_14'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.27"
+          }
+        },
+        {
+          "Key": "1679DB7D-44CB7D98-EB3D7099-9C9A3C28",
+          "Value": {
+            "ObjectName": "FNBP_CompleteQuest_C'FABP_GrassBoss01:FNBP_CompleteQuest_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.13"
+          }
+        },
+        {
+          "Key": "631E02AD-4D9F5AC4-C520E08B-D578B073",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_GrassBoss01:FNBP_QuestBlockBranch_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.49"
+          }
+        },
+        {
+          "Key": "CB0076EB-4B90B859-D1D46DA4-ED4233E5",
+          "Value": {
+            "ObjectName": "FNBP_GetItem_C'FABP_GrassBoss01:FNBP_GetItem_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.20"
+          }
+        },
+        {
+          "Key": "677E7E5F-45190876-81152298-26E4A43D",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_GrassBoss01:FNBP_QuestBranch_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.54"
+          }
+        },
+        {
+          "Key": "C271EC26-463C9B0B-35F70B84-08D5F0C7",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_16'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.29"
+          }
+        },
+        {
+          "Key": "FC7A4416-42E1E3EA-3E40598F-2177C0B4",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_GrassBoss01:FNBP_OrderQuest_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.45"
+          }
+        },
+        {
+          "Key": "1E0ADB32-4B3316FA-285B3186-2B083907",
+          "Value": {
+            "ObjectName": "FNBP_GetItem_C'FABP_GrassBoss01:FNBP_GetItem_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.21"
+          }
+        },
+        {
+          "Key": "59666EE8-42FCAA40-627D39B9-64EEAF08",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_17'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.30"
+          }
+        },
+        {
+          "Key": "9411A430-4271BFBE-2F5FBE95-EFE55019",
+          "Value": {
+            "ObjectName": "FNBP_ExistItemBranch_C'FABP_GrassBoss01:FNBP_ExistItemBranch_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.17"
+          }
+        },
+        {
+          "Key": "12C112E2-4EEDA6FF-C459F78E-1AF74516",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_18'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.31"
+          }
+        },
+        {
+          "Key": "B4CECA3B-465EC07F-A2985691-A8A59C8B",
+          "Value": {
+            "ObjectName": "FNBP_CompleteQuest_C'FABP_GrassBoss01:FNBP_CompleteQuest_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.14"
+          }
+        },
+        {
+          "Key": "261DA7D8-4F7BB6EE-2BF3F5B5-16467146",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_GrassBoss01:FNBP_NPCTalk_FixedMsdId_C_15'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.28"
+          }
+        },
+        {
+          "Key": "8736E42A-483FFEAD-A9D0D9B4-51DB91DB",
+          "Value": {
+            "ObjectName": "FNBP_GetCharacter_C'FABP_GrassBoss01:FNBP_GetCharacter_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.19"
+          }
+        },
+        {
+          "Key": "20307FDA-4ABB6BF1-F0654D9D-D90CDD51",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'FABP_GrassBoss01:FNBP_NPCTalkBranch_Yes_No_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.40"
+          }
+        },
+        {
+          "Key": "131D9241-45212529-3CB963B6-364C69E6",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_GrassBoss01:FlowNode_Finish_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.0"
+          }
+        },
+        {
+          "Key": "5EC2B950-42A3739C-F51E7886-F7C57EA0",
+          "Value": {
+            "ObjectName": "FNBP_AlreadyDeliveredItem_C'FABP_GrassBoss01:FNBP_AlreadyDeliveredItem_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.7"
+          }
+        },
+        {
+          "Key": "B2A25DDC-475C98E3-527216B4-23AFD2AD",
+          "Value": {
+            "ObjectName": "FlowNode_Reroute'FABP_GrassBoss01:FlowNode_Reroute_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.1"
+          }
+        },
+        {
+          "Key": "2C0A6598-4B534D0A-801913A7-9B181B24",
+          "Value": {
+            "ObjectName": "FlowNode_Reroute'FABP_GrassBoss01:FlowNode_Reroute_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.2"
+          }
+        },
+        {
+          "Key": "FAAE8D3F-46C324CC-33249292-10E5BFE4",
+          "Value": {
+            "ObjectName": "FlowNode_Reroute'FABP_GrassBoss01:FlowNode_Reroute_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.3"
+          }
+        },
+        {
+          "Key": "677342B3-4017B2D0-A3C136AA-ADB6DE69",
+          "Value": {
+            "ObjectName": "FlowNode_Reroute'FABP_GrassBoss01:FlowNode_Reroute_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.4"
+          }
+        },
+        {
+          "Key": "DB92A82B-497C9559-E571F796-259D8DCD",
+          "Value": {
+            "ObjectName": "FlowNode_Reroute'FABP_GrassBoss01:FlowNode_Reroute_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.5"
+          }
+        },
+        {
+          "Key": "56195FB7-46A1F629-15023B91-D524EB88",
+          "Value": {
+            "ObjectName": "FNBP_AlreadyDeliveredItem_C'FABP_GrassBoss01:FNBP_AlreadyDeliveredItem_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_GrassBoss01.8"
+          }
+        }
+      ]
+    }
+  }
+]

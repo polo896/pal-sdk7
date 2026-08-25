@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b07_grass_06_03_susuki_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b07_grass_06_03_susuki'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b07/tree/mesh/SM_pal_b07_grass_06_03_susuki.2"
+      },
+      "UpdateGuid": "0BC6D4D9-444E5D0D-778B9383-9AB2D38B",
+      "Density": 500.0,
+      "ScaleX": {
+        "Min": 3.0,
+        "Max": 3.5
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 0.6616936,
+          "Y": -0.8682499,
+          "Z": 14.342775
+        },
+        "BoxExtent": {
+          "X": 18.486534,
+          "Y": 18.394081,
+          "Z": 21.14902
+        },
+        "SphereRadius": 27.4586119517579
+      },
+      "LowBoundOriginRadius": {
+        "X": 1.3539119,
+        "Y": -1.3463902,
+        "Z": 14.071425
+      },
+      "CullDistance": {
+        "Max": 6500
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

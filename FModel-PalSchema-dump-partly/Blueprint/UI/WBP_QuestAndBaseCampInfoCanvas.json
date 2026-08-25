@@ -1,0 +1,3429 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_WorkerSimpleInfo",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.CanvasPanel_WorkerSimpleInfo.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.2"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.MainCanvas.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.6"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "MainCanvas",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.MainCanvas.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.3"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.MainCanvas.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.MainCanvas.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.4"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.MainCanvas.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_WorkerSimpleInfo",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -35.0,
+          "Right": 796.0,
+          "Bottom": 168.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.CanvasPanel_WorkerSimpleInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.0"
+      },
+      "Content": {
+        "ObjectName": "WBP_WorkerSimpleDetail_C'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.WBP_WorkerSimpleDetail'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.67"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "MainCanvas",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -60.0,
+          "Top": 28.0,
+          "Right": 486.0,
+          "Bottom": 506.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.MainCanvas'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.1"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.54"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "MainCanvas",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.MainCanvas'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.1"
+      },
+      "Content": {
+        "ObjectName": "WBP_IngameMenu_CampLevelUp_C'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.WBP_IngameMenu_CampLevelUp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.63"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "MainCanvas",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 508.0,
+          "Top": 376.0,
+          "Right": 42.0,
+          "Bottom": 41.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.MainCanvas'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.1"
+      },
+      "Content": {
+        "ObjectName": "WBP_PlayerInputKeyGuideIcon_C'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.WBP_PlayerInputKeyGuideIcon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.65"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "MainCanvas",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.MainCanvas'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.1"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.CanvasPanel_WorkerSimpleInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.0"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "CREATEDELEGATE_PROXYFUNCTION_0",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "QuestId",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Destruct",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Destruct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_QuestAndBaseCampInfoCanvas",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_K2_GetTimerRemainingTimeHandle_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_IsValidTimerHandle_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalUIInsideBaseCampCanvas:OnEnterPalBoxAreaDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalUIInsideBaseCampCanvas:OnLeavePalBoxAreaDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalmi_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalInsideBaseCampCheckComponent:OnEnterBaseCampDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalInsideBaseCampCheckComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetInsideBaseCampModel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalBaseCampModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalInsideBaseCampCheckComponent:OnLeaveBaseCampDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalmi_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalInsideBaseCampCheckComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetInsideBaseCampModel_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalBaseCampModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalPlayerState_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerState'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetQuestManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalQuestManager'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_4",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalQuestManager:UpdatedQuestDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_5",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalQuestManager:CompletedQuestDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_IsVisible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_6",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalUIInsideBaseCampCanvas:OnUpdateInsideBaseCampWokerBattleType__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOptionSubsystem_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalOptionSubsystem'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_8",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_BaseCampTaskChecker_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BaseCampTask/BP_BaseCampTaskChecker.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetUISettings_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 28,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOptionUISettings'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_7",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalOptionSubsystem:OnChangeUISettingDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_8",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_9",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalQuestManager:UpdateTrackingQuestId__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_10",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SetRemainTimer_remainTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "HideBaseCampInfo",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "LoopCheck",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "On Enter Base Camp",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "model",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalBaseCampModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetLocalPlayerGroupID_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Guid'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetGroupIdBelongTo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Guid'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetId_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Guid'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_GuidGuid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalPlayerState_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerState'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsInStage_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalBaseCampModel:SimpleDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetInsideBaseCampModel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalBaseCampModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "On Enter Pal Box Area",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalPlayerState_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerState'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsInStage_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "On Leave Base Camp",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalBaseCampModel:SimpleDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetBaseCampManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalBaseCampManager'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_TryGetModel_OutModel",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalBaseCampModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_TryGetModel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "On Update Base Camp Detail",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnChangedUISettings",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "PrevSettings",
+        "Flags": "RF_Public",
+        "ElementSize": 28,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOptionUISettings'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NewSettings",
+        "Flags": "RF_Public",
+        "ElementSize": 28,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOptionUISettings'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "AllComplete",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnCompletedQuest",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "QuestId",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalQuestManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalQuestManager'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_GetQuestType_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalQuestType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalQuestType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInitialized",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:OnInitialized'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnLeavePalBoxArea",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetup_AfterCreatedPlayer",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUserWidget:OnSetup_AfterCreatedPlayer'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTimer_CollectWorkerDirectorModel",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_GetWorkHardType_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalBaseCampPassiveEffectWorkHardType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalBaseCampPassiveEffectWorkHardType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsExistWorkHardModel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsExistWorkerDirectorModel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTimerEvent_UpdateQuestDetail",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUpdateBaseCampWorkHard",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "WorkHardType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalBaseCampPassiveEffectWorkHardType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalBaseCampPassiveEffectWorkHardType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsExistWorkHardModel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUpdatedQuest",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "QuestId",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalQuestManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalQuestManager'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_GetQuestType_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalQuestType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalQuestType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetTrackingQuestId_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUpdatedTrackingQuest",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "QuestId",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUpdateWorkerBattleType",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "BattleType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalBaseCampWorkerDirectionBattleType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalBaseCampWorkerDirectionBattleType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetActiveSimpleInfoMode",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bActiveSimpleInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetVerticalBoxVisible",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsVisible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Show Base Camp Info",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ShowLevelUp",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "model",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalBaseCampModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetLevel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetHUDService_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDService'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Trace Worker Pal",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalmi_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'Actor'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_DoubleToVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValidSoftObjectReference_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwningPlayerCameraManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerCameraManager'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetActorForwardVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_LineTraceSingle_OutHit",
+        "Flags": "RF_Public",
+        "ElementSize": 240,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LineTraceSingle_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Character_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsBaseCampPal_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 56,
+        "PropertyFlags": "UObjectWrapper",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ObjectObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetCharacterParameterComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacterParameterComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Update Item Detail",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdatePalDetail",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetBaseCampPalBedCount_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetBaseCampPalSlots_outSlots",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetBaseCampPalSlots_outSlots",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'PalIndividualCharacterSlot'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateTask",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetTaskData_outTaskData",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalBaseCampTaskDataSet'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetTaskData_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_CheckTask_outCheckedData",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalBaseCampTaskCheckedData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_CheckTask_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateWindowBorder",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsVisible_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESlateVisibility'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_Border_Bottom",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Bottom.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.39"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Bottom.HorizontalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.40"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Bottom.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.41"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox.VerticalBoxSlot_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.60"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_Border_Top",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Top.HorizontalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.42"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Top.HorizontalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.43"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Top.HorizontalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.44"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox.VerticalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.56"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_Border_Bottom",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": -8.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Bottom'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.37"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.Image'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.45"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_Border_Bottom",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Padding": {
+        "Left": -6.0,
+        "Right": -6.0
+      },
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Top",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Bottom'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.37"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.Image_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.46"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_Border_Bottom",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Right": -12.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Bottom'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.37"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.Image_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.49"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_Border_Top",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": -8.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Top'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.38"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.Image_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.50"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_Border_Top",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Padding": {
+        "Left": -6.0,
+        "Top": 3.0,
+        "Right": -6.0
+      },
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Top",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Top'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.38"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.Image_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.47"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_Border_Top",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Right": -12.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Top'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.38"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.Image_11'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.48"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 12.0,
+          "Y": 3.0
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_02'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_02.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Bottom.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.39"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 12.0,
+          "Y": 1.0
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_02'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_02.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Bottom.HorizontalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.40"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_10",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 12.0,
+          "Y": 1.0
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_02'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_02.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Top.HorizontalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.43"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_11",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 12.0,
+          "Y": 3.0
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_02'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_02.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Top.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.44"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 12.0,
+          "Y": 3.0
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_02'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_02.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Bottom.HorizontalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.41"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_8",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 12.0,
+          "Y": 3.0
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Color_White_02'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Fontcolor/MI_UI_Color_White_02.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Top.HorizontalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.42"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_QuestInfo",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.Overlay_QuestInfo.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.52"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox.VerticalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.55"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_QuestInfo",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.Overlay_QuestInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.51"
+      },
+      "Content": {
+        "ObjectName": "WBP_Ingame_QuestBoard_C'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.WBP_Ingame_QuestBoard'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.62"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_101",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Size": {
+        "X": 1.0,
+        "Y": 4.0
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox.VerticalBoxSlot_7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.59"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox.VerticalBoxSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.57"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox.VerticalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.55"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox.VerticalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.56"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox.VerticalBoxSlot_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.59"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox.VerticalBoxSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.58"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox.VerticalBoxSlot_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.60"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.MainCanvas.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.3"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.54"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.Overlay_QuestInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.51"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 150.0,
+        "Bottom": 3.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.54"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Top'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.38"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_3",
+    "Outer": "VerticalBox",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.54"
+      },
+      "Content": {
+        "ObjectName": "WBP_BattleEntry_Member_C'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.WBP_BattleEntry_Member'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.61"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_4",
+    "Outer": "VerticalBox",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 150.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.54"
+      },
+      "Content": {
+        "ObjectName": "WBP_IngameMenu_Task_Simple_C'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.WBP_IngameMenu_Task_Simple'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.64"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_7",
+    "Outer": "VerticalBox",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 150.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.54"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.Spacer_101'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.53"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_8",
+    "Outer": "VerticalBox",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 150.0,
+        "Top": 3.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.54"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.HorizontalBox_Border_Bottom'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.37"
+      }
+    }
+  },
+  {
+    "Type": "WBP_BattleEntry_Member_C",
+    "Name": "WBP_BattleEntry_Member",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BattleEntry/WBP_BattleEntry_Member.WBP_BattleEntry_Member_C'",
+    "Template": {
+      "ObjectName": "WBP_BattleEntry_Member_C'Default__WBP_BattleEntry_Member_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BattleEntry/WBP_BattleEntry_Member.57"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox.VerticalBoxSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.57"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "WBP_Ingame_QuestBoard_C",
+    "Name": "WBP_Ingame_QuestBoard",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Quest/WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C'",
+    "Template": {
+      "ObjectName": "WBP_Ingame_QuestBoard_C'Default__WBP_Ingame_QuestBoard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Quest/WBP_Ingame_QuestBoard.39"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.Overlay_QuestInfo.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.52"
+      }
+    }
+  },
+  {
+    "Type": "WBP_IngameMenu_CampLevelUp_C",
+    "Name": "WBP_IngameMenu_CampLevelUp",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Task/WBP_IngameMenu_CampLevelUp.WBP_IngameMenu_CampLevelUp_C'",
+    "Template": {
+      "ObjectName": "WBP_IngameMenu_CampLevelUp_C'Default__WBP_IngameMenu_CampLevelUp_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Task/WBP_IngameMenu_CampLevelUp.160"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.MainCanvas.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.4"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "WBP_IngameMenu_Task_Simple_C",
+    "Name": "WBP_IngameMenu_Task_Simple",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Task/WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C'",
+    "Template": {
+      "ObjectName": "WBP_IngameMenu_Task_Simple_C'Default__WBP_IngameMenu_Task_Simple_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Task/WBP_IngameMenu_Task_Simple.264"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.VerticalBox.VerticalBoxSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.58"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PlayerInputKeyGuideIcon_C",
+    "Name": "WBP_PlayerInputKeyGuideIcon",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PlayerInputKeyGuideIcon.WBP_PlayerInputKeyGuideIcon_C'",
+    "Template": {
+      "ObjectName": "WBP_PlayerInputKeyGuideIcon_C'Default__WBP_PlayerInputKeyGuideIcon_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PlayerInputKeyGuideIcon.10"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.MainCanvas.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.5"
+      }
+    }
+  },
+  {
+    "Type": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Name": "Default__WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.WBP_QuestAndBaseCampInfoCanvas_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "tackCheckTimerHandle": {
+        "Handle": 0
+      },
+      "TraceLength": 3000.0,
+      "CollectWorkerDirectorModelTimer": {
+        "Handle": 0
+      },
+      "LoopCheckTimer": {
+        "Handle": 0
+      },
+      "NewVar": {
+        "Handle": 0
+      },
+      "TimerHandle_UpdateQuestDetail": {
+        "Handle": 0
+      },
+      "palboxAreaRange": 1000.0,
+      "allTaskCompletedLogClass": {
+        "ObjectName": "WidgetBlueprintGeneratedClass'WBP_BlinkedLog_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Log/WBP_BlinkedLog.34"
+      },
+      "displayItemInfoMap": [
+        {
+          "Key": {
+            "Key": "Wood"
+          },
+          "Value": {
+            "isShowWhenNothingItem": false
+          }
+        },
+        {
+          "Key": {
+            "Key": "Stone"
+          },
+          "Value": {
+            "isShowWhenNothingItem": false
+          }
+        },
+        {
+          "Key": {
+            "Key": "Money"
+          },
+          "Value": {
+            "isShowWhenNothingItem": false
+          }
+        },
+        {
+          "Key": {
+            "Key": "CopperOre"
+          },
+          "Value": {
+            "isShowWhenNothingItem": true
+          }
+        },
+        {
+          "Key": {
+            "Key": "IronOre"
+          },
+          "Value": {
+            "isShowWhenNothingItem": true
+          }
+        }
+      ],
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "WBP_WorkerSimpleDetail_C",
+    "Name": "WBP_WorkerSimpleDetail",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/WorkerSimpleDetail/WBP_WorkerSimpleDetail.WBP_WorkerSimpleDetail_C'",
+    "Template": {
+      "ObjectName": "WBP_WorkerSimpleDetail_C'Default__WBP_WorkerSimpleDetail_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkerSimpleDetail/WBP_WorkerSimpleDetail.3"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.CanvasPanel_WorkerSimpleInfo.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.2"
+      }
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.69"
+      },
+      "bClassRequiresNativeTick": true,
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:ExecuteUbergraph_WBP_QuestAndBaseCampInfoCanvas'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUIInsideBaseCampCanvas'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:CREATEDELEGATE_PROXYFUNCTION_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.8"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:SetActiveSimpleInfoMode'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.28"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnTimerEvent_UpdateQuestDetail'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.23"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnUpdatedTrackingQuest'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.26"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnCompletedQuest'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.18"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnUpdatedQuest'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.25"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnChangedUISettings'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.17"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnUpdateBaseCampWorkHard'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.24"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnUpdateWorkerBattleType'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.27"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnTimer_CollectWorkerDirectorModel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.22"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:ShowLevelUp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.31"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:UpdateWindowBorder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.36"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:Show Base Camp Info'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.30"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:HideBaseCampInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.11"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:Trace Worker Pal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.32"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnLeavePalBoxArea'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.20"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:On Enter Pal Box Area'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.14"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:Update Item Detail'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.33"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:UpdatePalDetail'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.34"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:UpdateTask'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.35"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:On Update Base Camp Detail'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.16"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:On Leave Base Camp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.15"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:On Enter Base Camp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.13"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.19"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.7"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:Destruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.9"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnSetup_AfterCreatedPlayer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.21"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:SetVerticalBoxVisible'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.29"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:LoopCheck'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.12"
+      },
+      {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:ExecuteUbergraph_WBP_QuestAndBaseCampInfoCanvas'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.10"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CanvasPanel_WorkerSimpleInfo",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HorizontalBox_Border_Bottom",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HorizontalBox_Border_Top",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Overlay_QuestInfo",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Overlay'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "VerticalBox",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'VerticalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_BattleEntry_Member",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_BattleEntry_Member_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/BattleEntry/WBP_BattleEntry_Member.59"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Ingame_QuestBoard",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_QuestBoard_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Quest/WBP_Ingame_QuestBoard.40"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_IngameMenu_CampLevelUp",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_IngameMenu_CampLevelUp_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Task/WBP_IngameMenu_CampLevelUp.163"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_IngameMenu_Task_Simple",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_IngameMenu_Task_Simple_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Task/WBP_IngameMenu_Task_Simple.271"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PlayerInputKeyGuideIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PlayerInputKeyGuideIcon_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PlayerInputKeyGuideIcon.11"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_WorkerSimpleDetail",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_WorkerSimpleDetail_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkerSimpleDetail/WBP_WorkerSimpleDetail.4"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "tackCheckTimerHandle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "TraceLength",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "NowDisplayInfoCharacter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 56,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CollectWorkerDirectorModelTimer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "LoopCheckTimer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NewVar",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TimerHandle_UpdateQuestDetail",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_QuestAndBaseCampInfoCanvas": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:ExecuteUbergraph_WBP_QuestAndBaseCampInfoCanvas'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.10"
+      },
+      "LoopCheck": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:LoopCheck'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.12"
+      },
+      "SetVerticalBoxVisible": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:SetVerticalBoxVisible'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.29"
+      },
+      "OnSetup_AfterCreatedPlayer": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnSetup_AfterCreatedPlayer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.21"
+      },
+      "Destruct": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:Destruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.9"
+      },
+      "Construct": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:Construct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.7"
+      },
+      "OnInitialized": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.19"
+      },
+      "On Enter Base Camp": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:On Enter Base Camp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.13"
+      },
+      "On Leave Base Camp": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:On Leave Base Camp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.15"
+      },
+      "On Update Base Camp Detail": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:On Update Base Camp Detail'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.16"
+      },
+      "UpdateTask": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:UpdateTask'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.35"
+      },
+      "UpdatePalDetail": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:UpdatePalDetail'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.34"
+      },
+      "Update Item Detail": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:Update Item Detail'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.33"
+      },
+      "On Enter Pal Box Area": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:On Enter Pal Box Area'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.14"
+      },
+      "OnLeavePalBoxArea": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnLeavePalBoxArea'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.20"
+      },
+      "Trace Worker Pal": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:Trace Worker Pal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.32"
+      },
+      "HideBaseCampInfo": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:HideBaseCampInfo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.11"
+      },
+      "Show Base Camp Info": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:Show Base Camp Info'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.30"
+      },
+      "UpdateWindowBorder": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:UpdateWindowBorder'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.36"
+      },
+      "ShowLevelUp": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:ShowLevelUp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.31"
+      },
+      "OnTimer_CollectWorkerDirectorModel": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnTimer_CollectWorkerDirectorModel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.22"
+      },
+      "OnUpdateWorkerBattleType": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnUpdateWorkerBattleType'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.27"
+      },
+      "OnUpdateBaseCampWorkHard": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnUpdateBaseCampWorkHard'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.24"
+      },
+      "OnChangedUISettings": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnChangedUISettings'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.17"
+      },
+      "OnUpdatedQuest": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnUpdatedQuest'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.25"
+      },
+      "OnCompletedQuest": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnCompletedQuest'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.18"
+      },
+      "OnUpdatedTrackingQuest": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnUpdatedTrackingQuest'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.26"
+      },
+      "OnTimerEvent_UpdateQuestDetail": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:OnTimerEvent_UpdateQuestDetail'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.23"
+      },
+      "SetActiveSimpleInfoMode": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:SetActiveSimpleInfoMode'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.28"
+      },
+      "CREATEDELEGATE_PROXYFUNCTION_0": {
+        "ObjectName": "Function'WBP_QuestAndBaseCampInfoCanvas_C:CREATEDELEGATE_PROXYFUNCTION_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.8"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_QuestAndBaseCampInfoCanvas_C'Default__WBP_QuestAndBaseCampInfoCanvas_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.66"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_QuestAndBaseCampInfoCanvas_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_QuestAndBaseCampInfoCanvas_C:WidgetTree.MainCanvas'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WBP_QuestAndBaseCampInfoCanvas.1"
+      }
+    }
+  }
+]

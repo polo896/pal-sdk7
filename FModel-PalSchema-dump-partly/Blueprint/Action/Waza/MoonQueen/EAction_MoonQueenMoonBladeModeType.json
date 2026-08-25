@@ -1,0 +1,36 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "EAction_MoonQueenMoonBladeModeType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "931AAB32480441B6EDDFF399C2009D37",
+            "SourceString": "VerticalToHorizontal",
+            "LocalizedString": "VerticalToHorizontal"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "84EAB9DE41792A3412CD09B564F31819",
+            "SourceString": "HorizontalToVertical",
+            "LocalizedString": "HorizontalToVertical"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "EAction_MoonQueenMoonBladeModeType::NewEnumerator0": 0,
+      "EAction_MoonQueenMoonBladeModeType::NewEnumerator1": 1,
+      "EAction_MoonQueenMoonBladeModeType::EAction_MAX": 2
+    },
+    "CppForm": "Namespaced"
+  }
+]

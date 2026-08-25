@@ -1,0 +1,204 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalStatus_RecoverHPOnHPThreshold_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_PalStatus_RecoverHPOnHPThreshold_C:ExecuteUbergraph_BP_PalStatus_RecoverHPOnHPThreshold'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_PalStatus_RecoverHPOnHPThreshold.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalStatus_RecoverHPOnHPThreshold'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_PalStatus_RecoverHPOnHPThreshold_C:BP_OnRecoverHPVfxTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_PalStatus_RecoverHPOnHPThreshold.2"
+      },
+      {
+        "ObjectName": "Function'BP_PalStatus_RecoverHPOnHPThreshold_C:EndRecoverEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_PalStatus_RecoverHPOnHPThreshold.3"
+      },
+      {
+        "ObjectName": "Function'BP_PalStatus_RecoverHPOnHPThreshold_C:ExecuteUbergraph_BP_PalStatus_RecoverHPOnHPThreshold'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_PalStatus_RecoverHPOnHPThreshold.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_PalStatus_RecoverHPOnHPThreshold": {
+        "ObjectName": "Function'BP_PalStatus_RecoverHPOnHPThreshold_C:ExecuteUbergraph_BP_PalStatus_RecoverHPOnHPThreshold'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_PalStatus_RecoverHPOnHPThreshold.4"
+      },
+      "EndRecoverEffect": {
+        "ObjectName": "Function'BP_PalStatus_RecoverHPOnHPThreshold_C:EndRecoverEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_PalStatus_RecoverHPOnHPThreshold.3"
+      },
+      "BP_OnRecoverHPVfxTrigger": {
+        "ObjectName": "Function'BP_PalStatus_RecoverHPOnHPThreshold_C:BP_OnRecoverHPVfxTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_PalStatus_RecoverHPOnHPThreshold.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalStatus_RecoverHPOnHPThreshold_C'Default__BP_PalStatus_RecoverHPOnHPThreshold_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_PalStatus_RecoverHPOnHPThreshold.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalStatus_RecoverHPOnHPThreshold_C",
+    "Name": "Default__BP_PalStatus_RecoverHPOnHPThreshold_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Status/BP_PalStatus_RecoverHPOnHPThreshold.BP_PalStatus_RecoverHPOnHPThreshold_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "VisualEffectID": "EPalVisualEffectID::RecoverHPOnHPThreshold",
+      "CooldownDuration": 120.0,
+      "bIsIgnoreRemoveAll": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BP_OnRecoverHPVfxTrigger",
+    "Outer": "BP_PalStatus_RecoverHPOnHPThreshold_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalStatus_RecoverHPOnHPThreshold:BP_OnRecoverHPVfxTrigger'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "EndRecoverEffect",
+    "Outer": "BP_PalStatus_RecoverHPOnHPThreshold_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_PalStatus_RecoverHPOnHPThreshold",
+    "Outer": "BP_PalStatus_RecoverHPOnHPThreshold_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PalVisualEffectDynamicParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalVisualEffectDynamicParameter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalVisualEffectComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddVisualEffect_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalVisualEffectBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalVisualEffectComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  }
+]

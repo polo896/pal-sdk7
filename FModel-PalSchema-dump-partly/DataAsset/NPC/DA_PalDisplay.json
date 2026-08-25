@@ -1,0 +1,1154 @@
+[
+  {
+    "Type": "PalDisplayRequestDataAsset",
+    "Name": "DA_PalDisplay",
+    "Class": "UScriptClass'PalDisplayRequestDataAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayRequestDataMap": [
+        {
+          "Key": "Area_A1_1",
+          "Value": {
+            "RequestID": "Area_A1_1",
+            "RequestCategory": "EPalPalDisplayCategory::Area_A1",
+            "RequestPalID": "Carbunclo",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalSphere",
+                "Num": 10
+              },
+              {
+                "StaticItemId": "TreasureBoxKey01",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_A1_2",
+          "Value": {
+            "RequestID": "Area_A1_2",
+            "RequestCategory": "EPalPalDisplayCategory::Area_A1",
+            "RequestPalID": "Garm",
+            "RewardItems": [
+              {
+                "StaticItemId": "ExpBoost_01",
+                "Num": 3
+              },
+              {
+                "StaticItemId": "Herbs",
+                "Num": 3
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_A1_3",
+          "Value": {
+            "RequestID": "Area_A1_3",
+            "RequestCategory": "EPalPalDisplayCategory::Area_A1",
+            "RequestPalID": "CatBat",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalSphere_Mega",
+                "Num": 4
+              },
+              {
+                "StaticItemId": "Potion_Low",
+                "Num": 4
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_A1_4",
+          "Value": {
+            "RequestID": "Area_A1_4",
+            "RequestCategory": "EPalPalDisplayCategory::Area_A1",
+            "RequestPalID": "CaptainPenguin",
+            "RewardItems": [
+              {
+                "StaticItemId": "ExpBoost_02",
+                "Num": 3
+              },
+              {
+                "StaticItemId": "Medicines",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "Money",
+                "Num": 100
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_A1_5",
+          "Value": {
+            "RequestID": "Area_A1_5",
+            "RequestCategory": "EPalPalDisplayCategory::Area_A1",
+            "RequestPalID": "KingAlpaca",
+            "RewardItems": [
+              {
+                "StaticItemId": "TechnologyBook_G1",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "DeerStew",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "TreasureBoxKey02",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_A1_6",
+          "Value": {
+            "RequestID": "Area_A1_6",
+            "RequestCategory": "EPalPalDisplayCategory::Area_A1",
+            "RequestPalID": "GrassMammoth",
+            "RewardItems": [
+              {
+                "StaticItemId": "Elixir_workspeed_01",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "PalSphere_Tera",
+                "Num": 10
+              },
+              {
+                "StaticItemId": "BakedMeat_GrassMammoth",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 2
+          }
+        },
+        {
+          "Key": "Area_B1_1",
+          "Value": {
+            "RequestID": "Area_B1_1",
+            "RequestCategory": "EPalPalDisplayCategory::Area_B1",
+            "RequestPalID": "Serpent",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalSphere_Mega",
+                "Num": 5
+              },
+              {
+                "StaticItemId": "PalUpgradeStone",
+                "Num": 4
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_B1_2",
+          "Value": {
+            "RequestID": "Area_B1_2",
+            "RequestCategory": "EPalPalDisplayCategory::Area_B1",
+            "RequestPalID": "LazyCatfish",
+            "RewardItems": [
+              {
+                "StaticItemId": "TechnologyBook_G1",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "Herbs",
+                "Num": 2
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_B1_3",
+          "Value": {
+            "RequestID": "Area_B1_3",
+            "RequestCategory": "EPalPalDisplayCategory::Area_B1",
+            "RequestPalID": "MopKing",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalSphere_Giga",
+                "Num": 3
+              },
+              {
+                "StaticItemId": "PalUpgradeStone",
+                "Num": 4
+              },
+              {
+                "StaticItemId": "Money",
+                "Num": 800
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_B1_4",
+          "Value": {
+            "RequestID": "Area_B1_4",
+            "RequestCategory": "EPalPalDisplayCategory::Area_B1",
+            "RequestPalID": "DrillGame",
+            "RewardItems": [
+              {
+                "StaticItemId": "ExpBoost_01",
+                "Num": 4
+              },
+              {
+                "StaticItemId": "Chowder",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "Medicines",
+                "Num": 4
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_B1_5",
+          "Value": {
+            "RequestID": "Area_B1_5",
+            "RequestCategory": "EPalPalDisplayCategory::Area_B1",
+            "RequestPalID": "BirdDragon",
+            "RewardItems": [
+              {
+                "StaticItemId": "AncientTechnologyBook_G1",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "ExpBoost_02",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "TreasureBoxKey02",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_B1_6",
+          "Value": {
+            "RequestID": "Area_B1_6",
+            "RequestCategory": "EPalPalDisplayCategory::Area_B1",
+            "RequestPalID": "FengyunDeeper",
+            "RewardItems": [
+              {
+                "StaticItemId": "Elixir_hp_01",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "ExpBoost_03",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "PalSphere_Tera",
+                "Num": 6
+              }
+            ],
+            "ExpBonusLevel": 2
+          }
+        },
+        {
+          "Key": "Area_C1_1",
+          "Value": {
+            "RequestID": "Area_C1_1",
+            "RequestCategory": "EPalPalDisplayCategory::Area_C1",
+            "RequestPalID": "FluffyBird",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalUpgradeStone",
+                "Num": 3
+              },
+              {
+                "StaticItemId": "BakedMeat_Eagle",
+                "Num": 2
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_C1_2",
+          "Value": {
+            "RequestID": "Area_C1_2",
+            "RequestCategory": "EPalPalDisplayCategory::Area_C1",
+            "RequestPalID": "Eagle",
+            "RewardItems": [
+              {
+                "StaticItemId": "TreasureBoxKey02",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "PalSphere_Mega",
+                "Num": 8
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_C1_3",
+          "Value": {
+            "RequestID": "Area_C1_3",
+            "RequestCategory": "EPalPalDisplayCategory::Area_C1",
+            "RequestPalID": "Werewolf",
+            "RewardItems": [
+              {
+                "StaticItemId": "ExpBoost_02",
+                "Num": 6
+              },
+              {
+                "StaticItemId": "PalUpgradeStone",
+                "Num": 4
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_C1_4",
+          "Value": {
+            "RequestID": "Area_C1_4",
+            "RequestCategory": "EPalPalDisplayCategory::Area_C1",
+            "RequestPalID": "FlowerDoll",
+            "RewardItems": [
+              {
+                "StaticItemId": "ExpBoost_03",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "PalSphere_Tera",
+                "Num": 6
+              },
+              {
+                "StaticItemId": "MachineParts",
+                "Num": 12
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_C1_5",
+          "Value": {
+            "RequestID": "Area_C1_5",
+            "RequestCategory": "EPalPalDisplayCategory::Area_C1",
+            "RequestPalID": "FairyDragon",
+            "RewardItems": [
+              {
+                "StaticItemId": "TechnologyBook_G1",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "Potion",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "PalSphere_Tera",
+                "Num": 6
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_C1_6",
+          "Value": {
+            "RequestID": "Area_C1_6",
+            "RequestCategory": "EPalPalDisplayCategory::Area_C1",
+            "RequestPalID": "SakuraSaurus",
+            "RewardItems": [
+              {
+                "StaticItemId": "Elixir_stamina_01",
+                "Num": 4
+              },
+              {
+                "StaticItemId": "ExpBoost_03",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "PalSphere_Giga",
+                "Num": 7
+              }
+            ],
+            "ExpBonusLevel": 2
+          }
+        },
+        {
+          "Key": "Area_D1_1",
+          "Value": {
+            "RequestID": "Area_D1_1",
+            "RequestCategory": "EPalPalDisplayCategory::Area_D1",
+            "RequestPalID": "HerculesBeetle",
+            "RewardItems": [
+              {
+                "StaticItemId": "ExpBoost_02",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "PalUpgradeStone",
+                "Num": 5
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_D1_2",
+          "Value": {
+            "RequestID": "Area_D1_2",
+            "RequestCategory": "EPalPalDisplayCategory::Area_D1",
+            "RequestPalID": "LavaGirl",
+            "RewardItems": [
+              {
+                "StaticItemId": "ExpBoost_03",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "TreasureBoxKey02",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_D1_3",
+          "Value": {
+            "RequestID": "Area_D1_3",
+            "RequestCategory": "EPalPalDisplayCategory::Area_D1",
+            "RequestPalID": "Gorilla",
+            "RewardItems": [
+              {
+                "StaticItemId": "TechnologyBook_G1",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "PalSphere_Tera",
+                "Num": 9
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_D1_4",
+          "Value": {
+            "RequestID": "Area_D1_4",
+            "RequestCategory": "EPalPalDisplayCategory::Area_D1",
+            "RequestPalID": "IceFox",
+            "RewardItems": [
+              {
+                "StaticItemId": "ExpBoost_03",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "Medicines",
+                "Num": 5
+              },
+              {
+                "StaticItemId": "MeatAndPotatoes",
+                "Num": 2
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_D1_5",
+          "Value": {
+            "RequestID": "Area_D1_5",
+            "RequestCategory": "EPalPalDisplayCategory::Area_D1",
+            "RequestPalID": "AmaterasuWolf",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalSummon_NightLady_Parts",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "PalSphere_Giga",
+                "Num": 7
+              },
+              {
+                "StaticItemId": "Potion",
+                "Num": 2
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_D1_6",
+          "Value": {
+            "RequestID": "Area_D1_6",
+            "RequestCategory": "EPalPalDisplayCategory::Area_D1",
+            "RequestPalID": "GrassRabbitMan",
+            "RewardItems": [
+              {
+                "StaticItemId": "Elixir_attack_01",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "AncientTechnologyBook_G1",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "ExpBoost_03",
+                "Num": 2
+              }
+            ],
+            "ExpBonusLevel": 2
+          }
+        },
+        {
+          "Key": "Area_E1_1",
+          "Value": {
+            "RequestID": "Area_E1_1",
+            "RequestCategory": "EPalPalDisplayCategory::Area_E1",
+            "RequestPalID": "Serpent_Ground",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalUpgradeStone2",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "RoughBullet",
+                "Num": 11
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_E1_2",
+          "Value": {
+            "RequestID": "Area_E1_2",
+            "RequestCategory": "EPalPalDisplayCategory::Area_E1",
+            "RequestPalID": "GrassPanda_Electric",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalSphere_Tera",
+                "Num": 10
+              },
+              {
+                "StaticItemId": "TreasureBoxKey02",
+                "Num": 2
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_E1_3",
+          "Value": {
+            "RequestID": "Area_E1_3",
+            "RequestCategory": "EPalPalDisplayCategory::Area_E1",
+            "RequestPalID": "DarkScorpion",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalSphere_Giga",
+                "Num": 12
+              },
+              {
+                "StaticItemId": "FragGrenade",
+                "Num": 4
+              },
+              {
+                "StaticItemId": "Medicines",
+                "Num": 5
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_E1_4",
+          "Value": {
+            "RequestID": "Area_E1_4",
+            "RequestCategory": "EPalPalDisplayCategory::Area_E1",
+            "RequestPalID": "VenusFlytrap",
+            "RewardItems": [
+              {
+                "StaticItemId": "ExpBoost_03",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "potion",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "Sapphire",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_E1_5",
+          "Value": {
+            "RequestID": "Area_E1_5",
+            "RequestCategory": "EPalPalDisplayCategory::Area_E1",
+            "RequestPalID": "Sekhmet",
+            "RewardItems": [
+              {
+                "StaticItemId": "Rankup_1",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "ExpBoost_04",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "PalSummon_NightLady_Parts",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 2
+          }
+        },
+        {
+          "Key": "Area_F1_1",
+          "Value": {
+            "RequestID": "Area_F1_1",
+            "RequestCategory": "EPalPalDisplayCategory::Area_F1",
+            "RequestPalID": "VolcanoDragon",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalSphere_Tera",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "RoughBullet",
+                "Num": 21
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_F1_2",
+          "Value": {
+            "RequestID": "Area_F1_2",
+            "RequestCategory": "EPalPalDisplayCategory::Area_F1",
+            "RequestPalID": "FireKirin_Dark",
+            "RewardItems": [
+              {
+                "StaticItemId": "TechnologyBook_G1",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "PalUpgradeStone2",
+                "Num": 3
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_F1_3",
+          "Value": {
+            "RequestID": "Area_F1_3",
+            "RequestCategory": "EPalPalDisplayCategory::Area_F1",
+            "RequestPalID": "Manticore",
+            "RewardItems": [
+              {
+                "StaticItemId": "ExpBoost_03",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "PalSphere_Tera",
+                "Num": 11
+              },
+              {
+                "StaticItemId": "Sapphire",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_F1_4",
+          "Value": {
+            "RequestID": "Area_F1_4",
+            "RequestCategory": "EPalPalDisplayCategory::Area_F1",
+            "RequestPalID": "VolcanicMonster",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalSummon_NightLady_Parts",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "Potion",
+                "Num": 3
+              },
+              {
+                "StaticItemId": "Diamond",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_F1_5",
+          "Value": {
+            "RequestID": "Area_F1_5",
+            "RequestCategory": "EPalPalDisplayCategory::Area_F1",
+            "RequestPalID": "KingBahamut",
+            "RewardItems": [
+              {
+                "StaticItemId": "Rankup_2",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "PalSphere_Giga",
+                "Num": 13
+              },
+              {
+                "StaticItemId": "PalItem_ToSell_05",
+                "Num": 1
+              }
+            ],
+            "ExpBonusLevel": 2
+          }
+        },
+        {
+          "Key": "Area_G1_1",
+          "Value": {
+            "RequestID": "Area_G1_1",
+            "RequestCategory": "EPalPalDisplayCategory::Area_G1",
+            "RequestPalID": "IceSeal",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalUpgradeStone3",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "PalSphere_Tera",
+                "Num": 10
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_G1_2",
+          "Value": {
+            "RequestID": "Area_G1_2",
+            "RequestCategory": "EPalPalDisplayCategory::Area_G1",
+            "RequestPalID": "WindChimes_Ice",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalSphere_Giga",
+                "Num": 5
+              },
+              {
+                "StaticItemId": "TreasureBoxKey03",
+                "Num": 2
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_G1_3",
+          "Value": {
+            "RequestID": "Area_G1_3",
+            "RequestCategory": "EPalPalDisplayCategory::Area_G1",
+            "RequestPalID": "Yeti",
+            "RewardItems": [
+              {
+                "StaticItemId": "TechnologyBook_G3",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "Medicines",
+                "Num": 5
+              },
+              {
+                "StaticItemId": "Diamond",
+                "Num": 2
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_G1_4",
+          "Value": {
+            "RequestID": "Area_G1_4",
+            "RequestCategory": "EPalPalDisplayCategory::Area_G1",
+            "RequestPalID": "VolcanicMonster_Ice",
+            "RewardItems": [
+              {
+                "StaticItemId": "AncientTechnologyBook_G1",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "ExpBoost_03",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "MeatAndPotatoes",
+                "Num": 2
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_G1_5",
+          "Value": {
+            "RequestID": "Area_G1_5",
+            "RequestCategory": "EPalPalDisplayCategory::Area_G1",
+            "RequestPalID": "KingAlpaca_Ice",
+            "RewardItems": [
+              {
+                "StaticItemId": "WorkSuitability_AddTicket_Transport",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "ExpBoost_04",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "PalSphere_Master",
+                "Num": 8
+              }
+            ],
+            "ExpBonusLevel": 2
+          }
+        },
+        {
+          "Key": "Area_H1_1",
+          "Value": {
+            "RequestID": "Area_H1_1",
+            "RequestCategory": "EPalPalDisplayCategory::Area_H1",
+            "RequestPalID": "HadesBird_Electric",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalUpgradeStone3",
+                "Num": 4
+              },
+              {
+                "StaticItemId": "PalSphere_Master",
+                "Num": 6
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_H1_2",
+          "Value": {
+            "RequestID": "Area_H1_2",
+            "RequestCategory": "EPalPalDisplayCategory::Area_H1",
+            "RequestPalID": "SumoDog",
+            "RewardItems": [
+              {
+                "StaticItemId": "TreasureBoxKey03",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "GrenadeBullet",
+                "Num": 6
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_H1_3",
+          "Value": {
+            "RequestID": "Area_H1_3",
+            "RequestCategory": "EPalPalDisplayCategory::Area_H1",
+            "RequestPalID": "CatMage_Fire",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalSphere_Legend",
+                "Num": 5
+              },
+              {
+                "StaticItemId": "FragGrenade_Fire",
+                "Num": 6
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_H1_4",
+          "Value": {
+            "RequestID": "Area_H1_4",
+            "RequestCategory": "EPalPalDisplayCategory::Area_H1",
+            "RequestPalID": "CandleGhost",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalUpgradeStone4",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "ExpBoost_02",
+                "Num": 8
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_H1_5",
+          "Value": {
+            "RequestID": "Area_H1_5",
+            "RequestCategory": "EPalPalDisplayCategory::Area_H1",
+            "RequestPalID": "MoonQueen",
+            "RewardItems": [
+              {
+                "StaticItemId": "TechnologyBook_G3",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "FragGrenade_Dark",
+                "Num": 6
+              },
+              {
+                "StaticItemId": "MachineParts2",
+                "Num": 2
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_H1_6",
+          "Value": {
+            "RequestID": "Area_H1_6",
+            "RequestCategory": "EPalPalDisplayCategory::Area_H1",
+            "RequestPalID": "DarkScorpion_Ground",
+            "RewardItems": [
+              {
+                "StaticItemId": "AncientTechnologyBook_G1",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "ExpBoost_03",
+                "Num": 3
+              },
+              {
+                "StaticItemId": "Diamond",
+                "Num": 3
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_H1_7",
+          "Value": {
+            "RequestID": "Area_H1_7",
+            "RequestCategory": "EPalPalDisplayCategory::Area_H1",
+            "RequestPalID": "LilyQueen",
+            "RewardItems": [
+              {
+                "StaticItemId": "WorkSuitability_AddTicket_Watering",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "ExpBoost_04",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "Money",
+                "Num": 7500
+              }
+            ],
+            "ExpBonusLevel": 2
+          }
+        },
+        {
+          "Key": "Area_I1_1",
+          "Value": {
+            "RequestID": "Area_I1_1",
+            "RequestCategory": "EPalPalDisplayCategory::Area_I1",
+            "RequestPalID": "GoldenHorse",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalUpgradeStone3",
+                "Num": 6
+              },
+              {
+                "StaticItemId": "Chromium",
+                "Num": 15
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_I1_2",
+          "Value": {
+            "RequestID": "Area_I1_2",
+            "RequestCategory": "EPalPalDisplayCategory::Area_I1",
+            "RequestPalID": "BlackPuppy",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalSphere_Master",
+                "Num": 9
+              },
+              {
+                "StaticItemId": "RainbowCrystal",
+                "Num": 5
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_I1_3",
+          "Value": {
+            "RequestID": "Area_I1_3",
+            "RequestCategory": "EPalPalDisplayCategory::Area_I1",
+            "RequestPalID": "BlueberryFairy",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalUpgradeStone4",
+                "Num": 4
+              },
+              {
+                "StaticItemId": "GatlingBullet",
+                "Num": 12
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_I1_4",
+          "Value": {
+            "RequestID": "Area_I1_4",
+            "RequestCategory": "EPalPalDisplayCategory::Area_I1",
+            "RequestPalID": "GhostRabbit",
+            "RewardItems": [
+              {
+                "StaticItemId": "PalSphere_Ultimate",
+                "Num": 7
+              },
+              {
+                "StaticItemId": "LaserBullet",
+                "Num": 6
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_I1_5",
+          "Value": {
+            "RequestID": "Area_I1_5",
+            "RequestCategory": "EPalPalDisplayCategory::Area_I1",
+            "RequestPalID": "HerculesBeetle_Ground",
+            "RewardItems": [
+              {
+                "StaticItemId": "ExpBoost_03",
+                "Num": 3
+              },
+              {
+                "StaticItemId": "PalSummon_KingBahamut_Dragon_Parts",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "MachineParts2",
+                "Num": 2
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_I1_6",
+          "Value": {
+            "RequestID": "Area_I1_6",
+            "RequestCategory": "EPalPalDisplayCategory::Area_I1",
+            "RequestPalID": "MysteryMask",
+            "RewardItems": [
+              {
+                "StaticItemId": "ExpBoost_04",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "PalSummon_DarkMechaDragon_Parts",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "Diamond",
+                "Num": 4
+              }
+            ],
+            "ExpBonusLevel": 1
+          }
+        },
+        {
+          "Key": "Area_I1_7",
+          "Value": {
+            "RequestID": "Area_I1_7",
+            "RequestCategory": "EPalPalDisplayCategory::Area_I1",
+            "RequestPalID": "WhiteDeer",
+            "RewardItems": [
+              {
+                "StaticItemId": "Elixir_weight_02",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "TechnologyBook_G3",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "Money",
+                "Num": 20000
+              }
+            ],
+            "ExpBonusLevel": 2
+          }
+        },
+        {
+          "Key": "Area_I1_8",
+          "Value": {
+            "RequestID": "Area_I1_8",
+            "RequestCategory": "EPalPalDisplayCategory::Area_I1",
+            "RequestPalID": "SnowTigerBeastman",
+            "RewardItems": [
+              {
+                "StaticItemId": "WorkSuitability_AddTicket_Handcraft",
+                "Num": 1
+              },
+              {
+                "StaticItemId": "AncientTechnologyBook_G1",
+                "Num": 2
+              },
+              {
+                "StaticItemId": "Money",
+                "Num": 20000
+              }
+            ],
+            "ExpBonusLevel": 2
+          }
+        }
+      ]
+    }
+  }
+]

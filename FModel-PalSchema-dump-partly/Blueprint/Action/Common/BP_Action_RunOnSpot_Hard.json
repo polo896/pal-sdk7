@@ -1,0 +1,160 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_RunOnSpot_Hard_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_RunOnSpot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_RunOnSpot.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Action_RunOnSpot_Hard_C:ExecuteUbergraph_BP_Action_RunOnSpot_Hard'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_RunOnSpot_Hard.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_RunOnSpot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_RunOnSpot.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Action_RunOnSpot_Hard_C:OnBeginAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_RunOnSpot_Hard.3"
+      },
+      {
+        "ObjectName": "Function'BP_Action_RunOnSpot_Hard_C:OnEndAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_RunOnSpot_Hard.4"
+      },
+      {
+        "ObjectName": "Function'BP_Action_RunOnSpot_Hard_C:ExecuteUbergraph_BP_Action_RunOnSpot_Hard'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_RunOnSpot_Hard.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Action_RunOnSpot_Hard": {
+        "ObjectName": "Function'BP_Action_RunOnSpot_Hard_C:ExecuteUbergraph_BP_Action_RunOnSpot_Hard'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_RunOnSpot_Hard.2"
+      },
+      "OnEndAction": {
+        "ObjectName": "Function'BP_Action_RunOnSpot_Hard_C:OnEndAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_RunOnSpot_Hard.4"
+      },
+      "OnBeginAction": {
+        "ObjectName": "Function'BP_Action_RunOnSpot_Hard_C:OnBeginAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_RunOnSpot_Hard.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_RunOnSpot_Hard_C'Default__BP_Action_RunOnSpot_Hard_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_RunOnSpot_Hard.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_RunOnSpot_Hard_C",
+    "Name": "Default__BP_Action_RunOnSpot_Hard_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Common/BP_Action_RunOnSpot_Hard.BP_Action_RunOnSpot_Hard_C'",
+    "Template": {
+      "ObjectName": "BP_Action_RunOnSpot_C'Default__BP_Action_RunOnSpot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_RunOnSpot.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Action_RunOnSpot_Hard",
+    "Outer": "BP_Action_RunOnSpot_Hard_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalFacialComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBeginAction",
+    "Outer": "BP_Action_RunOnSpot_Hard_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_RunOnSpot_C:OnBeginAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_RunOnSpot.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_RunOnSpot_C:OnBeginAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_RunOnSpot.3"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEndAction",
+    "Outer": "BP_Action_RunOnSpot_Hard_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_RunOnSpot_C:OnEndAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_RunOnSpot.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_RunOnSpot_C:OnEndAction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_RunOnSpot.4"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  }
+]

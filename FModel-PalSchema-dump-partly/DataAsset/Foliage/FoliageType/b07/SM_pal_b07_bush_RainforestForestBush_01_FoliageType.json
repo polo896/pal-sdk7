@@ -1,0 +1,56 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b07_bush_RainforestForestBush_01_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b07_bush_RainforestForestBush_01_B01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b07/tree/mesh/SM_pal_b07_bush_RainforestForestBush_01_B01.2"
+      },
+      "UpdateGuid": "15562FFF-472D5A7E-210D3997-EB058281",
+      "Radius": 10.0,
+      "bSingleInstanceModeOverrideRadius": true,
+      "SingleInstanceModeRadius": 20.0,
+      "ScaleX": {
+        "Min": 0.8,
+        "Max": 1.2
+      },
+      "AlignToNormal": false,
+      "GroundSlopeAngle": {
+        "Max": 77.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 2.945633,
+          "Y": 8.290173,
+          "Z": 46.486107
+        },
+        "BoxExtent": {
+          "X": 88.635574,
+          "Y": 74.826385,
+          "Z": 56.933113
+        },
+        "SphereRadius": 115.44527432331464
+      },
+      "LowBoundOriginRadius": {
+        "X": -8.246506,
+        "Y": 0.51015854,
+        "Z": 97.464836
+      },
+      "CullDistance": {
+        "Max": 4000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

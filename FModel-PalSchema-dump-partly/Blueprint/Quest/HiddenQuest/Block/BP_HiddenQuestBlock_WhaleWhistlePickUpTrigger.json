@@ -1,0 +1,32 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_HiddenQuestBlock_WhaleWhistlePickUpTrigger_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalQuestBlock'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_HiddenQuestBlock_WhaleWhistlePickUpTrigger_C'Default__BP_HiddenQuestBlock_WhaleWhistlePickUpTrigger_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/HiddenQuest/Block/BP_HiddenQuestBlock_WhaleWhistlePickUpTrigger.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_HiddenQuestBlock_WhaleWhistlePickUpTrigger_C",
+    "Name": "Default__BP_HiddenQuestBlock_WhaleWhistlePickUpTrigger_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/HiddenQuest/Block/BP_HiddenQuestBlock_WhaleWhistlePickUpTrigger.BP_HiddenQuestBlock_WhaleWhistlePickUpTrigger_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  }
+]

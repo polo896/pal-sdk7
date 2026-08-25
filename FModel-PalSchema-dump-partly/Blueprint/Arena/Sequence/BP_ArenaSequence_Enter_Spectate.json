@@ -1,0 +1,43 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_ArenaSequence_Enter_Spectate_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ArenaSequence_Enter_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Arena/Sequence/BP_ArenaSequence_Enter.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ArenaSequence_Enter_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Arena/Sequence/BP_ArenaSequence_Enter.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_ArenaSequence_Enter_Spectate_C'Default__BP_ArenaSequence_Enter_Spectate_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Arena/Sequence/BP_ArenaSequence_Enter_Spectate.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_ArenaSequence_Enter_Spectate_C",
+    "Name": "Default__BP_ArenaSequence_Enter_Spectate_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Arena/Sequence/BP_ArenaSequence_Enter_Spectate.BP_ArenaSequence_Enter_Spectate_C'",
+    "Template": {
+      "ObjectName": "BP_ArenaSequence_Enter_C'Default__BP_ArenaSequence_Enter_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Arena/Sequence/BP_ArenaSequence_Enter.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bNoSync": true
+    }
+  }
+]

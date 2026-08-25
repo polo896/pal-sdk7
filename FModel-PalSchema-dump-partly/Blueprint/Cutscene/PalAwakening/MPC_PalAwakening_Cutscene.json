@@ -1,0 +1,23 @@
+[
+  {
+    "Type": "MaterialParameterCollection",
+    "Name": "MPC_PalAwakening_Cutscene",
+    "Class": "UScriptClass'MaterialParameterCollection'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StateId": "FB34A4B2-4590F582-EB615283-DB977A93",
+      "ScalarParameters": [
+        {
+          "DefaultValue": 0.0,
+          "ParameterName": "Opacity",
+          "ID": "505670DE-454CC1FD-763B12AB-8FD07D74"
+        },
+        {
+          "DefaultValue": 2.0,
+          "ParameterName": "RimPower",
+          "ID": "2BB29F10-46B30F23-9F541296-78AD6C46"
+        }
+      ]
+    }
+  }
+]

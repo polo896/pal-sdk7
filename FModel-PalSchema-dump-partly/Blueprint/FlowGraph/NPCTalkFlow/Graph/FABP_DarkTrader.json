@@ -1,0 +1,249 @@
+[
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_DarkTrader",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "C8091EBF-4CC43050-192CB686-3C966DC3",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "799F64D4-4654E239-2570F49C-72A525EC",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_CustomChoice_C",
+    "Name": "FNBP_NPCTalk_CustomChoice_C_0",
+    "Outer": "FABP_DarkTrader",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_CustomChoice.FNBP_NPCTalk_CustomChoice_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_CustomChoice_C'Default__FNBP_NPCTalk_CustomChoice_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_CustomChoice.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChoiceMsgIDList": [
+        "CHOICE_SHOP_DARK_BUY",
+        "CHOICE_SHOP_DARK_SELL",
+        "CHOICE_SHOP_DARK_CANCEL"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "0B36726A-4D562D6C-4D7FCCA6-4D2A9ADC",
+      "OutputPins": [
+        {
+          "PinName": "CHOICE_SHOP_DARK_BUY",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "CHOICE_SHOP_DARK_SELL",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "CHOICE_SHOP_DARK_CANCEL",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "CHOICE_SHOP_DARK_BUY",
+          "Value": {
+            "NodeGuid": "405F0227-4BFAF79F-345CBA8B-C7012630",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "CHOICE_SHOP_DARK_SELL",
+          "Value": {
+            "NodeGuid": "FC14680D-4B01F7F7-E3BD46B5-D5C41077",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "CHOICE_SHOP_DARK_CANCEL",
+          "Value": {
+            "NodeGuid": "839CD0F2-4A24AB28-B29FBC80-F02A7D08",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_DarkTrader",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "SHOP_PALDARK_WELCOME_1_1"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "71E086AE-40630D49-FFC2B5B2-B1BC0638",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "0B36726A-4D562D6C-4D7FCCA6-4D2A9ADC",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_DarkTrader",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "SHOP_PALDARK_EXIT_1_1"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "839CD0F2-4A24AB28-B29FBC80-F02A7D08"
+    }
+  },
+  {
+    "Type": "FNBP_OpenPalShop_C",
+    "Name": "FNBP_OpenPalShop_C_0",
+    "Outer": "FABP_DarkTrader",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OpenPalShop.FNBP_OpenPalShop_C'",
+    "Template": {
+      "ObjectName": "FNBP_OpenPalShop_C'Default__FNBP_OpenPalShop_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OpenPalShop.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "405F0227-4BFAF79F-345CBA8B-C7012630"
+    }
+  },
+  {
+    "Type": "FNBP_OpenPalShop_C",
+    "Name": "FNBP_OpenPalShop_C_1",
+    "Outer": "FABP_DarkTrader",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OpenPalShop.FNBP_OpenPalShop_C'",
+    "Template": {
+      "ObjectName": "FNBP_OpenPalShop_C'Default__FNBP_OpenPalShop_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OpenPalShop.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OpenPalShopTabType": "E_PalItemShopTabType::NewEnumerator1",
+      "GraphNode": null,
+      "NodeGuid": "FC14680D-4B01F7F7-E3BD46B5-D5C41077"
+    }
+  },
+  {
+    "Type": "FNBP_PlayShopJingle_C",
+    "Name": "FNBP_PlayShopJingle_C_0",
+    "Outer": "FABP_DarkTrader",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayShopJingle.FNBP_PlayShopJingle_C'",
+    "Template": {
+      "ObjectName": "FNBP_PlayShopJingle_C'Default__FNBP_PlayShopJingle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_PlayShopJingle.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "799F64D4-4654E239-2570F49C-72A525EC",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "71E086AE-40630D49-FFC2B5B2-B1BC0638",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_DarkTrader",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "4B8EE636-41CA415F-6DC70493-1A21C94C",
+      "Nodes": [
+        {
+          "Key": "C8091EBF-4CC43050-192CB686-3C966DC3",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_DarkTrader:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_DarkTrader.0"
+          }
+        },
+        {
+          "Key": "71E086AE-40630D49-FFC2B5B2-B1BC0638",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_DarkTrader:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_DarkTrader.2"
+          }
+        },
+        {
+          "Key": "0B36726A-4D562D6C-4D7FCCA6-4D2A9ADC",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_CustomChoice_C'FABP_DarkTrader:FNBP_NPCTalk_CustomChoice_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_DarkTrader.1"
+          }
+        },
+        {
+          "Key": "405F0227-4BFAF79F-345CBA8B-C7012630",
+          "Value": {
+            "ObjectName": "FNBP_OpenPalShop_C'FABP_DarkTrader:FNBP_OpenPalShop_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_DarkTrader.4"
+          }
+        },
+        {
+          "Key": "FC14680D-4B01F7F7-E3BD46B5-D5C41077",
+          "Value": {
+            "ObjectName": "FNBP_OpenPalShop_C'FABP_DarkTrader:FNBP_OpenPalShop_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_DarkTrader.5"
+          }
+        },
+        {
+          "Key": "839CD0F2-4A24AB28-B29FBC80-F02A7D08",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_DarkTrader:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_DarkTrader.3"
+          }
+        },
+        {
+          "Key": "799F64D4-4654E239-2570F49C-72A525EC",
+          "Value": {
+            "ObjectName": "FNBP_PlayShopJingle_C'FABP_DarkTrader:FNBP_PlayShopJingle_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_DarkTrader.6"
+          }
+        }
+      ]
+    }
+  }
+]

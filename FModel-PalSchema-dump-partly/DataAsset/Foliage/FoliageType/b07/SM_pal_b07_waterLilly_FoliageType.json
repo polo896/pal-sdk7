@@ -1,0 +1,45 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b07_waterLilly_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b07_waterLilly'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b07/tree/mesh/SM_pal_b07_waterLilly.2"
+      },
+      "UpdateGuid": "2CE9CAA5-4D69AABC-BFD67AB5-E25B048E",
+      "MeshBounds": {
+        "Origin": {
+          "X": -0.1808734,
+          "Y": -0.16532564,
+          "Z": -25.048805
+        },
+        "BoxExtent": {
+          "X": 12.641102,
+          "Y": 12.522427,
+          "Z": 48.200012
+        },
+        "SphereRadius": 48.423292165161556
+      },
+      "LowBoundOriginRadius": {
+        "X": -0.016542003,
+        "Y": -0.084994495,
+        "Z": 0.80251884
+      },
+      "CullDistance": {
+        "Max": 9999
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b08_AreaM_Bush_5",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b07_bush_RainforestThinLeafBush_01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b08/Area_M/Foliage/Mesh/SM_pal_b07_bush_RainforestThinLeafBush_01.2"
+      },
+      "UpdateGuid": "534BD95F-407641A3-768C06BD-A7EBCD2F",
+      "Density": 50.0,
+      "ScaleX": {
+        "Max": 1.5
+      },
+      "GroundSlopeAngle": {
+        "Max": 90.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -9.92725,
+          "Y": -8.353537,
+          "Z": 56.552143
+        },
+        "BoxExtent": {
+          "X": 76.19345,
+          "Y": 66.2187,
+          "Z": 58.93726
+        },
+        "SphereRadius": 88.70569558548061
+      },
+      "LowBoundOriginRadius": {
+        "X": -0.0058978796,
+        "Y": 0.38635254,
+        "Z": 4.78839
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

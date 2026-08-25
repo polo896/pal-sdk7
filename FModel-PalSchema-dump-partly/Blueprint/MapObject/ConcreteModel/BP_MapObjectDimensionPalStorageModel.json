@@ -1,0 +1,38 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MapObjectDimensionPalStorageModel_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalMapObjectDimensionPalStorageModel'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MapObjectDimensionPalStorageModel_C'Default__BP_MapObjectDimensionPalStorageModel_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_MapObjectDimensionPalStorageModel.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MapObjectDimensionPalStorageModel_C",
+    "Name": "Default__BP_MapObjectDimensionPalStorageModel_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_MapObjectDimensionPalStorageModel.BP_MapObjectDimensionPalStorageModel_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DimensionPalStorageWidget": {
+        "ObjectName": "WidgetBlueprintGeneratedClass'WBP_DimensionPalStorage_ForDisplay_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/DimensionPalStorage/WBP_DimensionPalStorage_ForDisplay.27"
+      }
+    }
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_Quest_ForestBoss_Investigate_LilyHouse",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "B5B025E3-44BCCE4B-2FD02EA4-C7BBA2E5",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "F7AF77BD-4DA52967-DE639D94-A774E5FF",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_Quest_ForestBoss_Investigate_LilyHouse",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Lily_Talk_020"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "3A4937E3-4A566E6B-78D86989-FF68F09A"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_Quest_ForestBoss_Investigate_LilyHouse",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_MAIN_Boss_Lily_Talk_040"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "22F3754E-49AAAB66-99D74A81-1535823F",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "C4202111-468D4A36-E43AE8B7-835B6D23",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_ProgressQuest_C",
+    "Name": "FNBP_ProgressQuest_C_6",
+    "Outer": "FABP_Quest_ForestBoss_Investigate_LilyHouse",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.FNBP_ProgressQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_ProgressQuest_C'Default__FNBP_ProgressQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_ProgressQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "NetworkInvokeName": "BP_MainQuestBlock_ForestBoss_Investigate_LilyHouse",
+      "GraphNode": null,
+      "NodeGuid": "C4202111-468D4A36-E43AE8B7-835B6D23"
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_0",
+    "Outer": "FABP_Quest_ForestBoss_Investigate_LilyHouse",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_ForestBoss_Investigate_LilyHouse_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_ForestBoss_Investigate_LilyHouse.0"
+      },
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "0A6BD599-49C39423-B042CDB1-B2804184",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "22F3754E-49AAAB66-99D74A81-1535823F",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "3A4937E3-4A566E6B-78D86989-FF68F09A",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_Quest_ForestBoss_Investigate_LilyHouse",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_DefeatForestBoss"
+      },
+      "GraphNode": null,
+      "NodeGuid": "F7AF77BD-4DA52967-DE639D94-A774E5FF",
+      "Connections": [
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "0A6BD599-49C39423-B042CDB1-B2804184",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "3A4937E3-4A566E6B-78D86989-FF68F09A",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_Quest_ForestBoss_Investigate_LilyHouse",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "6AC8DF55-48F18336-7F3C478C-0CA48FC6",
+      "Nodes": [
+        {
+          "Key": "3A4937E3-4A566E6B-78D86989-FF68F09A",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_ForestBoss_Investigate_LilyHouse:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_ForestBoss_Investigate_LilyHouse.1"
+          }
+        },
+        {
+          "Key": "0A6BD599-49C39423-B042CDB1-B2804184",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_Quest_ForestBoss_Investigate_LilyHouse:FNBP_QuestBlockBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_ForestBoss_Investigate_LilyHouse.4"
+          }
+        },
+        {
+          "Key": "22F3754E-49AAAB66-99D74A81-1535823F",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_ForestBoss_Investigate_LilyHouse:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_ForestBoss_Investigate_LilyHouse.2"
+          }
+        },
+        {
+          "Key": "C4202111-468D4A36-E43AE8B7-835B6D23",
+          "Value": {
+            "ObjectName": "FNBP_ProgressQuest_C'FABP_Quest_ForestBoss_Investigate_LilyHouse:FNBP_ProgressQuest_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_ForestBoss_Investigate_LilyHouse.3"
+          }
+        },
+        {
+          "Key": "F7AF77BD-4DA52967-DE639D94-A774E5FF",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_Quest_ForestBoss_Investigate_LilyHouse:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_ForestBoss_Investigate_LilyHouse.5"
+          }
+        },
+        {
+          "Key": "B5B025E3-44BCCE4B-2FD02EA4-C7BBA2E5",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_Quest_ForestBoss_Investigate_LilyHouse:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_ForestBoss_Investigate_LilyHouse.0"
+          }
+        }
+      ]
+    }
+  }
+]

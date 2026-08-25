@@ -1,0 +1,129 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Move_GhostDragon",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 3.0,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GhostDragon_Idle'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GhostDragon/AS_GhostDragon_Idle.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GhostDragon_Walk'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GhostDragon/AS_GhostDragon_Walk.0"
+          },
+          "SampleValue": {
+            "X": 200.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GhostDragon_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GhostDragon/AS_GhostDragon_Run.1"
+          },
+          "SampleValue": {
+            "X": 601.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GhostDragon_Walk'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GhostDragon/AS_GhostDragon_Walk.0"
+          },
+          "SampleValue": {
+            "X": 600.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 3.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GhostDragon_Walk'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GhostDragon/AS_GhostDragon_Walk.0"
+          },
+          "SampleValue": {
+            "X": 50.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.25
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GhostDragon_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GhostDragon/AS_GhostDragon_Run.1"
+          },
+          "SampleValue": {
+            "X": 1000.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.75
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 4,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.05
+          },
+          {
+            "SampleIndices": 4,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.05,
+            "Vertices[1]": 0.2
+          },
+          {
+            "SampleIndices": 1,
+            "SampleIndices[1]": 3,
+            "Vertices": 0.2,
+            "Vertices[1]": 0.6
+          },
+          {
+            "SampleIndices": 3,
+            "SampleIndices[1]": 2,
+            "Vertices": 0.6,
+            "Vertices[1]": 0.601
+          },
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 5,
+            "Vertices": 0.601,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 1000.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_GhostDragon_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/GhostDragon/SK_GhostDragon_Skeleton.21"
+      }
+    },
+    "SkeletonGuid": "099FD6A6-41F7C0B8-01662DB1-F80FB743"
+  }
+]

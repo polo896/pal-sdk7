@@ -1,0 +1,56 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_PalUIWorkSuitabilityGaugeColorType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "3A3BCF2949587F641BD2D1A0F6301F7B",
+            "SourceString": "Invalid",
+            "LocalizedString": "Invalid"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "7E68BA634D1578BEC2CB53AF22E255F9",
+            "SourceString": "Normal",
+            "LocalizedString": "Normal"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "1CDA00E745499D6AE7FC9D868C4DF779",
+            "SourceString": "RankBonus",
+            "LocalizedString": "RankBonus"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "20E249E74072A02A2B9668BA93A4BF35",
+            "SourceString": "PassiveBonus",
+            "LocalizedString": "PassiveBonus"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_PalUIWorkSuitabilityGaugeColorType::NewEnumerator0": 0,
+      "E_PalUIWorkSuitabilityGaugeColorType::NewEnumerator1": 1,
+      "E_PalUIWorkSuitabilityGaugeColorType::NewEnumerator2": 2,
+      "E_PalUIWorkSuitabilityGaugeColorType::NewEnumerator3": 3,
+      "E_PalUIWorkSuitabilityGaugeColorType::E_MAX": 4
+    },
+    "CppForm": "Namespaced"
+  }
+]

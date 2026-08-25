@@ -1,0 +1,86 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalOilrigManager_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalOilrigManager'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalOilrigManager_C'Default__BP_PalOilrigManager_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/BP_PalOilrigManager.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalOilrigManager_C",
+    "Name": "Default__BP_PalOilrigManager_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/OilRig/BP_PalOilrigManager.BP_PalOilrigManager_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OilrigControllerClassMap": [
+        {
+          "Key": "EPalOilrigType::TypeA",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_PalOilrigController_TypeA_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController_TypeA.0"
+          }
+        },
+        {
+          "Key": "EPalOilrigType::TypeB",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_PalOilrigController_TypeB_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController_TypeB.0"
+          }
+        },
+        {
+          "Key": "EPalOilrigType::TypeC",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_PalOilrigController_TypeC_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Controller/BP_PalOilrigController_TypeC.0"
+          }
+        }
+      ],
+      "OilrigLocationMap": [
+        {
+          "Key": "EPalOilrigType::TypeA",
+          "Value": {
+            "X": -323797.97,
+            "Y": 420736.3,
+            "Z": 1856.7261
+          }
+        },
+        {
+          "Key": "EPalOilrigType::TypeB",
+          "Value": {
+            "X": -257611.0,
+            "Y": 235369.0,
+            "Z": 1589.0
+          }
+        },
+        {
+          "Key": "EPalOilrigType::TypeC",
+          "Value": {
+            "X": -795267.0,
+            "Y": -629719.0,
+            "Z": 460.0
+          }
+        }
+      ],
+      "ClearedOilrigResetTimeSecond": 1800.0,
+      "MachineStartTimeSecond_ByAlarm": 6000.0,
+      "bShouldCreate": true
+    }
+  }
+]

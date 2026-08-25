@@ -1,0 +1,887 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NormalRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_ElectricArcAssaultRifle_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.20"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_ElectricArcAssaultRifle_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.16"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:ExecuteUbergraph_BP_ElectricArcAssaultRifle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_NormalRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:GetAmmoClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.3"
+      },
+      {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:GetMuzzleEffectAttached'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.5"
+      },
+      {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:GetMuzzleEffectParticle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.6"
+      },
+      {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:GetMuzzleEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.4"
+      },
+      {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:StopWeaponAnim'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.15"
+      },
+      {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:OnNotifyEnd_31BE164E46A644E12F45EA90D6A6FA2D'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.11"
+      },
+      {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:OnNotifyBegin_31BE164E46A644E12F45EA90D6A6FA2D'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.10"
+      },
+      {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:OnInterrupted_31BE164E46A644E12F45EA90D6A6FA2D'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.9"
+      },
+      {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:OnBlendOut_31BE164E46A644E12F45EA90D6A6FA2D'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.7"
+      },
+      {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:OnCompleted_31BE164E46A644E12F45EA90D6A6FA2D'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.8"
+      },
+      {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:OnReleaseTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.12"
+      },
+      {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:OnShoot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.14"
+      },
+      {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:OnReloadStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.13"
+      },
+      {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:ExecuteUbergraph_BP_ElectricArcAssaultRifle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_ElectricArcAssaultRifle": {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:ExecuteUbergraph_BP_ElectricArcAssaultRifle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.2"
+      },
+      "OnReloadStart": {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:OnReloadStart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.13"
+      },
+      "OnShoot": {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:OnShoot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.14"
+      },
+      "OnReleaseTrigger": {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:OnReleaseTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.12"
+      },
+      "OnCompleted_31BE164E46A644E12F45EA90D6A6FA2D": {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:OnCompleted_31BE164E46A644E12F45EA90D6A6FA2D'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.8"
+      },
+      "OnBlendOut_31BE164E46A644E12F45EA90D6A6FA2D": {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:OnBlendOut_31BE164E46A644E12F45EA90D6A6FA2D'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.7"
+      },
+      "OnInterrupted_31BE164E46A644E12F45EA90D6A6FA2D": {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:OnInterrupted_31BE164E46A644E12F45EA90D6A6FA2D'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.9"
+      },
+      "OnNotifyBegin_31BE164E46A644E12F45EA90D6A6FA2D": {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:OnNotifyBegin_31BE164E46A644E12F45EA90D6A6FA2D'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.10"
+      },
+      "OnNotifyEnd_31BE164E46A644E12F45EA90D6A6FA2D": {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:OnNotifyEnd_31BE164E46A644E12F45EA90D6A6FA2D'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.11"
+      },
+      "StopWeaponAnim": {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:StopWeaponAnim'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.15"
+      },
+      "GetMuzzleEffect": {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:GetMuzzleEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.4"
+      },
+      "GetMuzzleEffectParticle": {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:GetMuzzleEffectParticle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.6"
+      },
+      "GetMuzzleEffectAttached": {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:GetMuzzleEffectAttached'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.5"
+      },
+      "GetAmmoClass": {
+        "ObjectName": "Function'BP_ElectricArcAssaultRifle_C:GetAmmoClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_ElectricArcAssaultRifle_C'Default__BP_ElectricArcAssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_ElectricArcAssaultRifle_C",
+    "Name": "Default__BP_ElectricArcAssaultRifle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.BP_ElectricArcAssaultRifle_C'",
+    "Template": {
+      "ObjectName": "BP_NormalRifle_C'Default__BP_NormalRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "EmptyAnim": null,
+      "FireAnim": null,
+      "ReloadAnim": null,
+      "SupportedBulletMap": [
+        {
+          "Key": {
+            "Key": "ElectricArcAssaultRifleBullet"
+          },
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_ElectricArc_Spawner_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/BP_ElectricArc_Spawner.0"
+          }
+        }
+      ],
+      "FallbackBulletItemId": {
+        "Key": "ElectricArcAssaultRifleBullet"
+      },
+      "weaponIconTexture": {
+        "AssetPathName": "/Game/Pal/Texture/Item/Weapon/T_icon_ElectricArcAssaultRifle_UI.T_icon_ElectricArcAssaultRifle_UI",
+        "SubPathString": ""
+      },
+      "PalSoundSlotClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Sound/BP_SoundSlot_ElectricArcAssaultRifle.BP_SoundSlot_ElectricArcAssaultRifle_C",
+        "SubPathString": ""
+      },
+      "BackWeaponClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_BackWeapon_ElectricArcAssaultRifle_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BackWeapon/BP_BackWeapon_ElectricArcAssaultRifle.0"
+      },
+      "RemoteRole": "ENetRole::ROLE_None"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_ElectricArcAssaultRifle",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateProxyObjectForPlayMontage_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayMontageCallbackProxy'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_4",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_3",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_2",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_4",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMontagePlayDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Temp_name_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bCanShootOnRelease",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAnimInstance_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_BulletActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalBullet'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsABP_Electric_Arc_Assault_Rifle",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "AnimBlueprintGeneratedClass'ABP_ElectricArcAssaultRifle_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/ABP/ABP_ElectricArcAssaultRifle.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_InReloadSpeedPlayRate",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAnimInstance_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsABP_Electric_Arc_Assault_Rifle_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "AnimBlueprintGeneratedClass'ABP_ElectricArcAssaultRifle_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/ABP/ABP_ElectricArcAssaultRifle.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetAmmoClass",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetAmmoClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.9"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetAmmoClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.9"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "AmmoClass",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetMuzzleEffect",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetMuzzleEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.14"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetMuzzleEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.14"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "NewParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraSystem'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetMuzzleEffectAttached",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_NormalRifle_C:GetMuzzleEffectAttached'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.7"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_NormalRifle_C:GetMuzzleEffectAttached'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.7"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Effect",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraSystem'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetMuzzleEffectParticle",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetMuzzleEffectParticle'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.15"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:GetMuzzleEffectParticle'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.15"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Particle System",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'ParticleSystem'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBlendOut_31BE164E46A644E12F45EA90D6A6FA2D",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnCompleted_31BE164E46A644E12F45EA90D6A6FA2D",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInterrupted_31BE164E46A644E12F45EA90D6A6FA2D",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNotifyBegin_31BE164E46A644E12F45EA90D6A6FA2D",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNotifyEnd_31BE164E46A644E12F45EA90D6A6FA2D",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "NotifyName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnReleaseTrigger",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_NormalRifle_C:OnReleaseTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.19"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_NormalRifle_C:OnReleaseTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.19"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bCanShootOnRelease",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnReloadStart",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:OnReloadStart'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.31"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:OnReloadStart'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.31"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "InReloadSpeedPlayRate",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnShoot",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_NormalRifle_C:OnShoot'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.20"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_NormalRifle_C:OnShoot'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.20"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BulletActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalBullet'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StopWeaponAnim",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:StopWeaponAnim'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.38"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:StopWeaponAnim'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.38"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAnimInstance_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SceneComponent'BP_ElectricArcAssaultRifle_C:ICH-DefaultSceneRoot_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.18"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AssaultRifleBase_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.0"
+            },
+            "SCSVariableName": "DefaultSceneRoot",
+            "AssociatedGuid": "13200B6F-4FEDE0AC-03EBFEB5-413F27FC"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SkeletalMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SkeletalMeshComponent'BP_ElectricArcAssaultRifle_C:Weapon_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.21"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_NormalRifle_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.0"
+            },
+            "SCSVariableName": "Weapon",
+            "AssociatedGuid": "21F8BED2-4028E662-046451AE-1619888F"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "ICH-DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_ElectricArcAssaultRifle_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.17"
+      },
+      "VariableGuid": "3C45C422-4E6F66C9-7249D985-6FF32B4A",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_ElectricArcAssaultRifle_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.19"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "Weapon_GEN_VARIABLE",
+    "Outer": "BP_ElectricArcAssaultRifle_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SkeletalMeshComponent'BP_NormalRifle_C:Weapon_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_NormalRifle.34"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_ElectricArcAssaultRifle_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/ABP/ABP_ElectricArcAssaultRifle.1"
+      },
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence'AS_BoltStrikeAssaultRifle_Idle'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Weapon/BoltStrikeAssaultRifle/fbx/AS_BoltStrikeAssaultRifle_Idle.0"
+        }
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_BoltStrikeAssaultRifle'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/AncientWeapon/BoltStrikeAssaultRifle/SK_BoltStrikeAssaultRifle.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_BoltStrikeAssaultRifle'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/AncientWeapon/BoltStrikeAssaultRifle/SK_BoltStrikeAssaultRifle.0"
+      },
+      "OverrideMaterials": [
+        null,
+        null
+      ]
+    }
+  }
+]

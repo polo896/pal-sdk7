@@ -1,0 +1,63 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SoundSlot_Weapon_LaserRifle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalSoundSlot'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SoundSlot_Weapon_LaserRifle_C'Default__BP_SoundSlot_Weapon_LaserRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_LaserRifle.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SoundSlot_Weapon_LaserRifle_C",
+    "Name": "Default__BP_SoundSlot_Weapon_LaserRifle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_LaserRifle.BP_SoundSlot_Weapon_LaserRifle_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SoundMap": [
+        {
+          "Key": {
+            "Key": "Weapon_Aim_Start"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_Weapon_LaserRifle_AimStart'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/LaserRifle/AKE_Weapon_LaserRifle_AimStart.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Equip"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_Weapon_LaserRifle_Equip'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/LaserRifle/AKE_Weapon_LaserRifle_Equip.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Aim_End"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_Weapon_Gun_Aim_End'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/AKE_Weapon_Gun_Aim_End.0"
+          }
+        }
+      ]
+    }
+  }
+]

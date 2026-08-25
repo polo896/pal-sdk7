@@ -1,0 +1,80 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SoundSlot_Weapon_SkyShotgun_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SoundSlot_Weapon_PumpActionShotgun_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_PumpActionShotgun.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SoundSlot_Weapon_PumpActionShotgun_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_PumpActionShotgun.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SoundSlot_Weapon_SkyShotgun_C'Default__BP_SoundSlot_Weapon_SkyShotgun_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_SkyShotgun.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SoundSlot_Weapon_SkyShotgun_C",
+    "Name": "Default__BP_SoundSlot_Weapon_SkyShotgun_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_SkyShotgun.BP_SoundSlot_Weapon_SkyShotgun_C'",
+    "Template": {
+      "ObjectName": "BP_SoundSlot_Weapon_PumpActionShotgun_C'Default__BP_SoundSlot_Weapon_PumpActionShotgun_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_PumpActionShotgun.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SoundMap": [
+        {
+          "Key": {
+            "Key": "Weapon_Fire"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_SkyShotgun_Fire'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/SkyShotgun/AKE_SkyShotgun_Fire.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Aim_Start"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_SkyShotgun_Aim'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/SkyShotgun/AKE_SkyShotgun_Aim.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Equip"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_SkyShotgun_Equip'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/SkyShotgun/AKE_SkyShotgun_Equip.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Aim_End"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_SkyShotgun_AimEnd'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/SkyShotgun/AKE_SkyShotgun_AimEnd.0"
+          }
+        }
+      ]
+    }
+  }
+]

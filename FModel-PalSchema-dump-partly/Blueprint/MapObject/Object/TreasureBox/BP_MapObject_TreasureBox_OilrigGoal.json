@@ -1,0 +1,441 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MapObject_TreasureBox_OilrigGoal_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_MapObject_TreasureBox_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NumReplicatedProperties": 1,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_MapObject_TreasureBox_OilrigGoal_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.14"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_MapObject_TreasureBox_OilrigGoal_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.8"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_MapObject_TreasureBox_OilrigGoal_C:ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_MapObject_TreasureBox_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_MapObject_TreasureBox_OilrigGoal_C:SetupVisual'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.6"
+      },
+      {
+        "ObjectName": "Function'BP_MapObject_TreasureBox_OilrigGoal_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.5"
+      },
+      {
+        "ObjectName": "Function'BP_MapObject_TreasureBox_OilrigGoal_C:TriggerOpen'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.7"
+      },
+      {
+        "ObjectName": "Function'BP_MapObject_TreasureBox_OilrigGoal_C:ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsOpened",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance | AdvancedDisplay",
+        "RepIndex": 13,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal": {
+        "ObjectName": "Function'BP_MapObject_TreasureBox_OilrigGoal_C:ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.4"
+      },
+      "TriggerOpen": {
+        "ObjectName": "Function'BP_MapObject_TreasureBox_OilrigGoal_C:TriggerOpen'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.7"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_MapObject_TreasureBox_OilrigGoal_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.5"
+      },
+      "SetupVisual": {
+        "ObjectName": "Function'BP_MapObject_TreasureBox_OilrigGoal_C:SetupVisual'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.6"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MapObject_TreasureBox_OilrigGoal_C'Default__BP_MapObject_TreasureBox_OilrigGoal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MapObject_TreasureBox_OilrigGoal_C",
+    "Name": "Default__BP_MapObject_TreasureBox_OilrigGoal_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.BP_MapObject_TreasureBox_OilrigGoal_C'",
+    "Template": {
+      "ObjectName": "BP_MapObject_TreasureBox_C'Default__BP_MapObject_TreasureBox_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "LongHoldInteractDuration": 10.0,
+      "InteractPlayerActionType": "EPalActionType::OpenOilrigGoalBox",
+      "IsLockRiding": true,
+      "DamageReaction": {
+        "ObjectName": "PalMapObjectDamageReactionComponent'Default__BP_MapObject_TreasureBox_OilrigGoal_C:DamageReaction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.10"
+      },
+      "DestroyFXType": "EPalMapObjectDestroyFXType::None"
+    }
+  },
+  {
+    "Type": "BP_TreasureBoxVisual_OilrigGoal_C",
+    "Name": "VisualActor_GEN_VARIABLE_BP_TreasureBoxVisual_OilrigGoal_C_CAT",
+    "Outer": "VisualActor_GEN_VARIABLE",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.BP_TreasureBoxVisual_OilrigGoal_C'",
+    "Template": {
+      "ObjectName": "BP_TreasureBoxVisual_OilrigGoal_C'Default__BP_TreasureBoxVisual_OilrigGoal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkeletalMeshComponent": {
+        "ObjectName": "PalSkeletalMeshComponent'BP_MapObject_TreasureBox_OilrigGoal_C:VisualActor_GEN_VARIABLE.VisualActor_GEN_VARIABLE_BP_TreasureBoxVisual_OilrigGoal_C_CAT.SkeletalMesh'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.11"
+      },
+      "RootComponent": {
+        "ObjectName": "PalSkeletalMeshComponent'BP_MapObject_TreasureBox_OilrigGoal_C:VisualActor_GEN_VARIABLE.VisualActor_GEN_VARIABLE_BP_TreasureBoxVisual_OilrigGoal_C_CAT.SkeletalMesh'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.11"
+      }
+    },
+    "ActorLabel": "BP_TreasureBoxVisual_OilrigGoal"
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "VisualActor_GEN_VARIABLE",
+    "Outer": "BP_MapObject_TreasureBox_OilrigGoal_C",
+    "Class": "UScriptClass'ChildActorComponent'",
+    "Template": {
+      "ObjectName": "ChildActorComponent'BP_MapObject_TreasureBox_C:VisualActor_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_TreasureBoxVisual_OilrigGoal_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.0"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "BP_TreasureBoxVisual_OilrigGoal_C'BP_MapObject_TreasureBox_OilrigGoal_C:VisualActor_GEN_VARIABLE.VisualActor_GEN_VARIABLE_BP_TreasureBoxVisual_OilrigGoal_C_CAT'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.2"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal",
+    "Outer": "BP_MapObject_TreasureBox_OilrigGoal_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsServer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Treasure_Box_Visual_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_TreasureBoxVisual_Base_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_Base.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_MapObject_TreasureBox_OilrigGoal_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_MapObject_TreasureBox_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox.8"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_MapObject_TreasureBox_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox.8"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetupVisual",
+    "Outer": "BP_MapObject_TreasureBox_OilrigGoal_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_MapObject_TreasureBox_C:SetupVisual'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox.9"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_MapObject_TreasureBox_C:SetupVisual'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox.9"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ConcreteModel",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalMapObjectConcreteModelBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TriggerOpen",
+    "Outer": "BP_MapObject_TreasureBox_OilrigGoal_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_MapObject_TreasureBox_C:TriggerOpen'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox.10"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_MapObject_TreasureBox_C:TriggerOpen'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox.10"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_MapObject_TreasureBox_OilrigGoal_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ChildActorComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ChildActorComponent'BP_MapObject_TreasureBox_OilrigGoal_C:VisualActor_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.3"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_MapObject_TreasureBox_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox.0"
+            },
+            "SCSVariableName": "VisualActor",
+            "AssociatedGuid": "CA113B23-46B11A72-FB330BBC-063999D0"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'PalInteractableSphereComponentNative'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "PalInteractableSphereComponentNative'BP_MapObject_TreasureBox_OilrigGoal_C:BP_InteractableSphere_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.9"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_MapObject_TreasureBox_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox.0"
+            },
+            "SCSVariableName": "BP_InteractableSphere",
+            "AssociatedGuid": "4758C3D3-43671EF7-4451468D-F7A0C29B"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalInteractableSphereComponentNative",
+    "Name": "BP_InteractableSphere_GEN_VARIABLE",
+    "Outer": "BP_MapObject_TreasureBox_OilrigGoal_C",
+    "Class": "UScriptClass'PalInteractableSphereComponentNative'",
+    "Template": {
+      "ObjectName": "PalInteractableSphereComponentNative'BP_MapObject_TreasureBox_C:BP_InteractableSphere_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox.12"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "SphereRadius": 110.0,
+      "RelativeLocation": {
+        "X": -5.9320968E-08,
+        "Y": 1.3709283E-09,
+        "Z": 75.97211
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 0.5
+      }
+    }
+  },
+  {
+    "Type": "PalMapObjectDamageReactionComponent",
+    "Name": "DamageReaction",
+    "Outer": "Default__BP_MapObject_TreasureBox_OilrigGoal_C",
+    "Class": "UScriptClass'PalMapObjectDamageReactionComponent'",
+    "Template": {
+      "ObjectName": "PalMapObjectDamageReactionComponent'Default__BP_MapObject_TreasureBox_C:DamageReaction'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox.13"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalSkeletalMeshComponent",
+    "Name": "SkeletalMesh",
+    "Outer": "VisualActor_GEN_VARIABLE_BP_TreasureBoxVisual_OilrigGoal_C_CAT",
+    "Class": "UScriptClass'PalSkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "PalSkeletalMeshComponent'Default__BP_TreasureBoxVisual_OilrigGoal_C:SkeletalMesh'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_OilrigGoal.7"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_MapObject_TreasureBox_OilrigGoal_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_MapObject_TreasureBox_OilrigGoal_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.12"
+      },
+      "VariableGuid": "EAC911C4-4122E4BD-89F9199A-A3417780",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_MapObject_TreasureBox_OilrigGoal_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_MapObject_TreasureBox_OilrigGoal_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/BP_MapObject_TreasureBox_OilrigGoal.13"
+      }
+    }
+  }
+]

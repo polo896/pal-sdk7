@@ -1,0 +1,847 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.31"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalRandomIncidentObjectPlacement'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ChildActorComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ChildActorComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ChildActorComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ChildActorComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ChildActorComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalRandomIncidentPlacementEggDataComponent2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementEggDataComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalRandomIncidentPlacementEggDataComponent1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementEggDataComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalRandomIncidentPlacementEggDataComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementEggDataComponent_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StaticMesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C'Default__BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.6"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C",
+    "Name": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop1_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT",
+    "Outer": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop1_GEN_VARIABLE",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'",
+    "Template": {
+      "ObjectName": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'Default__BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bRespawnableMulti": false,
+      "LevelObjectInstanceId": "132D71B1-424977C9-33D750AF-DAA8756E",
+      "RootComponent": {
+        "ObjectName": "SceneComponent'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop1_GEN_VARIABLE.BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop1_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT.Root'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.15"
+      }
+    },
+    "ActorLabel": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop"
+  },
+  {
+    "Type": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C",
+    "Name": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop2_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT",
+    "Outer": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop2_GEN_VARIABLE",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'",
+    "Template": {
+      "ObjectName": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'Default__BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bRespawnableMulti": false,
+      "LevelObjectInstanceId": "E8BA5935-4B63418E-5DA5F194-ABACE976",
+      "RootComponent": {
+        "ObjectName": "SceneComponent'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop2_GEN_VARIABLE.BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop2_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT.Root'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.16"
+      }
+    },
+    "ActorLabel": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop"
+  },
+  {
+    "Type": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C",
+    "Name": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop3_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT",
+    "Outer": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop3_GEN_VARIABLE",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'",
+    "Template": {
+      "ObjectName": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'Default__BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bRespawnableMulti": false,
+      "LevelObjectInstanceId": "9E951A0C-42A082D4-5CFE73B4-5F0C3D00",
+      "RootComponent": {
+        "ObjectName": "SceneComponent'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop3_GEN_VARIABLE.BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop3_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT.Root'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.17"
+      }
+    },
+    "ActorLabel": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop"
+  },
+  {
+    "Type": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C",
+    "Name": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop4_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT",
+    "Outer": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop4_GEN_VARIABLE",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'",
+    "Template": {
+      "ObjectName": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'Default__BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bRespawnableMulti": false,
+      "LevelObjectInstanceId": "C51F9F56-4A147A02-66898699-B7125ABC",
+      "RootComponent": {
+        "ObjectName": "SceneComponent'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop4_GEN_VARIABLE.BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop4_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT.Root'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.18"
+      }
+    },
+    "ActorLabel": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop"
+  },
+  {
+    "Type": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C",
+    "Name": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT",
+    "Outer": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_GEN_VARIABLE",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'",
+    "Template": {
+      "ObjectName": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'Default__BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bRespawnableMulti": false,
+      "LevelObjectInstanceId": "F9E0844E-425A7B30-334FC3A1-57700FA7",
+      "RootComponent": {
+        "ObjectName": "SceneComponent'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_GEN_VARIABLE.BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT.Root'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.19"
+      }
+    },
+    "ActorLabel": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop"
+  },
+  {
+    "Type": "BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C",
+    "Name": "Default__BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BP_PalRandomIncidentPlacementEggDataComponent_C",
+    "Name": "BP_PalRandomIncidentPlacementEggDataComponent1_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.BP_PalRandomIncidentPlacementEggDataComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalRandomIncidentPlacementEggDataComponent_C'Default__BP_PalRandomIncidentPlacementEggDataComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PalMonsterId": {
+        "Key": "ThiefBird"
+      },
+      "RelativeLocation": {
+        "X": -150.0909,
+        "Y": -531.41815,
+        "Z": 78.49397
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 6.574001,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_PalRandomIncidentPlacementEggDataComponent_C",
+    "Name": "BP_PalRandomIncidentPlacementEggDataComponent2_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.BP_PalRandomIncidentPlacementEggDataComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalRandomIncidentPlacementEggDataComponent_C'Default__BP_PalRandomIncidentPlacementEggDataComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PalMonsterId": {
+        "Key": "ThiefBird"
+      },
+      "RelativeLocation": {
+        "X": -16.152153,
+        "Y": -634.9199,
+        "Z": 76.256096
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 70.33304,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_PalRandomIncidentPlacementEggDataComponent_C",
+    "Name": "BP_PalRandomIncidentPlacementEggDataComponent_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.BP_PalRandomIncidentPlacementEggDataComponent_C'",
+    "Template": {
+      "ObjectName": "BP_PalRandomIncidentPlacementEggDataComponent_C'Default__BP_PalRandomIncidentPlacementEggDataComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PalMonsterId": {
+        "Key": "ThiefBird"
+      },
+      "RelativeLocation": {
+        "X": -37.520103,
+        "Y": -427.13577,
+        "Z": 65.45312
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -233.44894,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop1_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C",
+    "Class": "UScriptClass'ChildActorComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.0"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop1_GEN_VARIABLE.BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop1_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.1"
+      },
+      "RelativeLocation": {
+        "X": 276.94757,
+        "Y": -292.36765,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop2_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C",
+    "Class": "UScriptClass'ChildActorComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.0"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop2_GEN_VARIABLE.BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop2_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.2"
+      },
+      "RelativeLocation": {
+        "X": -317.5795,
+        "Y": -324.84943,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop3_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C",
+    "Class": "UScriptClass'ChildActorComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.0"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop3_GEN_VARIABLE.BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop3_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.3"
+      },
+      "RelativeLocation": {
+        "X": 313.37494,
+        "Y": -683.7542,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop4_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C",
+    "Class": "UScriptClass'ChildActorComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.0"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop4_GEN_VARIABLE.BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop4_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.4"
+      },
+      "RelativeLocation": {
+        "X": -396.89676,
+        "Y": -689.52673,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C",
+    "Class": "UScriptClass'ChildActorComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.0"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_GEN_VARIABLE.BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.5"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -183.02364,
+        "Z": -0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Root",
+    "Outer": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop1_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C:Root'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Root",
+    "Outer": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop2_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C:Root'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Root",
+    "Outer": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop3_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C:Root'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Root",
+    "Outer": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop4_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C:Root'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Root",
+    "Outer": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_GEN_VARIABLE_BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C_CAT",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_C:Root'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.20"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.23"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_13'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.24"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_17'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.25"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_18'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.26"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.27"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.28"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.29"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.30"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.22"
+        }
+      ],
+      "VariableGuid": "F7F17DEF-460603EC-6D8D9998-DB91B674",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ChildActorComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ChildActorComponent'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop4_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.13"
+      },
+      "VariableGuid": "6D38E360-4BAC81D0-7063EF8D-5227233A",
+      "InternalVariableName": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop4"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_12",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:StaticMesh_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.32"
+      },
+      "VariableGuid": "CDD62704-4BEDFB68-22C5A1A7-D5F11D47",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_13",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementEggDataComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalRandomIncidentPlacementEggDataComponent_C'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalRandomIncidentPlacementEggDataComponent_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.9"
+      },
+      "VariableGuid": "3DB2F61E-44C99239-0FE3A0A2-520C41E0",
+      "InternalVariableName": "BP_PalRandomIncidentPlacementEggDataComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_17",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementEggDataComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalRandomIncidentPlacementEggDataComponent_C'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalRandomIncidentPlacementEggDataComponent1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.7"
+      },
+      "VariableGuid": "026B5898-49F80304-4EEED89E-306CF4EA",
+      "InternalVariableName": "BP_PalRandomIncidentPlacementEggDataComponent1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_18",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentPlacementEggDataComponent_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentPlacementEggDataComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_PalRandomIncidentPlacementEggDataComponent_C'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalRandomIncidentPlacementEggDataComponent2_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.8"
+      },
+      "VariableGuid": "0C48C590-47C824BA-44FD319C-CC649D50",
+      "InternalVariableName": "BP_PalRandomIncidentPlacementEggDataComponent2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ChildActorComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ChildActorComponent'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.14"
+      },
+      "VariableGuid": "1435E51E-46118FCE-646AA0A9-44FEB00C",
+      "InternalVariableName": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ChildActorComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ChildActorComponent'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop1_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.10"
+      },
+      "VariableGuid": "091FE350-447E2B7D-AB6434AC-257BCD85",
+      "InternalVariableName": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ChildActorComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ChildActorComponent'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop2_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.11"
+      },
+      "VariableGuid": "CB93DF92-4B062245-F15DF9A6-9F423F6E",
+      "InternalVariableName": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ChildActorComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ChildActorComponent'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop3_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.12"
+      },
+      "VariableGuid": "0F6FB304-4D721B17-0F484BA9-815109DD",
+      "InternalVariableName": "BP_PalMapObjectSpawnerTreasureBox_VisibleContent_WorldTreeDrop3"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.21"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.21"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.23"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_13'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.24"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_17'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.25"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_18'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.26"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.27"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.28"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.29"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.30"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.22"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/ObjectPlacement/BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird.21"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "BP_PalRandomIncidentObjectPlacement_PalNest_ThiefBird_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_PalsNest'",
+        "ObjectPath": "Pal/Content/Pal/Model/Other/PalsNest/SM_PalsNest.2"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionProfileName": "Background",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "vsGroundRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "ClimbRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 4E-06,
+        "Y": -522.145,
+        "Z": 0.0
+      }
+    }
+  }
+]

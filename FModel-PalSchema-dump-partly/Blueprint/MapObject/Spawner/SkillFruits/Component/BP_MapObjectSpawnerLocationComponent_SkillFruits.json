@@ -1,0 +1,38 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MapObjectSpawnerLocationComponent_SkillFruits_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalMapObjectSpawnerMultiItemLocationComponent'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MapObjectSpawnerLocationComponent_SkillFruits_C'Default__BP_MapObjectSpawnerLocationComponent_SkillFruits_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/Component/BP_MapObjectSpawnerLocationComponent_SkillFruits.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MapObjectSpawnerLocationComponent_SkillFruits_C",
+    "Name": "Default__BP_MapObjectSpawnerLocationComponent_SkillFruits_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Spawner/SkillFruits/Component/BP_MapObjectSpawnerLocationComponent_SkillFruits.BP_MapObjectSpawnerLocationComponent_SkillFruits_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Bag_Dummy'",
+        "ObjectPath": "Pal/Content/Pal/Model/Prop/Resource/Bag_Dummy/SM_Bag_Dummy.2"
+      }
+    }
+  }
+]

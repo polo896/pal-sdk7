@@ -1,0 +1,38 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalSearchLightRotationStrategy_Random_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalSearchLightRotationStrategy_Random'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalSearchLightRotationStrategy_Random_C'Default__BP_PalSearchLightRotationStrategy_Random_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_PalSearchLightRotationStrategy_Random.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalSearchLightRotationStrategy_Random_C",
+    "Name": "Default__BP_PalSearchLightRotationStrategy_Random_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Machine/WildlifeSanctuaryDrone/BP_PalSearchLightRotationStrategy_Random.BP_PalSearchLightRotationStrategy_Random_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IntervalSeconds": 1.0,
+      "MaxYawRange": 30.0,
+      "MaxPitchRange": 10.0,
+      "RotationSpeed": 30.0
+    }
+  }
+]

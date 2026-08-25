@@ -1,0 +1,269 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AIController_CombatHeli_Field_WorldSecurity_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIController_CombatHeli_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_AIController_CombatHeli_Field_WorldSecurity_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli_Field_WorldSecurity.9"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_AIController_CombatHeli_Field_WorldSecurity_C:ExecuteUbergraph_BP_AIController_CombatHeli_Field_WorldSecurity'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli_Field_WorldSecurity.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIController_CombatHeli_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_AIController_CombatHeli_Field_WorldSecurity_C:ReceivePossess'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli_Field_WorldSecurity.3"
+      },
+      {
+        "ObjectName": "Function'BP_AIController_CombatHeli_Field_WorldSecurity_C:ExecuteUbergraph_BP_AIController_CombatHeli_Field_WorldSecurity'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli_Field_WorldSecurity.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_AIController_CombatHeli_Field_WorldSecurity": {
+        "ObjectName": "Function'BP_AIController_CombatHeli_Field_WorldSecurity_C:ExecuteUbergraph_BP_AIController_CombatHeli_Field_WorldSecurity'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli_Field_WorldSecurity.2"
+      },
+      "ReceivePossess": {
+        "ObjectName": "Function'BP_AIController_CombatHeli_Field_WorldSecurity_C:ReceivePossess'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli_Field_WorldSecurity.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NotPlaceable | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AIController_CombatHeli_Field_WorldSecurity_C'Default__BP_AIController_CombatHeli_Field_WorldSecurity_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli_Field_WorldSecurity.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AIController_CombatHeli_Field_WorldSecurity_C",
+    "Name": "Default__BP_AIController_CombatHeli_Field_WorldSecurity_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli_Field_WorldSecurity.BP_AIController_CombatHeli_Field_WorldSecurity_C'",
+    "Template": {
+      "ObjectName": "BP_AIController_CombatHeli_C'Default__BP_AIController_CombatHeli_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "CombatModuleClass": {
+        "ObjectName": "Class'PalAICombatModule_CombatHeli'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "AIActionComponent": {
+        "ObjectName": "PalAIActionComponent'Default__BP_AIController_CombatHeli_Field_WorldSecurity_C:ActionsComp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli_Field_WorldSecurity.4"
+      },
+      "PathFollowingComponent": {
+        "ObjectName": "PalFollowingComponent'Default__BP_AIController_CombatHeli_Field_WorldSecurity_C:PathFollowingComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli_Field_WorldSecurity.5"
+      },
+      "ActionsComp": {
+        "ObjectName": "PalAIActionComponent'Default__BP_AIController_CombatHeli_Field_WorldSecurity_C:ActionsComp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli_Field_WorldSecurity.4"
+      },
+      "TransformComponent": {
+        "ObjectName": "SceneComponent'Default__BP_AIController_CombatHeli_Field_WorldSecurity_C:TransformComponent0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli_Field_WorldSecurity.7"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_AIController_CombatHeli_Field_WorldSecurity_C:TransformComponent0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli_Field_WorldSecurity.7"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_AIController_CombatHeli_Field_WorldSecurity",
+    "Outer": "BP_AIController_CombatHeli_Field_WorldSecurity_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_PossessedPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalAIActionComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SetActionClassParameter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalAIActionBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceivePossess",
+    "Outer": "BP_AIController_CombatHeli_Field_WorldSecurity_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AIController_CombatHeli_C:ReceivePossess'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AIController_CombatHeli_C:ReceivePossess'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "PossessedPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "PalAIActionComponent",
+    "Name": "ActionsComp",
+    "Outer": "Default__BP_AIController_CombatHeli_Field_WorldSecurity_C",
+    "Class": "UScriptClass'PalAIActionComponent'",
+    "Template": {
+      "ObjectName": "PalAIActionComponent'Default__BP_AIController_CombatHeli_C:ActionsComp'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli.5"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalFollowingComponent",
+    "Name": "PathFollowingComponent",
+    "Outer": "Default__BP_AIController_CombatHeli_Field_WorldSecurity_C",
+    "Class": "UScriptClass'PalFollowingComponent'",
+    "Template": {
+      "ObjectName": "PalFollowingComponent'Default__BP_AIController_CombatHeli_C:PathFollowingComponent'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli.6"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_AIController_CombatHeli_Field_WorldSecurity_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "TransformComponent0",
+    "Outer": "Default__BP_AIController_CombatHeli_Field_WorldSecurity_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__BP_AIController_CombatHeli_C:TransformComponent0'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli.8"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_AIController_CombatHeli_Field_WorldSecurity_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli_Field_WorldSecurity.6"
+      },
+      "VariableGuid": "88A11466-457A20D2-7B820A89-B2BE4946",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_AIController_CombatHeli_Field_WorldSecurity_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_AIController_CombatHeli_Field_WorldSecurity_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Machine/CombatHeli/BP_AIController_CombatHeli_Field_WorldSecurity.8"
+      }
+    }
+  }
+]

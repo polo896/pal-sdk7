@@ -1,0 +1,279 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_LoadingScreenRandomNumberSync_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_LoadingScreenRandomNumberSync_C:ClearSyncedData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/BP_LoadingScreenRandomNumberSync.2"
+      },
+      {
+        "ObjectName": "Function'BP_LoadingScreenRandomNumberSync_C:GetIconNumber'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/BP_LoadingScreenRandomNumberSync.4"
+      },
+      {
+        "ObjectName": "Function'BP_LoadingScreenRandomNumberSync_C:GetTipsNumber'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/BP_LoadingScreenRandomNumberSync.5"
+      },
+      {
+        "ObjectName": "Function'BP_LoadingScreenRandomNumberSync_C:EndSync'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/BP_LoadingScreenRandomNumberSync.3"
+      },
+      {
+        "ObjectName": "Function'BP_LoadingScreenRandomNumberSync_C:StartSync'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/BP_LoadingScreenRandomNumberSync.6"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "SyncCount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "TipsNumber",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "IconNumber",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bShouldRefleshTipsNumber",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bShouldRefleshIconNumber",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "StartSync": {
+        "ObjectName": "Function'BP_LoadingScreenRandomNumberSync_C:StartSync'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/BP_LoadingScreenRandomNumberSync.6"
+      },
+      "EndSync": {
+        "ObjectName": "Function'BP_LoadingScreenRandomNumberSync_C:EndSync'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/BP_LoadingScreenRandomNumberSync.3"
+      },
+      "GetTipsNumber": {
+        "ObjectName": "Function'BP_LoadingScreenRandomNumberSync_C:GetTipsNumber'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/BP_LoadingScreenRandomNumberSync.5"
+      },
+      "GetIconNumber": {
+        "ObjectName": "Function'BP_LoadingScreenRandomNumberSync_C:GetIconNumber'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/BP_LoadingScreenRandomNumberSync.4"
+      },
+      "ClearSyncedData": {
+        "ObjectName": "Function'BP_LoadingScreenRandomNumberSync_C:ClearSyncedData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/BP_LoadingScreenRandomNumberSync.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_LoadingScreenRandomNumberSync_C'Default__BP_LoadingScreenRandomNumberSync_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/BP_LoadingScreenRandomNumberSync.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_LoadingScreenRandomNumberSync_C",
+    "Name": "Default__BP_LoadingScreenRandomNumberSync_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/System/BP_LoadingScreenRandomNumberSync.BP_LoadingScreenRandomNumberSync_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bShouldRefleshTipsNumber": true,
+      "bShouldRefleshIconNumber": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ClearSyncedData",
+    "Outer": "BP_LoadingScreenRandomNumberSync_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "EndSync",
+    "Outer": "BP_LoadingScreenRandomNumberSync_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetIconNumber",
+    "Outer": "BP_LoadingScreenRandomNumberSync_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "MinIconIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "MaxIconIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "IconIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_RandomIntegerInRange_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetTipsNumber",
+    "Outer": "BP_LoadingScreenRandomNumberSync_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "MinTipsCount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "MaxTipsCount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "TipsNumber",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_RandomIntegerInRange_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "StartSync",
+    "Outer": "BP_LoadingScreenRandomNumberSync_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

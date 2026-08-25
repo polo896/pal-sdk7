@@ -1,0 +1,926 @@
+[
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WBP_RecyclerMenu",
+          "DelegatePropertyName": "OnHoveredTargetContainerSlot",
+          "FunctionNameToBind": "BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_3_OnHoveredTargetContainerSlot__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_RecyclerMenu",
+          "DelegatePropertyName": "OnClickedTargetContainerSortButton",
+          "FunctionNameToBind": "BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_2_OnClickedTargetContainerSortButton__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_RecyclerMenu",
+          "DelegatePropertyName": "OnClickClosedButton",
+          "FunctionNameToBind": "BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_0_OnClickClosedButton__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_0_OnClickClosedButton__DelegateSignature",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_2_OnClickedTargetContainerSortButton__DelegateSignature",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_3_OnHoveredTargetContainerSlot__DelegateSignature",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BP_GetDesiredFocusTarget",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'CommonActivatableWidget:BP_GetDesiredFocusTarget'",
+      "ObjectPath": "/Script/CommonUI"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetInventoryTopFocustTarget_FocusTarget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "Cleanup UIModel",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "CleanupRelicChestEventBind",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalUIMapObjectRecyclerModel:UIModelDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalUIMapObjectRecyclerModel:UIModelDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalUIMapObjectRecyclerModel:UIModelDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalUIMapObjectRecyclerModel:UIModelDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_RelicRecyclerMenu",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetParam_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameterBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Map_Object_Recycler",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameter_MapObjectRecycler'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetUIModel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRecyclerModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnReadyWorkeeModule",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Model",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalMapObjectConcreteModelBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Module",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalMapObjectConcreteModelModuleBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalMapObjectWorkeeModuleWorkDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Map_Object_Workee_Module",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalMapObjectWorkeeModule'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnReadyWorkProgress",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Module",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalMapObjectWorkeeModule'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Work",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalWorkBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Work_Progress",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalWorkProgress'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetup",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUserWidget:OnSetup'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUpdatCurrentRecycleItem",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "UIModel",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRecyclerModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetCurrentRecycleItemId_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUpdateBoost",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "UIModel",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRecyclerModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetCurrentSpeedMultiplier_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetRecycleBoostBuffRemainingTimeRate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsRecycleBoostBuffActive_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUpdateOutputContainerCaution",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "UIModel",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRecyclerModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsFullOutputContainer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUpdateSwitch",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "UIModel",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRecyclerModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bSwitchOn",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUpdateSwitch_Internal",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "UIModel",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRecyclerModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bInitial",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bSwitchOn",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsSwitchOn_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetupRelicChestDisplay",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetBoostItemContainer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalItemContainer'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetRelicItemContainer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalItemContainer'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetBuildObjectName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetupRelicChestEventBind",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalUIMapObjectRecyclerModel:UIModelDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalUIMapObjectRecyclerModel:UIModelDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalMapObjectModuleDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalUIMapObjectRecyclerModel:UIModelDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_TryGetConcreteModel_Model",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalMapObjectRecyclerModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_TryGetConcreteModel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_4",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PalUIMapObjectRecyclerModel:UIModelDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WBP_RecyclerMenu_C",
+    "Name": "WBP_RecyclerMenu",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Recycler/WBP_RecyclerMenu.WBP_RecyclerMenu_C'",
+    "Template": {
+      "ObjectName": "WBP_RecyclerMenu_C'Default__WBP_RecyclerMenu_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Recycler/WBP_RecyclerMenu.261"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "WBP_RelicRecyclerMenu_C",
+    "Name": "Default__WBP_RelicRecyclerMenu_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_RelicRecyclerMenu_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.21"
+      },
+      "bClassRequiresNativeTick": true,
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_RelicRecyclerMenu_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.0"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:ExecuteUbergraph_WBP_RelicRecyclerMenu'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidgetOverlayUI'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:Cleanup UIModel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.5"
+      },
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:CleanupRelicChestEventBind'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.6"
+      },
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.4"
+      },
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:OnUpdateBoost'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.12"
+      },
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:OnUpdateOutputContainerCaution'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.13"
+      },
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:OnReadyWorkProgress'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.9"
+      },
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:OnReadyWorkeeModule'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.8"
+      },
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:OnUpdatCurrentRecycleItem'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.11"
+      },
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:OnUpdateSwitch_Internal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.15"
+      },
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:OnUpdateSwitch'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.14"
+      },
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:SetupRelicChestEventBind'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.17"
+      },
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:SetupRelicChestDisplay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.16"
+      },
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_0_OnClickClosedButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.1"
+      },
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.10"
+      },
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_2_OnClickedTargetContainerSortButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.2"
+      },
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_3_OnHoveredTargetContainerSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.3"
+      },
+      {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:ExecuteUbergraph_WBP_RelicRecyclerMenu'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.7"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_RecyclerMenu",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_RecyclerMenu_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/IngameMenu/Recycler/WBP_RecyclerMenu.262"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "UIModel",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectRecyclerModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_RelicRecyclerMenu": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:ExecuteUbergraph_WBP_RelicRecyclerMenu'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.7"
+      },
+      "BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_3_OnHoveredTargetContainerSlot__DelegateSignature": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_3_OnHoveredTargetContainerSlot__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.3"
+      },
+      "BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_2_OnClickedTargetContainerSortButton__DelegateSignature": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_2_OnClickedTargetContainerSortButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.2"
+      },
+      "OnSetup": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.10"
+      },
+      "BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_0_OnClickClosedButton__DelegateSignature": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_0_OnClickClosedButton__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.1"
+      },
+      "SetupRelicChestDisplay": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:SetupRelicChestDisplay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.16"
+      },
+      "SetupRelicChestEventBind": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:SetupRelicChestEventBind'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.17"
+      },
+      "OnUpdateSwitch": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:OnUpdateSwitch'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.14"
+      },
+      "OnUpdateSwitch_Internal": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:OnUpdateSwitch_Internal'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.15"
+      },
+      "OnUpdatCurrentRecycleItem": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:OnUpdatCurrentRecycleItem'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.11"
+      },
+      "OnReadyWorkeeModule": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:OnReadyWorkeeModule'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.8"
+      },
+      "OnReadyWorkProgress": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:OnReadyWorkProgress'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.9"
+      },
+      "OnUpdateOutputContainerCaution": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:OnUpdateOutputContainerCaution'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.13"
+      },
+      "OnUpdateBoost": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:OnUpdateBoost'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.12"
+      },
+      "BP_GetDesiredFocusTarget": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:BP_GetDesiredFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.4"
+      },
+      "CleanupRelicChestEventBind": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:CleanupRelicChestEventBind'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.6"
+      },
+      "Cleanup UIModel": {
+        "ObjectName": "Function'WBP_RelicRecyclerMenu_C:Cleanup UIModel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.5"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_RelicRecyclerMenu_C'Default__WBP_RelicRecyclerMenu_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.19"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_RelicRecyclerMenu_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "WBP_RecyclerMenu_C'WBP_RelicRecyclerMenu_C:WidgetTree.WBP_RecyclerMenu'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/RelicRecycler/WBP_RelicRecyclerMenu.18"
+      }
+    }
+  }
+]

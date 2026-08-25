@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_b00_longgrass_rock_medium_5",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_AncientRockDebrisPile_G'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b05/rock/SM_AncientRockDebrisPile_G.2"
+      },
+      "UpdateGuid": "74CEAA48-4A33B6E9-898FF0B3-5557D491",
+      "Density": 7.0,
+      "ZOffset": {
+        "Min": 0.7,
+        "Max": 1.1
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 0.0018005371,
+          "Y": -0.0001373291,
+          "Z": 3.082059
+        },
+        "BoxExtent": {
+          "X": 80.10733,
+          "Y": 84.70717,
+          "Z": 17.496647
+        },
+        "SphereRadius": 96.95808736379365
+      },
+      "LowBoundOriginRadius": {
+        "X": -2.7528381,
+        "Y": -17.25676,
+        "Z": 24.354807
+      },
+      "CullDistance": {
+        "Max": 5000
+      },
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "Background",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "vsGroundRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "ClimbRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      }
+    }
+  }
+]

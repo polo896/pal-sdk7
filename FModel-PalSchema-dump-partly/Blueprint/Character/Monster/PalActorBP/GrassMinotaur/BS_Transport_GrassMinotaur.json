@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Transport_GrassMinotaur",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 1.6,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GrassMinotaur_Transport'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GrassMinotaur/AS_GrassMinotaur_Transport.0"
+          },
+          "SampleValue": {
+            "X": 300.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 2.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GrassMinotaur_Transport'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GrassMinotaur/AS_GrassMinotaur_Transport.0"
+          },
+          "SampleValue": {
+            "X": 150.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GrassMinotaur_Transport'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GrassMinotaur/AS_GrassMinotaur_Transport.0"
+          },
+          "SampleValue": {
+            "X": 16.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.1
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.053333335,
+            "Vertices[1]": 0.5
+          },
+          {
+            "SampleIndices": 1,
+            "SampleIndices[1]": 0,
+            "Vertices": 0.5,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 300.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_GrassMinotaur_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/GrassMinotaur/SK_GrassMinotaur_Skeleton.4"
+      }
+    },
+    "SkeletonGuid": "FF0D1F86-470A78E1-092273A2-A984AE53"
+  }
+]

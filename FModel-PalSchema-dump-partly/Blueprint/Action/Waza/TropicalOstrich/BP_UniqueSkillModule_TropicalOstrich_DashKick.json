@@ -1,0 +1,70 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueSkillModule_TropicalOstrich_DashKick_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueSkillModule_TropicalOstrich_DashKick_C'Default__BP_UniqueSkillModule_TropicalOstrich_DashKick_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/TropicalOstrich/BP_UniqueSkillModule_TropicalOstrich_DashKick.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueSkillModule_TropicalOstrich_DashKick_C",
+    "Name": "Default__BP_UniqueSkillModule_TropicalOstrich_DashKick_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/TropicalOstrich/BP_UniqueSkillModule_TropicalOstrich_DashKick.BP_UniqueSkillModule_TropicalOstrich_DashKick_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueSkillModule_Tackle_C'Default__BP_UniqueSkillModule_Tackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StartAnimMontage": {
+        "ObjectName": "AnimMontage'AM_TropicalOstrich_DashKick_Start'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/TropicalOstrich/AM_TropicalOstrich_DashKick_Start.0"
+      },
+      "LoopAnimMontage": {
+        "ObjectName": "AnimMontage'AM_TropicalOstrich_DashKick_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/TropicalOstrich/AM_TropicalOstrich_DashKick_Loop.0"
+      },
+      "EndAnimMontage": {
+        "ObjectName": "AnimMontage'AM_TropicalOstrich_DashKick_End'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/TropicalOstrich/AM_TropicalOstrich_DashKick_End.0"
+      },
+      "AttackTime": 2.0,
+      "EndBrakeTime": 0.3,
+      "MaxSpeedMultiply": 4.0,
+      "MinSpeedMultiply": 2.0,
+      "TackleHomingRate": 3.0,
+      "FlagName": "TropicalOstrich_DashKick",
+      "StartSkillEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_TropicalOstrich_DashKick_Start_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/TropicalOstrich_DashKick/BP_UniqueSkillEffect_TropicalOstrich_DashKick_Start.0"
+      },
+      "LoopSkillEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_TropicalOstrich_DashKick_Loop_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/TropicalOstrich_DashKick/BP_UniqueSkillEffect_TropicalOstrich_DashKick_Loop.0"
+      },
+      "EnableDashSkip": true,
+      "DashSkipTime": 0.4
+    }
+  }
+]

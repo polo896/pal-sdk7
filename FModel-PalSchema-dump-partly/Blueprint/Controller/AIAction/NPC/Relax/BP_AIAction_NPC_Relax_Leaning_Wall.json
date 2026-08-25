@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AIAction_NPC_Relax_Leaning_Wall_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_RelaxBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/BP_AIAction_NPC_RelaxBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_NPC_RelaxBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/BP_AIAction_NPC_RelaxBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AIAction_NPC_Relax_Leaning_Wall_C'Default__BP_AIAction_NPC_Relax_Leaning_Wall_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Relax/BP_AIAction_NPC_Relax_Leaning_Wall.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AIAction_NPC_Relax_Leaning_Wall_C",
+    "Name": "Default__BP_AIAction_NPC_Relax_Leaning_Wall_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/Relax/BP_AIAction_NPC_Relax_Leaning_Wall.BP_AIAction_NPC_Relax_Leaning_Wall_C'",
+    "Template": {
+      "ObjectName": "BP_AIAction_NPC_RelaxBase_C'Default__BP_AIAction_NPC_RelaxBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/NPC/BP_AIAction_NPC_RelaxBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IsReturnDefaultLocationAI": true,
+      "DefaultActionClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_Action_NPC_Montage_Leaning_Wall_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/NPCMontage/BP_Action_NPC_Montage_Leaning_Wall.0"
+      },
+      "IsDefaultLocationForceSet": true,
+      "IgnoreTalkAction": true
+    }
+  }
+]

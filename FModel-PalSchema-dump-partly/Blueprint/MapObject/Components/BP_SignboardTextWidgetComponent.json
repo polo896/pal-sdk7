@@ -1,0 +1,303 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SignboardTextWidgetComponent_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalTextWidgetComponent'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_SignboardTextWidgetComponent_C:GetCurrentText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Components/BP_SignboardTextWidgetComponent.2"
+      },
+      {
+        "ObjectName": "Function'BP_SignboardTextWidgetComponent_C:ReflectTextToWidget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Components/BP_SignboardTextWidgetComponent.3"
+      }
+    ],
+    "FuncMap": {
+      "ReflectTextToWidget": {
+        "ObjectName": "Function'BP_SignboardTextWidgetComponent_C:ReflectTextToWidget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Components/BP_SignboardTextWidgetComponent.3"
+      },
+      "GetCurrentText": {
+        "ObjectName": "Function'BP_SignboardTextWidgetComponent_C:GetCurrentText'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Components/BP_SignboardTextWidgetComponent.2"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SignboardTextWidgetComponent_C'Default__BP_SignboardTextWidgetComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Components/BP_SignboardTextWidgetComponent.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SignboardTextWidgetComponent_C",
+    "Name": "Default__BP_SignboardTextWidgetComponent_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Components/BP_SignboardTextWidgetComponent.BP_SignboardTextWidgetComponent_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultText": {
+        "Namespace": "",
+        "Key": "BB52D6E74F9D83E0C5CDFFAA7270DE0E",
+        "SourceString": "Default Text",
+        "LocalizedString": "Default Text"
+      },
+      "WidgetClass": {
+        "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Signboard_3DText_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Signboard/WBP_Ingame_Signboard_3DText.15"
+      },
+      "DrawSize": {
+        "X": 200,
+        "Y": 100
+      },
+      "bDrawAtDesiredSize": true,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseToChannels": {
+            "WorldStatic": "ECollisionResponse::ECR_Ignore",
+            "WorldDynamic": "ECollisionResponse::ECR_Ignore",
+            "Pawn": "ECollisionResponse::ECR_Ignore",
+            "Visibility": "ECollisionResponse::ECR_Ignore",
+            "Camera": "ECollisionResponse::ECR_Ignore",
+            "PhysicsBody": "ECollisionResponse::ECR_Ignore",
+            "Vehicle": "ECollisionResponse::ECR_Ignore",
+            "Destructible": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel2": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel3": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel4": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel5": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel6": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel2": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel3": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel5": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel7": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel8": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel16": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel17": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel18": "ECollisionResponse::ECR_Ignore"
+          },
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel2",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel3",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel4",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel5",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel6",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel17",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel18",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetCurrentText",
+    "Outer": "BP_SignboardTextWidgetComponent_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalTextWidgetComponent:GetCurrentText'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetWidget_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'UserWidget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsWBP_Ingame_Signboard_3DText",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Signboard_3DText_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Signboard/WBP_Ingame_Signboard_3DText.15"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReflectTextToWidget",
+    "Outer": "BP_SignboardTextWidgetComponent_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalTextWidgetComponent:ReflectTextToWidget'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "Text",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetWidget_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'UserWidget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_TextToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsWBP_Ingame_Signboard_3DText",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Signboard_3DText_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Signboard/WBP_Ingame_Signboard_3DText.15"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

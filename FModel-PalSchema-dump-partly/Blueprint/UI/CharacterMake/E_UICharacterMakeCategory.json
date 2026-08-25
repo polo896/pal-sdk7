@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_UICharacterMakeCategory",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "2822E8B6483B1C8ED984969C9934FF98",
+            "SourceString": "Face",
+            "LocalizedString": "Face"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "B9C165E740104DDB36CB0BA7A7F77295",
+            "SourceString": "Body",
+            "LocalizedString": "Body"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "FF41E30349F37A8CD79B80B09923F5FE",
+            "SourceString": "Hair",
+            "LocalizedString": "Hair"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "E9BE7DC04F25C6A24C6405A9B113BE00",
+            "SourceString": "None",
+            "LocalizedString": "None"
+          }
+        },
+        {
+          "Key": "NewEnumerator4",
+          "Value": {
+            "Namespace": "",
+            "Key": "0F885184472E9BB88B136391285CC799",
+            "SourceString": "Exit_NewGame",
+            "LocalizedString": "Exit_NewGame"
+          }
+        },
+        {
+          "Key": "NewEnumerator5",
+          "Value": {
+            "Namespace": "",
+            "Key": "A939527642576EC75B87B594CFC9FDCE",
+            "SourceString": "Preset",
+            "LocalizedString": "Preset"
+          }
+        },
+        {
+          "Key": "NewEnumerator6",
+          "Value": {
+            "Namespace": "",
+            "Key": "EA6515A24FE4F634FFE370BC05083666",
+            "SourceString": "Voice",
+            "LocalizedString": "Voice"
+          }
+        },
+        {
+          "Key": "NewEnumerator7",
+          "Value": {
+            "Namespace": "",
+            "Key": "D220F51048D7B6F5CAD5559D9F9170AF",
+            "SourceString": "Exit_InGame",
+            "LocalizedString": "Exit_InGame"
+          }
+        },
+        {
+          "Key": "NewEnumerator8",
+          "Value": {
+            "Namespace": "",
+            "Key": "C2077E72457A551F8730A1AF2D779ABF",
+            "SourceString": "Cancel_InGame",
+            "LocalizedString": "Cancel_InGame"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_UICharacterMakeCategory::NewEnumerator3": 0,
+      "E_UICharacterMakeCategory::NewEnumerator0": 1,
+      "E_UICharacterMakeCategory::NewEnumerator1": 2,
+      "E_UICharacterMakeCategory::NewEnumerator2": 3,
+      "E_UICharacterMakeCategory::NewEnumerator4": 4,
+      "E_UICharacterMakeCategory::NewEnumerator5": 5,
+      "E_UICharacterMakeCategory::NewEnumerator6": 6,
+      "E_UICharacterMakeCategory::NewEnumerator7": 7,
+      "E_UICharacterMakeCategory::NewEnumerator8": 8,
+      "E_UICharacterMakeCategory::E_MAX": 9
+    },
+    "CppForm": "Namespaced"
+  }
+]

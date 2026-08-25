@@ -1,0 +1,34 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "DT_BaseCampTask",
+    "Class": "UScriptClass'DataTable'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "ScriptStruct'PalBaseCampTaskDataSet_TableRow'",
+        "ObjectPath": "/Script/Pal"
+      }
+    },
+    "Rows": {
+      "1": {
+        "Level": 1,
+        "workerNum": 1,
+        "WorkerNum_IncompleteMsgID": "BASECAMP_TASK_TASK_TITLE_WORKER3_INCOMPLETE",
+        "WorkerNum_CompleteMsgID": "BASECAMP_TASK_TASK_TITLE_WORKER3_COMPLETE",
+        "BuildObject1": "10_91",
+        "BuildObjectNum1": 0,
+        "BuildObject1_IncompleteMsgID": "10_44",
+        "BuildObject1_CompleteMsgID": "1_43",
+        "BuildObject2": "1_0",
+        "BuildObjectNum2": 121,
+        "BuildObject2_IncompleteMsgID": "1_0",
+        "BuildObject2_CompleteMsgID": "BASECAMP_TASK_TASK_TITLE_WORKBENCH_INCOMPLETE",
+        "BuildObject3": "None",
+        "BuildObjectNum3": 0,
+        "BuildObject3_IncompleteMsgID": "None",
+        "BuildObject3_CompleteMsgID": "None"
+      }
+    }
+  }
+]

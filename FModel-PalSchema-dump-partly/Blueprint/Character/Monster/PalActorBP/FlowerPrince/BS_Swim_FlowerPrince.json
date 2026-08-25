@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Swim_FlowerPrince",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 1.2,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_FlowerPrince_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/FlowerPrince/AS_FlowerPrince_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_FlowerPrince_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/FlowerPrince/AS_FlowerPrince_Run.0"
+          },
+          "SampleValue": {
+            "X": 1000.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_FlowerPrince_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/FlowerPrince/AS_FlowerPrince_Run.0"
+          },
+          "SampleValue": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.5
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 2,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.001
+          },
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.001,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 1000.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_FlowerPrince_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/FlowerPrince/SK_FlowerPrince_Skeleton.5"
+      }
+    },
+    "SkeletonGuid": "52987D94-440665AA-964DF797-9E8579E6"
+  }
+]

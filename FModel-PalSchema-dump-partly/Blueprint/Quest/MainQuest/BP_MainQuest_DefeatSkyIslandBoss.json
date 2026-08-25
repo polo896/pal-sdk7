@@ -1,0 +1,116 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MainQuest_DefeatSkyIslandBoss_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MainQuest_DefeatSkyIslandBoss_C'Default__BP_MainQuest_DefeatSkyIslandBoss_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_DefeatSkyIslandBoss.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MainQuest_DefeatSkyIslandBoss_C",
+    "Name": "Default__BP_MainQuest_DefeatSkyIslandBoss_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/MainQuest/BP_MainQuest_DefeatSkyIslandBoss.BP_MainQuest_DefeatSkyIslandBoss_C'",
+    "Template": {
+      "ObjectName": "BP_PalQuestDataBase_C'Default__BP_PalQuestDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_PalQuestDataBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestBlockGroupList": [
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SkyIslandBoss_Order.BP_MainQuestBlock_SkyIslandBoss_Order_C",
+              "SubPathString": ""
+            }
+          ]
+        },
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_QuestBlock_UnlockAreaBarriers.BP_QuestBlock_UnlockAreaBarriers_C",
+              "SubPathString": ""
+            },
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_QuestBlock_UnlockAreaBarrier_1.BP_QuestBlock_UnlockAreaBarrier_1_C",
+              "SubPathString": ""
+            },
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_QuestBlock_UnlockAreaBarrier_2.BP_QuestBlock_UnlockAreaBarrier_2_C",
+              "SubPathString": ""
+            },
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_QuestBlock_UnlockAreaBarrier_3.BP_QuestBlock_UnlockAreaBarrier_3_C",
+              "SubPathString": ""
+            },
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_QuestBlock_UnlockAreaBarrier_4.BP_QuestBlock_UnlockAreaBarrier_4_C",
+              "SubPathString": ""
+            },
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_QuestBlock_UnlockAreaBarrier_5.BP_QuestBlock_UnlockAreaBarrier_5_C",
+              "SubPathString": ""
+            },
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_QuestBlock_UnlockAreaBarrier_6.BP_QuestBlock_UnlockAreaBarrier_6_C",
+              "SubPathString": ""
+            }
+          ]
+        },
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SkyIslandBoss_Report.BP_MainQuestBlock_SkyIslandBoss_Report_C",
+              "SubPathString": ""
+            }
+          ]
+        },
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SkyIslandBoss_DefeatBoss.BP_MainQuestBlock_SkyIslandBoss_DefeatBoss_C",
+              "SubPathString": ""
+            }
+          ]
+        },
+        {
+          "BlockList": [
+            {
+              "AssetPathName": "/Game/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_SkyIslandBoss_Report2.BP_MainQuestBlock_SkyIslandBoss_Report2_C",
+              "SubPathString": ""
+            }
+          ]
+        }
+      ],
+      "QuestTitleMsgId": "QUEST_MAIN_TITLE_BOSS_AURI",
+      "QuestDescriptionMsgId": "QUEST_MAIN_DESC_BOSS_AURI",
+      "AutoOrderQuests": [
+        "Main_TalkSkyBoss"
+      ],
+      "CommonRewardData": {
+        "Exp": 39546
+      }
+    }
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalTreasureMapWorldSubsystem_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalTreasureMapWorldSubsystem'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "MapProperty",
+        "Name": "TreasureMapPointIconMap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "IntProperty",
+          "Name": "TreasureMapPointIconMap",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        },
+        "ValueProp": {
+          "Type": "ObjectProperty",
+          "Name": "TreasureMapPointIconMap_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'Texture2D'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalTreasureMapWorldSubsystem_C'Default__BP_PalTreasureMapWorldSubsystem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalTreasureMapWorldSubsystem.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalTreasureMapWorldSubsystem_C",
+    "Name": "Default__BP_PalTreasureMapWorldSubsystem_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalTreasureMapWorldSubsystem.BP_PalTreasureMapWorldSubsystem_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TreasureMapPointIconMap": [
+        {
+          "Key": "0",
+          "Value": {
+            "ObjectName": "Texture2D'T_icon_compass_TreasureMap_01'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/InGame/T_icon_compass_TreasureMap_01.0"
+          }
+        },
+        {
+          "Key": "1",
+          "Value": {
+            "ObjectName": "Texture2D'T_icon_compass_TreasureMap_02'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/InGame/T_icon_compass_TreasureMap_02.0"
+          }
+        },
+        {
+          "Key": "2",
+          "Value": {
+            "ObjectName": "Texture2D'T_icon_compass_TreasureMap_03'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/InGame/T_icon_compass_TreasureMap_03.0"
+          }
+        },
+        {
+          "Key": "3",
+          "Value": {
+            "ObjectName": "Texture2D'T_icon_compass_TreasureMap_04'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/InGame/T_icon_compass_TreasureMap_04.0"
+          }
+        },
+        {
+          "Key": "4",
+          "Value": {
+            "ObjectName": "Texture2D'T_icon_compass_TreasureMap_05'",
+            "ObjectPath": "Pal/Content/Pal/Texture/UI/InGame/T_icon_compass_TreasureMap_05.0"
+          }
+        }
+      ],
+      "TreasureMapInteractivePointZ": -3000.0,
+      "TreasureMapInteractivePointClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_TreasureMapInteractivePoint_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/BP_TreasureMapInteractivePoint.0"
+      },
+      "LotteryNameMapByRarity": [
+        {
+          "Key": "0",
+          "Value": {
+            "Key": "TreasureMap01"
+          }
+        },
+        {
+          "Key": "1",
+          "Value": {
+            "Key": "TreasureMap02"
+          }
+        },
+        {
+          "Key": "2",
+          "Value": {
+            "Key": "TreasureMap03"
+          }
+        },
+        {
+          "Key": "3",
+          "Value": {
+            "Key": "TreasureMap04"
+          }
+        },
+        {
+          "Key": "4",
+          "Value": {
+            "Key": "TreasureMap05"
+          }
+        }
+      ],
+      "bShouldCreate": true
+    }
+  }
+]

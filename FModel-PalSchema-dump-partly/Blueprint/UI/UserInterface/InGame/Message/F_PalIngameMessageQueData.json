@@ -1,0 +1,44 @@
+[
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "F_PalIngameMessageQueData",
+    "Class": "UScriptClass'UserDefinedStruct'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Guid": "50586AAF-48641C46-0678D186-BEF7C1C0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "ColorType_2_9A9668A94D02249EDA134ABE93E5071F",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'E_PalIngameMessageColorType'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Message/E_PalIngameMessageColorType.0"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "DisplayTime_5_6265F4BD40A6534CB2B8CCB58C4726EB",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "TextId_8_F992E5814A6F19230106A0AE48026D0A",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      }
+    ],
+    "StructFlags": 57344,
+    "DefaultProperties": {
+      "ColorType_2_9A9668A94D02249EDA134ABE93E5071F": "E_PalIngameMessageColorType::NewEnumerator3",
+      "DisplayTime_5_6265F4BD40A6534CB2B8CCB58C4726EB": 0.0,
+      "TextId_8_F992E5814A6F19230106A0AE48026D0A": "None"
+    }
+  }
+]

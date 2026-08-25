@@ -1,0 +1,53 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b07_leaves_Sakura_01_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b07_leaves_Sakura_01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b07/tree/mesh/SM_pal_b07_leaves_Sakura_01.2"
+      },
+      "UpdateGuid": "1391FA9B-426C6D1C-6C8E339C-5B334AD3",
+      "Density": 200.0,
+      "ScaleX": {
+        "Min": 0.4,
+        "Max": 0.4
+      },
+      "ZOffset": {
+        "Max": 3000.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -7.197197,
+          "Y": -3.628456,
+          "Z": 8.721616
+        },
+        "BoxExtent": {
+          "X": 88.56166,
+          "Y": 73.254906,
+          "Z": 10.3118925
+        },
+        "SphereRadius": 93.36834780689276
+      },
+      "LowBoundOriginRadius": {
+        "X": -13.574451,
+        "Y": -11.019749,
+        "Z": 96.61245
+      },
+      "CullDistance": {
+        "Max": 1200
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

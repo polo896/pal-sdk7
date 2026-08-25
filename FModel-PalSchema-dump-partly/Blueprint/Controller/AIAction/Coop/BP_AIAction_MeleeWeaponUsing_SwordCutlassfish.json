@@ -1,0 +1,259 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_MeleeWeaponUsing_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C:ExecuteUbergraph_BP_AIAction_MeleeWeaponUsing_SwordCutlassfish'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing_SwordCutlassfish.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_MeleeWeaponUsing_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C:ProcFinish'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing_SwordCutlassfish.6"
+      },
+      {
+        "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C:OnStartPartnerSkill'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing_SwordCutlassfish.4"
+      },
+      {
+        "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C:OnIaiDeath'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing_SwordCutlassfish.3"
+      },
+      {
+        "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C:OnStopPartnerSkill'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing_SwordCutlassfish.5"
+      },
+      {
+        "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C:ExecuteUbergraph_BP_AIAction_MeleeWeaponUsing_SwordCutlassfish'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing_SwordCutlassfish.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ShouldDieOnFinish",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_AIAction_MeleeWeaponUsing_SwordCutlassfish": {
+        "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C:ExecuteUbergraph_BP_AIAction_MeleeWeaponUsing_SwordCutlassfish'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing_SwordCutlassfish.2"
+      },
+      "OnStopPartnerSkill": {
+        "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C:OnStopPartnerSkill'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing_SwordCutlassfish.5"
+      },
+      "OnIaiDeath": {
+        "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C:OnIaiDeath'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing_SwordCutlassfish.3"
+      },
+      "OnStartPartnerSkill": {
+        "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C:OnStartPartnerSkill'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing_SwordCutlassfish.4"
+      },
+      "ProcFinish": {
+        "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C:ProcFinish'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing_SwordCutlassfish.6"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C'Default__BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing_SwordCutlassfish.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C",
+    "Name": "Default__BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing_SwordCutlassfish.BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C'",
+    "Template": {
+      "ObjectName": "BP_AIAction_MeleeWeaponUsing_C'Default__BP_AIAction_MeleeWeaponUsing_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_AIAction_MeleeWeaponUsing_SwordCutlassfish",
+    "Outer": "BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'BP_SwordCutlassfish_Katana_C:OnIaiDeath__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_SwordCutlassfish_Katana.14"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Sword_Cutlassfish_Katana",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SwordCutlassfish_Katana_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_SwordCutlassfish_Katana.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Sword_Cutlassfish_Katana_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SwordCutlassfish_Katana_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_SwordCutlassfish_Katana.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnIaiDeath",
+    "Outer": "BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnStartPartnerSkill",
+    "Outer": "BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_C:OnStartPartnerSkill'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing.18"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_C:OnStartPartnerSkill'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing.18"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnStopPartnerSkill",
+    "Outer": "BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_C:OnStopPartnerSkill'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing.19"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_C:OnStopPartnerSkill'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing.19"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ProcFinish",
+    "Outer": "BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_C:ProcFinish'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing.23"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AIAction_MeleeWeaponUsing_C:ProcFinish'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing.23"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalDamageReactionComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

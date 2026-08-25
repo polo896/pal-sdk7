@@ -1,0 +1,123 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_JumpFromJumpSpot_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalAction_JumpFromJumpSpot'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Action_JumpFromJumpSpot_C:CanNextActionCancel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_JumpFromJumpSpot.2"
+      },
+      {
+        "ObjectName": "Function'BP_Action_JumpFromJumpSpot_C:CanStepCancel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_JumpFromJumpSpot.3"
+      }
+    ],
+    "FuncMap": {
+      "CanStepCancel": {
+        "ObjectName": "Function'BP_Action_JumpFromJumpSpot_C:CanStepCancel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_JumpFromJumpSpot.3"
+      },
+      "CanNextActionCancel": {
+        "ObjectName": "Function'BP_Action_JumpFromJumpSpot_C:CanNextActionCancel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_JumpFromJumpSpot.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_JumpFromJumpSpot_C'Default__BP_Action_JumpFromJumpSpot_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_Action_JumpFromJumpSpot.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_JumpFromJumpSpot_C",
+    "Name": "Default__BP_Action_JumpFromJumpSpot_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Common/BP_Action_JumpFromJumpSpot.BP_Action_JumpFromJumpSpot_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayerCameraModifierClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_CameraModifier_JumpFromJumpSpot_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_CameraModifier_JumpFromJumpSpot.0"
+      },
+      "PlayerJumpPrepareMontage": {
+        "ObjectName": "AnimMontage'AM_Player_Female_JumpFromJumpSpot'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AM_Player_Female_JumpFromJumpSpot.0"
+      },
+      "MonsterCameraModifierClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_CameraModifier_MonsterJumpFromJumpSpot_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LevelGimmickJumpSpot/BP_CameraModifier_MonsterJumpFromJumpSpot.0"
+      },
+      "MonsterJumpPrepareAnimType": "EPalGeneralAnimSequenceType::JumpEnd",
+      "MonsterJumpPrepareAnimPlayRate": 0.6,
+      "MonsterLaunchDelayTime": 0.3
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "CanNextActionCancel",
+    "Outer": "BP_Action_JumpFromJumpSpot_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalActionBase:CanNextActionCancel'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "CanStepCancel",
+    "Outer": "BP_Action_JumpFromJumpSpot_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalActionBase:CanStepCancel'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

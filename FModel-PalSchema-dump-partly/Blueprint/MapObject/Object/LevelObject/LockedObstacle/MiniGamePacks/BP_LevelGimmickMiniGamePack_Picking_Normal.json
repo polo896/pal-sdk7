@@ -1,0 +1,40 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_LevelGimmickMiniGamePack_Picking_Normal_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_LevelGimmickMiniGamePack_PickingBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LockedObstacle/MiniGamePacks/BP_LevelGimmickMiniGamePack_PickingBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_LevelGimmickMiniGamePack_PickingBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LockedObstacle/MiniGamePacks/BP_LevelGimmickMiniGamePack_PickingBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_LevelGimmickMiniGamePack_Picking_Normal_C'Default__BP_LevelGimmickMiniGamePack_Picking_Normal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LockedObstacle/MiniGamePacks/BP_LevelGimmickMiniGamePack_Picking_Normal.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_LevelGimmickMiniGamePack_Picking_Normal_C",
+    "Name": "Default__BP_LevelGimmickMiniGamePack_Picking_Normal_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LockedObstacle/MiniGamePacks/BP_LevelGimmickMiniGamePack_Picking_Normal.BP_LevelGimmickMiniGamePack_Picking_Normal_C'",
+    "Template": {
+      "ObjectName": "BP_LevelGimmickMiniGamePack_PickingBase_C'Default__BP_LevelGimmickMiniGamePack_PickingBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/LevelObject/LockedObstacle/MiniGamePacks/BP_LevelGimmickMiniGamePack_PickingBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  }
+]

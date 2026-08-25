@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_NPC_Montage_AM_NPC_Architecture_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_NPC_MontageBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_MontageBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_NPC_MontageBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_MontageBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_NPC_Montage_AM_NPC_Architecture_C'Default__BP_Action_NPC_Montage_AM_NPC_Architecture_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/NPCMontage/BP_Action_NPC_Montage_AM_NPC_Architecture.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_NPC_Montage_AM_NPC_Architecture_C",
+    "Name": "Default__BP_Action_NPC_Montage_AM_NPC_Architecture_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/NPC/NPCMontage/BP_Action_NPC_Montage_AM_NPC_Architecture.BP_Action_NPC_Montage_AM_NPC_Architecture_C'",
+    "Template": {
+      "ObjectName": "BP_Action_NPC_MontageBase_C'Default__BP_Action_NPC_MontageBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/NPC/BP_Action_NPC_MontageBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Montage": {
+        "AssetPathName": "/Game/Pal/Animation/Character/Player/Female/AM_Player_Female_Architecture2.AM_Player_Female_Architecture2",
+        "SubPathString": ""
+      },
+      "Prop": {
+        "ObjectName": "BlueprintGeneratedClass'BP_Prop_Architecture_Hammer_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Prop/BP_Prop_Architecture_Hammer.0"
+      }
+    }
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalPassiveSkillExtraParameterTribeIDList'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C'Default__BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C",
+    "Name": "Default__BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs.BP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TribeIDs": [
+        "EPalTribeID::YakushimaMonster001",
+        "EPalTribeID::YakushimaMonster001_Blue",
+        "EPalTribeID::YakushimaMonster001_Red",
+        "EPalTribeID::YakushimaMonster001_Purple",
+        "EPalTribeID::YakushimaMonster001_Pink",
+        "EPalTribeID::YakushimaMonster001_Rainbow",
+        "EPalTribeID::YakushimaBoss001_Small",
+        "EPalTribeID::YakushimaMonster002",
+        "EPalTribeID::YakushimaMonster003",
+        "EPalTribeID::YakushimaMonster003_Purple",
+        "EPalTribeID::YakushimaBoss001",
+        "EPalTribeID::YakushimaBoss001_Green",
+        "EPalTribeID::YakushimaBoss002",
+        "EPalTribeID::YakushimaBoss002_Hand_Left",
+        "EPalTribeID::YakushimaBoss002_Hand_Right",
+        "EPalTribeID::YakushimaBoss002_Head",
+        "EPalTribeID::YakushimaBoss002_2",
+        "EPalTribeID::YakushimaBoss002_Hand_Left_2",
+        "EPalTribeID::YakushimaBoss002_Hand_Right_2",
+        "EPalTribeID::YakushimaBoss002_Head_2",
+        "EPalTribeID::YakushimaBoss001_Green_2"
+      ]
+    }
+  }
+]

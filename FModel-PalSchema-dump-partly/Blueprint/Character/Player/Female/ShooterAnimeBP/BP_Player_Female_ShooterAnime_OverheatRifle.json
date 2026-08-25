@@ -1,0 +1,61 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Player_Female_ShooterAnime_OverheatRifle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_ShooterAnime_AssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_AssaultRifle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_ShooterAnime_AssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_AssaultRifle.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Player_Female_ShooterAnime_OverheatRifle_C'Default__BP_Player_Female_ShooterAnime_OverheatRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_OverheatRifle.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Player_Female_ShooterAnime_OverheatRifle_C",
+    "Name": "Default__BP_Player_Female_ShooterAnime_OverheatRifle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_OverheatRifle.BP_Player_Female_ShooterAnime_OverheatRifle_C'",
+    "Template": {
+      "ObjectName": "BP_Player_Female_ShooterAnime_AssaultRifle_C'Default__BP_Player_Female_ShooterAnime_AssaultRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_AssaultRifle.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimeInfo": {
+        "ReloadMontage": {
+          "ObjectName": "AnimMontage'AM_Player_Female_Reload_OverheatRifle'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/OverheatRifle/AM_Player_Female_Reload_OverheatRifle.0"
+        },
+        "RidingAnimationMap": [
+          {
+            "Key": "EPalRidePositionType::None",
+            "Value": {
+              "RidingAnimation": null,
+              "RidingSprintStartAnimation": null,
+              "RidingSprintAnimation": null,
+              "RidingShakingMontage": null,
+              "RideShootingAnimation": null,
+              "RideShootingAO": null
+            }
+          }
+        ]
+      }
+    }
+  }
+]

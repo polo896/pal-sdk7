@@ -1,0 +1,64 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_RagdollPreset_Liftup_ThunderFluffyBird_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalRagdollPreset'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_RagdollPreset_Liftup_ThunderFluffyBird_C'Default__BP_RagdollPreset_Liftup_ThunderFluffyBird_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Ragdoll/BP_RagdollPreset_Liftup_ThunderFluffyBird.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_RagdollPreset_Liftup_ThunderFluffyBird_C",
+    "Name": "Default__BP_RagdollPreset_Liftup_ThunderFluffyBird_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Ragdoll/BP_RagdollPreset_Liftup_ThunderFluffyBird.BP_RagdollPreset_Liftup_ThunderFluffyBird_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockBoneNames": [
+        "pelvis",
+        "spine_01",
+        "spine_02",
+        "spine_03",
+        "neck_01",
+        "neck_02",
+        "head",
+        "wing_01_l",
+        "wing_02_l",
+        "wing_03_l",
+        "fingerA_01_l",
+        "fingerA_02_l",
+        "fingerB_01_l",
+        "fingerB_02_l",
+        "fingerC_01_l",
+        "fingerC_02_l",
+        "hips",
+        "wing_01_r",
+        "wing_02_r",
+        "wing_03_r",
+        "fingerA_01_r",
+        "fingerA_02_r",
+        "fingerB_01_r",
+        "fingerB_02_r",
+        "fingerC_01_r",
+        "fingerC_02_r"
+      ],
+      "LinearDamping": 7.0,
+      "AngularDamping": 7.0
+    }
+  }
+]

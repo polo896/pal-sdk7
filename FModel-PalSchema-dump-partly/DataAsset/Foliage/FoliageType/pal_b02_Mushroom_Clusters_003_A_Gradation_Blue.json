@@ -1,0 +1,91 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "pal_b02_Mushroom_Clusters_003_A_Gradation_Blue",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PresetType": "EPalFoliagePresetType::Mushroom_L",
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b02_Mushroom_Clusters_003_A_Gradation_Blue'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b02/Mushroom/Meshes/DifferentColorMashroom/StanderdModel/SM_pal_b02_Mushroom_Clusters_003_A_Gradation_Blue.2"
+      },
+      "ComponentClass": {
+        "ObjectName": "Class'PalFoliageISMComponentBase'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "UpdateGuid": "38ADAE3A-43F11E7A-9464DDA0-C80EA3A7",
+      "ScaleX": {
+        "Min": 0.85,
+        "Max": 1.5
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -7.326561,
+          "Y": -19.778557,
+          "Z": 251.30807
+        },
+        "BoxExtent": {
+          "X": 219.12271,
+          "Y": 246.05191,
+          "Z": 269.55746
+        },
+        "SphereRadius": 334.7345401535507
+      },
+      "LowBoundOriginRadius": {
+        "X": -1.2592793,
+        "Y": -37.53488,
+        "Z": 123.847336
+      },
+      "bAffectDistanceFieldLighting": true,
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "Background",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "LiftedupPawn",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "AISightRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "vsGroundRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "ClimbRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "RollingRayCast",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "DropItemPhysicsBody",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      }
+    }
+  }
+]

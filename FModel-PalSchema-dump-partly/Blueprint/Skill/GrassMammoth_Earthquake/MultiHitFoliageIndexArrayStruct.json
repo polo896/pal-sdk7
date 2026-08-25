@@ -1,0 +1,72 @@
+[
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "MultiHitFoliageIndexArrayStruct",
+    "Class": "UScriptClass'UserDefinedStruct'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Guid": "1C240588-46080298-421EE38E-88B1DCBC"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "HitIndexArray_8_3738503B41D3142B44EDE6BF31B01315",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "HitIndexArray_8_3738503B41D3142B44EDE6BF31B01315",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "PreHitIndexArray_12_8B890B624541B3784FF0E09762A74F83",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "PreHitIndexArray_12_8B890B624541B3784FF0E09762A74F83",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "HitLastTimeArray_17_07B7F2E74B1C6C748522B08FF308F12F",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "DoubleProperty",
+          "Name": "HitLastTimeArray_17_07B7F2E74B1C6C748522B08FF308F12F",
+          "Flags": "RF_Public",
+          "ElementSize": 8
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "HitCountArray_22_B6D42B3E4F937B59BD8D0A854EC90F8A",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "HitCountArray_22_B6D42B3E4F937B59BD8D0A854EC90F8A",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      }
+    ],
+    "StructFlags": 4,
+    "DefaultProperties": {
+      "HitIndexArray_8_3738503B41D3142B44EDE6BF31B01315": [],
+      "PreHitIndexArray_12_8B890B624541B3784FF0E09762A74F83": [],
+      "HitLastTimeArray_17_07B7F2E74B1C6C748522B08FF308F12F": [],
+      "HitCountArray_22_B6D42B3E4F937B59BD8D0A854EC90F8A": []
+    }
+  }
+]

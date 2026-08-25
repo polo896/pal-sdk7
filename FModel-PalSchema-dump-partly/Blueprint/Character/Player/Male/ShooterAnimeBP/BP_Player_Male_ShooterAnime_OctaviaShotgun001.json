@@ -1,0 +1,280 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Player_Male_ShooterAnime_OctaviaShotgun001_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_ShooterAnime_PumpActionShotgun_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_PumpActionShotgun.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Player_Female_ShooterAnime_PumpActionShotgun_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_PumpActionShotgun.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Player_Male_ShooterAnime_OctaviaShotgun001_C'Default__BP_Player_Male_ShooterAnime_OctaviaShotgun001_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_OctaviaShotgun001.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Player_Male_ShooterAnime_OctaviaShotgun001_C",
+    "Name": "Default__BP_Player_Male_ShooterAnime_OctaviaShotgun001_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_OctaviaShotgun001.BP_Player_Male_ShooterAnime_OctaviaShotgun001_C'",
+    "Template": {
+      "ObjectName": "BP_Player_Female_ShooterAnime_PumpActionShotgun_C'Default__BP_Player_Female_ShooterAnime_PumpActionShotgun_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_PumpActionShotgun.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimeInfo": {
+        "NormalMoveBlendSpace": {
+          "ObjectName": "BlendSpace1D'BS_Player_Male_OctaviaShotgunMove'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Male/BlendSpace/BS_Player_Male_OctaviaShotgunMove.0"
+        },
+        "Sliding": {
+          "ObjectName": "AnimSequence'AS_Player_Male_SlidingLoop_OctaviaShotgun'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AS_Player_Male_SlidingLoop_OctaviaShotgun.0"
+        },
+        "Sprint": {
+          "ObjectName": "AnimSequence'AS_Player_Male_Sprint_OctaviaShotgun'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AS_Player_Male_Sprint_OctaviaShotgun.0"
+        },
+        "WeaponChangeMontage": {
+          "ObjectName": "AnimMontage'AM_Player_Male_Draw_OctaviaShotgun'",
+          "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AM_Player_Male_Draw_OctaviaShotgun.0"
+        },
+        "IdlePoseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::Stand",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Male_Idle_OctaviaShotgun'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AS_Player_Male_Idle_OctaviaShotgun.0"
+            }
+          }
+        ],
+        "JogPoseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::Stand",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Male_Jog_OctaviaShotgun'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AS_Player_Male_Jog_OctaviaShotgun.0"
+            }
+          }
+        ],
+        "AimBaseMap": [
+          {
+            "Key": "EWeaponAnimationPoseType::Stand",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Male_Aim_OctaviaShotgun'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AS_Player_Male_Aim_OctaviaShotgun.0"
+            }
+          },
+          {
+            "Key": "EWeaponAnimationPoseType::Crouch",
+            "Value": {
+              "ObjectName": "AnimSequence'AS_Player_Male_Crouch_Aim_OctaviaShotgun'",
+              "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AS_Player_Male_Crouch_Aim_OctaviaShotgun.0"
+            }
+          }
+        ],
+        "AnimationMap": [
+          {
+            "Key": "EWeaponAnimationType::Shoot",
+            "Value": {
+              "PoseMap": [
+                {
+                  "Key": "EWeaponAnimationPoseType::Stand",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Male_Fire_OctaviaShotgun'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AM_Player_Male_Fire_OctaviaShotgun.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Crouch",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Male_Fire_OctaviaShotgun'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AM_Player_Male_Fire_OctaviaShotgun.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Riding",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Male_Fire_OctaviaShotgun'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AM_Player_Male_Fire_OctaviaShotgun.0"
+                  }
+                }
+              ],
+              "isAutoStop": false,
+              "EndDelegateType": "EPalWeaponAnimationEndDelegateType::MontageBlendingOut"
+            }
+          },
+          {
+            "Key": "EWeaponAnimationType::PullAltTrigger",
+            "Value": {
+              "PoseMap": [
+                {
+                  "Key": "EWeaponAnimationPoseType::Stand",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Male_AltFireCharge_OctaviaShotgun_ma'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AM_Player_Male_AltFireCharge_OctaviaShotgun_ma.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Crouch",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Male_AltFireCharge_OctaviaShotgun_ma'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AM_Player_Male_AltFireCharge_OctaviaShotgun_ma.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Riding",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Male_AltFireCharge_OctaviaShotgun_ma'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AM_Player_Male_AltFireCharge_OctaviaShotgun_ma.0"
+                  }
+                }
+              ],
+              "isAutoStop": true,
+              "EndDelegateType": "EPalWeaponAnimationEndDelegateType::MontageBlendingOut"
+            }
+          },
+          {
+            "Key": "EWeaponAnimationType::PullAltReleaseTrigger",
+            "Value": {
+              "PoseMap": [
+                {
+                  "Key": "EWeaponAnimationPoseType::Stand",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Male_AltFire_OctaviaShotgun'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AM_Player_Male_AltFire_OctaviaShotgun.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Crouch",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Male_AltFire_OctaviaShotgun'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AM_Player_Male_AltFire_OctaviaShotgun.0"
+                  }
+                },
+                {
+                  "Key": "EWeaponAnimationPoseType::Riding",
+                  "Value": {
+                    "ObjectName": "AnimMontage'AM_Player_Male_AltFire_OctaviaShotgun'",
+                    "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AM_Player_Male_AltFire_OctaviaShotgun.0"
+                  }
+                }
+              ],
+              "isAutoStop": false,
+              "EndDelegateType": "EPalWeaponAnimationEndDelegateType::MontageBlendingOut"
+            }
+          }
+        ],
+        "RidingAnimationMap": [
+          {
+            "Key": "EPalRidePositionType::HorseRide",
+            "Value": {
+              "RidingAnimation": {
+                "ObjectName": "AnimSequence'AS_Player_Female_HorseRide_Idle_PumpActionShotgun'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/PumpActionShotgun/AS_Player_Female_HorseRide_Idle_PumpActionShotgun.0"
+              },
+              "RidingSprintStartAnimation": {
+                "ObjectName": "AnimSequence'AS_Player_Female_HorseRide_Sprint_Start'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_HorseRide_Sprint_Start.0"
+              },
+              "RidingSprintAnimation": {
+                "ObjectName": "AnimSequence'AS_Player_Female_HorseRide_Sprint'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_HorseRide_Sprint.0"
+              },
+              "RidingShakingMontage": {
+                "ObjectName": "AnimMontage'AM_Player_Female_HorseRide_Yure'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AM_Player_Female_HorseRide_Yure.0"
+              },
+              "RideShootingAnimation": {
+                "ObjectName": "AnimSequence'AS_Player_Female_HorseRide_Aim_OctaviaShotgun'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/PumpActionShotgun/AS_Player_Female_HorseRide_Aim_OctaviaShotgun.0"
+              },
+              "RideShootingAO": {
+                "ObjectName": "AimOffsetBlendSpace'AO_Player_Female_HorseRide_AimOffset_PumpActionShotgun'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/PumpActionShotgun/AO/AO_Player_Female_HorseRide_AimOffset_PumpActionShotgun.0"
+              }
+            }
+          },
+          {
+            "Key": "EPalRidePositionType::BiggerHorseRide",
+            "Value": {
+              "RidingAnimation": {
+                "ObjectName": "AnimSequence'AS_Player_Female_BiggerHorseRide_Idle_PumpActionShotgun'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/PumpActionShotgun/AS_Player_Female_BiggerHorseRide_Idle_PumpActionShotgun.0"
+              },
+              "RidingSprintStartAnimation": {
+                "ObjectName": "AnimSequence'AS_Player_Female_BiggerHorseRide_Sprint_Start'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_BiggerHorseRide_Sprint_Start.0"
+              },
+              "RidingSprintAnimation": {
+                "ObjectName": "AnimSequence'AS_Player_Female_BiggerHorseRide_Sprint'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AS_Player_Female_BiggerHorseRide_Sprint.0"
+              },
+              "RidingShakingMontage": {
+                "ObjectName": "AnimMontage'AM_Player_Female_HorseRide_Yure'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AM_Player_Female_HorseRide_Yure.0"
+              },
+              "RideShootingAnimation": {
+                "ObjectName": "AnimSequence'AS_Player_Female_BiggerHorseRide_Aim_OctaviaShotgun'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/PumpActionShotgun/AS_Player_Female_BiggerHorseRide_Aim_OctaviaShotgun.0"
+              },
+              "RideShootingAO": {
+                "ObjectName": "AimOffsetBlendSpace'AO_Player_Female_HorseRide_AimOffset_PumpActionShotgun'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/PumpActionShotgun/AO/AO_Player_Female_HorseRide_AimOffset_PumpActionShotgun.0"
+              }
+            }
+          },
+          {
+            "Key": "EPalRidePositionType::SitRide",
+            "Value": {
+              "RidingAnimation": {
+                "ObjectName": "AnimSequence'AS_Player_Female_Crouch_Idle_PumpActionShotgun'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/PumpActionShotgun/AS_Player_Female_Crouch_Idle_PumpActionShotgun.0"
+              },
+              "RidingSprintStartAnimation": null,
+              "RidingSprintAnimation": null,
+              "RidingShakingMontage": {
+                "ObjectName": "AnimMontage'AM_Player_Female_SitRide_Yure'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/AM_Player_Female_SitRide_Yure.0"
+              },
+              "RideShootingAnimation": {
+                "ObjectName": "AnimSequence'AS_Player_Male_Crouch_Aim_OctaviaShotgun'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Male/OctaviaShotgun/AS_Player_Male_Crouch_Aim_OctaviaShotgun.0"
+              },
+              "RideShootingAO": {
+                "ObjectName": "AimOffsetBlendSpace'AO_Player_Female_HorseRide_AimOffset_PumpActionShotgun'",
+                "ObjectPath": "Pal/Content/Pal/Animation/Character/Player/Female/PumpActionShotgun/AO/AO_Player_Female_HorseRide_AimOffset_PumpActionShotgun.0"
+              }
+            }
+          },
+          {
+            "Key": "EPalRidePositionType::None",
+            "Value": {
+              "RidingAnimation": null,
+              "RidingSprintStartAnimation": null,
+              "RidingSprintAnimation": null,
+              "RidingShakingMontage": null,
+              "RideShootingAnimation": null,
+              "RideShootingAO": null
+            }
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "EAction_GrassPanda_MusclePunch",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "25851A5C41198066249CA387F743B953",
+            "SourceString": "Start",
+            "LocalizedString": "Start"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "644417744881FA421F7881A7C0C5ACB2",
+            "SourceString": "Loop",
+            "LocalizedString": "Loop"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "D78C2D114B5BBF52FA0B75B2B3EC5061",
+            "SourceString": "End",
+            "LocalizedString": "End"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "224211B4427E0F4BDCE47597B5B29BE2",
+            "SourceString": "AttackEnd",
+            "LocalizedString": "AttackEnd"
+          }
+        },
+        {
+          "Key": "NewEnumerator4",
+          "Value": {
+            "Namespace": "",
+            "Key": "975947D94054E0EECB5FECAB56B970C0",
+            "SourceString": "MoveStart",
+            "LocalizedString": "MoveStart"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "EAction_GrassPanda_MusclePunch::NewEnumerator0": 0,
+      "EAction_GrassPanda_MusclePunch::NewEnumerator4": 1,
+      "EAction_GrassPanda_MusclePunch::NewEnumerator1": 2,
+      "EAction_GrassPanda_MusclePunch::NewEnumerator2": 3,
+      "EAction_GrassPanda_MusclePunch::NewEnumerator3": 4,
+      "EAction_GrassPanda_MusclePunch::EAction_GrassPanda_MAX": 5
+    },
+    "CppForm": "Namespaced"
+  }
+]

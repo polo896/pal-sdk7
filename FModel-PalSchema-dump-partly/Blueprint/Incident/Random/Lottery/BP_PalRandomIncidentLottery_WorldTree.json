@@ -1,0 +1,108 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalRandomIncidentLottery_WorldTree_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentLottery_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/Lottery/BP_PalRandomIncidentLottery.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentLottery_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/Lottery/BP_PalRandomIncidentLottery.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalRandomIncidentLottery_WorldTree_C'Default__BP_PalRandomIncidentLottery_WorldTree_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/Lottery/BP_PalRandomIncidentLottery_WorldTree.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalRandomIncidentLottery_WorldTree_C",
+    "Name": "Default__BP_PalRandomIncidentLottery_WorldTree_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/Lottery/BP_PalRandomIncidentLottery_WorldTree.BP_PalRandomIncidentLottery_WorldTree_C'",
+    "Template": {
+      "ObjectName": "BP_PalRandomIncidentLottery_C'Default__BP_PalRandomIncidentLottery_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/Lottery/BP_PalRandomIncidentLottery.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LotteryRate": 40.0,
+      "LotteryParameters": [
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "PalNest_SnakeGirl",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "PalNest_ThiefBird",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "PalNest_ThunderDog_Ice",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "Outbreak_MoonChild",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "GrassMinotaur_VS_GrassMinotaur_Ice",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "ElecPanda_VS_GrassPanda_Electric",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "FlowerdollCouple",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        }
+      ]
+    }
+  }
+]

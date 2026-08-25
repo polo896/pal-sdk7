@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b07_PL_D_3_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b07_PL_D_3'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b07/tree/mesh/SM_pal_b07_PL_D_3.2"
+      },
+      "UpdateGuid": "D1209209-4C095EBE-6121B6A7-C7C441DD",
+      "Density": 200.0,
+      "ScaleX": {
+        "Min": 0.6,
+        "Max": 0.8
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 2.8599977,
+          "Y": -1.8972368,
+          "Z": 113.64528
+        },
+        "BoxExtent": {
+          "X": 29.88084,
+          "Y": 33.025,
+          "Z": 116.22711
+        },
+        "SphereRadius": 116.82281582286971
+      },
+      "LowBoundOriginRadius": {
+        "X": -8.75091,
+        "Y": -6.342133,
+        "Z": 27.61396
+      },
+      "CullDistance": {
+        "Max": 4000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

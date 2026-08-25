@@ -1,0 +1,2751 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.20"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:ExecuteUbergraph_BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:FadeOutEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.4"
+      },
+      {
+        "ObjectName": "Function'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:OnEndAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.5"
+      },
+      {
+        "ObjectName": "Function'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:AttachWing'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.2"
+      },
+      {
+        "ObjectName": "Function'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.6"
+      },
+      {
+        "ObjectName": "Function'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:ExecuteUbergraph_BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Niagara_WingL",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Niagara_WingR",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NiagaraEffect",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop": {
+        "ObjectName": "Function'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:ExecuteUbergraph_BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.3"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.6"
+      },
+      "AttachWing": {
+        "ObjectName": "Function'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:AttachWing'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.2"
+      },
+      "OnEndAction": {
+        "ObjectName": "Function'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:OnEndAction'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.5"
+      },
+      "FadeOutEffect": {
+        "ObjectName": "Function'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:FadeOutEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C'Default__BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C",
+    "Name": "Default__BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C'",
+    "Template": {
+      "ObjectName": "BP_SkillEffectBase_C'Default__BP_SkillEffectBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "FadeOutTime": 2.0,
+      "AttackFilter": {
+        "ObjectName": "PalAttackFilter'Default__BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:PalAttackFilter_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.13"
+      },
+      "HitFilterGround": {
+        "ObjectName": "PalHitFilter'Default__BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:PalHitFilter_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.14"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AttachWing",
+    "Outer": "BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OwnerCharacter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop",
+    "Outer": "BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Has_Been_Initd_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_IsClosed_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Has_Been_Initd_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_IsClosed_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_IsClosed_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Has_Been_Initd_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_IsClosed_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFloatValue_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Has_Been_Initd_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFloatValue_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Has_Been_Initd_Variable_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFloatValue_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_IsClosed_Variable_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_IsClosed_Variable_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFloatValue_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Has_Been_Initd_Variable_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFloatValue_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_6",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFloatValue_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_IsClosed_Variable_6",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Has_Been_Initd_Variable_6",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "K2Node_Event_DeltaSecond",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFloatValue_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_OwnerCharacter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMainMesh_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalSkeletalMeshComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_AttachToComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_AttachToComponent_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwnerCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Has_Been_Initd_Variable_7",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_IsClosed_Variable_7",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFloatValue_InTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetVariableFloat_InValue_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFloatValue_InTime_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetVariableFloat_InValue_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFloatValue_InTime_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetVariableFloat_InValue_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFloatValue_InTime_ImplicitCast_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetVariableFloat_InValue_ImplicitCast_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFloatValue_InTime_ImplicitCast_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetVariableFloat_InValue_ImplicitCast_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFloatValue_InTime_ImplicitCast_5",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetVariableFloat_InValue_ImplicitCast_5",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFloatValue_InTime_ImplicitCast_6",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetVariableFloat_InValue_ImplicitCast_6",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Delay_Duration_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "FadeOutEffect",
+    "Outer": "BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_SkillEffectBase_C:FadeOutEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.8"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_SkillEffectBase_C:FadeOutEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.8"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaSecond",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEndAction",
+    "Outer": "BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_SkillEffectBase_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.27"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_SkillEffectBase_C:ReceiveBeginPlay'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.27"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "Niagara_WingL_GEN_VARIABLE",
+    "Outer": "BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_UniqueSkill_IceHorse_Dark_DarkTackle_Wing_L'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Skill/IceHorse_Dark/DarkTackle/NS_UniqueSkill_IceHorse_Dark_DarkTackle_Wing_L.201"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Duration",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Duration",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Color",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraDataInterfaceColorCurve'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 1,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Color",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraDataInterfaceColorCurve'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 1,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Dissolve",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Dissolve",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Alpha",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Alpha",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Rate",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Rate",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.Alpha",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 0,
+            "Name": "User.Color",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraDataInterfaceColorCurve'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 1,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 4,
+            "Name": "User.Dissolve",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 8,
+            "Name": "User.Duration",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 12,
+            "Name": "User.Rate",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          176,
+          64,
+          0,
+          0,
+          128,
+          63
+        ],
+        "DataInterfaces": [
+          {
+            "ObjectName": "NiagaraDataInterfaceColorCurve'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:Niagara_WingL_GEN_VARIABLE.NiagaraDataInterfaceColorCurve_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.11"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "Niagara_WingR_GEN_VARIABLE",
+    "Outer": "BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_UniqueSkill_IceHorse_Dark_DarkTackle_Wing_R'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Skill/IceHorse_Dark/DarkTackle/NS_UniqueSkill_IceHorse_Dark_DarkTackle_Wing_R.201"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Duration",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Duration",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Color",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraDataInterfaceColorCurve'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 1,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Color",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraDataInterfaceColorCurve'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 1,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Dissolve",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Dissolve",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Alpha",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Alpha",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Rate",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Rate",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.Alpha",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 0,
+            "Name": "User.Color",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraDataInterfaceColorCurve'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 1,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 4,
+            "Name": "User.Dissolve",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 8,
+            "Name": "User.Duration",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 12,
+            "Name": "User.Rate",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          176,
+          64,
+          0,
+          0,
+          128,
+          63
+        ],
+        "DataInterfaces": [
+          {
+            "ObjectName": "NiagaraDataInterfaceColorCurve'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:Niagara_WingR_GEN_VARIABLE.NiagaraDataInterfaceColorCurve_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.12"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "NiagaraEffect_GEN_VARIABLE",
+    "Outer": "BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_UniqueSkill_IceHorse_Dark_DarkTackle_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Skill/IceHorse_Dark/DarkTackle/NS_UniqueSkill_IceHorse_Dark_DarkTackle_Loop.53"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Rate",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Rate",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Alpha",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Alpha",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "ScriptStruct'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.Alpha",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 4,
+            "Name": "User.Rate",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "ScriptStruct'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63
+        ]
+      },
+      "RelativeLocation": {
+        "X": 100.0,
+        "Y": 0.0,
+        "Z": 80.0
+      }
+    }
+  },
+  {
+    "Type": "NiagaraDataInterfaceColorCurve",
+    "Name": "NiagaraDataInterfaceColorCurve_0",
+    "Outer": "Niagara_WingL_GEN_VARIABLE",
+    "Class": "UScriptClass'NiagaraDataInterfaceColorCurve'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ShaderLUT": [
+        80.0,
+        80.0,
+        80.0,
+        0.0,
+        78.97295,
+        78.97295,
+        78.97295,
+        0.031496063,
+        77.94591,
+        77.94591,
+        77.94591,
+        0.062992126,
+        76.91886,
+        76.91886,
+        76.91886,
+        0.09448819,
+        75.891815,
+        75.891815,
+        75.891815,
+        0.12598425,
+        74.86477,
+        74.86477,
+        74.86477,
+        0.15748031,
+        73.83773,
+        73.83773,
+        73.83773,
+        0.18897638,
+        72.810684,
+        72.810684,
+        72.810684,
+        0.22047244,
+        71.78364,
+        71.78364,
+        71.78364,
+        0.2519685,
+        70.75659,
+        70.75659,
+        70.75659,
+        0.28346455,
+        69.729546,
+        69.729546,
+        69.729546,
+        0.31496063,
+        68.7025,
+        68.7025,
+        68.7025,
+        0.3464567,
+        67.67545,
+        67.67545,
+        67.67545,
+        0.37795275,
+        66.64841,
+        66.64841,
+        66.64841,
+        0.4094488,
+        65.62136,
+        65.62136,
+        65.62136,
+        0.44094488,
+        64.594315,
+        64.594315,
+        64.594315,
+        0.47244096,
+        63.56727,
+        63.56727,
+        63.56727,
+        0.503937,
+        62.54023,
+        62.54023,
+        62.54023,
+        0.53543305,
+        61.51318,
+        61.51318,
+        61.51318,
+        0.5669291,
+        60.486134,
+        60.486134,
+        60.486134,
+        0.59842527,
+        59.45909,
+        59.45909,
+        59.45909,
+        0.62992126,
+        58.432045,
+        58.432045,
+        58.432045,
+        0.6614173,
+        57.405,
+        57.405,
+        57.405,
+        0.6929134,
+        56.377953,
+        56.377953,
+        56.377953,
+        0.72440946,
+        55.350906,
+        55.350906,
+        55.350906,
+        0.7559055,
+        54.32386,
+        54.32386,
+        54.32386,
+        0.7874016,
+        53.296814,
+        53.296814,
+        53.296814,
+        0.8188976,
+        52.269768,
+        52.269768,
+        52.269768,
+        0.8503937,
+        51.242725,
+        51.242725,
+        51.242725,
+        0.88188976,
+        50.215683,
+        50.215683,
+        50.215683,
+        0.9133858,
+        49.188633,
+        49.188633,
+        49.188633,
+        0.9448819,
+        48.161587,
+        48.161587,
+        48.161587,
+        0.976378,
+        47.13454,
+        47.13454,
+        47.13454,
+        1.0,
+        46.1075,
+        46.1075,
+        46.1075,
+        1.0,
+        45.080456,
+        45.080456,
+        45.080456,
+        1.0,
+        44.053406,
+        44.053406,
+        44.053406,
+        1.0,
+        43.02636,
+        43.02636,
+        43.02636,
+        1.0,
+        41.999317,
+        41.999317,
+        41.999317,
+        1.0,
+        40.972267,
+        40.972267,
+        40.972267,
+        1.0,
+        39.94522,
+        39.94522,
+        39.94522,
+        1.0,
+        38.91818,
+        38.91818,
+        38.91818,
+        1.0,
+        37.891132,
+        37.891132,
+        37.891132,
+        1.0,
+        36.86409,
+        36.86409,
+        36.86409,
+        1.0,
+        35.837044,
+        35.837044,
+        35.837044,
+        1.0,
+        34.809994,
+        34.809994,
+        34.809994,
+        1.0,
+        33.78295,
+        33.78295,
+        33.78295,
+        1.0,
+        32.755905,
+        32.755905,
+        32.755905,
+        1.0,
+        31.728863,
+        31.728863,
+        31.728863,
+        1.0,
+        30.701817,
+        30.701817,
+        30.701817,
+        1.0,
+        29.67477,
+        29.67477,
+        29.67477,
+        1.0,
+        28.647724,
+        28.647724,
+        28.647724,
+        1.0,
+        27.620678,
+        27.620678,
+        27.620678,
+        1.0,
+        26.593632,
+        26.593632,
+        26.593632,
+        1.0,
+        25.566586,
+        25.566586,
+        25.566586,
+        1.0,
+        24.53954,
+        24.53954,
+        24.53954,
+        1.0,
+        23.512493,
+        23.512493,
+        23.512493,
+        1.0,
+        22.48545,
+        22.48545,
+        22.48545,
+        1.0,
+        21.458405,
+        21.458405,
+        21.458405,
+        1.0,
+        20.431362,
+        20.431362,
+        20.431362,
+        1.0,
+        19.404312,
+        19.404312,
+        19.404312,
+        1.0,
+        18.377266,
+        18.377266,
+        18.377266,
+        1.0,
+        17.350224,
+        17.350224,
+        17.350224,
+        1.0,
+        16.323174,
+        16.323174,
+        16.323174,
+        1.0,
+        15.296127,
+        15.296127,
+        15.296127,
+        1.0,
+        14.269081,
+        14.269081,
+        14.269081,
+        1.0,
+        13.242043,
+        13.242043,
+        13.242043,
+        1.0,
+        12.214996,
+        12.214996,
+        12.214996,
+        1.0,
+        11.18795,
+        11.18795,
+        11.18795,
+        1.0,
+        10.160912,
+        10.160912,
+        10.160912,
+        1.0,
+        9.133865,
+        9.133865,
+        9.133865,
+        1.0,
+        8.106812,
+        8.106812,
+        8.106812,
+        1.0,
+        7.0797653,
+        7.0797653,
+        7.0797653,
+        1.0,
+        6.052719,
+        6.052719,
+        6.052719,
+        1.0,
+        5.025673,
+        5.025673,
+        5.025673,
+        1.0,
+        4.855489,
+        4.855489,
+        4.855489,
+        1.0,
+        4.707272,
+        4.707272,
+        4.707272,
+        1.0,
+        4.5590544,
+        4.5590544,
+        4.5590544,
+        1.0,
+        4.410838,
+        4.410838,
+        4.410838,
+        1.0,
+        4.2626214,
+        4.2626214,
+        4.2626214,
+        1.0,
+        4.1144047,
+        4.1144047,
+        4.1144047,
+        1.0,
+        3.9661882,
+        3.9661882,
+        3.9661882,
+        1.0,
+        3.8179717,
+        3.8179717,
+        3.8179717,
+        1.0,
+        3.669755,
+        3.669755,
+        3.669755,
+        1.0,
+        3.5215383,
+        3.5215383,
+        3.5215383,
+        1.0,
+        3.373322,
+        3.373322,
+        3.373322,
+        1.0,
+        3.2251043,
+        3.2251043,
+        3.2251043,
+        1.0,
+        3.0768878,
+        3.0768878,
+        3.0768878,
+        1.0,
+        2.9286711,
+        2.9286711,
+        2.9286711,
+        1.0,
+        2.7804537,
+        2.7804537,
+        2.7804537,
+        1.0,
+        2.6322372,
+        2.6322372,
+        2.6322372,
+        1.0,
+        2.4840205,
+        2.4840205,
+        2.4840205,
+        1.0,
+        2.335803,
+        2.335803,
+        2.335803,
+        1.0,
+        2.1875865,
+        2.1875865,
+        2.1875865,
+        1.0,
+        2.03937,
+        2.03937,
+        2.03937,
+        1.0,
+        1.8911533,
+        1.8911533,
+        1.8911533,
+        1.0,
+        1.7429368,
+        1.7429368,
+        1.7429368,
+        1.0,
+        1.5947201,
+        1.5947201,
+        1.5947201,
+        1.0,
+        1.4465036,
+        1.4465036,
+        1.4465036,
+        1.0,
+        1.2982872,
+        1.2982872,
+        1.2982872,
+        1.0,
+        1.1500695,
+        1.1500695,
+        1.1500695,
+        1.0,
+        1.001853,
+        1.001853,
+        1.001853,
+        1.0,
+        0.96817374,
+        0.96817374,
+        0.96817374,
+        1.0,
+        0.93594414,
+        0.93594414,
+        0.93594414,
+        1.0,
+        0.90371454,
+        0.90371454,
+        0.90371454,
+        1.0,
+        0.87148535,
+        0.87148535,
+        0.87148535,
+        1.0,
+        0.83925575,
+        0.83925575,
+        0.83925575,
+        1.0,
+        0.80702615,
+        0.80702615,
+        0.80702615,
+        1.0,
+        0.77479696,
+        0.77479696,
+        0.77479696,
+        1.0,
+        0.7425674,
+        0.7425674,
+        0.7425674,
+        1.0,
+        0.71033776,
+        0.71033776,
+        0.71033776,
+        1.0,
+        0.6781086,
+        0.6781086,
+        0.6781086,
+        1.0,
+        0.64587903,
+        0.64587903,
+        0.64587903,
+        1.0,
+        0.61364985,
+        0.61364985,
+        0.61364985,
+        1.0,
+        0.5814202,
+        0.5814202,
+        0.5814202,
+        1.0,
+        0.549191,
+        0.549191,
+        0.549191,
+        1.0,
+        0.51696146,
+        0.51696146,
+        0.51696146,
+        1.0,
+        0.4847322,
+        0.4847322,
+        0.4847322,
+        1.0,
+        0.45250267,
+        0.45250267,
+        0.45250267,
+        1.0,
+        0.42027307,
+        0.42027307,
+        0.42027307,
+        1.0,
+        0.38804388,
+        0.38804388,
+        0.38804388,
+        1.0,
+        0.35581422,
+        0.35581422,
+        0.35581422,
+        1.0,
+        0.32358468,
+        0.32358468,
+        0.32358468,
+        1.0,
+        0.29135543,
+        0.29135543,
+        0.29135543,
+        1.0,
+        0.2591259,
+        0.2591259,
+        0.2591259,
+        1.0,
+        0.22689629,
+        0.22689629,
+        0.22689629,
+        1.0,
+        0.1946671,
+        0.1946671,
+        0.1946671,
+        1.0,
+        0.1624375,
+        0.1624375,
+        0.1624375,
+        1.0,
+        0.13020833,
+        0.13020833,
+        0.13020833,
+        1.0
+      ],
+      "LUTMaxTime": 0.08,
+      "LUTInvTimeRange": 12.5,
+      "LUTNumSamplesMinusOne": 127.0
+    }
+  },
+  {
+    "Type": "NiagaraDataInterfaceColorCurve",
+    "Name": "NiagaraDataInterfaceColorCurve_0",
+    "Outer": "Niagara_WingR_GEN_VARIABLE",
+    "Class": "UScriptClass'NiagaraDataInterfaceColorCurve'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ShaderLUT": [
+        80.0,
+        80.0,
+        80.0,
+        0.0,
+        78.97295,
+        78.97295,
+        78.97295,
+        0.031496063,
+        77.94591,
+        77.94591,
+        77.94591,
+        0.062992126,
+        76.91886,
+        76.91886,
+        76.91886,
+        0.09448819,
+        75.891815,
+        75.891815,
+        75.891815,
+        0.12598425,
+        74.86477,
+        74.86477,
+        74.86477,
+        0.15748031,
+        73.83773,
+        73.83773,
+        73.83773,
+        0.18897638,
+        72.810684,
+        72.810684,
+        72.810684,
+        0.22047244,
+        71.78364,
+        71.78364,
+        71.78364,
+        0.2519685,
+        70.75659,
+        70.75659,
+        70.75659,
+        0.28346455,
+        69.729546,
+        69.729546,
+        69.729546,
+        0.31496063,
+        68.7025,
+        68.7025,
+        68.7025,
+        0.3464567,
+        67.67545,
+        67.67545,
+        67.67545,
+        0.37795275,
+        66.64841,
+        66.64841,
+        66.64841,
+        0.4094488,
+        65.62136,
+        65.62136,
+        65.62136,
+        0.44094488,
+        64.594315,
+        64.594315,
+        64.594315,
+        0.47244096,
+        63.56727,
+        63.56727,
+        63.56727,
+        0.503937,
+        62.54023,
+        62.54023,
+        62.54023,
+        0.53543305,
+        61.51318,
+        61.51318,
+        61.51318,
+        0.5669291,
+        60.486134,
+        60.486134,
+        60.486134,
+        0.59842527,
+        59.45909,
+        59.45909,
+        59.45909,
+        0.62992126,
+        58.432045,
+        58.432045,
+        58.432045,
+        0.6614173,
+        57.405,
+        57.405,
+        57.405,
+        0.6929134,
+        56.377953,
+        56.377953,
+        56.377953,
+        0.72440946,
+        55.350906,
+        55.350906,
+        55.350906,
+        0.7559055,
+        54.32386,
+        54.32386,
+        54.32386,
+        0.7874016,
+        53.296814,
+        53.296814,
+        53.296814,
+        0.8188976,
+        52.269768,
+        52.269768,
+        52.269768,
+        0.8503937,
+        51.242725,
+        51.242725,
+        51.242725,
+        0.88188976,
+        50.215683,
+        50.215683,
+        50.215683,
+        0.9133858,
+        49.188633,
+        49.188633,
+        49.188633,
+        0.9448819,
+        48.161587,
+        48.161587,
+        48.161587,
+        0.976378,
+        47.13454,
+        47.13454,
+        47.13454,
+        1.0,
+        46.1075,
+        46.1075,
+        46.1075,
+        1.0,
+        45.080456,
+        45.080456,
+        45.080456,
+        1.0,
+        44.053406,
+        44.053406,
+        44.053406,
+        1.0,
+        43.02636,
+        43.02636,
+        43.02636,
+        1.0,
+        41.999317,
+        41.999317,
+        41.999317,
+        1.0,
+        40.972267,
+        40.972267,
+        40.972267,
+        1.0,
+        39.94522,
+        39.94522,
+        39.94522,
+        1.0,
+        38.91818,
+        38.91818,
+        38.91818,
+        1.0,
+        37.891132,
+        37.891132,
+        37.891132,
+        1.0,
+        36.86409,
+        36.86409,
+        36.86409,
+        1.0,
+        35.837044,
+        35.837044,
+        35.837044,
+        1.0,
+        34.809994,
+        34.809994,
+        34.809994,
+        1.0,
+        33.78295,
+        33.78295,
+        33.78295,
+        1.0,
+        32.755905,
+        32.755905,
+        32.755905,
+        1.0,
+        31.728863,
+        31.728863,
+        31.728863,
+        1.0,
+        30.701817,
+        30.701817,
+        30.701817,
+        1.0,
+        29.67477,
+        29.67477,
+        29.67477,
+        1.0,
+        28.647724,
+        28.647724,
+        28.647724,
+        1.0,
+        27.620678,
+        27.620678,
+        27.620678,
+        1.0,
+        26.593632,
+        26.593632,
+        26.593632,
+        1.0,
+        25.566586,
+        25.566586,
+        25.566586,
+        1.0,
+        24.53954,
+        24.53954,
+        24.53954,
+        1.0,
+        23.512493,
+        23.512493,
+        23.512493,
+        1.0,
+        22.48545,
+        22.48545,
+        22.48545,
+        1.0,
+        21.458405,
+        21.458405,
+        21.458405,
+        1.0,
+        20.431362,
+        20.431362,
+        20.431362,
+        1.0,
+        19.404312,
+        19.404312,
+        19.404312,
+        1.0,
+        18.377266,
+        18.377266,
+        18.377266,
+        1.0,
+        17.350224,
+        17.350224,
+        17.350224,
+        1.0,
+        16.323174,
+        16.323174,
+        16.323174,
+        1.0,
+        15.296127,
+        15.296127,
+        15.296127,
+        1.0,
+        14.269081,
+        14.269081,
+        14.269081,
+        1.0,
+        13.242043,
+        13.242043,
+        13.242043,
+        1.0,
+        12.214996,
+        12.214996,
+        12.214996,
+        1.0,
+        11.18795,
+        11.18795,
+        11.18795,
+        1.0,
+        10.160912,
+        10.160912,
+        10.160912,
+        1.0,
+        9.133865,
+        9.133865,
+        9.133865,
+        1.0,
+        8.106812,
+        8.106812,
+        8.106812,
+        1.0,
+        7.0797653,
+        7.0797653,
+        7.0797653,
+        1.0,
+        6.052719,
+        6.052719,
+        6.052719,
+        1.0,
+        5.025673,
+        5.025673,
+        5.025673,
+        1.0,
+        4.855489,
+        4.855489,
+        4.855489,
+        1.0,
+        4.707272,
+        4.707272,
+        4.707272,
+        1.0,
+        4.5590544,
+        4.5590544,
+        4.5590544,
+        1.0,
+        4.410838,
+        4.410838,
+        4.410838,
+        1.0,
+        4.2626214,
+        4.2626214,
+        4.2626214,
+        1.0,
+        4.1144047,
+        4.1144047,
+        4.1144047,
+        1.0,
+        3.9661882,
+        3.9661882,
+        3.9661882,
+        1.0,
+        3.8179717,
+        3.8179717,
+        3.8179717,
+        1.0,
+        3.669755,
+        3.669755,
+        3.669755,
+        1.0,
+        3.5215383,
+        3.5215383,
+        3.5215383,
+        1.0,
+        3.373322,
+        3.373322,
+        3.373322,
+        1.0,
+        3.2251043,
+        3.2251043,
+        3.2251043,
+        1.0,
+        3.0768878,
+        3.0768878,
+        3.0768878,
+        1.0,
+        2.9286711,
+        2.9286711,
+        2.9286711,
+        1.0,
+        2.7804537,
+        2.7804537,
+        2.7804537,
+        1.0,
+        2.6322372,
+        2.6322372,
+        2.6322372,
+        1.0,
+        2.4840205,
+        2.4840205,
+        2.4840205,
+        1.0,
+        2.335803,
+        2.335803,
+        2.335803,
+        1.0,
+        2.1875865,
+        2.1875865,
+        2.1875865,
+        1.0,
+        2.03937,
+        2.03937,
+        2.03937,
+        1.0,
+        1.8911533,
+        1.8911533,
+        1.8911533,
+        1.0,
+        1.7429368,
+        1.7429368,
+        1.7429368,
+        1.0,
+        1.5947201,
+        1.5947201,
+        1.5947201,
+        1.0,
+        1.4465036,
+        1.4465036,
+        1.4465036,
+        1.0,
+        1.2982872,
+        1.2982872,
+        1.2982872,
+        1.0,
+        1.1500695,
+        1.1500695,
+        1.1500695,
+        1.0,
+        1.001853,
+        1.001853,
+        1.001853,
+        1.0,
+        0.96817374,
+        0.96817374,
+        0.96817374,
+        1.0,
+        0.93594414,
+        0.93594414,
+        0.93594414,
+        1.0,
+        0.90371454,
+        0.90371454,
+        0.90371454,
+        1.0,
+        0.87148535,
+        0.87148535,
+        0.87148535,
+        1.0,
+        0.83925575,
+        0.83925575,
+        0.83925575,
+        1.0,
+        0.80702615,
+        0.80702615,
+        0.80702615,
+        1.0,
+        0.77479696,
+        0.77479696,
+        0.77479696,
+        1.0,
+        0.7425674,
+        0.7425674,
+        0.7425674,
+        1.0,
+        0.71033776,
+        0.71033776,
+        0.71033776,
+        1.0,
+        0.6781086,
+        0.6781086,
+        0.6781086,
+        1.0,
+        0.64587903,
+        0.64587903,
+        0.64587903,
+        1.0,
+        0.61364985,
+        0.61364985,
+        0.61364985,
+        1.0,
+        0.5814202,
+        0.5814202,
+        0.5814202,
+        1.0,
+        0.549191,
+        0.549191,
+        0.549191,
+        1.0,
+        0.51696146,
+        0.51696146,
+        0.51696146,
+        1.0,
+        0.4847322,
+        0.4847322,
+        0.4847322,
+        1.0,
+        0.45250267,
+        0.45250267,
+        0.45250267,
+        1.0,
+        0.42027307,
+        0.42027307,
+        0.42027307,
+        1.0,
+        0.38804388,
+        0.38804388,
+        0.38804388,
+        1.0,
+        0.35581422,
+        0.35581422,
+        0.35581422,
+        1.0,
+        0.32358468,
+        0.32358468,
+        0.32358468,
+        1.0,
+        0.29135543,
+        0.29135543,
+        0.29135543,
+        1.0,
+        0.2591259,
+        0.2591259,
+        0.2591259,
+        1.0,
+        0.22689629,
+        0.22689629,
+        0.22689629,
+        1.0,
+        0.1946671,
+        0.1946671,
+        0.1946671,
+        1.0,
+        0.1624375,
+        0.1624375,
+        0.1624375,
+        1.0,
+        0.13020833,
+        0.13020833,
+        0.13020833,
+        1.0
+      ],
+      "LUTMaxTime": 0.08,
+      "LUTInvTimeRange": 12.5,
+      "LUTNumSamplesMinusOne": 127.0
+    }
+  },
+  {
+    "Type": "PalAttackFilter",
+    "Name": "PalAttackFilter_0",
+    "Outer": "Default__BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C",
+    "Class": "UScriptClass'PalAttackFilter'",
+    "Template": {
+      "ObjectName": "PalAttackFilter'Default__BP_SkillEffectBase_C:PalAttackFilter_0'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.34"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "PalHitFilter",
+    "Name": "PalHitFilter_1",
+    "Outer": "Default__BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C",
+    "Class": "UScriptClass'PalHitFilter'",
+    "Template": {
+      "ObjectName": "PalHitFilter'Default__BP_SkillEffectBase_C:PalHitFilter_1'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.35"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.15"
+      },
+      "VariableGuid": "2E4B3303-46690840-D7161B92-10F41601",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'NiagaraComponent'",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:Niagara_WingR_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.9"
+      },
+      "ParentComponentOrVariableName": "MovementSphereRoot",
+      "ParentComponentOwnerClassName": "BP_SkillEffectBase_C",
+      "VariableGuid": "0547D07F-457DE8FE-1CE2ACA4-D494954F",
+      "InternalVariableName": "Niagara_WingR"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'NiagaraComponent'",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:NiagaraEffect_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.10"
+      },
+      "ParentComponentOrVariableName": "MovementSphereRoot",
+      "ParentComponentOwnerClassName": "BP_SkillEffectBase_C",
+      "VariableGuid": "D510FA31-4A318429-827AF3B4-C22D5E30",
+      "InternalVariableName": "NiagaraEffect"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'NiagaraComponent'",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:Niagara_WingL_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.8"
+      },
+      "ParentComponentOrVariableName": "MovementSphereRoot",
+      "ParentComponentOwnerClassName": "BP_SkillEffectBase_C",
+      "VariableGuid": "D65EAC3A-4F1A5254-2E79A993-4892B145",
+      "InternalVariableName": "Niagara_WingL"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.19"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.19"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/IceHorse_Tackle/BP_SkillEffect_Unique_IceHorse_Dark_Tackle_Loop.16"
+      }
+    }
+  }
+]

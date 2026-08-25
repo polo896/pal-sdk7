@@ -1,0 +1,17 @@
+[
+  {
+    "Type": "DataLayerAsset",
+    "Name": "BiomeRegionTrigger",
+    "Class": "UScriptClass'DataLayerAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DebugColor": {
+        "B": 73,
+        "G": 233,
+        "R": 232,
+        "A": 255,
+        "Hex": "E8E949"
+      }
+    }
+  }
+]

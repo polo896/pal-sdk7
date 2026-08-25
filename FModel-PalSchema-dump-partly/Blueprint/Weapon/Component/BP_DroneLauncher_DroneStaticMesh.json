@@ -1,0 +1,333 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_DroneLauncher_DroneStaticMesh_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_DroneLauncher_DroneStaticMesh_C:ExecuteUbergraph_BP_DroneLauncher_DroneStaticMesh'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'StaticMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_DroneLauncher_DroneStaticMesh_C:ReceiveTick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.4"
+      },
+      {
+        "ObjectName": "Function'BP_DroneLauncher_DroneStaticMesh_C:Hide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.3"
+      },
+      {
+        "ObjectName": "Function'BP_DroneLauncher_DroneStaticMesh_C:Show'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.5"
+      },
+      {
+        "ObjectName": "Function'BP_DroneLauncher_DroneStaticMesh_C:ExecuteUbergraph_BP_DroneLauncher_DroneStaticMesh'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Hidden",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Delta Seconds",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Temp",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_DroneLauncher_DroneStaticMesh": {
+        "ObjectName": "Function'BP_DroneLauncher_DroneStaticMesh_C:ExecuteUbergraph_BP_DroneLauncher_DroneStaticMesh'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.2"
+      },
+      "Show": {
+        "ObjectName": "Function'BP_DroneLauncher_DroneStaticMesh_C:Show'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.5"
+      },
+      "Hide": {
+        "ObjectName": "Function'BP_DroneLauncher_DroneStaticMesh_C:Hide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.3"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_DroneLauncher_DroneStaticMesh_C:ReceiveTick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_DroneLauncher_DroneStaticMesh_C'Default__BP_DroneLauncher_DroneStaticMesh_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_DroneLauncher_DroneStaticMesh_C",
+    "Name": "Default__BP_DroneLauncher_DroneStaticMesh_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/Component/BP_DroneLauncher_DroneStaticMesh.BP_DroneLauncher_DroneStaticMesh_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Funnel'",
+        "ObjectPath": "Pal/Content/Pal/Model/Weapon/AncientWeapon/FunnelLauncher/SM_Funnel.2"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseToChannels": {
+            "WorldStatic": "ECollisionResponse::ECR_Ignore",
+            "WorldDynamic": "ECollisionResponse::ECR_Ignore",
+            "Pawn": "ECollisionResponse::ECR_Ignore",
+            "Visibility": "ECollisionResponse::ECR_Ignore",
+            "Camera": "ECollisionResponse::ECR_Ignore",
+            "PhysicsBody": "ECollisionResponse::ECR_Ignore",
+            "Vehicle": "ECollisionResponse::ECR_Ignore",
+            "Destructible": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel2": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel3": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel4": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel5": "ECollisionResponse::ECR_Ignore",
+            "EngineTraceChannel6": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel2": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel3": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel5": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel7": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel8": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel9": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel11": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel15": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel16": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel17": "ECollisionResponse::ECR_Ignore",
+            "GameTraceChannel18": "ECollisionResponse::ECR_Ignore"
+          },
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel2",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel3",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel4",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel5",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel6",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Attack",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PlayerPawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "SystemVolume",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ReticleRayCast",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel17",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "GameTraceChannel18",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "PrimaryComponentTick": {
+        "bCanEverTick": true
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_DroneLauncher_DroneStaticMesh",
+    "Outer": "BP_DroneLauncher_DroneStaticMesh_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FInterpTo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FInterpTo_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FInterpTo_DeltaTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetScalarParameterValueOnMaterials_ParameterValue_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FInterpTo_DeltaTime_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetScalarParameterValueOnMaterials_ParameterValue_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "ConstParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "Hide",
+    "Outer": "BP_DroneLauncher_DroneStaticMesh_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "BP_DroneLauncher_DroneStaticMesh_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'ActorComponent:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Show",
+    "Outer": "BP_DroneLauncher_DroneStaticMesh_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

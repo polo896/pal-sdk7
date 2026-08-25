@@ -1,0 +1,44 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Status_AwakeningAura_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Status_VisualEffectAutoHide_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_VisualEffectAutoHide.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Status_VisualEffectAutoHide_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_VisualEffectAutoHide.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Status_AwakeningAura_C'Default__BP_Status_AwakeningAura_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_AwakeningAura.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Status_AwakeningAura_C",
+    "Name": "Default__BP_Status_AwakeningAura_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Status/BP_Status_AwakeningAura.BP_Status_AwakeningAura_C'",
+    "Template": {
+      "ObjectName": "BP_Status_VisualEffectAutoHide_C'Default__BP_Status_VisualEffectAutoHide_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Status/BP_Status_VisualEffectAutoHide.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VisualEffectID": "EPalVisualEffectID::AwakeningAura",
+      "bIsIgnoreRemoveAll": true
+    }
+  }
+]

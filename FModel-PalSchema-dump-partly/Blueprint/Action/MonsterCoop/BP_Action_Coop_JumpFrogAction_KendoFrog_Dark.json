@@ -1,0 +1,43 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Coop_JumpFrogAction_KendoFrog_Dark_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Coop_JumpFrogAction_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/MonsterCoop/BP_Action_Coop_JumpFrogAction.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Coop_JumpFrogAction_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/MonsterCoop/BP_Action_Coop_JumpFrogAction.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Coop_JumpFrogAction_KendoFrog_Dark_C'Default__BP_Action_Coop_JumpFrogAction_KendoFrog_Dark_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/MonsterCoop/BP_Action_Coop_JumpFrogAction_KendoFrog_Dark.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Coop_JumpFrogAction_KendoFrog_Dark_C",
+    "Name": "Default__BP_Action_Coop_JumpFrogAction_KendoFrog_Dark_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/MonsterCoop/BP_Action_Coop_JumpFrogAction_KendoFrog_Dark.BP_Action_Coop_JumpFrogAction_KendoFrog_Dark_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Coop_JumpFrogAction_C'Default__BP_Action_Coop_JumpFrogAction_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/MonsterCoop/BP_Action_Coop_JumpFrogAction.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Status ID": "EPalStatusID::JumpingFrog_dark"
+    }
+  }
+]

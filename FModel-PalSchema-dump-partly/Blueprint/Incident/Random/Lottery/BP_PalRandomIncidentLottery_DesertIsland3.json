@@ -1,0 +1,63 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalRandomIncidentLottery_DesertIsland3_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentLottery_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/Lottery/BP_PalRandomIncidentLottery.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalRandomIncidentLottery_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/Lottery/BP_PalRandomIncidentLottery.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalRandomIncidentLottery_DesertIsland3_C'Default__BP_PalRandomIncidentLottery_DesertIsland3_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/Lottery/BP_PalRandomIncidentLottery_DesertIsland3.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalRandomIncidentLottery_DesertIsland3_C",
+    "Name": "Default__BP_PalRandomIncidentLottery_DesertIsland3_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/Lottery/BP_PalRandomIncidentLottery_DesertIsland3.BP_PalRandomIncidentLottery_DesertIsland3_C'",
+    "Template": {
+      "ObjectName": "BP_PalRandomIncidentLottery_C'Default__BP_PalRandomIncidentLottery_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/Lottery/BP_PalRandomIncidentLottery.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LotteryRate": 40.0,
+      "LotteryParameters": [
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "Mining_DrillGame",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "Dancing_CactusDoll",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        }
+      ]
+    }
+  }
+]

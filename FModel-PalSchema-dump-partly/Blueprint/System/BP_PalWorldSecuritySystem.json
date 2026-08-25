@@ -1,0 +1,61 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalWorldSecuritySystem_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalWorldSecuritySystem'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalWorldSecuritySystem_C'Default__BP_PalWorldSecuritySystem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalWorldSecuritySystem.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalWorldSecuritySystem_C",
+    "Name": "Default__BP_PalWorldSecuritySystem_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalWorldSecuritySystem.BP_PalWorldSecuritySystem_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LawArray": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_WorldSecurityLaw_AreaInvasion_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/WorldSecurity/Law/BP_WorldSecurityLaw_AreaInvasion.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_WorldSecurityLaw_AttackToNonCriminal_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/WorldSecurity/Law/BP_WorldSecurityLaw_AttackToNonCriminal.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_WorldSecurityLaw_TheftItem_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/WorldSecurity/Law/BP_WorldSecurityLaw_TheftItem.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_WorldSecurityLaw_AttackToPolice_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/WorldSecurity/Law/BP_WorldSecurityLaw_AttackToPolice.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_WorldSecurityLaw_Murder_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/WorldSecurity/Law/BP_WorldSecurityLaw_Murder.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_WorldSecurityLaw_KillPolice_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/WorldSecurity/Law/BP_WorldSecurityLaw_KillPolice.0"
+        }
+      ],
+      "bShouldCreate": true
+    }
+  }
+]

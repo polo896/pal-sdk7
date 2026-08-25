@@ -1,0 +1,303 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Item_Anim_PalEgg_Base_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_Item_Anim_PalEgg_Base_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.9"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Item_Anim_PalEgg_Base_C:ExecuteUbergraph_BP_Item_Anim_PalEgg_Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Item_Anim_PalEgg_Base_C:GetHatchingTemperature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.3"
+      },
+      {
+        "ObjectName": "Function'BP_Item_Anim_PalEgg_Base_C:SetAnimPlayState'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.5"
+      },
+      {
+        "ObjectName": "Function'BP_Item_Anim_PalEgg_Base_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.4"
+      },
+      {
+        "ObjectName": "Function'BP_Item_Anim_PalEgg_Base_C:ExecuteUbergraph_BP_Item_Anim_PalEgg_Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SK_Kurinuki_EggA",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "HatchingTemperature",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Item_Anim_PalEgg_Base": {
+        "ObjectName": "Function'BP_Item_Anim_PalEgg_Base_C:ExecuteUbergraph_BP_Item_Anim_PalEgg_Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.2"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_Item_Anim_PalEgg_Base_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.4"
+      },
+      "SetAnimPlayState": {
+        "ObjectName": "Function'BP_Item_Anim_PalEgg_Base_C:SetAnimPlayState'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.5"
+      },
+      "GetHatchingTemperature": {
+        "ObjectName": "Function'BP_Item_Anim_PalEgg_Base_C:GetHatchingTemperature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Item_Anim_PalEgg_Base_C'Default__BP_Item_Anim_PalEgg_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Item_Anim_PalEgg_Base_C",
+    "Name": "Default__BP_Item_Anim_PalEgg_Base_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.BP_Item_Anim_PalEgg_Base_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "PrimaryActorTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Item_Anim_PalEgg_Base",
+    "Outer": "BP_Item_Anim_PalEgg_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetHatchingTemperature",
+    "Outer": "BP_Item_Anim_PalEgg_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temperature",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_Item_Anim_PalEgg_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetAnimPlayState",
+    "Outer": "BP_Item_Anim_PalEgg_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsPlay",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_Item_Anim_PalEgg_Base_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_Item_Anim_PalEgg_Base_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.6"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_Item_Anim_PalEgg_Base_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.8"
+        }
+      ],
+      "VariableGuid": "FE5A50F1-43A12177-BED9438D-1195FB71",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent'BP_Item_Anim_PalEgg_Base_C:SK_Kurinuki_EggA_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.10"
+      },
+      "VariableGuid": "D5FD4BD2-44C6B4B4-5B2BB792-C208A8AB",
+      "InternalVariableName": "SK_Kurinuki_EggA"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_Item_Anim_PalEgg_Base_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_Item_Anim_PalEgg_Base_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.7"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_Item_Anim_PalEgg_Base_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.7"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Item_Anim_PalEgg_Base_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.8"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_Item_Anim_PalEgg_Base_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Item/VisualModel/BP_Item_Anim_PalEgg_Base.7"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SK_Kurinuki_EggA_GEN_VARIABLE",
+    "Outer": "BP_Item_Anim_PalEgg_Base_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence'AS_PalEgg_Shake'",
+          "ObjectPath": "Pal/Content/Pal/Model/Other/PalEgg/AS_PalEgg_Shake.1"
+        },
+        "bSavedPlaying": false
+      },
+      "AnimationMode": "EAnimationMode::AnimationSingleNode",
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_PalEgg'",
+        "ObjectPath": "Pal/Content/Pal/Model/Other/PalEgg/SK_PalEgg.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_PalEgg'",
+        "ObjectPath": "Pal/Content/Pal/Model/Other/PalEgg/SK_PalEgg.0"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  }
+]

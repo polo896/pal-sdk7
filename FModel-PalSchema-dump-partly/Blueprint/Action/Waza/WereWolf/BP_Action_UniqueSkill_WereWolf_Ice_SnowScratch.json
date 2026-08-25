@@ -1,0 +1,116 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_UniqueSkill_WereWolf_Ice_SnowScratch_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_UniqueSkill_WereWolf_Scratch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WereWolf/BP_Action_UniqueSkill_WereWolf_Scratch.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_UniqueSkill_WereWolf_Scratch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WereWolf/BP_Action_UniqueSkill_WereWolf_Scratch.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Action_UniqueSkill_WereWolf_Ice_SnowScratch_C:GetMontages'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WereWolf/BP_Action_UniqueSkill_WereWolf_Ice_SnowScratch.2"
+      }
+    ],
+    "FuncMap": {
+      "GetMontages": {
+        "ObjectName": "Function'BP_Action_UniqueSkill_WereWolf_Ice_SnowScratch_C:GetMontages'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WereWolf/BP_Action_UniqueSkill_WereWolf_Ice_SnowScratch.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_UniqueSkill_WereWolf_Ice_SnowScratch_C'Default__BP_Action_UniqueSkill_WereWolf_Ice_SnowScratch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WereWolf/BP_Action_UniqueSkill_WereWolf_Ice_SnowScratch.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_UniqueSkill_WereWolf_Ice_SnowScratch_C",
+    "Name": "Default__BP_Action_UniqueSkill_WereWolf_Ice_SnowScratch_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/WereWolf/BP_Action_UniqueSkill_WereWolf_Ice_SnowScratch.BP_Action_UniqueSkill_WereWolf_Ice_SnowScratch_C'",
+    "Template": {
+      "ObjectName": "BP_Action_UniqueSkill_WereWolf_Scratch_C'Default__BP_Action_UniqueSkill_WereWolf_Scratch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WereWolf/BP_Action_UniqueSkill_WereWolf_Scratch.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontageList": [
+        {
+          "Montage": {
+            "ObjectName": "AnimMontage'AM_WereWolf_Scratch_Start'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/Werewolf/AM_WereWolf_Scratch_Start.0"
+          },
+          "PlayRate": 1.0,
+          "StartTime": 0.0
+        },
+        {
+          "Montage": {
+            "ObjectName": "AnimMontage'AM_WereWolf_SnowScratch_Action'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/Werewolf/AM_WereWolf_SnowScratch_Action.0"
+          },
+          "PlayRate": 1.0,
+          "StartTime": 0.0
+        },
+        {
+          "Montage": {
+            "ObjectName": "AnimMontage'AM_WereWolf_Scratch_End'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/Werewolf/AM_WereWolf_Scratch_End.0"
+          },
+          "PlayRate": 1.0,
+          "StartTime": 0.0
+        }
+      ],
+      "WazaID": "EPalWazaID::Unique_Werewolf_Ice_SnowScratch"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetMontages",
+    "Outer": "BP_Action_UniqueSkill_WereWolf_Ice_SnowScratch_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_UniqueSkill_WereWolf_Scratch_C:GetMontages'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WereWolf/BP_Action_UniqueSkill_WereWolf_Scratch.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_UniqueSkill_WereWolf_Scratch_C:GetMontages'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WereWolf/BP_Action_UniqueSkill_WereWolf_Scratch.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "Montages",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Montages",
+          "Flags": "RF_Public",
+          "ElementSize": 16,
+          "Struct": {
+            "ObjectName": "ScriptStruct'ReserveMontage'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

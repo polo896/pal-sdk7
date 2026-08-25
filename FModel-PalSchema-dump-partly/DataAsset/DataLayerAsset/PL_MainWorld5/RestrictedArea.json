@@ -1,0 +1,17 @@
+[
+  {
+    "Type": "DataLayerAsset",
+    "Name": "RestrictedArea",
+    "Class": "UScriptClass'DataLayerAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DebugColor": {
+        "B": 22,
+        "G": 113,
+        "R": 203,
+        "A": 255,
+        "Hex": "CB7116"
+      }
+    }
+  }
+]

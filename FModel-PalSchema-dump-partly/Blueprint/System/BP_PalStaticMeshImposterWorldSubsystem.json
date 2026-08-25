@@ -1,0 +1,39 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalStaticMeshImposterWorldSubsystem_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalStaticMeshImposterSubsystem'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalStaticMeshImposterWorldSubsystem_C'Default__BP_PalStaticMeshImposterWorldSubsystem_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalStaticMeshImposterWorldSubsystem.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalStaticMeshImposterWorldSubsystem_C",
+    "Name": "Default__BP_PalStaticMeshImposterWorldSubsystem_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalStaticMeshImposterWorldSubsystem.BP_PalStaticMeshImposterWorldSubsystem_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChunkClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalStaticMeshImposterChunk_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/LevelChunk/StaticMeshImposter/BP_PalStaticMeshImposterChunk.0"
+      },
+      "bShouldCreate": true
+    }
+  }
+]

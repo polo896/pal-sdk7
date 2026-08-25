@@ -1,0 +1,278 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MultiGuidedMissileLauncher_NPC_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_MultiGuidedMissileLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_MultiGuidedMissileLauncher.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_MultiGuidedMissileLauncher_NPC_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.10"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_MultiGuidedMissileLauncher_NPC_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_C:ExecuteUbergraph_BP_MultiGuidedMissileLauncher_NPC'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_MultiGuidedMissileLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_MultiGuidedMissileLauncher.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_C:GetBulletClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.4"
+      },
+      {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_C:GetNPCWeaponDamage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.5"
+      },
+      {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_C:GetWeaponDamage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.6"
+      },
+      {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_C:BPI_OnReload'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.2"
+      },
+      {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_C:ExecuteUbergraph_BP_MultiGuidedMissileLauncher_NPC'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_MultiGuidedMissileLauncher_NPC": {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_C:ExecuteUbergraph_BP_MultiGuidedMissileLauncher_NPC'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.3"
+      },
+      "BPI_OnReload": {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_C:BPI_OnReload'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.2"
+      },
+      "GetWeaponDamage": {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_C:GetWeaponDamage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.6"
+      },
+      "GetNPCWeaponDamage": {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_C:GetNPCWeaponDamage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.5"
+      },
+      "GetBulletClass": {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_C:GetBulletClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "Interfaces": [
+      {
+        "Class": {
+          "ObjectName": "BlueprintGeneratedClass'BPI_NPCWeaponReload_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Interface/BPI_NPCWeaponReload.0"
+        },
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      }
+    ],
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MultiGuidedMissileLauncher_NPC_C'Default__BP_MultiGuidedMissileLauncher_NPC_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal",
+      "ImplementedInterfaces": "((Interface=/Script/Engine.BlueprintGeneratedClass'\"/Game/Pal/Blueprint/Weapon/Interface/BPI_NPCWeaponReload.BPI_NPCWeaponReload_C\"'))"
+    }
+  },
+  {
+    "Type": "BP_MultiGuidedMissileLauncher_NPC_C",
+    "Name": "Default__BP_MultiGuidedMissileLauncher_NPC_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.BP_MultiGuidedMissileLauncher_NPC_C'",
+    "Template": {
+      "ObjectName": "BP_MultiGuidedMissileLauncher_C'Default__BP_MultiGuidedMissileLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_MultiGuidedMissileLauncher.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "IsUnnecessaryDynamicData": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BPI_OnReload",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_MultiGuidedMissileLauncher_NPC",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetBulletClass",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_GuidedMissileLauncher_C:GetBulletClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GuidedMissileLauncher.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_GuidedMissileLauncher_C:GetBulletClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GuidedMissileLauncher.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "NewParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'PalBullet'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetNPCWeaponDamage",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalWeaponBase:GetNPCWeaponDamage'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetWeaponDamage",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalWeaponBase:GetWeaponDamage'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetNPCWeaponDamage_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_MultiGuidedMissileLauncher_NPC_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.8"
+      },
+      "VariableGuid": "2F798041-4E2C0B5A-188EF3AE-9F504664",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_MultiGuidedMissileLauncher_NPC_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/BP_MultiGuidedMissileLauncher_NPC.9"
+      }
+    }
+  }
+]

@@ -1,0 +1,131 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_21",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MouseCursor_C:WidgetTree.CanvasPanel_21.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/MouseCursor/WBP_MouseCursor.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_21",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 23.0,
+          "Top": 27.0,
+          "Right": 32.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MouseCursor_C:WidgetTree.CanvasPanel_21'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/MouseCursor/WBP_MouseCursor.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MouseCursor_C:WidgetTree.Image_39'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/MouseCursor/WBP_MouseCursor.2"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_39",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_MouseCursor_Soft'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Common/Cursor/T_MouseCursor_Soft.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MouseCursor_C:WidgetTree.CanvasPanel_21.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/MouseCursor/WBP_MouseCursor.1"
+      }
+    }
+  },
+  {
+    "Type": "WBP_MouseCursor_C",
+    "Name": "Default__WBP_MouseCursor_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/MouseCursor/WBP_MouseCursor.WBP_MouseCursor_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_MouseCursor_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_MouseCursor_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/MouseCursor/WBP_MouseCursor.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_39",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_MouseCursor_C'Default__WBP_MouseCursor_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/MouseCursor/WBP_MouseCursor.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_MouseCursor_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_MouseCursor_C:WidgetTree.CanvasPanel_21'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/MouseCursor/WBP_MouseCursor.0"
+      }
+    }
+  }
+]

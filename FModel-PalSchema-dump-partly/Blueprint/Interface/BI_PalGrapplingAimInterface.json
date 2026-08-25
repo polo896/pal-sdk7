@@ -1,0 +1,67 @@
+[
+  {
+    "Type": "BI_PalGrapplingAimInterface_C",
+    "Name": "Default__BI_PalGrapplingAimInterface_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Interface/BI_PalGrapplingAimInterface.BI_PalGrapplingAimInterface_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BI_PalGrapplingAimInterface_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Interface'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BI_PalGrapplingAimInterface_C:IsShowReticle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalGrapplingAimInterface.2"
+      }
+    ],
+    "FuncMap": {
+      "IsShowReticle": {
+        "ObjectName": "Function'BI_PalGrapplingAimInterface_C:IsShowReticle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalGrapplingAimInterface.2"
+      }
+    },
+    "ClassFlags": "CLASS_Interface | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BI_PalGrapplingAimInterface_C'Default__BI_PalGrapplingAimInterface_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalGrapplingAimInterface.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Interface"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "IsShowReticle",
+    "Outer": "BI_PalGrapplingAimInterface_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsShow",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  }
+]

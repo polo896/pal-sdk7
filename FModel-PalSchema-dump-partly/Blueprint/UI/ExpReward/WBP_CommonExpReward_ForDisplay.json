@@ -1,0 +1,556 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CommonExpReward_ForDisplay_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_CommonExpReward_ForDisplay_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.3"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CommonExpReward_ForDisplay_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CommonExpReward_ForDisplay_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.0"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_CommonExpReward_ForDisplay_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.1"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -362.09235
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_CommonExpReward_ForDisplay_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.1"
+      },
+      "Content": {
+        "ObjectName": "WBP_Ingame_Exp_Reward_C'WBP_CommonExpReward_ForDisplay_C:WidgetTree.WBP_Ingame_Exp_Reward'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.11"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Destruct",
+    "Outer": "WBP_CommonExpReward_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Destruct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_CommonExpReward_ForDisplay",
+    "Outer": "WBP_CommonExpReward_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTimerEvent_EndIn",
+    "Outer": "WBP_CommonExpReward_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTimerEvent_EndOut",
+    "Outer": "WBP_CommonExpReward_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "QueExpReward",
+    "Outer": "WBP_CommonExpReward_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "RewardData",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUICommonExpRewardData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TryPopRewardData",
+    "Outer": "WBP_CommonExpReward_ForDisplay_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "NewLocalVar_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUICommonExpRewardData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUICommonExpRewardData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_IsEmpty_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WBP_CommonExpReward_ForDisplay_C",
+    "Name": "Default__WBP_CommonExpReward_ForDisplay_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "MsgIdMap": [
+        {
+          "Key": "EPalCommonExpRewardType::Expedition",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "EXP_REWARD_EXPEDITION"
+          }
+        },
+        {
+          "Key": "EPalCommonExpRewardType::DefeatBoss",
+          "Value": {
+            "DataTable": {
+              "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+            },
+            "RowName": "EXP_REWARD_DEFEAT_BOSS"
+          }
+        }
+      ],
+      "TimerHandle_EndIn": {
+        "Handle": 0
+      },
+      "TimerHandle_EndOut": {
+        "Handle": 0
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_Ingame_Exp_Reward_C",
+    "Name": "WBP_Ingame_Exp_Reward",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/ExpReward/WBP_Ingame_Exp_Reward.WBP_Ingame_Exp_Reward_C'",
+    "Template": {
+      "ObjectName": "WBP_Ingame_Exp_Reward_C'Default__WBP_Ingame_Exp_Reward_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/ExpReward/WBP_Ingame_Exp_Reward.38"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_CommonExpReward_ForDisplay_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.3"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_CommonExpReward_ForDisplay_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_CommonExpReward_ForDisplay_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.13"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_CommonExpReward_ForDisplay_C:ExecuteUbergraph_WBP_CommonExpReward_ForDisplay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidget'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_CommonExpReward_ForDisplay_C:OnTimerEvent_EndOut'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.7"
+      },
+      {
+        "ObjectName": "Function'WBP_CommonExpReward_ForDisplay_C:OnTimerEvent_EndIn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.6"
+      },
+      {
+        "ObjectName": "Function'WBP_CommonExpReward_ForDisplay_C:TryPopRewardData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.9"
+      },
+      {
+        "ObjectName": "Function'WBP_CommonExpReward_ForDisplay_C:QueExpReward'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.8"
+      },
+      {
+        "ObjectName": "Function'WBP_CommonExpReward_ForDisplay_C:Destruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.4"
+      },
+      {
+        "ObjectName": "Function'WBP_CommonExpReward_ForDisplay_C:ExecuteUbergraph_WBP_CommonExpReward_ForDisplay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Ingame_Exp_Reward",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Exp_Reward_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/ExpReward/WBP_Ingame_Exp_Reward.41"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "RewardDataArray",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "RewardDataArray",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "Struct": {
+            "ObjectName": "ScriptStruct'PalUICommonExpRewardData'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bCurrentDisplaying",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "MsgIdMap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "EnumProperty",
+          "Name": "MsgIdMap",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalCommonExpRewardType'",
+            "ObjectPath": "/Script/Pal"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": {
+              "ObjectName": "Enum'EPalCommonExpRewardType'",
+              "ObjectPath": "/Script/Pal"
+            }
+          }
+        },
+        "ValueProp": {
+          "Type": "StructProperty",
+          "Name": "MsgIdMap_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "ScriptStruct'DataTableRowHandle'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TimerHandle_EndIn",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TimerHandle_EndOut",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_CommonExpReward_ForDisplay": {
+        "ObjectName": "Function'WBP_CommonExpReward_ForDisplay_C:ExecuteUbergraph_WBP_CommonExpReward_ForDisplay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.5"
+      },
+      "Destruct": {
+        "ObjectName": "Function'WBP_CommonExpReward_ForDisplay_C:Destruct'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.4"
+      },
+      "QueExpReward": {
+        "ObjectName": "Function'WBP_CommonExpReward_ForDisplay_C:QueExpReward'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.8"
+      },
+      "TryPopRewardData": {
+        "ObjectName": "Function'WBP_CommonExpReward_ForDisplay_C:TryPopRewardData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.9"
+      },
+      "OnTimerEvent_EndIn": {
+        "ObjectName": "Function'WBP_CommonExpReward_ForDisplay_C:OnTimerEvent_EndIn'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.6"
+      },
+      "OnTimerEvent_EndOut": {
+        "ObjectName": "Function'WBP_CommonExpReward_ForDisplay_C:OnTimerEvent_EndOut'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.7"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_CommonExpReward_ForDisplay_C'Default__WBP_CommonExpReward_ForDisplay_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.10"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_CommonExpReward_ForDisplay_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_CommonExpReward_ForDisplay_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/ExpReward/WBP_CommonExpReward_ForDisplay.0"
+      }
+    }
+  }
+]

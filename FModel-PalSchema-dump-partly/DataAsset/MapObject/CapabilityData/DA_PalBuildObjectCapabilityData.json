@@ -1,0 +1,540 @@
+[
+  {
+    "Type": "PalBuildObjectCapabilityDataAsset",
+    "Name": "DA_PalBuildObjectCapabilityData",
+    "Class": "UScriptClass'PalBuildObjectCapabilityDataAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BuildObjectCapabilityMap": [
+        {
+          "Key": "ElectricGenerator",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "GenerateEnergyRateByWorker",
+                "Value": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "MedicalPalBed_02",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "ReviveSpeedMultiplier",
+                "Value": 1.2
+              }
+            ]
+          }
+        },
+        {
+          "Key": "MedicalPalBed_03",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "ReviveSpeedMultiplier",
+                "Value": 1.4
+              }
+            ]
+          }
+        },
+        {
+          "Key": "MedicalPalBed_04",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "ReviveSpeedMultiplier",
+                "Value": 1.6
+              }
+            ]
+          }
+        },
+        {
+          "Key": "SphereFactory_Black_01",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "SphereFactory_Black_02",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 2.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "SphereFactory_Black_03",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 4.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "SphereFactory_Black_04",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 6.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Spa",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "AffectSanityRate",
+                "Value": 0.5
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Spa2",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "AffectSanityRate",
+                "Value": 0.75
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Spa3",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "AffectSanityRate",
+                "Value": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "BlastFurnace",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "BlastFurnace2",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 1.5
+              }
+            ]
+          }
+        },
+        {
+          "Key": "BlastFurnace3",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 3.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "BlastFurnace4",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 4.5
+              }
+            ]
+          }
+        },
+        {
+          "Key": "CampFire",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "CookingStove",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 1.5
+              }
+            ]
+          }
+        },
+        {
+          "Key": "ElectricKitchen",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 3.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "HugeKitchen",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 4.5
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Factory_Hard_01",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 1.5
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Factory_Hard_02",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 2.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Factory_Hard_03",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 4.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Factory_Hard_04",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 6.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "MedicineFacility_01",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "MedicineFacility_02",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 2.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "MedicineFacility_03",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 3.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "WeaponFactory_Dirty_01",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "WeaponFactory_Dirty_02",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 2.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "WeaponFactory_Dirty_03",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 4.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "WeaponFactory_Dirty_04",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 6.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "WorkBench",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "WorkBench_SkillUnlock",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Crusher",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "FlourMill",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "ElectricGenerator_Large",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "GenerateEnergyRateByWorker",
+                "Value": 3.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "IceCrusher",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 2.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Factory_Money",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 2.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "MedicalPalBed_05",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "ReviveSpeedMultiplier",
+                "Value": 1.8
+              }
+            ]
+          }
+        },
+        {
+          "Key": "OperatingTable",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "ReviveSpeedMultiplier",
+                "Value": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "ManualElectricGenerator",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "GenerateEnergyRateByWorker",
+                "Value": 0.2
+              }
+            ]
+          }
+        },
+        {
+          "Key": "EnergyStorage_Electric",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "MaxEnergyStorage",
+                "Value": 1000000.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "CompositeDesk",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "AncientWorkBench",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 8.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "AncientElectricGenerator",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "GenerateEnergyRateByWorker",
+                "Value": 20.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "AncientBlastFurnace",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 11.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "AncientCookingStove",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "WorkSpeedAdditionalRate",
+                "Value": 6.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Ancient_Spa",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "AffectSanityRate",
+                "Value": 2.0
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Ancient_MedicalPalBed",
+          "Value": {
+            "Capabilities": [
+              {
+                "Key": "ReviveSpeedMultiplier",
+                "Value": 2.0
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+]

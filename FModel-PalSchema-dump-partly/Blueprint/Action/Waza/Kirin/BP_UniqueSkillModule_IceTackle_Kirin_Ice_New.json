@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueSkillModule_IceTackle_Kirin_Ice_New_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_LightningTackle_Kirin_New_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_UniqueSkillModule_LightningTackle_Kirin_New.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_LightningTackle_Kirin_New_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_UniqueSkillModule_LightningTackle_Kirin_New.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueSkillModule_IceTackle_Kirin_Ice_New_C'Default__BP_UniqueSkillModule_IceTackle_Kirin_Ice_New_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_UniqueSkillModule_IceTackle_Kirin_Ice_New.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueSkillModule_IceTackle_Kirin_Ice_New_C",
+    "Name": "Default__BP_UniqueSkillModule_IceTackle_Kirin_Ice_New_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_UniqueSkillModule_IceTackle_Kirin_Ice_New.BP_UniqueSkillModule_IceTackle_Kirin_Ice_New_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueSkillModule_LightningTackle_Kirin_New_C'Default__BP_UniqueSkillModule_LightningTackle_Kirin_New_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_UniqueSkillModule_LightningTackle_Kirin_New.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LoopSkillEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_Kirin_Ice_IceTackle_Loop_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Kirin/BP_SkillEffect_Unique_Kirin_Ice_IceTackle_Loop.0"
+      }
+    }
+  }
+]

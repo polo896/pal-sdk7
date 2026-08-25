@@ -1,0 +1,57 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b05_flower_ConiferForestPack_GroundPlant_5_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b05_flower_ConiferForestPack_GroundPlant_5'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b05/tree/SM_pal_b05_flower_ConiferForestPack_GroundPlant_5.2"
+      },
+      "UpdateGuid": "B28DF58A-4C1C4AD0-D5B2F291-E2519335",
+      "Density": 50.0,
+      "Radius": 1.0,
+      "SingleInstanceModeRadius": 222.0,
+      "ScaleX": {
+        "Min": 1.2,
+        "Max": 1.5
+      },
+      "AverageNormal": true,
+      "AlignMaxAngle": 35.0,
+      "GroundSlopeAngle": {
+        "Max": 90.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 5.739768,
+          "Y": -6.0059147,
+          "Z": 8.128824
+        },
+        "BoxExtent": {
+          "X": 36.991093,
+          "Y": 37.303352,
+          "Z": 9.01753
+        },
+        "SphereRadius": 48.73601914816243
+      },
+      "LowBoundOriginRadius": {
+        "X": -0.53572845,
+        "Y": -0.8285616,
+        "Z": 0.98667085
+      },
+      "CullDistance": {
+        "Max": 4000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

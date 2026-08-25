@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalRaidBossManager_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalRaidBossManager'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalRaidBossManager_C'Default__BP_PalRaidBossManager_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossManager.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalRaidBossManager_C",
+    "Name": "Default__BP_PalRaidBossManager_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossManager.BP_PalRaidBossManager_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RaidBossDataTable": {
+        "ObjectName": "CompositeDataTable'DT_PalRaidBoss'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/DT_PalRaidBoss.0"
+      },
+      "BattleAreaRadius": 5000.0,
+      "LargeDownHPRate": [
+        0.4,
+        0.7
+      ],
+      "RaidBossBattleActorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalRaidBossBattle_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_PalRaidBossBattle.0"
+      },
+      "bShouldCreate": true
+    }
+  }
+]

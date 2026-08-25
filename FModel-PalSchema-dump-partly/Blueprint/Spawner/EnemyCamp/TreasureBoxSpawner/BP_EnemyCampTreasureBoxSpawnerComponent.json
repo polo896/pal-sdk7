@@ -1,0 +1,156 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_EnemyCampTreasureBoxSpawnerComponent_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalEnemyCampTreasureBoxSpawnerComponent'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_EnemyCampTreasureBoxSpawnerComponent_C:GetCampSpawnerName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/TreasureBoxSpawner/BP_EnemyCampTreasureBoxSpawnerComponent.3"
+      }
+    ],
+    "FuncMap": {
+      "GetCampSpawnerName": {
+        "ObjectName": "Function'BP_EnemyCampTreasureBoxSpawnerComponent_C:GetCampSpawnerName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/TreasureBoxSpawner/BP_EnemyCampTreasureBoxSpawnerComponent.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_EnemyCampTreasureBoxSpawnerComponent_C'Default__BP_EnemyCampTreasureBoxSpawnerComponent_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/TreasureBoxSpawner/BP_EnemyCampTreasureBoxSpawnerComponent.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_EnemyCampTreasureBoxSpawnerComponent_C",
+    "Name": "Default__BP_EnemyCampTreasureBoxSpawnerComponent_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/TreasureBoxSpawner/BP_EnemyCampTreasureBoxSpawnerComponent.BP_EnemyCampTreasureBoxSpawnerComponent_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnMapObjectId": {
+        "Key": "TreasureBox"
+      },
+      "FieldLotteryName": {
+        "Key": "Grass01"
+      },
+      "ChildActorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_TreasureBoxVisual_CampSpawn_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_CampSpawn.0"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "BP_TreasureBoxVisual_CampSpawn_C'Default__BP_EnemyCampTreasureBoxSpawnerComponent_C:Default__BP_EnemyCampTreasureBoxSpawnerComponent_C_BP_TreasureBoxVisual_CampSpawn_C_CAT'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/TreasureBoxSpawner/BP_EnemyCampTreasureBoxSpawnerComponent.2"
+      },
+      "bHiddenInGame": true,
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "BP_TreasureBoxVisual_CampSpawn_C",
+    "Name": "Default__BP_EnemyCampTreasureBoxSpawnerComponent_C_BP_TreasureBoxVisual_CampSpawn_C_CAT",
+    "Outer": "Default__BP_EnemyCampTreasureBoxSpawnerComponent_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_CampSpawn.BP_TreasureBoxVisual_CampSpawn_C'",
+    "Template": {
+      "ObjectName": "BP_TreasureBoxVisual_CampSpawn_C'Default__BP_TreasureBoxVisual_CampSpawn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_CampSpawn.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkeletalMeshComponent": {
+        "ObjectName": "PalSkeletalMeshComponent'Default__BP_EnemyCampTreasureBoxSpawnerComponent_C:Default__BP_EnemyCampTreasureBoxSpawnerComponent_C_BP_TreasureBoxVisual_CampSpawn_C_CAT.SkeletalMesh'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/TreasureBoxSpawner/BP_EnemyCampTreasureBoxSpawnerComponent.4"
+      },
+      "RootComponent": {
+        "ObjectName": "PalSkeletalMeshComponent'Default__BP_EnemyCampTreasureBoxSpawnerComponent_C:Default__BP_EnemyCampTreasureBoxSpawnerComponent_C_BP_TreasureBoxVisual_CampSpawn_C_CAT.SkeletalMesh'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/TreasureBoxSpawner/BP_EnemyCampTreasureBoxSpawnerComponent.4"
+      }
+    },
+    "ActorLabel": "BP_TreasureBoxVisual_CampSpawn"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetCampSpawnerName",
+    "Outer": "BP_EnemyCampTreasureBoxSpawnerComponent_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalEnemyCampTreasureBoxSpawnerComponent:GetCampSpawnerName'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_NPCCamp_Preset_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_NPCCampPresetBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/EnemyCamp/BP_NPCCampPresetBase.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetCampSpawnerName_Key",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "PalSkeletalMeshComponent",
+    "Name": "SkeletalMesh",
+    "Outer": "Default__BP_EnemyCampTreasureBoxSpawnerComponent_C_BP_TreasureBoxVisual_CampSpawn_C_CAT",
+    "Class": "UScriptClass'PalSkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "PalSkeletalMeshComponent'Default__BP_TreasureBoxVisual_CampSpawn_C:SkeletalMesh'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/Object/TreasureBox/Visual/BP_TreasureBoxVisual_CampSpawn.4"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  }
+]

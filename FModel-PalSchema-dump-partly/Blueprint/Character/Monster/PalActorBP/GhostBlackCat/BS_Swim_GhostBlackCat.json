@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Swim_GhostBlackCat",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 0.8,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GhostBlackCat_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GhostBlackCat/AS_GhostBlackCat_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.5
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GhostBlackCat_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GhostBlackCat/AS_GhostBlackCat_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 405.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GhostBlackCat_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GhostBlackCat/AS_GhostBlackCat_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 810.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.5
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.5
+          },
+          {
+            "SampleIndices": 1,
+            "SampleIndices[1]": 2,
+            "Vertices": 0.5,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 810.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_GhostBlackCat_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/GhostBlackCat/SK_GhostBlackCat_Skeleton.4"
+      }
+    },
+    "SkeletonGuid": "8D5A5E48-423575C8-E6EB87B3-CE494C68"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_CoopParam_ShotgunMode_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_CoopParam_AssaultRifleMode_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/CoopParam/BP_CoopParam_AssaultRifleMode.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_CoopParam_AssaultRifleMode_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/CoopParam/BP_CoopParam_AssaultRifleMode.0"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_CoopParam_ShotgunMode_C'Default__BP_CoopParam_ShotgunMode_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/CoopParam/BP_CoopParam_ShotgunMode.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_CoopParam_ShotgunMode_C",
+    "Name": "Default__BP_CoopParam_ShotgunMode_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Monster/CoopParam/BP_CoopParam_ShotgunMode.BP_CoopParam_ShotgunMode_C'",
+    "Template": {
+      "ObjectName": "BP_CoopParam_AssaultRifleMode_C'Default__BP_CoopParam_AssaultRifleMode_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/CoopParam/BP_CoopParam_AssaultRifleMode.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovingAnim": {
+        "ObjectName": "AnimMontage'AM_BadCatgirl_Walk'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/BadCatgirl/AM_BadCatgirl_Walk.0"
+      },
+      "ShootingAnim": {
+        "ObjectName": "AnimMontage'AM_BadCatgirl_Fire_Shotgun'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/BadCatgirl/AM_BadCatgirl_Fire_Shotgun.0"
+      },
+      "IdleAnim": {
+        "ObjectName": "AnimMontage'AM_BadCatgirl_Encount'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/BadCatgirl/AM_BadCatgirl_Encount.0"
+      },
+      "BulletMesh": {
+        "ObjectName": "BlueprintGeneratedClass'BP_ShotgunBullet_BadCatGirl_PartnerSkill_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Bullet/BP_ShotgunBullet_BadCatGirl_PartnerSkill.0"
+      },
+      "MuzzleEffect": {
+        "ObjectName": "NiagaraSystem'NS_Muzzle_Shotgun'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Weapon/Shotgun/NS_Muzzle_Shotgun.54"
+      },
+      "MuzzleSocketName": "MuzzleFlash",
+      "MuzzleOffset": {
+        "X": 20.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "ShootSE": {
+        "ObjectName": "AkAudioEvent'AKE_Weapon_DoubleBarrelShotgun_Fire'",
+        "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/DoubleBarrelShotgun/AKE_Weapon_DoubleBarrelShotgun_Fire.0"
+      }
+    }
+  }
+]

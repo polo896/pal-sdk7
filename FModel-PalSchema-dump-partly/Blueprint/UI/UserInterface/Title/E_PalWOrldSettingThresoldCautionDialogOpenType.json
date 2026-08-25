@@ -1,0 +1,36 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_PalWOrldSettingThresoldCautionDialogOpenType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "424F0DCF47A006E6271AD3BFCC2A5F8B",
+            "SourceString": "Setting",
+            "LocalizedString": "Setting"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "2FCACE064C16910A76E5EF9913AD5818",
+            "SourceString": "StartWorld",
+            "LocalizedString": "StartWorld"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_PalWOrldSettingThresoldCautionDialogOpenType::NewEnumerator0": 0,
+      "E_PalWOrldSettingThresoldCautionDialogOpenType::NewEnumerator1": 1,
+      "E_PalWOrldSettingThresoldCautionDialogOpenType::E_MAX": 2
+    },
+    "CppForm": "Namespaced"
+  }
+]

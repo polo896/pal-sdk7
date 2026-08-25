@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_WingGolem_FlameCutter_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_WingGolem_RoundCutter_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WingGolem/BP_Action_Unique_WingGolem_RoundCutter.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_WingGolem_RoundCutter_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WingGolem/BP_Action_Unique_WingGolem_RoundCutter.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Action_Unique_WingGolem_FlameCutter_C:GetCutterClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WingGolem/BP_Action_Unique_WingGolem_FlameCutter.2"
+      }
+    ],
+    "FuncMap": {
+      "GetCutterClass": {
+        "ObjectName": "Function'BP_Action_Unique_WingGolem_FlameCutter_C:GetCutterClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WingGolem/BP_Action_Unique_WingGolem_FlameCutter.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_WingGolem_FlameCutter_C'Default__BP_Action_Unique_WingGolem_FlameCutter_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WingGolem/BP_Action_Unique_WingGolem_FlameCutter.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_WingGolem_FlameCutter_C",
+    "Name": "Default__BP_Action_Unique_WingGolem_FlameCutter_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/WingGolem/BP_Action_Unique_WingGolem_FlameCutter.BP_Action_Unique_WingGolem_FlameCutter_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_WingGolem_RoundCutter_C'Default__BP_Action_Unique_WingGolem_RoundCutter_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WingGolem/BP_Action_Unique_WingGolem_RoundCutter.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FlagName": "WingGolem_FlameCutter",
+      "WazaID": "EPalWazaID::Unique_WingGolem_Fire_FlameCutter"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetCutterClass",
+    "Outer": "BP_Action_Unique_WingGolem_FlameCutter_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_Unique_WingGolem_RoundCutter_C:GetCutterClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WingGolem/BP_Action_Unique_WingGolem_RoundCutter.7"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_Unique_WingGolem_RoundCutter_C:GetCutterClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/WingGolem/BP_Action_Unique_WingGolem_RoundCutter.7"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "CutterClass",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_WingGolem_RoundCutter_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/WingGolem/BP_SkillEffect_Unique_WingGolem_RoundCutter.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

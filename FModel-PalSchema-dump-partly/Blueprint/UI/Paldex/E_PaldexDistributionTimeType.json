@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_PaldexDistributionTimeType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "EDC9B7C6472292221F2579ADF0DD2250",
+            "SourceString": "AllTime",
+            "LocalizedString": "AllTime"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "F39543654F9ABD3AA0221F84668E5037",
+            "SourceString": "DayTime",
+            "LocalizedString": "DayTime"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "C3330614425585D3F1F7F8AB971BA338",
+            "SourceString": "NightTime",
+            "LocalizedString": "NightTime"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_PaldexDistributionTimeType::NewEnumerator0": 0,
+      "E_PaldexDistributionTimeType::NewEnumerator1": 1,
+      "E_PaldexDistributionTimeType::NewEnumerator2": 2,
+      "E_PaldexDistributionTimeType::E_MAX": 3
+    },
+    "CppForm": "Namespaced"
+  }
+]

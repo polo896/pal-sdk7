@@ -1,0 +1,47 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_CaptainPenguin_BodySlide_Electric_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_CaptainPenguin_BodySlide_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CaptainPenguin/BP_Action_Unique_CaptainPenguin_BodySlide.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_CaptainPenguin_BodySlide_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CaptainPenguin/BP_Action_Unique_CaptainPenguin_BodySlide.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_CaptainPenguin_BodySlide_Electric_C'Default__BP_Action_Unique_CaptainPenguin_BodySlide_Electric_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CaptainPenguin/BP_Action_Unique_CaptainPenguin_BodySlide_Electric.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_CaptainPenguin_BodySlide_Electric_C",
+    "Name": "Default__BP_Action_Unique_CaptainPenguin_BodySlide_Electric_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/CaptainPenguin/BP_Action_Unique_CaptainPenguin_BodySlide_Electric.BP_Action_Unique_CaptainPenguin_BodySlide_Electric_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_CaptainPenguin_BodySlide_C'Default__BP_Action_Unique_CaptainPenguin_BodySlide_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CaptainPenguin/BP_Action_Unique_CaptainPenguin_BodySlide.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkillModuleClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_CaptainPenguin_Black_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/CaptainPenguin/BP_UniqueSkillModule_Tackle_CaptainPenguin_Black.0"
+      },
+      "WazaID": "EPalWazaID::Unique_CaptainPenguin_Black_BodySlide_Electric"
+    }
+  }
+]

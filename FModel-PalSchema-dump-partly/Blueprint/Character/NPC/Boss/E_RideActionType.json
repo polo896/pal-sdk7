@@ -1,0 +1,66 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_RideActionType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "25239E994D772721D0F25685FB74BEE4",
+            "SourceString": "Idle",
+            "LocalizedString": "Idle"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "D7006B864D58DF02BDCF7283C05FE13D",
+            "SourceString": "CommonWaza",
+            "LocalizedString": "CommonWaza"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "F9F5820648B05E1CD9697D8F2CAC0591",
+            "SourceString": "UniqueWaza",
+            "LocalizedString": "UniqueWaza"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "4A44EE1947030C581553D28BF20FB1EC",
+            "SourceString": "Encount",
+            "LocalizedString": "Encount"
+          }
+        },
+        {
+          "Key": "NewEnumerator4",
+          "Value": {
+            "Namespace": "",
+            "Key": "D341C4E34B5BD01D81197CAFF4154B8B",
+            "SourceString": "CommonWazaStart",
+            "LocalizedString": "CommonWazaStart"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_RideActionType::NewEnumerator0": 0,
+      "E_RideActionType::NewEnumerator4": 1,
+      "E_RideActionType::NewEnumerator1": 2,
+      "E_RideActionType::NewEnumerator2": 3,
+      "E_RideActionType::NewEnumerator3": 4,
+      "E_RideActionType::E_MAX": 5
+    },
+    "CppForm": "Namespaced"
+  }
+]

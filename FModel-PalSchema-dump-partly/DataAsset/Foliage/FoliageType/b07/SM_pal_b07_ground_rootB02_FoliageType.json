@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b07_ground_rootB02_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b07_ground_rootB02'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b07/SeaOfTrees/mesh/ground_root/SM_pal_b07_ground_rootB02.2"
+      },
+      "UpdateGuid": "A0E9BF80-42F1078A-44B90092-84EB467D",
+      "Density": 60.0,
+      "ScaleX": {
+        "Min": 0.2,
+        "Max": 0.3
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 62.259186,
+          "Y": -129.16888,
+          "Z": -18.26796
+        },
+        "BoxExtent": {
+          "X": 167.61038,
+          "Y": 200.68451,
+          "Z": 68.5486
+        },
+        "SphereRadius": 242.39088611351355
+      },
+      "LowBoundOriginRadius": {
+        "X": 7.0752487,
+        "Y": 34.71543,
+        "Z": 38.28505
+      },
+      "CullDistance": {
+        "Max": 3000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

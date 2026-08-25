@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueAction_GrassMinotaur_BullRush_Ice_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueAction_GrassMinotaur_BullRush_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueAction_GrassMinotaur_BullRush_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_UniqueAction_GrassMinotaur_BullRush_Ice_C:GetLoopClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush_Ice.2"
+      }
+    ],
+    "FuncMap": {
+      "GetLoopClass": {
+        "ObjectName": "Function'BP_UniqueAction_GrassMinotaur_BullRush_Ice_C:GetLoopClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush_Ice.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueAction_GrassMinotaur_BullRush_Ice_C'Default__BP_UniqueAction_GrassMinotaur_BullRush_Ice_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush_Ice.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueAction_GrassMinotaur_BullRush_Ice_C",
+    "Name": "Default__BP_UniqueAction_GrassMinotaur_BullRush_Ice_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush_Ice.BP_UniqueAction_GrassMinotaur_BullRush_Ice_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueAction_GrassMinotaur_BullRush_C'Default__BP_UniqueAction_GrassMinotaur_BullRush_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WazaID": "EPalWazaID::Unique_GrassMinotaur_Ice_BullRush"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetLoopClass",
+    "Outer": "BP_UniqueAction_GrassMinotaur_BullRush_Ice_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_UniqueAction_GrassMinotaur_BullRush_C:GetLoopClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_UniqueAction_GrassMinotaur_BullRush_C:GetLoopClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "Class",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_GrassMinotaur_BullRush_Loop_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/GrassMinotaur_BullRush/BP_UniqueSkillEffect_GrassMinotaur_BullRush_Loop.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_JumpingHorn_PrepareJump",
+    "Class": "UScriptClass'CurveFloat'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": -4.3706277E-05,
+            "ArriveTangent": -1512.0679,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -1512.0679,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.7,
+            "Value": -700.0,
+            "ArriveTangent": -101.00795,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -101.00795,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.88,
+            "Value": 0.0,
+            "ArriveTangent": 7015.309,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 7015.309,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  }
+]

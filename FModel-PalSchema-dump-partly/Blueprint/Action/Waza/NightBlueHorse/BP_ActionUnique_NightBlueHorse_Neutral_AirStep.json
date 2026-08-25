@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_ActionUnique_NightBlueHorse_Neutral_AirStep_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ActionUnique_NightBlueHorse_DeathStep_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/NightBlueHorse/BP_ActionUnique_NightBlueHorse_DeathStep.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ActionUnique_NightBlueHorse_DeathStep_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/NightBlueHorse/BP_ActionUnique_NightBlueHorse_DeathStep.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_ActionUnique_NightBlueHorse_Neutral_AirStep_C:GetEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/NightBlueHorse/BP_ActionUnique_NightBlueHorse_Neutral_AirStep.2"
+      }
+    ],
+    "FuncMap": {
+      "GetEffect": {
+        "ObjectName": "Function'BP_ActionUnique_NightBlueHorse_Neutral_AirStep_C:GetEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/NightBlueHorse/BP_ActionUnique_NightBlueHorse_Neutral_AirStep.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_ActionUnique_NightBlueHorse_Neutral_AirStep_C'Default__BP_ActionUnique_NightBlueHorse_Neutral_AirStep_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/NightBlueHorse/BP_ActionUnique_NightBlueHorse_Neutral_AirStep.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_ActionUnique_NightBlueHorse_Neutral_AirStep_C",
+    "Name": "Default__BP_ActionUnique_NightBlueHorse_Neutral_AirStep_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/NightBlueHorse/BP_ActionUnique_NightBlueHorse_Neutral_AirStep.BP_ActionUnique_NightBlueHorse_Neutral_AirStep_C'",
+    "Template": {
+      "ObjectName": "BP_ActionUnique_NightBlueHorse_DeathStep_C'Default__BP_ActionUnique_NightBlueHorse_DeathStep_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/NightBlueHorse/BP_ActionUnique_NightBlueHorse_DeathStep.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WazaID": "EPalWazaID::Unique_NightBlueHorse_Neutral_AirStep"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetEffect",
+    "Outer": "BP_ActionUnique_NightBlueHorse_Neutral_AirStep_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ActionUnique_NightBlueHorse_DeathStep_C:GetEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/NightBlueHorse/BP_ActionUnique_NightBlueHorse_DeathStep.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ActionUnique_NightBlueHorse_DeathStep_C:GetEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/NightBlueHorse/BP_ActionUnique_NightBlueHorse_DeathStep.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "NewParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

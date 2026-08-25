@@ -1,0 +1,36 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_PalQuestState",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "05CADDBE41DFD6097CC4A6BF5A4FC34D",
+            "SourceString": "Ordered",
+            "LocalizedString": "Ordered"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "CA853A9244113F31AEDCB1A9A0CF93C6",
+            "SourceString": "Completed",
+            "LocalizedString": "Completed"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_PalQuestState::NewEnumerator1": 0,
+      "E_PalQuestState::NewEnumerator2": 1,
+      "E_PalQuestState::E_MAX": 2
+    },
+    "CppForm": "Namespaced"
+  }
+]

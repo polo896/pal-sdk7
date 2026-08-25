@@ -1,0 +1,53 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "pal_b07_grass_SM_Bush_02_red_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'pal_b07_grass_SM_Bush_02_red'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b07/tree/mesh/pal_b07_grass_SM_Bush_02_red.2"
+      },
+      "UpdateGuid": "B3BCBE29-46D8EBF6-B8EA3192-034B1542",
+      "Density": 50.0,
+      "ScaleX": {
+        "Min": 0.01,
+        "Max": 0.05
+      },
+      "ZOffset": {
+        "Max": 5000.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 1.4658203,
+          "Y": 2.1950073,
+          "Z": 29.150612
+        },
+        "BoxExtent": {
+          "X": 97.05054,
+          "Y": 98.67926,
+          "Z": 30.349789
+        },
+        "SphereRadius": 107.43288348608729
+      },
+      "LowBoundOriginRadius": {
+        "X": 4.5129395,
+        "Y": 4.3288574,
+        "Z": 110.86144
+      },
+      "CullDistance": {
+        "Max": 6500
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

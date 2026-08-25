@@ -1,0 +1,133 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_Kirin_Ice_IceTackle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_Kirin_LightningTackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_Action_Unique_Kirin_LightningTackle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_Kirin_LightningTackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_Action_Unique_Kirin_LightningTackle.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Action_Unique_Kirin_Ice_IceTackle_C:GetEffect_End'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_Action_Unique_Kirin_Ice_IceTackle.3"
+      },
+      {
+        "ObjectName": "Function'BP_Action_Unique_Kirin_Ice_IceTackle_C:GetEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_Action_Unique_Kirin_Ice_IceTackle.2"
+      }
+    ],
+    "FuncMap": {
+      "GetEffect": {
+        "ObjectName": "Function'BP_Action_Unique_Kirin_Ice_IceTackle_C:GetEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_Action_Unique_Kirin_Ice_IceTackle.2"
+      },
+      "GetEffect_End": {
+        "ObjectName": "Function'BP_Action_Unique_Kirin_Ice_IceTackle_C:GetEffect_End'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_Action_Unique_Kirin_Ice_IceTackle.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_Kirin_Ice_IceTackle_C'Default__BP_Action_Unique_Kirin_Ice_IceTackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_Action_Unique_Kirin_Ice_IceTackle.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_Kirin_Ice_IceTackle_C",
+    "Name": "Default__BP_Action_Unique_Kirin_Ice_IceTackle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_Action_Unique_Kirin_Ice_IceTackle.BP_Action_Unique_Kirin_Ice_IceTackle_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_Kirin_LightningTackle_C'Default__BP_Action_Unique_Kirin_LightningTackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_Action_Unique_Kirin_LightningTackle.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkillModuleClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_IceTackle_Kirin_Ice_New_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_UniqueSkillModule_IceTackle_Kirin_Ice_New.0"
+      },
+      "WazaID": "EPalWazaID::Unique_Kirin_Ice_IceTackle"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetEffect",
+    "Outer": "BP_Action_Unique_Kirin_Ice_IceTackle_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_Unique_Kirin_LightningTackle_C:GetEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_Action_Unique_Kirin_LightningTackle.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_Unique_Kirin_LightningTackle_C:GetEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_Action_Unique_Kirin_LightningTackle.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "NewParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetEffect_End",
+    "Outer": "BP_Action_Unique_Kirin_Ice_IceTackle_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_Unique_Kirin_LightningTackle_C:GetEffect_End'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_Action_Unique_Kirin_LightningTackle.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_Unique_Kirin_LightningTackle_C:GetEffect_End'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Kirin/BP_Action_Unique_Kirin_LightningTackle.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "NewParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_SkillEffectBase_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/Common/BP_SkillEffectBase.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

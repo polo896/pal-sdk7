@@ -1,0 +1,40 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalAction_AnimationStepLeft_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalAction_AnimationStepBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_PalAction_AnimationStepBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalAction_AnimationStepBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_PalAction_AnimationStepBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalAction_AnimationStepLeft_C'Default__BP_PalAction_AnimationStepLeft_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_PalAction_AnimationStepLeft.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalAction_AnimationStepLeft_C",
+    "Name": "Default__BP_PalAction_AnimationStepLeft_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Common/BP_PalAction_AnimationStepLeft.BP_PalAction_AnimationStepLeft_C'",
+    "Template": {
+      "ObjectName": "BP_PalAction_AnimationStepBase_C'Default__BP_PalAction_AnimationStepBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_PalAction_AnimationStepBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  }
+]

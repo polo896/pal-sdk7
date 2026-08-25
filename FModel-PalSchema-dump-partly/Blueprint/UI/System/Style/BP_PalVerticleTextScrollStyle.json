@@ -1,0 +1,39 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalVerticleTextScrollStyle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalTextScrollStyle'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalVerticleTextScrollStyle_C'Default__BP_PalVerticleTextScrollStyle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/BP_PalVerticleTextScrollStyle.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalVerticleTextScrollStyle_C",
+    "Name": "Default__BP_PalVerticleTextScrollStyle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/System/Style/BP_PalVerticleTextScrollStyle.BP_PalVerticleTextScrollStyle_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Speed": 32.0,
+      "StartDelay": 2.0,
+      "EndDelay": 3.0,
+      "FadeInDelay": 0.25,
+      "FadeOutDelay": 0.25
+    }
+  }
+]

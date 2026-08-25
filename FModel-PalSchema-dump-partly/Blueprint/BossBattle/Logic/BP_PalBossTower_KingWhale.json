@@ -1,0 +1,910 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "DeadItemDropPoint_GEN_VARIABLE",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Template": {
+      "ObjectName": "ArrowComponent'BP_PalBossTowerBase_C:DeadItemDropPoint_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 390.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "FrontWarpPoint_GEN_VARIABLE",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Template": {
+      "ObjectName": "ArrowComponent'BP_PalBossTowerBase_C:FrontWarpPoint_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 220.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "TopWarpPoint_GEN_VARIABLE",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Template": {
+      "ObjectName": "ArrowComponent'BP_PalBossTowerBase_C:TopWarpPoint_GEN_VARIABLE'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 220.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalBossTowerBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalBossTower_KingWhale_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.22"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_PalBossTower_KingWhale_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.13"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:ExecuteUbergraph_BP_PalBossTower_KingWhale'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalBossTowerBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.3"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:ProgressQuest'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.12"
+      },
+      {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:OnClosedLockDialog'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.11"
+      },
+      {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:GetInteractableTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.9"
+      },
+      {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:GetInteractableInterface'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.8"
+      },
+      {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:GetEntryWaitInfoTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.7"
+      },
+      {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:GetEntryCancelTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.6"
+      },
+      {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:Interact'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.10"
+      },
+      {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:ExecuteUbergraph_BP_PalBossTower_KingWhale'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WaitInfoTrigger",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalInteractableSphereComponentNative'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "EntryCancelTrigger",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalInteractableSphereComponentNative'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "InteractableTrigger",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PalInteractableSphereComponentNative'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_PalBossTower_KingWhale": {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:ExecuteUbergraph_BP_PalBossTower_KingWhale'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.5"
+      },
+      "Interact": {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:Interact'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.10"
+      },
+      "GetEntryCancelTrigger": {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:GetEntryCancelTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.6"
+      },
+      "GetEntryWaitInfoTrigger": {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:GetEntryWaitInfoTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.7"
+      },
+      "GetInteractableInterface": {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:GetInteractableInterface'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.8"
+      },
+      "GetInteractableTrigger": {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:GetInteractableTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.9"
+      },
+      "OnClosedLockDialog": {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:OnClosedLockDialog'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.11"
+      },
+      "ProgressQuest": {
+        "ObjectName": "Function'BP_PalBossTower_KingWhale_C:ProgressQuest'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.12"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalBossTower_KingWhale_C'Default__BP_PalBossTower_KingWhale_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.4"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalBossTower_KingWhale_C",
+    "Name": "Default__BP_PalBossTower_KingWhale_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.BP_PalBossTower_KingWhale_C'",
+    "Template": {
+      "ObjectName": "BP_PalBossTowerBase_C'Default__BP_PalBossTowerBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.4"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "BossType": "EPalBossType::KingWhaleBoss",
+      "bIsStandaloneBossTower": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_PalBossTower_KingWhale",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Other",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Event_IndicatorType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalInteractiveObjectIndicatorType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalInteractiveObjectIndicatorType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetEntryCancelTrigger",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_PalBossTowerBase_C:GetEntryCancelTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.8"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_PalBossTowerBase_C:GetEntryCancelTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.8"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "EntryCancelTrigger",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'ShapeComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetEntryWaitInfoTrigger",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_PalBossTowerBase_C:GetEntryWaitInfoTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.9"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_PalBossTowerBase_C:GetEntryWaitInfoTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.9"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "EntryWaitInfoTrigger",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'ShapeComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetInteractableInterface",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_PalBossTowerBase_C:GetInteractableInterface'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.11"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_PalBossTowerBase_C:GetInteractableInterface'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.11"
+    },
+    "ChildProperties": [
+      {
+        "Type": "InterfaceProperty",
+        "Name": "Interface",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm",
+        "InterfaceClass": {
+          "ObjectName": "Class'PalInteractiveObjectComponentInterface'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetInteractableTrigger",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_PalBossTowerBase_C:GetInteractableTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.12"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_PalBossTowerBase_C:GetInteractableTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.12"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "InteractableTrigger",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'ShapeComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "Interact",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_PalBossTowerBase_C:Interact'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.14"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_PalBossTowerBase_C:Interact'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.14"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Other",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "IndicatorType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalInteractiveObjectIndicatorType'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalInteractiveObjectIndicatorType'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnClosedLockDialog",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_PalBossTowerBase_C:OnClosedLockDialog'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.19"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_PalBossTowerBase_C:OnClosedLockDialog'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.19"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bResult",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ProgressQuest",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "ConditionQuestBlock",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_MakeLiteralName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetLocalPlayerUID_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Guid'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetQuestManagerByPlayerUID_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalQuestManager'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetQuestData_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalQuestData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetQuestBlocks_OutBlocks",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetQuestBlocks_OutBlocks",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'PalQuestBlock'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalQuestBlock'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "CallFunc_GetObjectClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'PalQuestBlock'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ClassClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetNetworkTransmitter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalNetworkTransmitter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetQuest_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalNetworkQuestComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ArrowComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ArrowComponent'BP_PalBossTower_KingWhale_C:DeadItemDropPoint_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.0"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_PalBossTowerBase_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.3"
+            },
+            "SCSVariableName": "DeadItemDropPoint",
+            "AssociatedGuid": "C2EC7655-4841D9D1-B64360B7-E001CF06"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ArrowComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ArrowComponent'BP_PalBossTower_KingWhale_C:TopWarpPoint_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.2"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_PalBossTowerBase_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.3"
+            },
+            "SCSVariableName": "TopWarpPoint",
+            "AssociatedGuid": "E369CB6E-4FE82301-0E92F08F-0B8BFEEB"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ArrowComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ArrowComponent'BP_PalBossTower_KingWhale_C:FrontWarpPoint_GEN_VARIABLE'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.1"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_PalBossTowerBase_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTowerBase.3"
+            },
+            "SCSVariableName": "FrontWarpPoint",
+            "AssociatedGuid": "8351E68D-47D491C7-B8B8A3BA-F1BF6128"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalInteractableSphereComponentNative",
+    "Name": "EntryCancelTrigger_GEN_VARIABLE",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'PalInteractableSphereComponentNative'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IndicatorOriginRef": {
+        "ComponentProperty": "IndicatorOrigin"
+      },
+      "SphereRadius": 200.0,
+      "RelativeScale3D": {
+        "X": 5.0,
+        "Y": 5.0,
+        "Z": 5.0
+      }
+    }
+  },
+  {
+    "Type": "PalInteractableSphereComponentNative",
+    "Name": "InteractableTrigger_GEN_VARIABLE",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'PalInteractableSphereComponentNative'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IndicatorOriginRef": {
+        "ComponentProperty": "IndicatorOrigin"
+      },
+      "SphereRadius": 200.0
+    }
+  },
+  {
+    "Type": "PalInteractableSphereComponentNative",
+    "Name": "WaitInfoTrigger_GEN_VARIABLE",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'PalInteractableSphereComponentNative'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IndicatorOriginRef": {
+        "ComponentProperty": "IndicatorOrigin"
+      },
+      "SphereRadius": 200.0,
+      "RelativeScale3D": {
+        "X": 5.0,
+        "Y": 5.0,
+        "Z": 5.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalBossTower_KingWhale_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.17"
+      },
+      "VariableGuid": "C5A73D02-41DECB0E-90E4D9A9-435AC8EC",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalInteractableSphereComponentNative'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalInteractableSphereComponentNative'BP_PalBossTower_KingWhale_C:InteractableTrigger_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.15"
+      },
+      "ParentComponentOrVariableName": "Scene",
+      "ParentComponentOwnerClassName": "BP_PalBossTowerBase_C",
+      "VariableGuid": "34FD4B67-4C059A87-62AD278F-DB915293",
+      "InternalVariableName": "InteractableTrigger"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalInteractableSphereComponentNative'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalInteractableSphereComponentNative'BP_PalBossTower_KingWhale_C:EntryCancelTrigger_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.14"
+      },
+      "ParentComponentOrVariableName": "Scene",
+      "ParentComponentOwnerClassName": "BP_PalBossTowerBase_C",
+      "VariableGuid": "09CBC555-4F47C0BB-29975EA8-5D61878E",
+      "InternalVariableName": "EntryCancelTrigger"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PalInteractableSphereComponentNative'",
+        "ObjectPath": "/Script/Pal"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PalInteractableSphereComponentNative'BP_PalBossTower_KingWhale_C:WaitInfoTrigger_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.16"
+      },
+      "ParentComponentOrVariableName": "Scene",
+      "ParentComponentOwnerClassName": "BP_PalBossTowerBase_C",
+      "VariableGuid": "7E5461BB-49AEFF04-E2049EA2-C6E69502",
+      "InternalVariableName": "WaitInfoTrigger"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalBossTower_KingWhale_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalBossTower_KingWhale_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.19"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossTower_KingWhale_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.20"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossTower_KingWhale_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.21"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_PalBossTower_KingWhale_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.19"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossTower_KingWhale_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.20"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_PalBossTower_KingWhale_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.21"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalBossTower_KingWhale_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossTower_KingWhale.18"
+      }
+    }
+  }
+]

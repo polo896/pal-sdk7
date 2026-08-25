@@ -1,0 +1,135 @@
+[
+  {
+    "Type": "Material",
+    "Name": "M_Rocks_ThrowRock",
+    "Class": "UScriptClass'Material'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bUsedWithStaticLighting": true,
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "3FACFA41-467213F1-F6BBE6A3-253E1FF9",
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_Rocks_C"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_Rocks_M"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_Rocks_N"
+        }
+      ]
+    },
+    "LoadedMaterialResources": [],
+    "CachedExpressionData": {
+      "RuntimeEntries": {
+        "ParameterInfoSet": [
+          {
+            "Name": "Rough",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          }
+        ]
+      },
+      "RuntimeEntries[1]": {
+        "ParameterInfoSet": [
+          {
+            "Name": "BaseColorTint",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          }
+        ]
+      },
+      "RuntimeEntries[2]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[3]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[4]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[5]": {
+        "ParameterInfoSet": []
+      },
+      "ScalarPrimitiveDataIndexValues": [
+        -1
+      ],
+      "VectorPrimitiveDataIndexValues": [
+        -1
+      ],
+      "ScalarValues": [
+        1.0
+      ],
+      "VectorValues": [
+        {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 0.0,
+          "Hex": "000000"
+        }
+      ],
+      "DoubleVectorValues": [],
+      "TextureValues": [],
+      "FontValues": [],
+      "FontPageValues": [],
+      "RuntimeVirtualTextureValues": [],
+      "ReferencedTextures": [
+        {
+          "ObjectName": "Texture2D'T_Rocks_C'",
+          "ObjectPath": "Pal/Content/Others/Medieval_Town/Mesh/Rock/T_Rocks_C.0"
+        },
+        {
+          "ObjectName": "Texture2D'T_Rocks_M'",
+          "ObjectPath": "Pal/Content/Others/Medieval_Town/Mesh/Rock/T_Rocks_M.0"
+        },
+        {
+          "ObjectName": "Texture2D'T_Rocks_N'",
+          "ObjectPath": "Pal/Content/Others/Medieval_Town/Mesh/Rock/T_Rocks_N.0"
+        }
+      ],
+      "FunctionInfos": [],
+      "ParameterCollectionInfos": [],
+      "GrassTypes": [],
+      "MaterialLayers": {
+        "Layers": [],
+        "Blends": []
+      },
+      "DynamicParameterNames": [],
+      "QualityLevelsUsed": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "bHasMaterialLayers": false,
+      "bHasRuntimeVirtualTextureOutput": false,
+      "bHasSceneColor": false,
+      "bHasPerInstanceCustomData": false,
+      "bHasPerInstanceRandom": false,
+      "bHasVertexInterpolator": false,
+      "PropertyConnectedBitmask": 263520
+    },
+    "ReferencedTextures": [
+      {
+        "ObjectName": "Texture2D'T_Rocks_C'",
+        "ObjectPath": "Pal/Content/Others/Medieval_Town/Mesh/Rock/T_Rocks_C.0"
+      },
+      {
+        "ObjectName": "Texture2D'T_Rocks_M'",
+        "ObjectPath": "Pal/Content/Others/Medieval_Town/Mesh/Rock/T_Rocks_M.0"
+      },
+      {
+        "ObjectName": "Texture2D'T_Rocks_N'",
+        "ObjectPath": "Pal/Content/Others/Medieval_Town/Mesh/Rock/T_Rocks_N.0"
+      }
+    ]
+  }
+]

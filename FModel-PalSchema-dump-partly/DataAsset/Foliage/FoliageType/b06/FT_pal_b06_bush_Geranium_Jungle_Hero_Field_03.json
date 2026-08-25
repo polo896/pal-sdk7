@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b06_bush_Geranium_Jungle_Hero_Field_03",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b06_bush_Geranium_Jungle_Hero_Field_03'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b06/Tree/Meshes/SM_pal_b06_bush_Geranium_Jungle_Hero_Field_03.2"
+      },
+      "UpdateGuid": "95416C2E-41DF8EB7-B954EA8E-D33BA55E",
+      "ScaleX": {
+        "Min": 0.6
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -2.4015388,
+          "Y": 1.4627991,
+          "Z": 87.02872
+        },
+        "BoxExtent": {
+          "X": 111.54216,
+          "Y": 118.204475,
+          "Z": 100.848236
+        },
+        "SphereRadius": 128.10182786240895
+      },
+      "LowBoundOriginRadius": {
+        "X": -5.565708,
+        "Y": -16.400747,
+        "Z": 67.04866
+      },
+      "CullDistance": {
+        "Max": 8000
+      },
+      "bAffectDistanceFieldLighting": true,
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

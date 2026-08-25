@@ -1,0 +1,76 @@
+[
+  {
+    "Type": "ALI_MonsterPhysics_C",
+    "Name": "Default__ALI_MonsterPhysics_C",
+    "Class": "AnimBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Monster/ALI_MonsterPhysics.ALI_MonsterPhysics_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ALI_MonsterPhysics_C",
+    "Class": "UScriptClass'AnimBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'AnimLayerInterface'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ALI_MonsterPhysics_C:MonsterPhysics'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/ALI_MonsterPhysics.2"
+      }
+    ],
+    "FuncMap": {
+      "MonsterPhysics": {
+        "ObjectName": "Function'ALI_MonsterPhysics_C:MonsterPhysics'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/ALI_MonsterPhysics.2"
+      }
+    },
+    "ClassFlags": "CLASS_Interface | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ALI_MonsterPhysics_C'Default__ALI_MonsterPhysics_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Monster/ALI_MonsterPhysics.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Interface"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "MonsterPhysics",
+    "Outer": "ALI_MonsterPhysics_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "InPose",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "MonsterPhysics",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

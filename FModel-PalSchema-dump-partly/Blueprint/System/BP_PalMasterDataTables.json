@@ -1,0 +1,441 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalMasterDataTables_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalMasterDataTables'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalMasterDataTables_C'Default__BP_PalMasterDataTables_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalMasterDataTables.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalMasterDataTables_C",
+    "Name": "Default__BP_PalMasterDataTables_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalMasterDataTables.BP_PalMasterDataTables_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WildSpawnerDataTable": {
+        "ObjectName": "DataTable'DT_PalWildSpawner'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Spawner/DT_PalWildSpawner.0"
+      },
+      "ItemRecipeDataTable": {
+        "ObjectName": "CompositeDataTable'DT_ItemRecipeDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Item/DT_ItemRecipeDataTable.0"
+      },
+      "FarmCropDataTable": {
+        "ObjectName": "DataTable'DT_MapObjectFarmCrop'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/MapObject/DT_MapObjectFarmCrop.0"
+      },
+      "MapObjectDataTable": {
+        "ObjectName": "CompositeDataTable'DT_MapObjectMasterDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/MapObject/DT_MapObjectMasterDataTable.0"
+      },
+      "MapObjectLotteryDataTable": {
+        "ObjectName": "DataTable'DT_MapObjectLotteryDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/MapObject/DT_MapObjectLotteryDataTable.0"
+      },
+      "BuildObjectDataTable": {
+        "ObjectName": "CompositeDataTable'DT_BuildObjectDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/MapObject/Building/DT_BuildObjectDataTable.0"
+      },
+      "BuildObjectIconDataTable": {
+        "ObjectName": "CompositeDataTable'DT_BuildObjectIconDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/MapObject/Building/DT_BuildObjectIconDataTable.0"
+      },
+      "MapObjectSpawnerDataTable": {
+        "ObjectName": "DataTable'DT_MapObjectSpawnerDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/MapObject/DT_MapObjectSpawnerDataTable.0"
+      },
+      "ItemProductDataTable": {
+        "ObjectName": "CompositeDataTable'DT_MapObjectItemProductDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/MapObject/DT_MapObjectItemProductDataTable.0"
+      },
+      "BaseCampLevelDataTable": {
+        "ObjectName": "DataTable'DT_BaseCampLevelData'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/BaseCamp/DT_BaseCampLevelData.0"
+      },
+      "DungeonSpawnAreaDataTable": {
+        "ObjectName": "DataTable'DT_DungeonSpawnAreaDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Dungeon/DT_DungeonSpawnAreaDataTable.0"
+      },
+      "DungeonLevelDataTable": {
+        "ObjectName": "DataTable'DT_DungeonLevelDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Dungeon/DT_DungeonLevelDataTable.0"
+      },
+      "DungeonEnemySpawnerDataTable": {
+        "ObjectName": "DataTable'DT_DungeonEnemySpawnDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Dungeon/DT_DungeonEnemySpawnDataTable.0"
+      },
+      "DungeonItemLotteryDataTable": {
+        "ObjectName": "DataTable'DT_DungeonItemLotteryDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Dungeon/DT_DungeonItemLotteryDataTable.0"
+      },
+      "DungeonRewardSpawnerLotteryDataTable": {
+        "ObjectName": "DataTable'DT_DungeonRewardSpawnerLotteryDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Dungeon/DT_DungeonRewardSpawnerLotteryDataTable.0"
+      },
+      "FieldLotteryNameDataTable": {
+        "ObjectName": "DataTable'DT_FieldLotteryNameDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Common/DT_FieldLotteryNameDataTable.0"
+      },
+      "ItemLotteryDataTable": {
+        "ObjectName": "DataTable'DT_ItemLotteryDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Item/DT_ItemLotteryDataTable.0"
+      },
+      "EmoteNPCLotteryDataTable": {
+        "ObjectName": "DataTable'DT_NPCEmoteLotteryDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Item/DT_NPCEmoteLotteryDataTable.0"
+      },
+      "PlayerStatusRankDataTable": {
+        "ObjectName": "DataTable'DT_PlayerStatusRankMasterDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Player/DT_PlayerStatusRankMasterDataTable.0"
+      },
+      "CharacterUpgradeDataTable": {
+        "ObjectName": "DataTable'DT_CharacterUpgradeMasterDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Character/DT_CharacterUpgradeMasterDataTable.0"
+      },
+      "NoteDataAsset": {
+        "ObjectName": "PalNoteDataAsset'DA_NoteDataAsset'",
+        "ObjectPath": "Pal/Content/Pal/DataAsset/Note/DA_NoteDataAsset.64"
+      },
+      "HelpGuideDataAsset": {
+        "ObjectName": "PalNoteDataAsset'DA_HelpGuideDataAsset'",
+        "ObjectPath": "Pal/Content/Pal/DataAsset/HelpGuide/DA_HelpGuideDataAsset.47"
+      },
+      "AchivementRewardDataAsset": {
+        "ObjectName": "PalAchivementRewardDataAsset'DA_AchivementReward'",
+        "ObjectPath": "Pal/Content/Pal/DataAsset/NPC/DA_AchivementReward.0"
+      },
+      "ItemRequestNPCDataAsset": {
+        "ObjectName": "PalCircumRequestDataAsset'DA_ItemRequest'",
+        "ObjectPath": "Pal/Content/Pal/DataAsset/NPC/DA_ItemRequest.0"
+      },
+      "PalDisplayNPCDataAsset": {
+        "ObjectName": "PalDisplayRequestDataAsset'DA_PalDisplay'",
+        "ObjectPath": "Pal/Content/Pal/DataAsset/NPC/DA_PalDisplay.0"
+      },
+      "LocalizeTextDataTableMap": [
+        {
+          "Key": "EPalLocalizeTextCategory::TechnologyDescription",
+          "Value": {
+            "ObjectName": "CompositeDataTable'DT_TechnologyDescText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_TechnologyDescText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::TechnologyName",
+          "Value": {
+            "ObjectName": "CompositeDataTable'DT_TechnologyNameText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_TechnologyNameText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::SkillName",
+          "Value": {
+            "ObjectName": "CompositeDataTable'DT_SkillNameText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_SkillNameText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::BuildObjectCategory",
+          "Value": {
+            "ObjectName": "DataTable'DT_BuildObjectCategoryText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_BuildObjectCategoryText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::BuildObjectDescription",
+          "Value": {
+            "ObjectName": "CompositeDataTable'DT_BuildObjectDescText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_BuildObjectDescText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::MapObjectName",
+          "Value": {
+            "ObjectName": "CompositeDataTable'DT_MapObjectNameText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_MapObjectNameText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::ItemDescription",
+          "Value": {
+            "ObjectName": "CompositeDataTable'DT_ItemDescriptionText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_ItemDescriptionText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::ItemName",
+          "Value": {
+            "ObjectName": "CompositeDataTable'DT_ItemNameText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_ItemNameText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::PalHumanName",
+          "Value": {
+            "ObjectName": "CompositeDataTable'DT_HumanNameText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_HumanNameText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::PalMonsterName",
+          "Value": {
+            "ObjectName": "CompositeDataTable'DT_PalNameText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_PalNameText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::NpcTalk",
+          "Value": {
+            "ObjectName": "CompositeDataTable'DT_NpcTalkText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_NpcTalkText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::WorldMapRegionAndPlace",
+          "Value": {
+            "ObjectName": "CompositeDataTable'DT_WorldMap_Common_Text'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_WorldMap_Common_Text.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::PrefixName",
+          "Value": {
+            "ObjectName": "CompositeDataTable'DT_NamePrefixText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_NamePrefixText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::UICommon",
+          "Value": {
+            "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::UniqueNPCName",
+          "Value": {
+            "ObjectName": "CompositeDataTable'DT_UniqueNPCText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UniqueNPCText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::BaseCampWorkerEvent",
+          "Value": {
+            "ObjectName": "DataTable'DT_BaseCampWorkerEventText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_BaseCampWorkerEventText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::PalShortDescription",
+          "Value": {
+            "ObjectName": "DataTable'DT_PalShortDescriptionText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_PalShortDescriptionText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::PalFirstActivatedInfo",
+          "Value": {
+            "ObjectName": "DataTable'DT_PalFirstActivatedInfoText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_PalFirstActivatedInfoText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::SkillDesc",
+          "Value": {
+            "ObjectName": "CompositeDataTable'DT_SkillDescText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_SkillDescText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::PalLongDescription",
+          "Value": {
+            "ObjectName": "DataTable'DT_PalLongDescriptionText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_PalLongDescriptionText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::DungeonName",
+          "Value": {
+            "ObjectName": "DataTable'DT_DungeonNameText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_DungeonNameText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::NoteDescription",
+          "Value": {
+            "ObjectName": "DataTable'DT_NoteDescText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_NoteDescText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::TutorialMessage",
+          "Value": {
+            "ObjectName": "DataTable'DT_TutorialMessage_Text'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_TutorialMessage_Text.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::HelpGuide",
+          "Value": {
+            "ObjectName": "DataTable'DT_HelpGuideDescText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_HelpGuideDescText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::MapRespawnPoint",
+          "Value": {
+            "ObjectName": "DataTable'DT_MapRespawnPointInfoText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_MapRespawnPointInfoText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::CharacterTeamMission",
+          "Value": {
+            "ObjectName": "DataTable'DT_CharacterTeamMissionText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_CharacterTeamMissionText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::LabResearch",
+          "Value": {
+            "ObjectName": "DataTable'DT_LabResearchText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_LabResearchText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::FishPondTargetType",
+          "Value": {
+            "ObjectName": "DataTable'DT_FishPondTargetTypeNameText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_FishPondTargetTypeNameText.0"
+          }
+        },
+        {
+          "Key": "EPalLocalizeTextCategory::PartnerSkillAppendText",
+          "Value": {
+            "ObjectName": "DataTable'DT_PartnerSkillAppendText'",
+            "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_PartnerSkillAppendText.0"
+          }
+        }
+      ],
+      "UIInputActionDataTable": {
+        "ObjectName": "DataTable'DT_UIInputAction'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/UI/DT_UIInputAction.0"
+      },
+      "technologyDataSet": {
+        "recipeUnlockDataTable": {
+          "ObjectName": "CompositeDataTable'DT_TechnologyRecipeUnlock'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Technology/DT_TechnologyRecipeUnlock.0"
+        },
+        "technologyNameTable": {
+          "ObjectName": "CompositeDataTable'DT_TechnologyNameText'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_TechnologyNameText.0"
+        },
+        "technologyDescTable": {
+          "ObjectName": "CompositeDataTable'DT_TechnologyDescText'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_TechnologyDescText.0"
+        }
+      },
+      "WorldMapDataTable": {
+        "ObjectName": "DataTable'DT_WorldMapUIData'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/WorldMapUIData/DT_WorldMapUIData.0"
+      },
+      "ItemShopLotteryDataTable": {
+        "ObjectName": "CompositeDataTable'DT_ItemShopLotteryData'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/ItemShop/DT_ItemShopLotteryData.0"
+      },
+      "ItemShopDataTable": {
+        "ObjectName": "CompositeDataTable'DT_ItemShopCreateData'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/ItemShop/DT_ItemShopCreateData.0"
+      },
+      "PalShopDataTable": {
+        "ObjectName": "DataTable'DT_PalShopCreateData'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/PalShop/DT_PalShopCreateData.0"
+      },
+      "SpawnerPlacementDataTable": {
+        "ObjectName": "DataTable'DT_PalSpawnerPlacement'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Spawner/DT_PalSpawnerPlacement.0"
+      },
+      "PalRandomizerDataTable": {
+        "ObjectName": "DataTable'DT_PalRandomizer'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Randomizer/DT_PalRandomizer.0"
+      },
+      "CharacterTeamMissionDataTable": {
+        "ObjectName": "DataTable'DT_CharacterTeamMissionDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/CharacterTeamMission/DT_CharacterTeamMissionDataTable.0"
+      },
+      "CharacterTeamMissionChallengeConditionDataTable": {
+        "ObjectName": "DataTable'DT_CharacterTeamMissionChallengeConditionDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/CharacterTeamMission/DT_CharacterTeamMissionChallengeConditionDataTable.0"
+      },
+      "LabResearchDataTable": {
+        "ObjectName": "DataTable'DT_LabResearchDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Lab/DT_LabResearchDataTable.0"
+      },
+      "WorldMapAreaDataTable": {
+        "ObjectName": "DataTable'DT_WorldMapAreaData'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/WorldMapAreaData/DT_WorldMapAreaData.0"
+      },
+      "BossSpawnerUIDataTable": {
+        "ObjectName": "DataTable'DT_BossSpawnerLoactionData'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/UI/DT_BossSpawnerLoactionData.0"
+      },
+      "FarmSkillFruitsLotteryDataTable": {
+        "ObjectName": "DataTable'DT_MapObjectFarmSkillFruitsLottery'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/MapObject/DT_MapObjectFarmSkillFruitsLottery.0"
+      },
+      "FishShadowDataTable": {
+        "ObjectName": "DataTable'DT_PalFishShadowDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Fishing/DT_PalFishShadowDataTable.0"
+      },
+      "FishingSpotLotteryNameDataTable": {
+        "ObjectName": "DataTable'DT_PalFishingSpotLotteryNameDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Fishing/DT_PalFishingSpotLotteryNameDataTable.0"
+      },
+      "FishingSpotLotteryDataTable": {
+        "ObjectName": "DataTable'DT_PalFishingSpotLotteryDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Fishing/DT_PalFishingSpotLotteryDataTable.0"
+      },
+      "FishPondLotteryNameDataTable": {
+        "ObjectName": "DataTable'DT_PalFishPondLotteryNameDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Fishing/DT_PalFishPondLotteryNameDataTable.0"
+      },
+      "FishPondLotteryDataTable": {
+        "ObjectName": "DataTable'DT_PalFishPondLotteryDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Fishing/DT_PalFishPondLotteryDataTable.0"
+      },
+      "OperatingTablePassiveSkillDataTable": {
+        "ObjectName": "DataTable'DT_OperatingTablePassiveSkillDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/MapObject/DT_OperatingTablePassiveSkillDataTable.0"
+      },
+      "PartnerSkillParameterDataTable": {
+        "ObjectName": "DataTable'DT_PartnerSkillParameter'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/PassiveSkill/DT_PartnerSkillParameter.0"
+      },
+      "ItemPickupDataTable": {
+        "ObjectName": "DataTable'DT_ItemPickupDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Item/DT_ItemPickupDataTable.0"
+      },
+      "CrimeDataTable": {
+        "ObjectName": "DataTable'DT_WorldSecurity_CrimeMasterDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/WorldSecurity/DT_WorldSecurity_CrimeMasterDataTable.0"
+      }
+    }
+  }
+]

@@ -1,0 +1,136 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_PalUITitleMenuButtonType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "5A5C911245E0CF622B41F0B4C684FBA4",
+            "SourceString": "Invalid",
+            "LocalizedString": "Invalid"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "824B98704D782240CA522FA5E9C70840",
+            "SourceString": "StartLocalGame",
+            "LocalizedString": "StartLocalGame"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "2FD5B1DC4F2446F1CE886CACB42AC0FA",
+            "SourceString": "StartMultiGame_JoinServer",
+            "LocalizedString": "StartMultiGame_JoinServer"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "CB75FA194CE85298AA049091A6C76172",
+            "SourceString": "Option",
+            "LocalizedString": "Option"
+          }
+        },
+        {
+          "Key": "NewEnumerator4",
+          "Value": {
+            "Namespace": "",
+            "Key": "8F3473BD49AEDA08BA069690444CB4EE",
+            "SourceString": "ExitGame",
+            "LocalizedString": "ExitGame"
+          }
+        },
+        {
+          "Key": "NewEnumerator5",
+          "Value": {
+            "Namespace": "",
+            "Key": "464555E14D7FE8A48F3611903384EF04",
+            "SourceString": "Tips",
+            "LocalizedString": "Tips"
+          }
+        },
+        {
+          "Key": "NewEnumerator6",
+          "Value": {
+            "Namespace": "",
+            "Key": "6D1C367140A986EDB640538700B61C9E",
+            "SourceString": "StartMultiGame_InviteCode",
+            "LocalizedString": "StartMultiGame_InviteCode"
+          }
+        },
+        {
+          "Key": "NewEnumerator7",
+          "Value": {
+            "Namespace": "",
+            "Key": "1A0E4E0D469F960B8D222D8EB3026E26",
+            "SourceString": "SwitchUser",
+            "LocalizedString": "SwitchUser"
+          }
+        },
+        {
+          "Key": "NewEnumerator8",
+          "Value": {
+            "Namespace": "",
+            "Key": "9137287144D0701BA1F5D2A4345FA51A",
+            "SourceString": "News",
+            "LocalizedString": "News"
+          }
+        },
+        {
+          "Key": "NewEnumerator9",
+          "Value": {
+            "Namespace": "",
+            "Key": "55D4DBCE47FD49303E075C8D30D4CCF8",
+            "SourceString": "Credit",
+            "LocalizedString": "Credit"
+          }
+        },
+        {
+          "Key": "NewEnumerator10",
+          "Value": {
+            "Namespace": "",
+            "Key": "85A24CC14A64D6DCD11E2991134DC697",
+            "SourceString": "EULA",
+            "LocalizedString": "EULA"
+          }
+        },
+        {
+          "Key": "NewEnumerator11",
+          "Value": {
+            "Namespace": "",
+            "Key": "956E780647EC1B9A5747278B4A9E87FA",
+            "SourceString": "GlobalPalStorage",
+            "LocalizedString": "GlobalPalStorage"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_PalUITitleMenuButtonType::NewEnumerator0": 0,
+      "E_PalUITitleMenuButtonType::NewEnumerator1": 1,
+      "E_PalUITitleMenuButtonType::NewEnumerator2": 2,
+      "E_PalUITitleMenuButtonType::NewEnumerator6": 3,
+      "E_PalUITitleMenuButtonType::NewEnumerator3": 4,
+      "E_PalUITitleMenuButtonType::NewEnumerator4": 5,
+      "E_PalUITitleMenuButtonType::NewEnumerator5": 6,
+      "E_PalUITitleMenuButtonType::NewEnumerator7": 7,
+      "E_PalUITitleMenuButtonType::NewEnumerator8": 8,
+      "E_PalUITitleMenuButtonType::NewEnumerator9": 9,
+      "E_PalUITitleMenuButtonType::NewEnumerator10": 10,
+      "E_PalUITitleMenuButtonType::NewEnumerator11": 11,
+      "E_PalUITitleMenuButtonType::E_MAX": 12
+    },
+    "CppForm": "Namespaced"
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_VisualEffect_RecoverHPOnHPThreshold_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_VisualEffect_BuffBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_VisualEffect_RecoverHPOnHPThreshold_C:ExecuteUbergraph_BP_VisualEffect_RecoverHPOnHPThreshold'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_RecoverHPOnHPThreshold.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_VisualEffect_BuffBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_BuffBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_VisualEffect_RecoverHPOnHPThreshold_C:OnBeginVisualEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_RecoverHPOnHPThreshold.3"
+      },
+      {
+        "ObjectName": "Function'BP_VisualEffect_RecoverHPOnHPThreshold_C:ExecuteUbergraph_BP_VisualEffect_RecoverHPOnHPThreshold'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_RecoverHPOnHPThreshold.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_VisualEffect_RecoverHPOnHPThreshold": {
+        "ObjectName": "Function'BP_VisualEffect_RecoverHPOnHPThreshold_C:ExecuteUbergraph_BP_VisualEffect_RecoverHPOnHPThreshold'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_RecoverHPOnHPThreshold.2"
+      },
+      "OnBeginVisualEffect": {
+        "ObjectName": "Function'BP_VisualEffect_RecoverHPOnHPThreshold_C:OnBeginVisualEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_RecoverHPOnHPThreshold.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_VisualEffect_RecoverHPOnHPThreshold_C'Default__BP_VisualEffect_RecoverHPOnHPThreshold_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_RecoverHPOnHPThreshold.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_VisualEffect_RecoverHPOnHPThreshold_C",
+    "Name": "Default__BP_VisualEffect_RecoverHPOnHPThreshold_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_RecoverHPOnHPThreshold.BP_VisualEffect_RecoverHPOnHPThreshold_C'",
+    "Template": {
+      "ObjectName": "BP_VisualEffect_BuffBase_C'Default__BP_VisualEffect_BuffBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "NiagaraEffect": {
+        "ObjectName": "NiagaraSystem'NS_Healing'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Common/StatusEffect/Healing/NS_Healing.42"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_VisualEffect_RecoverHPOnHPThreshold",
+    "Outer": "BP_VisualEffect_RecoverHPOnHPThreshold_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetBoneNameFromEHumanBone_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBeginVisualEffect",
+    "Outer": "BP_VisualEffect_RecoverHPOnHPThreshold_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_VisualEffect_BuffBase_C:OnBeginVisualEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_BuffBase.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_VisualEffect_BuffBase_C:OnBeginVisualEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_BuffBase.4"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  }
+]

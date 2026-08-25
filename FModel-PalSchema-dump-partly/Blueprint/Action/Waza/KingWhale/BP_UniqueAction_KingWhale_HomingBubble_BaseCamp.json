@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueAction_KingWhale_HomingBubble_BaseCamp_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueAction_KingWhale_HomingBubble_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_HomingBubble.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueAction_KingWhale_HomingBubble_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_HomingBubble.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueAction_KingWhale_HomingBubble_BaseCamp_C'Default__BP_UniqueAction_KingWhale_HomingBubble_BaseCamp_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_HomingBubble_BaseCamp.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueAction_KingWhale_HomingBubble_BaseCamp_C",
+    "Name": "Default__BP_UniqueAction_KingWhale_HomingBubble_BaseCamp_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_HomingBubble_BaseCamp.BP_UniqueAction_KingWhale_HomingBubble_BaseCamp_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueAction_KingWhale_HomingBubble_C'Default__BP_UniqueAction_KingWhale_HomingBubble_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/KingWhale/BP_UniqueAction_KingWhale_HomingBubble.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BubbleManagerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_KingWhale_HomingBubble_BubbleManager_BaseCamp_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/KingWhale_HomingBubble/BP_UniqueSkillEffect_KingWhale_HomingBubble_BubbleManager_BaseCamp.0"
+      }
+    }
+  }
+]

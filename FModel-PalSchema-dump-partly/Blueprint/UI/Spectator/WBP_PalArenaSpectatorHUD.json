@@ -1,0 +1,2312 @@
+[
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_PlayerName",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IsAutoAdjustScale": true,
+      "MaxWidth": 430,
+      "Text": {
+        "Namespace": "",
+        "Key": "2F2D3D4D48E8747D3C08E3A455204E23",
+        "SourceString": "aaaa",
+        "LocalizedString": "aaaa"
+      },
+      "Font": {
+        "TypefaceFontName": "Medium",
+        "Size": 18
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.SizeBox_133.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.40"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_FocusGuide",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.Canvas_FocusGuide.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.5"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.Canvas_FocusGuide.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.4"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PalSpectator.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_PalSpectator",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PalSpectator.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PalSpectator.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PalSpectator.CanvasPanelSlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_PlayerName",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PlayerName.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PlayerName.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PlayerName.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.11"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PalSpectator.CanvasPanelSlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.8"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_FocusGuide",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_PalArenaSpectatorHUD_C:WidgetTree.Canvas_FocusGuide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.1"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'WBP_PalArenaSpectatorHUD_C:WidgetTree.VerticalBox_107'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.41"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Canvas_FocusGuide",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -10.0,
+          "Top": -6.0,
+          "Right": -10.0,
+          "Bottom": -6.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_PalArenaSpectatorHUD_C:WidgetTree.Canvas_FocusGuide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.1"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_PalSpectator",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PalSpectator'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.2"
+      },
+      "Content": {
+        "ObjectName": "WBP_Ingame_Chat_Wrapper_C'WBP_PalArenaSpectatorHUD_C:WidgetTree.WBP_Ingame_Chat_Wrapper'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_PalSpectator",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -40.0,
+          "Top": -300.0,
+          "Right": 300.0,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PalSpectator'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.2"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_PalArenaSpectatorHUD_C:WidgetTree.Canvas_FocusGuide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.1"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_PalSpectator",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PalSpectator'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.2"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PlayerName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_PlayerName",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -20.0,
+          "Right": -20.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PlayerName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.3"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_PalArenaSpectatorHUD_C:WidgetTree.Image_Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_PlayerName",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -20.0,
+          "Right": -20.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PlayerName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.3"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_PalArenaSpectatorHUD_C:WidgetTree.Image_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_PlayerName",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PlayerName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.3"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_PalArenaSpectatorHUD_C:WidgetTree.SizeBox_133'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.39"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "EndSpectate",
+    "Outer": "WBP_PalArenaSpectatorHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetArenaWorldSubsystem_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalArenaWorldSubsystem'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_PalArenaSpectatorHUD",
+    "Outer": "WBP_PalArenaSpectatorHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_True_if_break_was_hit_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetArenaWorldSubsystem_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalArenaWorldSubsystem'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalPlayerSequencer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalArenaSequencer'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetInArenaPlayerHandles_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetInArenaPlayerHandles_ReturnValue",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'PalIndividualCharacterHandle'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalIndividualCharacterHandle'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_TryGetIndividualActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_Player_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_GetPlayerIndex_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalArenaPlayerIndex'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalArenaPlayerIndex'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetNickNameWithOnlineID_OutName",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "On Spectate Next Player",
+    "Outer": "WBP_PalArenaSpectatorHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "PlayerName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "IndexType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EPalArenaPlayerIndex'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalArenaPlayerIndex'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Temp_struct_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Temp_struct_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Temp_struct_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Temp_struct_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Select_Default_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnClosed",
+    "Outer": "WBP_PalArenaSpectatorHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUserWidget:OnClosed'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetup",
+    "Outer": "WBP_PalArenaSpectatorHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUserWidget:OnSetup'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RegisterInputActions",
+    "Outer": "WBP_PalArenaSpectatorHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnInputAction__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnInputAction__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RegisterActionBinding_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RegisterActionBinding_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnInputAction__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RegisterActionBinding_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnInputAction__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_4",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnInputAction__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RegisterActionBinding_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RegisterActionBinding_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RequestOpenChat",
+    "Outer": "WBP_PalArenaSpectatorHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetUILayerVisibility",
+    "Outer": "WBP_PalArenaSpectatorHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bIsHide",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "LayerTagName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'GameplayTag'",
+          "ObjectPath": "/Script/GameplayTags"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetHUDService_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDService'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "CallFunc_GetObjectClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalArenaSpectatorHUD_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.52"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetClassDisplayName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_Conv_StringToName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Spectate TopDown",
+    "Outer": "WBP_PalArenaSpectatorHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetArenaWorldSubsystem_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalArenaWorldSubsystem'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalPlayerSequencer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalArenaSequencer'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetArenaInstanceModel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalArenaInstanceModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetArenaLevelInstance_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalArenaLevelInstance'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalPalPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerController'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SpectateFreely",
+    "Outer": "WBP_PalArenaSpectatorHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalPalPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerController'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SpectateNextPlayer",
+    "Outer": "WBP_PalArenaSpectatorHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalPalPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerController'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_SpectateNextPlayer_PlayerIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalArenaPlayerIndex'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalArenaPlayerIndex'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpectateNextPlayer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetNickNameWithOnlineID_OutName",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UnRegisterInputActions",
+    "Outer": "WBP_PalArenaSpectatorHUD_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.3,
+            "Hex": "4CFFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_LineFrame_0'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Common/MI_UI_LineFrame_0.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame.OverlaySlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.34"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 2.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 1.0,
+        "B": 0.283149,
+        "A": 1.0,
+        "Hex": "00FF91"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PlayerName.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.10"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_77",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.8,
+            "Hex": "CCFFFFFF"
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.001518,
+        "G": 0.006512,
+        "B": 0.01033,
+        "A": 1.0,
+        "Hex": "05131A"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.33"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Base",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 40.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.8,
+            "Hex": "CCFFFFFF"
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.003677,
+        "G": 0.132868,
+        "B": 0.049707,
+        "A": 1.0,
+        "Hex": "0C663F"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PlayerName.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.9"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Dot",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 2.0,
+          "Y": 2.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        }
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame.OverlaySlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.35"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Dot_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 2.0,
+          "Y": 2.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        }
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame.OverlaySlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.36"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Dot_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 2.0,
+          "Y": 2.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        }
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame.OverlaySlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.37"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Dot_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 2.0,
+          "Y": 2.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        }
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame.OverlaySlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.38"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_Frame",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.33"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame.OverlaySlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.34"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame.OverlaySlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.35"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame.OverlaySlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.36"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame.OverlaySlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.37"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame.OverlaySlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.38"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.Canvas_FocusGuide.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.5"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_Frame",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.32"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_PalArenaSpectatorHUD_C:WidgetTree.Image_77'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.26"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_Frame",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.32"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_PalArenaSpectatorHUD_C:WidgetTree.Image'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.24"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_3",
+    "Outer": "Overlay_Frame",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Overlay'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.32"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_PalArenaSpectatorHUD_C:WidgetTree.Image_Dot'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.28"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_4",
+    "Outer": "Overlay_Frame",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.32"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_PalArenaSpectatorHUD_C:WidgetTree.Image_Dot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.29"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_5",
+    "Outer": "Overlay_Frame",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.32"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_PalArenaSpectatorHUD_C:WidgetTree.Image_Dot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.30"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_6",
+    "Outer": "Overlay_Frame",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_PalArenaSpectatorHUD_C:WidgetTree.Overlay_Frame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.32"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_PalArenaSpectatorHUD_C:WidgetTree.Image_Dot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.31"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_133",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MinDesiredWidth": 560.0,
+      "bOverride_MinDesiredWidth": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.SizeBox_133.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.40"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PlayerName.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.11"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_133",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_PalArenaSpectatorHUD_C:WidgetTree.SizeBox_133'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.39"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_PalArenaSpectatorHUD_C:WidgetTree.BP_PalTextBlock_PlayerName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.0"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_107",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.VerticalBox_107.VerticalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.42"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.VerticalBox_107.VerticalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.43"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.VerticalBox_107.VerticalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.44"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.VerticalBox_107.VerticalBoxSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.45"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.Canvas_FocusGuide.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.4"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_107",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_PalArenaSpectatorHUD_C:WidgetTree.VerticalBox_107'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.41"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalKeyGuideIconAndText_C'WBP_PalArenaSpectatorHUD_C:WidgetTree.WBP_PalKeyGuideIconAndText_Player'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.50"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_107",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Top": 10.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_PalArenaSpectatorHUD_C:WidgetTree.VerticalBox_107'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.41"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalKeyGuideIconAndText_C'WBP_PalArenaSpectatorHUD_C:WidgetTree.WBP_PalKeyGuideIconAndText_Free'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.49"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_107",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Top": 10.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_PalArenaSpectatorHUD_C:WidgetTree.VerticalBox_107'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.41"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalKeyGuideIconAndText_C'WBP_PalArenaSpectatorHUD_C:WidgetTree.WBP_PalKeyGuideIconAndText_TopDown'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.51"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_3",
+    "Outer": "VerticalBox_107",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Top": 10.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_PalArenaSpectatorHUD_C:WidgetTree.VerticalBox_107'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.41"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalKeyGuideIconAndText_C'WBP_PalArenaSpectatorHUD_C:WidgetTree.WBP_PalKeyGuideIconAndText_Exit'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.48"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Ingame_Chat_Wrapper_C",
+    "Name": "WBP_Ingame_Chat_Wrapper",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Chat/WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C'",
+    "Template": {
+      "ObjectName": "WBP_Ingame_Chat_Wrapper_C'Default__WBP_Ingame_Chat_Wrapper_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Chat/WBP_Ingame_Chat_Wrapper.13"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PalSpectator.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.6"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalArenaSpectatorHUD_C",
+    "Name": "Default__WBP_PalArenaSpectatorHUD_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ActionNameEscape": {
+        "Key": "ArenaSpectate_Exit"
+      },
+      "ActionNameSpectateNextPlayer": {
+        "Key": "ArenaSpectate_NextPlayer"
+      },
+      "ActionNameSpectateFreely": {
+        "Key": "ArenaSpectate_SpectateFreely"
+      },
+      "DelayedSetupTimerHandle": {
+        "Handle": 0
+      },
+      "ActionNameOpenChat": {
+        "Key": "ChatOpen"
+      },
+      "BindDataActionNameEscape": {},
+      "BindDataActionNameOpenChat": {},
+      "BinDataActionNameSpectateNextPlayer": {},
+      "BindDataActionNameSpectateFreely": {},
+      "ActionNameSpectateTopDown": {
+        "Key": "ArenaSpectate_TopDown"
+      },
+      "BindDataActionNameTopDown": {},
+      "bAutoActivate": true,
+      "bIsFocusable": true,
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_PalKeyGuideIconAndText_C",
+    "Name": "WBP_PalKeyGuideIconAndText_Exit",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIconAndText.WBP_PalKeyGuideIconAndText_C'",
+    "Template": {
+      "ObjectName": "WBP_PalKeyGuideIconAndText_C'Default__WBP_PalKeyGuideIconAndText_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIconAndText.9"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindingActionName": {
+        "Key": "ArenaSpectate_Exit"
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.VerticalBox_107.VerticalBoxSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.45"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalKeyGuideIconAndText_C",
+    "Name": "WBP_PalKeyGuideIconAndText_Free",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIconAndText.WBP_PalKeyGuideIconAndText_C'",
+    "Template": {
+      "ObjectName": "WBP_PalKeyGuideIconAndText_C'Default__WBP_PalKeyGuideIconAndText_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIconAndText.9"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindingActionName": {
+        "Key": "ArenaSpectate_SpectateFreely"
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.VerticalBox_107.VerticalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.43"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalKeyGuideIconAndText_C",
+    "Name": "WBP_PalKeyGuideIconAndText_Player",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIconAndText.WBP_PalKeyGuideIconAndText_C'",
+    "Template": {
+      "ObjectName": "WBP_PalKeyGuideIconAndText_C'Default__WBP_PalKeyGuideIconAndText_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIconAndText.9"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindingActionName": {
+        "Key": "ArenaSpectate_NextPlayer"
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.VerticalBox_107.VerticalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.42"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PalKeyGuideIconAndText_C",
+    "Name": "WBP_PalKeyGuideIconAndText_TopDown",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIconAndText.WBP_PalKeyGuideIconAndText_C'",
+    "Template": {
+      "ObjectName": "WBP_PalKeyGuideIconAndText_C'Default__WBP_PalKeyGuideIconAndText_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIconAndText.9"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindingActionName": {
+        "Key": "ArenaSpectate_TopDown"
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_PalArenaSpectatorHUD_C:WidgetTree.VerticalBox_107.VerticalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.44"
+      }
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_PalArenaSpectatorHUD_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_PalArenaSpectatorHUD_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.53"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:ExecuteUbergraph_WBP_PalArenaSpectatorHUD'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.13"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidgetStackableUI'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:On Spectate Next Player'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.14"
+      },
+      {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:SetUILayerVisibility'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.19"
+      },
+      {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:UnRegisterInputActions'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.23"
+      },
+      {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:RegisterInputActions'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.17"
+      },
+      {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:RequestOpenChat'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.18"
+      },
+      {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:Spectate TopDown'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.20"
+      },
+      {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:SpectateFreely'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.21"
+      },
+      {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:SpectateNextPlayer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.22"
+      },
+      {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:EndSpectate'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.12"
+      },
+      {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.16"
+      },
+      {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:OnClosed'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.15"
+      },
+      {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:ExecuteUbergraph_WBP_PalArenaSpectatorHUD'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.13"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalTextBlock_PlayerName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CanvasPanel_PlayerName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Base",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_Ingame_Chat_Wrapper",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Ingame_Chat_Wrapper_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/Chat/WBP_Ingame_Chat_Wrapper.14"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalKeyGuideIconAndText_Exit",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalKeyGuideIconAndText_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIconAndText.10"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalKeyGuideIconAndText_Free",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalKeyGuideIconAndText_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIconAndText.10"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalKeyGuideIconAndText_Player",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalKeyGuideIconAndText_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIconAndText.10"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalKeyGuideIconAndText_TopDown",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalKeyGuideIconAndText_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PalKeyGuideIconAndText.10"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ActionNameEscape",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | BlueprintReadOnly | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDataTableRowName_UIInputAction'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ActionNameSpectateNextPlayer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | BlueprintReadOnly | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDataTableRowName_UIInputAction'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ActionNameSpectateFreely",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | BlueprintReadOnly | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDataTableRowName_UIInputAction'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "DelayedSetupTimerHandle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ActionNameOpenChat",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDataTableRowName_UIInputAction'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "BindDataActionNameEscape",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "BindDataActionNameOpenChat",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "BinDataActionNameSpectateNextPlayer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "BindDataActionNameSpectateFreely",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ActionNameSpectateTopDown",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | BlueprintReadOnly | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDataTableRowName_UIInputAction'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "BindDataActionNameTopDown",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalUIActionBindData'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_PalArenaSpectatorHUD": {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:ExecuteUbergraph_WBP_PalArenaSpectatorHUD'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.13"
+      },
+      "OnClosed": {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:OnClosed'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.15"
+      },
+      "OnSetup": {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.16"
+      },
+      "EndSpectate": {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:EndSpectate'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.12"
+      },
+      "SpectateNextPlayer": {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:SpectateNextPlayer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.22"
+      },
+      "SpectateFreely": {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:SpectateFreely'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.21"
+      },
+      "Spectate TopDown": {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:Spectate TopDown'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.20"
+      },
+      "RequestOpenChat": {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:RequestOpenChat'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.18"
+      },
+      "RegisterInputActions": {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:RegisterInputActions'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.17"
+      },
+      "UnRegisterInputActions": {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:UnRegisterInputActions'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.23"
+      },
+      "SetUILayerVisibility": {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:SetUILayerVisibility'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.19"
+      },
+      "On Spectate Next Player": {
+        "ObjectName": "Function'WBP_PalArenaSpectatorHUD_C:On Spectate Next Player'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.14"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_PalArenaSpectatorHUD_C'Default__WBP_PalArenaSpectatorHUD_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.47"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_PalArenaSpectatorHUD_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_PalArenaSpectatorHUD_C:WidgetTree.CanvasPanel_PalSpectator'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Spectator/WBP_PalArenaSpectatorHUD.2"
+      }
+    }
+  }
+]

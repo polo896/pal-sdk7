@@ -1,0 +1,66 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "ENum_CombatPhase_WorldTreeGYM",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "73182103451E7C739D9B3E9445D8985C",
+            "SourceString": "None",
+            "LocalizedString": "None"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "59F82081497178A71A5AE5BC9DDF7B08",
+            "SourceString": "Normal",
+            "LocalizedString": "Normal"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "C9FAE6C5494DEE50AC160DA5AF9E411A",
+            "SourceString": "Normal_Teleportable",
+            "LocalizedString": "Normal_Teleportable"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "78CD0F774E326475B33D719120B746B7",
+            "SourceString": "Form2",
+            "LocalizedString": "Form2"
+          }
+        },
+        {
+          "Key": "NewEnumerator4",
+          "Value": {
+            "Namespace": "",
+            "Key": "AD79504E47DAC5D560DE168FF347F34A",
+            "SourceString": "Form2_DPSCheck",
+            "LocalizedString": "Form2_DPSCheck"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "ENum_CombatPhase_WorldTreeGYM::NewEnumerator0": 0,
+      "ENum_CombatPhase_WorldTreeGYM::NewEnumerator1": 1,
+      "ENum_CombatPhase_WorldTreeGYM::NewEnumerator2": 2,
+      "ENum_CombatPhase_WorldTreeGYM::NewEnumerator3": 3,
+      "ENum_CombatPhase_WorldTreeGYM::NewEnumerator4": 4,
+      "ENum_CombatPhase_WorldTreeGYM::ENum_CombatPhase_MAX": 5
+    },
+    "CppForm": "Namespaced"
+  }
+]

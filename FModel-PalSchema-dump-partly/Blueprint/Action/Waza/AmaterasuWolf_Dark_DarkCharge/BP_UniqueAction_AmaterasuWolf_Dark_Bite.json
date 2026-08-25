@@ -1,0 +1,47 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueAction_AmaterasuWolf_Dark_Bite_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Kamitsuki_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BP_Action_Kamitsuki_Base.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Kamitsuki_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BP_Action_Kamitsuki_Base.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueAction_AmaterasuWolf_Dark_Bite_C'Default__BP_UniqueAction_AmaterasuWolf_Dark_Bite_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/AmaterasuWolf_Dark_DarkCharge/BP_UniqueAction_AmaterasuWolf_Dark_Bite.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueAction_AmaterasuWolf_Dark_Bite_C",
+    "Name": "Default__BP_UniqueAction_AmaterasuWolf_Dark_Bite_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/AmaterasuWolf_Dark_DarkCharge/BP_UniqueAction_AmaterasuWolf_Dark_Bite.BP_UniqueAction_AmaterasuWolf_Dark_Bite_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Kamitsuki_Base_C'Default__BP_Action_Kamitsuki_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BP_Action_Kamitsuki_Base.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Montage_Attack": {
+        "ObjectName": "AnimMontage'AM_AmaterasuWolf_Kamitsuki'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/AmaterasuWolf/AM_AmaterasuWolf_Kamitsuki.0"
+      },
+      "WazaID": "EPalWazaID::Unique_AmaterasuWolf_Dark_Bite"
+    }
+  }
+]

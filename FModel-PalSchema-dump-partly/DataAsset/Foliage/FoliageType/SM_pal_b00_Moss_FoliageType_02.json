@@ -1,0 +1,63 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b00_Moss_FoliageType_02",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_Moss_c_1_02'",
+        "ObjectPath": "Pal/Content/Others/NorthernIsle/Meshes/Plants/SM_Moss_c_1_02.2"
+      },
+      "UpdateGuid": "8653453B-4A459045-CA455C8F-5D0041B2",
+      "Density": 5.0,
+      "Radius": 20.0,
+      "bSingleInstanceModeOverrideRadius": true,
+      "SingleInstanceModeRadius": 20.0,
+      "ScaleX": {
+        "Min": 3.0,
+        "Max": 6.0
+      },
+      "ZOffset": {
+        "Min": -5.0,
+        "Max": -5.0
+      },
+      "AlignToNormal": false,
+      "GroundSlopeAngle": {
+        "Max": 77.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": -0.052757263,
+          "Y": -0.72418547,
+          "Z": 3.4126816
+        },
+        "BoxExtent": {
+          "X": 17.226627,
+          "Y": 14.799721,
+          "Z": 5.272011
+        },
+        "SphereRadius": 19.169529596806992
+      },
+      "LowBoundOriginRadius": {
+        "X": -0.1788764,
+        "Y": -1.0225444,
+        "Z": 18.332117
+      },
+      "CullDistance": {
+        "Max": 4000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "ReapplyScaling": true,
+      "ReapplyScaleX": true,
+      "bEnableDensityScaling": true
+    }
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "Type": "CurveFloat",
+    "Name": "C_CharacterTeamMission_TimeRateByStrengthRate",
+    "Class": "UScriptClass'CurveFloat'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 1.0,
+            "Value": 0.9999999,
+            "ArriveTangent": -0.39588654,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -0.39588654,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 5.0,
+            "Value": 0.25,
+            "ArriveTangent": -0.059745934,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -0.059745934,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 10.0,
+            "Value": 0.100000024,
+            "ArriveTangent": -0.0035032902,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -0.0035032902,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  }
+]

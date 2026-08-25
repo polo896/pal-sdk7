@@ -1,0 +1,92 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueAction_GrassMinotaur_BullRush_lower_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueAction_GrassMinotaur_BullRush_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueAction_GrassMinotaur_BullRush_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_UniqueAction_GrassMinotaur_BullRush_lower_C:GetLoopClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush_lower.2"
+      }
+    ],
+    "FuncMap": {
+      "GetLoopClass": {
+        "ObjectName": "Function'BP_UniqueAction_GrassMinotaur_BullRush_lower_C:GetLoopClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush_lower.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueAction_GrassMinotaur_BullRush_lower_C'Default__BP_UniqueAction_GrassMinotaur_BullRush_lower_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush_lower.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueAction_GrassMinotaur_BullRush_lower_C",
+    "Name": "Default__BP_UniqueAction_GrassMinotaur_BullRush_lower_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush_lower.BP_UniqueAction_GrassMinotaur_BullRush_lower_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueAction_GrassMinotaur_BullRush_C'Default__BP_UniqueAction_GrassMinotaur_BullRush_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkillModuleClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_GrassMinotaur_Tackle_Lower_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueSkillModule_GrassMinotaur_Tackle_Lower.0"
+      },
+      "WazaID": "EPalWazaID::Unique_GrassMinotaur_BullRush_Lower"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetLoopClass",
+    "Outer": "BP_UniqueAction_GrassMinotaur_BullRush_lower_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_UniqueAction_GrassMinotaur_BullRush_C:GetLoopClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_UniqueAction_GrassMinotaur_BullRush_C:GetLoopClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GrassMinotaur/BP_UniqueAction_GrassMinotaur_BullRush.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "Class",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_GrassMinotaur_BullRush_Loop_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/GrassMinotaur_BullRush/BP_UniqueSkillEffect_GrassMinotaur_BullRush_Loop.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

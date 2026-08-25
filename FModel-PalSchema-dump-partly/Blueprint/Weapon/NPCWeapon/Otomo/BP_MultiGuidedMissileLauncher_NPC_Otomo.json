@@ -1,0 +1,403 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MultiGuidedMissileLauncher_NPC_Otomo_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_MultiGuidedMissileLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_MultiGuidedMissileLauncher.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.12"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.9"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:ExecuteUbergraph_BP_MultiGuidedMissileLauncher_NPC_Otomo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_MultiGuidedMissileLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_MultiGuidedMissileLauncher.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:GetShootInterval'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.5"
+      },
+      {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:GetBulletClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.3"
+      },
+      {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:GetNPCWeaponDamage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.4"
+      },
+      {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:GetWeaponDamage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.6"
+      },
+      {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:OnPullTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.7"
+      },
+      {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:OnReleaseTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.8"
+      },
+      {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:ExecuteUbergraph_BP_MultiGuidedMissileLauncher_NPC_Otomo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_MultiGuidedMissileLauncher_NPC_Otomo": {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:ExecuteUbergraph_BP_MultiGuidedMissileLauncher_NPC_Otomo'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.2"
+      },
+      "OnReleaseTrigger": {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:OnReleaseTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.8"
+      },
+      "OnPullTrigger": {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:OnPullTrigger'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.7"
+      },
+      "GetWeaponDamage": {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:GetWeaponDamage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.6"
+      },
+      "GetNPCWeaponDamage": {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:GetNPCWeaponDamage'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.4"
+      },
+      "GetBulletClass": {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:GetBulletClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.3"
+      },
+      "GetShootInterval": {
+        "ObjectName": "Function'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:GetShootInterval'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MultiGuidedMissileLauncher_NPC_Otomo_C'Default__BP_MultiGuidedMissileLauncher_NPC_Otomo_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MultiGuidedMissileLauncher_NPC_Otomo_C",
+    "Name": "Default__BP_MultiGuidedMissileLauncher_NPC_Otomo_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.BP_MultiGuidedMissileLauncher_NPC_Otomo_C'",
+    "Template": {
+      "ObjectName": "BP_MultiGuidedMissileLauncher_C'Default__BP_MultiGuidedMissileLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_MultiGuidedMissileLauncher.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "IsUnnecessaryDynamicData": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_MultiGuidedMissileLauncher_NPC_Otomo",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_Otomo_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bCanShootOnRelease",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_GetShootInterval_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_GetInitializeInterval_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_Time_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_InitialStartDelay_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetBulletClass",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_Otomo_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_GuidedMissileLauncher_C:GetBulletClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GuidedMissileLauncher.4"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_GuidedMissileLauncher_C:GetBulletClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_GuidedMissileLauncher.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "NewParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'PalBullet'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetNPCWeaponDamage",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_Otomo_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalWeaponBase:GetNPCWeaponDamage'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetShootInterval",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_Otomo_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_RocketLauncher_C:GetShootInterval'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.16"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_RocketLauncher_C:GetShootInterval'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_RocketLauncher.16"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Time",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetWeaponDamage",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_Otomo_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalWeaponBase:GetWeaponDamage'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetNPCWeaponDamage_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPullTrigger",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_Otomo_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_MultiGuidedMissileLauncher_C:OnPullTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_MultiGuidedMissileLauncher.10"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_MultiGuidedMissileLauncher_C:OnPullTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_MultiGuidedMissileLauncher.10"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnReleaseTrigger",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_Otomo_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:OnReleaseTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.30"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AssaultRifleBase_C:OnReleaseTrigger'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/BP_AssaultRifleBase.30"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bCanShootOnRelease",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_Otomo_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_Otomo_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.10"
+      },
+      "VariableGuid": "2F798041-4E2C0B5A-188EF3AE-9F504664",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_MultiGuidedMissileLauncher_NPC_Otomo_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_MultiGuidedMissileLauncher_NPC_Otomo_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/NPCWeapon/Otomo/BP_MultiGuidedMissileLauncher_NPC_Otomo.11"
+      }
+    }
+  }
+]

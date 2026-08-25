@@ -1,0 +1,164 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalBaseCampManager_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalBaseCampManager'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalBaseCampManager_C'Default__BP_PalBaseCampManager_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalBaseCampManager.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalBaseCampManager_C",
+    "Name": "Default__BP_PalBaseCampManager_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalBaseCampManager.BP_PalBaseCampManager_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BaseCampAIControllerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MonsterAIController_BaseCamp_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_BaseCamp.0"
+      },
+      "BaseCampAIControllerOverridePerTribe": [
+        {
+          "Key": "EPalTribeID::KingWhale",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_MonsterAIController_BaseCamp_KingWhale_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_BaseCamp_KingWhale.0"
+          }
+        }
+      ],
+      "BaseCampCompositeOverridePerTribe": [
+        {
+          "Key": "EPalTribeID::KingWhale",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AIActionComposite_BaseCamp_KingWhale_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/BaseCamp/BP_AIActionComposite_BaseCamp_KingWhale.0"
+          }
+        }
+      ],
+      "BaseCampWorkerLimitPerTribe": [
+        {
+          "Key": "EPalTribeID::KingWhale",
+          "Value": 1
+        }
+      ],
+      "BaseCampInvasionDetectorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_BaseCampInvasionDetector_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BaseCamp/BP_BaseCampInvasionDetector.0"
+      },
+      "WorkerCapacityNumDefault": 30,
+      "WorkableBoundShapeName": "WorkableBounds",
+      "WarningSanityValueTextId": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "BASE_CAMP_WARNING_CHARACTER_SANITY"
+      },
+      "WorkerEventMasterDataTable": {
+        "ObjectName": "DataTable'DT_BaseCampWorkerEventDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/BaseCamp/DT_BaseCampWorkerEventDataTable.0"
+      },
+      "WorkerSickMasterDataTable": {
+        "ObjectName": "DataTable'DT_BaseCampWorkerSickDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/BaseCamp/DT_BaseCampWorkerSickDataTable.0"
+      },
+      "BaseCampMissionDataTable": {
+        "ObjectName": "DataTable'DT_BaseCampTask'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/BaseCamp/DT_BaseCampTask.0"
+      },
+      "DefenseAIActionArray": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_AIAction_BaseCampDefenseWait_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/BaseCamp/Defense/BP_AIAction_BaseCampDefenseWait.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_AIAction_BaseCampDefenseGunner_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/BaseCamp/Defense/BP_AIAction_BaseCampDefenseGunner.0"
+        }
+      ],
+      "BaseCampSignificanceInfoList": [
+        {
+          "DistanceInRangeFromPlayer": -1.0,
+          "TickInterval": 0.1,
+          "bMergeDropItems": false,
+          "bUpdateSimple": false
+        },
+        {
+          "DistanceInRangeFromPlayer": 500.0,
+          "TickInterval": 1.5,
+          "bMergeDropItems": false,
+          "bUpdateSimple": false
+        },
+        {
+          "DistanceInRangeFromPlayer": 2500.0,
+          "TickInterval": 2.5,
+          "bMergeDropItems": false,
+          "bUpdateSimple": false
+        },
+        {
+          "DistanceInRangeFromPlayer": 4500.0,
+          "TickInterval": 5.0,
+          "bMergeDropItems": false,
+          "bUpdateSimple": false
+        },
+        {
+          "DistanceInRangeFromPlayer": 6500.0,
+          "TickInterval": 10.0,
+          "bMergeDropItems": true,
+          "bUpdateSimple": true
+        }
+      ],
+      "SpawnPointInBaseCampPointSubLocalTransform": {
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0,
+          "W": 6.123234E-17,
+          "IsNormalized": true,
+          "Size": 1.0,
+          "SizeSquared": 1.0
+        },
+        "Translation": {
+          "X": 160.0,
+          "Y": 0.0,
+          "Z": 345.0
+        }
+      },
+      "bShouldCreate": true,
+      "PrerequisiteWorldSubsystemList": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalCharacterManager_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalCharacterManager.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalCharacterContainerManager_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalCharacterContainerManager.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalWorkProgressManager_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalWorkProgressManager.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalMapObjectManager_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalMapObjectManager.0"
+        }
+      ]
+    }
+  }
+]

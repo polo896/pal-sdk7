@@ -1,0 +1,260 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus",
+    "Outer": "WBP_WorldHUD_MapObjectWorkAssignStatus_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetup",
+    "Outer": "WBP_WorldHUD_MapObjectWorkAssignStatus_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalUserWidget:OnSetup'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReadyUIModel",
+    "Outer": "WBP_WorldHUD_MapObjectWorkAssignStatus_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetParam_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalHUDDispatchParameterBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPal_UIMap_Object_Status_Indicator_Parameter_Work_Slot_Info",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalUIMapObjectStatusIndicatorParameterWorkSlotInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetUIModel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalWorkSlotHUDInfoUIModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetupUI",
+    "Outer": "WBP_WorldHUD_MapObjectWorkAssignStatus_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_GetRequiredWorkSuitability_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EPalWorkSuitability'",
+          "ObjectPath": "/Script/Pal"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'EPalWorkSuitability'",
+            "ObjectPath": "/Script/Pal"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetRequiredRank_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WBP_PalWork_AccessPoint_C",
+    "Name": "WBP_PalWork_AccessPoint",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/CampInfo/WBP_PalWork_AccessPoint.WBP_PalWork_AccessPoint_C'",
+    "Template": {
+      "ObjectName": "WBP_PalWork_AccessPoint_C'Default__WBP_PalWork_AccessPoint_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/CampInfo/WBP_PalWork_AccessPoint.34"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "WBP_WorldHUD_MapObjectWorkAssignStatus_C",
+    "Name": "Default__WBP_WorldHUD_MapObjectWorkAssignStatus_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/WorkAssign/WBP_WorldHUD_MapObjectWorkAssignStatus.WBP_WorldHUD_MapObjectWorkAssignStatus_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_WorldHUD_MapObjectWorkAssignStatus_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_WorldHUD_MapObjectWorkAssignStatus_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkAssign/WBP_WorldHUD_MapObjectWorkAssignStatus.7"
+      },
+      "bClassRequiresNativeTick": true,
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_WorldHUD_MapObjectWorkAssignStatus_C:ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkAssign/WBP_WorldHUD_MapObjectWorkAssignStatus.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUIMapObjectStatusIndicatorBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_WorldHUD_MapObjectWorkAssignStatus_C:SetupUI'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkAssign/WBP_WorldHUD_MapObjectWorkAssignStatus.3"
+      },
+      {
+        "ObjectName": "Function'WBP_WorldHUD_MapObjectWorkAssignStatus_C:ReadyUIModel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkAssign/WBP_WorldHUD_MapObjectWorkAssignStatus.2"
+      },
+      {
+        "ObjectName": "Function'WBP_WorldHUD_MapObjectWorkAssignStatus_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkAssign/WBP_WorldHUD_MapObjectWorkAssignStatus.1"
+      },
+      {
+        "ObjectName": "Function'WBP_WorldHUD_MapObjectWorkAssignStatus_C:ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkAssign/WBP_WorldHUD_MapObjectWorkAssignStatus.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalWork_AccessPoint",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalWork_AccessPoint_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/InGame/CampInfo/WBP_PalWork_AccessPoint.35"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "UIModel",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'PalWorkSlotHUDInfoUIModel'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus": {
+        "ObjectName": "Function'WBP_WorldHUD_MapObjectWorkAssignStatus_C:ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkAssign/WBP_WorldHUD_MapObjectWorkAssignStatus.0"
+      },
+      "OnSetup": {
+        "ObjectName": "Function'WBP_WorldHUD_MapObjectWorkAssignStatus_C:OnSetup'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkAssign/WBP_WorldHUD_MapObjectWorkAssignStatus.1"
+      },
+      "ReadyUIModel": {
+        "ObjectName": "Function'WBP_WorldHUD_MapObjectWorkAssignStatus_C:ReadyUIModel'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkAssign/WBP_WorldHUD_MapObjectWorkAssignStatus.2"
+      },
+      "SetupUI": {
+        "ObjectName": "Function'WBP_WorldHUD_MapObjectWorkAssignStatus_C:SetupUI'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkAssign/WBP_WorldHUD_MapObjectWorkAssignStatus.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_WorldHUD_MapObjectWorkAssignStatus_C'Default__WBP_WorldHUD_MapObjectWorkAssignStatus_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkAssign/WBP_WorldHUD_MapObjectWorkAssignStatus.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_WorldHUD_MapObjectWorkAssignStatus_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "WBP_PalWork_AccessPoint_C'WBP_WorldHUD_MapObjectWorkAssignStatus_C:WidgetTree.WBP_PalWork_AccessPoint'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/WorkAssign/WBP_WorldHUD_MapObjectWorkAssignStatus.4"
+      }
+    }
+  }
+]

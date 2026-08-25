@@ -1,0 +1,38 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MapObjectGlobalPalStorageModel_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalMapObjectGlobalPalStorageModel'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MapObjectGlobalPalStorageModel_C'Default__BP_MapObjectGlobalPalStorageModel_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_MapObjectGlobalPalStorageModel.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MapObjectGlobalPalStorageModel_C",
+    "Name": "Default__BP_MapObjectGlobalPalStorageModel_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_MapObjectGlobalPalStorageModel.BP_MapObjectGlobalPalStorageModel_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GlobalPalStorageWidget": {
+        "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GlobalPalStorage_ForDisplay_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/GlobalPalStorage/WBP_GlobalPalStorage_ForDisplay.53"
+      }
+    }
+  }
+]

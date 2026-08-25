@@ -1,0 +1,630 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PlayerGenderChanger_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalPlayerGenderChanger'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PlayerGenderChanger_C'Default__BP_PlayerGenderChanger_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/PlayerGenderChanger/BP_PlayerGenderChanger.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PlayerGenderChanger_C",
+    "Name": "Default__BP_PlayerGenderChanger_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Player/PlayerGenderChanger/BP_PlayerGenderChanger.BP_PlayerGenderChanger_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaleCharacterParams": {
+        "DefaultWeaponAnimeAssetBPSoftClassMap": [
+          {
+            "Key": "EPalWeaponType::ThrowObject",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Throw.BP_Player_Male_ShooterAnime_Throw_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "EPalWeaponType::Handgun",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Handgun.BP_Player_Male_ShooterAnime_Handgun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "EPalWeaponType::AssaultRifle",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_AssaultRifle.BP_Player_Male_ShooterAnime_AssaultRifle_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "EPalWeaponType::SniperRifle",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_SniperRifle.BP_Player_Male_ShooterAnime_SniperRifle_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "EPalWeaponType::RocketLauncher",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_RocketLauncher.BP_Player_Male_ShooterAnime_RocketLauncher_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "EPalWeaponType::MeleeWeapon",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Melee.BP_Player_Male_ShooterAnime_Melee_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "EPalWeaponType::Bow",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Bow.BP_Player_Male_ShooterAnime_Bow_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "EPalWeaponType::Katana",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_Katana.BP_Player_Female_ShooterAnime_Katana_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "EPalWeaponType::Liftup",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_PalCarry.BP_Player_Male_ShooterAnime_PalCarry_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "EPalWeaponType::MetalDetector",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_MetalDetector.BP_Player_Female_ShooterAnime_MetalDetector_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "EPalWeaponType::FishingRod",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_FishingRod.BP_Player_Male_ShooterAnime_FishingRod_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "EPalWeaponType::None",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_None.BP_Player_Male_ShooterAnime_None_C",
+              "SubPathString": ""
+            }
+          }
+        ],
+        "OtherWeaponAnimeAssetBPSoftClassMap": [
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_EggLauncher.BP_EggLauncher_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_EggLauncher.BP_Player_Male_ShooterAnime_EggLauncher_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_CaptureRope.BP_CaptureRope_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_None.BP_Player_Male_ShooterAnime_None_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_PumpActionShotgun.BP_PumpActionShotgun_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_PumpActionShotgun.BP_Player_Male_ShooterAnime_PumpActionShotgun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_DoubleBarrelShotgun.BP_DoubleBarrelShotgun_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_DoubleBarrelShotgun.BP_Player_Male_ShooterAnime_DoubleBarrelShotgun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_SingleShotRifle.BP_SingleShotRifle_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_SingleShotRifle.BP_Player_Male_ShooterAnime_SingleShotRifle_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_Bowgun.BP_Bowgun_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Bowgun.BP_Player_Male_ShooterAnime_Bowgun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_AxeTier1.BP_AxeTier1_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Melee.BP_Player_Male_ShooterAnime_Melee_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_AxeTier0.BP_AxeTier0_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Melee.BP_Player_Male_ShooterAnime_Melee_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_AxeTier2.BP_AxeTier2_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Melee.BP_Player_Male_ShooterAnime_Melee_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_AxeTier3.BP_AxeTier3_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Melee.BP_Player_Male_ShooterAnime_Melee_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_Kitsunebi_Flamethrower.BP_Kitsunebi_Flamethrower_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Kitsunebi_Flamethrower.BP_Player_Male_ShooterAnime_Kitsunebi_Flamethrower_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_Bowgun_FIre2.BP_Bowgun_FIre2_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Bowgun.BP_Player_Male_ShooterAnime_Bowgun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_Bowgun_Poison2.BP_Bowgun_Poison2_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Bowgun.BP_Player_Male_ShooterAnime_Bowgun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_Spear.BP_Spear_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Spear.BP_Player_Male_ShooterAnime_Spear_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_Musket.BP_Musket_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Musket.BP_Player_Male_ShooterAnime_Musket_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_Spear_Tier2.BP_Spear_Tier2_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Spear.BP_Player_Male_ShooterAnime_Spear_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_Spear_Tier3.BP_Spear_Tier3_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Spear.BP_Player_Male_ShooterAnime_Spear_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_Spear_ForestBoss.BP_Spear_ForestBoss_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Spear.BP_Player_Male_ShooterAnime_Spear_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_Spear_Queenbee.BP_Spear_Queenbee_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Spear.BP_Player_Male_ShooterAnime_Spear_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_Spear_SoldierBee.BP_Spear_SoldierBee_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Spear.BP_Player_Male_ShooterAnime_Spear_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_GatlingGun.BP_GatlingGun_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_HeavyWeapon.BP_Player_Female_ShooterAnime_HeavyWeapon_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_LaserRifle.BP_LaserRifle_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_LaserRifle.BP_Player_Male_ShooterAnime_LaserRifle_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_DecalGun_1.BP_DecalGun_1_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_DecalGun.BP_Player_Male_ShooterAnime_DecalGun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_DecalGun_2.BP_DecalGun_2_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_DecalGun.BP_Player_Male_ShooterAnime_DecalGun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_DecalGun_3.BP_DecalGun_3_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_DecalGun.BP_Player_Male_ShooterAnime_DecalGun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_DecalGun_4.BP_DecalGun_4_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_DecalGun.BP_Player_Male_ShooterAnime_DecalGun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_DecalGun_5.BP_DecalGun_5_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_DecalGun.BP_Player_Male_ShooterAnime_DecalGun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_Flamethrower.BP_Flamethrower_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Flamethrower.BP_Player_Male_ShooterAnime_Flamethrower_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_GrenadeLauncher.BP_GrenadeLauncher_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_GrenadeLauncher.BP_Player_Male_ShooterAnime_GrenadeLauncher_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_LaserGatlingGun.BP_LaserGatlingGun_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_HeavyWeapon.BP_Player_Female_ShooterAnime_HeavyWeapon_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_GuidedMissileLauncher.BP_GuidedMissileLauncher_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_GuidedMissileLauncher.BP_Player_Male_ShooterAnime_GuidedMissileLauncher_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_MultiGuidedMissileLauncher.BP_MultiGuidedMissileLauncher_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_MultiGuidedMissileLauncher.BP_Player_Male_ShooterAnime_MultiGuidedMissileLauncher_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_MakeshiftHandgun.BP_MakeshiftHandgun_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_MakeShiftHandgun.BP_Player_Male_ShooterAnime_MakeShiftHandgun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_Flamethrower_002.BP_Flamethrower_002_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Flamethrower.BP_Player_Male_ShooterAnime_Flamethrower_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_SemiAutoShotgun.BP_SemiAutoShotgun_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_SemiAutoShotgun.BP_Player_Male_ShooterAnime_SemiAutoShotgun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_EnergyRocketLauncher.BP_EnergyRocketLauncher_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_EnergyRocketLauncher.BP_Player_Male_ShooterAnime_EnergyRocketLauncher_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_OldRevolver.BP_OldRevolver_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Revolver.BP_Player_Male_ShooterAnime_Revolver_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_MakeshiftAssaultRifle.BP_MakeshiftAssaultRifle_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_MakeshiftAssaultRifle.BP_Player_Male_ShooterAnime_MakeshiftAssaultRifle_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_SemiAutoRifle.BP_SemiAutoRifle_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_SemiAutoRifle.BP_Player_Male_ShooterAnime_SemiAutoRifle_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_MakeshiftSubmachineGun.BP_MakeshiftSubmachineGun_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_MakeshiftSubmachineGun.BP_Player_Male_ShooterAnime_MakeshiftSubmachineGun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_SubmachineGun.BP_SubmachineGun_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_SubmachineGun.BP_Player_Male_ShooterAnime_SubmachineGun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_MakeshiftShotgun.BP_MakeshiftShotgun_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_MakeshiftShotgun.BP_Player_Male_ShooterAnime_MakeshiftShotgun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_BeamSword.BP_BeamSword_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_BeamSword.BP_Player_Female_ShooterAnime_BeamSword_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_Kitsunebi_Flamethrower_ICE.BP_Kitsunebi_Flamethrower_ICE_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Kitsunebi_Flamethrower.BP_Player_Male_ShooterAnime_Kitsunebi_Flamethrower_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_OverheatRifle.BP_OverheatRifle_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_OverheatRifle.BP_Player_Male_ShooterAnime_OverheatRifle_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_ChargeLaserRifle.BP_ChargeLaserRifle_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_ChargeLaserRifle.BP_Player_Male_ShooterAnime_ChargeLaserRifle_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_PalDopingShot.BP_PalDopingShot_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_PalDopingShot.BP_Player_Male_ShooterAnime_PalDopingShot_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_EnergyShotgun.BP_EnergyShotgun_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_EnergyShotgun.BP_Player_Male_ShooterAnime_EnergyShotgun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_YakushimaLantern001.BP_YakushimaLantern001_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_YakushimaLantern001.BP_Player_Female_ShooterAnime_YakushimaLantern001_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_PalDopingShot_2.BP_PalDopingShot_2_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_PalDopingShot.BP_Player_Male_ShooterAnime_PalDopingShot_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_PalDopingShot_3.BP_PalDopingShot_3_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_PalDopingShot.BP_Player_Male_ShooterAnime_PalDopingShot_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_HandgunShield.BP_HandgunShield_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_HandgunShield.BP_Player_Male_ShooterAnime_HandgunShield_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_OctaviaRevolver001.BP_OctaviaRevolver001_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_OctaviaRevolver001.BP_Player_Male_ShooterAnime_OctaviaRevolver001_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_OctaviaShotgun001.BP_OctaviaShotgun001_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_OctaviaShotgun001.BP_Player_Male_ShooterAnime_OctaviaShotgun001_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_Sword.BP_Sword_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_Sword.BP_Player_Female_ShooterAnime_Sword_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_BeamLauncher.BP_BeamLauncher_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_BeamLauncher.BP_Player_Female_ShooterAnime_BeamLauncher_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_SwordCutlassfish_Katana.BP_SwordCutlassfish_Katana_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_SwordCutlassfish_Katana.BP_Player_Female_ShooterAnime_SwordCutlassfish_Katana_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_BronzeSword.BP_BronzeSword_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_Sword.BP_Player_Female_ShooterAnime_Sword_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_Spear_ForestBoss2.BP_Spear_ForestBoss2_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_Spear.BP_Player_Male_ShooterAnime_Spear_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_SkyAssaultRifle.BP_SkyAssaultRifle_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_SkyAssaultRifle.BP_Player_Male_ShooterAnime_SkyAssaultRifle_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_SkyGrenadeLauncher.BP_SkyGrenadeLauncher_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_SkyGrenadeLauncher.BP_Player_Male_ShooterAnime_SkyGrenadeLauncher_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_SkyShotgun.BP_SkyShotgun_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_SkyShotgun.BP_Player_Male_ShooterAnime_SkyShotgun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_SkySubmachineGun.BP_SkySubmachineGun_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_SkySubmachineGun.BP_Player_Male_ShooterAnime_SkySubmachineGun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_WidePenetrateShotgun.BP_WidePenetrateShotgun_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_WidePenetrateShotgun.BP_Player_Male_ShooterAnime_WidePenetrateShotgun_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_SkyBeamSword.BP_SkyBeamSword_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_SkyBeamSword.BP_Player_Female_ShooterAnime_SkyBeamSword_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_ElectricArcAssaultRifle.BP_ElectricArcAssaultRifle_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Male/ShooterAnimeBP/BP_Player_Male_ShooterAnime_ElectricArcAssaultRifle.BP_Player_Male_ShooterAnime_ElectricArcAssaultRifle_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_DroneLauncher.BP_DroneLauncher_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_DroneLauncher.BP_Player_Female_ShooterAnime_DroneLauncher_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_LaserMiningTool.BP_LaserMiningTool_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_HeavyWeapon.BP_Player_Female_ShooterAnime_HeavyWeapon_C",
+              "SubPathString": ""
+            }
+          },
+          {
+            "Key": "/Game/Pal/Blueprint/Weapon/BP_SwordCutlassfish_Katana_Fire.BP_SwordCutlassfish_Katana_Fire_C",
+            "Value": {
+              "AssetPathName": "/Game/Pal/Blueprint/Character/Player/Female/ShooterAnimeBP/BP_Player_Female_ShooterAnime_SwordCutlassfish_Katana.BP_Player_Female_ShooterAnime_SwordCutlassfish_Katana_C",
+              "SubPathString": ""
+            }
+          }
+        ],
+        "ClavicleAdjustDegree": 10.0
+      },
+      "OverrideMap": [
+        {
+          "Key": "EPalPlayerBodyShape::Fat",
+          "Value": {
+            "OverrideDefaultWeaponAnimPair": [
+              {
+                "Key": "EPalWeaponType::None",
+                "Value": {
+                  "FemaleAnim": {
+                    "AssetPathName": "/Game/Pal/Blueprint/Character/NPC/Female/ShooterAnimeBP/BP_NPC_Female2_ShooterAnime_None.BP_NPC_Female2_ShooterAnime_None_C",
+                    "SubPathString": ""
+                  },
+                  "MaleAnim": {
+                    "AssetPathName": "/Game/Pal/Blueprint/Character/NPC/Female/ShooterAnimeBP/BP_NPC_Female2_ShooterAnime_None.BP_NPC_Female2_ShooterAnime_None_C",
+                    "SubPathString": ""
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+]

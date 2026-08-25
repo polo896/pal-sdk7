@@ -1,0 +1,53 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SoundSlot_Weapon_SphereLauncher_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SoundSlot_Weapon_Launcher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_Launcher.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SoundSlot_Weapon_Launcher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_Launcher.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SoundSlot_Weapon_SphereLauncher_C'Default__BP_SoundSlot_Weapon_SphereLauncher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_SphereLauncher.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SoundSlot_Weapon_SphereLauncher_C",
+    "Name": "Default__BP_SoundSlot_Weapon_SphereLauncher_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_SphereLauncher.BP_SoundSlot_Weapon_SphereLauncher_C'",
+    "Template": {
+      "ObjectName": "BP_SoundSlot_Weapon_Launcher_C'Default__BP_SoundSlot_Weapon_Launcher_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_Launcher.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SoundMap": [
+        {
+          "Key": {
+            "Key": "Weapon_Fire"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_Weapon_SphereLauncher_Launch'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/SphereLauncher/AKE_Weapon_SphereLauncher_Launch.0"
+          }
+        }
+      ]
+    }
+  }
+]

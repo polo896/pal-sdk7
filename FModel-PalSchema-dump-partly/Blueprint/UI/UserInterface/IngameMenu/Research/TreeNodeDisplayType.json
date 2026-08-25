@@ -1,0 +1,56 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "TreeNodeDisplayType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "CF6FBBB74DC0C84AFAC9859469BF1C24",
+            "SourceString": "Disable",
+            "LocalizedString": "Disable"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "83EFBCE4462B94B40DAD1C801839B18C",
+            "SourceString": "Locked",
+            "LocalizedString": "Locked"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "0C75D4324B73A699CB810EAD2883C788",
+            "SourceString": "Unlocked",
+            "LocalizedString": "Unlocked"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "DDFEF7194E8309FA287EABA3A412CF26",
+            "SourceString": "Progressing",
+            "LocalizedString": "Progressing"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "TreeNodeDisplayType::NewEnumerator0": 0,
+      "TreeNodeDisplayType::NewEnumerator1": 1,
+      "TreeNodeDisplayType::NewEnumerator2": 2,
+      "TreeNodeDisplayType::NewEnumerator3": 3,
+      "TreeNodeDisplayType::TreeNodeDisplayType_MAX": 4
+    },
+    "CppForm": "Namespaced"
+  }
+]

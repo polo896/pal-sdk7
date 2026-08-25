@@ -1,0 +1,52 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_SpawnItem_BerryGoat_Dark_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_SpawnItemBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/SpawnItem/Base/BP_Action_SpawnItemBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_SpawnItemBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/SpawnItem/Base/BP_Action_SpawnItemBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_SpawnItem_BerryGoat_Dark_C'Default__BP_Action_SpawnItem_BerryGoat_Dark_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/SpawnItem/BP_Action_SpawnItem_BerryGoat_Dark.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_SpawnItem_BerryGoat_Dark_C",
+    "Name": "Default__BP_Action_SpawnItem_BerryGoat_Dark_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Common/SpawnItem/BP_Action_SpawnItem_BerryGoat_Dark.BP_Action_SpawnItem_BerryGoat_Dark_C'",
+    "Template": {
+      "ObjectName": "BP_Action_SpawnItemBase_C'Default__BP_Action_SpawnItemBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/SpawnItem/Base/BP_Action_SpawnItemBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChargeMontage": {
+        "ObjectName": "AnimMontage'AM_BerryGoat_Carrying'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/BerryGoat/AM_BerryGoat_Carrying.0"
+      },
+      "ChargeFacialEye": "EPalFacialEyeType::Trouble",
+      "FunMontage": {
+        "ObjectName": "AnimMontage'AM_BerryGoat_Hit'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/BerryGoat/AM_BerryGoat_Hit.0"
+      },
+      "FunFacialEye": "EPalFacialEyeType::Smile"
+    }
+  }
+]

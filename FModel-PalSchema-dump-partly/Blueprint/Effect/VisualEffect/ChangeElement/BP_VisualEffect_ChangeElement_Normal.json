@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_VisualEffect_ChangeElement_Normal_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_VisualEffect_ChangeElementBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_VisualEffect_ChangeElementBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElement_Normal_C:新規関数_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElement_Normal.2"
+      }
+    ],
+    "FuncMap": {
+      "新規関数_0": {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElement_Normal_C:新規関数_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElement_Normal.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_VisualEffect_ChangeElement_Normal_C'Default__BP_VisualEffect_ChangeElement_Normal_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElement_Normal.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_VisualEffect_ChangeElement_Normal_C",
+    "Name": "Default__BP_VisualEffect_ChangeElement_Normal_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElement_Normal.BP_VisualEffect_ChangeElement_Normal_C'",
+    "Template": {
+      "ObjectName": "BP_VisualEffect_ChangeElementBase_C'Default__BP_VisualEffect_ChangeElementBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EffectAsset": {
+        "ObjectName": "NiagaraSystem'NS_RaidBossModeChange_Ice_Buff'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Common/RaidBoss/NS_RaidBossModeChange_Ice_Buff.66"
+      },
+      "ChangeEffectAsset": {
+        "ObjectName": "NiagaraSystem'NS_RaidBossModeChange_Ice'",
+        "ObjectPath": "Pal/Content/Pal/Effect/Common/RaidBoss/NS_RaidBossModeChange_Ice.246"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "新規関数_0",
+    "Outer": "BP_VisualEffect_ChangeElement_Normal_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DelegateProperty",
+        "Name": "Temp_delegate_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "PropertyFlags": "ConstParm",
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnAkPostEventCallback__DelegateSignature'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostEvent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

@@ -1,0 +1,425 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_VisualEffectDataBase_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalVisualEffectDataBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_VisualEffectDataBase_C'Default__BP_VisualEffectDataBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_VisualEffectDataBase.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_VisualEffectDataBase_C",
+    "Name": "Default__BP_VisualEffectDataBase_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_VisualEffectDataBase.BP_VisualEffectDataBase_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VisualEffectClassDataReference": [
+        {
+          "Key": "EPalVisualEffectID::CaptureEmissive",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_CaptureEmissive.BP_VisualEffect_CaptureEmissive_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::SpawnFromBallEmissive",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_SpawnFromBallEmissive.BP_VisualEffect_SpawnFromBallEmissive_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::ReturnToBallEmissive",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_Proxy_ReturnToBallEmissive.BP_VisualEffect_Proxy_ReturnToBallEmissive_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::FadeOut",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_Fadeout.BP_VisualEffect_Fadeout_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::PalOutlineFadeIn",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_PalOutlineFadeIn.BP_VisualEffect_PalOutlineFadeIn_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::PalOutlineFadeOut",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_PalOutlineFadeOut.BP_VisualEffect_PalOutlineFadeOut_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::FireCondition",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_Status_Flamed.BP_VisualEffect_Status_Flamed_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::WaterCondition",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VIsualEffect_Status_Getwet.BP_VIsualEffect_Status_Getwet_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::IceCondition",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_Status_Freeze.BP_VisualEffect_Status_Freeze_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::ElectricityCondition",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_Status_Electricshock.BP_VisualEffect_Status_Electricshock_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::EarthCondition",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_Status_Mud.BP_VisualEffect_Status_Mud_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::LeafCondition",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_Status_Vines.BP_VisualEffect_Status_Vines_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::DarkCondition",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_Status_Darkness.BP_VisualEffect_Status_Darkness_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::Swimming",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_Swimming.BP_VisualEffect_Swimming_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::CameraVignette",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/Camera/BP_VisualEffect_CameraVignette.BP_VisualEffect_CameraVignette_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::DebugRefresh",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_DebugRefresh.BP_VisualEffect_DebugRefresh_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::Poison",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_Status_Poisoned.BP_VisualEffect_Status_Poisoned_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::FadeIn",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_SpawnFadeIn.BP_VisualEffect_SpawnFadeIn_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::PalEffectFadeIn",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_PalEffectFadeIn.BP_VisualEffect_PalEffectFadeIn_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::PalEffectFadeOut",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_PalEffectFadeOut.BP_VisualEffect_PalEffectFadeOut_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::PalBattleOutline",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_PalBattleOutline.BP_VisualEffect_PalBattleOutline_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::RarePal",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_RarePal.BP_VisualEffect_RarePal_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::FunnelStartEmissive",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_FunnelStartEmissive.BP_VisualEffect_FunnelStartEmissive_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::FunnelEndEmissive",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_Proxy_FunnelEndEmissive.BP_VisualEffect_Proxy_FunnelEndEmissive_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::SelfDestructEmissive",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_SelfDestructEmissive.BP_VisualEffect_SelfDestructEmissive_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::DeadEffect",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_Dead.BP_VisualEffect_Dead_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::Mosaic",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/Camera/BP_VisualEffect_CameraMosaic.BP_VisualEffect_CameraMosaic_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::ChangeElement_Ice",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElement_Ice.BP_VisualEffect_ChangeElement_Ice_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::ChangeElement_Fire",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElement_Fire.BP_VisualEffect_ChangeElement_Fire_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::ChangeElement_Normal",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElement_Normal.BP_VisualEffect_ChangeElement_Normal_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::ChangeElement_Water",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElement_Water.BP_VisualEffect_ChangeElement_Water_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::ChangeElement_Leaf",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElement_Leaf.BP_VisualEffect_ChangeElement_Leaf_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::ChangeElement_Electricity",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElement_Electricity.BP_VisualEffect_ChangeElement_Electricity_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::ChangeElement_Earth",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElement_Earth.BP_VisualEffect_ChangeElement_Earth_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::ChangeElement_Dark",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElement_Dark.BP_VisualEffect_ChangeElement_Dark_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::ChangeElement_Dragon",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElement_Dragon.BP_VisualEffect_ChangeElement_Dragon_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::PalEnhancement",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_PalEnhancement.BP_VisualEffect_PalEnhancement_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::HoveringWater",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_AboveWater.BP_VisualEffect_AboveWater_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::LavaDamage",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_Status_Flamed.BP_VisualEffect_Status_Flamed_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::AcidDamage",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_Status_Flamed.BP_VisualEffect_Status_Flamed_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::Teleport_FadeIn",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_TeleportFadeIn.BP_VisualEffect_TeleportFadeIn_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::Teleport_FadeOut",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_TeleportFadeOut.BP_VisualEffect_TeleportFadeOut_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::WorldTreeAura",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_WorldTreeAura.BP_VisualEffect_WorldTreeAura_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::AwakeningAura",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_AwakeningAura.BP_VisualEffect_AwakeningAura_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::AttackDown",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_AttackDown.BP_VisualEffect_AttackDown_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::AttackUp",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_AttackUp.BP_VisualEffect_AttackUp_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::DefenseUp",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_DefenseUp.BP_VisualEffect_DefenseUp_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::AttackRateHPThreshold",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_AttackRateHPThreshold.BP_VisualEffect_AttackRateHPThreshold_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::DefenseRateHPThreshold",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_DefenseRateHPThreshold.BP_VisualEffect_DefenseRateHPThreshold_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::BulletStackBuff",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_BulletStackBuff.BP_VisualEffect_BulletStackBuff_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::DefeatStackBuff",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_DefeatStackBuff.BP_VisualEffect_DefeatStackBuff_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::RecoverHPOnHPThreshold",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_RecoverHPOnHPThreshold.BP_VisualEffect_RecoverHPOnHPThreshold_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::PlayerCommonBuff",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_PlayerCommonBuff.BP_VisualEffect_PlayerCommonBuff_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::LifeDrainPower_AttackUp",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_LifeDrainPower.BP_VisualEffect_LifeDrainPower_C",
+            "SubPathString": ""
+          }
+        },
+        {
+          "Key": "EPalVisualEffectID::LowGravity",
+          "Value": {
+            "AssetPathName": "/Game/Pal/Blueprint/Effect/VisualEffect/BP_VisualEffect_LowGravity.BP_VisualEffect_LowGravity_C",
+            "SubPathString": ""
+          }
+        }
+      ],
+      "MosaicMaterialParameterCollection": {
+        "ObjectName": "MaterialParameterCollection'MPC_Mosaic'",
+        "ObjectPath": "Pal/Content/Pal/Material/PostProcess/Mosaic/MPC_Mosaic.0"
+      }
+    }
+  }
+]

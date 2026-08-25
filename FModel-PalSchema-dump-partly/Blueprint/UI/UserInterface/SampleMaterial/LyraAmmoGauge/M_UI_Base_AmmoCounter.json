@@ -1,0 +1,389 @@
+[
+  {
+    "Type": "Material",
+    "Name": "M_UI_Base_AmmoCounter",
+    "Class": "UScriptClass'Material'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaterialDomain": "EMaterialDomain::MD_UI",
+      "BlendMode": "EBlendMode::BLEND_Translucent",
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "2AB242AB-4F148870-ED9116B4-1AA301D6"
+    },
+    "LoadedMaterialResources": [],
+    "CachedExpressionData": {
+      "RuntimeEntries": {
+        "ParameterInfoSet": [
+          {
+            "Name": "ArcThickness",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "ArcSharpness",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "SegmentSharpness",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "SegmentPowerAdjustment",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "ArcRotation",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "ArcRange",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Rounds_Current",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Rounds_Max",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "SegmentSpacing",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "ArcEdgeOffsetAdj",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "FillTransitionSharpness",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "CA_Glow",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "IsLowAmmo",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "AlertFlashSpeed",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "AlertFlashFrequency",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "AnimateArcFill",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "AnimateToRestingActive",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "GradientScale_RGB",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "CenterThickness_RGB",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "GradientScale_A",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "CenterThickness_A",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "InverseGradient",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Speed",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "LowAmmoFlashCurve",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          }
+        ]
+      },
+      "RuntimeEntries[1]": {
+        "ParameterInfoSet": [
+          {
+            "Name": "Ammo_Empty_RGBA",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Ammo_Full_RGBA",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Backing_RGBA",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Alert_Empty_RGBA",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Alert_Full_RGBA",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Active_RGBA",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "LeftSide_RGBA",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "RightSide_RGBA",
+            "Association": "EMaterialParameterAssociation::GlobalParameter",
+            "Index": -1
+          }
+        ]
+      },
+      "RuntimeEntries[2]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[3]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[4]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[5]": {
+        "ParameterInfoSet": []
+      },
+      "ScalarPrimitiveDataIndexValues": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "VectorPrimitiveDataIndexValues": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "ScalarValues": [
+        0.125,
+        64.0,
+        2.0,
+        1.0,
+        0.0,
+        0.25,
+        4.0,
+        12.0,
+        0.0,
+        0.0,
+        8.0,
+        4.0,
+        0.0,
+        1.0,
+        2.0,
+        0.25,
+        0.0,
+        1.0,
+        -0.25,
+        1.0,
+        -0.25,
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "VectorValues": [
+        {
+          "R": 0.058814,
+          "G": 0.181475,
+          "B": 0.338542,
+          "A": 0.5,
+          "Hex": "7F44769D"
+        },
+        {
+          "R": 0.398166,
+          "G": 0.932292,
+          "B": 0.913174,
+          "A": 1.0,
+          "Hex": "A9F8F5"
+        },
+        {
+          "R": 0.0,
+          "G": 0.010773,
+          "B": 0.109375,
+          "A": 0.5,
+          "Hex": "7F001A5D"
+        },
+        {
+          "R": 0.338542,
+          "G": 0.058814,
+          "B": 0.063476,
+          "A": 0.5,
+          "Hex": "7F9D4447"
+        },
+        {
+          "R": 0.887893,
+          "G": 0.932292,
+          "B": 0.51913,
+          "A": 1.0,
+          "Hex": "F2F8BF"
+        },
+        {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.2,
+          "Hex": "33FFFFFF"
+        },
+        {
+          "R": 0.0,
+          "G": 1.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "00FF00"
+        },
+        {
+          "R": 1.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF0000"
+        }
+      ],
+      "DoubleVectorValues": [],
+      "TextureValues": [],
+      "FontValues": [],
+      "FontPageValues": [],
+      "RuntimeVirtualTextureValues": [],
+      "ReferencedTextures": [
+        {
+          "ObjectName": "CurveLinearColorAtlas'CA_UI_HUD'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/SampleMaterial/LyraAmmoGauge/CA_UI_HUD.0"
+        },
+        {
+          "ObjectName": "CurveLinearColorAtlas'CA_UI_CircleGaugeLowAmmoFlashColorAtlas'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/SampleMaterial/LyraAmmoGauge/CA_UI_CircleGaugeLowAmmoFlashColorAtlas.0"
+        }
+      ],
+      "FunctionInfos": [
+        {
+          "StateId": "487AB807-47851278-87717AAD-2F8D0A96",
+          "Function": {
+            "ObjectName": "MaterialFunction'MF_UI_RadialGrad0To1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/SampleMaterial/LyraAmmoGauge/MF_UI_RadialGrad0To1.0"
+          }
+        },
+        {
+          "StateId": "5E28F255-4817E6E7-2D027C9A-2F7126C6",
+          "Function": {
+            "ObjectName": "MaterialFunction'VectorToRadialValue'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorToRadialValue.0"
+          }
+        },
+        {
+          "StateId": "E572D701-496E6D38-CC53A5BD-C450B0ED",
+          "Function": {
+            "ObjectName": "MaterialFunction'CustomRotator'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.0"
+          }
+        },
+        {
+          "StateId": "487AB807-47851278-87717AAD-2F8D0A96",
+          "Function": {
+            "ObjectName": "MaterialFunction'MF_UI_RadialGrad0To1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/SampleMaterial/LyraAmmoGauge/MF_UI_RadialGrad0To1.0"
+          }
+        },
+        {
+          "StateId": "487AB807-47851278-87717AAD-2F8D0A96",
+          "Function": {
+            "ObjectName": "MaterialFunction'MF_UI_RadialGrad0To1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/SampleMaterial/LyraAmmoGauge/MF_UI_RadialGrad0To1.0"
+          }
+        }
+      ],
+      "ParameterCollectionInfos": [],
+      "GrassTypes": [],
+      "MaterialLayers": {
+        "Layers": [],
+        "Blends": []
+      },
+      "DynamicParameterNames": [],
+      "QualityLevelsUsed": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "bHasMaterialLayers": false,
+      "bHasRuntimeVirtualTextureOutput": false,
+      "bHasSceneColor": false,
+      "bHasPerInstanceCustomData": false,
+      "bHasPerInstanceRandom": false,
+      "bHasVertexInterpolator": false,
+      "PropertyConnectedBitmask": 3
+    }
+  }
+]

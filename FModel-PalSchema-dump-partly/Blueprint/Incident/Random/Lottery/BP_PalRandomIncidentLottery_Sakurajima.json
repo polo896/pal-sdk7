@@ -1,0 +1,163 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalRandomIncidentLottery_Sakurajima_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalRandomIncidentLotteryBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalRandomIncidentLottery_Sakurajima_C'Default__BP_PalRandomIncidentLottery_Sakurajima_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Incident/Random/Lottery/BP_PalRandomIncidentLottery_Sakurajima.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalRandomIncidentLottery_Sakurajima_C",
+    "Name": "Default__BP_PalRandomIncidentLottery_Sakurajima_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Incident/Random/Lottery/BP_PalRandomIncidentLottery_Sakurajima.BP_PalRandomIncidentLottery_Sakurajima_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LotteryRate": 40.0,
+      "LotteryParameters": [
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "GuardianDog_VS_SifuDog",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "Ninja_VS_KendoFrog",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "WeaselDragonCouple",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "OutBreak_Sakurajima",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "MushroomDragon_VS_MushroomDragon",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "OutBreak_ColorfulBird",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "Scientist_VS_Ninja",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "PalBattle_16",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "PalBattle_17",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "PalBattle_18",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "MerchantwithPAL_3",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "PalNest_ScorpionMan",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "Reward_Emote_H",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        },
+        {
+          "IncidentId": "Random_Common",
+          "SettingName": "PalPassive",
+          "LotteryRate": 100,
+          "AppearFlag": {
+            "Key": "None"
+          },
+          "AppearFlagCondition": false
+        }
+      ]
+    }
+  }
+]

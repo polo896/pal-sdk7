@@ -1,0 +1,85 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_CameraShake_RaidBossModeChange_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalCameraShakeBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_CameraShake_RaidBossModeChange_C'Default__BP_CameraShake_RaidBossModeChange_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_CameraShake_RaidBossModeChange.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_CameraShake_RaidBossModeChange_C",
+    "Name": "Default__BP_CameraShake_RaidBossModeChange_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/RaidBoss/BP_CameraShake_RaidBossModeChange.BP_CameraShake_RaidBossModeChange_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CurveAsset": {
+        "ObjectName": "CurveFloat'C_CameraChake_RaidBossModeChange'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/C_CameraChake_RaidBossModeChange.0"
+      },
+      "OscillationDuration": 4.0,
+      "OscillationBlendOutTime": 1.0,
+      "RotOscillation": {
+        "Pitch": {
+          "Amplitude": 1.0,
+          "Frequency": 60.0,
+          "InitialOffset": "EInitialOscillatorOffset::EOO_OffsetZero"
+        },
+        "Yaw": {
+          "Amplitude": 1.0,
+          "Frequency": 70.0
+        },
+        "Roll": {
+          "Amplitude": 0.3,
+          "Frequency": 80.0
+        }
+      },
+      "LocOscillation": {
+        "X": {
+          "Amplitude": 1.0,
+          "Frequency": 70.0
+        },
+        "Y": {
+          "Amplitude": 1.0,
+          "Frequency": 90.0
+        },
+        "Z": {
+          "Amplitude": 1.0,
+          "Frequency": 80.0,
+          "InitialOffset": "EInitialOscillatorOffset::EOO_OffsetZero"
+        }
+      },
+      "FOVOscillation": {
+        "Amplitude": 1.0,
+        "Frequency": 60.0
+      },
+      "RootShakePattern": {
+        "ObjectName": "PalCameraShakePattern'Default__BP_CameraShake_RaidBossModeChange_C:PalCameraShakePattern_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/RaidBoss/BP_CameraShake_RaidBossModeChange.2"
+      }
+    }
+  },
+  {
+    "Type": "PalCameraShakePattern",
+    "Name": "PalCameraShakePattern_0",
+    "Outer": "Default__BP_CameraShake_RaidBossModeChange_C",
+    "Class": "UScriptClass'PalCameraShakePattern'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  }
+]

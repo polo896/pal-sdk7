@@ -1,0 +1,131 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AIAction_CombatPal_RaidBoss_LegendDeer2_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_CombatPal_RaidBoss_LegendDeer_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/LegendDeer/BP_AIAction_CombatPal_RaidBoss_LegendDeer.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_CombatPal_RaidBoss_LegendDeer_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/LegendDeer/BP_AIAction_CombatPal_RaidBoss_LegendDeer.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_AIAction_CombatPal_RaidBoss_LegendDeer2_C:On Waza Action End'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/LegendDeer/BP_AIAction_CombatPal_RaidBoss_LegendDeer2.2"
+      }
+    ],
+    "FuncMap": {
+      "On Waza Action End": {
+        "ObjectName": "Function'BP_AIAction_CombatPal_RaidBoss_LegendDeer2_C:On Waza Action End'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/LegendDeer/BP_AIAction_CombatPal_RaidBoss_LegendDeer2.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AIAction_CombatPal_RaidBoss_LegendDeer2_C'Default__BP_AIAction_CombatPal_RaidBoss_LegendDeer2_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/LegendDeer/BP_AIAction_CombatPal_RaidBoss_LegendDeer2.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AIAction_CombatPal_RaidBoss_LegendDeer2_C",
+    "Name": "Default__BP_AIAction_CombatPal_RaidBoss_LegendDeer2_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/AIAction/LegendDeer/BP_AIAction_CombatPal_RaidBoss_LegendDeer2.BP_AIAction_CombatPal_RaidBoss_LegendDeer2_C'",
+    "Template": {
+      "ObjectName": "BP_AIAction_CombatPal_RaidBoss_LegendDeer_C'Default__BP_AIAction_CombatPal_RaidBoss_LegendDeer_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/LegendDeer/BP_AIAction_CombatPal_RaidBoss_LegendDeer.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CombatPhaseMap": [
+        {
+          "Key": "ENum_Raid_LegendDeer_CombatPhase::NewEnumerator2",
+          "Value": 1.0
+        },
+        {
+          "Key": "ENum_Raid_LegendDeer_CombatPhase::NewEnumerator3",
+          "Value": 0.5
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "On Waza Action End",
+    "Outer": "BP_AIAction_CombatPal_RaidBoss_LegendDeer2_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_AIAction_CombatPal_RaidBoss_LegendDeer_C:On Waza Action End'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/LegendDeer/BP_AIAction_CombatPal_RaidBoss_LegendDeer.12"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_AIAction_CombatPal_RaidBoss_LegendDeer_C:On Waza Action End'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/LegendDeer/BP_AIAction_CombatPal_RaidBoss_LegendDeer.12"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetHPLockRate_rate_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "ConstParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

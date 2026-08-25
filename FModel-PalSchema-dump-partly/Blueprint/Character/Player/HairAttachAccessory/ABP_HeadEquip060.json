@@ -1,0 +1,3853 @@
+[
+  {
+    "Type": "ABP_HeadEquip060_C",
+    "Name": "Default__ABP_HeadEquip060_C",
+    "Class": "AnimBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.ABP_HeadEquip060_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimBlueprintExtension_PropertyAccess": {},
+      "AnimBlueprintExtension_Base": {},
+      "AnimGraphNode_KawaiiPhysics_3": {
+        "RootBone": {
+          "BoneName": "HeadEquip060_hatA_01"
+        },
+        "ExcludeBones": [],
+        "AdditionalRootBones": [
+          {
+            "RootBone": {
+              "BoneName": "HeadEquip060_hatB_01_l"
+            },
+            "OverrideExcludeBones": [],
+            "bUseOverrideExcludeBones": false
+          },
+          {
+            "RootBone": {
+              "BoneName": "HeadEquip060_hatC_01_l"
+            },
+            "OverrideExcludeBones": [],
+            "bUseOverrideExcludeBones": false
+          },
+          {
+            "RootBone": {
+              "BoneName": "HeadEquip060_hatD_01_l"
+            },
+            "OverrideExcludeBones": [],
+            "bUseOverrideExcludeBones": false
+          },
+          {
+            "RootBone": {
+              "BoneName": "HeadEquip060_hatE_01"
+            },
+            "OverrideExcludeBones": [],
+            "bUseOverrideExcludeBones": false
+          },
+          {
+            "RootBone": {
+              "BoneName": "HeadEquip060_hatB_01_r"
+            },
+            "OverrideExcludeBones": [],
+            "bUseOverrideExcludeBones": false
+          },
+          {
+            "RootBone": {
+              "BoneName": "HeadEquip060_hatC_01_r"
+            },
+            "OverrideExcludeBones": [],
+            "bUseOverrideExcludeBones": false
+          },
+          {
+            "RootBone": {
+              "BoneName": "HeadEquip060_hatD_01_r"
+            },
+            "OverrideExcludeBones": [],
+            "bUseOverrideExcludeBones": false
+          }
+        ],
+        "DummyBoneLength": 0.0,
+        "BoneForwardAxis": "EBoneForwardAxis::X_Positive",
+        "PhysicsSettings": {
+          "Damping": 0.1,
+          "Stiffness": 0.05,
+          "WorldDampingLocation": 0.8,
+          "WorldDampingRotation": 0.8,
+          "Radius": 3.0,
+          "LimitAngle": 0.0
+        },
+        "TargetFrameRate": 60,
+        "OverrideTargetFramerate": false,
+        "WarmUpFrames": 0,
+        "bUseWarmUpWhenResetDynamics": true,
+        "bNeedWarmUp": false,
+        "TeleportDistanceThreshold": 300.0,
+        "TeleportRotationThreshold": 10.0,
+        "PlanarConstraint": "EPlanarConstraint::None",
+        "bUpdatePhysicsSettingsInGame": true,
+        "ResetBoneTransformWhenBoneNotFound": false,
+        "DampingCurveData": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 1.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.0,
+                "Value": 0.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "StiffnessCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "WorldDampingLocationCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "WorldDampingRotationCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "RadiusCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "LimitAngleCurveData": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 0.25,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.0,
+                "Value": 1.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "SphericalLimits": [],
+        "CapsuleLimits": [],
+        "BoxLimits": [],
+        "PlanarLimits": [],
+        "LimitsDataAsset": null,
+        "PhysicsAssetForLimits": null,
+        "SphericalLimitsData": [],
+        "CapsuleLimitsData": [],
+        "BoxLimitsData": [],
+        "PlanarLimitsData": [],
+        "BoneConstraintGlobalComplianceType": "EXPBDComplianceType::Leather",
+        "BoneConstraintIterationCountBeforeCollision": 1,
+        "BoneConstraintIterationCountAfterCollision": 1,
+        "bAutoAddChildDummyBoneConstraint": true,
+        "BoneConstraints": [
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatA_01"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatB_01_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatB_01_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatC_01_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatC_01_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatD_01_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatD_01_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatE_01"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatE_01"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatD_01_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatD_01_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatC_01_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatC_01_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatB_01_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatB_01_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatA_01"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatA_02"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatB_02_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatB_02_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatC_02_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatC_02_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatD_02_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatD_02_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatE_02"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatE_02"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatD_02_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatD_02_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatC_02_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatC_02_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatB_02_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatB_02_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatA_02"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatA_03"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatB_03_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatB_03_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatC_03_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatC_03_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatD_03_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatD_03_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatE_03"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatE_03"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatD_03_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatD_03_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatC_03_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatC_03_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatB_03_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatB_03_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatA_03"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": -1,
+            "ModifyBoneIndex2": -1,
+            "Length": -1.0,
+            "bIsDummy": false,
+            "Lambda": 0.0
+          }
+        ],
+        "BoneConstraintsDataAsset": null,
+        "BoneConstraintsData": [],
+        "MergedBoneConstraints": [
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatA_01"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatB_01_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 0,
+            "ModifyBoneIndex2": 3,
+            "Length": 9.075613,
+            "bIsDummy": false,
+            "Lambda": 4.2437325E-05
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatB_01_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatC_01_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 3,
+            "ModifyBoneIndex2": 6,
+            "Length": 9.288751,
+            "bIsDummy": false,
+            "Lambda": 2.336437E-05
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatC_01_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatD_01_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 6,
+            "ModifyBoneIndex2": 9,
+            "Length": 9.556531,
+            "bIsDummy": false,
+            "Lambda": 1.5735188E-05
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatD_01_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatE_01"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 9,
+            "ModifyBoneIndex2": 12,
+            "Length": 9.644402,
+            "bIsDummy": false,
+            "Lambda": 5.1496976E-05
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatE_01"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatD_01_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 12,
+            "ModifyBoneIndex2": 21,
+            "Length": 9.644396,
+            "bIsDummy": false,
+            "Lambda": 6.627852E-05
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatD_01_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatC_01_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 21,
+            "ModifyBoneIndex2": 18,
+            "Length": 9.556564,
+            "bIsDummy": false,
+            "Lambda": 2.8132608E-05
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatC_01_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatB_01_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 18,
+            "ModifyBoneIndex2": 15,
+            "Length": 9.28871,
+            "bIsDummy": false,
+            "Lambda": 1.8119306E-05
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatB_01_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatA_01"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 15,
+            "ModifyBoneIndex2": 0,
+            "Length": 9.075648,
+            "bIsDummy": false,
+            "Lambda": 6.38944E-05
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatA_02"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatB_02_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 1,
+            "ModifyBoneIndex2": 4,
+            "Length": 16.452461,
+            "bIsDummy": false,
+            "Lambda": 0.16220975
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatB_02_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatC_02_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 4,
+            "ModifyBoneIndex2": 7,
+            "Length": 16.443478,
+            "bIsDummy": false,
+            "Lambda": 0.18057987
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatC_02_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatD_02_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 7,
+            "ModifyBoneIndex2": 10,
+            "Length": 16.681213,
+            "bIsDummy": false,
+            "Lambda": 0.15522332
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatD_02_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatE_02"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 10,
+            "ModifyBoneIndex2": 13,
+            "Length": 17.011486,
+            "bIsDummy": false,
+            "Lambda": 0.107482776
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatE_02"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatD_02_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 13,
+            "ModifyBoneIndex2": 22,
+            "Length": 17.011496,
+            "bIsDummy": false,
+            "Lambda": 0.068255424
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatD_02_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatC_02_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 22,
+            "ModifyBoneIndex2": 19,
+            "Length": 16.681152,
+            "bIsDummy": false,
+            "Lambda": 0.05638919
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatC_02_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatB_02_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 19,
+            "ModifyBoneIndex2": 16,
+            "Length": 16.443405,
+            "bIsDummy": false,
+            "Lambda": 0.07579878
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatB_02_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatA_02"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 16,
+            "ModifyBoneIndex2": 1,
+            "Length": 16.452469,
+            "bIsDummy": false,
+            "Lambda": 0.11196206
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatA_03"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatB_03_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 2,
+            "ModifyBoneIndex2": 5,
+            "Length": 24.604597,
+            "bIsDummy": false,
+            "Lambda": 0.32208976
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatB_03_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatC_03_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 5,
+            "ModifyBoneIndex2": 8,
+            "Length": 24.174578,
+            "bIsDummy": false,
+            "Lambda": 0.30893704
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatC_03_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatD_03_l"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 8,
+            "ModifyBoneIndex2": 11,
+            "Length": 25.11163,
+            "bIsDummy": false,
+            "Lambda": 0.2529913
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatD_03_l"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatE_03"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 11,
+            "ModifyBoneIndex2": 14,
+            "Length": 26.23685,
+            "bIsDummy": false,
+            "Lambda": 0.20604035
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatE_03"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatD_03_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 14,
+            "ModifyBoneIndex2": 23,
+            "Length": 26.236788,
+            "bIsDummy": false,
+            "Lambda": 0.17454614
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatD_03_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatC_03_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 23,
+            "ModifyBoneIndex2": 20,
+            "Length": 25.111574,
+            "bIsDummy": false,
+            "Lambda": 0.18615395
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatC_03_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatB_03_r"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 20,
+            "ModifyBoneIndex2": 17,
+            "Length": 24.174534,
+            "bIsDummy": false,
+            "Lambda": 0.2371741
+          },
+          {
+            "Bone1": {
+              "BoneName": "HeadEquip060_hatB_03_r"
+            },
+            "Bone2": {
+              "BoneName": "HeadEquip060_hatA_03"
+            },
+            "bOverrideCompliance": false,
+            "ComplianceType": "EXPBDComplianceType::Leather",
+            "ModifyBoneIndex1": 17,
+            "ModifyBoneIndex2": 2,
+            "Length": 24.604498,
+            "bIsDummy": false,
+            "Lambda": 0.27783096
+          }
+        ],
+        "Gravity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "bEnableWind": false,
+        "WindScale": 1.0,
+        "ExternalForces": [],
+        "CustomExternalForces": [],
+        "bAllowWorldCollision": false,
+        "bOverrideCollisionParams": false,
+        "CollisionChannelSettings": {
+          "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+          "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+          "SleepFamily": "ESleepFamily::Normal",
+          "DOFMode": "EDOFMode::Default",
+          "bUseCCD": false,
+          "bIgnoreAnalyticCollisions": false,
+          "bNotifyRigidBodyCollision": false,
+          "bSmoothEdgeCollisions": false,
+          "bLockTranslation": true,
+          "bLockRotation": true,
+          "bLockXTranslation": false,
+          "bLockYTranslation": false,
+          "bLockZTranslation": false,
+          "bLockXRotation": false,
+          "bLockYRotation": false,
+          "bLockZRotation": false,
+          "bOverrideMaxAngularVelocity": false,
+          "bOverrideMaxDepenetrationVelocity": false,
+          "bOverrideWalkableSlopeOnInstance": false,
+          "bInterpolateWhenSubStepping": true,
+          "bInertiaConditioning": true,
+          "CollisionProfileName": "Custom",
+          "PositionSolverIterationCount": 8,
+          "VelocitySolverIterationCount": 1,
+          "CollisionResponses": {
+            "ResponseToChannels": {
+              "WorldStatic": "ECollisionResponse::ECR_Block",
+              "WorldDynamic": "ECollisionResponse::ECR_Block",
+              "Pawn": "ECollisionResponse::ECR_Block",
+              "Visibility": "ECollisionResponse::ECR_Block",
+              "Camera": "ECollisionResponse::ECR_Block",
+              "PhysicsBody": "ECollisionResponse::ECR_Block",
+              "Vehicle": "ECollisionResponse::ECR_Block",
+              "Destructible": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel1": "ECollisionResponse::ECR_Ignore",
+              "EngineTraceChannel2": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel3": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel4": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel5": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel6": "ECollisionResponse::ECR_Block",
+              "GameTraceChannel1": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel2": "ECollisionResponse::ECR_Overlap",
+              "GameTraceChannel3": "ECollisionResponse::ECR_Block",
+              "GameTraceChannel4": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel5": "ECollisionResponse::ECR_Overlap",
+              "GameTraceChannel6": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel7": "ECollisionResponse::ECR_Block",
+              "GameTraceChannel8": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel9": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel10": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel11": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel12": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel13": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel14": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel15": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel16": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel17": "ECollisionResponse::ECR_Block",
+              "GameTraceChannel18": "ECollisionResponse::ECR_Block"
+            },
+            "ResponseArray": []
+          },
+          "MaxDepenetrationVelocity": 0.0,
+          "MassInKgOverride": 100.0,
+          "LinearDamping": 0.01,
+          "AngularDamping": 0.0,
+          "CustomDOFPlaneNormal": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "COMNudge": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "MassScale": 1.0,
+          "InertiaTensorScale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "WalkableSlopeOverride": {
+            "WalkableSlopeBehavior": "EWalkableSlopeBehavior::WalkableSlope_Default",
+            "WalkableSlopeAngle": 0.0
+          },
+          "PhysMaterialOverride": null,
+          "MaxAngularVelocity": 3600.0,
+          "CustomSleepThresholdMultiplier": 1.0,
+          "StabilizationThresholdMultiplier": 1.0,
+          "PhysicsBlendWeight": 0.0,
+          "bSimulatePhysics": false,
+          "bOverrideMass": false,
+          "bEnableGravity": true,
+          "bAutoWeld": false,
+          "bStartAwake": true,
+          "bGenerateWakeEvents": false,
+          "bUpdateMassWhenScaleChanges": true
+        },
+        "bIgnoreSelfComponent": true,
+        "IgnoreBones": [],
+        "IgnoreBoneNamePrefix": [],
+        "KawaiiPhysicsTag": {
+          "TagName": "None"
+        },
+        "ModifyBones": [],
+        "DeltaTime": 0.0,
+        "PreSkelCompTransform": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsNormalized": true,
+            "Size": 1.0,
+            "SizeSquared": 1.0
+          },
+          "Translation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          }
+        },
+        "bInitPhysicsSettings": false,
+        "ComponentPose": {
+          "LinkID": 4
+        },
+        "LODThreshold": -1,
+        "ActualAlpha": 0.0,
+        "AlphaInputType": "EAnimAlphaInputType::Float",
+        "bAlphaBoolEnabled": true,
+        "Alpha": 1.0,
+        "AlphaScaleBias": {
+          "Scale": 1.0,
+          "Bias": 0.0
+        },
+        "AlphaBoolBlend": {
+          "BlendInTime": 0.0,
+          "BlendOutTime": 0.0,
+          "BlendOption": "EAlphaBlendOption::Linear",
+          "bInitialized": false,
+          "CustomCurve": null,
+          "AlphaBlend": {
+            "CustomCurve": null,
+            "BlendTime": 0.2,
+            "BlendOption": "EAlphaBlendOption::Linear"
+          }
+        },
+        "AlphaCurveName": "None",
+        "AlphaScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        }
+      },
+      "AnimGraphNode_KawaiiPhysics_2": {
+        "RootBone": {
+          "BoneName": "HeadEquip060_hairA_01_l"
+        },
+        "ExcludeBones": [],
+        "AdditionalRootBones": [
+          {
+            "RootBone": {
+              "BoneName": "HeadEquip060_hairA_01_r"
+            },
+            "OverrideExcludeBones": [],
+            "bUseOverrideExcludeBones": false
+          }
+        ],
+        "DummyBoneLength": 0.0,
+        "BoneForwardAxis": "EBoneForwardAxis::X_Positive",
+        "PhysicsSettings": {
+          "Damping": 0.1,
+          "Stiffness": 0.05,
+          "WorldDampingLocation": 0.8,
+          "WorldDampingRotation": 0.8,
+          "Radius": 3.0,
+          "LimitAngle": 0.0
+        },
+        "TargetFrameRate": 60,
+        "OverrideTargetFramerate": false,
+        "WarmUpFrames": 0,
+        "bUseWarmUpWhenResetDynamics": true,
+        "bNeedWarmUp": false,
+        "TeleportDistanceThreshold": 300.0,
+        "TeleportRotationThreshold": 10.0,
+        "PlanarConstraint": "EPlanarConstraint::None",
+        "bUpdatePhysicsSettingsInGame": true,
+        "ResetBoneTransformWhenBoneNotFound": false,
+        "DampingCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "StiffnessCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "WorldDampingLocationCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "WorldDampingRotationCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "RadiusCurveData": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 0.6,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.0,
+                "Value": 1.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "LimitAngleCurveData": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 0.25,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.5,
+                "Value": 1.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "SphericalLimits": [],
+        "CapsuleLimits": [
+          {
+            "Radius": 6.343999,
+            "Length": 6.2939744,
+            "DrivingBone": {
+              "BoneName": "head"
+            },
+            "OffsetLocation": {
+              "X": 3.971165,
+              "Y": 3.489974,
+              "Z": 0.0
+            },
+            "OffsetRotation": {
+              "Pitch": -90.0,
+              "Yaw": -137.11362,
+              "Roll": 137.11371
+            },
+            "Location": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "bEnable": true,
+            "SourceType": "ECollisionSourceType::AnimNode"
+          }
+        ],
+        "BoxLimits": [],
+        "PlanarLimits": [
+          {
+            "Plane": {
+              "Vector": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "W": 0.0,
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "DrivingBone": {
+              "BoneName": "spine_03"
+            },
+            "OffsetLocation": {
+              "X": 1.3290259,
+              "Y": 4.959764,
+              "Z": 0.0018902636
+            },
+            "OffsetRotation": {
+              "Pitch": 0.019871937,
+              "Yaw": -15.004991,
+              "Roll": 89.9789
+            },
+            "Location": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "bEnable": true,
+            "SourceType": "ECollisionSourceType::AnimNode"
+          }
+        ],
+        "LimitsDataAsset": null,
+        "PhysicsAssetForLimits": null,
+        "SphericalLimitsData": [],
+        "CapsuleLimitsData": [],
+        "BoxLimitsData": [],
+        "PlanarLimitsData": [],
+        "BoneConstraintGlobalComplianceType": "EXPBDComplianceType::Rubber",
+        "BoneConstraintIterationCountBeforeCollision": 1,
+        "BoneConstraintIterationCountAfterCollision": 1,
+        "bAutoAddChildDummyBoneConstraint": true,
+        "BoneConstraints": [],
+        "BoneConstraintsDataAsset": null,
+        "BoneConstraintsData": [],
+        "MergedBoneConstraints": [],
+        "Gravity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "bEnableWind": false,
+        "WindScale": 1.0,
+        "ExternalForces": [],
+        "CustomExternalForces": [],
+        "bAllowWorldCollision": false,
+        "bOverrideCollisionParams": false,
+        "CollisionChannelSettings": {
+          "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+          "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+          "SleepFamily": "ESleepFamily::Normal",
+          "DOFMode": "EDOFMode::Default",
+          "bUseCCD": false,
+          "bIgnoreAnalyticCollisions": false,
+          "bNotifyRigidBodyCollision": false,
+          "bSmoothEdgeCollisions": false,
+          "bLockTranslation": true,
+          "bLockRotation": true,
+          "bLockXTranslation": false,
+          "bLockYTranslation": false,
+          "bLockZTranslation": false,
+          "bLockXRotation": false,
+          "bLockYRotation": false,
+          "bLockZRotation": false,
+          "bOverrideMaxAngularVelocity": false,
+          "bOverrideMaxDepenetrationVelocity": false,
+          "bOverrideWalkableSlopeOnInstance": false,
+          "bInterpolateWhenSubStepping": true,
+          "bInertiaConditioning": true,
+          "CollisionProfileName": "Custom",
+          "PositionSolverIterationCount": 8,
+          "VelocitySolverIterationCount": 1,
+          "CollisionResponses": {
+            "ResponseToChannels": {
+              "WorldStatic": "ECollisionResponse::ECR_Block",
+              "WorldDynamic": "ECollisionResponse::ECR_Block",
+              "Pawn": "ECollisionResponse::ECR_Block",
+              "Visibility": "ECollisionResponse::ECR_Block",
+              "Camera": "ECollisionResponse::ECR_Block",
+              "PhysicsBody": "ECollisionResponse::ECR_Block",
+              "Vehicle": "ECollisionResponse::ECR_Block",
+              "Destructible": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel1": "ECollisionResponse::ECR_Ignore",
+              "EngineTraceChannel2": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel3": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel4": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel5": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel6": "ECollisionResponse::ECR_Block",
+              "GameTraceChannel1": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel2": "ECollisionResponse::ECR_Overlap",
+              "GameTraceChannel3": "ECollisionResponse::ECR_Block",
+              "GameTraceChannel4": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel5": "ECollisionResponse::ECR_Overlap",
+              "GameTraceChannel6": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel7": "ECollisionResponse::ECR_Block",
+              "GameTraceChannel8": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel9": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel10": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel11": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel12": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel13": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel14": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel15": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel16": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel17": "ECollisionResponse::ECR_Block",
+              "GameTraceChannel18": "ECollisionResponse::ECR_Block"
+            },
+            "ResponseArray": []
+          },
+          "MaxDepenetrationVelocity": 0.0,
+          "MassInKgOverride": 100.0,
+          "LinearDamping": 0.01,
+          "AngularDamping": 0.0,
+          "CustomDOFPlaneNormal": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "COMNudge": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "MassScale": 1.0,
+          "InertiaTensorScale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "WalkableSlopeOverride": {
+            "WalkableSlopeBehavior": "EWalkableSlopeBehavior::WalkableSlope_Default",
+            "WalkableSlopeAngle": 0.0
+          },
+          "PhysMaterialOverride": null,
+          "MaxAngularVelocity": 3600.0,
+          "CustomSleepThresholdMultiplier": 1.0,
+          "StabilizationThresholdMultiplier": 1.0,
+          "PhysicsBlendWeight": 0.0,
+          "bSimulatePhysics": false,
+          "bOverrideMass": false,
+          "bEnableGravity": true,
+          "bAutoWeld": false,
+          "bStartAwake": true,
+          "bGenerateWakeEvents": false,
+          "bUpdateMassWhenScaleChanges": true
+        },
+        "bIgnoreSelfComponent": true,
+        "IgnoreBones": [],
+        "IgnoreBoneNamePrefix": [],
+        "KawaiiPhysicsTag": {
+          "TagName": "None"
+        },
+        "ModifyBones": [],
+        "DeltaTime": 0.0,
+        "PreSkelCompTransform": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsNormalized": true,
+            "Size": 1.0,
+            "SizeSquared": 1.0
+          },
+          "Translation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          }
+        },
+        "bInitPhysicsSettings": false,
+        "ComponentPose": {
+          "LinkID": 0
+        },
+        "LODThreshold": -1,
+        "ActualAlpha": 0.0,
+        "AlphaInputType": "EAnimAlphaInputType::Float",
+        "bAlphaBoolEnabled": true,
+        "Alpha": 1.0,
+        "AlphaScaleBias": {
+          "Scale": 1.0,
+          "Bias": 0.0
+        },
+        "AlphaBoolBlend": {
+          "BlendInTime": 0.0,
+          "BlendOutTime": 0.0,
+          "BlendOption": "EAlphaBlendOption::Linear",
+          "bInitialized": false,
+          "CustomCurve": null,
+          "AlphaBlend": {
+            "CustomCurve": null,
+            "BlendTime": 0.2,
+            "BlendOption": "EAlphaBlendOption::Linear"
+          }
+        },
+        "AlphaCurveName": "None",
+        "AlphaScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        }
+      },
+      "AnimGraphNode_KawaiiPhysics_1": {
+        "RootBone": {
+          "BoneName": "HeadEquip060_hairB_02"
+        },
+        "ExcludeBones": [],
+        "AdditionalRootBones": [],
+        "DummyBoneLength": 0.0,
+        "BoneForwardAxis": "EBoneForwardAxis::X_Positive",
+        "PhysicsSettings": {
+          "Damping": 0.1,
+          "Stiffness": 0.05,
+          "WorldDampingLocation": 0.8,
+          "WorldDampingRotation": 0.8,
+          "Radius": 3.0,
+          "LimitAngle": 0.0
+        },
+        "TargetFrameRate": 60,
+        "OverrideTargetFramerate": false,
+        "WarmUpFrames": 0,
+        "bUseWarmUpWhenResetDynamics": true,
+        "bNeedWarmUp": false,
+        "TeleportDistanceThreshold": 300.0,
+        "TeleportRotationThreshold": 10.0,
+        "PlanarConstraint": "EPlanarConstraint::None",
+        "bUpdatePhysicsSettingsInGame": true,
+        "ResetBoneTransformWhenBoneNotFound": false,
+        "DampingCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "StiffnessCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "WorldDampingLocationCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "WorldDampingRotationCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "RadiusCurveData": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 0.6,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.7,
+                "Value": 1.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "LimitAngleCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "SphericalLimits": [],
+        "CapsuleLimits": [
+          {
+            "Radius": 13.832168,
+            "Length": 10.0,
+            "DrivingBone": {
+              "BoneName": "spine_03"
+            },
+            "OffsetLocation": {
+              "X": -11.379199,
+              "Y": -15.1788025,
+              "Z": 1.3002527
+            },
+            "OffsetRotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Location": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "bEnable": true,
+            "SourceType": "ECollisionSourceType::AnimNode"
+          },
+          {
+            "Radius": 13.832168,
+            "Length": 10.0,
+            "DrivingBone": {
+              "BoneName": "spine_03"
+            },
+            "OffsetLocation": {
+              "X": 2.0590496,
+              "Y": -5.0550284,
+              "Z": 1.300253
+            },
+            "OffsetRotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Location": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "bEnable": true,
+            "SourceType": "ECollisionSourceType::AnimNode"
+          }
+        ],
+        "BoxLimits": [],
+        "PlanarLimits": [
+          {
+            "Plane": {
+              "Vector": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "W": 0.0,
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "DrivingBone": {
+              "BoneName": "head"
+            },
+            "OffsetLocation": {
+              "X": 2.0322852,
+              "Y": 1.6572385,
+              "Z": 1.7293772E-09
+            },
+            "OffsetRotation": {
+              "Pitch": 90.0,
+              "Yaw": -30.716957,
+              "Roll": -20.71692
+            },
+            "Location": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "bEnable": true,
+            "SourceType": "ECollisionSourceType::AnimNode"
+          }
+        ],
+        "LimitsDataAsset": null,
+        "PhysicsAssetForLimits": null,
+        "SphericalLimitsData": [],
+        "CapsuleLimitsData": [],
+        "BoxLimitsData": [],
+        "PlanarLimitsData": [],
+        "BoneConstraintGlobalComplianceType": "EXPBDComplianceType::Rubber",
+        "BoneConstraintIterationCountBeforeCollision": 1,
+        "BoneConstraintIterationCountAfterCollision": 1,
+        "bAutoAddChildDummyBoneConstraint": true,
+        "BoneConstraints": [],
+        "BoneConstraintsDataAsset": null,
+        "BoneConstraintsData": [],
+        "MergedBoneConstraints": [],
+        "Gravity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.3
+        },
+        "bEnableWind": false,
+        "WindScale": 1.0,
+        "ExternalForces": [
+          {
+            "ForceRateByBoneLengthRate": {
+              "EditorCurveData": {
+                "Keys": [],
+                "DefaultValue": 3.4028235E+38,
+                "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+                "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+                "KeyHandlesToIndices": {}
+              },
+              "ExternalCurve": null
+            },
+            "bUseCharacterGravityDirection": false,
+            "bUseCharacterGravityScale": false,
+            "OverrideGravityDirection": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "bUseOverrideGravityDirection": false,
+            "bIsEnabled": true,
+            "bDrawDebug": false,
+            "ApplyBoneFilter": [],
+            "IgnoreBoneFilter": [],
+            "ExternalForceSpace": "EExternalForceSpace::WorldSpace",
+            "RandomForceScaleRange": {
+              "Min": 1.0,
+              "Max": 1.0
+            },
+            "ExternalOwner": null,
+            "bIsOneShot": false,
+            "RandomizedForceScale": 0.0,
+            "Force": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "ComponentTransform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "bCanSelectForceSpace": false
+          }
+        ],
+        "CustomExternalForces": [],
+        "bAllowWorldCollision": false,
+        "bOverrideCollisionParams": false,
+        "CollisionChannelSettings": {
+          "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+          "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+          "SleepFamily": "ESleepFamily::Normal",
+          "DOFMode": "EDOFMode::Default",
+          "bUseCCD": false,
+          "bIgnoreAnalyticCollisions": false,
+          "bNotifyRigidBodyCollision": false,
+          "bSmoothEdgeCollisions": false,
+          "bLockTranslation": true,
+          "bLockRotation": true,
+          "bLockXTranslation": false,
+          "bLockYTranslation": false,
+          "bLockZTranslation": false,
+          "bLockXRotation": false,
+          "bLockYRotation": false,
+          "bLockZRotation": false,
+          "bOverrideMaxAngularVelocity": false,
+          "bOverrideMaxDepenetrationVelocity": false,
+          "bOverrideWalkableSlopeOnInstance": false,
+          "bInterpolateWhenSubStepping": true,
+          "bInertiaConditioning": true,
+          "CollisionProfileName": "Custom",
+          "PositionSolverIterationCount": 8,
+          "VelocitySolverIterationCount": 1,
+          "CollisionResponses": {
+            "ResponseToChannels": {
+              "WorldStatic": "ECollisionResponse::ECR_Block",
+              "WorldDynamic": "ECollisionResponse::ECR_Block",
+              "Pawn": "ECollisionResponse::ECR_Block",
+              "Visibility": "ECollisionResponse::ECR_Block",
+              "Camera": "ECollisionResponse::ECR_Block",
+              "PhysicsBody": "ECollisionResponse::ECR_Block",
+              "Vehicle": "ECollisionResponse::ECR_Block",
+              "Destructible": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel1": "ECollisionResponse::ECR_Ignore",
+              "EngineTraceChannel2": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel3": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel4": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel5": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel6": "ECollisionResponse::ECR_Block",
+              "GameTraceChannel1": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel2": "ECollisionResponse::ECR_Overlap",
+              "GameTraceChannel3": "ECollisionResponse::ECR_Block",
+              "GameTraceChannel4": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel5": "ECollisionResponse::ECR_Overlap",
+              "GameTraceChannel6": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel7": "ECollisionResponse::ECR_Block",
+              "GameTraceChannel8": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel9": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel10": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel11": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel12": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel13": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel14": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel15": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel16": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel17": "ECollisionResponse::ECR_Block",
+              "GameTraceChannel18": "ECollisionResponse::ECR_Block"
+            },
+            "ResponseArray": []
+          },
+          "MaxDepenetrationVelocity": 0.0,
+          "MassInKgOverride": 100.0,
+          "LinearDamping": 0.01,
+          "AngularDamping": 0.0,
+          "CustomDOFPlaneNormal": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "COMNudge": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "MassScale": 1.0,
+          "InertiaTensorScale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "WalkableSlopeOverride": {
+            "WalkableSlopeBehavior": "EWalkableSlopeBehavior::WalkableSlope_Default",
+            "WalkableSlopeAngle": 0.0
+          },
+          "PhysMaterialOverride": null,
+          "MaxAngularVelocity": 3600.0,
+          "CustomSleepThresholdMultiplier": 1.0,
+          "StabilizationThresholdMultiplier": 1.0,
+          "PhysicsBlendWeight": 0.0,
+          "bSimulatePhysics": false,
+          "bOverrideMass": false,
+          "bEnableGravity": true,
+          "bAutoWeld": false,
+          "bStartAwake": true,
+          "bGenerateWakeEvents": false,
+          "bUpdateMassWhenScaleChanges": true
+        },
+        "bIgnoreSelfComponent": true,
+        "IgnoreBones": [],
+        "IgnoreBoneNamePrefix": [],
+        "KawaiiPhysicsTag": {
+          "TagName": "None"
+        },
+        "ModifyBones": [],
+        "DeltaTime": 0.0,
+        "PreSkelCompTransform": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsNormalized": true,
+            "Size": 1.0,
+            "SizeSquared": 1.0
+          },
+          "Translation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          }
+        },
+        "bInitPhysicsSettings": false,
+        "ComponentPose": {
+          "LinkID": 1
+        },
+        "LODThreshold": -1,
+        "ActualAlpha": 0.0,
+        "AlphaInputType": "EAnimAlphaInputType::Float",
+        "bAlphaBoolEnabled": true,
+        "Alpha": 1.0,
+        "AlphaScaleBias": {
+          "Scale": 1.0,
+          "Bias": 0.0
+        },
+        "AlphaBoolBlend": {
+          "BlendInTime": 0.0,
+          "BlendOutTime": 0.0,
+          "BlendOption": "EAlphaBlendOption::Linear",
+          "bInitialized": false,
+          "CustomCurve": null,
+          "AlphaBlend": {
+            "CustomCurve": null,
+            "BlendTime": 0.2,
+            "BlendOption": "EAlphaBlendOption::Linear"
+          }
+        },
+        "AlphaCurveName": "None",
+        "AlphaScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        }
+      },
+      "AnimGraphNode_Root_1": {
+        "Result": {
+          "LinkID": -1
+        }
+      },
+      "AnimGraphNode_KawaiiPhysics": {
+        "RootBone": {
+          "BoneName": "HeadEquip060_hat_02"
+        },
+        "ExcludeBones": [],
+        "AdditionalRootBones": [],
+        "DummyBoneLength": 10.0,
+        "BoneForwardAxis": "EBoneForwardAxis::X_Positive",
+        "PhysicsSettings": {
+          "Damping": 0.1,
+          "Stiffness": 0.05,
+          "WorldDampingLocation": 0.8,
+          "WorldDampingRotation": 0.8,
+          "Radius": 3.0,
+          "LimitAngle": 0.0
+        },
+        "TargetFrameRate": 60,
+        "OverrideTargetFramerate": false,
+        "WarmUpFrames": 0,
+        "bUseWarmUpWhenResetDynamics": true,
+        "bNeedWarmUp": false,
+        "TeleportDistanceThreshold": 300.0,
+        "TeleportRotationThreshold": 10.0,
+        "PlanarConstraint": "EPlanarConstraint::None",
+        "bUpdatePhysicsSettingsInGame": true,
+        "ResetBoneTransformWhenBoneNotFound": false,
+        "DampingCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "StiffnessCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "WorldDampingLocationCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "WorldDampingRotationCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "RadiusCurveData": {
+          "EditorCurveData": {
+            "Keys": [],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "LimitAngleCurveData": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.3,
+                "Value": 0.25,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.35,
+                "Value": 1.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "SphericalLimits": [],
+        "CapsuleLimits": [],
+        "BoxLimits": [],
+        "PlanarLimits": [],
+        "LimitsDataAsset": null,
+        "PhysicsAssetForLimits": null,
+        "SphericalLimitsData": [],
+        "CapsuleLimitsData": [],
+        "BoxLimitsData": [],
+        "PlanarLimitsData": [],
+        "BoneConstraintGlobalComplianceType": "EXPBDComplianceType::Rubber",
+        "BoneConstraintIterationCountBeforeCollision": 1,
+        "BoneConstraintIterationCountAfterCollision": 1,
+        "bAutoAddChildDummyBoneConstraint": true,
+        "BoneConstraints": [],
+        "BoneConstraintsDataAsset": null,
+        "BoneConstraintsData": [],
+        "MergedBoneConstraints": [],
+        "Gravity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "bEnableWind": false,
+        "WindScale": 1.0,
+        "ExternalForces": [],
+        "CustomExternalForces": [],
+        "bAllowWorldCollision": false,
+        "bOverrideCollisionParams": false,
+        "CollisionChannelSettings": {
+          "ObjectType": "ECollisionChannel::ECC_WorldStatic",
+          "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+          "SleepFamily": "ESleepFamily::Normal",
+          "DOFMode": "EDOFMode::Default",
+          "bUseCCD": false,
+          "bIgnoreAnalyticCollisions": false,
+          "bNotifyRigidBodyCollision": false,
+          "bSmoothEdgeCollisions": false,
+          "bLockTranslation": true,
+          "bLockRotation": true,
+          "bLockXTranslation": false,
+          "bLockYTranslation": false,
+          "bLockZTranslation": false,
+          "bLockXRotation": false,
+          "bLockYRotation": false,
+          "bLockZRotation": false,
+          "bOverrideMaxAngularVelocity": false,
+          "bOverrideMaxDepenetrationVelocity": false,
+          "bOverrideWalkableSlopeOnInstance": false,
+          "bInterpolateWhenSubStepping": true,
+          "bInertiaConditioning": true,
+          "CollisionProfileName": "Custom",
+          "PositionSolverIterationCount": 8,
+          "VelocitySolverIterationCount": 1,
+          "CollisionResponses": {
+            "ResponseToChannels": {
+              "WorldStatic": "ECollisionResponse::ECR_Block",
+              "WorldDynamic": "ECollisionResponse::ECR_Block",
+              "Pawn": "ECollisionResponse::ECR_Block",
+              "Visibility": "ECollisionResponse::ECR_Block",
+              "Camera": "ECollisionResponse::ECR_Block",
+              "PhysicsBody": "ECollisionResponse::ECR_Block",
+              "Vehicle": "ECollisionResponse::ECR_Block",
+              "Destructible": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel1": "ECollisionResponse::ECR_Ignore",
+              "EngineTraceChannel2": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel3": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel4": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel5": "ECollisionResponse::ECR_Block",
+              "EngineTraceChannel6": "ECollisionResponse::ECR_Block",
+              "GameTraceChannel1": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel2": "ECollisionResponse::ECR_Overlap",
+              "GameTraceChannel3": "ECollisionResponse::ECR_Block",
+              "GameTraceChannel4": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel5": "ECollisionResponse::ECR_Overlap",
+              "GameTraceChannel6": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel7": "ECollisionResponse::ECR_Block",
+              "GameTraceChannel8": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel9": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel10": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel11": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel12": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel13": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel14": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel15": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel16": "ECollisionResponse::ECR_Ignore",
+              "GameTraceChannel17": "ECollisionResponse::ECR_Block",
+              "GameTraceChannel18": "ECollisionResponse::ECR_Block"
+            },
+            "ResponseArray": []
+          },
+          "MaxDepenetrationVelocity": 0.0,
+          "MassInKgOverride": 100.0,
+          "LinearDamping": 0.01,
+          "AngularDamping": 0.0,
+          "CustomDOFPlaneNormal": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "COMNudge": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "MassScale": 1.0,
+          "InertiaTensorScale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "WalkableSlopeOverride": {
+            "WalkableSlopeBehavior": "EWalkableSlopeBehavior::WalkableSlope_Default",
+            "WalkableSlopeAngle": 0.0
+          },
+          "PhysMaterialOverride": null,
+          "MaxAngularVelocity": 3600.0,
+          "CustomSleepThresholdMultiplier": 1.0,
+          "StabilizationThresholdMultiplier": 1.0,
+          "PhysicsBlendWeight": 0.0,
+          "bSimulatePhysics": false,
+          "bOverrideMass": false,
+          "bEnableGravity": true,
+          "bAutoWeld": false,
+          "bStartAwake": true,
+          "bGenerateWakeEvents": false,
+          "bUpdateMassWhenScaleChanges": true
+        },
+        "bIgnoreSelfComponent": true,
+        "IgnoreBones": [],
+        "IgnoreBoneNamePrefix": [],
+        "KawaiiPhysicsTag": {
+          "TagName": "None"
+        },
+        "ModifyBones": [],
+        "DeltaTime": 0.0,
+        "PreSkelCompTransform": {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsNormalized": true,
+            "Size": 1.0,
+            "SizeSquared": 1.0
+          },
+          "Translation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          }
+        },
+        "bInitPhysicsSettings": false,
+        "ComponentPose": {
+          "LinkID": 6
+        },
+        "LODThreshold": -1,
+        "ActualAlpha": 0.0,
+        "AlphaInputType": "EAnimAlphaInputType::Float",
+        "bAlphaBoolEnabled": true,
+        "Alpha": 1.0,
+        "AlphaScaleBias": {
+          "Scale": 1.0,
+          "Bias": 0.0
+        },
+        "AlphaBoolBlend": {
+          "BlendInTime": 0.0,
+          "BlendOutTime": 0.0,
+          "BlendOption": "EAlphaBlendOption::Linear",
+          "bInitialized": false,
+          "CustomCurve": null,
+          "AlphaBlend": {
+            "CustomCurve": null,
+            "BlendTime": 0.2,
+            "BlendOption": "EAlphaBlendOption::Linear"
+          }
+        },
+        "AlphaCurveName": "None",
+        "AlphaScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        }
+      },
+      "AnimGraphNode_ComponentToLocalSpace": {
+        "ComponentPose": {
+          "LinkID": 2
+        }
+      },
+      "AnimGraphNode_LocalToComponentSpace": {
+        "LocalPose": {
+          "LinkID": 7
+        }
+      },
+      "AnimGraphNode_LinkedInputPose": {
+        "Name": "InPose",
+        "Graph": "HairLayer",
+        "InputPose": {
+          "LinkID": -1
+        }
+      },
+      "AnimGraphNode_Root": {
+        "Result": {
+          "LinkID": 5
+        }
+      },
+      "PhysicsSettings": {
+        "Damping": 0.1,
+        "Stiffness": 0.05,
+        "WorldDampingLocation": 0.8,
+        "WorldDampingRotation": 0.8,
+        "Radius": 3.0,
+        "LimitAngle": 50.0
+      },
+      "Alpha": 0.5
+    },
+    "SerializedSparseClassDataStruct": "ScriptStruct'Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.ABP_HeadEquip060_C:AnimBlueprintGeneratedConstantData'",
+    "SerializedSparseClassData": {
+      "__NameProperty_26": "AnimGraph",
+      "__StructProperty_27": {
+        "ClassName": "None",
+        "FunctionName": "None"
+      },
+      "__NameProperty_28": "None",
+      "__NameProperty_29": "HairLayer",
+      "AnimBlueprintExtension_PropertyAccess": {
+        "Library": {
+          "PathSegments": [],
+          "SrcPaths": [],
+          "DestPaths": [],
+          "CopyBatchArray": []
+        }
+      },
+      "AnimBlueprintExtension_Base": {
+        "ExposedValueHandlers": [
+          {
+            "CopyRecords": [],
+            "Function": {
+              "ObjectName": "Function'ABP_HeadEquip060_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_52CFF35340EC716F329B6AB523F9F672'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.3"
+            },
+            "BoundFunction": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_52CFF35340EC716F329B6AB523F9F672"
+          },
+          {
+            "CopyRecords": [],
+            "Function": {
+              "ObjectName": "Function'ABP_HeadEquip060_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_F1EAF8E34C1BF37692DD4E93545B71D7'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.6"
+            },
+            "BoundFunction": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_F1EAF8E34C1BF37692DD4E93545B71D7"
+          },
+          {
+            "CopyRecords": [],
+            "Function": {
+              "ObjectName": "Function'ABP_HeadEquip060_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_B2B66FB843F2818D30D219BB9A5AB4FC'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.5"
+            },
+            "BoundFunction": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_B2B66FB843F2818D30D219BB9A5AB4FC"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": {
+              "ObjectName": "Function'ABP_HeadEquip060_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_7413B4C84203A735DC04F69581708111'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.4"
+            },
+            "BoundFunction": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_7413B4C84203A735DC04F69581708111"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          },
+          {
+            "CopyRecords": [],
+            "Function": null,
+            "BoundFunction": "None"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_HeadEquip060_C",
+    "Class": "UScriptClass'AnimBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton'SK_PalHuman_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/Human/SK_PalHuman_Skeleton.40"
+      },
+      "AnimNodeData": [
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_HeadEquip060_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 0,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_HeadEquip060_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 1,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_HeadEquip060_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 2,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_HeadEquip060_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295,
+            0,
+            2
+          ],
+          "NodeIndex": 3,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_HeadEquip060_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 4,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_HeadEquip060_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295
+          ],
+          "NodeIndex": 5,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_HeadEquip060_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295
+          ],
+          "NodeIndex": 6,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_HeadEquip060_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 7,
+          "Flags": "EAnimNodeDataFlags::None"
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_HeadEquip060_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295,
+            3,
+            2
+          ],
+          "NodeIndex": 8,
+          "Flags": "EAnimNodeDataFlags::None"
+        }
+      ],
+      "NodeTypeMap": [
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_Root'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "Result",
+                "Value": 3
+              },
+              {
+                "Key": "Name",
+                "Value": 4
+              },
+              {
+                "Key": "Group",
+                "Value": 5
+              }
+            ],
+            "NumProperties": 6
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_Base'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              }
+            ],
+            "NumProperties": 3
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_LinkedInputPose'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "Name",
+                "Value": 3
+              },
+              {
+                "Key": "Graph",
+                "Value": 4
+              },
+              {
+                "Key": "InputPose",
+                "Value": 5
+              }
+            ],
+            "NumProperties": 6
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_ConvertLocalToComponentSpace'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "LocalPose",
+                "Value": 3
+              }
+            ],
+            "NumProperties": 4
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/Engine.AnimNode_ConvertComponentToLocalSpace'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "ComponentPose",
+                "Value": 3
+              }
+            ],
+            "NumProperties": 4
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/KawaiiPhysics.AnimNode_KawaiiPhysics'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "ComponentPose",
+                "Value": 3
+              },
+              {
+                "Key": "LODThreshold",
+                "Value": 4
+              },
+              {
+                "Key": "ActualAlpha",
+                "Value": 5
+              },
+              {
+                "Key": "AlphaInputType",
+                "Value": 6
+              },
+              {
+                "Key": "bAlphaBoolEnabled",
+                "Value": 7
+              },
+              {
+                "Key": "Alpha",
+                "Value": 8
+              },
+              {
+                "Key": "AlphaScaleBias",
+                "Value": 9
+              },
+              {
+                "Key": "AlphaBoolBlend",
+                "Value": 10
+              },
+              {
+                "Key": "AlphaCurveName",
+                "Value": 11
+              },
+              {
+                "Key": "AlphaScaleBiasClamp",
+                "Value": 12
+              },
+              {
+                "Key": "RootBone",
+                "Value": 13
+              },
+              {
+                "Key": "ExcludeBones",
+                "Value": 14
+              },
+              {
+                "Key": "AdditionalRootBones",
+                "Value": 15
+              },
+              {
+                "Key": "DummyBoneLength",
+                "Value": 16
+              },
+              {
+                "Key": "BoneForwardAxis",
+                "Value": 17
+              },
+              {
+                "Key": "PhysicsSettings",
+                "Value": 18
+              },
+              {
+                "Key": "TargetFramerate",
+                "Value": 19
+              },
+              {
+                "Key": "OverrideTargetFramerate",
+                "Value": 20
+              },
+              {
+                "Key": "WarmUpFrames",
+                "Value": 21
+              },
+              {
+                "Key": "bUseWarmUpWhenResetDynamics",
+                "Value": 22
+              },
+              {
+                "Key": "bNeedWarmUp",
+                "Value": 23
+              },
+              {
+                "Key": "TeleportDistanceThreshold",
+                "Value": 24
+              },
+              {
+                "Key": "TeleportRotationThreshold",
+                "Value": 25
+              },
+              {
+                "Key": "PlanarConstraint",
+                "Value": 26
+              },
+              {
+                "Key": "bUpdatePhysicsSettingsInGame",
+                "Value": 27
+              },
+              {
+                "Key": "ResetBoneTransformWhenBoneNotFound",
+                "Value": 28
+              },
+              {
+                "Key": "DampingCurve",
+                "Value": 29
+              },
+              {
+                "Key": "WorldDampingLocationCurve",
+                "Value": 30
+              },
+              {
+                "Key": "WorldDampingRotationCurve",
+                "Value": 31
+              },
+              {
+                "Key": "StiffnessCurve",
+                "Value": 32
+              },
+              {
+                "Key": "RadiusCurve",
+                "Value": 33
+              },
+              {
+                "Key": "LimitAngleCurve",
+                "Value": 34
+              },
+              {
+                "Key": "DampingCurveData",
+                "Value": 35
+              },
+              {
+                "Key": "StiffnessCurveData",
+                "Value": 36
+              },
+              {
+                "Key": "WorldDampingLocationCurveData",
+                "Value": 37
+              },
+              {
+                "Key": "WorldDampingRotationCurveData",
+                "Value": 38
+              },
+              {
+                "Key": "RadiusCurveData",
+                "Value": 39
+              },
+              {
+                "Key": "LimitAngleCurveData",
+                "Value": 40
+              },
+              {
+                "Key": "SphericalLimits",
+                "Value": 41
+              },
+              {
+                "Key": "CapsuleLimits",
+                "Value": 42
+              },
+              {
+                "Key": "BoxLimits",
+                "Value": 43
+              },
+              {
+                "Key": "PlanarLimits",
+                "Value": 44
+              },
+              {
+                "Key": "LimitsDataAsset",
+                "Value": 45
+              },
+              {
+                "Key": "PhysicsAssetForLimits",
+                "Value": 46
+              },
+              {
+                "Key": "SphericalLimitsData",
+                "Value": 47
+              },
+              {
+                "Key": "CapsuleLimitsData",
+                "Value": 48
+              },
+              {
+                "Key": "BoxLimitsData",
+                "Value": 49
+              },
+              {
+                "Key": "PlanarLimitsData",
+                "Value": 50
+              },
+              {
+                "Key": "BoneConstraintGlobalComplianceType",
+                "Value": 51
+              },
+              {
+                "Key": "BoneConstraintIterationCountBeforeCollision",
+                "Value": 52
+              },
+              {
+                "Key": "BoneConstraintIterationCountAfterCollision",
+                "Value": 53
+              },
+              {
+                "Key": "bAutoAddChildDummyBoneConstraint",
+                "Value": 54
+              },
+              {
+                "Key": "BoneConstraints",
+                "Value": 55
+              },
+              {
+                "Key": "BoneConstraintsDataAsset",
+                "Value": 56
+              },
+              {
+                "Key": "BoneConstraintsData",
+                "Value": 57
+              },
+              {
+                "Key": "MergedBoneConstraints",
+                "Value": 58
+              },
+              {
+                "Key": "Gravity",
+                "Value": 59
+              },
+              {
+                "Key": "bEnableWind",
+                "Value": 60
+              },
+              {
+                "Key": "WindScale",
+                "Value": 61
+              },
+              {
+                "Key": "ExternalForces",
+                "Value": 62
+              },
+              {
+                "Key": "CustomExternalForces",
+                "Value": 63
+              },
+              {
+                "Key": "bAllowWorldCollision",
+                "Value": 64
+              },
+              {
+                "Key": "bOverrideCollisionParams",
+                "Value": 65
+              },
+              {
+                "Key": "CollisionChannelSettings",
+                "Value": 66
+              },
+              {
+                "Key": "bIgnoreSelfComponent",
+                "Value": 67
+              },
+              {
+                "Key": "IgnoreBones",
+                "Value": 68
+              },
+              {
+                "Key": "IgnoreBoneNamePrefix",
+                "Value": 69
+              },
+              {
+                "Key": "KawaiiPhysicsTag",
+                "Value": 70
+              },
+              {
+                "Key": "ModifyBones",
+                "Value": 71
+              },
+              {
+                "Key": "DeltaTime",
+                "Value": 72
+              },
+              {
+                "Key": "PreSkelCompTransform",
+                "Value": 73
+              },
+              {
+                "Key": "bInitPhysicsSettings",
+                "Value": 74
+              },
+              {
+                "Key": "bEditing",
+                "Value": 75
+              },
+              {
+                "Key": "LastEvaluatedTime",
+                "Value": 76
+              }
+            ],
+            "NumProperties": 77
+          }
+        },
+        {
+          "Key": "ScriptStruct'/Script/AnimGraphRuntime.AnimNode_SkeletalControlBase'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "ComponentPose",
+                "Value": 3
+              },
+              {
+                "Key": "LODThreshold",
+                "Value": 4
+              },
+              {
+                "Key": "ActualAlpha",
+                "Value": 5
+              },
+              {
+                "Key": "AlphaInputType",
+                "Value": 6
+              },
+              {
+                "Key": "bAlphaBoolEnabled",
+                "Value": 7
+              },
+              {
+                "Key": "Alpha",
+                "Value": 8
+              },
+              {
+                "Key": "AlphaScaleBias",
+                "Value": 9
+              },
+              {
+                "Key": "AlphaBoolBlend",
+                "Value": 10
+              },
+              {
+                "Key": "AlphaCurveName",
+                "Value": 11
+              },
+              {
+                "Key": "AlphaScaleBiasClamp",
+                "Value": 12
+              }
+            ],
+            "NumProperties": 13
+          }
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABP_HeadEquip060_C:ExecuteUbergraph_ABP_HeadEquip060'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AnimInstance'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABP_HeadEquip060_C:HairLayer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.8"
+      },
+      {
+        "ObjectName": "Function'ABP_HeadEquip060_C:AnimGraph'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.2"
+      },
+      {
+        "ObjectName": "Function'ABP_HeadEquip060_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_B2B66FB843F2818D30D219BB9A5AB4FC'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.5"
+      },
+      {
+        "ObjectName": "Function'ABP_HeadEquip060_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_F1EAF8E34C1BF37692DD4E93545B71D7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.6"
+      },
+      {
+        "ObjectName": "Function'ABP_HeadEquip060_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_52CFF35340EC716F329B6AB523F9F672'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.3"
+      },
+      {
+        "ObjectName": "Function'ABP_HeadEquip060_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_7413B4C84203A735DC04F69581708111'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.4"
+      },
+      {
+        "ObjectName": "Function'ABP_HeadEquip060_C:ExecuteUbergraph_ABP_HeadEquip060'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.7"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimBlueprintExtension_PropertyAccess",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimSubsystemInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimBlueprintExtension_Base",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimSubsystemInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_KawaiiPhysics_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 2400,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_KawaiiPhysics'",
+          "ObjectPath": "/Script/KawaiiPhysics"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_KawaiiPhysics_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 2400,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_KawaiiPhysics'",
+          "ObjectPath": "/Script/KawaiiPhysics"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_KawaiiPhysics_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 2400,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_KawaiiPhysics'",
+          "ObjectPath": "/Script/KawaiiPhysics"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 184,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_Root'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_KawaiiPhysics",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 2400,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_KawaiiPhysics'",
+          "ObjectPath": "/Script/KawaiiPhysics"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_ComponentToLocalSpace",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 160,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_ConvertComponentToLocalSpace'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_LocalToComponentSpace",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 160,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_ConvertLocalToComponentSpace'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_LinkedInputPose",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 336,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_LinkedInputPose'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 184,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNode_Root'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "PhysicsSettings",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'KawaiiPhysicsSettings'",
+          "ObjectPath": "/Script/KawaiiPhysics"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Alpha",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABP_HeadEquip060": {
+        "ObjectName": "Function'ABP_HeadEquip060_C:ExecuteUbergraph_ABP_HeadEquip060'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.7"
+      },
+      "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_7413B4C84203A735DC04F69581708111": {
+        "ObjectName": "Function'ABP_HeadEquip060_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_7413B4C84203A735DC04F69581708111'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.4"
+      },
+      "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_52CFF35340EC716F329B6AB523F9F672": {
+        "ObjectName": "Function'ABP_HeadEquip060_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_52CFF35340EC716F329B6AB523F9F672'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.3"
+      },
+      "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_F1EAF8E34C1BF37692DD4E93545B71D7": {
+        "ObjectName": "Function'ABP_HeadEquip060_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_F1EAF8E34C1BF37692DD4E93545B71D7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.6"
+      },
+      "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_B2B66FB843F2818D30D219BB9A5AB4FC": {
+        "ObjectName": "Function'ABP_HeadEquip060_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_B2B66FB843F2818D30D219BB9A5AB4FC'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.5"
+      },
+      "AnimGraph": {
+        "ObjectName": "Function'ABP_HeadEquip060_C:AnimGraph'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.2"
+      },
+      "HairLayer": {
+        "ObjectName": "Function'ABP_HeadEquip060_C:HairLayer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.8"
+      }
+    },
+    "ClassFlags": "CLASS_Transient | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'SkeletalMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassConfigName": "Engine",
+    "Interfaces": [
+      {
+        "Class": {
+          "ObjectName": "AnimBlueprintGeneratedClass'ALI_HumanHair_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/Female/ALI_HumanHair.1"
+        },
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      }
+    ],
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABP_HeadEquip060_C'Default__ABP_HeadEquip060_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Player/HairAttachAccessory/ABP_HeadEquip060.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal",
+      "ImplementedInterfaces": "((Interface=/Script/Engine.AnimBlueprintGeneratedClass'\"/Game/Pal/Blueprint/Character/Player/Female/ALI_HumanHair.ALI_HumanHair_C\"'))"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_HeadEquip060_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraph",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_52CFF35340EC716F329B6AB523F9F672",
+    "Outer": "ABP_HeadEquip060_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_7413B4C84203A735DC04F69581708111",
+    "Outer": "ABP_HeadEquip060_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_B2B66FB843F2818D30D219BB9A5AB4FC",
+    "Outer": "ABP_HeadEquip060_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_HeadEquip060_AnimGraphNode_KawaiiPhysics_F1EAF8E34C1BF37692DD4E93545B71D7",
+    "Outer": "ABP_HeadEquip060_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_HeadEquip060",
+    "Outer": "ABP_HeadEquip060_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_KawaiiPhysicsSettings",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'KawaiiPhysicsSettings'",
+          "ObjectPath": "/Script/KawaiiPhysics"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_KawaiiPhysicsSettings_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'KawaiiPhysicsSettings'",
+          "ObjectPath": "/Script/KawaiiPhysics"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_KawaiiPhysicsSettings_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'KawaiiPhysicsSettings'",
+          "ObjectPath": "/Script/KawaiiPhysics"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_KawaiiPhysicsSettings_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'KawaiiPhysicsSettings'",
+          "ObjectPath": "/Script/KawaiiPhysics"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "HairLayer",
+    "Outer": "ABP_HeadEquip060_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "InPose",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "HairLayer",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable"
+  },
+  {
+    "Type": "ScriptStruct",
+    "Name": "AnimBlueprintGeneratedConstantData",
+    "Outer": "ABP_HeadEquip060_C",
+    "Class": "UScriptClass'ScriptStruct'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "ScriptStruct'AnimBlueprintConstantData'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "__NameProperty_26",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "__StructProperty_27",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 40,
+        "PropertyFlags": "BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimNodeFunctionRef'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "__NameProperty_28",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "__NameProperty_29",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimBlueprintExtension_PropertyAccess",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 192,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimSubsystem_PropertyAccess'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimBlueprintExtension_Base",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AnimSubsystem_Base'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ]
+  },
+  {
+    "Type": "ScriptStruct",
+    "Name": "AnimBlueprintGeneratedMutableData",
+    "Outer": "ABP_HeadEquip060_C",
+    "Class": "UScriptClass'ScriptStruct'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "ScriptStruct'AnimBlueprintMutableData'",
+      "ObjectPath": "/Script/Engine"
+    }
+  }
+]

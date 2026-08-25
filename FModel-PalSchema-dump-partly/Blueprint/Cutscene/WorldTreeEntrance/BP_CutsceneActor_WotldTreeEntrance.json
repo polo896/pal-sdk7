@@ -1,0 +1,382 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_CutsceneActor_WotldTreeEntrance_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_CutsceneActorBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/BP_CutsceneActorBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_CutsceneActor_WotldTreeEntrance_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.14"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_CutsceneActor_WotldTreeEntrance_C:ExecuteUbergraph_BP_CutsceneActor_WotldTreeEntrance'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_CutsceneActorBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/BP_CutsceneActorBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_CutsceneActor_WotldTreeEntrance_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.6"
+      },
+      {
+        "ObjectName": "Function'BP_CutsceneActor_WotldTreeEntrance_C:ExecuteUbergraph_BP_CutsceneActor_WotldTreeEntrance'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ChildActor",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ChildActorComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_CutsceneActor_WotldTreeEntrance": {
+        "ObjectName": "Function'BP_CutsceneActor_WotldTreeEntrance_C:ExecuteUbergraph_BP_CutsceneActor_WotldTreeEntrance'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.5"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_CutsceneActor_WotldTreeEntrance_C:ReceiveBeginPlay'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.6"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_CutsceneActor_WotldTreeEntrance_C'Default__BP_CutsceneActor_WotldTreeEntrance_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_CutsceneActor_WotldTreeEntrance_C",
+    "Name": "Default__BP_CutsceneActor_WotldTreeEntrance_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.BP_CutsceneActor_WotldTreeEntrance_C'",
+    "Template": {
+      "ObjectName": "BP_CutsceneActorBase_C'Default__BP_CutsceneActorBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/BP_CutsceneActorBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "OpeningFadeInDelay": 1.0,
+      "OpeningFadeInTime": 1.0,
+      "bFadeOutAndHoldOnFinish": true,
+      "bHideNearbyCharacters": true,
+      "CutsceneBaseLocation": {
+        "X": 201437.98,
+        "Y": -226608.73,
+        "Z": 8978.091
+      },
+      "PlaybackSettings": {
+        "bHideHud": false
+      },
+      "SequencePlayer": {
+        "ObjectName": "LevelSequencePlayer'Default__BP_CutsceneActor_WotldTreeEntrance_C:AnimationPlayer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.8"
+      },
+      "LevelSequenceAsset": {
+        "ObjectName": "LevelSequence'LS_WorldTreeEntryDemo_All_ver2'",
+        "ObjectPath": "Pal/Content/Pal/Demo/WorldTreeEntry/LevelSequence/LS_WorldTreeEntryDemo_All_ver2.9"
+      },
+      "BurnInOptions": {
+        "ObjectName": "LevelSequenceBurnInOptions'Default__BP_CutsceneActor_WotldTreeEntrance_C:BurnInOptions'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.7"
+      },
+      "BindingOverrides": {
+        "ObjectName": "MovieSceneBindingOverrides'Default__BP_CutsceneActor_WotldTreeEntrance_C:BindingOverrides'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.9"
+      },
+      "DefaultInstanceData": {
+        "ObjectName": "DefaultLevelSequenceInstanceData'Default__BP_CutsceneActor_WotldTreeEntrance_C:InstanceData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.4"
+      },
+      "RemoteRole": "ENetRole::ROLE_None",
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_CutsceneActor_WotldTreeEntrance_C:SceneComp'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.11"
+      }
+    }
+  },
+  {
+    "Type": "BP_CutsceneLocalPlayer_Sphere_C",
+    "Name": "ChildActor_GEN_VARIABLE_BP_CutsceneLocalPlayer_Sphere_C_CAT",
+    "Outer": "ChildActor_GEN_VARIABLE",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Demo/ModelBP/BP_CutsceneLocalPlayer_Sphere.BP_CutsceneLocalPlayer_Sphere_C'",
+    "Template": {
+      "ObjectName": "BP_CutsceneLocalPlayer_Sphere_C'Default__BP_CutsceneLocalPlayer_Sphere_C'",
+      "ObjectPath": "Pal/Content/Pal/Demo/ModelBP/BP_CutsceneLocalPlayer_Sphere.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHidden": true
+    },
+    "ActorLabel": "BP_CutsceneLocalPlayer_Sphere"
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "ChildActor_GEN_VARIABLE",
+    "Outer": "BP_CutsceneActor_WotldTreeEntrance_C",
+    "Class": "UScriptClass'ChildActorComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_CutsceneLocalPlayer_Sphere_C'",
+        "ObjectPath": "Pal/Content/Pal/Demo/ModelBP/BP_CutsceneLocalPlayer_Sphere.0"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "BP_CutsceneLocalPlayer_Sphere_C'BP_CutsceneActor_WotldTreeEntrance_C:ChildActor_GEN_VARIABLE.ChildActor_GEN_VARIABLE_BP_CutsceneLocalPlayer_Sphere_C_CAT'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.2"
+      }
+    }
+  },
+  {
+    "Type": "DefaultLevelSequenceInstanceData",
+    "Name": "InstanceData",
+    "Outer": "Default__BP_CutsceneActor_WotldTreeEntrance_C",
+    "Class": "UScriptClass'DefaultLevelSequenceInstanceData'",
+    "Template": {
+      "ObjectName": "DefaultLevelSequenceInstanceData'Default__BP_CutsceneActorBase_C:InstanceData'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/BP_CutsceneActorBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_CutsceneActor_WotldTreeEntrance",
+    "Outer": "BP_CutsceneActor_WotldTreeEntrance_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Cutscene_Local_Player_Sphere",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_CutsceneLocalPlayer_Sphere_C'",
+          "ObjectPath": "Pal/Content/Pal/Demo/ModelBP/BP_CutsceneLocalPlayer_Sphere.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_CutsceneActor_WotldTreeEntrance_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "LevelSequenceBurnInOptions",
+    "Name": "BurnInOptions",
+    "Outer": "Default__BP_CutsceneActor_WotldTreeEntrance_C",
+    "Class": "UScriptClass'LevelSequenceBurnInOptions'",
+    "Template": {
+      "ObjectName": "LevelSequenceBurnInOptions'Default__BP_CutsceneActorBase_C:BurnInOptions'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/BP_CutsceneActorBase.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "LevelSequencePlayer",
+    "Name": "AnimationPlayer",
+    "Outer": "Default__BP_CutsceneActor_WotldTreeEntrance_C",
+    "Class": "UScriptClass'LevelSequencePlayer'",
+    "Template": {
+      "ObjectName": "LevelSequencePlayer'Default__BP_CutsceneActorBase_C:AnimationPlayer'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/BP_CutsceneActorBase.4"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OnPlay": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_CutsceneActor_WotldTreeEntrance_C'Default__BP_CutsceneActor_WotldTreeEntrance_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.1"
+            },
+            "FunctionName": "ShowBurnin"
+          }
+        ]
+      },
+      "OnPlayReverse": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_CutsceneActor_WotldTreeEntrance_C'Default__BP_CutsceneActor_WotldTreeEntrance_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.1"
+            },
+            "FunctionName": "ShowBurnin"
+          }
+        ]
+      },
+      "OnStop": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_CutsceneActor_WotldTreeEntrance_C'Default__BP_CutsceneActor_WotldTreeEntrance_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.1"
+            },
+            "FunctionName": "HideBurnin"
+          }
+        ]
+      },
+      "PlaybackSettings": {
+        "bHideHud": false
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneBindingOverrides",
+    "Name": "BindingOverrides",
+    "Outer": "Default__BP_CutsceneActor_WotldTreeEntrance_C",
+    "Class": "UScriptClass'MovieSceneBindingOverrides'",
+    "Template": {
+      "ObjectName": "MovieSceneBindingOverrides'Default__BP_CutsceneActorBase_C:BindingOverrides'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/BP_CutsceneActorBase.5"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_CutsceneActor_WotldTreeEntrance_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComp",
+    "Outer": "Default__BP_CutsceneActor_WotldTreeEntrance_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__BP_CutsceneActorBase_C:SceneComp'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/BP_CutsceneActorBase.7"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_CutsceneActor_WotldTreeEntrance_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.10"
+      },
+      "VariableGuid": "62DFE9A6-45CAC7AE-8C657C91-23FA0592",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ChildActorComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ChildActorComponent'BP_CutsceneActor_WotldTreeEntrance_C:ChildActor_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.3"
+      },
+      "ParentComponentOrVariableName": "SceneComp",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "E43D48A3-42D8B5F7-C9BE9580-A745C54E",
+      "InternalVariableName": "ChildActor"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_CutsceneActor_WotldTreeEntrance_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_CutsceneActor_WotldTreeEntrance_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.13"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_CutsceneActor_WotldTreeEntrance_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.13"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_CutsceneActor_WotldTreeEntrance_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Cutscene/WorldTreeEntrance/BP_CutsceneActor_WotldTreeEntrance.12"
+      }
+    }
+  }
+]

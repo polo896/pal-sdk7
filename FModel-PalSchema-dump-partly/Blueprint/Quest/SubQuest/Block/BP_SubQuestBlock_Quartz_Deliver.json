@@ -1,0 +1,64 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SubQuestBlock_Quartz_Deliver_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_QuestBlock_DeliveryItem_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_QuestBlock_DeliveryItem_Base.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_QuestBlock_DeliveryItem_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_QuestBlock_DeliveryItem_Base.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SubQuestBlock_Quartz_Deliver_C'Default__BP_SubQuestBlock_Quartz_Deliver_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Quartz_Deliver.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SubQuestBlock_Quartz_Deliver_C",
+    "Name": "Default__BP_SubQuestBlock_Quartz_Deliver_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_Quartz_Deliver.BP_SubQuestBlock_Quartz_Deliver_C'",
+    "Template": {
+      "ObjectName": "BP_QuestBlock_DeliveryItem_Base_C'Default__BP_QuestBlock_DeliveryItem_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_QuestBlock_DeliveryItem_Base.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ObjectiveText": {
+        "RowName": "QUEST_SUB_OBJECTIVE_CollectQuartz_020"
+      },
+      "RequireItemMap": [
+        {
+          "Key": {
+            "Key": "Quartz"
+          },
+          "Value": 10
+        }
+      ],
+      "LocationSettingData": {
+        "FixedLocationPointArray": [
+          {
+            "DataTable": {
+              "ObjectName": "DataTable'DT_PalQuestLocationData'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Quest/DT_PalQuestLocationData.0"
+            },
+            "RowName": "Quartz_Deliver"
+          }
+        ]
+      }
+    }
+  }
+]

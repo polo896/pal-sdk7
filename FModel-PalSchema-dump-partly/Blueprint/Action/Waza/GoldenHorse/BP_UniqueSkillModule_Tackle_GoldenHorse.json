@@ -1,0 +1,69 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_UniqueSkillModule_Tackle_GoldenHorse_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillModule_Tackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_UniqueSkillModule_Tackle_GoldenHorse_C'Default__BP_UniqueSkillModule_Tackle_GoldenHorse_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/GoldenHorse/BP_UniqueSkillModule_Tackle_GoldenHorse.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_UniqueSkillModule_Tackle_GoldenHorse_C",
+    "Name": "Default__BP_UniqueSkillModule_Tackle_GoldenHorse_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/GoldenHorse/BP_UniqueSkillModule_Tackle_GoldenHorse.BP_UniqueSkillModule_Tackle_GoldenHorse_C'",
+    "Template": {
+      "ObjectName": "BP_UniqueSkillModule_Tackle_C'Default__BP_UniqueSkillModule_Tackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/UniqueSkillModule/BP_UniqueSkillModule_Tackle.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StartAnimMontage": {
+        "ObjectName": "AnimMontage'AM_GoldenHorse_GroundDash_Start'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GoldenHorse/AM_GoldenHorse_GroundDash_Start.0"
+      },
+      "LoopAnimMontage": {
+        "ObjectName": "AnimMontage'AM_GoldenHorse_GroundDash_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GoldenHorse/AM_GoldenHorse_GroundDash_Loop.0"
+      },
+      "EndAnimMontage": {
+        "ObjectName": "AnimMontage'AM_GoldenHorse_GroundDash_End'",
+        "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GoldenHorse/AM_GoldenHorse_GroundDash_End.0"
+      },
+      "AttackTime": 2.0,
+      "EndBrakeTime": 0.4,
+      "MaxSpeedMultiply": 3.0,
+      "TackleHomingRate": 0.3,
+      "FlagName": "GoldenHorse_Tackle",
+      "StartSkillEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_GoldenHorse_Tackle_Start_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/GoldenHorse_Tackle/BP_SkillEffect_Unique_GoldenHorse_Tackle_Start.0"
+      },
+      "LoopSkillEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_Unique_GoldenHorse_Tackle_Loop_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/GoldenHorse_Tackle/BP_SkillEffect_Unique_GoldenHorse_Tackle_Loop.0"
+      },
+      "EnableDashSkip": true,
+      "DashSkipTime": 0.48
+    }
+  }
+]

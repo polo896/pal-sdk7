@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "E_FloatingPollenFlowerState",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "B68A24D145E40F33524B82836A75D437",
+            "SourceString": "Active",
+            "LocalizedString": "Active"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "68B279844ACEE1B193D16784354D2E9B",
+            "SourceString": "Emitting",
+            "LocalizedString": "Emitting"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "2FD3830C4727D46B99D900B9B6F4EEE1",
+            "SourceString": "RespawnWait",
+            "LocalizedString": "RespawnWait"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "E_FloatingPollenFlowerState::NewEnumerator0": 0,
+      "E_FloatingPollenFlowerState::NewEnumerator1": 1,
+      "E_FloatingPollenFlowerState::NewEnumerator2": 2,
+      "E_FloatingPollenFlowerState::E_MAX": 3
+    },
+    "CppForm": "Namespaced"
+  }
+]

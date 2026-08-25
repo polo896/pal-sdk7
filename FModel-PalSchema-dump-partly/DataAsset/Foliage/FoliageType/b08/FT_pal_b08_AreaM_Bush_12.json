@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "FT_pal_b08_AreaM_Bush_12",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_pal_b08_fallem_leaves_01'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b08/Area_M/Foliage/Mesh/SM_pal_b08_fallem_leaves_01.2"
+      },
+      "UpdateGuid": "8506A2A8-41A5F0C6-F5D61CA6-579C972F",
+      "Density": 50.0,
+      "ScaleX": {
+        "Min": 0.6,
+        "Max": 0.8
+      },
+      "AverageNormal": true,
+      "GroundSlopeAngle": {
+        "Max": 90.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 5.505928,
+          "Y": -6.1103725,
+          "Z": 4.4624867
+        },
+        "BoxExtent": {
+          "X": 73.38577,
+          "Y": 65.67879,
+          "Z": 4.315315
+        },
+        "SphereRadius": 81.4303932519393
+      },
+      "LowBoundOriginRadius": {
+        "X": -2.9032154,
+        "Y": -3.6863213,
+        "Z": 73.137695
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

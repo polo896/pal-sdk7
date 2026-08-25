@@ -1,0 +1,348 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_VisualEffect_ChangeElementBase_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElementBase_C:ExecuteUbergraph_BP_VisualEffect_ChangeElementBase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalVisualEffectBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElementBase_C:DeleteEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.2"
+      },
+      {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElementBase_C:SpawnhEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.7"
+      },
+      {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElementBase_C:SetLimLight'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.6"
+      },
+      {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElementBase_C:OnBeginVisualEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.4"
+      },
+      {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElementBase_C:OnEndVisualEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.5"
+      },
+      {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElementBase_C:TickVisualEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.8"
+      },
+      {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElementBase_C:ExecuteUbergraph_BP_VisualEffect_ChangeElementBase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "EffectAsset",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraSystem'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "EffectInstance",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ChangeEffectAsset",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraSystem'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_VisualEffect_ChangeElementBase": {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElementBase_C:ExecuteUbergraph_BP_VisualEffect_ChangeElementBase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.3"
+      },
+      "TickVisualEffect": {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElementBase_C:TickVisualEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.8"
+      },
+      "OnEndVisualEffect": {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElementBase_C:OnEndVisualEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.5"
+      },
+      "OnBeginVisualEffect": {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElementBase_C:OnBeginVisualEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.4"
+      },
+      "SetLimLight": {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElementBase_C:SetLimLight'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.6"
+      },
+      "SpawnhEffect": {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElementBase_C:SpawnhEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.7"
+      },
+      "DeleteEffect": {
+        "ObjectName": "Function'BP_VisualEffect_ChangeElementBase_C:DeleteEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_VisualEffect_ChangeElementBase_C'Default__BP_VisualEffect_ChangeElementBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_VisualEffect_ChangeElementBase_C",
+    "Name": "Default__BP_VisualEffect_ChangeElementBase_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Effect/VisualEffect/ChangeElement/BP_VisualEffect_ChangeElementBase.BP_VisualEffect_ChangeElementBase_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "IsCallEndOnComponentEndPlay": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "DeleteEffect",
+    "Outer": "BP_VisualEffect_ChangeElementBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_VisualEffect_ChangeElementBase",
+    "Outer": "BP_VisualEffect_ChangeElementBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalCharacter'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMainMesh_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PalSkeletalMeshComponent'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSocketLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetWorldLocation_SweepHitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 240,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBeginVisualEffect",
+    "Outer": "BP_VisualEffect_ChangeElementBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalVisualEffectBase:OnBeginVisualEffect'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEndVisualEffect",
+    "Outer": "BP_VisualEffect_ChangeElementBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalVisualEffectBase:OnEndVisualEffect'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetLimLight",
+    "Outer": "BP_VisualEffect_ChangeElementBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Intensity",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMainMesh_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetScalarParameterValueOnMaterials_ParameterValue_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "ConstParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SpawnhEffect",
+    "Outer": "BP_VisualEffect_ChangeElementBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSystemAtLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TickVisualEffect",
+    "Outer": "BP_VisualEffect_ChangeElementBase_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'PalVisualEffectBase:TickVisualEffect'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  }
+]

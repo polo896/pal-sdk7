@@ -1,0 +1,272 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_ActionDarkLegion_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ActionGeneralAttackFarBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionGeneralAttackFarBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ActionGeneralAttackFarBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionGeneralAttackFarBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_ActionDarkLegion_C:OnSpawnEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BP_ActionDarkLegion.2"
+      }
+    ],
+    "FuncMap": {
+      "OnSpawnEffect": {
+        "ObjectName": "Function'BP_ActionDarkLegion_C:OnSpawnEffect'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BP_ActionDarkLegion.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_ActionDarkLegion_C'Default__BP_ActionDarkLegion_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BP_ActionDarkLegion.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_ActionDarkLegion_C",
+    "Name": "Default__BP_ActionDarkLegion_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/BP_ActionDarkLegion.BP_ActionDarkLegion_C'",
+    "Template": {
+      "ObjectName": "BP_ActionGeneralAttackFarBase_C'Default__BP_ActionGeneralAttackFarBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionGeneralAttackFarBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IsHoming": true,
+      "BulletSpeed": 400.0,
+      "SkillEffectSpawnParameters": [
+        {
+          "TimeOffset": 0.6,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_DarkLegion_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/DarkLegion/BP_SkillEffect_DarkLegion.0"
+          },
+          "SpawnOffset": {
+            "X": 80.0,
+            "Y": 0.0,
+            "Z": 100.0
+          },
+          "bAttachToOwner": false,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 0.8,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_DarkLegion_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/DarkLegion/BP_SkillEffect_DarkLegion.0"
+          },
+          "SpawnOffset": {
+            "X": -500.0,
+            "Y": 900.0,
+            "Z": 100.0
+          },
+          "bAttachToOwner": false,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 0.8,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_DarkLegion_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/DarkLegion/BP_SkillEffect_DarkLegion.0"
+          },
+          "SpawnOffset": {
+            "X": -500.0,
+            "Y": -900.0,
+            "Z": 100.0
+          },
+          "bAttachToOwner": false,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.0,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_DarkLegion_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/DarkLegion/BP_SkillEffect_DarkLegion.0"
+          },
+          "SpawnOffset": {
+            "X": -1000.0,
+            "Y": 1800.0,
+            "Z": 100.0
+          },
+          "bAttachToOwner": false,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.0,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_DarkLegion_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/DarkLegion/BP_SkillEffect_DarkLegion.0"
+          },
+          "SpawnOffset": {
+            "X": -1000.0,
+            "Y": -1800.0,
+            "Z": 100.0
+          },
+          "bAttachToOwner": false,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.2,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_DarkLegion_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/DarkLegion/BP_SkillEffect_DarkLegion.0"
+          },
+          "SpawnOffset": {
+            "X": 40.0,
+            "Y": 450.0,
+            "Z": 600.0
+          },
+          "bAttachToOwner": false,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.4,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_DarkLegion_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/DarkLegion/BP_SkillEffect_DarkLegion.0"
+          },
+          "SpawnOffset": {
+            "X": -1000.0,
+            "Y": 1350.0,
+            "Z": 600.0
+          },
+          "bAttachToOwner": false,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.4,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_DarkLegion_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/DarkLegion/BP_SkillEffect_DarkLegion.0"
+          },
+          "SpawnOffset": {
+            "X": -1000.0,
+            "Y": -1350.0,
+            "Z": 600.0
+          },
+          "bAttachToOwner": false,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.6,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_DarkLegion_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/DarkLegion/BP_SkillEffect_DarkLegion.0"
+          },
+          "SpawnOffset": {
+            "X": -2000.0,
+            "Y": 2250.0,
+            "Z": 600.0
+          },
+          "bAttachToOwner": false,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.6,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_DarkLegion_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/DarkLegion/BP_SkillEffect_DarkLegion.0"
+          },
+          "SpawnOffset": {
+            "X": -2000.0,
+            "Y": -2250.0,
+            "Z": 600.0
+          },
+          "bAttachToOwner": false,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 1.2,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_DarkLegion_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/DarkLegion/BP_SkillEffect_DarkLegion.0"
+          },
+          "SpawnOffset": {
+            "X": 40.0,
+            "Y": -450.0,
+            "Z": 600.0
+          },
+          "bAttachToOwner": false,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        }
+      ],
+      "ReadyAnimationTime": 0.5,
+      "AfterAnimationTime": 0.5,
+      "WazaID": "EPalWazaID::DarkLegion"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSpawnEffect",
+    "Outer": "BP_ActionDarkLegion_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ActionGeneralAttackFarBase_C:OnSpawnEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionGeneralAttackFarBase.14"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ActionGeneralAttackFarBase_C:OnSpawnEffect'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Common/BP_ActionGeneralAttackFarBase.14"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Effect",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'PalSkillEffectBase'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'ProjectileMovementComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_VariableSet_MaxSpeed_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPI_PalWeaponAnimatioNotify_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Interface'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BPI_PalWeaponAnimatioNotify_C:HiddenWeaponSubPart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Interface/BPI_PalWeaponAnimatioNotify.2"
+      },
+      {
+        "ObjectName": "Function'BPI_PalWeaponAnimatioNotify_C:OnNotify'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Interface/BPI_PalWeaponAnimatioNotify.3"
+      }
+    ],
+    "FuncMap": {
+      "OnNotify": {
+        "ObjectName": "Function'BPI_PalWeaponAnimatioNotify_C:OnNotify'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Interface/BPI_PalWeaponAnimatioNotify.3"
+      },
+      "HiddenWeaponSubPart": {
+        "ObjectName": "Function'BPI_PalWeaponAnimatioNotify_C:HiddenWeaponSubPart'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Interface/BPI_PalWeaponAnimatioNotify.2"
+      }
+    },
+    "ClassFlags": "CLASS_Interface | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPI_PalWeaponAnimatioNotify_C'Default__BPI_PalWeaponAnimatioNotify_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Interface/BPI_PalWeaponAnimatioNotify.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Interface"
+    }
+  },
+  {
+    "Type": "BPI_PalWeaponAnimatioNotify_C",
+    "Name": "Default__BPI_PalWeaponAnimatioNotify_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Weapon/Interface/BPI_PalWeaponAnimatioNotify.BPI_PalWeaponAnimatioNotify_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "HiddenWeaponSubPart",
+    "Outer": "BPI_PalWeaponAnimatioNotify_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsHidden",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNotify",
+    "Outer": "BPI_PalWeaponAnimatioNotify_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "Notify",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'E_PalWeaponAnimationNotify'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Weapon/Interface/E_PalWeaponAnimationNotify.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

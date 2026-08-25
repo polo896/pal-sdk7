@@ -1,0 +1,1823 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalBossBattleManager_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalBossBattleManager'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalBossBattleManager_C'Default__BP_PalBossBattleManager_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalBossBattleManager.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalBossBattleManager_C",
+    "Name": "Default__BP_PalBossBattleManager_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalBossBattleManager.BP_PalBossBattleManager_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BGMFadeDuration": 2.0,
+      "MultiPlayerBossHPMap": [
+        {
+          "Key": "1",
+          "Value": 1.0
+        },
+        {
+          "Key": "2",
+          "Value": 1.4
+        },
+        {
+          "Key": "3",
+          "Value": 1.8
+        },
+        {
+          "Key": "4",
+          "Value": 2.1
+        },
+        {
+          "Key": "5",
+          "Value": 2.4
+        },
+        {
+          "Key": "6",
+          "Value": 2.7
+        },
+        {
+          "Key": "7",
+          "Value": 3.0
+        },
+        {
+          "Key": "8",
+          "Value": 3.3
+        }
+      ],
+      "BossBattleSequencerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PalBossBattleSequencer_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/BossBattle/Logic/BP_PalBossBattleSequencer.0"
+      },
+      "BossInfoMap": [
+        {
+          "Key": "EPalBossType::GrassBoss",
+          "Value": {
+            "PreEntryCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "IntroCutscene": {
+              "AssetPathName": "/Game/Pal/Blueprint/Cutscene/BP_CutsceneActor_BattleBossGrass.BP_CutsceneActor_BattleBossGrass_C",
+              "SubPathString": ""
+            },
+            "EndingCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "DifficultyParameter": [
+              {
+                "Key": "EPalBossBattleDifficulty::Normal",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_ElecPanda"
+                  },
+                  "Level": 10,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [],
+                  "BossBattleEvent": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              },
+              {
+                "Key": "EPalBossBattleDifficulty::Hard",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_ElecPanda_2"
+                  },
+                  "Level": 72,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [
+                    {
+                      "ItemName": {
+                        "Key": "GYM_Head_Grass"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "LvUP_01"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_workspeed_02"
+                      },
+                      "Rate": 20.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Blueprint_WidePenetrateShotgun_5"
+                      },
+                      "Rate": 10.0,
+                      "Min": 1,
+                      "Max": 1
+                    }
+                  ],
+                  "BossBattleEvent": {
+                    "AssetPathName": "/Game/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Grass_Hard.BP_BossBattleEvent_Grass_Hard_C",
+                    "SubPathString": ""
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              }
+            ],
+            "DataLayerAsset": {
+              "ObjectName": "DataLayerAsset'BossBattle_Grass'",
+              "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/BossBattle/BossBattle_Grass.0"
+            },
+            "IntroBGMAudioEvent": {
+              "AssetPathName": "/Game/Pal/Sound/Events/Music/Demo/Grass/AKE_GrassBoss_demobattle_Loop.AKE_GrassBoss_demobattle_Loop",
+              "SubPathString": ""
+            },
+            "LoopBGMAudioEvent": {
+              "AssetPathName": "/Game/Pal/Sound/Events/Music/Demo/AKE_TowerBoss_battleonly_Loop.AKE_TowerBoss_battleonly_Loop",
+              "SubPathString": ""
+            },
+            "bUseDefaultBattleBGM": false,
+            "AchievementId": "1",
+            "OneTimeRewards": [
+              {
+                "Key": "KeySphere_01"
+              }
+            ],
+            "bRandomizeTalentAtSpawn": false,
+            "bIsFieldBoss": false,
+            "bIsMuteTeleportStartSE": false,
+            "bIsDisableTeleportTipsOnEnter": false
+          }
+        },
+        {
+          "Key": "EPalBossType::ForestBoss",
+          "Value": {
+            "PreEntryCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "IntroCutscene": {
+              "AssetPathName": "/Game/Pal/Blueprint/Cutscene/BP_CutsceneActor_BossBattleFrost.BP_CutsceneActor_BossBattleFrost_C",
+              "SubPathString": ""
+            },
+            "EndingCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "DifficultyParameter": [
+              {
+                "Key": "EPalBossBattleDifficulty::Normal",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_LilyQueen"
+                  },
+                  "Level": 20,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [],
+                  "BossBattleEvent": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              },
+              {
+                "Key": "EPalBossBattleDifficulty::Hard",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_LilyQueen_2"
+                  },
+                  "Level": 74,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [
+                    {
+                      "ItemName": {
+                        "Key": "GYM_Head_Forest"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "LvUP_01"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_hp_02"
+                      },
+                      "Rate": 20.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Blueprint_DroneLauncher_5"
+                      },
+                      "Rate": 10.0,
+                      "Min": 1,
+                      "Max": 1
+                    }
+                  ],
+                  "BossBattleEvent": {
+                    "AssetPathName": "/Game/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Forest_Hard2.BP_BossBattleEvent_Forest_Hard2_C",
+                    "SubPathString": ""
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              }
+            ],
+            "DataLayerAsset": {
+              "ObjectName": "DataLayerAsset'BossBattle_Forest'",
+              "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/BossBattle/BossBattle_Forest.0"
+            },
+            "IntroBGMAudioEvent": {
+              "AssetPathName": "/Game/Pal/Sound/Events/Music/Demo/Forest/AKE_ForestBoss_demobattle_Loop.AKE_ForestBoss_demobattle_Loop",
+              "SubPathString": ""
+            },
+            "LoopBGMAudioEvent": {
+              "AssetPathName": "/Game/Pal/Sound/Events/Music/Demo/AKE_TowerBoss_battleonly_Loop.AKE_TowerBoss_battleonly_Loop",
+              "SubPathString": ""
+            },
+            "bUseDefaultBattleBGM": false,
+            "AchievementId": "2",
+            "OneTimeRewards": [
+              {
+                "Key": "KeySphere_02"
+              }
+            ],
+            "bRandomizeTalentAtSpawn": false,
+            "bIsFieldBoss": false,
+            "bIsMuteTeleportStartSE": false,
+            "bIsDisableTeleportTipsOnEnter": false
+          }
+        },
+        {
+          "Key": "EPalBossType::DesertBoss",
+          "Value": {
+            "PreEntryCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "IntroCutscene": {
+              "AssetPathName": "/Game/Pal/Blueprint/Cutscene/BP_CutsceneActor_BattleBossDesert.BP_CutsceneActor_BattleBossDesert_C",
+              "SubPathString": ""
+            },
+            "EndingCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "DifficultyParameter": [
+              {
+                "Key": "EPalBossBattleDifficulty::Normal",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_Horus"
+                  },
+                  "Level": 40,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [],
+                  "BossBattleEvent": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              },
+              {
+                "Key": "EPalBossBattleDifficulty::Hard",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_Horus_2"
+                  },
+                  "Level": 78,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [
+                    {
+                      "ItemName": {
+                        "Key": "GYM_Head_Desert"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "LvUP_01"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_weight_02"
+                      },
+                      "Rate": 20.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Blueprint_AncientArmorHeat_5"
+                      },
+                      "Rate": 5.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Blueprint_AncientArmorCold_5"
+                      },
+                      "Rate": 5.0,
+                      "Min": 1,
+                      "Max": 1
+                    }
+                  ],
+                  "BossBattleEvent": {
+                    "AssetPathName": "/Game/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Desert_Hard.BP_BossBattleEvent_Desert_Hard_C",
+                    "SubPathString": ""
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              }
+            ],
+            "DataLayerAsset": {
+              "ObjectName": "DataLayerAsset'BossBattle_Desert'",
+              "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/BossBattle/BossBattle_Desert.0"
+            },
+            "IntroBGMAudioEvent": {
+              "AssetPathName": "/Game/Pal/Sound/Events/Music/Demo/Desert/AKE_DesertBoss_demobattle_Loop.AKE_DesertBoss_demobattle_Loop",
+              "SubPathString": ""
+            },
+            "LoopBGMAudioEvent": {
+              "AssetPathName": "/Game/Pal/Sound/Events/Music/Demo/AKE_TowerBoss_battleonly_Loop.AKE_TowerBoss_battleonly_Loop",
+              "SubPathString": ""
+            },
+            "bUseDefaultBattleBGM": false,
+            "AchievementId": "3",
+            "OneTimeRewards": [
+              {
+                "Key": "KeySphere_03"
+              }
+            ],
+            "bRandomizeTalentAtSpawn": false,
+            "bIsFieldBoss": false,
+            "bIsMuteTeleportStartSE": false,
+            "bIsDisableTeleportTipsOnEnter": false
+          }
+        },
+        {
+          "Key": "EPalBossType::ElectricBoss",
+          "Value": {
+            "PreEntryCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "IntroCutscene": {
+              "AssetPathName": "/Game/Pal/Blueprint/Cutscene/BP_CutsceneActor_BattleBossElectric.BP_CutsceneActor_BattleBossElectric_C",
+              "SubPathString": ""
+            },
+            "EndingCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "DifficultyParameter": [
+              {
+                "Key": "EPalBossBattleDifficulty::Normal",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_ThunderDragonMan"
+                  },
+                  "Level": 30,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [],
+                  "BossBattleEvent": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              },
+              {
+                "Key": "EPalBossBattleDifficulty::Hard",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_ThunderDragonMan_2"
+                  },
+                  "Level": 76,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [
+                    {
+                      "ItemName": {
+                        "Key": "GYM_Head_Electric"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "LvUP_01"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_stamina_02"
+                      },
+                      "Rate": 20.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Blueprint_AncientArmorHeat_5"
+                      },
+                      "Rate": 10.0,
+                      "Min": 1,
+                      "Max": 1
+                    }
+                  ],
+                  "BossBattleEvent": {
+                    "AssetPathName": "/Game/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Forest_Hard.BP_BossBattleEvent_Forest_Hard_C",
+                    "SubPathString": ""
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              }
+            ],
+            "DataLayerAsset": {
+              "ObjectName": "DataLayerAsset'BossBattle_Electric'",
+              "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/BossBattle/BossBattle_Electric.0"
+            },
+            "IntroBGMAudioEvent": {
+              "AssetPathName": "/Game/Pal/Sound/Events/Music/Demo/Volcano/AKE_VolcanoBoss_demobattle_Loop.AKE_VolcanoBoss_demobattle_Loop",
+              "SubPathString": ""
+            },
+            "LoopBGMAudioEvent": {
+              "AssetPathName": "/Game/Pal/Sound/Events/Music/Demo/AKE_TowerBoss_battleonly_Loop.AKE_TowerBoss_battleonly_Loop",
+              "SubPathString": ""
+            },
+            "bUseDefaultBattleBGM": false,
+            "AchievementId": "4",
+            "OneTimeRewards": [
+              {
+                "Key": "KeySphere_04"
+              }
+            ],
+            "bRandomizeTalentAtSpawn": false,
+            "bIsFieldBoss": false,
+            "bIsMuteTeleportStartSE": false,
+            "bIsDisableTeleportTipsOnEnter": false
+          }
+        },
+        {
+          "Key": "EPalBossType::SnowBoss",
+          "Value": {
+            "PreEntryCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "IntroCutscene": {
+              "AssetPathName": "/Game/Pal/Blueprint/Cutscene/BP_CutsceneActor_BattleBossSnow.BP_CutsceneActor_BattleBossSnow_C",
+              "SubPathString": ""
+            },
+            "EndingCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "DifficultyParameter": [
+              {
+                "Key": "EPalBossBattleDifficulty::Normal",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_BlackGriffon"
+                  },
+                  "Level": 50,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [],
+                  "BossBattleEvent": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              },
+              {
+                "Key": "EPalBossBattleDifficulty::Hard",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_BlackGriffon_2"
+                  },
+                  "Level": 80,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [
+                    {
+                      "ItemName": {
+                        "Key": "GYM_Head_Snow"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "LvUP_01"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_attack_02"
+                      },
+                      "Rate": 20.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Blueprint_AncientArmorCold_5"
+                      },
+                      "Rate": 10.0,
+                      "Min": 1,
+                      "Max": 1
+                    }
+                  ],
+                  "BossBattleEvent": {
+                    "AssetPathName": "/Game/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Snow_Hard.BP_BossBattleEvent_Snow_Hard_C",
+                    "SubPathString": ""
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              }
+            ],
+            "DataLayerAsset": {
+              "ObjectName": "DataLayerAsset'BossBattle_Snow'",
+              "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/BossBattle/BossBattle_Snow.0"
+            },
+            "IntroBGMAudioEvent": {
+              "AssetPathName": "/Game/Pal/Sound/Events/Music/Demo/SnowyMountain/AKE_SnowyMountainBoss_demobattle_Loop.AKE_SnowyMountainBoss_demobattle_Loop",
+              "SubPathString": ""
+            },
+            "LoopBGMAudioEvent": {
+              "AssetPathName": "/Game/Pal/Sound/Events/Music/Demo/AKE_TowerBoss_battleonly_Loop.AKE_TowerBoss_battleonly_Loop",
+              "SubPathString": ""
+            },
+            "bUseDefaultBattleBGM": false,
+            "AchievementId": "5",
+            "OneTimeRewards": [
+              {
+                "Key": "KeySphere_05"
+              }
+            ],
+            "bRandomizeTalentAtSpawn": false,
+            "bIsFieldBoss": false,
+            "bIsMuteTeleportStartSE": false,
+            "bIsDisableTeleportTipsOnEnter": false
+          }
+        },
+        {
+          "Key": "EPalBossType::SakurajimaBoss",
+          "Value": {
+            "PreEntryCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "IntroCutscene": {
+              "AssetPathName": "/Game/Pal/Blueprint/Cutscene/BP_CutsceneActor_BattleBossSakurajima.BP_CutsceneActor_BattleBossSakurajima_C",
+              "SubPathString": ""
+            },
+            "EndingCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "DifficultyParameter": [
+              {
+                "Key": "EPalBossBattleDifficulty::Normal",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_MoonQueen"
+                  },
+                  "Level": 55,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [],
+                  "BossBattleEvent": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              },
+              {
+                "Key": "EPalBossBattleDifficulty::Hard",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_MoonQueen_2"
+                  },
+                  "Level": 80,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [
+                    {
+                      "ItemName": {
+                        "Key": "GYM_Head_Sakurajima"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "LvUP_01"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_hp_02"
+                      },
+                      "Rate": 5.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_stamina_02"
+                      },
+                      "Rate": 5.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_attack_02"
+                      },
+                      "Rate": 5.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_workspeed_02"
+                      },
+                      "Rate": 5.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_weight_02"
+                      },
+                      "Rate": 5.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Blueprint_ElectricArcAssaultRifle_5"
+                      },
+                      "Rate": 10.0,
+                      "Min": 1,
+                      "Max": 1
+                    }
+                  ],
+                  "BossBattleEvent": {
+                    "AssetPathName": "/Game/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Sakurajima_Hard.BP_BossBattleEvent_Sakurajima_Hard_C",
+                    "SubPathString": ""
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              }
+            ],
+            "DataLayerAsset": {
+              "ObjectName": "DataLayerAsset'BossBattle_Sakurajima'",
+              "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/BossBattle/BossBattle_Sakurajima.0"
+            },
+            "IntroBGMAudioEvent": {
+              "AssetPathName": "/Game/Pal/Sound/Events/Music/Demo/SakurajimaBoss/AKE_SakurajimaBoss_demobattle_Loop.AKE_SakurajimaBoss_demobattle_Loop",
+              "SubPathString": ""
+            },
+            "LoopBGMAudioEvent": {
+              "AssetPathName": "/Game/Pal/Sound/Events/Music/Demo/AKE_TowerBoss_battleonly_Loop.AKE_TowerBoss_battleonly_Loop",
+              "SubPathString": ""
+            },
+            "bUseDefaultBattleBGM": false,
+            "AchievementId": "13",
+            "OneTimeRewards": [
+              {
+                "Key": "KeySphere_06"
+              }
+            ],
+            "bRandomizeTalentAtSpawn": false,
+            "bIsFieldBoss": false,
+            "bIsMuteTeleportStartSE": false,
+            "bIsDisableTeleportTipsOnEnter": false
+          }
+        },
+        {
+          "Key": "EPalBossType::VikingBoss",
+          "Value": {
+            "PreEntryCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "IntroCutscene": {
+              "AssetPathName": "/Game/Pal/Blueprint/Cutscene/BP_CutsceneActor_BattleBossViking.BP_CutsceneActor_BattleBossViking_C",
+              "SubPathString": ""
+            },
+            "EndingCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "DifficultyParameter": [
+              {
+                "Key": "EPalBossBattleDifficulty::Normal",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_SnowTigerBeastman"
+                  },
+                  "Level": 60,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [],
+                  "BossBattleEvent": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              },
+              {
+                "Key": "EPalBossBattleDifficulty::Hard",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_SnowTigerBeastman_2"
+                  },
+                  "Level": 80,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [
+                    {
+                      "ItemName": {
+                        "Key": "GYM_Head_Viking"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "LvUP_01"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_hp_02"
+                      },
+                      "Rate": 6.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_stamina_02"
+                      },
+                      "Rate": 6.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_attack_02"
+                      },
+                      "Rate": 6.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_workspeed_02"
+                      },
+                      "Rate": 6.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_weight_02"
+                      },
+                      "Rate": 6.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Blueprint_AncientArmorWeight_5"
+                      },
+                      "Rate": 10.0,
+                      "Min": 1,
+                      "Max": 1
+                    }
+                  ],
+                  "BossBattleEvent": {
+                    "AssetPathName": "/Game/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_Viking_Hard.BP_BossBattleEvent_Viking_Hard_C",
+                    "SubPathString": ""
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              }
+            ],
+            "DataLayerAsset": {
+              "ObjectName": "DataLayerAsset'BossBattle_Viking'",
+              "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/BossBattle/BossBattle_Viking.0"
+            },
+            "IntroBGMAudioEvent": {
+              "AssetPathName": "/Game/Pal/Sound/Events/Music/Demo/Tenraku/AKE_TenrakuBoss_demobattle_Loop.AKE_TenrakuBoss_demobattle_Loop",
+              "SubPathString": ""
+            },
+            "LoopBGMAudioEvent": {
+              "AssetPathName": "/Game/Pal/Sound/Events/Music/Demo/AKE_TowerBoss_battleonly_Loop.AKE_TowerBoss_battleonly_Loop",
+              "SubPathString": ""
+            },
+            "bUseDefaultBattleBGM": false,
+            "AchievementId": "32",
+            "OneTimeRewards": [
+              {
+                "Key": "KeySphere_07"
+              }
+            ],
+            "bRandomizeTalentAtSpawn": false,
+            "bIsFieldBoss": false,
+            "bIsMuteTeleportStartSE": false,
+            "bIsDisableTeleportTipsOnEnter": false
+          }
+        },
+        {
+          "Key": "EPalBossType::KingWhaleBoss",
+          "Value": {
+            "PreEntryCutscene": {
+              "AssetPathName": "/Game/Pal/Blueprint/Cutscene/BP_CutsceneActor_KingWhaleEntry.BP_CutsceneActor_KingWhaleEntry_C",
+              "SubPathString": ""
+            },
+            "IntroCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "EndingCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "DifficultyParameter": [
+              {
+                "Key": "EPalBossBattleDifficulty::Normal",
+                "Value": {
+                  "PalId": {
+                    "Key": "BOSS_KingWhale"
+                  },
+                  "Level": 70,
+                  "AIController": {
+                    "AssetPathName": "/Game/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_Wild_KingWhale.BP_MonsterAIController_Wild_KingWhale_C",
+                    "SubPathString": ""
+                  },
+                  "SuccessItemList": [],
+                  "BossBattleEvent": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 600,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              }
+            ],
+            "DataLayerAsset": {
+              "ObjectName": "DataLayerAsset'BossBattle_KingWhale'",
+              "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/BossBattle/BossBattle_KingWhale.0"
+            },
+            "IntroBGMAudioEvent": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "LoopBGMAudioEvent": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "bUseDefaultBattleBGM": true,
+            "AchievementId": "",
+            "OneTimeRewards": [],
+            "bRandomizeTalentAtSpawn": false,
+            "bIsFieldBoss": false,
+            "bIsMuteTeleportStartSE": true,
+            "bIsDisableTeleportTipsOnEnter": true
+          }
+        },
+        {
+          "Key": "EPalBossType::WorldTreeMiddleBoss1",
+          "Value": {
+            "PreEntryCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "IntroCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "EndingCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "DifficultyParameter": [
+              {
+                "Key": "EPalBossBattleDifficulty::Normal",
+                "Value": {
+                  "PalId": {
+                    "Key": "BOSS_FlowerPrince"
+                  },
+                  "Level": 78,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [
+                    {
+                      "ItemName": {
+                        "Key": "PalCrystal_Ex"
+                      },
+                      "Rate": 100.0,
+                      "Min": 6,
+                      "Max": 8
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "UniqueMaterial_FlowerPrince"
+                      },
+                      "Rate": 100.0,
+                      "Min": 5,
+                      "Max": 10
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "PalUpgradeStone2"
+                      },
+                      "Rate": 0.0,
+                      "Min": 2,
+                      "Max": 3
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Venom"
+                      },
+                      "Rate": 0.0,
+                      "Min": 5,
+                      "Max": 6
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "PalAwakening_Material_Dark"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 3
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeRelic_01"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 10
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeRelic_02"
+                      },
+                      "Rate": 50.0,
+                      "Min": 1,
+                      "Max": 5
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeRelic_03"
+                      },
+                      "Rate": 30.0,
+                      "Min": 1,
+                      "Max": 3
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeRelic_04"
+                      },
+                      "Rate": 25.0,
+                      "Min": 1,
+                      "Max": 2
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeRelic_05"
+                      },
+                      "Rate": 20.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeHolyWater"
+                      },
+                      "Rate": 100.0,
+                      "Min": 60,
+                      "Max": 80
+                    }
+                  ],
+                  "BossBattleEvent": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              }
+            ],
+            "DataLayerAsset": {
+              "ObjectName": "DataLayerAsset'BossBattle_WorldTreeMiddle1'",
+              "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/BossBattle/BossBattle_WorldTreeMiddle1.0"
+            },
+            "IntroBGMAudioEvent": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "LoopBGMAudioEvent": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "bUseDefaultBattleBGM": true,
+            "AchievementId": "",
+            "OneTimeRewards": [
+              {
+                "Key": "BossDefeatReward_FlowerPrince"
+              }
+            ],
+            "bRandomizeTalentAtSpawn": true,
+            "bIsFieldBoss": true,
+            "bIsMuteTeleportStartSE": false,
+            "bIsDisableTeleportTipsOnEnter": false
+          }
+        },
+        {
+          "Key": "EPalBossType::WorldTreeMiddleBoss2",
+          "Value": {
+            "PreEntryCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "IntroCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "EndingCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "DifficultyParameter": [
+              {
+                "Key": "EPalBossBattleDifficulty::Normal",
+                "Value": {
+                  "PalId": {
+                    "Key": "BOSS_Mothman"
+                  },
+                  "Level": 78,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [
+                    {
+                      "ItemName": {
+                        "Key": "PalCrystal_Ex"
+                      },
+                      "Rate": 100.0,
+                      "Min": 6,
+                      "Max": 8
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "UniqueMaterial_Mothman"
+                      },
+                      "Rate": 100.0,
+                      "Min": 5,
+                      "Max": 10
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "PalUpgradeStone2"
+                      },
+                      "Rate": 0.0,
+                      "Min": 2,
+                      "Max": 3
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeHolyWater"
+                      },
+                      "Rate": 100.0,
+                      "Min": 60,
+                      "Max": 80
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "PalAwakening_Material_Grass"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 3
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeRelic_01"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 10
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeRelic_02"
+                      },
+                      "Rate": 50.0,
+                      "Min": 1,
+                      "Max": 5
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeRelic_03"
+                      },
+                      "Rate": 30.0,
+                      "Min": 1,
+                      "Max": 3
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeRelic_04"
+                      },
+                      "Rate": 25.0,
+                      "Min": 1,
+                      "Max": 2
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeRelic_05"
+                      },
+                      "Rate": 20.0,
+                      "Min": 1,
+                      "Max": 1
+                    }
+                  ],
+                  "BossBattleEvent": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              }
+            ],
+            "DataLayerAsset": {
+              "ObjectName": "DataLayerAsset'BossBattle_WorldTreeMiddle2'",
+              "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/BossBattle/BossBattle_WorldTreeMiddle2.0"
+            },
+            "IntroBGMAudioEvent": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "LoopBGMAudioEvent": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "bUseDefaultBattleBGM": true,
+            "AchievementId": "",
+            "OneTimeRewards": [
+              {
+                "Key": "BossDefeatReward_Mothman"
+              }
+            ],
+            "bRandomizeTalentAtSpawn": true,
+            "bIsFieldBoss": true,
+            "bIsMuteTeleportStartSE": false,
+            "bIsDisableTeleportTipsOnEnter": false
+          }
+        },
+        {
+          "Key": "EPalBossType::WorldTreeMiddleBoss3",
+          "Value": {
+            "PreEntryCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "IntroCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "EndingCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "DifficultyParameter": [
+              {
+                "Key": "EPalBossBattleDifficulty::Normal",
+                "Value": {
+                  "PalId": {
+                    "Key": "BOSS_ElecPanda_BossRush"
+                  },
+                  "Level": 78,
+                  "AIController": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "SuccessItemList": [
+                    {
+                      "ItemName": {
+                        "Key": "PalAwakening_Material_Water"
+                      },
+                      "Rate": 11.0,
+                      "Min": 1,
+                      "Max": 3
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "PalAwakening_Material_Electric"
+                      },
+                      "Rate": 11.0,
+                      "Min": 1,
+                      "Max": 3
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "PalAwakening_Material_Ground"
+                      },
+                      "Rate": 11.0,
+                      "Min": 1,
+                      "Max": 3
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "PalAwakening_Material_Grass"
+                      },
+                      "Rate": 11.0,
+                      "Min": 1,
+                      "Max": 3
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "PalAwakening_Material_Fire"
+                      },
+                      "Rate": 11.0,
+                      "Min": 1,
+                      "Max": 3
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "PalAwakening_Material_Ice"
+                      },
+                      "Rate": 11.0,
+                      "Min": 1,
+                      "Max": 3
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "PalAwakening_Material_Dragon"
+                      },
+                      "Rate": 11.0,
+                      "Min": 1,
+                      "Max": 3
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "PalAwakening_Material_Dark"
+                      },
+                      "Rate": 11.0,
+                      "Min": 1,
+                      "Max": 3
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "PalAwakening_Material_Neutral"
+                      },
+                      "Rate": 11.0,
+                      "Min": 1,
+                      "Max": 3
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeRelic_01"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 5
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeRelic_02"
+                      },
+                      "Rate": 50.0,
+                      "Min": 1,
+                      "Max": 5
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeRelic_03"
+                      },
+                      "Rate": 30.0,
+                      "Min": 1,
+                      "Max": 5
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeRelic_04"
+                      },
+                      "Rate": 25.0,
+                      "Min": 1,
+                      "Max": 2
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeRelic_05"
+                      },
+                      "Rate": 20.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "WorldTreeHolyWater"
+                      },
+                      "Rate": 100.0,
+                      "Min": 60,
+                      "Max": 80
+                    }
+                  ],
+                  "BossBattleEvent": {
+                    "AssetPathName": "/Game/Pal/Blueprint/BossBattle/Logic/Event/BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C",
+                    "SubPathString": ""
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 600,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": false,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              }
+            ],
+            "DataLayerAsset": {
+              "ObjectName": "DataLayerAsset'BossBattle_WorldTreeMiddle3'",
+              "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/BossBattle/BossBattle_WorldTreeMiddle3.0"
+            },
+            "IntroBGMAudioEvent": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "LoopBGMAudioEvent": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "bUseDefaultBattleBGM": true,
+            "AchievementId": "",
+            "OneTimeRewards": [
+              {
+                "Key": "BossDefeatReward_BossRush"
+              }
+            ],
+            "bRandomizeTalentAtSpawn": true,
+            "bIsFieldBoss": true,
+            "bIsMuteTeleportStartSE": false,
+            "bIsDisableTeleportTipsOnEnter": false
+          }
+        },
+        {
+          "Key": "EPalBossType::SorajimaBoss",
+          "Value": {
+            "PreEntryCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "IntroCutscene": {
+              "AssetPathName": "/Game/Pal/Blueprint/Cutscene/BP_CutsceneActor_BattleBossSorajima.BP_CutsceneActor_BattleBossSorajima_C",
+              "SubPathString": ""
+            },
+            "EndingCutscene": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "DifficultyParameter": [
+              {
+                "Key": "EPalBossBattleDifficulty::Normal",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_BlueSkyDragon"
+                  },
+                  "Level": 68,
+                  "AIController": {
+                    "AssetPathName": "/Game/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_Boss_Sorajima.BP_MonsterAIController_Boss_Sorajima_C",
+                    "SubPathString": ""
+                  },
+                  "SuccessItemList": [],
+                  "BossBattleEvent": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              },
+              {
+                "Key": "EPalBossBattleDifficulty::Hard",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_BlueSkyDragon_2"
+                  },
+                  "Level": 80,
+                  "AIController": {
+                    "AssetPathName": "/Game/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_Boss_Sorajima.BP_MonsterAIController_Boss_Sorajima_C",
+                    "SubPathString": ""
+                  },
+                  "SuccessItemList": [
+                    {
+                      "ItemName": {
+                        "Key": "HeadEquip048"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "LvUP_01"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_hp_02"
+                      },
+                      "Rate": 6.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_stamina_02"
+                      },
+                      "Rate": 6.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_attack_02"
+                      },
+                      "Rate": 6.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_workspeed_02"
+                      },
+                      "Rate": 6.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Lotus_weight_02"
+                      },
+                      "Rate": 6.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "Blueprint_BeamLauncher_5"
+                      },
+                      "Rate": 10.0,
+                      "Min": 1,
+                      "Max": 1
+                    }
+                  ],
+                  "BossBattleEvent": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 300,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              }
+            ],
+            "DataLayerAsset": {
+              "ObjectName": "DataLayerAsset'BossBattle_Sorajima'",
+              "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/BossBattle/BossBattle_Sorajima.0"
+            },
+            "IntroBGMAudioEvent": {
+              "AssetPathName": "/Game/Pal/Sound/Events/SE/Demo/Demo_SkyIslandBoss/AKE_Demo_SkyIsland_BGM.AKE_Demo_SkyIsland_BGM",
+              "SubPathString": ""
+            },
+            "LoopBGMAudioEvent": {
+              "AssetPathName": "/Game/Pal/Sound/Events/Music/Demo/AKE_TowerBoss_battleonly_Loop.AKE_TowerBoss_battleonly_Loop",
+              "SubPathString": ""
+            },
+            "bUseDefaultBattleBGM": false,
+            "AchievementId": "72",
+            "OneTimeRewards": [
+              {
+                "Key": "KeySphere_08"
+              }
+            ],
+            "bRandomizeTalentAtSpawn": false,
+            "bIsFieldBoss": false,
+            "bIsMuteTeleportStartSE": false,
+            "bIsDisableTeleportTipsOnEnter": false
+          }
+        },
+        {
+          "Key": "EPalBossType::WorldTreeBoss",
+          "Value": {
+            "PreEntryCutscene": {
+              "AssetPathName": "/Game/Pal/Blueprint/Cutscene/BP_CutsceneActor_BattleLastBossEntry.BP_CutsceneActor_BattleLastBossEntry_C",
+              "SubPathString": ""
+            },
+            "IntroCutscene": {
+              "AssetPathName": "/Game/Pal/Blueprint/Cutscene/BP_CutsceneActor_BattleLastBoss.BP_CutsceneActor_BattleLastBoss_C",
+              "SubPathString": ""
+            },
+            "EndingCutscene": {
+              "AssetPathName": "/Game/Pal/Blueprint/Cutscene/BP_CutsceneActor_WorldTreeBossEnd.BP_CutsceneActor_WorldTreeBossEnd_C",
+              "SubPathString": ""
+            },
+            "DifficultyParameter": [
+              {
+                "Key": "EPalBossBattleDifficulty::Normal",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_WorldTreeDragon"
+                  },
+                  "Level": 80,
+                  "AIController": {
+                    "AssetPathName": "/Game/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_Boss_WorldTreeDragon.BP_MonsterAIController_Boss_WorldTreeDragon_C",
+                    "SubPathString": ""
+                  },
+                  "SuccessItemList": [],
+                  "BossBattleEvent": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::EPalBossBattleHardUnlockCondition_MAX",
+                  "BattleTimeLimit": 600,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": false,
+                  "ReadyPhaseTimeLimit": 180
+                }
+              },
+              {
+                "Key": "EPalBossBattleDifficulty::Hard",
+                "Value": {
+                  "PalId": {
+                    "Key": "GYM_WorldTreeDragon_2"
+                  },
+                  "Level": 100,
+                  "AIController": {
+                    "AssetPathName": "/Game/Pal/Blueprint/Controller/Monster/BP_MonsterAIController_Boss_WorldTreeDragon.BP_MonsterAIController_Boss_WorldTreeDragon_C",
+                    "SubPathString": ""
+                  },
+                  "SuccessItemList": [
+                    {
+                      "ItemName": {
+                        "Key": "HeadEquip049"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "ItemName": {
+                        "Key": "SkillCard_Psychokinesis"
+                      },
+                      "Rate": 100.0,
+                      "Min": 1,
+                      "Max": 1
+                    }
+                  ],
+                  "BossBattleEvent": {
+                    "AssetPathName": "None",
+                    "SubPathString": null
+                  },
+                  "HardUnlockCondition": "EPalBossBattleHardUnlockCondition::DefeatSameBossNormal",
+                  "BattleTimeLimit": 600,
+                  "CapturePhaseTimeLimit": 60,
+                  "bSpawnBossAtStart_InServer": true,
+                  "bSpawnPalBox": true,
+                  "ReadyPhaseTimeLimit": 120
+                }
+              }
+            ],
+            "DataLayerAsset": {
+              "ObjectName": "DataLayerAsset'BossBattle_WorldTreeBoss'",
+              "ObjectPath": "Pal/Content/Pal/DataAsset/DataLayerAsset/LevelInstances/BossBattle/BossBattle_WorldTreeBoss.0"
+            },
+            "IntroBGMAudioEvent": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "LoopBGMAudioEvent": {
+              "AssetPathName": "None",
+              "SubPathString": null
+            },
+            "bUseDefaultBattleBGM": true,
+            "AchievementId": "75",
+            "OneTimeRewards": [],
+            "bRandomizeTalentAtSpawn": false,
+            "bIsFieldBoss": false,
+            "bIsMuteTeleportStartSE": true,
+            "bIsDisableTeleportTipsOnEnter": true
+          }
+        }
+      ],
+      "EndingCutsceneClass": {
+        "AssetPathName": "/Game/Pal/Blueprint/Cutscene/BP_CutsceneActor_Ending.BP_CutsceneActor_Ending_C",
+        "SubPathString": ""
+      },
+      "HardUnlockTiggerBoss": "EPalBossType::SorajimaBoss",
+      "bShouldCreate": true
+    }
+  }
+]

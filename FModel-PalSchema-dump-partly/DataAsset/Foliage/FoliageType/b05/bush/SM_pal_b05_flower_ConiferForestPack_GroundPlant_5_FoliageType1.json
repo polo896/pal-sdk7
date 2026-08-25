@@ -1,0 +1,57 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "SM_pal_b05_flower_ConiferForestPack_GroundPlant_5_FoliageType1",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'pal_b05_grass_SM_Bush_02'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b05/tree/pal_b05_grass_SM_Bush_02.2"
+      },
+      "UpdateGuid": "5554C82B-45D9112E-E5A19B8A-5BE24DB6",
+      "Density": 1.0,
+      "Radius": 1.0,
+      "SingleInstanceModeRadius": 222.0,
+      "ScaleX": {
+        "Min": 1.2,
+        "Max": 1.5
+      },
+      "AverageNormal": true,
+      "AlignMaxAngle": 35.0,
+      "GroundSlopeAngle": {
+        "Max": 90.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 1.4658203,
+          "Y": 2.1950073,
+          "Z": 29.150612
+        },
+        "BoxExtent": {
+          "X": 97.05054,
+          "Y": 98.67926,
+          "Z": 30.349789
+        },
+        "SphereRadius": 107.4328842163086
+      },
+      "LowBoundOriginRadius": {
+        "X": 4.5129395,
+        "Y": 4.3288574,
+        "Z": 110.86144
+      },
+      "CullDistance": {
+        "Max": 4000
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

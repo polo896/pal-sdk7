@@ -1,0 +1,133 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PlayerBedCamera_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PlayerBedCamera_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_PlayerBedCamera.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'CameraActor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PlayerBedCamera_C'Default__BP_PlayerBedCamera_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_PlayerBedCamera.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PlayerBedCamera_C",
+    "Name": "Default__BP_PlayerBedCamera_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_PlayerBedCamera.BP_PlayerBedCamera_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CameraComponent": {
+        "ObjectName": "CameraComponent'Default__BP_PlayerBedCamera_C:CameraComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_PlayerBedCamera.2"
+      },
+      "SceneComponent": {
+        "ObjectName": "SceneComponent'Default__BP_PlayerBedCamera_C:SceneComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_PlayerBedCamera.4"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_PlayerBedCamera_C:SceneComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_PlayerBedCamera.4"
+      }
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "CameraComponent",
+    "Outer": "Default__BP_PlayerBedCamera_C",
+    "Class": "UScriptClass'CameraComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FieldOfView": 70.0,
+      "bConstrainAspectRatio": false,
+      "PostProcessSettings": {
+        "bOverride_VignetteIntensity": true,
+        "ColorGain": {
+          "X": 0.1,
+          "Y": 0.1,
+          "Z": 0.1,
+          "W": 1.0
+        },
+        "VignetteIntensity": 1.0
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_PlayerBedCamera_C:SceneComponent'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_PlayerBedCamera.4"
+      },
+      "RelativeLocation": {
+        "X": 60.49668,
+        "Y": 0.7387628,
+        "Z": 99.73135
+      },
+      "RelativeRotation": {
+        "Pitch": -68.509026,
+        "Yaw": -177.69133,
+        "Roll": -0.4713925
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PlayerBedCamera_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent",
+    "Outer": "Default__BP_PlayerBedCamera_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PlayerBedCamera_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_PlayerBedCamera.3"
+      },
+      "VariableGuid": "25E47E3A-45AD4662-9C257581-92F633CC",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PlayerBedCamera_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PlayerBedCamera_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/MapObject/ConcreteModel/BP_PlayerBedCamera.5"
+      }
+    }
+  }
+]

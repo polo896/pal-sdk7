@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_DarkPulse_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_SpreadPulse_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BP_Action_SpreadPulse.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_SpreadPulse_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BP_Action_SpreadPulse.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_DarkPulse_C'Default__BP_Action_DarkPulse_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BP_Action_DarkPulse.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_DarkPulse_C",
+    "Name": "Default__BP_Action_DarkPulse_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/BP_Action_DarkPulse.BP_Action_DarkPulse_C'",
+    "Template": {
+      "ObjectName": "BP_Action_SpreadPulse_C'Default__BP_Action_SpreadPulse_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/BP_Action_SpreadPulse.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BulletNum": 12,
+      "Angle": 55,
+      "BulletSpeed": 2500.0,
+      "SkillEffectSpawnParameters": [
+        {
+          "TimeOffset": 0.8,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_DarkPulse_Bullet_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/DarkPulse/BP_SkillEffect_DarkPulse_Bullet.0"
+          },
+          "SpawnOffset": {
+            "X": 200.0,
+            "Y": 0.0,
+            "Z": 10.0
+          },
+          "bAttachToOwner": false,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        },
+        {
+          "TimeOffset": 0.8,
+          "SkillEffectClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_SkillEffect_DarkPulse_Muzzle_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/DarkPulse/BP_SkillEffect_DarkPulse_Muzzle.0"
+          },
+          "SpawnOffset": {
+            "X": 100.0,
+            "Y": 0.0,
+            "Z": 50.0
+          },
+          "bAttachToOwner": false,
+          "AttachSocketName": "None",
+          "AttachLocationType": "EPalBodyLocationType::BulletMuzzle"
+        }
+      ],
+      "WazaID": "EPalWazaID::DarkPulse"
+    }
+  }
+]

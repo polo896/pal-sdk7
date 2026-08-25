@@ -1,0 +1,109 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_CompleteQuestBlockAndShowMarkerVolume_BossRush_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_CompleteQuestBlockAndShowMarkerVolume_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_CompleteQuestBlockAndShowMarkerVolume.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_CompleteQuestBlockAndShowMarkerVolume_BossRush_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_CompleteQuestBlockAndShowMarkerVolume_BossRush.5"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_CompleteQuestBlockAndShowMarkerVolume_BossRush_C:InheritableComponentHandler'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_CompleteQuestBlockAndShowMarkerVolume_BossRush.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_CompleteQuestBlockAndShowMarkerVolume_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_CompleteQuestBlockAndShowMarkerVolume.0"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_CompleteQuestBlockAndShowMarkerVolume_BossRush_C'Default__BP_CompleteQuestBlockAndShowMarkerVolume_BossRush_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_CompleteQuestBlockAndShowMarkerVolume_BossRush.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_CompleteQuestBlockAndShowMarkerVolume_BossRush_C",
+    "Name": "Default__BP_CompleteQuestBlockAndShowMarkerVolume_BossRush_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/BP_CompleteQuestBlockAndShowMarkerVolume_BossRush.BP_CompleteQuestBlockAndShowMarkerVolume_BossRush_C'",
+    "Template": {
+      "ObjectName": "BP_CompleteQuestBlockAndShowMarkerVolume_C'Default__BP_CompleteQuestBlockAndShowMarkerVolume_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_CompleteQuestBlockAndShowMarkerVolume.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Main_WorldTreeAbyss"
+      },
+      "CompleteQuestBlock": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Marker_BossRush_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Marker_BossRush.0"
+      },
+      "ShowQuestBlock": {
+        "ObjectName": "BlueprintGeneratedClass'BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_BossRush_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_DefeatWorldTreeMiddleBoss_Defeat_BossRush.0"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_CompleteQuestBlockAndShowMarkerVolume_BossRush_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_CompleteQuestBlockAndShowMarkerVolume_BossRush_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_CompleteQuestBlockAndShowMarkerVolume_BossRush_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_CompleteQuestBlockAndShowMarkerVolume_BossRush.3"
+      },
+      "VariableGuid": "3108D087-4E1F3E36-AC9128AB-36FC1ADC",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_CompleteQuestBlockAndShowMarkerVolume_BossRush_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_CompleteQuestBlockAndShowMarkerVolume_BossRush_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/BP_CompleteQuestBlockAndShowMarkerVolume_BossRush.4"
+      }
+    }
+  }
+]

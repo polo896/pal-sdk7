@@ -1,0 +1,36 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "EPalQuestStartClearNotifyType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "9D19B8F744E821B7D3B588A0328662AA",
+            "SourceString": "Start",
+            "LocalizedString": "Start"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "E0F8CCB64BB6B47AA2B8BF801C3B3898",
+            "SourceString": "Clear",
+            "LocalizedString": "Clear"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "EPalQuestStartClearNotifyType::NewEnumerator0": 0,
+      "EPalQuestStartClearNotifyType::NewEnumerator1": 1,
+      "EPalQuestStartClearNotifyType::EPalQuestStartClearNotifyType_MAX": 2
+    },
+    "CppForm": "Namespaced"
+  }
+]

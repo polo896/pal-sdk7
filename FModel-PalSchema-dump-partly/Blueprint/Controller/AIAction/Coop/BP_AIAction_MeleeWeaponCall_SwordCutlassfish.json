@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AIAction_MeleeWeaponCall_SwordCutlassfish_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_MeleeWeaponCall_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponCall.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIAction_MeleeWeaponCall_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponCall.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AIAction_MeleeWeaponCall_SwordCutlassfish_C'Default__BP_AIAction_MeleeWeaponCall_SwordCutlassfish_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponCall_SwordCutlassfish.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AIAction_MeleeWeaponCall_SwordCutlassfish_C",
+    "Name": "Default__BP_AIAction_MeleeWeaponCall_SwordCutlassfish_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponCall_SwordCutlassfish.BP_AIAction_MeleeWeaponCall_SwordCutlassfish_C'",
+    "Template": {
+      "ObjectName": "BP_AIAction_MeleeWeaponCall_C'Default__BP_AIAction_MeleeWeaponCall_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponCall.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MeleeWeaponUsingClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AIAction_MeleeWeaponUsing_SwordCutlassfish_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIAction/Coop/BP_AIAction_MeleeWeaponUsing_SwordCutlassfish.0"
+      }
+    }
+  }
+]

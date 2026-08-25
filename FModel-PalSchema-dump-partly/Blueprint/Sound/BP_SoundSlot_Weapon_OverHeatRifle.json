@@ -1,0 +1,87 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SoundSlot_Weapon_OverHeatRifle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalSoundSlot'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SoundSlot_Weapon_OverHeatRifle_C'Default__BP_SoundSlot_Weapon_OverHeatRifle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_OverHeatRifle.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SoundSlot_Weapon_OverHeatRifle_C",
+    "Name": "Default__BP_SoundSlot_Weapon_OverHeatRifle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Sound/BP_SoundSlot_Weapon_OverHeatRifle.BP_SoundSlot_Weapon_OverHeatRifle_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SoundMap": [
+        {
+          "Key": {
+            "Key": "Weapon_Fire"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_Weapon_OverHeatRifle_Shot_Loop'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/OverHeatRifle/AKE_Weapon_OverHeatRifle_Shot_Loop.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Fire_End"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_Weapon_OverHeatRifle_Shot_01'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/OverHeatRifle/AKE_Weapon_OverHeatRifle_Shot_01.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Aim_Start"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_Weapon_OverHeatRifle_AimStart'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/OverHeatRifle/AKE_Weapon_OverHeatRifle_AimStart.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Equip"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_Weapon_OverHeatRifle_Equip'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/OverHeatRifle/AKE_Weapon_OverHeatRifle_Equip.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "Weapon_Aim_End"
+          },
+          "Value": {
+            "ObjectName": "AkAudioEvent'AKE_Weapon_OverHeatRifle_AimEnd'",
+            "ObjectPath": "Pal/Content/Pal/Sound/Events/SE/Weapon/Gun/OverHeatRifle/AKE_Weapon_OverHeatRifle_AimEnd.0"
+          }
+        },
+        {
+          "Key": {
+            "Key": "None"
+          },
+          "Value": null
+        }
+      ]
+    }
+  }
+]

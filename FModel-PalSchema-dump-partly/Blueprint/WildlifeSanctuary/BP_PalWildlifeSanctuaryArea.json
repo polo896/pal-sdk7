@@ -1,0 +1,119 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalWildlifeSanctuaryArea_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_PalWildlifeSanctuaryArea_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/WildlifeSanctuary/BP_PalWildlifeSanctuaryArea.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalWildlifeSanctuaryArea'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalWildlifeSanctuaryArea_C'Default__BP_PalWildlifeSanctuaryArea_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/WildlifeSanctuary/BP_PalWildlifeSanctuaryArea.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalWildlifeSanctuaryArea_C",
+    "Name": "Default__BP_PalWildlifeSanctuaryArea_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/WildlifeSanctuary/BP_PalWildlifeSanctuaryArea.BP_PalWildlifeSanctuaryArea_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Sphere": {
+        "ObjectName": "SphereComponent'Default__BP_PalWildlifeSanctuaryArea_C:SanctuarySphere'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/WildlifeSanctuary/BP_PalWildlifeSanctuaryArea.5"
+      },
+      "bGenerateOverlapEventsDuringLevelStreaming": true,
+      "RootComponent": {
+        "ObjectName": "SphereComponent'Default__BP_PalWildlifeSanctuaryArea_C:SanctuarySphere'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/WildlifeSanctuary/BP_PalWildlifeSanctuaryArea.5"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_PalWildlifeSanctuaryArea_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_PalWildlifeSanctuaryArea_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/WildlifeSanctuary/BP_PalWildlifeSanctuaryArea.2"
+      },
+      "VariableGuid": "C3131AC9-471DFEAF-1031EDAE-AFBE15DD",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_PalWildlifeSanctuaryArea_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_PalWildlifeSanctuaryArea_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/WildlifeSanctuary/BP_PalWildlifeSanctuaryArea.3"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SanctuarySphere",
+    "Outer": "Default__BP_PalWildlifeSanctuaryArea_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OnComponentBeginOverlap": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_PalWildlifeSanctuaryArea_C'Default__BP_PalWildlifeSanctuaryArea_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/WildlifeSanctuary/BP_PalWildlifeSanctuaryArea.1"
+            },
+            "FunctionName": "OnSphereBeginOverlap"
+          }
+        ]
+      },
+      "OnComponentEndOverlap": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_PalWildlifeSanctuaryArea_C'Default__BP_PalWildlifeSanctuaryArea_C'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/WildlifeSanctuary/BP_PalWildlifeSanctuaryArea.1"
+            },
+            "FunctionName": "OnSphereEndOverlap"
+          }
+        ]
+      }
+    }
+  }
+]

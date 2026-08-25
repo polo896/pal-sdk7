@@ -1,0 +1,110 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Move_DarkFlameFox",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 2.0,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_DarkFlameFox_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/DarkFlameFox/AS_DarkFlameFox_Run.0"
+          },
+          "SampleValue": {
+            "X": 500.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_DarkFlameFox_Walk'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/DarkFlameFox/AS_DarkFlameFox_Walk.0"
+          },
+          "SampleValue": {
+            "X": 150.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_DarkFlameFox_Idle'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/DarkFlameFox/AS_DarkFlameFox_Idle.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_DarkFlameFox_Walk'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/DarkFlameFox/AS_DarkFlameFox_Walk.0"
+          },
+          "SampleValue": {
+            "X": 15.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.1
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_DarkFlameFox_Run'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/DarkFlameFox/AS_DarkFlameFox_Run.0"
+          },
+          "SampleValue": {
+            "X": 750.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.5
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 2,
+            "SampleIndices[1]": 3,
+            "Vertices": 0.0,
+            "Vertices[1]": 0.02
+          },
+          {
+            "SampleIndices": 3,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.02,
+            "Vertices[1]": 0.2
+          },
+          {
+            "SampleIndices": 1,
+            "SampleIndices[1]": 0,
+            "Vertices": 0.2,
+            "Vertices[1]": 0.6666667
+          },
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 4,
+            "Vertices": 0.6666667,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "Max": 750.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_DarkFlameFox_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/DarkFlameFox/SK_DarkFlameFox_Skeleton.4"
+      }
+    },
+    "SkeletonGuid": "900B4D74-484CC4CC-F3E29DAC-1888DA46"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_Swim_GrassMinotaur",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetWeightInterpolationSpeedPerSec": 3.0,
+      "AnimLength": 1.3333334,
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GrassMinotaur_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GrassMinotaur/AS_GrassMinotaur_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 0.4
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'AS_GrassMinotaur_Idle_Swim'",
+            "ObjectPath": "Pal/Content/Pal/Animation/Character/Monster/GrassMinotaur/AS_GrassMinotaur_Idle_Swim.0"
+          },
+          "SampleValue": {
+            "X": 1050.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        }
+      ],
+      "BlendSpaceData": {
+        "Segments": [
+          {
+            "SampleIndices": 0,
+            "SampleIndices[1]": 1,
+            "Vertices": 0.0,
+            "Vertices[1]": 1.0
+          }
+        ]
+      },
+      "BlendParameters": {
+        "DisplayName": "Front",
+        "Max": 1050.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_GrassMinotaur_Skeleton'",
+        "ObjectPath": "Pal/Content/Pal/Model/Character/Skeleton/GrassMinotaur/SK_GrassMinotaur_Skeleton.4"
+      }
+    },
+    "SkeletonGuid": "FF0D1F86-470A78E1-092273A2-A984AE53"
+  }
+]

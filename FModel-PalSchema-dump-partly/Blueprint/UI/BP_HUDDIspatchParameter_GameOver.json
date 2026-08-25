@@ -1,0 +1,56 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_HUDDIspatchParameter_GameOver_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalHUDDispatchParameterBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "DyingEndInfo",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 56,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalDyingEndInfo'",
+          "ObjectPath": "/Script/Pal"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_HUDDIspatchParameter_GameOver_C'Default__BP_HUDDIspatchParameter_GameOver_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/BP_HUDDIspatchParameter_GameOver.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_HUDDIspatchParameter_GameOver_C",
+    "Name": "Default__BP_HUDDIspatchParameter_GameOver_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/BP_HUDDIspatchParameter_GameOver.BP_HUDDIspatchParameter_GameOver_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DyingEndInfo": {
+        "LastAttackerInstanceID": {
+          "PlayerUId": "00000000-00000000-00000000-00000000",
+          "InstanceId": "00000000-00000000-00000000-00000000",
+          "DebugName": ""
+        },
+        "bIsInstantDeath": false,
+        "DeadType": "EPalDeadType::Undefined"
+      }
+    }
+  }
+]

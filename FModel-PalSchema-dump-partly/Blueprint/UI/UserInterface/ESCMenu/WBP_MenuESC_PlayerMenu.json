@@ -1,0 +1,2321 @@
+[
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_C_122",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "AE48B2CB428938C1FB234DA6E2FE4F4C",
+        "SourceString": "PlayerName",
+        "LocalizedString": "PlayerName"
+      },
+      "Font": {
+        "TypefaceFontName": "Medium",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenuHead.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.15"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed",
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.5"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_215",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.CanvasPanel_215.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.7"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "GuildMemberMenu",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu.CanvasPanelSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu.CanvasPanelSlot_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu.CanvasPanelSlot_11'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu.CanvasPanelSlot_12'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu.CanvasPanelSlot_10'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.9"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "GuildMemberMenuHead",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenuHead.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenuHead.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.15"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.8"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -1280.0,
+          "Top": -720.0,
+          "Right": 2560.0,
+          "Bottom": 1440.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_PlayerMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.1"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_PlayerMenu_C:WidgetTree.CanvasPanel_215'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 300.0,
+          "Bottom": 212.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_PlayerMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.1"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_215",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_PlayerMenu_C:WidgetTree.CanvasPanel_215'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.2"
+      },
+      "Content": {
+        "ObjectName": "WBP_PalInvisibleButton_C'WBP_MenuESC_PlayerMenu_C:WidgetTree.WBP_PalInvisibleButton'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.62"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "GuildMemberMenu",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 300.0,
+          "Bottom": 10.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.3"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenuHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "GuildMemberMenu",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 12.0,
+          "Top": 14.0,
+          "Right": 12.0,
+          "Bottom": 154.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.3"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "GuildMemberMenu",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 6.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.3"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MenuESC_PlayerMenu_C:WidgetTree.Dot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "GuildMemberMenu",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 6.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.3"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MenuESC_PlayerMenu_C:WidgetTree.Dot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.41"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "GuildMemberMenu",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.3"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MenuESC_PlayerMenu_C:WidgetTree.Base'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "GuildMemberMenu",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Top": 4.0,
+          "Right": -4.0,
+          "Bottom": -4.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.3"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MenuESC_PlayerMenu_C:WidgetTree.BaseShadow'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.39"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "GuildMemberMenu",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.3"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MenuESC_PlayerMenu_C:WidgetTree.Frame'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "GuildMemberMenuHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 18.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenuHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.4"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_MenuESC_PlayerMenu_C:WidgetTree.BP_PalTextBlock_C_122'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.0"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "GuildMemberMenuHead",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenuHead'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.4"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_MenuESC_PlayerMenu_C:WidgetTree.HeadBase'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.43"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WBP_GuildMemberMenuList_UserReport",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UserReport_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_PalInvisibleButton",
+          "DelegatePropertyName": "OnButtonBaseClicked",
+          "FunctionNameToBind": "BndEvt__WBP_MenuESC_PlayerMenu_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_GuildMemberMenuList_UnBlock",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnBlock_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_GuildMemberMenuList_UnMute",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnMute_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_GuildMemberMenuList_Block",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_3_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_GuildMemberMenuList_Mute",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_2_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_GuildMemberMenuList_CopyPlayerUId",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "WBP_GuildMemberMenuList_CopyUserId",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_2_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_3_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnBlock_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnMute_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UserReport_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__WBP_MenuESC_PlayerMenu_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_MenuESC_PlayerMenu",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button_7",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text_4",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text_5",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CommonButtonBase'",
+          "ObjectPath": "/Script/CommonUI"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsPS5_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsXB1_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsXSX_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsPS5_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsXB1_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsXSX_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_Button",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetLocalizedTextFromHandle_Text_6",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetTopFocusTarget",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "TargetWidget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsXSX_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsXB1_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsPS5_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInitialized",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:OnInitialized'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPlayerMenuBlock__DelegateSignature",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPlayerMenuCancel__DelegateSignature",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPlayerMenuCopyPlayerUId__DelegateSignature",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "InTargetWidget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_MenuESCPlayerListItem_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESCPlayerListItem.77"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPlayerMenuCopyUserId__DelegateSignature",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "InTargetWidget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_MenuESCPlayerListItem_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESCPlayerListItem.77"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPlayerMenuMute__DelegateSignature",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPlayerMenuUnBlock__DelegateSignature",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPlayerMenuUnMute__DelegateSignature",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPlayerMenuUserReport__DelegateSignature",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetPlayerName",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "DisplayName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "Base",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.003337,
+        "G": 0.004116,
+        "B": 0.005208,
+        "A": 0.6,
+        "Hex": "990B0D10"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.12"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BaseShadow",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.003337,
+        "G": 0.004116,
+        "B": 0.005208,
+        "A": 0.3,
+        "Hex": "4C0B0D10"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu.CanvasPanelSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.13"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Dot_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.911458,
+        "G": 0.882342,
+        "B": 0.835504,
+        "A": 1.0,
+        "Hex": "F5F2EC"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu.CanvasPanelSlot_11'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.10"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Dot_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.911458,
+        "G": 0.882342,
+        "B": 0.835504,
+        "A": 1.0,
+        "Hex": "F5F2EC"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu.CanvasPanelSlot_12'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.11"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Frame",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box",
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_prt_frame_1px'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/IngameMenu/T_prt_frame_1px.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.2,
+        "Hex": "33FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu.CanvasPanelSlot_7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.14"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HeadBase",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.783538,
+        "G": 0.964686,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "E5FBFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenuHead.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.16"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_113",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.50"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.46"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.47"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_8'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.52"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.48"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_9'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.53"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.49"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.51"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.50"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.GuildMemberMenu.CanvasPanelSlot_10'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.9"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Bottom": 2.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.45"
+      },
+      "Content": {
+        "ObjectName": "WBP_GuildMemberMenuList_C'WBP_MenuESC_PlayerMenu_C:WidgetTree.WBP_GuildMemberMenuList_CopyUserId'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.56"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Bottom": 2.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.45"
+      },
+      "Content": {
+        "ObjectName": "WBP_GuildMemberMenuList_C'WBP_MenuESC_PlayerMenu_C:WidgetTree.WBP_GuildMemberMenuList_CopyPlayerUId'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.55"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Bottom": 2.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.45"
+      },
+      "Content": {
+        "ObjectName": "WBP_GuildMemberMenuList_C'WBP_MenuESC_PlayerMenu_C:WidgetTree.WBP_GuildMemberMenuList_UnMute'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.59"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_3",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Bottom": 2.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.45"
+      },
+      "Content": {
+        "ObjectName": "WBP_GuildMemberMenuList_C'WBP_MenuESC_PlayerMenu_C:WidgetTree.WBP_GuildMemberMenuList_UnBlock'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.58"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_4",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Bottom": 12.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.45"
+      },
+      "Content": {
+        "ObjectName": "Spacer'WBP_MenuESC_PlayerMenu_C:WidgetTree.Spacer_113'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.44"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_5",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Bottom": 2.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.45"
+      },
+      "Content": {
+        "ObjectName": "WBP_GuildMemberMenuList_C'WBP_MenuESC_PlayerMenu_C:WidgetTree.WBP_GuildMemberMenuList_UserReport'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.60"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_8",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Bottom": 2.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.45"
+      },
+      "Content": {
+        "ObjectName": "WBP_GuildMemberMenuList_C'WBP_MenuESC_PlayerMenu_C:WidgetTree.WBP_GuildMemberMenuList_Mute'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.57"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_9",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Bottom": 2.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.45"
+      },
+      "Content": {
+        "ObjectName": "WBP_GuildMemberMenuList_C'WBP_MenuESC_PlayerMenu_C:WidgetTree.WBP_GuildMemberMenuList_Block'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.54"
+      }
+    }
+  },
+  {
+    "Type": "WBP_GuildMemberMenuList_C",
+    "Name": "WBP_GuildMemberMenuList_Block",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.WBP_GuildMemberMenuList_C'",
+    "Template": {
+      "ObjectName": "WBP_GuildMemberMenuList_C'Default__WBP_GuildMemberMenuList_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.30"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_9'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.53"
+      }
+    }
+  },
+  {
+    "Type": "WBP_GuildMemberMenuList_C",
+    "Name": "WBP_GuildMemberMenuList_CopyPlayerUId",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.WBP_GuildMemberMenuList_C'",
+    "Template": {
+      "ObjectName": "WBP_GuildMemberMenuList_C'Default__WBP_GuildMemberMenuList_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.30"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.47"
+      }
+    }
+  },
+  {
+    "Type": "WBP_GuildMemberMenuList_C",
+    "Name": "WBP_GuildMemberMenuList_CopyUserId",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.WBP_GuildMemberMenuList_C'",
+    "Template": {
+      "ObjectName": "WBP_GuildMemberMenuList_C'Default__WBP_GuildMemberMenuList_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.30"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.46"
+      }
+    }
+  },
+  {
+    "Type": "WBP_GuildMemberMenuList_C",
+    "Name": "WBP_GuildMemberMenuList_Mute",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.WBP_GuildMemberMenuList_C'",
+    "Template": {
+      "ObjectName": "WBP_GuildMemberMenuList_C'Default__WBP_GuildMemberMenuList_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.30"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_8'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.52"
+      }
+    }
+  },
+  {
+    "Type": "WBP_GuildMemberMenuList_C",
+    "Name": "WBP_GuildMemberMenuList_UnBlock",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.WBP_GuildMemberMenuList_C'",
+    "Template": {
+      "ObjectName": "WBP_GuildMemberMenuList_C'Default__WBP_GuildMemberMenuList_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.30"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.49"
+      }
+    }
+  },
+  {
+    "Type": "WBP_GuildMemberMenuList_C",
+    "Name": "WBP_GuildMemberMenuList_UnMute",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.WBP_GuildMemberMenuList_C'",
+    "Template": {
+      "ObjectName": "WBP_GuildMemberMenuList_C'Default__WBP_GuildMemberMenuList_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.30"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.48"
+      }
+    }
+  },
+  {
+    "Type": "WBP_GuildMemberMenuList_C",
+    "Name": "WBP_GuildMemberMenuList_UserReport",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.WBP_GuildMemberMenuList_C'",
+    "Template": {
+      "ObjectName": "WBP_GuildMemberMenuList_C'Default__WBP_GuildMemberMenuList_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.30"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.51"
+      }
+    }
+  },
+  {
+    "Type": "WBP_MenuESC_PlayerMenu_C",
+    "Name": "Default__WBP_MenuESC_PlayerMenu_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "UserIDCopyMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_USERID_COPY"
+      },
+      "PlayerUIDCopyMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_PLAYERUID_COPY"
+      },
+      "PlayerMuteMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_PLAYER_MUTE"
+      },
+      "PlayerBlockMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_PLAYER_BLOCK"
+      },
+      "PlayerUnMuteMsgID": {
+        "DataTable": {
+          "ObjectName": "DataTable'DT_UI_Common_Text_Common'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text_Common.0"
+        },
+        "RowName": "COMMON_PLAYER_UNMUTE"
+      },
+      "PlayerUnBlockMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_PLAYER_UNBLOCK"
+      },
+      "PlayerUserReportMsgID": {
+        "DataTable": {
+          "ObjectName": "CompositeDataTable'DT_UI_Common_Text'",
+          "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_UI_Common_Text.0"
+        },
+        "RowName": "COMMON_USER_REPORT"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_PalInvisibleButton_C",
+    "Name": "WBP_PalInvisibleButton",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.WBP_PalInvisibleButton_C'",
+    "Template": {
+      "ObjectName": "WBP_PalInvisibleButton_C'Default__WBP_PalInvisibleButton_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_MenuESC_PlayerMenu_C:WidgetTree.CanvasPanel_215.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.7"
+      },
+      "Visibility": "ESlateVisibility::Visible"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_MenuESC_PlayerMenu_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.64"
+      },
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WBP_MenuESC_PlayerMenu_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.17"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:ExecuteUbergraph_WBP_MenuESC_PlayerMenu'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.26"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:GetTopFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.27"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:SetPlayerName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.37"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.19"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.18"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_2_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.20"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_3_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.21"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnMute_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.23"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnBlock_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.22"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:BndEvt__WBP_MenuESC_PlayerMenu_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.25"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.28"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UserReport_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.24"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:ExecuteUbergraph_WBP_MenuESC_PlayerMenu'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.26"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuUserReport__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.36"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuCancel__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.30"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuUnBlock__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.34"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuUnMute__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.35"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuBlock__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.29"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuMute__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.33"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuCopyPlayerUId__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.31"
+      },
+      {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuCopyUserId__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.32"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Base",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BaseShadow",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalTextBlock_C_122",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Dot_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Dot_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Frame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HeadBase",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_GuildMemberMenuList_Block",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_GuildMemberMenuList_CopyPlayerUId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_GuildMemberMenuList_CopyUserId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_GuildMemberMenuList_Mute",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_GuildMemberMenuList_UnBlock",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_GuildMemberMenuList_UnMute",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_GuildMemberMenuList_UserReport",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_GuildMemberMenuList_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/MainMenu/Guild/WBP_GuildMemberMenuList.33"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PalInvisibleButton",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PalInvisibleButton_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/System/Style/WBP_PalInvisibleButton.2"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "UserIDCopyMsgID",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "PlayerUIDCopyMsgID",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "PlayerMuteMsgID",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "PlayerBlockMsgID",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnPlayerMenuCopyUserId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuCopyUserId__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.32"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnPlayerMenuCopyPlayerUId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuCopyPlayerUId__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.31"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnPlayerMenuMute",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuMute__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.33"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnPlayerMenuBlock",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuBlock__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.29"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TargetWidget",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_MenuESCPlayerListItem_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESCPlayerListItem.77"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnPlayerMenuUnMute",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuUnMute__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.35"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "PlayerUnMuteMsgID",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnPlayerMenuUnBlock",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuUnBlock__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.34"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "PlayerUnBlockMsgID",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnPlayerMenuCancel",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuCancel__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.30"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnPlayerMenuUserReport",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuUserReport__DelegateSignature'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.36"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "PlayerUserReportMsgID",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnPlayerMenuCopyUserId__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuCopyUserId__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.32"
+      },
+      "OnPlayerMenuCopyPlayerUId__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuCopyPlayerUId__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.31"
+      },
+      "OnPlayerMenuMute__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuMute__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.33"
+      },
+      "OnPlayerMenuBlock__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuBlock__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.29"
+      },
+      "OnPlayerMenuUnMute__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuUnMute__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.35"
+      },
+      "OnPlayerMenuUnBlock__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuUnBlock__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.34"
+      },
+      "OnPlayerMenuCancel__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuCancel__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.30"
+      },
+      "OnPlayerMenuUserReport__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnPlayerMenuUserReport__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.36"
+      },
+      "ExecuteUbergraph_WBP_MenuESC_PlayerMenu": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:ExecuteUbergraph_WBP_MenuESC_PlayerMenu'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.26"
+      },
+      "BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UserReport_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UserReport_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.24"
+      },
+      "OnInitialized": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.28"
+      },
+      "BndEvt__WBP_MenuESC_PlayerMenu_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:BndEvt__WBP_MenuESC_PlayerMenu_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.25"
+      },
+      "BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnBlock_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnBlock_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.22"
+      },
+      "BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnMute_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnMute_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.23"
+      },
+      "BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_3_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_3_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.21"
+      },
+      "BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_2_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_2_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.20"
+      },
+      "BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.18"
+      },
+      "BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.19"
+      },
+      "SetPlayerName": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:SetPlayerName'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.37"
+      },
+      "GetTopFocusTarget": {
+        "ObjectName": "Function'WBP_MenuESC_PlayerMenu_C:GetTopFocusTarget'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.27"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_MenuESC_PlayerMenu_C'Default__WBP_MenuESC_PlayerMenu_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.61"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_MenuESC_PlayerMenu_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_MenuESC_PlayerMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/ESCMenu/WBP_MenuESC_PlayerMenu.1"
+      }
+    }
+  }
+]

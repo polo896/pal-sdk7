@@ -1,0 +1,86 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "EAction_DarkMechaDragonWarpCometType",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "3A563C7A4D5B1AB513400B9660CE08E7",
+            "SourceString": "None",
+            "LocalizedString": "None"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "031659A443A7D3C7226044AD3E532BC3",
+            "SourceString": "Warp",
+            "LocalizedString": "Warp"
+          }
+        },
+        {
+          "Key": "NewEnumerator2",
+          "Value": {
+            "Namespace": "",
+            "Key": "0A915DF9481659A76C9A72B3BCF773AE",
+            "SourceString": "Comet",
+            "LocalizedString": "Comet"
+          }
+        },
+        {
+          "Key": "NewEnumerator3",
+          "Value": {
+            "Namespace": "",
+            "Key": "9F9AC1124BD92EA011617895BD200F54",
+            "SourceString": "Tackle",
+            "LocalizedString": "Tackle"
+          }
+        },
+        {
+          "Key": "NewEnumerator4",
+          "Value": {
+            "Namespace": "",
+            "Key": "DA64625E44AE7A775C8EB788E3258295",
+            "SourceString": "End",
+            "LocalizedString": "End"
+          }
+        },
+        {
+          "Key": "NewEnumerator5",
+          "Value": {
+            "Namespace": "",
+            "Key": "4EBE2E514E31CA43DCD0B6A0B3E9D4D8",
+            "SourceString": "CometReady",
+            "LocalizedString": "CometReady"
+          }
+        },
+        {
+          "Key": "NewEnumerator6",
+          "Value": {
+            "Namespace": "",
+            "Key": "53F97DBA45C9C42E26B787B81E3440D1",
+            "SourceString": "StartingMove",
+            "LocalizedString": "StartingMove"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "EAction_DarkMechaDragonWarpCometType::NewEnumerator0": 0,
+      "EAction_DarkMechaDragonWarpCometType::NewEnumerator6": 1,
+      "EAction_DarkMechaDragonWarpCometType::NewEnumerator1": 2,
+      "EAction_DarkMechaDragonWarpCometType::NewEnumerator5": 3,
+      "EAction_DarkMechaDragonWarpCometType::NewEnumerator2": 4,
+      "EAction_DarkMechaDragonWarpCometType::NewEnumerator3": 5,
+      "EAction_DarkMechaDragonWarpCometType::NewEnumerator4": 6,
+      "EAction_DarkMechaDragonWarpCometType::EAction_MAX": 7
+    },
+    "CppForm": "Namespaced"
+  }
+]

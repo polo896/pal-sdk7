@@ -1,0 +1,91 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_HiddenQuestBlock_DetectBullet_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalQuestBlock_ChangeBulletTutorialTrigger'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_HiddenQuestBlock_DetectBullet_C'Default__BP_HiddenQuestBlock_DetectBullet_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/HiddenQuest/Block/BP_HiddenQuestBlock_DetectBullet.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_HiddenQuestBlock_DetectBullet_C",
+    "Name": "Default__BP_HiddenQuestBlock_DetectBullet_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/HiddenQuest/Block/BP_HiddenQuestBlock_DetectBullet.BP_HiddenQuestBlock_DetectBullet_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TriggerSettings": [
+        {
+          "Key": {
+            "Key": "WeakerBow"
+          },
+          "Value": {
+            "TriggerBulletItems": [
+              {
+                "Key": "Arrow"
+              },
+              {
+                "Key": "Arrow_Poison"
+              },
+              {
+                "Key": "Arrow_Fire"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "Key": "Bow_Triple"
+          },
+          "Value": {
+            "TriggerBulletItems": [
+              {
+                "Key": "Arrow"
+              },
+              {
+                "Key": "Arrow_Poison"
+              },
+              {
+                "Key": "Arrow_Fire"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "Key": "BowGun"
+          },
+          "Value": {
+            "TriggerBulletItems": [
+              {
+                "Key": "Arrow"
+              },
+              {
+                "Key": "Arrow_Poison"
+              },
+              {
+                "Key": "Arrow_Fire"
+              }
+            ]
+          }
+        }
+      ],
+      "IsAutoComplete": true
+    }
+  }
+]

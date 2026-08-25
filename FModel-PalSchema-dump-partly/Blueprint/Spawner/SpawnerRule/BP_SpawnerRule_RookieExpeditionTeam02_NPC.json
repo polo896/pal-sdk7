@@ -1,0 +1,68 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SpawnerRule_RookieExpeditionTeam02_NPC_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SpawnerRuleBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SpawnerRule/BP_SpawnerRuleBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SpawnerRuleBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SpawnerRule/BP_SpawnerRuleBase.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SpawnerRule_RookieExpeditionTeam02_NPC_C'Default__BP_SpawnerRule_RookieExpeditionTeam02_NPC_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SpawnerRule/BP_SpawnerRule_RookieExpeditionTeam02_NPC.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SpawnerRule_RookieExpeditionTeam02_NPC_C",
+    "Name": "Default__BP_SpawnerRule_RookieExpeditionTeam02_NPC_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Spawner/SpawnerRule/BP_SpawnerRule_RookieExpeditionTeam02_NPC.BP_SpawnerRule_RookieExpeditionTeam02_NPC_C'",
+    "Template": {
+      "ObjectName": "BP_SpawnerRuleBase_C'Default__BP_SpawnerRuleBase_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Spawner/SpawnerRule/BP_SpawnerRuleBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Conditions": [
+        {
+          "QuestId_20_D9B7606F4D3DB528F17220BE3FDFFB8B": {
+            "DataTable": {
+              "ObjectName": "DataTable'DT_PalQuestData'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Quest/DT_PalQuestData.0"
+            },
+            "RowName": "Sub_RookieExpeditionTeam02"
+          },
+          "State_10_BA3ED0E440A013B313AF37B99E1D72A4": "E_PalQuestState::NewEnumerator2",
+          "Block_15_0276D8934E105B50A62AE298D3936387": null,
+          "Spawn_22_70A3F05C43562CEB543238A681D7F8FC": false
+        },
+        {
+          "QuestId_20_D9B7606F4D3DB528F17220BE3FDFFB8B": {
+            "DataTable": {
+              "ObjectName": "DataTable'DT_PalQuestData'",
+              "ObjectPath": "Pal/Content/Pal/DataTable/Quest/DT_PalQuestData.0"
+            },
+            "RowName": "Sub_RookieExpeditionTeam01"
+          },
+          "State_10_BA3ED0E440A013B313AF37B99E1D72A4": "E_PalQuestState::NewEnumerator2",
+          "Block_15_0276D8934E105B50A62AE298D3936387": null,
+          "Spawn_22_70A3F05C43562CEB543238A681D7F8FC": true
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,232 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_PalDatabaseCharacterParameter_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'PalDatabaseCharacterParameter'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_PalDatabaseCharacterParameter_C'Default__BP_PalDatabaseCharacterParameter_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/System/BP_PalDatabaseCharacterParameter.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_PalDatabaseCharacterParameter_C",
+    "Name": "Default__BP_PalDatabaseCharacterParameter_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/System/BP_PalDatabaseCharacterParameter.BP_PalDatabaseCharacterParameter_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AIResponsePresetMap": [
+        {
+          "Key": "Default",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AIResponsePreset_Default_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIResponsePreset/BP_AIResponsePreset_Default.0"
+          }
+        },
+        {
+          "Key": "Escape",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AIResponsePreset_escape_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIResponsePreset/BP_AIResponsePreset_escape.0"
+          }
+        },
+        {
+          "Key": "Friendly",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AIResponsePreset_friendly_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIResponsePreset/BP_AIResponsePreset_friendly.0"
+          }
+        },
+        {
+          "Key": "Warlike",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AIResponsePreset_Warlike_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIResponsePreset/BP_AIResponsePreset_Warlike.0"
+          }
+        },
+        {
+          "Key": "NotInterested",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AIResponsePreset_NotInterested_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIResponsePreset/BP_AIResponsePreset_NotInterested.0"
+          }
+        },
+        {
+          "Key": "Escape_to_Battle",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AIResponsePreset_Escape_to_Battle_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIResponsePreset/BP_AIResponsePreset_Escape_to_Battle.0"
+          }
+        },
+        {
+          "Key": "Kill_All",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AIResponsePreset_Kill_All_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIResponsePreset/BP_AIResponsePreset_Kill_All.0"
+          }
+        },
+        {
+          "Key": "Boss",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AIResponsePreset_Boss_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIResponsePreset/BP_AIResponsePreset_Boss.0"
+          }
+        },
+        {
+          "Key": "VillageNPC",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AIResponsePreset_VillageNPC_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIResponsePreset/BP_AIResponsePreset_VillageNPC.0"
+          }
+        },
+        {
+          "Key": "Warlike_Anyway",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AIResponsePreset_Warlike_Anyway_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIResponsePreset/BP_AIResponsePreset_Warlike_Anyway.0"
+          }
+        },
+        {
+          "Key": "Warlike_WithoutPlayer",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AIResponsePreset_Warlike_WithoutPlayer_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AIResponsePreset/BP_AIResponsePreset_Warlike_WithoutPlayer.0"
+          }
+        }
+      ],
+      "AISightResponsePresetMap": [
+        {
+          "Key": "Citizen",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AISightResponsePreset_Citizen_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AISightResponsePreset/BP_AISightResponsePreset_Citizen.0"
+          }
+        },
+        {
+          "Key": "Police",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AISightResponsePreset_Police_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AISightResponsePreset/BP_AISightResponsePreset_Police.0"
+          }
+        },
+        {
+          "Key": "Villain",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AISightResponsePreset_Villain_C'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/Controller/AISightResponsePreset/BP_AISightResponsePreset_Villain.0"
+          }
+        }
+      ],
+      "PettingPressetClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PettingPreset_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Character/Base/BP_PettingPreset.0"
+      },
+      "PlayerParameterDataTable": {
+        "ObjectName": "DataTable'DT_PalPlayerParameter'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Character/DT_PalPlayerParameter.0"
+      },
+      "MonsterParameterDataTable": {
+        "ObjectName": "CompositeDataTable'DT_PalMonsterParameter'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Character/DT_PalMonsterParameter.0"
+      },
+      "HumanParameterDataTable": {
+        "ObjectName": "CompositeDataTable'DT_PalHumanParameter'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Character/DT_PalHumanParameter.0"
+      },
+      "DropItemDataTable": {
+        "ObjectName": "CompositeDataTable'DT_PalDropItem'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Character/DT_PalDropItem.0"
+      },
+      "MonsterNameDataTable": {
+        "ObjectName": "CompositeDataTable'DT_PalNameText'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_PalNameText.0"
+      },
+      "HumanNameDataTable": {
+        "ObjectName": "CompositeDataTable'DT_HumanNameText'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Text/DT_HumanNameText.0"
+      },
+      "CharacterIconDataTable": {
+        "ObjectName": "CompositeDataTable'DT_PalCharacterIconDataTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Character/DT_PalCharacterIconDataTable.0"
+      },
+      "CharacterSkinIconDataTable": {
+        "ObjectName": "CompositeDataTable'DT_PalCharacterIconDataTable_SkinOverride'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Character/DT_PalCharacterIconDataTable_SkinOverride.0"
+      },
+      "BPClassDataTable": {
+        "ObjectName": "CompositeDataTable'DT_PalBPClass'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Character/DT_PalBPClass.0"
+      },
+      "PartnerSkillDataTable": {
+        "ObjectName": "DataTable'DT_PartnerSkill'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/PartnerSkill/DT_PartnerSkill.0"
+      },
+      "PalSizeParameterDataTable": {
+        "ObjectName": "DataTable'DT_PalSizeParameter'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Character/DT_PalSizeParameter.0"
+      },
+      "PalCapturedCageDataTable": {
+        "ObjectName": "DataTable'DT_CapturedCagePal'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Character/DT_CapturedCagePal.0"
+      },
+      "PalStatusEffectFoodDataTable": {
+        "ObjectName": "DataTable'DT_StatusEffectFood'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Item/DT_StatusEffectFood.0"
+      },
+      "PalGainStatusPointsItemDataTable": {
+        "ObjectName": "DataTable'DT_GainStatusPointsItem'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Item/DT_GainStatusPointsItem.0"
+      },
+      "PalCombiUniqueDataTable": {
+        "ObjectName": "DataTable'DT_PalCombiUnique'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Character/DT_PalCombiUnique.0"
+      },
+      "PalTalentUpItemDataTable": {
+        "ObjectName": "DataTable'DT_TalentUpItem'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Item/DT_TalentUpItem.0"
+      },
+      "NPCOtomoWazaDataTable": {
+        "ObjectName": "DataTable'DT_NPCOtomoWaza'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Waza/DT_NPCOtomoWaza.0"
+      },
+      "NPCBossIconDataTable": {
+        "ObjectName": "CompositeDataTable'DT_PalBossNPCIcon'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Character/DT_PalBossNPCIcon.0"
+      },
+      "PalGainWorkSuitabilityRankItemDataTable": {
+        "ObjectName": "DataTable'DT_GainWorkSuitabilityRankItem'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Item/DT_GainWorkSuitabilityRankItem.0"
+      },
+      "FriendshipRankTable": {
+        "ObjectName": "DataTable'DT_FriendshipRankTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Friendship/DT_FriendshipRankTable.0"
+      },
+      "ArenaRankingNPCIconDataTable": {
+        "ObjectName": "DataTable'DT_ArenaRankingNPCIconTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Arena/DT_ArenaRankingNPCIconTable.0"
+      },
+      "ArenaUnusableItemDataTable": {
+        "ObjectName": "DataTable'DT_ArenaUnusableItemTable'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Arena/DT_ArenaUnusableItemTable.0"
+      },
+      "PalAwakeningItemElementTable": {
+        "ObjectName": "DataTable'DT_PalAwakeningItemElement'",
+        "ObjectPath": "Pal/Content/Pal/DataTable/Item/DT_PalAwakeningItemElement.0"
+      }
+    }
+  }
+]

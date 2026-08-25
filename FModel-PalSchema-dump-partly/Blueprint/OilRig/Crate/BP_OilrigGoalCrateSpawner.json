@@ -1,0 +1,285 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_OilrigGoalCrateSpawner_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_OilrigGoalCrateSpawner_C:SimpleConstructionScript_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Crate/BP_OilrigGoalCrateSpawner.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_OilrigGoalCrateSpawner_C:ExecuteUbergraph_BP_OilrigGoalCrateSpawner'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Crate/BP_OilrigGoalCrateSpawner.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalOilrigGoalCrateSpawnerBase'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_OilrigGoalCrateSpawner_C:ReceiveTick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Crate/BP_OilrigGoalCrateSpawner.3"
+      },
+      {
+        "ObjectName": "Function'BP_OilrigGoalCrateSpawner_C:ExecuteUbergraph_BP_OilrigGoalCrateSpawner'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Crate/BP_OilrigGoalCrateSpawner.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DebugMesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_OilrigGoalCrateSpawner": {
+        "ObjectName": "Function'BP_OilrigGoalCrateSpawner_C:ExecuteUbergraph_BP_OilrigGoalCrateSpawner'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Crate/BP_OilrigGoalCrateSpawner.2"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_OilrigGoalCrateSpawner_C:ReceiveTick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Crate/BP_OilrigGoalCrateSpawner.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_OilrigGoalCrateSpawner_C'Default__BP_OilrigGoalCrateSpawner_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Crate/BP_OilrigGoalCrateSpawner.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_OilrigGoalCrateSpawner_C",
+    "Name": "Default__BP_OilrigGoalCrateSpawner_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/OilRig/Crate/BP_OilrigGoalCrateSpawner.BP_OilrigGoalCrateSpawner_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "CrateClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_OilrigGoalCrate_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Crate/BP_OilrigGoalCrate.0"
+      },
+      "IsOnlyOneBox": true,
+      "SpawnMapObjectId": {
+        "Key": "TreasureBox_Oilrig"
+      },
+      "FieldLotteryName": {
+        "Key": "Oilrig_Large_02"
+      },
+      "OnlyOneBoxEmptyBoxActorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_OilrigEmptyGoalBox_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/TreasureBoxSpawner/BP_OilrigEmptyGoalBox.0"
+      },
+      "PrimaryActorTick": {
+        "bCanEverTick": true,
+        "TickInterval": 1.0
+      },
+      "bNetLoadOnClient": false
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_OilrigGoalCrateSpawner",
+    "Outer": "BP_OilrigGoalCrateSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsSpawnedGoalBox_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalDebugSetting_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalDebugSetting'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "BP_OilrigGoalCrateSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_OilrigGoalCrateSpawner_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_OilrigGoalCrateSpawner_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Crate/BP_OilrigGoalCrateSpawner.4"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_OilrigGoalCrateSpawner_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Crate/BP_OilrigGoalCrateSpawner.6"
+        }
+      ],
+      "VariableGuid": "6E152DFF-438F4F4A-60A400AC-8A2F11F8",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "VariableGuid": "58F5AA36-40BC3A81-E0F98790-A6CDB041",
+      "InternalVariableName": "DebugMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_OilrigGoalCrateSpawner_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_OilrigGoalCrateSpawner_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Crate/BP_OilrigGoalCrateSpawner.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_OilrigGoalCrateSpawner_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Crate/BP_OilrigGoalCrateSpawner.5"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_OilrigGoalCrateSpawner_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Crate/BP_OilrigGoalCrateSpawner.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_OilrigGoalCrateSpawner_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/OilRig/Crate/BP_OilrigGoalCrateSpawner.5"
+      }
+    }
+  }
+]

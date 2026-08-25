@@ -1,0 +1,98 @@
+[
+  {
+    "Type": "BI_PalFishingAimInterface_C",
+    "Name": "Default__BI_PalFishingAimInterface_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Interface/BI_PalFishingAimInterface.BI_PalFishingAimInterface_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BI_PalFishingAimInterface_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Interface'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BI_PalFishingAimInterface_C:CanFishing'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingAimInterface.2"
+      },
+      {
+        "ObjectName": "Function'BI_PalFishingAimInterface_C:IsShowReticle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingAimInterface.3"
+      }
+    ],
+    "FuncMap": {
+      "IsShowReticle": {
+        "ObjectName": "Function'BI_PalFishingAimInterface_C:IsShowReticle'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingAimInterface.3"
+      },
+      "CanFishing": {
+        "ObjectName": "Function'BI_PalFishingAimInterface_C:CanFishing'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingAimInterface.2"
+      }
+    },
+    "ClassFlags": "CLASS_Interface | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BI_PalFishingAimInterface_C'Default__BI_PalFishingAimInterface_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Interface/BI_PalFishingAimInterface.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Interface"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "CanFishing",
+    "Outer": "BI_PalFishingAimInterface_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CanFishing",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsShowReticle",
+    "Outer": "BI_PalFishingAimInterface_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsShow",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  }
+]

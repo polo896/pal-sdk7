@@ -1,0 +1,69 @@
+[
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_Rumor-loving_villagers",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "4DCFA84F-44EAA34E-A9C004A4-E28CA07C",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "A0CF13B3-4C8AABFF-07ED949D-9FBB7FFF",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_0",
+    "Outer": "FABP_Rumor-loving_villagers",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "Rumor-loving_villagers_1_1",
+        "Rumor-loving_villagers_1_2",
+        "Rumor-loving_villagers_1_3",
+        "Rumor-loving_villagers_1_4"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "A0CF13B3-4C8AABFF-07ED949D-9FBB7FFF"
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_Rumor-loving_villagers",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "3214FFC4-42F753BC-EDB7C18E-1E3BA492",
+      "Nodes": [
+        {
+          "Key": "4DCFA84F-44EAA34E-A9C004A4-E28CA07C",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_Rumor-loving_villagers:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Rumor-loving_villagers.0"
+          }
+        },
+        {
+          "Key": "A0CF13B3-4C8AABFF-07ED949D-9FBB7FFF",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Rumor-loving_villagers:FNBP_NPCTalk_FixedMsdId_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Rumor-loving_villagers.1"
+          }
+        }
+      ]
+    }
+  }
+]

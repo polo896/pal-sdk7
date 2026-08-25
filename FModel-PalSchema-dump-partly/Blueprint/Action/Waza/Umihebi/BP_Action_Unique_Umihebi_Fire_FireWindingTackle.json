@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Action_Unique_Umihebi_Fire_FireWindingTackle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_Umihebi_WindingTackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Umihebi/BP_Action_Unique_Umihebi_WindingTackle.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Action_Unique_Umihebi_WindingTackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Umihebi/BP_Action_Unique_Umihebi_WindingTackle.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Action_Unique_Umihebi_Fire_FireWindingTackle_C:GetTackleEffectClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Umihebi/BP_Action_Unique_Umihebi_Fire_FireWindingTackle.2"
+      }
+    ],
+    "FuncMap": {
+      "GetTackleEffectClass": {
+        "ObjectName": "Function'BP_Action_Unique_Umihebi_Fire_FireWindingTackle_C:GetTackleEffectClass'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Umihebi/BP_Action_Unique_Umihebi_Fire_FireWindingTackle.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Action_Unique_Umihebi_Fire_FireWindingTackle_C'Default__BP_Action_Unique_Umihebi_Fire_FireWindingTackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Umihebi/BP_Action_Unique_Umihebi_Fire_FireWindingTackle.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Action_Unique_Umihebi_Fire_FireWindingTackle_C",
+    "Name": "Default__BP_Action_Unique_Umihebi_Fire_FireWindingTackle_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Action/Waza/Umihebi/BP_Action_Unique_Umihebi_Fire_FireWindingTackle.BP_Action_Unique_Umihebi_Fire_FireWindingTackle_C'",
+    "Template": {
+      "ObjectName": "BP_Action_Unique_Umihebi_WindingTackle_C'Default__BP_Action_Unique_Umihebi_WindingTackle_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Umihebi/BP_Action_Unique_Umihebi_WindingTackle.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FlagName": "Umihebi_Fire_WindingTackle",
+      "WazaID": "EPalWazaID::Unique_Umihebi_Fire_FireWindingTackle"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetTackleEffectClass",
+    "Outer": "BP_Action_Unique_Umihebi_Fire_FireWindingTackle_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Action_Unique_Umihebi_WindingTackle_C:GetTackleEffectClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Umihebi/BP_Action_Unique_Umihebi_WindingTackle.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Action_Unique_Umihebi_WindingTackle_C:GetTackleEffectClass'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Action/Waza/Umihebi/BP_Action_Unique_Umihebi_WindingTackle.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ClassProperty",
+        "Name": "Class",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_UniqueSkillEffect_Umihebi_WindingTackle_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/Skill/WindingTackle/BP_UniqueSkillEffect_Umihebi_WindingTackle.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  }
+]

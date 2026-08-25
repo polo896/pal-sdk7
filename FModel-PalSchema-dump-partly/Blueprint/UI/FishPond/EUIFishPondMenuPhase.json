@@ -1,0 +1,36 @@
+[
+  {
+    "Type": "UserDefinedEnum",
+    "Name": "EUIFishPondMenuPhase",
+    "Class": "UScriptClass'UserDefinedEnum'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DisplayNameMap": [
+        {
+          "Key": "NewEnumerator0",
+          "Value": {
+            "Namespace": "",
+            "Key": "9BED03FA4AAF3107C01F6BBF3450643E",
+            "SourceString": "TargetList",
+            "LocalizedString": "TargetList"
+          }
+        },
+        {
+          "Key": "NewEnumerator1",
+          "Value": {
+            "Namespace": "",
+            "Key": "A324F9604CC5225EE98D7ABAC7D47828",
+            "SourceString": "TargetDetail",
+            "LocalizedString": "TargetDetail"
+          }
+        }
+      ]
+    },
+    "Names": {
+      "EUIFishPondMenuPhase::NewEnumerator0": 0,
+      "EUIFishPondMenuPhase::NewEnumerator1": 1,
+      "EUIFishPondMenuPhase::EUIFishPondMenuPhase_MAX": 2
+    },
+    "CppForm": "Namespaced"
+  }
+]
