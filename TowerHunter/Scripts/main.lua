@@ -1,28 +1,24 @@
 -- ============================================================================
---  TowerHunter — Ancient Ruins / Ancient Towers helper (Palworld, UE4SS Lua)
+--  TowerHunter - Ancient Ruins / Ancient Towers navigator (Palworld, UE4SS Lua)
 -- ============================================================================
---  F6 opens the control panel with every Ancient Ruins tower found in the
---  world. For each tower:
---    [v] MARK - player's own "visited" checkbox (saved to a local file)
+--  A pure navigator for the Ancient Ruins mini-towers scattered around the
+--  map - the ones sealed by a barrier and opened by a mini-game / rock
+--  smashing / a pal fight, with a stele (ancient altar) inside.
+--
+--  F6 opens the control panel listing every tower found in the world:
+--    [v] MARK - your own "visited" checklist (saved to a local file)
 --    TP      - teleport near the tower (staged, waits for terrain streaming)
---  Global: RESCAN / TP NEAREST / SORT / paging.
+--  Global: RESCAN / TP NEAREST / SORT / paging / !th chat commands.
 --
---  Mini-game pedestals (v4.5): NO assist. Four externally-driven variants
---  (v2-v4.4) all planted the delayed 0x338 crash - even the minimal one
---  that replicated the recorded manual chain exactly (flag + a single
---  Close()). The widget's internal blueprint state when WE close it can
---  never match its state when it closes ITSELF (a manual close never
---  happens before +4s, after the animations), and that state is invisible
---  from Lua. Conclusion: the skip belongs INSIDE the widget's own
---  blueprint - the way the "Instant Auto Hacking" pak mod does it
---  (nexusmods.com/palworld/mods/3980 edits the WBP_* minigame widgets
---  directly). This mod keeps a passive recorder so a pak-driven skip can
---  be verified in the log: exactly one completion, one close.
+--  The mod never opens towers or loots them for you and never interferes
+--  with mini-games or fights - it only reads world state and teleports.
+--  Mini-game skips are a job for pak mods that edit the widgets themselves.
 --
---  Outside a live world the mod does NOTHING native: no widget closes, no
---  level-object calls - a native call through a pointer that died with the
---  unloaded world is exactly the 0x338 crash on "exit to menu -> enter
---  world". World enter only closes our own panel and resets Lua caches.
+--  Design rules:
+--    * event-driven only: hooks + keybinds, zero background polling
+--    * outside a live world the mod makes NO native calls at all (a cached
+--      pointer that died with the unloaded world is a guaranteed crash)
+--    * world enter only closes our own panel and drops Lua caches
 -- ============================================================================
 
 local MOD_TAG  = "[TowerHunter]"
@@ -150,10 +146,7 @@ local function getLocalCharacter()
     return nil
 end
 
--- "am I inside a loaded world?" - the mod NEVER touches native widgets or
--- level objects outside a live world: a widget whose gimmick died with the
--- world unload crashes the game (0x338) the moment its close path reports
--- the result through the dead pointer.
+-- "am I inside a loaded world?" - nothing native may be touched outside one
 local function inWorld()
     return getLocalCharacter() ~= nil
 end
@@ -781,223 +774,17 @@ local function teleportToTower(tw, onDone)
     warpToRawCoords(ox, oy, tw.loc.Z, yaw, false, onDone)
 end
 
--- ======================= mini-game widget matcher ============================
-local MINGAME_WIDGET_PATS = { "MiniGame", "Picking", "OneStroke", "GaugeStop" }
-
-local function isMinigameWidget(w)
-    local cls = getClassName(w) or ""
-    for _, p in ipairs(MINGAME_WIDGET_PATS) do
-        if cls:find(p, 1, true) ~= nil then return true end
-    end
-    return false
-end
-
--- ======================= mini-game chain recorder (v4.3) ====================
--- The active F-assist is GONE. The v4.2 instrumented log proved that even
--- its last remaining native call was one too many: after our param report
--- the game completed the gimmick once - but the overlay widget never learns
--- the game concluded, stays open, and a forced Close() pushes it through
--- its own "conclude on close" path: a SECOND native completion on the same
--- gimmick. Corrupted state -> NULL+0x338 read on the NEXT world load.
---
--- Until the assist is rebuilt on facts, this is a black-box RECORDER: hooks
--- that only LOG what the game itself does between "F pressed" and "tower
--- unlocked" while the player wins the mini-game BY HAND. Zero native calls,
--- zero timers, zero writes - as passive as the mod not being installed.
-
-local mgActive = false     -- a recording session is live
-local mgSeq    = 0         -- event counter inside the session
-local mgT0     = nil       -- os.clock() when the session started
-
-local retryWidgetHooks = function() end   -- set below, re-armed on world enter
-
-local function nowClock()
-    local ok, v = pcall(function() return os.clock() end)
-    if ok and type(v) == "number" then return v end
-    return nil
-end
-
-local function unwrapRef(v)
-    if v ~= nil and hasMethod(v, "get") then return v:get() end
-    return v
-end
-
-local function objClass(o)
-    if not IsValidObj(o) then return "<invalid>" end
-    local ok, name = pcall(function() return o:GetClass():GetName() end)
-    if ok and type(name) == "string" and name ~= "" then return name end
-    local ok2, fname = pcall(function() return o:GetClass():GetFName():ToString() end)
-    if ok2 and type(fname) == "string" and fname ~= "" then return fname end
-    local ok3, full = pcall(function() return o:GetFullName() end)
-    if ok3 and type(full) == "string" then return full end
-    return "<unknown>"
-end
-
-local function mgLog(what)
-    if not mgActive then return end
-    mgSeq = mgSeq + 1
-    local dt = ""
-    if mgT0 ~= nil then
-        local c = nowClock()
-        if c ~= nil then dt = string.format(" +%06.3fs", c - mgT0) end
-    end
-    Log(string.format("[MG #%d%s] %s", mgSeq, dt, what))
-end
-
-local function mgStart(reason)
-    mgActive = true
-    mgSeq = 0
-    mgT0 = nowClock()
-    Log(string.format("[MG] === recording: %s - play the mini-game by hand ===", reason))
-end
-
-local WIDGET_CONSTRUCT_PATHS = {
-    "/Game/Pal/Blueprint/UI/OneStroke/WBP_OneStrokeGame_ForDisplay.WBP_OneStrokeGame_ForDisplay_C",
-    "/Game/Pal/Blueprint/UI/Picking/WBP_PickingGame02_ForDisplay.WBP_PickingGame02_ForDisplay_C",
-    "/Game/Pal/Blueprint/UI/Salvage/WBP_SalvageGame_GaugeStopMiniGame.WBP_SalvageGame_GaugeStopMiniGame_C",
-}
-
-local function registerMinigameObserver()
-    local attached, failed = 0, 0
-    local pendingWidgets = {}
-
-    -- post-only hooks: never touch params, never override returns
-    local function obs(path, fn)
-        local ok = pcall(RegisterHook, path,
-            function() end,
-            function(...)
-                local args = { ... }
-                SafeDo(function() fn(table.unpack(args)) end)
-            end)
-        if ok then attached = attached + 1 else failed = failed + 1 end
-        return ok
-    end
-
-    -- the player presses F on the pedestal: a fresh recording starts here
-    obs("/Script/Pal.PalLevelObject_LockGimmickMiniGame:OnTriggerInteract",
-        function(selfParam)
-            mgStart("F pressed on the pedestal (" .. objClass(unwrapRef(selfParam)) .. ")")
-        end)
-
-    -- the gimmick completes - THE call that must run exactly once per tower
-    obs("/Script/Pal.PalLevelObject_LockGimmickMiniGame:OnMiniGameComplete",
-        function(selfParam, paramParam)
-            local p = unwrapRef(paramParam)
-            mgLog("gimmick.OnMiniGameComplete (param=" .. objClass(p)
-                .. ", bMiniGameSuccess="
-                .. tostring(SafeCall(function() return p.bMiniGameSuccess end)) .. ")")
-        end)
-
-    -- the native unlock chain on the base class
-    obs("/Script/Pal.PalLevelObject_LockGimmickBase:MarkAsCleared",
-        function(selfParam)
-            mgLog("gimmick.MarkAsCleared (" .. objClass(unwrapRef(selfParam)) .. ")")
-        end)
-    obs("/Script/Pal.PalLevelObject_LockGimmickBase:OnGimmickCleared",
-        function(selfParam)
-            mgLog("gimmick.OnGimmickCleared (" .. objClass(unwrapRef(selfParam)) .. ")")
-        end)
-    obs("/Script/Pal.PalLevelObject_LockGimmickBase:OnRep_bCleared",
-        function(selfParam)
-            mgLog("gimmick.OnRep_bCleared (" .. objClass(unwrapRef(selfParam)) .. ")")
-        end)
-
-    -- the overlay asks the SERVER to register the win (what the old assist
-    -- tried to imitate - now we get to see the real thing)
-    obs("/Script/Pal.PalNetworkPlayerComponent:RequestMiniGameSuccess_ToServer",
-        function(selfParam)
-            mgLog("network.RequestMiniGameSuccess_ToServer (self="
-                .. objClass(unwrapRef(selfParam)) .. ")")
-        end)
-
-    -- the reports delivered back to the HUD / widget
-    obs("/Script/Pal.PalHUDDispatchParameter_OneStrokeMiniGame:OnReceiveGameSuccess",
-        function() mgLog("param.OnReceiveGameSuccess (OneStroke: WIN reported)") end)
-    obs("/Script/Pal.PalHUDDispatchParameter_OneStrokeMiniGame:OnReceiveGameFail",
-        function() mgLog("param.OnReceiveGameFail (OneStroke: FAIL reported)") end)
-    obs("/Script/Pal.PalHUDDispatchParameter_PickingMiniGame:OnReceiveSuccessPicking",
-        function() mgLog("param.OnReceiveSuccessPicking (Picking: WIN reported)") end)
-    obs("/Script/Pal.PalHUDDispatchParameter_PickingMiniGame:OnReceiveFailPicking",
-        function() mgLog("param.OnReceiveFailPicking (Picking: FAIL reported)") end)
-    obs("/Script/Pal.PalHUDDispatchParameter_GaugeStopMiniGame:OnReceiveMiniGameResult",
-        function(selfParam, okParam)
-            mgLog("param.OnReceiveMiniGameResult (GaugeStop: result="
-                .. tostring(unwrapRef(okParam)) .. ")")
-        end)
-
-    -- the overlay lifecycle: pack dispatch -> UI push -> construct -> close
-    obs("/Script/Pal.PalMiniGamePackBase:CreateDispatchParameter",
-        function() mgLog("pack.CreateDispatchParameter (the game is opening a mini-game UI)") end)
-    obs("/Script/Pal.PalHUDInGame:PushWidgetStackableUI",
-        function(selfParam, classParam)
-            local c = unwrapRef(classParam)
-            local name = "<unknown>"
-            if c ~= nil then
-                name = SafeCall(function() return c:GetFullName() end)
-                       or SafeCall(function() return c:GetName() end)
-                       or objClass(c)
-            end
-            mgLog("hud.PushWidgetStackableUI -> " .. tostring(name))
-        end)
-    obs("/Script/Pal.PalUserWidgetStackableUI:Close",
-        function(selfParam)
-            local w = unwrapRef(selfParam)
-            local tag = isMinigameWidget(w) and "  *** THE MINI-GAME OVERLAY ***" or ""
-            mgLog("widget.Close (" .. objClass(w) .. ")" .. tag)
-        end)
-    obs("/Script/Pal.PalUserWidgetStackableUI:OnPreClose",
-        function(selfParam) mgLog("widget.OnPreClose (" .. objClass(unwrapRef(selfParam)) .. ")") end)
-    obs("/Script/Pal.PalUserWidgetStackableUI:OnClose",
-        function(selfParam) mgLog("widget.OnClose (" .. objClass(unwrapRef(selfParam)) .. ")") end)
-    obs("/Script/Pal.PalUserWidgetStackableUI:OnPostClose",
-        function(selfParam) mgLog("widget.OnPostClose (" .. objClass(unwrapRef(selfParam)) .. ")") end)
-
-    -- the overlay widget classes themselves. These are BLUEPRINT paths: they
-    -- can fail to register until the world (and its UI) is loaded, so any
-    -- that failed are retried on every world enter.
-    local function attachWidget(path)
-        local short = path:match("([^/]+)%.") or path
-        return obs(path .. ":Construct", function()
-            if not mgActive then mgStart("mini-game overlay appeared on screen") end
-            mgLog("overlay CONSTRUCT (" .. short .. ")")
-        end)
-    end
-    for _, p in ipairs(WIDGET_CONSTRUCT_PATHS) do
-        if not attachWidget(p) then pendingWidgets[#pendingWidgets + 1] = p end
-    end
-    retryWidgetHooks = function()
-        local left = {}
-        for _, p in ipairs(pendingWidgets) do
-            if not attachWidget(p) then left[#left + 1] = p end
-        end
-        pendingWidgets = left
-    end
-
-    Log(string.format("mini-game recorder: %d hook(s) attached, %d failed, %d widget path(s) pending",
-            attached, failed, #pendingWidgets))
-end
-
 -- ======================= world-enter cleanup (event) =======================
--- Stale widgets survive a world unload on the PERSISTENT UI stack and crash
--- the next world load (0x338: a tower-actor field read through NULL).
--- The world-enter event (OnInitializeLocalPlayer_BP) is our trigger - no
--- background ticking.
+-- A new world invalidates every cached object reference, and our panel is
+-- useless until a rescan anyway. Pure Lua only - the game's own widgets are
+-- deliberately left alone.
 local function onWorldEnter()
-    -- Pure Lua only: close our own panel and drop cached object references.
-    -- Stale GAME widgets are left alone on purpose: calling Close() on a
-    -- widget whose world (and gimmick) is gone reads through a dead pointer
-    -- - the exact 0x338 crash on "menu -> enter world".
-    Log("world entered - panel closed, caches reset (game widgets untouched)")
+    Log("world entered - panel closed, caches reset")
     SafeDo(function()
         if towerUI.is_visible() then towerUI.close() end
     end)
     controllerCache = nil
     kismetLibCache = nil
-    -- a fresh world ends any recorder session; blueprint widget classes
-    -- that failed to register at boot usually load with the world - retry
-    mgActive = false
-    mgSeq = 0
-    SafeDo(retryWidgetHooks)
 end
 
 local function registerWorldEnterHook()
@@ -1097,7 +884,7 @@ local function openUI()
         end,
         onHelp    = function()
             notify("TP = teleport next to a tower | MARK = your own checklist (saved) | " ..
-                   "press F at a mini-game pedestal - the mod finishes it for you | !th help in chat")
+                   "open towers and loot yourself | !th help in chat")
         end,
         onPrev = function() Page = math.max(1, Page - 1) uiRefresh() end,
         onNext = function() Page = Page + 1 uiRefresh() end,
@@ -1213,17 +1000,6 @@ end
 
 -- ================================ init =====================================
 
--- debug / console access (type TowerHunter.stats() in the UE4SS Lua console)
-TowerHunter = {
-    rescan   = function() return scanTowers() end,
-    stats    = function() return uiStats() end,
-    count    = function() return #Towers end,
-    tower    = function(i) return Towers[i] end,
-    state    = function(i) return getTowerState(Towers[i]) end,
-    teleport = function(i) teleportToTower(Towers[i], function() end) end,
-    ui       = openUI,
-}
-
 local function init()
     progressPath = pickFile(PROGRESS_FILE, "r") or pickFile(PROGRESS_FILE, "a")
     local loaded = loadProgress()
@@ -1238,10 +1014,10 @@ local function init()
         if towerUI.is_visible() then towerUI.close() end
     end)
     registerChatHook()
-    registerMinigameObserver()
     registerWorldEnterHook()
 
-    Log(string.format("ready | F6 = panel | !th in chat | mini-game: recorder (use the Instant Auto Hacking pak to skip) | %s",
+    Log(string.format("ready | %s = panel | %sth in chat | %s",
+            CONFIG.OpenKey, CONFIG.ChatPrefix,
             IsValidObj(getLocalCharacter()) and "in world" or "enter a world to start"))
 end
 

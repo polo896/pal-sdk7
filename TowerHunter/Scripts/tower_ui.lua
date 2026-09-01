@@ -499,7 +499,7 @@ local function renderAllContent()
     if listBg then F.AnchorWidget(surface, listBg, PAD, listY, contentW, listH, 5) end
     F.DrawFrame(surface, tree, PAD, listY, contentW, listH, T.Divider)
 
-    local gTitle = F.CreateText(tree, "TOWERS  (mini-games are replayed and fights are won natively; *MANUAL* = gimmick out of reach)", 12, T.TextPrimary, true, 0)
+    local gTitle = F.CreateText(tree, "TOWERS  (TP = teleport | MARK = your own checklist; towers are opened and looted by you)", 12, T.TextPrimary, true, 0)
     if gTitle then F.AnchorWidget(surface, gTitle, PAD + 16, listY + 10, 640, 16, 7) end
 
     local towers, page, pageSize = ctx.getTowers(), ctx.getPage(), ctx.getPageSize()
